@@ -40,7 +40,7 @@ SCOPE (Security Cloud Ops Purple Engagement) runs the full purple team loop: aud
 
 **Credential model:** SCOPE inherits credentials from the shell environment (AWS_PROFILE, AWS_ACCESS_KEY_ID, or boto3/AWS CLI defaults). No custom credential loading. The first AWS API call (`sts:GetCallerIdentity` at Gate 1) serves as the credential check.
 
-**Dashboard:** All visualization is handled by the SCOPE dashboard (`dashboard/dashboard.html`, generated via `cd dashboard && npm run dashboard`). Agents export `results.json` to `dashboard/public/$RUN_ID.json` and update `dashboard/public/index.json`.
+**Dashboard:** All visualization is handled by the SCOPE dashboard (`dashboard/<run-id>-dashboard.html`, generated via `cd dashboard && npm run dashboard`). Agents export `results.json` to `dashboard/public/$RUN_ID.json` and update `dashboard/public/index.json`.
 
 **Agent-log fallback hierarchy:** Downstream agents consume upstream output in priority order:
 1. `./agent-logs/` — highest fidelity (claim-level provenance from agent-log.jsonl)
@@ -514,7 +514,7 @@ Wait for the attack-paths subagent to complete and return its summary.
 Expected summary format:
   STATUS: complete|partial|error
   FILE: $RUN_DIR/results.json
-  METRICS: {attack_paths: N, risk_score: CRITICAL|HIGH|MEDIUM|LOW, categories: N}
+  METRICS: {attack_paths: N, risk_score: critical|high|medium|low, categories: N}
   ERRORS: [any issues]
 ```
 
@@ -552,10 +552,10 @@ Display:
 GATE 4: Analysis Complete
 
 Attack paths identified: [count]
-  CRITICAL: [count] paths
-  HIGH: [count] paths
-  MEDIUM: [count] paths
-  LOW: [count] paths
+  critical: [count] paths
+  high: [count] paths
+  medium: [count] paths
+  low: [count] paths
   Speculative (stripped by verify): [count] paths — gating conditions not satisfiable
 
 Top findings:
@@ -591,7 +591,7 @@ Account: [account ID]
 
 ---
 
-## RISK SUMMARY: [account-id] -- LOW
+## RISK SUMMARY: [account-id] -- low
 
 No security findings detected. All checks passed.
 
@@ -621,7 +621,7 @@ Account: [account ID]
 
 ---
 
-## RISK SUMMARY: [account-id] — [CRITICAL/HIGH/MEDIUM/LOW]
+## RISK SUMMARY: [account-id] -- [critical/high/medium/low]
 
 * [Most critical finding — one sentence, specific, include resource ARN or name]
 * [Second most critical finding]
@@ -642,16 +642,16 @@ Rules: Maximum 5 bullets. Each bullet is one sentence with real ARN/resource nam
 ```
 ## FINDINGS BY SEVERITY
 
-### CRITICAL
+### critical
 - **[Finding name]** — [specific resource ARN/name and why it's critical]
 
-### HIGH
+### high
 - **[Finding name]** — [specific resource ARN/name]
 
-### MEDIUM
+### medium
 - **[Finding name]** — [specific resource ARN/name]
 
-### LOW
+### low
 - **[Finding name]** — [specific resource ARN/name]
 ```
 
@@ -671,8 +671,8 @@ Order by exploitability score DESC, then confidence DESC.
 ```
 ## ATTACK PATHS
 
-### ATTACK PATH #1: [Descriptive Name] — [CRITICAL/HIGH/MEDIUM/LOW]
-**Exploitability:** [CRITICAL/HIGH/MEDIUM/LOW]
+### ATTACK PATH #1: [Descriptive Name] -- [critical/high/medium/low]
+**Exploitability:** [critical/high/medium/low]
 **Confidence:** [what was verified and what was not — e.g., "IAM policy confirmed; SCP status unknown"]
 **MITRE:** [T1078.004], [T1548]
 
@@ -706,7 +706,7 @@ control artifacts already generated at $RUN_DIR/defend/defend-{timestamp}/.]
 **Additional options:**
 - `/scope:exploit` — validate findings by testing exploitability
 - `/scope:audit [another-target]` — drill into [specific related resource]
-- View results: open `dashboard/dashboard.html` in any browser
+- View results: open `dashboard/<run-id>-dashboard.html` in any browser
 - Review defensive control artifacts: `$RUN_DIR/defend/defend-{timestamp}/`
 ```
 </findings_md>
@@ -853,18 +853,18 @@ After the pipeline completes, generate the self-contained dashboard report:
 cd dashboard && npm run dashboard 2>&1
 ```
 
-This produces `dashboard/dashboard.html` — a portable file that opens in any browser without a server. Essential for Codex and Gemini CLI environments where localhost is unavailable.
+This produces `dashboard/<run-id>-dashboard.html` — a portable file that opens in any browser without a server. Essential for Codex and Gemini CLI environments where localhost is unavailable.
 
 `npm run dashboard` calls `bin/generate-report.js`, which automatically installs dependencies (`npm install`) if `dashboard/node_modules/` is missing before running the build. You do not need to run `npm install` manually.
 
-**Do NOT generate dashboard.html yourself.** The dashboard is a React + D3 application built by `npm run dashboard` — it inlines all data from `dashboard/public/`. Writing your own HTML to `$RUN_DIR/dashboard.html` or any other path will NOT produce a working dashboard. Always use the npm command above.
+**Do NOT generate dashboard HTML yourself.** The dashboard is a React + D3 application built by `npm run dashboard` — it inlines all data from `dashboard/public/`. Writing your own HTML to `$RUN_DIR/dashboard.html` or any other path will NOT produce a working dashboard. Always use the npm command above. The output filename is derived from the run ID (e.g., `audit-20260408-201108-all-dashboard.html`).
 
 If dashboard generation fails: log a warning and continue. The raw artifacts and data/ exports are still valid.
 
 **Announce dashboard completion to the operator:**
 ```
 ━━━ Dashboard: generated ━━━
-Open: dashboard/dashboard.html
+Open: dashboard/<run-id>-dashboard.html
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 If dashboard failed: `━━━ Dashboard: failed (non-blocking) — raw artifacts available in $RUN_DIR/ ━━━`
@@ -977,7 +977,7 @@ After each run completes, append to `./audit/INDEX.md` (create if missing):
 ```markdown
 | Run ID | Date | Target | Risk | Paths | Directory |
 |--------|------|--------|------|-------|-----------|
-| audit-20260301-143022-all | 2026-03-01 14:30 | --all | CRITICAL | 3 | ./audit/audit-20260301-143022-all/ |
+| audit-20260301-143022-all | 2026-03-01 14:30 | --all | critical | 3 | ./audit/audit-20260301-143022-all/ |
 ```
 
 Also upsert into `./audit/index.json` (create with `{"runs": []}` if missing):
@@ -986,7 +986,7 @@ Also upsert into `./audit/index.json` (create with `{"runs": []}` if missing):
   "run_id": "audit-20260301-143022-all",
   "date": "2026-03-01T14:30:22Z",
   "target": "--all",
-  "risk": "CRITICAL",
+  "risk": "critical",
   "paths": 3,
   "directory": "./audit/audit-20260301-143022-all/"
 }

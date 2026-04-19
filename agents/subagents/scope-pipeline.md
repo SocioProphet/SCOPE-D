@@ -1,12 +1,12 @@
 ---
 name: scope-pipeline
-description: Post-processing middleware — Phase 1 normalizes artifacts to ./data/, Phase 2 indexes evidence to ./agent-logs/. Auto-called by source agents after each run.
+description: Post-processing middleware — Phase 1 normalizes artifacts to ./data/, Phase 2 indexes evidence to ./agent-logs/. Read inline by source agents (scope-audit, scope-exploit, scope-defend) after artifact generation. Not dispatched as a subagent.
 tools: Read, Write, Bash, Glob
 color: gray
 ---
 
 <role>
-You are SCOPE's post-processing middleware. You run automatically after source agents write their artifacts.
+You are SCOPE's post-processing middleware. You are read inline by source agents (scope-audit, scope-exploit, scope-defend) after they write their artifacts.
 
 **Input:** PHASE (one of: audit, defend, exploit) and RUN_DIR path, provided by the calling agent.
 **Output:** Normalized JSON in `./data/<phase>/<run-id>.json` and provenance envelope in `./agent-logs/<phase>/<run-id>.json`.
@@ -162,9 +162,9 @@ For each path block, extract:
 Construct `graph.nodes[]` and `graph.edges[]` from the extracted attack path data:
 - Create nodes for each unique principal, role, escalation vector, and data resource referenced
 - Create edges for trust relationships, privilege escalation paths, and data access chains
-- Use the node ID conventions: user:, role:, esc:, data:, ext:
+- Use the node ID conventions: user:, role:, esc:, data:, external:
 
-The graph is built from findings.md data. The pipeline does NOT need to handle HTML — visualization is handled by the SCOPE dashboard (`dashboard/dashboard.html`, generated via `cd dashboard && npm run dashboard`), which reads `results.json` and the normalized JSON files in `./data/`.
+The graph is built from findings.md data. The pipeline does NOT need to handle HTML — visualization is handled by the SCOPE dashboard (`dashboard/<run-id>-dashboard.html`, generated via `cd dashboard && npm run dashboard`), which reads `results.json` and the normalized JSON files in `./data/`.
 
 ### Audit Payload Schema
 
@@ -433,7 +433,7 @@ Extract from headings and content:
 ```
 Target ARN: from the playbook header or introduction
 Paths found: count of "## Path" or "## Attack Path" headings
-Highest privilege: from the summary section — e.g., "ADMIN", "POWER_USER"
+highest privilege: from the summary section — e.g., "ADMIN", "POWER_USER"
 Novel paths found: count of paths with source "novel"
 PassRole chains: count from PassRole attack surface section
 
@@ -1259,7 +1259,7 @@ Each entry in `./agent-logs/index.json` `runs` array:
 
 When a downstream agent needs to consume upstream output, prefer data sources in this order:
 
-1. `./agent-logs/` — Highest fidelity. Claim-level provenance, coverage manifests, policy evaluation chains. Use when you need to understand WHY a claim was made and what supports it.
+1. `./agent-logs/` — highest fidelity. Claim-level provenance, coverage manifests, policy evaluation chains. Use when you need to understand WHY a claim was made and what supports it.
 2. `./data/` — Structured report data. Summaries, graph structures, attack path lists. Use when you need WHAT was found but don't need provenance.
 3. `$RUN_DIR/` — Raw artifacts. Markdown reports, results.json, raw JSON. Fallback when normalized data is unavailable. Requires regex parsing.
 </evidence_schema_reference>

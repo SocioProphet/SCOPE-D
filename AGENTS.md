@@ -38,7 +38,7 @@ agents/subagents/scope-pipeline.md         Post-processing middleware -- data no
 | Agent Type | Claude Code | Gemini CLI | Codex |
 |------------|-------------|------------|-------|
 | Enum subagents | claude-haiku-4-5 | gemini-3.1-flash-lite-preview | gpt-5.4-mini |
-| Attack paths, defend | claude-sonnet-4-6 | gemini-3.1-pro-preview | gpt-5.4 |
+| Reasoning (attack-paths, defend, hunt intake) | claude-sonnet-4-6 | gemini-3.1-pro-preview | gpt-5.4 |
 
 ## Architecture
 
@@ -48,7 +48,7 @@ agents/subagents/     Dispatched subagents and inline-read middleware (enum, att
 data/                 Normalized JSON output (runtime-generated, gitignored)
 agent-logs/           Agent activity logs (runtime-generated, gitignored)
 hunt/          Hunt artifacts (runtime-generated, gitignored)
-dashboard/            React + D3 dashboard (dashboard.html)
+dashboard/            React + D3 dashboard (<run-id>-dashboard.html)
 config/               Optional pre-loaded data (accounts.json, scps/*.json)
 bin/                  Tooling (install.js -- editor setup, generate-report.js -- dashboard builder)
 config/hooks/         Lifecycle hooks -- safety guard, SPL lint, schema validation, artifact check, agent logger
@@ -179,7 +179,7 @@ Invoked by the source agent after writing artifacts -- sequential and non-blocki
 
 All visualization is handled by the SCOPE dashboard. Agents export `results.json` to `$RUN_DIR/` and `dashboard/public/$RUN_ID.json`. Dashboard loads `index.json`, iterates the `runs[]` array, and fetches the latest entry per source phase.
 
-**Dashboard HTML** (all environments): After exporting data to `dashboard/public/`, run `cd dashboard && npm run dashboard` to generate a self-contained `dashboard.html` with all data inlined. This file opens in any browser without a server. Agents MUST generate the dashboard after the data pipeline completes.
+**Dashboard HTML** (all environments): After exporting data to `dashboard/public/`, run `cd dashboard && npm run dashboard` to generate a self-contained `<run-id>-dashboard.html` with all data inlined. This file opens in any browser without a server. Agents MUST generate the dashboard after the data pipeline completes.
 
 ## AWS Credential Model
 
@@ -213,6 +213,8 @@ scope-hunt has three operating modes with different isolation properties:
 - **Detection investigation mode** (invoked without a path, or with a Splunk alert ID): standalone -- does not read audit/exploit/defend output. Isolation matches v1.8 behavior.
 - **Hunt mode** (invoked with a SCOPE audit or exploit run directory path): reads `results.json`, attack path JSON, and per-module JSON from the provided run directory. Resource identifiers read in this mode are session-scoped and must not be written to MEMORY.md.
 - **Intel mode** (invoked with a threat intel URL or natural language threat description): fetches the URL or parses the description, extracts IOCs and TTPs, generates hypotheses beyond the report, and hunts in Splunk. Extracted identifiers (IPs, ARNs, account IDs, hashes) are session-scoped -- written to `context.json`, not MEMORY.md.
+
+scope-hunt dispatches mode-specific subagents (scope-hunt-investigate, scope-hunt-intel, scope-hunt-audit) for intake and hypothesis generation. The parent orchestrator handles MCP detection, Splunk execution, evidence timeline, and report generation. Subagents do not have memory access — memory is parent-only.
 
 All other agents share data through the agent-logs/data layer.
 
