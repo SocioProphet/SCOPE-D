@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "atomic-example",
+  "name": "Example safe atomic validation",
+  "description": "Template for a reproducible, safety-classed validation step. Prefer synthetic_event and dry_run modes unless an explicit operator gate approves live execution.",
+  "frameworkMappings": {
+    "mitreAttack": ["T0000"],
+    "mitreAtlas": [],
+    "owaspLLMTop10": []
+  },
+  "targetSurface": {
+    "surfaceType": "synthetic_lab",
+    "identifier": "local-scope-d-lab",
+    "environment": "lab"
+  },
+  "safety": {
+    "safetyClass": "synthetic_only",
+    "requiresHumanGate": false,
+    "blockedInProduction": true,
+    "allowedModes": ["synthetic_event", "dry_run"]
+  },
+  "prerequisites": [],
+  "executor": {
+    "type": "synthetic_event",
+    "command": null,
+    "scriptRef": null
+  },
+  "expectedTelemetry": [
+    {
+      "source": "example-log-source",
+      "eventName": "ExampleEvent",
+      "fields": {
+        "actor": "synthetic",
+        "action": "example"
+      }
+    }
+  ],
+  "expectedDetections": [
+    {
+      "ruleRef": "countermeasure-example",
+      "shouldAlert": true,
+      "maximumLatencySeconds": 300
+    }
+  ],
+  "cleanup": {
+    "required": false,
+    "steps": []
+  },
+  "rollback": {
+    "required": false,
+    "steps": []
+  }
+}
