@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-purple-team-exercise.schema.json",
+  "title": "SCOPE-D Purple Team Exercise",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "exerciseType",
+    "status",
+    "scope",
+    "roles",
+    "objectives",
+    "rulesOfEngagement",
+    "metrics"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^pte-[a-z0-9][a-z0-9._:-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "exerciseType": {
+      "type": "string",
+      "enum": [
+        "ad_hoc",
+        "operationalized",
+        "dedicated_program",
+        "regression",
+        "tabletop",
+        "synthetic_lab"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "approved",
+        "running",
+        "paused",
+        "completed",
+        "cancelled"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "targetSurfaces",
+        "environment",
+        "outOfScope"
+      ],
+      "properties": {
+        "targetSurfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "environment": {
+          "type": "string",
+          "enum": [
+            "lab",
+            "dev",
+            "staging",
+            "production",
+            "customer",
+            "unknown"
+          ]
+        },
+        "outOfScope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "owner"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "exercise_director",
+              "cti",
+              "red_team",
+              "blue_team",
+              "purple_team",
+              "detection_engineer",
+              "platform_operator",
+              "observer",
+              "approver"
+            ]
+          },
+          "owner": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "rulesOfEngagement": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "ctiRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "emulationPlanRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "atomicTestRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "detectionCoverage",
+        "meanTimeToDetect",
+        "meanTimeToTriage"
+      ],
+      "properties": {
+        "detectionCoverage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "meanTimeToDetect": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "meanTimeToTriage": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "lessonsLearned": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
