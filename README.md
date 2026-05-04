@@ -1,165 +1,101 @@
-# SCOPE: Security Cloud Ops Purple Engagement
+# SCOPE-D: SocioProphet Defensive Purple-Team Control Fabric
 
-[![GitHub stars](https://img.shields.io/github/stars/tayontech/SCOPE?style=social)](https://github.com/tayontech/SCOPE/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/tayontech/SCOPE?style=social)](https://github.com/tayontech/SCOPE/network/members)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/tayontech/SCOPE/blob/main/LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/tayontech/SCOPE)](https://github.com/tayontech/SCOPE/commits/main)
+SCOPE-D is the SocioProphet derivative of SCOPE. It starts from the upstream SCOPE agentic AWS purple-team loop and extends it toward a broader, governed, defensive security control fabric for cloud, GitHub, Kubernetes, local hosts, AI infrastructure, MCP/tool servers, agent skills, threat-intel feeds, detection validation, and graph robustness.
 
-*One framework. Full purple team loop. From enumeration to defense.*
+The goal is not to ship another narrow scanner. The goal is a policy-gated cybernetic security loop: collect evidence, reason over attack paths, validate detections, generate countermeasures, preserve provenance, and keep operators in control.
 
-Most AWS security assessments are manual, fragmented, and slow. Enumeration scripts dump raw output that someone has to stitch together. Findings live in spreadsheets. Attack paths exist only in the assessor's head. Defensive recommendations are generic and disconnected from what was actually found.
+## Current status
 
-**SCOPE changes that.** It's an agentic AI framework that runs the full purple team loop: enumerate AWS resources, reason about attack paths, generate exploit playbooks, produce targeted defensive controls, and hunt threats.
+SCOPE-D is early-stage derivative work. The inherited upstream SCOPE implementation is useful, but this repository is now being shaped around the SocioProphet / SourceOS architecture.
 
-## How It Works
+Initial SCOPE-D additions include:
 
-SCOPE runs as a set of AI agents inside [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Gemini CLI](https://github.com/google-gemini/gemini-cli), or [Codex CLI](https://github.com/openai/codex). One command kicks off the full pipeline:
+- `docs/SCOPE-D-STRATEGY.md` — derivative thesis, reference-framework synthesis, safety doctrine, roadmap.
+- `config/schemas/scope-d-control-loop.schema.json` — first SCOPE-D control-loop contract.
+- `exercises/templates/atomic-testcase.template.json` — safe atomic validation manifest template.
+- `ai-infra/README.md` — AI infrastructure, MCP, tool, and skill-risk assessment surface.
+- `graph-robustness/README.md` — graph-adversarial robustness assessment surface.
+- `detections/README.md` — detection and countermeasure packaging doctrine.
 
-```
-/scope:audit --all
-```
+## What SCOPE-D inherits from upstream SCOPE
 
-The orchestrator dispatches parallel enumeration agents across AWS services, feeds findings into an attack path reasoning engine, auto-chains defensive control generation, and renders everything into an interactive dashboard. No manual handoffs.
+Upstream SCOPE contributes a useful starting loop:
 
-| Phase | What Happens |
-|-------|-------------|
-| **Audit** | 12 parallel agents enumerate IAM, S3, Lambda, EC2, KMS, Secrets Manager, STS, RDS, API Gateway, SNS, SQS, CodeBuild |
-| **Attack Paths** | AI reasons over combined findings to identify privilege escalation chains, lateral movement, and trust abuse |
-| **Defend** | Generates SCPs, resource control policies, SPL detections (atomic + composite), and prioritized remediation |
-| **Exploit** | Produces stealth-ordered playbooks with creative reasoning for novel abuse paths beyond standard catalogues |
-| **Hunt** | Guides SOC analysts through CloudTrail-based alert triage in Splunk |
+- AWS enumeration agents;
+- attack-path reasoning;
+- defensive control generation;
+- exploit playbook generation under read-only doctrine;
+- SOC hunt workflow;
+- schema validation;
+- lifecycle hooks;
+- dashboard artifacts;
+- Claude Code, Gemini CLI, and Codex-oriented agent packaging.
 
-## Quick Start
+We retain attribution and license clarity. SCOPE-D is a derivative direction, not a claim that the upstream project already contains the expanded SocioProphet architecture described here.
 
-```bash
-# Clone and install
-git clone https://github.com/tayontech/SCOPE.git
-cd SCOPE
-node bin/install.js
+## What SCOPE-D adds
 
-# Configure AWS credentials (any standard method)
-export AWS_PROFILE=your-profile
+SCOPE-D expands the design into these lanes:
 
-# Run a full audit
-/scope:audit --all
-
-# Or target specific services
-/scope:audit iam s3 lambda
-
-# Generate exploit playbooks for a principal
-/scope:exploit arn:aws:iam::123456789012:role/target-role
-
-# Self-target mode (discovers caller identity automatically)
-/scope:exploit
-
-# Hunt a SOC alert
-/scope:hunt
-```
-
-The installer presents an interactive selector — pick your runtime (Claude Code, Gemini, Codex, or all) and install scope (local project or global).
-
-> **Requirements:** AWS CLI configured with read-only credentials. Node.js for tooling. Claude Code, Gemini CLI, or Codex CLI as the runtime.
-
-## Architecture
-
-```
-agents/               Core agents: audit orchestrator, defend, exploit, hunt
-agents/subagents/     12 enumeration agents, attack path reasoning, verification, data pipeline
-dashboard/            React + D3 interactive dashboard (self-contained HTML output)
-config/               Runtime reference data, lifecycle hooks, schemas, settings templates
-bin/                  Tooling: installer, report generator
-```
-
-### Exploit Intelligence
-
-The exploit agent uses creative reasoning to discover abuse paths — not just a static checklist. It analyzes a principal's actual permissions and reasons about what attack chains are possible, using known escalation families as a floor, not a ceiling.
-
-- **Permission auto-discovery** — self-target mode discovers caller identity, reads own policies, falls back to targeted probes
-- **Stealth-aware ordering** — CloudTrail classification tags each step as management event, data event, or not logged; playbooks present quiet moves first
-- **Creative reasoning** — LLM reasons about unconventional service chain abuse beyond the standard catalogue
-- **PassRole attack surface** — maps composable role-passing chains across 10+ AWS services
-
-### Safety by Default
-
-SCOPE agents are **read-only**. A lifecycle hook blocks every destructive AWS API call before it executes. Exploit generates playbooks with write commands but never runs them. Execution requires explicit human approval per-step.
-
-| Hook | Purpose |
-|------|---------|
-| Safety Guard | Blocks destructive AWS operations at the shell level |
-| SPL Lint | Hard-fails on Splunk query anti-patterns |
-| Schema Validate | Enforces structured output on all results |
-| Artifact Check | Verifies mandatory outputs before agent completion |
-
-## Dashboard
-
-Agents produce structured JSON that feeds into an interactive React + D3 dashboard. One command generates a self-contained HTML file. No server required.
-
-```bash
-cd dashboard && npm run dashboard
-open dashboard/<run-id>-dashboard.html
-```
-
-The dashboard visualizes:
-- Trust relationships with internal/external classification based on owned account IDs
-- Attack paths with severity, MITRE ATT&CK mappings, and exploitability ratings
-- Privilege escalation chains and lateral movement graphs
-- Defensive controls: SCPs, RCPs, and SPL detections with atomic/composite badges
-- KPI cards: critical priv esc count, wildcard trusts, cross-account trusts
-
-## Multi-Platform
-
-SCOPE runs on three AI coding platforms with the same agent definitions:
-
-| Platform | Status | Hooks Config | Notes |
-|----------|--------|-------------|-------|
-| **Claude Code** | Full support | `.claude/settings.json` | Lifecycle hooks, model routing, memory |
-| **Gemini CLI** | Full support | `.gemini/settings.json` | Lifecycle hooks, model routing |
-| **Codex CLI** | Full support | `.codex/hooks.json` | Lifecycle hooks, model routing |
-
-### Agent Architecture
-
-SCOPE has two types of agents:
-
-**Skills** — run in your session, inherit your model:
-- `scope-audit` — orchestrator, dispatches subagents
-- `scope-exploit` — standalone red team playbook generator
-- `scope-hunt` — standalone SOC investigation assistant
-
-**Subagents** — dispatched with their own pinned model:
-- 12 enum agents — lightweight enumeration
-- `scope-attack-paths` — security reasoning over combined findings
-- `scope-defend` — defensive controls generation
-- `scope-hunt-investigate`, `scope-hunt-intel`, `scope-hunt-audit` — hunt mode intake and hypothesis generation
-
-When you run `/scope:audit --all`, the orchestrator runs on your session model, dispatches enum agents on a fast model, then chains attack-paths and defend on a reasoning model. Hunt dispatches intake subagents on a reasoning model, then runs Splunk execution on your session model. Exploit always uses whatever model your session is running.
-
-### Model Routing
-
-`install.js` assigns platform-specific models to subagents during install:
-
-| Agent Type | Claude Code | Gemini CLI | Codex |
-|------------|-------------|------------|-------|
-| Enum subagents (12) | claude-haiku-4-5 | gemini-3.1-flash-lite-preview | gpt-5.4-mini |
-| Reasoning (attack-paths, defend, hunt intake) | claude-sonnet-4-6 | gemini-3.1-pro-preview | gpt-5.4 |
-
-Skills (audit, exploit) are not in this table — they inherit your session model. Hunt dispatches reasoning-tier subagents for intake, then runs on the session model for Splunk execution.
-
-## Documentation
-
-| | |
+| Lane | Purpose |
 |---|---|
-| [CLAUDE.md](https://github.com/tayontech/SCOPE/blob/main/CLAUDE.md) | Full technical reference: agents, hooks, data layer, error handling |
-| [Dashboard](https://github.com/tayontech/SCOPE/tree/main/dashboard) | Visualization setup and customization |
-| [Hooks](https://github.com/tayontech/SCOPE/tree/main/config/hooks) | Safety and validation hook reference |
-| [Schemas](https://github.com/tayontech/SCOPE/tree/main/config/schemas) | JSON Schema definitions for audit, defend, exploit output |
+| Control-loop contracts | Typed runs, gates, evidence envelopes, artifacts, controls, and attack graphs |
+| Purple-team exercises | Formal exercise objectives, rules of engagement, roles, metrics, and lessons learned |
+| Atomic validation | Safe ATT&CK/ATLAS-mapped tests with prerequisites, expected telemetry, cleanup, and regression tracking |
+| Threat intelligence | Indicator lifecycle, confidence, decay, TLP/PAP markings, enrichment, and feed-to-detection flow |
+| Detection-as-code | Sigma, SPL, YARA, Snort/Suricata, ClamAV, OSQuery, OPA/Rego, cloud, GitHub, Kubernetes, and SourceOS policy artifacts |
+| AI infrastructure assessment | Model servers, MCP servers, tools, skills, memory stores, vector stores, jailbreak exposure, and tool poisoning |
+| Graph robustness | Defensive testing for attack graphs, trust graphs, policy graphs, memory graphs, and governance graphs |
+| SourceOS integration | PolicyFabric, AgentPlane, SocioSphere, TurtleTerm, sourceos-shell, openclaw, and memory-mesh alignment |
 
-## Community
+## Safety doctrine
 
-- [Issues](https://github.com/tayontech/SCOPE/issues) Bugs and feature requests
-- [Pull Requests](https://github.com/tayontech/SCOPE/pulls) Contributions welcome
+SCOPE-D defaults to read-only collection, synthetic validation, and dry-run execution.
 
----
+Any action that changes infrastructure, modifies identity, deploys code, executes exploit logic, runs payloads, contacts external services, mutates logs, changes policy, or writes to production systems requires an explicit gate and policy decision.
 
-Created by **Tayvion Payton**
+SCOPE-D may study offensive projects for taxonomy, observables, and detection validation, but it must not import deployable malware, C2 payloads, stealth logic, destructive automation, credential theft behavior, or unauthorized-execution workflows.
 
-*Enumerate. Reason. Defend. One command, full loop.*
+## Reference frameworks we are learning from
+
+SCOPE-D explicitly studies and selectively absorbs safe lessons from:
+
+- upstream SCOPE for agentic cloud purple-team orchestration;
+- Purple Team Exercise Framework for operating model, roles, metrics, and maturity;
+- Atomic Red Team for reproducible ATT&CK-mapped validation tests;
+- GreedyBear and CIF-style threat-intel systems for feed ingestion and indicator lifecycle;
+- Mandiant red-team tool countermeasures for countermeasure packaging and maturity states;
+- AI-Infra-Guard for AI infrastructure, MCP, tool, skill, and jailbreak-risk assessment;
+- graph-adversarial-learning research and DeepRobust for graph robustness assessment;
+- C2 simulation projects only as defensive emulation taxonomy, never as executable offensive capability.
+
+## Repository layout direction
+
+```text
+SCOPE-D
+├── agents/                         inherited and future SCOPE-D agents
+├── config/schemas/                 machine-readable contracts
+├── detections/                     detection and countermeasure packaging
+├── exercises/                      purple-team and atomic validation templates
+├── ai-infra/                       AI infrastructure assessment lane
+├── graph-robustness/               graph attack/defense assessment lane
+├── dashboard/                      inherited and future reporting UX
+└── docs/                           derivative strategy and architecture
+```
+
+## Immediate roadmap
+
+1. Complete SCOPE-D README and attribution cleanup.
+2. Add schemas for `PurpleTeamExercise`, `AtomicTestCase`, `ThreatIntelFeed`, `IndicatorRecord`, `AIInfraAssessment`, `MCPToolRisk`, `AgentSkillRisk`, and `GraphRobustnessAssessment`.
+3. Add example conforming payloads for each schema.
+4. Add validation scripts and CI checks.
+5. Add safe synthetic-event generation for detection validation.
+6. Add read-only AI-infra and MCP surface fingerprinting.
+7. Add graph robustness synthetic fixtures.
+8. Extend the dashboard to show exercise maturity, detection coverage, AI-infra risk, and graph robustness.
+
+## Upstream attribution
+
+SCOPE-D is derived from the public SCOPE project created by Tayvion Payton. See the inherited license and upstream project history for original authorship and licensing context.
+
+Original upstream: https://github.com/tayontech/SCOPE
