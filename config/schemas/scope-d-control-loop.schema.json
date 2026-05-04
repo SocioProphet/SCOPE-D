@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-control-loop.schema.json",
+  "title": "SCOPE-D Control Loop Run",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "runId",
+    "loopType",
+    "targetSurface",
+    "status",
+    "safetyMode",
+    "gates",
+    "evidence",
+    "artifacts"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "runId": {
+      "type": "string",
+      "pattern": "^scope-d-[a-z0-9][a-z0-9._:-]*$"
+    },
+    "loopType": {
+      "type": "string",
+      "enum": [
+        "cloud_posture",
+        "aws_audit",
+        "github_audit",
+        "kubernetes_audit",
+        "host_audit",
+        "ai_infra_assessment",
+        "mcp_tool_assessment",
+        "agent_skill_assessment",
+        "purple_team_exercise",
+        "incident_hunt",
+        "detection_regression",
+        "graph_robustness_assessment"
+      ]
+    },
+    "targetSurface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surfaceType", "identifier"],
+      "properties": {
+        "surfaceType": {
+          "type": "string",
+          "enum": ["aws", "github", "kubernetes", "local_host", "ai_runtime", "mcp_server", "agent_skill", "graph", "threat_intel_feed", "synthetic_lab"]
+        },
+        "identifier": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tenantScope": {
+          "type": "string"
+        },
+        "environment": {
+          "type": "string",
+          "enum": ["local", "lab", "dev", "staging", "production", "customer", "unknown"]
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "running", "partial", "blocked", "failed", "completed"]
+    },
+    "safetyMode": {
+      "type": "string",
+      "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"]
+    },
+    "riskScore": {
+      "type": "string",
+      "enum": ["critical", "high", "medium", "low", "unknown"]
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/controlGate"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidenceEnvelope"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifactRef"
+      }
+    },
+    "controls": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/countermeasureRule"
+      }
+    },
+    "attackGraph": {
+      "$ref": "#/$defs/attackPathGraph"
+    }
+  },
+  "$defs": {
+    "controlGate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "gateType", "decision", "requiredActor", "timestamp"],
+      "properties": {
+        "id": { "type": "string" },
+        "gateType": {
+          "type": "string",
+          "enum": ["credential_check", "scope_approval", "tool_authorization", "analysis_approval", "defense_generation", "destructive_action", "publication", "merge", "deployment"]
+        },
+        "decision": {
+          "type": "string",
+          "enum": ["approved", "denied", "skipped", "auto_continue", "blocked", "expired"]
+        },
+        "requiredActor": {
+          "type": "string",
+          "enum": ["human", "agent", "policy_engine", "system"]
+        },
+        "actualActor": { "type": "string" },
+        "reason": { "type": "string" },
+        "policyDecisionRef": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      }
+    },
+    "evidenceEnvelope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "collector", "surface", "resourceType", "resourceId", "observedAt", "claimLevel", "redactionState"],
+      "properties": {
+        "id": { "type": "string" },
+        "collector": { "type": "string" },
+        "surface": { "type": "string" },
+        "resourceType": { "type": "string" },
+        "resourceId": { "type": "string" },
+        "observedAt": { "type": "string", "format": "date-time" },
+        "claimLevel": {
+          "type": "string",
+          "enum": ["guaranteed", "conditional", "speculative", "rejected"]
+        },
+        "redactionState": {
+          "type": "string",
+          "enum": ["raw", "redacted", "synthetic", "withheld"]
+        },
+        "tenantScope": { "type": "string" },
+        "evidence": { "type": ["object", "array", "string", "number", "boolean", "null"] },
+        "rawRef": { "type": "string" }
+      }
+    },
+    "artifactRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "artifactType", "path"],
+      "properties": {
+        "id": { "type": "string" },
+        "artifactType": {
+          "type": "string",
+          "enum": ["report", "dashboard", "json", "jsonl", "detection_rule", "policy", "exercise_plan", "receipt"]
+        },
+        "path": { "type": "string" },
+        "sha256": { "type": "string" }
+      }
+    },
+    "countermeasureRule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "ruleType", "status", "severity", "sourceFindingRefs"],
+      "properties": {
+        "id": { "type": "string" },
+        "ruleType": {
+          "type": "string",
+          "enum": ["sigma", "spl", "yara", "snort", "suricata", "clamav", "osquery", "opa_rego", "kubernetes_policy", "github_policy", "sourceos_policy", "scp", "iam_policy"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["production", "supplemental", "hunt_only", "experimental", "deprecated"]
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["critical", "high", "medium", "low", "informational"]
+        },
+        "sourceFindingRefs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "ruleText": { "type": "string" },
+        "expectedEffect": { "type": "string" },
+        "falsePositiveRisk": {
+          "type": "string",
+          "enum": ["high", "medium", "low", "unknown"]
+        }
+      }
+    },
+    "attackPathGraph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nodes", "edges", "paths"],
+      "properties": {
+        "nodes": { "type": "array", "items": { "type": "object" } },
+        "edges": { "type": "array", "items": { "type": "object" } },
+        "paths": { "type": "array", "items": { "type": "object" } }
+      }
+    }
+  }
+}
