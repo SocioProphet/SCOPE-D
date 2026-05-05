@@ -26,7 +26,15 @@ This creates `runs/<run-id>/` with:
 - `report.md`
 - `receipt.json`
 
-The initializer refuses production/customer environments, supports only the `synthetic_lab` surface for now, performs no live actions, uses no credentials, performs no network egress, and validates generated control-loop, safety-boundary, and receipt artifacts before writing the final receipt.
+The initializer refuses production/customer environments, supports only the `synthetic_lab` surface for now, performs no live actions, uses no credentials, performs no network egress, and validates generated target-manifest, synthetic-event, control-loop, safety-boundary, and receipt artifacts before writing the final receipt.
+
+Verify a generated run:
+
+```bash
+npm run scope-d:verify-run -- runs/<run-id>
+```
+
+The verifier checks required artifacts, AJV schemas, JSONL synthetic events, receipt artifact hashes, and cross-file consistency. If any file is modified after receipt creation, receipt hash verification fails.
 
 Generate only a synthetic atomic observation from the safe example testcase:
 
@@ -45,7 +53,8 @@ SCOPE-D uses multiple safety layers:
 3. **Boundary policy** — `SafetyBoundary` defines credential, command, network, memory, approval, and audit boundaries.
 4. **Synthetic-first validation** — detection validation begins with synthetic telemetry, not live payload execution.
 5. **Operator gates** — deployment, writes, credential access, and destructive actions require explicit gate decisions.
-6. **Runtime receipts** — every run should emit hashable artifacts and a run receipt.
+6. **Runtime receipts** — every run emits hashable artifacts and a run receipt.
+7. **Receipt verification** — generated runs can be re-verified for schema correctness and tamper evidence.
 
 ## Execution classes
 
