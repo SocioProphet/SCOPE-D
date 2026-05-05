@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "emulation-synthetic-tool-poisoning",
+  "name": "Synthetic Tool Poisoning Emulation Plan",
+  "description": "Lab-only plan for validating MCP/tool poisoning detection without live exploit execution.",
+  "threatProfile": {
+    "name": "Synthetic AI tool-boundary adversary",
+    "intent": "detection_validation",
+    "mappings": {
+      "mitreAttack": ["T1059"],
+      "mitreAtlas": ["AML.T0051"],
+      "owaspLLMTop10": ["LLM01"]
+    }
+  },
+  "targetSurfaces": [
+    {
+      "surfaceType": "synthetic_lab",
+      "identifier": "local-scope-d-lab",
+      "environment": "lab"
+    }
+  ],
+  "safety": {
+    "defaultMode": "synthetic_only",
+    "requiresHumanGate": false,
+    "blockedActions": [
+      "live payload execution",
+      "credential collection",
+      "public network scanning"
+    ]
+  },
+  "ctiRefs": ["intel-feed-synthetic-ai-tools"],
+  "atomicTestRefs": ["atomic-synthetic-tool-poisoning"],
+  "expectedTelemetry": [
+    {
+      "source": "scope-d.synthetic",
+      "eventName": "MCPToolManifestRiskObserved"
+    }
+  ],
+  "successCriteria": [
+    "Synthetic tool poisoning event is generated",
+    "Countermeasure rule links to the expected finding",
+    "No live execution mode is enabled"
+  ]
+}
