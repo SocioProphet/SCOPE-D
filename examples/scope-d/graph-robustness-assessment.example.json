@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "graph-robustness-identity-lab",
+  "graph": {
+    "graphType": "identity_graph",
+    "sourceRef": "synthetic-identity-graph-v1",
+    "nodeCount": 12,
+    "edgeCount": 19,
+    "builtAt": "2026-05-04T20:00:00Z"
+  },
+  "perturbationModel": {
+    "type": "edge_injection",
+    "budget": 2,
+    "syntheticOnly": true
+  },
+  "robustnessScore": 0.82,
+  "confidenceImpact": "medium",
+  "affectedDecisions": [
+    "privilege-escalation-path-ranking"
+  ],
+  "recommendedHardeningControls": [
+    "Require provenance on every trust edge.",
+    "Down-rank memory-derived edges without current evidence."
+  ],
+  "evidenceRefs": [
+    "ev-graph-edge-injection-001"
+  ]
+}
