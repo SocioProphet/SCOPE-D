@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "intel-feed-synthetic-ai-tools",
+  "name": "Synthetic AI Tool Abuse Indicators",
+  "sourceType": "synthetic_lab",
+  "marking": {
+    "tlp": "clear",
+    "pap": "white"
+  },
+  "confidence": "medium",
+  "decayPolicy": {
+    "ttlDays": 30,
+    "refreshRequired": true
+  },
+  "indicators": [
+    {
+      "id": "indicator-tool-name-example",
+      "indicatorType": "tool_name",
+      "value": "synthetic_unbounded_shell_tool",
+      "firstSeen": "2026-05-04T20:00:00Z",
+      "lastSeen": "2026-05-04T20:00:00Z",
+      "confidence": "medium",
+      "sourceRefs": [
+        "synthetic-lab"
+      ],
+      "enrichment": {
+        "risk": "excessive command capability"
+      }
+    }
+  ]
+}
