@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-threat-intel-feed.schema.json",
+  "title": "SCOPE-D Threat Intel Feed",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "sourceType", "marking", "confidence", "indicators"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^intel-feed-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string" },
+    "sourceType": { "type": "string", "enum": ["cif", "honeypot", "manual", "osint", "commercial", "internal_sensor", "synthetic_lab"] },
+    "marking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tlp", "pap"],
+      "properties": {
+        "tlp": { "type": "string", "enum": ["clear", "green", "amber", "amber+strict", "red"] },
+        "pap": { "type": "string", "enum": ["white", "green", "amber", "red"] }
+      }
+    },
+    "confidence": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+    "decayPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ttlDays": { "type": "number", "minimum": 0 },
+        "refreshRequired": { "type": "boolean" }
+      }
+    },
+    "indicators": { "type": "array", "items": { "$ref": "#/$defs/indicatorRecord" } }
+  },
+  "$defs": {
+    "indicatorRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "indicatorType", "value", "firstSeen", "confidence"],
+      "properties": {
+        "id": { "type": "string" },
+        "indicatorType": { "type": "string", "enum": ["ip", "domain", "url", "hash", "email", "arn", "user_agent", "mutex", "registry_key", "file_path", "process", "attack_technique", "tool_name"] },
+        "value": { "type": "string" },
+        "firstSeen": { "type": "string", "format": "date-time" },
+        "lastSeen": { "type": "string", "format": "date-time" },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+        "sourceRefs": { "type": "array", "items": { "type": "string" } },
+        "enrichment": { "type": "object" }
+      }
+    }
+  }
+}
