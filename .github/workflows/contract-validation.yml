@@ -29,6 +29,12 @@ jobs:
       - name: Validate contracts
         run: npm test
 
+      - name: Smoke test standalone synthetic event generator
+        run: npm run synthetic:event -- examples/scope-d/atomic-testcase.example.json runs/ci-standalone/events.jsonl
+
+      - name: Verify standalone synthetic event exists
+        run: test -f runs/ci-standalone/events.jsonl
+
       - name: Smoke test safe run initializer
         run: npm run scope-d:init -- --run-id scope-d-ci-synthetic-lab --target ci-synthetic-lab
 
