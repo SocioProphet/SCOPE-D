@@ -28,3 +28,9 @@ jobs:
 
       - name: Validate contracts
         run: npm test
+
+      - name: Smoke test safe run initializer
+        run: npm run scope-d:init -- --run-id scope-d-ci-synthetic-lab --target ci-synthetic-lab
+
+      - name: Verify generated receipt exists
+        run: test -f runs/scope-d-ci-synthetic-lab/receipt.json
