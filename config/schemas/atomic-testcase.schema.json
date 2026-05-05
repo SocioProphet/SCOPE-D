@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-atomic-testcase.schema.json",
+  "title": "SCOPE-D Atomic Test Case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "frameworkMappings", "targetSurface", "safety", "executor", "expectedTelemetry", "expectedDetections", "cleanup", "rollback"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^atomic-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "frameworkMappings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mitreAttack"],
+      "properties": {
+        "mitreAttack": { "type": "array", "items": { "type": "string", "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$" } },
+        "mitreAtlas": { "type": "array", "items": { "type": "string" } },
+        "owaspLLMTop10": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "targetSurface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surfaceType", "identifier"],
+      "properties": {
+        "surfaceType": { "type": "string", "enum": ["aws", "github", "kubernetes", "local_host", "ai_runtime", "mcp_server", "agent_skill", "synthetic_lab"] },
+        "identifier": { "type": "string" },
+        "environment": { "type": "string", "enum": ["lab", "dev", "staging", "production", "customer", "unknown"] }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["safetyClass", "requiresHumanGate", "blockedInProduction", "allowedModes"],
+      "properties": {
+        "safetyClass": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "live_safe", "live_gated", "blocked"] },
+        "requiresHumanGate": { "type": "boolean" },
+        "blockedInProduction": { "type": "boolean" },
+        "allowedModes": { "type": "array", "items": { "type": "string", "enum": ["synthetic_event", "dry_run", "read_only_probe", "live_execution"] } }
+      }
+    },
+    "prerequisites": { "type": "array", "items": { "type": "string" } },
+    "executor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": { "type": "string", "enum": ["synthetic_event", "shell", "python", "node", "manual", "none"] },
+        "command": { "type": ["string", "null"] },
+        "scriptRef": { "type": ["string", "null"] }
+      }
+    },
+    "expectedTelemetry": { "type": "array", "items": { "type": "object" } },
+    "expectedDetections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["ruleRef", "shouldAlert"],
+        "properties": {
+          "ruleRef": { "type": "string" },
+          "shouldAlert": { "type": "boolean" },
+          "maximumLatencySeconds": { "type": "number", "minimum": 0 }
+        }
+      }
+    },
+    "cleanup": { "type": "object", "additionalProperties": false, "required": ["required", "steps"], "properties": { "required": { "type": "boolean" }, "steps": { "type": "array", "items": { "type": "string" } } } },
+    "rollback": { "type": "object", "additionalProperties": false, "required": ["required", "steps"], "properties": { "required": { "type": "boolean" }, "steps": { "type": "array", "items": { "type": "string" } } } }
+  }
+}
