@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "countermeasure-mcp-tool-boundary",
+  "name": "Require explicit capability scopes for MCP tools",
+  "ruleType": "sourceos_policy",
+  "status": "experimental",
+  "severity": "medium",
+  "sourceFindingRefs": ["finding-mcp-tool-boundary-001"],
+  "frameworkMappings": {
+    "mitreAttack": ["T1059"],
+    "mitreAtlas": ["AML.T0051"],
+    "owaspLLMTop10": ["LLM01"]
+  },
+  "ruleText": "deny tool invocation unless capability token grants explicit command and resource scope",
+  "expectedEffect": "Prevents ambiguous or overbroad tool execution.",
+  "falsePositiveRisk": "medium",
+  "validationTestRefs": ["atomic-synthetic-tool-poisoning"],
+  "deploymentGate": {
+    "required": true,
+    "gateType": "human_and_policy_engine"
+  },
+  "rollbackPlan": {
+    "required": true,
+    "steps": ["Remove policy from lab target", "Restore previous capability profile"]
+  },
+  "owner": "SocioProphet",
+  "reviewedAt": "2026-05-04T20:00:00Z"
+}
