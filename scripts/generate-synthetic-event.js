@@ -3,10 +3,13 @@
 
 const fs = require('fs');
 const path = require('path');
+const Ajv = require('ajv/dist/2020');
+const addFormats = require('ajv-formats');
 
 const ROOT = path.resolve(__dirname, '..');
 const DEFAULT_ATOMIC = 'examples/scope-d/atomic-testcase.example.json';
 const DEFAULT_OUT = 'runs/synthetic-lab/events.jsonl';
+const SYNTHETIC_EVENT_SCHEMA = 'config/schemas/synthetic-event.schema.json';
 
 function readJson(relPath) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, relPath), 'utf8'));
@@ -25,6 +28,18 @@ function ensureSafeAtomic(atomic, sourcePath) {
   if (errors.length > 0) {
     console.error(`Refusing to generate event from unsafe atomic testcase ${sourcePath}:`);
     for (const err of errors) console.error(`  - ${err}`);
+    process.exit(1);
+  }
+}
+
+function validateSyntheticEvent(event) {
+  const ajv = new Ajv({ allErrors: true, strict: false });
+  addFormats(ajv);
+  const schema = readJson(SYNTHETIC_EVENT_SCHEMA);
+  const validate = ajv.compile(schema);
+  if (!validate(event)) {
+    const details = (validate.errors || []).map((err) => `${err.instancePath || '/'} ${err.message}`).join('; ');
+    console.error(`Refusing to write invalid synthetic event: ${details}`);
     process.exit(1);
   }
 }
@@ -55,6 +70,8 @@ function main() {
     },
     expectedDetections: atomic.expectedDetections || []
   };
+
+  validateSyntheticEvent(event);
 
   const outAbs = path.join(ROOT, outPath);
   fs.mkdirSync(path.dirname(outAbs), { recursive: true });
