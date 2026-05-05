@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-mcp-tool-risk.schema.json",
+  "title": "SCOPE-D MCP Tool Risk",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "serverRef", "toolName", "riskCategory", "severity", "confidence", "evidence", "recommendedBoundary"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^mcp-risk-[a-z0-9][a-z0-9._:-]*$" },
+    "serverRef": { "type": "string" },
+    "toolName": { "type": "string" },
+    "riskCategory": { "type": "string", "enum": ["overbroad_tool", "unsafe_arguments", "hidden_instruction_channel", "credential_exposure", "network_exposure", "filesystem_exposure", "command_execution", "ambiguous_description", "missing_auth", "tool_poisoning"] },
+    "severity": { "type": "string", "enum": ["critical", "high", "medium", "low", "informational"] },
+    "confidence": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+    "evidence": { "type": ["object", "array", "string", "number", "boolean", "null"] },
+    "recommendedBoundary": { "type": "string" },
+    "policyGateRequired": { "type": "boolean" },
+    "countermeasureRefs": { "type": "array", "items": { "type": "string" } }
+  }
+}
