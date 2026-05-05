@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "pte-scope-d-ai-infra-lab",
+  "name": "SCOPE-D AI Infrastructure Lab Exercise",
+  "description": "Synthetic exercise for validating AI infrastructure assessment and detection coverage.",
+  "exerciseType": "synthetic_lab",
+  "status": "planned",
+  "scope": {
+    "targetSurfaces": [
+      "local-dev-mcp",
+      "synthetic-agent-skill"
+    ],
+    "environment": "lab",
+    "outOfScope": [
+      "production systems",
+      "third-party services",
+      "live exploit payloads"
+    ]
+  },
+  "roles": [
+    {
+      "role": "exercise_director",
+      "owner": "SocioProphet"
+    },
+    {
+      "role": "detection_engineer",
+      "owner": "SocioProphet"
+    }
+  ],
+  "objectives": [
+    "Validate AI/MCP risk evidence envelopes",
+    "Validate detection countermeasure packaging",
+    "Validate operator gates before any live action"
+  ],
+  "rulesOfEngagement": [
+    "Synthetic events only",
+    "No live exploit execution",
+    "No secrets collection",
+    "No public-network scanning"
+  ],
+  "ctiRefs": [
+    "intel-feed-synthetic-ai-tools"
+  ],
+  "emulationPlanRefs": [
+    "emulation-synthetic-tool-poisoning"
+  ],
+  "atomicTestRefs": [
+    "atomic-synthetic-tool-poisoning"
+  ],
+  "metrics": {
+    "detectionCoverage": 0.75,
+    "meanTimeToDetect": null,
+    "meanTimeToTriage": null,
+    "notes": "Baseline before live lab expansion"
+  },
+  "lessonsLearned": []
+}
