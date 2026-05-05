@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "0.1.0",
+  "runId": "scope-d-example-run",
+  "loopType": "ai_infra_assessment",
+  "targetSurface": {
+    "surfaceType": "mcp_server",
+    "identifier": "local-dev-mcp",
+    "tenantScope": "lab",
+    "environment": "lab"
+  },
+  "status": "completed",
+  "safetyMode": "read_only",
+  "riskScore": "medium",
+  "startedAt": "2026-05-04T20:00:00Z",
+  "completedAt": "2026-05-04T20:05:00Z",
+  "gates": [
+    {
+      "id": "gate-credential-check",
+      "gateType": "credential_check",
+      "decision": "auto_continue",
+      "requiredActor": "system",
+      "actualActor": "scope-d-validator",
+      "reason": "Local lab target only",
+      "timestamp": "2026-05-04T20:00:10Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-local-mcp-001",
+      "collector": "ai-infra-fingerprint",
+      "surface": "mcp_server",
+      "resourceType": "server_manifest",
+      "resourceId": "local-dev-mcp",
+      "observedAt": "2026-05-04T20:01:00Z",
+      "claimLevel": "guaranteed",
+      "redactionState": "synthetic",
+      "tenantScope": "lab",
+      "evidence": {
+        "unsafeToolCount": 1
+      },
+      "rawRef": "audit/example/raw/mcp-manifest.json"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact-report",
+      "artifactType": "report",
+      "path": "reports/example.md",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "controls": [
+    {
+      "id": "countermeasure-mcp-tool-boundary",
+      "ruleType": "sourceos_policy",
+      "status": "experimental",
+      "severity": "medium",
+      "sourceFindingRefs": [
+        "ev-local-mcp-001"
+      ],
+      "ruleText": "deny tool invocation unless capability token grants explicit command scope",
+      "expectedEffect": "Prevents ambiguous or overbroad tool execution",
+      "falsePositiveRisk": "medium"
+    }
+  ],
+  "attackGraph": {
+    "nodes": [],
+    "edges": [],
+    "paths": []
+  }
+}
