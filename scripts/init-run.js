@@ -12,6 +12,8 @@ const EXAMPLE_DIR = 'examples/scope-d';
 const SCHEMA_DIR = 'config/schemas';
 
 const CONTRACTS = {
+  targetManifest: ['target-manifest.schema.json', 'target-manifest.json'],
+  syntheticEvent: ['synthetic-event.schema.json', 'events.jsonl'],
   controlLoop: ['scope-d-control-loop.schema.json', 'control-loop.json'],
   safetyBoundary: ['safety-boundary.schema.json', 'safety-boundary.json'],
   receipt: ['run-receipt.schema.json', 'receipt.json'],
@@ -95,9 +97,14 @@ function ensureSafeAtomic(atomic) {
   if (errors.length > 0) throw new Error(`Unsafe atomic testcase:\n${errors.join('\n')}`);
 }
 
-function validateContract(schemaRel, value, label) {
+function createAjv() {
   const ajv = new Ajv({ allErrors: true, strict: false });
   addFormats(ajv);
+  return ajv;
+}
+
+function validateContract(schemaRel, value, label) {
+  const ajv = createAjv();
   const schema = readJson(path.join(SCHEMA_DIR, schemaRel));
   const validate = ajv.compile(schema);
   if (!validate(value)) {
@@ -208,6 +215,8 @@ function main() {
     attackGraph: { nodes: [], edges: [], paths: [] },
   };
 
+  validateContract(CONTRACTS.targetManifest[0], targetManifest, 'target-manifest.json');
+  validateContract(CONTRACTS.syntheticEvent[0], event, 'events.jsonl synthetic event');
   validateContract(CONTRACTS.safetyBoundary[0], safetyBoundary, 'safety-boundary.json');
   validateContract(CONTRACTS.controlLoop[0], controlLoop, 'control-loop.json');
 
