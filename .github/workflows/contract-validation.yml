@@ -43,3 +43,9 @@ jobs:
 
       - name: Verify generated run integrity
         run: npm run scope-d:verify-run -- runs/scope-d-ci-synthetic-lab
+
+      - name: Report verified generated run
+        run: npm run scope-d:report-run -- runs/scope-d-ci-synthetic-lab
+
+      - name: Verify generated summary exists
+        run: test -f runs/scope-d-ci-synthetic-lab/run-summary.json && test -f runs/scope-d-ci-synthetic-lab/run-summary.md
