@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "ai-assessment-local-mcp-lab",
+  "target": {
+    "surfaceType": "mcp_server",
+    "identifier": "local-dev-mcp",
+    "environment": "lab"
+  },
+  "assessmentMode": "read_only",
+  "findings": [
+    {
+      "id": "finding-mcp-tool-boundary-001",
+      "category": "mcp_risk",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": {
+        "tool": "synthetic_unbounded_shell_tool",
+        "issue": "tool description and argument schema do not constrain command scope"
+      },
+      "recommendedCountermeasure": "Require explicit capability token scopes per tool action.",
+      "policyGateRequired": true
+    }
+  ]
+}
