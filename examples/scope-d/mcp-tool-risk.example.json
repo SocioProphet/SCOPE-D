@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "mcp-risk-unbounded-shell-tool",
+  "serverRef": "local-dev-mcp",
+  "toolName": "synthetic_unbounded_shell_tool",
+  "riskCategory": "command_execution",
+  "severity": "medium",
+  "confidence": "high",
+  "evidence": {
+    "description": "Synthetic tool exposes command execution without explicit resource scope."
+  },
+  "recommendedBoundary": "Require per-command capability tokens and deny shell metacharacters by default.",
+  "policyGateRequired": true,
+  "countermeasureRefs": ["countermeasure-mcp-tool-boundary"]
+}
