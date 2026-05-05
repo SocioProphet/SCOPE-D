@@ -36,6 +36,14 @@ npm run scope-d:verify-run -- runs/<run-id>
 
 The verifier checks required artifacts, AJV schemas, JSONL synthetic events, receipt artifact hashes, and cross-file consistency. If any file is modified after receipt creation, receipt hash verification fails.
 
+Generate a verified run summary for SocioSphere / PolicyFabric handoff:
+
+```bash
+npm run scope-d:report-run -- runs/<run-id>
+```
+
+The reporter invokes the verifier first. It writes `run-summary.json` and `run-summary.md` only after verification succeeds. The JSON summary is validated against `run-summary.schema.json` and includes target metadata, safety posture, event/evidence/gate counts, receipt metadata, artifact hashes, and handoff readiness flags.
+
 Generate only a synthetic atomic observation from the safe example testcase:
 
 ```bash
@@ -55,6 +63,7 @@ SCOPE-D uses multiple safety layers:
 5. **Operator gates** — deployment, writes, credential access, and destructive actions require explicit gate decisions.
 6. **Runtime receipts** — every run emits hashable artifacts and a run receipt.
 7. **Receipt verification** — generated runs can be re-verified for schema correctness and tamper evidence.
+8. **Verified reporting** — run summaries are generated only from verified runs.
 
 ## Execution classes
 
@@ -93,7 +102,8 @@ Each meaningful SCOPE-D run should produce:
 - generated detections or controls, if any;
 - validation results;
 - report or dashboard artifact;
-- run receipt.
+- run receipt;
+- verified run summary when prepared for external handoff.
 
 ## Non-negotiables
 
