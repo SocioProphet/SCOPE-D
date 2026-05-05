@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-emulation-plan.schema.json",
+  "title": "SCOPE-D Emulation Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "threatProfile", "targetSurfaces", "safety", "atomicTestRefs", "successCriteria"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^emulation-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "threatProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "intent", "mappings"],
+      "properties": {
+        "name": { "type": "string" },
+        "intent": { "type": "string", "enum": ["detection_validation", "control_validation", "exercise", "regression", "research"] },
+        "mappings": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "mitreAttack": { "type": "array", "items": { "type": "string" } },
+            "mitreAtlas": { "type": "array", "items": { "type": "string" } },
+            "owaspLLMTop10": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "targetSurfaces": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["surfaceType", "identifier", "environment"],
+        "properties": {
+          "surfaceType": { "type": "string", "enum": ["aws", "github", "kubernetes", "local_host", "ai_runtime", "mcp_server", "agent_skill", "synthetic_lab"] },
+          "identifier": { "type": "string" },
+          "environment": { "type": "string", "enum": ["lab", "dev", "staging", "production", "customer", "unknown"] }
+        }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["defaultMode", "requiresHumanGate", "blockedActions"],
+      "properties": {
+        "defaultMode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"] },
+        "requiresHumanGate": { "type": "boolean" },
+        "blockedActions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "ctiRefs": { "type": "array", "items": { "type": "string" } },
+    "atomicTestRefs": { "type": "array", "items": { "type": "string" } },
+    "expectedTelemetry": { "type": "array", "items": { "type": "object" } },
+    "successCriteria": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+  }
+}
