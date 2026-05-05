@@ -1,0 +1,45 @@
+# SCOPE-D Schema Catalog
+
+SCOPE-D schemas define the machine-readable control surface for defensive purple-team work. Every schema should have a conforming example under `examples/scope-d/` and must pass `npm test`.
+
+## Contract families
+
+| Schema | Example | Purpose |
+|---|---|---|
+| `scope-d-control-loop.schema.json` | `control-loop.example.json` | Parent run object for governed evidence, gates, controls, artifacts, and attack graphs. |
+| `purple-team-exercise.schema.json` | `purple-team-exercise.example.json` | Exercise operating model: scope, roles, objectives, rules of engagement, metrics, and lessons learned. |
+| `emulation-plan.schema.json` | `emulation-plan.example.json` | Safe adversary-emulation plan tying CTI, target surfaces, atomic tests, expected telemetry, and success criteria together. |
+| `atomic-testcase.schema.json` | `atomic-testcase.example.json` | Reproducible validation step with ATT&CK/ATLAS mappings, safety class, executor, expected telemetry, detection expectations, cleanup, and rollback. |
+| `threat-intel-feed.schema.json` | `threat-intel-feed.example.json` | Threat-intel feed and indicator lifecycle with confidence, TLP/PAP, decay, and enrichment. |
+| `countermeasure-rule.schema.json` | `countermeasure-rule.example.json` | Detection-as-code and policy-as-code packaging with maturity state, deployment gate, rollback plan, and validation refs. |
+| `ai-infra-assessment.schema.json` | `ai-infra-assessment.example.json` | AI infrastructure assessment for model servers, MCP servers/tools, agent skills, memory/vector stores, and capability boundaries. |
+| `mcp-tool-risk.schema.json` | `mcp-tool-risk.example.json` | Focused MCP tool risk finding for overbroad tools, unsafe arguments, hidden instruction channels, and tool poisoning. |
+| `agent-skill-risk.schema.json` | `agent-skill-risk.example.json` | Agent skill risk finding for overbroad tools, memory leakage, unsafe shell/network/file access, and missing gates. |
+| `graph-robustness-assessment.schema.json` | `graph-robustness-assessment.example.json` | Graph-adversarial robustness assessment for attack, identity, trust, policy, memory, governance, dependency, and tool graphs. |
+| `run-receipt.schema.json` | `run-receipt.example.json` | Hashable run receipt summarizing artifacts, policy decisions, safety summary, and optional signature. |
+
+## Validation
+
+Run locally:
+
+```bash
+npm install
+npm test
+```
+
+The validator uses AJV draft 2020-12 validation and enforces additional SCOPE-D safety invariants for examples:
+
+- example atomic tests must be synthetic and blocked in production;
+- example AI assessments must not be live-gated;
+- example control loops must be read-only, synthetic-only, or dry-run;
+- example purple-team exercises must explicitly require synthetic safety and prohibit live exploit execution;
+- example emulation plans must default to synthetic-only and block credential collection and public-network scanning;
+- example receipts must record zero live actions.
+
+## Authoring discipline
+
+- Prefer explicit enums over unconstrained strings for safety-critical fields.
+- Set `additionalProperties: false` at top level and nested control objects.
+- Every new schema must include a conforming example.
+- Every example must be safe-by-default.
+- Live execution fields may exist in contracts, but examples must not enable them.
