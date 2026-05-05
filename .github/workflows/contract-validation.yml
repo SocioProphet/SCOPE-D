@@ -40,3 +40,6 @@ jobs:
 
       - name: Verify generated receipt exists
         run: test -f runs/scope-d-ci-synthetic-lab/receipt.json
+
+      - name: Verify generated run integrity
+        run: npm run scope-d:verify-run -- runs/scope-d-ci-synthetic-lab
