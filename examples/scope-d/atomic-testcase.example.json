@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "atomic-synthetic-tool-poisoning",
+  "name": "Synthetic MCP tool poisoning detection",
+  "description": "Injects a synthetic tool manifest with ambiguous instruction text into a lab parser.",
+  "frameworkMappings": {
+    "mitreAttack": [
+      "T1059"
+    ],
+    "mitreAtlas": [
+      "AML.T0051"
+    ],
+    "owaspLLMTop10": [
+      "LLM01"
+    ]
+  },
+  "targetSurface": {
+    "surfaceType": "synthetic_lab",
+    "identifier": "local-scope-d-lab",
+    "environment": "lab"
+  },
+  "safety": {
+    "safetyClass": "synthetic_only",
+    "requiresHumanGate": false,
+    "blockedInProduction": true,
+    "allowedModes": [
+      "synthetic_event",
+      "dry_run"
+    ]
+  },
+  "prerequisites": [],
+  "executor": {
+    "type": "synthetic_event",
+    "command": null,
+    "scriptRef": null
+  },
+  "expectedTelemetry": [
+    {
+      "source": "scope-d.synthetic",
+      "eventName": "MCPToolManifestRiskObserved",
+      "fields": {
+        "category": "tool_poisoning"
+      }
+    }
+  ],
+  "expectedDetections": [
+    {
+      "ruleRef": "countermeasure-mcp-tool-boundary",
+      "shouldAlert": true,
+      "maximumLatencySeconds": 300
+    }
+  ],
+  "cleanup": {
+    "required": false,
+    "steps": []
+  },
+  "rollback": {
+    "required": false,
+    "steps": []
+  }
+}
