@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-synthetic-event.schema.json",
+  "title": "SCOPE-D Synthetic Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "eventType", "generatedAt", "atomicTestId", "atomicTestName", "source", "eventName", "fields", "safety", "expectedDetections"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "eventType": { "type": "string", "const": "scope_d.synthetic_atomic_observation" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "atomicTestId": { "type": "string", "pattern": "^atomic-[a-z0-9][a-z0-9._:-]*$" },
+    "atomicTestName": { "type": "string", "minLength": 1 },
+    "source": { "type": "string", "minLength": 1 },
+    "eventName": { "type": "string", "minLength": 1 },
+    "fields": { "type": "object" },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "blockedInProduction", "liveExecution"],
+      "properties": {
+        "mode": { "type": "string", "const": "synthetic_event" },
+        "blockedInProduction": { "type": "boolean", "const": true },
+        "liveExecution": { "type": "boolean", "const": false }
+      }
+    },
+    "expectedDetections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["ruleRef", "shouldAlert"],
+        "properties": {
+          "ruleRef": { "type": "string" },
+          "shouldAlert": { "type": "boolean" },
+          "maximumLatencySeconds": { "type": "number", "minimum": 0 }
+        }
+      }
+    }
+  }
+}
