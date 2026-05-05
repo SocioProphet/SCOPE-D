@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-countermeasure-rule.schema.json",
+  "title": "SCOPE-D Countermeasure Rule",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "ruleType", "status", "severity", "sourceFindingRefs", "deploymentGate", "rollbackPlan"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^countermeasure-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "ruleType": { "type": "string", "enum": ["sigma", "spl", "yara", "snort", "suricata", "clamav", "osquery", "opa_rego", "kubernetes_policy", "github_policy", "sourceos_policy", "scp", "iam_policy"] },
+    "status": { "type": "string", "enum": ["production", "supplemental", "hunt_only", "experimental", "deprecated"] },
+    "severity": { "type": "string", "enum": ["critical", "high", "medium", "low", "informational"] },
+    "sourceFindingRefs": { "type": "array", "items": { "type": "string" } },
+    "frameworkMappings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mitreAttack": { "type": "array", "items": { "type": "string" } },
+        "mitreAtlas": { "type": "array", "items": { "type": "string" } },
+        "owaspLLMTop10": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "ruleText": { "type": "string" },
+    "expectedEffect": { "type": "string" },
+    "falsePositiveRisk": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+    "validationTestRefs": { "type": "array", "items": { "type": "string" } },
+    "deploymentGate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "gateType"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "gateType": { "type": "string", "enum": ["none", "human", "policy_engine", "human_and_policy_engine"] }
+      }
+    },
+    "rollbackPlan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "steps"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "steps": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "owner": { "type": "string" },
+    "reviewedAt": { "type": "string", "format": "date-time" }
+  }
+}
