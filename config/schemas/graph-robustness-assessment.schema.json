@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-graph-robustness-assessment.schema.json",
+  "title": "SCOPE-D Graph Robustness Assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "graph", "perturbationModel", "robustnessScore", "affectedDecisions"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^graph-robustness-[a-z0-9][a-z0-9._:-]*$" },
+    "graph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["graphType", "sourceRef", "nodeCount", "edgeCount", "builtAt"],
+      "properties": {
+        "graphType": { "type": "string", "enum": ["attack_graph", "identity_graph", "trust_graph", "policy_graph", "memory_graph", "governance_graph", "dependency_graph", "tool_graph"] },
+        "sourceRef": { "type": "string" },
+        "nodeCount": { "type": "integer", "minimum": 0 },
+        "edgeCount": { "type": "integer", "minimum": 0 },
+        "builtAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "perturbationModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "budget"],
+      "properties": {
+        "type": { "type": "string", "enum": ["node_injection", "edge_injection", "edge_deletion", "feature_poisoning", "label_poisoning", "backdoor_motif", "drift_simulation"] },
+        "budget": { "type": "number", "minimum": 0 },
+        "syntheticOnly": { "type": "boolean" }
+      }
+    },
+    "robustnessScore": { "type": "number", "minimum": 0, "maximum": 1 },
+    "confidenceImpact": { "type": "string", "enum": ["none", "low", "medium", "high", "critical", "unknown"] },
+    "affectedDecisions": { "type": "array", "items": { "type": "string" } },
+    "recommendedHardeningControls": { "type": "array", "items": { "type": "string" } },
+    "evidenceRefs": { "type": "array", "items": { "type": "string" } }
+  }
+}
