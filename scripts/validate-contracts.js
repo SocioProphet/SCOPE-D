@@ -26,6 +26,7 @@ const REQUIRED_PAIRS = [
 const RUNTIME_SCHEMAS = [
   'config/schemas/target-manifest.schema.json',
   'config/schemas/synthetic-event.schema.json',
+  'config/schemas/run-summary.schema.json',
 ];
 
 const errors = [];
