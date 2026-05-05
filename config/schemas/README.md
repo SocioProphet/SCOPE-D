@@ -25,6 +25,7 @@ SCOPE-D schemas define the machine-readable control surface for defensive purple
 |---|---|---|
 | `target-manifest.schema.json` | `npm run scope-d:init` | Records target surface, environment, creation timestamp, and safety-boundary reference for a generated run. |
 | `synthetic-event.schema.json` | `npm run synthetic:event`, `npm run scope-d:init` | Contract for safe JSONL synthetic observations generated from atomic testcases. |
+| `run-summary.schema.json` | `npm run scope-d:report-run` | Contract for verified run summaries suitable for SocioSphere and PolicyFabric handoff. |
 
 ## Validation
 
@@ -45,7 +46,7 @@ The validator uses AJV draft 2020-12 validation and enforces additional SCOPE-D 
 - example receipts must record zero live actions;
 - example safety boundaries must prohibit secret collection, public scanning, and egress, and must require memory redaction.
 
-The validator also checks runtime-only schema shape for `target-manifest.schema.json` and `synthetic-event.schema.json`. Generated runtime artifacts are validated by the generator scripts before they are written.
+The validator also checks runtime-only schema shape for `target-manifest.schema.json`, `synthetic-event.schema.json`, and `run-summary.schema.json`. Generated runtime artifacts are validated by the generator scripts before they are written.
 
 ## Authoring discipline
 
@@ -54,4 +55,4 @@ The validator also checks runtime-only schema shape for `target-manifest.schema.
 - Every new reusable schema should include a conforming example unless it is runtime-only.
 - Every example must be safe-by-default.
 - Live execution fields may exist in contracts, but examples must not enable them.
-- Generated artifacts must be validated before receipt creation.
+- Generated artifacts must be validated before receipt creation or handoff.
