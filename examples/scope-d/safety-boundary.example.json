@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "safety-boundary-synthetic-lab",
+  "name": "SCOPE-D Synthetic Lab Boundary",
+  "surface": {
+    "surfaceType": "synthetic_lab",
+    "identifier": "local-scope-d-lab",
+    "environment": "lab"
+  },
+  "defaultMode": "synthetic_only",
+  "credentialBoundary": {
+    "mode": "none",
+    "allowedCredentialTypes": ["none"],
+    "secretCollectionAllowed": false
+  },
+  "commandBoundary": {
+    "shellAllowed": false,
+    "blockedPatterns": [
+      "cloud_resource_mutation",
+      "infrastructure_deployment",
+      "identity_or_policy_mutation",
+      "public_network_probe",
+      "secret_or_token_collection"
+    ],
+    "approvalRequiredPatterns": [
+      "network_call",
+      "write",
+      "deployment"
+    ]
+  },
+  "networkBoundary": {
+    "egressMode": "none",
+    "allowlist": [],
+    "publicScanningAllowed": false
+  },
+  "memoryBoundary": {
+    "persistenceMode": "session_only",
+    "tenantScoped": true,
+    "redactionRequired": true
+  },
+  "approvalRules": [
+    {
+      "actionClass": "read",
+      "requiredGate": "none"
+    },
+    {
+      "actionClass": "synthetic_event",
+      "requiredGate": "none"
+    },
+    {
+      "actionClass": "write",
+      "requiredGate": "human_and_policy_engine"
+    },
+    {
+      "actionClass": "destructive_action",
+      "requiredGate": "blocked"
+    },
+    {
+      "actionClass": "credential_access",
+      "requiredGate": "blocked"
+    }
+  ],
+  "auditSink": {
+    "path": "runs/synthetic-lab/events.jsonl",
+    "format": "jsonl"
+  }
+}
