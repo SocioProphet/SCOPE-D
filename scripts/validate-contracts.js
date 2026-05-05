@@ -23,6 +23,11 @@ const REQUIRED_PAIRS = [
   ['config/schemas/safety-boundary.schema.json', 'examples/scope-d/safety-boundary.example.json'],
 ];
 
+const RUNTIME_SCHEMAS = [
+  'config/schemas/target-manifest.schema.json',
+  'config/schemas/synthetic-event.schema.json',
+];
+
 const errors = [];
 
 function readJson(relPath) {
@@ -128,6 +133,10 @@ for (const file of [...walkJsonFiles('config/schemas'), ...walkJsonFiles('exampl
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
 
+for (const schemaPath of RUNTIME_SCHEMAS) {
+  validateSchemaShape(schemaPath, readJson(schemaPath));
+}
+
 for (const [schemaPath, examplePath] of REQUIRED_PAIRS) {
   const schema = readJson(schemaPath);
   const example = readJson(examplePath);
@@ -155,4 +164,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`SCOPE-D contract validation passed (${REQUIRED_PAIRS.length} AJV schema/example pairs).`);
+console.log(`SCOPE-D contract validation passed (${REQUIRED_PAIRS.length} AJV schema/example pairs, ${RUNTIME_SCHEMAS.length} runtime schemas).`);
