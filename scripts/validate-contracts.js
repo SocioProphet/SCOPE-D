@@ -20,6 +20,7 @@ const REQUIRED_PAIRS = [
   ['config/schemas/mcp-tool-risk.schema.json', 'examples/scope-d/mcp-tool-risk.example.json'],
   ['config/schemas/agent-skill-risk.schema.json', 'examples/scope-d/agent-skill-risk.example.json'],
   ['config/schemas/run-receipt.schema.json', 'examples/scope-d/run-receipt.example.json'],
+  ['config/schemas/safety-boundary.schema.json', 'examples/scope-d/safety-boundary.example.json'],
 ];
 
 const errors = [];
@@ -86,6 +87,14 @@ function validateSafetyInvariants(examplePath, example) {
 
   if (examplePath.includes('run-receipt')) {
     assert(example.safetySummary && example.safetySummary.liveActionsExecuted === 0, `${examplePath}: example receipt must record zero live actions`);
+  }
+
+  if (examplePath.includes('safety-boundary')) {
+    assert(example.defaultMode === 'synthetic_only', `${examplePath}: example boundary must default to synthetic_only`);
+    assert(example.credentialBoundary && example.credentialBoundary.secretCollectionAllowed === false, `${examplePath}: example boundary must prohibit secret collection`);
+    assert(example.networkBoundary && example.networkBoundary.publicScanningAllowed === false, `${examplePath}: example boundary must prohibit public scanning`);
+    assert(example.networkBoundary && example.networkBoundary.egressMode === 'none', `${examplePath}: example boundary must set egressMode=none`);
+    assert(example.memoryBoundary && example.memoryBoundary.redactionRequired === true, `${examplePath}: example boundary must require redaction`);
   }
 }
 
