@@ -3,6 +3,8 @@
 
 const fs = require('fs');
 const path = require('path');
+const Ajv = require('ajv/dist/2020');
+const addFormats = require('ajv-formats');
 
 const ROOT = path.resolve(__dirname, '..');
 
@@ -13,6 +15,11 @@ const REQUIRED_PAIRS = [
   ['config/schemas/threat-intel-feed.schema.json', 'examples/scope-d/threat-intel-feed.example.json'],
   ['config/schemas/ai-infra-assessment.schema.json', 'examples/scope-d/ai-infra-assessment.example.json'],
   ['config/schemas/graph-robustness-assessment.schema.json', 'examples/scope-d/graph-robustness-assessment.example.json'],
+  ['config/schemas/emulation-plan.schema.json', 'examples/scope-d/emulation-plan.example.json'],
+  ['config/schemas/countermeasure-rule.schema.json', 'examples/scope-d/countermeasure-rule.example.json'],
+  ['config/schemas/mcp-tool-risk.schema.json', 'examples/scope-d/mcp-tool-risk.example.json'],
+  ['config/schemas/agent-skill-risk.schema.json', 'examples/scope-d/agent-skill-risk.example.json'],
+  ['config/schemas/run-receipt.schema.json', 'examples/scope-d/run-receipt.example.json'],
 ];
 
 const errors = [];
@@ -31,10 +38,6 @@ function readJson(relPath) {
   }
 }
 
-function hasOwn(obj, key) {
-  return Object.prototype.hasOwnProperty.call(obj, key);
-}
-
 function assert(condition, message) {
   if (!condition) errors.push(message);
 }
@@ -47,13 +50,6 @@ function validateSchemaShape(schemaPath, schema) {
   assert(schema.additionalProperties === false, `${schemaPath}: top-level additionalProperties must be false`);
   assert(Array.isArray(schema.required) && schema.required.length > 0, `${schemaPath}: required[] must be non-empty`);
   assert(schema.properties && typeof schema.properties === 'object', `${schemaPath}: properties object required`);
-}
-
-function validateRequiredFields(schemaPath, examplePath, schema, example) {
-  if (!schema || !example || !Array.isArray(schema.required)) return;
-  for (const field of schema.required) {
-    assert(hasOwn(example, field), `${examplePath}: missing required top-level field '${field}' from ${schemaPath}`);
-  }
 }
 
 function validateSafetyInvariants(examplePath, example) {
@@ -80,6 +76,17 @@ function validateSafetyInvariants(examplePath, example) {
     assert(roe.includes('synthetic'), `${examplePath}: rulesOfEngagement should explicitly mention synthetic safety`);
     assert(roe.includes('no live exploit'), `${examplePath}: rulesOfEngagement should explicitly prohibit live exploit execution`);
   }
+
+  if (examplePath.includes('emulation-plan')) {
+    assert(example.safety && example.safety.defaultMode === 'synthetic_only', `${examplePath}: example emulation plan must default to synthetic_only`);
+    const blocked = ((example.safety && example.safety.blockedActions) || []).join('\n').toLowerCase();
+    assert(blocked.includes('credential'), `${examplePath}: emulation plan must block credential collection`);
+    assert(blocked.includes('public network'), `${examplePath}: emulation plan must block public network scanning`);
+  }
+
+  if (examplePath.includes('run-receipt')) {
+    assert(example.safetySummary && example.safetySummary.liveActionsExecuted === 0, `${examplePath}: example receipt must record zero live actions`);
+  }
 }
 
 function walkJsonFiles(relDir) {
@@ -98,15 +105,38 @@ function walkJsonFiles(relDir) {
   return out.sort();
 }
 
+function formatAjvErrors(validate) {
+  return (validate.errors || []).map((err) => {
+    const loc = err.instancePath || '/';
+    return `${loc} ${err.message}`;
+  }).join('; ');
+}
+
 for (const file of [...walkJsonFiles('config/schemas'), ...walkJsonFiles('examples')]) {
   readJson(file);
 }
+
+const ajv = new Ajv({ allErrors: true, strict: false });
+addFormats(ajv);
 
 for (const [schemaPath, examplePath] of REQUIRED_PAIRS) {
   const schema = readJson(schemaPath);
   const example = readJson(examplePath);
   validateSchemaShape(schemaPath, schema);
-  validateRequiredFields(schemaPath, examplePath, schema, example);
+  if (!schema || !example) continue;
+
+  let validate;
+  try {
+    validate = ajv.compile(schema);
+  } catch (err) {
+    errors.push(`${schemaPath}: AJV failed to compile schema: ${err.message}`);
+    continue;
+  }
+
+  if (!validate(example)) {
+    errors.push(`${examplePath}: failed ${schemaPath}: ${formatAjvErrors(validate)}`);
+  }
+
   validateSafetyInvariants(examplePath, example);
 }
 
@@ -116,4 +146,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`SCOPE-D contract validation passed (${REQUIRED_PAIRS.length} schema/example pairs).`);
+console.log(`SCOPE-D contract validation passed (${REQUIRED_PAIRS.length} AJV schema/example pairs).`);
