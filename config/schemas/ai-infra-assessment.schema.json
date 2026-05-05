@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-ai-infra-assessment.schema.json",
+  "title": "SCOPE-D AI Infrastructure Assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "target", "assessmentMode", "findings"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^ai-assessment-[a-z0-9][a-z0-9._:-]*$" },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surfaceType", "identifier"],
+      "properties": {
+        "surfaceType": { "type": "string", "enum": ["model_server", "mcp_server", "mcp_tool", "agent_skill", "vector_store", "memory_store", "workflow_agent", "browser_agent", "desktop_agent"] },
+        "identifier": { "type": "string" },
+        "environment": { "type": "string", "enum": ["local", "lab", "dev", "staging", "production", "customer", "unknown"] }
+      }
+    },
+    "assessmentMode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "live_gated"] },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "category", "severity", "confidence", "evidence"],
+        "properties": {
+          "id": { "type": "string" },
+          "category": { "type": "string", "enum": ["fingerprint", "exposure", "mcp_risk", "skill_risk", "prompt_jailbreak", "tool_poisoning", "memory_boundary", "capability_boundary", "authn_authz", "network_binding"] },
+          "severity": { "type": "string", "enum": ["critical", "high", "medium", "low", "informational"] },
+          "confidence": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+          "evidence": { "type": ["object", "array", "string", "number", "boolean", "null"] },
+          "recommendedCountermeasure": { "type": "string" },
+          "policyGateRequired": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}
