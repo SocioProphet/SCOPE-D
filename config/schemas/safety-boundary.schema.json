@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-safety-boundary.schema.json",
+  "title": "SCOPE-D Safety Boundary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "surface",
+    "defaultMode",
+    "credentialBoundary",
+    "commandBoundary",
+    "networkBoundary",
+    "memoryBoundary",
+    "approvalRules",
+    "auditSink"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^safety-boundary-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surfaceType", "identifier", "environment"],
+      "properties": {
+        "surfaceType": { "type": "string", "enum": ["aws", "github", "kubernetes", "local_host", "ai_runtime", "mcp_server", "agent_skill", "graph", "synthetic_lab"] },
+        "identifier": { "type": "string" },
+        "environment": { "type": "string", "enum": ["local", "lab", "dev", "staging", "production", "customer", "unknown"] }
+      }
+    },
+    "defaultMode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"] },
+    "credentialBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "allowedCredentialTypes", "secretCollectionAllowed"],
+      "properties": {
+        "mode": { "type": "string", "enum": ["none", "read_only", "scoped_token", "break_glass"] },
+        "allowedCredentialTypes": { "type": "array", "items": { "type": "string", "enum": ["none", "profile", "oidc", "scoped_token", "read_only_key", "service_account"] } },
+        "secretCollectionAllowed": { "type": "boolean" }
+      }
+    },
+    "commandBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shellAllowed", "blockedPatterns", "approvalRequiredPatterns"],
+      "properties": {
+        "shellAllowed": { "type": "boolean" },
+        "blockedPatterns": { "type": "array", "items": { "type": "string" } },
+        "approvalRequiredPatterns": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "networkBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["egressMode", "publicScanningAllowed"],
+      "properties": {
+        "egressMode": { "type": "string", "enum": ["none", "metadata_only", "allowlist", "unrestricted"] },
+        "allowlist": { "type": "array", "items": { "type": "string" } },
+        "publicScanningAllowed": { "type": "boolean" }
+      }
+    },
+    "memoryBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["persistenceMode", "tenantScoped", "redactionRequired"],
+      "properties": {
+        "persistenceMode": { "type": "string", "enum": ["none", "session_only", "reviewed", "persistent"] },
+        "tenantScoped": { "type": "boolean" },
+        "redactionRequired": { "type": "boolean" }
+      }
+    },
+    "approvalRules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["actionClass", "requiredGate"],
+        "properties": {
+          "actionClass": { "type": "string", "enum": ["read", "synthetic_event", "dry_run", "network_call", "write", "deployment", "destructive_action", "credential_access", "memory_write"] },
+          "requiredGate": { "type": "string", "enum": ["none", "human", "policy_engine", "human_and_policy_engine", "blocked"] }
+        }
+      }
+    },
+    "auditSink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "format"],
+      "properties": {
+        "path": { "type": "string" },
+        "format": { "type": "string", "enum": ["jsonl", "json", "event_stream"] }
+      }
+    }
+  }
+}
