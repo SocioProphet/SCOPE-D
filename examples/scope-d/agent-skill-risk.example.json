@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "skill-risk-overbroad-tools",
+  "skillRef": "scope-d.synthetic.skill",
+  "runtime": "sourceos",
+  "riskCategory": "overbroad_tools",
+  "severity": "medium",
+  "confidence": "high",
+  "evidence": {
+    "allowedTools": ["shell", "filesystem", "network"],
+    "issue": "Synthetic skill declares broad tool access without gate metadata."
+  },
+  "recommendedControl": "Add explicit tool allowlist, safety mode, and deployment gate metadata.",
+  "policyGateRequired": true,
+  "countermeasureRefs": ["countermeasure-mcp-tool-boundary"]
+}
