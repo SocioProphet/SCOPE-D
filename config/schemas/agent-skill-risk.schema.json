@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-agent-skill-risk.schema.json",
+  "title": "SCOPE-D Agent Skill Risk",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "skillRef", "riskCategory", "severity", "confidence", "evidence", "recommendedControl"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^skill-risk-[a-z0-9][a-z0-9._:-]*$" },
+    "skillRef": { "type": "string" },
+    "runtime": { "type": "string", "enum": ["claude_code", "codex", "gemini_cli", "sourceos", "unknown"] },
+    "riskCategory": { "type": "string", "enum": ["overbroad_tools", "memory_leakage", "tenant_boundary", "unsafe_shell", "network_exposure", "prompt_injection", "hidden_instruction", "missing_approval_gate", "unsafe_file_access", "unsafe_dependency"] },
+    "severity": { "type": "string", "enum": ["critical", "high", "medium", "low", "informational"] },
+    "confidence": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+    "evidence": { "type": ["object", "array", "string", "number", "boolean", "null"] },
+    "recommendedControl": { "type": "string" },
+    "policyGateRequired": { "type": "boolean" },
+    "countermeasureRefs": { "type": "array", "items": { "type": "string" } }
+  }
+}
