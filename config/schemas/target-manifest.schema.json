@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-target-manifest.schema.json",
+  "title": "SCOPE-D Target Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "target", "createdAt", "safetyBoundaryRef", "notes"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surfaceType", "identifier", "environment"],
+      "properties": {
+        "surfaceType": { "type": "string", "enum": ["synthetic_lab"] },
+        "identifier": { "type": "string", "minLength": 1 },
+        "environment": { "type": "string", "enum": ["local", "lab", "dev", "staging", "unknown"] }
+      }
+    },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "safetyBoundaryRef": { "type": "string", "const": "safety-boundary.json" },
+    "notes": { "type": "string" }
+  }
+}
