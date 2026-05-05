@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "receipt-scope-d-example-run",
+  "runId": "scope-d-example-run",
+  "status": "completed",
+  "artifactHashes": [
+    {
+      "path": "reports/example.md",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "policyDecisions": ["gate-credential-check"],
+  "safetySummary": {
+    "mode": "read_only",
+    "liveActionsExecuted": 0,
+    "destructiveActionsBlocked": 0,
+    "notes": "Synthetic example receipt."
+  },
+  "issuedAt": "2026-05-04T20:05:00Z",
+  "signature": {
+    "algorithm": "none",
+    "keyId": "synthetic-example",
+    "value": "unsigned-example"
+  }
+}
