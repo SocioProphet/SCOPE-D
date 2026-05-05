@@ -11,7 +11,24 @@ npm install
 npm test
 ```
 
-Generate a synthetic atomic observation from the safe example testcase:
+Create a complete local synthetic run:
+
+```bash
+npm run scope-d:init
+```
+
+This creates `runs/<run-id>/` with:
+
+- `target-manifest.json`
+- `safety-boundary.json`
+- `events.jsonl`
+- `control-loop.json`
+- `report.md`
+- `receipt.json`
+
+The initializer refuses production/customer environments, supports only the `synthetic_lab` surface for now, performs no live actions, uses no credentials, performs no network egress, and validates generated control-loop, safety-boundary, and receipt artifacts before writing the final receipt.
+
+Generate only a synthetic atomic observation from the safe example testcase:
 
 ```bash
 npm run synthetic:event
