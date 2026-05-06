@@ -50,5 +50,11 @@ jobs:
       - name: Verify generated summary exists
         run: test -f runs/scope-d-ci-synthetic-lab/run-summary.json && test -f runs/scope-d-ci-synthetic-lab/run-summary.md
 
+      - name: Export verified run to Ontogenesis RDF
+        run: npm run scope-d:export-ontogenesis -- runs/scope-d-ci-synthetic-lab
+
+      - name: Verify Ontogenesis RDF export exists
+        run: test -f runs/scope-d-ci-synthetic-lab/ontogenesis.ttl
+
       - name: Prove tamper detection rejects modified artifacts
         run: npm run test:tamper
