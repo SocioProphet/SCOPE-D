@@ -44,6 +44,14 @@ npm run scope-d:report-run -- runs/<run-id>
 
 The reporter invokes the verifier first. It writes `run-summary.json` and `run-summary.md` only after verification succeeds. The JSON summary is validated against `run-summary.schema.json` and includes target metadata, safety posture, event/evidence/gate counts, receipt metadata, artifact hashes, and handoff readiness flags.
 
+Export a verified run into Ontogenesis-compatible RDF/Turtle:
+
+```bash
+npm run scope-d:export-ontogenesis -- runs/<run-id>
+```
+
+The exporter invokes the verified reporter first. It writes `ontogenesis.ttl` using the Ontogenesis `apt:` agentic-purple-team vocabulary and MITRE alignment hooks. This gives SocioSphere, PolicyFabric, and Ontogenesis a semantic handoff artifact for the run.
+
 Generate only a synthetic atomic observation from the safe example testcase:
 
 ```bash
@@ -64,6 +72,7 @@ SCOPE-D uses multiple safety layers:
 6. **Runtime receipts** — every run emits hashable artifacts and a run receipt.
 7. **Receipt verification** — generated runs can be re-verified for schema correctness and tamper evidence.
 8. **Verified reporting** — run summaries are generated only from verified runs.
+9. **Semantic export** — Ontogenesis RDF is generated only from verified run summaries.
 
 ## Execution classes
 
@@ -103,7 +112,8 @@ Each meaningful SCOPE-D run should produce:
 - validation results;
 - report or dashboard artifact;
 - run receipt;
-- verified run summary when prepared for external handoff.
+- verified run summary when prepared for external handoff;
+- Ontogenesis RDF export when prepared for semantic graph ingestion.
 
 ## Non-negotiables
 
