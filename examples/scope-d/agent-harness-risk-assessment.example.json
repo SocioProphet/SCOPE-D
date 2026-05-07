@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "v0.1",
+  "assessmentId": "agent-harness-risk-assessment-browser-terminal-v0.1",
+  "assessmentMode": "synthetic_only",
+  "target": {
+    "assetRef": "sourceos://tool-pack/browser-terminal-governed-surfaces",
+    "assetType": "browser-workflow",
+    "ownerRepo": "SourceOS-Linux/BearBrowser"
+  },
+  "riskLanes": ["browser", "terminal", "memory", "graph"],
+  "findings": [
+    {
+      "findingId": "finding-browser-form-submit-human-review",
+      "lane": "browser",
+      "severity": "medium",
+      "title": "Externally mutating browser actions require explicit human review.",
+      "evidenceRef": "github://SourceOS-Linux/BearBrowser/pull/22",
+      "recommendedControl": "Require BrowserActionGate and HumanControlEvent before live form-submit, upload, purchase/order, ticket creation, or message-send actions."
+    },
+    {
+      "findingId": "finding-terminal-host-mutation-gate",
+      "lane": "terminal",
+      "severity": "medium",
+      "title": "Host mutation must remain policy-gated and receipt-backed.",
+      "evidenceRef": "github://SourceOS-Linux/TurtleTerm/pull/5",
+      "recommendedControl": "Require TerminalActionGate, MutationReceipt, rollback reference, and operator approval for live host mutation."
+    }
+  ],
+  "safetyBoundary": {
+    "liveActionsExecuted": 0,
+    "syntheticOnly": true,
+    "credentialCollectionAllowed": false,
+    "publicNetworkScanningAllowed": false,
+    "destructiveActionsAllowed": false
+  },
+  "policyFabricRefs": ["github://SocioProphet/policy-fabric/pull/60"],
+  "agentplaneRefs": ["github://SocioProphet/agentplane/pull/107"],
+  "memoryMeshRefs": ["github://SocioProphet/memory-mesh/pull/23"],
+  "sourceosReceiptRefs": [
+    "github://SourceOS-Linux/sourceos-spec/pull/93",
+    "github://SourceOS-Linux/BearBrowser/pull/22",
+    "github://SourceOS-Linux/TurtleTerm/pull/5"
+  ],
+  "deliveryProjection": {
+    "metricFamily": "safety-security",
+    "riskScore": 62,
+    "scoreStatus": "yellow",
+    "deliveryMetricRefs": ["github://SocioProphet/delivery-excellence-automation/pull/7"]
+  }
+}
