@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d/blackarch-catalog.schema.json",
+  "title": "SCOPE-D BlackArch Catalog",
+  "description": "Top-level catalog emitted by the read-only BlackArch metadata miner. This catalog is metadata-only and does not authorize package installation, tool execution, live target interaction, or production use.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "kind",
+    "sourceCorpus",
+    "generatedAt",
+    "recordCount",
+    "records"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "kind": { "type": "string", "const": "ScopeDBlackArchCatalog" },
+    "sourceCorpus": { "type": "string", "const": "blackarch" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "sourceRoot": { "type": "string" },
+    "sourceCommit": { "type": "string" },
+    "recordCount": { "type": "integer", "minimum": 0 },
+    "records": {
+      "type": "array",
+      "items": { "$ref": "security-tool.schema.json" }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "runtimeAuthorization": { "type": "string", "const": "not_authorized" },
+        "productionAllowed": { "type": "boolean", "const": false },
+        "defaultMode": { "type": "string", "enum": ["catalog_only", "synthetic_only"] }
+      }
+    }
+  }
+}
