@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "0.1.0",
+  "catalogId": "reference-catalog-scope-d-v0",
+  "generatedFor": "SCOPE-D",
+  "references": [
+    {
+      "id": "ref-upstream-scope",
+      "name": "tayontech/SCOPE",
+      "url": "https://github.com/tayontech/SCOPE",
+      "category": "agentic_cloud_purple_team",
+      "adoptionMode": "pattern_extract",
+      "safetyClass": "safe_defensive",
+      "capabilityTargets": ["control_loop", "policy_gates", "run_receipts", "dashboard_handoff"],
+      "lessons": [
+        "Agent/subagent orchestration is a useful operating model for security loops.",
+        "File-based handoff reduces context contamination and makes evidence replayable.",
+        "Read-only default posture and artifact validation should be mandatory."
+      ],
+      "doNotImport": [
+        "Do not preserve upstream-only branding as the SCOPE-D product surface.",
+        "Do not rely on prompt-only control boundaries."
+      ],
+      "nextActions": [
+        "Map upstream audit/defend/hunt outputs into SCOPE-D ControlLoopRun and EvidenceEnvelope contracts.",
+        "Replace AWS-specific assumptions with provider-neutral target surfaces."
+      ]
+    },
+    {
+      "id": "ref-ptef",
+      "name": "SCYTHE Purple Team Exercise Framework",
+      "url": "https://github.com/scythe-io/purple-team-exercise-framework",
+      "category": "purple_team_methodology",
+      "adoptionMode": "contract_mapping",
+      "safetyClass": "safe_defensive",
+      "capabilityTargets": ["exercise_model", "policy_gates", "dashboard_handoff"],
+      "lessons": [
+        "Exercises need objectives, roles, scope, rules of engagement, metrics, and lessons learned.",
+        "Continuous purple teaming should become a regression loop, not an ad-hoc event."
+      ],
+      "doNotImport": ["Do not copy templates blindly; map them into SCOPE-D contracts."],
+      "nextActions": [
+        "Expand PurpleTeamExercise with maturity scoring and exercise phase tracking.",
+        "Generate exercise summaries from verified runs."
+      ]
+    },
+    {
+      "id": "ref-atomic-red-team",
+      "name": "Atomic Red Team",
+      "url": "https://github.com/redcanaryco/atomic-red-team",
+      "category": "atomic_validation",
+      "adoptionMode": "contract_mapping",
+      "safetyClass": "safe_defensive",
+      "capabilityTargets": ["atomic_tests", "synthetic_events", "countermeasure_packaging"],
+      "lessons": [
+        "Portable ATT&CK-mapped tests are the right regression primitive for detections.",
+        "Each test needs prerequisites, executor mode, expected telemetry, cleanup, and rollback metadata."
+      ],
+      "doNotImport": ["Do not enable live execution by default.", "Do not import tests that mutate systems without gates."],
+      "nextActions": [
+        "Add an AtomicTestCase import/mapping guide.",
+        "Add synthetic-only test fixtures for high-risk ATT&CK techniques."
+      ]
+    },
+    {
+      "id": "ref-greedybear",
+      "name": "GreedyBear",
+      "url": "https://github.com/GreedyBear-Project/GreedyBear",
+      "category": "threat_intel",
+      "adoptionMode": "pattern_extract",
+      "safetyClass": "safe_defensive",
+      "capabilityTargets": ["threat_intel_feeds", "countermeasure_packaging", "dashboard_handoff"],
+      "lessons": [
+        "Honeypot and sensor observations should become threat-intel feeds and detection candidates.",
+        "Observed hostile behavior should drive prevention and detection feeds."
+      ],
+      "doNotImport": ["Do not ingest untrusted feed data without TLP/PAP, confidence, and decay metadata."],
+      "nextActions": [
+        "Add honeypot/sensor feed adapter skeletons.",
+        "Map feed indicators into IndicatorRecord and CountermeasureRule contracts."
+      ]
+    },
+    {
+      "id": "ref-bearded-avenger",
+      "name": "CSIRT Gadgets Bearded Avenger / CIF lineage",
+      "url": "https://github.com/csirtgadgets/bearded-avenger",
+      "category": "threat_intel",
+      "adoptionMode": "pattern_extract",
+      "safetyClass": "safe_defensive",
+      "capabilityTargets": ["threat_intel_feeds", "dashboard_handoff"],
+      "lessons": [
+        "Threat intelligence needs ecosystem connectors and lifecycle semantics.",
+        "Feeds should support confidence, sharing markings, enrichment, and downstream integrations."
+      ],
+      "doNotImport": ["Do not clone legacy deployment assumptions; preserve only feed lifecycle and integration patterns."],
+      "nextActions": [
+        "Add CIF-style feed fields to threat-intel examples.",
+        "Create feed-to-detection work order examples."
+      ]
+    },
+    {
+      "id": "ref-mandiant-countermeasures",
+      "name": "Mandiant Red Team Tool Countermeasures",
+      "url": "https://github.com/mandiant/red_team_tool_countermeasures",
+      "category": "countermeasure_rules",
+      "adoptionMode": "pattern_extract",
+      "safetyClass": "safe_defensive",
+      "capabilityTargets": ["countermeasure_packaging", "policy_gates", "dashboard_handoff"],
+      "lessons": [
+        "Countermeasure rules need maturity states and tuning expectations.",
+        "Production rules and supplemental hunting rules should be distinguished."
+      ],
+      "doNotImport": ["Do not import rules without provenance, maturity, false-positive, and rollback metadata."],
+      "nextActions": [
+        "Add detection package examples for Sigma/SPL/YARA/OSQuery/OPA.",
+        "Add rule maturity dashboards to run-summary handoff."
+      ]
+    },
+    {
+      "id": "ref-ai-infra-guard",
+      "name": "AI-Infra-Guard",
+      "url": "https://github.com/TristanInSec/AI-Infra-Guard",
+      "category": "ai_infra_security",
+      "adoptionMode": "contract_mapping",
+      "safetyClass": "safe_defensive",
+      "capabilityTargets": ["ai_infra_assessment", "mcp_tool_risk", "agent_skill_risk", "synthetic_events"],
+      "lessons": [
+        "AI runtime, MCP, tool, skill, and jailbreak risk must be first-class surfaces.",
+        "Plugin-style fingerprints and risk rules are useful but need SourceOS safety gates."
+      ],
+      "doNotImport": ["Do not expose unauthenticated scanners or public-network scanning defaults.", "Do not run jailbreak/live risk tests against third-party services by default."],
+      "nextActions": [
+        "Add read-only AI runtime fingerprint fixtures.",
+        "Add MCP tool risk fixture corpus and synthetic detection events."
+      ]
+    },
+    {
+      "id": "ref-graph-adversarial-learning",
+      "name": "Awesome Graph Adversarial Learning",
+      "url": "https://github.com/EdisonLeeeee/Graph-Adversarial-Learning",
+      "category": "graph_robustness",
+      "adoptionMode": "pattern_extract",
+      "safetyClass": "research_only",
+      "capabilityTargets": ["graph_robustness", "dashboard_handoff"],
+      "lessons": [
+        "Attack, trust, policy, dependency, and memory graphs are adversarial surfaces.",
+        "Node injection, edge perturbation, backdoors, membership inference, and model extraction should be tracked."
+      ],
+      "doNotImport": ["Do not ship offensive graph attack tooling as a general capability."],
+      "nextActions": [
+        "Add synthetic graph robustness fixtures for identity and trust graphs.",
+        "Add robustness scoring to run-summary output."
+      ]
+    },
+    {
+      "id": "ref-deeprobust",
+      "name": "DeepRobust",
+      "url": "https://github.com/DSE-MSU/DeepRobust",
+      "category": "graph_robustness",
+      "adoptionMode": "pattern_extract",
+      "safetyClass": "research_only",
+      "capabilityTargets": ["graph_robustness", "ai_infra_assessment"],
+      "lessons": [
+        "Robustness evaluation should include attack and defense experiments, not just static assertions.",
+        "Graph robustness tests should stay synthetic/lab-scoped until policy gates approve more."
+      ],
+      "doNotImport": ["Do not vendor research attack code into runtime paths without isolation and review."],
+      "nextActions": [
+        "Create a lab-only graph perturbation harness.",
+        "Map robustness findings into GraphRobustnessAssessment and Ontogenesis apt terms."
+      ]
+    },
+    {
+      "id": "ref-bear-c2",
+      "name": "BEAR-C2",
+      "url": "https://github.com/S3N4T0R-0X0/BEAR",
+      "category": "adversary_emulation_taxonomy",
+      "adoptionMode": "taxonomy_only",
+      "safetyClass": "taxonomy_only",
+      "capabilityTargets": ["synthetic_events", "atomic_tests", "countermeasure_packaging"],
+      "lessons": [
+        "Adversary-emulation profiles need observable families, technique mappings, expected detections, and safety gates.",
+        "C2 and payload references are useful only as defensive telemetry and taxonomy seeds."
+      ],
+      "doNotImport": [
+        "Do not import payloads, stagers, C2 code, evasion logic, credential theft behavior, persistence behavior, or log tampering logic.",
+        "Do not create execution workflows for offensive payloads."
+      ],
+      "nextActions": [
+        "Create synthetic observable profiles for C2-like telemetry without payloads.",
+        "Map adversary-emulation taxonomy to detection rules and Ontogenesis techniques."
+      ]
+    },
+    {
+      "id": "ref-greedybear-recheck",
+      "name": "GreedyBear public feed pattern",
+      "url": "https://github.com/GreedyBear-Project/GreedyBear",
+      "category": "threat_intel",
+      "adoptionMode": "direct_reference",
+      "safetyClass": "safe_defensive",
+      "capabilityTargets": ["threat_intel_feeds", "synthetic_events"],
+      "lessons": [
+        "Public feed examples are useful for shaping feed output contracts.",
+        "Feed freshness and decay are core to preventing stale detections."
+      ],
+      "doNotImport": ["Do not hardcode any public feed as authoritative without confidence and decay metadata."],
+      "nextActions": [
+        "Add feed freshness fields to run summary handoff.",
+        "Add feed ingestion examples that remain synthetic by default."
+      ]
+    }
+  ]
+}
