@@ -1,0 +1,251 @@
+schemaVersion: 0.1.0
+kind: BlackArchCategoryCapabilityMap
+sourceCorpus: blackarch
+policy: "BlackArch is read-only source material. SCOPE-D consumes category and package metadata, not upstream runtime behavior. Unknown categories default to unknown_review_required and catalog_only."
+
+defaults:
+  safetyClass: unknown_review_required
+  executionMode: catalog_only
+  productionAllowed: false
+  wrapperRequired: true
+  requiredGates:
+    - human_operator_review
+
+categoryMappings:
+  blackarch:
+    capability: unknown
+    safetyClass: unknown_review_required
+    executionMode: catalog_only
+    rationale: Top-level umbrella group; classify concrete child categories instead.
+
+  blackarch-ai:
+    capability: ai_infra_assessment
+    safetyClass: lab_gated
+    executionMode: synthetic_only
+    requiredGates: [scope_approval, tool_authorization, human_operator_review]
+    rationale: AI security tooling intersects model, tool, memory, and agent-risk surfaces; start with synthetic assessment fixtures.
+
+  blackarch-automation:
+    capability: defensive_host_assessment
+    safetyClass: lab_gated
+    executionMode: read_only
+    requiredGates: [scope_approval, tool_authorization]
+    rationale: Automation tools are useful for repeatability but must not bypass policy gates.
+
+  blackarch-binary:
+    capability: reverse_engineering
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization, human_operator_review]
+    rationale: Binary tooling belongs in isolated analysis labs.
+
+  blackarch-code-audit:
+    capability: code_audit
+    safetyClass: allow_defensive
+    executionMode: read_only
+    requiredGates: [scope_approval]
+    rationale: High-value early lane for repository and supply-chain review.
+
+  blackarch-config:
+    capability: defensive_host_assessment
+    safetyClass: unknown_review_required
+    executionMode: catalog_only
+    requiredGates: [human_operator_review]
+    rationale: Configuration packages require manual review before any SourceOS profile reuse.
+
+  blackarch-crypto:
+    capability: code_audit
+    safetyClass: lab_gated
+    executionMode: read_only
+    requiredGates: [scope_approval, tool_authorization]
+    rationale: Useful for defensive crypto review, but package-level behavior varies.
+
+  blackarch-database:
+    capability: defensive_host_assessment
+    safetyClass: lab_gated
+    executionMode: read_only
+    requiredGates: [scope_approval, tool_authorization, network_authorization]
+    rationale: Database assessment must be scoped to owned or synthetic targets.
+
+  blackarch-debugger:
+    capability: reverse_engineering
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization]
+    rationale: Debugging tools are useful in controlled labs and package analysis.
+
+  blackarch-decompiler:
+    capability: reverse_engineering
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization]
+    rationale: Decompilation belongs in isolated evidence labs.
+
+  blackarch-defensive:
+    capability: defensive_host_assessment
+    safetyClass: allow_defensive
+    executionMode: read_only
+    requiredGates: [scope_approval]
+    rationale: Highest-priority candidate for SourceOS sec-core.
+
+  blackarch-disassembler:
+    capability: reverse_engineering
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization]
+    rationale: Disassembly belongs in isolated analysis labs.
+
+  blackarch-fingerprint:
+    capability: authorized_scanning
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization, network_authorization]
+    rationale: Fingerprinting must be restricted to scoped, owned, or synthetic targets.
+
+  blackarch-firmware:
+    capability: hardware_lab
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization, hardware_lab_authorization]
+    rationale: Firmware work requires artifact isolation and provenance tracking.
+
+  blackarch-forensic:
+    capability: forensic_analysis
+    safetyClass: allow_defensive
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval]
+    rationale: High-value defensive evidence lane; raw artifacts still require redaction handling.
+
+  blackarch-fuzzer:
+    capability: fuzz_validation
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization]
+    rationale: Fuzzing requires quotas, timeouts, crash isolation, and artifact receipts.
+
+  blackarch-hardware:
+    capability: hardware_lab
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, hardware_lab_authorization, human_operator_review]
+    rationale: Physical devices require explicit lab constraints.
+
+  blackarch-honeypot:
+    capability: defensive_host_assessment
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization, network_authorization]
+    rationale: Honeypot tooling is useful for defensive telemetry but must be isolated.
+
+  blackarch-ids:
+    capability: defensive_host_assessment
+    safetyClass: allow_defensive
+    executionMode: read_only
+    requiredGates: [scope_approval]
+    rationale: Detection and monitoring tooling is an early SourceOS sec-core candidate.
+
+  blackarch-mobile:
+    capability: mobile_lab
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization, hardware_lab_authorization]
+    rationale: Mobile work requires device ownership and lab boundaries.
+
+  blackarch-networking:
+    capability: network_analysis
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization, network_authorization]
+    rationale: Network tools require explicit target and interface scope.
+
+  blackarch-proxy:
+    capability: webapp_validation
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization, network_authorization]
+    rationale: Proxy tooling must be scoped to owned or synthetic traffic.
+
+  blackarch-recon:
+    capability: authorized_scanning
+    safetyClass: lab_gated
+    executionMode: synthetic_only
+    requiredGates: [scope_approval, tool_authorization, network_authorization]
+    rationale: Reconnaissance concepts are useful; live use requires strict target authorization.
+
+  blackarch-reversing:
+    capability: reverse_engineering
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization]
+    rationale: Reverse-engineering workflows belong in isolated labs.
+
+  blackarch-scanner:
+    capability: authorized_scanning
+    safetyClass: lab_gated
+    executionMode: synthetic_only
+    requiredGates: [scope_approval, tool_authorization, network_authorization]
+    rationale: Start with synthetic and owned-target fixtures before any live scans.
+
+  blackarch-sniffer:
+    capability: network_analysis
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization, network_authorization, raw_socket_authorization]
+    rationale: Packet capture requires interface and privacy boundaries.
+
+  blackarch-stego:
+    capability: forensic_analysis
+    safetyClass: lab_gated
+    executionMode: sandboxed_lab
+    requiredGates: [scope_approval, tool_authorization]
+    rationale: Useful for evidence analysis with synthetic or owned artifacts.
+
+  blackarch-threat-model:
+    capability: threat_modeling
+    safetyClass: allow_defensive
+    executionMode: read_only
+    requiredGates: [scope_approval]
+    rationale: Directly aligned with SCOPE-D planning and countermeasure design.
+
+  blackarch-webapp:
+    capability: webapp_validation
+    safetyClass: lab_gated
+    executionMode: synthetic_only
+    requiredGates: [scope_approval, tool_authorization, network_authorization]
+    rationale: Begin with synthetic webapp labs and owned targets only.
+
+  blackarch-wordlist:
+    capability: restricted_taxonomy
+    safetyClass: restricted_catalog_only
+    executionMode: catalog_only
+    requiredGates: [human_operator_review]
+    rationale: Useful for taxonomy and detection expectation context; not a default runtime asset.
+
+physicalDomainCategories:
+  - blackarch-automobile
+  - blackarch-bluetooth
+  - blackarch-drone
+  - blackarch-nfc
+  - blackarch-radio
+  - blackarch-voip
+  - blackarch-wireless
+
+restrictedCatalogOnlyCategories:
+  - blackarch-anti-forensic
+  - blackarch-backdoor
+  - blackarch-cracker
+  - blackarch-dos
+  - blackarch-exploitation
+  - blackarch-keylogger
+  - blackarch-malware
+  - blackarch-packer
+  - blackarch-social
+  - blackarch-spoof
+  - blackarch-tunnel
+  - blackarch-unpacker
+  - blackarch-windows
+
+notes:
+  - This map is deliberately conservative. Package-level classification may be stricter than category-level classification.
+  - Runtime wrappers are out of scope until schemas, fixtures, and policy gates are validated.
+  - Physical-domain and restricted categories are valuable for observables, mappings, and synthetic exercises before runtime use.
