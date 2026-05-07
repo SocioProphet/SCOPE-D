@@ -29,6 +29,12 @@ jobs:
       - name: Validate contracts
         run: npm test
 
+      - name: Regenerate reference work orders
+        run: npm run references:workorders
+
+      - name: Ensure reference work orders are current
+        run: git diff --exit-code references/work-orders.md
+
       - name: Smoke test standalone synthetic event generator
         run: npm run synthetic:event -- examples/scope-d/atomic-testcase.example.json runs/ci-standalone/events.jsonl
 
