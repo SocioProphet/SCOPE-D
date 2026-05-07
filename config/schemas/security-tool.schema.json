@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d/security-tool.schema.json",
+  "title": "SCOPE-D Security Tool",
+  "description": "Neutral catalog record for a security tool cannibalized from an upstream corpus such as BlackArch. This schema describes metadata, safety posture, provenance, mappings, and evidence expectations. It does not authorize execution.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "toolId",
+    "name",
+    "sourceCorpus",
+    "categories",
+    "provenance",
+    "safety",
+    "execution",
+    "evidence"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "toolId": { "type": "string", "pattern": "^tool-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "sourceCorpus": { "type": "string", "enum": ["blackarch", "custom", "unknown"] },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._:-]*$" },
+      "uniqueItems": true
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "defensive_host_assessment",
+          "code_audit",
+          "forensic_analysis",
+          "authorized_scanning",
+          "webapp_validation",
+          "network_analysis",
+          "reverse_engineering",
+          "fuzz_validation",
+          "wireless_lab",
+          "radio_lab",
+          "nfc_lab",
+          "bluetooth_lab",
+          "mobile_lab",
+          "hardware_lab",
+          "vehicle_security_lab",
+          "drone_security_lab",
+          "ai_infra_assessment",
+          "restricted_taxonomy",
+          "threat_modeling",
+          "unknown"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "provenance": { "$ref": "#/$defs/provenance" },
+    "package": { "$ref": "#/$defs/packageMetadata" },
+    "safety": { "$ref": "#/$defs/safetyClassification" },
+    "execution": { "$ref": "#/$defs/executionClassification" },
+    "mappings": { "$ref": "#/$defs/threatMappings" },
+    "evidence": { "$ref": "#/$defs/evidenceContract" },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceRef", "observedAt", "claimLevel"],
+      "properties": {
+        "sourceRef": { "type": "string", "minLength": 1 },
+        "upstreamUrl": { "type": "string" },
+        "packagePath": { "type": "string" },
+        "observedAt": { "type": "string", "format": "date-time" },
+        "sourceCommit": { "type": "string" },
+        "sourceSha256": { "type": "string" },
+        "claimLevel": { "type": "string", "enum": ["extracted", "inferred", "reviewed", "rejected"] }
+      }
+    },
+    "packageMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pkgname": { "type": "string" },
+        "pkgver": { "type": "string" },
+        "pkgrel": { "type": "string" },
+        "arch": { "type": "array", "items": { "type": "string" } },
+        "url": { "type": "string" },
+        "license": { "type": "array", "items": { "type": "string" } },
+        "depends": { "type": "array", "items": { "type": "string" } },
+        "makedepends": { "type": "array", "items": { "type": "string" } },
+        "optdepends": { "type": "array", "items": { "type": "string" } },
+        "source": { "type": "array", "items": { "type": "string" } },
+        "checksums": {
+          "type": "object",
+          "additionalProperties": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "safetyClassification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["safetyClass", "riskSignals", "reviewStatus"],
+      "properties": {
+        "safetyClass": {
+          "type": "string",
+          "enum": ["allow_defensive", "lab_gated", "restricted_catalog_only", "blocked_runtime", "unknown_review_required"]
+        },
+        "reviewStatus": { "type": "string", "enum": ["unreviewed", "machine_classified", "human_reviewed", "approved", "rejected"] },
+        "riskSignals": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "requiresNetwork",
+            "requiresRoot",
+            "requiresRawSocket",
+            "requiresCaptureDevice",
+            "mayMutateTarget",
+            "mayHandleSecrets",
+            "mayContactExternalServices",
+            "physicalDomain"
+          ],
+          "properties": {
+            "requiresNetwork": { "type": "boolean" },
+            "requiresRoot": { "type": "boolean" },
+            "requiresRawSocket": { "type": "boolean" },
+            "requiresCaptureDevice": { "type": "boolean" },
+            "mayMutateTarget": { "type": "boolean" },
+            "mayHandleSecrets": { "type": "boolean" },
+            "mayContactExternalServices": { "type": "boolean" },
+            "physicalDomain": { "type": "boolean" }
+          }
+        },
+        "rationale": { "type": "string" },
+        "requiredGates": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "scope_approval",
+              "tool_authorization",
+              "network_authorization",
+              "raw_socket_authorization",
+              "hardware_lab_authorization",
+              "physical_domain_authorization",
+              "secret_boundary_review",
+              "synthetic_only_enforcement",
+              "human_operator_review"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "executionClassification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["defaultMode", "allowedModes", "productionAllowed"],
+      "properties": {
+        "defaultMode": { "type": "string", "enum": ["catalog_only", "synthetic_only", "read_only", "sandboxed_lab", "blocked"] },
+        "allowedModes": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["catalog_only", "synthetic_only", "read_only", "sandboxed_lab", "blocked"] },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "sandboxProfileRef": { "type": "string" },
+        "wrapperRequired": { "type": "boolean" },
+        "productionAllowed": { "type": "boolean", "const": false }
+      }
+    },
+    "threatMappings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mitreAttack": { "type": "array", "items": { "type": "string" } },
+        "mitreAtlas": { "type": "array", "items": { "type": "string" } },
+        "d3fend": { "type": "array", "items": { "type": "string" } },
+        "cwe": { "type": "array", "items": { "type": "string" } },
+        "capec": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "evidenceContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expectedEvidenceTypes", "redactionRequired"],
+      "properties": {
+        "expectedEvidenceTypes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "metadata_only",
+              "synthetic_observable",
+              "scan_summary",
+              "finding_observable",
+              "detection_expectation",
+              "pcap_summary",
+              "file_metadata",
+              "hash_observable",
+              "process_observable",
+              "network_observable",
+              "policy_decision",
+              "run_receipt"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "redactionRequired": { "type": "boolean" },
+        "rawOutputAllowed": { "type": "boolean" },
+        "parserRef": { "type": "string" }
+      }
+    }
+  }
+}
