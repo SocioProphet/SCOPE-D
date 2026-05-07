@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d/agent-harness-risk-assessment.schema.json",
+  "title": "AgentHarnessRiskAssessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "assessmentId",
+    "assessmentMode",
+    "target",
+    "riskLanes",
+    "findings",
+    "safetyBoundary",
+    "deliveryProjection"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "v0.1" },
+    "assessmentId": { "type": "string" },
+    "assessmentMode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run"] },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["assetRef", "assetType", "ownerRepo"],
+      "properties": {
+        "assetRef": { "type": "string" },
+        "assetType": { "type": "string", "enum": ["skill", "mcp-server", "browser-workflow", "terminal-workflow", "memory-flow", "agent-graph", "evolution-patch"] },
+        "ownerRepo": { "type": "string" }
+      }
+    },
+    "riskLanes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["skill", "mcp", "browser", "terminal", "memory", "graph", "evolution-patch"]
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["findingId", "lane", "severity", "title", "evidenceRef", "recommendedControl"],
+        "properties": {
+          "findingId": { "type": "string" },
+          "lane": { "type": "string", "enum": ["skill", "mcp", "browser", "terminal", "memory", "graph", "evolution-patch"] },
+          "severity": { "type": "string", "enum": ["info", "low", "medium", "high", "critical"] },
+          "title": { "type": "string" },
+          "evidenceRef": { "type": "string" },
+          "recommendedControl": { "type": "string" }
+        }
+      }
+    },
+    "safetyBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["liveActionsExecuted", "syntheticOnly", "credentialCollectionAllowed", "publicNetworkScanningAllowed", "destructiveActionsAllowed"],
+      "properties": {
+        "liveActionsExecuted": { "type": "integer" },
+        "syntheticOnly": { "type": "boolean" },
+        "credentialCollectionAllowed": { "type": "boolean" },
+        "publicNetworkScanningAllowed": { "type": "boolean" },
+        "destructiveActionsAllowed": { "type": "boolean" }
+      }
+    },
+    "policyFabricRefs": { "type": "array", "items": { "type": "string" } },
+    "agentplaneRefs": { "type": "array", "items": { "type": "string" } },
+    "memoryMeshRefs": { "type": "array", "items": { "type": "string" } },
+    "sourceosReceiptRefs": { "type": "array", "items": { "type": "string" } },
+    "deliveryProjection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metricFamily", "riskScore", "scoreStatus", "deliveryMetricRefs"],
+      "properties": {
+        "metricFamily": { "const": "safety-security" },
+        "riskScore": { "type": "number" },
+        "scoreStatus": { "type": "string", "enum": ["green", "yellow", "red", "unknown"] },
+        "deliveryMetricRefs": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
