@@ -1,0 +1,72 @@
+name: BlackArch catalog validation
+
+on:
+  pull_request:
+    paths:
+      - "config/schemas/security-tool.schema.json"
+      - "config/schemas/blackarch-catalog.schema.json"
+      - "config/mappings/blackarch-category-capability-map.yaml"
+      - "tools/blackarch_readonly_miner.py"
+      - "tools/validate_blackarch_catalog.py"
+      - "examples/blackarch/**"
+      - ".github/workflows/blackarch-catalog-validation.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "config/schemas/security-tool.schema.json"
+      - "config/schemas/blackarch-catalog.schema.json"
+      - "config/mappings/blackarch-category-capability-map.yaml"
+      - "tools/blackarch_readonly_miner.py"
+      - "tools/validate_blackarch_catalog.py"
+      - "examples/blackarch/**"
+      - ".github/workflows/blackarch-catalog-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-blackarch-catalog:
+    name: Validate BlackArch catalog safety lane
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Syntax-check BlackArch miner and validator
+        run: |
+          python -m py_compile tools/blackarch_readonly_miner.py tools/validate_blackarch_catalog.py
+
+      - name: Validate checked-in smoke catalog
+        run: |
+          python tools/validate_blackarch_catalog.py examples/blackarch/blackarch-smoke-catalog.example.json
+
+      - name: Verify schema JSON parses
+        run: |
+          python -m json.tool config/schemas/security-tool.schema.json >/dev/null
+          python -m json.tool config/schemas/blackarch-catalog.schema.json >/dev/null
+
+      - name: Enforce no runtime authorization in examples
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          for path in Path('examples/blackarch').glob('*.json'):
+              catalog = json.loads(path.read_text())
+              policy = catalog.get('policy', {})
+              assert policy.get('runtimeAuthorization') == 'not_authorized', path
+              assert policy.get('productionAllowed') is False, path
+              for record in catalog.get('records', []):
+                  execution = record.get('execution', {})
+                  assert execution.get('productionAllowed') is False, (path, record.get('toolId'))
+                  assert execution.get('wrapperRequired') is True, (path, record.get('toolId'))
+                  evidence = record.get('evidence', {})
+                  assert evidence.get('rawOutputAllowed') is False, (path, record.get('toolId'))
+          PY
