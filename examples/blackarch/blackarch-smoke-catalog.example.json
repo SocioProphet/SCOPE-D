@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "ScopeDBlackArchCatalog",
+  "sourceCorpus": "blackarch",
+  "generatedAt": "2026-05-07T00:00:00Z",
+  "sourceRoot": "examples/read-only-blackarch-checkout",
+  "recordCount": 2,
+  "policy": {
+    "runtimeAuthorization": "not_authorized",
+    "productionAllowed": false,
+    "defaultMode": "catalog_only"
+  },
+  "records": [
+    {
+      "schemaVersion": "0.1.0",
+      "toolId": "tool-blackarch-example-code-audit",
+      "name": "example-code-audit-tool",
+      "description": "Example metadata-only record for a BlackArch-derived code-audit category. This is not a real package authorization record.",
+      "sourceCorpus": "blackarch",
+      "categories": [
+        "blackarch",
+        "blackarch-code-audit"
+      ],
+      "capabilities": [
+        "code_audit"
+      ],
+      "provenance": {
+        "sourceRef": "packages/example-code-audit-tool/PKGBUILD",
+        "upstreamUrl": "https://example.invalid/code-audit-tool",
+        "packagePath": "packages/example-code-audit-tool/PKGBUILD",
+        "observedAt": "2026-05-07T00:00:00Z",
+        "claimLevel": "extracted"
+      },
+      "package": {
+        "pkgname": "example-code-audit-tool",
+        "pkgver": "0.0.0",
+        "pkgrel": "1",
+        "arch": [
+          "x86_64"
+        ],
+        "url": "https://example.invalid/code-audit-tool",
+        "license": [
+          "example"
+        ],
+        "depends": [],
+        "makedepends": [],
+        "optdepends": [],
+        "source": [],
+        "checksums": {}
+      },
+      "safety": {
+        "safetyClass": "allow_defensive",
+        "reviewStatus": "machine_classified",
+        "riskSignals": {
+          "requiresNetwork": false,
+          "requiresRoot": false,
+          "requiresRawSocket": false,
+          "requiresCaptureDevice": false,
+          "mayMutateTarget": false,
+          "mayHandleSecrets": false,
+          "mayContactExternalServices": false,
+          "physicalDomain": false
+        },
+        "rationale": "blackarch-code-audit maps to code_audit",
+        "requiredGates": [
+          "scope_approval"
+        ]
+      },
+      "execution": {
+        "defaultMode": "read_only",
+        "allowedModes": [
+          "catalog_only",
+          "read_only"
+        ],
+        "wrapperRequired": true,
+        "productionAllowed": false
+      },
+      "mappings": {
+        "mitreAttack": [],
+        "mitreAtlas": [],
+        "d3fend": [],
+        "cwe": [],
+        "capec": []
+      },
+      "evidence": {
+        "expectedEvidenceTypes": [
+          "metadata_only",
+          "policy_decision",
+          "run_receipt"
+        ],
+        "redactionRequired": true,
+        "rawOutputAllowed": false,
+        "parserRef": "scope-d.blackarch.metadata-only"
+      },
+      "notes": [
+        "Example generated-style record for validator smoke tests.",
+        "This record does not authorize package installation or tool execution."
+      ]
+    },
+    {
+      "schemaVersion": "0.1.0",
+      "toolId": "tool-blackarch-example-defensive",
+      "name": "example-defensive-tool",
+      "description": "Example metadata-only record for a BlackArch-derived defensive category. This is not a real package authorization record.",
+      "sourceCorpus": "blackarch",
+      "categories": [
+        "blackarch",
+        "blackarch-defensive"
+      ],
+      "capabilities": [
+        "defensive_host_assessment"
+      ],
+      "provenance": {
+        "sourceRef": "packages/example-defensive-tool/PKGBUILD",
+        "upstreamUrl": "https://example.invalid/defensive-tool",
+        "packagePath": "packages/example-defensive-tool/PKGBUILD",
+        "observedAt": "2026-05-07T00:00:00Z",
+        "claimLevel": "extracted"
+      },
+      "package": {
+        "pkgname": "example-defensive-tool",
+        "pkgver": "0.0.0",
+        "pkgrel": "1",
+        "arch": [
+          "x86_64"
+        ],
+        "url": "https://example.invalid/defensive-tool",
+        "license": [
+          "example"
+        ],
+        "depends": [],
+        "makedepends": [],
+        "optdepends": [],
+        "source": [],
+        "checksums": {}
+      },
+      "safety": {
+        "safetyClass": "allow_defensive",
+        "reviewStatus": "machine_classified",
+        "riskSignals": {
+          "requiresNetwork": false,
+          "requiresRoot": false,
+          "requiresRawSocket": false,
+          "requiresCaptureDevice": false,
+          "mayMutateTarget": false,
+          "mayHandleSecrets": false,
+          "mayContactExternalServices": false,
+          "physicalDomain": false
+        },
+        "rationale": "blackarch-defensive maps to defensive_host_assessment",
+        "requiredGates": [
+          "scope_approval"
+        ]
+      },
+      "execution": {
+        "defaultMode": "read_only",
+        "allowedModes": [
+          "catalog_only",
+          "read_only"
+        ],
+        "wrapperRequired": true,
+        "productionAllowed": false
+      },
+      "mappings": {
+        "mitreAttack": [],
+        "mitreAtlas": [],
+        "d3fend": [],
+        "cwe": [],
+        "capec": []
+      },
+      "evidence": {
+        "expectedEvidenceTypes": [
+          "metadata_only",
+          "policy_decision",
+          "run_receipt"
+        ],
+        "redactionRequired": true,
+        "rawOutputAllowed": false,
+        "parserRef": "scope-d.blackarch.metadata-only"
+      },
+      "notes": [
+        "Example generated-style record for validator smoke tests.",
+        "This record does not authorize package installation or tool execution."
+      ]
+    }
+  ]
+}
