@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "blackarch-defensive-host-synthetic",
+  "name": "BlackArch-derived defensive host assessment synthetic validation",
+  "description": "Synthetic SCOPE-D exercise fixture for tools categorized under blackarch-defensive. This validates defensive host assessment telemetry, policy decisions, and countermeasure plumbing without executing upstream tools or inspecting a live host.",
+  "frameworkMappings": {
+    "mitreAttack": [],
+    "mitreAtlas": [],
+    "owaspLLMTop10": []
+  },
+  "targetSurface": {
+    "surfaceType": "synthetic_lab",
+    "identifier": "scope-d-blackarch-defensive-host-fixture",
+    "environment": "lab"
+  },
+  "safety": {
+    "safetyClass": "synthetic_only",
+    "requiresHumanGate": false,
+    "blockedInProduction": true,
+    "allowedModes": ["synthetic_event", "dry_run"]
+  },
+  "sourceCorpus": {
+    "name": "blackarch",
+    "category": "blackarch-defensive",
+    "capability": "defensive_host_assessment",
+    "cannibalizationMode": "metadata_and_synthetic_fixture_only"
+  },
+  "prerequisites": [],
+  "executor": {
+    "type": "synthetic_event",
+    "command": null,
+    "scriptRef": null
+  },
+  "expectedTelemetry": [
+    {
+      "source": "scope-d.synthetic.defensive-host",
+      "eventName": "HostControlSignalObserved",
+      "fields": {
+        "actor": "synthetic",
+        "sourceCorpus": "blackarch",
+        "category": "blackarch-defensive",
+        "findingType": "host-hardening-signal",
+        "severity": "informational",
+        "hostScope": "synthetic-fixture-only",
+        "policyMode": "dry-run",
+        "redactionState": "synthetic"
+      }
+    },
+    {
+      "source": "scope-d.synthetic.defensive-host",
+      "eventName": "PolicyDecisionPrepared",
+      "fields": {
+        "decision": "auto_continue",
+        "gateType": "analysis_approval",
+        "requiredActor": "policy_engine",
+        "reason": "synthetic fixture contains no live host data"
+      }
+    }
+  ],
+  "expectedDetections": [
+    {
+      "ruleRef": "scope-d-countermeasure-defensive-host-fixture",
+      "shouldAlert": true,
+      "maximumLatencySeconds": 300
+    }
+  ],
+  "cleanup": {
+    "required": false,
+    "steps": []
+  },
+  "rollback": {
+    "required": false,
+    "steps": []
+  },
+  "nonGoals": [
+    "No live host inspection",
+    "No upstream tool execution",
+    "No package installation",
+    "No privilege escalation",
+    "No production host interaction"
+  ]
+}
