@@ -29,6 +29,10 @@ const RUNTIME_SCHEMAS = [
   'config/schemas/run-summary.schema.json',
 ];
 
+const CATALOG_PAIRS = [
+  ['config/schemas/reference-framework.schema.json', 'references/scope-d-reference-catalog.json'],
+];
+
 const errors = [];
 
 function readJson(relPath) {
@@ -104,6 +108,21 @@ function validateSafetyInvariants(examplePath, example) {
   }
 }
 
+function validateReferenceCatalog(catalogPath, catalog) {
+  if (!catalog || !Array.isArray(catalog.references)) return;
+  const ids = new Set();
+  for (const ref of catalog.references) {
+    assert(!ids.has(ref.id), `${catalogPath}: duplicate reference id ${ref.id}`);
+    ids.add(ref.id);
+    if (ref.safetyClass === 'taxonomy_only' || ref.safetyClass === 'dual_use_restricted') {
+      assert(Array.isArray(ref.doNotImport) && ref.doNotImport.length > 0, `${catalogPath}: restricted reference ${ref.id} must declare doNotImport boundaries`);
+    }
+    if (ref.category === 'adversary_emulation_taxonomy') {
+      assert(ref.adoptionMode === 'taxonomy_only' || ref.adoptionMode === 'do_not_import_code', `${catalogPath}: adversary emulation reference ${ref.id} must be taxonomy-only or do-not-import-code`);
+    }
+  }
+}
+
 function walkJsonFiles(relDir) {
   const absDir = path.join(ROOT, relDir);
   if (!fs.existsSync(absDir)) return [];
@@ -127,7 +146,7 @@ function formatAjvErrors(validate) {
   }).join('; ');
 }
 
-for (const file of [...walkJsonFiles('config/schemas'), ...walkJsonFiles('examples')]) {
+for (const file of [...walkJsonFiles('config/schemas'), ...walkJsonFiles('examples'), ...walkJsonFiles('references')]) {
   readJson(file);
 }
 
@@ -138,7 +157,7 @@ for (const schemaPath of RUNTIME_SCHEMAS) {
   validateSchemaShape(schemaPath, readJson(schemaPath));
 }
 
-for (const [schemaPath, examplePath] of REQUIRED_PAIRS) {
+for (const [schemaPath, examplePath] of [...REQUIRED_PAIRS, ...CATALOG_PAIRS]) {
   const schema = readJson(schemaPath);
   const example = readJson(examplePath);
   validateSchemaShape(schemaPath, schema);
@@ -157,6 +176,9 @@ for (const [schemaPath, examplePath] of REQUIRED_PAIRS) {
   }
 
   validateSafetyInvariants(examplePath, example);
+  if (examplePath.includes('scope-d-reference-catalog')) {
+    validateReferenceCatalog(examplePath, example);
+  }
 }
 
 if (errors.length > 0) {
@@ -165,4 +187,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`SCOPE-D contract validation passed (${REQUIRED_PAIRS.length} AJV schema/example pairs, ${RUNTIME_SCHEMAS.length} runtime schemas).`);
+console.log(`SCOPE-D contract validation passed (${REQUIRED_PAIRS.length} AJV schema/example pairs, ${CATALOG_PAIRS.length} catalog pair, ${RUNTIME_SCHEMAS.length} runtime schemas).`);
