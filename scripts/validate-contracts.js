@@ -21,6 +21,7 @@ const REQUIRED_PAIRS = [
   ['config/schemas/agent-skill-risk.schema.json', 'examples/scope-d/agent-skill-risk.example.json'],
   ['config/schemas/run-receipt.schema.json', 'examples/scope-d/run-receipt.example.json'],
   ['config/schemas/safety-boundary.schema.json', 'examples/scope-d/safety-boundary.example.json'],
+  ['config/schemas/agent-harness-risk-assessment.schema.json', 'examples/scope-d/agent-harness-risk-assessment.example.json'],
 ];
 
 const RUNTIME_SCHEMAS = [
@@ -105,6 +106,16 @@ function validateSafetyInvariants(examplePath, example) {
     assert(example.networkBoundary && example.networkBoundary.publicScanningAllowed === false, `${examplePath}: example boundary must prohibit public scanning`);
     assert(example.networkBoundary && example.networkBoundary.egressMode === 'none', `${examplePath}: example boundary must set egressMode=none`);
     assert(example.memoryBoundary && example.memoryBoundary.redactionRequired === true, `${examplePath}: example boundary must require redaction`);
+  }
+
+  if (examplePath.includes('agent-harness-risk-assessment')) {
+    assert(['read_only', 'synthetic_only', 'dry_run'].includes(example.assessmentMode), `${examplePath}: agent harness risk assessment must be read_only, synthetic_only, or dry_run`);
+    const safety = example.safetyBoundary || {};
+    assert(safety.liveActionsExecuted === 0, `${examplePath}: agent harness risk assessment must record zero live actions`);
+    assert(safety.syntheticOnly === true, `${examplePath}: agent harness risk assessment must be syntheticOnly=true`);
+    assert(safety.credentialCollectionAllowed === false, `${examplePath}: credential collection must be prohibited`);
+    assert(safety.publicNetworkScanningAllowed === false, `${examplePath}: public network scanning must be prohibited`);
+    assert(safety.destructiveActionsAllowed === false, `${examplePath}: destructive actions must be prohibited`);
   }
 }
 
