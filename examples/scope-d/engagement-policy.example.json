@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "engagement-policy-synthetic-lab-default",
+  "name": "SCOPE-D synthetic lab default engagement policy",
+  "authority": {
+    "approvalModel": "single_human",
+    "primaryApprover": {
+      "name": "Michael Heller",
+      "email": "michael@socioprophet.ai",
+      "handle": "@michael"
+    },
+    "delegationAllowed": false,
+    "delegationPolicyRef": "none"
+  },
+  "targetBoundary": {
+    "boundaryType": "synthetic_lab",
+    "authorizedTargets": ["local-scope-d-lab", "runs/*", "examples/scope-d/*"],
+    "outOfScopeTargets": ["production", "customer", "public-internet", "third-party-services"],
+    "legalBasisRef": "synthetic-lab-only",
+    "rulesOfEngagementRef": "docs/ENGAGEMENT-POLICY.md"
+  },
+  "defaultMode": "synthetic_only",
+  "allowedActions": [
+    "read_metadata",
+    "collect_scoped_evidence",
+    "generate_synthetic_event",
+    "dry_run_control",
+    "generate_countermeasure",
+    "validate_detection"
+  ],
+  "blockedActions": [
+    "credential_collection",
+    "public_network_scanning",
+    "payload_execution",
+    "persistence",
+    "log_mutation",
+    "destructive_action",
+    "unauthorized_external_contact",
+    "production_write_without_gate",
+    "identity_modification_without_gate"
+  ],
+  "dynamicResponse": {
+    "enabled": true,
+    "insideBoundaryDefault": "synthetic_only",
+    "outsideBoundaryDefault": "blocked",
+    "evidenceTriggerRequired": true,
+    "humanApprovalRequiredForEscalation": true
+  },
+  "approvalRules": [
+    { "actionClass": "read", "requiredGate": "none", "requiredApprover": "none" },
+    { "actionClass": "synthetic_event", "requiredGate": "none", "requiredApprover": "none" },
+    { "actionClass": "dry_run", "requiredGate": "policy_engine", "requiredApprover": "policy-engine" },
+    { "actionClass": "network_call", "requiredGate": "human_and_policy_engine", "requiredApprover": "michael@socioprophet.ai" },
+    { "actionClass": "write", "requiredGate": "human_and_policy_engine", "requiredApprover": "michael@socioprophet.ai" },
+    { "actionClass": "deployment", "requiredGate": "human_and_policy_engine", "requiredApprover": "michael@socioprophet.ai" },
+    { "actionClass": "credential_access", "requiredGate": "blocked", "requiredApprover": "none" },
+    { "actionClass": "destructive_action", "requiredGate": "blocked", "requiredApprover": "none" },
+    { "actionClass": "identity_write", "requiredGate": "human_and_policy_engine", "requiredApprover": "michael@socioprophet.ai" }
+  ],
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "createdAt": "2026-05-13T12:00:00Z",
+  "signature": {
+    "algorithm": "none",
+    "keyId": "local-synthetic-example",
+    "value": "unsigned-example"
+  }
+}
