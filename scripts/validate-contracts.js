@@ -26,6 +26,7 @@ const REQUIRED_PAIRS = [
   ['config/schemas/identity-ir.schema.json', 'examples/scope-d/identity-ir.example.json'],
   ['config/schemas/proof-artifact.schema.json', 'examples/scope-d/proof-artifact.example.json'],
   ['config/schemas/engagement-policy.schema.json', 'examples/scope-d/engagement-policy.example.json'],
+  ['config/schemas/engagement-policy.schema.json', 'examples/scope-d/engagement-policy.synthetic.json'],
 ];
 
 const RUNTIME_SCHEMAS = [
@@ -145,6 +146,11 @@ function validateSafetyInvariants(examplePath, example) {
   if (examplePath.includes('engagement-policy')) {
     assert(example.defaultMode === 'synthetic_only', `${examplePath}: example engagement policy must default to synthetic_only`);
     assert(example.authority && example.authority.delegationAllowed === false, `${examplePath}: example engagement policy must prohibit delegation`);
+    assert(Array.isArray(example.authorizedTargets), `${examplePath}: engagement policy must declare authorizedTargets`);
+    assert(Array.isArray(example.authorizedSurfaces), `${examplePath}: engagement policy must declare authorizedSurfaces`);
+    assert(Array.isArray(example.authorizedModes), `${examplePath}: engagement policy must declare authorizedModes`);
+    assert(example.epsilonGateRequired === true, `${examplePath}: engagement policy must require epsilon gate`);
+    assert(Array.isArray(example.michaelApprovalRequiredForModes) && example.michaelApprovalRequiredForModes.includes('live_engage'), `${examplePath}: engagement policy must require Michael approval for live_engage`);
     const blocked = (example.blockedActions || []).join('\n');
     assert(blocked.includes('credential_collection'), `${examplePath}: engagement policy must block credential collection`);
     assert(blocked.includes('public_network_scanning'), `${examplePath}: engagement policy must block public network scanning`);
