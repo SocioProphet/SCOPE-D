@@ -38,6 +38,10 @@ const CATALOG_PAIRS = [
   ['config/schemas/reference-framework.schema.json', 'references/scope-d-reference-catalog.json'],
 ];
 
+const CONFIG_PAIRS = [
+  ['config/schemas/scope-d-lsa-map.schema.json', 'config/scope-d-lsa-map.json'],
+];
+
 const errors = [];
 
 function readJson(relPath) {
@@ -163,6 +167,22 @@ function validateReferenceCatalog(catalogPath, catalog) {
   }
 }
 
+function validateLsaMap(configPath, config) {
+  if (!config || !Array.isArray(config.topics)) return;
+  const ids = new Set();
+  for (const topic of config.topics) {
+    assert(!ids.has(topic.id), `${configPath}: duplicate topic id ${topic.id}`);
+    ids.add(topic.id);
+  }
+  for (let i = 1; i <= 23; i++) {
+    assert(ids.has(i), `${configPath}: missing topic id ${i}`);
+  }
+  for (const edge of config.crossTopicEdges || []) {
+    assert(ids.has(edge.from.topic), `${configPath}: crossTopicEdges references unknown from.topic ${edge.from.topic}`);
+    assert(ids.has(edge.to.topic), `${configPath}: crossTopicEdges references unknown to.topic ${edge.to.topic}`);
+  }
+}
+
 function walkJsonFiles(relDir) {
   const absDir = path.join(ROOT, relDir);
   if (!fs.existsSync(absDir)) return [];
@@ -197,7 +217,7 @@ for (const schemaPath of RUNTIME_SCHEMAS) {
   validateSchemaShape(schemaPath, readJson(schemaPath));
 }
 
-for (const [schemaPath, examplePath] of [...REQUIRED_PAIRS, ...CATALOG_PAIRS]) {
+for (const [schemaPath, examplePath] of [...REQUIRED_PAIRS, ...CATALOG_PAIRS, ...CONFIG_PAIRS]) {
   const schema = readJson(schemaPath);
   const example = readJson(examplePath);
   validateSchemaShape(schemaPath, schema);
@@ -219,6 +239,9 @@ for (const [schemaPath, examplePath] of [...REQUIRED_PAIRS, ...CATALOG_PAIRS]) {
   if (examplePath.includes('scope-d-reference-catalog')) {
     validateReferenceCatalog(examplePath, example);
   }
+  if (examplePath.includes('scope-d-lsa-map')) {
+    validateLsaMap(examplePath, example);
+  }
 }
 
 if (errors.length > 0) {
@@ -227,4 +250,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`SCOPE-D contract validation passed (${REQUIRED_PAIRS.length} AJV schema/example pairs, ${CATALOG_PAIRS.length} catalog pair, ${RUNTIME_SCHEMAS.length} runtime schemas).`);
+console.log(`SCOPE-D contract validation passed (${REQUIRED_PAIRS.length} AJV schema/example pairs, ${CATALOG_PAIRS.length} catalog pair, ${CONFIG_PAIRS.length} config pair, ${RUNTIME_SCHEMAS.length} runtime schemas).`);
