@@ -21,7 +21,7 @@ Allowed by default:
 - read repository metadata;
 - validate schemas and examples;
 - generate synthetic events;
-- initialize local synthetic runs;
+- initialize local synthetic runs when an explicit engagement policy authorizes the target, surface, and mode;
 - verify local run artifacts;
 - produce reports and receipts;
 - generate countermeasure candidates as recommendations.
@@ -55,6 +55,29 @@ Any movement from `read_only`, `synthetic_only`, or `dry_run` into a live networ
 1. a policy decision; and
 2. approval by the current authority or a future signed delegated authority.
 
+## Fail-closed rule for `scope-d:init`
+
+`scope-d:init` requires an explicit engagement policy file:
+
+```bash
+npm run scope-d:init -- \
+  --run-id scope-d-local-synthetic-lab \
+  --target local-scope-d-lab \
+  --engagement-policy examples/scope-d/engagement-policy.synthetic.json
+```
+
+The initializer fails closed when:
+
+- `--engagement-policy` is absent;
+- the policy path is unreadable;
+- the policy fails `config/schemas/engagement-policy.schema.json`;
+- the requested target is not listed in both `authorizedTargets` and `targetBoundary.authorizedTargets`;
+- the requested surface is not listed in `authorizedSurfaces`;
+- the requested mode is not listed in `authorizedModes`;
+- `live_engage` is authorized but `michaelApprovalRequiredForModes` does not include `live_engage`.
+
+There is no silent fallback to hardcoded synthetic-only admission.
+
 ## Dynamic defensive response
 
 SCOPE-D may use stronger correlation and response logic inside an authorized defended boundary, but the boundary must be explicit and auditable.
@@ -71,7 +94,11 @@ Adversary-controlled or synthetic identities may be correlated aggressively only
 
 ## Machine-readable policy
 
-The initial machine-readable example is:
+The canonical synthetic-only policy fixture is:
+
+- `examples/scope-d/engagement-policy.synthetic.json`
+
+The general example remains:
 
 - `examples/scope-d/engagement-policy.example.json`
 
