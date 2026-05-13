@@ -1,6 +1,6 @@
 # Devine Intelligence Wargames Capture Ledger
 
-Status: v0.9 integration ledger  
+Status: v1.0 integration ledger  
 Branch: `scope-d-di-war-games-alignment`  
 Repository: `SocioProphet/SCOPE-D`  
 Purpose: prevent loss, duplication, or drift while integrating the uploaded Wargames corpus into SCOPE-D.
@@ -34,6 +34,7 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 | Agent roster: 23 topical soldiers | captured as overlay | `docs/WARGAMES_AGENT_ROSTERS.md` | prose only; not separate execution authority |
 | MeshRush / Regis / Identity Is Prime / HellGraph reconciliation | captured | `docs/WARGAMES_MESHRUSH_REGIS_HELLER_ER_INTEGRATION.md` | prose only; adapter backlog |
 | Ontogenesis / ATT&CK semantic reasoning | captured | `docs/WARGAMES_ONTOGENESIS_ATTACK_INTEGRATION.md` | prose only; ontology/export backlog |
+| SynapseIQ semantic enrichment and intelligence activation | captured | `docs/WARGAMES_SYNAPSEIQ_INTEGRATION.md` | prose only; enrichment/activation backlog |
 | OFIF / Orion client-facing capability surface | captured | `docs/WARGAMES_OFIF_ORION_INTEGRATION.md` | prose only; client envelope backlog |
 | Dynamic engagement policy | captured | `docs/WARGAMES_DYNAMIC_ENGAGEMENT_POLICY.md` | prose only; authorization schema backlog |
 | Topics 12–23 Part II | captured | `docs/WARGAMES_TOPICS_12_23_OPS.md` | prose only; canonical expansion for 12–23 |
@@ -69,6 +70,7 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 - `docs/WARGAMES_MODE_SWITCH.md`
 - `docs/WARGAMES_MESHRUSH_REGIS_HELLER_ER_INTEGRATION.md`
 - `docs/WARGAMES_ONTOGENESIS_ATTACK_INTEGRATION.md`
+- `docs/WARGAMES_SYNAPSEIQ_INTEGRATION.md`
 - `docs/WARGAMES_OFIF_ORION_INTEGRATION.md`
 - `docs/WARGAMES_DYNAMIC_ENGAGEMENT_POLICY.md`
 - `docs/WARGAMES_TOPICS_12_23_OPS.md`
@@ -99,6 +101,7 @@ Several uploaded documents repeat the same structures at different fidelity leve
 - The boundary hypergraph is the canonical evidence model for cross-boundary behavior and negative evidence.
 - GASC is the canonical symbolic substrate for atoms and morphisms.
 - Ontogenesis is the canonical ontology / ATT&CK-understanding governance layer.
+- SynapseIQ is the canonical semantic enrichment and intelligence activation layer.
 - OFIF / Orion is the canonical client-facing field-intelligence capability surface.
 - MeshRush is the graph traversal/runtime layer, not the SCOPE-D safety owner.
 - HellGraph is the local-first proof/event replay and persistence sibling.
