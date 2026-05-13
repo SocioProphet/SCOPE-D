@@ -14,12 +14,17 @@
   },
   "targetBoundary": {
     "boundaryType": "synthetic_lab",
-    "authorizedTargets": ["local-scope-d-lab", "runs/*", "examples/scope-d/*"],
+    "authorizedTargets": ["local-scope-d-lab", "ci-synthetic-lab", "ci-tamper-lab", "ci-engagement-valid"],
     "outOfScopeTargets": ["production", "customer", "public-internet", "third-party-services"],
     "legalBasisRef": "synthetic-lab-only",
     "rulesOfEngagementRef": "docs/ENGAGEMENT-POLICY.md"
   },
   "defaultMode": "synthetic_only",
+  "authorizedTargets": ["local-scope-d-lab", "ci-synthetic-lab", "ci-tamper-lab", "ci-engagement-valid"],
+  "authorizedSurfaces": ["synthetic_lab"],
+  "authorizedModes": ["synthetic_only"],
+  "epsilonGateRequired": true,
+  "michaelApprovalRequiredForModes": ["live_engage"],
   "allowedActions": [
     "read_metadata",
     "collect_scoped_evidence",
@@ -56,6 +61,12 @@
     { "actionClass": "credential_access", "requiredGate": "blocked", "requiredApprover": "none" },
     { "actionClass": "destructive_action", "requiredGate": "blocked", "requiredApprover": "none" },
     { "actionClass": "identity_write", "requiredGate": "human_and_policy_engine", "requiredApprover": "michael@socioprophet.ai" }
+  ],
+  "nonClaims": [
+    "This policy does not authorize live engagement.",
+    "This policy does not authorize public network scanning.",
+    "This policy does not authorize credential collection.",
+    "This policy does not authorize production writes."
   ],
   "expiresAt": "2026-12-31T23:59:59Z",
   "createdAt": "2026-05-13T12:00:00Z",
