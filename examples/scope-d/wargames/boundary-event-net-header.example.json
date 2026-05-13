@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "eventId": "boundary-event:net-header-001",
+  "time": "2026-05-13T14:00:00Z",
+  "componentRef": "component:lab-browser-profile-alpha",
+  "portRef": "port:lab-browser-network-egress",
+  "contractRef": "contract:owned-lab-egress-readonly",
+  "outsideRef": "endpoint:example-cdn-redacted",
+  "surface": "network",
+  "action": "request",
+  "result": "observed",
+  "boundaryScope": "inside",
+  "mode": "DEFENSE",
+  "topicRefs": ["T9", "T12"],
+  "phaseRefs": ["V1", "V2"],
+  "evidenceRefs": ["evidence:scout-header-summary-001"],
+  "artifactRefs": ["artifact:redacted-header-summary-001"],
+  "findingRefs": [],
+  "redactionState": "redacted",
+  "safetyBoundaryRef": "safety-boundary:synthetic-lab-default",
+  "authorizationRef": "authorization:standing-lab-readonly",
+  "tenantScope": "socioprophet-lab",
+  "confidence": 0.91,
+  "completenessScore": 0.87,
+  "attackRefs": [],
+  "metrics": {
+    "headerLength": 34,
+    "periodicity": 0.41,
+    "omegaScore": 0.33
+  }
+}
