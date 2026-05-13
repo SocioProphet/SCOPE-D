@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "0.1.0",
+  "proofId": "proof:scout:unsafe-profile-invalid",
+  "sweepId": "scout-unsafe-invalid",
+  "agentRef": "agent:scout",
+  "mode": "DEFENSE",
+  "surfaces": ["H2"],
+  "window": {
+    "start": "2026-05-13T14:00:00Z",
+    "end": "2026-05-13T14:30:00Z"
+  },
+  "inputs": {
+    "schemaRef": "scout.event.ir@0.1.0",
+    "sourceRefs": ["features:unsafe-invalid"],
+    "hashes": [
+      {
+        "algorithm": "sha256",
+        "value": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      }
+    ]
+  },
+  "metrics": {
+    "flows": 10,
+    "omega": {
+      "hi": 1,
+      "med": 2,
+      "lo": 7
+    },
+    "schemaValidPct": 0.99,
+    "coveragePct": 0.99
+  },
+  "anchors": {
+    "lsaDims": ["L1"],
+    "lsi": ["p2"]
+  },
+  "safety": {
+    "safetyBoundaryRef": "safety-boundary:synthetic-lab-default",
+    "payloadBodiesCaptured": true,
+    "credentialCollectionAllowed": true,
+    "publicNetworkScanningAllowed": true,
+    "authorizationRef": "authorization:invalid"
+  },
+  "redactionState": "redacted",
+  "proofRefs": ["proof:hash:unsafe-invalid"],
+  "signatures": []
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "evidenceId": "negative-evidence:missing-validator-record-001",
+  "boundaryEventRef": "boundary-event:net-header-001",
+  "expectedRecord": "validator:header-sanitizer-pass-record",
+  "recordRef": null,
+  "absenceWindow": {
+    "start": "2026-05-13T14:00:00Z",
+    "end": "2026-05-13T14:10:00Z"
+  },
+  "expectedSources": [
+    "logstream:header-validator",
+    "logstream:scout-profile-proof"
+  ],
+  "reason": "Expected validator confirmation was absent during the bounded evidence window. This is a review trigger, not proof of compromise.",
+  "confidence": 0.72,
+  "severity": "medium",
+  "redactionState": "redacted",
+  "safetyBoundaryRef": "safety-boundary:synthetic-lab-default",
+  "findingRefs": ["finding:missing-validator-record-001"],
+  "topicRefs": ["T9", "T19"],
+  "reviewRequired": true
+}

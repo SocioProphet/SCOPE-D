@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.1.0",
+  "authorizationId": "engagement-authorization:e6-tabletop-001",
+  "engagementLevel": "E6",
+  "requestedBy": "agent:herald",
+  "approvedBy": ["Michael Heller"],
+  "approvalStatus": "approved",
+  "tenantScope": "socioprophet-lab",
+  "allowedAssets": ["asset:owned-lab-gateway-alpha"],
+  "allowedActions": ["tabletop_exercise", "synthetic_only_validation", "proof_capture"],
+  "prohibitedActions": ["credential_collection", "destructive_action", "third_party_access", "payload_execution"],
+  "timeWindow": {
+    "start": "2026-05-13T15:00:00Z",
+    "end": "2026-05-13T16:00:00Z"
+  },
+  "evidenceRequirements": ["proof_refs", "scope_refs", "rollback_or_closure_notes"],
+  "rollbackPlanRef": "rollback:tabletop-no-runtime-change",
+  "notificationPlanRef": "notification:internal-lab-only",
+  "proofReceiptRef": "proof:engagement:e6-tabletop-001",
+  "expiry": "2026-05-13T16:00:00Z",
+  "michaelOnlyRequired": true
+}

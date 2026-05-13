@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.0",
+  "evidenceId": "evidence:scout-header-summary-001",
+  "boundaryEventRef": "boundary-event:net-header-001",
+  "role": "direct",
+  "collector": "agent:scout",
+  "observedAt": "2026-05-13T14:00:02Z",
+  "sourceRef": "features:headers-redacted-001",
+  "recordRef": "record:redacted-header-row-001",
+  "redactionState": "redacted",
+  "claimLevel": "conditional",
+  "safetyBoundaryRef": "safety-boundary:synthetic-lab-default",
+  "tenantScope": "socioprophet-lab",
+  "topicRefs": ["T9", "T12"],
+  "weight": 0.82,
+  "explanation": "Redacted header and timing summary observed during authorized lab sweep. No payload bodies or credentials retained.",
+  "window": {
+    "start": "2026-05-13T14:00:00Z",
+    "end": "2026-05-13T14:05:00Z"
+  },
+  "hashes": {
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "sensitiveContentStored": false
+}
