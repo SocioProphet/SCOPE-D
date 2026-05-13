@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "engagement-policy-empty-targets-invalid",
+  "name": "Invalid engagement policy with no authorized targets",
+  "authority": {
+    "approvalModel": "single_human",
+    "primaryApprover": {
+      "name": "Michael Heller",
+      "email": "michael@socioprophet.ai",
+      "handle": "@michael"
+    },
+    "delegationAllowed": false,
+    "delegationPolicyRef": "none"
+  },
+  "targetBoundary": {
+    "boundaryType": "synthetic_lab",
+    "authorizedTargets": [],
+    "outOfScopeTargets": ["production", "customer", "public-internet"],
+    "legalBasisRef": "synthetic-lab-only",
+    "rulesOfEngagementRef": "docs/ENGAGEMENT-POLICY.md"
+  },
+  "defaultMode": "synthetic_only",
+  "authorizedTargets": [],
+  "authorizedSurfaces": ["synthetic_lab"],
+  "authorizedModes": ["synthetic_only"],
+  "epsilonGateRequired": true,
+  "michaelApprovalRequiredForModes": ["live_engage"],
+  "allowedActions": ["read_metadata", "generate_synthetic_event", "validate_detection"],
+  "blockedActions": [
+    "credential_collection",
+    "public_network_scanning",
+    "payload_execution",
+    "persistence",
+    "log_mutation",
+    "destructive_action",
+    "unauthorized_external_contact",
+    "production_write_without_gate",
+    "identity_modification_without_gate"
+  ],
+  "approvalRules": [
+    { "actionClass": "synthetic_event", "requiredGate": "none", "requiredApprover": "none" },
+    { "actionClass": "credential_access", "requiredGate": "blocked", "requiredApprover": "none" }
+  ],
+  "nonClaims": ["Empty authorizedTargets means no target is authorized."],
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "createdAt": "2026-05-13T12:00:00Z",
+  "signature": {
+    "algorithm": "none",
+    "keyId": "local-invalid-fixture",
+    "value": "unsigned-invalid-fixture"
+  }
+}
