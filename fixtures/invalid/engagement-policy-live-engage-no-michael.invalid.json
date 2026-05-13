@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "engagement-policy-live-engage-no-michael-invalid",
+  "name": "Invalid engagement policy authorizing live engagement without Michael approval requirement",
+  "authority": {
+    "approvalModel": "single_human",
+    "primaryApprover": {
+      "name": "Michael Heller",
+      "email": "michael@socioprophet.ai",
+      "handle": "@michael"
+    },
+    "delegationAllowed": false,
+    "delegationPolicyRef": "none"
+  },
+  "targetBoundary": {
+    "boundaryType": "owned_assets",
+    "authorizedTargets": ["owned-lab-target"],
+    "outOfScopeTargets": ["production", "customer", "public-internet"],
+    "legalBasisRef": "owned-lab-only",
+    "rulesOfEngagementRef": "docs/ENGAGEMENT-POLICY.md"
+  },
+  "defaultMode": "live_engage",
+  "authorizedTargets": ["owned-lab-target"],
+  "authorizedSurfaces": ["synthetic_lab"],
+  "authorizedModes": ["live_engage"],
+  "epsilonGateRequired": true,
+  "michaelApprovalRequiredForModes": [],
+  "allowedActions": ["read_metadata", "collect_scoped_evidence", "write_with_gate"],
+  "blockedActions": [
+    "credential_collection",
+    "public_network_scanning",
+    "payload_execution",
+    "persistence",
+    "log_mutation",
+    "destructive_action",
+    "unauthorized_external_contact",
+    "production_write_without_gate",
+    "identity_modification_without_gate"
+  ],
+  "approvalRules": [
+    { "actionClass": "write", "requiredGate": "human_and_policy_engine", "requiredApprover": "michael@socioprophet.ai" },
+    { "actionClass": "destructive_action", "requiredGate": "blocked", "requiredApprover": "none" }
+  ],
+  "nonClaims": ["This intentionally invalid fixture omits live_engage from michaelApprovalRequiredForModes."],
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "createdAt": "2026-05-13T12:00:00Z",
+  "signature": {
+    "algorithm": "none",
+    "keyId": "local-invalid-fixture",
+    "value": "unsigned-invalid-fixture"
+  }
+}
