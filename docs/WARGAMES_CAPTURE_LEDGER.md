@@ -1,6 +1,6 @@
 # Devine Intelligence Wargames Capture Ledger
 
-Status: v0.6 integration ledger  
+Status: v0.7 integration ledger  
 Branch: `scope-d-di-war-games-alignment`  
 Repository: `SocioProphet/SCOPE-D`  
 Purpose: prevent loss, duplication, or drift while integrating the uploaded Wargames corpus into SCOPE-D.
@@ -40,8 +40,8 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 | Whisper v1.0 egress spec | captured | `docs/agents/WHISPER_AGENT_SPEC.md` | prose only; schema/example/CI backlog |
 | Scout full spec | captured | `docs/agents/SCOUT_AGENT_SPEC.md` | prose only; schema/example/CI backlog |
 | Font and rendering surface drill | captured | `docs/surfaces/FONT_RENDERING_SURFACE_DRILL.md` | prose only; schema/example/CI backlog |
+| Memphis Rite ceremony and purpose | captured | `docs/MEMPHIS_RITE_GOVERNANCE.md` | prose only; schema/example/CI backlog |
 | Whisper v0.1 egress spec | superseded | `docs/agents/WHISPER_AGENT_SPEC.md` | v1.0 canonical; v0.1 explanatory only |
-| Memphis Rite ceremony and purpose | partially captured; pending dedicated doc | `docs/MEMPHIS_RITE_GOVERNANCE.md` | prose backlog |
 | ER+ / Heller ER identity geometry | pending adjacent doc | `docs/IDENTITY_GEOMETRY_ER_PLUS_ALIGNMENT.md` | not yet committed |
 | Omissions and completions: Triune RPC, AUM, qlog, CI drift, CRDT, SHACL, HPST, symbolic bridges | partially captured; pending backlog doc | `docs/WARGAMES_IMPLEMENTATION_BACKLOG.md` | not yet committed |
 | LSA/LSI 23-topic map and operationalization scripts | captured conceptually; pending machine map | `docs/WARGAMES_LSA_LSI_MAP.md` and later `examples/scope-d/wargames-lsa-map.example.json` | not yet committed |
@@ -75,11 +75,11 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 - `docs/agents/WHISPER_AGENT_SPEC.md`
 - `docs/agents/SCOUT_AGENT_SPEC.md`
 - `docs/surfaces/FONT_RENDERING_SURFACE_DRILL.md`
+- `docs/MEMPHIS_RITE_GOVERNANCE.md`
 - `docs/WARGAMES_CAPTURE_LEDGER.md`
 
 ## Next files in this branch
 
-- `docs/MEMPHIS_RITE_GOVERNANCE.md`
 - `docs/WARGAMES_LSA_LSI_MAP.md`
 - `docs/WARGAMES_IMPLEMENTATION_BACKLOG.md`
 - `docs/WARGAMES_TREE_SITTER_LSA_BRIDGE.md`
