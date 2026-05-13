@@ -14,13 +14,16 @@ const SCHEMA_DIR = 'config/schemas';
 const CONTRACTS = {
   targetManifest: ['target-manifest.schema.json', 'target-manifest.json'],
   syntheticEvent: ['synthetic-event.schema.json', 'events.jsonl'],
+  eventIr: ['event-ir.schema.json', 'event-ir.jsonl'],
+  identityIr: ['identity-ir.schema.json', 'identity-ir.json'],
+  proofArtifact: ['proof-artifact.schema.json', 'proof-artifact.json'],
   controlLoop: ['scope-d-control-loop.schema.json', 'control-loop.json'],
   safetyBoundary: ['safety-boundary.schema.json', 'safety-boundary.json'],
   receipt: ['run-receipt.schema.json', 'receipt.json'],
 };
 
 function usage() {
-  console.log(`Usage: npm run scope-d:init -- [--target <identifier>] [--surface <surfaceType>] [--environment <env>] [--run-id <id>]\n\nDefaults:\n  --target local-scope-d-lab\n  --surface synthetic_lab\n  --environment lab\n\nThis command only creates local synthetic/read-only artifacts under runs/<run-id>/.`);
+  console.log(`Usage: npm run scope-d:init -- [--target <identifier>] [--surface <surfaceType>] [--environment <env>] [--run-id <id>]\n\nDefaults:\n  --target local-scope-d-lab\n  --surface synthetic_lab\n  --environment lab\n\nThis command only creates local synthetic/read-only artifacts under runs/<run-id>/.\nGenerated runs include SyntheticEvent, Event-IR, Identity-IR, ProofArtifact, ControlLoopRun, RunReceipt, and report artifacts.`);
 }
 
 function parseArgs(argv) {
@@ -65,8 +68,30 @@ function sha256File(absPath) {
   return crypto.createHash('sha256').update(fs.readFileSync(absPath)).digest('hex');
 }
 
+function sha256Value(value) {
+  return `sha256:${crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex')}`;
+}
+
 function timestampSlug() {
   return new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z').toLowerCase();
+}
+
+function localSlug(value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/^scope-d-/, '')
+    .replace(/[^a-z0-9._:-]+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '') || 'synthetic';
+}
+
+function claimSlug(value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/^scope-d-/, '')
+    .replace(/[^a-z0-9_.:-]+/g, '_')
+    .replace(/^_+/, '')
+    .replace(/_+$/, '') || 'synthetic';
 }
 
 function ensureSafeInputs(args) {
@@ -134,6 +159,153 @@ function createSyntheticEvent(atomic, now) {
   };
 }
 
+function createEventIr(runId, args, atomic, event, now) {
+  const slug = localSlug(runId);
+  return {
+    schemaVersion: '0.1.0',
+    eventId: `evt-${slug}-synthetic-observation`,
+    kind: 'SYNTHETIC_ATOMIC_OBSERVATION',
+    surface: 'synthetic_lab',
+    scope: {
+      name: args.target,
+      environment: args.environment,
+      tenantScope: 'lab',
+      well: 'synthetic-lab',
+    },
+    observedAt: now,
+    actor: {
+      actorType: 'synthetic',
+      id: 'synthetic-agent:scope-d-init',
+      display: 'SCOPE-D synthetic run initializer',
+    },
+    resource: {
+      resourceType: 'synthetic_atomic_event',
+      resourceId: atomic.id,
+      redactionState: 'synthetic',
+    },
+    facets: {
+      dp: {
+        epsilon: 0,
+        delta: 0,
+        mechanism: 'not_applicable_synthetic_observation',
+        population: 'synthetic_lab',
+      },
+    },
+    safetyClass: 'synthetic_only',
+    payload: event,
+    provenance: {
+      collector: 'scope-d:init',
+      traceId: `trace-${slug}`,
+      sourceRef: 'events.jsonl',
+      hash: sha256Value(event),
+    },
+  };
+}
+
+function createIdentityIr(runId, args, eventIr, now) {
+  const slug = localSlug(runId);
+  return {
+    schemaVersion: '0.1.0',
+    identityIrId: `identity-ir-${slug}`,
+    subject: {
+      subjectId: `synthetic-session:${slug}`,
+      entityType: 'synthetic',
+      tenantScope: 'lab',
+      redactionState: 'synthetic',
+    },
+    eventRefs: [eventIr.eventId],
+    primes: [
+      {
+        primeId: `prime-synthetic-${slug}`,
+        primeType: 'synthetic',
+        label: 'Synthetic lab evidence lane',
+        wells: ['synthetic-lab'],
+        evidenceRefs: [eventIr.eventId],
+        coherence: 1,
+        featureVector: [1, 0, 0],
+        archetypeFamily: 'synthetic_observation_v1',
+        configVolumeClass: 'unknown',
+        configVolumeEstimate: 0,
+      },
+    ],
+    wells: ['synthetic-lab'],
+    dpBudgetState: {
+      epsilonMax: 0,
+      epsilonUsed: 0,
+      deltaMax: 0,
+      deltaUsed: 0,
+      queries: 0,
+    },
+    proofRefs: [`proof-${slug}-synthetic-observation`],
+    observedAt: now,
+    safetyMode: 'synthetic_only',
+    provenance: {
+      collector: 'scope-d:init',
+      traceId: eventIr.provenance.traceId,
+      sourceRef: 'event-ir.jsonl',
+      hash: sha256Value(eventIr),
+    },
+  };
+}
+
+function createProofArtifact(runId, args, eventIr, identityIr, now) {
+  const slug = localSlug(runId);
+  return {
+    schemaVersion: '0.1.0',
+    proofId: `proof-${slug}-synthetic-observation`,
+    claim: {
+      claimId: `claim.synthetic.${claimSlug(runId)}`,
+      claimType: 'synthetic_observation',
+      statement: 'Generated run contains only synthetic evidence and no live execution, credential collection, public scanning, or network egress.',
+      epistemicLevel: 'synthetic',
+    },
+    status: 'SYNTHETIC_ONLY',
+    safetyMode: 'synthetic_only',
+    targetRefs: [args.target],
+    evidenceRefs: [eventIr.eventId, identityIr.identityIrId],
+    identityRefs: [identityIr.identityIrId],
+    eventRefs: [eventIr.eventId],
+    domains: ['synthetic'],
+    invariants: [
+      { name: 'live_execution_absent', result: 'pass', details: { liveExecution: false } },
+      { name: 'credential_collection_absent', result: 'pass', details: { secretCollectionAllowed: false } },
+      { name: 'public_scanning_absent', result: 'pass', details: { publicScanningAllowed: false } },
+      { name: 'network_egress_absent', result: 'pass', details: { egressMode: 'none' } },
+    ],
+    dynamicMetric: {
+      metricType: 'not_applicable',
+      observedToSecure: 0,
+      observedToNearestKnownBad: 0,
+      unit: 'synthetic-only-run',
+      confidence: 1,
+    },
+    configurationVolume: {
+      volumeClass: 'unknown',
+      estimate: 0,
+      estimationMethod: 'not_computed',
+      polytopeRef: 'not_applicable',
+      notes: 'Synthetic-only initialization run; no runtime configuration-volume analyzer executed.',
+    },
+    archetype: {
+      family: 'synthetic_observation_v1',
+      coefficientHash: 'sha256:not-computed-for-synthetic-init',
+      qualitativeTag: 'matches_known_benign_pattern',
+    },
+    witness: {
+      eventIr: eventIr.eventId,
+      identityIr: identityIr.identityIrId,
+      mode: 'synthetic_only',
+    },
+    createdAt: now,
+    provenance: {
+      producer: 'scope-d:init',
+      toolVersion: '0.1.0',
+      sourceRef: 'identity-ir.json',
+      hash: sha256Value(identityIr),
+    },
+  };
+}
+
 function main() {
   const args = parseArgs(process.argv);
   ensureSafeInputs(args);
@@ -168,6 +340,9 @@ function main() {
   };
 
   const event = createSyntheticEvent(atomic, now);
+  const eventIr = createEventIr(runId, args, atomic, event, now);
+  const identityIr = createIdentityIr(runId, args, eventIr, now);
+  const proofArtifact = createProofArtifact(runId, args, eventIr, identityIr, now);
 
   const controlLoop = {
     schemaVersion: '0.1.0',
@@ -209,14 +384,62 @@ function main() {
         evidence: event,
         rawRef: 'events.jsonl',
       },
+      {
+        id: 'ev-event-ir-synthetic-observation',
+        collector: 'scope-d:init',
+        surface: args.surface,
+        resourceType: 'event_ir_record',
+        resourceId: eventIr.eventId,
+        observedAt: now,
+        claimLevel: 'guaranteed',
+        redactionState: 'synthetic',
+        tenantScope: 'lab',
+        evidence: eventIr,
+        rawRef: 'event-ir.jsonl',
+      },
+      {
+        id: 'ev-identity-ir-synthetic-observation',
+        collector: 'scope-d:init',
+        surface: args.surface,
+        resourceType: 'identity_ir_record',
+        resourceId: identityIr.identityIrId,
+        observedAt: now,
+        claimLevel: 'guaranteed',
+        redactionState: 'synthetic',
+        tenantScope: 'lab',
+        evidence: identityIr,
+        rawRef: 'identity-ir.json',
+      },
+      {
+        id: 'ev-proof-artifact-synthetic-observation',
+        collector: 'scope-d:init',
+        surface: args.surface,
+        resourceType: 'proof_artifact',
+        resourceId: proofArtifact.proofId,
+        observedAt: now,
+        claimLevel: 'guaranteed',
+        redactionState: 'synthetic',
+        tenantScope: 'lab',
+        evidence: proofArtifact,
+        rawRef: 'proof-artifact.json',
+      },
     ],
-    artifacts: [],
+    artifacts: [
+      { id: 'artifact-events', artifactType: 'jsonl', path: 'events.jsonl' },
+      { id: 'artifact-event-ir', artifactType: 'jsonl', path: 'event-ir.jsonl' },
+      { id: 'artifact-identity-ir', artifactType: 'json', path: 'identity-ir.json' },
+      { id: 'artifact-proof-artifact', artifactType: 'json', path: 'proof-artifact.json' },
+      { id: 'artifact-report', artifactType: 'report', path: 'report.md' },
+    ],
     controls: [],
     attackGraph: { nodes: [], edges: [], paths: [] },
   };
 
   validateContract(CONTRACTS.targetManifest[0], targetManifest, 'target-manifest.json');
   validateContract(CONTRACTS.syntheticEvent[0], event, 'events.jsonl synthetic event');
+  validateContract(CONTRACTS.eventIr[0], eventIr, 'event-ir.jsonl Event-IR record');
+  validateContract(CONTRACTS.identityIr[0], identityIr, 'identity-ir.json');
+  validateContract(CONTRACTS.proofArtifact[0], proofArtifact, 'proof-artifact.json');
   validateContract(CONTRACTS.safetyBoundary[0], safetyBoundary, 'safety-boundary.json');
   validateContract(CONTRACTS.controlLoop[0], controlLoop, 'control-loop.json');
 
@@ -224,6 +447,9 @@ function main() {
   writeJson(path.join(runAbs, 'target-manifest.json'), targetManifest);
   writeJson(path.join(runAbs, 'safety-boundary.json'), safetyBoundary);
   appendJsonl(path.join(runAbs, 'events.jsonl'), event);
+  appendJsonl(path.join(runAbs, 'event-ir.jsonl'), eventIr);
+  writeJson(path.join(runAbs, 'identity-ir.json'), identityIr);
+  writeJson(path.join(runAbs, 'proof-artifact.json'), proofArtifact);
   writeJson(path.join(runAbs, 'control-loop.json'), controlLoop);
 
   const report = [
@@ -248,10 +474,25 @@ function main() {
     `- Event name: ${event.eventName}`,
     `- Expected detections: ${event.expectedDetections.length}`,
     '',
+    '## Contract Artifacts',
+    '',
+    `- Event-IR: ${eventIr.eventId}`,
+    `- Identity-IR: ${identityIr.identityIrId}`,
+    `- ProofArtifact: ${proofArtifact.proofId}`,
+    '',
   ].join('\n');
   fs.writeFileSync(path.join(runAbs, 'report.md'), report, 'utf8');
 
-  const artifactFiles = ['target-manifest.json', 'safety-boundary.json', 'events.jsonl', 'control-loop.json', 'report.md'];
+  const artifactFiles = [
+    'target-manifest.json',
+    'safety-boundary.json',
+    'events.jsonl',
+    'event-ir.jsonl',
+    'identity-ir.json',
+    'proof-artifact.json',
+    'control-loop.json',
+    'report.md',
+  ];
   const receipt = {
     schemaVersion: '0.1.0',
     id: `receipt-${runId.replace(/^scope-d-/, '')}`,
@@ -280,7 +521,7 @@ function main() {
   writeJson(path.join(runAbs, 'receipt.json'), receipt);
 
   console.log(`Created SCOPE-D synthetic run: ${runRel}`);
-  console.log('Artifacts: target-manifest.json, safety-boundary.json, events.jsonl, control-loop.json, report.md, receipt.json');
+  console.log('Artifacts: target-manifest.json, safety-boundary.json, events.jsonl, event-ir.jsonl, identity-ir.json, proof-artifact.json, control-loop.json, report.md, receipt.json');
 }
 
 try {
