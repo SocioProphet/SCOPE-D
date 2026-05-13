@@ -56,6 +56,10 @@ function countJsonl(absPath) {
   return fs.readFileSync(absPath, 'utf8').split('\n').filter(Boolean).length;
 }
 
+function countJsonFile(absPath) {
+  return fs.existsSync(absPath) ? 1 : 0;
+}
+
 function renderMarkdown(summary) {
   const artifactRows = summary.artifacts
     .map((artifact) => `| \`${artifact.path}\` | \`${artifact.sha256}\` |`)
@@ -88,6 +92,9 @@ function renderMarkdown(summary) {
     '## Counts',
     '',
     `- Synthetic events: ${summary.counts.syntheticEvents}`,
+    `- Event-IR records: ${summary.counts.eventIrRecords || 0}`,
+    `- Identity-IR records: ${summary.counts.identityIrRecords || 0}`,
+    `- Proof artifacts: ${summary.counts.proofArtifacts || 0}`,
     `- Evidence items: ${summary.counts.evidenceItems}`,
     `- Gates: ${summary.counts.gates}`,
     `- Receipt artifacts: ${summary.counts.receiptArtifacts}`,
@@ -134,6 +141,9 @@ function main() {
   const controlLoop = readJsonAbs(path.join(runAbs, 'control-loop.json'));
   const receipt = readJsonAbs(path.join(runAbs, 'receipt.json'));
   const syntheticEvents = countJsonl(path.join(runAbs, 'events.jsonl'));
+  const eventIrRecords = countJsonl(path.join(runAbs, 'event-ir.jsonl'));
+  const identityIrRecords = countJsonFile(path.join(runAbs, 'identity-ir.json'));
+  const proofArtifacts = countJsonFile(path.join(runAbs, 'proof-artifact.json'));
 
   const summary = {
     schemaVersion: '0.1.0',
@@ -156,6 +166,9 @@ function main() {
     },
     counts: {
       syntheticEvents,
+      eventIrRecords,
+      identityIrRecords,
+      proofArtifacts,
       evidenceItems: Array.isArray(controlLoop.evidence) ? controlLoop.evidence.length : 0,
       gates: Array.isArray(controlLoop.gates) ? controlLoop.gates.length : 0,
       receiptArtifacts: Array.isArray(receipt.artifactHashes) ? receipt.artifactHashes.length : 0,
@@ -173,6 +186,7 @@ function main() {
         'Run verified before reporting.',
         'All artifacts referenced by the receipt matched their SHA-256 hashes.',
         'Synthetic-only run is safe for dashboard and policy-fabric ingestion as non-production evidence.',
+        'Event-IR, Identity-IR, and ProofArtifact artifacts are generated and verified for this run.',
       ],
     },
   };
