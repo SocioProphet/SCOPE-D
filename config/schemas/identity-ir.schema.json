@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-identity-ir.schema.json",
+  "title": "SCOPE-D Identity-IR Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "identityIrId",
+    "subject",
+    "eventRefs",
+    "primes",
+    "wells",
+    "observedAt",
+    "safetyMode",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "identityIrId": { "type": "string", "pattern": "^identity-ir-[a-z0-9][a-z0-9._:-]*$" },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subjectId", "entityType"],
+      "properties": {
+        "subjectId": { "type": "string", "minLength": 1 },
+        "entityType": { "type": "string", "enum": ["human_user", "device", "session", "tenant", "org_service", "agent", "population_segment", "synthetic"] },
+        "tenantScope": { "type": "string" },
+        "redactionState": { "type": "string", "enum": ["raw", "redacted", "synthetic", "withheld"] }
+      }
+    },
+    "eventRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^evt-[a-z0-9][a-z0-9._:-]*$" } },
+    "primes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["primeId", "primeType", "wells", "evidenceRefs"],
+        "properties": {
+          "primeId": { "type": "string", "pattern": "^prime-[a-z0-9][a-z0-9._:-]*$" },
+          "primeType": { "type": "string", "enum": ["crypto", "dp", "ui", "behavior", "egress", "auth", "device", "semantic", "policy", "synthetic"] },
+          "label": { "type": "string" },
+          "wells": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "evidenceRefs": { "type": "array", "items": { "type": "string" } },
+          "coherence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "featureVector": { "type": "array", "items": { "type": "number" } },
+          "archetypeFamily": { "type": "string" },
+          "configVolumeClass": { "type": "string", "enum": ["unknown", "tiny", "small", "moderate", "large"] },
+          "configVolumeEstimate": { "type": "number", "minimum": 0 }
+        }
+      }
+    },
+    "wells": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "dpBudgetState": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "epsilonMax": { "type": "number", "minimum": 0 },
+        "epsilonUsed": { "type": "number", "minimum": 0 },
+        "deltaMax": { "type": "number", "minimum": 0 },
+        "deltaUsed": { "type": "number", "minimum": 0 },
+        "queries": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "proofRefs": { "type": "array", "items": { "type": "string" } },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "safetyMode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"] },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["collector", "hash"],
+      "properties": {
+        "collector": { "type": "string" },
+        "traceId": { "type": "string" },
+        "sourceRef": { "type": "string" },
+        "hash": { "type": "string" }
+      }
+    }
+  }
+}
