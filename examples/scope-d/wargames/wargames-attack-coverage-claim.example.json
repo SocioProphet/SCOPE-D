@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.0",
+  "claimId": "attack-coverage:boundary-header-coverage-001",
+  "mode": "DEFENSE",
+  "topicRefs": ["T9", "T19"],
+  "coverageStatus": "partial",
+  "tacticRefs": ["tactic:defense-evasion", "tactic:command-and-control"],
+  "techniqueRefs": ["technique:traffic-shaping-observable", "technique:header-anomaly-observable"],
+  "evidenceRefs": [
+    "evidence:scout-header-summary-001",
+    "negative-evidence:missing-validator-record-001"
+  ],
+  "boundaryEventRefs": ["boundary-event:net-header-001"],
+  "controlRefs": ["control:header-validator-review", "control:egress-policy-review"],
+  "proofRefs": ["proof:scout:profile-001"],
+  "semanticNonClaims": [
+    "does_not_execute_attack_procedure",
+    "does_not_authorize_engagement",
+    "does_not_claim_causal_attribution",
+    "does_not_validate_source_authenticity"
+  ],
+  "redactionState": "redacted",
+  "confidenceClass": "medium",
+  "runtimeAuthority": false,
+  "procedureExecutionAuthority": false,
+  "engagementAuthorizationAuthority": false
+}

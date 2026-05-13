@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "exportId": "ontogenesis-export:authorizes-activation-invalid",
+  "jsonldContextRef": "jsonld-context:wargames-ontogenesis-v0.1",
+  "ontologyModuleRef": "ontology-module:wargames-boundary-coverage-v0.1",
+  "mode": "DEFENSE",
+  "topicRefs": ["T9", "T19"],
+  "sourceRunRefs": ["wargames-defense-2026-05-13-alpha"],
+  "coverageClaimRefs": ["attack-coverage:boundary-header-coverage-001"],
+  "evidenceRefs": ["evidence:scout-header-summary-001"],
+  "proofRefs": ["proof:scout:profile-001"],
+  "redactionState": "redacted",
+  "semanticNonClaims": [
+    "does_not_execute_attack_procedure",
+    "does_not_validate_source_authenticity",
+    "does_not_activate_client_delivery"
+  ],
+  "shaclValidationRef": "shacl-validation:invalid",
+  "runtimeAuthority": true,
+  "procedureExecutionAuthority": true,
+  "engagementAuthorizationAuthority": true,
+  "activationAllowed": true
+}

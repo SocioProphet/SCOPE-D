@@ -23,6 +23,8 @@ const VALID_PAIRS = [
   ['config/schemas/wargames-lsa-lsi-map.schema.json', 'examples/scope-d/wargames/wargames-lsa-map.example.json'],
   ['config/schemas/wargames-synapseiq-enrichment.schema.json', 'examples/scope-d/wargames/wargames-synapseiq-enrichment.example.json'],
   ['config/schemas/wargames-ofif-activation-envelope.schema.json', 'examples/scope-d/wargames/wargames-ofif-activation-envelope.example.json'],
+  ['config/schemas/wargames-attack-coverage-claim.schema.json', 'examples/scope-d/wargames/wargames-attack-coverage-claim.example.json'],
+  ['config/schemas/wargames-ontogenesis-export-envelope.schema.json', 'examples/scope-d/wargames/wargames-ontogenesis-export.example.json'],
 ];
 
 const INVALID_PAIRS = [
@@ -34,10 +36,13 @@ const INVALID_PAIRS = [
   ['config/schemas/wargames-ofif-activation-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ofif-envelope-invalid-topics.invalid.json'],
   ['config/schemas/wargames-synapseiq-enrichment.schema.json', 'examples/scope-d/wargames/negative-fixtures/synapseiq-enrichment-claims-execution.invalid.json'],
   ['config/schemas/wargames-ofif-activation-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ofif-envelope-raw-identity-join.invalid.json'],
+  ['config/schemas/wargames-attack-coverage-claim.schema.json', 'examples/scope-d/wargames/negative-fixtures/attack-coverage-claims-procedure-execution.invalid.json'],
+  ['config/schemas/wargames-ontogenesis-export-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ontogenesis-export-authorizes-activation.invalid.json'],
 ];
 
 const APPROVED_AUTHORIZATION_EXAMPLE = 'examples/scope-d/wargames/engagement-authorization-approved.example.json';
 const APPROVED_SYNAPSEIQ_EXAMPLE = 'examples/scope-d/wargames/wargames-synapseiq-enrichment.example.json';
+const APPROVED_ATTACK_COVERAGE_EXAMPLE = 'examples/scope-d/wargames/wargames-attack-coverage-claim.example.json';
 
 const globalErrors = [];
 
@@ -213,6 +218,35 @@ function validateOfifActivationEnvelope(examplePath, example, errorList) {
   }
 }
 
+function validateAttackCoverageClaim(examplePath, example, errorList) {
+  if (!examplePath.includes('attack-coverage')) return;
+  assertTo(errorList, example.runtimeAuthority === false, `${examplePath}: ATT&CK coverage claim must not claim runtime authority`);
+  assertTo(errorList, example.procedureExecutionAuthority === false, `${examplePath}: ATT&CK coverage claim must not claim procedure execution authority`);
+  assertTo(errorList, example.engagementAuthorizationAuthority === false, `${examplePath}: ATT&CK coverage claim must not authorize engagement`);
+  assertTo(errorList, example.redactionState !== 'raw', `${examplePath}: ATT&CK coverage claim must not be raw`);
+  assertTo(errorList, Array.isArray(example.semanticNonClaims) && example.semanticNonClaims.includes('does_not_execute_attack_procedure'), `${examplePath}: semantic non-claims must include does_not_execute_attack_procedure`);
+  assertTo(errorList, Array.isArray(example.semanticNonClaims) && example.semanticNonClaims.includes('does_not_authorize_engagement'), `${examplePath}: semantic non-claims must include does_not_authorize_engagement`);
+}
+
+function validateOntogenesisExport(examplePath, example, errorList) {
+  if (!examplePath.includes('ontogenesis-export')) return;
+  assertTo(errorList, example.runtimeAuthority === false, `${examplePath}: Ontogenesis export must not claim runtime authority`);
+  assertTo(errorList, example.procedureExecutionAuthority === false, `${examplePath}: Ontogenesis export must not claim procedure execution authority`);
+  assertTo(errorList, example.engagementAuthorizationAuthority === false, `${examplePath}: Ontogenesis export must not authorize engagement`);
+  assertTo(errorList, example.activationAllowed === false, `${examplePath}: Ontogenesis export must not activate client delivery`);
+  assertTo(errorList, example.redactionState !== 'raw', `${examplePath}: Ontogenesis export must not be raw`);
+  assertTo(errorList, Array.isArray(example.semanticNonClaims) && example.semanticNonClaims.includes('does_not_execute_attack_procedure'), `${examplePath}: semantic non-claims must include does_not_execute_attack_procedure`);
+  assertTo(errorList, Array.isArray(example.semanticNonClaims) && example.semanticNonClaims.includes('does_not_authorize_engagement'), `${examplePath}: semantic non-claims must include does_not_authorize_engagement`);
+  assertTo(errorList, Array.isArray(example.semanticNonClaims) && example.semanticNonClaims.includes('does_not_activate_client_delivery'), `${examplePath}: semantic non-claims must include does_not_activate_client_delivery`);
+
+  const claim = readJson(APPROVED_ATTACK_COVERAGE_EXAMPLE, errorList);
+  if (claim && Array.isArray(example.coverageClaimRefs)) {
+    assertTo(errorList, example.coverageClaimRefs.includes(claim.claimId), `${examplePath}: export should reference the approved ATT&CK coverage claim example`);
+    assertTo(errorList, claim.runtimeAuthority === false, `${examplePath}: referenced coverage claim must not claim runtime authority`);
+    assertTo(errorList, claim.engagementAuthorizationAuthority === false, `${examplePath}: referenced coverage claim must not authorize engagement`);
+  }
+}
+
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
 const schemaCache = new Map();
@@ -252,6 +286,8 @@ function validatePair(schemaPath, examplePath) {
   validateLsaLsiMap(examplePath, example, localErrors);
   validateSynapseiqEnrichment(examplePath, example, localErrors);
   validateOfifActivationEnvelope(examplePath, example, localErrors);
+  validateAttackCoverageClaim(examplePath, example, localErrors);
+  validateOntogenesisExport(examplePath, example, localErrors);
 
   return localErrors;
 }
