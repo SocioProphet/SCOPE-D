@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.1.0",
+  "eventId": "evt-synthetic-dp-query-001",
+  "kind": "DP_QUERY",
+  "surface": "synthetic_lab",
+  "scope": {
+    "name": "local-scope-d-lab",
+    "environment": "lab",
+    "tenantScope": "lab",
+    "well": "dp-aggregator"
+  },
+  "observedAt": "2026-05-13T12:00:00Z",
+  "actor": {
+    "actorType": "synthetic",
+    "id": "synthetic-agent:scope-d-init",
+    "display": "SCOPE-D synthetic event generator"
+  },
+  "resource": {
+    "resourceType": "synthetic_population_segment",
+    "resourceId": "segment:users_in_region_ne",
+    "redactionState": "synthetic"
+  },
+  "facets": {
+    "dp": {
+      "epsilon": 0.05,
+      "delta": 0.000001,
+      "mechanism": "gaussian",
+      "population": "segment:users_in_region_ne"
+    }
+  },
+  "safetyClass": "synthetic_only",
+  "payload": {
+    "queryName": "synthetic_count_by_region",
+    "liveExecution": false
+  },
+  "provenance": {
+    "collector": "scope-d.synthetic",
+    "traceId": "trace-synthetic-001",
+    "sourceRef": "examples/scope-d/atomic-testcase.example.json",
+    "hash": "sha256:synthetic-event-ir-example"
+  }
+}
