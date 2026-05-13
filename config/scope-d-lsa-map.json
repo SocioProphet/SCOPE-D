@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "scope-d-lsa-map-v0.1",
+  "name": "SCOPE-D 23-topic operating map",
+  "description": "Durable topic and prime-vector anchors for the SCOPE-D defensive purple-team control fabric. This is configuration, not a learned model artifact.",
+  "primeVectorSet": [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31],
+  "topics": [
+    { "id": 1, "name": "Genesys-Inception-Emergence rollout", "objective": "Immutable provenance from seed to lab to perimeter", "phaseFocus": ["V1", "V2", "V3", "V7"], "anchors": ["spec_version", "minisign", "bundle_sha", "quorum", "rollback"] },
+    { "id": 2, "name": "Android VM harness and nano-C2 profiles", "objective": "Reproduce adversary guest shapes safely and measurably", "phaseFocus": ["V1", "V3", "V4", "V6"], "anchors": ["netns", "veth", "emulator", "h2", "ws", "h3", "doh", "padding", "jitter"] },
+    { "id": 3, "name": "Reverse tether modeling", "objective": "Model host-egress camouflage through bounded lab relays", "phaseFocus": ["V1", "V4", "V5"], "anchors": ["adb", "relay", "host_nat", "tls_clientshape", "policy_tag"] },
+    { "id": 4, "name": "Autoscout orchestration", "objective": "Declarative micro-flows for safe beacon observation", "phaseFocus": ["V2", "V3", "V6", "V7"], "anchors": ["agent_graph", "cadence", "webhook", "scope_guard", "audit_trail"] },
+    { "id": 5, "name": "Multifeed replication", "objective": "Model resilient low-signal state replication", "phaseFocus": ["V2", "V4", "V6"], "anchors": ["append_only_feed", "peer_degree", "chunk_entropy", "merkle_height", "backlog"] },
+    { "id": 6, "name": "KDE Connect side-channel containment", "objective": "Contain clipboard, file, notification, and input bridges", "phaseFocus": ["V1", "V3", "V5"], "anchors": ["pair_trust", "dbus", "file_push", "clipboard", "input_inject", "deny"] },
+    { "id": 7, "name": "Virtual display and PipeWire guards", "objective": "Expose hidden UI sessions and screencast contexts", "phaseFocus": ["V1", "V3", "V5"], "anchors": ["edid", "vkms", "evdi", "xrandr", "pipewire", "portal"] },
+    { "id": 8, "name": "Deepfake and liveness pressure tests", "objective": "Pressure-test persona binding and liveness", "phaseFocus": ["V2", "V4", "V6"], "anchors": ["virtual_cam", "pose", "blink", "av_sync", "attested_camera", "far", "frr"] },
+    { "id": 9, "name": "Header typing and Omega beacon scoring", "objective": "Classify flows without payloads and produce explainable scores", "phaseFocus": ["V1", "V4", "V6"], "anchors": ["periodicity", "header_min", "alpn", "quic", "ja3", "sni", "doh", "omega_band"] },
+    { "id": 10, "name": "JA3 QUIC qlog enrichment", "objective": "Add transport fingerprint enrichment", "phaseFocus": ["V1", "V4", "V6"], "anchors": ["ja3_raw", "suite_profile", "extension_profile", "group_profile", "spin_bit", "loss"] },
+    { "id": 11, "name": "Info fields and capability scoping", "objective": "Bound inference by bounding visibility", "phaseFocus": ["V2", "V3", "V5"], "anchors": ["flows_view", "headers_view", "tasks_only", "namespace", "cgroup", "proof_of_scope"] },
+    { "id": 12, "name": "Egress economy allocator", "objective": "Converge to fair budgets without brittle throttles", "phaseFocus": ["V2", "V5", "V6", "V7"], "anchors": ["producer", "transport", "consumer", "price", "backlog", "contention_epoch", "final_alloc"] },
+    { "id": 13, "name": "HPST tomography and agent grading", "objective": "Detect overconfidence, drift, and archetype mix", "phaseFocus": ["V2", "V6", "V7"], "anchors": ["calibration", "consistency", "grounding", "tool_discipline", "abstention", "drift"] },
+    { "id": 14, "name": "Two-witness knowledge promotion", "objective": "Require human or policy quorum for canonization of claims", "phaseFocus": ["V2", "V7"], "anchors": ["claim", "evidence_refs", "partials", "aggregate", "quorum", "canon_state"] },
+    { "id": 15, "name": "CI drift guard and SPEC control", "objective": "Ensure production configs match frozen source of truth", "phaseFocus": ["V1", "V7"], "anchors": ["baseline", "hash_mismatch", "path_scope", "pr_gate", "action_log", "freeze"] },
+    { "id": 16, "name": "PQC posture and key custody", "objective": "Future-proof keys and seal secrets to measured state", "phaseFocus": ["V2", "V3", "V7"], "anchors": ["kyber", "x25519", "dilithium", "slh_dsa", "tpm", "uki", "fido"] },
+    { "id": 17, "name": "Attestation and measured boot", "objective": "Only known-good sensors run", "phaseFocus": ["V1", "V3", "V7"], "anchors": ["pcr", "uki", "module_signature", "policy_hash", "quote", "attestor", "deny_boot"] },
+    { "id": 18, "name": "Publishing and provenance", "objective": "Signed reproducible reports with traceable sources", "phaseFocus": ["V3", "V6", "V7"], "anchors": ["markdown", "djot", "render", "sigil", "whyis", "pdf_hash", "citation"] },
+    { "id": 19, "name": "Ontology and AtomSpace types", "objective": "Precise types and constraints for agents flows and evidence", "phaseFocus": ["V2", "V3", "V6"], "anchors": ["type_tree", "shacl", "atom_type", "flow_class", "claim_type", "policy_type", "violation"] },
+    { "id": 20, "name": "Graph and topo forensics", "objective": "Preserve higher-order relations under noise", "phaseFocus": ["V2", "V4", "V6"], "anchors": ["simplex", "hyperedge", "boundary_op", "wl_hash", "kernel_distance", "persistence_pair"] },
+    { "id": 21, "name": "Generative search", "objective": "Sample diverse high-reward hypotheses without mode collapse", "phaseFocus": ["V2", "V4", "V6", "V7"], "anchors": ["reward_shape", "flow_balance", "coverage", "novelty", "constraint_ok", "safety_guard"] },
+    { "id": 22, "name": "Quantum-inspired toolkits", "objective": "Use structure-preserving optimization ideas safely", "phaseFocus": ["V2", "V6"], "anchors": ["mps", "dmrg", "qmc", "shadow", "variational_loop", "loss_landscape", "safe"] },
+    { "id": 23, "name": "DevEx and editors", "objective": "Fast deterministic editing with sealed plugin supply chains", "phaseFocus": ["V3", "V6", "V7"], "anchors": ["zed", "nvim", "plugin_lock", "lsp_latency", "tri_rpc", "autoscout", "hermetic"] }
+  ],
+  "crossTopicEdges": [
+    { "from": { "topic": 9, "dimension": "periodicity" }, "to": { "topic": 12, "dimension": "contention_epoch" }, "why": "beacon load informs egress economy contention" },
+    { "from": { "topic": 11, "dimension": "flows_view" }, "to": { "topic": 13, "dimension": "calibration" }, "why": "scope bounds tomography inputs" },
+    { "from": { "topic": 7, "dimension": "vkms_evdi_load" }, "to": { "topic": 15, "dimension": "hash_mismatch" }, "why": "unexpected display drivers trigger drift investigations" },
+    { "from": { "topic": 14, "dimension": "quorum" }, "to": { "topic": 18, "dimension": "publish_route" }, "why": "canon claims route to signed reports" },
+    { "from": { "topic": 20, "dimension": "persistence_pair" }, "to": { "topic": 21, "dimension": "coverage" }, "why": "topological stability guides generative search coverage" }
+  ]
+}
