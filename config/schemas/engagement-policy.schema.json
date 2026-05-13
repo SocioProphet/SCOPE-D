@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-engagement-policy.schema.json",
+  "title": "SCOPE-D Engagement Policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "policyId",
+    "name",
+    "authority",
+    "targetBoundary",
+    "defaultMode",
+    "allowedActions",
+    "blockedActions",
+    "approvalRules",
+    "expiresAt",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "policyId": { "type": "string", "pattern": "^engagement-policy-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approvalModel", "primaryApprover", "delegationAllowed"],
+      "properties": {
+        "approvalModel": { "type": "string", "enum": ["single_human", "human_and_policy_engine", "frost_quorum", "blocked"] },
+        "primaryApprover": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "email", "handle"],
+          "properties": {
+            "name": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "handle": { "type": "string" }
+          }
+        },
+        "delegationAllowed": { "type": "boolean" },
+        "delegationPolicyRef": { "type": "string" }
+      }
+    },
+    "targetBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["boundaryType", "authorizedTargets", "outOfScopeTargets"],
+      "properties": {
+        "boundaryType": { "type": "string", "enum": ["synthetic_lab", "owned_assets", "customer_authorized", "public_research", "blocked"] },
+        "authorizedTargets": { "type": "array", "items": { "type": "string" } },
+        "outOfScopeTargets": { "type": "array", "items": { "type": "string" } },
+        "legalBasisRef": { "type": "string" },
+        "rulesOfEngagementRef": { "type": "string" }
+      }
+    },
+    "defaultMode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"] },
+    "allowedActions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["read_metadata", "collect_scoped_evidence", "generate_synthetic_event", "dry_run_control", "generate_countermeasure", "validate_detection", "write_with_gate"]
+      }
+    },
+    "blockedActions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["credential_collection", "public_network_scanning", "payload_execution", "persistence", "log_mutation", "destructive_action", "unauthorized_external_contact", "production_write_without_gate", "identity_modification_without_gate"]
+      }
+    },
+    "dynamicResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "insideBoundaryDefault": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"] },
+        "outsideBoundaryDefault": { "type": "string", "enum": ["blocked", "read_only_metadata_only"] },
+        "evidenceTriggerRequired": { "type": "boolean" },
+        "humanApprovalRequiredForEscalation": { "type": "boolean" }
+      }
+    },
+    "approvalRules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["actionClass", "requiredGate"],
+        "properties": {
+          "actionClass": { "type": "string", "enum": ["read", "synthetic_event", "dry_run", "network_call", "write", "deployment", "destructive_action", "credential_access", "memory_write", "identity_write"] },
+          "requiredGate": { "type": "string", "enum": ["none", "human", "policy_engine", "human_and_policy_engine", "blocked"] },
+          "requiredApprover": { "type": "string" }
+        }
+      }
+    },
+    "expiresAt": { "type": "string", "format": "date-time" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": { "type": "string" },
+        "keyId": { "type": "string" },
+        "value": { "type": "string" }
+      }
+    }
+  }
+}
