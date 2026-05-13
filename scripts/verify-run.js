@@ -11,6 +11,7 @@ const ROOT = path.resolve(__dirname, '..');
 const SCHEMA_DIR = 'config/schemas';
 
 const FILE_SCHEMAS = {
+  'engagement-policy.json': 'engagement-policy.schema.json',
   'target-manifest.json': 'target-manifest.schema.json',
   'safety-boundary.json': 'safety-boundary.schema.json',
   'identity-ir.json': 'identity-ir.schema.json',
@@ -23,7 +24,7 @@ const EVENT_SCHEMA = 'synthetic-event.schema.json';
 const EVENT_IR_SCHEMA = 'event-ir.schema.json';
 
 function usage() {
-  console.log(`Usage: npm run scope-d:verify-run -- <runs/<run-id>>\n\nVerifies a generated SCOPE-D run directory by checking required artifacts, AJV schemas, JSONL events, Event-IR, Identity-IR, ProofArtifact, and receipt artifact hashes.`);
+  console.log(`Usage: npm run scope-d:verify-run -- <runs/<run-id>>\n\nVerifies a generated SCOPE-D run directory by checking required artifacts, engagement policy, AJV schemas, JSONL events, Event-IR, Identity-IR, ProofArtifact, and receipt artifact hashes.`);
 }
 
 function readJsonAbs(absPath) {
@@ -129,6 +130,7 @@ function verifyReceiptHashes(runAbs, runRel, receipt, errors) {
   }
 
   for (const required of [
+    'engagement-policy.json',
     'target-manifest.json',
     'safety-boundary.json',
     'events.jsonl',
@@ -142,7 +144,23 @@ function verifyReceiptHashes(runAbs, runRel, receipt, errors) {
   }
 }
 
-function validateCrossArtifactConsistency(targetManifest, safetyBoundary, identityIr, proofArtifact, controlLoop, receipt, runRel, errors) {
+function validatePolicyAuthorizesRun(engagementPolicy, targetManifest, controlLoop, errors) {
+  if (!engagementPolicy || !targetManifest || !controlLoop) return;
+  const target = targetManifest.target.identifier;
+  const surface = targetManifest.target.surfaceType;
+  const mode = controlLoop.safetyMode;
+
+  assert((engagementPolicy.authorizedTargets || []).includes(target), `engagement-policy.json does not authorize target ${target}`, errors);
+  assert((engagementPolicy.targetBoundary && engagementPolicy.targetBoundary.authorizedTargets || []).includes(target), `engagement-policy.json targetBoundary does not authorize target ${target}`, errors);
+  assert((engagementPolicy.authorizedSurfaces || []).includes(surface), `engagement-policy.json does not authorize surface ${surface}`, errors);
+  assert((engagementPolicy.authorizedModes || []).includes(mode), `engagement-policy.json does not authorize mode ${mode}`, errors);
+  assert(engagementPolicy.authority && engagementPolicy.authority.delegationAllowed === false, 'engagement-policy.json must not allow delegation without a signed delegation policy', errors);
+  if ((engagementPolicy.authorizedModes || []).includes('live_engage')) {
+    assert((engagementPolicy.michaelApprovalRequiredForModes || []).includes('live_engage'), 'engagement-policy.json authorizes live_engage without Michael approval requirement', errors);
+  }
+}
+
+function validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, controlLoop, receipt, runRel, errors) {
   if (targetManifest && controlLoop) {
     assert(targetManifest.target.identifier === controlLoop.targetSurface.identifier, 'Target identifier mismatch between target-manifest.json and control-loop.json', errors);
     assert(targetManifest.target.surfaceType === controlLoop.targetSurface.surfaceType, 'Surface type mismatch between target-manifest.json and control-loop.json', errors);
@@ -166,6 +184,7 @@ function validateCrossArtifactConsistency(targetManifest, safetyBoundary, identi
     assert(controlLoop.safetyMode === 'synthetic_only', 'control-loop.json safetyMode must be synthetic_only for generated runs', errors);
     assert(controlLoop.status === 'completed', 'control-loop.json status should be completed for generated runs', errors);
     const evidenceRefs = new Set((controlLoop.evidence || []).map((ev) => ev.resourceId));
+    if (engagementPolicy) assert(evidenceRefs.has(engagementPolicy.policyId), 'control-loop.json evidence must reference engagement-policy.json', errors);
     if (identityIr) assert(evidenceRefs.has(identityIr.identityIrId), 'control-loop.json evidence must reference identity-ir.json', errors);
     if (proofArtifact) assert(evidenceRefs.has(proofArtifact.proofId), 'control-loop.json evidence must reference proof-artifact.json', errors);
   }
@@ -173,7 +192,10 @@ function validateCrossArtifactConsistency(targetManifest, safetyBoundary, identi
   if (receipt) {
     assert(receipt.runId && runRel.endsWith(receipt.runId), `receipt.json runId ${receipt.runId} must match run directory ${runRel}`, errors);
     assert(receipt.safetySummary && receipt.safetySummary.liveActionsExecuted === 0, 'receipt.json must record zero live actions', errors);
+    assert((receipt.policyDecisions || []).includes('gate-engagement-policy'), 'receipt.json must include gate-engagement-policy decision', errors);
   }
+
+  validatePolicyAuthorizesRun(engagementPolicy, targetManifest, controlLoop, errors);
 }
 
 function main() {
@@ -191,6 +213,7 @@ function main() {
   assert(fs.existsSync(runAbs) && fs.statSync(runAbs).isDirectory(), `Run directory not found: ${runRel}`, errors);
 
   if (errors.length === 0) {
+    const engagementPolicy = validateJsonFile(runAbs, 'engagement-policy.json', FILE_SCHEMAS['engagement-policy.json'], errors);
     const targetManifest = validateJsonFile(runAbs, 'target-manifest.json', FILE_SCHEMAS['target-manifest.json'], errors);
     const safetyBoundary = validateJsonFile(runAbs, 'safety-boundary.json', FILE_SCHEMAS['safety-boundary.json'], errors);
     const controlLoop = validateJsonFile(runAbs, 'control-loop.json', FILE_SCHEMAS['control-loop.json'], errors);
@@ -202,7 +225,7 @@ function main() {
 
     assert(fs.existsSync(path.join(runAbs, 'report.md')), 'Missing required artifact: report.md', errors);
     verifyReceiptHashes(runAbs, runRel, receipt, errors);
-    validateCrossArtifactConsistency(targetManifest, safetyBoundary, identityIr, proofArtifact, controlLoop, receipt, runRel, errors);
+    validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, controlLoop, receipt, runRel, errors);
 
     if (errors.length === 0) {
       console.log(`Verified SCOPE-D run: ${runRel} (${eventCount} synthetic event${eventCount === 1 ? '' : 's'}, ${eventIrCount} Event-IR record${eventIrCount === 1 ? '' : 's'})`);
