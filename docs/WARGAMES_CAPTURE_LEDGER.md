@@ -1,6 +1,6 @@
 # Devine Intelligence Wargames Capture Ledger
 
-Status: v1.3 integration ledger  
+Status: v1.4 integration ledger  
 Branch: `scope-d-di-war-games-alignment`  
 Repository: `SocioProphet/SCOPE-D`  
 Purpose: prevent loss, duplication, or drift while integrating the uploaded Wargames corpus into SCOPE-D.
@@ -41,6 +41,7 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 | Whisper v1.0 egress spec | captured | `docs/agents/WHISPER_AGENT_SPEC.md` | prose only; schema/example/CI backlog |
 | Scout full spec | captured | `docs/agents/SCOUT_AGENT_SPEC.md` | prose only; schema/example/CI backlog |
 | Font and rendering surface drill | captured | `docs/surfaces/FONT_RENDERING_SURFACE_DRILL.md` | prose only; schema/example/CI backlog |
+| Public-index exposure audit / dorks | captured | `docs/surfaces/PUBLIC_INDEX_EXPOSURE_AUDIT.md` | prose only; schema/example/CI backlog |
 | Memphis Rite ceremony and purpose | captured | `docs/MEMPHIS_RITE_GOVERNANCE.md` | prose only; schema/example/CI backlog |
 | LSA/LSI 23-topic map and operationalization scripts | captured | `docs/WARGAMES_LSA_LSI_MAP.md` and later `examples/scope-d/wargames-lsa-map.example.json` | prose only; machine map backlog |
 | Omissions and completions: Triune RPC, AUM, qlog, CI drift, CRDT, SHACL, HPST, symbolic bridges | captured | `docs/WARGAMES_IMPLEMENTATION_BACKLOG.md` | backlog only; no runtime implementation |
@@ -48,7 +49,6 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 | HPST / verifier economy | captured | `docs/WARGAMES_HPST_VERIFIER_ECONOMY.md` | prose only; schema/example/CI backlog |
 | ER+ / Heller ER identity geometry | captured | `docs/IDENTITY_GEOMETRY_ER_PLUS_ALIGNMENT.md` | prose only; schema/example/CI backlog |
 | Whisper v0.1 egress spec | superseded | `docs/agents/WHISPER_AGENT_SPEC.md` | v1.0 canonical; v0.1 explanatory only |
-| Public-index exposure audit / dorks | pending dedicated doc | `docs/surfaces/PUBLIC_INDEX_EXPOSURE_AUDIT.md` | not yet committed |
 
 ## Capture principles
 
@@ -77,6 +77,7 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 - `docs/agents/WHISPER_AGENT_SPEC.md`
 - `docs/agents/SCOUT_AGENT_SPEC.md`
 - `docs/surfaces/FONT_RENDERING_SURFACE_DRILL.md`
+- `docs/surfaces/PUBLIC_INDEX_EXPOSURE_AUDIT.md`
 - `docs/MEMPHIS_RITE_GOVERNANCE.md`
 - `docs/WARGAMES_LSA_LSI_MAP.md`
 - `docs/WARGAMES_IMPLEMENTATION_BACKLOG.md`
@@ -87,7 +88,9 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 
 ## Next files in this branch
 
-- `docs/surfaces/PUBLIC_INDEX_EXPOSURE_AUDIT.md`
+No remaining capture files from the current uploaded Wargames batch are listed as pending.
+
+Next recommended step: start a separate implementation PR for the first schema-backed slice.
 
 ## De-duplication rules
 
