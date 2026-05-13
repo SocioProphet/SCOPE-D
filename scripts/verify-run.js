@@ -13,14 +13,17 @@ const SCHEMA_DIR = 'config/schemas';
 const FILE_SCHEMAS = {
   'target-manifest.json': 'target-manifest.schema.json',
   'safety-boundary.json': 'safety-boundary.schema.json',
+  'identity-ir.json': 'identity-ir.schema.json',
+  'proof-artifact.json': 'proof-artifact.schema.json',
   'control-loop.json': 'scope-d-control-loop.schema.json',
   'receipt.json': 'run-receipt.schema.json',
 };
 
 const EVENT_SCHEMA = 'synthetic-event.schema.json';
+const EVENT_IR_SCHEMA = 'event-ir.schema.json';
 
 function usage() {
-  console.log(`Usage: npm run scope-d:verify-run -- <runs/<run-id>>\n\nVerifies a generated SCOPE-D run directory by checking required artifacts, AJV schemas, JSONL synthetic events, and receipt artifact hashes.`);
+  console.log(`Usage: npm run scope-d:verify-run -- <runs/<run-id>>\n\nVerifies a generated SCOPE-D run directory by checking required artifacts, AJV schemas, JSONL events, Event-IR, Identity-IR, ProofArtifact, and receipt artifact hashes.`);
 }
 
 function readJsonAbs(absPath) {
@@ -55,8 +58,9 @@ function assert(condition, message, errors) {
   if (!condition) errors.push(message);
 }
 
-function validateJsonFile(runAbs, fileName, schemaRel, errors) {
+function validateJsonFile(runAbs, fileName, schemaRel, errors, options = {}) {
   const fileAbs = path.join(runAbs, fileName);
+  if (options.optional && !fs.existsSync(fileAbs)) return null;
   assert(fs.existsSync(fileAbs), `Missing required artifact: ${fileName}`, errors);
   if (!fs.existsSync(fileAbs)) return null;
 
@@ -75,29 +79,33 @@ function validateJsonFile(runAbs, fileName, schemaRel, errors) {
   return value;
 }
 
-function validateEvents(runAbs, errors) {
-  const eventsAbs = path.join(runAbs, 'events.jsonl');
-  assert(fs.existsSync(eventsAbs), 'Missing required artifact: events.jsonl', errors);
-  if (!fs.existsSync(eventsAbs)) return 0;
+function validateJsonlFile(runAbs, fileName, schemaRel, errors, label, options = {}) {
+  const fileAbs = path.join(runAbs, fileName);
+  if (options.optional && !fs.existsSync(fileAbs)) return 0;
+  assert(fs.existsSync(fileAbs), `Missing required artifact: ${fileName}`, errors);
+  if (!fs.existsSync(fileAbs)) return 0;
 
-  const validate = compileSchema(EVENT_SCHEMA);
-  const lines = fs.readFileSync(eventsAbs, 'utf8').split('\n').filter(Boolean);
-  assert(lines.length > 0, 'events.jsonl must contain at least one event', errors);
+  const validate = compileSchema(schemaRel);
+  const lines = fs.readFileSync(fileAbs, 'utf8').split('\n').filter(Boolean);
+  assert(lines.length > 0, `${fileName} must contain at least one ${label}`, errors);
 
   for (let i = 0; i < lines.length; i++) {
     let event;
     try {
       event = JSON.parse(lines[i]);
     } catch (err) {
-      errors.push(`events.jsonl line ${i + 1}: invalid JSON: ${err.message}`);
+      errors.push(`${fileName} line ${i + 1}: invalid JSON: ${err.message}`);
       continue;
     }
     if (!validate(event)) {
-      errors.push(`events.jsonl line ${i + 1} failed ${EVENT_SCHEMA}: ${formatAjvErrors(validate)}`);
+      errors.push(`${fileName} line ${i + 1} failed ${schemaRel}: ${formatAjvErrors(validate)}`);
     }
-    if (event && event.safety) {
-      assert(event.safety.liveExecution === false, `events.jsonl line ${i + 1}: liveExecution must be false`, errors);
-      assert(event.safety.blockedInProduction === true, `events.jsonl line ${i + 1}: blockedInProduction must be true`, errors);
+    if (fileName === 'events.jsonl' && event && event.safety) {
+      assert(event.safety.liveExecution === false, `${fileName} line ${i + 1}: liveExecution must be false`, errors);
+      assert(event.safety.blockedInProduction === true, `${fileName} line ${i + 1}: blockedInProduction must be true`, errors);
+    }
+    if (fileName === 'event-ir.jsonl' && event) {
+      assert(event.safetyClass === 'synthetic_only', `${fileName} line ${i + 1}: safetyClass must be synthetic_only`, errors);
     }
   }
 
@@ -120,12 +128,21 @@ function verifyReceiptHashes(runAbs, runRel, receipt, errors) {
     seen.add(localFile);
   }
 
-  for (const required of ['target-manifest.json', 'safety-boundary.json', 'events.jsonl', 'control-loop.json', 'report.md']) {
+  for (const required of [
+    'target-manifest.json',
+    'safety-boundary.json',
+    'events.jsonl',
+    'event-ir.jsonl',
+    'identity-ir.json',
+    'proof-artifact.json',
+    'control-loop.json',
+    'report.md',
+  ]) {
     assert(seen.has(required), `Receipt missing hash for required artifact: ${required}`, errors);
   }
 }
 
-function validateCrossArtifactConsistency(targetManifest, safetyBoundary, controlLoop, receipt, runRel, errors) {
+function validateCrossArtifactConsistency(targetManifest, safetyBoundary, identityIr, proofArtifact, controlLoop, receipt, runRel, errors) {
   if (targetManifest && controlLoop) {
     assert(targetManifest.target.identifier === controlLoop.targetSurface.identifier, 'Target identifier mismatch between target-manifest.json and control-loop.json', errors);
     assert(targetManifest.target.surfaceType === controlLoop.targetSurface.surfaceType, 'Surface type mismatch between target-manifest.json and control-loop.json', errors);
@@ -138,9 +155,19 @@ function validateCrossArtifactConsistency(targetManifest, safetyBoundary, contro
     assert(safetyBoundary.credentialBoundary && safetyBoundary.credentialBoundary.secretCollectionAllowed === false, 'safety-boundary.json must prohibit secret collection', errors);
   }
 
+  if (identityIr && proofArtifact) {
+    assert((proofArtifact.identityRefs || []).includes(identityIr.identityIrId), 'proof-artifact.json must reference identity-ir.json identityIrId', errors);
+    for (const eventRef of identityIr.eventRefs || []) {
+      assert((proofArtifact.eventRefs || []).includes(eventRef), `proof-artifact.json must reference Identity-IR event ${eventRef}`, errors);
+    }
+  }
+
   if (controlLoop) {
     assert(controlLoop.safetyMode === 'synthetic_only', 'control-loop.json safetyMode must be synthetic_only for generated runs', errors);
     assert(controlLoop.status === 'completed', 'control-loop.json status should be completed for generated runs', errors);
+    const evidenceRefs = new Set((controlLoop.evidence || []).map((ev) => ev.resourceId));
+    if (identityIr) assert(evidenceRefs.has(identityIr.identityIrId), 'control-loop.json evidence must reference identity-ir.json', errors);
+    if (proofArtifact) assert(evidenceRefs.has(proofArtifact.proofId), 'control-loop.json evidence must reference proof-artifact.json', errors);
   }
 
   if (receipt) {
@@ -167,15 +194,18 @@ function main() {
     const targetManifest = validateJsonFile(runAbs, 'target-manifest.json', FILE_SCHEMAS['target-manifest.json'], errors);
     const safetyBoundary = validateJsonFile(runAbs, 'safety-boundary.json', FILE_SCHEMAS['safety-boundary.json'], errors);
     const controlLoop = validateJsonFile(runAbs, 'control-loop.json', FILE_SCHEMAS['control-loop.json'], errors);
+    const identityIr = validateJsonFile(runAbs, 'identity-ir.json', FILE_SCHEMAS['identity-ir.json'], errors);
+    const proofArtifact = validateJsonFile(runAbs, 'proof-artifact.json', FILE_SCHEMAS['proof-artifact.json'], errors);
     const receipt = validateJsonFile(runAbs, 'receipt.json', FILE_SCHEMAS['receipt.json'], errors);
-    const eventCount = validateEvents(runAbs, errors);
+    const eventCount = validateJsonlFile(runAbs, 'events.jsonl', EVENT_SCHEMA, errors, 'synthetic event');
+    const eventIrCount = validateJsonlFile(runAbs, 'event-ir.jsonl', EVENT_IR_SCHEMA, errors, 'Event-IR record');
 
     assert(fs.existsSync(path.join(runAbs, 'report.md')), 'Missing required artifact: report.md', errors);
     verifyReceiptHashes(runAbs, runRel, receipt, errors);
-    validateCrossArtifactConsistency(targetManifest, safetyBoundary, controlLoop, receipt, runRel, errors);
+    validateCrossArtifactConsistency(targetManifest, safetyBoundary, identityIr, proofArtifact, controlLoop, receipt, runRel, errors);
 
     if (errors.length === 0) {
-      console.log(`Verified SCOPE-D run: ${runRel} (${eventCount} synthetic event${eventCount === 1 ? '' : 's'})`);
+      console.log(`Verified SCOPE-D run: ${runRel} (${eventCount} synthetic event${eventCount === 1 ? '' : 's'}, ${eventIrCount} Event-IR record${eventIrCount === 1 ? '' : 's'})`);
       return;
     }
   }
