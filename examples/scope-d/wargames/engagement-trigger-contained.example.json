@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.1.0",
+  "triggerId": "engagement-trigger:contained-boundary-breach-001",
+  "triggerType": "boundary_breach",
+  "boundaryScope": "inside",
+  "confidence": 0.88,
+  "severity": "high",
+  "evidenceRefs": ["evidence:scout-header-summary-001"],
+  "boundaryEventRefs": ["boundary-event:net-header-001"],
+  "findingRefs": ["finding:boundary-breach-001"],
+  "attackCoverageRefs": ["attack-coverage:authorized-lab-tactic-001"],
+  "affectedAssets": ["asset:owned-lab-gateway-alpha"],
+  "tenantScope": "socioprophet-lab",
+  "recommendedEngagementLevel": "E2",
+  "policyRefs": ["policy:inside-boundary-containment"],
+  "authorizationRef": "authorization:standing-lab-containment",
+  "safetyBoundaryRef": "safety-boundary:synthetic-lab-default",
+  "expiresAt": "2026-05-14T14:00:00Z"
+}
