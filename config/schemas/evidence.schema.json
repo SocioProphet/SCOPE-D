@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/evidence.schema.json",
+  "title": "Wargames Evidence Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "evidenceId",
+    "role",
+    "collector",
+    "observedAt",
+    "sourceRef",
+    "redactionState",
+    "claimLevel",
+    "safetyBoundaryRef"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "evidenceId": { "type": "string", "pattern": "^evidence:[a-z0-9][a-z0-9._:-]*$" },
+    "boundaryEventRef": { "type": "string" },
+    "role": { "type": "string", "enum": ["direct", "corroborating", "contradictory", "absent_expected", "summary", "proof_digest"] },
+    "collector": { "type": "string", "minLength": 1 },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "sourceRef": { "type": "string", "minLength": 1 },
+    "recordRef": { "type": ["string", "null"] },
+    "redactionState": { "type": "string", "enum": ["raw", "redacted", "synthetic", "withheld"] },
+    "claimLevel": { "type": "string", "enum": ["guaranteed", "conditional", "speculative", "rejected"] },
+    "safetyBoundaryRef": { "type": "string", "minLength": 1 },
+    "tenantScope": { "type": "string" },
+    "topicRefs": { "type": "array", "items": { "type": "string", "pattern": "^T(0?[1-9]|1[0-9]|2[0-3])$" } },
+    "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+    "explanation": { "type": "string" },
+    "window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "string", "format": "date-time" },
+        "end": { "type": "string", "format": "date-time" }
+      }
+    },
+    "hashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" }
+      }
+    },
+    "sensitiveContentStored": { "type": "boolean", "const": false }
+  }
+}
