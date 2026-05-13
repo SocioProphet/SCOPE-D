@@ -1,0 +1,1145 @@
+{
+  "schemaVersion": "0.1.0",
+  "mapId": "wargames-lsa-lsi-map:canonical-v0.1",
+  "canonicalProgram": "Devine Intelligence Wargames",
+  "primeSet": [
+    "p2",
+    "p3",
+    "p5",
+    "p7",
+    "p11",
+    "p13",
+    "p17",
+    "p19",
+    "p23",
+    "p29",
+    "p31"
+  ],
+  "topics": [
+    {
+      "topicId": "T1",
+      "name": "GIE Rollout",
+      "objective": "Immutable provenance from offline seed to lab to perimeter.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H7",
+        "H6"
+      ],
+      "primaryPhases": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:scribe",
+        "agent:herald"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T2",
+      "name": "Android VM and Nano-C2 Profiles",
+      "objective": "Safe synthetic guest-profile reproduction for detector validation.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H1",
+        "H2",
+        "H4"
+      ],
+      "primaryPhases": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "agentRefs": [
+        "agent:shade",
+        "agent:scout"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T3",
+      "name": "Reverse-Tether Relay Audit",
+      "objective": "Detect and govern host/guest egress ambiguity in authorized environments.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H1",
+        "H2"
+      ],
+      "primaryPhases": [
+        "V1",
+        "V2",
+        "V3",
+        "V5"
+      ],
+      "agentRefs": [
+        "agent:scout",
+        "agent:warden"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T4",
+      "name": "Autoscout Orchestration",
+      "objective": "Drive microflows, cadence, tagging, ballots, and proof routing.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "control"
+      ],
+      "primaryPhases": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:herald"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T5",
+      "name": "Multifeed Replication",
+      "objective": "Model append-only proof-leaf replication and churn-tolerant state.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H2",
+        "H6"
+      ],
+      "primaryPhases": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:bridge-steward",
+        "agent:scribe"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T6",
+      "name": "Side-Channel Bridges",
+      "objective": "Contain clipboard, file, notification, and input bridges.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "primaryPhases": [
+        "V2",
+        "V3",
+        "V4",
+        "V5"
+      ],
+      "agentRefs": [
+        "agent:veil",
+        "agent:warden"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T7",
+      "name": "Virtual Display and PipeWire Guards",
+      "objective": "Expose hidden UI sessions, virtual displays, and rendering drift.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H3",
+        "H7"
+      ],
+      "primaryPhases": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:warden",
+        "agent:scout"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T8",
+      "name": "Liveness and Deepfake Review",
+      "objective": "Pressure-test persona binding, liveness, and virtual-camera risk.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H4",
+        "H3"
+      ],
+      "primaryPhases": [
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ],
+      "agentRefs": [
+        "agent:scout",
+        "agent:evalangelica"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T9",
+      "name": "Header Typing and Omega Scoring",
+      "objective": "Classify flows without payload bodies and produce explainable signal scores.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H2",
+        "H4"
+      ],
+      "primaryPhases": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ],
+      "agentRefs": [
+        "agent:scout",
+        "agent:shade"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T10",
+      "name": "JA3 QUIC qlog Enrichment",
+      "objective": "Add handshake and transport fingerprint context.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H2"
+      ],
+      "primaryPhases": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ],
+      "agentRefs": [
+        "agent:scout",
+        "agent:whisper"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T11",
+      "name": "Info Fields and Capability Scoping",
+      "objective": "Bound inference by bounding agent visibility.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "control"
+      ],
+      "primaryPhases": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:warden",
+        "agent:scribe"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T12",
+      "name": "Egress Economy VI Allocator",
+      "objective": "Converge to fair explainable egress budgets without brittle throttles.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H2",
+        "H6"
+      ],
+      "primaryPhases": [
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:whisper",
+        "agent:warden"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T13",
+      "name": "HPST Tomography and Agent Grading",
+      "objective": "Detect overconfidence, drift, grounding weakness, and tool misuse.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "control"
+      ],
+      "primaryPhases": [
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:evalangelica",
+        "agent:scribe"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T14",
+      "name": "Two-Witness FROST Promotion",
+      "objective": "Require quorum for canonization and keep dissent visible.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "control",
+        "docs"
+      ],
+      "primaryPhases": [
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:scribe",
+        "agent:herald"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T15",
+      "name": "CI Drift Guard and SPEC Control",
+      "objective": "Prevent unapproved drift from Genesys/SPEC expectations.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H6"
+      ],
+      "primaryPhases": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:warden",
+        "agent:scribe"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T16",
+      "name": "PQC Posture and Key Custody",
+      "objective": "Future-proof cryptographic posture and bind secrets to measured state.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H7",
+        "H6"
+      ],
+      "primaryPhases": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:warden",
+        "agent:scribe"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T17",
+      "name": "Attestation and Measured Boot",
+      "objective": "Ensure known-good sensors and defensive components run visibly.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "H7"
+      ],
+      "primaryPhases": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:warden",
+        "agent:scout"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T18",
+      "name": "Publishing and Provenance",
+      "objective": "Produce signed reproducible reports with traceable sources.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "docs"
+      ],
+      "primaryPhases": [
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:scribe",
+        "agent:veil"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T19",
+      "name": "Ontology AtomSpace SHACL",
+      "objective": "Define precise types and constraints for evidence, agents, flows, and controls.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "control"
+      ],
+      "primaryPhases": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:scribe",
+        "agent:warden"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T20",
+      "name": "Graph Topo Forensics",
+      "objective": "Preserve higher-order relations under noise and explain them.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "graph"
+      ],
+      "primaryPhases": [
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:scout",
+        "agent:scribe"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T21",
+      "name": "Generative Search GFlowNets",
+      "objective": "Sample diverse high-reward defensive hypotheses without unsafe exploration.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "hypothesis"
+      ],
+      "primaryPhases": [
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:evalangelica",
+        "agent:warden"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T22",
+      "name": "Quantum-Inspired Toolkits",
+      "objective": "Use variational and structure-preserving optimization ideas safely.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "optimization"
+      ],
+      "primaryPhases": [
+        "V4",
+        "V5",
+        "V6"
+      ],
+      "agentRefs": [
+        "agent:evalangelica",
+        "agent:scribe"
+      ],
+      "implementationState": "schema_backed"
+    },
+    {
+      "topicId": "T23",
+      "name": "DevEx and Editors",
+      "objective": "Maintain deterministic editing, sealed plugins, safe autoscouts, and reproducible workspaces.",
+      "lsaDims": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10"
+      ],
+      "lsiAnchors": [
+        "p2",
+        "p3",
+        "p5",
+        "p7",
+        "p11",
+        "p13",
+        "p17",
+        "p19",
+        "p23",
+        "p29",
+        "p31"
+      ],
+      "primarySurfaces": [
+        "editors",
+        "H6"
+      ],
+      "primaryPhases": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
+      "agentRefs": [
+        "agent:scribe",
+        "agent:warden",
+        "agent:herald"
+      ],
+      "implementationState": "schema_backed"
+    }
+  ],
+  "crossTopicEdges": [
+    {
+      "fromTopic": "T9",
+      "toTopic": "T12",
+      "relation": "Omega pressure informs egress allocation dead-band and contention decisions.",
+      "evidenceClass": "boundary_event"
+    },
+    {
+      "fromTopic": "T14",
+      "toTopic": "T18",
+      "relation": "Promotion status controls publish route and provenance banners.",
+      "evidenceClass": "governance_gate"
+    },
+    {
+      "fromTopic": "T15",
+      "toTopic": "T18",
+      "relation": "SPEC drift appears in signed reports and version banners.",
+      "evidenceClass": "proof_artifact"
+    },
+    {
+      "fromTopic": "T16",
+      "toTopic": "T17",
+      "relation": "Key rotation state is reflected in attestation and measured-boot checks.",
+      "evidenceClass": "proof_artifact"
+    },
+    {
+      "fromTopic": "T19",
+      "toTopic": "T20",
+      "relation": "SHACL violations become graph hyperedges for topology review.",
+      "evidenceClass": "ontology_validation"
+    },
+    {
+      "fromTopic": "T20",
+      "toTopic": "T21",
+      "relation": "Persistent motifs seed safe hypothesis generation.",
+      "evidenceClass": "semantic_enrichment"
+    },
+    {
+      "fromTopic": "T21",
+      "toTopic": "T22",
+      "relation": "Safe novelty candidates become pedagogy and optimization demos.",
+      "evidenceClass": "learning_corpus"
+    },
+    {
+      "fromTopic": "T23",
+      "toTopic": "T18",
+      "relation": "Hermetic workspace state supports reproducible publishing.",
+      "evidenceClass": "proof_artifact"
+    }
+  ],
+  "modeUse": {
+    "DEFENSE": [
+      "coverage accounting",
+      "evidence routing",
+      "agent tasking",
+      "posture summaries",
+      "ATT&CK coverage explanation",
+      "dynamic engagement trigger context",
+      "OFIF client-facing summaries"
+    ],
+    "LEARNING": [
+      "corpus labeling",
+      "LSA coherence measurement",
+      "LDA expansion control",
+      "grammar and SHACL tests",
+      "reproducibility checks",
+      "redacted training data"
+    ]
+  },
+  "redactionPolicy": {
+    "learningExports": "redacted_required",
+    "clientExports": "ofif_governed",
+    "rawIdentityJoinsAllowed": false
+  }
+}
