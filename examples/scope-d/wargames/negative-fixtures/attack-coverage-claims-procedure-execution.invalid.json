@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "claimId": "attack-coverage:procedure-execution-invalid",
+  "mode": "DEFENSE",
+  "topicRefs": ["T9"],
+  "coverageStatus": "covered",
+  "tacticRefs": ["tactic:command-and-control"],
+  "techniqueRefs": ["technique:invalid-runtime-procedure"],
+  "evidenceRefs": ["evidence:scout-header-summary-001"],
+  "boundaryEventRefs": ["boundary-event:net-header-001"],
+  "controlRefs": ["control:invalid-runtime-procedure"],
+  "proofRefs": ["proof:scout:profile-001"],
+  "semanticNonClaims": [
+    "does_not_validate_source_authenticity",
+    "does_not_claim_causal_attribution",
+    "does_not_authorize_engagement"
+  ],
+  "redactionState": "redacted",
+  "confidenceClass": "high",
+  "runtimeAuthority": true,
+  "procedureExecutionAuthority": true,
+  "engagementAuthorizationAuthority": false
+}
