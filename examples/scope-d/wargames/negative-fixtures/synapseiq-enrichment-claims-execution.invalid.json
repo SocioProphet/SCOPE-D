@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "0.1.0",
+  "enrichmentId": "synapseiq-enrichment:claims-execution-invalid",
+  "inputEvidenceRefs": ["evidence:scout-header-summary-001"],
+  "outputIntelligenceSummaryRef": "summary:invalid-runtime-claim",
+  "topicClassifications": ["T9"],
+  "enrichmentMethod": "semantic_enrichment",
+  "confidenceClass": "high",
+  "enrichmentNonClaims": [
+    "does_not_validate_source_authenticity",
+    "does_not_perform_live_lookup",
+    "does_not_make_engagement_decisions"
+  ],
+  "redactionState": "redacted",
+  "ontologyValidationRef": "ontogenesis-validation:invalid",
+  "qualityReportRef": "synapseiq-quality:invalid",
+  "runtimeAuthority": true,
+  "liveLookupPerformed": true,
+  "modelMutationPerformed": true,
+  "engagementDecisionAuthority": true
+}

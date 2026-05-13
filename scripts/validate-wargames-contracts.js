@@ -21,6 +21,8 @@ const VALID_PAIRS = [
   ['config/schemas/engagement-trigger.schema.json', 'examples/scope-d/wargames/engagement-trigger-contained.example.json'],
   ['config/schemas/engagement-authorization.schema.json', 'examples/scope-d/wargames/engagement-authorization-approved.example.json'],
   ['config/schemas/wargames-lsa-lsi-map.schema.json', 'examples/scope-d/wargames/wargames-lsa-map.example.json'],
+  ['config/schemas/wargames-synapseiq-enrichment.schema.json', 'examples/scope-d/wargames/wargames-synapseiq-enrichment.example.json'],
+  ['config/schemas/wargames-ofif-activation-envelope.schema.json', 'examples/scope-d/wargames/wargames-ofif-activation-envelope.example.json'],
 ];
 
 const INVALID_PAIRS = [
@@ -28,7 +30,14 @@ const INVALID_PAIRS = [
   ['config/schemas/engagement-authorization.schema.json', 'examples/scope-d/wargames/negative-fixtures/engagement-authorization-missing-michael.invalid.json'],
   ['config/schemas/scout-profile-proof.schema.json', 'examples/scope-d/wargames/negative-fixtures/scout-profile-proof-unsafe.invalid.json'],
   ['config/schemas/wargames-lsa-lsi-map.schema.json', 'examples/scope-d/wargames/negative-fixtures/wargames-lsa-map-raw-identity.invalid.json'],
+  ['config/schemas/wargames-ofif-activation-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ofif-envelope-unauthorized.invalid.json'],
+  ['config/schemas/wargames-ofif-activation-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ofif-envelope-invalid-topics.invalid.json'],
+  ['config/schemas/wargames-synapseiq-enrichment.schema.json', 'examples/scope-d/wargames/negative-fixtures/synapseiq-enrichment-claims-execution.invalid.json'],
+  ['config/schemas/wargames-ofif-activation-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ofif-envelope-raw-identity-join.invalid.json'],
 ];
+
+const APPROVED_AUTHORIZATION_EXAMPLE = 'examples/scope-d/wargames/engagement-authorization-approved.example.json';
+const APPROVED_SYNAPSEIQ_EXAMPLE = 'examples/scope-d/wargames/wargames-synapseiq-enrichment.example.json';
 
 const globalErrors = [];
 
@@ -51,7 +60,7 @@ function assertTo(errorList, condition, message) {
 }
 
 function sameSet(left, right) {
-  return left.length === right.length && left.every((item) => right.includes(item));
+  return Array.isArray(left) && left.length === right.length && left.every((item) => right.includes(item));
 }
 
 function validateSchemaShape(schemaPath, schema, errorList) {
@@ -162,6 +171,48 @@ function validateLsaLsiMap(examplePath, example, errorList) {
   }
 }
 
+function validateSynapseiqEnrichment(examplePath, example, errorList) {
+  if (!examplePath.includes('synapseiq-enrichment')) return;
+  assertTo(errorList, example.runtimeAuthority === false, `${examplePath}: SynapseIQ enrichment must not claim runtime authority`);
+  assertTo(errorList, example.liveLookupPerformed === false, `${examplePath}: SynapseIQ enrichment must not perform live lookup in contract examples`);
+  assertTo(errorList, example.modelMutationPerformed === false, `${examplePath}: SynapseIQ enrichment must not perform model mutation`);
+  assertTo(errorList, example.engagementDecisionAuthority === false, `${examplePath}: SynapseIQ enrichment must not make engagement decisions`);
+  assertTo(errorList, example.redactionState !== 'raw', `${examplePath}: SynapseIQ enrichment must not be raw`);
+  assertTo(errorList, Array.isArray(example.enrichmentNonClaims) && example.enrichmentNonClaims.includes('does_not_perform_live_lookup'), `${examplePath}: enrichment non-claims must include does_not_perform_live_lookup`);
+  assertTo(errorList, Array.isArray(example.enrichmentNonClaims) && example.enrichmentNonClaims.includes('does_not_make_engagement_decisions'), `${examplePath}: enrichment non-claims must include does_not_make_engagement_decisions`);
+}
+
+function validateOfifActivationEnvelope(examplePath, example, errorList) {
+  if (!examplePath.includes('ofif-envelope') && !examplePath.includes('wargames-ofif-activation-envelope')) return;
+  assertTo(errorList, example.rawIdentityJoinsAllowed === false, `${examplePath}: OFIF envelope must not allow raw identity joins`);
+  assertTo(errorList, example.runtimeAuthority === false, `${examplePath}: OFIF envelope must not claim runtime authority`);
+  assertTo(errorList, example.liveDeliveryExecuted === false, `${examplePath}: OFIF envelope must not execute live delivery`);
+  assertTo(errorList, example.redactionState !== 'raw', `${examplePath}: OFIF envelope must not be raw`);
+  assertTo(errorList, Array.isArray(example.nonClaims) && example.nonClaims.includes('does_not_execute_engagement'), `${examplePath}: OFIF non-claims must include does_not_execute_engagement`);
+  assertTo(errorList, Array.isArray(example.nonClaims) && example.nonClaims.includes('does_not_authorize_action_without_engagement_authorization'), `${examplePath}: OFIF non-claims must include does_not_authorize_action_without_engagement_authorization`);
+
+  if (example.deliveryClass === 'engagement_ready') {
+    assertTo(errorList, Array.isArray(example.evidenceRefs) && example.evidenceRefs.length >= 2, `${examplePath}: engagement_ready requires at least two evidence refs`);
+    assertTo(errorList, Boolean(example.scoutProofRef), `${examplePath}: engagement_ready requires scoutProofRef`);
+    assertTo(errorList, Boolean(example.synapseiqEnrichmentRef), `${examplePath}: engagement_ready requires synapseiqEnrichmentRef`);
+    assertTo(errorList, Boolean(example.engagementAuthorizationRef), `${examplePath}: engagement_ready requires engagementAuthorizationRef`);
+
+    const auth = readJson(APPROVED_AUTHORIZATION_EXAMPLE, errorList);
+    if (auth && example.engagementAuthorizationRef) {
+      assertTo(errorList, auth.authorizationId === example.engagementAuthorizationRef, `${examplePath}: engagementAuthorizationRef must point to the approved authorization example`);
+      assertTo(errorList, auth.approvalStatus === 'approved', `${examplePath}: referenced authorization must be approved`);
+      assertTo(errorList, Array.isArray(auth.approvedBy) && auth.approvedBy.includes('Michael Heller'), `${examplePath}: referenced authorization must include Michael Heller approval`);
+    }
+  }
+
+  const enrichment = readJson(APPROVED_SYNAPSEIQ_EXAMPLE, errorList);
+  if (enrichment && example.synapseiqEnrichmentRef) {
+    assertTo(errorList, enrichment.enrichmentId === example.synapseiqEnrichmentRef, `${examplePath}: synapseiqEnrichmentRef must point to the approved enrichment example`);
+    assertTo(errorList, enrichment.runtimeAuthority === false, `${examplePath}: referenced enrichment must not claim runtime authority`);
+    assertTo(errorList, enrichment.engagementDecisionAuthority === false, `${examplePath}: referenced enrichment must not make engagement decisions`);
+  }
+}
+
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
 const schemaCache = new Map();
@@ -199,6 +250,8 @@ function validatePair(schemaPath, examplePath) {
   validateEngagementTrigger(examplePath, example, localErrors);
   validateEngagementAuthorization(examplePath, example, localErrors);
   validateLsaLsiMap(examplePath, example, localErrors);
+  validateSynapseiqEnrichment(examplePath, example, localErrors);
+  validateOfifActivationEnvelope(examplePath, example, localErrors);
 
   return localErrors;
 }
