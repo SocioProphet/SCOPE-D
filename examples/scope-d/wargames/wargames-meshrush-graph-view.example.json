@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "0.1.0",
+  "exportId": "meshrush-export:boundary-graph-view-001",
+  "graphViewId": "graph-view:wargames-boundary-001",
+  "mode": "DEFENSE",
+  "sourceRunRefs": ["wargames-defense-2026-05-13-alpha"],
+  "topicRefs": ["T9", "T19", "T20"],
+  "boundaryEventRefs": ["boundary-event:net-header-001"],
+  "evidenceRefs": [
+    "evidence:scout-header-summary-001",
+    "negative-evidence:missing-validator-record-001"
+  ],
+  "proofRefs": ["proof:scout:profile-001"],
+  "nodeRefs": [
+    "node:component-lab-browser-profile-alpha",
+    "node:port-lab-browser-network-egress",
+    "node:contract-owned-lab-egress-readonly"
+  ],
+  "edgeRefs": [
+    "edge:component-to-port-001",
+    "edge:port-to-contract-001",
+    "edge:contract-to-boundary-event-001"
+  ],
+  "motifRefs": ["motif:boundary-evidence-chain-001"],
+  "validationState": "validated",
+  "redactionState": "redacted",
+  "nonClaims": [
+    "does_not_establish_runtime_connection",
+    "does_not_execute_graph_traversal",
+    "does_not_authorize_mutation",
+    "does_not_allow_raw_identity_joins"
+  ],
+  "rawIdentityJoinsAllowed": false,
+  "runtimeConnectionEstablished": false,
+  "traversalAuthority": false,
+  "mutationAuthority": false
+}
