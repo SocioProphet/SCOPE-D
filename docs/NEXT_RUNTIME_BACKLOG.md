@@ -22,6 +22,9 @@ Completed work:
 - `report-run.js` surfaces Event-IR, Identity-IR, and ProofArtifact counts.
 - `export-ontogenesis-rdf.js` emits triples for Event-IR, Identity-IR, ProofArtifact, dynamic metric, configuration volume, and archetype metadata when present.
 - `config/scope-d-lsa-map.json` is validated by `config/schemas/scope-d-lsa-map.schema.json` and `npm test`.
+- `scope-d:init` now requires `--engagement-policy` and fails closed when policy is absent, unreadable, schema-invalid, or unauthorized for the requested target/surface/mode.
+- Generated runs now copy the active policy into `engagement-policy.json`, link it from `control-loop.json`, hash it in the receipt, and verify it through `verify-run.js`.
+- `npm test` includes engagement-policy fail-closed tests for missing policy, missing file, schema invalidity, empty authorized targets, unauthorized target, unauthorized mode, and `live_engage` without Michael approval requirement.
 
 ## 1. Confirm CI and enforce branch protection
 
@@ -38,24 +41,7 @@ Completed work:
 - Latest `main` commit has a passing contract-validation workflow.
 - Direct contract drift cannot land without validation.
 
-## 2. Engagement policy enforcement
-
-**Goal:** Make `EngagementPolicy` active, not just documented.
-
-**Tasks:**
-
-- Add an `--engagement-policy` option to `scope-d:init` and future runners.
-- Validate the policy against `config/schemas/engagement-policy.schema.json`.
-- Refuse production/customer/public targets unless the policy explicitly authorizes them.
-- Require Michael Heller approval metadata for any future write/network/deployment/identity mutation action.
-
-**Acceptance:**
-
-- Synthetic lab examples run without manual approval.
-- Unsafe policies fail closed.
-- No runner can silently exceed `synthetic_only`, `read_only`, or `dry_run`.
-
-## 3. AI-infra synthetic vertical slice
+## 2. AI-infra synthetic vertical slice
 
 **Goal:** Use the AI-infra lane as the first domain-specific assessment scenario.
 
@@ -72,7 +58,7 @@ Completed work:
 - The run is fully synthetic and verified.
 - Ontogenesis export includes the AI-infra assessment evidence and proof claim.
 
-## 4. Graph robustness fixture
+## 3. Graph robustness fixture
 
 **Goal:** Move graph robustness from README-level doctrine to a runnable synthetic test.
 
@@ -88,7 +74,7 @@ Completed work:
 - Critical path stability can be scored before/after perturbation.
 - No generic offensive graph-attack tooling is shipped.
 
-## 5. 23-topic operating map runner
+## 4. 23-topic operating map runner
 
 **Goal:** Turn `config/scope-d-lsa-map.json` into dashboard and orchestration input.
 
@@ -103,7 +89,7 @@ Completed work:
 - Topic map remains validated in CI.
 - Output distinguishes captured design from implemented proof-producing lanes.
 
-## 6. Runtime collector policy
+## 5. Runtime collector policy
 
 **Goal:** Prepare for future collectors without violating safety doctrine.
 
