@@ -9,6 +9,7 @@ const ROOT = path.resolve(__dirname, '..');
 const RUN_ID = process.argv[2] || 'scope-d-ci-tamper-lab';
 const RUN_DIR = path.join(ROOT, 'runs', RUN_ID);
 const RUN_REL = path.relative(ROOT, RUN_DIR).replace(/\\/g, '/');
+const ENGAGEMENT_POLICY = 'examples/scope-d/engagement-policy.synthetic.json';
 
 function runNodeScript(scriptName, args, options = {}) {
   return childProcess.spawnSync(process.execPath, [path.join(ROOT, 'scripts', scriptName), ...args], {
@@ -32,7 +33,11 @@ function main() {
     fs.rmSync(RUN_DIR, { recursive: true, force: true });
   }
 
-  const init = runNodeScript('init-run.js', ['--run-id', RUN_ID, '--target', 'ci-tamper-lab']);
+  const init = runNodeScript('init-run.js', [
+    '--run-id', RUN_ID,
+    '--target', 'ci-tamper-lab',
+    '--engagement-policy', ENGAGEMENT_POLICY,
+  ]);
   if (init.status !== 0) fail('Expected scope-d init to succeed before tamper check.', init);
 
   const verifyBefore = runNodeScript('verify-run.js', [RUN_REL]);
