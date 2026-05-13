@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.0",
+  "exportId": "ontogenesis-export:wargames-boundary-coverage-001",
+  "jsonldContextRef": "jsonld-context:wargames-ontogenesis-v0.1",
+  "ontologyModuleRef": "ontology-module:wargames-boundary-coverage-v0.1",
+  "mode": "DEFENSE",
+  "topicRefs": ["T9", "T19", "T20"],
+  "sourceRunRefs": ["wargames-defense-2026-05-13-alpha"],
+  "coverageClaimRefs": ["attack-coverage:boundary-header-coverage-001"],
+  "evidenceRefs": [
+    "evidence:scout-header-summary-001",
+    "negative-evidence:missing-validator-record-001"
+  ],
+  "proofRefs": ["proof:scout:profile-001"],
+  "redactionState": "redacted",
+  "semanticNonClaims": [
+    "does_not_execute_attack_procedure",
+    "does_not_authorize_engagement",
+    "does_not_activate_client_delivery",
+    "does_not_validate_source_authenticity"
+  ],
+  "shaclValidationRef": "shacl-validation:wargames-boundary-coverage-001",
+  "runtimeAuthority": false,
+  "procedureExecutionAuthority": false,
+  "engagementAuthorizationAuthority": false,
+  "activationAllowed": false
+}
