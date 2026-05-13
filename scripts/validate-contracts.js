@@ -22,6 +22,10 @@ const REQUIRED_PAIRS = [
   ['config/schemas/run-receipt.schema.json', 'examples/scope-d/run-receipt.example.json'],
   ['config/schemas/safety-boundary.schema.json', 'examples/scope-d/safety-boundary.example.json'],
   ['config/schemas/agent-harness-risk-assessment.schema.json', 'examples/scope-d/agent-harness-risk-assessment.example.json'],
+  ['config/schemas/event-ir.schema.json', 'examples/scope-d/event-ir.example.json'],
+  ['config/schemas/identity-ir.schema.json', 'examples/scope-d/identity-ir.example.json'],
+  ['config/schemas/proof-artifact.schema.json', 'examples/scope-d/proof-artifact.example.json'],
+  ['config/schemas/engagement-policy.schema.json', 'examples/scope-d/engagement-policy.example.json'],
 ];
 
 const RUNTIME_SCHEMAS = [
@@ -116,6 +120,31 @@ function validateSafetyInvariants(examplePath, example) {
     assert(safety.credentialCollectionAllowed === false, `${examplePath}: credential collection must be prohibited`);
     assert(safety.publicNetworkScanningAllowed === false, `${examplePath}: public network scanning must be prohibited`);
     assert(safety.destructiveActionsAllowed === false, `${examplePath}: destructive actions must be prohibited`);
+  }
+
+  if (examplePath.includes('event-ir')) {
+    assert(example.safetyClass === 'synthetic_only', `${examplePath}: example Event-IR must be synthetic_only`);
+    assert(example.provenance && typeof example.provenance.hash === 'string', `${examplePath}: Event-IR example must include provenance hash`);
+  }
+
+  if (examplePath.includes('identity-ir')) {
+    assert(example.safetyMode === 'synthetic_only', `${examplePath}: example Identity-IR must be synthetic_only`);
+    assert(Array.isArray(example.primes) && example.primes.length > 0, `${examplePath}: Identity-IR example must include at least one prime`);
+  }
+
+  if (examplePath.includes('proof-artifact')) {
+    assert(example.safetyMode === 'synthetic_only', `${examplePath}: example proof artifact must be synthetic_only`);
+    assert(['SYNTHETIC_ONLY', 'PROVED', 'BOUNDED'].includes(example.status), `${examplePath}: example proof artifact should be synthetic/proved/bounded`);
+    assert(example.dynamicMetric && example.configurationVolume && example.archetype, `${examplePath}: proof artifact example must include dynamicMetric, configurationVolume, and archetype`);
+  }
+
+  if (examplePath.includes('engagement-policy')) {
+    assert(example.defaultMode === 'synthetic_only', `${examplePath}: example engagement policy must default to synthetic_only`);
+    assert(example.authority && example.authority.delegationAllowed === false, `${examplePath}: example engagement policy must prohibit delegation`);
+    const blocked = (example.blockedActions || []).join('\n');
+    assert(blocked.includes('credential_collection'), `${examplePath}: engagement policy must block credential collection`);
+    assert(blocked.includes('public_network_scanning'), `${examplePath}: engagement policy must block public network scanning`);
+    assert(blocked.includes('payload_execution'), `${examplePath}: engagement policy must block payload execution`);
   }
 }
 
