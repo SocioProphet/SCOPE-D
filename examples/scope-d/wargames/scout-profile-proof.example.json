@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "0.1.0",
+  "proofId": "proof:scout:profile-001",
+  "sweepId": "scout-2026-05-13T14-00Z",
+  "agentRef": "agent:scout",
+  "mode": "DEFENSE",
+  "surfaces": ["H2", "H4"],
+  "window": {
+    "start": "2026-05-13T14:00:00Z",
+    "end": "2026-05-13T14:30:00Z"
+  },
+  "inputs": {
+    "schemaRef": "scout.event.ir@0.1.0",
+    "sourceRefs": ["features:headers-redacted-001"],
+    "hashes": [
+      {
+        "algorithm": "sha256",
+        "value": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      }
+    ]
+  },
+  "metrics": {
+    "flows": 492,
+    "omega": {
+      "hi": 7,
+      "med": 42,
+      "lo": 443
+    },
+    "schemaValidPct": 0.97,
+    "coveragePct": 0.96,
+    "privacyAxis": 0.2,
+    "cpuPct": 12.4,
+    "dailyBytes": 104857600
+  },
+  "anchors": {
+    "lsaDims": ["L1", "L2", "L3", "L4", "L5", "L6", "L10"],
+    "lsi": ["p2", "p3", "p5", "p7", "p11", "p13", "p17", "p19", "p23", "p29", "p31"]
+  },
+  "safety": {
+    "safetyBoundaryRef": "safety-boundary:synthetic-lab-default",
+    "payloadBodiesCaptured": false,
+    "credentialCollectionAllowed": false,
+    "publicNetworkScanningAllowed": false,
+    "authorizationRef": "authorization:standing-lab-readonly"
+  },
+  "redactionState": "redacted",
+  "proofRefs": ["proof:hash:scout-profile-001"],
+  "signatures": ["minisign:example-signature-placeholder"]
+}
