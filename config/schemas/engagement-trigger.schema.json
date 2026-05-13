@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/engagement-trigger.schema.json",
+  "title": "Wargames Engagement Trigger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "triggerId",
+    "triggerType",
+    "boundaryScope",
+    "confidence",
+    "severity",
+    "evidenceRefs",
+    "boundaryEventRefs",
+    "affectedAssets",
+    "tenantScope",
+    "recommendedEngagementLevel",
+    "policyRefs",
+    "expiresAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "triggerId": { "type": "string", "pattern": "^engagement-trigger:[a-z0-9][a-z0-9._:-]*$" },
+    "triggerType": { "type": "string", "enum": ["attack_detected", "policy_violation", "boundary_breach", "credential_risk", "persistence_risk", "lateral_movement_risk", "safety_drill"] },
+    "boundaryScope": { "type": "string", "enum": ["inside", "outside", "mixed"] },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "severity": { "type": "string", "enum": ["info", "low", "medium", "high", "critical"] },
+    "evidenceRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "boundaryEventRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "findingRefs": { "type": "array", "items": { "type": "string" } },
+    "attackCoverageRefs": { "type": "array", "items": { "type": "string" } },
+    "affectedAssets": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "tenantScope": { "type": "string", "minLength": 1 },
+    "recommendedEngagementLevel": { "type": "string", "enum": ["E0", "E1", "E2", "E3", "E4", "E5", "E6"] },
+    "policyRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "authorizationRef": { "type": "string" },
+    "safetyBoundaryRef": { "type": "string" },
+    "expiresAt": { "type": "string", "format": "date-time" }
+  }
+}
