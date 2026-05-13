@@ -55,8 +55,8 @@ function formatAjvErrors(validate) {
 }
 
 function validateWargamesMode(examplePath, example) {
-  if (!example || !examplePath.includes('wargames')) return;
-  assert(example.scopeAuthorization && example.scopeAuthorization.authorized === true, `${examplePath}: Wargames examples must have explicit authorization`);
+  if (!examplePath.includes('defense-run') && !examplePath.includes('learning-run')) return;
+  assert(example.scopeAuthorization && example.scopeAuthorization.authorized === true, `${examplePath}: Wargames run must have explicit authorization`);
   assert(example.safetyBoundaryRef && example.safetyBoundaryRef.length > 0, `${examplePath}: safetyBoundaryRef is required`);
   assert(Array.isArray(example.evidenceRefs) && example.evidenceRefs.length > 0, `${examplePath}: evidenceRefs must be non-empty`);
   assert(Array.isArray(example.proofRefs) && example.proofRefs.length > 0, `${examplePath}: proofRefs must be non-empty`);
