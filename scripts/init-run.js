@@ -10,9 +10,11 @@ const addFormats = require('ajv-formats');
 const ROOT = path.resolve(__dirname, '..');
 const EXAMPLE_DIR = 'examples/scope-d';
 const SCHEMA_DIR = 'config/schemas';
+const INIT_MODE = 'synthetic_only';
 
 const CONTRACTS = {
   targetManifest: ['target-manifest.schema.json', 'target-manifest.json'],
+  engagementPolicy: ['engagement-policy.schema.json', 'engagement-policy.json'],
   syntheticEvent: ['synthetic-event.schema.json', 'events.jsonl'],
   eventIr: ['event-ir.schema.json', 'event-ir.jsonl'],
   identityIr: ['identity-ir.schema.json', 'identity-ir.json'],
@@ -23,7 +25,7 @@ const CONTRACTS = {
 };
 
 function usage() {
-  console.log(`Usage: npm run scope-d:init -- [--target <identifier>] [--surface <surfaceType>] [--environment <env>] [--run-id <id>]\n\nDefaults:\n  --target local-scope-d-lab\n  --surface synthetic_lab\n  --environment lab\n\nThis command only creates local synthetic/read-only artifacts under runs/<run-id>/.\nGenerated runs include SyntheticEvent, Event-IR, Identity-IR, ProofArtifact, ControlLoopRun, RunReceipt, and report artifacts.`);
+  console.log(`Usage: npm run scope-d:init -- --engagement-policy <path> [--target <identifier>] [--surface <surfaceType>] [--environment <env>] [--run-id <id>]\n\nDefaults:\n  --target local-scope-d-lab\n  --surface synthetic_lab\n  --environment lab\n\nThis command only creates local synthetic/read-only artifacts under runs/<run-id>/.\nGenerated runs include SyntheticEvent, Event-IR, Identity-IR, ProofArtifact, ControlLoopRun, RunReceipt, and report artifacts.\n\nFAIL-CLOSED: --engagement-policy is required. There is no fallback to hardcoded synthetic-only admission.`);
 }
 
 function parseArgs(argv) {
@@ -32,6 +34,7 @@ function parseArgs(argv) {
     surface: 'synthetic_lab',
     environment: 'lab',
     runId: null,
+    engagementPolicy: null,
   };
 
   for (let i = 2; i < argv.length; i++) {
@@ -45,13 +48,22 @@ function parseArgs(argv) {
     if (key === '--surface' && val) { args.surface = val; i++; continue; }
     if (key === '--environment' && val) { args.environment = val; i++; continue; }
     if (key === '--run-id' && val) { args.runId = val; i++; continue; }
+    if (key === '--engagement-policy' && val) { args.engagementPolicy = val; i++; continue; }
     throw new Error(`Unknown or missing argument: ${key}`);
   }
   return args;
 }
 
+function resolveRepoPath(inputPath) {
+  return path.isAbsolute(inputPath) ? inputPath : path.join(ROOT, inputPath);
+}
+
 function readJson(relPath) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, relPath), 'utf8'));
+}
+
+function readJsonAbs(absPath) {
+  return JSON.parse(fs.readFileSync(absPath, 'utf8'));
 }
 
 function writeJson(absPath, value) {
@@ -96,6 +108,9 @@ function claimSlug(value) {
 
 function ensureSafeInputs(args) {
   const errors = [];
+  if (!args.engagementPolicy) {
+    errors.push('FAIL-CLOSED: --engagement-policy is required. No fallback to synthetic-only mode when policy path is absent. Pass --engagement-policy <path> or use examples/scope-d/engagement-policy.synthetic.json for synthetic testing.');
+  }
   if (args.environment === 'production' || args.environment === 'customer') {
     errors.push('scope-d:init refuses production/customer environments; use lab/dev/staging/unknown only');
   }
@@ -136,6 +151,59 @@ function validateContract(schemaRel, value, label) {
     const details = (validate.errors || []).map((err) => `${err.instancePath || '/'} ${err.message}`).join('; ');
     throw new Error(`${label} failed schema validation: ${details}`);
   }
+}
+
+function loadEngagementPolicy(policyPath) {
+  const absPath = resolveRepoPath(policyPath);
+  let policy;
+  try {
+    policy = readJsonAbs(absPath);
+  } catch (err) {
+    throw new Error(`FAIL-CLOSED: Could not load engagement policy at ${policyPath}: ${err.message}`);
+  }
+
+  try {
+    validateContract(CONTRACTS.engagementPolicy[0], policy, `engagement policy at ${policyPath}`);
+  } catch (err) {
+    throw new Error(`FAIL-CLOSED: Engagement policy at ${policyPath} failed schema validation. ${err.message}`);
+  }
+
+  if (policy.authority && policy.authority.delegationAllowed !== false) {
+    throw new Error('FAIL-CLOSED: engagement policy delegationAllowed must be false until signed delegation policy exists.');
+  }
+
+  return policy;
+}
+
+function checkListContains(list, value) {
+  return Array.isArray(list) && list.includes(value);
+}
+
+function checkEngagementAuthorized(policy, args) {
+  const targetAuthorized = checkListContains(policy.authorizedTargets, args.target);
+  const surfaceAuthorized = checkListContains(policy.authorizedSurfaces, args.surface);
+  const modeAuthorized = checkListContains(policy.authorizedModes, INIT_MODE);
+  const boundaryTargetAuthorized = policy.targetBoundary && checkListContains(policy.targetBoundary.authorizedTargets, args.target);
+
+  if (!targetAuthorized || !surfaceAuthorized || !modeAuthorized || !boundaryTargetAuthorized) {
+    throw new Error([
+      `FAIL-CLOSED: Target "${args.target}" / surface "${args.surface}" / mode "${INIT_MODE}" is not authorized by the loaded engagement policy.`,
+      `Authorized targets: ${(policy.authorizedTargets || []).join(', ') || '(none)'}.`,
+      `Authorized boundary targets: ${((policy.targetBoundary && policy.targetBoundary.authorizedTargets) || []).join(', ') || '(none)'}.`,
+      `Authorized surfaces: ${(policy.authorizedSurfaces || []).join(', ') || '(none)'}.`,
+      `Authorized modes: ${(policy.authorizedModes || []).join(', ') || '(none)'}.`,
+    ].join(' '));
+  }
+
+  if (policy.targetBoundary && policy.targetBoundary.boundaryType === 'blocked') {
+    throw new Error('FAIL-CLOSED: engagement policy targetBoundary.boundaryType is blocked.');
+  }
+
+  if (policy.authorizedModes.includes('live_engage') && !policy.michaelApprovalRequiredForModes.includes('live_engage')) {
+    throw new Error('FAIL-CLOSED: engagement policy authorizes live_engage but does not require Michael approval for live_engage.');
+  }
+
+  return true;
 }
 
 function createSyntheticEvent(atomic, now) {
@@ -310,6 +378,9 @@ function main() {
   const args = parseArgs(process.argv);
   ensureSafeInputs(args);
 
+  const engagementPolicy = loadEngagementPolicy(args.engagementPolicy);
+  checkEngagementAuthorized(engagementPolicy, args);
+
   const now = new Date().toISOString();
   const runId = args.runId || `scope-d-${timestampSlug()}-synthetic-lab`;
   const runRel = path.join('runs', runId);
@@ -336,7 +407,7 @@ function main() {
     },
     createdAt: now,
     safetyBoundaryRef: 'safety-boundary.json',
-    notes: 'Generated by scope-d:init. Synthetic/read-only local run only.',
+    notes: 'Generated by scope-d:init. Synthetic/read-only local run only. Authorized by engagement-policy.json.',
   };
 
   const event = createSyntheticEvent(atomic, now);
@@ -361,6 +432,16 @@ function main() {
     completedAt: now,
     gates: [
       {
+        id: 'gate-engagement-policy',
+        gateType: 'scope_approval',
+        decision: 'approved',
+        requiredActor: 'policy_engine',
+        actualActor: engagementPolicy.policyId,
+        reason: `Engagement policy authorized target ${args.target}, surface ${args.surface}, mode ${INIT_MODE}.`,
+        policyDecisionRef: 'engagement-policy.json',
+        timestamp: now,
+      },
+      {
         id: 'gate-synthetic-safety-boundary',
         gateType: 'scope_approval',
         decision: 'auto_continue',
@@ -371,6 +452,19 @@ function main() {
       },
     ],
     evidence: [
+      {
+        id: 'ev-engagement-policy',
+        collector: 'scope-d:init',
+        surface: args.surface,
+        resourceType: 'engagement_policy',
+        resourceId: engagementPolicy.policyId,
+        observedAt: now,
+        claimLevel: 'guaranteed',
+        redactionState: 'synthetic',
+        tenantScope: 'lab',
+        evidence: engagementPolicy,
+        rawRef: 'engagement-policy.json',
+      },
       {
         id: 'ev-synthetic-atomic-observation',
         collector: 'scope-d:init',
@@ -425,6 +519,7 @@ function main() {
       },
     ],
     artifacts: [
+      { id: 'artifact-engagement-policy', artifactType: 'policy', path: 'engagement-policy.json' },
       { id: 'artifact-events', artifactType: 'jsonl', path: 'events.jsonl' },
       { id: 'artifact-event-ir', artifactType: 'jsonl', path: 'event-ir.jsonl' },
       { id: 'artifact-identity-ir', artifactType: 'json', path: 'identity-ir.json' },
@@ -436,6 +531,7 @@ function main() {
   };
 
   validateContract(CONTRACTS.targetManifest[0], targetManifest, 'target-manifest.json');
+  validateContract(CONTRACTS.engagementPolicy[0], engagementPolicy, 'engagement-policy.json');
   validateContract(CONTRACTS.syntheticEvent[0], event, 'events.jsonl synthetic event');
   validateContract(CONTRACTS.eventIr[0], eventIr, 'event-ir.jsonl Event-IR record');
   validateContract(CONTRACTS.identityIr[0], identityIr, 'identity-ir.json');
@@ -444,6 +540,7 @@ function main() {
   validateContract(CONTRACTS.controlLoop[0], controlLoop, 'control-loop.json');
 
   fs.mkdirSync(runAbs, { recursive: true });
+  writeJson(path.join(runAbs, 'engagement-policy.json'), engagementPolicy);
   writeJson(path.join(runAbs, 'target-manifest.json'), targetManifest);
   writeJson(path.join(runAbs, 'safety-boundary.json'), safetyBoundary);
   appendJsonl(path.join(runAbs, 'events.jsonl'), event);
@@ -459,6 +556,7 @@ function main() {
     `Target: ${args.target}`,
     `Surface: ${args.surface}`,
     `Environment: ${args.environment}`,
+    `Engagement policy: ${engagementPolicy.policyId}`,
     '',
     '## Safety',
     '',
@@ -484,6 +582,7 @@ function main() {
   fs.writeFileSync(path.join(runAbs, 'report.md'), report, 'utf8');
 
   const artifactFiles = [
+    'engagement-policy.json',
     'target-manifest.json',
     'safety-boundary.json',
     'events.jsonl',
@@ -502,7 +601,7 @@ function main() {
       path: path.join(runRel, file),
       sha256: sha256File(path.join(runAbs, file)),
     })),
-    policyDecisions: ['gate-synthetic-safety-boundary'],
+    policyDecisions: ['gate-engagement-policy', 'gate-synthetic-safety-boundary'],
     safetySummary: {
       mode: 'synthetic_only',
       liveActionsExecuted: 0,
@@ -521,7 +620,7 @@ function main() {
   writeJson(path.join(runAbs, 'receipt.json'), receipt);
 
   console.log(`Created SCOPE-D synthetic run: ${runRel}`);
-  console.log('Artifacts: target-manifest.json, safety-boundary.json, events.jsonl, event-ir.jsonl, identity-ir.json, proof-artifact.json, control-loop.json, report.md, receipt.json');
+  console.log('Artifacts: engagement-policy.json, target-manifest.json, safety-boundary.json, events.jsonl, event-ir.jsonl, identity-ir.json, proof-artifact.json, control-loop.json, report.md, receipt.json');
 }
 
 try {
