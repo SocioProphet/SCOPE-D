@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-event-ir.schema.json",
+  "title": "SCOPE-D Event-IR Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "eventId",
+    "kind",
+    "surface",
+    "scope",
+    "observedAt",
+    "safetyClass",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "eventId": { "type": "string", "pattern": "^evt-[a-z0-9][a-z0-9._:-]*$" },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "OBSERVATION",
+        "AUTH_ASSERTION",
+        "KEY_CREATE",
+        "SIGN",
+        "VERIFY",
+        "DP_QUERY",
+        "DP_RELEASE",
+        "RAW_EXPORT_ATTEMPT",
+        "JOIN",
+        "IPC_SEND",
+        "NETWORK_FLOW",
+        "UI_RENDER",
+        "UI_FOCUS_CHANGE",
+        "SYNTHETIC_ATOMIC_OBSERVATION",
+        "POLICY_DECISION",
+        "CONTROL_ACTION"
+      ]
+    },
+    "surface": {
+      "type": "string",
+      "enum": ["aws", "github", "kubernetes", "local_host", "ai_runtime", "mcp_server", "agent_skill", "graph", "browser", "network", "identity", "synthetic_lab"]
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "environment"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "environment": { "type": "string", "enum": ["local", "lab", "dev", "staging", "production", "customer", "unknown"] },
+        "tenantScope": { "type": "string" },
+        "well": { "type": "string" }
+      }
+    },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "actorType": { "type": "string", "enum": ["human", "agent", "service", "system", "synthetic"] },
+        "id": { "type": "string" },
+        "display": { "type": "string" }
+      }
+    },
+    "resource": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "resourceType": { "type": "string" },
+        "resourceId": { "type": "string" },
+        "redactionState": { "type": "string", "enum": ["raw", "redacted", "synthetic", "withheld"] }
+      }
+    },
+    "facets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "crypto": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "handleIds": { "type": "array", "items": { "type": "string" } },
+            "keyRefs": { "type": "array", "items": { "type": "string" } },
+            "nonceRefs": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "dp": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "epsilon": { "type": "number", "minimum": 0 },
+            "delta": { "type": "number", "minimum": 0 },
+            "mechanism": { "type": "string" },
+            "population": { "type": "string" }
+          }
+        },
+        "ui": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "surface": { "type": "string" },
+            "focusTarget": { "type": "string" },
+            "overlayCount": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "network": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "protocol": { "type": "string" },
+            "destination": { "type": "string" },
+            "egressClass": { "type": "string", "enum": ["none", "metadata_only", "allowlist", "unrestricted", "synthetic"] }
+          }
+        }
+      }
+    },
+    "safetyClass": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"] },
+    "payload": { "type": ["object", "array", "string", "number", "boolean", "null"] },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["collector", "hash"],
+      "properties": {
+        "collector": { "type": "string" },
+        "traceId": { "type": "string" },
+        "sourceRef": { "type": "string" },
+        "hash": { "type": "string" }
+      }
+    }
+  }
+}
