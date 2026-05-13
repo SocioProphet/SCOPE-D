@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/wargames-mode.schema.json",
+  "title": "Devine Intelligence Wargames Run Mode",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "runId",
+    "mode",
+    "scopeAuthorization",
+    "safetyBoundaryRef",
+    "topicRefs",
+    "phaseRefs",
+    "surfaceRefs",
+    "agentRefs",
+    "evidenceRefs",
+    "proofRefs",
+    "redactionState",
+    "status"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "runId": { "type": "string", "pattern": "^wargames-[a-z0-9][a-z0-9._:-]*$" },
+    "mode": { "type": "string", "enum": ["DEFENSE", "LEARNING"] },
+    "scopeAuthorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scopeRef", "tenantScope", "authorized", "authority"],
+      "properties": {
+        "scopeRef": { "type": "string", "minLength": 1 },
+        "tenantScope": { "type": "string", "minLength": 1 },
+        "authorized": { "type": "boolean" },
+        "authority": { "type": "string", "minLength": 1 },
+        "expiresAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "safetyBoundaryRef": { "type": "string", "minLength": 1 },
+    "topicRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^T(0?[1-9]|1[0-9]|2[0-3])$" } },
+    "phaseRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["V1", "V2", "V3", "V4", "V5", "V6", "V7"] } },
+    "surfaceRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["H1", "H2", "H3", "H4", "H5", "H6", "H7"] } },
+    "agentRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "evidenceRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "proofRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "redactionState": { "type": "string", "enum": ["raw", "redacted", "synthetic", "withheld"] },
+    "learningCorpusRefs": { "type": "array", "items": { "type": "string" } },
+    "reproducibilityRefs": { "type": "array", "items": { "type": "string" } },
+    "sourceRunRefs": { "type": "array", "items": { "type": "string" } },
+    "status": { "type": "string", "enum": ["proposed", "running", "blocked", "completed", "failed", "held"] }
+  }
+}
