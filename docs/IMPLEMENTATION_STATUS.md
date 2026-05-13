@@ -11,20 +11,31 @@ SCOPE-D currently has a real contract-first substrate. The following pieces are 
 - JSON Schema contracts and conforming examples for the core SCOPE-D control loop and multiple supporting objects;
 - synthetic-only atomic validation template and synthetic event generation;
 - synthetic run initialization under `runs/<run-id>/`;
-- run verification with required artifact checks, AJV validation, JSONL validation, receipt hash verification, and cross-artifact consistency checks;
-- deterministic run reporting through `run-summary.json` and `run-summary.md`;
-- Ontogenesis-compatible RDF/Turtle export from verified run summaries;
+- generated synthetic runs that emit the first complete contract vertical slice:
+  - SyntheticEvent (`events.jsonl`),
+  - Event-IR (`event-ir.jsonl`),
+  - Identity-IR (`identity-ir.json`),
+  - ProofArtifact (`proof-artifact.json`),
+  - ControlLoopRun (`control-loop.json`),
+  - RunReceipt (`receipt.json`),
+  - RunSummary (`run-summary.json` / `run-summary.md`),
+  - Ontogenesis RDF export (`ontogenesis.ttl`);
+- run verification with required artifact checks, AJV validation, JSONL validation, Event-IR validation, Identity-IR validation, ProofArtifact validation, receipt hash verification, and cross-artifact consistency checks;
+- deterministic run reporting through `run-summary.json` and `run-summary.md`, including Event-IR, Identity-IR, and ProofArtifact counts;
+- Ontogenesis-compatible RDF/Turtle export from verified run summaries, including vertical-slice triples when present;
 - contract validation safety invariants that reject live execution in examples and require synthetic/read-only/dry-run posture for example artifacts;
-- first SCOPE-D hardening contracts for Event-IR, Identity-IR, ProofArtifact, and EngagementPolicy.
+- SCOPE-D hardening contracts for Event-IR, Identity-IR, ProofArtifact, EngagementPolicy, and the 23-topic LSA operating map;
+- GitHub Actions workflow for contract validation, synthetic event generation, safe run initialization, run verification, reporting, Ontogenesis export, and tamper detection.
 
 ## Implemented but still prototype-grade
 
 These pieces exist but should be treated as early v0.1 scaffolding:
 
-- Ontogenesis export currently emits a compact graph with placeholder countermeasure mapping;
+- Ontogenesis export emits a compact graph and first vertical-slice triples, but ontology terms are still lightweight and may need alignment with the full Ontogenesis domain model;
 - SocioSphere and PolicyFabric handoff fields in run summaries are static readiness flags, not a live integration;
-- ProofArtifact dynamic metrics, configuration volume, and archetype fields are schema-level fields only until analyzers populate them;
-- EngagementPolicy expresses authority and boundaries, but no runtime admission controller currently enforces it.
+- ProofArtifact dynamic metrics, configuration volume, and archetype fields are populated for synthetic runs, but no real analyzer computes them yet;
+- EngagementPolicy expresses authority and boundaries, but no runtime admission controller currently enforces it for future collectors beyond the synthetic-only constraints in existing scripts;
+- the 23-topic LSA map is validated configuration, not a learned model or orchestration runner.
 
 ## Captured design lanes
 
@@ -68,13 +79,10 @@ Architecture prose alone is **captured design**, not implementation.
 
 ## Immediate next implementation targets
 
-1. Keep contract validation green after every new schema/example pair.
-2. Add CI to run `npm test` on pull requests.
-3. Add `EngagementPolicy` checking to run initialization and any future collector entrypoint.
-4. Add `Event-IR` emission to synthetic run initialization.
-5. Add `ProofArtifact` emission to synthetic run initialization.
-6. Add one AI-infra synthetic scenario as the first vertical slice.
-7. Add graph robustness synthetic fixture and first edge-injection scoring proof.
-8. Add SocioSphere-ready dashboard JSON summary export.
-9. Add 23-topic `lsa-map.json` as configuration, not runtime magic.
-10. Create issues for each runtime lane before adding more prose.
+1. Confirm the contract-validation workflow is enabled and green on the latest main commit; then require it in branch protection.
+2. Add active `EngagementPolicy` checking to run initialization and any future collector entrypoint.
+3. Add one AI-infra synthetic scenario as the first domain-specific vertical slice.
+4. Add graph robustness synthetic fixture and first edge-injection scoring proof.
+5. Add SocioSphere-ready dashboard JSON summary export.
+6. Add a 23-topic map report command that distinguishes captured-design lanes from proof-producing lanes.
+7. Enable GitHub Issues or replace this file-based backlog with a proper project board.
