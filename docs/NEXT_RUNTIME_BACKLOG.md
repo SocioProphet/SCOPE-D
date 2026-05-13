@@ -2,28 +2,41 @@
 
 GitHub Issues are currently disabled for this repository, so this file captures the immediate implementation backlog until issue tracking is enabled.
 
-## 1. First vertical slice
+## Completed in the current contract pass
 
-**Goal:** Implement the path:
+The first generic contract vertical slice is now implemented for synthetic runs:
 
-`Synthetic Event -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> Ontogenesis export`
+`SyntheticEvent -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> Ontogenesis export`
 
-**Tasks:**
+Completed work:
 
-- Extend `scope-d:init` or add a dedicated runner to emit:
+- `scope-d:init` emits:
+  - `events.jsonl`
   - `event-ir.jsonl`
   - `identity-ir.json`
   - `proof-artifact.json`
-- Link these artifacts from `control-loop.json` and `receipt.json`.
-- Update `verify-run.js` to validate and hash the new artifacts when present.
-- Update `report-run.js` to surface Event-IR, Identity-IR, and ProofArtifact counts.
-- Update `export-ontogenesis-rdf.js` to emit triples for Event-IR, Identity-IR, proof claims, dynamic metrics, and configuration volume.
+  - `control-loop.json`
+  - `receipt.json`
+  - `report.md`
+- `verify-run.js` validates Event-IR, Identity-IR, ProofArtifact, receipt hashes, and cross-artifact references.
+- `report-run.js` surfaces Event-IR, Identity-IR, and ProofArtifact counts.
+- `export-ontogenesis-rdf.js` emits triples for Event-IR, Identity-IR, ProofArtifact, dynamic metric, configuration volume, and archetype metadata when present.
+- `config/scope-d-lsa-map.json` is validated by `config/schemas/scope-d-lsa-map.schema.json` and `npm test`.
+
+## 1. Confirm CI and enforce branch protection
+
+**Goal:** Make the contract-validation workflow a required gate.
+
+**Tasks:**
+
+- Confirm `.github/workflows/contract-validation.yml` runs green on latest `main`.
+- Require the workflow in branch protection.
+- Prefer PR-based changes over direct commits once branch protection is active.
 
 **Acceptance:**
 
-- CI synthetic run emits the full vertical slice.
-- `npm test` remains green.
-- No live execution, credentials, public scanning, network egress, or production write is introduced.
+- Latest `main` commit has a passing contract-validation workflow.
+- Direct contract drift cannot land without validation.
 
 ## 2. Engagement policy enforcement
 
@@ -44,7 +57,7 @@ GitHub Issues are currently disabled for this repository, so this file captures 
 
 ## 3. AI-infra synthetic vertical slice
 
-**Goal:** Use the AI-infra lane as the first operational assessment scenario.
+**Goal:** Use the AI-infra lane as the first domain-specific assessment scenario.
 
 **Tasks:**
 
@@ -81,13 +94,13 @@ GitHub Issues are currently disabled for this repository, so this file captures 
 
 **Tasks:**
 
-- Add a validator for topic IDs, prime vector set, and cross-topic edges.
 - Add a report command that renders topic coverage and missing proof artifacts.
 - Add a dashboard-ready JSON export.
+- Distinguish captured-design topics from proof-producing lanes.
 
 **Acceptance:**
 
-- Topic map is validated in CI.
+- Topic map remains validated in CI.
 - Output distinguishes captured design from implemented proof-producing lanes.
 
 ## 6. Runtime collector policy
