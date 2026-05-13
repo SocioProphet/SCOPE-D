@@ -7,6 +7,9 @@ const Ajv = require('ajv/dist/2020');
 const addFormats = require('ajv-formats');
 
 const ROOT = path.resolve(__dirname, '..');
+const EXPECTED_PRIMES = ['p2', 'p3', 'p5', 'p7', 'p11', 'p13', 'p17', 'p19', 'p23', 'p29', 'p31'];
+const EXPECTED_DIMS = ['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7', 'L8', 'L9', 'L10'];
+const EXPECTED_TOPICS = Array.from({ length: 23 }, (_, i) => `T${i + 1}`);
 
 const VALID_PAIRS = [
   ['config/schemas/wargames-mode.schema.json', 'examples/scope-d/wargames/defense-run.example.json'],
@@ -17,12 +20,14 @@ const VALID_PAIRS = [
   ['config/schemas/scout-profile-proof.schema.json', 'examples/scope-d/wargames/scout-profile-proof.example.json'],
   ['config/schemas/engagement-trigger.schema.json', 'examples/scope-d/wargames/engagement-trigger-contained.example.json'],
   ['config/schemas/engagement-authorization.schema.json', 'examples/scope-d/wargames/engagement-authorization-approved.example.json'],
+  ['config/schemas/wargames-lsa-lsi-map.schema.json', 'examples/scope-d/wargames/wargames-lsa-map.example.json'],
 ];
 
 const INVALID_PAIRS = [
   ['config/schemas/wargames-mode.schema.json', 'examples/scope-d/wargames/negative-fixtures/learning-run-raw.invalid.json'],
   ['config/schemas/engagement-authorization.schema.json', 'examples/scope-d/wargames/negative-fixtures/engagement-authorization-missing-michael.invalid.json'],
   ['config/schemas/scout-profile-proof.schema.json', 'examples/scope-d/wargames/negative-fixtures/scout-profile-proof-unsafe.invalid.json'],
+  ['config/schemas/wargames-lsa-lsi-map.schema.json', 'examples/scope-d/wargames/negative-fixtures/wargames-lsa-map-raw-identity.invalid.json'],
 ];
 
 const globalErrors = [];
@@ -43,6 +48,10 @@ function readJson(relPath, localErrors = globalErrors) {
 
 function assertTo(errorList, condition, message) {
   if (!condition) errorList.push(message);
+}
+
+function sameSet(left, right) {
+  return left.length === right.length && left.every((item) => right.includes(item));
 }
 
 function validateSchemaShape(schemaPath, schema, errorList) {
@@ -130,6 +139,29 @@ function validateEngagementAuthorization(examplePath, example, errorList) {
   assertTo(errorList, Array.isArray(example.prohibitedActions) && example.prohibitedActions.includes('third_party_access'), `${examplePath}: prohibitedActions must include third_party_access`);
 }
 
+function validateLsaLsiMap(examplePath, example, errorList) {
+  if (!examplePath.includes('wargames-lsa-map')) return;
+  const topics = example.topics || [];
+  const topicIds = topics.map((topic) => topic.topicId);
+  assertTo(errorList, topicIds.length === 23, `${examplePath}: LSA/LSI map must contain exactly 23 topics`);
+  assertTo(errorList, new Set(topicIds).size === topicIds.length, `${examplePath}: topic IDs must be unique`);
+  assertTo(errorList, sameSet(topicIds, EXPECTED_TOPICS), `${examplePath}: topic IDs must cover T1..T23 exactly`);
+  assertTo(errorList, sameSet(example.primeSet || [], EXPECTED_PRIMES), `${examplePath}: primeSet must be p2..p31 exactly`);
+  assertTo(errorList, example.redactionPolicy && example.redactionPolicy.rawIdentityJoinsAllowed === false, `${examplePath}: rawIdentityJoinsAllowed must be false`);
+
+  const topicSet = new Set(topicIds);
+  for (const topic of topics) {
+    assertTo(errorList, sameSet(topic.lsaDims || [], EXPECTED_DIMS), `${examplePath}: ${topic.topicId} must carry L1..L10 exactly`);
+    assertTo(errorList, sameSet(topic.lsiAnchors || [], EXPECTED_PRIMES), `${examplePath}: ${topic.topicId} must carry all 11 prime anchors exactly`);
+    assertTo(errorList, topic.implementationState !== 'runtime_backed', `${examplePath}: ${topic.topicId} must not claim runtime backing in this contract slice`);
+  }
+
+  for (const edge of example.crossTopicEdges || []) {
+    assertTo(errorList, topicSet.has(edge.fromTopic), `${examplePath}: edge fromTopic ${edge.fromTopic} must exist`);
+    assertTo(errorList, topicSet.has(edge.toTopic), `${examplePath}: edge toTopic ${edge.toTopic} must exist`);
+  }
+}
+
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
 const schemaCache = new Map();
@@ -166,6 +198,7 @@ function validatePair(schemaPath, examplePath) {
   validateScoutProof(examplePath, example, localErrors);
   validateEngagementTrigger(examplePath, example, localErrors);
   validateEngagementAuthorization(examplePath, example, localErrors);
+  validateLsaLsiMap(examplePath, example, localErrors);
 
   return localErrors;
 }

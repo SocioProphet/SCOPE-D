@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "0.1.0",
+  "mapId": "wargames-lsa-lsi-map:invalid-raw-identity",
+  "canonicalProgram": "Devine Intelligence Wargames",
+  "primeSet": ["p2", "p3", "p5", "p7", "p11", "p13", "p17", "p19", "p23", "p29", "p31"],
+  "topics": [
+    {
+      "topicId": "T1",
+      "name": "Invalid one-topic map",
+      "objective": "This fixture is intentionally invalid because it has one topic and permits raw identity joins.",
+      "lsaDims": ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10"],
+      "lsiAnchors": ["p2", "p3", "p5", "p7", "p11", "p13", "p17", "p19", "p23", "p29", "p31"],
+      "primarySurfaces": ["H2"],
+      "primaryPhases": ["V1"],
+      "agentRefs": ["agent:scout"],
+      "implementationState": "schema_backed"
+    }
+  ],
+  "crossTopicEdges": [
+    {
+      "fromTopic": "T1",
+      "toTopic": "T1",
+      "relation": "Invalid self-only map.",
+      "evidenceClass": "learning_corpus"
+    }
+  ],
+  "modeUse": {
+    "DEFENSE": ["invalid defense use"],
+    "LEARNING": ["invalid learning use"]
+  },
+  "redactionPolicy": {
+    "learningExports": "redacted_required",
+    "clientExports": "ofif_governed",
+    "rawIdentityJoinsAllowed": true
+  }
+}
