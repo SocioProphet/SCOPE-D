@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "0.1.0",
+  "proofId": "proof-dp-budget-synthetic-001",
+  "claim": {
+    "claimId": "claim.dp.budget.synthetic.001",
+    "claimType": "budget_bound",
+    "statement": "Synthetic DP query remains within the declared lab budget and no raw identity export is represented.",
+    "epistemicLevel": "synthetic"
+  },
+  "status": "SYNTHETIC_ONLY",
+  "safetyMode": "synthetic_only",
+  "targetRefs": ["local-scope-d-lab"],
+  "evidenceRefs": ["evt-synthetic-dp-query-001", "identity-ir-synthetic-session-001"],
+  "identityRefs": ["identity-ir-synthetic-session-001"],
+  "eventRefs": ["evt-synthetic-dp-query-001"],
+  "domains": ["interval", "sharing", "synthetic"],
+  "invariants": [
+    {
+      "name": "epsilon_used_lte_epsilon_max",
+      "result": "pass",
+      "details": { "epsilonUsed": 0.05, "epsilonMax": 1.0 }
+    },
+    {
+      "name": "raw_export_absent",
+      "result": "pass",
+      "details": { "rawExportAttemptEvents": 0 }
+    }
+  ],
+  "dynamicMetric": {
+    "metricType": "policy_step_cost",
+    "observedToSecure": 0,
+    "observedToNearestKnownBad": 2,
+    "unit": "abstract-policy-step",
+    "confidence": 0.75
+  },
+  "configurationVolume": {
+    "volumeClass": "small",
+    "estimate": 20,
+    "estimationMethod": "bounded_enumeration",
+    "polytopeRef": "polytope:dp-query-key-count-v1",
+    "notes": "Toy bounded enumeration from the Identity-IR DP example."
+  },
+  "archetype": {
+    "family": "dp_budget_v1",
+    "coefficientHash": "sha256:synthetic-dp-budget-coefficients",
+    "qualitativeTag": "matches_known_benign_pattern"
+  },
+  "witness": {
+    "epsilonRemaining": 0.95,
+    "deltaRemaining": 0.000009,
+    "mode": "synthetic_only"
+  },
+  "createdAt": "2026-05-13T12:00:01Z",
+  "provenance": {
+    "producer": "scope-d.synthetic-proof",
+    "toolVersion": "0.1.0",
+    "sourceRef": "examples/scope-d/identity-ir.example.json",
+    "hash": "sha256:synthetic-proof-artifact-example"
+  }
+}
