@@ -1,6 +1,6 @@
 # Devine Intelligence Wargames Capture Ledger
 
-Status: v0.3 integration ledger  
+Status: v0.4 integration ledger  
 Branch: `scope-d-di-war-games-alignment`  
 Repository: `SocioProphet/SCOPE-D`  
 Purpose: prevent loss, duplication, or drift while integrating the uploaded Wargames corpus into SCOPE-D.
@@ -37,9 +37,9 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 | OFIF / Orion client-facing capability surface | captured | `docs/WARGAMES_OFIF_ORION_INTEGRATION.md` | prose only; client envelope backlog |
 | Dynamic engagement policy | captured | `docs/WARGAMES_DYNAMIC_ENGAGEMENT_POLICY.md` | prose only; authorization schema backlog |
 | Topics 12–23 Part II | captured | `docs/WARGAMES_TOPICS_12_23_OPS.md` | prose only; canonical expansion for 12–23 |
-| Scout full spec | pending dedicated doc | `docs/agents/SCOUT_AGENT_SPEC.md` | not yet committed |
-| Whisper v1.0 egress spec | pending dedicated doc | `docs/agents/WHISPER_AGENT_SPEC.md` | not yet committed |
+| Whisper v1.0 egress spec | captured | `docs/agents/WHISPER_AGENT_SPEC.md` | prose only; schema/example/CI backlog |
 | Whisper v0.1 egress spec | superseded | `docs/agents/WHISPER_AGENT_SPEC.md` | v1.0 canonical; v0.1 explanatory only |
+| Scout full spec | pending dedicated doc | `docs/agents/SCOUT_AGENT_SPEC.md` | not yet committed |
 | Font and rendering surface drill | pending dedicated doc | `docs/surfaces/FONT_RENDERING_SURFACE_DRILL.md` | not yet committed |
 | Memphis Rite ceremony and purpose | partially captured; pending dedicated doc | `docs/MEMPHIS_RITE_GOVERNANCE.md` | prose backlog |
 | ER+ / Heller ER identity geometry | pending adjacent doc | `docs/IDENTITY_GEOMETRY_ER_PLUS_ALIGNMENT.md` | not yet committed |
@@ -72,12 +72,12 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 - `docs/WARGAMES_OFIF_ORION_INTEGRATION.md`
 - `docs/WARGAMES_DYNAMIC_ENGAGEMENT_POLICY.md`
 - `docs/WARGAMES_TOPICS_12_23_OPS.md`
+- `docs/agents/WHISPER_AGENT_SPEC.md`
 - `docs/WARGAMES_CAPTURE_LEDGER.md`
 
 ## Next files in this branch
 
 - `docs/agents/SCOUT_AGENT_SPEC.md`
-- `docs/agents/WHISPER_AGENT_SPEC.md`
 - `docs/surfaces/FONT_RENDERING_SURFACE_DRILL.md`
 - `docs/MEMPHIS_RITE_GOVERNANCE.md`
 - `docs/WARGAMES_LSA_LSI_MAP.md`
