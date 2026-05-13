@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-proof-artifact.schema.json",
+  "title": "SCOPE-D Proof Artifact",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "proofId",
+    "claim",
+    "status",
+    "safetyMode",
+    "targetRefs",
+    "evidenceRefs",
+    "createdAt",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "proofId": { "type": "string", "pattern": "^proof-[a-z0-9][a-z0-9._:-]*$" },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claimId", "claimType", "statement"],
+      "properties": {
+        "claimId": { "type": "string", "pattern": "^claim\.[a-z0-9_.:-]+$" },
+        "claimType": { "type": "string", "enum": ["non_escape", "budget_bound", "scope_bound", "configuration_volume", "dynamic_metric", "detection_validation", "policy_gate", "synthetic_observation"] },
+        "statement": { "type": "string", "minLength": 1 },
+        "epistemicLevel": { "type": "string", "enum": ["proved", "bounded", "empirical", "synthetic", "speculative", "rejected"] }
+      }
+    },
+    "status": { "type": "string", "enum": ["PROVED", "BOUNDED", "FAILED", "BLOCKED", "INCONCLUSIVE", "SYNTHETIC_ONLY"] },
+    "safetyMode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"] },
+    "targetRefs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "evidenceRefs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "identityRefs": { "type": "array", "items": { "type": "string" } },
+    "eventRefs": { "type": "array", "items": { "type": "string", "pattern": "^evt-[a-z0-9][a-z0-9._:-]*$" } },
+    "domains": { "type": "array", "items": { "type": "string", "enum": ["interval", "octagon", "nnc_polyhedra", "congruence", "grid", "sharing", "taint", "graph", "semantic_space", "synthetic"] } },
+    "invariants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "result"],
+        "properties": {
+          "name": { "type": "string" },
+          "result": { "type": "string", "enum": ["pass", "fail", "blocked", "not_applicable"] },
+          "details": { "type": ["object", "array", "string", "number", "boolean", "null"] }
+        }
+      }
+    },
+    "dynamicMetric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metricType"],
+      "properties": {
+        "metricType": { "type": "string", "enum": ["edit_distance", "policy_step_cost", "capability_step_cost", "graph_path_cost", "identity_prime_distance", "not_applicable"] },
+        "observedToSecure": { "type": "number", "minimum": 0 },
+        "observedToNearestKnownBad": { "type": "number", "minimum": 0 },
+        "unit": { "type": "string" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "configurationVolume": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["volumeClass"],
+      "properties": {
+        "volumeClass": { "type": "string", "enum": ["unknown", "tiny", "small", "moderate", "large"] },
+        "estimate": { "type": "number", "minimum": 0 },
+        "estimationMethod": { "type": "string", "enum": ["exact_enumeration", "bounded_enumeration", "sampling", "upper_lower_bounds", "not_computed"] },
+        "polytopeRef": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "archetype": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "family": { "type": "string" },
+        "coefficientHash": { "type": "string" },
+        "qualitativeTag": { "type": "string", "enum": ["matches_known_benign_pattern", "off_manifold", "matches_known_bad_pattern", "unknown"] }
+      }
+    },
+    "witness": { "type": ["object", "array", "string", "number", "boolean", "null"] },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["producer", "hash"],
+      "properties": {
+        "producer": { "type": "string" },
+        "toolVersion": { "type": "string" },
+        "sourceRef": { "type": "string" },
+        "hash": { "type": "string" }
+      }
+    }
+  }
+}
