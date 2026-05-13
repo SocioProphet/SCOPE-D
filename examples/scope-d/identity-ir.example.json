@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.1.0",
+  "identityIrId": "identity-ir-synthetic-session-001",
+  "subject": {
+    "subjectId": "session:synthetic-user-001",
+    "entityType": "synthetic",
+    "tenantScope": "lab",
+    "redactionState": "synthetic"
+  },
+  "eventRefs": ["evt-synthetic-dp-query-001"],
+  "primes": [
+    {
+      "primeId": "prime-dp-synthetic-001",
+      "primeType": "dp",
+      "label": "Synthetic DP budget lane",
+      "wells": ["dp-aggregator"],
+      "evidenceRefs": ["evt-synthetic-dp-query-001"],
+      "coherence": 1.0,
+      "featureVector": [0.05, 0.000001, 1],
+      "archetypeFamily": "dp_budget_v1",
+      "configVolumeClass": "small",
+      "configVolumeEstimate": 20
+    }
+  ],
+  "wells": ["dp-aggregator"],
+  "dpBudgetState": {
+    "epsilonMax": 1.0,
+    "epsilonUsed": 0.05,
+    "deltaMax": 0.00001,
+    "deltaUsed": 0.000001,
+    "queries": 1
+  },
+  "proofRefs": ["proof-dp-budget-synthetic-001"],
+  "observedAt": "2026-05-13T12:00:00Z",
+  "safetyMode": "synthetic_only",
+  "provenance": {
+    "collector": "scope-d.identity-ir.synthetic",
+    "traceId": "trace-synthetic-001",
+    "sourceRef": "examples/scope-d/event-ir.example.json",
+    "hash": "sha256:synthetic-identity-ir-example"
+  }
+}
