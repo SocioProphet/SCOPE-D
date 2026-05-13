@@ -42,7 +42,7 @@ jobs:
         run: test -f runs/ci-standalone/events.jsonl
 
       - name: Smoke test safe run initializer
-        run: npm run scope-d:init -- --run-id scope-d-ci-synthetic-lab --target ci-synthetic-lab
+        run: npm run scope-d:init -- --run-id scope-d-ci-synthetic-lab --target ci-synthetic-lab --engagement-policy examples/scope-d/engagement-policy.synthetic.json
 
       - name: Verify generated receipt exists
         run: test -f runs/scope-d-ci-synthetic-lab/receipt.json
