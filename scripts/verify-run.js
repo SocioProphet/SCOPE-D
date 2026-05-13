@@ -16,6 +16,9 @@ const FILE_SCHEMAS = {
   'safety-boundary.json': 'safety-boundary.schema.json',
   'identity-ir.json': 'identity-ir.schema.json',
   'proof-artifact.json': 'proof-artifact.schema.json',
+  'ai-infra-assessment.json': 'ai-infra-assessment.schema.json',
+  'mcp-tool-risk.json': 'mcp-tool-risk.schema.json',
+  'countermeasure-rule.json': 'countermeasure-rule.schema.json',
   'control-loop.json': 'scope-d-control-loop.schema.json',
   'receipt.json': 'run-receipt.schema.json',
 };
@@ -24,7 +27,7 @@ const EVENT_SCHEMA = 'synthetic-event.schema.json';
 const EVENT_IR_SCHEMA = 'event-ir.schema.json';
 
 function usage() {
-  console.log(`Usage: npm run scope-d:verify-run -- <runs/<run-id>>\n\nVerifies a generated SCOPE-D run directory by checking required artifacts, engagement policy, AJV schemas, JSONL events, Event-IR, Identity-IR, ProofArtifact, and receipt artifact hashes.`);
+  console.log(`Usage: npm run scope-d:verify-run -- <runs/<run-id>>\n\nVerifies a generated SCOPE-D run directory by checking required artifacts, engagement policy, AJV schemas, JSONL events, optional domain artifacts, and receipt artifact hashes.`);
 }
 
 function readJsonAbs(absPath) {
@@ -160,7 +163,31 @@ function validatePolicyAuthorizesRun(engagementPolicy, targetManifest, controlLo
   }
 }
 
-function validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, controlLoop, receipt, runRel, errors) {
+function validateAiInfraConsistency(aiInfraAssessment, mcpToolRisk, countermeasureRule, proofArtifact, controlLoop, errors) {
+  if (!aiInfraAssessment && !mcpToolRisk && !countermeasureRule) return;
+  assert(Boolean(aiInfraAssessment), 'AI-infra run missing ai-infra-assessment.json', errors);
+  assert(Boolean(mcpToolRisk), 'AI-infra run missing mcp-tool-risk.json', errors);
+  assert(Boolean(countermeasureRule), 'AI-infra run missing countermeasure-rule.json', errors);
+  if (!aiInfraAssessment || !mcpToolRisk || !countermeasureRule) return;
+
+  const findingIds = new Set((aiInfraAssessment.findings || []).map((finding) => finding.id));
+  assert(findingIds.size > 0, 'ai-infra-assessment.json must include findings', errors);
+  assert((mcpToolRisk.countermeasureRefs || []).includes(countermeasureRule.id), 'mcp-tool-risk.json must reference countermeasure-rule.json', errors);
+  assert((countermeasureRule.sourceFindingRefs || []).includes(mcpToolRisk.id), 'countermeasure-rule.json must reference mcp-tool-risk.json as source finding', errors);
+  if (proofArtifact) {
+    assert((proofArtifact.evidenceRefs || []).includes(aiInfraAssessment.id), 'proof-artifact.json must reference ai-infra-assessment.json', errors);
+    assert((proofArtifact.evidenceRefs || []).includes(mcpToolRisk.id), 'proof-artifact.json must reference mcp-tool-risk.json', errors);
+    assert((proofArtifact.evidenceRefs || []).includes(countermeasureRule.id), 'proof-artifact.json must reference countermeasure-rule.json', errors);
+  }
+  if (controlLoop) {
+    const evidenceRefs = new Set((controlLoop.evidence || []).map((ev) => ev.resourceId));
+    assert(evidenceRefs.has(aiInfraAssessment.id), 'control-loop.json evidence must reference ai-infra-assessment.json', errors);
+    assert(evidenceRefs.has(mcpToolRisk.id), 'control-loop.json evidence must reference mcp-tool-risk.json', errors);
+    assert(evidenceRefs.has(countermeasureRule.id), 'control-loop.json evidence must reference countermeasure-rule.json', errors);
+  }
+}
+
+function validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, aiInfraAssessment, mcpToolRisk, countermeasureRule, controlLoop, receipt, runRel, errors) {
   if (targetManifest && controlLoop) {
     assert(targetManifest.target.identifier === controlLoop.targetSurface.identifier, 'Target identifier mismatch between target-manifest.json and control-loop.json', errors);
     assert(targetManifest.target.surfaceType === controlLoop.targetSurface.surfaceType, 'Surface type mismatch between target-manifest.json and control-loop.json', errors);
@@ -196,6 +223,7 @@ function validateCrossArtifactConsistency(engagementPolicy, targetManifest, safe
   }
 
   validatePolicyAuthorizesRun(engagementPolicy, targetManifest, controlLoop, errors);
+  validateAiInfraConsistency(aiInfraAssessment, mcpToolRisk, countermeasureRule, proofArtifact, controlLoop, errors);
 }
 
 function main() {
@@ -219,13 +247,16 @@ function main() {
     const controlLoop = validateJsonFile(runAbs, 'control-loop.json', FILE_SCHEMAS['control-loop.json'], errors);
     const identityIr = validateJsonFile(runAbs, 'identity-ir.json', FILE_SCHEMAS['identity-ir.json'], errors);
     const proofArtifact = validateJsonFile(runAbs, 'proof-artifact.json', FILE_SCHEMAS['proof-artifact.json'], errors);
+    const aiInfraAssessment = validateJsonFile(runAbs, 'ai-infra-assessment.json', FILE_SCHEMAS['ai-infra-assessment.json'], errors, { optional: true });
+    const mcpToolRisk = validateJsonFile(runAbs, 'mcp-tool-risk.json', FILE_SCHEMAS['mcp-tool-risk.json'], errors, { optional: true });
+    const countermeasureRule = validateJsonFile(runAbs, 'countermeasure-rule.json', FILE_SCHEMAS['countermeasure-rule.json'], errors, { optional: true });
     const receipt = validateJsonFile(runAbs, 'receipt.json', FILE_SCHEMAS['receipt.json'], errors);
     const eventCount = validateJsonlFile(runAbs, 'events.jsonl', EVENT_SCHEMA, errors, 'synthetic event');
     const eventIrCount = validateJsonlFile(runAbs, 'event-ir.jsonl', EVENT_IR_SCHEMA, errors, 'Event-IR record');
 
     assert(fs.existsSync(path.join(runAbs, 'report.md')), 'Missing required artifact: report.md', errors);
     verifyReceiptHashes(runAbs, runRel, receipt, errors);
-    validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, controlLoop, receipt, runRel, errors);
+    validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, aiInfraAssessment, mcpToolRisk, countermeasureRule, controlLoop, receipt, runRel, errors);
 
     if (errors.length === 0) {
       console.log(`Verified SCOPE-D run: ${runRel} (${eventCount} synthetic event${eventCount === 1 ? '' : 's'}, ${eventIrCount} Event-IR record${eventIrCount === 1 ? '' : 's'})`);
