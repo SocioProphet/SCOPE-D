@@ -11,11 +11,37 @@
     "authority",
     "targetBoundary",
     "defaultMode",
+    "authorizedTargets",
+    "authorizedSurfaces",
+    "authorizedModes",
+    "epsilonGateRequired",
+    "michaelApprovalRequiredForModes",
     "allowedActions",
     "blockedActions",
     "approvalRules",
+    "nonClaims",
     "expiresAt",
     "createdAt"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "authorizedModes": {
+            "contains": { "const": "live_engage" }
+          }
+        },
+        "required": ["authorizedModes"]
+      },
+      "then": {
+        "properties": {
+          "michaelApprovalRequiredForModes": {
+            "contains": { "const": "live_engage" }
+          }
+        },
+        "required": ["michaelApprovalRequiredForModes"]
+      }
+    }
   ],
   "properties": {
     "schemaVersion": { "type": "string", "const": "0.1.0" },
@@ -53,7 +79,31 @@
         "rulesOfEngagementRef": { "type": "string" }
       }
     },
-    "defaultMode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"] },
+    "defaultMode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked", "live_observe", "live_engage"] },
+    "authorizedTargets": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Explicit list of targets this policy authorizes. Empty array means nothing is authorized."
+    },
+    "authorizedSurfaces": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["aws", "github", "kubernetes", "local_host", "ai_runtime", "mcp_server", "agent_skill", "graph", "threat_intel_feed", "synthetic_lab"] },
+      "description": "Explicit list of target surfaces this policy authorizes. Empty array means nothing is authorized."
+    },
+    "authorizedModes": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked", "live_observe", "live_engage"] },
+      "description": "Explicit list of engagement modes this policy authorizes. Empty array means nothing is authorized."
+    },
+    "epsilonGateRequired": {
+      "type": "boolean",
+      "description": "Whether epsilon gate checking is required before engagement. Defaults should be true for all non-blocked policies."
+    },
+    "michaelApprovalRequiredForModes": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "live_observe", "live_engage"] },
+      "description": "Modes that require Michael Heller approval. live_engage must be included whenever live_engage is authorized."
+    },
     "allowedActions": {
       "type": "array",
       "items": {
@@ -91,6 +141,11 @@
           "requiredApprover": { "type": "string" }
         }
       }
+    },
+    "nonClaims": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Explicit non-claims about what this policy does not authorize."
     },
     "expiresAt": { "type": "string", "format": "date-time" },
     "createdAt": { "type": "string", "format": "date-time" },
