@@ -8,7 +8,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js",
+    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js",
     "validate": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js",
     "validate:wargames": "node scripts/validate-wargames-contracts.js",
     "references:workorders": "node scripts/generate-reference-workorders.js",
@@ -17,6 +17,7 @@
     "scope-d:verify-run": "node scripts/verify-run.js",
     "scope-d:report-run": "node scripts/report-run.js",
     "scope-d:export-ontogenesis": "node scripts/export-ontogenesis-rdf.js",
+    "test:engagement-policy": "node scripts/test-engagement-policy.js",
     "test:tamper": "node scripts/smoke-tamper-detection.js"
   },
   "dependencies": {
