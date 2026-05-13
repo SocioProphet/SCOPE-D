@@ -15,6 +15,8 @@ const REQUIRED_PAIRS = [
   ['config/schemas/evidence.schema.json', 'examples/scope-d/wargames/evidence-header-summary.example.json'],
   ['config/schemas/negative-evidence.schema.json', 'examples/scope-d/wargames/negative-evidence-missing-validator.example.json'],
   ['config/schemas/scout-profile-proof.schema.json', 'examples/scope-d/wargames/scout-profile-proof.example.json'],
+  ['config/schemas/engagement-trigger.schema.json', 'examples/scope-d/wargames/engagement-trigger-contained.example.json'],
+  ['config/schemas/engagement-authorization.schema.json', 'examples/scope-d/wargames/engagement-authorization-approved.example.json'],
 ];
 
 const errors = [];
@@ -102,6 +104,26 @@ function validateScoutProof(examplePath, example) {
   assert(safety.publicNetworkScanningAllowed === false, `${examplePath}: Scout proof must prohibit public network scanning`);
 }
 
+function validateEngagementTrigger(examplePath, example) {
+  if (!examplePath.includes('engagement-trigger')) return;
+  assert(Array.isArray(example.evidenceRefs) && example.evidenceRefs.length > 0, `${examplePath}: engagement trigger requires evidenceRefs`);
+  assert(Array.isArray(example.boundaryEventRefs) && example.boundaryEventRefs.length > 0, `${examplePath}: engagement trigger requires boundaryEventRefs`);
+  assert(example.confidence >= 0.5, `${examplePath}: engagement trigger confidence should be >= 0.5 for the example`);
+  if (['E4', 'E5', 'E6'].includes(example.recommendedEngagementLevel)) {
+    assert(Boolean(example.authorizationRef), `${examplePath}: E4/E5/E6 triggers require authorizationRef`);
+  }
+}
+
+function validateEngagementAuthorization(examplePath, example) {
+  if (!examplePath.includes('engagement-authorization')) return;
+  assert(example.approvalStatus === 'approved', `${examplePath}: approved authorization example must have approvalStatus=approved`);
+  assert(Array.isArray(example.approvedBy) && example.approvedBy.includes('Michael Heller'), `${examplePath}: E4/E5/E6 authorization requires Michael Heller approval until delegated policy exists`);
+  assert(example.michaelOnlyRequired === true, `${examplePath}: michaelOnlyRequired must be true until delegated policy exists`);
+  assert(Array.isArray(example.prohibitedActions) && example.prohibitedActions.includes('credential_collection'), `${examplePath}: prohibitedActions must include credential_collection`);
+  assert(Array.isArray(example.prohibitedActions) && example.prohibitedActions.includes('destructive_action'), `${examplePath}: prohibitedActions must include destructive_action`);
+  assert(Array.isArray(example.prohibitedActions) && example.prohibitedActions.includes('third_party_access'), `${examplePath}: prohibitedActions must include third_party_access`);
+}
+
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
 
@@ -128,6 +150,8 @@ for (const [schemaPath, examplePath] of REQUIRED_PAIRS) {
   validateEvidence(examplePath, example);
   validateNegativeEvidence(examplePath, example);
   validateScoutProof(examplePath, example);
+  validateEngagementTrigger(examplePath, example);
+  validateEngagementAuthorization(examplePath, example);
 }
 
 if (errors.length > 0) {
