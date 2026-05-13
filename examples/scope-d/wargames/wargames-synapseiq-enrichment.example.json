@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.0",
+  "enrichmentId": "synapseiq-enrichment:boundary-event-summary-001",
+  "inputEvidenceRefs": [
+    "evidence:scout-header-summary-001",
+    "negative-evidence:missing-validator-record-001"
+  ],
+  "outputIntelligenceSummaryRef": "summary:client-safe-boundary-event-001",
+  "topicClassifications": [
+    "T9",
+    "T12",
+    "T19"
+  ],
+  "enrichmentMethod": "semantic_enrichment",
+  "confidenceClass": "medium",
+  "enrichmentNonClaims": [
+    "does_not_validate_source_authenticity",
+    "does_not_perform_live_lookup",
+    "does_not_make_engagement_decisions",
+    "does_not_claim_runtime_execution_authority"
+  ],
+  "redactionState": "redacted",
+  "ontologyValidationRef": "ontogenesis-validation:wargames-topic-coverage-001",
+  "qualityReportRef": "synapseiq-quality:wargames-boundary-summary-001",
+  "runtimeAuthority": false,
+  "liveLookupPerformed": false,
+  "modelMutationPerformed": false,
+  "engagementDecisionAuthority": false
+}
