@@ -1,6 +1,6 @@
 # Devine Intelligence Wargames Capture Ledger
 
-Status: v1.0 integration ledger  
+Status: v1.1 integration ledger  
 Branch: `scope-d-di-war-games-alignment`  
 Repository: `SocioProphet/SCOPE-D`  
 Purpose: prevent loss, duplication, or drift while integrating the uploaded Wargames corpus into SCOPE-D.
@@ -44,9 +44,9 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 | Memphis Rite ceremony and purpose | captured | `docs/MEMPHIS_RITE_GOVERNANCE.md` | prose only; schema/example/CI backlog |
 | LSA/LSI 23-topic map and operationalization scripts | captured | `docs/WARGAMES_LSA_LSI_MAP.md` and later `examples/scope-d/wargames-lsa-map.example.json` | prose only; machine map backlog |
 | Omissions and completions: Triune RPC, AUM, qlog, CI drift, CRDT, SHACL, HPST, symbolic bridges | captured | `docs/WARGAMES_IMPLEMENTATION_BACKLOG.md` | backlog only; no runtime implementation |
+| Tree-sitter to LSA/LSI/LDA bridge | captured | `docs/WARGAMES_TREE_SITTER_LSA_BRIDGE.md` | prose only; grammar/schema/CI backlog |
 | Whisper v0.1 egress spec | superseded | `docs/agents/WHISPER_AGENT_SPEC.md` | v1.0 canonical; v0.1 explanatory only |
 | ER+ / Heller ER identity geometry | pending adjacent doc | `docs/IDENTITY_GEOMETRY_ER_PLUS_ALIGNMENT.md` | not yet committed |
-| Tree-sitter to LSA/LSI/LDA bridge | pending dedicated doc | `docs/WARGAMES_TREE_SITTER_LSA_BRIDGE.md` | not yet committed |
 | HPST / verifier economy | pending dedicated doc | `docs/WARGAMES_HPST_VERIFIER_ECONOMY.md` | not yet committed |
 | Public-index exposure audit / dorks | pending dedicated doc | `docs/surfaces/PUBLIC_INDEX_EXPOSURE_AUDIT.md` | not yet committed |
 
@@ -80,11 +80,11 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 - `docs/MEMPHIS_RITE_GOVERNANCE.md`
 - `docs/WARGAMES_LSA_LSI_MAP.md`
 - `docs/WARGAMES_IMPLEMENTATION_BACKLOG.md`
+- `docs/WARGAMES_TREE_SITTER_LSA_BRIDGE.md`
 - `docs/WARGAMES_CAPTURE_LEDGER.md`
 
 ## Next files in this branch
 
-- `docs/WARGAMES_TREE_SITTER_LSA_BRIDGE.md`
 - `docs/WARGAMES_HPST_VERIFIER_ECONOMY.md`
 - `docs/IDENTITY_GEOMETRY_ER_PLUS_ALIGNMENT.md`
 - `docs/surfaces/PUBLIC_INDEX_EXPOSURE_AUDIT.md`
