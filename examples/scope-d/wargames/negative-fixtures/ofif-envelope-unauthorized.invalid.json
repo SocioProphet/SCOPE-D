@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.0",
+  "envelopeId": "ofif-activation:unauthorized-engagement-ready-invalid",
+  "deliveryClass": "engagement_ready",
+  "topicRefs": ["T9"],
+  "evidenceRefs": ["evidence:scout-header-summary-001"],
+  "scoutProofRef": "proof:scout:profile-001",
+  "synapseiqEnrichmentRef": "synapseiq-enrichment:boundary-event-summary-001",
+  "ofifFormatVersion": "0.1.0",
+  "outputIntelligenceSummaryRef": "summary:client-safe-boundary-event-001",
+  "nonClaims": [
+    "does_not_verify_source_authenticity",
+    "does_not_execute_engagement",
+    "does_not_authorize_action_without_engagement_authorization"
+  ],
+  "redactionState": "redacted",
+  "disclosureClass": "client",
+  "clientScope": "client:socioprophet-lab-demo",
+  "tenantScope": "socioprophet-lab",
+  "proofRefs": ["proof:scout:profile-001"],
+  "sourceRunRefs": ["wargames-defense-2026-05-13-alpha"],
+  "rawIdentityJoinsAllowed": false,
+  "runtimeAuthority": false,
+  "liveDeliveryExecuted": false
+}
