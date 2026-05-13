@@ -10,6 +10,10 @@ SCOPE-D is early-stage derivative work. The inherited upstream SCOPE implementat
 
 The current repository has a real contract-first substrate, not just prose. It includes schema/example validation, synthetic event generation, safe synthetic run initialization, run verification, run reporting, Ontogenesis export, and tamper-detection smoke testing.
 
+Generated synthetic runs now emit the first complete contract vertical slice:
+
+`SyntheticEvent -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> Ontogenesis export`
+
 Status ledger:
 
 - `docs/IMPLEMENTATION_STATUS.md` — current truth table for implemented, prototype-grade, captured-design, and not-yet-implemented surfaces.
@@ -24,6 +28,7 @@ Initial SCOPE-D additions include:
 - `config/schemas/identity-ir.schema.json` — identity-prime bridge from Event-IR into scoped prime lanes and wells.
 - `config/schemas/proof-artifact.schema.json` — proof output contract with dynamic metric, configuration volume, and archetype fields.
 - `config/schemas/engagement-policy.schema.json` — machine-readable authorization and rules-of-engagement boundary.
+- `config/schemas/scope-d-lsa-map.schema.json` — validation contract for the 23-topic operating map.
 - `config/scope-d-lsa-map.json` — durable 23-topic operating map and cross-topic links.
 - `exercises/templates/atomic-testcase.template.json` — safe atomic validation manifest template.
 - `ai-infra/README.md` — AI infrastructure, MCP, tool, and skill-risk assessment surface.
@@ -117,12 +122,12 @@ SCOPE-D
 
 1. Keep contract validation green after every schema/example addition.
 2. Add EngagementPolicy checks to all future collectors and runners.
-3. Extend `scope-d:init` so generated runs emit Event-IR, Identity-IR, and ProofArtifact examples.
-4. Build one AI-infra synthetic vertical slice from MCP/tool risk to proof artifact and Ontogenesis export.
-5. Add graph robustness synthetic fixture and edge-injection scoring proof.
-6. Add read-only AI-infra and MCP surface fingerprinting.
-7. Add detection-as-code examples linked to synthetic expected telemetry.
-8. Add dashboard panels for exercise maturity, detection coverage, AI infra risk, graph robustness, and run receipts.
+3. Build one AI-infra synthetic vertical slice from MCP/tool risk to proof artifact and Ontogenesis export.
+4. Add graph robustness synthetic fixture and edge-injection scoring proof.
+5. Add read-only AI-infra and MCP surface fingerprinting.
+6. Add detection-as-code examples linked to synthetic expected telemetry.
+7. Add dashboard panels for exercise maturity, detection coverage, AI infra risk, graph robustness, and run receipts.
+8. Add branch protection requiring the contract-validation workflow once CI status is confirmed green.
 
 ## Upstream attribution
 
