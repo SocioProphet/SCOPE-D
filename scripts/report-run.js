@@ -95,6 +95,9 @@ function renderMarkdown(summary) {
     `- Event-IR records: ${summary.counts.eventIrRecords || 0}`,
     `- Identity-IR records: ${summary.counts.identityIrRecords || 0}`,
     `- Proof artifacts: ${summary.counts.proofArtifacts || 0}`,
+    `- AI-infra assessments: ${summary.counts.aiInfraAssessments || 0}`,
+    `- MCP tool risks: ${summary.counts.mcpToolRisks || 0}`,
+    `- Countermeasure rules: ${summary.counts.countermeasureRules || 0}`,
     `- Evidence items: ${summary.counts.evidenceItems}`,
     `- Gates: ${summary.counts.gates}`,
     `- Receipt artifacts: ${summary.counts.receiptArtifacts}`,
@@ -144,6 +147,9 @@ function main() {
   const eventIrRecords = countJsonl(path.join(runAbs, 'event-ir.jsonl'));
   const identityIrRecords = countJsonFile(path.join(runAbs, 'identity-ir.json'));
   const proofArtifacts = countJsonFile(path.join(runAbs, 'proof-artifact.json'));
+  const aiInfraAssessments = countJsonFile(path.join(runAbs, 'ai-infra-assessment.json'));
+  const mcpToolRisks = countJsonFile(path.join(runAbs, 'mcp-tool-risk.json'));
+  const countermeasureRules = countJsonFile(path.join(runAbs, 'countermeasure-rule.json'));
 
   const summary = {
     schemaVersion: '0.1.0',
@@ -169,6 +175,9 @@ function main() {
       eventIrRecords,
       identityIrRecords,
       proofArtifacts,
+      aiInfraAssessments,
+      mcpToolRisks,
+      countermeasureRules,
       evidenceItems: Array.isArray(controlLoop.evidence) ? controlLoop.evidence.length : 0,
       gates: Array.isArray(controlLoop.gates) ? controlLoop.gates.length : 0,
       receiptArtifacts: Array.isArray(receipt.artifactHashes) ? receipt.artifactHashes.length : 0,
@@ -187,6 +196,7 @@ function main() {
         'All artifacts referenced by the receipt matched their SHA-256 hashes.',
         'Synthetic-only run is safe for dashboard and policy-fabric ingestion as non-production evidence.',
         'Event-IR, Identity-IR, and ProofArtifact artifacts are generated and verified for this run.',
+        'AI-infra domain artifacts are counted when present and remain recommendation-only unless explicitly gated.',
       ],
     },
   };
