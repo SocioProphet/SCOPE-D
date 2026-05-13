@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-lsa-map.schema.json",
+  "title": "SCOPE-D LSA Operating Map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "description", "primeVectorSet", "topics", "crossTopicEdges"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^scope-d-lsa-map-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "primeVectorSet": {
+      "type": "array",
+      "prefixItems": [
+        { "const": 2 }, { "const": 3 }, { "const": 5 }, { "const": 7 }, { "const": 11 }, { "const": 13 }, { "const": 17 }, { "const": 19 }, { "const": 23 }, { "const": 29 }, { "const": 31 }
+      ],
+      "items": false,
+      "minItems": 11,
+      "maxItems": 11
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 23,
+      "maxItems": 23,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "objective", "phaseFocus", "anchors"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1, "maximum": 23 },
+          "name": { "type": "string", "minLength": 1 },
+          "objective": { "type": "string", "minLength": 1 },
+          "phaseFocus": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "enum": ["V1", "V2", "V3", "V4", "V5", "V6", "V7"] }
+          },
+          "anchors": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "crossTopicEdges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["from", "to", "why"],
+        "properties": {
+          "from": { "$ref": "#/$defs/topicDimensionRef" },
+          "to": { "$ref": "#/$defs/topicDimensionRef" },
+          "why": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "topicDimensionRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["topic", "dimension"],
+      "properties": {
+        "topic": { "type": "integer", "minimum": 1, "maximum": 23 },
+        "dimension": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
