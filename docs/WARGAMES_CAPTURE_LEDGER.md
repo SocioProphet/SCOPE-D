@@ -1,6 +1,6 @@
 # Devine Intelligence Wargames Capture Ledger
 
-Status: v1.2 integration ledger  
+Status: v1.3 integration ledger  
 Branch: `scope-d-di-war-games-alignment`  
 Repository: `SocioProphet/SCOPE-D`  
 Purpose: prevent loss, duplication, or drift while integrating the uploaded Wargames corpus into SCOPE-D.
@@ -46,8 +46,8 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 | Omissions and completions: Triune RPC, AUM, qlog, CI drift, CRDT, SHACL, HPST, symbolic bridges | captured | `docs/WARGAMES_IMPLEMENTATION_BACKLOG.md` | backlog only; no runtime implementation |
 | Tree-sitter to LSA/LSI/LDA bridge | captured | `docs/WARGAMES_TREE_SITTER_LSA_BRIDGE.md` | prose only; grammar/schema/CI backlog |
 | HPST / verifier economy | captured | `docs/WARGAMES_HPST_VERIFIER_ECONOMY.md` | prose only; schema/example/CI backlog |
+| ER+ / Heller ER identity geometry | captured | `docs/IDENTITY_GEOMETRY_ER_PLUS_ALIGNMENT.md` | prose only; schema/example/CI backlog |
 | Whisper v0.1 egress spec | superseded | `docs/agents/WHISPER_AGENT_SPEC.md` | v1.0 canonical; v0.1 explanatory only |
-| ER+ / Heller ER identity geometry | pending adjacent doc | `docs/IDENTITY_GEOMETRY_ER_PLUS_ALIGNMENT.md` | not yet committed |
 | Public-index exposure audit / dorks | pending dedicated doc | `docs/surfaces/PUBLIC_INDEX_EXPOSURE_AUDIT.md` | not yet committed |
 
 ## Capture principles
@@ -82,11 +82,11 @@ Do not canonicalize the misspelling `Argames`. Historical references may remain 
 - `docs/WARGAMES_IMPLEMENTATION_BACKLOG.md`
 - `docs/WARGAMES_TREE_SITTER_LSA_BRIDGE.md`
 - `docs/WARGAMES_HPST_VERIFIER_ECONOMY.md`
+- `docs/IDENTITY_GEOMETRY_ER_PLUS_ALIGNMENT.md`
 - `docs/WARGAMES_CAPTURE_LEDGER.md`
 
 ## Next files in this branch
 
-- `docs/IDENTITY_GEOMETRY_ER_PLUS_ALIGNMENT.md`
 - `docs/surfaces/PUBLIC_INDEX_EXPOSURE_AUDIT.md`
 
 ## De-duplication rules
@@ -106,6 +106,7 @@ Several uploaded documents repeat the same structures at different fidelity leve
 - MeshRush is the graph traversal/runtime layer, not the SCOPE-D safety owner.
 - HellGraph is the local-first proof/event replay and persistence sibling.
 - Regis / Identity Is Prime governs identity-aware disclosure and learning reuse, not authorized defense correlation.
+- ER+ / Heller ER identity geometry governs entity dynamics, replay, confluence, and disclosure-aware identity outputs; it does not block authorized defense correlation.
 - Memphis Rite is the canonical promotion, halt, bridge, and approval governance model.
 - Dynamic engagement policy controls response escalation and requires Michael-only signoff until delegated policy exists.
 
