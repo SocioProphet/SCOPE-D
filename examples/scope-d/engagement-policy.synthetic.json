@@ -14,13 +14,13 @@
   },
   "targetBoundary": {
     "boundaryType": "synthetic_lab",
-    "authorizedTargets": ["local-scope-d-lab", "ci-synthetic-lab", "ci-tamper-lab", "ci-engagement-valid"],
+    "authorizedTargets": ["local-scope-d-lab", "ci-synthetic-lab", "ci-tamper-lab", "ci-engagement-valid", "local-ai-infra-lab", "ci-ai-infra-lab"],
     "outOfScopeTargets": ["production", "customer", "public-internet", "third-party-services"],
     "legalBasisRef": "synthetic-lab-only",
     "rulesOfEngagementRef": "docs/ENGAGEMENT-POLICY.md"
   },
   "defaultMode": "synthetic_only",
-  "authorizedTargets": ["local-scope-d-lab", "ci-synthetic-lab", "ci-tamper-lab", "ci-engagement-valid"],
+  "authorizedTargets": ["local-scope-d-lab", "ci-synthetic-lab", "ci-tamper-lab", "ci-engagement-valid", "local-ai-infra-lab", "ci-ai-infra-lab"],
   "authorizedSurfaces": ["synthetic_lab"],
   "authorizedModes": ["synthetic_only"],
   "epsilonGateRequired": true,
