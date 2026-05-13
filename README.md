@@ -1,6 +1,6 @@
 # SCOPE-D: SocioProphet Defensive Purple-Team Control Fabric
 
-SCOPE-D is the SocioProphet derivative of SCOPE. It starts from the upstream SCOPE agentic AWS purple-team loop and extends it toward a broader, governed, defensive security control fabric for cloud, GitHub, Kubernetes, local hosts, AI infrastructure, MCP/tool servers, agent skills, threat-intel feeds, detection validation, and graph robustness.
+SCOPE-D is the SocioProphet derivative of SCOPE. It starts from the upstream SCOPE agentic AWS purple-team loop and extends it toward a broader, governed, defensive security control fabric for cloud, GitHub, Kubernetes, local hosts, AI infrastructure, MCP/tool servers, agent skills, threat-intel feeds, detection validation, graph robustness, identity-boundary reasoning, and SourceOS integration.
 
 The goal is not to ship another narrow scanner. The goal is a policy-gated cybernetic security loop: collect evidence, reason over attack paths, validate detections, generate countermeasures, preserve provenance, and keep operators in control.
 
@@ -8,14 +8,41 @@ The goal is not to ship another narrow scanner. The goal is a policy-gated cyber
 
 SCOPE-D is early-stage derivative work. The inherited upstream SCOPE implementation is useful, but this repository is now being shaped around the SocioProphet / SourceOS architecture.
 
+The current repository has a real contract-first substrate, not just prose. It includes schema/example validation, synthetic event generation, safe synthetic run initialization, run verification, run reporting, Ontogenesis export, and tamper-detection smoke testing.
+
+Status ledger:
+
+- `docs/IMPLEMENTATION_STATUS.md` — current truth table for implemented, prototype-grade, captured-design, and not-yet-implemented surfaces.
+
 Initial SCOPE-D additions include:
 
 - `docs/SCOPE-D-STRATEGY.md` — derivative thesis, reference-framework synthesis, safety doctrine, roadmap.
+- `docs/ENGAGEMENT-POLICY.md` — initial engagement authority, target-boundary, escalation, and identity-handling doctrine.
+- `docs/IDENTITY-PRIME-INTEGRATION.md` — Identity-IR, Event-IR, ProofArtifact, and prime-lane integration notes.
 - `config/schemas/scope-d-control-loop.schema.json` — first SCOPE-D control-loop contract.
+- `config/schemas/event-ir.schema.json` — typed operational event record for synthetic and future collector events.
+- `config/schemas/identity-ir.schema.json` — identity-prime bridge from Event-IR into scoped prime lanes and wells.
+- `config/schemas/proof-artifact.schema.json` — proof output contract with dynamic metric, configuration volume, and archetype fields.
+- `config/schemas/engagement-policy.schema.json` — machine-readable authorization and rules-of-engagement boundary.
+- `config/scope-d-lsa-map.json` — durable 23-topic operating map and cross-topic links.
 - `exercises/templates/atomic-testcase.template.json` — safe atomic validation manifest template.
 - `ai-infra/README.md` — AI infrastructure, MCP, tool, and skill-risk assessment surface.
 - `graph-robustness/README.md` — graph-adversarial robustness assessment surface.
 - `detections/README.md` — detection and countermeasure packaging doctrine.
+
+## Implemented contract commands
+
+```bash
+npm test
+npm run synthetic:event -- examples/scope-d/atomic-testcase.example.json runs/synthetic-lab/events.jsonl
+npm run scope-d:init -- --run-id scope-d-local-synthetic-lab --target local-scope-d-lab
+npm run scope-d:verify-run -- runs/scope-d-local-synthetic-lab
+npm run scope-d:report-run -- runs/scope-d-local-synthetic-lab
+npm run scope-d:export-ontogenesis -- runs/scope-d-local-synthetic-lab
+npm run test:tamper
+```
+
+The GitHub Actions workflow `.github/workflows/contract-validation.yml` runs contract validation, synthetic event generation, safe run initialization, run verification, reporting, Ontogenesis export, and tamper detection.
 
 ## What SCOPE-D inherits from upstream SCOPE
 
@@ -40,6 +67,9 @@ SCOPE-D expands the design into these lanes:
 | Lane | Purpose |
 |---|---|
 | Control-loop contracts | Typed runs, gates, evidence envelopes, artifacts, controls, and attack graphs |
+| Engagement policy | Machine-readable authority, target-boundary, escalation, and blocked-action rules |
+| Event-IR / Identity-IR | Typed events and scoped identity-prime evidence with wells and provenance |
+| Proof artifacts | Non-escape, budget, dynamic-metric, configuration-volume, archetype, and validation claims |
 | Purple-team exercises | Formal exercise objectives, rules of engagement, roles, metrics, and lessons learned |
 | Atomic validation | Safe ATT&CK/ATLAS-mapped tests with prerequisites, expected telemetry, cleanup, and regression tracking |
 | Threat intelligence | Indicator lifecycle, confidence, decay, TLP/PAP markings, enrichment, and feed-to-detection flow |
@@ -85,14 +115,14 @@ SCOPE-D
 
 ## Immediate roadmap
 
-1. Complete SCOPE-D README and attribution cleanup.
-2. Add schemas for `PurpleTeamExercise`, `AtomicTestCase`, `ThreatIntelFeed`, `IndicatorRecord`, `AIInfraAssessment`, `MCPToolRisk`, `AgentSkillRisk`, and `GraphRobustnessAssessment`.
-3. Add example conforming payloads for each schema.
-4. Add validation scripts and CI checks.
-5. Add safe synthetic-event generation for detection validation.
+1. Keep contract validation green after every schema/example addition.
+2. Add EngagementPolicy checks to all future collectors and runners.
+3. Extend `scope-d:init` so generated runs emit Event-IR, Identity-IR, and ProofArtifact examples.
+4. Build one AI-infra synthetic vertical slice from MCP/tool risk to proof artifact and Ontogenesis export.
+5. Add graph robustness synthetic fixture and edge-injection scoring proof.
 6. Add read-only AI-infra and MCP surface fingerprinting.
-7. Add graph robustness synthetic fixtures.
-8. Extend the dashboard to show exercise maturity, detection coverage, AI-infra risk, and graph robustness.
+7. Add detection-as-code examples linked to synthetic expected telemetry.
+8. Add dashboard panels for exercise maturity, detection coverage, AI infra risk, graph robustness, and run receipts.
 
 ## Upstream attribution
 
