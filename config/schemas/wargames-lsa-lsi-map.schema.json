@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/wargames-lsa-lsi-map.schema.json",
+  "title": "Devine Intelligence Wargames LSA/LSI Topic Map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "mapId",
+    "canonicalProgram",
+    "primeSet",
+    "topics",
+    "crossTopicEdges",
+    "modeUse",
+    "redactionPolicy"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "mapId": { "type": "string", "pattern": "^wargames-lsa-lsi-map:[a-z0-9][a-z0-9._:-]*$" },
+    "canonicalProgram": { "type": "string", "const": "Devine Intelligence Wargames" },
+    "primeSet": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "uniqueItems": true,
+      "items": { "type": "string", "enum": ["p2", "p3", "p5", "p7", "p11", "p13", "p17", "p19", "p23", "p29", "p31"] }
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 23,
+      "maxItems": 23,
+      "items": { "$ref": "#/$defs/topic" }
+    },
+    "crossTopicEdges": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/crossTopicEdge" }
+    },
+    "modeUse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["DEFENSE", "LEARNING"],
+      "properties": {
+        "DEFENSE": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "LEARNING": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "redactionPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["learningExports", "clientExports", "rawIdentityJoinsAllowed"],
+      "properties": {
+        "learningExports": { "type": "string", "enum": ["redacted_required", "synthetic_required", "withheld"] },
+        "clientExports": { "type": "string", "enum": ["ofif_governed", "withheld"] },
+        "rawIdentityJoinsAllowed": { "type": "boolean", "const": false }
+      }
+    }
+  },
+  "$defs": {
+    "topic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["topicId", "name", "objective", "lsaDims", "lsiAnchors", "primarySurfaces", "primaryPhases", "agentRefs", "implementationState"],
+      "properties": {
+        "topicId": { "type": "string", "pattern": "^T(0?[1-9]|1[0-9]|2[0-3])$" },
+        "name": { "type": "string", "minLength": 1 },
+        "objective": { "type": "string", "minLength": 1 },
+        "lsaDims": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 10,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^L([1-9]|10)$" }
+        },
+        "lsiAnchors": {
+          "type": "array",
+          "minItems": 11,
+          "maxItems": 11,
+          "uniqueItems": true,
+          "items": { "type": "string", "enum": ["p2", "p3", "p5", "p7", "p11", "p13", "p17", "p19", "p23", "p29", "p31"] }
+        },
+        "primarySurfaces": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["H1", "H2", "H3", "H4", "H5", "H6", "H7", "control", "docs", "graph", "hypothesis", "optimization", "editors"] } },
+        "primaryPhases": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["V1", "V2", "V3", "V4", "V5", "V6", "V7"] } },
+        "agentRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^agent:[a-z0-9-]+$" } },
+        "implementationState": { "type": "string", "enum": ["captured", "schema_backed", "ci_validated", "runtime_backed"] }
+      }
+    },
+    "crossTopicEdge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fromTopic", "toTopic", "relation", "evidenceClass"],
+      "properties": {
+        "fromTopic": { "type": "string", "pattern": "^T(0?[1-9]|1[0-9]|2[0-3])$" },
+        "toTopic": { "type": "string", "pattern": "^T(0?[1-9]|1[0-9]|2[0-3])$" },
+        "relation": { "type": "string", "minLength": 1 },
+        "evidenceClass": { "type": "string", "enum": ["boundary_event", "proof_artifact", "ontology_validation", "semantic_enrichment", "field_intelligence", "governance_gate", "learning_corpus"] }
+      }
+    }
+  }
+}
