@@ -8,19 +8,19 @@ The goal is not to ship another narrow scanner. The goal is a policy-gated cyber
 
 SCOPE-D is early-stage derivative work. The inherited upstream SCOPE implementation is useful, but this repository is now being shaped around the SocioProphet / SourceOS architecture.
 
-The current repository has a real contract-first substrate, not just prose. It includes schema/example validation, synthetic event generation, engagement-policy-gated synthetic run initialization, AI-infra synthetic run initialization, graph-robustness synthetic run initialization, run verification, run reporting, Ontogenesis export, and tamper-detection smoke testing.
+The current repository has a real contract-first substrate, not just prose. It includes schema/example validation, synthetic event generation, engagement-policy-gated synthetic run initialization, AI-infra synthetic run initialization, graph-robustness synthetic run initialization, run verification, run reporting, dashboard export, Ontogenesis export, 23-topic LSA map reporting, and tamper-detection smoke testing.
 
 Generated synthetic runs now emit the first complete contract vertical slice:
 
-`EngagementPolicy -> SyntheticEvent -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> Ontogenesis export`
+`EngagementPolicy -> SyntheticEvent -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> DashboardSummary -> Ontogenesis export`
 
 The AI-infra synthetic runner extends that slice with:
 
-`Synthetic MCP Tool Manifest -> AIInfraAssessment -> MCPToolRisk -> CountermeasureRule -> ProofArtifact -> Ontogenesis export`
+`Synthetic MCP Tool Manifest -> AIInfraAssessment -> MCPToolRisk -> CountermeasureRule -> ProofArtifact -> DashboardSummary -> Ontogenesis export`
 
 The graph-robustness synthetic runner extends that slice with:
 
-`Synthetic Trust Graph Fixture -> GraphRobustnessAssessment -> graph_path_cost ProofArtifact -> Ontogenesis export`
+`Synthetic Trust Graph Fixture -> GraphRobustnessAssessment -> graph_path_cost ProofArtifact -> DashboardSummary -> Ontogenesis export`
 
 Status ledger:
 
@@ -36,6 +36,8 @@ Initial SCOPE-D additions include:
 - `config/schemas/identity-ir.schema.json` — identity-prime bridge from Event-IR into scoped prime lanes and wells.
 - `config/schemas/proof-artifact.schema.json` — proof output contract with dynamic metric, configuration volume, and archetype fields.
 - `config/schemas/engagement-policy.schema.json` — machine-readable authorization and rules-of-engagement boundary.
+- `config/schemas/dashboard-export.schema.json` — verified-run dashboard export contract.
+- `config/schemas/lsa-map-report.schema.json` — 23-topic LSA map report contract.
 - `examples/scope-d/engagement-policy.synthetic.json` — canonical synthetic-only policy fixture for local and CI runs.
 - `config/schemas/scope-d-lsa-map.schema.json` — validation contract for the 23-topic operating map.
 - `config/scope-d-lsa-map.json` — durable 23-topic operating map and cross-topic links.
@@ -56,16 +58,21 @@ npm run scope-d:init-ai-infra -- --run-id scope-d-local-ai-infra-lab --target lo
 npm run scope-d:init-graph-robustness -- --run-id scope-d-local-graph-robustness-lab --target local-graph-robustness-lab --engagement-policy examples/scope-d/engagement-policy.synthetic.json
 npm run scope-d:verify-run -- runs/scope-d-local-synthetic-lab
 npm run scope-d:report-run -- runs/scope-d-local-synthetic-lab
+npm run scope-d:export-dashboard -- runs/scope-d-local-synthetic-lab
 npm run scope-d:export-ontogenesis -- runs/scope-d-local-synthetic-lab
+npm run scope-d:report-lsa-map
 npm run test:engagement-policy
 npm run test:ai-infra
 npm run test:graph-robustness
+npm run test:reporting
 npm run test:tamper
 ```
 
 `scope-d:init`, `scope-d:init-ai-infra`, and `scope-d:init-graph-robustness` are fail-closed: absence of `--engagement-policy`, an unreadable policy path, schema-invalid policy, unauthorized target, unauthorized surface, or unauthorized mode causes the run to fail. There is no silent synthetic-only fallback.
 
-The GitHub Actions workflow `.github/workflows/contract-validation.yml` runs contract validation, synthetic event generation, engagement-policy-gated safe run initialization, AI-infra synthetic vertical-slice initialization, graph-robustness synthetic vertical-slice initialization, run verification, reporting, Ontogenesis export, engagement-policy fail-closed tests, AI-infra smoke tests, graph-robustness smoke tests, and tamper detection.
+Dashboard exports are derived only from verified run summaries and are marked non-production-only. The 23-topic LSA map report distinguishes proof-producing topics from captured-design topics.
+
+The GitHub Actions workflow `.github/workflows/contract-validation.yml` runs contract validation, synthetic event generation, engagement-policy-gated safe run initialization, AI-infra synthetic vertical-slice initialization, graph-robustness synthetic vertical-slice initialization, run verification, reporting, dashboard export, Ontogenesis export, 23-topic LSA map reporting, engagement-policy fail-closed tests, AI-infra smoke tests, graph-robustness smoke tests, reporting smoke tests, and tamper detection.
 
 ## What SCOPE-D inherits from upstream SCOPE
 
@@ -99,6 +106,7 @@ SCOPE-D expands the design into these lanes:
 | Detection-as-code | Sigma, SPL, YARA, Snort/Suricata, ClamAV, OSQuery, OPA/Rego, cloud, GitHub, Kubernetes, and SourceOS policy artifacts |
 | AI infrastructure assessment | Synthetic MCP/tool-risk slice now implemented; live model/MCP assessment remains future work |
 | Graph robustness | Synthetic edge-injection trust-graph slice now implemented; live graph assessment remains future work |
+| 23-topic operating map | Validated config and generated coverage report now implemented; orchestration remains future work |
 | SourceOS integration | PolicyFabric, AgentPlane, SocioSphere, TurtleTerm, sourceos-shell, openclaw, and memory-mesh alignment |
 
 ## Safety doctrine
@@ -139,12 +147,11 @@ SCOPE-D
 ## Immediate roadmap
 
 1. Keep contract validation green after every schema/example addition.
-2. Add SocioSphere-ready dashboard JSON summary export.
-3. Add a 23-topic map report command that distinguishes captured-design lanes from proof-producing lanes.
-4. Add read-only AI-infra and MCP surface fingerprinting.
-5. Add detection-as-code examples linked to synthetic expected telemetry.
-6. Add dashboard panels for exercise maturity, detection coverage, AI infra risk, graph robustness, and run receipts.
-7. Add branch protection requiring the contract-validation workflow once CI status is confirmed green.
+2. Add runtime collector policy doctrine before any live collector lands.
+3. Add read-only AI-infra and MCP surface fingerprinting after live-readiness boundaries are documented.
+4. Add detection-as-code examples linked to synthetic expected telemetry.
+5. Add dashboard panels for exercise maturity, detection coverage, AI infra risk, graph robustness, and run receipts.
+6. Add branch protection requiring the contract-validation workflow once CI status is confirmed green.
 
 ## Upstream attribution
 
