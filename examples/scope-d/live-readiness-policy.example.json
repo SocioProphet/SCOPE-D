@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "live-readiness-policy-local-readonly-default",
+  "name": "SCOPE-D local read-only live readiness policy",
+  "status": "experimental",
+  "extendsCollectorPolicy": {
+    "required": true,
+    "policyRef": "collector-policy-synthetic-readonly-default",
+    "mayOverrideCollectorPolicy": false
+  },
+  "readinessScope": {
+    "mode": "read_only_live_local",
+    "allowedSurfaces": ["local_host", "mcp_manifest", "ai_runtime_manifest", "synthetic_fixture"],
+    "allowedTargets": ["local-dev-host", "local-mcp-manifest", "local-ai-runtime-manifest"],
+    "prohibitedTargets": ["production", "customer", "public-internet", "third-party-services", "external-network", "unknown"]
+  },
+  "serviceIdentityVerification": {
+    "required": true,
+    "acceptedEvidence": ["local_manifest_hash", "signed_manifest", "policy_ref_match", "collector_receipt_ref"],
+    "unknownServicePolicy": "block"
+  },
+  "credentialIsolation": {
+    "credentialReadAllowed": false,
+    "secretEnvReadAllowed": false,
+    "tokenMaterialAllowed": false,
+    "redactionRequired": true
+  },
+  "executionBoundary": {
+    "toolExecutionAllowed": false,
+    "commandExecutionAllowed": false,
+    "processSpawnAllowed": false,
+    "pluginLoadAllowed": false
+  },
+  "networkBoundary": {
+    "egressMode": "none",
+    "publicScanningAllowed": false,
+    "externalServicesAllowed": false,
+    "remoteProbeAllowed": false
+  },
+  "dataBoundary": {
+    "productionDataAllowed": false,
+    "customerDataAllowed": false,
+    "rawIdentityExportAllowed": false,
+    "syntheticPreferred": true
+  },
+  "failClosed": {
+    "missingCollectorPolicy": "block",
+    "invalidCollectorPolicy": "block",
+    "unverifiedServiceIdentity": "block",
+    "scopeMismatch": "block",
+    "credentialExposure": "block",
+    "networkAttempt": "block",
+    "executionAttempt": "block"
+  },
+  "approvalRequirements": {
+    "engagementPolicyRequired": true,
+    "safetyBoundaryRequired": true,
+    "michaelApprovalRequiredForExpansion": true
+  },
+  "auditRequirements": {
+    "receiptRequired": true,
+    "eventIrRequired": true,
+    "dashboardExportAllowed": true,
+    "noSilentReads": true
+  },
+  "nonClaims": [
+    "This policy does not authorize live collectors.",
+    "This policy does not authorize tool execution.",
+    "This policy does not authorize command execution.",
+    "This policy does not authorize credential or secret reads.",
+    "This policy does not authorize network egress or public scanning.",
+    "This policy does not authorize production or customer data access."
+  ],
+  "createdAt": "2026-05-13T12:00:00Z"
+}
