@@ -6,11 +6,12 @@ GitHub Issues are currently disabled for this repository, so this file captures 
 
 The first generic contract vertical slice is now implemented for synthetic runs:
 
-`SyntheticEvent -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> Ontogenesis export`
+`EngagementPolicy -> SyntheticEvent -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> Ontogenesis export`
 
 Completed work:
 
 - `scope-d:init` emits:
+  - `engagement-policy.json`
   - `events.jsonl`
   - `event-ir.jsonl`
   - `identity-ir.json`
@@ -18,13 +19,33 @@ Completed work:
   - `control-loop.json`
   - `receipt.json`
   - `report.md`
-- `verify-run.js` validates Event-IR, Identity-IR, ProofArtifact, receipt hashes, and cross-artifact references.
+- `verify-run.js` validates EngagementPolicy, Event-IR, Identity-IR, ProofArtifact, receipt hashes, and cross-artifact references.
 - `report-run.js` surfaces Event-IR, Identity-IR, and ProofArtifact counts.
 - `export-ontogenesis-rdf.js` emits triples for Event-IR, Identity-IR, ProofArtifact, dynamic metric, configuration volume, and archetype metadata when present.
 - `config/scope-d-lsa-map.json` is validated by `config/schemas/scope-d-lsa-map.schema.json` and `npm test`.
 - `scope-d:init` now requires `--engagement-policy` and fails closed when policy is absent, unreadable, schema-invalid, or unauthorized for the requested target/surface/mode.
 - Generated runs now copy the active policy into `engagement-policy.json`, link it from `control-loop.json`, hash it in the receipt, and verify it through `verify-run.js`.
 - `npm test` includes engagement-policy fail-closed tests for missing policy, missing file, schema invalidity, empty authorized targets, unauthorized target, unauthorized mode, and `live_engage` without Michael approval requirement.
+
+The first AI-infra synthetic vertical slice is also implemented:
+
+`Synthetic MCP Tool Manifest -> AIInfraAssessment -> MCPToolRisk -> CountermeasureRule -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> Receipt -> Ontogenesis export`
+
+Completed AI-infra work:
+
+- Added `fixtures/synthetic/mcp-tool-manifest.tool-poisoning.synthetic.json`.
+- Added `scope-d:init-ai-infra` runner.
+- Generated AI-infra runs emit:
+  - `mcp-tool-manifest.synthetic.json`
+  - `ai-infra-assessment.json`
+  - `mcp-tool-risk.json`
+  - `countermeasure-rule.json`
+  - standard Event-IR / Identity-IR / ProofArtifact / ControlLoop / Receipt artifacts.
+- `verify-run.js` validates AI-infra domain artifacts when present and checks their cross-references.
+- `report-run.js` surfaces AIInfraAssessment, MCPToolRisk, and CountermeasureRule counts.
+- `export-ontogenesis-rdf.js` emits AI-infra, MCP-risk, and countermeasure triples when present.
+- `npm test` includes `test-ai-infra-slice.js`.
+- CI explicitly runs the AI-infra synthetic vertical slice.
 
 ## 1. Confirm CI and enforce branch protection
 
@@ -41,24 +62,7 @@ Completed work:
 - Latest `main` commit has a passing contract-validation workflow.
 - Direct contract drift cannot land without validation.
 
-## 2. AI-infra synthetic vertical slice
-
-**Goal:** Use the AI-infra lane as the first domain-specific assessment scenario.
-
-**Tasks:**
-
-- Add a synthetic MCP/tool-risk fixture.
-- Emit Event-IR for tool manifest inspection.
-- Emit Identity-IR only for synthetic/scoped subjects.
-- Emit ProofArtifact for capability-boundary and tool-poisoning risk.
-- Add a countermeasure candidate in recommendation-only mode.
-
-**Acceptance:**
-
-- The run is fully synthetic and verified.
-- Ontogenesis export includes the AI-infra assessment evidence and proof claim.
-
-## 3. Graph robustness fixture
+## 2. Graph robustness fixture
 
 **Goal:** Move graph robustness from README-level doctrine to a runnable synthetic test.
 
@@ -74,7 +78,7 @@ Completed work:
 - Critical path stability can be scored before/after perturbation.
 - No generic offensive graph-attack tooling is shipped.
 
-## 4. 23-topic operating map runner
+## 3. 23-topic operating map runner
 
 **Goal:** Turn `config/scope-d-lsa-map.json` into dashboard and orchestration input.
 
@@ -89,7 +93,7 @@ Completed work:
 - Topic map remains validated in CI.
 - Output distinguishes captured design from implemented proof-producing lanes.
 
-## 5. Runtime collector policy
+## 4. Runtime collector policy
 
 **Goal:** Prepare for future collectors without violating safety doctrine.
 
@@ -103,3 +107,19 @@ Completed work:
 
 - No collector can contact external services by default.
 - All collector output is wrapped as Event-IR and EvidenceEnvelope records.
+
+## 5. Live AI-infra readiness boundary
+
+**Goal:** Define the transition from synthetic fixture assessment to read-only live AI/MCP fingerprinting without enabling tool execution.
+
+**Tasks:**
+
+- Define read-only collector capability boundaries.
+- Define explicit non-execution guarantees for MCP/tool discovery.
+- Require EngagementPolicy and SafetyBoundary before any live-local discovery.
+- Keep external/public scanning blocked by default.
+
+**Acceptance:**
+
+- Live readiness doctrine exists before any live collector lands.
+- Collector work starts from schema and fail-closed policy, not from runtime probing.
