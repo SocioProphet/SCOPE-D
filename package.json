@@ -8,7 +8,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js && node scripts/test-reporting-exports.js",
+    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js && node scripts/test-reporting-exports.js && node scripts/test-collector-policy.js",
     "validate": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js",
     "validate:wargames": "node scripts/validate-wargames-contracts.js",
     "references:workorders": "node scripts/generate-reference-workorders.js",
@@ -25,6 +25,7 @@
     "test:ai-infra": "node scripts/test-ai-infra-slice.js",
     "test:graph-robustness": "node scripts/test-graph-robustness-slice.js",
     "test:reporting": "node scripts/test-reporting-exports.js",
+    "test:collector-policy": "node scripts/test-collector-policy.js",
     "test:tamper": "node scripts/smoke-tamper-detection.js"
   },
   "dependencies": {
