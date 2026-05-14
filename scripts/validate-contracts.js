@@ -33,6 +33,8 @@ const RUNTIME_SCHEMAS = [
   'config/schemas/target-manifest.schema.json',
   'config/schemas/synthetic-event.schema.json',
   'config/schemas/run-summary.schema.json',
+  'config/schemas/dashboard-export.schema.json',
+  'config/schemas/lsa-map-report.schema.json',
 ];
 
 const CATALOG_PAIRS = [
