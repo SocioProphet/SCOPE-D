@@ -19,6 +19,7 @@ const FILE_SCHEMAS = {
   'ai-infra-assessment.json': 'ai-infra-assessment.schema.json',
   'mcp-tool-risk.json': 'mcp-tool-risk.schema.json',
   'countermeasure-rule.json': 'countermeasure-rule.schema.json',
+  'graph-robustness-assessment.json': 'graph-robustness-assessment.schema.json',
   'control-loop.json': 'scope-d-control-loop.schema.json',
   'receipt.json': 'run-receipt.schema.json',
 };
@@ -187,7 +188,22 @@ function validateAiInfraConsistency(aiInfraAssessment, mcpToolRisk, countermeasu
   }
 }
 
-function validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, aiInfraAssessment, mcpToolRisk, countermeasureRule, controlLoop, receipt, runRel, errors) {
+function validateGraphRobustnessConsistency(graphRobustnessAssessment, proofArtifact, controlLoop, errors) {
+  if (!graphRobustnessAssessment) return;
+  assert(graphRobustnessAssessment.perturbationModel && graphRobustnessAssessment.perturbationModel.syntheticOnly === true, 'graph-robustness-assessment.json must be syntheticOnly=true', errors);
+  assert((graphRobustnessAssessment.affectedDecisions || []).length > 0, 'graph-robustness-assessment.json must record affected decisions for this fixture', errors);
+  assert((graphRobustnessAssessment.recommendedHardeningControls || []).length > 0, 'graph-robustness-assessment.json must include hardening controls', errors);
+  if (proofArtifact) {
+    assert((proofArtifact.evidenceRefs || []).includes(graphRobustnessAssessment.id), 'proof-artifact.json must reference graph-robustness-assessment.json', errors);
+    assert(proofArtifact.dynamicMetric && proofArtifact.dynamicMetric.metricType === 'graph_path_cost', 'proof-artifact.json must use graph_path_cost dynamic metric for graph robustness run', errors);
+  }
+  if (controlLoop) {
+    const evidenceRefs = new Set((controlLoop.evidence || []).map((ev) => ev.resourceId));
+    assert(evidenceRefs.has(graphRobustnessAssessment.id), 'control-loop.json evidence must reference graph-robustness-assessment.json', errors);
+  }
+}
+
+function validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, aiInfraAssessment, mcpToolRisk, countermeasureRule, graphRobustnessAssessment, controlLoop, receipt, runRel, errors) {
   if (targetManifest && controlLoop) {
     assert(targetManifest.target.identifier === controlLoop.targetSurface.identifier, 'Target identifier mismatch between target-manifest.json and control-loop.json', errors);
     assert(targetManifest.target.surfaceType === controlLoop.targetSurface.surfaceType, 'Surface type mismatch between target-manifest.json and control-loop.json', errors);
@@ -224,6 +240,7 @@ function validateCrossArtifactConsistency(engagementPolicy, targetManifest, safe
 
   validatePolicyAuthorizesRun(engagementPolicy, targetManifest, controlLoop, errors);
   validateAiInfraConsistency(aiInfraAssessment, mcpToolRisk, countermeasureRule, proofArtifact, controlLoop, errors);
+  validateGraphRobustnessConsistency(graphRobustnessAssessment, proofArtifact, controlLoop, errors);
 }
 
 function main() {
@@ -250,13 +267,14 @@ function main() {
     const aiInfraAssessment = validateJsonFile(runAbs, 'ai-infra-assessment.json', FILE_SCHEMAS['ai-infra-assessment.json'], errors, { optional: true });
     const mcpToolRisk = validateJsonFile(runAbs, 'mcp-tool-risk.json', FILE_SCHEMAS['mcp-tool-risk.json'], errors, { optional: true });
     const countermeasureRule = validateJsonFile(runAbs, 'countermeasure-rule.json', FILE_SCHEMAS['countermeasure-rule.json'], errors, { optional: true });
+    const graphRobustnessAssessment = validateJsonFile(runAbs, 'graph-robustness-assessment.json', FILE_SCHEMAS['graph-robustness-assessment.json'], errors, { optional: true });
     const receipt = validateJsonFile(runAbs, 'receipt.json', FILE_SCHEMAS['receipt.json'], errors);
     const eventCount = validateJsonlFile(runAbs, 'events.jsonl', EVENT_SCHEMA, errors, 'synthetic event');
     const eventIrCount = validateJsonlFile(runAbs, 'event-ir.jsonl', EVENT_IR_SCHEMA, errors, 'Event-IR record');
 
     assert(fs.existsSync(path.join(runAbs, 'report.md')), 'Missing required artifact: report.md', errors);
     verifyReceiptHashes(runAbs, runRel, receipt, errors);
-    validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, aiInfraAssessment, mcpToolRisk, countermeasureRule, controlLoop, receipt, runRel, errors);
+    validateCrossArtifactConsistency(engagementPolicy, targetManifest, safetyBoundary, identityIr, proofArtifact, aiInfraAssessment, mcpToolRisk, countermeasureRule, graphRobustnessAssessment, controlLoop, receipt, runRel, errors);
 
     if (errors.length === 0) {
       console.log(`Verified SCOPE-D run: ${runRel} (${eventCount} synthetic event${eventCount === 1 ? '' : 's'}, ${eventIrCount} Event-IR record${eventIrCount === 1 ? '' : 's'})`);
