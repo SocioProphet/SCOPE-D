@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Validate contracts
+      - name: Validate contracts and smoke tests
         run: npm test
 
       - name: Regenerate reference work orders
@@ -61,6 +61,18 @@ jobs:
 
       - name: Verify Ontogenesis RDF export exists
         run: test -f runs/scope-d-ci-synthetic-lab/ontogenesis.ttl
+
+      - name: Smoke test AI-infra vertical slice explicitly
+        run: npm run scope-d:init-ai-infra -- --run-id scope-d-ci-ai-infra-lab-explicit --target ci-ai-infra-lab --engagement-policy examples/scope-d/engagement-policy.synthetic.json
+
+      - name: Verify AI-infra generated run integrity
+        run: npm run scope-d:verify-run -- runs/scope-d-ci-ai-infra-lab-explicit
+
+      - name: Report AI-infra generated run
+        run: npm run scope-d:report-run -- runs/scope-d-ci-ai-infra-lab-explicit
+
+      - name: Export AI-infra run to Ontogenesis RDF
+        run: npm run scope-d:export-ontogenesis -- runs/scope-d-ci-ai-infra-lab-explicit
 
       - name: Prove tamper detection rejects modified artifacts
         run: npm run test:tamper
