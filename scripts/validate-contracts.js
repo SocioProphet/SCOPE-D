@@ -27,6 +27,7 @@ const REQUIRED_PAIRS = [
   ['config/schemas/proof-artifact.schema.json', 'examples/scope-d/proof-artifact.example.json'],
   ['config/schemas/engagement-policy.schema.json', 'examples/scope-d/engagement-policy.example.json'],
   ['config/schemas/engagement-policy.schema.json', 'examples/scope-d/engagement-policy.synthetic.json'],
+  ['config/schemas/collector-policy.schema.json', 'examples/scope-d/collector-policy.example.json'],
 ];
 
 const RUNTIME_SCHEMAS = [
