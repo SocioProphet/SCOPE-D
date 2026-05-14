@@ -80,6 +80,24 @@ Completed LSA reporting work:
 - `npm test` includes reporting smoke coverage through `test-reporting-exports.js`.
 - CI explicitly generates and verifies the LSA map report.
 
+The collector-policy contract layer is implemented:
+
+`CollectorPolicy schema -> valid fixture -> invalid fixtures -> fail-closed tests -> docs`
+
+Completed collector-policy work:
+
+- Added `config/schemas/collector-policy.schema.json`.
+- Added `examples/scope-d/collector-policy.example.json`.
+- Added invalid fixtures for:
+  - unknown collector type,
+  - wildcard filesystem path,
+  - command execution allowed,
+  - network egress allowed.
+- Added `scripts/test-collector-policy.js`.
+- Wired collector-policy validation into `npm test` and `validate-contracts.js`.
+- Added `docs/COLLECTOR-POLICY.md`.
+- CI explicitly runs collector-policy fail-closed tests.
+
 ## 1. Confirm CI and enforce branch protection
 
 **Goal:** Make the contract-validation workflow a required gate.
@@ -95,38 +113,24 @@ Completed LSA reporting work:
 - Latest `main` commit has a passing contract-validation workflow.
 - Direct contract drift cannot land without validation.
 
-## 2. Runtime collector policy
+## 2. Live readiness doctrine
 
-**Goal:** Prepare for future collectors without violating safety doctrine.
-
-**Tasks:**
-
-- Define collector capability boundaries.
-- Require EngagementPolicy and SafetyBoundary checks before collector execution.
-- Start with read-only local synthetic collectors only.
-
-**Acceptance:**
-
-- No collector can contact external services by default.
-- All collector output is wrapped as Event-IR and EvidenceEnvelope records.
-
-## 3. Live AI-infra readiness boundary
-
-**Goal:** Define the transition from synthetic fixture assessment to read-only live AI/MCP fingerprinting without enabling tool execution.
+**Goal:** Define the transition from synthetic fixture assessment to any read-only live collector without enabling tool execution or network probing.
 
 **Tasks:**
 
-- Define read-only collector capability boundaries.
-- Define explicit non-execution guarantees for MCP/tool discovery.
-- Require EngagementPolicy and SafetyBoundary before any live-local discovery.
+- Define live-readiness gates.
+- Define explicit non-execution guarantees for read-only live collectors.
+- Require EngagementPolicy, CollectorPolicy, and SafetyBoundary before any live-local discovery.
 - Keep external/public scanning blocked by default.
+- Define no-credential/no-secret/no-process-argument collection constraints.
 
 **Acceptance:**
 
 - Live readiness doctrine exists before any live collector lands.
 - Collector work starts from schema and fail-closed policy, not from runtime probing.
 
-## 4. Detection-as-code synthetic examples
+## 3. Detection-as-code synthetic examples
 
 **Goal:** Add detection-as-code examples linked to synthetic expected telemetry.
 
@@ -141,7 +145,7 @@ Completed LSA reporting work:
 - Detection example is linked to synthetic expected telemetry.
 - No production deployment claim is made.
 
-## 5. Issue/project tracking restoration
+## 4. Issue/project tracking restoration
 
 **Goal:** Replace file-only backlog with normal repo tracking.
 
@@ -150,3 +154,13 @@ Completed LSA reporting work:
 - Enable GitHub Issues or create an equivalent project-board workflow.
 - Convert major backlog sections into issues.
 - Preserve `docs/NEXT_RUNTIME_BACKLOG.md` as a generated/curated summary only.
+
+## 5. PolicyFabric admission bridge sketch
+
+**Goal:** Sketch how repo-local EngagementPolicy and CollectorPolicy decisions become future PolicyFabric admission decisions.
+
+**Tasks:**
+
+- Define handoff fields.
+- Define refused states.
+- Keep this as a design sketch until PolicyFabric runtime integration exists.
