@@ -6,9 +6,9 @@ GitHub Issues are currently disabled for this repository, so this file captures 
 
 The first generic contract vertical slice is now implemented for synthetic runs:
 
-`EngagementPolicy -> SyntheticEvent -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> Ontogenesis export`
+`EngagementPolicy -> SyntheticEvent -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> DashboardSummary -> Ontogenesis export`
 
-Completed work:
+Completed generic work:
 
 - `scope-d:init` emits:
   - `engagement-policy.json`
@@ -21,15 +21,16 @@ Completed work:
   - `report.md`
 - `verify-run.js` validates EngagementPolicy, Event-IR, Identity-IR, ProofArtifact, receipt hashes, and cross-artifact references.
 - `report-run.js` surfaces Event-IR, Identity-IR, and ProofArtifact counts.
+- `export-dashboard-summary.js` emits `dashboard-summary.json` from verified run summaries only.
 - `export-ontogenesis-rdf.js` emits triples for Event-IR, Identity-IR, ProofArtifact, dynamic metric, configuration volume, and archetype metadata when present.
 - `config/scope-d-lsa-map.json` is validated by `config/schemas/scope-d-lsa-map.schema.json` and `npm test`.
 - `scope-d:init` now requires `--engagement-policy` and fails closed when policy is absent, unreadable, schema-invalid, or unauthorized for the requested target/surface/mode.
 - Generated runs now copy the active policy into `engagement-policy.json`, link it from `control-loop.json`, hash it in the receipt, and verify it through `verify-run.js`.
 - `npm test` includes engagement-policy fail-closed tests for missing policy, missing file, schema invalidity, empty authorized targets, unauthorized target, unauthorized mode, and `live_engage` without Michael approval requirement.
 
-The first AI-infra synthetic vertical slice is also implemented:
+The first AI-infra synthetic vertical slice is implemented:
 
-`Synthetic MCP Tool Manifest -> AIInfraAssessment -> MCPToolRisk -> CountermeasureRule -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> Receipt -> Ontogenesis export`
+`Synthetic MCP Tool Manifest -> AIInfraAssessment -> MCPToolRisk -> CountermeasureRule -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> Receipt -> DashboardSummary -> Ontogenesis export`
 
 Completed AI-infra work:
 
@@ -43,13 +44,14 @@ Completed AI-infra work:
   - standard Event-IR / Identity-IR / ProofArtifact / ControlLoop / Receipt artifacts.
 - `verify-run.js` validates AI-infra domain artifacts when present and checks their cross-references.
 - `report-run.js` surfaces AIInfraAssessment, MCPToolRisk, and CountermeasureRule counts.
+- `export-dashboard-summary.js` surfaces AI-infra lane status when present.
 - `export-ontogenesis-rdf.js` emits AI-infra, MCP-risk, and countermeasure triples when present.
 - `npm test` includes `test-ai-infra-slice.js`.
 - CI explicitly runs the AI-infra synthetic vertical slice.
 
-The first graph-robustness synthetic vertical slice is also implemented:
+The first graph-robustness synthetic vertical slice is implemented:
 
-`Synthetic Trust Graph Fixture -> GraphRobustnessAssessment -> Event-IR -> Identity-IR -> graph_path_cost ProofArtifact -> ControlLoopRun -> Receipt -> Ontogenesis export`
+`Synthetic Trust Graph Fixture -> GraphRobustnessAssessment -> Event-IR -> Identity-IR -> graph_path_cost ProofArtifact -> ControlLoopRun -> Receipt -> DashboardSummary -> Ontogenesis export`
 
 Completed graph-robustness work:
 
@@ -61,9 +63,22 @@ Completed graph-robustness work:
   - standard Event-IR / Identity-IR / ProofArtifact / ControlLoop / Receipt artifacts.
 - `verify-run.js` validates GraphRobustnessAssessment when present and checks its ProofArtifact / ControlLoop references.
 - `report-run.js` surfaces GraphRobustnessAssessment counts.
+- `export-dashboard-summary.js` surfaces graph robustness lane status when present.
 - `export-ontogenesis-rdf.js` emits graph-robustness triples when present.
 - `npm test` includes `test-graph-robustness-slice.js`.
 - CI explicitly runs the graph-robustness synthetic vertical slice.
+
+The 23-topic operating map report is implemented:
+
+`config/scope-d-lsa-map.json -> reports/scope-d-lsa-map-report.json -> reports/scope-d-lsa-map-report.md`
+
+Completed LSA reporting work:
+
+- Added `config/schemas/lsa-map-report.schema.json`.
+- Added `scope-d:report-lsa-map` command.
+- Generated report distinguishes `proof_producing` topics from `captured_design` topics.
+- `npm test` includes reporting smoke coverage through `test-reporting-exports.js`.
+- CI explicitly generates and verifies the LSA map report.
 
 ## 1. Confirm CI and enforce branch protection
 
@@ -80,22 +95,7 @@ Completed graph-robustness work:
 - Latest `main` commit has a passing contract-validation workflow.
 - Direct contract drift cannot land without validation.
 
-## 2. 23-topic operating map runner
-
-**Goal:** Turn `config/scope-d-lsa-map.json` into dashboard and orchestration input.
-
-**Tasks:**
-
-- Add a report command that renders topic coverage and missing proof artifacts.
-- Add a dashboard-ready JSON export.
-- Distinguish captured-design topics from proof-producing lanes.
-
-**Acceptance:**
-
-- Topic map remains validated in CI.
-- Output distinguishes captured design from implemented proof-producing lanes.
-
-## 3. Runtime collector policy
+## 2. Runtime collector policy
 
 **Goal:** Prepare for future collectors without violating safety doctrine.
 
@@ -110,7 +110,7 @@ Completed graph-robustness work:
 - No collector can contact external services by default.
 - All collector output is wrapped as Event-IR and EvidenceEnvelope records.
 
-## 4. Live AI-infra readiness boundary
+## 3. Live AI-infra readiness boundary
 
 **Goal:** Define the transition from synthetic fixture assessment to read-only live AI/MCP fingerprinting without enabling tool execution.
 
@@ -126,17 +126,27 @@ Completed graph-robustness work:
 - Live readiness doctrine exists before any live collector lands.
 - Collector work starts from schema and fail-closed policy, not from runtime probing.
 
-## 5. SocioSphere-ready dashboard export
+## 4. Detection-as-code synthetic examples
 
-**Goal:** Emit a compact dashboard JSON artifact from verified run summaries.
+**Goal:** Add detection-as-code examples linked to synthetic expected telemetry.
 
 **Tasks:**
 
-- Add a dashboard export command.
-- Include run status, safety posture, artifact counts, domain-lane counts, and receipt hash references.
-- Keep it derived from verified summaries only.
+- Add one Sigma or OPA/Rego example tied to existing synthetic event output.
+- Validate the detection/countermeasure rule through existing schemas.
+- Keep deployment status experimental or hunt-only.
 
 **Acceptance:**
 
-- Dashboard export refuses unverified runs.
-- Dashboard JSON is deterministic and safe for non-production ingestion.
+- Detection example is linked to synthetic expected telemetry.
+- No production deployment claim is made.
+
+## 5. Issue/project tracking restoration
+
+**Goal:** Replace file-only backlog with normal repo tracking.
+
+**Tasks:**
+
+- Enable GitHub Issues or create an equivalent project-board workflow.
+- Convert major backlog sections into issues.
+- Preserve `docs/NEXT_RUNTIME_BACKLOG.md` as a generated/curated summary only.
