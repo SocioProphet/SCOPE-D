@@ -28,6 +28,9 @@ jobs:
       - name: Validate contracts and smoke tests
         run: npm test
 
+      - name: Smoke test collector policy fail-closed contracts explicitly
+        run: npm run test:collector-policy
+
       - name: Regenerate reference work orders
         run: npm run references:workorders
 
