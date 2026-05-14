@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "collector-policy-wildcard-path-invalid",
+  "name": "Invalid collector policy with wildcard filesystem scope",
+  "collectorRegistration": {
+    "collectorId": "collector-wildcard-reader",
+    "collectorType": "filesystem_metadata",
+    "mode": "read_only",
+    "status": "experimental",
+    "owner": "scope-d",
+    "engagementPolicyRequired": true,
+    "safetyBoundaryRequired": true
+  },
+  "capabilityBoundary": {
+    "allowed": ["read_file_metadata"],
+    "prohibited": ["write_file", "exec", "network_egress", "spawn_process", "delete_file", "modify_identity", "collect_credentials", "scan_public_network", "load_plugin", "mutate_policy"],
+    "unknownCapabilityPolicy": "block"
+  },
+  "allowedReadOnlyScopes": {
+    "filesystemPaths": ["*"],
+    "environmentVariables": [],
+    "processList": { "allowed": false, "includeArguments": false, "redactionRequired": true }
+  },
+  "executionGuarantee": { "level": "none", "canExecuteCommands": false, "canSpawnProcesses": false, "canLoadPlugins": false },
+  "networkBoundary": { "egressMode": "none", "publicScanningAllowed": false, "externalServicesAllowed": false },
+  "failClosed": { "missingPolicy": "block", "invalidPolicy": "block", "unknownCollectorType": "block", "unknownCapability": "block", "scopeMismatch": "block" },
+  "auditTrail": { "receiptRequired": true, "eventIrRequired": true, "noSilentReads": true, "hashArtifacts": true },
+  "nonClaims": ["Invalid fixture: wildcard filesystem scope must fail schema validation."],
+  "createdAt": "2026-05-13T12:00:00Z"
+}
