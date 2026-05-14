@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "live-readiness-policy-production-target-invalid",
+  "name": "Invalid live readiness policy with production target",
+  "status": "experimental",
+  "extendsCollectorPolicy": {
+    "required": true,
+    "policyRef": "collector-policy-synthetic-readonly-default",
+    "mayOverrideCollectorPolicy": false
+  },
+  "readinessScope": {
+    "mode": "read_only_live_local",
+    "allowedSurfaces": ["local_host"],
+    "allowedTargets": ["production"],
+    "prohibitedTargets": ["production", "customer", "public-internet", "third-party-services", "external-network", "unknown"]
+  },
+  "serviceIdentityVerification": {
+    "required": true,
+    "acceptedEvidence": ["local_manifest_hash"],
+    "unknownServicePolicy": "block"
+  },
+  "credentialIsolation": {
+    "credentialReadAllowed": false,
+    "secretEnvReadAllowed": false,
+    "tokenMaterialAllowed": false,
+    "redactionRequired": true
+  },
+  "executionBoundary": {
+    "toolExecutionAllowed": false,
+    "commandExecutionAllowed": false,
+    "processSpawnAllowed": false,
+    "pluginLoadAllowed": false
+  },
+  "networkBoundary": {
+    "egressMode": "none",
+    "publicScanningAllowed": false,
+    "externalServicesAllowed": false,
+    "remoteProbeAllowed": false
+  },
+  "dataBoundary": {
+    "productionDataAllowed": false,
+    "customerDataAllowed": false,
+    "rawIdentityExportAllowed": false,
+    "syntheticPreferred": true
+  },
+  "failClosed": {
+    "missingCollectorPolicy": "block",
+    "invalidCollectorPolicy": "block",
+    "unverifiedServiceIdentity": "block",
+    "scopeMismatch": "block",
+    "credentialExposure": "block",
+    "networkAttempt": "block",
+    "executionAttempt": "block"
+  },
+  "approvalRequirements": {
+    "engagementPolicyRequired": true,
+    "safetyBoundaryRequired": true,
+    "michaelApprovalRequiredForExpansion": true
+  },
+  "auditRequirements": {
+    "receiptRequired": true,
+    "eventIrRequired": true,
+    "dashboardExportAllowed": true,
+    "noSilentReads": true
+  },
+  "nonClaims": ["Invalid fixture: production target must be rejected."],
+  "createdAt": "2026-05-13T12:00:00Z"
+}
