@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.1.0",
+  "streamId": "hellgraph-proof-stream:replay-executed-invalid",
+  "mode": "DEFENSE",
+  "sourceRunRefs": ["wargames-defense-2026-05-13-alpha"],
+  "eventRefs": ["boundary-event:net-header-001"],
+  "proofRefs": ["proof:scout:profile-001"],
+  "checkpointRefs": ["checkpoint:wargames-boundary-invalid"],
+  "replayTestRefs": ["replay-test:wargames-boundary-invalid"],
+  "ordered": true,
+  "replayTolerance": "declared_equivalence",
+  "redactionState": "redacted",
+  "nonClaims": [
+    "does_not_establish_runtime_connection",
+    "does_not_authorize_mutation",
+    "does_not_allow_raw_identity_joins"
+  ],
+  "rawIdentityJoinsAllowed": true,
+  "runtimeConnectionEstablished": true,
+  "replayExecuted": true,
+  "mutationAuthority": true
+}

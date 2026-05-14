@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/wargames-hellgraph-proof-stream.schema.json",
+  "title": "Wargames HellGraph Proof Stream",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "streamId",
+    "mode",
+    "sourceRunRefs",
+    "eventRefs",
+    "proofRefs",
+    "checkpointRefs",
+    "replayTestRefs",
+    "ordered",
+    "redactionState",
+    "nonClaims",
+    "rawIdentityJoinsAllowed",
+    "runtimeConnectionEstablished",
+    "replayExecuted",
+    "mutationAuthority"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "streamId": { "type": "string", "pattern": "^hellgraph-proof-stream:[a-z0-9][a-z0-9._:-]*$" },
+    "mode": { "type": "string", "enum": ["DEFENSE", "LEARNING"] },
+    "sourceRunRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^wargames-[a-z0-9][a-z0-9._:-]*$" } },
+    "eventRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^boundary-event:[a-z0-9][a-z0-9._:-]*$" } },
+    "proofRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "checkpointRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "replayTestRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "ordered": { "type": "boolean", "const": true },
+    "replayTolerance": { "type": "string", "enum": ["exact", "declared_equivalence", "not_assessed"] },
+    "redactionState": { "type": "string", "enum": ["redacted", "synthetic", "withheld"] },
+    "nonClaims": { "type": "array", "minItems": 3, "items": { "type": "string", "minLength": 1 } },
+    "rawIdentityJoinsAllowed": { "type": "boolean", "const": false },
+    "runtimeConnectionEstablished": { "type": "boolean", "const": false },
+    "replayExecuted": { "type": "boolean", "const": false },
+    "mutationAuthority": { "type": "boolean", "const": false }
+  }
+}

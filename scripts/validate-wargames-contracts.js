@@ -25,6 +25,8 @@ const VALID_PAIRS = [
   ['config/schemas/wargames-ofif-activation-envelope.schema.json', 'examples/scope-d/wargames/wargames-ofif-activation-envelope.example.json'],
   ['config/schemas/wargames-attack-coverage-claim.schema.json', 'examples/scope-d/wargames/wargames-attack-coverage-claim.example.json'],
   ['config/schemas/wargames-ontogenesis-export-envelope.schema.json', 'examples/scope-d/wargames/wargames-ontogenesis-export.example.json'],
+  ['config/schemas/wargames-meshrush-graph-view-export.schema.json', 'examples/scope-d/wargames/wargames-meshrush-graph-view.example.json'],
+  ['config/schemas/wargames-hellgraph-proof-stream.schema.json', 'examples/scope-d/wargames/wargames-hellgraph-proof-stream.example.json'],
 ];
 
 const INVALID_PAIRS = [
@@ -38,6 +40,8 @@ const INVALID_PAIRS = [
   ['config/schemas/wargames-ofif-activation-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ofif-envelope-raw-identity-join.invalid.json'],
   ['config/schemas/wargames-attack-coverage-claim.schema.json', 'examples/scope-d/wargames/negative-fixtures/attack-coverage-claims-procedure-execution.invalid.json'],
   ['config/schemas/wargames-ontogenesis-export-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ontogenesis-export-authorizes-activation.invalid.json'],
+  ['config/schemas/wargames-meshrush-graph-view-export.schema.json', 'examples/scope-d/wargames/negative-fixtures/meshrush-graph-view-runtime-authority.invalid.json'],
+  ['config/schemas/wargames-hellgraph-proof-stream.schema.json', 'examples/scope-d/wargames/negative-fixtures/hellgraph-proof-stream-replay-executed.invalid.json'],
 ];
 
 const APPROVED_AUTHORIZATION_EXAMPLE = 'examples/scope-d/wargames/engagement-authorization-approved.example.json';
@@ -247,6 +251,31 @@ function validateOntogenesisExport(examplePath, example, errorList) {
   }
 }
 
+function validateMeshrushGraphView(examplePath, example, errorList) {
+  if (!examplePath.includes('meshrush')) return;
+  assertTo(errorList, example.rawIdentityJoinsAllowed === false, `${examplePath}: MeshRush export must not allow raw identity joins`);
+  assertTo(errorList, example.runtimeConnectionEstablished === false, `${examplePath}: MeshRush export must not establish runtime connection`);
+  assertTo(errorList, example.traversalAuthority === false, `${examplePath}: MeshRush export must not claim traversal authority`);
+  assertTo(errorList, example.mutationAuthority === false, `${examplePath}: MeshRush export must not claim mutation authority`);
+  assertTo(errorList, example.redactionState !== 'raw', `${examplePath}: MeshRush export must not be raw`);
+  assertTo(errorList, Array.isArray(example.nonClaims) && example.nonClaims.includes('does_not_establish_runtime_connection'), `${examplePath}: non-claims must include does_not_establish_runtime_connection`);
+  assertTo(errorList, Array.isArray(example.nonClaims) && example.nonClaims.includes('does_not_execute_graph_traversal'), `${examplePath}: non-claims must include does_not_execute_graph_traversal`);
+  assertTo(errorList, Array.isArray(example.nonClaims) && example.nonClaims.includes('does_not_authorize_mutation'), `${examplePath}: non-claims must include does_not_authorize_mutation`);
+}
+
+function validateHellgraphProofStream(examplePath, example, errorList) {
+  if (!examplePath.includes('hellgraph')) return;
+  assertTo(errorList, example.rawIdentityJoinsAllowed === false, `${examplePath}: HellGraph proof stream must not allow raw identity joins`);
+  assertTo(errorList, example.runtimeConnectionEstablished === false, `${examplePath}: HellGraph proof stream must not establish runtime connection`);
+  assertTo(errorList, example.replayExecuted === false, `${examplePath}: HellGraph proof stream must not execute replay`);
+  assertTo(errorList, example.mutationAuthority === false, `${examplePath}: HellGraph proof stream must not claim mutation authority`);
+  assertTo(errorList, example.ordered === true, `${examplePath}: HellGraph proof stream must be ordered`);
+  assertTo(errorList, example.redactionState !== 'raw', `${examplePath}: HellGraph proof stream must not be raw`);
+  assertTo(errorList, Array.isArray(example.nonClaims) && example.nonClaims.includes('does_not_establish_runtime_connection'), `${examplePath}: non-claims must include does_not_establish_runtime_connection`);
+  assertTo(errorList, Array.isArray(example.nonClaims) && example.nonClaims.includes('does_not_execute_replay'), `${examplePath}: non-claims must include does_not_execute_replay`);
+  assertTo(errorList, Array.isArray(example.nonClaims) && example.nonClaims.includes('does_not_authorize_mutation'), `${examplePath}: non-claims must include does_not_authorize_mutation`);
+}
+
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
 const schemaCache = new Map();
@@ -288,6 +317,8 @@ function validatePair(schemaPath, examplePath) {
   validateOfifActivationEnvelope(examplePath, example, localErrors);
   validateAttackCoverageClaim(examplePath, example, localErrors);
   validateOntogenesisExport(examplePath, example, localErrors);
+  validateMeshrushGraphView(examplePath, example, localErrors);
+  validateHellgraphProofStream(examplePath, example, localErrors);
 
   return localErrors;
 }

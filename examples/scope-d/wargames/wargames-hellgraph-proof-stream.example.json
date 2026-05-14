@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.0",
+  "streamId": "hellgraph-proof-stream:wargames-boundary-001",
+  "mode": "DEFENSE",
+  "sourceRunRefs": ["wargames-defense-2026-05-13-alpha"],
+  "eventRefs": ["boundary-event:net-header-001"],
+  "proofRefs": [
+    "proof:scout:profile-001",
+    "proof:hash:scout-profile-001"
+  ],
+  "checkpointRefs": ["checkpoint:wargames-boundary-001"],
+  "replayTestRefs": ["replay-test:wargames-boundary-confluence-001"],
+  "ordered": true,
+  "replayTolerance": "declared_equivalence",
+  "redactionState": "redacted",
+  "nonClaims": [
+    "does_not_establish_runtime_connection",
+    "does_not_execute_replay",
+    "does_not_authorize_mutation",
+    "does_not_allow_raw_identity_joins"
+  ],
+  "rawIdentityJoinsAllowed": false,
+  "runtimeConnectionEstablished": false,
+  "replayExecuted": false,
+  "mutationAuthority": false
+}
