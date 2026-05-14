@@ -64,7 +64,6 @@ function renderMarkdown(summary) {
   const artifactRows = summary.artifacts
     .map((artifact) => `| \`${artifact.path}\` | \`${artifact.sha256}\` |`)
     .join('\n');
-
   const notes = summary.handoff.notes.map((note) => `- ${note}`).join('\n');
 
   return [
@@ -98,6 +97,7 @@ function renderMarkdown(summary) {
     `- AI-infra assessments: ${summary.counts.aiInfraAssessments || 0}`,
     `- MCP tool risks: ${summary.counts.mcpToolRisks || 0}`,
     `- Countermeasure rules: ${summary.counts.countermeasureRules || 0}`,
+    `- Graph robustness assessments: ${summary.counts.graphRobustnessAssessments || 0}`,
     `- Evidence items: ${summary.counts.evidenceItems}`,
     `- Gates: ${summary.counts.gates}`,
     `- Receipt artifacts: ${summary.counts.receiptArtifacts}`,
@@ -150,6 +150,7 @@ function main() {
   const aiInfraAssessments = countJsonFile(path.join(runAbs, 'ai-infra-assessment.json'));
   const mcpToolRisks = countJsonFile(path.join(runAbs, 'mcp-tool-risk.json'));
   const countermeasureRules = countJsonFile(path.join(runAbs, 'countermeasure-rule.json'));
+  const graphRobustnessAssessments = countJsonFile(path.join(runAbs, 'graph-robustness-assessment.json'));
 
   const summary = {
     schemaVersion: '0.1.0',
@@ -178,6 +179,7 @@ function main() {
       aiInfraAssessments,
       mcpToolRisks,
       countermeasureRules,
+      graphRobustnessAssessments,
       evidenceItems: Array.isArray(controlLoop.evidence) ? controlLoop.evidence.length : 0,
       gates: Array.isArray(controlLoop.gates) ? controlLoop.gates.length : 0,
       receiptArtifacts: Array.isArray(receipt.artifactHashes) ? receipt.artifactHashes.length : 0,
@@ -197,12 +199,12 @@ function main() {
         'Synthetic-only run is safe for dashboard and policy-fabric ingestion as non-production evidence.',
         'Event-IR, Identity-IR, and ProofArtifact artifacts are generated and verified for this run.',
         'AI-infra domain artifacts are counted when present and remain recommendation-only unless explicitly gated.',
+        'Graph robustness artifacts are counted when present and remain synthetic fixture-only unless explicitly gated.',
       ],
     },
   };
 
   validateSummary(summary);
-
   writeJson(path.join(runAbs, 'run-summary.json'), summary);
   fs.writeFileSync(path.join(runAbs, 'run-summary.md'), renderMarkdown(summary), 'utf8');
 
