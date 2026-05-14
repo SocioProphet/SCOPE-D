@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-lsa-map-report.schema.json",
+  "title": "SCOPE-D LSA Map Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "reportId",
+    "mapId",
+    "generatedAt",
+    "topicCount",
+    "implementedTopicCount",
+    "capturedDesignTopicCount",
+    "topicCoverage",
+    "crossTopicEdges",
+    "summary"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "reportId": { "type": "string", "pattern": "^lsa-report-[a-z0-9][a-z0-9._:-]*$" },
+    "mapId": { "type": "string", "pattern": "^scope-d-lsa-map-[a-z0-9][a-z0-9._:-]*$" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "topicCount": { "type": "integer", "minimum": 0 },
+    "implementedTopicCount": { "type": "integer", "minimum": 0 },
+    "capturedDesignTopicCount": { "type": "integer", "minimum": 0 },
+    "topicCoverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "status", "implementedLanes", "missingLanes", "proofArtifacts"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1, "maximum": 23 },
+          "name": { "type": "string" },
+          "status": { "type": "string", "enum": ["proof_producing", "captured_design"] },
+          "implementedLanes": { "type": "array", "items": { "type": "string" } },
+          "missingLanes": { "type": "array", "items": { "type": "string" } },
+          "proofArtifacts": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "crossTopicEdges": { "type": "integer", "minimum": 0 },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["implementedLanes", "capturedDesignLanes", "notes"],
+      "properties": {
+        "implementedLanes": { "type": "array", "items": { "type": "string" } },
+        "capturedDesignLanes": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
