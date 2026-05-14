@@ -47,6 +47,24 @@ Completed AI-infra work:
 - `npm test` includes `test-ai-infra-slice.js`.
 - CI explicitly runs the AI-infra synthetic vertical slice.
 
+The first graph-robustness synthetic vertical slice is also implemented:
+
+`Synthetic Trust Graph Fixture -> GraphRobustnessAssessment -> Event-IR -> Identity-IR -> graph_path_cost ProofArtifact -> ControlLoopRun -> Receipt -> Ontogenesis export`
+
+Completed graph-robustness work:
+
+- Added `fixtures/synthetic/graph-robustness.identity-trust.synthetic.json`.
+- Added `scope-d:init-graph-robustness` runner.
+- Generated graph runs emit:
+  - `graph-fixture.synthetic.json`
+  - `graph-robustness-assessment.json`
+  - standard Event-IR / Identity-IR / ProofArtifact / ControlLoop / Receipt artifacts.
+- `verify-run.js` validates GraphRobustnessAssessment when present and checks its ProofArtifact / ControlLoop references.
+- `report-run.js` surfaces GraphRobustnessAssessment counts.
+- `export-ontogenesis-rdf.js` emits graph-robustness triples when present.
+- `npm test` includes `test-graph-robustness-slice.js`.
+- CI explicitly runs the graph-robustness synthetic vertical slice.
+
 ## 1. Confirm CI and enforce branch protection
 
 **Goal:** Make the contract-validation workflow a required gate.
@@ -62,23 +80,7 @@ Completed AI-infra work:
 - Latest `main` commit has a passing contract-validation workflow.
 - Direct contract drift cannot land without validation.
 
-## 2. Graph robustness fixture
-
-**Goal:** Move graph robustness from README-level doctrine to a runnable synthetic test.
-
-**Tasks:**
-
-- Add a small synthetic identity/trust graph fixture.
-- Add edge-injection and node-injection perturbation fixtures.
-- Emit GraphRobustnessAssessment evidence.
-- Emit ProofArtifact with configuration volume and dynamic path-cost fields.
-
-**Acceptance:**
-
-- Critical path stability can be scored before/after perturbation.
-- No generic offensive graph-attack tooling is shipped.
-
-## 3. 23-topic operating map runner
+## 2. 23-topic operating map runner
 
 **Goal:** Turn `config/scope-d-lsa-map.json` into dashboard and orchestration input.
 
@@ -93,7 +95,7 @@ Completed AI-infra work:
 - Topic map remains validated in CI.
 - Output distinguishes captured design from implemented proof-producing lanes.
 
-## 4. Runtime collector policy
+## 3. Runtime collector policy
 
 **Goal:** Prepare for future collectors without violating safety doctrine.
 
@@ -108,7 +110,7 @@ Completed AI-infra work:
 - No collector can contact external services by default.
 - All collector output is wrapped as Event-IR and EvidenceEnvelope records.
 
-## 5. Live AI-infra readiness boundary
+## 4. Live AI-infra readiness boundary
 
 **Goal:** Define the transition from synthetic fixture assessment to read-only live AI/MCP fingerprinting without enabling tool execution.
 
@@ -123,3 +125,18 @@ Completed AI-infra work:
 
 - Live readiness doctrine exists before any live collector lands.
 - Collector work starts from schema and fail-closed policy, not from runtime probing.
+
+## 5. SocioSphere-ready dashboard export
+
+**Goal:** Emit a compact dashboard JSON artifact from verified run summaries.
+
+**Tasks:**
+
+- Add a dashboard export command.
+- Include run status, safety posture, artifact counts, domain-lane counts, and receipt hash references.
+- Keep it derived from verified summaries only.
+
+**Acceptance:**
+
+- Dashboard export refuses unverified runs.
+- Dashboard JSON is deterministic and safe for non-production ingestion.
