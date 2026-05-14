@@ -55,6 +55,12 @@ jobs:
       - name: Verify generated summary exists
         run: test -f runs/scope-d-ci-synthetic-lab/run-summary.json && test -f runs/scope-d-ci-synthetic-lab/run-summary.md
 
+      - name: Export verified run dashboard summary
+        run: npm run scope-d:export-dashboard -- runs/scope-d-ci-synthetic-lab
+
+      - name: Verify dashboard export exists
+        run: test -f runs/scope-d-ci-synthetic-lab/dashboard-summary.json
+
       - name: Export verified run to Ontogenesis RDF
         run: npm run scope-d:export-ontogenesis -- runs/scope-d-ci-synthetic-lab
 
@@ -70,6 +76,9 @@ jobs:
       - name: Report AI-infra generated run
         run: npm run scope-d:report-run -- runs/scope-d-ci-ai-infra-lab-explicit
 
+      - name: Export AI-infra dashboard summary
+        run: npm run scope-d:export-dashboard -- runs/scope-d-ci-ai-infra-lab-explicit
+
       - name: Export AI-infra run to Ontogenesis RDF
         run: npm run scope-d:export-ontogenesis -- runs/scope-d-ci-ai-infra-lab-explicit
 
@@ -82,8 +91,17 @@ jobs:
       - name: Report graph robustness generated run
         run: npm run scope-d:report-run -- runs/scope-d-ci-graph-robustness-lab-explicit
 
+      - name: Export graph robustness dashboard summary
+        run: npm run scope-d:export-dashboard -- runs/scope-d-ci-graph-robustness-lab-explicit
+
       - name: Export graph robustness run to Ontogenesis RDF
         run: npm run scope-d:export-ontogenesis -- runs/scope-d-ci-graph-robustness-lab-explicit
+
+      - name: Generate 23-topic LSA map report
+        run: npm run scope-d:report-lsa-map
+
+      - name: Verify LSA map report exists
+        run: test -f reports/scope-d-lsa-map-report.json && test -f reports/scope-d-lsa-map-report.md
 
       - name: Prove tamper detection rejects modified artifacts
         run: npm run test:tamper
