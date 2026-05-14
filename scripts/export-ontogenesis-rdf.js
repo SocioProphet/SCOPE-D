@@ -107,6 +107,70 @@ function optionalVerticalSliceTriples(runLocal, details) {
   return triples.join('\n\n');
 }
 
+function optionalAiInfraTriples(runLocal, details) {
+  const triples = [];
+  const aiNode = `ex:${runLocal}-ai-infra-assessment`;
+  const riskNode = `ex:${runLocal}-mcp-tool-risk`;
+  const countermeasureNode = `ex:${runLocal}-countermeasure-rule`;
+  const proofNode = `ex:${runLocal}-proof-artifact`;
+
+  if (details.aiInfraAssessment) {
+    const findingCategories = (details.aiInfraAssessment.findings || []).map((finding) => finding.category).join(',');
+    triples.push([
+      `${aiNode} a apt:AIInfraAssessment ;`,
+      `  apt:assessmentId ${turtleString(details.aiInfraAssessment.id)} ;`,
+      `  apt:assessmentMode ${turtleString(details.aiInfraAssessment.assessmentMode)} ;`,
+      `  apt:targetSurface ${turtleString(details.aiInfraAssessment.target.surfaceType)} ;`,
+      `  apt:targetIdentifier ${turtleString(details.aiInfraAssessment.target.identifier)} ;`,
+      `  apt:findingCategories ${turtleString(findingCategories)} ;`,
+      `  rdfs:label ${turtleString(`AI infra assessment ${details.aiInfraAssessment.id}`)} .`,
+    ].join('\n'));
+  }
+
+  if (details.mcpToolRisk) {
+    triples.push([
+      `${riskNode} a apt:MCPToolRisk ;`,
+      `  apt:riskId ${turtleString(details.mcpToolRisk.id)} ;`,
+      `  apt:serverRef ${turtleString(details.mcpToolRisk.serverRef)} ;`,
+      `  apt:toolName ${turtleString(details.mcpToolRisk.toolName)} ;`,
+      `  apt:riskCategory ${turtleString(details.mcpToolRisk.riskCategory)} ;`,
+      `  apt:severity ${turtleString(details.mcpToolRisk.severity)} ;`,
+      `  apt:confidence ${turtleString(details.mcpToolRisk.confidence)} ;`,
+      `  rdfs:label ${turtleString(`MCP tool risk ${details.mcpToolRisk.id}`)} .`,
+    ].join('\n'));
+  }
+
+  if (details.countermeasureRule) {
+    triples.push([
+      `${countermeasureNode} a apt:CountermeasureRule ;`,
+      `  apt:countermeasureId ${turtleString(details.countermeasureRule.id)} ;`,
+      `  apt:ruleType ${turtleString(details.countermeasureRule.ruleType)} ;`,
+      `  apt:ruleStatus ${turtleString(details.countermeasureRule.status)} ;`,
+      `  apt:severity ${turtleString(details.countermeasureRule.severity)} ;`,
+      `  apt:deploymentGate ${turtleString(details.countermeasureRule.deploymentGate ? details.countermeasureRule.deploymentGate.gateType : 'unknown')} ;`,
+      `  rdfs:label ${turtleString(details.countermeasureRule.name)} .`,
+    ].join('\n'));
+  }
+
+  if (details.aiInfraAssessment && details.mcpToolRisk) {
+    triples.push(`${riskNode} apt:foundByAssessment ${aiNode} .`);
+  }
+  if (details.mcpToolRisk && details.countermeasureRule) {
+    triples.push(`${countermeasureNode} apt:mitigatesRisk ${riskNode} .`);
+  }
+  if (details.proofArtifact && details.aiInfraAssessment) {
+    triples.push(`${proofNode} apt:usesAssessment ${aiNode} .`);
+  }
+  if (details.proofArtifact && details.mcpToolRisk) {
+    triples.push(`${proofNode} apt:usesRiskEvidence ${riskNode} .`);
+  }
+  if (details.proofArtifact && details.countermeasureRule) {
+    triples.push(`${proofNode} apt:usesCountermeasure ${countermeasureNode} .`);
+  }
+
+  return triples.join('\n\n');
+}
+
 function renderTurtle(summary, details) {
   const runLocal = localName(summary.runId);
   const run = `ex:${runLocal}-run`;
@@ -128,6 +192,7 @@ function renderTurtle(summary, details) {
   }).join('\n\n');
 
   const verticalSliceTriples = optionalVerticalSliceTriples(runLocal, details);
+  const aiInfraTriples = optionalAiInfraTriples(runLocal, details);
 
   return [
     '@base <https://socioprophet.github.io/ontogenesis/> .',
@@ -158,6 +223,9 @@ function renderTurtle(summary, details) {
     `  apt:eventIrRecordCount ${summary.counts.eventIrRecords || 0} ;`,
     `  apt:identityIrRecordCount ${summary.counts.identityIrRecords || 0} ;`,
     `  apt:proofArtifactCount ${summary.counts.proofArtifacts || 0} ;`,
+    `  apt:aiInfraAssessmentCount ${summary.counts.aiInfraAssessments || 0} ;`,
+    `  apt:mcpToolRiskCount ${summary.counts.mcpToolRisks || 0} ;`,
+    `  apt:countermeasureRuleCount ${summary.counts.countermeasureRules || 0} ;`,
     `  rdfs:label ${turtleString(`Verified summary for ${summary.runId}`)} .`,
     '',
     `${action} a apt:AtomicValidationAction ;`,
@@ -176,6 +244,8 @@ function renderTurtle(summary, details) {
     '  rdfs:label "Placeholder countermeasure for MCP tool boundary validation" .',
     '',
     verticalSliceTriples,
+    '',
+    aiInfraTriples,
     '',
     artifactTriples,
     '',
@@ -206,6 +276,9 @@ function main() {
     eventIr: readFirstJsonlOptional(path.join(runAbs, 'event-ir.jsonl')),
     identityIr: readJsonOptional(path.join(runAbs, 'identity-ir.json')),
     proofArtifact: readJsonOptional(path.join(runAbs, 'proof-artifact.json')),
+    aiInfraAssessment: readJsonOptional(path.join(runAbs, 'ai-infra-assessment.json')),
+    mcpToolRisk: readJsonOptional(path.join(runAbs, 'mcp-tool-risk.json')),
+    countermeasureRule: readJsonOptional(path.join(runAbs, 'countermeasure-rule.json')),
   };
 
   const ttl = renderTurtle(summary, details);
