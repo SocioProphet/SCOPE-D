@@ -7,7 +7,7 @@
 
 SCOPE-D currently has a real contract-first substrate. The following pieces are implemented in-repo:
 
-- package scripts for contract validation, synthetic event generation, engagement-policy-gated run initialization, AI-infra synthetic run initialization, graph-robustness synthetic run initialization, run verification, run reporting, dashboard export, Ontogenesis export, LSA map reporting, engagement-policy fail-closed tests, AI-infra slice smoke tests, graph-robustness smoke tests, reporting smoke tests, and tamper smoke testing;
+- package scripts for contract validation, synthetic event generation, engagement-policy-gated run initialization, AI-infra synthetic run initialization, graph-robustness synthetic run initialization, run verification, run reporting, dashboard export, Ontogenesis export, LSA map reporting, engagement-policy fail-closed tests, collector-policy fail-closed tests, AI-infra slice smoke tests, graph-robustness smoke tests, reporting smoke tests, and tamper smoke testing;
 - JSON Schema contracts and conforming examples for the core SCOPE-D control loop and multiple supporting objects;
 - synthetic-only atomic validation template and synthetic event generation;
 - generated synthetic runs under `runs/<run-id>/`;
@@ -17,6 +17,14 @@ SCOPE-D currently has a real contract-first substrate. The following pieces are 
   - schema-invalid policy means hard failure,
   - unauthorized target/surface/mode means hard failure,
   - `live_engage` cannot be authorized unless Michael approval is explicitly required;
+- fail-closed CollectorPolicy contract layer:
+  - unknown collector type is rejected,
+  - wildcard filesystem scope is rejected,
+  - command execution is rejected,
+  - process spawning/plugin loading are rejected,
+  - network egress is rejected,
+  - public scanning and credential collection are rejected,
+  - receipt/Event-IR/no-silent-read/hash-artifact audit requirements are mandatory;
 - generated generic synthetic runs that emit the first complete contract vertical slice:
   - EngagementPolicy (`engagement-policy.json`),
   - SyntheticEvent (`events.jsonl`),
@@ -43,8 +51,8 @@ SCOPE-D currently has a real contract-first substrate. The following pieces are 
 - deterministic 23-topic LSA map reporting through `reports/scope-d-lsa-map-report.json` and `reports/scope-d-lsa-map-report.md`, distinguishing proof-producing topics from captured-design topics;
 - Ontogenesis-compatible RDF/Turtle export from verified run summaries, including vertical-slice, AI-infra, and graph-robustness triples when present;
 - contract validation safety invariants that reject live execution in examples and require synthetic/read-only/dry-run posture for example artifacts;
-- SCOPE-D hardening contracts for Event-IR, Identity-IR, ProofArtifact, EngagementPolicy, AIInfraAssessment, MCPToolRisk, CountermeasureRule, GraphRobustnessAssessment, dashboard export, LSA map report, and the 23-topic LSA operating map;
-- GitHub Actions workflow for contract validation, synthetic event generation, engagement-policy-gated safe run initialization, AI-infra vertical-slice initialization, graph-robustness vertical-slice initialization, run verification, reporting, dashboard export, Ontogenesis export, LSA map reporting, engagement-policy fail-closed tests, AI-infra smoke tests, graph-robustness smoke tests, reporting smoke tests, and tamper detection.
+- SCOPE-D hardening contracts for Event-IR, Identity-IR, ProofArtifact, EngagementPolicy, CollectorPolicy, AIInfraAssessment, MCPToolRisk, CountermeasureRule, GraphRobustnessAssessment, dashboard export, LSA map report, and the 23-topic LSA operating map;
+- GitHub Actions workflow for contract validation, synthetic event generation, engagement-policy-gated safe run initialization, AI-infra vertical-slice initialization, graph-robustness vertical-slice initialization, run verification, reporting, dashboard export, Ontogenesis export, LSA map reporting, engagement-policy fail-closed tests, collector-policy fail-closed tests, AI-infra smoke tests, graph-robustness smoke tests, reporting smoke tests, and tamper detection.
 
 ## Implemented but still prototype-grade
 
@@ -55,6 +63,7 @@ These pieces exist but should be treated as early v0.1 scaffolding:
 - SocioSphere and PolicyFabric handoff fields in run summaries/dashboard exports are static readiness flags, not a live integration;
 - ProofArtifact dynamic metrics, configuration volume, and archetype fields are populated for synthetic runs, but no real analyzer computes them yet;
 - EngagementPolicy is now enforced for repo-local synthetic runners, but no runtime admission controller currently enforces it for future live collectors beyond existing scripts;
+- CollectorPolicy is schema-backed and test-gated, but no live collectors are registered or enabled;
 - the AI-infra slice is synthetic fixture-based and recommendation-only; no live MCP server, tool execution, network call, credential access, or deployment occurs;
 - the graph-robustness slice is synthetic fixture-based; no live graph attack tooling, live identity graph, or production graph mutation occurs;
 - the 23-topic LSA map has validated config and generated coverage reporting, but it is not yet a learned model or orchestration runner.
@@ -105,7 +114,7 @@ Architecture prose alone is **captured design**, not implementation.
 ## Immediate next implementation targets
 
 1. Confirm the contract-validation workflow is enabled and green on the latest main commit; then require it in branch protection.
-2. Extend EngagementPolicy enforcement to every future collector and runner entrypoint.
-3. Define live-readiness doctrine before any read-only live collectors land.
-4. Add detection-as-code examples linked to synthetic expected telemetry.
-5. Enable GitHub Issues or replace this file-based backlog with a proper project board.
+2. Define live-readiness doctrine before any read-only live collectors land.
+3. Add detection-as-code examples linked to synthetic expected telemetry.
+4. Enable GitHub Issues or replace this file-based backlog with a proper project board.
+5. Add PolicyFabric admission integration only after collector/readiness doctrine is complete.
