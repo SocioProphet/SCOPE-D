@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "collector-policy-network-egress-invalid",
+  "name": "Invalid collector policy allowing network egress",
+  "collectorRegistration": {
+    "collectorId": "collector-network-reader",
+    "collectorType": "mcp_manifest",
+    "mode": "read_only",
+    "status": "experimental",
+    "owner": "scope-d",
+    "engagementPolicyRequired": true,
+    "safetyBoundaryRequired": true
+  },
+  "capabilityBoundary": {
+    "allowed": ["read_manifest"],
+    "prohibited": ["write_file", "exec", "spawn_process", "delete_file", "modify_identity", "collect_credentials", "scan_public_network", "load_plugin", "mutate_policy"],
+    "unknownCapabilityPolicy": "block"
+  },
+  "allowedReadOnlyScopes": {
+    "filesystemPaths": ["fixtures/synthetic/mcp-tool-manifest.tool-poisoning.synthetic.json"],
+    "environmentVariables": [],
+    "processList": { "allowed": false, "includeArguments": false, "redactionRequired": true }
+  },
+  "executionGuarantee": { "level": "none", "canExecuteCommands": false, "canSpawnProcesses": false, "canLoadPlugins": false },
+  "networkBoundary": { "egressMode": "allowlist", "publicScanningAllowed": false, "externalServicesAllowed": true },
+  "failClosed": { "missingPolicy": "block", "invalidPolicy": "block", "unknownCollectorType": "block", "unknownCapability": "block", "scopeMismatch": "block" },
+  "auditTrail": { "receiptRequired": true, "eventIrRequired": true, "noSilentReads": true, "hashArtifacts": true },
+  "nonClaims": ["Invalid fixture: collectors must not use network egress."],
+  "createdAt": "2026-05-13T12:00:00Z"
+}
