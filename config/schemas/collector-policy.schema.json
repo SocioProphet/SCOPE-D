@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-collector-policy.schema.json",
+  "title": "SCOPE-D Collector Policy",
+  "description": "Fail-closed policy contract for registering read-only collectors. Absence of explicit authorization means no collector capability is authorized.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "policyId",
+    "name",
+    "collectorRegistration",
+    "capabilityBoundary",
+    "allowedReadOnlyScopes",
+    "executionGuarantee",
+    "networkBoundary",
+    "failClosed",
+    "auditTrail",
+    "nonClaims",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "policyId": { "type": "string", "pattern": "^collector-policy-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "collectorRegistration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["collectorId", "collectorType", "mode", "status", "owner", "engagementPolicyRequired"],
+      "properties": {
+        "collectorId": { "type": "string", "pattern": "^collector-[a-z0-9][a-z0-9._:-]*$" },
+        "collectorType": {
+          "type": "string",
+          "enum": ["filesystem_metadata", "environment_metadata", "process_metadata", "mcp_manifest", "ai_runtime_manifest", "graph_fixture", "synthetic_fixture"]
+        },
+        "mode": { "type": "string", "enum": ["read_only", "synthetic_only", "blocked"] },
+        "status": { "type": "string", "enum": ["registered", "experimental", "blocked"] },
+        "owner": { "type": "string", "minLength": 1 },
+        "engagementPolicyRequired": { "type": "boolean", "const": true },
+        "safetyBoundaryRequired": { "type": "boolean", "const": true }
+      }
+    },
+    "capabilityBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowed", "prohibited", "unknownCapabilityPolicy"],
+      "properties": {
+        "allowed": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["read_file_metadata", "read_file_content", "read_env_allowlist", "read_process_list", "read_manifest", "read_synthetic_fixture"] }
+        },
+        "prohibited": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["write_file", "exec", "network_egress", "spawn_process", "delete_file", "modify_identity", "collect_credentials", "scan_public_network", "load_plugin", "mutate_policy"] }
+        },
+        "unknownCapabilityPolicy": { "type": "string", "const": "block" }
+      }
+    },
+    "allowedReadOnlyScopes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["filesystemPaths", "environmentVariables", "processList"],
+      "properties": {
+        "filesystemPaths": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "not": { "enum": ["*", "/", "~", "$HOME", "**"] } }
+        },
+        "environmentVariables": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "not": { "enum": ["*", "**"] } }
+        },
+        "processList": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["allowed", "includeArguments", "redactionRequired"],
+          "properties": {
+            "allowed": { "type": "boolean" },
+            "includeArguments": { "type": "boolean", "const": false },
+            "redactionRequired": { "type": "boolean", "const": true }
+          }
+        }
+      }
+    },
+    "executionGuarantee": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "canExecuteCommands", "canSpawnProcesses", "canLoadPlugins"],
+      "properties": {
+        "level": { "type": "string", "const": "none" },
+        "canExecuteCommands": { "type": "boolean", "const": false },
+        "canSpawnProcesses": { "type": "boolean", "const": false },
+        "canLoadPlugins": { "type": "boolean", "const": false }
+      }
+    },
+    "networkBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["egressMode", "publicScanningAllowed", "externalServicesAllowed"],
+      "properties": {
+        "egressMode": { "type": "string", "const": "none" },
+        "publicScanningAllowed": { "type": "boolean", "const": false },
+        "externalServicesAllowed": { "type": "boolean", "const": false }
+      }
+    },
+    "failClosed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["missingPolicy", "invalidPolicy", "unknownCollectorType", "unknownCapability", "scopeMismatch"],
+      "properties": {
+        "missingPolicy": { "type": "string", "const": "block" },
+        "invalidPolicy": { "type": "string", "const": "block" },
+        "unknownCollectorType": { "type": "string", "const": "block" },
+        "unknownCapability": { "type": "string", "const": "block" },
+        "scopeMismatch": { "type": "string", "const": "block" }
+      }
+    },
+    "auditTrail": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["receiptRequired", "eventIrRequired", "noSilentReads", "hashArtifacts"],
+      "properties": {
+        "receiptRequired": { "type": "boolean", "const": true },
+        "eventIrRequired": { "type": "boolean", "const": true },
+        "noSilentReads": { "type": "boolean", "const": true },
+        "hashArtifacts": { "type": "boolean", "const": true }
+      }
+    },
+    "nonClaims": { "type": "array", "items": { "type": "string" } },
+    "createdAt": { "type": "string", "format": "date-time" }
+  }
+}
