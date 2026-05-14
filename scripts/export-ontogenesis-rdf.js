@@ -94,15 +94,9 @@ function optionalVerticalSliceTriples(runLocal, details) {
     ].join('\n'));
   }
 
-  if (details.eventIr && details.identityIr) {
-    triples.push(`${identityNode} apt:derivedFromEvent ${eventNode} .`);
-  }
-  if (details.identityIr && details.proofArtifact) {
-    triples.push(`${proofNode} apt:provesIdentityEvidence ${identityNode} .`);
-  }
-  if (details.eventIr && details.proofArtifact) {
-    triples.push(`${proofNode} apt:provesEventEvidence ${eventNode} .`);
-  }
+  if (details.eventIr && details.identityIr) triples.push(`${identityNode} apt:derivedFromEvent ${eventNode} .`);
+  if (details.identityIr && details.proofArtifact) triples.push(`${proofNode} apt:provesIdentityEvidence ${identityNode} .`);
+  if (details.eventIr && details.proofArtifact) triples.push(`${proofNode} apt:provesEventEvidence ${eventNode} .`);
 
   return triples.join('\n\n');
 }
@@ -152,20 +146,39 @@ function optionalAiInfraTriples(runLocal, details) {
     ].join('\n'));
   }
 
-  if (details.aiInfraAssessment && details.mcpToolRisk) {
-    triples.push(`${riskNode} apt:foundByAssessment ${aiNode} .`);
+  if (details.aiInfraAssessment && details.mcpToolRisk) triples.push(`${riskNode} apt:foundByAssessment ${aiNode} .`);
+  if (details.mcpToolRisk && details.countermeasureRule) triples.push(`${countermeasureNode} apt:mitigatesRisk ${riskNode} .`);
+  if (details.proofArtifact && details.aiInfraAssessment) triples.push(`${proofNode} apt:usesAssessment ${aiNode} .`);
+  if (details.proofArtifact && details.mcpToolRisk) triples.push(`${proofNode} apt:usesRiskEvidence ${riskNode} .`);
+  if (details.proofArtifact && details.countermeasureRule) triples.push(`${proofNode} apt:usesCountermeasure ${countermeasureNode} .`);
+
+  return triples.join('\n\n');
+}
+
+function optionalGraphRobustnessTriples(runLocal, details) {
+  const triples = [];
+  const graphNode = `ex:${runLocal}-graph-robustness-assessment`;
+  const proofNode = `ex:${runLocal}-proof-artifact`;
+
+  if (details.graphRobustnessAssessment) {
+    const affected = (details.graphRobustnessAssessment.affectedDecisions || []).join(',');
+    triples.push([
+      `${graphNode} a apt:GraphRobustnessAssessment ;`,
+      `  apt:assessmentId ${turtleString(details.graphRobustnessAssessment.id)} ;`,
+      `  apt:graphType ${turtleString(details.graphRobustnessAssessment.graph.graphType)} ;`,
+      `  apt:nodeCount ${details.graphRobustnessAssessment.graph.nodeCount} ;`,
+      `  apt:edgeCount ${details.graphRobustnessAssessment.graph.edgeCount} ;`,
+      `  apt:perturbationType ${turtleString(details.graphRobustnessAssessment.perturbationModel.type)} ;`,
+      `  apt:perturbationBudget ${details.graphRobustnessAssessment.perturbationModel.budget} ;`,
+      `  apt:robustnessScore ${details.graphRobustnessAssessment.robustnessScore} ;`,
+      `  apt:confidenceImpact ${turtleString(details.graphRobustnessAssessment.confidenceImpact || 'unknown')} ;`,
+      `  apt:affectedDecisions ${turtleString(affected)} ;`,
+      `  rdfs:label ${turtleString(`Graph robustness assessment ${details.graphRobustnessAssessment.id}`)} .`,
+    ].join('\n'));
   }
-  if (details.mcpToolRisk && details.countermeasureRule) {
-    triples.push(`${countermeasureNode} apt:mitigatesRisk ${riskNode} .`);
-  }
-  if (details.proofArtifact && details.aiInfraAssessment) {
-    triples.push(`${proofNode} apt:usesAssessment ${aiNode} .`);
-  }
-  if (details.proofArtifact && details.mcpToolRisk) {
-    triples.push(`${proofNode} apt:usesRiskEvidence ${riskNode} .`);
-  }
-  if (details.proofArtifact && details.countermeasureRule) {
-    triples.push(`${proofNode} apt:usesCountermeasure ${countermeasureNode} .`);
+
+  if (details.proofArtifact && details.graphRobustnessAssessment) {
+    triples.push(`${proofNode} apt:usesGraphRobustnessAssessment ${graphNode} .`);
   }
 
   return triples.join('\n\n');
@@ -193,6 +206,7 @@ function renderTurtle(summary, details) {
 
   const verticalSliceTriples = optionalVerticalSliceTriples(runLocal, details);
   const aiInfraTriples = optionalAiInfraTriples(runLocal, details);
+  const graphTriples = optionalGraphRobustnessTriples(runLocal, details);
 
   return [
     '@base <https://socioprophet.github.io/ontogenesis/> .',
@@ -226,6 +240,7 @@ function renderTurtle(summary, details) {
     `  apt:aiInfraAssessmentCount ${summary.counts.aiInfraAssessments || 0} ;`,
     `  apt:mcpToolRiskCount ${summary.counts.mcpToolRisks || 0} ;`,
     `  apt:countermeasureRuleCount ${summary.counts.countermeasureRules || 0} ;`,
+    `  apt:graphRobustnessAssessmentCount ${summary.counts.graphRobustnessAssessments || 0} ;`,
     `  rdfs:label ${turtleString(`Verified summary for ${summary.runId}`)} .`,
     '',
     `${action} a apt:AtomicValidationAction ;`,
@@ -246,6 +261,8 @@ function renderTurtle(summary, details) {
     verticalSliceTriples,
     '',
     aiInfraTriples,
+    '',
+    graphTriples,
     '',
     artifactTriples,
     '',
@@ -268,9 +285,7 @@ function main() {
   runNodeScript('report-run.js', [runRel]);
 
   const summary = readJson(path.join(runAbs, 'run-summary.json'));
-  if (summary.verified !== true) {
-    throw new Error('Refusing to export unverified run summary.');
-  }
+  if (summary.verified !== true) throw new Error('Refusing to export unverified run summary.');
 
   const details = {
     eventIr: readFirstJsonlOptional(path.join(runAbs, 'event-ir.jsonl')),
@@ -279,6 +294,7 @@ function main() {
     aiInfraAssessment: readJsonOptional(path.join(runAbs, 'ai-infra-assessment.json')),
     mcpToolRisk: readJsonOptional(path.join(runAbs, 'mcp-tool-risk.json')),
     countermeasureRule: readJsonOptional(path.join(runAbs, 'countermeasure-rule.json')),
+    graphRobustnessAssessment: readJsonOptional(path.join(runAbs, 'graph-robustness-assessment.json')),
   };
 
   const ttl = renderTurtle(summary, details);
