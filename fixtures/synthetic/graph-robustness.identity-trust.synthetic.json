@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "synthetic-identity-trust-graph-001",
+  "graphType": "trust_graph",
+  "description": "Synthetic trust graph for testing edge-injection robustness without live identity data.",
+  "syntheticOnly": true,
+  "nodes": [
+    { "id": "human:michael", "type": "human_authority", "label": "Michael Heller", "critical": true },
+    { "id": "policy:engagement", "type": "policy", "label": "Engagement Policy", "critical": true },
+    { "id": "agent:scope-d", "type": "agent", "label": "SCOPE-D Agent", "critical": false },
+    { "id": "tool:mcp-browser-search", "type": "mcp_tool", "label": "MCP Browser Search", "critical": false },
+    { "id": "sink:receipt", "type": "evidence_sink", "label": "Run Receipt", "critical": true }
+  ],
+  "edges": [
+    { "from": "human:michael", "to": "policy:engagement", "type": "approves", "weight": 1.0 },
+    { "from": "policy:engagement", "to": "agent:scope-d", "type": "authorizes", "weight": 0.9 },
+    { "from": "agent:scope-d", "to": "tool:mcp-browser-search", "type": "may_inspect_synthetic", "weight": 0.6 },
+    { "from": "agent:scope-d", "to": "sink:receipt", "type": "writes_receipt", "weight": 0.9 },
+    { "from": "policy:engagement", "to": "sink:receipt", "type": "must_be_recorded", "weight": 1.0 }
+  ],
+  "protectedDecision": "agent:scope-d may inspect tool:mcp-browser-search only under policy:engagement and receipt capture",
+  "criticalPath": ["human:michael", "policy:engagement", "agent:scope-d", "tool:mcp-browser-search"],
+  "perturbation": {
+    "type": "edge_injection",
+    "budget": 1,
+    "syntheticOnly": true,
+    "injectedEdges": [
+      { "from": "tool:mcp-browser-search", "to": "sink:receipt", "type": "bypass_policy_claim", "weight": 0.2 }
+    ]
+  },
+  "expectedResult": {
+    "decisionAffected": true,
+    "robustnessScore": 0.72,
+    "confidenceImpact": "medium"
+  }
+}
