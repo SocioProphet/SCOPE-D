@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "collector-policy-synthetic-readonly-default",
+  "name": "SCOPE-D synthetic read-only collector policy",
+  "collectorRegistration": {
+    "collectorId": "collector-synthetic-manifest-reader",
+    "collectorType": "synthetic_fixture",
+    "mode": "synthetic_only",
+    "status": "experimental",
+    "owner": "scope-d",
+    "engagementPolicyRequired": true,
+    "safetyBoundaryRequired": true
+  },
+  "capabilityBoundary": {
+    "allowed": ["read_manifest", "read_synthetic_fixture"],
+    "prohibited": [
+      "write_file",
+      "exec",
+      "network_egress",
+      "spawn_process",
+      "delete_file",
+      "modify_identity",
+      "collect_credentials",
+      "scan_public_network",
+      "load_plugin",
+      "mutate_policy"
+    ],
+    "unknownCapabilityPolicy": "block"
+  },
+  "allowedReadOnlyScopes": {
+    "filesystemPaths": [
+      "fixtures/synthetic/mcp-tool-manifest.tool-poisoning.synthetic.json",
+      "fixtures/synthetic/graph-robustness.identity-trust.synthetic.json"
+    ],
+    "environmentVariables": [],
+    "processList": {
+      "allowed": false,
+      "includeArguments": false,
+      "redactionRequired": true
+    }
+  },
+  "executionGuarantee": {
+    "level": "none",
+    "canExecuteCommands": false,
+    "canSpawnProcesses": false,
+    "canLoadPlugins": false
+  },
+  "networkBoundary": {
+    "egressMode": "none",
+    "publicScanningAllowed": false,
+    "externalServicesAllowed": false
+  },
+  "failClosed": {
+    "missingPolicy": "block",
+    "invalidPolicy": "block",
+    "unknownCollectorType": "block",
+    "unknownCapability": "block",
+    "scopeMismatch": "block"
+  },
+  "auditTrail": {
+    "receiptRequired": true,
+    "eventIrRequired": true,
+    "noSilentReads": true,
+    "hashArtifacts": true
+  },
+  "nonClaims": [
+    "This policy does not authorize live collectors.",
+    "This policy does not authorize command execution.",
+    "This policy does not authorize network egress.",
+    "This policy does not authorize credential collection.",
+    "This policy does not authorize wildcard filesystem access."
+  ],
+  "createdAt": "2026-05-13T12:00:00Z"
+}
