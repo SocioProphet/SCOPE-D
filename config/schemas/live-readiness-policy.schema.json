@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-live-readiness-policy.schema.json",
+  "title": "SCOPE-D Live Readiness Policy",
+  "description": "Pre-runtime gate for read-only live-local readiness. This contract does not authorize live collection, production access, tool execution, credential access, or network scanning.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "policyId",
+    "name",
+    "status",
+    "extendsCollectorPolicy",
+    "readinessScope",
+    "serviceIdentityVerification",
+    "credentialIsolation",
+    "executionBoundary",
+    "networkBoundary",
+    "dataBoundary",
+    "failClosed",
+    "approvalRequirements",
+    "auditRequirements",
+    "nonClaims",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "policyId": { "type": "string", "pattern": "^live-readiness-policy-[a-z0-9][a-z0-9._:-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["draft", "experimental", "blocked"] },
+    "extendsCollectorPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "policyRef", "mayOverrideCollectorPolicy"],
+      "properties": {
+        "required": { "type": "boolean", "const": true },
+        "policyRef": { "type": "string", "pattern": "^collector-policy-[a-z0-9][a-z0-9._:-]*$" },
+        "mayOverrideCollectorPolicy": { "type": "boolean", "const": false }
+      }
+    },
+    "readinessScope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "allowedSurfaces", "allowedTargets", "prohibitedTargets"],
+      "properties": {
+        "mode": { "type": "string", "const": "read_only_live_local" },
+        "allowedSurfaces": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["local_host", "mcp_manifest", "ai_runtime_manifest", "synthetic_fixture"] }
+        },
+        "allowedTargets": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "not": { "enum": ["*", "production", "customer", "public-internet", "third-party-services"] } }
+        },
+        "prohibitedTargets": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["production", "customer", "public-internet", "third-party-services", "external-network", "unknown"] }
+        }
+      }
+    },
+    "serviceIdentityVerification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "acceptedEvidence", "unknownServicePolicy"],
+      "properties": {
+        "required": { "type": "boolean", "const": true },
+        "acceptedEvidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "enum": ["local_manifest_hash", "signed_manifest", "process_owner_match", "socket_owner_match", "policy_ref_match", "collector_receipt_ref"] }
+        },
+        "unknownServicePolicy": { "type": "string", "const": "block" }
+      }
+    },
+    "credentialIsolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["credentialReadAllowed", "secretEnvReadAllowed", "tokenMaterialAllowed", "redactionRequired"],
+      "properties": {
+        "credentialReadAllowed": { "type": "boolean", "const": false },
+        "secretEnvReadAllowed": { "type": "boolean", "const": false },
+        "tokenMaterialAllowed": { "type": "boolean", "const": false },
+        "redactionRequired": { "type": "boolean", "const": true }
+      }
+    },
+    "executionBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["toolExecutionAllowed", "commandExecutionAllowed", "processSpawnAllowed", "pluginLoadAllowed"],
+      "properties": {
+        "toolExecutionAllowed": { "type": "boolean", "const": false },
+        "commandExecutionAllowed": { "type": "boolean", "const": false },
+        "processSpawnAllowed": { "type": "boolean", "const": false },
+        "pluginLoadAllowed": { "type": "boolean", "const": false }
+      }
+    },
+    "networkBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["egressMode", "publicScanningAllowed", "externalServicesAllowed", "remoteProbeAllowed"],
+      "properties": {
+        "egressMode": { "type": "string", "const": "none" },
+        "publicScanningAllowed": { "type": "boolean", "const": false },
+        "externalServicesAllowed": { "type": "boolean", "const": false },
+        "remoteProbeAllowed": { "type": "boolean", "const": false }
+      }
+    },
+    "dataBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["productionDataAllowed", "customerDataAllowed", "rawIdentityExportAllowed", "syntheticPreferred"],
+      "properties": {
+        "productionDataAllowed": { "type": "boolean", "const": false },
+        "customerDataAllowed": { "type": "boolean", "const": false },
+        "rawIdentityExportAllowed": { "type": "boolean", "const": false },
+        "syntheticPreferred": { "type": "boolean", "const": true }
+      }
+    },
+    "failClosed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["missingCollectorPolicy", "invalidCollectorPolicy", "unverifiedServiceIdentity", "scopeMismatch", "credentialExposure", "networkAttempt", "executionAttempt"],
+      "properties": {
+        "missingCollectorPolicy": { "type": "string", "const": "block" },
+        "invalidCollectorPolicy": { "type": "string", "const": "block" },
+        "unverifiedServiceIdentity": { "type": "string", "const": "block" },
+        "scopeMismatch": { "type": "string", "const": "block" },
+        "credentialExposure": { "type": "string", "const": "block" },
+        "networkAttempt": { "type": "string", "const": "block" },
+        "executionAttempt": { "type": "string", "const": "block" }
+      }
+    },
+    "approvalRequirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["engagementPolicyRequired", "safetyBoundaryRequired", "michaelApprovalRequiredForExpansion"],
+      "properties": {
+        "engagementPolicyRequired": { "type": "boolean", "const": true },
+        "safetyBoundaryRequired": { "type": "boolean", "const": true },
+        "michaelApprovalRequiredForExpansion": { "type": "boolean", "const": true }
+      }
+    },
+    "auditRequirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["receiptRequired", "eventIrRequired", "dashboardExportAllowed", "noSilentReads"],
+      "properties": {
+        "receiptRequired": { "type": "boolean", "const": true },
+        "eventIrRequired": { "type": "boolean", "const": true },
+        "dashboardExportAllowed": { "type": "boolean", "const": true },
+        "noSilentReads": { "type": "boolean", "const": true }
+      }
+    },
+    "nonClaims": { "type": "array", "items": { "type": "string" } },
+    "createdAt": { "type": "string", "format": "date-time" }
+  }
+}
