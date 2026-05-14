@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scope-d-dashboard-export.schema.json",
+  "title": "SCOPE-D Dashboard Export",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "dashboardId",
+    "runId",
+    "sourceRunDir",
+    "generatedAt",
+    "verified",
+    "nonProductionOnly",
+    "target",
+    "safety",
+    "counts",
+    "lanes",
+    "receipt",
+    "artifactRefs",
+    "handoff"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "dashboardId": { "type": "string", "pattern": "^dashboard-[a-z0-9][a-z0-9._:-]*$" },
+    "runId": { "type": "string", "pattern": "^scope-d-[a-z0-9][a-z0-9._:-]*$" },
+    "sourceRunDir": { "type": "string", "pattern": "^runs/" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "verified": { "type": "boolean", "const": true },
+    "nonProductionOnly": { "type": "boolean", "const": true },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surfaceType", "identifier", "environment"],
+      "properties": {
+        "surfaceType": { "type": "string" },
+        "identifier": { "type": "string" },
+        "environment": { "type": "string" }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "liveActionsExecuted", "networkEgress", "secretCollectionAllowed", "publicScanningAllowed"],
+      "properties": {
+        "mode": { "type": "string", "enum": ["read_only", "synthetic_only", "dry_run", "write_with_gate", "blocked"] },
+        "liveActionsExecuted": { "type": "integer", "minimum": 0 },
+        "networkEgress": { "type": "string" },
+        "secretCollectionAllowed": { "type": "boolean" },
+        "publicScanningAllowed": { "type": "boolean" }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["syntheticEvents", "eventIrRecords", "identityIrRecords", "proofArtifacts", "evidenceItems", "gates", "receiptArtifacts"],
+      "properties": {
+        "syntheticEvents": { "type": "integer", "minimum": 0 },
+        "eventIrRecords": { "type": "integer", "minimum": 0 },
+        "identityIrRecords": { "type": "integer", "minimum": 0 },
+        "proofArtifacts": { "type": "integer", "minimum": 0 },
+        "aiInfraAssessments": { "type": "integer", "minimum": 0 },
+        "mcpToolRisks": { "type": "integer", "minimum": 0 },
+        "countermeasureRules": { "type": "integer", "minimum": 0 },
+        "graphRobustnessAssessments": { "type": "integer", "minimum": 0 },
+        "evidenceItems": { "type": "integer", "minimum": 0 },
+        "gates": { "type": "integer", "minimum": 0 },
+        "receiptArtifacts": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "lanes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["genericProofChain", "aiInfra", "graphRobustness"],
+      "properties": {
+        "genericProofChain": { "$ref": "#/$defs/laneStatus" },
+        "aiInfra": { "$ref": "#/$defs/laneStatus" },
+        "graphRobustness": { "$ref": "#/$defs/laneStatus" }
+      }
+    },
+    "receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["receiptId", "status", "issuedAt"],
+      "properties": {
+        "receiptId": { "type": "string" },
+        "status": { "type": "string" },
+        "issuedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "artifactRefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": { "type": "string" },
+          "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" }
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sociosphereReady", "policyFabricReady", "notes"],
+      "properties": {
+        "sociosphereReady": { "type": "boolean" },
+        "policyFabricReady": { "type": "boolean" },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  },
+  "$defs": {
+    "laneStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "count", "notes"],
+      "properties": {
+        "status": { "type": "string", "enum": ["present", "absent", "not_applicable"] },
+        "count": { "type": "integer", "minimum": 0 },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
