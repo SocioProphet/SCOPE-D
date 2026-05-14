@@ -266,3 +266,4 @@ Generated deterministically from `references/scope-d-reference-catalog.json`. Do
 
 - Add feed freshness fields to run summary handoff.
 - Add feed ingestion examples that remain synthetic by default.
+

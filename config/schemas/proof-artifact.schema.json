@@ -23,7 +23,7 @@
       "additionalProperties": false,
       "required": ["claimId", "claimType", "statement"],
       "properties": {
-        "claimId": { "type": "string", "pattern": "^claim\.[a-z0-9_.:-]+$" },
+        "claimId": { "type": "string", "pattern": "^claim\\.[a-z0-9_.:-]+$" },
         "claimType": { "type": "string", "enum": ["non_escape", "budget_bound", "scope_bound", "configuration_volume", "dynamic_metric", "detection_validation", "policy_gate", "synthetic_observation"] },
         "statement": { "type": "string", "minLength": 1 },
         "epistemicLevel": { "type": "string", "enum": ["proved", "bounded", "empirical", "synthetic", "speculative", "rejected"] }
