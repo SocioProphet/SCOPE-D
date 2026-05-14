@@ -73,5 +73,17 @@ jobs:
       - name: Export AI-infra run to Ontogenesis RDF
         run: npm run scope-d:export-ontogenesis -- runs/scope-d-ci-ai-infra-lab-explicit
 
+      - name: Smoke test graph robustness vertical slice explicitly
+        run: npm run scope-d:init-graph-robustness -- --run-id scope-d-ci-graph-robustness-lab-explicit --target ci-graph-robustness-lab --engagement-policy examples/scope-d/engagement-policy.synthetic.json
+
+      - name: Verify graph robustness generated run integrity
+        run: npm run scope-d:verify-run -- runs/scope-d-ci-graph-robustness-lab-explicit
+
+      - name: Report graph robustness generated run
+        run: npm run scope-d:report-run -- runs/scope-d-ci-graph-robustness-lab-explicit
+
+      - name: Export graph robustness run to Ontogenesis RDF
+        run: npm run scope-d:export-ontogenesis -- runs/scope-d-ci-graph-robustness-lab-explicit
+
       - name: Prove tamper detection rejects modified artifacts
         run: npm run test:tamper
