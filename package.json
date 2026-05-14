@@ -8,7 +8,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js",
+    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js && node scripts/test-reporting-exports.js",
     "validate": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js",
     "validate:wargames": "node scripts/validate-wargames-contracts.js",
     "references:workorders": "node scripts/generate-reference-workorders.js",
@@ -18,10 +18,13 @@
     "scope-d:init-graph-robustness": "node scripts/init-graph-robustness-run.js",
     "scope-d:verify-run": "node scripts/verify-run.js",
     "scope-d:report-run": "node scripts/report-run.js",
+    "scope-d:export-dashboard": "node scripts/export-dashboard-summary.js",
     "scope-d:export-ontogenesis": "node scripts/export-ontogenesis-rdf.js",
+    "scope-d:report-lsa-map": "node scripts/generate-lsa-map-report.js",
     "test:engagement-policy": "node scripts/test-engagement-policy.js",
     "test:ai-infra": "node scripts/test-ai-infra-slice.js",
     "test:graph-robustness": "node scripts/test-graph-robustness-slice.js",
+    "test:reporting": "node scripts/test-reporting-exports.js",
     "test:tamper": "node scripts/smoke-tamper-detection.js"
   },
   "dependencies": {
