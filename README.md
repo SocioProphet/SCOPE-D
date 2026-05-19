@@ -10,6 +10,10 @@ SCOPE-D is early-stage derivative work. The inherited upstream SCOPE implementat
 
 The current repository has a real contract-first substrate, not just prose. It includes schema/example validation, synthetic event generation, engagement-policy-gated synthetic run initialization, AI-infra synthetic run initialization, graph-robustness synthetic run initialization, run verification, run reporting, dashboard export, Ontogenesis export, 23-topic LSA map reporting, collector-policy fail-closed validation, and tamper-detection smoke testing.
 
+The Wargames work is now also contract-backed, but it is not runtime-backed. The repository contains Wargames doctrine capture plus schema-backed, example-backed, negative-fixture-backed, validator-backed contracts for BoundaryEvent/evidence/Scout proof, engagement authorization, the 23-topic LSA/LSI map, OFIF/SynapseIQ activation envelopes, Ontogenesis/ATT&CK semantic export, and MeshRush/HellGraph export. These are static governance artifacts. They do not run Scout or Whisper, ingest live telemetry, execute engagement actions, deliver OFIF outputs, run SynapseIQ enrichment, traverse MeshRush graphs, or replay HellGraph streams.
+
+This is deliberate contract-driven development. In SCOPE-D, contracts are the first deliverable, not incidental scaffolding. A CI-validated schema with positive fixtures and negative fixtures is a security artifact: it defines the allowed and forbidden states before any runtime is permitted to exist.
+
 Generated synthetic runs now emit the first complete contract vertical slice:
 
 `EngagementPolicy -> SyntheticEvent -> Event-IR -> Identity-IR -> ProofArtifact -> ControlLoopRun -> RunReceipt -> RunSummary -> DashboardSummary -> Ontogenesis export`
@@ -116,6 +120,7 @@ SCOPE-D expands the design into these lanes:
 | AI infrastructure assessment | Synthetic MCP/tool-risk slice now implemented; live model/MCP assessment remains future work |
 | Graph robustness | Synthetic edge-injection trust-graph slice now implemented; live graph assessment remains future work |
 | 23-topic operating map | Validated config and generated coverage report now implemented; orchestration remains future work |
+| Wargames contract stack | Static contracts for evidence, authorization, LSA/LSI, OFIF/SynapseIQ, Ontogenesis/ATT&CK, and MeshRush/HellGraph; runtime remains future work |
 | SourceOS integration | PolicyFabric, AgentPlane, SocioSphere, TurtleTerm, sourceos-shell, openclaw, and memory-mesh alignment |
 
 ## Safety doctrine
@@ -155,11 +160,12 @@ SCOPE-D
 
 ## Immediate roadmap
 
-1. Keep contract validation green after every schema/example addition.
-2. Define live-readiness doctrine before any read-only live collectors land.
-3. Add detection-as-code examples linked to synthetic expected telemetry.
-4. Add issue/project tracking once GitHub Issues or a replacement board is enabled.
-5. Add branch protection requiring the contract-validation workflow once CI status is confirmed green.
+1. Keep contract validation green after every schema/example addition and require the validation workflows in branch protection.
+2. Decide and land the runtime-layer architecture or a minimal contract resolver before any live agent, adapter, collector, replay, or client-delivery runtime is introduced.
+3. Define live-readiness doctrine before any read-only live collectors land.
+4. Add detection-as-code examples linked to synthetic expected telemetry.
+5. Add issue/project tracking once GitHub Issues or a replacement board is enabled.
+6. Add PolicyFabric admission integration only after collector/readiness doctrine is complete.
 
 ## Upstream attribution
 
