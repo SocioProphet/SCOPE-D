@@ -1,6 +1,6 @@
 # SCOPE-D Implementation Status
 
-**Status date:** 2026-05-13
+**Status date:** 2026-05-14
 **Scope:** This ledger separates implemented repository artifacts from roadmap, design doctrine, and unimplemented runtime claims.
 
 ## Current implemented layer
@@ -54,6 +54,22 @@ SCOPE-D currently has a real contract-first substrate. The following pieces are 
 - SCOPE-D hardening contracts for Event-IR, Identity-IR, ProofArtifact, EngagementPolicy, CollectorPolicy, AIInfraAssessment, MCPToolRisk, CountermeasureRule, GraphRobustnessAssessment, dashboard export, LSA map report, and the 23-topic LSA operating map;
 - GitHub Actions workflow for contract validation, synthetic event generation, engagement-policy-gated safe run initialization, AI-infra vertical-slice initialization, graph-robustness vertical-slice initialization, run verification, reporting, dashboard export, Ontogenesis export, LSA map reporting, engagement-policy fail-closed tests, collector-policy fail-closed tests, AI-infra smoke tests, graph-robustness smoke tests, reporting smoke tests, and tamper detection.
 
+## Wargames contract layer
+
+The Devine Intelligence Wargames work is contract-backed, but not runtime-backed.
+
+Implemented static contract layers include:
+
+- Wargames mode, BoundaryEvent, Evidence, NegativeEvidence, Scout profile proof, engagement trigger, and engagement authorization contracts;
+- machine-readable 23-topic LSA/LSI map contract;
+- OFIF activation envelope and SynapseIQ enrichment contracts;
+- Ontogenesis / ATT&CK semantic export contracts;
+- MeshRush graph-view export and HellGraph proof-stream contracts;
+- positive examples and negative fixtures for the above;
+- Wargames validation in `npm test`.
+
+These contracts do not run Wargames agents, ingest telemetry, execute engagement actions, deliver OFIF outputs, run SynapseIQ enrichment, perform Ontogenesis SHACL validation, traverse MeshRush graphs, or replay HellGraph streams.
+
 ## Implemented but still prototype-grade
 
 These pieces exist but should be treated as early v0.1 scaffolding:
@@ -78,7 +94,17 @@ The following lanes are captured as doctrine or README-level design and require 
 - threat-intel feed ingestion and indicator lifecycle;
 - purple-team exercise orchestration beyond examples;
 - SourceOS / SocioSphere / PolicyFabric / AgentPlane runtime integration;
-- live dashboards for exercise maturity, detection coverage, AI infra risk, graph robustness, and run receipts.
+- live dashboards for exercise maturity, detection coverage, AI infra risk, graph robustness, and run receipts;
+- Wargames runtime-layer architecture, captured in `docs/WARGAMES_RUNTIME_LAYER_ARCHITECTURE.md` after replay from closed/unmerged PR #11.
+
+## Closed PR capture audit
+
+Closed/unmerged PR content is tracked in `docs/CLOSED_PR_CAPTURE_AUDIT.md`.
+
+Current audit disposition:
+
+- PR #6 is closed as superseded by later CI workflow and dispatch work.
+- PR #11 had no committed file changes; its runtime-layer architecture content has been replayed into `docs/WARGAMES_RUNTIME_LAYER_ARCHITECTURE.md`.
 
 ## Not yet implemented
 
@@ -97,7 +123,8 @@ The following are not currently implemented as runtime control fabric in this re
 - browser adversarial lab bundle;
 - ABIS / implant-shape profile runner;
 - media/channel profile catalog as executable profiles;
-- 23-topic LSA/LSI training orchestration.
+- 23-topic LSA/LSI training orchestration;
+- Wargames runtime resolver, policy evaluator, invocation envelope handler, runtime decision receipt emitter, live agent dispatch guard, OFIF delivery runtime, SynapseIQ runtime, Ontogenesis runtime validation, MeshRush adapter, HellGraph replay engine, or dynamic engagement execution engine.
 
 ## Development rule
 
@@ -113,8 +140,9 @@ Architecture prose alone is **captured design**, not implementation.
 
 ## Immediate next implementation targets
 
-1. Confirm the contract-validation workflow is enabled and green on the latest main commit; then require it in branch protection.
-2. Define live-readiness doctrine before any read-only live collectors land.
-3. Add detection-as-code examples linked to synthetic expected telemetry.
-4. Enable GitHub Issues or replace this file-based backlog with a proper project board.
-5. Add PolicyFabric admission integration only after collector/readiness doctrine is complete.
+1. Require the validation workflows in branch protection now that PR-head validation has been observed green.
+2. Decide and land the Wargames runtime-layer architecture or a minimal runtime contract resolver before any live agent, adapter, collector, replay, or client-delivery runtime is introduced.
+3. Define live-readiness doctrine before any read-only live collectors land.
+4. Add detection-as-code examples linked to synthetic expected telemetry.
+5. Enable GitHub Issues or replace this file-based backlog with a proper project board.
+6. Add PolicyFabric admission integration only after collector/readiness doctrine is complete.
