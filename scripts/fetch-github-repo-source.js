@@ -45,9 +45,12 @@ async function main() {
   const repoInfo = await githubGet(`/repos/${owner}/${repo}`, token);
   if (!repoInfo) throw new Error(`Repository not found: ${args.repo}`);
   const branch = repoInfo.default_branch || 'main';
-  const branchProtection = await githubGet(`/repos/${owner}/${repo}/branches/${encodeURIComponent(branch)}/protection`, token);
+  const branchRef = encodeURIComponent(branch);
+  const branchProtection = await githubGet(`/repos/${owner}/${repo}/branches/${branchRef}/protection`, token);
   const actionsPermissions = await githubGet(`/repos/${owner}/${repo}/actions/permissions`, token);
-  process.stdout.write(`${JSON.stringify({ repo: repoInfo, branchProtection, actionsPermissions }, null, 2)}\n`);
+  const codeownersRoot = await githubGet(`/repos/${owner}/${repo}/contents/CODEOWNERS?ref=${branchRef}`, token);
+  const codeownersGithub = codeownersRoot || await githubGet(`/repos/${owner}/${repo}/contents/.github/CODEOWNERS?ref=${branchRef}`, token);
+  process.stdout.write(`${JSON.stringify({ repo: repoInfo, branchProtection, actionsPermissions, codeownersPresent: Boolean(codeownersGithub) }, null, 2)}\n`);
 }
 
 main().catch((err) => {
