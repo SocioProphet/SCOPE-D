@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "operator-live-readonly-policy:michael-scope-d-lab",
+  "operatorId": "operator:michael",
+  "approvalRef": "approval:michael-live-readonly-2026-05-21",
+  "authorizedTargets": [
+    "synthetic-mcp-server:lab-tools-list",
+    "SocioProphet/SCOPE-D",
+    "fixtures/synthetic"
+  ],
+  "authorizedSurfaces": [
+    "mcp_discovery",
+    "github_posture",
+    "k8s_manifest",
+    "ai_runtime"
+  ],
+  "allowedReadMethods": [
+    "mcp_tools_list",
+    "github_repo_metadata",
+    "github_branch_protection",
+    "github_actions_permissions",
+    "github_codeowners",
+    "github_environments",
+    "github_security_features",
+    "local_manifest_file_read",
+    "ai_runtime_manifest_read"
+  ],
+  "blockedMethods": [
+    "mcp_tool_call",
+    "arbitrary_json_rpc",
+    "model_prompt_execution",
+    "kubectl_exec",
+    "cluster_mutation",
+    "deployment",
+    "credential_access",
+    "external_scan",
+    "policy_mutation",
+    "repository_mutation"
+  ],
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "auditRequired": {
+    "emitRunIndex": true,
+    "emitOperatorCase": true,
+    "emitClientReport": true,
+    "recordLedger": true
+  },
+  "executionAllowed": false,
+  "createdAt": "2026-05-21T23:45:00Z",
+  "nonClaims": [
+    "This policy authorizes read-only observation only.",
+    "This policy does not authorize tool invocation.",
+    "This policy does not authorize prompt execution.",
+    "This policy does not authorize cluster or repository mutation."
+  ]
+}
