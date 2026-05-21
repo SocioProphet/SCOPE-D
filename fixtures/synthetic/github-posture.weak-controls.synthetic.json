@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "manifestId": "github-posture-manifest:socioprophet-scope-d-weak-controls",
+  "collectionMode": "fixture",
+  "repoFullName": "SocioProphet/SCOPE-D",
+  "defaultBranch": "main",
+  "visibility": "private",
+  "branchProtection": {
+    "requiredReviews": false,
+    "requiredStatusChecks": true,
+    "enforceAdmins": false,
+    "allowsForcePushes": false,
+    "allowsDeletions": false
+  },
+  "actions": {
+    "enabled": true,
+    "defaultWorkflowPermissions": "write",
+    "allowGitHubOwnedActions": true,
+    "allowMarketplaceActions": true
+  },
+  "codeowners": {
+    "present": false
+  },
+  "secretScanning": {
+    "enabled": true,
+    "pushProtection": false
+  },
+  "dependencyReview": {
+    "enabled": false
+  },
+  "environments": [
+    {
+      "name": "production",
+      "requiredReviewers": false
+    }
+  ],
+  "redactionState": "synthetic",
+  "liveApiUsed": false
+}

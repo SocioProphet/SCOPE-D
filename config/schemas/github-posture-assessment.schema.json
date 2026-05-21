@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/github-posture-assessment.schema.json",
+  "title": "GitHub Posture Assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "assessmentId",
+    "manifestRef",
+    "repoFullName",
+    "collectionMode",
+    "riskScore",
+    "riskLevel",
+    "findings",
+    "recommendedControls",
+    "redactionState",
+    "liveApiUsed",
+    "liveExecutionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "assessmentId": { "type": "string", "pattern": "^github-posture-assessment:[a-z0-9][a-z0-9._:-]*$" },
+    "manifestRef": { "type": "string", "minLength": 1 },
+    "repoFullName": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+    "collectionMode": { "type": "string", "enum": ["fixture", "live_read_only"] },
+    "riskScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "riskLevel": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "category", "severity", "evidence", "recommendation"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "category": { "type": "string", "enum": ["branch_protection", "workflow_permissions", "code_ownership", "secret_scanning", "dependency_review", "environment_protection"] },
+          "severity": { "type": "string", "enum": ["info", "low", "medium", "high", "critical"] },
+          "evidence": { "type": "object", "additionalProperties": true },
+          "recommendation": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "recommendedControls": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "redactionState": { "type": "string", "enum": ["redacted", "synthetic", "withheld"] },
+    "liveApiUsed": { "type": "boolean" },
+    "liveExecutionPerformed": { "type": "boolean", "const": false }
+  }
+}

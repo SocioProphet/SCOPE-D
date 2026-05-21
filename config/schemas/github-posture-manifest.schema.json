@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/github-posture-manifest.schema.json",
+  "title": "GitHub Posture Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "manifestId",
+    "collectionMode",
+    "repoFullName",
+    "defaultBranch",
+    "visibility",
+    "branchProtection",
+    "actions",
+    "codeowners",
+    "secretScanning",
+    "dependencyReview",
+    "environments",
+    "redactionState",
+    "liveApiUsed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "manifestId": { "type": "string", "pattern": "^github-posture-manifest:[a-z0-9][a-z0-9._:-]*$" },
+    "collectionMode": { "type": "string", "enum": ["fixture", "live_read_only"] },
+    "repoFullName": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+    "defaultBranch": { "type": "string", "minLength": 1 },
+    "visibility": { "type": "string", "enum": ["public", "private", "internal"] },
+    "branchProtection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requiredReviews", "requiredStatusChecks", "enforceAdmins", "allowsForcePushes", "allowsDeletions"],
+      "properties": {
+        "requiredReviews": { "type": "boolean" },
+        "requiredStatusChecks": { "type": "boolean" },
+        "enforceAdmins": { "type": "boolean" },
+        "allowsForcePushes": { "type": "boolean" },
+        "allowsDeletions": { "type": "boolean" }
+      }
+    },
+    "actions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "defaultWorkflowPermissions", "allowGitHubOwnedActions", "allowMarketplaceActions"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "defaultWorkflowPermissions": { "type": "string", "enum": ["read", "write", "unknown"] },
+        "allowGitHubOwnedActions": { "type": "boolean" },
+        "allowMarketplaceActions": { "type": "boolean" }
+      }
+    },
+    "codeowners": { "type": "object", "additionalProperties": false, "required": ["present"], "properties": { "present": { "type": "boolean" } } },
+    "secretScanning": { "type": "object", "additionalProperties": false, "required": ["enabled", "pushProtection"], "properties": { "enabled": { "type": "boolean" }, "pushProtection": { "type": "boolean" } } },
+    "dependencyReview": { "type": "object", "additionalProperties": false, "required": ["enabled"], "properties": { "enabled": { "type": "boolean" } } },
+    "environments": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["name", "requiredReviewers"], "properties": { "name": { "type": "string" }, "requiredReviewers": { "type": "boolean" } } } },
+    "redactionState": { "type": "string", "enum": ["redacted", "synthetic", "withheld"] },
+    "liveApiUsed": { "type": "boolean" }
+  }
+}
