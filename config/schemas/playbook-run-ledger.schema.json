@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/playbook-run-ledger.schema.json",
+  "title": "SCOPE-D Playbook Run Ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "ledgerId",
+    "caseRef",
+    "sourceWorkorderRef",
+    "playbookId",
+    "playbookPath",
+    "operatorId",
+    "ledgerStatus",
+    "entries",
+    "createdAt",
+    "updatedAt",
+    "executionAllowed",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "ledgerId": { "type": "string", "pattern": "^playbook-run-ledger:[a-z0-9][a-z0-9._:-]*$" },
+    "caseRef": { "type": "string", "minLength": 1 },
+    "sourceWorkorderRef": { "type": "string", "minLength": 1 },
+    "playbookId": { "type": "string", "pattern": "^operator-playbook:[a-z0-9][a-z0-9._:-]*$" },
+    "playbookPath": { "type": "string", "minLength": 1 },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "ledgerStatus": { "type": "string", "enum": ["not_started", "in_progress", "blocked", "completed", "requires_approval"] },
+    "entries": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/entry" } },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stepId", "stepStatus", "decision", "evidenceRefs", "approvalRef", "timestamp", "executionAllowed", "executionPerformed"],
+      "properties": {
+        "stepId": { "type": "string", "pattern": "^step-[a-z0-9][a-z0-9._:-]*$" },
+        "stepStatus": { "type": "string", "enum": ["not_started", "in_progress", "skipped", "blocked", "completed", "requires_approval"] },
+        "decision": { "type": "string", "enum": ["none", "proceed_with_planning", "blocked_by_policy", "accept_risk", "requires_approval", "complete_step"] },
+        "evidenceRefs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "approvalRef": { "type": ["string", "null"] },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "notes": { "type": "string" },
+        "executionAllowed": { "type": "boolean", "const": false },
+        "executionPerformed": { "type": "boolean", "const": false }
+      }
+    }
+  }
+}
