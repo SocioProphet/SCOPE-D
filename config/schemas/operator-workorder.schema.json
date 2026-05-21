@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-workorder.schema.json",
+  "title": "SCOPE-D Operator Workorder",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "workorderId", "workflowRunId", "triageId", "surfaceKind", "severity", "status", "findingCount", "recommendedOwner", "approvalRequired", "blockedActions", "sourceRunIndexRef", "assessmentRefs", "createdAt", "executionAllowed", "executionPerformed"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "workorderId": { "type": "string", "pattern": "^operator-workorder:[a-z0-9][a-z0-9._:-]*$" },
+    "workflowRunId": { "type": "string", "pattern": "^operator-workflow:[a-z0-9][a-z0-9._:-]*$" },
+    "triageId": { "type": "string", "pattern": "^operator-triage:[a-z0-9][a-z0-9._:-]*$" },
+    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest"] },
+    "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "status": { "type": "string", "enum": ["new", "needs_review", "remediation_required", "blocked_by_policy", "closed"] },
+    "findingCount": { "type": "integer", "minimum": 0 },
+    "recommendedOwner": { "type": "string", "minLength": 1 },
+    "approvalRequired": { "type": "boolean" },
+    "blockedActions": { "type": "array", "items": { "type": "string", "enum": ["live_execution", "tool_invocation", "cluster_mutation", "deployment", "credential_access", "external_scan"] } },
+    "sourceRunIndexRef": { "type": "string", "minLength": 1 },
+    "assessmentRefs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  }
+}

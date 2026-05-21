@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-triage-decision.schema.json",
+  "title": "SCOPE-D Operator Triage Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "triageId", "workflowRunId", "sourceRunIndexRef", "decision", "queue", "reason", "approvalRequired", "createdAt", "executionAllowed", "executionPerformed"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "triageId": { "type": "string", "pattern": "^operator-triage:[a-z0-9][a-z0-9._:-]*$" },
+    "workflowRunId": { "type": "string", "pattern": "^operator-workflow:[a-z0-9][a-z0-9._:-]*$" },
+    "sourceRunIndexRef": { "type": "string", "minLength": 1 },
+    "decision": { "type": "string", "enum": ["needs_review", "remediation_required", "accepted_risk", "blocked_by_policy", "false_positive", "closed"] },
+    "queue": { "type": "string", "enum": ["critical", "high", "review", "backlog", "closed"] },
+    "reason": { "type": "string", "minLength": 1 },
+    "approvalRequired": { "type": "boolean" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  }
+}

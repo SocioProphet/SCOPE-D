@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-workflow-run.schema.json",
+  "title": "SCOPE-D Operator Workflow Run",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "workflowRunId",
+    "sourceRunIndexRef",
+    "surfaceKind",
+    "riskScore",
+    "riskLevel",
+    "findingCount",
+    "status",
+    "queue",
+    "artifacts",
+    "createdAt",
+    "liveConnectionUsed",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "workflowRunId": { "type": "string", "pattern": "^operator-workflow:[a-z0-9][a-z0-9._:-]*$" },
+    "sourceRunIndexRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest"] },
+    "riskScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "riskLevel": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "findingCount": { "type": "integer", "minimum": 0 },
+    "status": { "type": "string", "enum": ["new", "needs_review", "remediation_required", "accepted_risk", "blocked_by_policy", "false_positive", "closed"] },
+    "queue": { "type": "string", "enum": ["critical", "high", "review", "backlog", "closed"] },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "path", "artifactType"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "path": { "type": "string", "minLength": 1 },
+          "artifactType": { "type": "string", "enum": ["input", "normalized_manifest", "assessment", "risk_records", "summary", "index", "workflow", "triage", "workorder"] }
+        }
+      }
+    },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "liveConnectionUsed": { "type": "boolean" },
+    "executionPerformed": { "type": "boolean", "const": false }
+  }
+}
