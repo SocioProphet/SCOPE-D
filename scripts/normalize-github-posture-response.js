@@ -65,10 +65,25 @@ function normalizeActions(data) {
   };
 }
 
+function isEnabled(value) {
+  if (value === true || value === 'enabled') return true;
+  if (value === false || value === 'disabled' || value == null) return false;
+  if (typeof value === 'object') return value.status === 'enabled' || value.enabled === true;
+  return false;
+}
+
+function normalizeSecurity(source, repo) {
+  const repoSecurity = repo.security_and_analysis || {};
+  const explicit = source.securityFeatures || {};
+  return {
+    enabled: isEnabled(explicit.secretScanning || repoSecurity.secret_scanning),
+    pushProtection: isEnabled(explicit.pushProtection || repoSecurity.secret_scanning_push_protection),
+  };
+}
+
 function normalize(repoFullName, source, mode) {
   const repo = source.repo || {};
   const protection = source.branchProtection || null;
-  const security = repo.security_and_analysis || {};
   const environments = Array.isArray(source.environments) ? source.environments : [];
   return {
     schemaVersion: '0.1.0',
@@ -86,10 +101,7 @@ function normalize(repoFullName, source, mode) {
     },
     actions: normalizeActions(source.actionsPermissions),
     codeowners: { present: Boolean(source.codeownersPresent) },
-    secretScanning: {
-      enabled: Boolean(security.secret_scanning && security.secret_scanning.status === 'enabled'),
-      pushProtection: Boolean(security.secret_scanning_push_protection && security.secret_scanning_push_protection.status === 'enabled'),
-    },
+    secretScanning: normalizeSecurity(source, repo),
     dependencyReview: { enabled: Boolean(source.dependencyReviewEnabled) },
     environments: environments.map((env) => ({ name: env.name, requiredReviewers: Boolean(env.requiredReviewers) })),
     redactionState: mode === 'fixture' ? 'synthetic' : 'redacted',
