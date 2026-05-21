@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/wargames-runtime-decision-receipt.schema.json",
+  "title": "Wargames Runtime Decision Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "receiptId",
+    "invocationId",
+    "decision",
+    "reason",
+    "contractRefs",
+    "policyRefs",
+    "evidenceRefs",
+    "proofRefs",
+    "authorizationRefs",
+    "redactionState",
+    "createdAt",
+    "liveExecutionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "receiptId": { "type": "string" },
+    "invocationId": { "type": "string" },
+    "decision": {
+      "type": "string",
+      "enum": ["allow", "hard_block", "soft_warn", "audit_only", "review_required", "limit"]
+    },
+    "reason": { "type": "string" },
+    "contractRefs": { "type": "array", "items": { "type": "string" } },
+    "policyRefs": { "type": "array", "items": { "type": "string" } },
+    "evidenceRefs": { "type": "array", "items": { "type": "string" } },
+    "proofRefs": { "type": "array", "items": { "type": "string" } },
+    "authorizationRefs": { "type": "array", "items": { "type": "string" } },
+    "redactionState": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "liveExecutionPerformed": { "type": "boolean", "const": false }
+  }
+}
