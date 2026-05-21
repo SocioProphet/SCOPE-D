@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "0.1.0",
+  "manifestId": "mcp-surface-manifest:lab-browser-tools-improved",
+  "serverRef": "synthetic-mcp-server:lab-browser-tools",
+  "serverName": "Synthetic Lab Browser Tools Improved",
+  "environment": "lab",
+  "transport": "http",
+  "auth": {
+    "required": true,
+    "method": "api_key"
+  },
+  "tools": [
+    {
+      "toolName": "browser_fetch_allowlisted",
+      "description": "Fetch content from approved domains for analysis.",
+      "permissions": ["network.fetch"],
+      "argumentSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string" }
+        },
+        "required": ["url"]
+      },
+      "riskHints": ["network_exposure"]
+    }
+  ],
+  "redactionState": "synthetic",
+  "liveConnectionUsed": false
+}
