@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-workorders.schema.json",
+  "title": "SCOPE-D Operator Workorders",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "bundleId", "sourceWorkorderRef", "generatedAt", "workorders", "executionAllowed", "executionPerformed"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "bundleId": { "type": "string", "pattern": "^operator-workorders:[a-z0-9][a-z0-9._:-]*$" },
+    "sourceWorkorderRef": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "workorders": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/workorderBinding" } },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  },
+  "$defs": {
+    "workorderBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["workorderId", "sourceWorkorderId", "surfaceKind", "severity", "status", "findingCategories", "mappedPlaybooks", "approvalRequired", "executionAllowed", "executionPerformed"],
+      "properties": {
+        "workorderId": { "type": "string", "pattern": "^operator-workorder-binding:[a-z0-9][a-z0-9._:-]*$" },
+        "sourceWorkorderId": { "type": "string", "pattern": "^operator-workorder:[a-z0-9][a-z0-9._:-]*$" },
+        "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest"] },
+        "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+        "status": { "type": "string", "enum": ["new", "needs_review", "remediation_required", "blocked_by_policy", "closed"] },
+        "findingCategories": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "mappedPlaybooks": { "type": "array", "items": { "$ref": "#/$defs/playbookMatch" } },
+        "approvalRequired": { "type": "boolean" },
+        "executionAllowed": { "type": "boolean", "const": false },
+        "executionPerformed": { "type": "boolean", "const": false }
+      }
+    },
+    "playbookMatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["playbookId", "playbookPath", "matchedCategories", "approvalRequired", "blockedActions", "reassessmentCommand"],
+      "properties": {
+        "playbookId": { "type": "string", "pattern": "^operator-playbook:[a-z0-9][a-z0-9._:-]*$" },
+        "playbookPath": { "type": "string", "minLength": 1 },
+        "matchedCategories": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "approvalRequired": { "type": "boolean" },
+        "blockedActions": { "type": "array", "items": { "type": "string" } },
+        "reassessmentCommand": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
