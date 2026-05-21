@@ -7,13 +7,18 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const NODE = process.execPath;
 const RESOLVER = path.join(ROOT, 'scripts', 'wargames-runtime-resolve.js');
+const RUNTIME_CONTRACT_VALIDATOR = path.join(ROOT, 'scripts', 'validate-wargames-runtime-contracts.js');
 
-function runResolver(fixture) {
-  return childProcess.spawnSync(NODE, [RESOLVER, path.join(ROOT, fixture)], {
+function runScript(scriptPath, args = []) {
+  return childProcess.spawnSync(NODE, [scriptPath, ...args], {
     cwd: ROOT,
     encoding: 'utf8',
     stdio: 'pipe',
   });
+}
+
+function runResolver(fixture) {
+  return runScript(RESOLVER, [path.join(ROOT, fixture)]);
 }
 
 function parseReceipt(result, label) {
@@ -36,6 +41,10 @@ function fail(message, result) {
   process.exit(1);
 }
 
+function expectSuccess(label, result) {
+  if (result.status !== 0) fail(`${label}: expected success, got ${result.status}`, result);
+}
+
 function expectDecision(label, fixture, expectedStatus, expectedDecision, expectedReasonFragment) {
   const result = runResolver(fixture);
   if (result.status !== expectedStatus) {
@@ -54,6 +63,8 @@ function expectDecision(label, fixture, expectedStatus, expectedDecision, expect
 }
 
 function main() {
+  expectSuccess('runtime contract schema/example validation', runScript(RUNTIME_CONTRACT_VALIDATOR));
+
   expectDecision(
     'allowed validation invocation',
     'examples/scope-d/wargames/runtime/invocation-allow-validate.synthetic.json',
