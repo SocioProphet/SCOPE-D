@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "0.1.0",
+  "playbookId": "operator-playbook:k8s-workload-hardening",
+  "title": "Kubernetes Workload Hardening",
+  "surfaceKinds": ["k8s_manifest"],
+  "triggerCategories": [
+    "service_exposure",
+    "rbac_overgrant",
+    "service_account",
+    "pod_security",
+    "network_policy",
+    "resource_controls",
+    "secret_mount",
+    "host_access"
+  ],
+  "requiredEvidence": ["surface-run-index", "assessment", "operator-workorder"],
+  "operatorSteps": [
+    {
+      "stepId": "step-review-k8s-assessment",
+      "title": "Review Kubernetes assessment",
+      "instruction": "Review service, RBAC, service account, pod security, network policy, secret, host access, and resource-control findings.",
+      "expectedEvidence": ["k8s-manifest-assessment.json"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-plan-k8s-controls",
+      "title": "Plan Kubernetes control changes",
+      "instruction": "Draft a non-executing control plan for network policy, least-privilege RBAC, service-account hardening, pod security, and resource limits.",
+      "expectedEvidence": ["k8s-control-plan.md"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-record-k8s-reassessment",
+      "title": "Record reassessment command",
+      "instruction": "Record the manifest reassessment command to run after approved changes are applied.",
+      "expectedEvidence": ["reassessment-command.txt"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    }
+  ],
+  "recommendedControls": [
+    "Replace external service exposure with approved ingress or internal service patterns.",
+    "Remove cluster-admin role bindings from application workloads.",
+    "Set automountServiceAccountToken=false unless API access is required.",
+    "Disable privileged containers, host namespace access, and root execution.",
+    "Add default-deny NetworkPolicy and explicit allow rules.",
+    "Set CPU and memory requests and limits.",
+    "Remove hostPath and container runtime socket mounts."
+  ],
+  "approvalRequired": false,
+  "blockedActions": ["cluster_mutation", "deployment", "credential_access", "live_execution"],
+  "nonClaims": [
+    "This playbook does not connect to a cluster.",
+    "This playbook does not execute kubectl.",
+    "This playbook does not apply manifests.",
+    "This playbook does not authorize live remediation."
+  ],
+  "reassessmentCommand": "npm run surface:assess -- --surface k8s_manifest --input <k8s-manifest-bundle.json>",
+  "executionAllowed": false,
+  "createdAt": "2026-05-21T21:15:00Z"
+}

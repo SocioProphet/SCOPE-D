@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "0.1.0",
+  "playbookId": "operator-playbook:cross-surface-agent-runtime-hardening",
+  "title": "Cross-Surface Agent Runtime Hardening",
+  "surfaceKinds": ["cross_surface", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest", "github_posture"],
+  "triggerCategories": [
+    "tool_binding",
+    "memory_exposure",
+    "prompt_boundary",
+    "network_exposure",
+    "command_execution",
+    "rbac_overgrant",
+    "workflow_permissions",
+    "missing_auth"
+  ],
+  "requiredEvidence": ["surface-run-index", "assessment", "risk-records", "operator-workorder"],
+  "operatorSteps": [
+    {
+      "stepId": "step-review-cross-surface-evidence",
+      "title": "Review cross-surface evidence",
+      "instruction": "Review MCP, AI runtime, Kubernetes, and repository posture artifacts for common boundary failures across tool, runtime, infrastructure, and supply-chain planes.",
+      "expectedEvidence": ["surface-run-index.json", "operator-workorder.json"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-plan-boundary-controls",
+      "title": "Plan boundary controls",
+      "instruction": "Draft a non-executing cross-surface control plan that aligns tool permissions, runtime auth, memory isolation, workload hardening, and repository delivery controls.",
+      "expectedEvidence": ["cross-surface-control-plan.md"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-record-cross-surface-reassessment",
+      "title": "Record reassessment commands",
+      "instruction": "Record the surface-specific reassessment commands that must be run after approved controls are applied.",
+      "expectedEvidence": ["reassessment-commands.md"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    }
+  ],
+  "recommendedControls": [
+    "Align MCP tool permissions with AI runtime policy gates.",
+    "Require runtime authentication and scoped tokens before enabling tool bindings.",
+    "Isolate memory stores by tenant and sensitivity.",
+    "Run agent workloads with restricted Kubernetes permissions and pod security controls.",
+    "Require repository workflow and branch protections before promoting runtime changes.",
+    "Reassess all affected surfaces after approved control changes."
+  ],
+  "approvalRequired": true,
+  "blockedActions": ["live_execution", "tool_invocation", "cluster_mutation", "deployment", "credential_access", "external_scan", "model_prompt_execution", "policy_mutation"],
+  "nonClaims": [
+    "This playbook does not execute tools or prompts.",
+    "This playbook does not mutate infrastructure.",
+    "This playbook does not deploy code.",
+    "This playbook does not authorize live remediation."
+  ],
+  "reassessmentCommand": "npm run surface:assess -- --surface <surface-kind> --input <surface-input.json>",
+  "executionAllowed": false,
+  "createdAt": "2026-05-21T21:15:00Z"
+}

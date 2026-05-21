@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "0.1.0",
+  "playbookId": "operator-playbook:ai-runtime-exposure-hardening",
+  "title": "AI Runtime Exposure Hardening",
+  "surfaceKinds": ["ai_runtime"],
+  "triggerCategories": [
+    "public_endpoint",
+    "missing_auth",
+    "unscoped_tokens",
+    "tool_binding",
+    "memory_exposure",
+    "prompt_boundary",
+    "logging_exposure",
+    "missing_rate_limit",
+    "tenant_isolation"
+  ],
+  "requiredEvidence": ["surface-run-index", "assessment", "operator-workorder"],
+  "operatorSteps": [
+    {
+      "stepId": "step-review-runtime-assessment",
+      "title": "Review AI runtime assessment",
+      "instruction": "Review endpoint exposure, authentication, tool binding, memory, prompt-boundary, logging, rate-limit, and tenant-isolation findings.",
+      "expectedEvidence": ["ai-runtime-exposure-assessment.json"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-plan-runtime-boundaries",
+      "title": "Plan runtime boundary controls",
+      "instruction": "Draft a non-executing plan for auth, token scoping, memory isolation, prompt/tool boundary enforcement, logging redaction, and rate limits.",
+      "expectedEvidence": ["runtime-boundary-plan.md"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-record-runtime-reassessment",
+      "title": "Record reassessment command",
+      "instruction": "Record the command to rerun after approved controls are applied.",
+      "expectedEvidence": ["reassessment-command.txt"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    }
+  ],
+  "recommendedControls": [
+    "Require authentication for runtime endpoints.",
+    "Scope runtime tokens by tenant, tool, and environment.",
+    "Isolate memory stores by tenant and sensitivity.",
+    "Pin system prompts and isolate tool instructions.",
+    "Enable output schema enforcement and logging redaction.",
+    "Enable rate limits and abuse thresholds."
+  ],
+  "approvalRequired": false,
+  "blockedActions": ["model_prompt_execution", "tool_invocation", "credential_access", "live_execution", "policy_mutation"],
+  "nonClaims": [
+    "This playbook does not call model endpoints.",
+    "This playbook does not execute prompts.",
+    "This playbook does not modify runtime configuration.",
+    "This playbook does not authorize live remediation."
+  ],
+  "reassessmentCommand": "npm run surface:assess -- --surface ai_runtime --input <ai-runtime-exposure-manifest.json>",
+  "executionAllowed": false,
+  "createdAt": "2026-05-21T21:15:00Z"
+}

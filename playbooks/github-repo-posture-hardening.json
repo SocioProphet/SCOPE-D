@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "0.1.0",
+  "playbookId": "operator-playbook:github-repo-posture-hardening",
+  "title": "GitHub Repository Posture Hardening",
+  "surfaceKinds": ["github_posture"],
+  "triggerCategories": [
+    "branch_protection",
+    "workflow_permissions",
+    "code_ownership",
+    "secret_scanning",
+    "dependency_review",
+    "environment_protection"
+  ],
+  "requiredEvidence": ["surface-run-index", "assessment", "operator-workorder"],
+  "operatorSteps": [
+    {
+      "stepId": "step-review-github-assessment",
+      "title": "Review repository posture assessment",
+      "instruction": "Review branch protection, workflow permissions, CODEOWNERS, secret scanning, dependency review, and environment protection findings.",
+      "expectedEvidence": ["github-posture-assessment.json"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-plan-repo-controls",
+      "title": "Plan repository controls",
+      "instruction": "Draft a non-executing plan for branch protection, workflow token permissions, action restrictions, CODEOWNERS, secret scanning, dependency review, and environment reviewers.",
+      "expectedEvidence": ["github-posture-plan.md"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-record-github-reassessment",
+      "title": "Record reassessment command",
+      "instruction": "Record the reassessment command to run after approved repository controls are applied.",
+      "expectedEvidence": ["reassessment-command.txt"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    }
+  ],
+  "recommendedControls": [
+    "Require pull request reviews on protected branches.",
+    "Require status checks before merge.",
+    "Set default workflow token permissions to read-only.",
+    "Restrict third-party actions or pin them by SHA.",
+    "Add CODEOWNERS for security-critical paths.",
+    "Enable secret scanning and push protection where available.",
+    "Require reviewers for protected deployment environments."
+  ],
+  "approvalRequired": false,
+  "blockedActions": ["deployment", "policy_mutation", "credential_access", "external_scan", "live_execution"],
+  "nonClaims": [
+    "This playbook does not mutate repository settings.",
+    "This playbook does not dispatch workflows.",
+    "This playbook does not access secrets.",
+    "This playbook does not authorize live remediation."
+  ],
+  "reassessmentCommand": "npm run surface:assess -- --surface github_posture --input <github-posture-manifest.json>",
+  "executionAllowed": false,
+  "createdAt": "2026-05-21T21:15:00Z"
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "0.1.0",
+  "playbookId": "operator-playbook:mcp-tool-boundary-hardening",
+  "title": "MCP Tool Boundary Hardening",
+  "surfaceKinds": ["mcp_surface", "mcp_discovery"],
+  "triggerCategories": [
+    "command_execution",
+    "filesystem_exposure",
+    "network_exposure",
+    "overbroad_tool",
+    "unsafe_arguments",
+    "hidden_instruction_channel",
+    "ambiguous_description",
+    "missing_auth"
+  ],
+  "requiredEvidence": ["surface-run-index", "assessment", "risk-records", "operator-workorder"],
+  "operatorSteps": [
+    {
+      "stepId": "step-review-tool-risk-records",
+      "title": "Review MCP tool risk records",
+      "instruction": "Review the assessment and mcp-tool-risk records to identify tools with command, filesystem, network, or hidden-instruction exposure.",
+      "expectedEvidence": ["mcp-tool-risks.json", "mcp-surface-assessment.json"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-plan-tool-segmentation",
+      "title": "Plan tool segmentation",
+      "instruction": "Draft a non-executing segmentation plan that separates network, memory, filesystem, and command-capable tools behind independent policy gates.",
+      "expectedEvidence": ["segmentation-plan.md"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-record-reassessment-command",
+      "title": "Record reassessment command",
+      "instruction": "Record the command that should be run after controls are applied by an approved operator.",
+      "expectedEvidence": ["reassessment-command.txt"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    }
+  ],
+  "recommendedControls": [
+    "Require authentication for MCP server access.",
+    "Set additionalProperties=false for tool argument schemas.",
+    "Separate high-risk tool permissions into independently gated tools.",
+    "Remove policy-confusing instructions from tool descriptions.",
+    "Require explicit approval before enabling command-capable tools."
+  ],
+  "approvalRequired": false,
+  "blockedActions": ["tool_invocation", "credential_access", "external_scan", "live_execution"],
+  "nonClaims": [
+    "This playbook does not invoke MCP tools.",
+    "This playbook does not modify MCP servers.",
+    "This playbook does not authorize live remediation."
+  ],
+  "reassessmentCommand": "npm run surface:assess -- --surface mcp_surface --input <mcp-surface-manifest.json>",
+  "executionAllowed": false,
+  "createdAt": "2026-05-21T21:15:00Z"
+}
