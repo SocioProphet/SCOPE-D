@@ -34,14 +34,12 @@ function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
-function validateSchema(value, label) {
+function schemaErrors(value) {
   const ajv = new Ajv({ allErrors: true, strict: false });
   addFormats(ajv);
   const validate = ajv.compile(readJson(SCHEMA_PATH));
-  if (!validate(value)) {
-    const details = (validate.errors || []).map((err) => `${err.instancePath || '/'} ${err.message}`).join('; ');
-    fail(`${label} failed schema validation: ${details}`);
-  }
+  if (validate(value)) return [];
+  return (validate.errors || []).map((err) => `${err.instancePath || '/'} ${err.message}`);
 }
 
 function semanticErrors(policy) {
@@ -59,16 +57,16 @@ function semanticErrors(policy) {
 
 function expectValid(file, label) {
   const policy = readJson(file);
-  validateSchema(policy, label);
-  const errors = semanticErrors(policy);
-  if (errors.length > 0) fail(`${label} semantic validation failed: ${errors.join('; ')}`);
+  const schema = schemaErrors(policy);
+  if (schema.length > 0) fail(`${label} failed schema validation: ${schema.join('; ')}`);
+  const semantic = semanticErrors(policy);
+  if (semantic.length > 0) fail(`${label} semantic validation failed: ${semantic.join('; ')}`);
 }
 
 function expectInvalid(file, label, expectedFragment) {
   const policy = readJson(file);
-  validateSchema(policy, label);
-  const errors = semanticErrors(policy);
-  if (errors.length === 0) fail(`${label} unexpectedly passed semantic validation.`);
+  const errors = [...schemaErrors(policy), ...semanticErrors(policy)];
+  if (errors.length === 0) fail(`${label} unexpectedly passed validation.`);
   if (!errors.some((error) => error.includes(expectedFragment))) {
     fail(`${label} did not include expected error fragment "${expectedFragment}"; got ${errors.join('; ')}`);
   }
