@@ -8,7 +8,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js && node scripts/test-reporting-exports.js && node scripts/test-collector-policy.js && node scripts/test-wargames-runtime-resolver.js && node scripts/test-github-posture-collector.js && node scripts/test-github-repo-source-fetcher.js && node scripts/test-mcp-surface-evaluator.js && node scripts/test-mcp-discovery-normalizer.js && node scripts/test-mcp-live-discovery-client.js && node scripts/test-ai-runtime-exposure-evaluator.js && node scripts/test-k8s-manifest-evaluator.js && node scripts/test-surface-assessment-runner.js && node scripts/test-operator-workflow.js && node scripts/test-operator-workorder-bindings.js && node scripts/test-operator-case-bundle.js && node scripts/test-reassessment-workflow.js && node scripts/test-operator-dashboard-export.js && node scripts/test-client-assurance-report.js",
+    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js && node scripts/test-reporting-exports.js && node scripts/test-collector-policy.js && node scripts/test-wargames-runtime-resolver.js && node scripts/test-github-posture-collector.js && node scripts/test-github-repo-source-fetcher.js && node scripts/test-mcp-surface-evaluator.js && node scripts/test-mcp-discovery-normalizer.js && node scripts/test-mcp-live-discovery-client.js && node scripts/test-ai-runtime-exposure-evaluator.js && node scripts/test-k8s-manifest-evaluator.js && node scripts/test-surface-assessment-runner.js && node scripts/test-operator-workflow.js && node scripts/test-operator-workorder-bindings.js && node scripts/test-operator-case-bundle.js && node scripts/test-reassessment-workflow.js && node scripts/test-operator-dashboard-export.js && node scripts/test-client-assurance-report.js && node scripts/test-operator-live-readonly-policy.js",
     "validate": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js",
     "validate:wargames": "node scripts/validate-wargames-contracts.js",
     "wargames:resolve": "node scripts/wargames-runtime-resolve.js",
@@ -39,6 +39,7 @@
     "test:operator-reassess": "node scripts/test-reassessment-workflow.js",
     "test:operator-dashboard": "node scripts/test-operator-dashboard-export.js",
     "test:client-report": "node scripts/test-client-assurance-report.js",
+    "test:operator-live-readonly-policy": "node scripts/test-operator-live-readonly-policy.js",
     "references:workorders": "node scripts/generate-reference-workorders.js",
     "synthetic:event": "node scripts/generate-synthetic-event.js",
     "scope-d:init": "node scripts/init-run.js",
