@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/wargames-dispatch-summary.schema.json",
+  "title": "Wargames Dispatch Summary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "dispatchId",
+    "runId",
+    "invocationRef",
+    "receiptRef",
+    "decision",
+    "requestedAction",
+    "capabilityClass",
+    "dryRunOnly",
+    "liveExecutionPerformed",
+    "createdAt",
+    "status"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "dispatchId": { "type": "string", "pattern": "^wargames-dispatch:[a-z0-9][a-z0-9._:-]*$" },
+    "runId": { "type": "string", "pattern": "^scope-d-wargames-[a-z0-9][a-z0-9._:-]*$" },
+    "invocationRef": { "type": "string", "minLength": 1 },
+    "receiptRef": { "type": "string", "minLength": 1 },
+    "decision": { "type": "string", "enum": ["allow", "hard_block", "soft_warn", "audit_only", "review_required", "limit"] },
+    "requestedAction": { "type": "string", "minLength": 1 },
+    "capabilityClass": { "type": "string", "minLength": 1 },
+    "dryRunOnly": { "type": "boolean", "const": true },
+    "liveExecutionPerformed": { "type": "boolean", "const": false },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "status": { "type": "string", "enum": ["completed", "blocked", "review_required"] }
+  }
+}
