@@ -11,6 +11,7 @@ const SURFACE_RUNNER = path.join(ROOT, 'scripts', 'run-surface-assessment.js');
 const OPERATOR_INTAKE = path.join(ROOT, 'scripts', 'operator-intake.js');
 const WORKORDER_BINDER = path.join(ROOT, 'scripts', 'generate-operator-workorders.js');
 const CASE_BUILDER = path.join(ROOT, 'scripts', 'build-operator-case.js');
+const LEDGER_TEST = path.join(ROOT, 'scripts', 'test-playbook-run-ledger.js');
 const MCP_FIXTURE = path.join(ROOT, 'fixtures', 'synthetic', 'mcp-surface.multi-tool.synthetic.json');
 
 function fail(message, result) {
@@ -29,6 +30,9 @@ function parseJson(text, label, result) {
     fail(`${label}: expected JSON output: ${err.message}`, result);
   }
 }
+
+const ledgerTest = cp.spawnSync(process.execPath, [LEDGER_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (ledgerTest.status !== 0) fail(`Expected playbook ledger test success, got ${ledgerTest.status}`, ledgerTest);
 
 const rootDir = fs.mkdtempSync(path.join(os.tmpdir(), 'scope-d-case-bundle-'));
 fs.rmSync(rootDir, { recursive: true, force: true });
