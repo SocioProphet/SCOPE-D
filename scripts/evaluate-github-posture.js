@@ -207,8 +207,8 @@ function main() {
   const manifest = readJson(args.input);
   validateWithSchema(MANIFEST_SCHEMA, manifest, 'GitHub posture manifest');
 
-  if (manifest.liveApiUsed !== false || manifest.collectionMode !== 'fixture') {
-    throw new Error('This evaluator slice is fixture/read-only only. Live GitHub API collection is not enabled in this PR.');
+  if (!['fixture', 'live_read_only'].includes(manifest.collectionMode)) {
+    throw new Error('GitHub posture manifest collectionMode must be fixture or live_read_only.');
   }
 
   const assessment = assess(manifest, args.input);
