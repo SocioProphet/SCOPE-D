@@ -8,7 +8,9 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const EVALUATOR = path.join(ROOT, 'scripts', 'evaluate-github-posture.js');
+const NORMALIZER = path.join(ROOT, 'scripts', 'normalize-github-posture-response.js');
 const FIXTURE = path.join(ROOT, 'fixtures', 'synthetic', 'github-posture.weak-controls.synthetic.json');
+const SECURITY_FIXTURE = path.join(ROOT, 'fixtures', 'synthetic', 'github-api.security-features-disabled.mock.json');
 
 function fail(message, result) {
   console.error(message);
@@ -27,7 +29,7 @@ function parseJson(text, label, result) {
   }
 }
 
-function main() {
+function runBaseFixture() {
   const outFile = path.join(os.tmpdir(), `scope-d-github-posture-${Date.now()}.json`);
   const result = cp.spawnSync(process.execPath, [EVALUATOR, FIXTURE, '--out', outFile], {
     cwd: ROOT,
@@ -56,6 +58,23 @@ function main() {
   }
 
   fs.rmSync(outFile, { force: true });
+}
+
+function runSecurityFeatureNormalization() {
+  const result = cp.spawnSync(process.execPath, [NORMALIZER, SECURITY_FIXTURE, '--repo', 'SocioProphet/SCOPE-D'], {
+    cwd: ROOT,
+    encoding: 'utf8',
+    stdio: 'pipe',
+  });
+  if (result.status !== 0) fail(`Expected normalizer success, got ${result.status}`, result);
+  const manifest = parseJson(result.stdout, 'security manifest', result);
+  if (manifest.secretScanning.enabled !== false) fail('Expected secret scanning disabled normalization.', result);
+  if (manifest.secretScanning.pushProtection !== false) fail('Expected push protection disabled normalization.', result);
+}
+
+function main() {
+  runBaseFixture();
+  runSecurityFeatureNormalization();
   console.log('GitHub posture collector tests passed.');
 }
 
