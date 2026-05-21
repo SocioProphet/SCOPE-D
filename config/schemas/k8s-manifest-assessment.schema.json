@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/k8s-manifest-assessment.schema.json",
+  "title": "SCOPE-D Kubernetes Manifest Assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "assessmentId", "bundleRef", "environment", "namespace", "riskScore", "riskLevel", "objectCount", "findings", "recommendedControls", "redactionState", "liveClusterAccessUsed", "kubectlExecuted"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "assessmentId": { "type": "string", "pattern": "^k8s-manifest-assessment:[a-z0-9][a-z0-9._:-]*$" },
+    "bundleRef": { "type": "string", "minLength": 1 },
+    "environment": { "type": "string", "enum": ["lab", "dev", "staging", "production", "unknown"] },
+    "namespace": { "type": "string", "minLength": 1 },
+    "riskScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "riskLevel": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "objectCount": { "type": "integer", "minimum": 1 },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "objectRef", "category", "severity", "evidence", "recommendation"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "objectRef": { "type": "string", "minLength": 1 },
+          "category": { "type": "string", "enum": ["service_exposure", "rbac_overgrant", "service_account", "pod_security", "network_policy", "resource_controls", "secret_mount", "host_access"] },
+          "severity": { "type": "string", "enum": ["critical", "high", "medium", "low", "informational"] },
+          "evidence": { "type": "object", "additionalProperties": true },
+          "recommendation": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "recommendedControls": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "redactionState": { "type": "string", "enum": ["synthetic", "redacted", "withheld"] },
+    "liveClusterAccessUsed": { "type": "boolean", "const": false },
+    "kubectlExecuted": { "type": "boolean", "const": false }
+  }
+}
