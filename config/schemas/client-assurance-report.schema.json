@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/client-assurance-report.schema.json",
+  "title": "SCOPE-D Client Assurance Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "reportId",
+    "clientRef",
+    "generatedAt",
+    "sourceDashboardRef",
+    "executiveSummary",
+    "surfaceCoverage",
+    "topRisks",
+    "recommendedActions",
+    "evidenceRefs",
+    "nonClaims",
+    "approvalState",
+    "reassessmentStatus",
+    "executionAllowed",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "reportId": { "type": "string", "pattern": "^client-assurance-report:[a-z0-9][a-z0-9._:-]*$" },
+    "clientRef": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "sourceDashboardRef": { "type": "string", "minLength": 1 },
+    "executiveSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["caseCount", "criticalCaseCount", "awaitingApprovalCount", "summaryText"],
+      "properties": {
+        "caseCount": { "type": "integer", "minimum": 0 },
+        "criticalCaseCount": { "type": "integer", "minimum": 0 },
+        "awaitingApprovalCount": { "type": "integer", "minimum": 0 },
+        "summaryText": { "type": "string", "minLength": 1 }
+      }
+    },
+    "surfaceCoverage": { "type": "array", "items": { "$ref": "#/$defs/surfaceCoverage" } },
+    "topRisks": { "type": "array", "items": { "$ref": "#/$defs/topRisk" } },
+    "recommendedActions": { "type": "array", "items": { "$ref": "#/$defs/recommendedAction" } },
+    "evidenceRefs": { "type": "array", "items": { "$ref": "#/$defs/evidenceRef" } },
+    "nonClaims": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "approvalState": { "type": "string", "enum": ["none_required", "awaiting_approval", "approved", "blocked"] },
+    "reassessmentStatus": { "type": "string", "enum": ["not_reassessed", "improved", "unchanged", "regressed", "mixed"] },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  },
+  "$defs": {
+    "surfaceCoverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surfaceKind", "caseCount", "critical", "high", "medium", "low"],
+      "properties": {
+        "surfaceKind": { "type": "string", "minLength": 1 },
+        "caseCount": { "type": "integer", "minimum": 0 },
+        "critical": { "type": "integer", "minimum": 0 },
+        "high": { "type": "integer", "minimum": 0 },
+        "medium": { "type": "integer", "minimum": 0 },
+        "low": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "topRisk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "count"],
+      "properties": {
+        "category": { "type": "string", "minLength": 1 },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "recommendedAction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionId", "title", "sourcePlaybookId", "priority", "executionAllowed"],
+      "properties": {
+        "actionId": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "sourcePlaybookId": { "type": "string", "minLength": 1 },
+        "priority": { "type": "string", "enum": ["critical", "high", "medium", "low"] },
+        "executionAllowed": { "type": "boolean", "const": false }
+      }
+    },
+    "evidenceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path", "evidenceType"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "minLength": 1 },
+        "evidenceType": { "type": "string", "enum": ["dashboard", "case", "assessment", "workorder", "playbook", "reassessment"] }
+      }
+    }
+  }
+}
