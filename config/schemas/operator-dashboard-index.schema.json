@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-dashboard-index.schema.json",
+  "title": "SCOPE-D Operator Dashboard Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "dashboardId",
+    "generatedAt",
+    "caseCount",
+    "openCaseCount",
+    "awaitingApprovalCount",
+    "criticalCaseCount",
+    "riskBySurface",
+    "casesByState",
+    "cases",
+    "topFindingCategories",
+    "mappedPlaybookCounts",
+    "recentReassessments",
+    "executionAllowed",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "dashboardId": { "type": "string", "pattern": "^operator-dashboard:[a-z0-9][a-z0-9._:-]*$" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "caseCount": { "type": "integer", "minimum": 0 },
+    "openCaseCount": { "type": "integer", "minimum": 0 },
+    "awaitingApprovalCount": { "type": "integer", "minimum": 0 },
+    "criticalCaseCount": { "type": "integer", "minimum": 0 },
+    "riskBySurface": { "type": "array", "items": { "$ref": "#/$defs/surfaceRisk" } },
+    "casesByState": { "type": "array", "items": { "$ref": "#/$defs/stateCount" } },
+    "cases": { "type": "array", "items": { "$ref": "#/$defs/caseSummary" } },
+    "topFindingCategories": { "type": "array", "items": { "$ref": "#/$defs/categoryCount" } },
+    "mappedPlaybookCounts": { "type": "array", "items": { "$ref": "#/$defs/playbookCount" } },
+    "recentReassessments": { "type": "array", "items": { "$ref": "#/$defs/reassessmentSummary" } },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  },
+  "$defs": {
+    "surfaceRisk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surfaceKind", "caseCount", "critical", "high", "medium", "low"],
+      "properties": {
+        "surfaceKind": { "type": "string", "minLength": 1 },
+        "caseCount": { "type": "integer", "minimum": 0 },
+        "critical": { "type": "integer", "minimum": 0 },
+        "high": { "type": "integer", "minimum": 0 },
+        "medium": { "type": "integer", "minimum": 0 },
+        "low": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "stateCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["caseState", "count"],
+      "properties": {
+        "caseState": { "type": "string", "minLength": 1 },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "caseSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["caseId", "caseRef", "caseState", "surfaceKind", "severity", "status", "findingCount", "playbookCount", "executionAllowed"],
+      "properties": {
+        "caseId": { "type": "string", "minLength": 1 },
+        "caseRef": { "type": "string", "minLength": 1 },
+        "caseState": { "type": "string", "minLength": 1 },
+        "surfaceKind": { "type": "string", "minLength": 1 },
+        "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+        "status": { "type": "string", "minLength": 1 },
+        "findingCount": { "type": "integer", "minimum": 0 },
+        "playbookCount": { "type": "integer", "minimum": 0 },
+        "executionAllowed": { "type": "boolean", "const": false }
+      }
+    },
+    "categoryCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "count"],
+      "properties": {
+        "category": { "type": "string", "minLength": 1 },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "playbookCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["playbookId", "count"],
+      "properties": {
+        "playbookId": { "type": "string", "minLength": 1 },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "reassessmentSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reportId", "reportRef", "caseRef", "surfaceKind", "outcome", "riskDelta", "findingDelta"],
+      "properties": {
+        "reportId": { "type": "string", "minLength": 1 },
+        "reportRef": { "type": "string", "minLength": 1 },
+        "caseRef": { "type": "string", "minLength": 1 },
+        "surfaceKind": { "type": "string", "minLength": 1 },
+        "outcome": { "type": "string", "minLength": 1 },
+        "riskDelta": { "type": "integer" },
+        "findingDelta": { "type": "integer" }
+      }
+    }
+  }
+}
