@@ -56,7 +56,7 @@ const evaluate = cp.spawnSync(process.execPath, [EVALUATOR, manifestPath, '--out
 if (evaluate.status !== 0) fail(`Expected evaluator success, got ${evaluate.status}`, evaluate);
 const payload = parseJson(evaluate.stdout, 'MCP evaluator output', evaluate);
 if (payload.assessment.toolCount !== 2) fail('Expected assessment toolCount=2.', evaluate);
-if (payload.assessment.riskLevel !== 'high') fail(`Expected high risk, got ${payload.assessment.riskLevel}.`, evaluate);
+if (payload.assessment.riskLevel !== 'critical') fail(`Expected critical risk, got ${payload.assessment.riskLevel}.`, evaluate);
 const categories = new Set(payload.risks.map((risk) => risk.riskCategory));
 for (const expected of ['network_exposure', 'overbroad_tool', 'unsafe_arguments', 'filesystem_exposure', 'missing_auth']) {
   if (!categories.has(expected)) fail(`Missing risk category ${expected}.`, evaluate);
