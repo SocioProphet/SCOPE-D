@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/surface-assessment-run-index.schema.json",
+  "title": "SCOPE-D Surface Assessment Run Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "runId",
+    "surfaceKind",
+    "inputRef",
+    "artifacts",
+    "riskScore",
+    "riskLevel",
+    "findingCount",
+    "createdAt",
+    "liveConnectionUsed",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "runId": { "type": "string", "pattern": "^scope-d-surface-[a-z0-9][a-z0-9._:-]*$" },
+    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest"] },
+    "inputRef": { "type": "string", "minLength": 1 },
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "path", "artifactType"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "path": { "type": "string", "minLength": 1 },
+          "artifactType": { "type": "string", "enum": ["input", "normalized_manifest", "assessment", "risk_records", "summary", "index"] }
+        }
+      }
+    },
+    "riskScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "riskLevel": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "findingCount": { "type": "integer", "minimum": 0 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "liveConnectionUsed": { "type": "boolean" },
+    "executionPerformed": { "type": "boolean", "const": false }
+  }
+}
