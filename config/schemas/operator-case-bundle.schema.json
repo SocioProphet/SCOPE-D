@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-case-bundle.schema.json",
+  "title": "SCOPE-D Operator Case Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "caseId",
+    "caseState",
+    "sourceWorkordersRef",
+    "sourceWorkorderRef",
+    "sourceRunIndexRef",
+    "surfaceKind",
+    "severity",
+    "status",
+    "findingCount",
+    "mappedPlaybooks",
+    "artifactRefs",
+    "createdAt",
+    "executionAllowed",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "caseId": { "type": "string", "pattern": "^operator-case:[a-z0-9][a-z0-9._:-]*$" },
+    "caseState": { "type": "string", "enum": ["open", "under_review", "remediation_planned", "awaiting_approval", "remediated", "reassessed", "closed"] },
+    "sourceWorkordersRef": { "type": "string", "minLength": 1 },
+    "sourceWorkorderRef": { "type": "string", "minLength": 1 },
+    "sourceRunIndexRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest"] },
+    "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "status": { "type": "string", "enum": ["new", "needs_review", "remediation_required", "blocked_by_policy", "closed"] },
+    "findingCount": { "type": "integer", "minimum": 0 },
+    "mappedPlaybooks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/playbookRef" } },
+    "artifactRefs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/artifactRef" } },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  },
+  "$defs": {
+    "playbookRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["playbookId", "playbookPath", "matchedCategories", "approvalRequired"],
+      "properties": {
+        "playbookId": { "type": "string", "pattern": "^operator-playbook:[a-z0-9][a-z0-9._:-]*$" },
+        "playbookPath": { "type": "string", "minLength": 1 },
+        "matchedCategories": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "approvalRequired": { "type": "boolean" }
+      }
+    },
+    "artifactRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path", "artifactType"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "minLength": 1 },
+        "artifactType": { "type": "string", "enum": ["surface_index", "assessment", "risk_records", "workflow", "triage", "workorder", "workorders", "playbook", "case_index", "case_summary"] }
+      }
+    }
+  }
+}
