@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/github-posture-live-collector-policy.schema.json",
+  "title": "GitHub Posture Live Read-Only Collector Policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "policyId",
+    "collectorId",
+    "mode",
+    "allowedRepoFullNames",
+    "allowedHost",
+    "allowedEndpoints",
+    "tokenEnvVar",
+    "prohibitedActions",
+    "noTokenPersistence",
+    "auditTrail",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "policyId": { "type": "string", "pattern": "^github-posture-live-policy-[a-z0-9][a-z0-9._:-]*$" },
+    "collectorId": { "type": "string", "pattern": "^collector-github-posture-[a-z0-9][a-z0-9._:-]*$" },
+    "mode": { "type": "string", "const": "live_read_only" },
+    "allowedRepoFullNames": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" } },
+    "allowedHost": { "type": "string", "const": "api.github.com" },
+    "allowedEndpoints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["repo_metadata", "branch_protection", "actions_permissions", "codeowners", "security_features", "dependency_review", "environments"]
+      }
+    },
+    "tokenEnvVar": { "type": "string", "pattern": "^[A-Z_][A-Z0-9_]*$" },
+    "prohibitedActions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "enum": ["write", "delete", "workflow_dispatch", "issue_comment", "credential_collection", "public_scanning", "repo_mutation"] }
+    },
+    "noTokenPersistence": { "type": "boolean", "const": true },
+    "auditTrail": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifestRequired", "assessmentRequired", "hashArtifacts", "noSilentReads"],
+      "properties": {
+        "manifestRequired": { "type": "boolean", "const": true },
+        "assessmentRequired": { "type": "boolean", "const": true },
+        "hashArtifacts": { "type": "boolean", "const": true },
+        "noSilentReads": { "type": "boolean", "const": true }
+      }
+    },
+    "createdAt": { "type": "string", "format": "date-time" }
+  }
+}

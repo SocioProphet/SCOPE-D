@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "engagement-policy-github-live-readonly-scope-d",
+  "name": "SCOPE-D GitHub live read-only posture policy",
+  "authority": {
+    "approvalModel": "single_human",
+    "primaryApprover": {
+      "name": "Michael Heller",
+      "email": "michael@socioprophet.ai",
+      "handle": "@michael"
+    },
+    "delegationAllowed": false,
+    "delegationPolicyRef": "none"
+  },
+  "targetBoundary": {
+    "boundaryType": "owned_assets",
+    "authorizedTargets": ["SocioProphet/SCOPE-D"],
+    "outOfScopeTargets": ["public-internet", "third-party-repos", "customer-without-written-authorization"],
+    "legalBasisRef": "owned-repository-readonly-posture-review",
+    "rulesOfEngagementRef": "docs/ENGAGEMENT-POLICY.md"
+  },
+  "defaultMode": "live_observe",
+  "authorizedTargets": ["SocioProphet/SCOPE-D"],
+  "authorizedSurfaces": ["github"],
+  "authorizedModes": ["live_observe"],
+  "epsilonGateRequired": true,
+  "michaelApprovalRequiredForModes": ["live_observe", "live_engage"],
+  "allowedActions": ["read_metadata", "collect_scoped_evidence"],
+  "blockedActions": [
+    "credential_collection",
+    "public_network_scanning",
+    "payload_execution",
+    "persistence",
+    "log_mutation",
+    "destructive_action",
+    "unauthorized_external_contact",
+    "production_write_without_gate",
+    "identity_modification_without_gate"
+  ],
+  "dynamicResponse": {
+    "enabled": false,
+    "insideBoundaryDefault": "read_only",
+    "outsideBoundaryDefault": "blocked",
+    "evidenceTriggerRequired": true,
+    "humanApprovalRequiredForEscalation": true
+  },
+  "approvalRules": [
+    { "actionClass": "read", "requiredGate": "human_and_policy_engine", "requiredApprover": "michael@socioprophet.ai" },
+    { "actionClass": "network_call", "requiredGate": "human_and_policy_engine", "requiredApprover": "michael@socioprophet.ai" },
+    { "actionClass": "write", "requiredGate": "blocked", "requiredApprover": "none" },
+    { "actionClass": "deployment", "requiredGate": "blocked", "requiredApprover": "none" },
+    { "actionClass": "credential_access", "requiredGate": "blocked", "requiredApprover": "none" },
+    { "actionClass": "destructive_action", "requiredGate": "blocked", "requiredApprover": "none" },
+    { "actionClass": "identity_write", "requiredGate": "blocked", "requiredApprover": "none" }
+  ],
+  "nonClaims": [
+    "This policy authorizes only read-only GitHub posture observation for the listed repositories.",
+    "This policy does not authorize repository mutation.",
+    "This policy does not authorize credential collection.",
+    "This policy does not authorize public scanning.",
+    "This policy does not authorize workflow dispatch, issue comments, branch changes, or deployment."
+  ],
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "createdAt": "2026-05-21T18:15:00Z",
+  "signature": {
+    "algorithm": "none",
+    "keyId": "example-michael-approval-required",
+    "value": "unsigned-example"
+  }
+}

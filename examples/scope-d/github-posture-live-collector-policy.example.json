@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "github-posture-live-policy-scope-d-readonly",
+  "collectorId": "collector-github-posture-scope-d-readonly",
+  "mode": "live_read_only",
+  "allowedRepoFullNames": ["SocioProphet/SCOPE-D"],
+  "allowedHost": "api.github.com",
+  "allowedEndpoints": [
+    "repo_metadata",
+    "branch_protection",
+    "actions_permissions",
+    "codeowners",
+    "security_features",
+    "dependency_review",
+    "environments"
+  ],
+  "tokenEnvVar": "GITHUB_TOKEN",
+  "prohibitedActions": [
+    "write",
+    "delete",
+    "workflow_dispatch",
+    "issue_comment",
+    "credential_collection",
+    "public_scanning",
+    "repo_mutation"
+  ],
+  "noTokenPersistence": true,
+  "auditTrail": {
+    "manifestRequired": true,
+    "assessmentRequired": true,
+    "hashArtifacts": true,
+    "noSilentReads": true
+  },
+  "createdAt": "2026-05-21T18:15:00Z"
+}
