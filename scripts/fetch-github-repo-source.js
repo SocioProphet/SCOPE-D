@@ -46,7 +46,8 @@ async function main() {
   if (!repoInfo) throw new Error(`Repository not found: ${args.repo}`);
   const branch = repoInfo.default_branch || 'main';
   const branchProtection = await githubGet(`/repos/${owner}/${repo}/branches/${encodeURIComponent(branch)}/protection`, token);
-  process.stdout.write(`${JSON.stringify({ repo: repoInfo, branchProtection }, null, 2)}\n`);
+  const actionsPermissions = await githubGet(`/repos/${owner}/${repo}/actions/permissions`, token);
+  process.stdout.write(`${JSON.stringify({ repo: repoInfo, branchProtection, actionsPermissions }, null, 2)}\n`);
 }
 
 main().catch((err) => {
