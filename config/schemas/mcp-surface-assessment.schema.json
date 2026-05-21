@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/mcp-surface-assessment.schema.json",
+  "title": "SCOPE-D MCP Surface Assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "assessmentId", "manifestRef", "serverRef", "serverName", "environment", "riskScore", "riskLevel", "toolCount", "riskRefs", "findings", "recommendedControls", "redactionState", "liveConnectionUsed", "liveExecutionPerformed"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "assessmentId": { "type": "string", "pattern": "^mcp-surface-assessment:[a-z0-9][a-z0-9._:-]*$" },
+    "manifestRef": { "type": "string", "minLength": 1 },
+    "serverRef": { "type": "string", "minLength": 1 },
+    "serverName": { "type": "string", "minLength": 1 },
+    "environment": { "type": "string", "enum": ["lab", "dev", "staging", "production", "unknown"] },
+    "riskScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "riskLevel": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "toolCount": { "type": "integer", "minimum": 1 },
+    "riskRefs": { "type": "array", "items": { "type": "string" } },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "toolName", "category", "severity", "evidence", "recommendation"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "toolName": { "type": "string", "minLength": 1 },
+          "category": { "type": "string" },
+          "severity": { "type": "string", "enum": ["critical", "high", "medium", "low", "informational"] },
+          "evidence": { "type": "object", "additionalProperties": true },
+          "recommendation": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "recommendedControls": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "redactionState": { "type": "string", "enum": ["synthetic", "redacted", "withheld"] },
+    "liveConnectionUsed": { "type": "boolean", "const": false },
+    "liveExecutionPerformed": { "type": "boolean", "const": false }
+  }
+}
