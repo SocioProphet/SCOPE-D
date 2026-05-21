@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "operator-live-readonly-policy:invalid-audit",
+  "operatorId": "operator:michael",
+  "approvalRef": "approval:michael-live-readonly-2026-05-21",
+  "authorizedTargets": ["synthetic-mcp-server:lab-tools-list"],
+  "authorizedSurfaces": ["mcp_discovery"],
+  "allowedReadMethods": ["mcp_tools_list"],
+  "blockedMethods": [
+    "mcp_tool_call",
+    "arbitrary_json_rpc",
+    "model_prompt_execution",
+    "kubectl_exec",
+    "cluster_mutation",
+    "deployment",
+    "credential_access",
+    "external_scan",
+    "policy_mutation",
+    "repository_mutation"
+  ],
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "auditRequired": {
+    "emitRunIndex": false,
+    "emitOperatorCase": true,
+    "emitClientReport": true,
+    "recordLedger": true
+  },
+  "executionAllowed": false,
+  "createdAt": "2026-05-21T23:45:00Z",
+  "nonClaims": ["Invalid fixture: run index audit is disabled."]
+}
