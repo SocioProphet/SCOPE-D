@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "0.1.0",
+  "manifestId": "ai-runtime-exposure-manifest:lab-agent-runtime-high-risk",
+  "runtimeRef": "ai-runtime:lab-agent-runtime",
+  "runtimeName": "Synthetic Lab Agent Runtime",
+  "environment": "lab",
+  "endpoint": {
+    "exposure": "public",
+    "network": "internet",
+    "tenantIsolation": "none"
+  },
+  "auth": {
+    "required": false,
+    "method": "none",
+    "scopedTokens": false
+  },
+  "model": {
+    "provider": "synthetic",
+    "modelId": "lab-agent-model",
+    "deploymentMode": "hosted"
+  },
+  "toolBindings": [
+    {
+      "bindingId": "binding:mcp-browser-tools",
+      "surfaceRef": "synthetic-mcp-server:lab-browser-tools",
+      "permissions": ["network.fetch", "memory.read"],
+      "requiresPolicyGate": false
+    },
+    {
+      "bindingId": "binding:shell-tools",
+      "surfaceRef": "synthetic-tool:shell",
+      "permissions": ["command.exec", "filesystem.write"],
+      "requiresPolicyGate": false
+    }
+  ],
+  "memoryStores": [
+    {
+      "storeId": "memory:shared-vector-store",
+      "storeType": "vector",
+      "containsSensitiveData": true,
+      "writeEnabled": true,
+      "crossTenantAccessible": true
+    }
+  ],
+  "promptBoundary": {
+    "systemPromptPinned": false,
+    "toolInstructionIsolation": false,
+    "retrievalContentDelimited": false,
+    "outputSchemaEnforced": false
+  },
+  "logging": {
+    "storesPrompts": true,
+    "storesToolOutputs": true,
+    "redactionRequired": false,
+    "retentionDays": 365
+  },
+  "rateLimit": {
+    "enabled": false,
+    "requestsPerMinute": 0
+  },
+  "redactionState": "synthetic",
+  "liveConnectionUsed": false,
+  "promptExecutionPerformed": false
+}
