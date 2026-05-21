@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "0.1.0",
+  "bundleId": "k8s-manifest-bundle:lab-high-risk-workload",
+  "environment": "lab",
+  "namespace": "scope-d-lab",
+  "manifests": [
+    {
+      "apiVersion": "apps/v1",
+      "kind": "Deployment",
+      "metadata": { "name": "agent-runtime", "namespace": "scope-d-lab" },
+      "spec": {
+        "replicas": 1,
+        "template": {
+          "metadata": { "labels": { "app": "agent-runtime" } },
+          "spec": {
+            "serviceAccountName": "agent-admin",
+            "hostNetwork": true,
+            "containers": [
+              {
+                "name": "agent-runtime",
+                "image": "example/agent-runtime:latest",
+                "securityContext": {
+                  "privileged": true,
+                  "runAsUser": 0,
+                  "allowPrivilegeEscalation": true
+                },
+                "resources": {},
+                "volumeMounts": [
+                  { "name": "docker-sock", "mountPath": "/var/run/docker.sock" },
+                  { "name": "secret-volume", "mountPath": "/var/secrets" }
+                ]
+              }
+            ],
+            "volumes": [
+              { "name": "docker-sock", "hostPath": { "path": "/var/run/docker.sock" } },
+              { "name": "secret-volume", "secret": { "secretName": "agent-secrets" } }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Service",
+      "metadata": { "name": "agent-runtime", "namespace": "scope-d-lab" },
+      "spec": {
+        "type": "LoadBalancer",
+        "ports": [ { "port": 80, "targetPort": 8080 } ],
+        "selector": { "app": "agent-runtime" }
+      }
+    },
+    {
+      "apiVersion": "rbac.authorization.k8s.io/v1",
+      "kind": "ClusterRoleBinding",
+      "metadata": { "name": "agent-admin-binding" },
+      "subjects": [ { "kind": "ServiceAccount", "name": "agent-admin", "namespace": "scope-d-lab" } ],
+      "roleRef": { "kind": "ClusterRole", "name": "cluster-admin", "apiGroup": "rbac.authorization.k8s.io" }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "ServiceAccount",
+      "metadata": { "name": "agent-admin", "namespace": "scope-d-lab" },
+      "automountServiceAccountToken": true
+    }
+  ],
+  "redactionState": "synthetic",
+  "liveClusterAccessUsed": false,
+  "kubectlExecuted": false
+}
