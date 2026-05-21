@@ -9,6 +9,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const SURFACE_RUNNER = path.join(ROOT, 'scripts', 'run-surface-assessment.js');
 const OPERATOR_INTAKE = path.join(ROOT, 'scripts', 'operator-intake.js');
+const PLAYBOOK_TEST = path.join(ROOT, 'scripts', 'test-operator-playbooks.js');
 const MCP_FIXTURE = path.join(ROOT, 'fixtures', 'synthetic', 'mcp-surface.multi-tool.synthetic.json');
 
 function fail(message, result) {
@@ -27,6 +28,9 @@ function parseJson(text, label, result) {
     fail(`${label}: expected JSON output: ${err.message}`, result);
   }
 }
+
+const playbookResult = cp.spawnSync(process.execPath, [PLAYBOOK_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (playbookResult.status !== 0) fail(`Expected playbook catalog validation success, got ${playbookResult.status}`, playbookResult);
 
 const surfaceDir = fs.mkdtempSync(path.join(os.tmpdir(), 'scope-d-operator-surface-'));
 fs.rmSync(surfaceDir, { recursive: true, force: true });
