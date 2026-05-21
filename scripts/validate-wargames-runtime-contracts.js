@@ -15,6 +15,7 @@ const PAIRS = [
   ['config/schemas/wargames-invocation-envelope.schema.json', 'examples/scope-d/wargames/runtime/negative-fixtures/invocation-missing-michael.invalid.json'],
   ['config/schemas/wargames-invocation-envelope.schema.json', 'examples/scope-d/wargames/runtime/negative-fixtures/invocation-live-execution.invalid.json'],
   ['config/schemas/wargames-runtime-decision-receipt.schema.json', 'examples/scope-d/wargames/runtime/receipt-allow-validate.example.json'],
+  ['config/schemas/wargames-dispatch-summary.schema.json', 'examples/scope-d/wargames/runtime/dispatch-summary-allow.example.json'],
 ];
 
 const errors = [];
