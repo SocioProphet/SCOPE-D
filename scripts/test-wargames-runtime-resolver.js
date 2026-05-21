@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const NODE = process.execPath;
 const RESOLVER = path.join(ROOT, 'scripts', 'wargames-runtime-resolve.js');
 const RUNTIME_CONTRACT_VALIDATOR = path.join(ROOT, 'scripts', 'validate-wargames-runtime-contracts.js');
+const DISPATCH_TESTS = path.join(ROOT, 'scripts', 'test-wargames-dispatch.js');
 
 function runScript(scriptPath, args = []) {
   return childProcess.spawnSync(NODE, [scriptPath, ...args], {
@@ -104,6 +105,8 @@ function main() {
     'hard_block',
     'Live execution was requested'
   );
+
+  expectSuccess('dry-run dispatcher tests', runScript(DISPATCH_TESTS));
 
   console.log('Wargames runtime resolver tests passed.');
 }
