@@ -8,7 +8,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js && node scripts/test-reporting-exports.js && node scripts/test-collector-policy.js && node scripts/test-wargames-runtime-resolver.js && node scripts/test-github-posture-collector.js && node scripts/test-github-repo-source-fetcher.js && node scripts/test-mcp-surface-evaluator.js && node scripts/test-mcp-discovery-normalizer.js && node scripts/test-mcp-live-discovery-client.js && node scripts/test-ai-runtime-exposure-evaluator.js && node scripts/test-k8s-manifest-evaluator.js && node scripts/test-surface-assessment-runner.js",
+    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js && node scripts/test-reporting-exports.js && node scripts/test-collector-policy.js && node scripts/test-wargames-runtime-resolver.js && node scripts/test-github-posture-collector.js && node scripts/test-github-repo-source-fetcher.js && node scripts/test-mcp-surface-evaluator.js && node scripts/test-mcp-discovery-normalizer.js && node scripts/test-mcp-live-discovery-client.js && node scripts/test-ai-runtime-exposure-evaluator.js && node scripts/test-k8s-manifest-evaluator.js && node scripts/test-surface-assessment-runner.js && node scripts/test-operator-workflow.js",
     "validate": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js",
     "validate:wargames": "node scripts/validate-wargames-contracts.js",
     "wargames:resolve": "node scripts/wargames-runtime-resolve.js",
@@ -18,6 +18,7 @@
     "ai-runtime:evaluate-exposure": "node scripts/evaluate-ai-runtime-exposure.js",
     "k8s:evaluate-manifests": "node scripts/evaluate-k8s-manifests.js",
     "surface:assess": "node scripts/run-surface-assessment.js",
+    "operator:intake": "node scripts/operator-intake.js",
     "test:wargames-runtime": "node scripts/test-wargames-runtime-resolver.js",
     "test:github-posture": "node scripts/test-github-posture-collector.js",
     "test:github-source": "node scripts/test-github-repo-source-fetcher.js",
@@ -27,6 +28,7 @@
     "test:ai-runtime-exposure": "node scripts/test-ai-runtime-exposure-evaluator.js",
     "test:k8s-manifests": "node scripts/test-k8s-manifest-evaluator.js",
     "test:surface-runner": "node scripts/test-surface-assessment-runner.js",
+    "test:operator-workflow": "node scripts/test-operator-workflow.js",
     "references:workorders": "node scripts/generate-reference-workorders.js",
     "synthetic:event": "node scripts/generate-synthetic-event.js",
     "scope-d:init": "node scripts/init-run.js",
