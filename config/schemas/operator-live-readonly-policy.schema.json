@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-live-readonly-policy.schema.json",
+  "title": "SCOPE-D Operator Live Read-Only Policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "policyId",
+    "operatorId",
+    "approvalRef",
+    "authorizedTargets",
+    "authorizedSurfaces",
+    "allowedReadMethods",
+    "blockedMethods",
+    "expiresAt",
+    "auditRequired",
+    "executionAllowed",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "policyId": { "type": "string", "pattern": "^operator-live-readonly-policy:[a-z0-9][a-z0-9._:-]*$" },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "approvalRef": { "type": "string", "pattern": "^approval:[a-z0-9][a-z0-9._:-]*$" },
+    "authorizedTargets": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "authorizedSurfaces": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime"] }
+    },
+    "allowedReadMethods": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "enum": ["mcp_tools_list", "github_repo_metadata", "github_branch_protection", "github_actions_permissions", "github_codeowners", "github_environments", "github_security_features", "local_manifest_file_read", "ai_runtime_manifest_read"] }
+    },
+    "blockedMethods": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "enum": ["mcp_tool_call", "arbitrary_json_rpc", "model_prompt_execution", "kubectl_exec", "cluster_mutation", "deployment", "credential_access", "external_scan", "policy_mutation", "repository_mutation"] }
+    },
+    "expiresAt": { "type": "string", "format": "date-time" },
+    "auditRequired": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["emitRunIndex", "emitOperatorCase", "emitClientReport", "recordLedger"],
+      "properties": {
+        "emitRunIndex": { "type": "boolean", "const": true },
+        "emitOperatorCase": { "type": "boolean" },
+        "emitClientReport": { "type": "boolean" },
+        "recordLedger": { "type": "boolean" }
+      }
+    },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "nonClaims": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+  }
+}
