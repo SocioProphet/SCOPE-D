@@ -38,6 +38,13 @@ function githubGet(pathName, token) {
   });
 }
 
+function normalizeEnvironments(data) {
+  return ((data && data.environments) || []).map((env) => ({
+    name: env.name,
+    requiredReviewers: Array.isArray(env.protection_rules) && env.protection_rules.some((rule) => rule.type === 'required_reviewers')
+  }));
+}
+
 async function main() {
   const args = parseArgs(process.argv);
   const token = process.env[args.env] || '';
@@ -50,7 +57,9 @@ async function main() {
   const actionsPermissions = await githubGet(`/repos/${owner}/${repo}/actions/permissions`, token);
   const codeownersRoot = await githubGet(`/repos/${owner}/${repo}/contents/CODEOWNERS?ref=${branchRef}`, token);
   const codeownersGithub = codeownersRoot || await githubGet(`/repos/${owner}/${repo}/contents/.github/CODEOWNERS?ref=${branchRef}`, token);
-  process.stdout.write(`${JSON.stringify({ repo: repoInfo, branchProtection, actionsPermissions, codeownersPresent: Boolean(codeownersGithub) }, null, 2)}\n`);
+  const environmentsSource = await githubGet(`/repos/${owner}/${repo}/environments`, token);
+  const environments = normalizeEnvironments(environmentsSource);
+  process.stdout.write(`${JSON.stringify({ repo: repoInfo, branchProtection, actionsPermissions, codeownersPresent: Boolean(codeownersGithub), environments }, null, 2)}\n`);
 }
 
 main().catch((err) => {
