@@ -34,7 +34,7 @@
     },
     "recommendedControls": { "type": "array", "items": { "type": "string", "minLength": 1 } },
     "redactionState": { "type": "string", "enum": ["synthetic", "redacted", "withheld"] },
-    "liveConnectionUsed": { "type": "boolean", "const": false },
+    "liveConnectionUsed": { "type": "boolean" },
     "liveExecutionPerformed": { "type": "boolean", "const": false }
   }
 }
