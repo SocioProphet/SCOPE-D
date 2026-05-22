@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
+const cp = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const Ajv = require('ajv/dist/2020');
@@ -10,16 +11,24 @@ const ROOT = path.resolve(__dirname, '..');
 const SCHEMA = path.join(ROOT, 'config', 'schemas', 'operator-capability-gate.schema.json');
 const VALID = path.join(ROOT, 'examples', 'scope-d', 'operator-capability-gate.live-readonly.example.json');
 const INVALID = path.join(ROOT, 'fixtures', 'invalid', 'operator-capability-gate-high-risk-enabled.invalid.json');
+const DOCTRINE_TEST = path.join(ROOT, 'scripts', 'test-d-capability-governance-doctrine.js');
 const HIGH_RISK_CLASSES = ['credential_access', 'payload_delivery', 'mutation', 'destructive_behavior'];
 
-function fail(message) {
+function fail(message, result) {
   console.error(message);
+  if (result) {
+    if (result.stdout) console.error(`stdout:\n${result.stdout}`);
+    if (result.stderr) console.error(`stderr:\n${result.stderr}`);
+  }
   process.exit(1);
 }
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
+
+const doctrine = cp.spawnSync(process.execPath, [DOCTRINE_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (doctrine.status !== 0) fail(`Expected D capability doctrine tests success, got ${doctrine.status}`, doctrine);
 
 function schemaErrors(value) {
   const ajv = new Ajv({ allErrors: true, strict: false });
