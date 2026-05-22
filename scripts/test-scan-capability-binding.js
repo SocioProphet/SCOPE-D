@@ -8,6 +8,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const WRAPPER = path.join(ROOT, 'scripts', 'plan-operator-scan-with-capability.js');
+const LIVE_READONLY_TEST = path.join(ROOT, 'scripts', 'test-live-readonly-scan-executor.js');
 const REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
 const VALID_GATE = path.join(ROOT, 'examples', 'scope-d', 'operator-capability-gate.live-readonly.example.json');
@@ -25,6 +26,9 @@ function fail(message, result) {
 function parseJson(text, label, result) {
   try { return JSON.parse(text); } catch (err) { fail(`${label}: expected JSON output: ${err.message}`, result); }
 }
+
+const liveReadOnly = cp.spawnSync(process.execPath, [LIVE_READONLY_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (liveReadOnly.status !== 0) fail(`Expected live read-only scan executor tests success, got ${liveReadOnly.status}`, liveReadOnly);
 
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'scope-d-capability-binding-'));
 const allowDir = path.join(tmpDir, 'allow');
