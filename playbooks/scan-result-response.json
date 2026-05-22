@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "0.1.0",
+  "playbookId": "operator-playbook:scan-result-response",
+  "title": "Scan Result Response",
+  "surfaceKinds": ["web_endpoint", "network_boundary"],
+  "triggerCategories": [
+    "missing_tls",
+    "weak_tls_metadata",
+    "unexpected_open_port",
+    "http_exposure",
+    "service_banner_present",
+    "policy_scope_mismatch",
+    "unresolved_target",
+    "scan_incomplete"
+  ],
+  "requiredEvidence": ["surface-run-index", "assessment", "operator-workorder"],
+  "operatorSteps": [
+    {
+      "stepId": "step-review-scan-assessment",
+      "title": "Review scan result assessment",
+      "instruction": "Review scan result findings, evidence refs, target scope, and policy/plan provenance before recommending controls.",
+      "expectedEvidence": ["operator-scan-result-assessment.json", "operator-scan-result.json"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-plan-exposure-controls",
+      "title": "Plan exposure controls",
+      "instruction": "Draft a non-executing control plan for endpoint exposure, TLS posture, service banners, unexpected services, and incomplete scan coverage.",
+      "expectedEvidence": ["scan-control-plan.md"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    },
+    {
+      "stepId": "step-record-scan-reassessment",
+      "title": "Record scan reassessment command",
+      "instruction": "Record the reassessment command that should be run after approved controls are applied and a new scan result artifact is available.",
+      "expectedEvidence": ["scan-reassessment-command.txt"],
+      "approvalRequired": false,
+      "executionAllowed": false
+    }
+  ],
+  "recommendedControls": [
+    "Verify target scope before any scan-derived remediation planning.",
+    "Require TLS for exposed web endpoints and review certificate metadata.",
+    "Review HTTP exposure and require approved ingress, headers, and transport policy.",
+    "Reduce service banner disclosure where operationally feasible.",
+    "Close or justify unexpected services against approved policy scope.",
+    "Rerun assessment only under policy authorization after control changes."
+  ],
+  "approvalRequired": false,
+  "blockedActions": ["live_execution", "credential_access", "external_scan", "deployment", "policy_mutation"],
+  "nonClaims": [
+    "This playbook does not execute scans.",
+    "This playbook does not contact targets.",
+    "This playbook does not perform exploitation.",
+    "This playbook does not authorize remediation."
+  ],
+  "reassessmentCommand": "npm run operator:scan-result-ingest -- <operator-scan-result.json>",
+  "executionAllowed": false,
+  "createdAt": "2026-05-22T12:20:00Z"
+}
