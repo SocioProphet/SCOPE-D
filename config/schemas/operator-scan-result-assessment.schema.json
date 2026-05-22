@@ -31,7 +31,7 @@
     "findings": { "type": "array", "items": { "$ref": "#/$defs/finding" } },
     "recommendedControls": { "type": "array", "items": { "type": "string", "minLength": 1 } },
     "createdAt": { "type": "string", "format": "date-time" },
-    "networkAccessAttempted": { "type": "boolean", "const": false },
+    "networkAccessAttempted": { "type": "boolean" },
     "scanExecutionPerformed": { "type": "boolean", "const": false }
   },
   "$defs": {
