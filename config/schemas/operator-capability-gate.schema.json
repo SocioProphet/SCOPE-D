@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-capability-gate.schema.json",
+  "title": "SCOPE-D Operator Capability Gate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "gateId",
+    "operatorId",
+    "approvalRef",
+    "capabilityClasses",
+    "authorizedTargets",
+    "allowedModes",
+    "blockedClasses",
+    "controlsRequired",
+    "expiresAt",
+    "executionEnabled",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "gateId": { "type": "string", "pattern": "^operator-capability-gate:[a-z0-9][a-z0-9._:-]*$" },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "approvalRef": { "type": "string", "pattern": "^approval:[a-z0-9][a-z0-9._:-]*$" },
+    "capabilityClasses": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "enum": ["live_target_action", "network_access", "credential_access", "payload_delivery", "mutation", "destructive_behavior"] }
+    },
+    "authorizedTargets": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "allowedModes": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["planning", "dry_run", "local_passive", "live_readonly"] } },
+    "blockedClasses": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "enum": ["credential_access", "payload_delivery", "mutation", "destructive_behavior"] }
+    },
+    "controlsRequired": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targetScope", "rateLimit", "decisionReceipt", "planReceipt", "resultReceipt", "operatorLedger", "clientReport"],
+      "properties": {
+        "targetScope": { "type": "boolean", "const": true },
+        "rateLimit": { "type": "boolean", "const": true },
+        "decisionReceipt": { "type": "boolean", "const": true },
+        "planReceipt": { "type": "boolean", "const": true },
+        "resultReceipt": { "type": "boolean", "const": true },
+        "operatorLedger": { "type": "boolean" },
+        "clientReport": { "type": "boolean" }
+      }
+    },
+    "expiresAt": { "type": "string", "format": "date-time" },
+    "executionEnabled": { "type": "boolean" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "nonClaims": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+  }
+}
