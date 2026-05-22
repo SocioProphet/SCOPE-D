@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/live-readonly-execution-policy.schema.json",
+  "title": "SCOPE-D Live Read-Only Execution Policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "policyId",
+    "operatorId",
+    "approvalRef",
+    "allowedTargetRefs",
+    "allowedMethods",
+    "maxRequestsPerRun",
+    "maxRequestsPerTarget",
+    "timeoutMs",
+    "egressProfileRef",
+    "blockedClasses",
+    "expiresAt",
+    "createdAt",
+    "executionEnabled",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "policyId": { "type": "string", "pattern": "^live-readonly-execution-policy:[a-z0-9][a-z0-9._:-]*$" },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "approvalRef": { "type": "string", "pattern": "^approval:[a-z0-9][a-z0-9._:-]*$" },
+    "allowedTargetRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "allowedMethods": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head"] } },
+    "maxRequestsPerRun": { "type": "integer", "minimum": 1, "maximum": 25 },
+    "maxRequestsPerTarget": { "type": "integer", "minimum": 1, "maximum": 10 },
+    "timeoutMs": { "type": "integer", "minimum": 500, "maximum": 10000 },
+    "egressProfileRef": { "type": "string", "minLength": 1 },
+    "blockedClasses": {
+      "type": "array",
+      "minItems": 4,
+      "items": { "type": "string", "enum": ["credential_access", "payload_delivery", "mutation", "destructive_behavior"] }
+    },
+    "expiresAt": { "type": "string", "format": "date-time" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "executionEnabled": { "type": "boolean", "const": false },
+    "nonClaims": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+  }
+}
