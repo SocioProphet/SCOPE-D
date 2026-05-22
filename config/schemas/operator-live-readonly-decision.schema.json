@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-live-readonly-decision.schema.json",
+  "title": "SCOPE-D Operator Live Read-Only Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "decisionId",
+    "requestId",
+    "policyId",
+    "operatorId",
+    "targetRef",
+    "surfaceKind",
+    "readMethod",
+    "decision",
+    "reason",
+    "createdAt",
+    "auditRequired",
+    "executionAllowed",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "decisionId": { "type": "string", "pattern": "^operator-live-readonly-decision:[a-z0-9][a-z0-9._:-]*$" },
+    "requestId": { "type": "string", "pattern": "^operator-live-readonly-request:[a-z0-9][a-z0-9._:-]*$" },
+    "policyId": { "type": "string", "pattern": "^operator-live-readonly-policy:[a-z0-9][a-z0-9._:-]*$" },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime"] },
+    "readMethod": { "type": "string", "minLength": 1 },
+    "decision": { "type": "string", "enum": ["allow", "hard_block"] },
+    "reason": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "auditRequired": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["emitRunIndex", "emitOperatorCase", "emitClientReport", "recordLedger"],
+      "properties": {
+        "emitRunIndex": { "type": "boolean", "const": true },
+        "emitOperatorCase": { "type": "boolean" },
+        "emitClientReport": { "type": "boolean" },
+        "recordLedger": { "type": "boolean" }
+      }
+    },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  }
+}
