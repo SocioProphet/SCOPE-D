@@ -30,16 +30,16 @@
     },
     {
       "capabilityId": "d-capability:credential-access",
-      "label": "Credential Access",
+      "label": "Secret Exposure & Credential Posture",
       "class": "credential_access",
       "currentMaturity": "D0",
-      "productState": "recognized_blocked",
-      "operatorIntent": "Assess credential posture from supplied evidence without using credentials.",
+      "productState": "secret_exposure_extraction_next",
+      "operatorIntent": "Extract, classify, hash, redact, and report in-scope secret exposures from authorized evidence so operators can rotate and harden without using the credential material.",
       "implementedModes": [],
-      "requiredGates": ["credential_posture_policy", "source_evidence_receipt", "redaction_profile"],
-      "requiredEvidence": ["secret_scan_result", "token_scope_metadata", "credential_posture_assessment"],
-      "blockedActions": ["login_attempt", "token_use", "password_spraying", "credential_replay", "secret_extraction"],
-      "nextPromotion": "Implement user-supplied credential posture ingestion, not credential use."
+      "requiredGates": ["secret_exposure_policy", "credential_posture_policy", "source_evidence_receipt", "redaction_profile", "rotation_guidance"],
+      "requiredEvidence": ["secret_exposure_manifest", "secret_finding_hashes", "scope_metadata", "credential_posture_assessment", "redacted_secret_report"],
+      "blockedActions": ["interactive_login", "credential_material_use", "password_spraying", "credential_replay", "plaintext_secret_export", "unapproved_secret_disclosure"],
+      "nextPromotion": "Implement authorized secret exposure extraction from supplied or in-scope evidence, with hashing, redaction, severity, owner routing, and rotation guidance."
     },
     {
       "capabilityId": "d-capability:payload-delivery",
@@ -84,6 +84,7 @@
   "nonClaims": [
     "Capability recognition is not authorization.",
     "Blocked capabilities are not executable through this catalog.",
-    "Mutation, credential access, payload delivery, and destructive behavior require separate future gated programs."
+    "Secret exposure extraction is for authorized hardening and rotation workflows, not credential material use or disclosure.",
+    "Mutation, payload delivery, and destructive behavior require separate future gated programs."
   ]
 }
