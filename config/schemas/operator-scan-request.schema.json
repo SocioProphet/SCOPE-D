@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-scan-request.schema.json",
+  "title": "SCOPE-D Operator Scan Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "requestId",
+    "operatorId",
+    "policyRef",
+    "targetRef",
+    "surfaceKind",
+    "requestedMethods",
+    "requestedAt",
+    "scanExecutionRequested",
+    "credentialAccessRequested",
+    "payloadDeliveryRequested",
+    "mutationRequested"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "requestId": { "type": "string", "pattern": "^operator-scan-request:[a-z0-9][a-z0-9._:-]*$" },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "policyRef": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime", "network_boundary", "web_endpoint"] },
+    "requestedMethods": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head", "tcp_connect", "service_banner_read", "exploit_attempt", "credential_access", "payload_delivery", "brute_force", "destructive_probe", "service_disruption"] } },
+    "requestedAt": { "type": "string", "format": "date-time" },
+    "scanExecutionRequested": { "type": "boolean" },
+    "credentialAccessRequested": { "type": "boolean", "const": false },
+    "payloadDeliveryRequested": { "type": "boolean", "const": false },
+    "mutationRequested": { "type": "boolean", "const": false }
+  }
+}

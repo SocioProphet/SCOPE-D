@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "operator-scan-policy:michael-synthetic-boundary",
+  "operatorId": "operator:michael",
+  "approvalRef": "approval:michael-scan-planning-2026-05-22",
+  "authorizedTargets": [
+    {
+      "targetRef": "example.com",
+      "targetType": "domain",
+      "scope": "lab_synthetic"
+    },
+    {
+      "targetRef": "synthetic-mcp-server:lab-tools-list",
+      "targetType": "mcp_server",
+      "scope": "lab_synthetic"
+    }
+  ],
+  "allowedSurfaces": ["network_boundary", "web_endpoint", "mcp_discovery"],
+  "allowedScanMethods": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head"],
+  "blockedMethods": [
+    "exploit_attempt",
+    "credential_access",
+    "payload_delivery",
+    "brute_force",
+    "destructive_probe",
+    "service_disruption",
+    "evasion",
+    "persistence",
+    "data_exfiltration",
+    "third_party_targeting"
+  ],
+  "rateLimit": {
+    "maxRequestsPerMinute": 10,
+    "maxTargetsPerRun": 10
+  },
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "auditRequired": {
+    "emitDecision": true,
+    "emitPlan": true,
+    "emitRunIndex": true,
+    "recordLedger": true
+  },
+  "scanExecutionAllowed": false,
+  "createdAt": "2026-05-22T00:55:00Z",
+  "nonClaims": [
+    "This policy authorizes scan planning only.",
+    "This policy does not authorize exploit attempts.",
+    "This policy does not authorize credential access.",
+    "This policy does not authorize payload delivery or destructive probing."
+  ]
+}

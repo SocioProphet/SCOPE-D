@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-scan-decision.schema.json",
+  "title": "SCOPE-D Operator Scan Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "decisionId",
+    "requestId",
+    "policyId",
+    "operatorId",
+    "targetRef",
+    "surfaceKind",
+    "decision",
+    "allowedMethods",
+    "blockedMethods",
+    "reason",
+    "createdAt",
+    "scanExecutionAllowed",
+    "scanExecutionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "decisionId": { "type": "string", "pattern": "^operator-scan-decision:[a-z0-9][a-z0-9._:-]*$" },
+    "requestId": { "type": "string", "pattern": "^operator-scan-request:[a-z0-9][a-z0-9._:-]*$" },
+    "policyId": { "type": "string", "pattern": "^operator-scan-policy:[a-z0-9][a-z0-9._:-]*$" },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime", "network_boundary", "web_endpoint"] },
+    "decision": { "type": "string", "enum": ["allow_plan", "hard_block"] },
+    "allowedMethods": { "type": "array", "items": { "type": "string" } },
+    "blockedMethods": { "type": "array", "items": { "type": "string" } },
+    "reason": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "scanExecutionAllowed": { "type": "boolean", "const": false },
+    "scanExecutionPerformed": { "type": "boolean", "const": false }
+  }
+}

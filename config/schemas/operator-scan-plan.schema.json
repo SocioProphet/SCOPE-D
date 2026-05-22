@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-scan-plan.schema.json",
+  "title": "SCOPE-D Operator Scan Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "planId",
+    "decisionRef",
+    "requestRef",
+    "policyRef",
+    "targetRef",
+    "surfaceKind",
+    "plannedMethods",
+    "rateLimit",
+    "createdAt",
+    "scanExecutionAllowed",
+    "scanExecutionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "planId": { "type": "string", "pattern": "^operator-scan-plan:[a-z0-9][a-z0-9._:-]*$" },
+    "decisionRef": { "type": "string", "minLength": 1 },
+    "requestRef": { "type": "string", "minLength": 1 },
+    "policyRef": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime", "network_boundary", "web_endpoint"] },
+    "plannedMethods": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head", "tcp_connect", "service_banner_read"] } },
+    "rateLimit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maxRequestsPerMinute", "maxTargetsPerRun"],
+      "properties": {
+        "maxRequestsPerMinute": { "type": "integer", "minimum": 1, "maximum": 60 },
+        "maxTargetsPerRun": { "type": "integer", "minimum": 1, "maximum": 100 }
+      }
+    },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "scanExecutionAllowed": { "type": "boolean", "const": false },
+    "scanExecutionPerformed": { "type": "boolean", "const": false }
+  }
+}
