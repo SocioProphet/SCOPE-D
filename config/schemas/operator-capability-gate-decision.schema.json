@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-capability-gate-decision.schema.json",
+  "title": "SCOPE-D Operator Capability Gate Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "decisionId",
+    "gateId",
+    "requestId",
+    "operatorId",
+    "targetRef",
+    "surfaceKind",
+    "decision",
+    "allowedCapabilityClasses",
+    "blockedCapabilityClasses",
+    "allowedModes",
+    "reason",
+    "createdAt",
+    "executionEnabled",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "decisionId": { "type": "string", "pattern": "^operator-capability-gate-decision:[a-z0-9][a-z0-9._:-]*$" },
+    "gateId": { "type": "string", "pattern": "^operator-capability-gate:[a-z0-9][a-z0-9._:-]*$" },
+    "requestId": { "type": "string", "pattern": "^operator-scan-request:[a-z0-9][a-z0-9._:-]*$" },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime", "network_boundary", "web_endpoint"] },
+    "decision": { "type": "string", "enum": ["allow_mode", "hard_block"] },
+    "allowedCapabilityClasses": { "type": "array", "items": { "type": "string" } },
+    "blockedCapabilityClasses": { "type": "array", "items": { "type": "string" } },
+    "allowedModes": { "type": "array", "items": { "type": "string" } },
+    "reason": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "executionEnabled": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  }
+}
