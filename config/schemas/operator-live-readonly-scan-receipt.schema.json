@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-live-readonly-scan-receipt.schema.json",
+  "title": "SCOPE-D Operator Live Read-Only Scan Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "receiptId",
+    "planRef",
+    "capabilityDecisionRef",
+    "targetRef",
+    "surfaceKind",
+    "mode",
+    "observations",
+    "createdAt",
+    "networkAccessAttempted",
+    "liveReadOnlyPerformed",
+    "credentialAccessAttempted",
+    "payloadDeliveryAttempted",
+    "mutationAttempted",
+    "destructiveBehaviorAttempted"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "receiptId": { "type": "string", "pattern": "^operator-live-readonly-scan-receipt:[a-z0-9][a-z0-9._:-]*$" },
+    "planRef": { "type": "string", "minLength": 1 },
+    "capabilityDecisionRef": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["network_boundary", "web_endpoint"] },
+    "mode": { "type": "string", "enum": ["mock_live_readonly", "live_readonly"] },
+    "observations": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/observation" } },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "networkAccessAttempted": { "type": "boolean" },
+    "liveReadOnlyPerformed": { "type": "boolean" },
+    "credentialAccessAttempted": { "type": "boolean", "const": false },
+    "payloadDeliveryAttempted": { "type": "boolean", "const": false },
+    "mutationAttempted": { "type": "boolean", "const": false },
+    "destructiveBehaviorAttempted": { "type": "boolean", "const": false }
+  },
+  "$defs": {
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observationId", "method", "status", "evidence", "findingHint"],
+      "properties": {
+        "observationId": { "type": "string", "pattern": "^live-readonly-observation:[a-z0-9][a-z0-9._:-]*$" },
+        "method": { "type": "string", "enum": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head"] },
+        "status": { "type": "string", "enum": ["observed", "not_observed", "error", "not_supported"] },
+        "evidence": { "type": "object", "additionalProperties": true },
+        "findingHint": { "type": "string", "enum": ["none", "missing_tls", "weak_tls_metadata", "http_exposure", "unresolved_target", "scan_incomplete"] }
+      }
+    }
+  }
+}
