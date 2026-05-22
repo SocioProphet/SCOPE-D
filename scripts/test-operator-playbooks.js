@@ -15,6 +15,7 @@ const REQUIRED = [
   'k8s-workload-hardening.json',
   'github-repo-posture-hardening.json',
   'cross-surface-agent-runtime-hardening.json',
+  'scan-result-response.json',
 ];
 
 function fail(message) {
@@ -47,7 +48,7 @@ for (const filename of REQUIRED) {
   for (const surface of playbook.surfaceKinds) surfaces.add(surface);
 }
 
-for (const expected of ['mcp_surface', 'mcp_discovery', 'ai_runtime', 'k8s_manifest', 'github_posture', 'cross_surface']) {
+for (const expected of ['mcp_surface', 'mcp_discovery', 'ai_runtime', 'k8s_manifest', 'github_posture', 'network_boundary', 'web_endpoint', 'cross_surface']) {
   if (!surfaces.has(expected)) fail(`Missing surface coverage ${expected}`);
 }
 
