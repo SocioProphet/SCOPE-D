@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-scan-dry-run-receipt.schema.json",
+  "title": "SCOPE-D Operator Scan Dry-Run Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "receiptId",
+    "planRef",
+    "decisionRef",
+    "targetRef",
+    "surfaceKind",
+    "intendedSteps",
+    "createdAt",
+    "networkAccessAttempted",
+    "scanExecutionAllowed",
+    "scanExecutionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "receiptId": { "type": "string", "pattern": "^operator-scan-dry-run:[a-z0-9][a-z0-9._:-]*$" },
+    "planRef": { "type": "string", "minLength": 1 },
+    "decisionRef": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime", "network_boundary", "web_endpoint"] },
+    "intendedSteps": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/intendedStep" }
+    },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "networkAccessAttempted": { "type": "boolean", "const": false },
+    "scanExecutionAllowed": { "type": "boolean", "const": false },
+    "scanExecutionPerformed": { "type": "boolean", "const": false }
+  },
+  "$defs": {
+    "intendedStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stepId", "method", "targetRef", "description", "executionStatus", "networkAccessAttempted"],
+      "properties": {
+        "stepId": { "type": "string", "pattern": "^scan-step-[a-z0-9][a-z0-9._:-]*$" },
+        "method": { "type": "string", "enum": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head", "tcp_connect", "service_banner_read"] },
+        "targetRef": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "executionStatus": { "type": "string", "const": "not_executed" },
+        "networkAccessAttempted": { "type": "boolean", "const": false }
+      }
+    }
+  }
+}
