@@ -50,9 +50,20 @@ if (byClass.get('network_access').currentMaturity !== 'D4') fail('Expected netwo
 for (const blockedClass of ['credential_access', 'payload_delivery', 'mutation', 'destructive_behavior']) {
   if (byClass.get(blockedClass).currentMaturity !== 'D0') fail(`Expected ${blockedClass} at D0.`, capability);
 }
+
+const credential = byClass.get('credential_access');
+if (credential.label !== 'Secret Exposure & Credential Posture') fail('Expected credential capability to be secret exposure posture.', capability);
+if (credential.productState !== 'secret_exposure_extraction_next') fail('Expected secret exposure extraction as next product state.', capability);
+if (!credential.nextPromotion.includes('authorized secret exposure extraction')) fail('Expected authorized secret exposure extraction next promotion.', capability);
+if (!credential.requiredEvidence.includes('secret_exposure_manifest')) fail('Expected secret exposure manifest evidence.', capability);
+if (!credential.blockedActions.includes('credential_material_use')) fail('Expected credential material use to remain blocked.', capability);
+if (!credential.blockedActions.includes('plaintext_secret_export')) fail('Expected plaintext secret export to remain blocked.', capability);
+if (credential.blockedActions.includes('secret_extraction')) fail('Secret extraction must not be generically blocked; it is a governed hardening feature.', capability);
+
 if (!byClass.get('mutation').blockedActions.includes('direct_write')) fail('Expected mutation to block direct_write.', capability);
 if (!byClass.get('payload_delivery').blockedActions.includes('exploit_payload')) fail('Expected payload delivery to block exploit_payload.', capability);
 if (!capabilityPayload.nonClaims.some((claim) => claim.includes('Capability recognition is not authorization'))) fail('Expected capability non-claims.', capability);
+if (!capabilityPayload.nonClaims.some((claim) => claim.includes('Secret exposure extraction is for authorized hardening'))) fail('Expected secret exposure hardening non-claim.', capability);
 
 const outDir = fs.mkdtempSync(path.join(os.tmpdir(), 'scope-d-product-cli-'));
 fs.rmSync(outDir, { recursive: true, force: true });
