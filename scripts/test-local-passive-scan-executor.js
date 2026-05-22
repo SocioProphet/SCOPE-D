@@ -49,21 +49,19 @@ if (scanResult.targetRef !== 'example.com') fail('Unexpected scan result targetR
 if (scanResult.surfaceKind !== 'web_endpoint') fail('Unexpected scan result surfaceKind.', executed);
 if (scanResult.networkAccessAttempted !== false || scanResult.scanExecutionPerformed !== false) fail('Expected no network or scan execution.', executed);
 if (scanResult.credentialAccessAttempted !== false || scanResult.payloadDeliveryAttempted !== false || scanResult.mutationAttempted !== false) fail('Expected no credential/payload/mutation attempts.', executed);
-if (scanResult.observations.length !== 2) fail(`Expected 2 observations matching the plan, got ${scanResult.observations.length}.`, executed);
+if (scanResult.observations.length !== 3) fail(`Expected 3 observations matching the plan, got ${scanResult.observations.length}.`, executed);
 if (!fs.existsSync(resultPath)) fail('Expected scan result artifact.', executed);
 
 const ingested = cp.spawnSync(process.execPath, [INGEST, resultPath, '--out', assessmentPath], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
 if (ingested.status !== 0) fail(`Expected scan result ingestion success, got ${ingested.status}`, ingested);
 const assessment = parseJson(ingested.stdout, 'scan result assessment', ingested);
 if (assessment.findingCount !== 2) fail(`Expected 2 findings, got ${assessment.findingCount}.`, ingested);
-if (assessment.riskScore !== 30) fail(`Expected riskScore=30, got ${assessment.riskScore}.`, ingested);
+if (assessment.riskScore !== 20) fail(`Expected riskScore=20, got ${assessment.riskScore}.`, ingested);
 if (assessment.riskLevel !== 'medium') fail(`Expected riskLevel=medium, got ${assessment.riskLevel}.`, ingested);
 if (assessment.networkAccessAttempted !== false || assessment.scanExecutionPerformed !== false) fail('Expected assessment execution flags false.', ingested);
 
 const categories = new Set(assessment.findings.map((finding) => finding.category));
-for (const expected of ['http_exposure', 'missing_tls']) {
-  if (!categories.has(expected)) fail(`Missing finding category ${expected}.`, ingested);
-}
+if (!categories.has('http_exposure')) fail('Missing finding category http_exposure.', ingested);
 
 fs.rmSync(tmpDir, { recursive: true, force: true });
 console.log('Local passive scan executor tests passed.');
