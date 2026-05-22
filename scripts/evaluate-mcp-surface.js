@@ -176,7 +176,7 @@ function assess(manifest, manifestRef) {
       findings,
       recommendedControls: Array.from(new Set(findings.map((item) => item.recommendation))),
       redactionState: manifest.redactionState,
-      liveConnectionUsed: false,
+      liveConnectionUsed: manifest.liveConnectionUsed === true,
       liveExecutionPerformed: false,
     },
     risks,
@@ -187,7 +187,6 @@ try {
   const args = parseArgs(process.argv);
   const manifest = readJson(args.input);
   validate(SURFACE_SCHEMA, manifest, 'MCP surface manifest');
-  if (manifest.liveConnectionUsed !== false) throw new Error('MCP surface evaluator does not accept liveConnectionUsed=true.');
   const result = assess(manifest, args.input);
   validate(ASSESSMENT_SCHEMA, result.assessment, 'MCP surface assessment');
   for (const risk of result.risks) validate(RISK_SCHEMA, risk, `MCP tool risk ${risk.id}`);
