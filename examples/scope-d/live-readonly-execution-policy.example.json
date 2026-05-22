@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "policyId": "live-readonly-execution-policy:example-web-endpoint",
+  "operatorId": "operator:michael",
+  "approvalRef": "approval:michael-live-readonly-execution-2026-05-22",
+  "allowedTargetRefs": ["example.com"],
+  "allowedMethods": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head"],
+  "maxRequestsPerRun": 10,
+  "maxRequestsPerTarget": 10,
+  "timeoutMs": 5000,
+  "egressProfileRef": "egress-profile:default-readonly",
+  "blockedClasses": ["credential_access", "payload_delivery", "mutation", "destructive_behavior"],
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "createdAt": "2026-05-22T17:05:00Z",
+  "executionEnabled": false,
+  "nonClaims": [
+    "This policy bounds live-read-only observation only.",
+    "This policy does not authorize credential access.",
+    "This policy does not authorize payload delivery.",
+    "This policy does not authorize mutation.",
+    "This policy does not authorize destructive behavior."
+  ]
+}
