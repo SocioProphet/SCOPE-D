@@ -8,6 +8,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const RUNNER = path.join(ROOT, 'scripts', 'run-scan-assurance.js');
+const MANIFEST_TEST = path.join(ROOT, 'scripts', 'test-run-manifest.js');
 const REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
 const GATE = path.join(ROOT, 'examples', 'scope-d', 'operator-capability-gate.live-readonly.example.json');
@@ -73,6 +74,9 @@ function runAssurance(label, args, expectedStatus, env) {
   if (result.status !== expectedStatus) fail(`Expected ${label} status ${expectedStatus}, got ${result.status}`, result);
   return result;
 }
+
+const manifest = cp.spawnSync(process.execPath, [MANIFEST_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (manifest.status !== 0) fail(`Expected run manifest tests success, got ${manifest.status}`, manifest);
 
 const localDir = fs.mkdtempSync(path.join(os.tmpdir(), 'scope-d-scan-assurance-local-'));
 fs.rmSync(localDir, { recursive: true, force: true });
