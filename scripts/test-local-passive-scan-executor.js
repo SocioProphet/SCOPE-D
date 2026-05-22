@@ -11,6 +11,7 @@ const PLANNER = path.join(ROOT, 'scripts', 'plan-operator-scan.js');
 const EXECUTOR = path.join(ROOT, 'scripts', 'run-local-passive-scan.js');
 const INGEST = path.join(ROOT, 'scripts', 'ingest-operator-scan-result.js');
 const BRIDGE_TEST = path.join(ROOT, 'scripts', 'test-scan-operator-bridge.js');
+const ASSURANCE_TEST = path.join(ROOT, 'scripts', 'test-scan-assurance-runner.js');
 const REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
 const SOURCE = path.join(ROOT, 'fixtures', 'synthetic', 'operator-local-passive-scan-source.web-endpoint.synthetic.json');
@@ -68,5 +69,8 @@ fs.rmSync(tmpDir, { recursive: true, force: true });
 
 const bridge = cp.spawnSync(process.execPath, [BRIDGE_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
 if (bridge.status !== 0) fail(`Expected scan operator bridge test success, got ${bridge.status}`, bridge);
+
+const assurance = cp.spawnSync(process.execPath, [ASSURANCE_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (assurance.status !== 0) fail(`Expected scan assurance runner test success, got ${assurance.status}`, assurance);
 
 console.log('Local passive scan executor tests passed.');
