@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "0.1.0",
+  "catalogId": "d-capability-catalog:scope-d-product-v0-1",
+  "capabilities": [
+    {
+      "capabilityId": "d-capability:live-target-action",
+      "label": "Live Target Action",
+      "class": "live_target_action",
+      "currentMaturity": "D4",
+      "productState": "gated_live_readonly",
+      "operatorIntent": "Observe an explicitly authorized target without modifying it.",
+      "implementedModes": ["mock_live_readonly", "live_readonly"],
+      "requiredGates": ["capability_gate", "capability_decision", "scan_policy", "scan_plan", "execution_policy", "environment_gate"],
+      "requiredEvidence": ["live_readonly_scan_receipt", "egress_audit_receipt", "scan_result", "scan_assessment", "client_report"],
+      "blockedActions": ["write", "exploit_validation", "authenticated_action", "destructive_check"],
+      "nextPromotion": "Improve operator UX and audit summaries before adding broader target actions."
+    },
+    {
+      "capabilityId": "d-capability:network-access",
+      "label": "Network Access",
+      "class": "network_access",
+      "currentMaturity": "D4",
+      "productState": "method_scoped_readonly",
+      "operatorIntent": "Perform DNS, TLS metadata, or HTTP HEAD read-only checks under policy.",
+      "implementedModes": ["mock_live_readonly", "live_readonly"],
+      "requiredGates": ["target_allowlist", "method_allowlist", "rate_limit", "timeout", "egress_profile", "egress_audit"],
+      "requiredEvidence": ["execution_policy", "egress_audit_receipt", "scan_result", "redacted_evidence_package"],
+      "blockedActions": ["broad_scan", "port_sweep", "crawler", "unaudited_egress", "service_disruption"],
+      "nextPromotion": "Add batch live-readonly audit summaries and target allowlist review."
+    },
+    {
+      "capabilityId": "d-capability:credential-access",
+      "label": "Secret Exposure & Credential Posture",
+      "class": "credential_access",
+      "currentMaturity": "D0",
+      "productState": "secret_exposure_extraction_next",
+      "operatorIntent": "Extract, classify, hash, redact, and report in-scope secret exposures from authorized evidence so operators can rotate and harden without using the credential material.",
+      "implementedModes": [],
+      "requiredGates": ["secret_exposure_policy", "credential_posture_policy", "source_evidence_receipt", "redaction_profile", "rotation_guidance"],
+      "requiredEvidence": ["secret_exposure_manifest", "secret_finding_hashes", "scope_metadata", "credential_posture_assessment", "redacted_secret_report"],
+      "blockedActions": ["interactive_login", "credential_material_use", "password_spraying", "credential_replay", "plaintext_secret_export", "unapproved_secret_disclosure"],
+      "nextPromotion": "Implement authorized secret exposure extraction from supplied or in-scope evidence, with hashing, redaction, severity, owner routing, and rotation guidance."
+    },
+    {
+      "capabilityId": "d-capability:payload-delivery",
+      "label": "Payload Delivery",
+      "class": "payload_delivery",
+      "currentMaturity": "D0",
+      "productState": "recognized_blocked",
+      "operatorIntent": "Model payload/control validation plans and ingest synthetic or supplied results.",
+      "implementedModes": [],
+      "requiredGates": ["payload_simulation_policy", "payload_plan", "synthetic_result_receipt"],
+      "requiredEvidence": ["payload_plan_dry_run", "payload_result_fixture", "client_safe_payload_report"],
+      "blockedActions": ["exploit_payload", "shell", "persistence", "exfiltration", "active_exploitation"],
+      "nextPromotion": "Implement payload simulation planning and synthetic result ingestion only."
+    },
+    {
+      "capabilityId": "d-capability:mutation",
+      "label": "Mutation",
+      "class": "mutation",
+      "currentMaturity": "D0",
+      "productState": "recognized_blocked",
+      "operatorIntent": "Generate remediation proposals, diffs, rollback plans, and reassessment plans before any write.",
+      "implementedModes": [],
+      "requiredGates": ["mutation_policy", "mutation_request", "mutation_decision", "rollback_plan", "reassessment_plan"],
+      "requiredEvidence": ["remediation_plan", "proposed_diff", "rollback_plan", "post_change_reassessment_plan"],
+      "blockedActions": ["direct_write", "auto_merge", "deploy", "cluster_apply", "production_mutation"],
+      "nextPromotion": "Implement D5 proposal-only remediation plan generation."
+    },
+    {
+      "capabilityId": "d-capability:destructive-behavior",
+      "label": "Destructive Behavior",
+      "class": "destructive_behavior",
+      "currentMaturity": "D0",
+      "productState": "recognized_blocked",
+      "operatorIntent": "Model blast radius and rollback readiness without destructive execution.",
+      "implementedModes": [],
+      "requiredGates": ["tabletop_policy", "blast_radius_model", "rollback_readiness_review"],
+      "requiredEvidence": ["tabletop_scenario", "blast_radius_report", "rollback_readiness_assessment"],
+      "blockedActions": ["deletion", "service_disruption", "dos", "resource_exhaustion", "destructive_live_testing"],
+      "nextPromotion": "Implement tabletop and blast-radius modeling only."
+    }
+  ],
+  "nonClaims": [
+    "Capability recognition is not authorization.",
+    "Blocked capabilities are not executable through this catalog.",
+    "Secret exposure extraction is for authorized hardening and rotation workflows, not credential material use or disclosure.",
+    "Mutation, payload delivery, and destructive behavior require separate future gated programs."
+  ]
+}
