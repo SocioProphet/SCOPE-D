@@ -121,7 +121,7 @@ function assess(result, resultRef) {
     findings,
     recommendedControls: Array.from(new Set(findings.map((finding) => finding.recommendation))),
     createdAt: new Date().toISOString(),
-    networkAccessAttempted: false,
+    networkAccessAttempted: result.networkAccessAttempted === true,
     scanExecutionPerformed: false,
   };
 }
@@ -130,7 +130,7 @@ try {
   const args = parseArgs(process.argv);
   const result = readJson(args.input);
   validate(RESULT_SCHEMA, result, 'operator scan result');
-  if (result.networkAccessAttempted !== false) throw new Error('Scan result ingestion refuses networkAccessAttempted=true.');
+  if (result.networkAccessAttempted === true && result.resultSource !== 'live_readonly') throw new Error('Only live_readonly scan results may record networkAccessAttempted=true.');
   if (result.scanExecutionPerformed !== false) throw new Error('Scan result ingestion refuses scanExecutionPerformed=true.');
   if (result.credentialAccessAttempted !== false || result.payloadDeliveryAttempted !== false || result.mutationAttempted !== false) {
     throw new Error('Scan result ingestion refuses credential, payload, or mutation attempts.');
