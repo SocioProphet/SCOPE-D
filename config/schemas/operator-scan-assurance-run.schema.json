@@ -8,9 +8,11 @@
     "schemaVersion",
     "runId",
     "clientRef",
+    "mode",
     "policyRef",
     "requestRef",
     "planRef",
+    "liveReadOnlyReceiptRef",
     "scanResultRef",
     "scanAssessmentRef",
     "surfaceRunIndexRef",
@@ -29,9 +31,11 @@
     "schemaVersion": { "type": "string", "const": "0.1.0" },
     "runId": { "type": "string", "pattern": "^operator-scan-assurance-run:[a-z0-9][a-z0-9._:-]*$" },
     "clientRef": { "type": "string", "minLength": 1 },
+    "mode": { "type": "string", "enum": ["local_passive", "mock_live_readonly", "live_readonly"] },
     "policyRef": { "type": "string", "minLength": 1 },
     "requestRef": { "type": "string", "minLength": 1 },
     "planRef": { "type": "string", "minLength": 1 },
+    "liveReadOnlyReceiptRef": { "type": ["string", "null"] },
     "scanResultRef": { "type": "string", "minLength": 1 },
     "scanAssessmentRef": { "type": "string", "minLength": 1 },
     "surfaceRunIndexRef": { "type": "string", "minLength": 1 },
@@ -41,9 +45,16 @@
     "dashboardRef": { "type": "string", "minLength": 1 },
     "clientReportRef": { "type": "string", "minLength": 1 },
     "createdAt": { "type": "string", "format": "date-time" },
-    "networkAccessAttempted": { "type": "boolean", "const": false },
+    "networkAccessAttempted": { "type": "boolean" },
     "scanExecutionPerformed": { "type": "boolean", "const": false },
     "executionAllowed": { "type": "boolean", "const": false },
     "executionPerformed": { "type": "boolean", "const": false }
-  }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "mode": { "const": "live_readonly" } }, "required": ["mode"] },
+      "then": { "properties": { "networkAccessAttempted": { "type": "boolean" } } },
+      "else": { "properties": { "networkAccessAttempted": { "const": false } } }
+    }
+  ]
 }
