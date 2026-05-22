@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.0",
+  "gateId": "operator-capability-gate:invalid-high-risk-enabled",
+  "operatorId": "operator:michael",
+  "approvalRef": "approval:michael-invalid-2026-05-22",
+  "capabilityClasses": ["live_target_action", "network_access", "credential_access", "payload_delivery", "mutation", "destructive_behavior"],
+  "authorizedTargets": ["example.com"],
+  "allowedModes": ["planning", "dry_run", "local_passive", "live_readonly"],
+  "blockedClasses": ["credential_access", "payload_delivery", "mutation", "destructive_behavior"],
+  "controlsRequired": {
+    "targetScope": true,
+    "rateLimit": true,
+    "decisionReceipt": true,
+    "planReceipt": true,
+    "resultReceipt": true,
+    "operatorLedger": true,
+    "clientReport": true
+  },
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "executionEnabled": true,
+  "createdAt": "2026-05-22T13:20:00Z",
+  "nonClaims": [
+    "Invalid fixture: high-risk classes cannot be execution-enabled in this tranche."
+  ]
+}
