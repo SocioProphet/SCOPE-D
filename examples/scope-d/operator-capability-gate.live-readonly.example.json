@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.0",
+  "gateId": "operator-capability-gate:live-readonly-network-example",
+  "operatorId": "operator:michael",
+  "approvalRef": "approval:michael-live-readonly-network-2026-05-22",
+  "capabilityClasses": ["live_target_action", "network_access"],
+  "authorizedTargets": ["example.com"],
+  "allowedModes": ["planning", "dry_run", "local_passive", "live_readonly"],
+  "blockedClasses": ["credential_access", "payload_delivery", "mutation", "destructive_behavior"],
+  "controlsRequired": {
+    "targetScope": true,
+    "rateLimit": true,
+    "decisionReceipt": true,
+    "planReceipt": true,
+    "resultReceipt": true,
+    "operatorLedger": true,
+    "clientReport": true
+  },
+  "expiresAt": "2026-12-31T23:59:59Z",
+  "executionEnabled": false,
+  "createdAt": "2026-05-22T13:20:00Z",
+  "nonClaims": [
+    "This gate recognizes future live-read-only capability boundaries.",
+    "This gate does not authorize credential access.",
+    "This gate does not authorize payload delivery.",
+    "This gate does not authorize mutation.",
+    "This gate does not authorize destructive behavior."
+  ]
+}
