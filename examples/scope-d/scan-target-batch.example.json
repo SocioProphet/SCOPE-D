@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "batchId": "scan-target-batch:example-web-targets",
+  "operatorId": "operator:michael",
+  "policyRef": "examples/scope-d/operator-scan-policy.example.json",
+  "targets": [
+    {
+      "targetRef": "example.com",
+      "surfaceKind": "web_endpoint"
+    },
+    {
+      "targetRef": "unauthorized.example.net",
+      "surfaceKind": "web_endpoint"
+    }
+  ],
+  "requestedMethods": ["passive_metadata", "dns_lookup", "http_head"],
+  "requestedAt": "2026-05-22T18:30:00Z",
+  "scanExecutionRequested": true,
+  "credentialAccessRequested": false,
+  "payloadDeliveryRequested": false,
+  "mutationRequested": false,
+  "batchFailureMode": "block_invalid_targets"
+}

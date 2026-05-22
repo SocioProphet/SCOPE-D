@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/scan-target-batch.schema.json",
+  "title": "SCOPE-D Scan Target Batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "batchId",
+    "operatorId",
+    "policyRef",
+    "targets",
+    "requestedMethods",
+    "requestedAt",
+    "scanExecutionRequested",
+    "credentialAccessRequested",
+    "payloadDeliveryRequested",
+    "mutationRequested",
+    "batchFailureMode"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "batchId": { "type": "string", "pattern": "^scan-target-batch:[a-z0-9][a-z0-9._:-]*$" },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "policyRef": { "type": "string", "minLength": 1 },
+    "targets": { "type": "array", "minItems": 1, "maxItems": 25, "items": { "$ref": "#/$defs/target" } },
+    "requestedMethods": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head", "tcp_connect", "service_banner_read", "exploit_attempt", "credential_access", "payload_delivery", "brute_force", "destructive_probe", "service_disruption"] } },
+    "requestedAt": { "type": "string", "format": "date-time" },
+    "scanExecutionRequested": { "type": "boolean" },
+    "credentialAccessRequested": { "type": "boolean", "const": false },
+    "payloadDeliveryRequested": { "type": "boolean", "const": false },
+    "mutationRequested": { "type": "boolean", "const": false },
+    "batchFailureMode": { "type": "string", "enum": ["block_entire_batch", "block_invalid_targets"] }
+  },
+  "$defs": {
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targetRef", "surfaceKind"],
+      "properties": {
+        "targetRef": { "type": "string", "minLength": 1 },
+        "surfaceKind": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime", "network_boundary", "web_endpoint"] }
+      }
+    }
+  }
+}
