@@ -8,6 +8,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const PLANNER = path.join(ROOT, 'scripts', 'plan-operator-scan.js');
+const GATE_TEST = path.join(ROOT, 'scripts', 'test-operator-capability-gates.js');
 const VALID_REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const BLOCKED_REQUEST = path.join(ROOT, 'fixtures', 'invalid', 'operator-scan-request-exploit.invalid.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
@@ -24,6 +25,9 @@ function fail(message, result) {
 function parseJson(text, label, result) {
   try { return JSON.parse(text); } catch (err) { fail(`${label}: expected JSON output: ${err.message}`, result); }
 }
+
+const gate = cp.spawnSync(process.execPath, [GATE_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (gate.status !== 0) fail(`Expected capability gate tests success, got ${gate.status}`, gate);
 
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'scope-d-scan-plan-'));
 const allowDir = path.join(tmpDir, 'allow');
