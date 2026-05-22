@@ -10,7 +10,10 @@ const addFormats = require('ajv-formats');
 const ROOT = path.resolve(__dirname, '..');
 const RUN_SCHEMA = 'config/schemas/operator-scan-assurance-run.schema.json';
 const PLANNER = 'scripts/plan-operator-scan.js';
+const CAPABILITY_PLANNER = 'scripts/plan-operator-scan-with-capability.js';
 const LOCAL_SCAN = 'scripts/run-local-passive-scan.js';
+const LIVE_SCAN = 'scripts/run-live-readonly-scan.js';
+const LIVE_TO_RESULT = 'scripts/bridge-live-readonly-receipt-to-result.js';
 const INGEST = 'scripts/ingest-operator-scan-result.js';
 const BRIDGE = 'scripts/bridge-scan-assessment-to-surface.js';
 const INTAKE = 'scripts/operator-intake.js';
@@ -20,11 +23,11 @@ const DASHBOARD = 'scripts/export-operator-dashboard.js';
 const CLIENT_REPORT = 'scripts/export-client-assurance-report.js';
 
 function usage() {
-  console.log('Usage: node scripts/run-scan-assurance.js --request <request.json> --policy <policy.json> --source <local-passive-source.json> --client <clientRef> [--run-id <id>] [--out-dir <dir>]');
+  console.log('Usage: node scripts/run-scan-assurance.js --request <request.json> --policy <policy.json> --source <source.json> --client <clientRef> [--mode <local_passive|mock_live_readonly|live_readonly>] [--gate <capability-gate.json>] [--run-id <id>] [--out-dir <dir>]');
 }
 
 function parseArgs(argv) {
-  const args = { request: null, policy: null, source: null, client: null, runId: null, outDir: null };
+  const args = { request: null, policy: null, source: null, client: null, mode: 'local_passive', gate: null, runId: null, outDir: null };
   for (let i = 2; i < argv.length; i += 1) {
     const item = argv[i];
     if (item === '--help' || item === '-h') { usage(); process.exit(0); }
@@ -32,6 +35,8 @@ function parseArgs(argv) {
     if (item === '--policy') { args.policy = argv[++i]; continue; }
     if (item === '--source') { args.source = argv[++i]; continue; }
     if (item === '--client') { args.client = argv[++i]; continue; }
+    if (item === '--mode') { args.mode = argv[++i]; continue; }
+    if (item === '--gate') { args.gate = argv[++i]; continue; }
     if (item === '--run-id') { args.runId = argv[++i]; continue; }
     if (item === '--out-dir') { args.outDir = argv[++i]; continue; }
     throw new Error(`Unknown argument: ${item}`);
@@ -39,6 +44,10 @@ function parseArgs(argv) {
   for (const key of ['request', 'policy', 'source', 'client']) {
     if (!args[key]) throw new Error(`--${key} is required.`);
   }
+  if (!['local_passive', 'mock_live_readonly', 'live_readonly'].includes(args.mode)) {
+    throw new Error('--mode must be local_passive, mock_live_readonly, or live_readonly.');
+  }
+  if (args.mode !== 'local_passive' && !args.gate) throw new Error('--gate is required for live-readonly modes.');
   return args;
 }
 
@@ -83,9 +92,15 @@ function run(label, scriptRel, args) {
     cwd: ROOT,
     encoding: 'utf8',
     stdio: 'pipe',
+    env: process.env,
   });
   if (result.status !== 0) throw new Error(`${label} failed with status ${result.status}: ${result.stderr || result.stdout}`);
   return result.stdout ? JSON.parse(result.stdout) : null;
+}
+
+function copyInput(source, destination) {
+  fs.copyFileSync(abs(source), destination);
+  return destination;
 }
 
 try {
@@ -97,22 +112,47 @@ try {
   if (fs.existsSync(outDir)) throw new Error(`Run directory already exists: ${rel(outDir)}`);
   fs.mkdirSync(outDir, { recursive: true });
 
-  const policyCopy = path.join(outDir, 'operator-scan-policy.json');
-  const requestCopy = path.join(outDir, 'operator-scan-request.json');
-  const sourceCopy = path.join(outDir, 'local-passive-source.json');
-  fs.copyFileSync(abs(args.policy), policyCopy);
-  fs.copyFileSync(abs(args.request), requestCopy);
-  fs.copyFileSync(abs(args.source), sourceCopy);
+  const policyCopy = copyInput(args.policy, path.join(outDir, 'operator-scan-policy.json'));
+  const requestCopy = copyInput(args.request, path.join(outDir, 'operator-scan-request.json'));
+  const sourceCopy = copyInput(args.source, path.join(outDir, args.mode === 'local_passive' ? 'local-passive-source.json' : 'live-readonly-source.json'));
+  const gateCopy = args.gate ? copyInput(args.gate, path.join(outDir, 'operator-capability-gate.json')) : null;
 
   const planDir = path.join(outDir, 'plan');
-  run('scan plan', PLANNER, [requestCopy, '--policy', policyCopy, '--out-dir', planDir]);
-
   const scanResultPath = path.join(outDir, 'operator-scan-result.json');
-  const scanResult = run('local passive scan', LOCAL_SCAN, [
-    '--plan', path.join(planDir, 'operator-scan-plan.json'),
-    '--source', sourceCopy,
-    '--out', scanResultPath,
-  ]);
+  let liveReadOnlyReceiptRef = null;
+  let scanResult = null;
+
+  if (args.mode === 'local_passive') {
+    run('scan plan', PLANNER, [requestCopy, '--policy', policyCopy, '--out-dir', planDir]);
+    scanResult = run('local passive scan', LOCAL_SCAN, [
+      '--plan', path.join(planDir, 'operator-scan-plan.json'),
+      '--source', sourceCopy,
+      '--out', scanResultPath,
+    ]);
+  } else {
+    run('capability-bound scan plan', CAPABILITY_PLANNER, [
+      '--request', requestCopy,
+      '--policy', policyCopy,
+      '--gate', gateCopy,
+      '--out-dir', planDir,
+    ]);
+    const liveReceiptPath = path.join(outDir, 'operator-live-readonly-scan-receipt.json');
+    run('live-readonly scan receipt', LIVE_SCAN, [
+      '--plan', path.join(planDir, 'operator-scan-plan.json'),
+      '--capability-decision', path.join(planDir, 'operator-capability-gate-decision.json'),
+      '--mode', args.mode,
+      '--mock-source', sourceCopy,
+      '--out', liveReceiptPath,
+    ]);
+    liveReadOnlyReceiptRef = rel(liveReceiptPath);
+    scanResult = run('live-readonly receipt bridge', LIVE_TO_RESULT, [
+      liveReceiptPath,
+      '--policy', policyCopy,
+      '--request', requestCopy,
+      '--decision', path.join(planDir, 'operator-scan-decision.json'),
+      '--out', scanResultPath,
+    ]);
+  }
 
   const scanAssessmentPath = path.join(outDir, 'operator-scan-result-assessment.json');
   run('scan result ingestion', INGEST, [scanResultPath, '--out', scanAssessmentPath]);
@@ -142,9 +182,11 @@ try {
     schemaVersion: '0.1.0',
     runId,
     clientRef: args.client,
+    mode: args.mode,
     policyRef: rel(policyCopy),
     requestRef: rel(requestCopy),
     planRef: rel(path.join(planDir, 'operator-scan-plan.json')),
+    liveReadOnlyReceiptRef,
     scanResultRef: rel(scanResultPath),
     scanAssessmentRef: rel(scanAssessmentPath),
     surfaceRunIndexRef: rel(path.join(surfaceDir, 'surface-run-index.json')),
