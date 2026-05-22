@@ -10,6 +10,7 @@ const ROOT = path.resolve(__dirname, '..');
 const PLANNER = path.join(ROOT, 'scripts', 'plan-operator-scan.js');
 const GATE_TEST = path.join(ROOT, 'scripts', 'test-operator-capability-gates.js');
 const BINDING_TEST = path.join(ROOT, 'scripts', 'test-scan-capability-binding.js');
+const BATCH_TEST = path.join(ROOT, 'scripts', 'test-batch-scan-planning.js');
 const VALID_REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const BLOCKED_REQUEST = path.join(ROOT, 'fixtures', 'invalid', 'operator-scan-request-exploit.invalid.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
@@ -32,6 +33,9 @@ if (gate.status !== 0) fail(`Expected capability gate tests success, got ${gate.
 
 const binding = cp.spawnSync(process.execPath, [BINDING_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
 if (binding.status !== 0) fail(`Expected scan capability binding tests success, got ${binding.status}`, binding);
+
+const batch = cp.spawnSync(process.execPath, [BATCH_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (batch.status !== 0) fail(`Expected batch scan planning tests success, got ${batch.status}`, batch);
 
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'scope-d-scan-plan-'));
 const allowDir = path.join(tmpDir, 'allow');
