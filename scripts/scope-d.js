@@ -12,6 +12,7 @@ const DEFAULTS = {
   policy: 'examples/scope-d/operator-scan-policy.example.json',
   source: 'fixtures/synthetic/operator-local-passive-scan-source.web-endpoint.synthetic.json',
   redactionProfile: 'examples/scope-d/redaction-profile.client-safe.example.json',
+  capabilityCatalog: 'config/capabilities/d-capability-catalog.json',
   client: 'client:scope-d-demo',
 };
 
@@ -23,19 +24,21 @@ function usage() {
     '  node scripts/scope-d.js <command> [options]',
     '',
     'Commands:',
-    '  scan:assurance     Run scan assurance workflow',
-    '  evidence:manifest  Generate run manifest with artifact hashes',
-    '  evidence:package   Export client evidence package from manifest',
-    '  evidence:redact    Redact a client evidence package',
-    '  demo:scan          Run full synthetic scan-to-redacted-package demo',
+    '  scan:assurance       Run scan assurance workflow',
+    '  evidence:manifest    Generate run manifest with artifact hashes',
+    '  evidence:package     Export client evidence package from manifest',
+    '  evidence:redact      Redact a client evidence package',
+    '  capability:status    Render D-capability product status',
+    '  demo:scan            Run full synthetic scan-to-redacted-package demo',
     '',
     'Common demo:',
     '  node scripts/scope-d.js demo:scan --out-dir runs/demo-scope-d',
+    '  node scripts/scope-d.js capability:status',
     '',
     'Boundaries:',
     '  Default demo uses local_passive evidence only.',
     '  live_readonly requires the underlying runner gates.',
-    '  Credential access, payload delivery, mutation, and destructive behavior are not implemented by this CLI.',
+    '  Credential access, payload delivery, mutation, and destructive behavior are not executable through this CLI.',
   ].join('\n'));
 }
 
@@ -133,6 +136,30 @@ function commandRedact(opts) {
   return runNode('redacted evidence package', 'scripts/redact-client-evidence.js', args);
 }
 
+function commandCapabilityStatus(opts) {
+  const catalogPath = abs(opts.catalog || DEFAULTS.capabilityCatalog);
+  const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
+  return {
+    product: 'scope-d-capability-status',
+    catalogId: catalog.catalogId,
+    capabilityCount: catalog.capabilities.length,
+    capabilities: catalog.capabilities.map((capability) => ({
+      capabilityId: capability.capabilityId,
+      label: capability.label,
+      class: capability.class,
+      currentMaturity: capability.currentMaturity,
+      productState: capability.productState,
+      operatorIntent: capability.operatorIntent,
+      implementedModes: capability.implementedModes,
+      requiredGates: capability.requiredGates,
+      requiredEvidence: capability.requiredEvidence,
+      blockedActions: capability.blockedActions,
+      nextPromotion: capability.nextPromotion,
+    })),
+    nonClaims: catalog.nonClaims,
+  };
+}
+
 function commandDemoScan(opts) {
   const outDir = ensureFreshDir(opts['out-dir'] || 'runs/scope-d-product-demo');
   const runDir = path.join(outDir, 'run');
@@ -199,6 +226,7 @@ function main() {
   else if (command === 'evidence:manifest') result = commandManifest(opts);
   else if (command === 'evidence:package') result = commandPackage(opts);
   else if (command === 'evidence:redact') result = commandRedact(opts);
+  else if (command === 'capability:status') result = commandCapabilityStatus(opts);
   else if (command === 'demo:scan') result = commandDemoScan(opts);
   else throw new Error(`Unknown command: ${command}`);
   printResult(result);
