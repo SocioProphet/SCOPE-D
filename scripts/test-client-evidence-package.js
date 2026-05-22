@@ -11,6 +11,7 @@ const ROOT = path.resolve(__dirname, '..');
 const ASSURANCE = path.join(ROOT, 'scripts', 'run-scan-assurance.js');
 const MANIFEST = path.join(ROOT, 'scripts', 'generate-run-manifest.js');
 const PACKAGE = path.join(ROOT, 'scripts', 'export-client-evidence-package.js');
+const PRODUCT_CLI_TEST = path.join(ROOT, 'scripts', 'test-product-cli.js');
 const REDACTION_TEST = path.join(ROOT, 'scripts', 'test-redaction-profiles.js');
 const REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
@@ -32,6 +33,9 @@ function parseJson(text, label, result) {
 function digest(file) {
   return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 }
+
+const productCli = cp.spawnSync(process.execPath, [PRODUCT_CLI_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (productCli.status !== 0) fail(`Expected product CLI tests success, got ${productCli.status}`, productCli);
 
 const redaction = cp.spawnSync(process.execPath, [REDACTION_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
 if (redaction.status !== 0) fail(`Expected redaction profile tests success, got ${redaction.status}`, redaction);
