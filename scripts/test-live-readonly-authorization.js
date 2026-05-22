@@ -9,7 +9,8 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const AUTH = path.join(ROOT, 'scripts', 'authorize-live-readonly-request.js');
 const ALLOW = path.join(ROOT, 'examples', 'scope-d', 'operator-live-readonly-request.mcp-tools-list.json');
-const BLOCK = path.join(ROOT, 'fixtures', 'invalid', 'operator-live-readonly-request-tool-call.invalid.json');
+const BLOCK = path.join(ROOT, 'fixtures', 'invalid', 'operator-live-readonly-request-unauthorized-target.invalid.json');
+const SCHEMA_BLOCK = path.join(ROOT, 'fixtures', 'invalid', 'operator-live-readonly-request-tool-call.invalid.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-live-readonly-policy.example.json');
 
 function fail(message, result) {
@@ -50,12 +51,20 @@ const blocked = cp.spawnSync(process.execPath, [AUTH, BLOCK, '--policy', POLICY,
   encoding: 'utf8',
   stdio: 'pipe',
 });
-if (blocked.status === 0) fail('Expected blocked request to fail nonzero.', blocked);
+if (blocked.status !== 2) fail(`Expected blocked request exit 2, got ${blocked.status}.`, blocked);
 const blockDecision = parseJson(blocked.stdout, 'block decision', blocked);
 if (blockDecision.decision !== 'hard_block') fail('Expected hard_block decision.', blocked);
-if (!blockDecision.reason.includes('tool invocation')) fail('Expected tool invocation block reason.', blocked);
+if (!blockDecision.reason.includes('not authorized')) fail('Expected authorization block reason.', blocked);
 if (blockDecision.executionAllowed !== false || blockDecision.executionPerformed !== false) fail('Expected block decision execution disabled.', blocked);
 if (!fs.existsSync(blockOut)) fail('Expected block decision output file.', blocked);
+
+const schemaBlocked = cp.spawnSync(process.execPath, [AUTH, SCHEMA_BLOCK, '--policy', POLICY], {
+  cwd: ROOT,
+  encoding: 'utf8',
+  stdio: 'pipe',
+});
+if (schemaBlocked.status === 0) fail('Expected schema-invalid request to fail.', schemaBlocked);
+if (!schemaBlocked.stderr.includes('schema validation')) fail('Expected schema validation failure.', schemaBlocked);
 
 fs.rmSync(tmpDir, { recursive: true, force: true });
 console.log('Live read-only authorization tests passed.');
