@@ -16,22 +16,27 @@
       "findingHint": "http_exposure"
     },
     {
-      "method": "tls_certificate_read",
-      "status": "not_observed",
-      "evidence": {
-        "source": "local fixture",
-        "tlsCertificatePresent": false
-      },
-      "findingHint": "missing_tls"
-    },
-    {
-      "method": "service_banner_read",
+      "method": "dns_lookup",
       "status": "observed",
       "evidence": {
         "source": "local fixture",
-        "banner": "synthetic-server/0.1"
+        "resolved": true,
+        "recordTypes": ["A", "AAAA"]
       },
-      "findingHint": "service_banner_present"
+      "findingHint": "none"
+    },
+    {
+      "method": "http_head",
+      "status": "observed",
+      "evidence": {
+        "source": "local fixture",
+        "statusCode": 200,
+        "headers": {
+          "server": "synthetic-server",
+          "strict-transport-security": "missing"
+        }
+      },
+      "findingHint": "http_exposure"
     }
   ],
   "redactionState": "synthetic",
