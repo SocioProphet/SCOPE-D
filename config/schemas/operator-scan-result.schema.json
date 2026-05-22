@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-scan-result.schema.json",
+  "title": "SCOPE-D Operator Scan Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "resultId",
+    "policyRef",
+    "requestRef",
+    "decisionRef",
+    "planRef",
+    "dryRunReceiptRef",
+    "targetRef",
+    "surfaceKind",
+    "resultSource",
+    "observedAt",
+    "observations",
+    "redactionState",
+    "networkAccessAttempted",
+    "scanExecutionPerformed",
+    "credentialAccessAttempted",
+    "payloadDeliveryAttempted",
+    "mutationAttempted"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "resultId": { "type": "string", "pattern": "^operator-scan-result:[a-z0-9][a-z0-9._:-]*$" },
+    "policyRef": { "type": "string", "minLength": 1 },
+    "requestRef": { "type": "string", "minLength": 1 },
+    "decisionRef": { "type": "string", "minLength": 1 },
+    "planRef": { "type": "string", "minLength": 1 },
+    "dryRunReceiptRef": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime", "network_boundary", "web_endpoint"] },
+    "resultSource": { "type": "string", "enum": ["synthetic", "fixture", "local_passive", "live_readonly"] },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "observations": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/observation" } },
+    "redactionState": { "type": "string", "enum": ["synthetic", "redacted", "withheld"] },
+    "networkAccessAttempted": { "type": "boolean", "const": false },
+    "scanExecutionPerformed": { "type": "boolean", "const": false },
+    "credentialAccessAttempted": { "type": "boolean", "const": false },
+    "payloadDeliveryAttempted": { "type": "boolean", "const": false },
+    "mutationAttempted": { "type": "boolean", "const": false }
+  },
+  "$defs": {
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observationId", "method", "status", "evidence", "findingHint"],
+      "properties": {
+        "observationId": { "type": "string", "pattern": "^scan-observation:[a-z0-9][a-z0-9._:-]*$" },
+        "method": { "type": "string", "enum": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head", "tcp_connect", "service_banner_read"] },
+        "status": { "type": "string", "enum": ["observed", "not_observed", "error", "not_executed"] },
+        "evidence": { "type": "object", "additionalProperties": true },
+        "findingHint": { "type": "string", "enum": ["none", "missing_tls", "weak_tls_metadata", "unexpected_open_port", "http_exposure", "service_banner_present", "policy_scope_mismatch", "unresolved_target", "scan_incomplete"] }
+      }
+    }
+  }
+}
