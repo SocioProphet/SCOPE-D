@@ -20,7 +20,7 @@
   "properties": {
     "schemaVersion": { "type": "string", "const": "0.1.0" },
     "runId": { "type": "string", "pattern": "^scope-d-surface-[a-z0-9][a-z0-9._:-]*$" },
-    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest"] },
+    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest", "network_boundary", "web_endpoint"] },
     "inputRef": { "type": "string", "minLength": 1 },
     "artifacts": {
       "type": "array",
