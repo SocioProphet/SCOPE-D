@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/authorized-mcp-assurance-run.schema.json",
+  "title": "SCOPE-D Authorized MCP Assurance Run",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "runId",
+    "authorizedDiscoveryRef",
+    "surfaceRunIndexRef",
+    "operatorWorkflowRef",
+    "operatorWorkordersRef",
+    "caseIndexRef",
+    "dashboardRef",
+    "clientReportRef",
+    "createdAt",
+    "clientRef",
+    "liveConnectionUsed",
+    "executionAllowed",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "runId": { "type": "string", "pattern": "^authorized-mcp-assurance-run:[a-z0-9][a-z0-9._:-]*$" },
+    "authorizedDiscoveryRef": { "type": "string", "minLength": 1 },
+    "surfaceRunIndexRef": { "type": "string", "minLength": 1 },
+    "operatorWorkflowRef": { "type": "string", "minLength": 1 },
+    "operatorWorkordersRef": { "type": "string", "minLength": 1 },
+    "caseIndexRef": { "type": "string", "minLength": 1 },
+    "dashboardRef": { "type": "string", "minLength": 1 },
+    "clientReportRef": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "clientRef": { "type": "string", "minLength": 1 },
+    "liveConnectionUsed": { "type": "boolean" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "executionPerformed": { "type": "boolean", "const": false }
+  }
+}
