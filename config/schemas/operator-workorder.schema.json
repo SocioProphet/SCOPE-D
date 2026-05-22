@@ -10,7 +10,7 @@
     "workorderId": { "type": "string", "pattern": "^operator-workorder:[a-z0-9][a-z0-9._:-]*$" },
     "workflowRunId": { "type": "string", "pattern": "^operator-workflow:[a-z0-9][a-z0-9._:-]*$" },
     "triageId": { "type": "string", "pattern": "^operator-triage:[a-z0-9][a-z0-9._:-]*$" },
-    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest"] },
+    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest", "network_boundary", "web_endpoint"] },
     "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
     "status": { "type": "string", "enum": ["new", "needs_review", "remediation_required", "blocked_by_policy", "closed"] },
     "findingCount": { "type": "integer", "minimum": 0 },

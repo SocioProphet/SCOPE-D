@@ -23,7 +23,7 @@
     "schemaVersion": { "type": "string", "const": "0.1.0" },
     "workflowRunId": { "type": "string", "pattern": "^operator-workflow:[a-z0-9][a-z0-9._:-]*$" },
     "sourceRunIndexRef": { "type": "string", "minLength": 1 },
-    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest"] },
+    "surfaceKind": { "type": "string", "enum": ["github_posture", "mcp_surface", "mcp_discovery", "ai_runtime", "k8s_manifest", "network_boundary", "web_endpoint"] },
     "riskScore": { "type": "integer", "minimum": 0, "maximum": 100 },
     "riskLevel": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
     "findingCount": { "type": "integer", "minimum": 0 },
