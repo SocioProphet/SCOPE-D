@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "0.1.0",
+  "sourceId": "operator-local-passive-scan-source:example-web-endpoint-local",
+  "targetRef": "example.com",
+  "surfaceKind": "web_endpoint",
+  "sourceKind": "synthetic",
+  "observedAt": "2026-05-22T12:00:00Z",
+  "observations": [
+    {
+      "method": "passive_metadata",
+      "status": "observed",
+      "evidence": {
+        "source": "local fixture",
+        "notes": "Synthetic metadata says endpoint is externally exposed."
+      },
+      "findingHint": "http_exposure"
+    },
+    {
+      "method": "dns_lookup",
+      "status": "observed",
+      "evidence": {
+        "source": "local fixture",
+        "resolved": true,
+        "recordTypes": ["A", "AAAA"]
+      },
+      "findingHint": "none"
+    },
+    {
+      "method": "http_head",
+      "status": "observed",
+      "evidence": {
+        "source": "local fixture",
+        "statusCode": 200,
+        "headers": {
+          "server": "synthetic-server",
+          "strict-transport-security": "missing"
+        }
+      },
+      "findingHint": "http_exposure"
+    }
+  ],
+  "redactionState": "synthetic",
+  "networkAccessAttempted": false,
+  "scanExecutionPerformed": false,
+  "credentialAccessAttempted": false,
+  "payloadDeliveryAttempted": false,
+  "mutationAttempted": false
+}
