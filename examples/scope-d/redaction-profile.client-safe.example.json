@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "0.1.0",
+  "profileId": "redaction-profile:client-safe-default",
+  "profileClass": "client_safe",
+  "redactionRules": [
+    {
+      "ruleId": "redaction-rule:authorization-headers",
+      "match": "authorization_headers",
+      "replacement": "[REDACTED_AUTHORIZATION_HEADER]"
+    },
+    {
+      "ruleId": "redaction-rule:cookies",
+      "match": "cookies",
+      "replacement": "[REDACTED_COOKIE]"
+    },
+    {
+      "ruleId": "redaction-rule:tokens",
+      "match": "tokens",
+      "replacement": "[REDACTED_TOKEN]"
+    },
+    {
+      "ruleId": "redaction-rule:private-ips",
+      "match": "private_ips",
+      "replacement": "[REDACTED_PRIVATE_IP]"
+    },
+    {
+      "ruleId": "redaction-rule:internal-hostnames",
+      "match": "internal_hostnames",
+      "replacement": "[REDACTED_INTERNAL_HOSTNAME]"
+    },
+    {
+      "ruleId": "redaction-rule:raw-banners",
+      "match": "raw_banners",
+      "replacement": "[REDACTED_BANNER]"
+    },
+    {
+      "ruleId": "redaction-rule:secret-like-values",
+      "match": "secret_like_values",
+      "replacement": "[REDACTED_SECRET_LIKE_VALUE]"
+    }
+  ],
+  "withheldArtifactTypes": ["source_run"],
+  "createdAt": "2026-05-22T16:45:00Z",
+  "nonClaims": [
+    "This profile produces client-safe evidence artifacts but does not certify that all sensitive data is absent.",
+    "This profile does not authorize live action, credential access, payload delivery, mutation, or destructive behavior.",
+    "This profile preserves evidence structure while redacting configured sensitive patterns."
+  ]
+}

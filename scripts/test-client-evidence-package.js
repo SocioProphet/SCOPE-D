@@ -11,6 +11,7 @@ const ROOT = path.resolve(__dirname, '..');
 const ASSURANCE = path.join(ROOT, 'scripts', 'run-scan-assurance.js');
 const MANIFEST = path.join(ROOT, 'scripts', 'generate-run-manifest.js');
 const PACKAGE = path.join(ROOT, 'scripts', 'export-client-evidence-package.js');
+const REDACTION_TEST = path.join(ROOT, 'scripts', 'test-redaction-profiles.js');
 const REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
 const SOURCE = path.join(ROOT, 'fixtures', 'synthetic', 'operator-local-passive-scan-source.web-endpoint.synthetic.json');
@@ -31,6 +32,9 @@ function parseJson(text, label, result) {
 function digest(file) {
   return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 }
+
+const redaction = cp.spawnSync(process.execPath, [REDACTION_TEST], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
+if (redaction.status !== 0) fail(`Expected redaction profile tests success, got ${redaction.status}`, redaction);
 
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'scope-d-client-package-'));
 fs.rmSync(tmpDir, { recursive: true, force: true });
