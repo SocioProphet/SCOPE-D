@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-scan-policy.schema.json",
+  "title": "SCOPE-D Operator Scan Policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "policyId",
+    "operatorId",
+    "approvalRef",
+    "authorizedTargets",
+    "allowedSurfaces",
+    "allowedScanMethods",
+    "blockedMethods",
+    "rateLimit",
+    "expiresAt",
+    "auditRequired",
+    "scanExecutionAllowed",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "policyId": { "type": "string", "pattern": "^operator-scan-policy:[a-z0-9][a-z0-9._:-]*$" },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "approvalRef": { "type": "string", "pattern": "^approval:[a-z0-9][a-z0-9._:-]*$" },
+    "authorizedTargets": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/target" } },
+    "allowedSurfaces": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime", "network_boundary", "web_endpoint"] } },
+    "allowedScanMethods": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head", "tcp_connect", "service_banner_read"] } },
+    "blockedMethods": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["exploit_attempt", "credential_access", "payload_delivery", "brute_force", "destructive_probe", "service_disruption", "evasion", "persistence", "data_exfiltration", "third_party_targeting"] } },
+    "rateLimit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maxRequestsPerMinute", "maxTargetsPerRun"],
+      "properties": {
+        "maxRequestsPerMinute": { "type": "integer", "minimum": 1, "maximum": 60 },
+        "maxTargetsPerRun": { "type": "integer", "minimum": 1, "maximum": 100 }
+      }
+    },
+    "expiresAt": { "type": "string", "format": "date-time" },
+    "auditRequired": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["emitDecision", "emitPlan", "emitRunIndex", "recordLedger"],
+      "properties": {
+        "emitDecision": { "type": "boolean", "const": true },
+        "emitPlan": { "type": "boolean", "const": true },
+        "emitRunIndex": { "type": "boolean" },
+        "recordLedger": { "type": "boolean" }
+      }
+    },
+    "scanExecutionAllowed": { "type": "boolean", "const": false },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "nonClaims": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+  },
+  "$defs": {
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targetRef", "targetType", "scope"],
+      "properties": {
+        "targetRef": { "type": "string", "minLength": 1 },
+        "targetType": { "type": "string", "enum": ["repo", "domain", "host", "url", "cluster", "manifest", "mcp_server", "runtime"] },
+        "scope": { "type": "string", "enum": ["owned", "customer_authorized", "lab_synthetic"] }
+      }
+    }
+  }
+}
