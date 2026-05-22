@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "0.1.0",
+  "resultId": "operator-scan-result:example-web-endpoint-synthetic",
+  "policyRef": "examples/scope-d/operator-scan-policy.example.json",
+  "requestRef": "examples/scope-d/operator-scan-request.example.json",
+  "decisionRef": "runs/synthetic/operator-scan-decision.json",
+  "planRef": "runs/synthetic/operator-scan-plan.json",
+  "dryRunReceiptRef": "runs/synthetic/operator-scan-dry-run-receipt.json",
+  "targetRef": "example.com",
+  "surfaceKind": "web_endpoint",
+  "resultSource": "synthetic",
+  "observedAt": "2026-05-22T09:00:00Z",
+  "observations": [
+    {
+      "observationId": "scan-observation:example-http-head",
+      "method": "http_head",
+      "status": "observed",
+      "evidence": {
+        "statusCode": 200,
+        "headers": {
+          "server": "synthetic-server",
+          "strict-transport-security": "missing"
+        }
+      },
+      "findingHint": "http_exposure"
+    },
+    {
+      "observationId": "scan-observation:example-tls-missing",
+      "method": "tls_certificate_read",
+      "status": "not_observed",
+      "evidence": {
+        "tlsCertificatePresent": false
+      },
+      "findingHint": "missing_tls"
+    },
+    {
+      "observationId": "scan-observation:example-banner",
+      "method": "service_banner_read",
+      "status": "observed",
+      "evidence": {
+        "banner": "synthetic-server/0.1"
+      },
+      "findingHint": "service_banner_present"
+    }
+  ],
+  "redactionState": "synthetic",
+  "networkAccessAttempted": false,
+  "scanExecutionPerformed": false,
+  "credentialAccessAttempted": false,
+  "payloadDeliveryAttempted": false,
+  "mutationAttempted": false
+}

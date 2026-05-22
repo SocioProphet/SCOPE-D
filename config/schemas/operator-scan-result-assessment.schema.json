@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/operator-scan-result-assessment.schema.json",
+  "title": "SCOPE-D Operator Scan Result Assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "assessmentId",
+    "resultRef",
+    "targetRef",
+    "surfaceKind",
+    "riskScore",
+    "riskLevel",
+    "findingCount",
+    "findings",
+    "recommendedControls",
+    "createdAt",
+    "networkAccessAttempted",
+    "scanExecutionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "assessmentId": { "type": "string", "pattern": "^operator-scan-result-assessment:[a-z0-9][a-z0-9._:-]*$" },
+    "resultRef": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "surfaceKind": { "type": "string", "enum": ["mcp_discovery", "github_posture", "k8s_manifest", "ai_runtime", "network_boundary", "web_endpoint"] },
+    "riskScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "riskLevel": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "findingCount": { "type": "integer", "minimum": 0 },
+    "findings": { "type": "array", "items": { "$ref": "#/$defs/finding" } },
+    "recommendedControls": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "networkAccessAttempted": { "type": "boolean", "const": false },
+    "scanExecutionPerformed": { "type": "boolean", "const": false }
+  },
+  "$defs": {
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "category", "severity", "observationRef", "evidence", "recommendation"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^scan-finding:[a-z0-9][a-z0-9._:-]*$" },
+        "category": { "type": "string", "enum": ["missing_tls", "weak_tls_metadata", "unexpected_open_port", "http_exposure", "service_banner_present", "policy_scope_mismatch", "unresolved_target", "scan_incomplete"] },
+        "severity": { "type": "string", "enum": ["critical", "high", "medium", "low", "informational"] },
+        "observationRef": { "type": "string", "minLength": 1 },
+        "evidence": { "type": "object", "additionalProperties": true },
+        "recommendation": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
