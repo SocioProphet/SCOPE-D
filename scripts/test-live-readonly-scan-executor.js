@@ -12,6 +12,7 @@ const RUNNER = path.join(ROOT, 'scripts', 'run-live-readonly-scan.js');
 const REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
 const GATE = path.join(ROOT, 'examples', 'scope-d', 'operator-capability-gate.live-readonly.example.json');
+const EXECUTION_POLICY = path.join(ROOT, 'examples', 'scope-d', 'live-readonly-execution-policy.example.json');
 const SOURCE = path.join(ROOT, 'fixtures', 'synthetic', 'operator-local-passive-scan-source.web-endpoint.synthetic.json');
 
 function fail(message, result) {
@@ -30,6 +31,7 @@ function parseJson(text, label, result) {
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'scope-d-live-readonly-scan-'));
 const planDir = path.join(tmpDir, 'plan');
 const receiptPath = path.join(tmpDir, 'live-readonly-receipt.json');
+const auditDir = path.join(tmpDir, 'audit');
 
 const planned = cp.spawnSync(process.execPath, [
   WRAPPER,
@@ -49,6 +51,8 @@ const mock = cp.spawnSync(process.execPath, [
   '--capability-decision', path.join(planDir, 'operator-capability-gate-decision.json'),
   '--mode', 'mock_live_readonly',
   '--mock-source', SOURCE,
+  '--execution-policy', EXECUTION_POLICY,
+  '--egress-audit-dir', auditDir,
   '--out', receiptPath,
 ], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
 if (mock.status !== 0) fail(`Expected mock live-read-only success, got ${mock.status}`, mock);
@@ -60,12 +64,34 @@ if (receipt.credentialAccessAttempted !== false || receipt.payloadDeliveryAttemp
 if (!Array.isArray(receipt.observations) || receipt.observations.length !== 3) fail(`Expected 3 mock observations, got ${receipt.observations.length}.`, mock);
 if (!fs.existsSync(receiptPath)) fail('Expected receipt artifact.', mock);
 
-const blockedLive = cp.spawnSync(process.execPath, [
+const auditFiles = fs.readdirSync(auditDir).filter((file) => file.endsWith('.json'));
+if (auditFiles.length !== 3) fail(`Expected 3 egress audit receipts, got ${auditFiles.length}.`, mock);
+for (const file of auditFiles) {
+  const audit = parseJson(fs.readFileSync(path.join(auditDir, file), 'utf8'), `audit ${file}`, mock);
+  if (audit.networkAccessAttempted !== false) fail('Expected mock audit networkAccessAttempted=false.', mock);
+  if (audit.bytesReceivedEstimate !== 0) fail('Expected mock audit bytesReceivedEstimate=0.', mock);
+  if (audit.credentialAccessAttempted !== false || audit.payloadDeliveryAttempted !== false || audit.mutationAttempted !== false || audit.destructiveBehaviorAttempted !== false) fail('Expected audit high-risk attempt flags false.', mock);
+  if (audit.egressProfileRef !== 'egress-profile:default-readonly') fail('Expected execution policy egress profile ref.', mock);
+}
+
+const blockedMissingPolicy = cp.spawnSync(process.execPath, [
   RUNNER,
   '--plan', path.join(planDir, 'operator-scan-plan.json'),
   '--capability-decision', path.join(planDir, 'operator-capability-gate-decision.json'),
   '--mode', 'live_readonly',
   '--out', path.join(tmpDir, 'blocked-live-receipt.json'),
+], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe', env: { ...process.env, SCOPE_D_ENABLE_LIVE_READONLY: '1' } });
+if (blockedMissingPolicy.status === 0) fail('Expected live_readonly without execution policy to fail.', blockedMissingPolicy);
+if (!blockedMissingPolicy.stderr.includes('--execution-policy is required')) fail('Expected explicit execution policy requirement.', blockedMissingPolicy);
+
+const blockedLive = cp.spawnSync(process.execPath, [
+  RUNNER,
+  '--plan', path.join(planDir, 'operator-scan-plan.json'),
+  '--capability-decision', path.join(planDir, 'operator-capability-gate-decision.json'),
+  '--mode', 'live_readonly',
+  '--execution-policy', EXECUTION_POLICY,
+  '--egress-audit-dir', path.join(tmpDir, 'live-audit'),
+  '--out', path.join(tmpDir, 'blocked-live-env-receipt.json'),
 ], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe', env: { ...process.env, SCOPE_D_ENABLE_LIVE_READONLY: '' } });
 if (blockedLive.status === 0) fail('Expected live_readonly without env gate to fail.', blockedLive);
 if (!blockedLive.stderr.includes('SCOPE_D_ENABLE_LIVE_READONLY=1')) fail('Expected explicit live-readonly env gate error.', blockedLive);

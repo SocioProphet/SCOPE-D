@@ -14,6 +14,7 @@ const INGEST = path.join(ROOT, 'scripts', 'ingest-operator-scan-result.js');
 const REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
 const GATE = path.join(ROOT, 'examples', 'scope-d', 'operator-capability-gate.live-readonly.example.json');
+const EXECUTION_POLICY = path.join(ROOT, 'examples', 'scope-d', 'live-readonly-execution-policy.example.json');
 const SOURCE = path.join(ROOT, 'fixtures', 'synthetic', 'operator-local-passive-scan-source.web-endpoint.synthetic.json');
 
 function fail(message, result) {
@@ -54,6 +55,7 @@ const receiptRun = cp.spawnSync(process.execPath, [
   '--capability-decision', path.join(planDir, 'operator-capability-gate-decision.json'),
   '--mode', 'mock_live_readonly',
   '--mock-source', SOURCE,
+  '--execution-policy', EXECUTION_POLICY,
   '--out', receiptPath,
 ], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe' });
 if (receiptRun.status !== 0) fail(`Expected mock live-readonly receipt success, got ${receiptRun.status}`, receiptRun);
@@ -89,6 +91,8 @@ const liveBlocked = cp.spawnSync(process.execPath, [
   '--plan', path.join(planDir, 'operator-scan-plan.json'),
   '--capability-decision', path.join(planDir, 'operator-capability-gate-decision.json'),
   '--mode', 'live_readonly',
+  '--execution-policy', EXECUTION_POLICY,
+  '--egress-audit-dir', path.join(tmpDir, 'live-audit'),
   '--out', path.join(tmpDir, 'blocked-live-receipt.json'),
 ], { cwd: ROOT, encoding: 'utf8', stdio: 'pipe', env: { ...process.env, SCOPE_D_ENABLE_LIVE_READONLY: '' } });
 if (liveBlocked.status === 0) fail('Expected live_readonly mode without env gate to fail.', liveBlocked);

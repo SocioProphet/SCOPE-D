@@ -14,19 +14,24 @@ const ROOT = path.resolve(__dirname, '..');
 const PLAN_SCHEMA = 'config/schemas/operator-scan-plan.schema.json';
 const CAPABILITY_DECISION_SCHEMA = 'config/schemas/operator-capability-gate-decision.schema.json';
 const RECEIPT_SCHEMA = 'config/schemas/operator-live-readonly-scan-receipt.schema.json';
+const EXECUTION_POLICY_SCHEMA = 'config/schemas/live-readonly-execution-policy.schema.json';
+const EGRESS_AUDIT_SCHEMA = 'config/schemas/egress-audit-receipt.schema.json';
+const HIGH_RISK = ['credential_access', 'payload_delivery', 'mutation', 'destructive_behavior'];
 
 function usage() {
-  console.log('Usage: node scripts/run-live-readonly-scan.js --plan <operator-scan-plan.json> --capability-decision <decision.json> --mode <mock_live_readonly|live_readonly> [--mock-source <local-source.json>] [--out <receipt.json>]');
+  console.log('Usage: node scripts/run-live-readonly-scan.js --plan <operator-scan-plan.json> --capability-decision <decision.json> --mode <mock_live_readonly|live_readonly> [--execution-policy <policy.json>] [--egress-audit-dir <dir>] [--mock-source <local-source.json>] [--out <receipt.json>]');
 }
 
 function parseArgs(argv) {
-  const args = { plan: null, capabilityDecision: null, mode: null, mockSource: null, out: null };
+  const args = { plan: null, capabilityDecision: null, mode: null, executionPolicy: null, egressAuditDir: null, mockSource: null, out: null };
   for (let i = 2; i < argv.length; i += 1) {
     const item = argv[i];
     if (item === '--help' || item === '-h') { usage(); process.exit(0); }
     if (item === '--plan') { args.plan = argv[++i]; continue; }
     if (item === '--capability-decision') { args.capabilityDecision = argv[++i]; continue; }
     if (item === '--mode') { args.mode = argv[++i]; continue; }
+    if (item === '--execution-policy') { args.executionPolicy = argv[++i]; continue; }
+    if (item === '--egress-audit-dir') { args.egressAuditDir = argv[++i]; continue; }
     if (item === '--mock-source') { args.mockSource = argv[++i]; continue; }
     if (item === '--out') { args.out = argv[++i]; continue; }
     throw new Error(`Unknown argument: ${item}`);
@@ -36,6 +41,8 @@ function parseArgs(argv) {
   }
   if (!['mock_live_readonly', 'live_readonly'].includes(args.mode)) throw new Error('--mode must be mock_live_readonly or live_readonly.');
   if (args.mode === 'mock_live_readonly' && !args.mockSource) throw new Error('--mock-source is required for mock_live_readonly mode.');
+  if (args.mode === 'live_readonly' && !args.executionPolicy) throw new Error('--execution-policy is required for live_readonly mode.');
+  if (args.mode === 'live_readonly' && !args.egressAuditDir) throw new Error('--egress-audit-dir is required for live_readonly mode.');
   return args;
 }
 
@@ -78,12 +85,31 @@ function assertAuthorized(plan, capabilityDecision, mode) {
   if (capabilityDecision.surfaceKind !== plan.surfaceKind) throw new Error('Capability decision surface mismatch.');
   if (!capabilityDecision.allowedModes.includes('live_readonly')) throw new Error('Capability decision does not allow live_readonly mode.');
   if (!capabilityDecision.allowedCapabilityClasses.includes('network_access')) throw new Error('Capability decision does not allow network_access capability.');
-  if (capabilityDecision.blockedCapabilityClasses.includes('credential_access') === false) throw new Error('Capability decision must block credential_access.');
-  if (capabilityDecision.blockedCapabilityClasses.includes('payload_delivery') === false) throw new Error('Capability decision must block payload_delivery.');
+  for (const cls of HIGH_RISK) {
+    if (!capabilityDecision.blockedCapabilityClasses.includes(cls)) throw new Error(`Capability decision must block ${cls}.`);
+  }
   if (capabilityDecision.executionEnabled !== false || capabilityDecision.executionPerformed !== false) throw new Error('Capability decision execution flags must remain false.');
   if (mode === 'live_readonly' && process.env.SCOPE_D_ENABLE_LIVE_READONLY !== '1') {
     throw new Error('live_readonly mode requires SCOPE_D_ENABLE_LIVE_READONLY=1.');
   }
+}
+
+function assertExecutionPolicy(plan, capabilityDecision, executionPolicy, mode) {
+  if (!executionPolicy) return null;
+  validate(EXECUTION_POLICY_SCHEMA, executionPolicy, 'live read-only execution policy');
+  if (executionPolicy.operatorId !== capabilityDecision.operatorId) throw new Error('Execution policy operator mismatch.');
+  if (!executionPolicy.allowedTargetRefs.includes(plan.targetRef)) throw new Error('Execution policy target is not allowed.');
+  for (const method of plan.plannedMethods) {
+    if (!executionPolicy.allowedMethods.includes(method)) throw new Error(`Execution policy does not allow method ${method}.`);
+  }
+  if (plan.plannedMethods.length > executionPolicy.maxRequestsPerRun) throw new Error('Execution policy maxRequestsPerRun exceeded.');
+  if (plan.plannedMethods.length > executionPolicy.maxRequestsPerTarget) throw new Error('Execution policy maxRequestsPerTarget exceeded.');
+  for (const cls of HIGH_RISK) {
+    if (!executionPolicy.blockedClasses.includes(cls)) throw new Error(`Execution policy must block ${cls}.`);
+  }
+  if (executionPolicy.executionEnabled !== false) throw new Error('Execution policy executionEnabled must remain false.');
+  if (mode === 'live_readonly' && !executionPolicy.policyId.startsWith('live-readonly-execution-policy:')) throw new Error('Invalid execution policy id.');
+  return executionPolicy;
 }
 
 function observation(idSuffix, method, status, evidence, findingHint) {
@@ -104,11 +130,11 @@ function mockObservations(plan, mockSourcePath) {
     .map((item, index) => observation(`${plan.targetRef}-${index + 1}-${item.method}`, item.method, item.status, item.evidence, item.findingHint));
 }
 
-async function httpHead(targetRef) {
+async function httpHead(targetRef, timeoutMs) {
   const url = targetRef.startsWith('http://') || targetRef.startsWith('https://') ? new URL(targetRef) : new URL(`https://${targetRef}`);
   const client = url.protocol === 'http:' ? http : https;
   return new Promise((resolve) => {
-    const req = client.request(url, { method: 'HEAD', timeout: 5000 }, (res) => {
+    const req = client.request(url, { method: 'HEAD', timeout: timeoutMs }, (res) => {
       const headers = Object.fromEntries(Object.entries(res.headers).map(([key, value]) => [key, Array.isArray(value) ? value.join(', ') : String(value)]));
       res.resume();
       resolve(observation(`${targetRef}-http-head`, 'http_head', 'observed', { statusCode: res.statusCode || 0, headers }, 'http_exposure'));
@@ -129,10 +155,10 @@ async function dnsLookup(targetRef) {
   }
 }
 
-async function tlsRead(targetRef) {
+async function tlsRead(targetRef, timeoutMs) {
   const host = targetRef.replace(/^https?:\/\//, '').split('/')[0];
   return new Promise((resolve) => {
-    const socket = tls.connect({ host, port: 443, servername: host, timeout: 5000, rejectUnauthorized: false }, () => {
+    const socket = tls.connect({ host, port: 443, servername: host, timeout: timeoutMs, rejectUnauthorized: false }, () => {
       const cert = socket.getPeerCertificate();
       socket.end();
       resolve(observation(`${targetRef}-tls`, 'tls_certificate_read', cert && Object.keys(cert).length ? 'observed' : 'not_observed', { tlsCertificatePresent: Boolean(cert && Object.keys(cert).length), subject: cert.subject || {}, issuer: cert.issuer || {}, validTo: cert.valid_to || null }, cert && Object.keys(cert).length ? 'none' : 'missing_tls'));
@@ -142,16 +168,52 @@ async function tlsRead(targetRef) {
   });
 }
 
-async function liveObservations(plan) {
+async function liveObservations(plan, executionPolicy) {
   const observations = [];
+  const timeoutMs = executionPolicy ? executionPolicy.timeoutMs : 5000;
   for (const method of plan.plannedMethods) {
     if (method === 'passive_metadata') observations.push(observation(`${plan.targetRef}-passive`, method, 'observed', { source: 'live-readonly-runner', note: 'Planner metadata only.' }, 'none'));
     else if (method === 'dns_lookup') observations.push(await dnsLookup(plan.targetRef));
-    else if (method === 'tls_certificate_read') observations.push(await tlsRead(plan.targetRef));
-    else if (method === 'http_head') observations.push(await httpHead(plan.targetRef));
+    else if (method === 'tls_certificate_read') observations.push(await tlsRead(plan.targetRef, timeoutMs));
+    else if (method === 'http_head') observations.push(await httpHead(plan.targetRef, timeoutMs));
     else observations.push(observation(`${plan.targetRef}-${method}`, method, 'not_supported', { reason: 'Method intentionally not implemented in live-readonly runner.' }, 'scan_incomplete'));
   }
   return observations;
+}
+
+function estimateBytes(observationRecord) {
+  return Buffer.byteLength(JSON.stringify(observationRecord.evidence || {}), 'utf8');
+}
+
+function buildAuditReceipts(plan, capabilityDecisionPath, receiptRef, observations, mode, executionPolicy, executionPolicyPath) {
+  const policyRef = executionPolicyPath ? rel(abs(executionPolicyPath)) : 'not_configured:mock_live_readonly';
+  const egressProfileRef = executionPolicy ? executionPolicy.egressProfileRef : 'egress-profile:mock-no-network';
+  return observations.map((item, index) => ({
+    schemaVersion: '0.1.0',
+    receiptId: `egress-audit-receipt:${slug(plan.targetRef)}-${index + 1}-${slug(item.method)}`,
+    targetRef: plan.targetRef,
+    method: item.method,
+    policyRef,
+    capabilityDecisionRef: rel(abs(capabilityDecisionPath)),
+    scanReceiptRef: receiptRef,
+    timestamp: new Date().toISOString(),
+    egressProfileRef,
+    networkAccessAttempted: mode === 'live_readonly',
+    bytesReceivedEstimate: mode === 'live_readonly' ? estimateBytes(item) : 0,
+    credentialAccessAttempted: false,
+    payloadDeliveryAttempted: false,
+    mutationAttempted: false,
+    destructiveBehaviorAttempted: false,
+  }));
+}
+
+function writeAuditReceipts(auditDir, receipts) {
+  if (!auditDir) return;
+  fs.mkdirSync(abs(auditDir), { recursive: true });
+  for (const receipt of receipts) {
+    validate(EGRESS_AUDIT_SCHEMA, receipt, `egress audit receipt ${receipt.receiptId}`);
+    writeJson(path.join(abs(auditDir), `${receipt.receiptId.replace(/^egress-audit-receipt:/, '')}.json`), receipt);
+  }
 }
 
 async function main() {
@@ -160,11 +222,13 @@ async function main() {
   const capabilityDecisionPath = abs(args.capabilityDecision);
   const plan = readJson(planPath);
   const capabilityDecision = readJson(capabilityDecisionPath);
+  const executionPolicy = args.executionPolicy ? readJson(args.executionPolicy) : null;
   validate(PLAN_SCHEMA, plan, 'operator scan plan');
   validate(CAPABILITY_DECISION_SCHEMA, capabilityDecision, 'operator capability gate decision');
   assertAuthorized(plan, capabilityDecision, args.mode);
+  assertExecutionPolicy(plan, capabilityDecision, executionPolicy, args.mode);
 
-  const observations = args.mode === 'mock_live_readonly' ? mockObservations(plan, args.mockSource) : await liveObservations(plan);
+  const observations = args.mode === 'mock_live_readonly' ? mockObservations(plan, args.mockSource) : await liveObservations(plan, executionPolicy);
   if (observations.length === 0) throw new Error('No observations were produced.');
 
   const receipt = {
@@ -186,6 +250,11 @@ async function main() {
   };
   validate(RECEIPT_SCHEMA, receipt, 'operator live read-only scan receipt');
   if (args.out) writeJson(args.out, receipt);
+
+  const receiptRef = args.out ? rel(abs(args.out)) : 'stdout:operator-live-readonly-scan-receipt';
+  const auditReceipts = buildAuditReceipts(plan, capabilityDecisionPath, receiptRef, observations, args.mode, executionPolicy, args.executionPolicy);
+  writeAuditReceipts(args.egressAuditDir, auditReceipts);
+
   process.stdout.write(`${JSON.stringify(receipt, null, 2)}\n`);
 }
 

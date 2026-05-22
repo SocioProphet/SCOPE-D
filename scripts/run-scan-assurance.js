@@ -23,11 +23,11 @@ const DASHBOARD = 'scripts/export-operator-dashboard.js';
 const CLIENT_REPORT = 'scripts/export-client-assurance-report.js';
 
 function usage() {
-  console.log('Usage: node scripts/run-scan-assurance.js --request <request.json> --policy <policy.json> --source <source.json> --client <clientRef> [--mode <local_passive|mock_live_readonly|live_readonly>] [--gate <capability-gate.json>] [--run-id <id>] [--out-dir <dir>]');
+  console.log('Usage: node scripts/run-scan-assurance.js --request <request.json> --policy <policy.json> --source <source.json> --client <clientRef> [--mode <local_passive|mock_live_readonly|live_readonly>] [--gate <capability-gate.json>] [--execution-policy <policy.json>] [--egress-audit-dir <dir>] [--run-id <id>] [--out-dir <dir>]');
 }
 
 function parseArgs(argv) {
-  const args = { request: null, policy: null, source: null, client: null, mode: 'local_passive', gate: null, runId: null, outDir: null };
+  const args = { request: null, policy: null, source: null, client: null, mode: 'local_passive', gate: null, executionPolicy: null, egressAuditDir: null, runId: null, outDir: null };
   for (let i = 2; i < argv.length; i += 1) {
     const item = argv[i];
     if (item === '--help' || item === '-h') { usage(); process.exit(0); }
@@ -37,6 +37,8 @@ function parseArgs(argv) {
     if (item === '--client') { args.client = argv[++i]; continue; }
     if (item === '--mode') { args.mode = argv[++i]; continue; }
     if (item === '--gate') { args.gate = argv[++i]; continue; }
+    if (item === '--execution-policy') { args.executionPolicy = argv[++i]; continue; }
+    if (item === '--egress-audit-dir') { args.egressAuditDir = argv[++i]; continue; }
     if (item === '--run-id') { args.runId = argv[++i]; continue; }
     if (item === '--out-dir') { args.outDir = argv[++i]; continue; }
     throw new Error(`Unknown argument: ${item}`);
@@ -48,6 +50,8 @@ function parseArgs(argv) {
     throw new Error('--mode must be local_passive, mock_live_readonly, or live_readonly.');
   }
   if (args.mode !== 'local_passive' && !args.gate) throw new Error('--gate is required for live-readonly modes.');
+  if (args.mode === 'live_readonly' && !args.executionPolicy) throw new Error('--execution-policy is required for live_readonly mode.');
+  if (args.mode === 'live_readonly' && !args.egressAuditDir) throw new Error('--egress-audit-dir is required for live_readonly mode.');
   return args;
 }
 
@@ -116,6 +120,7 @@ try {
   const requestCopy = copyInput(args.request, path.join(outDir, 'operator-scan-request.json'));
   const sourceCopy = copyInput(args.source, path.join(outDir, args.mode === 'local_passive' ? 'local-passive-source.json' : 'live-readonly-source.json'));
   const gateCopy = args.gate ? copyInput(args.gate, path.join(outDir, 'operator-capability-gate.json')) : null;
+  const executionPolicyCopy = args.executionPolicy ? copyInput(args.executionPolicy, path.join(outDir, 'live-readonly-execution-policy.json')) : null;
 
   const planDir = path.join(outDir, 'plan');
   const scanResultPath = path.join(outDir, 'operator-scan-result.json');
@@ -137,13 +142,16 @@ try {
       '--out-dir', planDir,
     ]);
     const liveReceiptPath = path.join(outDir, 'operator-live-readonly-scan-receipt.json');
-    run('live-readonly scan receipt', LIVE_SCAN, [
+    const liveArgs = [
       '--plan', path.join(planDir, 'operator-scan-plan.json'),
       '--capability-decision', path.join(planDir, 'operator-capability-gate-decision.json'),
       '--mode', args.mode,
       '--mock-source', sourceCopy,
       '--out', liveReceiptPath,
-    ]);
+    ];
+    if (executionPolicyCopy) liveArgs.push('--execution-policy', executionPolicyCopy);
+    if (args.egressAuditDir) liveArgs.push('--egress-audit-dir', path.isAbsolute(args.egressAuditDir) ? args.egressAuditDir : path.join(outDir, args.egressAuditDir));
+    run('live-readonly scan receipt', LIVE_SCAN, liveArgs);
     liveReadOnlyReceiptRef = rel(liveReceiptPath);
     scanResult = run('live-readonly receipt bridge', LIVE_TO_RESULT, [
       liveReceiptPath,

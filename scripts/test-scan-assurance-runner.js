@@ -13,6 +13,7 @@ const PACKAGE_TEST = path.join(ROOT, 'scripts', 'test-client-evidence-package.js
 const REQUEST = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-request.example.json');
 const POLICY = path.join(ROOT, 'examples', 'scope-d', 'operator-scan-policy.example.json');
 const GATE = path.join(ROOT, 'examples', 'scope-d', 'operator-capability-gate.live-readonly.example.json');
+const EXECUTION_POLICY = path.join(ROOT, 'examples', 'scope-d', 'live-readonly-execution-policy.example.json');
 const SOURCE = path.join(ROOT, 'fixtures', 'synthetic', 'operator-local-passive-scan-source.web-endpoint.synthetic.json');
 
 function fail(message, result) {
@@ -130,6 +131,8 @@ const blocked = runAssurance('blocked live-readonly scan assurance', [
   '--client', 'client:blocked-live-readonly-assurance',
   '--mode', 'live_readonly',
   '--gate', GATE,
+  '--execution-policy', EXECUTION_POLICY,
+  '--egress-audit-dir', 'live-audit',
   '--run-id', 'operator-scan-assurance-run:ci-scan-assurance-live-blocked',
   '--out-dir', blockedDir,
 ], 1, { ...process.env, SCOPE_D_ENABLE_LIVE_READONLY: '' });

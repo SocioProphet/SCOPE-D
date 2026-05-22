@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/egress-audit-receipt.schema.json",
+  "title": "SCOPE-D Egress Audit Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "receiptId",
+    "targetRef",
+    "method",
+    "policyRef",
+    "capabilityDecisionRef",
+    "scanReceiptRef",
+    "timestamp",
+    "egressProfileRef",
+    "networkAccessAttempted",
+    "bytesReceivedEstimate",
+    "credentialAccessAttempted",
+    "payloadDeliveryAttempted",
+    "mutationAttempted",
+    "destructiveBehaviorAttempted"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "receiptId": { "type": "string", "pattern": "^egress-audit-receipt:[a-z0-9][a-z0-9._:-]*$" },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "method": { "type": "string", "enum": ["passive_metadata", "dns_lookup", "tls_certificate_read", "http_head"] },
+    "policyRef": { "type": "string", "minLength": 1 },
+    "capabilityDecisionRef": { "type": "string", "minLength": 1 },
+    "scanReceiptRef": { "type": "string", "minLength": 1 },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "egressProfileRef": { "type": "string", "minLength": 1 },
+    "networkAccessAttempted": { "type": "boolean" },
+    "bytesReceivedEstimate": { "type": "integer", "minimum": 0 },
+    "credentialAccessAttempted": { "type": "boolean", "const": false },
+    "payloadDeliveryAttempted": { "type": "boolean", "const": false },
+    "mutationAttempted": { "type": "boolean", "const": false },
+    "destructiveBehaviorAttempted": { "type": "boolean", "const": false }
+  }
+}
