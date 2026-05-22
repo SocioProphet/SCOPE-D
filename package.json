@@ -8,7 +8,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js && node scripts/test-reporting-exports.js && node scripts/test-collector-policy.js && node scripts/test-wargames-runtime-resolver.js && node scripts/test-github-posture-collector.js && node scripts/test-github-repo-source-fetcher.js && node scripts/test-mcp-surface-evaluator.js && node scripts/test-mcp-discovery-normalizer.js && node scripts/test-mcp-live-discovery-client.js && node scripts/test-ai-runtime-exposure-evaluator.js && node scripts/test-k8s-manifest-evaluator.js && node scripts/test-surface-assessment-runner.js && node scripts/test-operator-workflow.js && node scripts/test-operator-workorder-bindings.js && node scripts/test-operator-case-bundle.js && node scripts/test-reassessment-workflow.js && node scripts/test-operator-dashboard-export.js && node scripts/test-client-assurance-report.js && node scripts/test-operator-live-readonly-policy.js && node scripts/test-live-readonly-authorization.js && node scripts/test-authorized-mcp-discovery-runner.js && node scripts/test-authorized-mcp-assurance-runner.js",
+    "test": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js && node scripts/test-engagement-policy.js && node scripts/test-ai-infra-slice.js && node scripts/test-graph-robustness-slice.js && node scripts/test-reporting-exports.js && node scripts/test-collector-policy.js && node scripts/test-wargames-runtime-resolver.js && node scripts/test-github-posture-collector.js && node scripts/test-github-repo-source-fetcher.js && node scripts/test-mcp-surface-evaluator.js && node scripts/test-mcp-discovery-normalizer.js && node scripts/test-mcp-live-discovery-client.js && node scripts/test-ai-runtime-exposure-evaluator.js && node scripts/test-k8s-manifest-evaluator.js && node scripts/test-surface-assessment-runner.js && node scripts/test-operator-workflow.js && node scripts/test-operator-workorder-bindings.js && node scripts/test-operator-case-bundle.js && node scripts/test-reassessment-workflow.js && node scripts/test-operator-dashboard-export.js && node scripts/test-client-assurance-report.js && node scripts/test-operator-live-readonly-policy.js && node scripts/test-live-readonly-authorization.js && node scripts/test-authorized-mcp-discovery-runner.js && node scripts/test-authorized-mcp-assurance-runner.js && node scripts/test-operator-scan-planning.js",
     "validate": "node scripts/validate-contracts.js && node scripts/validate-wargames-contracts.js",
     "validate:wargames": "node scripts/validate-wargames-contracts.js",
     "wargames:resolve": "node scripts/wargames-runtime-resolve.js",
@@ -27,6 +27,7 @@
     "operator:authorize-live-readonly": "node scripts/authorize-live-readonly-request.js",
     "operator:authorized-mcp-discovery": "node scripts/run-authorized-mcp-discovery.js",
     "operator:authorized-mcp-assurance": "node scripts/run-authorized-mcp-assurance.js",
+    "operator:scan-plan": "node scripts/plan-operator-scan.js",
     "test:wargames-runtime": "node scripts/test-wargames-runtime-resolver.js",
     "test:github-posture": "node scripts/test-github-posture-collector.js",
     "test:github-source": "node scripts/test-github-repo-source-fetcher.js",
@@ -46,6 +47,7 @@
     "test:live-readonly-authorization": "node scripts/test-live-readonly-authorization.js",
     "test:authorized-mcp-discovery": "node scripts/test-authorized-mcp-discovery-runner.js",
     "test:authorized-mcp-assurance": "node scripts/test-authorized-mcp-assurance-runner.js",
+    "test:operator-scan-planning": "node scripts/test-operator-scan-planning.js",
     "references:workorders": "node scripts/generate-reference-workorders.js",
     "synthetic:event": "node scripts/generate-synthetic-event.js",
     "scope-d:init": "node scripts/init-run.js",
