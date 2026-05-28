@@ -8,7 +8,7 @@ The goal is not to ship another narrow scanner. The goal is a policy-gated cyber
 
 SCOPE-D is early-stage derivative work. The inherited upstream SCOPE implementation is useful, but this repository is now being shaped around the SocioProphet / SourceOS architecture.
 
-The current repository has a real contract-first substrate, not just prose. It includes schema/example validation, synthetic event generation, engagement-policy-gated synthetic run initialization, AI-infra synthetic run initialization, graph-robustness synthetic run initialization, run verification, run reporting, dashboard export, Ontogenesis export, 23-topic LSA map reporting, collector-policy fail-closed validation, and tamper-detection smoke testing.
+The current repository has a real contract-first substrate, not just prose. It includes schema/example validation, synthetic event generation, engagement-policy-gated synthetic run initialization, AI-infra synthetic run initialization, graph-robustness synthetic run initialization, run verification, run reporting, dashboard export, Ontogenesis export, 23-topic LSA map reporting, collector-policy fail-closed validation, tamper-detection smoke testing, and Sovereign Validation Fabric defensive-assurance contract validation.
 
 The Wargames work is also now contract-backed, but not runtime-backed. The repository contains Wargames doctrine capture plus schema-backed, example-backed, negative-fixture-backed, validator-backed contracts for BoundaryEvent/evidence/Scout proof, engagement authorization, the 23-topic LSA/LSI map, OFIF/SynapseIQ activation envelopes, Ontogenesis/ATT&CK semantic export, and MeshRush/HellGraph export. These are static governance artifacts. They do not run Scout or Whisper, ingest live telemetry, execute engagement actions, deliver OFIF outputs, run SynapseIQ enrichment, traverse MeshRush graphs, or replay HellGraph streams.
 
@@ -38,6 +38,7 @@ Initial SCOPE-D additions include:
 - `docs/ENGAGEMENT-POLICY.md` — initial engagement authority, target-boundary, escalation, and identity-handling doctrine.
 - `docs/COLLECTOR-POLICY.md` — collector capability boundaries, no-execution guarantees, fail-closed behavior, and audit requirements.
 - `docs/IDENTITY-PRIME-INTEGRATION.md` — Identity-IR, Event-IR, ProofArtifact, and prime-lane integration notes.
+- `docs/SVF-DEFENSIVE-ASSURANCE.md` — Sovereign Validation Fabric defensive-assurance plan doctrine and claim boundary.
 - `config/schemas/scope-d-control-loop.schema.json` — first SCOPE-D control-loop contract.
 - `config/schemas/event-ir.schema.json` — typed operational event record for synthetic and future collector events.
 - `config/schemas/identity-ir.schema.json` — identity-prime bridge from Event-IR into scoped prime lanes and wells.
@@ -56,11 +57,14 @@ Initial SCOPE-D additions include:
 - `ai-infra/README.md` — AI infrastructure, MCP, tool, and skill-risk assessment surface.
 - `graph-robustness/README.md` — graph-adversarial robustness assessment surface.
 - `detections/README.md` — detection and countermeasure packaging doctrine.
+- `svf/scope-d-defensive-assurance-basic.json` — repo-local SVF defensive-assurance contract bundle.
+- `scripts/validate-svf-contracts.js` — repo-local SVF contract validator.
 
 ## Implemented contract commands
 
 ```bash
 npm test
+npm run validate:svf
 npm run synthetic:event -- examples/scope-d/atomic-testcase.example.json runs/synthetic-lab/events.jsonl
 npm run scope-d:init -- --run-id scope-d-local-synthetic-lab --target local-scope-d-lab --engagement-policy examples/scope-d/engagement-policy.synthetic.json
 npm run scope-d:init-ai-infra -- --run-id scope-d-local-ai-infra-lab --target local-ai-infra-lab --engagement-policy examples/scope-d/engagement-policy.synthetic.json
@@ -84,7 +88,7 @@ Collector policies are also fail-closed contracts. Unknown collector types, wild
 
 Dashboard exports are derived only from verified run summaries and are marked non-production-only. The 23-topic LSA map report distinguishes proof-producing topics from captured-design topics.
 
-The GitHub Actions workflow `.github/workflows/contract-validation.yml` runs contract validation, synthetic event generation, engagement-policy-gated safe run initialization, AI-infra synthetic vertical-slice initialization, graph-robustness synthetic vertical-slice initialization, run verification, reporting, dashboard export, Ontogenesis export, 23-topic LSA map reporting, engagement-policy fail-closed tests, collector-policy fail-closed tests, AI-infra smoke tests, graph-robustness smoke tests, reporting smoke tests, and tamper detection.
+The GitHub Actions workflow `.github/workflows/contract-validation.yml` runs contract validation, synthetic event generation, engagement-policy-gated safe run initialization, AI-infra synthetic vertical-slice initialization, graph-robustness synthetic vertical-slice initialization, run verification, reporting, dashboard export, Ontogenesis export, 23-topic LSA map reporting, engagement-policy fail-closed tests, collector-policy fail-closed tests, AI-infra smoke tests, graph-robustness smoke tests, reporting smoke tests, tamper detection, and SVF contract validation.
 
 ## What SCOPE-D inherits from upstream SCOPE
 
@@ -121,6 +125,7 @@ SCOPE-D expands the design into these lanes:
 | Graph robustness | Synthetic edge-injection trust-graph slice now implemented; live graph assessment remains future work |
 | 23-topic operating map | Validated config and generated coverage report now implemented; orchestration remains future work |
 | Wargames contract stack | Static contracts for evidence, authorization, LSA/LSI, OFIF/SynapseIQ, Ontogenesis/ATT&CK, and MeshRush/HellGraph; runtime remains future work |
+| Sovereign Validation Fabric | Advisory defensive-assurance contract bundle for Sociosphere discovery and future agent validation loops |
 | SourceOS integration | PolicyFabric, AgentPlane, SocioSphere, TurtleTerm, sourceos-shell, openclaw, and memory-mesh alignment |
 
 ## Safety doctrine
@@ -155,6 +160,7 @@ SCOPE-D
 ├── ai-infra/                       AI infrastructure assessment lane
 ├── graph-robustness/               graph attack/defense assessment lane
 ├── dashboard/                      inherited and future reporting UX
+├── svf/                            Sovereign Validation Fabric contract declarations
 └── docs/                           derivative strategy and architecture
 ```
 
