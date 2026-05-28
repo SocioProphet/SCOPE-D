@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "svf:contract:scope-d.defensive-assurance-basic",
+  "upstream_authority": {
+    "policy_fabric_repo": "SocioProphet/ProCybernetica",
+    "workspace_registry_repo": "SocioProphet/sociosphere",
+    "profile_ref": "svf:profile:scope-d.defensive-assurance"
+  },
+  "capability_policy": {
+    "schema_version": "1.0",
+    "policy_id": "svf:policy:scope-d.synthetic-readonly",
+    "version": "1.0.0",
+    "owner": {
+      "plane": "defensive-assurance",
+      "repo": "SocioProphet/SCOPE-D"
+    },
+    "actor_classes": ["ci_runner", "workspace_runner"],
+    "allowed_backends": ["local"],
+    "max_side_effects": ["read_only", "write_temp"],
+    "network_modes": ["network_none"],
+    "credential_modes": ["credential_none"],
+    "filesystem_roots": ["config", "examples", "fixtures", "runs", "svf", "scripts"],
+    "production_environment_allowed": false,
+    "human_approval_required": false,
+    "required_receipt_fields": ["run_digest", "plan_digest", "policy_digest", "input_digests", "output_digests"],
+    "non_claims": [
+      "Does not authorize live target validation.",
+      "Does not authorize production-environment validation.",
+      "Does not authorize credential access.",
+      "Does not authorize network operations."
+    ]
+  },
+  "actions": [
+    {
+      "schema_version": "1.0",
+      "action_id": "svf:action:scope-d.npm-test",
+      "version": "1.0.0",
+      "owner": {"plane": "defensive-assurance", "repo": "SocioProphet/SCOPE-D", "maintainer": "mdheller"},
+      "binding": {"kind": "npm_script", "entrypoint": "test", "args": []},
+      "capability": {"side_effects": ["read_only", "write_temp"], "network_mode": "network_none", "credential_mode": "credential_none", "filesystem_scope": ["."], "backend": "local", "timeout_seconds": 600},
+      "artifact_contract": {"required_outputs": ["npm-test-output"], "digest_required": false},
+      "claim_scopes": ["schema_conformant", "fixtures_validated", "policy_boundary_preserved", "non_production_only"],
+      "non_claims": ["Does not certify live-environment behavior."]
+    },
+    {
+      "schema_version": "1.0",
+      "action_id": "svf:action:scope-d.engagement-policy",
+      "version": "1.0.0",
+      "owner": {"plane": "defensive-assurance", "repo": "SocioProphet/SCOPE-D", "maintainer": "mdheller"},
+      "binding": {"kind": "npm_script", "entrypoint": "test:engagement-policy", "args": []},
+      "capability": {"side_effects": ["read_only"], "network_mode": "network_none", "credential_mode": "credential_none", "filesystem_scope": ["config", "examples", "scripts"], "backend": "local", "timeout_seconds": 120},
+      "artifact_contract": {"required_outputs": ["engagement-policy-test-output"], "digest_required": false},
+      "claim_scopes": ["schema_conformant", "fixtures_validated", "policy_boundary_preserved", "non_production_only"],
+      "non_claims": ["Does not authorize operator action outside committed synthetic fixtures."]
+    },
+    {
+      "schema_version": "1.0",
+      "action_id": "svf:action:scope-d.collector-policy",
+      "version": "1.0.0",
+      "owner": {"plane": "defensive-assurance", "repo": "SocioProphet/SCOPE-D", "maintainer": "mdheller"},
+      "binding": {"kind": "npm_script", "entrypoint": "test:collector-policy", "args": []},
+      "capability": {"side_effects": ["read_only"], "network_mode": "network_none", "credential_mode": "credential_none", "filesystem_scope": ["config", "examples", "scripts"], "backend": "local", "timeout_seconds": 120},
+      "artifact_contract": {"required_outputs": ["collector-policy-test-output"], "digest_required": false},
+      "claim_scopes": ["schema_conformant", "fixtures_validated", "policy_boundary_preserved", "non_production_only"],
+      "non_claims": ["Does not certify runtime collector implementation."]
+    },
+    {
+      "schema_version": "1.0",
+      "action_id": "svf:action:scope-d.ai-infra",
+      "version": "1.0.0",
+      "owner": {"plane": "defensive-assurance", "repo": "SocioProphet/SCOPE-D", "maintainer": "mdheller"},
+      "binding": {"kind": "npm_script", "entrypoint": "test:ai-infra", "args": []},
+      "capability": {"side_effects": ["read_only", "write_temp"], "network_mode": "network_none", "credential_mode": "credential_none", "filesystem_scope": ["ai-infra", "fixtures", "runs", "scripts"], "backend": "local", "timeout_seconds": 180},
+      "artifact_contract": {"required_outputs": ["ai-infra-test-output"], "digest_required": false},
+      "claim_scopes": ["schema_conformant", "fixtures_validated", "policy_boundary_preserved", "non_production_only"],
+      "non_claims": ["Does not certify live AI infrastructure posture."]
+    },
+    {
+      "schema_version": "1.0",
+      "action_id": "svf:action:scope-d.graph-robustness",
+      "version": "1.0.0",
+      "owner": {"plane": "defensive-assurance", "repo": "SocioProphet/SCOPE-D", "maintainer": "mdheller"},
+      "binding": {"kind": "npm_script", "entrypoint": "test:graph-robustness", "args": []},
+      "capability": {"side_effects": ["read_only", "write_temp"], "network_mode": "network_none", "credential_mode": "credential_none", "filesystem_scope": ["graph-robustness", "fixtures", "runs", "scripts"], "backend": "local", "timeout_seconds": 180},
+      "artifact_contract": {"required_outputs": ["graph-robustness-test-output"], "digest_required": false},
+      "claim_scopes": ["schema_conformant", "fixtures_validated", "policy_boundary_preserved", "non_production_only"],
+      "non_claims": ["Does not certify live graph robustness posture."]
+    },
+    {
+      "schema_version": "1.0",
+      "action_id": "svf:action:scope-d.reporting",
+      "version": "1.0.0",
+      "owner": {"plane": "defensive-assurance", "repo": "SocioProphet/SCOPE-D", "maintainer": "mdheller"},
+      "binding": {"kind": "npm_script", "entrypoint": "test:reporting", "args": []},
+      "capability": {"side_effects": ["read_only", "write_temp"], "network_mode": "network_none", "credential_mode": "credential_none", "filesystem_scope": ["dashboard", "runs", "scripts"], "backend": "local", "timeout_seconds": 180},
+      "artifact_contract": {"required_outputs": ["reporting-test-output"], "digest_required": false},
+      "claim_scopes": ["schema_conformant", "fixtures_validated", "policy_boundary_preserved", "non_production_only"],
+      "non_claims": ["Does not certify client-delivery readiness."]
+    },
+    {
+      "schema_version": "1.0",
+      "action_id": "svf:action:scope-d.tamper",
+      "version": "1.0.0",
+      "owner": {"plane": "defensive-assurance", "repo": "SocioProphet/SCOPE-D", "maintainer": "mdheller"},
+      "binding": {"kind": "npm_script", "entrypoint": "test:tamper", "args": []},
+      "capability": {"side_effects": ["read_only", "write_temp"], "network_mode": "network_none", "credential_mode": "credential_none", "filesystem_scope": ["runs", "scripts"], "backend": "local", "timeout_seconds": 120},
+      "artifact_contract": {"required_outputs": ["tamper-test-output"], "digest_required": false},
+      "claim_scopes": ["schema_conformant", "fixtures_validated", "policy_boundary_preserved", "non_production_only"],
+      "non_claims": ["Does not certify cryptographic receipt integrity beyond existing smoke tests."]
+    }
+  ],
+  "plan": {
+    "schema_version": "1.0",
+    "plan_id": "svf:plan:scope-d.defensive-assurance-basic",
+    "version": "1.0.0",
+    "owner": {"plane": "defensive-assurance", "repo": "SocioProphet/SCOPE-D", "maintainer": "mdheller"},
+    "applicability": {"repos": ["SocioProphet/SCOPE-D"], "planes": ["defensive-assurance"], "change_classes": ["schema", "fixture", "policy", "runtime", "mixed"]},
+    "mode": "advisory",
+    "policy_ref": "svf:policy:scope-d.synthetic-readonly",
+    "actions": [
+      {"step_id": "npm-test", "action_ref": "svf:action:scope-d.npm-test", "required": true, "on_failure": "fail_plan"},
+      {"step_id": "engagement-policy", "action_ref": "svf:action:scope-d.engagement-policy", "required": true, "on_failure": "fail_plan"},
+      {"step_id": "collector-policy", "action_ref": "svf:action:scope-d.collector-policy", "required": true, "on_failure": "fail_plan"},
+      {"step_id": "ai-infra", "action_ref": "svf:action:scope-d.ai-infra", "required": true, "on_failure": "fail_plan"},
+      {"step_id": "graph-robustness", "action_ref": "svf:action:scope-d.graph-robustness", "required": true, "on_failure": "fail_plan"},
+      {"step_id": "reporting", "action_ref": "svf:action:scope-d.reporting", "required": true, "on_failure": "fail_plan"},
+      {"step_id": "tamper", "action_ref": "svf:action:scope-d.tamper", "required": true, "on_failure": "fail_plan"}
+    ],
+    "success_criteria": {"required_steps_pass": true, "receipt_required": true, "accepted_statuses": ["pass"]},
+    "failure_taxonomy": ["schema_failure", "fixture_failure", "policy_boundary_failure", "action_failure", "receipt_integrity_failure", "not_configured", "timeout", "inconclusive"],
+    "claim_scopes": ["schema_conformant", "fixtures_validated", "policy_boundary_preserved", "non_production_only"],
+    "required_evidence": ["npm-test-output", "engagement-policy-test-output", "collector-policy-test-output", "ai-infra-test-output", "graph-robustness-test-output", "reporting-test-output", "tamper-test-output"],
+    "non_claims": [
+      "Does not certify live-target safety.",
+      "Does not certify production readiness.",
+      "Does not certify runtime collector behavior.",
+      "Does not certify external-environment behavior.",
+      "Does not authorize offensive capability."
+    ]
+  }
+}
