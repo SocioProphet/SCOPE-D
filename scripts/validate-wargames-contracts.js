@@ -45,6 +45,8 @@ const INVALID_PAIRS = [
   ['config/schemas/wargames-hellgraph-proof-stream.schema.json', 'examples/scope-d/wargames/negative-fixtures/hellgraph-proof-stream-replay-executed.invalid.json'],
   ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-attack-only.invalid.json'],
   ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-memory-writeback.invalid.json'],
+  ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-synthetic-promotion.invalid.json'],
+  ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-summary-only-finding.invalid.json'],
 ];
 
 const APPROVED_AUTHORIZATION_EXAMPLE = 'examples/scope-d/wargames/engagement-authorization-approved.example.json';
@@ -298,6 +300,11 @@ function validateAdversarialScenario(examplePath, example, errorList) {
   const hasMemoryEffect = Array.isArray(example.memoryEffects) && example.memoryEffects.some((effect) => effect.effectType !== 'none');
   const hasRuntimeReceipt = Array.isArray(example.runtimeDecisionReceiptRefs) && example.runtimeDecisionReceiptRefs.length > 0;
   const hasCounterfactual = Array.isArray(example.counterfactuals) && example.counterfactuals.length > 0;
+  const claimPromotion = example.claimPromotion || {};
+  const requiredEvidence = Array.isArray(claimPromotion.requiredEvidence) ? claimPromotion.requiredEvidence : [];
+  const evidenceRefs = Array.isArray(example.evidenceRefs) ? example.evidenceRefs : [];
+  const summaryOnlyEvidence = requiredEvidence.length > 0 && requiredEvidence.every((item) => /summary|model-generated/i.test(item));
+  const modelSummaryRefs = evidenceRefs.some((ref) => /model-summary|summary-only/i.test(ref));
 
   if (Array.isArray(example.attackCoverageClaimRefs) && example.attackCoverageClaimRefs.length > 0) {
     assertTo(errorList, hasInterfaceCrossing || hasHumanInterpretation || hasMachineInterpretation || hasCounterfactual, `${examplePath}: ATT&CK/local coverage must be subordinate to scenario semantics`);
@@ -322,9 +329,17 @@ function validateAdversarialScenario(examplePath, example, errorList) {
     }
   }
 
-  assertTo(errorList, example.claimPromotion && example.claimPromotion.findingAllowed === false, `${examplePath}: scenario examples must not allow finding promotion`);
-  assertTo(errorList, example.claimPromotion && example.claimPromotion.policyUpdateAllowed === false, `${examplePath}: scenario examples must not allow policy update`);
-  assertTo(errorList, example.claimPromotion && example.claimPromotion.memoryUpdateAllowed === false, `${examplePath}: scenario examples must not allow memory update`);
+  if (example.redactionState === 'synthetic') {
+    assertTo(errorList, claimPromotion.state !== 'finding' && claimPromotion.state !== 'reportable', `${examplePath}: synthetic scenarios must not be finding/reportable without a non-production report boundary`);
+    assertTo(errorList, claimPromotion.reportAllowed === false, `${examplePath}: synthetic scenarios must not allow report promotion in this contract layer`);
+    assertTo(errorList, example.semanticNonClaims.includes('does_not_establish_production_observation'), `${examplePath}: synthetic scenarios must state does_not_establish_production_observation`);
+  }
+
+  assertTo(errorList, claimPromotion.state !== 'finding', `${examplePath}: scenario examples must not enter finding state`);
+  assertTo(errorList, !(summaryOnlyEvidence || modelSummaryRefs), `${examplePath}: summary/model-generated evidence cannot be the only finding-grade evidence`);
+  assertTo(errorList, claimPromotion.findingAllowed === false, `${examplePath}: scenario examples must not allow finding promotion`);
+  assertTo(errorList, claimPromotion.policyUpdateAllowed === false, `${examplePath}: scenario examples must not allow policy update`);
+  assertTo(errorList, claimPromotion.memoryUpdateAllowed === false, `${examplePath}: scenario examples must not allow memory update`);
   assertTo(errorList, example.capabilityExposure && Object.values(example.capabilityExposure).every((value) => value === false), `${examplePath}: scenario examples must not expose live capabilities`);
 }
 
