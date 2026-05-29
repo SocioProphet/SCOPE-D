@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "0.1.0",
+  "scenarioId": "adversarial-scenario:attack-only-coverage-001",
+  "title": "Invalid ATT&CK-only coverage treated as scenario",
+  "mode": "DEFENSE",
+  "scenarioClass": "technical_intrusion",
+  "objective": {
+    "objectiveType": "defensive_validation",
+    "description": "Invalid fixture: attempts to use technique mapping as the complete scenario.",
+    "adversarialPressure": "Technique coverage is mistaken for governed scenario completeness.",
+    "desiredConsequence": "Demonstrate rejection of ATT&CK-only scenario posture.",
+    "timeHorizon": "single_event",
+    "stealthPreference": "unknown"
+  },
+  "targetTopology": {
+    "tenantScope": "socioprophet-lab",
+    "assetRefs": ["asset:owned-lab-gateway-alpha"],
+    "componentRefs": ["component:lab-browser-profile-alpha"],
+    "surfaceRefs": ["network"],
+    "workspaceRefs": [],
+    "agentRefs": [],
+    "policyRefs": ["policy:wargames-runtime-dry-run-v0.1"]
+  },
+  "channelSubstrates": [
+    {
+      "channelRef": "channel:lab-browser-network-egress",
+      "channelType": "network",
+      "trustAffordance": "low",
+      "auditability": "partial",
+      "interpretationRisk": "medium"
+    }
+  ],
+  "interfaceCrossings": [],
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "safetyBoundaryRefs": ["safety-boundary:synthetic-lab-default"],
+  "capabilityExposure": {
+    "liveTargetAccess": false,
+    "networkAccess": false,
+    "commandExecution": false,
+    "credentialAccess": false,
+    "payloadDelivery": false,
+    "stateMutation": false,
+    "destructiveBehavior": false,
+    "deployment": false,
+    "externalToolInvocation": false,
+    "memoryWriteback": false,
+    "claimPromotion": false,
+    "publicReportPublication": false,
+    "exploitSymbolGeneration": false
+  },
+  "humanInterpretation": {
+    "required": false,
+    "roleRefs": [],
+    "riskFactors": ["none"],
+    "expectedMisclassification": "",
+    "reviewRequired": false
+  },
+  "machineInterpretation": {
+    "required": false,
+    "systemRefs": [],
+    "riskFactors": ["none"],
+    "expectedMisclassification": "",
+    "abstentionRequired": false
+  },
+  "trustEdgeRefs": [],
+  "boundaryEventRefs": ["boundary-event:net-header-001"],
+  "evidenceRefs": ["evidence:scout-header-summary-001"],
+  "attackCoverageClaimRefs": ["attack-coverage:boundary-header-coverage-001"],
+  "controlRefs": ["control:header-validator-review"],
+  "proofRefs": ["proof:scout:profile-001"],
+  "runtimeDecisionReceiptRefs": [],
+  "memoryEffects": [],
+  "claimPromotion": {
+    "state": "triaged",
+    "findingAllowed": false,
+    "reportAllowed": true,
+    "policyUpdateAllowed": false,
+    "memoryUpdateAllowed": false,
+    "requiredEvidence": ["attack coverage claim"],
+    "blockedReasons": []
+  },
+  "consequenceModel": {
+    "primaryConsequence": "defensive_gap_identified",
+    "secondaryConsequences": [],
+    "blastRadius": "local",
+    "semanticBlastRadius": "none",
+    "missionContinuityEffect": "Invalid: lacks scenario semantics beyond coverage."
+  },
+  "abstentionRules": [
+    {
+      "ruleId": "abstention:no-technique-as-authority-001",
+      "condition": "Only attack coverage is present.",
+      "requiredOutcome": "do_not_promote"
+    }
+  ],
+  "counterfactuals": [],
+  "semanticNonClaims": [
+    "does_not_execute_attack_procedure",
+    "does_not_authorize_engagement",
+    "does_not_claim_causal_attribution",
+    "does_not_validate_source_authenticity",
+    "does_not_establish_production_observation"
+  ],
+  "redactionState": "redacted",
+  "runtimeAuthority": false,
+  "procedureExecutionAuthority": false,
+  "engagementAuthorizationAuthority": false,
+  "activationAllowed": false
+}
