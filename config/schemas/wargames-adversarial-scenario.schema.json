@@ -1,0 +1,271 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/wargames-adversarial-scenario.schema.json",
+  "title": "Wargames Adversarial Scenario",
+  "description": "Composition contract for governed SCOPE-D adversarial scenarios. This schema binds existing boundary, evidence, ATT&CK coverage, Ontogenesis export, runtime decision, safety, authority, memory, and consequence records without granting execution authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "scenarioId",
+    "title",
+    "mode",
+    "scenarioClass",
+    "objective",
+    "targetTopology",
+    "channelSubstrates",
+    "interfaceCrossings",
+    "authorityEnvelopeRef",
+    "safetyBoundaryRefs",
+    "capabilityExposure",
+    "humanInterpretation",
+    "machineInterpretation",
+    "trustEdgeRefs",
+    "boundaryEventRefs",
+    "evidenceRefs",
+    "attackCoverageClaimRefs",
+    "controlRefs",
+    "proofRefs",
+    "runtimeDecisionReceiptRefs",
+    "memoryEffects",
+    "claimPromotion",
+    "consequenceModel",
+    "abstentionRules",
+    "counterfactuals",
+    "semanticNonClaims",
+    "redactionState",
+    "runtimeAuthority",
+    "procedureExecutionAuthority",
+    "engagementAuthorizationAuthority",
+    "activationAllowed"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "scenarioId": { "type": "string", "pattern": "^adversarial-scenario:[a-z0-9][a-z0-9._:-]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "mode": { "type": "string", "enum": ["DEFENSE", "LEARNING"] },
+    "scenarioClass": {
+      "type": "string",
+      "enum": [
+        "technical_intrusion",
+        "workspace_transduction",
+        "agentic_tool_misbinding",
+        "semantic_poisoning",
+        "memory_contamination",
+        "identity_confusion",
+        "policy_bypass",
+        "supply_chain_trust_edge",
+        "defender_nervous_system_attack",
+        "institutional_process_attack",
+        "hybrid_scenario"
+      ]
+    },
+    "objective": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["objectiveType", "description", "adversarialPressure", "desiredConsequence", "timeHorizon", "stealthPreference"],
+      "properties": {
+        "objectiveType": {
+          "type": "string",
+          "enum": [
+            "data_access",
+            "credential_reuse",
+            "decision_corruption",
+            "memory_poisoning",
+            "tool_execution",
+            "policy_exception",
+            "trust_degradation",
+            "operational_delay",
+            "public_narrative_shift",
+            "evidence_confusion",
+            "defensive_validation"
+          ]
+        },
+        "description": { "type": "string", "minLength": 1 },
+        "adversarialPressure": { "type": "string", "minLength": 1 },
+        "desiredConsequence": { "type": "string", "minLength": 1 },
+        "timeHorizon": { "type": "string", "enum": ["single_event", "short_campaign", "long_horizon", "unknown"] },
+        "stealthPreference": { "type": "string", "enum": ["low", "medium", "high", "unknown"] }
+      }
+    },
+    "targetTopology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tenantScope", "assetRefs", "componentRefs", "surfaceRefs", "workspaceRefs", "agentRefs", "policyRefs"],
+      "properties": {
+        "tenantScope": { "type": "string", "minLength": 1 },
+        "assetRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "componentRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "surfaceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "workspaceRefs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "agentRefs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "policyRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "channelSubstrates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["channelRef", "channelType", "trustAffordance", "auditability", "interpretationRisk"],
+        "properties": {
+          "channelRef": { "type": "string", "minLength": 1 },
+          "channelType": {
+            "type": "string",
+            "enum": ["email", "sms", "voice", "video", "calendar", "chat", "ticketing", "browser", "github", "ci_cd", "api", "oauth", "document", "model_context", "vector_memory", "agent_tool_call", "dashboard", "report_export", "support_portal", "vendor_console", "workspace_workroom", "network", "identity", "execution", "storage", "ui", "content", "control", "ontology", "client"]
+          },
+          "trustAffordance": { "type": "string", "enum": ["low", "medium", "high", "inherited", "unknown"] },
+          "auditability": { "type": "string", "enum": ["none", "partial", "full", "synthetic", "unknown"] },
+          "interpretationRisk": { "type": "string", "enum": ["low", "medium", "high", "unknown"] }
+        }
+      }
+    },
+    "interfaceCrossings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["crossingId", "fromChannelRef", "toChannelRef", "transformedObject", "authorityChange", "evidenceChange", "failureMode"],
+        "properties": {
+          "crossingId": { "type": "string", "pattern": "^interface-crossing:[a-z0-9][a-z0-9._:-]*$" },
+          "fromChannelRef": { "type": "string", "minLength": 1 },
+          "toChannelRef": { "type": "string", "minLength": 1 },
+          "transformedObject": { "type": "string", "minLength": 1 },
+          "authorityChange": { "type": "string", "enum": ["none", "inferred", "expanded", "reduced", "ambiguous"] },
+          "evidenceChange": { "type": "string", "enum": ["none", "summarized", "redacted", "reclassified", "lost", "ambiguous"] },
+          "failureMode": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "authorityEnvelopeRef": { "type": "string", "pattern": "^(engagement-authorization|authorization|policy):[a-z0-9][a-z0-9._:-]*$" },
+    "safetyBoundaryRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^safety-boundary:[a-z0-9][a-z0-9._:-]*$" } },
+    "capabilityExposure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["liveTargetAccess", "networkAccess", "commandExecution", "credentialAccess", "payloadDelivery", "stateMutation", "destructiveBehavior", "deployment", "externalToolInvocation", "memoryWriteback", "claimPromotion", "publicReportPublication", "exploitSymbolGeneration"],
+      "properties": {
+        "liveTargetAccess": { "type": "boolean", "const": false },
+        "networkAccess": { "type": "boolean", "const": false },
+        "commandExecution": { "type": "boolean", "const": false },
+        "credentialAccess": { "type": "boolean", "const": false },
+        "payloadDelivery": { "type": "boolean", "const": false },
+        "stateMutation": { "type": "boolean", "const": false },
+        "destructiveBehavior": { "type": "boolean", "const": false },
+        "deployment": { "type": "boolean", "const": false },
+        "externalToolInvocation": { "type": "boolean", "const": false },
+        "memoryWriteback": { "type": "boolean", "const": false },
+        "claimPromotion": { "type": "boolean", "const": false },
+        "publicReportPublication": { "type": "boolean", "const": false },
+        "exploitSymbolGeneration": { "type": "boolean", "const": false }
+      }
+    },
+    "humanInterpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "roleRefs", "riskFactors", "expectedMisclassification", "reviewRequired"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "roleRefs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "riskFactors": { "type": "array", "items": { "type": "string", "enum": ["urgency", "authority_cue", "ambiguity", "social_proof", "fatigue", "ritual_compliance", "none"] } },
+        "expectedMisclassification": { "type": "string" },
+        "reviewRequired": { "type": "boolean" }
+      }
+    },
+    "machineInterpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "systemRefs", "riskFactors", "expectedMisclassification", "abstentionRequired"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "systemRefs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "riskFactors": { "type": "array", "items": { "type": "string", "enum": ["prompt_boundary", "tool_routing", "memory_write", "policy_interpretation", "summarization", "citation_provenance", "none"] } },
+        "expectedMisclassification": { "type": "string" },
+        "abstentionRequired": { "type": "boolean" }
+      }
+    },
+    "trustEdgeRefs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "boundaryEventRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^boundary-event:[a-z0-9][a-z0-9._:-]*$" } },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^(evidence|negative-evidence):[a-z0-9][a-z0-9._:-]*$" } },
+    "attackCoverageClaimRefs": { "type": "array", "items": { "type": "string", "pattern": "^attack-coverage:[a-z0-9][a-z0-9._:-]*$" } },
+    "controlRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "proofRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "runtimeDecisionReceiptRefs": { "type": "array", "items": { "type": "string", "pattern": "^wargames-runtime-receipt:[a-z0-9][a-z0-9._:-]*$" } },
+    "memoryEffects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["effectType", "targetRef", "writebackAllowed", "proposalRequired", "reviewState"],
+        "properties": {
+          "effectType": { "type": "string", "enum": ["none", "false_continuity", "stale_policy_resurrection", "entity_merge_error", "identity_split", "malicious_summary", "privilege_hidden_in_context", "poisoned_embedding", "sandbox_to_canon_leak", "invalid_claim_promotion", "learning_candidate"] },
+          "targetRef": { "type": "string", "minLength": 1 },
+          "writebackAllowed": { "type": "boolean", "const": false },
+          "proposalRequired": { "type": "boolean" },
+          "reviewState": { "type": "string", "enum": ["not_applicable", "pending_review", "blocked", "approved_by_later_flow"] },
+          "proposalRef": { "type": "string" }
+        }
+      }
+    },
+    "claimPromotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "findingAllowed", "reportAllowed", "policyUpdateAllowed", "memoryUpdateAllowed", "requiredEvidence", "blockedReasons"],
+      "properties": {
+        "state": { "type": "string", "enum": ["raw", "hypothesis", "triaged", "validated", "finding", "reportable", "policy_candidate", "canonized", "blocked"] },
+        "findingAllowed": { "type": "boolean", "const": false },
+        "reportAllowed": { "type": "boolean" },
+        "policyUpdateAllowed": { "type": "boolean", "const": false },
+        "memoryUpdateAllowed": { "type": "boolean", "const": false },
+        "requiredEvidence": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "blockedReasons": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "consequenceModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primaryConsequence", "secondaryConsequences", "blastRadius", "semanticBlastRadius", "missionContinuityEffect"],
+      "properties": {
+        "primaryConsequence": { "type": "string", "enum": ["data_loss", "credential_compromise", "unauthorized_execution", "decision_corruption", "model_memory_corruption", "evidence_confusion", "vendor_trust_abuse", "policy_bypass", "public_trust_degradation", "operational_disruption", "legal_exposure", "defensive_gap_identified"] },
+        "secondaryConsequences": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "blastRadius": { "type": "string", "enum": ["local", "workspace", "tenant", "platform", "external", "unknown"] },
+        "semanticBlastRadius": { "type": "string", "enum": ["none", "low", "medium", "high", "unknown"] },
+        "missionContinuityEffect": { "type": "string", "minLength": 1 }
+      }
+    },
+    "abstentionRules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["ruleId", "condition", "requiredOutcome"],
+        "properties": {
+          "ruleId": { "type": "string", "pattern": "^abstention:[a-z0-9][a-z0-9._:-]*$" },
+          "condition": { "type": "string", "minLength": 1 },
+          "requiredOutcome": { "type": "string", "enum": ["block", "review_required", "do_not_promote", "do_not_write_memory", "do_not_publish", "report_only"] }
+        }
+      }
+    },
+    "counterfactuals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["branchId", "changedAssumption", "expectedConsequence", "preventingControlRef"],
+        "properties": {
+          "branchId": { "type": "string", "pattern": "^counterfactual:[a-z0-9][a-z0-9._:-]*$" },
+          "changedAssumption": { "type": "string", "minLength": 1 },
+          "expectedConsequence": { "type": "string", "minLength": 1 },
+          "preventingControlRef": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "semanticNonClaims": { "type": "array", "minItems": 5, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "redactionState": { "type": "string", "enum": ["redacted", "synthetic", "withheld"] },
+    "runtimeAuthority": { "type": "boolean", "const": false },
+    "procedureExecutionAuthority": { "type": "boolean", "const": false },
+    "engagementAuthorizationAuthority": { "type": "boolean", "const": false },
+    "activationAllowed": { "type": "boolean", "const": false }
+  }
+}
