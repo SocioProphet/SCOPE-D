@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "0.1.0",
+  "scenarioId": "adversarial-scenario:synthetic-promotion-001",
+  "title": "Invalid synthetic scenario promoted as reportable finding",
+  "mode": "LEARNING",
+  "scenarioClass": "workspace_transduction",
+  "objective": {
+    "objectiveType": "evidence_confusion",
+    "description": "Invalid fixture: synthetic scenario attempts to promote a finding/report without preserving report-only non-production posture.",
+    "adversarialPressure": "Synthetic artifact is treated as production observation.",
+    "desiredConsequence": "Demonstrate rejection of synthetic promotion.",
+    "timeHorizon": "single_event",
+    "stealthPreference": "unknown"
+  },
+  "targetTopology": {
+    "tenantScope": "socioprophet-lab",
+    "assetRefs": ["asset:owned-lab-gateway-alpha"],
+    "componentRefs": ["component:lab-browser-profile-alpha"],
+    "surfaceRefs": ["dashboard", "content"],
+    "workspaceRefs": ["workspace:scope-d-wargames-lab"],
+    "agentRefs": ["agent:herald"],
+    "policyRefs": ["policy:wargames-runtime-dry-run-v0.1"]
+  },
+  "channelSubstrates": [
+    {
+      "channelRef": "channel:wargames-dashboard-export",
+      "channelType": "dashboard",
+      "trustAffordance": "inherited",
+      "auditability": "synthetic",
+      "interpretationRisk": "high"
+    },
+    {
+      "channelRef": "channel:operator-report",
+      "channelType": "report_export",
+      "trustAffordance": "inherited",
+      "auditability": "synthetic",
+      "interpretationRisk": "high"
+    }
+  ],
+  "interfaceCrossings": [
+    {
+      "crossingId": "interface-crossing:synthetic-dashboard-to-report-001",
+      "fromChannelRef": "channel:wargames-dashboard-export",
+      "toChannelRef": "channel:operator-report",
+      "transformedObject": "Synthetic dashboard artifact becomes report finding.",
+      "authorityChange": "ambiguous",
+      "evidenceChange": "reclassified",
+      "failureMode": "Synthetic artifact is promoted as production reportable finding."
+    }
+  ],
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "safetyBoundaryRefs": ["safety-boundary:synthetic-lab-default"],
+  "capabilityExposure": {
+    "liveTargetAccess": false,
+    "networkAccess": false,
+    "commandExecution": false,
+    "credentialAccess": false,
+    "payloadDelivery": false,
+    "stateMutation": false,
+    "destructiveBehavior": false,
+    "deployment": false,
+    "externalToolInvocation": false,
+    "memoryWriteback": false,
+    "claimPromotion": false,
+    "publicReportPublication": false,
+    "exploitSymbolGeneration": false
+  },
+  "humanInterpretation": {
+    "required": true,
+    "roleRefs": ["role:operator", "role:reviewer"],
+    "riskFactors": ["ambiguity", "ritual_compliance"],
+    "expectedMisclassification": "Reviewer may treat synthetic dashboard artifact as production evidence.",
+    "reviewRequired": true
+  },
+  "machineInterpretation": {
+    "required": true,
+    "systemRefs": ["system:dashboard-export", "system:report-export"],
+    "riskFactors": ["summarization", "policy_interpretation"],
+    "expectedMisclassification": "Report export may lose synthetic/non-production state.",
+    "abstentionRequired": true
+  },
+  "trustEdgeRefs": ["trust-edge:dashboard-to-report"],
+  "boundaryEventRefs": ["boundary-event:net-header-001"],
+  "evidenceRefs": ["evidence:scout-header-summary-001", "negative-evidence:missing-validator-record-001"],
+  "attackCoverageClaimRefs": ["attack-coverage:boundary-header-coverage-001"],
+  "controlRefs": ["control:scenario-boundary-review"],
+  "proofRefs": ["proof:scout:profile-001"],
+  "runtimeDecisionReceiptRefs": ["wargames-runtime-receipt:allow-validate-001"],
+  "memoryEffects": [],
+  "claimPromotion": {
+    "state": "reportable",
+    "findingAllowed": false,
+    "reportAllowed": true,
+    "policyUpdateAllowed": false,
+    "memoryUpdateAllowed": false,
+    "requiredEvidence": ["direct evidence", "proof reference", "runtime receipt"],
+    "blockedReasons": []
+  },
+  "consequenceModel": {
+    "primaryConsequence": "evidence_confusion",
+    "secondaryConsequences": ["synthetic artifact overpromotion", "operator overtrust"],
+    "blastRadius": "workspace",
+    "semanticBlastRadius": "high",
+    "missionContinuityEffect": "Invalid: synthetic artifact would be promoted without non-production boundary."
+  },
+  "abstentionRules": [
+    {
+      "ruleId": "abstention:no-synthetic-promotion-001",
+      "condition": "Scenario is synthetic and no non-production-only report boundary is preserved.",
+      "requiredOutcome": "do_not_promote"
+    }
+  ],
+  "counterfactuals": [
+    {
+      "branchId": "counterfactual:synthetic-as-production-001",
+      "changedAssumption": "Synthetic status is stripped during report export.",
+      "expectedConsequence": "Operator treats synthetic run as production evidence.",
+      "preventingControlRef": "control:non-production-report-boundary"
+    }
+  ],
+  "semanticNonClaims": [
+    "does_not_execute_attack_procedure",
+    "does_not_authorize_engagement",
+    "does_not_claim_causal_attribution",
+    "does_not_validate_source_authenticity",
+    "does_not_promote_memory_writeback"
+  ],
+  "redactionState": "synthetic",
+  "runtimeAuthority": false,
+  "procedureExecutionAuthority": false,
+  "engagementAuthorizationAuthority": false,
+  "activationAllowed": false
+}
