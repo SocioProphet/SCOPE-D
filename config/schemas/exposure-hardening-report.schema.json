@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/exposure-hardening-report.schema.json",
+  "title": "SCOPE-D Exposure Hardening Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "reportId", "policyRef", "sourceManifestRef", "operatorId", "createdAt", "findingCount", "findings", "rotationGuidance", "plaintextMaterialExportAllowed", "materialUseAllowed", "nonClaims"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "reportId": { "type": "string", "pattern": "^exposure-hardening-report:[a-z0-9][a-z0-9._:-]*$" },
+    "policyRef": { "type": "string", "minLength": 1 },
+    "sourceManifestRef": { "type": "string", "minLength": 1 },
+    "operatorId": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "findingCount": { "type": "integer", "minimum": 0 },
+    "findings": { "type": "array", "items": { "$ref": "#/$defs/finding" } },
+    "rotationGuidance": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "plaintextMaterialExportAllowed": { "type": "boolean", "const": false },
+    "materialUseAllowed": { "type": "boolean", "const": false },
+    "nonClaims": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+  },
+  "$defs": {
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["findingId", "sourceRef", "sourceKind", "path", "line", "category", "severity", "materialDigest", "redactedExcerpt", "ownerHint", "rotationGuidance"],
+      "properties": {
+        "findingId": { "type": "string", "pattern": "^exposure-finding:[a-z0-9][a-z0-9._:-]*$" },
+        "sourceRef": { "type": "string", "minLength": 1 },
+        "sourceKind": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "minLength": 1 },
+        "line": { "type": "integer", "minimum": 1 },
+        "category": { "type": "string", "enum": ["api_material_like", "bearer_material_like", "private_material_marker", "assignment_material", "generic_sensitive_material"] },
+        "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+        "materialDigest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "redactedExcerpt": { "type": "string", "minLength": 1 },
+        "ownerHint": { "type": "string", "minLength": 1 },
+        "rotationGuidance": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
