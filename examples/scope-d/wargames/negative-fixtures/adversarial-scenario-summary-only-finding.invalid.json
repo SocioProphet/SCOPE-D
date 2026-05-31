@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "0.1.0",
+  "scenarioId": "adversarial-scenario:summary-only-finding-001",
+  "title": "Invalid summary-only evidence promoted as finding",
+  "mode": "DEFENSE",
+  "scenarioClass": "semantic_poisoning",
+  "objective": {
+    "objectiveType": "evidence_confusion",
+    "description": "Invalid fixture: summary-only/model-generated evidence attempts to promote a finding.",
+    "adversarialPressure": "A model or report summary is treated as source evidence.",
+    "desiredConsequence": "Demonstrate rejection of summary-only finding promotion.",
+    "timeHorizon": "single_event",
+    "stealthPreference": "medium"
+  },
+  "targetTopology": {
+    "tenantScope": "socioprophet-lab",
+    "assetRefs": ["asset:owned-lab-gateway-alpha"],
+    "componentRefs": ["component:lab-browser-profile-alpha"],
+    "surfaceRefs": ["content", "ontology", "dashboard"],
+    "workspaceRefs": ["workspace:scope-d-wargames-lab"],
+    "agentRefs": ["agent:herald"],
+    "policyRefs": ["policy:wargames-runtime-dry-run-v0.1"]
+  },
+  "channelSubstrates": [
+    {
+      "channelRef": "channel:model-summary",
+      "channelType": "model_context",
+      "trustAffordance": "inherited",
+      "auditability": "partial",
+      "interpretationRisk": "high"
+    },
+    {
+      "channelRef": "channel:operator-dashboard",
+      "channelType": "dashboard",
+      "trustAffordance": "inherited",
+      "auditability": "synthetic",
+      "interpretationRisk": "high"
+    }
+  ],
+  "interfaceCrossings": [
+    {
+      "crossingId": "interface-crossing:summary-to-finding-001",
+      "fromChannelRef": "channel:model-summary",
+      "toChannelRef": "channel:operator-dashboard",
+      "transformedObject": "Model-generated summary becomes dashboard finding.",
+      "authorityChange": "ambiguous",
+      "evidenceChange": "summarized",
+      "failureMode": "Summary-only evidence is treated as direct/corroborated source evidence."
+    }
+  ],
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "safetyBoundaryRefs": ["safety-boundary:synthetic-lab-default"],
+  "capabilityExposure": {
+    "liveTargetAccess": false,
+    "networkAccess": false,
+    "commandExecution": false,
+    "credentialAccess": false,
+    "payloadDelivery": false,
+    "stateMutation": false,
+    "destructiveBehavior": false,
+    "deployment": false,
+    "externalToolInvocation": false,
+    "memoryWriteback": false,
+    "claimPromotion": false,
+    "publicReportPublication": false,
+    "exploitSymbolGeneration": false
+  },
+  "humanInterpretation": {
+    "required": true,
+    "roleRefs": ["role:operator", "role:reviewer"],
+    "riskFactors": ["ambiguity", "authority_cue"],
+    "expectedMisclassification": "Reviewer may treat model-generated summary as source evidence.",
+    "reviewRequired": true
+  },
+  "machineInterpretation": {
+    "required": true,
+    "systemRefs": ["system:model-summary", "system:dashboard-export"],
+    "riskFactors": ["summarization", "citation_provenance", "policy_interpretation"],
+    "expectedMisclassification": "Automation may classify summary evidence as finding-grade evidence.",
+    "abstentionRequired": true
+  },
+  "trustEdgeRefs": ["trust-edge:summary-to-dashboard"],
+  "boundaryEventRefs": ["boundary-event:net-header-001"],
+  "evidenceRefs": ["evidence:model-summary-001"],
+  "attackCoverageClaimRefs": ["attack-coverage:boundary-header-coverage-001"],
+  "controlRefs": ["control:evidence-promotion-review"],
+  "proofRefs": ["proof:summary-only:001"],
+  "runtimeDecisionReceiptRefs": ["wargames-runtime-receipt:allow-validate-001"],
+  "memoryEffects": [],
+  "claimPromotion": {
+    "state": "finding",
+    "findingAllowed": false,
+    "reportAllowed": true,
+    "policyUpdateAllowed": false,
+    "memoryUpdateAllowed": false,
+    "requiredEvidence": ["summary evidence"],
+    "blockedReasons": []
+  },
+  "consequenceModel": {
+    "primaryConsequence": "evidence_confusion",
+    "secondaryConsequences": ["summary laundering", "claim overpromotion"],
+    "blastRadius": "workspace",
+    "semanticBlastRadius": "high",
+    "missionContinuityEffect": "Invalid: summary-only evidence would become a finding without direct/corroborating evidence."
+  },
+  "abstentionRules": [
+    {
+      "ruleId": "abstention:no-summary-only-finding-001",
+      "condition": "Evidence set is model-generated or summary-only without direct/corroborating evidence.",
+      "requiredOutcome": "do_not_promote"
+    }
+  ],
+  "counterfactuals": [
+    {
+      "branchId": "counterfactual:summary-as-source-evidence-001",
+      "changedAssumption": "Model summary is treated as source evidence.",
+      "expectedConsequence": "Finding is promoted without source evidence.",
+      "preventingControlRef": "control:evidence-promotion-review"
+    }
+  ],
+  "semanticNonClaims": [
+    "does_not_execute_attack_procedure",
+    "does_not_authorize_engagement",
+    "does_not_claim_causal_attribution",
+    "does_not_validate_source_authenticity",
+    "does_not_promote_memory_writeback"
+  ],
+  "redactionState": "redacted",
+  "runtimeAuthority": false,
+  "procedureExecutionAuthority": false,
+  "engagementAuthorizationAuthority": false,
+  "activationAllowed": false
+}

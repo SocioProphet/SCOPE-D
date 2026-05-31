@@ -27,6 +27,7 @@ const VALID_PAIRS = [
   ['config/schemas/wargames-ontogenesis-export-envelope.schema.json', 'examples/scope-d/wargames/wargames-ontogenesis-export.example.json'],
   ['config/schemas/wargames-meshrush-graph-view-export.schema.json', 'examples/scope-d/wargames/wargames-meshrush-graph-view.example.json'],
   ['config/schemas/wargames-hellgraph-proof-stream.schema.json', 'examples/scope-d/wargames/wargames-hellgraph-proof-stream.example.json'],
+  ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/wargames-adversarial-scenario.example.json'],
 ];
 
 const INVALID_PAIRS = [
@@ -42,6 +43,10 @@ const INVALID_PAIRS = [
   ['config/schemas/wargames-ontogenesis-export-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ontogenesis-export-authorizes-activation.invalid.json'],
   ['config/schemas/wargames-meshrush-graph-view-export.schema.json', 'examples/scope-d/wargames/negative-fixtures/meshrush-graph-view-runtime-authority.invalid.json'],
   ['config/schemas/wargames-hellgraph-proof-stream.schema.json', 'examples/scope-d/wargames/negative-fixtures/hellgraph-proof-stream-replay-executed.invalid.json'],
+  ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-attack-only.invalid.json'],
+  ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-memory-writeback.invalid.json'],
+  ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-synthetic-promotion.invalid.json'],
+  ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-summary-only-finding.invalid.json'],
 ];
 
 const APPROVED_AUTHORIZATION_EXAMPLE = 'examples/scope-d/wargames/engagement-authorization-approved.example.json';
@@ -276,6 +281,68 @@ function validateHellgraphProofStream(examplePath, example, errorList) {
   assertTo(errorList, Array.isArray(example.nonClaims) && example.nonClaims.includes('does_not_authorize_mutation'), `${examplePath}: non-claims must include does_not_authorize_mutation`);
 }
 
+function validateAdversarialScenario(examplePath, example, errorList) {
+  if (!examplePath.includes('adversarial-scenario')) return;
+
+  assertTo(errorList, example.runtimeAuthority === false, `${examplePath}: adversarial scenario must not claim runtime authority`);
+  assertTo(errorList, example.procedureExecutionAuthority === false, `${examplePath}: adversarial scenario must not claim procedure execution authority`);
+  assertTo(errorList, example.engagementAuthorizationAuthority === false, `${examplePath}: adversarial scenario must not authorize engagement`);
+  assertTo(errorList, example.activationAllowed === false, `${examplePath}: adversarial scenario must not activate downstream delivery`);
+  assertTo(errorList, example.redactionState !== 'raw', `${examplePath}: adversarial scenario must not be raw`);
+  assertTo(errorList, Array.isArray(example.safetyBoundaryRefs) && example.safetyBoundaryRefs.length > 0, `${examplePath}: adversarial scenario requires safetyBoundaryRefs`);
+  assertTo(errorList, Array.isArray(example.evidenceRefs) && example.evidenceRefs.length > 0, `${examplePath}: adversarial scenario requires evidenceRefs`);
+  assertTo(errorList, Array.isArray(example.semanticNonClaims) && example.semanticNonClaims.includes('does_not_execute_attack_procedure'), `${examplePath}: semantic non-claims must include does_not_execute_attack_procedure`);
+  assertTo(errorList, Array.isArray(example.semanticNonClaims) && example.semanticNonClaims.includes('does_not_authorize_engagement'), `${examplePath}: semantic non-claims must include does_not_authorize_engagement`);
+
+  const hasInterfaceCrossing = Array.isArray(example.interfaceCrossings) && example.interfaceCrossings.length > 0;
+  const hasHumanInterpretation = example.humanInterpretation && example.humanInterpretation.required === true && example.humanInterpretation.reviewRequired === true;
+  const hasMachineInterpretation = example.machineInterpretation && example.machineInterpretation.required === true && example.machineInterpretation.abstentionRequired === true;
+  const hasMemoryEffect = Array.isArray(example.memoryEffects) && example.memoryEffects.some((effect) => effect.effectType !== 'none');
+  const hasRuntimeReceipt = Array.isArray(example.runtimeDecisionReceiptRefs) && example.runtimeDecisionReceiptRefs.length > 0;
+  const hasCounterfactual = Array.isArray(example.counterfactuals) && example.counterfactuals.length > 0;
+  const claimPromotion = example.claimPromotion || {};
+  const requiredEvidence = Array.isArray(claimPromotion.requiredEvidence) ? claimPromotion.requiredEvidence : [];
+  const evidenceRefs = Array.isArray(example.evidenceRefs) ? example.evidenceRefs : [];
+  const summaryOnlyEvidence = requiredEvidence.length > 0 && requiredEvidence.every((item) => /summary|model-generated/i.test(item));
+  const modelSummaryRefs = evidenceRefs.some((ref) => /model-summary|summary-only/i.test(ref));
+
+  if (Array.isArray(example.attackCoverageClaimRefs) && example.attackCoverageClaimRefs.length > 0) {
+    assertTo(errorList, hasInterfaceCrossing || hasHumanInterpretation || hasMachineInterpretation || hasCounterfactual, `${examplePath}: ATT&CK/local coverage must be subordinate to scenario semantics`);
+    assertTo(errorList, hasRuntimeReceipt, `${examplePath}: coverage-bearing scenario should reference a runtime decision receipt`);
+  }
+
+  if (example.scenarioClass === 'workspace_transduction') {
+    assertTo(errorList, hasInterfaceCrossing, `${examplePath}: workspace_transduction requires at least one interface crossing`);
+    assertTo(errorList, hasHumanInterpretation, `${examplePath}: workspace_transduction requires human interpretation review`);
+  }
+
+  if (example.scenarioClass === 'agentic_tool_misbinding') {
+    assertTo(errorList, hasMachineInterpretation, `${examplePath}: agentic_tool_misbinding requires machine interpretation abstention`);
+  }
+
+  if (hasMemoryEffect) {
+    for (const effect of example.memoryEffects) {
+      assertTo(errorList, effect.writebackAllowed === false, `${examplePath}: memory effects must not allow writeback in Wargames examples`);
+      assertTo(errorList, effect.proposalRequired === true, `${examplePath}: memory effects require Memory Mesh proposal routing`);
+      assertTo(errorList, effect.reviewState === 'pending_review' || effect.reviewState === 'blocked', `${examplePath}: memory effects must remain pending_review or blocked`);
+      assertTo(errorList, Boolean(effect.proposalRef), `${examplePath}: memory effects require proposalRef`);
+    }
+  }
+
+  if (example.redactionState === 'synthetic') {
+    assertTo(errorList, claimPromotion.state !== 'finding' && claimPromotion.state !== 'reportable', `${examplePath}: synthetic scenarios must not be finding/reportable without a non-production report boundary`);
+    assertTo(errorList, claimPromotion.reportAllowed === false, `${examplePath}: synthetic scenarios must not allow report promotion in this contract layer`);
+    assertTo(errorList, example.semanticNonClaims.includes('does_not_establish_production_observation'), `${examplePath}: synthetic scenarios must state does_not_establish_production_observation`);
+  }
+
+  assertTo(errorList, claimPromotion.state !== 'finding', `${examplePath}: scenario examples must not enter finding state`);
+  assertTo(errorList, !(summaryOnlyEvidence || modelSummaryRefs), `${examplePath}: summary/model-generated evidence cannot be the only finding-grade evidence`);
+  assertTo(errorList, claimPromotion.findingAllowed === false, `${examplePath}: scenario examples must not allow finding promotion`);
+  assertTo(errorList, claimPromotion.policyUpdateAllowed === false, `${examplePath}: scenario examples must not allow policy update`);
+  assertTo(errorList, claimPromotion.memoryUpdateAllowed === false, `${examplePath}: scenario examples must not allow memory update`);
+  assertTo(errorList, example.capabilityExposure && Object.values(example.capabilityExposure).every((value) => value === false), `${examplePath}: scenario examples must not expose live capabilities`);
+}
+
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
 const schemaCache = new Map();
@@ -319,6 +386,7 @@ function validatePair(schemaPath, examplePath) {
   validateOntogenesisExport(examplePath, example, localErrors);
   validateMeshrushGraphView(examplePath, example, localErrors);
   validateHellgraphProofStream(examplePath, example, localErrors);
+  validateAdversarialScenario(examplePath, example, localErrors);
 
   return localErrors;
 }

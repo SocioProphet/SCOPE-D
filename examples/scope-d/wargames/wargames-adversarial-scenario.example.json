@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "0.1.0",
+  "scenarioId": "adversarial-scenario:workspace-transduction-001",
+  "title": "Workspace channel transduction from dashboard export to operator decision",
+  "mode": "DEFENSE",
+  "scenarioClass": "workspace_transduction",
+  "objective": {
+    "objectiveType": "defensive_validation",
+    "description": "Validate that a technique-mapped Wargames coverage artifact cannot become an operator action without explicit scenario, evidence, safety, and authority boundaries.",
+    "adversarialPressure": "Abnormal composition of normal artifacts: a dashboard or coverage cell could be mistaken for proof, authorization, or production finding.",
+    "desiredConsequence": "Prevent ATT&CK coverage from being treated as execution authority or promoted evidence.",
+    "timeHorizon": "single_event",
+    "stealthPreference": "low"
+  },
+  "targetTopology": {
+    "tenantScope": "socioprophet-lab",
+    "assetRefs": ["asset:owned-lab-gateway-alpha"],
+    "componentRefs": ["component:lab-browser-profile-alpha"],
+    "surfaceRefs": ["network", "content", "dashboard", "ontology"],
+    "workspaceRefs": ["workspace:scope-d-wargames-lab"],
+    "agentRefs": ["agent:scout", "agent:herald"],
+    "policyRefs": ["policy:wargames-runtime-dry-run-v0.1"]
+  },
+  "channelSubstrates": [
+    {
+      "channelRef": "channel:lab-browser-network-egress",
+      "channelType": "network",
+      "trustAffordance": "low",
+      "auditability": "partial",
+      "interpretationRisk": "medium"
+    },
+    {
+      "channelRef": "channel:wargames-dashboard-export",
+      "channelType": "dashboard",
+      "trustAffordance": "inherited",
+      "auditability": "synthetic",
+      "interpretationRisk": "high"
+    }
+  ],
+  "interfaceCrossings": [
+    {
+      "crossingId": "interface-crossing:coverage-to-dashboard-001",
+      "fromChannelRef": "channel:lab-browser-network-egress",
+      "toChannelRef": "channel:wargames-dashboard-export",
+      "transformedObject": "Redacted boundary observation summarized into ATT&CK coverage and dashboard-ready evidence.",
+      "authorityChange": "none",
+      "evidenceChange": "summarized",
+      "failureMode": "Coverage display is mistaken for proof of compromise, authorization, or production finding."
+    }
+  ],
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "safetyBoundaryRefs": ["safety-boundary:synthetic-lab-default"],
+  "capabilityExposure": {
+    "liveTargetAccess": false,
+    "networkAccess": false,
+    "commandExecution": false,
+    "credentialAccess": false,
+    "payloadDelivery": false,
+    "stateMutation": false,
+    "destructiveBehavior": false,
+    "deployment": false,
+    "externalToolInvocation": false,
+    "memoryWriteback": false,
+    "claimPromotion": false,
+    "publicReportPublication": false,
+    "exploitSymbolGeneration": false
+  },
+  "humanInterpretation": {
+    "required": true,
+    "roleRefs": ["role:operator", "role:reviewer"],
+    "riskFactors": ["ambiguity", "ritual_compliance"],
+    "expectedMisclassification": "Operator may treat an ATT&CK coverage cell as a production finding or authorization signal.",
+    "reviewRequired": true
+  },
+  "machineInterpretation": {
+    "required": true,
+    "systemRefs": ["system:dashboard-export", "system:ontogenesis-export"],
+    "riskFactors": ["summarization", "citation_provenance", "policy_interpretation"],
+    "expectedMisclassification": "Automation may confuse semantic export or dashboard readiness with activation permission.",
+    "abstentionRequired": true
+  },
+  "trustEdgeRefs": ["trust-edge:coverage-claim-to-dashboard", "trust-edge:ontology-export-to-reviewer"],
+  "boundaryEventRefs": ["boundary-event:net-header-001"],
+  "evidenceRefs": ["evidence:scout-header-summary-001", "negative-evidence:missing-validator-record-001"],
+  "attackCoverageClaimRefs": ["attack-coverage:boundary-header-coverage-001"],
+  "controlRefs": ["control:header-validator-review", "control:egress-policy-review"],
+  "proofRefs": ["proof:scout:profile-001"],
+  "runtimeDecisionReceiptRefs": ["wargames-runtime-receipt:allow-validate-001"],
+  "memoryEffects": [
+    {
+      "effectType": "learning_candidate",
+      "targetRef": "memory-target:scope-d-wargames-lessons",
+      "writebackAllowed": false,
+      "proposalRequired": true,
+      "reviewState": "pending_review",
+      "proposalRef": "memory-proposal:scenario-workspace-transduction-001"
+    }
+  ],
+  "claimPromotion": {
+    "state": "triaged",
+    "findingAllowed": false,
+    "reportAllowed": true,
+    "policyUpdateAllowed": false,
+    "memoryUpdateAllowed": false,
+    "requiredEvidence": ["direct evidence", "corroborating or negative evidence", "proof reference", "runtime receipt"],
+    "blockedReasons": ["not production observation", "does not authorize engagement", "memory writeback requires separate proposal review"]
+  },
+  "consequenceModel": {
+    "primaryConsequence": "evidence_confusion",
+    "secondaryConsequences": ["claim overpromotion", "operator overtrust", "dashboard theater"],
+    "blastRadius": "workspace",
+    "semanticBlastRadius": "medium",
+    "missionContinuityEffect": "Preserves report-only defensive review without allowing coverage artifacts to become operational authority."
+  },
+  "abstentionRules": [
+    {
+      "ruleId": "abstention:no-technique-as-authority-001",
+      "condition": "Only ATT&CK or local technique coverage is present without separate authority and evidence review.",
+      "requiredOutcome": "do_not_promote"
+    },
+    {
+      "ruleId": "abstention:no-memory-writeback-001",
+      "condition": "Scenario learning has not been approved through Memory Mesh review-only proposal governance.",
+      "requiredOutcome": "do_not_write_memory"
+    }
+  ],
+  "counterfactuals": [
+    {
+      "branchId": "counterfactual:dashboard-treated-as-authority-001",
+      "changedAssumption": "Operator treats coverageStatus=partial as authorization to execute follow-up procedures.",
+      "expectedConsequence": "Procedure execution could be attempted without engagement authority.",
+      "preventingControlRef": "control:scenario-boundary-review"
+    }
+  ],
+  "semanticNonClaims": [
+    "does_not_execute_attack_procedure",
+    "does_not_authorize_engagement",
+    "does_not_claim_causal_attribution",
+    "does_not_validate_source_authenticity",
+    "does_not_promote_memory_writeback",
+    "does_not_establish_production_observation"
+  ],
+  "redactionState": "redacted",
+  "runtimeAuthority": false,
+  "procedureExecutionAuthority": false,
+  "engagementAuthorizationAuthority": false,
+  "activationAllowed": false
+}

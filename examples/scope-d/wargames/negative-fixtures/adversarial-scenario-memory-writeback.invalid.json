@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "0.1.0",
+  "scenarioId": "adversarial-scenario:memory-writeback-bypass-001",
+  "title": "Invalid scenario attempts durable memory writeback",
+  "mode": "LEARNING",
+  "scenarioClass": "memory_contamination",
+  "objective": {
+    "objectiveType": "memory_poisoning",
+    "description": "Invalid fixture: attempts to mark scenario learning as durable memory writeback.",
+    "adversarialPressure": "Scenario lesson is promoted directly into memory without Memory Mesh proposal governance.",
+    "desiredConsequence": "Demonstrate rejection of silent writeback.",
+    "timeHorizon": "short_campaign",
+    "stealthPreference": "medium"
+  },
+  "targetTopology": {
+    "tenantScope": "socioprophet-lab",
+    "assetRefs": ["asset:owned-lab-gateway-alpha"],
+    "componentRefs": ["component:lab-browser-profile-alpha"],
+    "surfaceRefs": ["content", "dashboard"],
+    "workspaceRefs": ["workspace:scope-d-wargames-lab"],
+    "agentRefs": ["agent:herald"],
+    "policyRefs": ["policy:wargames-runtime-dry-run-v0.1"]
+  },
+  "channelSubstrates": [
+    {
+      "channelRef": "channel:wargames-dashboard-export",
+      "channelType": "dashboard",
+      "trustAffordance": "inherited",
+      "auditability": "synthetic",
+      "interpretationRisk": "high"
+    },
+    {
+      "channelRef": "channel:scenario-memory",
+      "channelType": "vector_memory",
+      "trustAffordance": "inherited",
+      "auditability": "partial",
+      "interpretationRisk": "high"
+    }
+  ],
+  "interfaceCrossings": [
+    {
+      "crossingId": "interface-crossing:dashboard-to-memory-001",
+      "fromChannelRef": "channel:wargames-dashboard-export",
+      "toChannelRef": "channel:scenario-memory",
+      "transformedObject": "Scenario lesson becomes durable memory.",
+      "authorityChange": "expanded",
+      "evidenceChange": "summarized",
+      "failureMode": "Synthetic/review-only lesson is treated as canonical durable memory."
+    }
+  ],
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "safetyBoundaryRefs": ["safety-boundary:synthetic-lab-default"],
+  "capabilityExposure": {
+    "liveTargetAccess": false,
+    "networkAccess": false,
+    "commandExecution": false,
+    "credentialAccess": false,
+    "payloadDelivery": false,
+    "stateMutation": false,
+    "destructiveBehavior": false,
+    "deployment": false,
+    "externalToolInvocation": false,
+    "memoryWriteback": false,
+    "claimPromotion": false,
+    "publicReportPublication": false,
+    "exploitSymbolGeneration": false
+  },
+  "humanInterpretation": {
+    "required": true,
+    "roleRefs": ["role:reviewer"],
+    "riskFactors": ["ambiguity"],
+    "expectedMisclassification": "Reviewer may confuse learning recommendation with approved durable memory.",
+    "reviewRequired": true
+  },
+  "machineInterpretation": {
+    "required": true,
+    "systemRefs": ["system:memory-mesh"],
+    "riskFactors": ["memory_write", "summarization"],
+    "expectedMisclassification": "Memory pipeline may treat scenario output as approved writeback.",
+    "abstentionRequired": true
+  },
+  "trustEdgeRefs": ["trust-edge:scenario-to-memory"],
+  "boundaryEventRefs": ["boundary-event:net-header-001"],
+  "evidenceRefs": ["evidence:scout-header-summary-001", "negative-evidence:missing-validator-record-001"],
+  "attackCoverageClaimRefs": ["attack-coverage:boundary-header-coverage-001"],
+  "controlRefs": ["control:scenario-memory-review"],
+  "proofRefs": ["proof:scout:profile-001"],
+  "runtimeDecisionReceiptRefs": ["wargames-runtime-receipt:allow-validate-001"],
+  "memoryEffects": [
+    {
+      "effectType": "learning_candidate",
+      "targetRef": "memory-target:scope-d-wargames-lessons",
+      "writebackAllowed": false,
+      "proposalRequired": false,
+      "reviewState": "approved_by_later_flow"
+    }
+  ],
+  "claimPromotion": {
+    "state": "triaged",
+    "findingAllowed": false,
+    "reportAllowed": true,
+    "policyUpdateAllowed": false,
+    "memoryUpdateAllowed": false,
+    "requiredEvidence": ["direct evidence", "proof reference"],
+    "blockedReasons": []
+  },
+  "consequenceModel": {
+    "primaryConsequence": "model_memory_corruption",
+    "secondaryConsequences": ["invalid learning promotion"],
+    "blastRadius": "workspace",
+    "semanticBlastRadius": "high",
+    "missionContinuityEffect": "Invalid: learning would bypass review-only memory governance."
+  },
+  "abstentionRules": [
+    {
+      "ruleId": "abstention:no-memory-writeback-001",
+      "condition": "Memory Mesh proposal governance is missing.",
+      "requiredOutcome": "do_not_write_memory"
+    }
+  ],
+  "counterfactuals": [],
+  "semanticNonClaims": [
+    "does_not_execute_attack_procedure",
+    "does_not_authorize_engagement",
+    "does_not_claim_causal_attribution",
+    "does_not_validate_source_authenticity",
+    "does_not_promote_memory_writeback"
+  ],
+  "redactionState": "synthetic",
+  "runtimeAuthority": false,
+  "procedureExecutionAuthority": false,
+  "engagementAuthorizationAuthority": false,
+  "activationAllowed": false
+}
