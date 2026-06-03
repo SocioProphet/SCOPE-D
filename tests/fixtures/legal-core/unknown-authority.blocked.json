@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "0.1.0",
+  "decisionId": "legal-core-decision:unknown-authority-blocked",
+  "decisionType": "runtime_action_admission",
+  "authorityBasis": "unknown",
+  "purpose": "static_document_triage",
+  "rightsProfile": {
+    "rightsKnown": false,
+    "commercialUseAllowed": false,
+    "redistributionAllowed": false,
+    "derivativeUseAllowed": false,
+    "modelTrainingAllowed": false,
+    "attributionRequired": false,
+    "sourceLicenseRef": null
+  },
+  "sensitivityProfile": {
+    "classification": "unknown",
+    "containsPersonalData": false,
+    "containsSensitivePersonalData": false,
+    "identityAdjacent": false,
+    "locationOrMobility": false
+  },
+  "jurisdictionOverlay": ["not_assessed"],
+  "safeProcessing": {
+    "unsafeRenderingAllowed": false,
+    "externalLookupAllowed": false,
+    "mutationAllowed": false,
+    "networkAccessAllowed": false,
+    "credentialAccessAllowed": false
+  },
+  "claimBoundary": {
+    "allowedClaimStates": ["unresolved"],
+    "customerFacingClaimAllowed": false,
+    "substantiationRequired": true
+  },
+  "decision": "blocked",
+  "effects": {
+    "collectionAllowed": false,
+    "runtimeActionAllowed": false,
+    "semanticPromotionAllowed": false,
+    "graphBindingAllowed": false,
+    "reportEmissionAllowed": false,
+    "humanReviewRequired": true
+  },
+  "receiptRefs": [
+    "legal-receipt:unknown-authority-blocked"
+  ],
+  "createdAt": "2026-06-03T06:51:00Z",
+  "nonClaims": [
+    "This fixture blocks unknown authority before collection, runtime action, semantic promotion, graph binding, or report emission.",
+    "This fixture does not provide jurisdiction-specific legal advice.",
+    "This fixture does not classify the underlying source as malicious."
+  ]
+}
