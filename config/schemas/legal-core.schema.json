@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/legal-core.schema.json",
+  "title": "SCOPE-D Legal Core Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "decisionId",
+    "decisionType",
+    "authorityBasis",
+    "purpose",
+    "rightsProfile",
+    "sensitivityProfile",
+    "jurisdictionOverlay",
+    "safeProcessing",
+    "claimBoundary",
+    "decision",
+    "effects",
+    "receiptRefs",
+    "createdAt",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "decisionId": { "type": "string", "pattern": "^legal-core-decision:[a-z0-9][a-z0-9._:-]*$" },
+    "decisionType": {
+      "type": "string",
+      "enum": [
+        "source_admission",
+        "defensive_endpoint_collection",
+        "static_document_triage",
+        "semantic_promotion",
+        "graph_binding",
+        "runtime_action_admission",
+        "claim_emission",
+        "package_release"
+      ]
+    },
+    "authorityBasis": {
+      "type": "string",
+      "enum": [
+        "first_party_defensive",
+        "customer_authorized",
+        "public_source",
+        "licensed_source",
+        "contractual_right",
+        "statutory_public_record",
+        "unknown",
+        "prohibited"
+      ]
+    },
+    "purpose": {
+      "type": "string",
+      "enum": [
+        "defensive_endpoint_triage",
+        "static_document_triage",
+        "source_curation",
+        "world_evidence_ingestion",
+        "supply_chain_enrichment",
+        "economic_signal_analysis",
+        "claim_bounded_reporting"
+      ]
+    },
+    "rightsProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rightsKnown", "commercialUseAllowed", "redistributionAllowed", "derivativeUseAllowed", "modelTrainingAllowed", "attributionRequired"],
+      "properties": {
+        "rightsKnown": { "type": "boolean" },
+        "commercialUseAllowed": { "type": "boolean" },
+        "redistributionAllowed": { "type": "boolean" },
+        "derivativeUseAllowed": { "type": "boolean" },
+        "modelTrainingAllowed": { "type": "boolean" },
+        "attributionRequired": { "type": "boolean" },
+        "sourceLicenseRef": { "type": ["string", "null"] }
+      }
+    },
+    "sensitivityProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["classification", "containsPersonalData", "containsSensitivePersonalData", "identityAdjacent", "locationOrMobility"],
+      "properties": {
+        "classification": { "type": "string", "enum": ["public", "commercial", "confidential", "customer_confidential", "security_telemetry", "regulated_sector", "unknown"] },
+        "containsPersonalData": { "type": "boolean" },
+        "containsSensitivePersonalData": { "type": "boolean" },
+        "identityAdjacent": { "type": "boolean" },
+        "locationOrMobility": { "type": "boolean" }
+      }
+    },
+    "jurisdictionOverlay": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["us_federal", "us_state", "eu_eea", "uk", "canada", "sector_specific", "customer_contract", "export_sanctions", "data_localization", "not_assessed"] },
+      "minItems": 1
+    },
+    "safeProcessing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unsafeRenderingAllowed", "externalLookupAllowed", "mutationAllowed", "networkAccessAllowed", "credentialAccessAllowed"],
+      "properties": {
+        "unsafeRenderingAllowed": { "type": "boolean", "const": false },
+        "externalLookupAllowed": { "type": "boolean" },
+        "mutationAllowed": { "type": "boolean" },
+        "networkAccessAllowed": { "type": "boolean" },
+        "credentialAccessAllowed": { "type": "boolean", "const": false }
+      }
+    },
+    "claimBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowedClaimStates", "customerFacingClaimAllowed", "substantiationRequired"],
+      "properties": {
+        "allowedClaimStates": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["observed", "inferred", "hypothesis", "forecast", "excluded", "unresolved"] } },
+        "customerFacingClaimAllowed": { "type": "boolean" },
+        "substantiationRequired": { "type": "boolean" }
+      }
+    },
+    "decision": { "type": "string", "enum": ["allowed", "blocked", "review_required"] },
+    "effects": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["collectionAllowed", "runtimeActionAllowed", "semanticPromotionAllowed", "graphBindingAllowed", "reportEmissionAllowed", "humanReviewRequired"],
+      "properties": {
+        "collectionAllowed": { "type": "boolean" },
+        "runtimeActionAllowed": { "type": "boolean" },
+        "semanticPromotionAllowed": { "type": "boolean" },
+        "graphBindingAllowed": { "type": "boolean" },
+        "reportEmissionAllowed": { "type": "boolean" },
+        "humanReviewRequired": { "type": "boolean" }
+      }
+    },
+    "receiptRefs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "nonClaims": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+  }
+}

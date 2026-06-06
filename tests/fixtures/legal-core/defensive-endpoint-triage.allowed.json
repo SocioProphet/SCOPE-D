@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "0.1.0",
+  "decisionId": "legal-core-decision:preview-surface-endpoint-triage-allowed",
+  "decisionType": "defensive_endpoint_collection",
+  "authorityBasis": "first_party_defensive",
+  "purpose": "defensive_endpoint_triage",
+  "rightsProfile": {
+    "rightsKnown": true,
+    "commercialUseAllowed": false,
+    "redistributionAllowed": false,
+    "derivativeUseAllowed": false,
+    "modelTrainingAllowed": false,
+    "attributionRequired": false,
+    "sourceLicenseRef": null
+  },
+  "sensitivityProfile": {
+    "classification": "security_telemetry",
+    "containsPersonalData": false,
+    "containsSensitivePersonalData": false,
+    "identityAdjacent": false,
+    "locationOrMobility": false
+  },
+  "jurisdictionOverlay": ["us_federal", "customer_contract"],
+  "safeProcessing": {
+    "unsafeRenderingAllowed": false,
+    "externalLookupAllowed": false,
+    "mutationAllowed": false,
+    "networkAccessAllowed": false,
+    "credentialAccessAllowed": false
+  },
+  "claimBoundary": {
+    "allowedClaimStates": ["observed", "inferred", "hypothesis", "unresolved", "excluded"],
+    "customerFacingClaimAllowed": false,
+    "substantiationRequired": true
+  },
+  "decision": "allowed",
+  "effects": {
+    "collectionAllowed": true,
+    "runtimeActionAllowed": false,
+    "semanticPromotionAllowed": false,
+    "graphBindingAllowed": true,
+    "reportEmissionAllowed": true,
+    "humanReviewRequired": false
+  },
+  "receiptRefs": [
+    "legal-receipt:preview-surface-endpoint-triage-allowed",
+    "lineage-receipt:finder-quicklook-webkit-seed-case"
+  ],
+  "createdAt": "2026-06-03T06:50:00Z",
+  "nonClaims": [
+    "This fixture permits first-party defensive endpoint evidence collection only.",
+    "This fixture does not authorize unsafe document rendering or external lookups.",
+    "This fixture does not confirm compromise or clear compromise."
+  ]
+}
