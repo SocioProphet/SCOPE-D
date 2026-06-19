@@ -27,10 +27,20 @@ DB_PATH = WS / "inventory.db"
 ALERTS_PATH = WS / "raw" / "social_alerts.jsonl"
 
 WATCHLIST = [
-    "divinecmarie-jpg",
-    "dracoloveforall-crypto",
-    "Abraxas2506",
-    "standardgalactic",
+    "divinecmarie-jpg",       # starred agent-hivemind + system-prompts
+    "dracoloveforall-crypto",  # in our following, starred SG brain
+    "Abraxas2506",             # named after SG repo, starred brain
+    "standardgalactic",        # primary threat actor
+    # TTP miner: full-spectrum offensive + AI (scored 30-49)
+    "Raoof128",                # every offensive TTP + all AI TTPs
+    "Bd-Mutant7",              # rootkit+C2+ransomware+AI, 1.4K followers
+    "credkellar-boop",         # phishing+malware+ransomware+exploit+AI
+    "RenatoMignone",           # rootkit+malware+evasion+privesc+AI
+    "Sunil56224972",           # exfil+C2+exploit+AI, 1.1K followers
+    "erogluyusuf",             # ai_attack+exploit+credential, 611 followers
+    "mwakidenis",              # C2+malware+recon, 2.4K followers (top reach)
+    "SyedShaheerHussain",      # phishing+ransomware+exploit, 1.7K followers
+    "illusive7ai",             # 7-TTP offensive actor, 953 followers
 ]
 
 MONITORED_LOGINS = [

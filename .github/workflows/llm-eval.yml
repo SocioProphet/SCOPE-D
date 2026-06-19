@@ -1,0 +1,53 @@
+name: LLM Red-Team Eval (promptfoo)
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # weekly, Monday 6am
+  pull_request:
+    paths:
+      - 'ai-infra/llm-eval/**'
+      - 'ai-infra/mcp-risk/**'
+  workflow_dispatch:
+
+jobs:
+  llm-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run promptfoo red-team eval
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          mkdir -p ai-infra/llm-eval/results
+          npx --yes promptfoo@latest eval \
+            --config ai-infra/llm-eval/promptfoo-eval.yaml \
+            --output ai-infra/llm-eval/results/latest.json \
+            --no-cache 2>&1 | tee /tmp/eval-run.log
+
+      - name: Check for failures
+        run: |
+          python3 -c "
+          import json, sys
+          with open('ai-infra/llm-eval/results/latest.json') as f:
+              r = json.load(f)
+          results = r.get('results', {})
+          stats = results.get('stats', {})
+          failures = stats.get('failures', 0)
+          passes = stats.get('successes', 0)
+          print(f'Passes: {passes}  Failures: {failures}')
+          if failures > 0:
+              print('ALERT: LLM failed red-team assertions — review ai-infra/llm-eval/results/latest.json')
+              sys.exit(1)
+          "
+
+      - name: Upload eval results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: llm-eval-${{ github.run_id }}
+          path: |
+            ai-infra/llm-eval/results/latest.json
+            /tmp/eval-run.log
+          retention-days: 90
