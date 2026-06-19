@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "graph-robustness-codebase-7f2bbf0c",
+  "graph": {
+    "graphType": "dependency_graph",
+    "sourceRef": "https://github.com/standardgalactic/brain",
+    "nodeCount": 5,
+    "edgeCount": 4,
+    "builtAt": "2026-06-19T23:28:27.177307+00:00"
+  },
+  "perturbationModel": {
+    "type": "static_analysis_only",
+    "description": "AST-derived graph; no execution, no runtime state. Robustness assessed structurally.",
+    "executionRequired": false
+  },
+  "robustnessScore": {
+    "value": 0.8,
+    "interpretation": "Lower density = sparser coupling = more robust to targeted removal",
+    "weaklyConnectedComponents": 1,
+    "graphDensity": 0.2
+  },
+  "affectedDecisions": [
+    "attack surface estimation",
+    "dependency chain risk",
+    "entry point enumeration"
+  ],
+  "summary": {
+    "files": 0,
+    "classes": 0,
+    "functions": 0,
+    "importEdges": 0,
+    "invokeEdges": 0
+  },
+  "hardening": [
+    "Review high-in-degree nodes (most-imported modules) as critical risk concentrations.",
+    "Verify no wildcard imports (*) that obscure dependency surface.",
+    "Consider Tree-sitter/SynapseIQ upgrade for multi-language coverage."
+  ],
+  "collectorPolicy": {
+    "executionMode": "static_analysis_only",
+    "networkEgress": false,
+    "credentialAccess": false,
+    "scopeType": "authorized_local_working_copy"
+  }
+}

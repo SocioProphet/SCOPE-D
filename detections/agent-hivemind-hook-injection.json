@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "det-sg-hivemind-hook-injection-001",
+  "name": "standardgalactic/agent-hivemind Claude Code Hook Injection",
+  "ruleType": "sigma",
+  "status": "production",
+  "severity": "CRITICAL",
+  "sourceFindingRefs": [
+    "ai-infra/mcp-risk/STANDARDGALACTIC-MCP.md",
+    "ai-infra/mcp-risk/CLAUDE-CODE-INTEL-EXPOSURE.md",
+    "docs/threat-actors/STANDARDGALACTIC-AGENT-HIVEMIND.md",
+    "fixtures/threat-actor-graphs/sg-hivemind.assessment.json"
+  ],
+  "frameworkMappings": [
+    { "framework": "MITRE ATT&CK", "id": "T1546.004", "name": "Event Triggered Execution: Unix Shell Configuration Modification" },
+    { "framework": "MITRE ATT&CK", "id": "T1059.006", "name": "Command and Scripting Interpreter: Python" },
+    { "framework": "MITRE ATT&CK", "id": "T1071.001", "name": "Application Layer Protocol: Web Protocols (C2)" },
+    { "framework": "MITRE ATT&CK", "id": "T1554",     "name": "Compromise Client Software Binary" }
+  ],
+  "ruleText": {
+    "sigma": {
+      "title": "Claude Code Hook Directory Modification by Non-Claude Process",
+      "id": "det-sg-hivemind-hook-injection-001",
+      "status": "production",
+      "description": "Detects file creation or modification in ~/.claude/hooks/ or ~/.claude/commands/ by any process other than the official claude binary. The standardgalactic/agent-hivemind MCP server (ClaudeOps) contains AgentDirectiveSystem which auto-installs pre-command.sh, post-command.sh, and ticket-sync.py hooks into these directories with auto_execute=True, priority=critical.",
+      "author": "SocioProphet/SCOPE-D",
+      "date": "2026-06-19",
+      "references": [
+        "https://github.com/standardgalactic/agent-hivemind/blob/main/src/agent_directives.py"
+      ],
+      "logsource": {
+        "category": "file_event",
+        "product": "macos"
+      },
+      "detection": {
+        "selection": {
+          "TargetFilename|contains": [
+            "/.claude/hooks/",
+            "/.claude/commands/"
+          ]
+        },
+        "filter_legitimate": {
+          "Image|endswith": [
+            "/claude",
+            "/node"
+          ]
+        },
+        "condition": "selection and not filter_legitimate"
+      },
+      "falsepositives": [
+        "Legitimate Claude Code extensions or plugins writing to these directories via official installer",
+        "Manual operator configuration of hooks"
+      ],
+      "level": "critical",
+      "tags": [
+        "attack.persistence",
+        "attack.t1546.004",
+        "attack.t1059.006",
+        "attack.t1071.001"
+      ]
+    },
+    "github_actions_check": {
+      "description": "CI check: detect agent-hivemind or haivemind MCP server references in .claude/settings.json or mcp config files",
+      "script": "grep -r -i 'haivemind\\|hivemind\\|agent-hivemind\\|claudeops' ~/.claude/settings.json .claude/ 2>/dev/null && echo ALERT:HIVEMIND_DETECTED || echo OK"
+    },
+    "osquery": {
+      "description": "Continuous monitoring — files in ~/.claude/hooks not owned by or written by claude binary",
+      "query": "SELECT path, filename, mtime, atime, uid, gid FROM file WHERE path LIKE '/Users/%/.claude/hooks/%' OR path LIKE '/Users/%/.claude/commands/%' ORDER BY mtime DESC LIMIT 50;"
+    }
+  },
+  "expectedEffect": "Alert fires when any non-claude process writes to ~/.claude/hooks/ or ~/.claude/commands/. This catches the AgentDirectiveSystem's auto-installation of pre-command.sh, post-command.sh, and ticket-sync.py hooks which would give the agent-hivemind server persistent execution on every Claude Code command.",
+  "falsePositiveRisk": "LOW — legitimate hook modifications are rare and should always be operator-initiated. Any automated write to these directories is suspicious by default.",
+  "validationTestRefs": [
+    "tests/test_mcp_authentication.py (from agent-hivemind — reference for what legitimate MCP auth looks like)",
+    "fixtures/threat-actor-graphs/sg-hivemind.assessment.json"
+  ],
+  "deploymentGate": "Deploy immediately. This is a zero-day style persistence mechanism. No tuning period required — hook directory writes should always be human-initiated.",
+  "rollbackPlan": "Remove alert if operator explicitly deploys a sanctioned hook framework with documented, approved hook files. Require change ticket with approval chain.",
+  "owner": "SocioProphet/SCOPE-D — ai-infra lane",
+  "reviewedAt": "2026-06-19"
+}

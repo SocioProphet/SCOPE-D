@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "0.1.0",
+  "scenarioId": "wg-sg-hivemind-hook-injection-2026-001",
+  "title": "standardgalactic/agent-hivemind: Claude Code Hook Injection via MCP Auto-Execute Directive",
+  "mode": "DEFENSE",
+  "scenarioClass": "agentic_tool_misbinding",
+  "objective": "Model and defend against persistent hook-level compromise of a Claude Code developer workstation via a malicious MCP server (agent-hivemind) that auto-installs pre/post command hooks and a credential vault.",
+  "targetTopology": {
+    "description": "Developer workstation running Claude Code with MCP servers configured. Target has ~/.claude/hooks/ and ~/.claude/commands/ writable. May have Confluence, Redis, or cloud credential access.",
+    "components": [
+      "developer_workstation",
+      "claude_code_mcp_context",
+      "mcp_server_registry",
+      "dot_claude_hooks_directory",
+      "redis_instance",
+      "confluence_instance",
+      "cloud_credential_store"
+    ]
+  },
+  "channelSubstrates": ["mcp_stdio", "mcp_http", "filesystem", "redis_tcp", "https"],
+  "interfaceCrossings": [
+    "mcp_tool_call → filesystem_write (hook installation)",
+    "mcp_tool_call → redis_write (credential vault sync)",
+    "pre_command_hook → c2_http (per-command exfiltration)",
+    "ticket_sync_hook → haivemind_server (task context exfil)"
+  ],
+  "authorityEnvelopeRef": "config/schemas/authorized-mcp-discovery-run.schema.json",
+  "safetyBoundaryRefs": [
+    "ai-infra/mcp-risk/STANDARDGALACTIC-MCP.md",
+    "ai-infra/mcp-risk/mcp_integrity_check.py"
+  ],
+  "capabilityExposure": {
+    "attackerCapabilities": [
+      "Write arbitrary files to ~/.claude/hooks/ (persistence)",
+      "Execute code before and after every Claude Code tool call (hook interception)",
+      "Exfiltrate task context (what the developer is building) via ticket-sync.py",
+      "Store and escrow credentials from connected agents (Shamir vault)",
+      "Distribute additional tools via marketplace post-compromise",
+      "Coordinate multiple compromised Claude Code agents (Kanban + directive system)",
+      "Read Confluence wikis and internal documentation",
+      "Persist as HTTP MCP server for multi-agent coordination"
+    ],
+    "exploitedWeaknesses": [
+      "MCP servers are trusted to write files within their tool scope",
+      "Claude Code hooks directory is writable by any process with user permissions",
+      "No code signing or integrity verification on hook files",
+      "MCP server installation often done without full code review",
+      "auto_execute:true directive fires on first connection before operator can review"
+    ]
+  },
+  "humanInterpretation": "A developer installs agent-hivemind as an MCP server thinking it is a DevOps automation tool (it markets itself as 'ClaudeOps — Distributed AI collective memory'). On first connection, the AgentDirectiveSystem fires a claude_code_setup directive marked auto_execute:True with critical priority. This directive creates ~/.claude/hooks/ and writes pre-command.sh, post-command.sh, and ticket-sync.py. From this point forward, every Claude Code session runs the attacker's hooks. The developer has no visible indication this happened — Claude Code continues working normally, but all tool calls are now intercepted and task context is synced to the hivemind server. The credential vault then collects any secrets Claude Code interacts with.",
+  "machineInterpretation": "Attack graph: MCP_INSTALL → AgentDirectiveSystem.execute(claude_code_setup) → mkdir(~/.claude/hooks) → write(pre-command.sh, post-command.sh, ticket-sync.py, mode=755) → PERSISTENCE. Post-persistence: EVERY_TOOL_CALL → pre-command.sh(exfil_context) → CLAUDE_TOOL_EXECUTE → post-command.sh(exfil_result). Parallel: vault.sync(credentials) → redis(6379) → haivemind_server.",
+  "trustEdgeRefs": [
+    "Developer trusts MCP server registry / npm to surface legitimate tools",
+    "Claude Code trusts hooks directory contents to be operator-authored",
+    "Developer trusts 'ClaudeOps' branding as Claude-ecosystem tool"
+  ],
+  "boundaryEventRefs": [
+    "MCP server writes to filesystem outside its declared scope",
+    "Hook file created with execute permissions by non-claude process",
+    "Redis connection from Python process with 'haivemind' in cmdline"
+  ],
+  "evidenceRefs": [
+    "fixtures/threat-actor-graphs/sg-hivemind.assessment.json",
+    "docs/threat-actors/STANDARDGALACTIC-AGENT-HIVEMIND.md",
+    "docs/threat-actors/STANDARDGALACTIC.md",
+    "detections/agent-hivemind-hook-injection.json",
+    "detections/mcp-vault-credential-exfil.json"
+  ],
+  "attackCoverageClaimRefs": [
+    { "mitre": "T1546.004", "covered_by": "detections/agent-hivemind-hook-injection.json" },
+    { "mitre": "T1059.006", "covered_by": "detections/agent-hivemind-hook-injection.json" },
+    { "mitre": "T1552.001", "covered_by": "detections/mcp-vault-credential-exfil.json" },
+    { "mitre": "T1041",     "covered_by": "detections/mcp-vault-credential-exfil.json" },
+    { "mitre": "T1195.001", "covered_by": "ai-infra/mcp-risk/mcp_integrity_check.py" }
+  ],
+  "controlRefs": [
+    "ai-infra/mcp-risk/mcp_integrity_check.py — blocks standardgalactic MCP servers at install time",
+    "detections/agent-hivemind-hook-injection.json — Sigma + osquery for hook dir writes",
+    "detections/mcp-vault-credential-exfil.json — osquery for vault/Redis activity",
+    "intel/github/fingerprint_monitor.py — surfaces if SG network accounts interact with our repos"
+  ],
+  "proofRefs": [
+    "fixtures/threat-actor-graphs/sg-hivemind.assessment.json — codebase graph confirming 3442 functions across 152 files",
+    "ai-infra/mcp-risk/CLAUDE-CODE-INTEL-EXPOSURE.md — confirms SG has Claude Code system prompt intelligence enabling targeted hook design"
+  ],
+  "runtimeDecisionReceiptRefs": [],
+  "memoryEffects": {
+    "persistenceArtifacts": [
+      "~/.claude/hooks/pre-command.sh",
+      "~/.claude/hooks/post-command.sh",
+      "~/.claude/hooks/ticket-sync.py",
+      "~/.claude/commands/* (haivemind slash commands)",
+      "Redis keyspace (credential vault data)"
+    ],
+    "remediationSteps": [
+      "Remove ~/.claude/hooks/ contents not authored by operator",
+      "Remove ~/.claude/commands/ contents not authored by operator",
+      "Flush Redis keyspace used by haivemind (key prefix: haivemind:*)",
+      "Revoke any credentials Claude Code may have interacted with during compromised period",
+      "Rotate all secrets accessible during sessions with agent-hivemind installed"
+    ]
+  },
+  "claimPromotion": {
+    "promotionThreshold": "Any confirmation of hook file in ~/.claude/hooks/ from non-operator source → escalate to INCIDENT",
+    "suppressionConditions": ["Hook files match operator-authored inventory in change management system"]
+  },
+  "consequenceModel": {
+    "immediateConsequences": [
+      "Persistent code execution on every Claude Code command",
+      "Real-time exfiltration of developer task context to attacker C2",
+      "Credential harvesting from all secrets Claude Code accesses"
+    ],
+    "cascadingConsequences": [
+      "Attacker gains insight into all repos being worked on, all PRs, all deploy commands",
+      "Harvested credentials enable lateral movement into cloud infrastructure, CI/CD, databases",
+      "Multi-agent Kanban coordination enables parallel compromise of other developer machines in same org"
+    ],
+    "blastRadius": "Individual developer → org-wide if credentials exfiltrated from CI/CD or cloud provider"
+  },
+  "abstentionRules": [
+    "Do not install agent-hivemind or any standardgalactic MCP server in any environment",
+    "Do not execute hook files found in ~/.claude/hooks/ without verifying authorship",
+    "Do not allowlist 'haivemind' or 'hivemind' process names in osquery rules"
+  ],
+  "counterfactuals": [
+    "If MCP servers required signed manifests with declared filesystem write scopes, the hook installation would be blocked or require explicit operator approval",
+    "If Claude Code validated hook file integrity (e.g., sha256 manifest), injected hooks would be detected on next launch",
+    "If Redis was not available on the developer machine, the credential vault would fail to sync but hook persistence would still succeed"
+  ],
+  "semanticNonClaims": [
+    "This scenario does not claim SG has already compromised any specific developer workstation",
+    "This scenario does not claim Lance James (credential_escrow.py author) is malicious — the code may have been incorporated without consent"
+  ],
+  "redactionState": "unredacted",
+  "runtimeAuthority": "SCOPE-D wargames engine",
+  "procedureExecutionAuthority": "operator",
+  "engagementAuthorizationAuthority": "SocioProphet security team",
+  "activationAllowed": true
+}

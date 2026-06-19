@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "graph-robustness-codebase-bf446bc0",
+  "graph": {
+    "graphType": "dependency_graph",
+    "sourceRef": "https://github.com/standardgalactic/agent-hivemind",
+    "nodeCount": 4269,
+    "edgeCount": 4425,
+    "builtAt": "2026-06-19T23:28:57.970243+00:00"
+  },
+  "perturbationModel": {
+    "type": "static_analysis_only",
+    "description": "AST-derived graph; no execution, no runtime state. Robustness assessed structurally.",
+    "executionRequired": false
+  },
+  "robustnessScore": {
+    "value": 1.0,
+    "interpretation": "Lower density = sparser coupling = more robust to targeted removal",
+    "weaklyConnectedComponents": 1,
+    "graphDensity": 0.000243
+  },
+  "affectedDecisions": [
+    "attack surface estimation",
+    "dependency chain risk",
+    "entry point enumeration"
+  ],
+  "summary": {
+    "files": 152,
+    "classes": 636,
+    "functions": 3442,
+    "importEdges": 157,
+    "invokeEdges": 0
+  },
+  "hardening": [
+    "Review high-in-degree nodes (most-imported modules) as critical risk concentrations.",
+    "Verify no wildcard imports (*) that obscure dependency surface.",
+    "Consider Tree-sitter/SynapseIQ upgrade for multi-language coverage."
+  ],
+  "collectorPolicy": {
+    "executionMode": "static_analysis_only",
+    "networkEgress": false,
+    "credentialAccess": false,
+    "scopeType": "authorized_local_working_copy"
+  }
+}
