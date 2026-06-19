@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "graph-robustness-codebase-dependency-synthetic-0001",
+  "graph": {
+    "graphType": "dependency_graph",
+    "sourceRef": "synthetic://scope-d/codebase-graph-fixture",
+    "nodeCount": 12,
+    "edgeCount": 14,
+    "builtAt": "2026-06-19T00:00:00Z"
+  },
+  "perturbationModel": {
+    "type": "edge_injection",
+    "budget": 2,
+    "syntheticOnly": true
+  },
+  "robustnessScore": 0.82,
+  "confidenceImpact": "low",
+  "affectedDecisions": [
+    "attack surface estimation",
+    "dependency chain risk",
+    "entry point enumeration"
+  ],
+  "recommendedHardeningControls": [
+    "Review high-in-degree nodes as critical risk concentrations",
+    "Verify no wildcard imports obscuring dependency surface",
+    "Enable SynapseIQ/Tree-sitter enrichment for multi-language coverage"
+  ],
+  "evidenceRefs": [
+    "graph-robustness/codebase/build_codebase_graph.py",
+    "docs/WARGAMES_TREE_SITTER_LSA_BRIDGE.md"
+  ]
+}

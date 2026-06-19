@@ -1,0 +1,49 @@
+name: Fingerprint Monitor
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:
+
+jobs:
+  fingerprint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Download inventory DB
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          gh release download --repo SocioProphet/SCOPE-D \
+            --pattern "inventory.db" \
+            --dir /tmp/gh-inventory \
+            --clobber || echo "No release artifact; monitor will run with empty DB"
+          mkdir -p $HOME/dev/gh-inventory/raw
+          cp /tmp/gh-inventory/inventory.db $HOME/dev/gh-inventory/ 2>/dev/null || true
+          cp $HOME/dev/gh-inventory/honeypots.jsonl $HOME/dev/gh-inventory/raw/ 2>/dev/null || true
+
+      - name: Run fingerprint monitor
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          python intel/github/fingerprint_monitor.py \
+            --repos SocioProphet/SCOPE-D mdheller/gh-inventory \
+            2>&1 | tee /tmp/fingerprint-run.log
+
+      - name: Upload fingerprint results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fingerprint-run-${{ github.run_id }}
+          path: |
+            /tmp/fingerprint-run.log
+            ~/dev/gh-inventory/raw/fingerprints.jsonl
+            ~/dev/gh-inventory/raw/traffic_anomalies.jsonl
+          retention-days: 90

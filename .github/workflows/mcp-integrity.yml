@@ -1,0 +1,41 @@
+name: MCP Integrity Check
+
+on:
+  pull_request:
+    paths:
+      - '**/.claude/**'
+      - '**/mcp*.json'
+      - '**/settings.json'
+      - 'ai-infra/mcp-risk/**'
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  mcp-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: MCP integrity check (strict)
+        run: |
+          python ai-infra/mcp-risk/mcp_integrity_check.py \
+            --config-dir . \
+            --out /tmp/mcp-integrity-run.json \
+            --strict
+        env:
+          MCP_CONFIG_SCAN_PATHS: "."
+
+      - name: Upload integrity record
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mcp-integrity-run
+          path: /tmp/mcp-integrity-run.json

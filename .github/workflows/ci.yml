@@ -23,3 +23,37 @@ jobs:
         run: npm test
       - name: Run graph robustness smoke test
         run: node scripts/test-graph-robustness-slice.js
+
+  codebase-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install networkx
+
+      - name: Build codebase graph
+        run: |
+          python graph-robustness/codebase/build_codebase_graph.py . \
+            --out /tmp/scope-d-graph \
+            --source-ref "https://github.com/tayontech/SCOPE"
+
+      - name: Export to HellGraph + MeshRush
+        run: |
+          python graph-robustness/codebase/export_hellgraph.py /tmp/scope-d-graph.pkl \
+            --out /tmp/scope-d-graph --all
+
+      - name: Upload graph artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: codebase-graph
+          path: |
+            /tmp/scope-d-graph.graphml
+            /tmp/scope-d-graph.assessment.json
+            /tmp/scope-d-graph.hellgraph.jsonl
