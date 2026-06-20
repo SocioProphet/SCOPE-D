@@ -41,6 +41,9 @@ WATCHLIST = [
     "mwakidenis",              # C2+malware+recon, 2.4K followers (top reach)
     "SyedShaheerHussain",      # phishing+ransomware+exploit, 1.7K followers
     "illusive7ai",             # 7-TTP offensive actor, 953 followers
+    # Flagged followers of mdheller discovered 2026-06-19 (posture audit)
+    "Carrington-dev",          # 3.5K followers, security_signal — follows mdheller
+    "backrat13",               # 23 followers, security_signal — follows mdheller
 ]
 
 MONITORED_LOGINS = [
