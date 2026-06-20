@@ -1,0 +1,32 @@
+{
+  "_fixture": true,
+  "_description": "Happy-path positive fixture: DNS lookup in fixture mode. No external contact. All gates pass. target_scope=fixture_only, executionMode=fixture.",
+  "_expectedStatus": "fixture_only",
+  "schemaVersion": "0.1.0",
+  "lookupId": "osint-passive-dns-fixture-001",
+  "lookupType": "dns",
+  "target": "fixture.example",
+  "targetScope": "fixture_only",
+  "engagementPolicyRef": "engagement-policy-fixture-test",
+  "authorizationRef": "self-authorized fixture: no live data",
+  "executionMode": "fixture",
+  "nonDestructiveOnly": true,
+  "networkBoundary": "no_external_contact",
+  "sourceEvidenceRef": "system DNS resolver (passive resolution only)",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "receiptRequired": true,
+  "fixtureMode": true,
+  "result": {
+    "status": "fixture_only",
+    "records": [
+      {"type": "A",    "value": "192.0.2.1",  "ttl": 300},
+      {"type": "AAAA", "value": "2001:db8::1", "ttl": 300},
+      {"type": "MX",   "value": "10 mail.fixture.example", "ttl": 3600}
+    ],
+    "confidenceCaveat": "Passive DNS resolution only. Results reflect current resolver state; not authoritative. No zone transfer or brute-force performed."
+  },
+  "receiptEmitted": true,
+  "queriedAt": "2026-06-19T00:00:00Z",
+  "actionAuthorizedReceipt": "gate_passed",
+  "warnings": []
+}

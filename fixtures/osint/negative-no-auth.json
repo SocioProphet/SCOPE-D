@@ -1,0 +1,28 @@
+{
+  "_fixture": true,
+  "_description": "Gate 3 denial: AuthorizationRef missing. Policy and scope present but no authorization reference — lookup denied.",
+  "_expectedDenialReason": "denied_no_authorization_ref",
+  "schemaVersion": "0.1.0",
+  "lookupId": "osint-passive-dns-denied",
+  "lookupType": "dns",
+  "target": "example.com",
+  "targetScope": "public_research_no_pii",
+  "engagementPolicyRef": "engagement-policy-research-2026-06-19",
+  "authorizationRef": "MISSING",
+  "executionMode": "passive_public_source",
+  "nonDestructiveOnly": true,
+  "networkBoundary": "no_external_contact",
+  "sourceEvidenceRef": "gate_enforcer",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "receiptRequired": true,
+  "fixtureMode": false,
+  "result": {
+    "status": "denied_no_policy",
+    "records": [],
+    "confidenceCaveat": "Lookup was denied by EngagementPolicy gate before any external contact."
+  },
+  "receiptEmitted": true,
+  "queriedAt": "2026-06-19T00:00:00Z",
+  "actionDeniedReceipt": "denied_no_authorization_ref",
+  "denialMessage": "No AuthorizationRef provided. Every lookup requires an explicit authorization reference."
+}

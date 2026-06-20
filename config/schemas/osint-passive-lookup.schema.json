@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/osint-passive-lookup.schema.json",
+  "title": "SCOPE-D OSINT Passive Lookup",
+  "description": "Output record for a passive OSINT lookup (DNS, WHOIS, certs, BGP). No network scanning, no active probing, no credential access. All external calls are to public-source APIs (CT logs, WHOIS, DNS resolvers, BGP registries). Part of the OSIRIS capability recovery path — see docs/osiris-recon-capability-recovery-backlog.md §3 (passive lookup fixtures).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "lookupId",
+    "lookupType",
+    "target",
+    "targetScope",
+    "engagementPolicyRef",
+    "authorizationRef",
+    "executionMode",
+    "nonDestructiveOnly",
+    "networkBoundary",
+    "sourceEvidenceRef",
+    "operatorIdentityRef",
+    "receiptRequired",
+    "fixtureMode",
+    "result",
+    "receiptEmitted",
+    "queriedAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "lookupId": {
+      "type": "string",
+      "pattern": "^osint-passive-[a-z0-9][a-z0-9._:-]*$",
+      "description": "Unique identifier for this lookup record."
+    },
+    "lookupType": {
+      "type": "string",
+      "enum": ["dns", "whois", "certs", "bgp", "mac_vendor"],
+      "description": "The type of passive public-source lookup performed."
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The lookup target (domain, IP, ASN, or MAC prefix)."
+    },
+    "targetScope": {
+      "type": "string",
+      "enum": [
+        "fixture_only",
+        "owned_infrastructure",
+        "authorized_by_engagement_policy",
+        "public_research_no_pii"
+      ],
+      "description": "Scope classification of the target. fixture_only means no live external contact."
+    },
+    "engagementPolicyRef": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Reference to the EngagementPolicy document authorizing this lookup."
+    },
+    "authorizationRef": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Reference to the authorization document or statement permitting this lookup."
+    },
+    "executionMode": {
+      "type": "string",
+      "enum": ["fixture", "passive_public_source", "dry_run"],
+      "description": "How the lookup was executed. 'fixture' means no live network call was made."
+    },
+    "nonDestructiveOnly": {
+      "type": "boolean",
+      "const": true,
+      "description": "Must always be true. Passive lookups must never cause side effects on the target."
+    },
+    "networkBoundary": {
+      "type": "string",
+      "enum": ["no_external_contact", "public_source_api_only", "public_dns_only"],
+      "description": "Describes the network access boundary for this lookup."
+    },
+    "sourceEvidenceRef": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The public source queried (e.g. 'crt.sh CT log', 'IANA WHOIS', 'system DNS resolver')."
+    },
+    "operatorIdentityRef": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identity of the operator who authorized this lookup."
+    },
+    "receiptRequired": {
+      "type": "boolean",
+      "const": true,
+      "description": "Must always be true. Every lookup emits a receipt."
+    },
+    "fixtureMode": {
+      "type": "boolean",
+      "description": "True if this is a fixture-mode run with no live external contact."
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["success", "not_found", "error", "fixture_only", "denied_no_policy", "denied_no_scope", "denied_unauthorized_target"]
+        },
+        "records": {
+          "type": "array",
+          "items": { "type": "object", "additionalProperties": true },
+          "description": "Structured lookup results. Empty for fixture_only or denied status."
+        },
+        "raw": {
+          "type": "string",
+          "description": "Raw response text for debugging. Omit for denied or fixture_only."
+        },
+        "sourceVersion": {
+          "type": "string",
+          "description": "Source dataset version or timestamp if available."
+        },
+        "confidenceCaveat": {
+          "type": "string",
+          "description": "Caveat about result confidence or staleness."
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if status is error."
+        }
+      }
+    },
+    "receiptEmitted": {
+      "type": "boolean",
+      "description": "True once the receipt has been written."
+    },
+    "queriedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actionDeniedReceipt": {
+      "type": "string",
+      "description": "If the lookup was denied, reference to the denial receipt."
+    },
+    "actionAuthorizedReceipt": {
+      "type": "string",
+      "description": "If the lookup was authorized, reference to the authorization receipt."
+    }
+  }
+}

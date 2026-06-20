@@ -1,0 +1,28 @@
+{
+  "_fixture": true,
+  "_description": "Gate 6 denial: lookup_type 'scanner_proxy' is permanently blocked. Even with a valid policy, scope, auth, and operator, blocked types are rejected before any external contact.",
+  "_expectedDenialReason": "denied_unauthorized_lookup_type",
+  "schemaVersion": "0.1.0",
+  "lookupId": "osint-passive-scanner_proxy-denied",
+  "lookupType": "scanner_proxy",
+  "target": "example.com",
+  "targetScope": "public_research_no_pii",
+  "engagementPolicyRef": "engagement-policy-research-2026-06-19",
+  "authorizationRef": "owner: michael@socioprophet.ai",
+  "executionMode": "passive_public_source",
+  "nonDestructiveOnly": true,
+  "networkBoundary": "no_external_contact",
+  "sourceEvidenceRef": "gate_enforcer",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "receiptRequired": true,
+  "fixtureMode": false,
+  "result": {
+    "status": "denied_no_policy",
+    "records": [],
+    "confidenceCaveat": "Lookup was denied by EngagementPolicy gate before any external contact."
+  },
+  "receiptEmitted": true,
+  "queriedAt": "2026-06-19T00:00:00Z",
+  "actionDeniedReceipt": "denied_unauthorized_lookup_type",
+  "denialMessage": "Lookup type 'scanner_proxy' is permanently blocked. See docs/osiris-scanner-sweep-quarantine.md."
+}

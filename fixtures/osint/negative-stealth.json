@@ -1,0 +1,28 @@
+{
+  "_fixture": true,
+  "_description": "Gate 8 denial: stealth_mode=true. Stealth/evasion semantics are permanently blocked per OSIRIS quarantine boundary. No evasion behavior may be enabled regardless of policy.",
+  "_expectedDenialReason": "denied_stealth_semantics",
+  "schemaVersion": "0.1.0",
+  "lookupId": "osint-passive-dns-denied",
+  "lookupType": "dns",
+  "target": "example.com",
+  "targetScope": "public_research_no_pii",
+  "engagementPolicyRef": "engagement-policy-research-2026-06-19",
+  "authorizationRef": "owner: michael@socioprophet.ai",
+  "executionMode": "passive_public_source",
+  "nonDestructiveOnly": true,
+  "networkBoundary": "no_external_contact",
+  "sourceEvidenceRef": "gate_enforcer",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "receiptRequired": true,
+  "fixtureMode": false,
+  "result": {
+    "status": "denied_no_policy",
+    "records": [],
+    "confidenceCaveat": "Lookup was denied by EngagementPolicy gate before any external contact."
+  },
+  "receiptEmitted": true,
+  "queriedAt": "2026-06-19T00:00:00Z",
+  "actionDeniedReceipt": "denied_stealth_semantics",
+  "denialMessage": "Stealth/evasion semantics are permanently blocked per OSIRIS quarantine boundary. See docs/osiris-scanner-sweep-quarantine.md §5."
+}
