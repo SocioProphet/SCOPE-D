@@ -82,12 +82,12 @@ def _get_accounts(iconn: sqlite3.Connection, tier: int, limit: int) -> list[dict
     if tier == 1:
         where = "security_signal = 1"
     elif tier == 2:
-        where = "(followers > 100 OR public_repos > 50)"
+        where = "(followers_n > 100 OR public_repos > 50)"
     else:
         where = "1=1"
     rows = iconn.execute(
-        f"SELECT login, followers, public_repos, security_signal FROM sg_accounts "
-        f"WHERE crawled = 1 AND {where} ORDER BY followers DESC, public_repos DESC LIMIT ?",
+        f"SELECT login, followers_n, public_repos, security_signal FROM sg_accounts "
+        f"WHERE crawled = 1 AND {where} ORDER BY followers_n DESC, public_repos DESC LIMIT ?",
         (limit,)
     ).fetchall()
     return [{"login": r[0], "followers": r[1], "public_repos": r[2], "security_signal": r[3]} for r in rows]
