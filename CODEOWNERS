@@ -1,0 +1,21 @@
+# CODEOWNERS — security-critical paths require review before merge
+# See: docs/posture/github-posture-assessment-2026-06-19.md
+
+# Detection rules — any change to a detection requires review
+/detections/                  @mdheller
+
+# AI infrastructure and MCP risk — Claude Code hook attack surface
+/ai-infra/                    @mdheller
+
+# Wargames scenarios and threat actor intel
+/fixtures/wargames/           @mdheller
+/docs/threat-actors/          @mdheller
+
+# Playbooks — operator-facing runbooks
+/playbooks/                   @mdheller
+
+# CI/CD workflows — supply chain critical
+/.github/workflows/           @mdheller
+
+# Posture assessments
+/docs/posture/                @mdheller
