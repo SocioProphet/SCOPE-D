@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "det-recon-osint-001",
+  "name": "Recon and OSINT Footprinting Against SocioProphet Infrastructure",
+  "ruleType": "sigma",
+  "status": "production",
+  "severity": "MEDIUM",
+  "sourceFindingRefs": [
+    "docs/threat-actors/SG-NETWORK-TTP-MAP.md",
+    "intel/github/sg_repo_miner.py"
+  ],
+  "frameworkMappings": [
+    { "framework": "MITRE ATT&CK", "id": "T1590",     "name": "Gather Victim Network Information" },
+    { "framework": "MITRE ATT&CK", "id": "T1591",     "name": "Gather Victim Org Information" },
+    { "framework": "MITRE ATT&CK", "id": "T1593",     "name": "Search Open Websites/Domains" },
+    { "framework": "MITRE ATT&CK", "id": "T1595.001", "name": "Active Scanning: Scanning IP Blocks" }
+  ],
+  "ruleText": {
+    "sigma_dns_recon": {
+      "title": "DNS Subdomain Enumeration Against SocioProphet Domains",
+      "id": "det-recon-osint-dns-001",
+      "status": "production",
+      "description": "Detects DNS subdomain brute-force and zone transfer attempts. Based on TTP analysis: recon_osint appears in 121/1016 SG security accounts (12%). Common tools: amass, subfinder, dnsrecon, fierce, dnsx, massdns.",
+      "author": "SocioProphet/SCOPE-D",
+      "date": "2026-06-19",
+      "logsource": { "category": "dns" },
+      "detection": {
+        "selection_burst": {
+          "query_type": ["A", "AAAA", "CNAME", "MX", "TXT"],
+          "query_name|contains": ["socioprophet", "socios", "sourceos", "synapseiq", "noetica", "bearbrowser"]
+        },
+        "timeframe": "60s",
+        "condition": "selection_burst | count() by src_ip > 50"
+      },
+      "falsepositives": ["CDN health checks", "Legitimate DNS resolver caching bursts"],
+      "level": "medium",
+      "tags": ["attack.reconnaissance", "attack.t1590", "attack.t1595.001"]
+    },
+    "sigma_github_recon": {
+      "title": "GitHub API Enumeration — Org/Member/Repo Discovery",
+      "id": "det-recon-osint-github-001",
+      "status": "production",
+      "description": "Detects mass enumeration of GitHub org members, repos, and social graph — the pattern used by SG network actors to build target lists before attacking. Also catches tooling like SeeRepo (SG's own codebase graph tool used against us).",
+      "logsource": { "category": "application", "product": "github_audit_log" },
+      "detection": {
+        "selection": {
+          "action|startswith": ["org.members", "repo.access", "org.add_member"],
+          "actor": null
+        },
+        "selection_api_burst": {
+          "action": "git.clone",
+          "repository|contains|any": ["SocioProphet", "mdheller", "socios-linux", "sourceos-linux"]
+        },
+        "timeframe": "10m",
+        "condition": "(selection or selection_api_burst) | count() by actor > 30"
+      },
+      "falsepositives": ["Internal GitHub Actions CI (add CI runner IP to allowlist)", "Dependabot"],
+      "level": "medium",
+      "tags": ["attack.reconnaissance", "attack.t1591", "attack.t1593"]
+    },
+    "osquery_recon_tools": {
+      "description": "Detect OSINT/recon tools running locally that target SocioProphet infrastructure. Focus on tools found in the SG network: amass, subfinder, theHarvester, Maltego, recon-ng, spiderfoot, shodan CLI.",
+      "query": "SELECT p.pid, p.name, p.cmdline, p.start_time, u.username FROM processes p JOIN users u ON p.uid = u.uid WHERE p.name IN ('amass', 'subfinder', 'theHarvester', 'recon-ng', 'spiderfoot', 'dnsx', 'massdns', 'dnsrecon', 'fierce', 'shodan') OR p.cmdline LIKE '%socioprophet%' OR p.cmdline LIKE '%sourceos%' ORDER BY p.start_time DESC LIMIT 20;"
+    },
+    "github_traffic_monitor": {
+      "description": "Monitor GitHub traffic API for clone spikes suggesting systematic recon. Threshold: >10 unique cloners in 24h on any SocioProphet/mdheller repo. CI alert via fingerprint_monitor.py (already deployed, 6h cadence).",
+      "alert_threshold_unique_cloners": 10,
+      "alert_threshold_views": 50,
+      "monitor_script": "intel/github/fingerprint_monitor.py",
+      "ci_workflow": ".github/workflows/fingerprint-monitor.yml"
+    }
+  },
+  "expectedEffect": "Detect footprinting activity before it escalates to active exploitation. recon_osint in 121/1016 accounts is likely under-counted — many accounts use benign tool names. The github_traffic_monitor and fingerprint_monitor (already live) are the primary detection surface; DNS/process rules catch more targeted probing.",
+  "falsePositiveRisk": "MEDIUM for DNS burst rule — CDN and health check traffic can trigger. LOW for GitHub audit log burst (30+ API calls in 10min from single actor is unambiguous). LOW for osquery process names.",
+  "validationTestRefs": [
+    "intel/github/fingerprint_monitor.py"
+  ],
+  "deploymentGate": "DNS rule requires access to DNS query logs (Cloudflare DNS or self-hosted resolver). GitHub audit log rule requires GitHub Enterprise or org audit log streaming. osquery rule deployable immediately on any monitored host.",
+  "owner": "SocioProphet/SCOPE-D — detections lane",
+  "reviewedAt": "2026-06-19"
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "det-c2-implant-001",
+  "name": "C2 Implant Beaconing and Command-and-Control Traffic",
+  "ruleType": "sigma",
+  "status": "production",
+  "severity": "CRITICAL",
+  "sourceFindingRefs": [
+    "docs/threat-actors/SG-NETWORK-TTP-MAP.md",
+    "docs/threat-actors/STANDARDGALACTIC-AGENT-HIVEMIND.md",
+    "intel/github/sg_repo_miner.py"
+  ],
+  "frameworkMappings": [
+    { "framework": "MITRE ATT&CK", "id": "T1071.001", "name": "Application Layer Protocol: Web Protocols" },
+    { "framework": "MITRE ATT&CK", "id": "T1071.004", "name": "Application Layer Protocol: DNS" },
+    { "framework": "MITRE ATT&CK", "id": "T1573",     "name": "Encrypted Channel" },
+    { "framework": "MITRE ATT&CK", "id": "T1102",     "name": "Web Service (C2 over GitHub/Slack/etc.)" },
+    { "framework": "MITRE ATT&CK", "id": "T1546.004", "name": "Event Triggered Execution: Unix Shell Configuration" }
+  ],
+  "ruleText": {
+    "sigma_beacon_jitter": {
+      "title": "Periodic Beaconing Pattern — Jittered HTTP/S to External IPs",
+      "id": "det-c2-beacon-001",
+      "status": "production",
+      "description": "Detects C2 beaconing via periodic HTTP/S connections with consistent intervals to external IPs. Based on TTP analysis: c2_implant in 87/1016 SG security accounts. Elevated risk: agent-hivemind HTTP MCP server (port configurable) could be used as C2 relay channel from a compromised Claude Code session.",
+      "author": "SocioProphet/SCOPE-D",
+      "date": "2026-06-19",
+      "logsource": { "category": "network_connection", "product": "zeek" },
+      "detection": {
+        "selection": {
+          "proto": "tcp",
+          "service|contains|any": ["http", "ssl"],
+          "orig_bytes|lt": 1024,
+          "duration|lt": 2
+        },
+        "filter_internal": {
+          "id.resp_h|cidr": ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "127.0.0.0/8"]
+        },
+        "timeframe": "1h",
+        "condition": "selection and not filter_internal | count() by id.orig_h,id.resp_h > 60 | stddev(ts) < 30"
+      },
+      "falsepositives": ["Legitimate monitoring agents (Datadog, NewRelic, Prometheus exporters)", "NTP sync", "Health check daemons"],
+      "level": "high",
+      "tags": ["attack.command_and_control", "attack.t1071.001", "attack.t1573"]
+    },
+    "sigma_mcp_c2_channel": {
+      "title": "MCP Server Spawning Outbound Connections — Potential agent-hivemind C2",
+      "id": "det-c2-mcp-relay-001",
+      "status": "production",
+      "description": "Detects MCP server processes (especially agent-hivemind HTTP server) making outbound network connections. A legitimate MCP server should only listen locally. Outbound connections indicate C2 relay or exfiltration. This is the agent-hivemind-specific C2 vector beyond hook injection.",
+      "logsource": { "category": "network_connection", "product": "sysmon" },
+      "detection": {
+        "selection": {
+          "EventID": 3,
+          "Initiated": "true",
+          "Image|contains|any": ["mcp", "hivemind", "agent-server", "claude-mcp"],
+          "DestinationIsIpv6": "false"
+        },
+        "filter_local": {
+          "DestinationIp|startswith": ["127.", "::1", "localhost"]
+        },
+        "condition": "selection and not filter_local"
+      },
+      "level": "critical",
+      "tags": ["attack.command_and_control", "attack.t1071.001", "attack.t1102"]
+    },
+    "sigma_dns_c2": {
+      "title": "DNS Tunneling — High-Entropy Subdomain Queries",
+      "id": "det-c2-dns-tunnel-001",
+      "status": "production",
+      "description": "Detects DNS-based C2 (iodine, dnscat2, dns2tcp) via high-entropy subdomain labels and unusually long FQDN queries. Used by several c2_implant-categorized SG accounts.",
+      "logsource": { "category": "dns" },
+      "detection": {
+        "selection_long": {
+          "query_name|re": "^[a-zA-Z0-9]{20,}\\."
+        },
+        "selection_txt": {
+          "query_type": "TXT",
+          "query_name|contains|any": ["socioprophet", "sourceos", "socios"]
+        },
+        "condition": "selection_long or selection_txt"
+      },
+      "falsepositives": ["CDN health tokens", "Google SafeBrowsing API queries"],
+      "level": "medium",
+      "tags": ["attack.command_and_control", "attack.t1071.004"]
+    },
+    "osquery_c2_processes": {
+      "description": "Detect known C2 frameworks and implants running on monitored hosts. Includes Cobalt Strike, Metasploit, Sliver, Havoc, Brute Ratel, Empire — and the agent-hivemind specific indicators.",
+      "query": "SELECT p.pid, p.name, p.cmdline, p.start_time, p.parent, u.username FROM processes p JOIN users u ON p.uid = u.uid WHERE p.name IN ('beacon', 'sliver', 'havoc', 'brute-ratel', 'empire', 'mythic', 'cobaltstrike') OR p.cmdline LIKE '%agent-hivemind%' OR p.cmdline LIKE '%AgentDirectiveSystem%' OR p.cmdline LIKE '%shamir%secret%' OR (p.name = 'python3' AND p.cmdline LIKE '%mcp%server%' AND p.cmdline NOT LIKE '%claude%') ORDER BY p.start_time DESC LIMIT 20;"
+    },
+    "sigma_claude_hook_c2": {
+      "title": "Claude Code Hook File Writing Non-Claude Process — C2 Persistence",
+      "id": "det-c2-hook-persistence-001",
+      "status": "production",
+      "description": "Cross-reference: see agent-hivemind-hook-injection.json for the primary hook injection detection. This rule captures the downstream C2 activation — when the injected hook executes and makes outbound network contact.",
+      "logsource": { "category": "network_connection", "product": "sysmon" },
+      "detection": {
+        "selection": {
+          "EventID": 3,
+          "Initiated": "true",
+          "ParentImage|contains": [".claude/hooks/", ".claude/commands/"]
+        },
+        "condition": "selection"
+      },
+      "level": "critical",
+      "tags": ["attack.command_and_control", "attack.t1546.004", "attack.t1071.001"]
+    }
+  },
+  "expectedEffect": "Detect C2 activity initiated via agent-hivemind hook injection (the primary threat vector) and generic C2 frameworks used by SG network actors. The hook persistence → C2 activation chain is the most likely attack path given agent-hivemind's capability profile.",
+  "falsePositiveRisk": "MEDIUM for beacon jitter (many legit monitoring agents beacon regularly). LOW for MCP outbound (MCP servers have no business making external connections). CRITICAL-level rules (MCP C2, hook C2) are high-confidence with very low false positive rate.",
+  "validationTestRefs": [
+    "detections/agent-hivemind-hook-injection.json",
+    "detections/mcp-vault-credential-exfil.json",
+    "fixtures/wargames/sg-agent-hivemind-hook-injection.scenario.json"
+  ],
+  "deploymentGate": "Beacon jitter rule requires Zeek/Suricata network monitoring. MCP C2 and hook C2 rules require Sysmon (Windows) or equivalent auditd/ebpf on Linux/macOS. osquery deployable immediately.",
+  "owner": "SocioProphet/SCOPE-D — detections lane",
+  "reviewedAt": "2026-06-19"
+}
