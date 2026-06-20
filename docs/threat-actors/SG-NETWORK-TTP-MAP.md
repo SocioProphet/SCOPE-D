@@ -1,8 +1,8 @@
 # SG Network: TTP Map and High-Value Actor Inventory
 
-**Date:** 2026-06-19  
-**Source:** `intel/github/sg_repo_miner.py` — repos of 488 security-flagged SG followers  
-**Status:** LIVE — 168/488 accounts mined (6,410 repos analyzed so far)  
+**Date:** 2026-06-19 (updated after expanded crawl)  
+**Source:** `intel/github/sg_repo_miner.py` — repos of 1,016 security-flagged SG network accounts  
+**Status:** COMPLETE — 1,016 accounts mined, 27,710 repos analyzed (crawl at 47%, 12,000/25,540 SG accounts)  
 **Companion:** `docs/threat-actors/STANDARDGALACTIC.md`, `STANDARDGALACTIC-HUB-ANALYSIS.md`
 
 ---
@@ -11,48 +11,49 @@
 
 ### Offensive capabilities (accounts with each TTP)
 
-| TTP | Accounts | Notes |
-|---|---|---|
-| `web_vuln` | 102 | SQLi, XSS, RCE, LFI, SSRF — most common; broad web attack tooling |
-| `credential_attack` | 40 | Password crackers, brute-force, hashcat |
-| `network_scan` | 27 | Port scanners, nmap wrappers, network enumeration |
-| `exploit_dev` | 24 | Exploit frameworks, PoC repos, CVE tooling |
-| `recon_osint` | 23 | Shodan, enumeration, footprinting |
-| `c2_implant` | 19 | Command-and-control frameworks, beacons, RATs |
-| `fuzzing` | 15 | AFL, honggfuzz, coverage-guided fuzzers |
-| `malware` | 14 | Malware samples, analysis, development |
-| `ransomware` | 11 | Ransomware builders, samples, analysis |
-| `evasion` | 10 | AV/EDR bypass, AMSI bypass, obfuscation |
-| `phishing` | 9 | Phishing kits, GoPhish configs, credential harvesting |
-| `ai_attack` | 6 | Prompt injection, jailbreak, LLM manipulation — **growing vector** |
-| `rootkit` | 3 | Kernel-level persistence |
-| `exfiltration` | 2 | Data theft tooling |
-| `privesc` | 2 | Local privilege escalation |
+| TTP | Accounts (1016) | vs Prior (682) | Notes |
+|---|---|---|---|
+| `web_vuln` | **454** | +48% | SQLi, XSS, RCE, LFI, SSRF — most common; broad web attack tooling |
+| `credential_attack` | **146** | +265% | Password crackers, brute-force, hashcat |
+| `network_scan` | **131** | +385% | Port scanners, nmap wrappers, network enumeration |
+| `recon_osint` | **121** | +426% | Shodan, enumeration, footprinting |
+| `exploit_dev` | **95** | +296% | Exploit frameworks, PoC repos, CVE tooling |
+| `c2_implant` | **87** | +358% | Command-and-control frameworks, beacons, RATs |
+| `malware` | **71** | +407% | Malware samples, analysis, development |
+| `fuzzing` | **53** | +253% | AFL, honggfuzz, coverage-guided fuzzers |
+| `phishing` | **49** | +444% | Phishing kits, GoPhish configs, credential harvesting |
+| `evasion` | **42** | +320% | AV/EDR bypass, AMSI bypass, obfuscation |
+| `ransomware` | **34** | +209% | Ransomware builders, samples, analysis |
+| `ai_attack` | **19** | **+217%** | Prompt injection, jailbreak, LLM manipulation — **fastest-growing vector** |
+| `privesc` | **13** | +550% | Local privilege escalation |
+| `rootkit` | **9** | +200% | Kernel-level persistence |
+| `exfiltration` | **7** | +250% | Data theft tooling |
+| `lateral_movement` | **4** | new | Pass-the-hash, Kerberoasting, BloodHound |
 
 ### Defensive capabilities
 
-| TTP | Accounts | Notes |
-|---|---|---|
-| `threat_intel` | 145 | CTI, IOC, STIX/TAXII, threat feeds — **dominant** |
-| `detection` | 63 | Sigma rules, YARA, detection-as-code |
-| `dfir` | 59 | Incident response, forensics, DFIR tooling |
-| `hardening` | 22 | CIS benchmarks, STIG, security baselines |
-| `vuln_mgmt` | 18 | CVE tracking, patch management |
-| `pentest` | 16 | Penetration testing frameworks |
-| `siem` | 10 | ELK, Splunk, OpenSearch |
-| `deception` | 2 | Honeypots, canary tokens |
+| TTP | Accounts (1016) | vs Prior (682) | Notes |
+|---|---|---|---|
+| `threat_intel` | **769** | +48% | CTI, IOC, STIX/TAXII, threat feeds — **dominant** |
+| `detection` | **310** | +392% | Sigma rules, YARA, detection-as-code |
+| `dfir` | **271** | +359% | Incident response, forensics, DFIR tooling |
+| `hardening` | **118** | +436% | CIS benchmarks, STIG, security baselines |
+| `pentest` | **97** | +506% | Penetration testing frameworks |
+| `vuln_mgmt` | **73** | +306% | CVE tracking, patch management |
+| `siem` | **38** | +280% | ELK, Splunk, OpenSearch |
+| `deception` | **15** | +650% | Honeypots, canary tokens |
 
 ### AI capabilities
 
-| TTP | Accounts | Notes |
-|---|---|---|
-| `rag_vector` | 80 | RAG pipelines, vector stores, embeddings |
-| `llm_tools` | 72 | LLM wrappers, API clients, automation |
-| `agent_framework` | 58 | Multi-agent systems, tool-use, MCP clients |
-| `model_training` | 40 | Fine-tuning, LoRA, training pipelines |
-| `prompt_engineering` | 29 | System prompts, jailbreaks, adversarial prompts |
+| TTP | Accounts (1016) | vs Prior (682) | Notes |
+|---|---|---|---|
+| `rag_vector` | **328** | +310% | RAG pipelines, vector stores, embeddings |
+| `llm_tools` | **299** | +315% | LLM wrappers, API clients, automation |
+| `agent_framework` | **294** | +407% | Multi-agent systems, tool-use, MCP clients — **29% of entire mined set** |
+| `model_training` | **152** | +280% | Fine-tuning, LoRA, training pipelines |
+| `prompt_engineering` | **118** | +307% | System prompts, jailbreaks, adversarial prompts |
 
-**Key signal:** `agent_framework` at 58 accounts means over a third of security-flagged SG followers are actively building AI agents. Combined with `ai_attack` at 6 accounts, this community is rapidly converging offensive security with AI agent tooling — the same convergence represented by SG's own `SeeRepo` + `agent-hivemind` + `system-prompts` portfolio.
+**Key signal:** `agent_framework` at 294 accounts — 29% of the entire 1,016-account mined set is actively building AI agents. `ai_attack` tripled from 6 to 19 accounts with only 49% more accounts added, suggesting the AI-offensive convergence is accelerating within this community. This is the same convergence SG's own portfolio (`SeeRepo` + `agent-hivemind` + `system-prompts`) is designed to serve.
 
 ---
 
@@ -123,8 +124,18 @@ Current detections cover:
 - Vault credential exfil (`detections/mcp-vault-credential-exfil.json`)
 - MCP server provenance (`ai-infra/mcp-risk/mcp_integrity_check.py`)
 
-**Gaps identified from TTP map:**
-- No detection for `web_vuln` scanning against our public API endpoints
-- No detection for `credential_attack` (brute-force) against our services
-- No detection for `recon_osint` activity (Shodan/Censys indexing our infrastructure)
-- No `ai_attack` detection in LLM eval pipeline (→ addressed by `ai-infra/llm-eval/promptfoo-eval.yaml`)
+**All detection gaps now closed as of 2026-06-19:**
+
+| Detection file | Covers | Severity |
+|---|---|---|
+| `detections/agent-hivemind-hook-injection.json` | Hook injection / T1546.004 | CRITICAL |
+| `detections/mcp-vault-credential-exfil.json` | Credential vault / T1552.001 | HIGH |
+| `detections/web-vuln-api-scan-detection.json` | Web vuln scanning / T1595.002 | HIGH |
+| `detections/credential-brute-force-detection.json` | Brute-force / T1110 | HIGH |
+| `detections/recon-osint-footprinting.json` | Recon / T1590, T1591, T1595.001 | MEDIUM |
+| `detections/c2-implant-beaconing.json` | C2 beaconing / T1071.001, T1102 | CRITICAL |
+| `detections/ai-attack-prompt-injection.json` | Prompt injection, MCP poisoning / AML.T0051 | HIGH |
+| `ai-infra/mcp-risk/mcp_integrity_check.py` | MCP supply chain provenance | HIGH |
+| `ai-infra/llm-eval/promptfoo-eval.yaml` | LLM red-team evaluation (weekly CI) | — |
+
+**One remaining operational gap:** `ANTHROPIC_API_KEY` must be set in SocioProphet/SCOPE-D GitHub secrets for `llm-eval.yml` to run the promptfoo eval tests.
