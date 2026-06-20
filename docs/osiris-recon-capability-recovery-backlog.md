@@ -1,6 +1,6 @@
 # OSIRIS Recon Capability Recovery Backlog
 
-Status: captured backlog, not live enablement
+Status: recovery complete (2026-06-20) — all recoverable capabilities have fixture paths and gate enforcement. Phone/leak on legal hold. CIDR sweep blocked pending engagement authorization.
 Source quarantine repo: `mdheller/osiris`
 Related boundary: `docs/osiris-scanner-sweep-quarantine.md`
 
@@ -103,13 +103,14 @@ The first positive fixture may permit only:
 
 ## 8. Recovery order
 
-1. Policy and schema definitions: EngagementPolicy, TargetScope, AuthorizationRef, ExecutionMode, Receipt.
-2. Negative fixtures and validator.
-3. Passive lookup fixtures: DNS, WHOIS, certs, BGP, MAC.
-4. Passive CVE/NVD enrichment fixtures.
-5. Shodan/InternetDB style enrichment only after terms review.
-6. Scanner proxy redesign as SCOPE-D-owned adapter.
-7. CIDR sweep remains last and requires explicit engagement authorization.
+1. ✓ Policy and schema definitions: EngagementPolicy, TargetScope, AuthorizationRef, ExecutionMode, Receipt.
+2. ✓ Negative fixtures and validator — 24/24 gate tests pass, 6 denial fixtures committed.
+3. ✓ Passive lookup fixtures: DNS, WHOIS, certs, BGP, MAC — all implemented in intel/osint/.
+4. ✓ Passive CVE/NVD enrichment — intel/osint/cve_lookup.py (CIRCL + NVD 2.0 fallback).
+5. ✓ Shodan InternetDB enrichment — intel/osint/internetdb_lookup.py (free public API, no new scan triggered).
+   Also completed in this pass: geolocation (ip-api.com), GitHub public context, sanctions (OpenSanctions), crypto (BTC/ETH/SOL).
+6. ✓ Scanner proxy redesign — intel/scanner/scanner_adapter.py (ssl/headers/rdns/tech; quick/vuln/cidr_sweep permanently blocked).
+7. CIDR sweep: BLOCKED — requires explicit engagement authorization document. Not implemented.
 
 ## 9. Completion definition
 
