@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "det-web-vuln-api-scan-001",
+  "name": "Web Vulnerability Scanning Against SocioProphet Public API Endpoints",
+  "ruleType": "sigma",
+  "status": "production",
+  "severity": "HIGH",
+  "sourceFindingRefs": [
+    "docs/threat-actors/SG-NETWORK-TTP-MAP.md",
+    "intel/github/sg_repo_miner.py"
+  ],
+  "frameworkMappings": [
+    { "framework": "MITRE ATT&CK", "id": "T1595.002", "name": "Active Scanning: Vulnerability Scanning" },
+    { "framework": "MITRE ATT&CK", "id": "T1190",     "name": "Exploit Public-Facing Application" },
+    { "framework": "MITRE ATT&CK", "id": "T1046",     "name": "Network Service Discovery" }
+  ],
+  "ruleText": {
+    "sigma_access_log": {
+      "title": "Web Vulnerability Scanner Signatures in API Access Logs",
+      "id": "det-web-vuln-api-scan-001",
+      "status": "production",
+      "description": "Detects automated web vulnerability scanner patterns in HTTP access logs for SocioProphet public API endpoints. Based on TTP analysis: web_vuln is the most common offensive TTP in the SG security network (102/168 accounts mined). Common tools: sqlmap, nikto, nuclei, dirbuster, gobuster, ffuf, wfuzz, burpsuite scanner.",
+      "author": "SocioProphet/SCOPE-D",
+      "date": "2026-06-19",
+      "logsource": {
+        "category": "webserver",
+        "product": "nginx"
+      },
+      "detection": {
+        "selection_ua": {
+          "c-useragent|contains|any": [
+            "sqlmap", "nikto", "nuclei", "dirbuster", "gobuster",
+            "wfuzz", "ffuf", "dirb", "hydra", "nmap", "masscan",
+            "python-requests", "go-http-client", "zgrab", "burpsuite",
+            "w3af", "acunetix", "nessus", "openvas"
+          ]
+        },
+        "selection_path": {
+          "cs-uri-stem|contains|any": [
+            "/.env", "/etc/passwd", "/wp-admin", "/phpmyadmin",
+            "/../", "/..%2f", "%00", "<script>", "' OR 1=1",
+            "/admin", "/.git/", "/.svn/", "/actuator", "/api/v1/users",
+            "/swagger", "/graphql", "/__debug__", "/debug"
+          ]
+        },
+        "selection_burst": {
+          "c-status|contains|any": ["404", "403", "401"]
+        },
+        "condition": "selection_ua or selection_path"
+      },
+      "falsepositives": [
+        "Legitimate penetration testing with advance notice",
+        "Bug bounty researchers — if bounty program exists, add allowlist"
+      ],
+      "level": "high",
+      "tags": ["attack.reconnaissance", "attack.t1595.002", "attack.t1190"]
+    },
+    "cloudflare_rule": {
+      "description": "Cloudflare WAF managed rule group: OWASP Core Rule Set. Enable for all SocioProphet public endpoints. Block: SQLi, XSS, path traversal, scanner UA strings.",
+      "recommended_rulesets": [
+        "Cloudflare Managed Ruleset",
+        "OWASP Core Rule Set",
+        "Cloudflare Exposed Credentials Check"
+      ]
+    },
+    "rate_limit_rule": {
+      "description": "Rate limit: >100 requests/min from single IP to /api/* → challenge. >500/min → block.",
+      "threshold_rpm": 100,
+      "action_challenge": 100,
+      "action_block": 500,
+      "path_pattern": "/api/*"
+    },
+    "osquery": {
+      "description": "Detect active scanner processes on any host with access to SocioProphet infrastructure",
+      "query": "SELECT p.pid, p.name, p.cmdline, p.start_time FROM processes p WHERE p.name IN ('sqlmap', 'nikto', 'nuclei', 'ffuf', 'gobuster', 'wfuzz', 'dirb', 'dirsearch') OR p.cmdline LIKE '%sqlmap%' OR p.cmdline LIKE '%nuclei%' OR p.cmdline LIKE '%ffuf%' ORDER BY p.start_time DESC LIMIT 20;"
+    }
+  },
+  "expectedEffect": "Detect automated web vulnerability scanning against public endpoints before exploitation attempts. web_vuln is the dominant offensive TTP (102/168 accounts = 61% of the SG security cohort) — scanner activity against our surfaces should be treated as pre-attack reconnaissance.",
+  "falsePositiveRisk": "MEDIUM — aggressive crawlers and some monitoring tools trigger UA-based rules. Rate-limit rule has higher false positive risk than UA matching. Tune threshold based on observed baseline traffic.",
+  "validationTestRefs": [
+    "fixtures/wargames/sg-agent-hivemind-hook-injection.scenario.json"
+  ],
+  "deploymentGate": "Deploy UA + path detection immediately. Rate limiting requires baseline traffic analysis first — deploy with challenge before block.",
+  "rollbackPlan": "If legitimate partner traffic is blocked, add IP allowlist. Never allowlist scanner UA strings.",
+  "owner": "SocioProphet/SCOPE-D — detections lane",
+  "reviewedAt": "2026-06-19"
+}
