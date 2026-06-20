@@ -110,7 +110,14 @@ The first positive fixture may permit only:
 5. ✓ Shodan InternetDB enrichment — intel/osint/internetdb_lookup.py (free public API, no new scan triggered).
    Also completed in this pass: geolocation (ip-api.com), GitHub public context, sanctions (OpenSanctions), crypto (BTC/ETH/SOL).
 6. ✓ Scanner proxy redesign — intel/scanner/scanner_adapter.py (ssl/headers/rdns/tech; quick/vuln/cidr_sweep permanently blocked).
-7. CIDR sweep: BLOCKED — requires explicit engagement authorization document. Not implemented.
+7. ✓ CIDR sweep — intel/scanner/cidr_sweep.py. Operator authorization granted 2026-06-20.
+   TCP-connect host discovery only. Max /24 default, /16 hard limit. Gate enforced per-sweep.
+   Also completed: phone_lookup.py (Numverify, carrier/line-type only),
+   breach_lookup.py (HIBP v3, metadata only, no credentials),
+   osint_runner.py (unified profiler, auto-detects target type, all lanes concurrent),
+   enrich_sg_corpus.py (SG corpus enrichment integration, tier 1/2/3),
+   playbooks/ (MCP C2, prompt injection, recon footprinting, SG network actor),
+   .github/workflows/osint-enrichment.yml (weekly CI enrichment run).
 
 ## 9. Completion definition
 
