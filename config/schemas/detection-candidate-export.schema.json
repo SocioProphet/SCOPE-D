@@ -17,12 +17,13 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["candidateId", "family", "title", "description", "severity", "status", "sourceObservationRef", "sourceEvidenceRefs", "attackMappings", "ruleBody", "deployment", "provenance"],
+        "required": ["candidateId", "family", "title", "description", "exploitScenario", "severity", "status", "sourceObservationRef", "sourceEvidenceRefs", "attackMappings", "ruleBody", "deployment", "provenance"],
         "properties": {
           "candidateId": { "type": "string", "pattern": "^detection-candidate:[a-z0-9][a-z0-9._:-]*$" },
           "family": { "enum": ["sigma", "yara", "osquery", "opa_rego", "suricata", "github_policy", "sourceos_policy"] },
           "title": { "type": "string", "minLength": 1 },
           "description": { "type": "string", "minLength": 1 },
+          "exploitScenario": { "type": "string", "minLength": 1 },
           "severity": { "enum": ["info", "low", "medium", "high", "critical"] },
           "status": { "enum": ["candidate", "needs_review", "approved_for_lab", "deprecated"] },
           "sourceObservationRef": { "type": "string", "pattern": "^intelligence-observation:[a-z0-9][a-z0-9._:-]*$" },
@@ -46,10 +47,10 @@
             "additionalProperties": false,
             "required": ["generatedBy", "modelAssistance", "grounding", "confidence"],
             "properties": {
-              "generatedBy": { "const": "scope-d-detection-factory-v0.1" },
+              "generatedBy": { "const": "scope-d-arsenal-v0.1" },
               "modelAssistance": { "enum": ["none", "whiterabbitneo_defensive_review"] },
               "grounding": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
-              "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+              "confidence": { "type": "number", "minimum": 0.7, "maximum": 1 }
             }
           }
         }

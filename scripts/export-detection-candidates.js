@@ -44,6 +44,20 @@ function validate(value) {
   }
 }
 
+const CONFIDENCE_FLOOR = 0.7;
+
+function exploitScenario(category, provider) {
+  if (category === 'malware_reputation') return `An adversary could deliver a malicious artifact via ${provider}-tracked hash; a host executing this artifact would not be detected without hash-based or behavioral coverage.`;
+  if (category === 'internet_noise') return `An opportunistic scanner or botnet node tracked by ${provider} could probe exposed services; without ingress detection the activity blends into background noise.`;
+  if (category === 'phishing') return `An adversary could send a ${provider}-flagged phishing URL to users; without link-reputation or redirect-chain inspection the initial access attempt goes undetected.`;
+  if (category === 'known_exploited_vulnerability') return `An adversary aware of this ${provider}-catalogued KEV could exploit the vulnerable component before patching; exploitation leaves observable indicators in process and network telemetry.`;
+  if (category === 'exploit_probability') return `This vulnerability has a ${provider}-scored high exploit probability; an adversary could weaponize it against unpatched hosts and evade detection absent targeted coverage.`;
+  if (category === 'package_vulnerability') return `A ${provider}-flagged package vulnerability could be triggered by supply-chain compromise or direct dependency exploitation; the attack surface is widest in CI/CD and build environments.`;
+  if (category === 'campaign_context') return `An actor associated with this ${provider}-attributed campaign could reuse known infrastructure or TTPs; without campaign-aware detections the activity appears isolated.`;
+  if (category === 'exposure_context') return `An externally-exposed surface surfaced by ${provider} gives an adversary a validated foothold target; exploitation would not be detected without appropriate perimeter and host telemetry.`;
+  return `A threat actor could leverage this ${provider}-observed indicator to conduct adversarial operations that would not be detected without the proposed coverage.`;
+}
+
 function attackMappings(category) {
   if (category === 'malware_reputation') return ['ATT&CK:T1204'];
   if (category === 'internet_noise') return ['ATT&CK:T1595'];
@@ -88,13 +102,16 @@ function main() {
   const candidates = [];
   for (const observation of enrichment.observations || []) {
     for (const family of familyFor(observation.category)) {
+      const candidateConfidence = Math.min(1, Math.round((observation.confidence - 0.05) * 100) / 100);
+      if (candidateConfidence < CONFIDENCE_FLOOR) continue;
       const base = `${slug(observation.observationId.replace(/^intelligence-observation:/, ''))}-${family}`;
       const deploymentTarget = targetFor(family);
       candidates.push({
         candidateId: `detection-candidate:${base}`,
         family,
-        title: `SCOPE-D ${observation.category} via ${observation.provider}`,
+        title: `Arsenal: ${observation.category} via ${observation.provider}`,
         description: `Candidate ${family} detection derived from receipt-backed intelligence observation ${observation.observationId}.`,
+        exploitScenario: exploitScenario(observation.category, observation.provider),
         severity: observation.severity,
         status: 'candidate',
         sourceObservationRef: observation.observationId,
@@ -109,10 +126,10 @@ function main() {
           executionPerformed: false,
         },
         provenance: {
-          generatedBy: 'scope-d-detection-factory-v0.1',
+          generatedBy: 'scope-d-arsenal-v0.1',
           modelAssistance: 'whiterabbitneo_defensive_review',
           grounding: [observation.observationId, ...observation.evidenceRefs],
-          confidence: Math.max(0.1, Math.min(1, observation.confidence - 0.1)),
+          confidence: candidateConfidence,
         },
       });
     }
