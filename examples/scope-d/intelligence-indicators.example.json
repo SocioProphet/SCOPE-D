@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "0.1.0",
+  "requestId": "intelligence-request:synthetic-partner-slice-001",
+  "mode": "fixture",
+  "providers": ["virustotal", "greynoise", "cisa_kev", "epss", "osv"],
+  "indicators": [
+    {
+      "indicatorId": "indicator:synthetic-sha256-demo-malware",
+      "kind": "sha256",
+      "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "assetRefs": ["asset:demo-workstation"],
+      "redactionState": "synthetic"
+    },
+    {
+      "indicatorId": "indicator:synthetic-ip-internet-noise",
+      "kind": "ip",
+      "value": "203.0.113.42",
+      "assetRefs": ["asset:demo-edge"],
+      "redactionState": "synthetic"
+    },
+    {
+      "indicatorId": "indicator:cve-2024-3094",
+      "kind": "cve",
+      "value": "CVE-2024-3094",
+      "assetRefs": ["asset:demo-linux-build-host"],
+      "redactionState": "synthetic"
+    },
+    {
+      "indicatorId": "indicator:synthetic-package-leftpad",
+      "kind": "package",
+      "value": "npm:left-pad@1.3.0",
+      "assetRefs": ["repository:socioprophet-demo"],
+      "redactionState": "synthetic"
+    }
+  ]
+}
