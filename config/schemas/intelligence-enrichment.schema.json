@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.dev/scope-d/intelligence-enrichment.schema.json",
+  "title": "SCOPE-D Intelligence Enrichment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "enrichmentId",
+    "generatedAt",
+    "mode",
+    "sourceSet",
+    "indicators",
+    "receipts",
+    "observations",
+    "graphEdges",
+    "executionPerformed"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "0.1.0" },
+    "enrichmentId": { "type": "string", "pattern": "^intelligence-enrichment:[a-z0-9][a-z0-9._:-]*$" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "mode": { "enum": ["fixture", "live_read_only"] },
+    "sourceSet": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "enum": ["virustotal", "greynoise", "urlscan", "cisa_kev", "epss", "nvd", "osv", "github_advisory", "mandiant", "recorded_future", "shodan", "censys"] }
+    },
+    "indicators": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["indicatorId", "kind", "value", "redactionState"],
+        "properties": {
+          "indicatorId": { "type": "string", "pattern": "^indicator:[a-z0-9][a-z0-9._:-]*$" },
+          "kind": { "enum": ["sha256", "sha1", "md5", "ip", "domain", "url", "cve", "package", "repository", "container_image", "certificate"] },
+          "value": { "type": "string", "minLength": 1 },
+          "assetRefs": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+          "redactionState": { "enum": ["synthetic", "redacted", "cleartext"] }
+        }
+      }
+    },
+    "receipts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["receiptId", "provider", "indicatorRef", "queryClass", "queriedAt", "mode", "termsClass", "cacheKey", "evidenceHash", "liveConnectionUsed", "executionPerformed"],
+        "properties": {
+          "receiptId": { "type": "string", "pattern": "^intelligence-receipt:[a-z0-9][a-z0-9._:-]*$" },
+          "provider": { "type": "string", "minLength": 1 },
+          "indicatorRef": { "type": "string", "pattern": "^indicator:[a-z0-9][a-z0-9._:-]*$" },
+          "queryClass": { "enum": ["artifact_reputation", "internet_noise", "url_analysis", "vulnerability_priority", "package_vulnerability", "adversary_context", "attack_surface_context"] },
+          "queriedAt": { "type": "string", "format": "date-time" },
+          "mode": { "enum": ["fixture", "live_read_only"] },
+          "termsClass": { "enum": ["public_api", "commercial_api", "internal_fixture", "restricted_partner"] },
+          "cacheKey": { "type": "string", "minLength": 1 },
+          "evidenceHash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "liveConnectionUsed": { "type": "boolean" },
+          "executionPerformed": { "const": false }
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["observationId", "indicatorRef", "provider", "category", "confidence", "severity", "summary", "evidenceRefs"],
+        "properties": {
+          "observationId": { "type": "string", "pattern": "^intelligence-observation:[a-z0-9][a-z0-9._:-]*$" },
+          "indicatorRef": { "type": "string" },
+          "provider": { "type": "string" },
+          "category": { "enum": ["malware_reputation", "benign_reputation", "internet_noise", "phishing", "known_exploited_vulnerability", "exploit_probability", "package_vulnerability", "campaign_context", "exposure_context"] },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "severity": { "enum": ["info", "low", "medium", "high", "critical"] },
+          "summary": { "type": "string", "minLength": 1 },
+          "evidenceRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "graphEdges": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["edgeId", "from", "predicate", "to", "sourceRefs", "confidence"],
+        "properties": {
+          "edgeId": { "type": "string", "pattern": "^cyber-graph-edge:[a-z0-9][a-z0-9._:-]*$" },
+          "from": { "type": "string", "minLength": 1 },
+          "predicate": { "enum": ["enriched_by", "has_verdict", "has_confidence", "observed_as", "maps_to", "prioritized_by", "related_to", "should_generate_detection"] },
+          "to": { "type": "string", "minLength": 1 },
+          "sourceRefs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "executionPerformed": { "const": false }
+  }
+}
