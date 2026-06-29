@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "0.1.0",
+  "dashboardId": "wargames-dashboard:defense-alpha-2026-06-28",
+  "generatedAt": "2026-06-28T12:00:00.000Z",
+  "sourceRunRefs": [
+    "scope-d-ci-ai-infra-lab",
+    "scope-d-ci-graph-robustness-lab"
+  ],
+  "wargamesMode": {
+    "mode": "DEFENSE",
+    "activeTopics": ["T1", "T3", "T5", "T7", "T9", "T11", "T13", "T15", "T17", "T19"],
+    "bridgeModeEligible": true
+  },
+  "surfaceCoverage": {
+    "surfaces": [
+      {
+        "surfaceId": "mcp-tool-surface-alpha",
+        "coverageClass": "H2",
+        "lastObservedAt": "2026-06-28T10:30:00.000Z",
+        "proofRefs": ["proof-mcp-alpha-001"]
+      },
+      {
+        "surfaceId": "ai-infra-runtime-beta",
+        "coverageClass": "H3",
+        "lastObservedAt": "2026-06-28T10:45:00.000Z",
+        "proofRefs": ["proof-ai-infra-beta-001", "proof-ai-infra-beta-002"]
+      },
+      {
+        "surfaceId": "graph-robustness-gamma",
+        "coverageClass": "H4",
+        "lastObservedAt": "2026-06-28T11:00:00.000Z",
+        "proofRefs": ["proof-graph-gamma-001"]
+      }
+    ]
+  },
+  "phaseState": {
+    "phases": [
+      {
+        "phaseId": "phase-0-init",
+        "stateClass": "V1",
+        "validatedAt": "2026-06-28T08:00:00.000Z",
+        "proofRefs": ["proof-phase-0-init"]
+      },
+      {
+        "phaseId": "phase-1-surface-scan",
+        "stateClass": "V2",
+        "validatedAt": "2026-06-28T08:30:00.000Z",
+        "proofRefs": ["proof-phase-1-surface-scan"]
+      },
+      {
+        "phaseId": "phase-2-evidence-capture",
+        "stateClass": "V2",
+        "validatedAt": "2026-06-28T09:00:00.000Z",
+        "proofRefs": ["proof-phase-2-evidence"]
+      },
+      {
+        "phaseId": "phase-3-governance",
+        "stateClass": "V3",
+        "validatedAt": "2026-06-28T09:30:00.000Z",
+        "proofRefs": ["proof-phase-3-governance"]
+      },
+      {
+        "phaseId": "phase-4-ofif",
+        "stateClass": "V2",
+        "validatedAt": "2026-06-28T10:00:00.000Z",
+        "proofRefs": ["proof-phase-4-ofif"]
+      }
+    ]
+  },
+  "agentStatus": [
+    {
+      "agentId": "agent-scout-01",
+      "role": "scout",
+      "lastActiveAt": "2026-06-28T11:00:00.000Z",
+      "status": "active"
+    },
+    {
+      "agentId": "agent-whisper-01",
+      "role": "whisper",
+      "lastActiveAt": "2026-06-28T10:50:00.000Z",
+      "status": "standby"
+    },
+    {
+      "agentId": "agent-herald-01",
+      "role": "herald",
+      "status": "undeployed"
+    }
+  ],
+  "proofStatus": {
+    "totalProofs": 9,
+    "verifiedProofs": 7,
+    "pendingProofs": 2,
+    "proofRefs": [
+      "proof-mcp-alpha-001",
+      "proof-ai-infra-beta-001",
+      "proof-ai-infra-beta-002",
+      "proof-graph-gamma-001",
+      "proof-phase-0-init",
+      "proof-phase-1-surface-scan",
+      "proof-phase-2-evidence",
+      "proof-phase-3-governance",
+      "proof-phase-4-ofif"
+    ]
+  },
+  "boundaryEventFindings": [
+    {
+      "findingId": "bef-net-header-001",
+      "severity": "medium",
+      "summary": "Unexpected Authorization header observed on internal tool call; possible credential replay attempt in synthetic lab.",
+      "evidenceRefs": ["evidence-net-header-001", "evidence-net-header-002"]
+    }
+  ],
+  "tliRwi": {
+    "tli": 0.62,
+    "rwi": 0.54,
+    "rationale": "TLI of 0.62 reflects moderate threat-landscape intelligence coverage across 10 active topics. RWI of 0.54 indicates partial real-world indicator integration pending additional surface scanning."
+  },
+  "engagementLadderState": {
+    "currentLevel": "E4",
+    "authorizationRef": "engagement-auth-e4-alpha-2026-06-28",
+    "approvalStatus": "approved"
+  },
+  "michaelApprovalStatus": {
+    "required": true,
+    "approvalRef": "approval-michael-e4-alpha-2026-06-28",
+    "approvedActions": ["surface_scan", "evidence_capture", "proof_attestation"]
+  },
+  "lsaTopicCoverage": {
+    "totalTopics": 23,
+    "proofProducingTopics": 10,
+    "capturedDesignTopics": 8,
+    "uncoveredTopics": ["T2", "T4", "T6", "T8", "T10"]
+  },
+  "ontologyValidation": {
+    "validationRef": "ontogenesis-export-alpha-2026-06-28",
+    "status": "validated",
+    "validatedAt": "2026-06-28T11:30:00.000Z"
+  },
+  "ofifReadiness": {
+    "clientOutputsReady": false,
+    "pendingDisclosureReviews": 2,
+    "activeEnvelopes": 1
+  },
+  "executionPerformed": false
+}

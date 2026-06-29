@@ -61,6 +61,8 @@ const VALID_PAIRS = [
   ['config/schemas/agent-gradecard.schema.json', 'examples/scope-d/hpst/agent-gradecard.example.json'],
   ['config/schemas/verifier-microtask.schema.json', 'examples/scope-d/hpst/verifier-microtask.example.json'],
   ['config/schemas/verifier-reward-receipt.schema.json', 'examples/scope-d/hpst/verifier-reward-receipt.example.json'],
+  // Phase 10: Commander Dashboard
+  ['config/schemas/wargames-commander-dashboard.schema.json', 'examples/scope-d/wargames/wargames-commander-dashboard.example.json'],
 ];
 
 const INVALID_PAIRS = [
@@ -91,6 +93,8 @@ const INVALID_PAIRS = [
   ['config/schemas/public-index-exposure-query.schema.json', 'examples/scope-d/wargames/negative-fixtures/public-index-query-no-auth.invalid.json'],
   ['config/schemas/agent-gradecard.schema.json', 'examples/scope-d/wargames/negative-fixtures/agent-gradecard-no-evidence.invalid.json'],
   ['config/schemas/verifier-microtask.schema.json', 'examples/scope-d/wargames/negative-fixtures/verifier-microtask-execution-allowed.invalid.json'],
+  // Phase 10: Commander Dashboard negative fixtures
+  ['config/schemas/wargames-commander-dashboard.schema.json', 'examples/scope-d/wargames/negative-fixtures/commander-dashboard-execution.invalid.json'],
 ];
 
 const APPROVED_AUTHORIZATION_EXAMPLE = 'examples/scope-d/wargames/engagement-authorization-approved.example.json';
