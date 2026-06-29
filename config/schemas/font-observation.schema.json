@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/font-observation.schema.json",
+  "title": "Font Observation",
+  "description": "A governed observation of font surface signals. Raw identity joins are never stored; execution authority is not conferred.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "observationId",
+    "surfaceRef",
+    "fontSignals",
+    "observedAt",
+    "redactionState",
+    "rawIdentityJoinsAllowed",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "observationId": { "type": "string", "pattern": "^font-observation:[a-z0-9][a-z0-9._:-]*$" },
+    "surfaceRef": { "type": "string", "minLength": 1 },
+    "fontSignals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["signalType", "value"],
+        "properties": {
+          "signalType": {
+            "type": "string",
+            "enum": ["font_family", "font_size", "line_height", "letter_spacing", "color_scheme", "rendering_mode", "os_font_stack"]
+          },
+          "value": { "type": "string", "minLength": 1 },
+          "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+        }
+      }
+    },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "redactionState": { "type": "string", "enum": ["redacted", "synthetic", "withheld"] },
+    "rawIdentityJoinsAllowed": { "type": "boolean", "const": false },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

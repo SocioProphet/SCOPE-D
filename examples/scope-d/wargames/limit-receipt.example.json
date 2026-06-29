@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "receiptId": "limit-receipt:wargames-alpha-run-001",
+  "operationRef": "adversarial-scenario:workspace-transduction-001",
+  "limitsChecked": [
+    {
+      "limitName": "max_evidence_refs",
+      "limitValue": 10,
+      "observedValue": 3,
+      "passed": true
+    },
+    {
+      "limitName": "blast_radius",
+      "limitValue": "workspace",
+      "observedValue": "local",
+      "passed": true
+    },
+    {
+      "limitName": "authority_tier",
+      "limitValue": "authority-tier:michael-only-e6",
+      "observedValue": "authority-tier:michael-only-e6",
+      "passed": true
+    },
+    {
+      "limitName": "redaction_state",
+      "limitValue": "redacted",
+      "observedValue": "synthetic",
+      "passed": true
+    }
+  ],
+  "allLimitsPassed": true,
+  "executionAllowed": false,
+  "failedLimits": [],
+  "nonClaims": [
+    "does_not_grant_execution_authority",
+    "does_not_authorize_promotion"
+  ],
+  "notes": "All limits verified for tabletop scenario; no live execution authorized."
+}

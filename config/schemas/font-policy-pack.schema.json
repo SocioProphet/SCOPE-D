@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/font-policy-pack.schema.json",
+  "title": "Font Policy Pack",
+  "description": "A policy pack governing font surface observation and signal handling within the OFIF pipeline. Does not authorize execution or mutation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "packId",
+    "allowedSignalTypes",
+    "rawIdentityJoinsAllowed",
+    "retentionDays",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "packId": { "type": "string", "pattern": "^font-policy-pack:[a-z0-9][a-z0-9._:-]*$" },
+    "allowedSignalTypes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "rawIdentityJoinsAllowed": { "type": "boolean", "const": false },
+    "retentionDays": { "type": "integer", "minimum": 0 },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "authorityEnvelopeRef": { "type": "string" },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

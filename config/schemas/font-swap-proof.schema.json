@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/font-swap-proof.schema.json",
+  "title": "Font Swap Proof",
+  "description": "A proof that a font surface swap was evaluated in a wargames or tabletop context. No live font substitution was executed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "proofId",
+    "evaluationRef",
+    "originalFontRef",
+    "proposedFontRef",
+    "swapRationale",
+    "liveSwapExecuted",
+    "evidenceRefs",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "proofId": { "type": "string", "pattern": "^proof:font-swap:[a-z0-9][a-z0-9._:-]*$" },
+    "evaluationRef": { "type": "string", "minLength": 1 },
+    "originalFontRef": { "type": "string", "minLength": 1 },
+    "proposedFontRef": { "type": "string", "minLength": 1 },
+    "swapRationale": { "type": "string", "minLength": 1 },
+    "liveSwapExecuted": { "type": "boolean", "const": false },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

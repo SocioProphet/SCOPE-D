@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/hpst-basis.schema.json",
+  "title": "HPST Basis",
+  "description": "High-precision semantic test basis record. Defines the governed foundation for a verifier probe set; does not execute tests or grant runtime authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "basisId",
+    "basisTitle",
+    "targetCapability",
+    "evaluationDimensions",
+    "authorityEnvelopeRef",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "basisId": { "type": "string", "pattern": "^hpst-basis:[a-z0-9][a-z0-9._:-]*$" },
+    "basisTitle": { "type": "string", "minLength": 1 },
+    "targetCapability": { "type": "string", "minLength": 1 },
+    "evaluationDimensions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["correctness", "consistency", "robustness", "calibration", "coverage", "safety", "latency", "abstention"]
+      }
+    },
+    "authorityEnvelopeRef": { "type": "string", "minLength": 1 },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "probeSetRefs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

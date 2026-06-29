@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "0.1.0",
+  "configId": "whisper-config:invalid-mutation-no-auth-001",
+  "agentRef": "agent:whisper-alpha",
+  "signalChannels": ["tor"],
+  "retentionPolicy": {
+    "retentionDays": 30,
+    "encryptAtRest": true,
+    "rawRetentionAllowed": false
+  },
+  "mutationAuthorizationRequired": false,
+  "mutationAllowed": true,
+  "executionAllowed": false,
+  "nonClaims": [
+    "does_not_grant_execution_authority"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/limit-receipt.schema.json",
+  "title": "Limit Receipt",
+  "description": "A governance receipt confirming that applicable limits (rate, scope, blast-radius, authority) were checked and respected during a wargames operation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "receiptId",
+    "operationRef",
+    "limitsChecked",
+    "allLimitsPassed",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "receiptId": { "type": "string", "pattern": "^limit-receipt:[a-z0-9][a-z0-9._:-]*$" },
+    "operationRef": { "type": "string", "minLength": 1 },
+    "limitsChecked": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["limitName", "limitValue", "observedValue", "passed"],
+        "properties": {
+          "limitName": { "type": "string", "minLength": 1 },
+          "limitValue": {},
+          "observedValue": {},
+          "passed": { "type": "boolean" }
+        }
+      }
+    },
+    "allLimitsPassed": { "type": "boolean" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "failedLimits": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/ofif-assurance-packet.schema.json",
+  "title": "OFIF Assurance Packet",
+  "description": "Governance assurance packet for OFIF client delivery preparation. Confirms that redaction, authority, and delivery checks are complete before client access.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "packetId",
+    "findingRefs",
+    "authorityEnvelopeRef",
+    "redactionVerified",
+    "identityJoinSafetyVerified",
+    "clientDeliveryApproved",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "packetId": { "type": "string", "pattern": "^ofif-assurance:[a-z0-9][a-z0-9._:-]*$" },
+    "findingRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "authorityEnvelopeRef": { "type": "string", "minLength": 1 },
+    "redactionVerified": { "type": "boolean" },
+    "identityJoinSafetyVerified": { "type": "boolean" },
+    "clientDeliveryApproved": { "type": "boolean" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "reviewedBy": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "reviewedAt": { "type": "string", "format": "date-time" },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

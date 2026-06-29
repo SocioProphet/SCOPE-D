@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.1.0",
+  "packId": "font-policy-pack:ofif-default-alpha",
+  "allowedSignalTypes": [
+    "font_family",
+    "font_size",
+    "line_height",
+    "letter_spacing",
+    "rendering_mode",
+    "os_font_stack"
+  ],
+  "rawIdentityJoinsAllowed": false,
+  "retentionDays": 14,
+  "executionAllowed": false,
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "nonClaims": [
+    "does_not_authorize_raw_identity_join",
+    "does_not_execute_font_mutation",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "Default OFIF font surface observation policy; color_scheme excluded per privacy guidance."
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/verifier-reward-receipt.schema.json",
+  "title": "Verifier Reward Receipt",
+  "description": "A governed reward receipt issued to a verifier agent upon completion of an HPST microtask. Holding this record does not confer further execution authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "receiptId",
+    "microtaskRef",
+    "verifierRef",
+    "rewardType",
+    "rewardValue",
+    "issuedAt",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "receiptId": { "type": "string", "pattern": "^verifier-reward:[a-z0-9][a-z0-9._:-]*$" },
+    "microtaskRef": { "type": "string", "pattern": "^verifier-microtask:[a-z0-9][a-z0-9._:-]*$" },
+    "verifierRef": { "type": "string", "minLength": 1 },
+    "rewardType": {
+      "type": "string",
+      "enum": ["correctness_bonus", "coverage_bonus", "calibration_bonus", "abstention_bonus", "participation"]
+    },
+    "rewardValue": { "type": "number", "minimum": 0.0 },
+    "issuedAt": { "type": "string", "format": "date-time" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

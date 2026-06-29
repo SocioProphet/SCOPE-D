@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/public-index-exposure-query.schema.json",
+  "title": "Public Index Exposure Query",
+  "description": "A governed query record for public index exposure checks. Queries require authorization; execution is not performed by holding this record.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "queryId",
+    "queryType",
+    "targetRef",
+    "authorityEnvelopeRef",
+    "queryState",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "queryId": { "type": "string", "pattern": "^public-index-query:[a-z0-9][a-z0-9._:-]*$" },
+    "queryType": {
+      "type": "string",
+      "enum": ["domain_exposure", "email_exposure", "api_key_exposure", "credential_exposure", "code_exposure", "document_exposure"]
+    },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "authorityEnvelopeRef": { "type": "string", "minLength": 1 },
+    "queryState": {
+      "type": "string",
+      "enum": ["proposed", "pending_review", "approved", "executed", "blocked", "cancelled"]
+    },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "resultRef": { "type": "string" },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

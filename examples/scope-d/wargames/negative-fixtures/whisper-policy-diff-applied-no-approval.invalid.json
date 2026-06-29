@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.1.0",
+  "diffId": "whisper-policy-diff:invalid-applied-no-approval-001",
+  "fromPolicyRef": "whisper-config:sovereign-signal-alpha-001-v1",
+  "toPolicyRef": "whisper-config:sovereign-signal-alpha-001-v2",
+  "changedFields": [
+    {
+      "fieldPath": "retentionPolicy.retentionDays",
+      "oldValue": 30,
+      "newValue": 7
+    }
+  ],
+  "approvalRequired": false,
+  "approved": false,
+  "applied": true,
+  "executionAllowed": false,
+  "nonClaims": [
+    "does_not_grant_execution_authority"
+  ]
+}

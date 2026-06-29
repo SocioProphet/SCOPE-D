@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.0",
+  "gateId": "bridge-mode-gate:wargames-to-defense-alpha-001",
+  "fromMode": "WARGAMES",
+  "toMode": "DEFENSE",
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "evidenceRefs": [
+    "evidence:boundary-header-summary-001",
+    "evidence:limit-check-alpha-001"
+  ],
+  "proofRefs": [
+    "proof:scout:sweep-alpha-2024-q4",
+    "proof:rollback-drill:wargames-alpha-001"
+  ],
+  "transitionApproved": false,
+  "executionAllowed": false,
+  "blockedReasons": ["transition_not_yet_reviewed", "awaiting_operator_sign_off"],
+  "nonClaims": [
+    "does_not_execute_mode_transition",
+    "does_not_grant_live_access",
+    "does_not_authorize_engagement_without_approval"
+  ],
+  "notes": "Bridge gate prepared; no transition will execute until explicitly approved."
+}

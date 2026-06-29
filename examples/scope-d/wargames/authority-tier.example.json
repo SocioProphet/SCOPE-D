@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.0",
+  "tierId": "authority-tier:michael-only-e6",
+  "tierName": "Michael-Only E6 Authority",
+  "requiredApprovers": ["Michael Heller"],
+  "gatedActions": [
+    "live_engagement",
+    "credential_collection",
+    "destructive_action",
+    "third_party_access",
+    "memory_promotion_to_validated",
+    "bridge_mode_transition"
+  ],
+  "delegationAllowed": false,
+  "executionAllowed": false,
+  "evidenceRequirements": [
+    "engagement-authorization with michaelOnlyRequired=true",
+    "minimum two evidence refs",
+    "scout proof with coveragePct >= 0.9"
+  ],
+  "nonClaims": [
+    "does_not_grant_execution_authority",
+    "does_not_authorize_delegation_without_policy"
+  ],
+  "notes": "Primary authority tier for all E6-level wargames and live operations until delegated policy is established."
+}

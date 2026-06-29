@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/ofif-field-observation.schema.json",
+  "title": "OFIF Field Observation",
+  "description": "A governed field observation record in the OFIF pipeline. Raw identity joins are never stored; execution authority is not granted.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "observationId",
+    "observationType",
+    "observedSurface",
+    "observedAt",
+    "evidenceRefs",
+    "redactionState",
+    "rawIdentityJoinsAllowed",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "observationId": { "type": "string", "pattern": "^ofif-observation:[a-z0-9][a-z0-9._:-]*$" },
+    "observationType": {
+      "type": "string",
+      "enum": ["passive_network", "font_surface", "public_index", "identity_signal", "behavioral_signal", "threat_indicator"]
+    },
+    "observedSurface": { "type": "string", "minLength": 1 },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "redactionState": { "type": "string", "enum": ["redacted", "synthetic", "withheld"] },
+    "rawIdentityJoinsAllowed": { "type": "boolean", "const": false },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+    "tags": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

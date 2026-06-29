@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/ofif-client-access-envelope.schema.json",
+  "title": "OFIF Client Access Envelope",
+  "description": "Envelope controlling client access to OFIF findings. Redaction must be verified before any client delivery; raw identity joins are never exposed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "envelopeId",
+    "clientRef",
+    "assurancePacketRef",
+    "findingRefs",
+    "redactionVerified",
+    "rawIdentityExposed",
+    "deliveryApproved",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "envelopeId": { "type": "string", "pattern": "^ofif-client-envelope:[a-z0-9][a-z0-9._:-]*$" },
+    "clientRef": { "type": "string", "minLength": 1 },
+    "assurancePacketRef": { "type": "string", "pattern": "^ofif-assurance:[a-z0-9][a-z0-9._:-]*$" },
+    "findingRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "redactionVerified": { "type": "boolean" },
+    "rawIdentityExposed": { "type": "boolean", "const": false },
+    "deliveryApproved": { "type": "boolean" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "deliveredAt": { "type": "string", "format": "date-time" },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

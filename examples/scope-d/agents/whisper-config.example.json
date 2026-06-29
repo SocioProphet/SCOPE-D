@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "0.1.0",
+  "configId": "whisper-config:sovereign-signal-alpha-001",
+  "agentRef": "agent:whisper-alpha",
+  "signalChannels": ["tor", "local_only"],
+  "retentionPolicy": {
+    "retentionDays": 30,
+    "encryptAtRest": true,
+    "rawRetentionAllowed": false
+  },
+  "mutationAuthorizationRequired": true,
+  "mutationAllowed": false,
+  "executionAllowed": false,
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "nonClaims": [
+    "does_not_execute_signal_collection",
+    "does_not_authorize_mutation_without_approval",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "Whisper sovereign-signal config; mutation locked pending authority approval."
+}

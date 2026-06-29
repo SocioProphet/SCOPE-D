@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/promotion-pack.schema.json",
+  "title": "Promotion Pack",
+  "description": "A complete promotion evidence pack assembled before any memory-mesh promotion review. Holding this record does not constitute execution authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "packId",
+    "candidateRef",
+    "authorityTierRef",
+    "evidenceRefs",
+    "proofRefs",
+    "promotionGateRef",
+    "reviewState",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "packId": { "type": "string", "pattern": "^promotion-pack:[a-z0-9][a-z0-9._:-]*$" },
+    "candidateRef": { "type": "string", "minLength": 1 },
+    "authorityTierRef": { "type": "string", "pattern": "^authority-tier:[a-z0-9][a-z0-9._:-]*$" },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "proofRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "promotionGateRef": { "type": "string", "pattern": "^memphis-promotion-gate:[a-z0-9][a-z0-9._:-]*$" },
+    "reviewState": {
+      "type": "string",
+      "enum": ["pending_review", "approved", "denied", "blocked"]
+    },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "blockedReasons": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

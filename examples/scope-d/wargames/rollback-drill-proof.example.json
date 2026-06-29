@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.1.0",
+  "proofId": "proof:rollback-drill:wargames-alpha-001",
+  "drillId": "rollback-drill-wargames-alpha-001",
+  "rollbackTargetRef": "adversarial-scenario:workspace-transduction-001",
+  "drillMode": "tabletop",
+  "stepsVerified": [
+    {
+      "stepId": "step-001",
+      "description": "Identify rollback trigger conditions",
+      "passed": true
+    },
+    {
+      "stepId": "step-002",
+      "description": "Confirm rollback plan is documented and accessible",
+      "passed": true
+    },
+    {
+      "stepId": "step-003",
+      "description": "Verify notification plan contacts are reachable",
+      "passed": true
+    },
+    {
+      "stepId": "step-004",
+      "description": "Confirm rollback does not require live execution in wargames context",
+      "passed": true,
+      "notes": "Tabletop only; no live action taken."
+    }
+  ],
+  "allStepsPassed": true,
+  "liveRollbackExecuted": false,
+  "evidenceRefs": [
+    "evidence:boundary-header-summary-001",
+    "evidence:rollback-plan-doc-alpha"
+  ],
+  "nonClaims": [
+    "does_not_execute_live_rollback",
+    "does_not_authorize_state_mutation",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "Tabletop rollback drill completed; all steps passed in simulation mode."
+}

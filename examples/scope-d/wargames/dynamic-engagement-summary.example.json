@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "0.1.0",
+  "summaryId": "dynamic-engagement-summary:tabletop-alpha-001",
+  "engagementAuthorizationRef": "engagement-authorization:e6-tabletop-001",
+  "summaryWindow": {
+    "start": "2024-11-01T09:00:00Z",
+    "end": "2024-11-01T17:00:00Z"
+  },
+  "actionRefs": [
+    "engagement-action:boundary-probe-alpha-001"
+  ],
+  "evidenceRefs": [
+    "evidence:boundary-header-summary-001",
+    "evidence:scout-sweep-result-alpha"
+  ],
+  "openItems": [
+    {
+      "itemId": "open-001",
+      "description": "Boundary probe result pending operator review",
+      "severity": "medium",
+      "assignedTo": "Michael Heller"
+    }
+  ],
+  "runtimeAuthority": false,
+  "executionAllowed": false,
+  "redactionState": "synthetic",
+  "nonClaims": [
+    "does_not_grant_execution_authority",
+    "does_not_authorize_engagement_action",
+    "does_not_claim_runtime_authority"
+  ],
+  "notes": "Rolling summary for tabletop engagement session; no live actions authorized."
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/ofif-field-task.schema.json",
+  "title": "OFIF Field Task",
+  "description": "A governed field task in the OFIF pipeline. Describes a proposed observation or data-collection action; does not constitute execution authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "taskId",
+    "taskType",
+    "assignedTo",
+    "targetSurface",
+    "authorityEnvelopeRef",
+    "taskState",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "taskId": { "type": "string", "pattern": "^ofif-task:[a-z0-9][a-z0-9._:-]*$" },
+    "taskType": {
+      "type": "string",
+      "enum": ["passive_observation", "font_surface_scan", "public_index_query", "identity_signal_collection", "assurance_review"]
+    },
+    "assignedTo": { "type": "string", "minLength": 1 },
+    "targetSurface": { "type": "string", "minLength": 1 },
+    "authorityEnvelopeRef": { "type": "string", "minLength": 1 },
+    "taskState": {
+      "type": "string",
+      "enum": ["proposed", "pending_review", "approved", "in_progress", "completed", "blocked", "cancelled"]
+    },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "evidenceRefs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "resultRef": { "type": "string" },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

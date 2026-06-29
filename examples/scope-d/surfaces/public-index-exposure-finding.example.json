@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.1.0",
+  "findingId": "public-index-finding:domain-exposure-alpha-001",
+  "queryRef": "public-index-query:domain-exposure-alpha-001",
+  "exposureType": "domain_exposure",
+  "severity": "medium",
+  "evidenceRefs": [
+    "evidence:boundary-header-summary-001",
+    "evidence:public-index-corpus-alpha"
+  ],
+  "redactionState": "synthetic",
+  "remediationAllowed": false,
+  "executionAllowed": false,
+  "nonClaims": [
+    "does_not_authorize_remediation",
+    "does_not_execute_action",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "Synthetic domain exposure finding from tabletop query; remediation requires separate authorization."
+}

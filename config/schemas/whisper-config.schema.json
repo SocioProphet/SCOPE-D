@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/whisper-config.schema.json",
+  "title": "Whisper Config",
+  "description": "Configuration record for a Whisper sovereign-signal agent. Mutation requires explicit authorization; this record alone does not grant mutation authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "configId",
+    "agentRef",
+    "signalChannels",
+    "retentionPolicy",
+    "mutationAuthorizationRequired",
+    "mutationAllowed",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "configId": { "type": "string", "pattern": "^whisper-config:[a-z0-9][a-z0-9._:-]*$" },
+    "agentRef": { "type": "string", "minLength": 1 },
+    "signalChannels": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["tor", "i2p", "clearnet_proxy", "local_only", "air_gapped"]
+      }
+    },
+    "retentionPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["retentionDays", "encryptAtRest", "rawRetentionAllowed"],
+      "properties": {
+        "retentionDays": { "type": "integer", "minimum": 0 },
+        "encryptAtRest": { "type": "boolean" },
+        "rawRetentionAllowed": { "type": "boolean", "const": false }
+      }
+    },
+    "mutationAuthorizationRequired": { "type": "boolean", "const": true },
+    "mutationAllowed": { "type": "boolean" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "authorityEnvelopeRef": { "type": "string" },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

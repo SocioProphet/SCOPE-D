@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.0",
+  "basisId": "hpst-basis:scout-agent-alpha-001",
+  "basisTitle": "Scout Agent HPST Evaluation Basis",
+  "targetCapability": "agent:scout boundary observation and evidence collection",
+  "evaluationDimensions": [
+    "correctness",
+    "consistency",
+    "robustness",
+    "calibration",
+    "coverage",
+    "safety",
+    "abstention"
+  ],
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "executionAllowed": false,
+  "probeSetRefs": ["hpst-probe-set:scout-alpha-001"],
+  "nonClaims": [
+    "does_not_execute_evaluation",
+    "does_not_deploy_agent",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "HPST basis for scout agent evaluation; probe sets must be separately reviewed before execution."
+}
