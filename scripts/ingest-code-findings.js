@@ -2,9 +2,12 @@
 'use strict';
 
 /**
- * Ingest claude-code-security-review findings into the SCOPE-D intelligence pipeline.
+ * Ingest security findings into the SCOPE-D intelligence pipeline.
  *
- * Input:  findings.json (or claudecode-results.json) from the GitHub Action.
+ * Supported input formats:
+ *   1. claude-code-security-review findings.json (or claudecode-results.json)
+ *   2. promptfoo EvaluationResult JSON (./promptfoo --output result.json)
+ *
  * Output: IntelligenceEnrichment-shaped JSON suitable for feeding export-detection-candidates.js.
  *
  * Schema note: the intelligence-enrichment schema's sourceSet enum does not yet include
@@ -18,6 +21,82 @@ const crypto = require('crypto');
 const { applyHardExclusions } = require('./hard-exclusion-rules');
 
 const CONFIDENCE_FLOOR = 0.7;
+
+// ── Format detection & normalisation ─────────────────────────────────────────
+
+/**
+ * Detect whether raw parsed JSON is a cc-security-review findings array or a
+ * promptfoo EvaluationResult object.
+ *
+ * Returns: 'findings' | 'evalresult'
+ */
+function detectInputFormat(raw) {
+  if (Array.isArray(raw)) return 'findings';
+  if (raw && Array.isArray(raw.results) &&
+      raw.results.length > 0 && raw.results[0] && 'gradingResult' in raw.results[0]) {
+    return 'evalresult';
+  }
+  if (raw && Array.isArray(raw.findings)) return 'findings';
+  // Default — let downstream error handle malformed input
+  return 'findings';
+}
+
+/**
+ * Map promptfoo assertion types → SCOPE-D observation category.
+ * @param {Array<{type: string}>} asserts
+ */
+function detectCategory(asserts) {
+  if (!Array.isArray(asserts) || asserts.length === 0) return 'exposure_context';
+  const types = asserts.map((a) => (a.type || '').toLowerCase());
+  if (types.some((t) => t === 'javascript' || t === 'python')) return 'code_execution';
+  if (types.some((t) => t === 'llm-rubric')) return 'model_behavior';
+  if (types.some((t) => t === 'contains' || t === 'not-contains')) return 'output_validation';
+  return 'exposure_context';
+}
+
+/**
+ * Convert a promptfoo EvaluationResult into the cc-security-review findings array format.
+ * Only failures (gradingResult.pass === false) with score <= 0.3 are emitted (confidence >= 0.7).
+ *
+ * @param {{ results: Array, stats: object }} evalResult
+ * @returns {Array}
+ */
+function normalizeEvalResult(evalResult) {
+  const results = evalResult.results || [];
+  const findings = [];
+
+  for (const result of results) {
+    const gr = result.gradingResult;
+    // Skip passing results and non-failures
+    if (!gr || gr.pass !== false) continue;
+
+    const score = typeof gr.score === 'number' ? gr.score : 0;
+    const confidence = 1 - score;
+
+    // Apply confidence floor (same as code findings path)
+    if (confidence < CONFIDENCE_FLOOR) continue;
+
+    const severity = score < 0.3 ? 'HIGH' : score < 0.6 ? 'MEDIUM' : 'LOW';
+    const asserts = (result.testCase && result.testCase.assert) ? result.testCase.assert : [];
+    const category = detectCategory(asserts);
+    const promptRaw = (result.prompt && result.prompt.raw) ? result.prompt.raw : '';
+    const outputText = (result.response && result.response.output) ? result.response.output : '';
+    const description = gr.reason || outputText.slice(0, 200) || 'eval failure';
+
+    findings.push({
+      file: (result.provider && result.provider.id) ? result.provider.id : 'unknown',
+      line: 0,
+      severity,
+      category,
+      description,
+      confidence,
+      exploit_scenario: `Prompt: ${promptRaw.slice(0, 150) || '?'}`,
+      recommendation: 'Review promptfoo eval failure and harden the model response.',
+    });
+  }
+
+  return findings;
+}
 
 function usage() {
   console.log('Usage: node scripts/ingest-code-findings.js <findings.json> [--out <enrichment.json>]');
@@ -195,8 +274,18 @@ function main() {
   const args = parseArgs(process.argv);
   const raw = JSON.parse(fs.readFileSync(path.resolve(args.input), 'utf8'));
 
-  // Accept both findings.json (array) and claudecode-results.json ({findings: []})
-  const rawFindings = Array.isArray(raw) ? raw : (raw.findings || []);
+  const format = detectInputFormat(raw);
+  let rawFindings;
+  if (format === 'evalresult') {
+    console.error('[ingest-code-findings] Detected promptfoo EvaluationResult format — normalising.');
+    rawFindings = normalizeEvalResult(raw);
+    // normalizeEvalResult already applied the confidence floor; wrap in a compatible
+    // object so buildEnrichment's hard-exclusion pass and floor-re-check work correctly.
+    // Since confidence is already >= 0.7, floor re-check is a no-op.
+  } else {
+    // Accept both findings.json (array) and claudecode-results.json ({findings: []})
+    rawFindings = Array.isArray(raw) ? raw : (raw.findings || []);
+  }
   if (rawFindings.length === 0) throw new Error('No findings found in input file.');
 
   const enrichment = buildEnrichment(rawFindings, args.input);
