@@ -5,6 +5,8 @@ const fs = require('fs');
 const path = require('path');
 const Ajv = require('ajv/dist/2020');
 const addFormats = require('ajv-formats');
+const { computeRiskScore } = require('./arsenal-risk-scoring');
+const { mapCategoryToASI } = require('./arsenal-owasp-asi');
 
 const ROOT = path.resolve(__dirname, '..');
 const SCHEMA = 'config/schemas/detection-candidate-export.schema.json';
@@ -131,6 +133,12 @@ function main() {
           grounding: [observation.observationId, ...observation.evidenceRefs],
           confidence: candidateConfidence,
         },
+        riskScore: computeRiskScore({
+          severity: observation.severity,
+          confidence: candidateConfidence,
+          observationCount: Array.isArray(observation.observationRefs) ? observation.observationRefs.length : undefined,
+        }),
+        owaspAsiRefs: mapCategoryToASI(observation.category),
       });
     }
   }
