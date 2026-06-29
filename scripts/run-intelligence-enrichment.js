@@ -79,12 +79,12 @@ function applicable(provider, indicator) {
 
 function classify(provider, indicator) {
   if (provider === 'virustotal' && ['sha256', 'sha1', 'md5'].includes(indicator.kind)) return ['malware_reputation', 'high', 0.86, 'Artifact reputation enrichment available through VirusTotal lane.'];
-  if (provider === 'greynoise') return ['internet_noise', 'medium', 0.74, 'Internet background-noise context available through GreyNoise lane.'];
+  if (provider === 'greynoise') return ['internet_noise', 'medium', 0.76, 'Internet background-noise context available through GreyNoise lane.'];
   if (provider === 'urlscan') return ['phishing', 'medium', 0.66, 'URL and web artifact analysis available through urlscan lane.'];
   if (provider === 'cisa_kev') return ['known_exploited_vulnerability', 'critical', 0.92, 'Known-exploited-vulnerability prioritization lane.'];
   if (provider === 'epss') return ['exploit_probability', 'high', 0.81, 'Exploit probability enrichment lane.'];
   if (provider === 'nvd') return ['exploit_probability', 'medium', 0.7, 'Vulnerability metadata enrichment lane.'];
-  if (['osv', 'github_advisory'].includes(provider)) return ['package_vulnerability', 'medium', 0.72, 'Supply-chain vulnerability enrichment lane.'];
+  if (['osv', 'github_advisory'].includes(provider)) return ['package_vulnerability', 'medium', 0.76, 'Supply-chain vulnerability enrichment lane.'];
   if (['mandiant', 'recorded_future'].includes(provider)) return ['campaign_context', 'high', 0.78, 'Threat actor, malware family, and campaign-context enrichment lane.'];
   if (['shodan', 'censys'].includes(provider)) return ['exposure_context', 'medium', 0.69, 'External attack-surface context enrichment lane.'];
   return ['benign_reputation', 'info', 0.5, 'No elevated context found.'];
