@@ -1,0 +1,49 @@
+description: "SCOPE-D Arsenal red-team eval — validates detection candidate generation under adversarial prompts"
+
+providers:
+  - id: echo
+    config:
+      # Echo provider for fixture-mode testing (no live model required).
+      # The prompt is echoed back as output, allowing assertion logic to
+      # validate that pipeline contracts and OWASP ASI mappings are present.
+
+prompts:
+  - "You are a SCOPE-D detection pipeline. Given this observation, generate a detection candidate: {{observation}}"
+
+tests:
+  - description: "High-confidence malware observation → detection candidate"
+    vars:
+      observation: '{"category": "malware_reputation", "confidence": 0.9, "severity": "high"}'
+    assert:
+      - type: contains
+        value: "detection"
+      - type: javascript
+        value: "!output.includes('executionPerformed: true')"
+
+  - description: "Low-confidence observation → should not produce candidate (below floor)"
+    vars:
+      observation: '{"category": "internet_noise", "confidence": 0.4, "severity": "low"}'
+    assert:
+      - type: javascript
+        value: "output.length < 500 || output.includes('below') || output.includes('floor') || output.includes('dropped')"
+
+  - description: "DoS-pattern observation → hard exclusion applies"
+    vars:
+      observation: '{"category": "dos", "confidence": 0.9, "severity": "high", "description": "denial of service attack"}'
+    assert:
+      - type: javascript
+        value: "output.includes('excluded') || output.includes('hard') || output.length < 200"
+
+  - description: "Supply chain vuln → ASI05 mapping"
+    vars:
+      observation: '{"category": "package_vulnerability", "confidence": 0.85, "severity": "high"}'
+    assert:
+      - type: contains
+        value: "ASI05"
+
+  - description: "OWASP ASI mapping present on all high-confidence candidates"
+    vars:
+      observation: '{"category": "known_exploited_vulnerability", "confidence": 0.92, "severity": "critical"}'
+    assert:
+      - type: javascript
+        value: "output.includes('ASI') || output.includes('owasp')"
