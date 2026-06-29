@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/whisper-cloak-proof.schema.json",
+  "title": "Whisper Cloak Proof",
+  "description": "A proof artifact confirming that Whisper cloaking controls were active during a given operation. Holding this proof does not constitute live network execution.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "proofId",
+    "operationRef",
+    "cloakMechanism",
+    "cloakActive",
+    "verifiedAt",
+    "evidenceRefs",
+    "liveNetworkExecuted",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "proofId": { "type": "string", "pattern": "^proof:whisper-cloak:[a-z0-9][a-z0-9._:-]*$" },
+    "operationRef": { "type": "string", "minLength": 1 },
+    "cloakMechanism": {
+      "type": "string",
+      "enum": ["tor", "i2p", "clearnet_proxy", "air_gap", "simulation"]
+    },
+    "cloakActive": { "type": "boolean" },
+    "verifiedAt": { "type": "string", "format": "date-time" },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "liveNetworkExecuted": { "type": "boolean", "const": false },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.1.0",
+  "gateId": "memphis-promotion-gate:adversarial-workspace-001",
+  "candidateRef": "adversarial-scenario:workspace-transduction-001",
+  "candidateType": "adversarial-scenario",
+  "proposedPromotionState": "hypothesis",
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "evidenceRefs": ["evidence:boundary-header-summary-001", "evidence:wargames-scenario-evidence-002"],
+  "proofRefs": ["proof:scout:sweep-alpha-2024-q4"],
+  "reviewRequired": true,
+  "promotionAllowed": false,
+  "executionAllowed": false,
+  "blockedReasons": ["awaiting_human_review", "insufficient_evidence_for_validated_state"],
+  "nonClaims": [
+    "does_not_execute_promotion",
+    "does_not_authorize_memory_write",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "Tabletop-generated gate; promotion blocked pending operator review."
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.0",
+  "thresholdsId": "font-detector-thresholds:ofif-default-alpha",
+  "signalThresholds": [
+    {
+      "signalType": "font_family",
+      "threshold": 0.75,
+      "notes": "Report if confidence >= 0.75"
+    },
+    {
+      "signalType": "rendering_mode",
+      "threshold": 0.80,
+      "notes": "Higher bar for rendering mode due to false-positive risk"
+    },
+    {
+      "signalType": "os_font_stack",
+      "threshold": 0.70
+    }
+  ],
+  "minimumConfidence": 0.70,
+  "executionAllowed": false,
+  "authorityEnvelopeRef": "engagement-authorization:e6-tabletop-001",
+  "nonClaims": [
+    "does_not_execute_detection",
+    "does_not_authorize_mutation",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "Default OFIF font detector thresholds; requires governance review before production deployment."
+}

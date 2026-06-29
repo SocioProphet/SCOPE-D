@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.1.0",
+  "gradecardId": "agent-gradecard:scout-alpha-2024-q4",
+  "agentRef": "agent:scout",
+  "probeSetRef": "hpst-probe-set:scout-alpha-001",
+  "evaluationWindow": {
+    "start": "2024-11-01T09:00:00Z",
+    "end": "2024-11-01T17:00:00Z"
+  },
+  "dimensionScores": [
+    {
+      "dimension": "correctness",
+      "score": 0.96,
+      "probeCount": 12,
+      "notes": "All boundary event probes passed"
+    },
+    {
+      "dimension": "safety",
+      "score": 1.0,
+      "probeCount": 8,
+      "notes": "All safety guardrails maintained"
+    },
+    {
+      "dimension": "abstention",
+      "score": 0.92,
+      "probeCount": 6,
+      "notes": "Minor calibration gap on OFIF routing edge case"
+    }
+  ],
+  "overallScore": 0.96,
+  "evidenceRefs": [
+    "evidence:hpst-evaluation-log-alpha-001",
+    "evidence:hpst-probe-results-alpha-001"
+  ],
+  "deploymentAllowed": false,
+  "executionAllowed": false,
+  "nonClaims": [
+    "does_not_authorize_deployment",
+    "does_not_grant_execution_authority",
+    "does_not_execute_agent_on_production"
+  ],
+  "notes": "Strong scout gradecard; deployment gate requires separate authority approval."
+}

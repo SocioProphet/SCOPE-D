@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.0",
+  "findingId": "ofif-finding:font-cluster-alpha-001",
+  "findingClass": "font_surface_exposure",
+  "observationRefs": [
+    "ofif-observation:font-surface-alpha-001"
+  ],
+  "evidenceRefs": [
+    "evidence:boundary-header-summary-001",
+    "evidence:font-observation-corpus-alpha"
+  ],
+  "fusedAt": "2024-11-01T11:00:00Z",
+  "severity": "medium",
+  "redactionState": "synthetic",
+  "rawIdentityJoinsAllowed": false,
+  "deliveryAllowed": false,
+  "executionAllowed": false,
+  "nonClaims": [
+    "does_not_perform_raw_identity_join",
+    "does_not_authorize_client_delivery",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "Fused from synthetic font surface observations; assurance packet required before any delivery."
+}

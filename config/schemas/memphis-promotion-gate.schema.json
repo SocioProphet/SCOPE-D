@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/memphis-promotion-gate.schema.json",
+  "title": "Memphis Promotion Gate",
+  "description": "Governance gate controlling promotion of wargames artifacts into the Memphis memory mesh. No promotion is executed by holding this record; authority must be separately granted.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "gateId",
+    "candidateRef",
+    "candidateType",
+    "proposedPromotionState",
+    "authorityEnvelopeRef",
+    "evidenceRefs",
+    "proofRefs",
+    "reviewRequired",
+    "promotionAllowed",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "gateId": { "type": "string", "pattern": "^memphis-promotion-gate:[a-z0-9][a-z0-9._:-]*$" },
+    "candidateRef": { "type": "string", "minLength": 1 },
+    "candidateType": {
+      "type": "string",
+      "enum": ["adversarial-scenario", "attack-coverage-claim", "ontogenesis-export", "hellgraph-proof-stream", "wargames-mode", "learning-run"]
+    },
+    "proposedPromotionState": {
+      "type": "string",
+      "enum": ["hypothesis", "triaged", "validated", "blocked"]
+    },
+    "authorityEnvelopeRef": { "type": "string", "minLength": 1 },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "proofRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "reviewRequired": { "type": "boolean", "const": true },
+    "promotionAllowed": { "type": "boolean", "const": false },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "blockedReasons": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

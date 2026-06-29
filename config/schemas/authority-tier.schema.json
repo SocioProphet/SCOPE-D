@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/authority-tier.schema.json",
+  "title": "Authority Tier",
+  "description": "Defines a named authority tier in the SCOPE-D governance model, specifying which principals are required for approval and what actions are gated.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "tierId",
+    "tierName",
+    "requiredApprovers",
+    "gatedActions",
+    "delegationAllowed",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "tierId": { "type": "string", "pattern": "^authority-tier:[a-z0-9][a-z0-9._:-]*$" },
+    "tierName": { "type": "string", "minLength": 1 },
+    "requiredApprovers": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "gatedActions": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "delegationAllowed": { "type": "boolean" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "evidenceRequirements": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

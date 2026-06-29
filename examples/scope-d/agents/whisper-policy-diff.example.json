@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.0",
+  "diffId": "whisper-policy-diff:sovereign-signal-alpha-001-v1-to-v2",
+  "fromPolicyRef": "whisper-config:sovereign-signal-alpha-001-v1",
+  "toPolicyRef": "whisper-config:sovereign-signal-alpha-001-v2",
+  "changedFields": [
+    {
+      "fieldPath": "retentionPolicy.retentionDays",
+      "oldValue": 30,
+      "newValue": 14
+    },
+    {
+      "fieldPath": "signalChannels",
+      "oldValue": ["tor", "local_only"],
+      "newValue": ["local_only"]
+    }
+  ],
+  "approvalRequired": true,
+  "approved": false,
+  "approvedBy": [],
+  "applied": false,
+  "executionAllowed": false,
+  "nonClaims": [
+    "does_not_apply_policy_without_approval",
+    "does_not_execute_policy_mutation",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "Policy diff prepared for review; not yet approved or applied."
+}

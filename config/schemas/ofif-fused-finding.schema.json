@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/ofif-fused-finding.schema.json",
+  "title": "OFIF Fused Finding",
+  "description": "A fused finding produced by the OFIF pipeline from multiple field observations. Holding this record does not constitute execution authority or client delivery.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "findingId",
+    "findingClass",
+    "observationRefs",
+    "evidenceRefs",
+    "fusedAt",
+    "severity",
+    "redactionState",
+    "rawIdentityJoinsAllowed",
+    "deliveryAllowed",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "findingId": { "type": "string", "pattern": "^ofif-finding:[a-z0-9][a-z0-9._:-]*$" },
+    "findingClass": {
+      "type": "string",
+      "enum": ["font_surface_exposure", "public_index_exposure", "identity_signal_cluster", "behavioral_anomaly", "threat_indicator_cluster", "composite"]
+    },
+    "observationRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "fusedAt": { "type": "string", "format": "date-time" },
+    "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "redactionState": { "type": "string", "enum": ["redacted", "synthetic", "withheld"] },
+    "rawIdentityJoinsAllowed": { "type": "boolean", "const": false },
+    "deliveryAllowed": { "type": "boolean" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "assurancePacketRef": { "type": "string" },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

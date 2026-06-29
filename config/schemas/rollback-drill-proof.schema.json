@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/rollback-drill-proof.schema.json",
+  "title": "Rollback Drill Proof",
+  "description": "A proof artifact confirming that a rollback procedure was drilled in a wargames context. No live rollback was executed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "proofId",
+    "drillId",
+    "rollbackTargetRef",
+    "drillMode",
+    "stepsVerified",
+    "allStepsPassed",
+    "liveRollbackExecuted",
+    "evidenceRefs",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "proofId": { "type": "string", "pattern": "^proof:rollback-drill:[a-z0-9][a-z0-9._:-]*$" },
+    "drillId": { "type": "string", "minLength": 1 },
+    "rollbackTargetRef": { "type": "string", "minLength": 1 },
+    "drillMode": { "type": "string", "enum": ["tabletop", "simulation", "dry-run"] },
+    "stepsVerified": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["stepId", "description", "passed"],
+        "properties": {
+          "stepId": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "passed": { "type": "boolean" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "allStepsPassed": { "type": "boolean" },
+    "liveRollbackExecuted": { "type": "boolean", "const": false },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

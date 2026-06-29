@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/whisper-policy-diff.schema.json",
+  "title": "Whisper Policy Diff",
+  "description": "A governed diff between two Whisper policy versions. Applying this diff requires separate approval; this record alone does not authorize policy mutation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "diffId",
+    "fromPolicyRef",
+    "toPolicyRef",
+    "changedFields",
+    "approvalRequired",
+    "approved",
+    "applied",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "diffId": { "type": "string", "pattern": "^whisper-policy-diff:[a-z0-9][a-z0-9._:-]*$" },
+    "fromPolicyRef": { "type": "string", "minLength": 1 },
+    "toPolicyRef": { "type": "string", "minLength": 1 },
+    "changedFields": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["fieldPath", "oldValue", "newValue"],
+        "properties": {
+          "fieldPath": { "type": "string", "minLength": 1 },
+          "oldValue": {},
+          "newValue": {}
+        }
+      }
+    },
+    "approvalRequired": { "type": "boolean", "const": true },
+    "approved": { "type": "boolean" },
+    "approvedBy": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "applied": { "type": "boolean" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

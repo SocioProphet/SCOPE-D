@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/engagement-action.schema.json",
+  "title": "Engagement Action",
+  "description": "A governed engagement action record. This schema describes a proposed or reviewed action; it does not grant execution authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "actionId",
+    "actionType",
+    "engagementAuthorizationRef",
+    "proposedBy",
+    "targetRef",
+    "actionScope",
+    "evidenceRefs",
+    "reviewState",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "actionId": { "type": "string", "pattern": "^engagement-action:[a-z0-9][a-z0-9._:-]*$" },
+    "actionType": {
+      "type": "string",
+      "enum": [
+        "observation",
+        "boundary_probe",
+        "evidence_collection",
+        "policy_review",
+        "containment_proposal",
+        "rollback_proposal",
+        "notification"
+      ]
+    },
+    "engagementAuthorizationRef": { "type": "string", "pattern": "^engagement-authorization:[a-z0-9][a-z0-9._:-]*$" },
+    "proposedBy": { "type": "string", "minLength": 1 },
+    "targetRef": { "type": "string", "minLength": 1 },
+    "actionScope": { "type": "string", "enum": ["local", "workspace", "tenant", "platform"] },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "reviewState": {
+      "type": "string",
+      "enum": ["proposed", "pending_review", "approved", "denied", "blocked"]
+    },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "blockedReasons": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

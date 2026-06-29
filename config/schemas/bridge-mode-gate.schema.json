@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/bridge-mode-gate.schema.json",
+  "title": "Bridge Mode Gate",
+  "description": "Governance gate for transitioning between wargames and live operational modes. Bridge mode transitions require explicit authority; execution is never performed by holding this record.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "gateId",
+    "fromMode",
+    "toMode",
+    "authorityEnvelopeRef",
+    "evidenceRefs",
+    "proofRefs",
+    "transitionApproved",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "gateId": { "type": "string", "pattern": "^bridge-mode-gate:[a-z0-9][a-z0-9._:-]*$" },
+    "fromMode": { "type": "string", "enum": ["DEFENSE", "LEARNING", "WARGAMES"] },
+    "toMode": { "type": "string", "enum": ["LIVE", "LIVE_READONLY", "WARGAMES", "DEFENSE"] },
+    "authorityEnvelopeRef": { "type": "string", "minLength": 1 },
+    "evidenceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "proofRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "transitionApproved": { "type": "boolean" },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "blockedReasons": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}

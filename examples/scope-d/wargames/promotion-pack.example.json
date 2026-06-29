@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.0",
+  "packId": "promotion-pack:adversarial-workspace-001",
+  "candidateRef": "adversarial-scenario:workspace-transduction-001",
+  "authorityTierRef": "authority-tier:michael-only-e6",
+  "evidenceRefs": [
+    "evidence:boundary-header-summary-001",
+    "evidence:wargames-scenario-evidence-002",
+    "evidence:scout-sweep-result-alpha"
+  ],
+  "proofRefs": [
+    "proof:scout:sweep-alpha-2024-q4",
+    "proof:rollback-drill:wargames-alpha-001"
+  ],
+  "promotionGateRef": "memphis-promotion-gate:adversarial-workspace-001",
+  "reviewState": "pending_review",
+  "executionAllowed": false,
+  "blockedReasons": ["awaiting_authority_tier_approval"],
+  "nonClaims": [
+    "does_not_execute_promotion",
+    "does_not_authorize_memory_write",
+    "does_not_grant_execution_authority"
+  ],
+  "notes": "Complete evidence pack assembled for human review; no promotion may proceed without authority-tier approval."
+}

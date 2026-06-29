@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.1.0",
+  "actionId": "engagement-action:boundary-probe-alpha-001",
+  "actionType": "boundary_probe",
+  "engagementAuthorizationRef": "engagement-authorization:e6-tabletop-001",
+  "proposedBy": "agent:scout",
+  "targetRef": "asset:owned-lab-gateway-alpha",
+  "actionScope": "local",
+  "evidenceRefs": [
+    "evidence:boundary-header-summary-001",
+    "evidence:scout-sweep-result-alpha"
+  ],
+  "reviewState": "pending_review",
+  "executionAllowed": false,
+  "blockedReasons": ["awaiting_operator_review"],
+  "nonClaims": [
+    "does_not_execute_engagement_action",
+    "does_not_grant_execution_authority",
+    "does_not_authorize_live_access"
+  ],
+  "notes": "Proposed boundary probe action; blocked pending operator review."
+}

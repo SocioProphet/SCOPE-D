@@ -28,6 +28,39 @@ const VALID_PAIRS = [
   ['config/schemas/wargames-meshrush-graph-view-export.schema.json', 'examples/scope-d/wargames/wargames-meshrush-graph-view.example.json'],
   ['config/schemas/wargames-hellgraph-proof-stream.schema.json', 'examples/scope-d/wargames/wargames-hellgraph-proof-stream.example.json'],
   ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/wargames-adversarial-scenario.example.json'],
+  // Phase 3: governance, promotion, bridge
+  ['config/schemas/memphis-promotion-gate.schema.json', 'examples/scope-d/wargames/memphis-promotion-gate.example.json'],
+  ['config/schemas/authority-tier.schema.json', 'examples/scope-d/wargames/authority-tier.example.json'],
+  ['config/schemas/promotion-pack.schema.json', 'examples/scope-d/wargames/promotion-pack.example.json'],
+  ['config/schemas/bridge-mode-gate.schema.json', 'examples/scope-d/wargames/bridge-mode-gate.example.json'],
+  ['config/schemas/limit-receipt.schema.json', 'examples/scope-d/wargames/limit-receipt.example.json'],
+  ['config/schemas/rollback-drill-proof.schema.json', 'examples/scope-d/wargames/rollback-drill-proof.example.json'],
+  ['config/schemas/engagement-action.schema.json', 'examples/scope-d/wargames/engagement-action.example.json'],
+  ['config/schemas/dynamic-engagement-summary.schema.json', 'examples/scope-d/wargames/dynamic-engagement-summary.example.json'],
+  // Phase 4: OFIF
+  ['config/schemas/ofif-field-observation.schema.json', 'examples/scope-d/ofif/ofif-field-observation.example.json'],
+  ['config/schemas/ofif-fused-finding.schema.json', 'examples/scope-d/ofif/ofif-fused-finding.example.json'],
+  ['config/schemas/ofif-assurance-packet.schema.json', 'examples/scope-d/ofif/ofif-assurance-packet.example.json'],
+  ['config/schemas/ofif-field-task.schema.json', 'examples/scope-d/ofif/ofif-field-task.example.json'],
+  ['config/schemas/ofif-client-access-envelope.schema.json', 'examples/scope-d/ofif/ofif-client-access-envelope.example.json'],
+  // Phase 7: Whisper
+  ['config/schemas/whisper-config.schema.json', 'examples/scope-d/agents/whisper-config.example.json'],
+  ['config/schemas/whisper-cloak-proof.schema.json', 'examples/scope-d/agents/whisper-cloak-proof.example.json'],
+  ['config/schemas/whisper-policy-diff.schema.json', 'examples/scope-d/agents/whisper-policy-diff.example.json'],
+  // Phase 8: font surfaces
+  ['config/schemas/font-observation.schema.json', 'examples/scope-d/surfaces/font-observation.example.json'],
+  ['config/schemas/font-profile.schema.json', 'examples/scope-d/surfaces/font-profile.example.json'],
+  ['config/schemas/font-policy-pack.schema.json', 'examples/scope-d/surfaces/font-policy-pack.example.json'],
+  ['config/schemas/font-swap-proof.schema.json', 'examples/scope-d/surfaces/font-swap-proof.example.json'],
+  ['config/schemas/font-detector-thresholds.schema.json', 'examples/scope-d/surfaces/font-detector-thresholds.example.json'],
+  ['config/schemas/public-index-exposure-query.schema.json', 'examples/scope-d/surfaces/public-index-exposure-query.example.json'],
+  ['config/schemas/public-index-exposure-finding.schema.json', 'examples/scope-d/surfaces/public-index-exposure-finding.example.json'],
+  // Phase 9: HPST
+  ['config/schemas/hpst-basis.schema.json', 'examples/scope-d/hpst/hpst-basis.example.json'],
+  ['config/schemas/hpst-probe-set.schema.json', 'examples/scope-d/hpst/hpst-probe-set.example.json'],
+  ['config/schemas/agent-gradecard.schema.json', 'examples/scope-d/hpst/agent-gradecard.example.json'],
+  ['config/schemas/verifier-microtask.schema.json', 'examples/scope-d/hpst/verifier-microtask.example.json'],
+  ['config/schemas/verifier-reward-receipt.schema.json', 'examples/scope-d/hpst/verifier-reward-receipt.example.json'],
 ];
 
 const INVALID_PAIRS = [
@@ -47,6 +80,17 @@ const INVALID_PAIRS = [
   ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-memory-writeback.invalid.json'],
   ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-synthetic-promotion.invalid.json'],
   ['config/schemas/wargames-adversarial-scenario.schema.json', 'examples/scope-d/wargames/negative-fixtures/adversarial-scenario-summary-only-finding.invalid.json'],
+  // Phase 3-9 negative fixtures
+  ['config/schemas/promotion-pack.schema.json', 'examples/scope-d/wargames/negative-fixtures/promotion-pack-missing-proof.invalid.json'],
+  ['config/schemas/bridge-mode-gate.schema.json', 'examples/scope-d/wargames/negative-fixtures/bridge-mode-gate-execution-allowed.invalid.json'],
+  ['config/schemas/ofif-field-task.schema.json', 'examples/scope-d/wargames/negative-fixtures/ofif-field-task-execution-allowed.invalid.json'],
+  ['config/schemas/ofif-client-access-envelope.schema.json', 'examples/scope-d/wargames/negative-fixtures/ofif-envelope-missing-redaction.invalid.json'],
+  ['config/schemas/whisper-config.schema.json', 'examples/scope-d/wargames/negative-fixtures/whisper-config-mutation-no-auth.invalid.json'],
+  ['config/schemas/whisper-policy-diff.schema.json', 'examples/scope-d/wargames/negative-fixtures/whisper-policy-diff-applied-no-approval.invalid.json'],
+  ['config/schemas/font-swap-proof.schema.json', 'examples/scope-d/wargames/negative-fixtures/font-swap-proof-live-execution.invalid.json'],
+  ['config/schemas/public-index-exposure-query.schema.json', 'examples/scope-d/wargames/negative-fixtures/public-index-query-no-auth.invalid.json'],
+  ['config/schemas/agent-gradecard.schema.json', 'examples/scope-d/wargames/negative-fixtures/agent-gradecard-no-evidence.invalid.json'],
+  ['config/schemas/verifier-microtask.schema.json', 'examples/scope-d/wargames/negative-fixtures/verifier-microtask-execution-allowed.invalid.json'],
 ];
 
 const APPROVED_AUTHORIZATION_EXAMPLE = 'examples/scope-d/wargames/engagement-authorization-approved.example.json';

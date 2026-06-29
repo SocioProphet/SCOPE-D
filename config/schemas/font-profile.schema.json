@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/schemas/font-profile.schema.json",
+  "title": "Font Profile",
+  "description": "An aggregated font surface profile built from governed font observations. Holding this profile does not grant execution or client delivery authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "profileId",
+    "observationRefs",
+    "dominantSignals",
+    "profiledAt",
+    "redactionState",
+    "rawIdentityJoinsAllowed",
+    "executionAllowed",
+    "nonClaims"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "profileId": { "type": "string", "pattern": "^font-profile:[a-z0-9][a-z0-9._:-]*$" },
+    "observationRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "dominantSignals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["signalType", "value", "frequency"],
+        "properties": {
+          "signalType": { "type": "string", "minLength": 1 },
+          "value": { "type": "string", "minLength": 1 },
+          "frequency": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+        }
+      }
+    },
+    "profiledAt": { "type": "string", "format": "date-time" },
+    "redactionState": { "type": "string", "enum": ["redacted", "synthetic", "withheld"] },
+    "rawIdentityJoinsAllowed": { "type": "boolean", "const": false },
+    "executionAllowed": { "type": "boolean", "const": false },
+    "nonClaims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "string" }
+  }
+}
