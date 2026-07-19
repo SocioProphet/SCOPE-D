@@ -1,0 +1,190 @@
+{
+  "profileId": "osint-profile-ee358fa0dbfa",
+  "target": "stan8086",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:20.325112+00:00",
+  "completedAt": "2026-06-21T15:28:20.935359+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-d95da73c",
+      "lookupType": "github_context",
+      "target": "stan8086",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "stan8086",
+            "name": "Jose Rodr\u00edguez",
+            "type": "User",
+            "company": "@ProductivityDirectory",
+            "blog": "https://productivity.directory",
+            "location": "Mexico",
+            "bio": "I'm building @ProductivityDirectory ",
+            "public_repos": 13,
+            "followers": 3819,
+            "following": 6505,
+            "created_at": "2023-12-26T10:22:06Z",
+            "updated_at": "2025-12-28T10:01:06Z",
+            "html_url": "https://github.com/stan8086",
+            "avatar_url": "https://avatars.githubusercontent.com/u/154884797?v=4",
+            "repos": [
+              {
+                "name": "awesome-distraction-blocker",
+                "description": "A curated list of top productivity distraction blocker apps",
+                "stargazers_count": 60,
+                "language": null,
+                "pushed_at": "2024-03-11T06:53:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-workflow",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-03-05T11:35:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Awesome-GPTs",
+                "description": "Curated list of awesome GPTs \ud83d\udc4d.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-01-18T08:56:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-newsletters",
+                "description": "A list of amazing Newsletters",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-04-25T15:07:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-directories",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-04-02T04:20:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-workflow-automation",
+                "description": "A curated list of Workflow Automation Software and Tools",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-03-22T12:08:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "stan8086",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-04-29T11:56:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "trackawesomelist-source",
+                "description": "Track Awesome List Source Code, build with Deno.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-03-08T12:53:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-productivity-1",
+                "description": "A curated list of delightful productivity resources.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-02-08T19:03:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "productividad",
+                "description": "awesome-productivity en espa\u00f1ol",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-01-17T22:25:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Awesome-GPT-Store",
+                "description": "Custom GPT Store - A collection of major GPTS available in public",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-01-18T09:08:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Awesome-GPTx",
+                "description": "A collection of awesome GPTs. ",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-01-18T09:11:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-productivity-books",
+                "description": "My Awesome list of productivity Books ",
+                "stargazers_count": 29,
+                "language": null,
+                "pushed_at": "2024-01-14T06:53:10Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:20.934351+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

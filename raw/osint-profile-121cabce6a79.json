@@ -1,0 +1,180 @@
+{
+  "profileId": "osint-profile-121cabce6a79",
+  "target": "aldrshan",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:49.804391+00:00",
+  "completedAt": "2026-06-21T15:28:50.327029+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f496bd50",
+      "lookupType": "github_context",
+      "target": "aldrshan",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "aldrshan",
+            "name": "Shane Aldridge",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Atlanta Georgia",
+            "bio": "Just a nerd with a computer :nerd_face:",
+            "public_repos": 11,
+            "followers": 3178,
+            "following": 8357,
+            "created_at": "2022-01-03T23:19:49Z",
+            "updated_at": "2025-07-07T14:03:45Z",
+            "html_url": "https://github.com/aldrshan",
+            "avatar_url": "https://avatars.githubusercontent.com/u/97067957?v=4",
+            "repos": [
+              {
+                "name": "Book2Audio",
+                "description": "TTS reader for public domain books",
+                "stargazers_count": 30,
+                "language": "Python",
+                "pushed_at": "2024-04-19T10:15:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "yoga",
+                "description": null,
+                "stargazers_count": 51,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-01T10:17:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kaggle_Housing_Prices",
+                "description": "Housing prices competition based on entrylevel and intermediate ML courses",
+                "stargazers_count": 14,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2022-07-05T19:30:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ds_standard_battery",
+                "description": "Standard battery for data science applications",
+                "stargazers_count": 13,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-12-31T11:13:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IBM-Data-Science",
+                "description": null,
+                "stargazers_count": 18,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-09-29T11:04:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "COLOR-QUANT",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-06-20T18:44:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DICOMToJPEGConverter",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "C#",
+                "pushed_at": "2024-01-31T11:26:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "yogatastic",
+                "description": "A simple flask based yoga app.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2023-04-13T17:03:17Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "flask",
+                  "html",
+                  "js",
+                  "python",
+                  "stretching",
+                  "yoga"
+                ]
+              },
+              {
+                "name": "Hydroclone_Generator",
+                "description": "stl generator for a hdyroclone shape based on inputs. ",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2023-12-22T11:15:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kaggle_Titanic",
+                "description": "Kaggle Titanic ml competition",
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2022-07-05T19:08:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Scratch-Tic-Tac-Toe-",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2022-06-26T19:31:00Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:50.326019+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

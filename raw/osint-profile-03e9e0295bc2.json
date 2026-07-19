@@ -1,0 +1,246 @@
+{
+  "profileId": "osint-profile-03e9e0295bc2",
+  "target": "dovvnloading",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:24.144474+00:00",
+  "completedAt": "2026-06-21T15:32:24.654307+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-db217605",
+      "lookupType": "github_context",
+      "target": "dovvnloading",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "dovvnloading",
+            "name": "Matthew Wesney",
+            "type": "User",
+            "company": null,
+            "blog": "https://mattwesney.com/",
+            "location": "ohio, United States",
+            "bio": null,
+            "public_repos": 9,
+            "followers": 1419,
+            "following": 1065,
+            "created_at": "2024-01-23T04:45:17Z",
+            "updated_at": "2026-06-16T14:45:38Z",
+            "html_url": "https://github.com/dovvnloading",
+            "avatar_url": "https://avatars.githubusercontent.com/u/157447210?v=4",
+            "repos": [
+              {
+                "name": "Cortex",
+                "description": "Cortex is a private, secure, and highly responsive desktop AI assistant designed for seamless interaction with local Large Language Models (LLMs) through the Ollama framework. All models and data stay on your device, no cloud, no third parties. ",
+                "stargazers_count": 35,
+                "language": "Python",
+                "pushed_at": "2026-04-27T12:16:04Z",
+                "fork": false,
+                "topics": [
+                  "agentic",
+                  "ai",
+                  "app",
+                  "chatbot",
+                  "desktop",
+                  "llm",
+                  "local-llm",
+                  "ollama",
+                  "ollama-ai",
+                  "ollama-ui",
+                  "python",
+                  "sql",
+                  "sqlite"
+                ]
+              },
+              {
+                "name": "Qwen3-TTS-1.7B",
+                "description": "A desktop interface for the powerful Qwen3-TTS model (1.7B CustomVoice). Run offline, ultra-low latency text-to-speech with emotive control directly on your GPU.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-02T14:16:01Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "generative-ai",
+                  "generative-tts",
+                  "python",
+                  "qwen",
+                  "qwen3",
+                  "qwen3-tts",
+                  "tailwindcss",
+                  "text-to-speech",
+                  "tsx",
+                  "tts",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "midi-spark",
+                "description": "Midi Spark is a mathematical MIDI generation tool for exploring chord progressions, rhythmic complexity, and dissonance. It lets you generate, edit, preview, import, and export rich MIDI sequences using built-in synthesizers and an interactive piano roll.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-19T11:34:18Z",
+                "fork": false,
+                "topics": [
+                  "midi",
+                  "midi-files",
+                  "midi-generator",
+                  "typescript",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "my-assets",
+                "description": "ga facing assets ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-23T14:10:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Graphite",
+                "description": "A private, modular node based AI workspace for thinking and creation. Seamlessly connect to Ollama, OpenAI, Gemini, Anthropic, and Groq models in one unified, node-based interface for reasoning, visualization, and exploration \u2014 all running locally or via API.",
+                "stargazers_count": 114,
+                "language": "Python",
+                "pushed_at": "2026-04-02T16:45:16Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-assistant",
+                  "anthropic-claude",
+                  "chatgpt",
+                  "gpt",
+                  "gui",
+                  "language-model",
+                  "llm",
+                  "llm-tools",
+                  "node-graph",
+                  "ollama",
+                  "open-source",
+                  "openai",
+                  "pyside6",
+                  "ui"
+                ]
+              },
+              {
+                "name": "Graphlink",
+                "description": "Graphlink (formerly Graphite) is a local-first, graph-based AI workspace for building branching reasoning workflows, running agent plugins, and orchestrating multiple AI providers in a visual environment designed for complex problem solving.",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2026-05-05T03:06:35Z",
+                "fork": false,
+                "topics": [
+                  "agentic",
+                  "agentic-ai",
+                  "ai",
+                  "ai-workspace",
+                  "artificail-intelligence",
+                  "coding",
+                  "gemini",
+                  "generative",
+                  "google",
+                  "gpt",
+                  "llamacpp",
+                  "llm",
+                  "local-ai",
+                  "ollama",
+                  "openai",
+                  "opensource",
+                  "visual-programming"
+                ]
+              },
+              {
+                "name": "Sonisto-Beat-Machine",
+                "description": "Sonisto Beatmachine is a React 19 and Web Audio API-based production tool. It provides a browser-based environment for real-time digital signal processing (DSP) with immediate visual feedback.",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-02T11:42:47Z",
+                "fork": false,
+                "topics": [
+                  "akai",
+                  "beat-machine",
+                  "beatmachine",
+                  "freeware",
+                  "instrument",
+                  "instrumentation",
+                  "lpd8",
+                  "mpc",
+                  "music-composition",
+                  "music-production",
+                  "studio-technology",
+                  "vst"
+                ]
+              },
+              {
+                "name": "dovvnloading",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-04-22T19:30:20Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Schmidhuber",
+                "description": "This project serves as a dedicated digital archive and interactive timeline documenting the foundational history of Deep Learning.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-09T22:36:05Z",
+                "fork": false,
+                "topics": [
+                  "deep-learning",
+                  "deep-neural-networks",
+                  "gan",
+                  "idsia",
+                  "jurgen-schmidhuber",
+                  "neural-network",
+                  "neural-networks",
+                  "technical-university-of-munich"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:24.653080+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

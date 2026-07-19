@@ -1,0 +1,391 @@
+{
+  "profileId": "osint-profile-475f5dd18408",
+  "target": "rizwansammo",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:02.039031+00:00",
+  "completedAt": "2026-06-20T16:48:02.869356+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-de64d5d6",
+      "lookupType": "github_context",
+      "target": "rizwansammo",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "rizwansammo",
+            "name": "Rizwan",
+            "type": "User",
+            "company": "BRAC University",
+            "blog": "rizwansammo.site",
+            "location": "Bangladesh",
+            "bio": "CS Student at BRAC University\r\n",
+            "public_repos": 35,
+            "followers": 1124,
+            "following": 398,
+            "created_at": "2021-06-21T09:59:24Z",
+            "updated_at": "2026-06-10T21:05:07Z",
+            "html_url": "https://github.com/rizwansammo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/86232329?v=4",
+            "repos": [
+              {
+                "name": "NetaMate",
+                "description": "NetaMate: decoupled Django + Next.js site with full CMS admin",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-18T20:50:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SysDesk-Lite",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-14T02:56:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "METATRON",
+                "description": "AI-powered penetration testing assistant using local LLM on linux (Parrot OS)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-11T07:16:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Daftar",
+                "description": "Daftar MVP with auth, ticket tracker, and premium docs workspace",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-29T12:17:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MailDesk",
+                "description": "feat: bootstrap MailDesk Flask app with template generation and canned email management feat: initial commit of IT Email Template Generator (Flask, library, dark mode, README) chore: initial project setup for MailDesk internal IT email tool",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-23T16:51:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutomationWithPython",
+                "description": "Automation and Scripting with Python",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-11-11T08:53:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BRACU-CSE111--Python-II",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2022-11-08T10:09:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C-Lang",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2022-11-12T22:57:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BRACU-CSE110--Python-I",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2022-11-08T09:47:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TOPH",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "C",
+                "pushed_at": "2025-11-11T09:08:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CSE220-SPRING26-RT-",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-25T19:13:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Project-Chimera",
+                "description": "Neuro-Symbolic-Causal AI Agent \u2014 Project Chimera \ud83c\udf0c | Open-source hybrid intelligence",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-09-27T14:02:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-profile-trophy",
+                "description": "\ud83c\udfc6 Add dynamically generated GitHub Stat Trophies  on your readme",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-08T15:01:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rizwansammo",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-12-09T14:58:04Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "github-readme-stats",
+                "description": ":zap: Dynamically generated stats for your github readmes",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-08T18:06:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sherlok",
+                "description": "I collaborated on the Sherlock project",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2021-10-16T20:56:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flask",
+                "description": "The Python micro framework for building web applications.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-11-11T12:00:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Python-OOP",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2022-12-29T17:31:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Raymo111",
+                "description": "My awesome profile README",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-04-15T09:35:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Burp-Suite-Pro",
+                "description": "A bash and powershell script to download the latest version of Burp-Suite Professional and use it for free.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-05-07T19:50:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CSE427-Machine-Learning",
+                "description": "Project and Labs of CSE427(Machine Learning) of BRACU",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-05-12T07:20:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Burp-Loader-Linux",
+                "description": "Install Burpsuite pro in Linux OS",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-03-24T06:24:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CodeForces",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2024-03-27T00:22:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BRACU-CSE220",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-09-07T17:34:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HyperV-BAT",
+                "description": "Enable Hyper V in Windows 11 Home Edition",
+                "stargazers_count": 5,
+                "language": "Batchfile",
+                "pushed_at": "2024-09-09T16:42:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartResumeAnalyzer",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-09-12T11:35:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DartLang",
+                "description": "Dart Basic",
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2024-09-13T16:37:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CLang",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2025-03-28T17:57:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackerRank",
+                "description": "Automatically pushing HackerRank submissions to this repo via Selenium",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-21T14:18:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rizwansammo.github.io",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-10-10T02:26:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Trader",
+                "description": "\"AI-Trader: Can AI Beat the Market?\"",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-10-28T13:47:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Connected",
+                "description": "Django Blogging App called Connected.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-11-09T16:34:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FreeDomain",
+                "description": "DigitalPlat FreeDomain: Free Domain For Everyone",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-12T18:13:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FlaskNote",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-11-15T18:32:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quran_desktop",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Dart",
+                "pushed_at": "2025-11-23T16:04:59Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:02.867313+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

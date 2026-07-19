@@ -1,0 +1,424 @@
+{
+  "profileId": "osint-profile-a8c4d9eab869",
+  "target": "lodhik9",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:09.496952+00:00",
+  "completedAt": "2026-06-21T15:28:10.233002+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4a89ef2c",
+      "lookupType": "github_context",
+      "target": "lodhik9",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "lodhik9",
+            "name": "Muhammad Khan Lodhi",
+            "type": "User",
+            "company": "Tanmar Webentwicklung",
+            "blog": "",
+            "location": "Hamburg Germany",
+            "bio": null,
+            "public_repos": 39,
+            "followers": 4284,
+            "following": 13807,
+            "created_at": "2017-07-27T12:26:36Z",
+            "updated_at": "2025-11-06T11:38:17Z",
+            "html_url": "https://github.com/lodhik9",
+            "avatar_url": "https://avatars.githubusercontent.com/u/30498666?v=4",
+            "repos": [
+              {
+                "name": "Java-MyCalculator",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2024-03-12T22:10:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nuvio-config",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-02T07:57:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cpp-Web-Server",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "C",
+                "pushed_at": "2024-03-19T12:27:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cpp-calculator-app",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "C++",
+                "pushed_at": "2024-03-19T14:05:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SpringBoot-employee-management-api",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "Java",
+                "pushed_at": "2024-03-17T14:59:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Java-Login-Register-Project",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2024-03-16T13:33:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Java-MyWeatherApp",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2024-03-12T11:42:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AnagramCheckerProject-Java",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2023-10-05T08:43:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RISC-V-Core",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "VHDL",
+                "pushed_at": "2023-08-29T23:33:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lodhik9",
+                "description": null,
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2024-11-13T14:17:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Shopware-6_Plugin_BundleCart",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2023-11-08T09:48:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Shopware-6_Plugin_Jobs",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2023-07-09T10:26:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartWatchApp-Tizen.NET-XamarinForms",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "C#",
+                "pushed_at": "2023-06-18T18:36:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MQTT-DotNet",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "C#",
+                "pushed_at": "2023-08-23T21:59:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartWatchApp-NodeJS-Server",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-18T09:48:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HR-Buddys_Next-JS_API_System_CSR",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-13T10:04:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HR-Buddys_Next-JS_API_System_SSR",
+                "description": "This Projects includes MongoDB as database and Google Provider for NextAuth.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-13T09:48:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Project_Prompt-Next-JS-MongoDB-Google",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-08T14:14:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Flutter-Catalog",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "C++",
+                "pushed_at": "2022-08-09T19:34:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NeuralNetwork-DataScience-FibonacciSequence",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2021-11-17T18:48:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Responsive-CSS-HamburgerMenu",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "CSS",
+                "pushed_at": "2021-11-12T22:58:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CSS-HamburgerMenu",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "CSS",
+                "pushed_at": "2021-11-12T20:57:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Xamarin.Forms-CoffeeApp",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2021-11-14T15:26:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ASP.NET-CORE-SpotifySearcher",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2021-11-12T20:01:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ASP.NET-CORE-JokesWebApp",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C#",
+                "pushed_at": "2021-11-11T23:13:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "XAML-NotepadAPP",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2021-11-01T20:39:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactJS-REDUX-BlogPost",
+                "description": "This is the app having:",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2021-07-18T13:50:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Maze-Game-AssemblyLanguage",
+                "description": "This Repo is for the Maze game in Assembly language",
+                "stargazers_count": 5,
+                "language": "Assembly",
+                "pushed_at": "2021-07-17T13:05:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactJS-RouterParameters",
+                "description": "- With React route paramters",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2021-07-17T13:13:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SE-RobotAutoCleaningMode",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2021-07-13T13:41:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactJS-Router",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2021-07-13T15:54:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "moyynApp",
+                "description": "This is the repos for Internship task for Moyyn in ReactJS",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2021-07-06T09:16:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OS-Scheduling",
+                "description": "This is our PUCIT Assignment of scheduling",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2018-05-04T18:25:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Counter",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2021-07-13T13:33:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OS-Threads-C",
+                "description": "This is our class assignment related to threads",
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2018-05-09T18:16:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OS-Threads",
+                "description": "This is my Operating System Assignment of threads",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2018-04-27T12:09:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "React-Pagination",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2021-07-08T07:51:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactJS-APIs",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2021-07-08T16:19:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactJS-TodosApp",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2021-07-13T13:31:13Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:10.232253+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

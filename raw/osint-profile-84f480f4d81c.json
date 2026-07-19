@@ -1,0 +1,370 @@
+{
+  "profileId": "osint-profile-84f480f4d81c",
+  "target": "fermincasquero",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:26.080000+00:00",
+  "completedAt": "2026-06-21T15:31:27.070629+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1ea5b8a2",
+      "lookupType": "github_context",
+      "target": "fermincasquero",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "fermincasquero",
+            "name": "Fermin Casquero",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 33,
+            "followers": 1606,
+            "following": 1842,
+            "created_at": "2024-09-30T10:11:55Z",
+            "updated_at": "2025-04-24T19:40:14Z",
+            "html_url": "https://github.com/fermincasquero",
+            "avatar_url": "https://avatars.githubusercontent.com/u/183369302?v=4",
+            "repos": [
+              {
+                "name": "nuxtjs-woocommerce",
+                "description": null,
+                "stargazers_count": 24,
+                "language": "Vue",
+                "pushed_at": "2024-11-07T02:58:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AIConnectors",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2024-11-07T04:33:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "all-our-aggregates-are-wrong-demos",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2026-05-04T04:39:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fermincasquero",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-12-05T14:47:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "btc-priceguess-next",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-07T11:53:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "meta-dao",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Solidity",
+                "pushed_at": "2024-11-07T11:56:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "temp-codespace",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "EJS",
+                "pushed_at": "2024-11-07T11:55:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-pokedex-api-challenge",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-07T11:57:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "golang-jwt",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2024-11-07T11:41:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "svelte-blog",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Svelte",
+                "pushed_at": "2024-11-07T10:00:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gatsby-starter-contentful-homepage",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-07T09:57:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-amplify-todos",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-14T02:26:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shopping-cart",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-07T10:04:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "customer-order-management-next",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-07T09:54:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel-dms",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2024-11-07T10:09:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Next.js-Blog-App",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-07T09:47:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "litecart",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2025-01-01T12:24:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PraxisMapper",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2024-11-07T05:43:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easyChatGPT",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-11-07T09:39:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ecommerce-store-Laravel-Vue-",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2024-10-03T03:11:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Components-For-Salesforce-Commerce-Cloud",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Apex",
+                "pushed_at": "2024-10-07T09:15:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "expo-solana-wallet",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-07T09:04:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel-ecommerce",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-07T11:52:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hamagen-react-native",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-09T05:04:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "healthit",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2024-10-09T07:27:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mx-chain-go",
+                "description": "\u26a1 The official implementation of the MultiversX blockchain protocol, written in golang.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-09T09:25:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "project-management-tool",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2024-10-11T13:40:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django-erp-framework",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-11-07T02:18:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "open-source-practice",
+                "description": "Repo for you to raise a Pull Request for practice",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-09-30T09:18:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "golang-crypto-trading-bot",
+                "description": "A golang implementation of a console-based trading bot for cryptocurrency exchanges",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-08T16:03:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-chatgpt-prompts",
+                "description": "This repo includes ChatGPT prompt curation to use ChatGPT better.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-09-26T13:36:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sketch-map-generator",
+                "description": "Sketch plugin to fill a shape with a map generated from a given location using Google Maps and Mapbox",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-03-05T01:12:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-react-native",
+                "description": "Awesome React Native components, news, tools, and learning material!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-05T13:12:41Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:27.069775+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

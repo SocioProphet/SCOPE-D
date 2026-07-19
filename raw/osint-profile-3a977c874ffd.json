@@ -1,0 +1,447 @@
+{
+  "profileId": "osint-profile-3a977c874ffd",
+  "target": "manman4",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:06.229735+00:00",
+  "completedAt": "2026-06-21T15:28:06.927486+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6b48d8b5",
+      "lookupType": "github_context",
+      "target": "manman4",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "manman4",
+            "name": "manman4",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Japan",
+            "bio": "Editor-in-Chief, On-Line Encyclopedia of Integer Sequences (OEIS).",
+            "public_repos": 39,
+            "followers": 4706,
+            "following": 6293,
+            "created_at": "2014-03-21T15:23:09Z",
+            "updated_at": "2026-06-16T05:45:08Z",
+            "html_url": "https://github.com/manman4",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7023566?v=4",
+            "repos": [
+              {
+                "name": "OEIS_00",
+                "description": "\ud83e\udd17 implementation of OEIS sequences (A000001-A099999)",
+                "stargazers_count": 33,
+                "language": "Ruby",
+                "pushed_at": "2026-06-21T15:10:25Z",
+                "fork": false,
+                "topics": [
+                  "oeis",
+                  "pari-gp",
+                  "ruby"
+                ]
+              },
+              {
+                "name": "OEIS_01",
+                "description": "\ud83e\udd17 implementation of OEIS sequences (A100000-A199999)",
+                "stargazers_count": 30,
+                "language": "Ruby",
+                "pushed_at": "2026-06-21T14:52:20Z",
+                "fork": false,
+                "topics": [
+                  "oeis",
+                  "pari-gp",
+                  "ruby"
+                ]
+              },
+              {
+                "name": "OEIS_03",
+                "description": "\ud83e\udd17 implementation of OEIS sequences (A300000-)",
+                "stargazers_count": 37,
+                "language": "Gnuplot",
+                "pushed_at": "2026-06-21T14:43:08Z",
+                "fork": false,
+                "topics": [
+                  "oeis",
+                  "pari-gp",
+                  "ruby"
+                ]
+              },
+              {
+                "name": "manman4.github.io",
+                "description": "manman4.github.io",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2026-06-21T10:17:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "oeisdata",
+                "description": "Content of Online Encyclopedia of Integer Sequences (OEIS)",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-06-21T08:51:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LeanMathAtlas",
+                "description": "A learner-oriented mathematics atlas formalized in Lean.",
+                "stargazers_count": 4,
+                "language": "Lean",
+                "pushed_at": "2026-06-20T17:20:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "teorth-optimizationproblems",
+                "description": "A collection of optimization problems in mathematics",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T08:51:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "alphaproof-nexus-results",
+                "description": "Lean math proofs generated by AlphaProof Nexus and accompanying natural language prose proofs.",
+                "stargazers_count": 2,
+                "language": "Lean",
+                "pushed_at": "2026-06-20T08:50:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "css-animations",
+                "description": "CSS\u30a2\u30cb\u30e1\u30fc\u30b7\u30e7\u30f3\u306eTips",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T08:50:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OEIS_02",
+                "description": "\ud83e\udd17 implementation of OEIS sequences (A200000-A299999)",
+                "stargazers_count": 24,
+                "language": "Ruby",
+                "pushed_at": "2026-06-20T04:10:27Z",
+                "fork": false,
+                "topics": [
+                  "oeis",
+                  "pari-gp",
+                  "ruby"
+                ]
+              },
+              {
+                "name": "dic_opencv",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-03-19T04:31:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "study_OEIS",
+                "description": "OEIS \u5168\u822c",
+                "stargazers_count": 16,
+                "language": "Ruby",
+                "pushed_at": "2026-06-19T12:15:11Z",
+                "fork": false,
+                "topics": [
+                  "oeis",
+                  "pari-gp",
+                  "ruby"
+                ]
+              },
+              {
+                "name": "manman4",
+                "description": null,
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2026-04-06T15:11:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "book_of_gf_and_seq",
+                "description": "ISBN-10 4866418575",
+                "stargazers_count": 15,
+                "language": "Gnuplot",
+                "pushed_at": "2025-09-28T17:33:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "study_openvino",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-03-19T08:36:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mathlib4",
+                "description": "The math library of Lean 4",
+                "stargazers_count": 3,
+                "language": "Lean",
+                "pushed_at": "2026-05-03T13:44:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "study_ABC",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-05-01T17:40:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "qiita",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-10T16:36:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Time-Series-Analysis-with-Python-Cookbook-Second-Edition",
+                "description": "Time Series Analysis with Python Cookbook, Second Edition - Published by Packt",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-19T12:31:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai_vision",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2022-12-29T03:48:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "enjoy_math",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-03-19T04:31:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rails-todo-sample",
+                "description": "ToDo application using Ruby on Rails.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2020-06-25T06:03:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "study_tensorflow_js",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2021-05-09T11:05:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "myapp",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2026-03-30T14:34:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lang",
+                "description": "\u5404\u7a2e\u8a00\u8a9e\u306e\u4ed5\u69d8\u306b\u3064\u3044\u3066",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-03-19T04:31:06Z",
+                "fork": false,
+                "topics": [
+                  "polars",
+                  "python"
+                ]
+              },
+              {
+                "name": "difff",
+                "description": "Web\u30d9\u30fc\u30b9\u306e\u30c6\u30ad\u30b9\u30c8\u6bd4\u8f03\u30c4\u30fc\u30eb difff\u300a\uff83\uff9e\uff6d\uff8c\uff8c\u300b",
+                "stargazers_count": 0,
+                "language": "Perl",
+                "pushed_at": "2026-03-08T17:10:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OEIS_04",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-02-20T14:57:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "helloworldproject",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2020-08-16T23:27:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "environment_setup",
+                "description": "Environment Setup",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-01T16:19:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blogger_02",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Ruby",
+                "pushed_at": "2025-12-24T12:44:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "programming_contest",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-05T00:40:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TeX",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-01-18T16:18:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Codility",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Ruby",
+                "pushed_at": "2024-01-26T17:23:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OEIS_Contest",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-11-03T14:42:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QandA",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-07-12T14:35:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "game",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2023-01-06T07:52:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blogger_01",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Ruby",
+                "pushed_at": "2024-04-20T13:14:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mermaid",
+                "description": "Generation of diagram and flowchart from text in a similar manner as markdown",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2021-07-15T20:04:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "holiday_japan",
+                "description": "Calculate National Holidays of Japan",
+                "stargazers_count": 1,
+                "language": "Ruby",
+                "pushed_at": "2014-05-23T04:41:56Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:06.926956+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

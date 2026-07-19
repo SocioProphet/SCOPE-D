@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-fb98abe50ac8",
+  "target": "alisongbs",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:40.423686+00:00",
+  "completedAt": "2026-06-21T15:30:40.780513+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f976e835",
+      "lookupType": "github_context",
+      "target": "alisongbs",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "alisongbs",
+            "name": "Alison Gibson",
+            "type": "User",
+            "company": "@marketinguys @best-of-ai",
+            "blog": "https://marketinguys.com",
+            "location": null,
+            "bio": "Digital Marketer @marketinguys ",
+            "public_repos": 1,
+            "followers": 1851,
+            "following": 3466,
+            "created_at": "2024-11-14T05:07:00Z",
+            "updated_at": "2025-09-09T16:25:45Z",
+            "html_url": "https://github.com/alisongbs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/188419195?v=4",
+            "repos": [
+              {
+                "name": "alisongbs",
+                "description": "me on github",
+                "stargazers_count": 31,
+                "language": null,
+                "pushed_at": "2025-06-11T09:37:26Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:40.779856+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,545 @@
+{
+  "profileId": "osint-profile-c108830dae02",
+  "target": "lz233",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:34.733975+00:00",
+  "completedAt": "2026-06-20T16:49:36.760264+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c600f882",
+      "lookupType": "github_context",
+      "target": "lz233",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "lz233",
+            "name": "lz\u5dee\u4e0d\u591a\u662f\u6761\u54b8\u9c7c\u4e86",
+            "type": "User",
+            "company": "@Tencent",
+            "blog": "with.fish",
+            "location": null,
+            "bio": null,
+            "public_repos": 76,
+            "followers": 756,
+            "following": 1015,
+            "created_at": "2017-10-04T04:24:53Z",
+            "updated_at": "2026-05-07T08:57:20Z",
+            "html_url": "https://github.com/lz233",
+            "avatar_url": "https://avatars.githubusercontent.com/u/32504382?v=4",
+            "repos": [
+              {
+                "name": "Tarnhelm",
+                "description": "The magic to clean sharing links up.",
+                "stargazers_count": 755,
+                "language": "Kotlin",
+                "pushed_at": "2025-10-07T18:24:00Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "fdroid"
+                ]
+              },
+              {
+                "name": "unvcode_android",
+                "description": "\u3010\u5e7c\u5973 Code For Android\u3011\u53cd\u548c\u8c10\u8d85\u7ea7\u6b66\u5668\uff01",
+                "stargazers_count": 55,
+                "language": "Kotlin",
+                "pushed_at": "2022-06-16T04:09:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Budget-app",
+                "description": "Create a Budget App in JavaScript, HTML and CSS | Vanilla js",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-10T11:57:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Emblematix",
+                "description": "A little tool to embed EXIF watermarks into images.",
+                "stargazers_count": 46,
+                "language": "Kotlin",
+                "pushed_at": "2025-02-10T08:39:51Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "compose"
+                ]
+              },
+              {
+                "name": "PaperReferenceValuateRelease",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-16T05:29:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OneText_For_Android",
+                "description": "A neat little application that can display some custom sentences through widgets on the launcher.",
+                "stargazers_count": 187,
+                "language": "Java",
+                "pushed_at": "2022-02-07T15:34:26Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "android-application",
+                  "material-design"
+                ]
+              },
+              {
+                "name": "PaperReferenceValuate",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-03T06:07:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OpenMAIC",
+                "description": "Open Multi-Agent Interactive Classroom \u2014 Get an immersive, multi-agent learning experience in just one click",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-31T10:36:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "unvcode_kotlin",
+                "description": "\u3010\u5e7c\u5973 Code For Kotlin\u3011\u53cd\u548c\u8c10\u8d85\u7ea7\u6b66\u5668\uff01",
+                "stargazers_count": 27,
+                "language": "Kotlin",
+                "pushed_at": "2022-02-06T11:35:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MeizuGravity",
+                "description": "Let this screen do what it should do.",
+                "stargazers_count": 31,
+                "language": "Java",
+                "pushed_at": "2023-02-07T14:42:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vocaloid_Biological-adventure",
+                "description": "Vocaloid project and pv project for the song.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-04-03T09:27:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CompetitionTimer",
+                "description": "A timer for competitions, written using compose-jb.",
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2020-12-05T15:15:09Z",
+                "fork": false,
+                "topics": [
+                  "compose",
+                  "compose-jb"
+                ]
+              },
+              {
+                "name": "AcWear",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2021-02-15T11:11:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TelegramDerivationBot",
+                "description": "[WIP] Telegram \u6c42\u5bfc\u9a8c\u8bc1 Bot",
+                "stargazers_count": 8,
+                "language": "Kotlin",
+                "pushed_at": "2021-06-09T14:48:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FuckWeRead",
+                "description": "Export books as text.",
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2021-08-02T06:47:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Blog",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-01-07T08:03:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TarnhelmExt-AVBVConverter",
+                "description": "A bilibili av/bv converter of Tarnhelm Extension",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-09T18:14:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TarnhelmDocument",
+                "description": "The document for tarnhelm.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-06-30T04:31:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blog-with-astro",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "MDX",
+                "pushed_at": "2026-03-20T07:40:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crashprofile",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-21T13:38:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-sdk-ollama",
+                "description": "A Vercel AI SDK provider for Ollama built on the official ollama package. Type safe, future proof, with cross provider compatibility and native Ollama features.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-11T12:49:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NdefMessageEmulator",
+                "description": "Send a URI as a NDEF message (NFC Tag).",
+                "stargazers_count": 9,
+                "language": "Java",
+                "pushed_at": "2025-07-10T13:32:41Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "ndef",
+                  "nfc"
+                ]
+              },
+              {
+                "name": "ShizukuClipboardDemo",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Kotlin",
+                "pushed_at": "2025-08-17T09:57:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "XJTLU-CPT202-Project",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-09T16:43:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "XJTLU-CPT204-CW3",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2025-09-09T16:26:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QuestBox",
+                "description": "[WIP] Quest Tool Boox for switching keyboard and downloading BS maps",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2024-04-07T14:10:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "XJTLU-CPT111-CW3",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2025-09-09T16:23:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lz233",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-23T15:26:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OneText-Library",
+                "description": "Some sentences collected by myself",
+                "stargazers_count": 42,
+                "language": "Go",
+                "pushed_at": "2023-03-26T14:08:02Z",
+                "fork": false,
+                "topics": [
+                  "hacktoberfest"
+                ]
+              },
+              {
+                "name": "BadApple_For_Wear_OS",
+                "description": "Play bad apple on smart watch.",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2019-08-04T14:24:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WristVibrator",
+                "description": "A simple watch vibrator. Baes on Vibrator.",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2020-03-21T08:55:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FuckVirtualsim",
+                "description": "For MIUI in mainland China only. Crack the root detection of the virtualsim and hide the discovery tab of one yuan flow.",
+                "stargazers_count": 14,
+                "language": "Java",
+                "pushed_at": "2020-03-27T06:01:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChainReaction",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2020-05-19T14:49:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MediaClassifiedByPlaylist",
+                "description": "A small tool that categorizes the local media library according to the playlist, currently only supports NetEase Cloud Music.",
+                "stargazers_count": 3,
+                "language": "Kotlin",
+                "pushed_at": "2020-10-10T21:32:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NEMLinkOpenFix",
+                "description": "\u8822\u8822\u7684\u7f51\u6613\u4e91\u97f3\u4e50\u628a\u81ea\u5df1\u53d8\u6210\u4e86\u6d4f\u89c8\u5668\u800c\u4e0d\u662f\u628a\u81ea\u5df1\u6807\u8bb0\u4e3a\u53ef\u4ee5\u6253\u5f00 music.163.com \u7684\u94fe\u63a5\uff0c\u8fd9\u4e2a\u7a0b\u5e8f\u53ef\u4ee5\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2020-11-26T15:58:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalkmanUpdater",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2020-11-27T14:56:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FuckSonyHeadphonesConnect",
+                "description": "[VIP] Switch your headphone to any area",
+                "stargazers_count": 3,
+                "language": "Kotlin",
+                "pushed_at": "2021-08-04T06:44:37Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "xposed-module"
+                ]
+              },
+              {
+                "name": "src.lz233.github.io",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2021-08-14T07:28:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MiTranslatorPlus",
+                "description": "Enhance mi translator experience.",
+                "stargazers_count": 14,
+                "language": "Kotlin",
+                "pushed_at": "2022-06-22T08:57:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QuJing",
+                "description": "\u66f2\u5883\u662f\u4e00\u4e2axposed\u6a21\u5757\uff0c\u53ef\u652f\u6301\u5728PC\u6d4f\u89c8\u5668\u4e0a\u52a8\u6001\u76d1\u63a7\uff08hook\uff09\u5b89\u5353APP\u7684\u51fd\u6570\u8c03\u7528\u548c\u67e5\u770b\u5806\u6808\u4fe1\u606f\uff0c\u53ca\u53cd\u5c04\u8c03\u7528\uff08invoke\uff09\u7b49\u529f\u80fd\u3002",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-01T14:57:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GoogleGlass",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Kotlin",
+                "pushed_at": "2023-04-27T12:01:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Calculator_AllWinnerA50",
+                "description": "Some reverse engineering for an Android calculator using AllWinner A50.",
+                "stargazers_count": 16,
+                "language": "Kotlin",
+                "pushed_at": "2022-12-09T05:46:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dobby",
+                "description": "a lightweight, multi-platform, multi-architecture hook framework.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-09-02T09:03:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Untracker",
+                "description": "App to help you remove tracking information before sharing links",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-01-07T09:16:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "onedrive-vercel-index",
+                "description": "OneDrive public directory listing, powered by Vercel and Next.js",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-02-17T09:24:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Nagram",
+                "description": "The third-party Telegram android app.",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2025-02-19T06:36:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "QRTrans",
+                "description": "Transfer files by via code",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2019-07-27T08:10:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ApkShelling",
+                "description": "\u8131Apk\u4f7f\u7528360\u52a0\u56fa\u3001\u6886\u6886\u52a0\u56fa\u3001\u817e\u8baf\u4e50\u56fa\u3001\u767e\u5ea6\u52a0\u56fa\u514d\u8d39\u7248\u52a0\u7684\u58f3",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2020-11-21T08:21:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "astro-theme-typography",
+                "description": "Rediscover the beauty of typography.",
+                "stargazers_count": 0,
+                "language": "Astro",
+                "pushed_at": "2024-08-03T13:03:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Minecraft_Bypass_the_program",
+                "description": "Minecraft for Windows 10 \u7ed5\u8fc7\u7a0b\u5e8f",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-01-08T05:49:13Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:36.759306+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

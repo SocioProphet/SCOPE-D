@@ -1,0 +1,637 @@
+{
+  "profileId": "osint-profile-bfb6e7d999ab",
+  "target": "dev-sire",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:33.089860+00:00",
+  "completedAt": "2026-06-20T16:47:34.103901+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5644852e",
+      "lookupType": "github_context",
+      "target": "dev-sire",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "dev-sire",
+            "name": "Aman Shahid",
+            "type": "User",
+            "company": "Corning Incorporated",
+            "blog": "https://devsire.me",
+            "location": "Pakistan",
+            "bio": "Spice up your life with a dash of adventure and a sprinkle of curiosity!",
+            "public_repos": 47,
+            "followers": 1283,
+            "following": 2166,
+            "created_at": "2023-08-09T13:27:52Z",
+            "updated_at": "2026-06-11T10:56:12Z",
+            "html_url": "https://github.com/dev-sire",
+            "avatar_url": "https://avatars.githubusercontent.com/u/141841694?v=4",
+            "repos": [
+              {
+                "name": "Ascendia",
+                "description": "Ascendia: Building the future of skill development. A modular, open-source LMS platform featuring dynamic course creation and deep progress tracking.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-10T18:42:10Z",
+                "fork": false,
+                "topics": [
+                  "clerkauth",
+                  "cloudways",
+                  "nextjs15",
+                  "supabase",
+                  "uploadcare"
+                ]
+              },
+              {
+                "name": "Klawed-V2",
+                "description": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars \u2b50. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-05-29T15:01:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "acm-sigsac",
+                "description": "The Official Website of ACM SIGSAC",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-04T11:25:46Z",
+                "fork": false,
+                "topics": [
+                  "postgresql",
+                  "reactjs",
+                  "supabase-js",
+                  "tailwind-css",
+                  "vitejs"
+                ]
+              },
+              {
+                "name": "DeveloperPortfolio",
+                "description": "Visit my developer portfolio website made with React Router, SCSS, Animate CSS ",
+                "stargazers_count": 28,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-20T18:08:31Z",
+                "fork": false,
+                "topics": [
+                  "developer-portfolio",
+                  "firebase-database",
+                  "portfolio-website",
+                  "react-router",
+                  "scss"
+                ]
+              },
+              {
+                "name": "Multi-Mail-Sender",
+                "description": "Send multi mail to your target mails from your multi mails",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-14T20:59:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dev-sire",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-06-14T04:12:51Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Intellisiem",
+                "description": "This project is an AI-powered Security Information and Event Management (SIEM) system designed for real-time threat detection and response. Using Convolutional Neural Networks (CNN), Natural Language Processing (NLP), and the Groq API.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-06-03T18:36:03Z",
+                "fork": false,
+                "topics": [
+                  "cnn-model",
+                  "groq-api",
+                  "python3",
+                  "siem",
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "WLWJ",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T14:06:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AlgoPython",
+                "description": "This repository serves as a comprehensive collection of Python code related to data structures, algorithms, and cryptography. It includes solutions to daily LeetCode problems and various cryptographic implementations",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-01-22T18:11:31Z",
+                "fork": false,
+                "topics": [
+                  "cryptography",
+                  "dsa-algorithm",
+                  "leetcode-python",
+                  "python3"
+                ]
+              },
+              {
+                "name": "secure-company-network-system",
+                "description": "Secure Company Network: Packet Tracer Company Business Network Design and Implementation Using Cisco Packet Tracer Technologies implemented; Hierarchical Network Design, ISPS, VLANs, Inter-VLAN Routing (Switch Virtual Interface SVI), DHCP Server, Port-Security, SSH, NAT Overload (Port Address Translation PAT), ACL, WLAN",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-07-19T10:56:07Z",
+                "fork": false,
+                "topics": [
+                  "asa-firewall",
+                  "cisco-ios",
+                  "cisco-packet-tracer"
+                ]
+              },
+              {
+                "name": "CCNA-Foundation-Labs",
+                "description": "A collection of introductory Cisco CCNA labs suitable for beginners. These labs focus on essential networking topics and provide hands-on practice with Cisco IOS commands and configurations.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-04-21T18:57:08Z",
+                "fork": false,
+                "topics": [
+                  "ccna",
+                  "networking",
+                  "packet-tracer"
+                ]
+              },
+              {
+                "name": "attaullah.com.pk",
+                "description": "Under Development - The Official Portfolio Website of Sir Attaullah",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-22T14:27:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Humanoid-AI-Book",
+                "description": "This technically sophisticated documentation project features full Retrieval-Augmented Generation (RAG) capability, built using the Claude Code Router (CCR) to integrate the Gemini API and SpecifyPlus. Hosted via Docusaurus, this stack provides users with direct, accurate answers to complex technical queries from the knowledge base.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-12-20T13:37:48Z",
+                "fork": false,
+                "topics": [
+                  "claude-code",
+                  "claude-code-router",
+                  "gemini-api",
+                  "rag-chatbot",
+                  "spec-kit-plus"
+                ]
+              },
+              {
+                "name": "RAG-Chatbot-Backend",
+                "description": "RAG-powered AI Chatbot Backend: FastAPI service using the Gemini API and Qdrant for vector search. Features: async operations, clean service architecture, and full Dockerization.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-12-09T17:20:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MiniProjects",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2024-06-08T07:51:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OOPManagementSystems",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2024-02-03T18:22:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NanoTechX",
+                "description": "The official website of NanoTechX - Secure your website with us",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-28T10:37:34Z",
+                "fork": false,
+                "topics": [
+                  "ethical-hacking",
+                  "penetration-testing",
+                  "web-exploitation"
+                ]
+              },
+              {
+                "name": "stepic-flags-ctf",
+                "description": "A medium level web CTF challenge that involves Steganography",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-06-01T07:47:39Z",
+                "fork": false,
+                "topics": [
+                  "ctf-challenges",
+                  "steganography",
+                  "stepic"
+                ]
+              },
+              {
+                "name": "ML-Hyperparameter-Optimizer",
+                "description": "This web app was created to simplify the process of tuning machine learning models. It provides a clean and interactive interface to perform hyperparameter optimization for regression tasks using the Random Forest algorithm.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-06-04T17:52:39Z",
+                "fork": false,
+                "topics": [
+                  "machine-learning",
+                  "python3",
+                  "scikit-learn",
+                  "streamlit"
+                ]
+              },
+              {
+                "name": "sire-chatbot",
+                "description": "An interactive chat application powered by Google's Gemini, designed to assist with coding tasks and provide AI-driven support.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-03-24T18:52:24Z",
+                "fork": false,
+                "topics": [
+                  "gemini-api",
+                  "python3",
+                  "streamlit"
+                ]
+              },
+              {
+                "name": "Security-Coursework",
+                "description": "A comprehensive collection of programs and applications developed throughout university courses in information security and information assurance, including future security implementation projects.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-06-04T15:54:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hackemon-CTF",
+                "description": "This repository provides the deployment configuration, load testing tools, and custom theme for the Hackemon Capture The Flag (CTF) event.  It uses Docker Compose for easy setup, k6 for performance testing, and includes a custom theme to enhance the CTFd platform's appearance.",
+                "stargazers_count": 8,
+                "language": "CSS",
+                "pushed_at": "2025-04-14T07:13:59Z",
+                "fork": false,
+                "topics": [
+                  "ctfd-setup",
+                  "ctfd-theme",
+                  "docker-compose",
+                  "grafana-dashboards",
+                  "k6"
+                ]
+              },
+              {
+                "name": "Visage-Connect",
+                "description": "Visage-Connect: A real-time chat app made with Next 14, TypeScript, Convex & Clerk  ",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-07-02T15:39:18Z",
+                "fork": false,
+                "topics": [
+                  "chat-app",
+                  "clerkauth",
+                  "convex",
+                  "nextjs14",
+                  "real-time"
+                ]
+              },
+              {
+                "name": "NodeStream",
+                "description": "NodeStream: An AI Powered Video Streaming Platform",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-20T15:03:33Z",
+                "fork": false,
+                "topics": [
+                  "bunjs",
+                  "cloudflare-workers",
+                  "gemini-api",
+                  "mux",
+                  "nextjs15-typescript",
+                  "trpc",
+                  "upstash-redis",
+                  "upstash-workflow"
+                ]
+              },
+              {
+                "name": "Netflix-Data-Analysis",
+                "description": "Exploratory Data Analysis on netflix data set",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-01-17T14:56:41Z",
+                "fork": false,
+                "topics": [
+                  "mysql",
+                  "powerbi",
+                  "python3"
+                ]
+              },
+              {
+                "name": "Minimalportfolio",
+                "description": "Single page modern and minimal portfolio website",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-10T16:15:52Z",
+                "fork": false,
+                "topics": [
+                  "framer-motion",
+                  "nextjs14",
+                  "tailwindcss",
+                  "threejs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Restate",
+                "description": "ReState - A React Native Real-Estate App (Under Development)",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-25T10:57:31Z",
+                "fork": false,
+                "topics": [
+                  "appwrite",
+                  "expo-router",
+                  "nativewind",
+                  "react-native"
+                ]
+              },
+              {
+                "name": "SQL-Interview-50",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-12-17T08:57:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PingPanda",
+                "description": "PingPanda - Real-time SaaS Monitoring Made Easy",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-10T07:26:17Z",
+                "fork": false,
+                "topics": [
+                  "honojs",
+                  "nextjs14",
+                  "prismadb",
+                  "saas-api",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "CommLink",
+                "description": "A Real-time workspace for team chats and collaborations, made with next.js, typescript, tailwindCSS, Convex & Jotai",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-02T15:22:20Z",
+                "fork": false,
+                "topics": [
+                  "convex",
+                  "jotai",
+                  "nextjs14",
+                  "shadcn-ui",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "CollabDoc",
+                "description": "Your online workspace. Brainstorm, write, and edit together in real time with CollabDocs.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-25T17:54:40Z",
+                "fork": false,
+                "topics": [
+                  "clerkauth",
+                  "lexical",
+                  "liveblocks",
+                  "nextjs14",
+                  "shadcn-ui",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "MindForge",
+                "description": "Build your digital workspace. Organize thoughts, manage projects, and boost productivity with MindForge, the All-in-One workspace.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-03T12:10:00Z",
+                "fork": false,
+                "topics": [
+                  "clerkauth",
+                  "convex",
+                  "edgestore",
+                  "nextjs14",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Visage-Studios",
+                "description": "VisageStudios: An online Cloud-based Photo editor to store your visuals to Cloudinary!",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-15T13:20:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Java-DSA",
+                "description": "Data Structures & Algorithms, their implementations and Leetcode Exercise Questions",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2024-10-05T11:54:32Z",
+                "fork": false,
+                "topics": [
+                  "dsa",
+                  "java",
+                  "leetcode-java"
+                ]
+              },
+              {
+                "name": "Visage",
+                "description": "Check out Visage, a social media platform based of Appwrite, React, TypeScript , Tanstack Query, & TailwindCSS",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-19T09:05:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Brainwave-ReactRouter",
+                "description": "Visit Brainwave: A landing page showcasing a powerful AI",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-08T18:48:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "creative-minds",
+                "description": "Creative Minds: Share ideas & spark connections through concise text posts. Built with Next.js, Firebase & Tailwind CSS. (MIT License)",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-04T18:27:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VansLife-ReactRouter",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-17T18:40:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JSwing-Projects",
+                "description": "Interactive Fun with Java (Jswing): Games & Desktop Apps (much more to come)",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2024-05-25T11:02:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hoobankApp",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-16T15:47:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactTenziesGame",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-07T14:53:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactNotesApp",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-07T11:53:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Security-Bulletin",
+                "description": "CyberTrend Bulletin - Unveiling the Future of Digital Security and Innovation. Join the elite community of cybersecurity professionals, researchers, and innovators",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-27T19:12:00Z",
+                "fork": false,
+                "topics": [
+                  "bulletin",
+                  "cybersecurity",
+                  "latest-news"
+                ]
+              },
+              {
+                "name": "homesmart-landingpage",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2024-02-07T11:44:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MemeGenerator",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-31T17:59:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CaraDesignersSite",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2023-10-09T14:32:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cyberlabs",
+                "description": "At CyberLabs, we're at the forefront of cybersecurity research, driving innovation to tackle the evolving landscape of digital threats and build a more secure future.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-18T11:23:55Z",
+                "fork": false,
+                "topics": [
+                  "react-router",
+                  "shadcn-ui",
+                  "tailwindcss",
+                  "typescript",
+                  "vitejs"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:34.103039+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

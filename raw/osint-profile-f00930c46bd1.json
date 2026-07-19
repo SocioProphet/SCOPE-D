@@ -1,0 +1,536 @@
+{
+  "profileId": "osint-profile-f00930c46bd1",
+  "target": "cosmohacker",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:36.048527+00:00",
+  "completedAt": "2026-06-21T15:28:37.160646+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8371d99d",
+      "lookupType": "github_context",
+      "target": "cosmohacker",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "cosmohacker",
+            "name": "Yagizcan Yevgeny Yavuz",
+            "type": "User",
+            "company": "The National Technical University \"Kharkiv Polytechnic Institute\"",
+            "blog": "https://www.axinomyus.com/xomonoid/cosmohacker",
+            "location": "Ukraine, Lviv",
+            "bio": "\u0421\u043b\u0430\u0432\u0430 \u0423\u043a\u0440\u0430\u0457\u043d\u0456! | Software Engineer ",
+            "public_repos": 42,
+            "followers": 3393,
+            "following": 9794,
+            "created_at": "2017-02-11T07:39:40Z",
+            "updated_at": "2026-06-11T08:06:27Z",
+            "html_url": "https://github.com/cosmohacker",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25702402?v=4",
+            "repos": [
+              {
+                "name": "react-native-realtime-speed-tracker",
+                "description": "React Native + Expo GPS speed calculation demo using react-native-maps and native Google Maps SDK.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-22T23:08:31Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "demo",
+                  "expo",
+                  "expo-location",
+                  "geolocation",
+                  "google-maps",
+                  "gps",
+                  "leaflet",
+                  "maps",
+                  "mobile",
+                  "react-native",
+                  "react-native-maps",
+                  "speed-calculator",
+                  "speed-tracker",
+                  "tracking"
+                ]
+              },
+              {
+                "name": "web-scrapper-with-telegram-bot",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-04T10:38:54Z",
+                "fork": false,
+                "topics": [
+                  "scrapper",
+                  "telegram",
+                  "telegrambot",
+                  "webscraping"
+                ]
+              },
+              {
+                "name": "hazmat_book",
+                "description": "Okul finali i\u00e7in basit k\u00fct\u00fcphane otomasyonu.",
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2021-07-02T10:12:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cosmohacker",
+                "description": "About me",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2026-03-11T07:50:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "netdata",
+                "description": "Real-time performance monitoring, done right! https://www.netdata.cloud",
+                "stargazers_count": 10,
+                "language": "C",
+                "pushed_at": "2025-11-09T09:39:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Spotify-Follower-Bot",
+                "description": "i ll upload in 1-2 days... i uploaded",
+                "stargazers_count": 20,
+                "language": "Python",
+                "pushed_at": "2023-04-16T16:18:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SpotifyDownloadManager",
+                "description": "Download Your Spotify Musics, Playlists, Albums. from spotify links or from your data json file ",
+                "stargazers_count": 62,
+                "language": "Python",
+                "pushed_at": "2023-09-06T12:21:13Z",
+                "fork": false,
+                "topics": [
+                  "download-music",
+                  "downloader",
+                  "flask",
+                  "json",
+                  "music",
+                  "python",
+                  "song-lyrics",
+                  "spotdl",
+                  "spotdl-cli",
+                  "spotify",
+                  "spotify-downloader",
+                  "spotify-downloader-gui",
+                  "youtube-music"
+                ]
+              },
+              {
+                "name": "Fellow-X",
+                "description": "Screen Recorder",
+                "stargazers_count": 9,
+                "language": "C#",
+                "pushed_at": "2020-06-13T13:13:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Modern-Calculator",
+                "description": "Just a basic calculator.",
+                "stargazers_count": 6,
+                "language": "C#",
+                "pushed_at": "2020-06-13T12:22:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KDE-Connect-Codes",
+                "description": "Some useful codes for KDE:Connect that i use",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2023-03-15T12:00:45Z",
+                "fork": false,
+                "topics": [
+                  "connect",
+                  "kali-linux",
+                  "kdeconnect",
+                  "linux",
+                  "linux-app",
+                  "peer-to-peer",
+                  "phone",
+                  "terminal"
+                ]
+              },
+              {
+                "name": "mini-crm",
+                "description": "PHP Laravel Mini-CRM Task",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-11-09T01:58:17Z",
+                "fork": false,
+                "topics": [
+                  "crm",
+                  "docker",
+                  "docker-compose",
+                  "kiss",
+                  "laravel",
+                  "mysql",
+                  "php",
+                  "solid",
+                  "swagger",
+                  "ubuntu",
+                  "well-documented",
+                  "wsl"
+                ]
+              },
+              {
+                "name": "Launcher",
+                "description": "https://www.moddb.com/mods/contra",
+                "stargazers_count": 6,
+                "language": "C#",
+                "pushed_at": "2025-11-09T09:38:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "birger-music",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-03-08T21:30:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LABS-for-PKPP",
+                "description": "LABS-for-\u041f\u043e\u0433\u043b\u0438\u0431\u043b\u0435\u043d\u043d\u0438\u0439 \u043a\u0443\u0440\u0441 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u0443\u0432\u0430\u043d\u043d\u044f Python",
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-05-11T14:54:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-components",
+                "description": "Github components for my account",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-04-17T15:30:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Game-Project-Kid-Room",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2020-06-16T22:59:17Z",
+                "fork": false,
+                "topics": [
+                  "blender"
+                ]
+              },
+              {
+                "name": "Competitive-Programming-Resources",
+                "description": "Competitive Programming & System Design Resources.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2022-12-31T21:45:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "coding-problems",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2023-04-18T14:32:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Cheat-Sheet",
+                "description": "This is my cheat sheet, I'm adding my codes here as I want and when I have time.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2023-04-15T22:39:38Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "brainfuck",
+                  "c",
+                  "cpp",
+                  "csharp",
+                  "css",
+                  "docker",
+                  "flutter",
+                  "fortran",
+                  "java",
+                  "javascript",
+                  "kotlin",
+                  "lua",
+                  "php",
+                  "powershell",
+                  "python",
+                  "r",
+                  "visual-basic"
+                ]
+              },
+              {
+                "name": "birger-automatized-webhook",
+                "description": "This repository is created for Birger Discord Bot",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-03-08T20:12:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "About-Animal",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "C++",
+                "pushed_at": "2020-06-13T12:30:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MP-List",
+                "description": "\u0130zteknoloji Mobile, Computer and Tablet automation app for android (Tablet[10.1 etc.])",
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2020-10-02T21:12:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Iwanoff_Lab4_5",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2022-05-27T23:41:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Intendo-Java",
+                "description": "This is my own custom intent service library with animation and bundle",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2022-12-01T15:14:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Iwanoff_Lab4_4",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2022-06-29T17:32:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kachestvo-Android",
+                "description": "Special presentation for \"Kalite\" lesson. (Only in Turkish())",
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2020-06-16T21:46:37Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "java"
+                ]
+              },
+              {
+                "name": "Iwanoff_Lab4_3",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2022-05-27T23:35:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Iwanoff_Lab4_2",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2022-05-27T23:28:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "turkiye-iller-ve-ilceler-json",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2020-10-01T00:40:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Labs-For-BOW",
+                "description": "Laboratory Works for \u041e\u0441\u043d\u043e\u0432\u0438 \u0432\u0435\u0431-\u0440\u043e\u0437\u0440\u043e\u0431\u043a\u0438 \u041b\u0411 Lesson",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-05-09T21:06:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Laboratory-Work-Library",
+                "description": "Library. The Reader places an Order for the book. The system searches the Catalog. The Librarian gives the reader a Book on a subscription or in the reading room. If the Book is not returned by the Reader, it may be blacklisted by the Administrator.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-05-08T11:42:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Icon-Pack-1",
+                "description": "Icon pack",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2020-06-16T22:24:36Z",
+                "fork": false,
+                "topics": [
+                  "illustration",
+                  "illustrator",
+                  "photoshop"
+                ]
+              },
+              {
+                "name": "Multiplication-Table-C-Winform",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C#",
+                "pushed_at": "2020-06-17T21:14:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Trash-School-Project-2",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2020-06-17T21:37:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Trash-School-Project-1",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2020-06-17T21:31:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Trash-School-Project-3",
+                "description": "Taking factorial",
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2020-06-17T21:44:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "x-term-chat",
+                "description": "My Chat App Node Js, Javascript and React Js with client and server side  ",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-01T20:25:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SPX-Stock-Programme-Xd",
+                "description": "My school term project",
+                "stargazers_count": 7,
+                "language": "PHP",
+                "pushed_at": "2021-07-28T15:16:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Trash-School-Project-4",
+                "description": "KH-221ia.e",
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2021-12-22T21:47:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kachestvo-Web",
+                "description": "Special presentation project for \"kalite\" lesson (only in Turkish)",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2022-06-01T23:28:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Iwanoff_Lab4_1",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2022-06-29T17:26:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kachestvo-Winform",
+                "description": "Special presentation project for \"kalite\" lesson (only in Turkish)",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-08T10:43:05Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:37.159864+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

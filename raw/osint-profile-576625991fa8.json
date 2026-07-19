@@ -1,0 +1,362 @@
+{
+  "profileId": "osint-profile-576625991fa8",
+  "target": "techspire0924",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:20.297270+00:00",
+  "completedAt": "2026-06-21T15:33:21.249774+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-d8ec810e",
+      "lookupType": "github_context",
+      "target": "techspire0924",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "techspire0924",
+            "name": "Kevin",
+            "type": "User",
+            "company": "\ud83e\uddd1\u200d\ud83d\udcbb MixCoders",
+            "blog": "",
+            "location": "United States",
+            "bio": "\ud83e\udd77 Stealth \u2764\ufe0f AI",
+            "public_repos": 27,
+            "followers": 1209,
+            "following": 1758,
+            "created_at": "2025-01-02T15:26:26Z",
+            "updated_at": "2026-05-08T13:10:18Z",
+            "html_url": "https://github.com/techspire0924",
+            "avatar_url": "https://avatars.githubusercontent.com/u/193511725?v=4",
+            "repos": [
+              {
+                "name": "vllm-lan-inference",
+                "description": "Production-grade self-hosted LLM inference server optimized for GPU batching, parallel request scheduling, and high-throughput LAN deployment.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-21T17:21:42Z",
+                "fork": false,
+                "topics": [
+                  "ai-infrastructure",
+                  "api-server",
+                  "batching",
+                  "concurrency",
+                  "cuda",
+                  "docker",
+                  "gpu",
+                  "high-throughput",
+                  "inference",
+                  "llm",
+                  "nvidia",
+                  "parallel-processing",
+                  "rest-api",
+                  "self-hosted",
+                  "vllm"
+                ]
+              },
+              {
+                "name": "multiWindow3dScene",
+                "description": "Interactive 3D scene synchronized across multiple browser windows. Features animated wireframe cubes positioned at each window location and orbiting spheres around the newest window, all managed via localStorage.",
+                "stargazers_count": 24,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-03T13:18:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "techspire0924",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-06-21T14:23:48Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "ThreeD-Personality-Room",
+                "description": "A playful experiment combining real-time 3D, mood-based design, and web accessibility \u2014 built to show that frontend can be fun, smart, and beautifully engineered. Built with Next.js, React Three Fiber, Zustand, Tailwind, and shadcn/ui. Try typing \u201cI\u2019m sleepy and love synthwave\u201d and watch your room come alive.",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-29T04:29:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "next-social",
+                "description": "This project is a modern, feature-rich social chat platform designed and developed using cutting-edge web technologies, including Next.js, TypeScript, TailwindCSS, and Vite. It offers a seamless, real-time communication experience with a focus on performance, scalability, and a polished user interface.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-09T10:22:09Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "reactjs",
+                  "tailwind-css",
+                  "vite"
+                ]
+              },
+              {
+                "name": "Telehealth_Platform",
+                "description": "\ud83c\udf10 A full-stack telehealth platform enabling virtual consultations, real-time symptom prediction via AI, and chatbot-assisted triage \u2014 built with React, Node.js, and Python.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-21T11:45:24Z",
+                "fork": false,
+                "topics": [
+                  "ai-healthcare",
+                  "chatbot",
+                  "fullstack",
+                  "healthcare",
+                  "machine-learning",
+                  "nodejs",
+                  "python",
+                  "react",
+                  "telehealth",
+                  "virtual-consultation"
+                ]
+              },
+              {
+                "name": "LCMS",
+                "description": "A high-performance web platform built with Next.js, TypeScript, and Tailwind CSS, following modern frontend best practices like SSR, SSG, and dynamic routing. Optimized with ESLint, Prettier, and robust testing using Jest.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-21T13:11:01Z",
+                "fork": false,
+                "topics": [
+                  "eslint",
+                  "nextjs",
+                  "prettier",
+                  "tailwind-css",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "3d-force-graph",
+                "description": "3D force-directed graph component using ThreeJS/WebGL",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2025-12-08T05:59:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "eliza",
+                "description": "Autonomous agents for everyone",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-11-29T21:08:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CopilotKit",
+                "description": "React UI + elegant infrastructure for AI Copilots, AI chatbots, and in-app AI agents. The Agentic last-mile \ud83e\ude81",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-11-29T08:00:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Flowise",
+                "description": "Build AI Agents, Visually",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-11-28T19:49:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "perplexity-ai",
+                "description": "Unofficial API Wrapper for Perplexity.ai + Account Generator with Web Interface",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-11-26T07:10:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WiFiAnalyzer",
+                "description": "Android application to analyze Wi-Fi signals.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-11-02T21:37:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "social-analyzer",
+                "description": "API, CLI, and Web App for analyzing and finding a person's profile in 1000 social media \\ websites",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-10-31T19:43:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Rocket",
+                "description": "A web framework for Rust.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-10-01T04:53:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RustScan",
+                "description": "\ud83e\udd16 The Modern Port Scanner \ud83e\udd16",
+                "stargazers_count": 7,
+                "language": "Rust",
+                "pushed_at": "2025-12-05T01:00:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "threejs-ballooning",
+                "description": "Buffer geometry merging, procedural terrains and shadow mapper research with Three.js",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2019-03-18T02:22:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "3d-particle-explorations",
+                "description": "Particle animation explorations in 3D space with three.js",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2022-12-06T18:18:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "brick-builder",
+                "description": "React based brick builder using ThreeJS",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2019-01-21T18:47:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "funNLP",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-05-10T07:38:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "threejs-scroll-animation-demo",
+                "description": "3D Scrolling Portfolio Website with Three.js",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-07-06T10:45:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "threejs-demo",
+                "description": "threejs+vue3 \u53ef\u89c6\u5316\u5927\u5c4f",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-11-12T07:23:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "preswald",
+                "description": "Preswald is a framework for building and deploying interactive data apps, internal tools, and dashboards with Python. With one command, you can launch, share, and deploy locally or in the cloud, turning Python scripts into powerful shareable apps.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-03-12T01:45:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "livewire-alert",
+                "description": "This project is a robust and dynamic alert management system developed using Livewire, a modern full-stack framework for Laravel. The system is designed to deliver real-time notifications and updates, ensuring users receive critical information promptly and efficiently.",
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2025-06-03T11:21:07Z",
+                "fork": false,
+                "topics": [
+                  "laravel-framework",
+                  "livewire",
+                  "php"
+                ]
+              },
+              {
+                "name": "SpringBoot-Demo",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2025-05-15T11:18:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WMS",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-07-17T12:08:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "threejs-tetris-react",
+                "description": "\ud83c\udfae 3D Tetris game\u300c\u4fc4\u7f57\u65af\u65b9\u5757\u300d",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-08-14T13:18:47Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:21.249029+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

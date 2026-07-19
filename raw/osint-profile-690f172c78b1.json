@@ -1,0 +1,575 @@
+{
+  "profileId": "osint-profile-690f172c78b1",
+  "target": "nfultz",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:00.660573+00:00",
+  "completedAt": "2026-06-21T15:28:02.121675+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-0c55bfbd",
+      "lookupType": "github_context",
+      "target": "nfultz",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "nfultz",
+            "name": "Neal Fultz",
+            "type": "User",
+            "company": "@njnmco @ucla",
+            "blog": "https://nfultz.github.io",
+            "location": "Los Angeles, CA",
+            "bio": "Computational statistician, programmer and data scientist.",
+            "public_repos": 214,
+            "followers": 5634,
+            "following": 746,
+            "created_at": "2010-09-28T04:26:58Z",
+            "updated_at": "2026-06-09T23:39:00Z",
+            "html_url": "https://github.com/nfultz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/418638?v=4",
+            "repos": [
+              {
+                "name": "grpc",
+                "description": "gRPC clients and servers in R",
+                "stargazers_count": 80,
+                "language": "C++",
+                "pushed_at": "2023-02-23T02:50:05Z",
+                "fork": false,
+                "topics": [
+                  "grpc",
+                  "grpc-r",
+                  "r"
+                ]
+              },
+              {
+                "name": "nb2mail",
+                "description": "Send a notebook as an email",
+                "stargazers_count": 136,
+                "language": "Python",
+                "pushed_at": "2024-01-06T17:40:48Z",
+                "fork": false,
+                "topics": [
+                  "jupyter-notebook",
+                  "post-processor",
+                  "smtp"
+                ]
+              },
+              {
+                "name": "cnsl-newsletter-archive",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-09T02:36:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nfultz.github.io",
+                "description": "my homepage",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2026-05-25T17:28:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jupyterlab-theme-simple-extension",
+                "description": "A simpler theme from a more civilized time",
+                "stargazers_count": 16,
+                "language": "CSS",
+                "pushed_at": "2020-08-18T19:04:34Z",
+                "fork": false,
+                "topics": [
+                  "font",
+                  "jupyterlab",
+                  "jupyterlab-extension"
+                ]
+              },
+              {
+                "name": "alerts",
+                "description": "strip tracking and syndicate google alerts ",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2023-07-10T02:05:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "advent2021",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "R",
+                "pushed_at": "2021-12-21T03:21:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "consultant-directory-website",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-04T01:02:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dynamic_pip_user",
+                "description": "Dynamically enable pip install --user but not in venvs",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2026-02-11T04:57:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gcalcli",
+                "description": "Google Calendar Command Line Interface",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-10T03:11:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "texreg",
+                "description": "Conversion of R Regression Output to LaTeX or HTML Tables",
+                "stargazers_count": 1,
+                "language": "R",
+                "pushed_at": "2019-01-19T23:57:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "freecell",
+                "description": "a solitaire card game (fork)",
+                "stargazers_count": 4,
+                "language": "Shell",
+                "pushed_at": "2026-01-31T02:02:29Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "fork",
+                  "game"
+                ]
+              },
+              {
+                "name": "sgth",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-11-20T22:41:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SynthSurvey.ipynb",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-08-22T18:25:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "eighty_percent",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-10T21:53:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sunset",
+                "description": "Out of the Sunset by Maura McGrath",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-09T15:00:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "worr-css",
+                "description": "Pure(ish) CSS stylesheet for Warnier-Orr diagrams",
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2024-05-13T20:11:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UclaAnnoyances",
+                "description": "A UBlock filter list for UCLA staff and students",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-12T22:53:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lpotato",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-04-07T21:03:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "csp24-tutorial",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Julia",
+                "pushed_at": "2024-03-01T15:09:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stlogging",
+                "description": "R port of stata log using ",
+                "stargazers_count": 1,
+                "language": "R",
+                "pushed_at": "2023-08-28T00:11:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "omnitab",
+                "description": "backup of omnitab 80 |  https://www.nist.gov/itl/sed/omnitab-80",
+                "stargazers_count": 1,
+                "language": "Fortran",
+                "pushed_at": "2023-08-25T17:21:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backstep",
+                "description": "archive of backstep https://sourceforge.net/projects/backstep/",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2023-08-25T17:18:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SQLiteSheets",
+                "description": "R bindings and DBI wrapper for xlite",
+                "stargazers_count": 0,
+                "language": "R",
+                "pushed_at": "2023-03-23T22:24:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "drift",
+                "description": "my 2023 7drl",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-03-11T04:27:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "advent22",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "R",
+                "pushed_at": "2022-12-12T16:04:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "static",
+                "description": "static local variables for R",
+                "stargazers_count": 1,
+                "language": "R",
+                "pushed_at": "2022-10-09T16:47:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mortem-bak",
+                "description": "Automated backups of Jupiter Hell mortems",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2022-09-14T23:08:33Z",
+                "fork": false,
+                "topics": [
+                  "backup-script",
+                  "jupiter-hell",
+                  "systemd-service"
+                ]
+              },
+              {
+                "name": "DBIsqldf",
+                "description": "fork of sqldf",
+                "stargazers_count": 1,
+                "language": "R",
+                "pushed_at": "2022-09-08T20:01:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rstudio-debian",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-08-31T17:53:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gowi",
+                "description": "get on with it",
+                "stargazers_count": 0,
+                "language": "R",
+                "pushed_at": "2022-08-15T21:39:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "interview",
+                "description": "dataset for nfultz code / stats interview",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-07T19:47:20Z",
+                "fork": false,
+                "topics": [
+                  "dataset",
+                  "interview-questions"
+                ]
+              },
+              {
+                "name": "murderboard",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-10-29T05:51:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "y2km",
+                "description": "pandas extension for \"months since y2k\" data",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2022-12-26T21:02:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nfultz",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-10T15:09:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vp",
+                "description": "Convert P Values to Video Poker hands",
+                "stargazers_count": 15,
+                "language": "R",
+                "pushed_at": "2023-03-03T18:44:15Z",
+                "fork": false,
+                "topics": [
+                  "poker",
+                  "pvalue-adjustment",
+                  "r"
+                ]
+              },
+              {
+                "name": "makesnippets",
+                "description": "A snippet manager implemented in GNU make",
+                "stargazers_count": 4,
+                "language": "Makefile",
+                "pushed_at": "2023-02-26T00:29:50Z",
+                "fork": false,
+                "topics": [
+                  "makefile",
+                  "snippets"
+                ]
+              },
+              {
+                "name": "startpage",
+                "description": "Minimal startpage",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-01-10T21:22:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chad",
+                "description": "An R package for lightweight acceptance testing",
+                "stargazers_count": 9,
+                "language": "R",
+                "pushed_at": "2015-12-23T17:18:45Z",
+                "fork": false,
+                "topics": [
+                  "acceptance-testing",
+                  "r"
+                ]
+              },
+              {
+                "name": "stackoverflow",
+                "description": "An R package for snippets from stackoverflow",
+                "stargazers_count": 32,
+                "language": "R",
+                "pushed_at": "2020-08-01T15:23:25Z",
+                "fork": false,
+                "topics": [
+                  "r",
+                  "snippets",
+                  "stackoverflow"
+                ]
+              },
+              {
+                "name": "distributions3",
+                "description": "Probability Distributions as S3 Objects",
+                "stargazers_count": 0,
+                "language": "R",
+                "pushed_at": "2020-06-26T21:44:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "askgitdbi",
+                "description": "a DBI wrapper around askgit",
+                "stargazers_count": 4,
+                "language": "R",
+                "pushed_at": "2021-08-05T03:09:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "c2d4u.tools",
+                "description": "in-R installer for c2d4u",
+                "stargazers_count": 1,
+                "language": "R",
+                "pushed_at": "2021-06-17T16:25:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AWR.Athena",
+                "description": "Short R Wrapper for Athena JDBC connections ",
+                "stargazers_count": 24,
+                "language": "R",
+                "pushed_at": "2019-09-16T18:04:32Z",
+                "fork": false,
+                "topics": [
+                  "athena",
+                  "awr",
+                  "jdbc",
+                  "r"
+                ]
+              },
+              {
+                "name": "aws-batch",
+                "description": "A jenkins plugin for submitting jobs to AWS batch // use the official one now",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2018-03-18T18:41:35Z",
+                "fork": false,
+                "topics": [
+                  "aws",
+                  "aws-batch",
+                  "java",
+                  "jenkins-plugin"
+                ]
+              },
+              {
+                "name": "git-extras",
+                "description": "GIT utilities -- repo summary, repl, changelog population, author commit percentages and more",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-20T21:56:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tron",
+                "description": "R package for easy logging",
+                "stargazers_count": 39,
+                "language": "R",
+                "pushed_at": "2015-12-23T17:18:30Z",
+                "fork": false,
+                "topics": [
+                  "logging",
+                  "r"
+                ]
+              },
+              {
+                "name": "ht",
+                "description": "Tiny Hash Table for R",
+                "stargazers_count": 5,
+                "language": "R",
+                "pushed_at": "2018-02-11T16:19:38Z",
+                "fork": false,
+                "topics": [
+                  "r"
+                ]
+              },
+              {
+                "name": "did-you-actually-check-my-github",
+                "description": "This repository exists entirely to check if employers opened up my GitHub account.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-02-06T19:21:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "facebook-hive-udfs",
+                "description": "Facebook's Hive UDFs",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2018-09-18T17:27:59Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:02.120866+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

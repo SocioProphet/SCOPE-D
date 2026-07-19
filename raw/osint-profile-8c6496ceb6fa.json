@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-8c6496ceb6fa",
+  "target": "swabird",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:36.757005+00:00",
+  "completedAt": "2026-06-20T16:48:38.863468+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-98a8057f",
+      "lookupType": "github_context",
+      "target": "swabird",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "swabird",
+            "name": "Maksim A. Viazovski",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Russia",
+            "bio": "Pentester / DevSecOps / Bughunter",
+            "public_repos": 78,
+            "followers": 968,
+            "following": 945,
+            "created_at": "2012-11-03T21:22:19Z",
+            "updated_at": "2026-06-04T15:06:56Z",
+            "html_url": "https://github.com/swabird",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2717140?v=4",
+            "repos": [
+              {
+                "name": "swabird-0day-profile",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-06-02T16:31:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "swab1rd-me",
+                "description": "\u041b\u0438\u0447\u043d\u044b\u0439 \u0441\u0430\u0439\u0442 \u041c\u0430\u043a\u0441\u0438\u043c\u0430 \u0412\u044f\u0437\u043e\u0432\u0441\u043a\u043e\u0433\u043e: \u0441\u0442\u0438\u0445\u0438, \u043a\u0430\u0440\u0442\u0438\u043d\u044b, \u0432\u0438\u0434\u0435\u043e \u0438 \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u044b.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-05-11T12:39:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DISAPEARING",
+                "description": "DISAPEARING ANIMAL SPECIES",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-05-05T09:41:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "swabird",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-05T07:13:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CVE-2025-2304",
+                "description": "Authenticated privilege escalation in Camaleon CMS v2.9.0 via improper parameter handling in the updated_ajax endpoint.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-04T04:35:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "burp-ai-agent",
+                "description": "Burp Suite extension that adds built-in MCP tooling, AI-assisted analysis, privacy controls, passive and active scanning and more",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-02T18:01:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CVE-2025-7775-PoC",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-08-28T07:30:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CVE-2023-38408",
+                "description": "Takeover Account OpenSSH",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-30T21:54:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "KawaiiGPT",
+                "description": "WormGPT kawaii ver",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-28T15:02:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CVE-2025-67887-patch",
+                "description": "Patch from CyberOK 19-12-2025 for CVE-2025-67887",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-18T14:28:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CVE-2025-67887",
+                "description": "1C-Bitrix <= 25.100.500 (Translate Module) Remote Code Execution Vulnerability",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-18T09:00:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "php_filter_chain_generator",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-01-23T02:42:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Coercer",
+                "description": "A python script to automatically coerce a Windows server to authenticate on an arbitrary machine through 12 methods.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-12-12T11:55:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Terrapin-Artifacts",
+                "description": "This repository contains the artifacts for the paper \"Terrapin Attack: Breaking SSH Channel Integrity By Sequence Number Manipulation\".",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-03T12:51:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ddospot",
+                "description": "NTP, DNS, SSDP, Chargen and generic UDP-based amplification DDoS honeypot",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-12-27T09:28:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yara",
+                "description": "The pattern matching swiss knife",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-26T17:09:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Loki",
+                "description": "Loki - Simple IOC and YARA Scanner",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-27T07:30:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Flipper",
+                "description": "Playground (and dump) of stuff I make or modify for the Flipper Zero",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-10-27T14:31:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ScareCrow",
+                "description": "ScareCrow - Payload creation framework designed around EDR bypass.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-05-29T13:55:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AppleJuice",
+                "description": "Apple BLE proximity pairing message spoofing",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-21T14:11:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "capNcook_Trilogy_Media",
+                "description": "capNcook - a dark web exploration tool",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-06T14:18:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "endlets",
+                "description": "Bookmarklet to find endpoints easily with one click",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-19T19:58:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "xc",
+                "description": "A small reverse shell for Linux & Windows",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-05T17:58:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "reverse-shell-generator",
+                "description": "Hosted Reverse Shell generator with a ton of functionality. -- (Great for CTFs)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-14T04:08:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Autofill_Danger",
+                "description": "Autofill Phishing",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-08-25T19:50:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ysoserial",
+                "description": "A proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-31T02:47:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "impacket",
+                "description": "Impacket is a collection of Python classes for working with network protocols.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-08-28T06:14:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CVE-2025-5777",
+                "description": "Citrix NetScaler Memory Leak PoC",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-10T19:56:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CVE-2024-39713",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-07T14:20:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "POC-SSRF-ROCKETCHAT",
+                "description": "SSRF ROCKETCHAT <6.10 ver. PoC",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-08-19T09:12:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CSRF-PoC-generator",
+                "description": "CSRF Proof of Concept script generator webapp \ud83d\udcbb\ud83d\udd12",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-02-15T18:15:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CVE-2025-53770",
+                "description": "POC",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-21T13:52:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wiki_gpt",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-02-03T21:13:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Wi-Fi-Bruteforce",
+                "description": "This is a wi-fi bruteforce script on python. The script is undetectable and secure! ",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2022-11-30T09:49:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hacks",
+                "description": "A collection of hacks and one-off scripts",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-13T12:58:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "waybackurls",
+                "description": "Fetch all the URLs that the Wayback Machine knows about for a domain",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-01T05:40:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gau",
+                "description": "Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-01-01T16:16:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "XSStrike",
+                "description": "XSStrike is a program which can crawl, fuzz and bruteforce parameters for XSS. It can also detect and bypass WAFs. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-02-18T01:22:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AI-VOICE-ASSISTANT",
+                "description": "\u0413\u043e\u043b\u043e\u0441\u043e\u0432\u043e\u0439 AI-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442 \u0434\u043b\u044f Telegram \u0441 \u043a\u0430\u043b\u0435\u043d\u0434\u0430\u0440\u0451\u043c \u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435\u043c \u0434\u043e\u0441\u0442\u0443\u043f\u043e\u043c",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-07-04T08:36:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-ASSISTANT-LANDING",
+                "description": "Landing for my AI-ASSISTANT based on chatGPT",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-05-02T02:05:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ethical-Hacking-Tools",
+                "description": "Ethical Hacking Ebooks",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2022-11-29T17:14:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-telegram-bot",
+                "description": "We have made you a wrapper you can't refuse",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-11-30T16:37:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "3dETH",
+                "description": "3dETH is a decentralized 3d printing marketplace.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-07-10T07:30:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Storm-Breaker",
+                "description": "Social engineering tool [Access Webcam & Microphone  & Location Finder] With {Py,JS,PHP}",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-03T00:30:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Snakes-ladders-app",
+                "description": "Game using JavaScript and Gsap",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-29T17:36:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Biohacking-site",
+                "description": "Site about biohacking",
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2022-12-04T15:41:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kali_parrot_terminal",
+                "description": "Parrot OS Terminal For Kali linux",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2019-03-18T08:25:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WhereToGo",
+                "description": "WhereToGo - is a list of popular services that might be used in organizations. By having an account of the user - you can try to find entry points to the organization data.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-07-07T12:42:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "appflowy",
+                "description": "AppFlowy is an open-source alternative to Notion. You are in charge of your data and customizations. Built with Flutter and Rust.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-12-01T09:16:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Food-ecommerce",
+                "description": "a website to sell food",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2022-11-29T18:08:07Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:38.862468+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

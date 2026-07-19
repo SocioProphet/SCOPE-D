@@ -1,0 +1,451 @@
+{
+  "profileId": "osint-profile-f85197aa229a",
+  "target": "lec320fd90d",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:20.998587+00:00",
+  "completedAt": "2026-06-20T16:48:22.219655+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-22f6cd61",
+      "lookupType": "github_context",
+      "target": "lec320fd90d",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "lec320fd90d",
+            "name": ".",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 42,
+            "followers": 1059,
+            "following": 871,
+            "created_at": "2023-11-15T15:06:56Z",
+            "updated_at": "2026-06-15T13:04:50Z",
+            "html_url": "https://github.com/lec320fd90d",
+            "avatar_url": "https://avatars.githubusercontent.com/u/150936430?v=4",
+            "repos": [
+              {
+                "name": "accursedfarms",
+                "description": "Source Code to the Accursed Farms website",
+                "stargazers_count": 27,
+                "language": "Rust",
+                "pushed_at": "2026-06-15T09:44:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CosmosHub",
+                "description": "Transformative, real-time, event-driven architecture for interoperable, decentralized blockchain applications on a scalable multi-cloud BlockchainPlatform.",
+                "stargazers_count": 21,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T03:31:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NF",
+                "description": "At the forefront of innovation, NFTMint harnesses real-time processing transactions Here are six technical suffixes for NFTMint projects:",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-04T17:00:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UniswapPool",
+                "description": "Unlocking UniswapPool's full potential with Adaptive Liquidity Management, Smart Reserve Refinery, and Self-Healing Pools.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-04T16:59:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ExpressRouter",
+                "description": "Dynamic path routing for real-time content delivery, leveraging intelligent load-balancing and scalable, distributed architecture Engine",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-04T16:57:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RustChain",
+                "description": "Real-time, concurrent state management and processing of encrypted data streams with robust LedgerManager.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:23:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DjangoR",
+                "description": "Distributed, API-Driven Data Fabric with Scalable Caching and Adaptive Security Controls Platform.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:40:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ApolloServer",
+                "description": "Effortlessly harnessing the power of real-time data with automatic ApolloServer projects: adaptive, high-performance, scalable, resilient, concurrent, and fault-tolerant.",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:53:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DockerDeploy",
+                "description": "Automated Container Orchestration with Real-Time Deployment and Adaptive Self-Healing Capabilities at Runtime.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T03:02:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FastA",
+                "description": "Decentralized, event-driven microservice orchestrator enabling high-performance, scalable API gateways with adaptive security authentication hubs.",
+                "stargazers_count": 12,
+                "language": "Rust",
+                "pushed_at": "2026-01-26T07:00:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChainlinkOracle",
+                "description": "Synthesizing real-world asset integration into a secure, decentralized, and highly reliable data conduit hub.",
+                "stargazers_count": 5,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T03:26:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AaveLend",
+                "description": "Real-time adaptive infrastructure for high-performance lending and borrowing automations, tokenization, and robust scalability, forming a seamless financial hub.",
+                "stargazers_count": 9,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T03:30:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PostmanSuite",
+                "description": "API-centric, event-driven PostmanSuite orchestrates intelligent, real-time analytics across scalable, distributed systems with AI-powered optimizer.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T02:50:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NextJ",
+                "description": "Here are 6 technical descriptors for NextJS API software and robust, scalable infrastructure as a unified API Framework.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:55:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PrismaO",
+                "description": "Seamless database schema adaptation through declarative configuration coupled with high-performance real-time data caching via PrismaORM API.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T02:52:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SocketI",
+                "description": "Embracing Cutting-Edge Connectivity: SocketIOReal leverages real-time, event-driven architecture, robust high-performance load balancing to enable resilient, low-latency WebSockets Hub.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:58:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactQuery",
+                "description": "Enterprise-grade ReactQuery implementation enables Scalable Real-Time Data Prefetching with Intelligent Live Query Optimization caching.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:56:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JW",
+                "description": "Highly-Efficient, Policy-Driven, Auto-Scaling JWTGuard: A Distributed, Intelligent Gateway implementing modern Auto-Scaling-Handling patterns with Scalable architecture",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:59:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OAuth",
+                "description": "Evolving Adaptive Token Management enables seamless, secure, asynchronous OAuthFlow Protocol. with extensible architecture",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:01:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BitcoinCore",
+                "description": "Autonomous, decentralized BitcoinCore infrastructure empowering real-time, multi-signature transaction processing across scalable, distributed networks.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:03:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SolanaChain",
+                "description": "Cryptographically-Verified Smart-Contracts orchestrate Scalable Transaction-Validation and adaptive State-Management on the SolanaChain Ledger.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:06:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EthereumNode",
+                "description": "OmniCore Nexus - A Decentralized, Fault-Tolerant EthereumNode Hub, Leveraging Pruned Caching for High-Performance Synchronization.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T03:05:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebConnect",
+                "description": "Interoperable Multi-Chain Decentralized Platform enables Seamless Smart Contract Integration and Auto-Scaling for Autonomous Enterprise Nodes.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:07:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MetaMask",
+                "description": "Web3-centric MetaMaskSDK enables real-time transaction orchestration, intelligent load balancing, and adaptive auto-scaling across a resilient, distributed brokerage.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:09:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletCore",
+                "description": "Decentralized WalletCore Platform for seamless off-chain transactions, scalable decentralized-exchange-integration, and intelligent distributed operations.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:10:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeFi",
+                "description": "Real-time, Adaptive DeFiSwap enables enterprise-grade, Multi-chain asset swaps with management and Seamless liquidity provisioning through an Agile Framework.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:13:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockchainScan",
+                "description": "Real-time, multi-chain blockchain analytics converges at the intersection of transparent and decentralized data, forming a scalable Nexus.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:15:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CryptoWallet",
+                "description": "Here are six technical prefixes for CryptoWallet software: Harnessing transfer. Here are six technical suffixes for CryptoWallet solutions:",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:17:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenE",
+                "description": "Effortlessly orchestrating TokenERC20 minting and governance with intelligent, blockchain-based, enterprise-grade Smart Contract.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:18:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartContract",
+                "description": "Elevating Enterprise-Grade Smart Contract Infrastructure with Auto-Scaling, Multi-Chain Interoperability, for Smart Contract: Scalable, Adaptive, Resilient, Transparent, Immutable, Autonomous.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:20:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SolidityForge",
+                "description": "Efficient convergence of blockchain interoperability and real-time processing enables scalable, intelligent distributed infrastructure.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T03:21:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AvalancheNode",
+                "description": "Cloud-agile, AI-infused, scalable infrastructure for intelligent, distributed data management and machine learning orchestration Node.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T03:24:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PolygonEdge",
+                "description": "Spatial Graph Dynamic Optimizer utilizing Distributed Real-time Edge Routing for Geospatial Data Analytics and Scalable Insight Generator.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T03:25:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwaggerDocs",
+                "description": "Enterprise-grade SwaggerDocs framework offering intelligent, distributed API governance with multi-protocol-support and container-orchestration integration for robust security-engine.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:49:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MicroservicesLink",
+                "description": "Interconnected MicroservicesLink architecture orchestrates distributed tracing and monitoring with container orchestration, service mesh optimization, and AI-powered performance optimization.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:47:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RailsEngine",
+                "description": "Realtime Adaptive Infrastructure for Auto-scalable Containerized Deployment, Seamlessly Integrating Caching and Queuing, with Agile BusinessEngine",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T02:46:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LaravelA",
+                "description": "Here are six technical descriptors for the Laravel API API rate limiting and throttling, thereby empowering the Catalystix.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:44:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SpringBoot",
+                "description": "Modular, containerized microservices orchestrated via SpringBoot, processing real-time data in a highly scalable, intelligent ecosystem.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:43:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FlaskServer",
+                "description": "Enhancing FlaskServer capabilities through harmonious integration of enterprise-grade features and resilient messaging frameworks System",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:41:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NodeA",
+                "description": "OmniGateway for seamless multi-protocol interactions via flexible, modular WebSocket and WebRTC integration, forging an unparalleled Nexus.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T02:39:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RE",
+                "description": "Instantaneous, cross-platform data synchronization orchestrates modular microservices in real-time Synthaxis. providing enterprise-grade RESTfulNexus solutions",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T02:37:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GraphQ",
+                "description": "Highly scalable, adaptive GraphQLEdge architecture leverages built-in authentication, load-balancing, and real-time analytics at its nucleus.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T02:36:20Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:22.218442+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

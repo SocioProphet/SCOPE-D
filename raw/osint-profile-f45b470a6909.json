@@ -1,0 +1,599 @@
+{
+  "profileId": "osint-profile-f45b470a6909",
+  "target": "Hmbown",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:43.972535+00:00",
+  "completedAt": "2026-06-21T15:32:44.864788+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6257f1b7",
+      "lookupType": "github_context",
+      "target": "Hmbown",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Hmbown",
+            "name": "Hunter Bown",
+            "type": "User",
+            "company": null,
+            "blog": "https://codewhale.net/",
+            "location": null,
+            "bio": null,
+            "public_repos": 74,
+            "followers": 1317,
+            "following": 316,
+            "created_at": "2022-03-10T18:20:04Z",
+            "updated_at": "2026-06-18T13:36:00Z",
+            "html_url": "https://github.com/Hmbown",
+            "avatar_url": "https://avatars.githubusercontent.com/u/101357273?v=4",
+            "repos": [
+              {
+                "name": "CodeWhale",
+                "description": "Open-source, community-driven agent harness",
+                "stargazers_count": 38781,
+                "language": "Rust",
+                "pushed_at": "2026-06-21T05:58:22Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "deepseek",
+                  "llm",
+                  "rust",
+                  "terminal",
+                  "tui"
+                ]
+              },
+              {
+                "name": "homebrew-deepseek-tui",
+                "description": null,
+                "stargazers_count": 55,
+                "language": "Ruby",
+                "pushed_at": "2026-06-21T06:42:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Wizards-of-the-Ghosts",
+                "description": "Unofficial Hermes Agent skill pack built from fantasy spell and skill names",
+                "stargazers_count": 95,
+                "language": "Python",
+                "pushed_at": "2026-04-05T03:17:32Z",
+                "fork": false,
+                "topics": [
+                  "agents",
+                  "ai-skills",
+                  "automation",
+                  "fantasy-rpg",
+                  "hermes-agent",
+                  "workflows"
+                ]
+              },
+              {
+                "name": "rlmagents",
+                "description": "RLM agent harness - built on Deep Agents",
+                "stargazers_count": 50,
+                "language": "Python",
+                "pushed_at": "2026-04-28T02:14:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pixtuoid",
+                "description": "Terminal pixel-art office for AI coding agents",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-17T05:14:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Hegelion",
+                "description": "Dialectical reasoning architecture for LLMs (Thesis \u2192 Antithesis \u2192 Synthesis)",
+                "stargazers_count": 164,
+                "language": "Python",
+                "pushed_at": "2026-03-15T21:59:26Z",
+                "fork": false,
+                "topics": [
+                  "ai-safety",
+                  "anthropic",
+                  "auto-code",
+                  "benchmarking",
+                  "dialecticism",
+                  "evaluation",
+                  "hegelian",
+                  "llm",
+                  "mcp",
+                  "ollama",
+                  "openai",
+                  "pair-programming",
+                  "reasoning",
+                  "research"
+                ]
+              },
+              {
+                "name": "aleph",
+                "description": "Skill + MCP server to turn your agent into an RLM. Load context, iterate with search/code/think tools, converge on answers.",
+                "stargazers_count": 204,
+                "language": "Python",
+                "pushed_at": "2026-04-11T23:57:39Z",
+                "fork": false,
+                "topics": [
+                  "llm",
+                  "mcp",
+                  "recursive",
+                  "repl",
+                  "rlm"
+                ]
+              },
+              {
+                "name": "NemoHermes",
+                "description": "NVIDIA capability registry and Spark-aware routing layer for Hermes Agent and NemoClaw users",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-21T17:20:12Z",
+                "fork": false,
+                "topics": [
+                  "ai-infrastructure",
+                  "dgx-spark",
+                  "hermes-agent",
+                  "local-ai",
+                  "multimodal",
+                  "nemoclaw",
+                  "nim",
+                  "nvidia",
+                  "sglang",
+                  "vllm"
+                ]
+              },
+              {
+                "name": "chronow",
+                "description": "An MCP server that gives AI agents correct timezone, scheduling, and interval operations",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-03-02T01:21:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "clarify",
+                "description": "Agent skill - clarifies and documents code for readability, intent, and comprehension while preserving functionality",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-03-24T01:06:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Toulmini",
+                "description": "Logic architecture inspired by Toulmin. Forces LLMs into structured, sequential reasoning through Toulmin's argumentation model. ",
+                "stargazers_count": 17,
+                "language": "Python",
+                "pushed_at": "2025-12-02T13:30:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "peircean-abduction",
+                "description": "Logic architecture for abductive inference. Forces LLMs to make uncertainty visible through explicit hypothesis generation and Inference to Best Explanation.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-12-04T20:43:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Trimtab",
+                "description": "Self-verifying agent workflow starter for real software projects.",
+                "stargazers_count": 1,
+                "language": "Go Template",
+                "pushed_at": "2026-03-08T22:04:27Z",
+                "fork": false,
+                "topics": [
+                  "agents",
+                  "ai",
+                  "ai-agents",
+                  "claude-code",
+                  "codex",
+                  "linear",
+                  "verification",
+                  "workflow"
+                ]
+              },
+              {
+                "name": "omnigent",
+                "description": "A meta-harness for all your AI agents.  Omnigent provides a common layer over Claude Code, Codex, Pi, and the agents you write yourself: swap or combine harnesses without rewriting, keep them in check with policies and sandboxing, and collaborate in real time on the same live session, from any device.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-15T17:07:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "moraine",
+                "description": "Unified realtime agent trace database & search MCP",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-13T03:34:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hermes-agent",
+                "description": "The agent that grows with you",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-12T01:29:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "paseo",
+                "description": "Orchestrate coding agents remotely from your phone, desktop and CLI",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-05-06T15:22:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VoxCPM",
+                "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-11T11:59:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zed",
+                "description": "Code at the speed of thought \u2013 Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-05-24T18:51:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "KonMari",
+                "description": "A repository cleanup skill inspired by Marie Kondo's KonMari Method",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-01-07T01:30:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bashful",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-04T00:19:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gym",
+                "description": "EXO Gym is an open-source Python toolkit that facilitates distributed AI research. ",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-12-01T13:29:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "midtry",
+                "description": "Multi-perspective reasoning harness: query multiple LLM CLIs in parallel with different perspectives",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-01-11T05:38:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "exo",
+                "description": "Run frontier AI locally.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-02-11T00:15:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CLIProxyAPI",
+                "description": "Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-03-23T17:01:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DataFactory",
+                "description": "\ud83c\udfa8 NeMo Data Designer: A general library for generating high-quality synthetic data from scratch or based on seed data.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-04-06T20:48:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sie",
+                "description": "Superlinked Inference Engine is an Open-source inference server and production cluster for embeddings, reranking, and extraction.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-04-09T09:14:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "knightsradiant",
+                "description": "Hermes profile + skill pack for structured engineering work via the ten Orders of the Knights Radiant",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-04-13T22:52:43Z",
+                "fork": false,
+                "topics": [
+                  "ai-agents",
+                  "developer-tools",
+                  "documentation",
+                  "hermes-agent",
+                  "skills"
+                ]
+              },
+              {
+                "name": "good-hunt",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-19T17:25:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NeMoCode",
+                "description": "Terminal-first control plane for NVIDIA Nemotron \u2014 agentic coding, RAG, doc-ops, and multi-model formations.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-04-25T04:13:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "autodialectics",
+                "description": "Agentic harness for keeping research-oriented LLM runs on-task with contracts, evidence, dialectics, verification, and anti-slop gates",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-04-10T22:35:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MiniMax-CLI",
+                "description": null,
+                "stargazers_count": 26,
+                "language": "Rust",
+                "pushed_at": "2026-02-13T02:34:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "taste",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2026-03-15T21:35:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mathcode",
+                "description": "MathCode: A Frontier Mathematical Coding Agent",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-04-25T07:10:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MLXSmith",
+                "description": "Apple Silicon MLX fine-tuning toolkit \u2014 SFT, DPO/ORPO, GRPO, distillation, and OpenAI-compatible serving.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-02-05T19:28:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Main",
+                "description": "\ud83d\udce6 The default bucket for Scoop.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-08T05:44:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "warp",
+                "description": "OpenWarp is a free version of the open source client based on warp",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-06T01:31:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-deepseek-agent",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-04T06:38:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tetraframe-dspy",
+                "description": "DSPy reasoning harness for four-corner (P, not-P, both, neither) analysis of hard questions",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-03T01:22:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZMLX",
+                "description": "Triton\u2011style kernel toolkit for MLX plus a small upstream incubator: prototype, benchmark, and upstream fusions for Apple Silicon",
+                "stargazers_count": 45,
+                "language": "Python",
+                "pushed_at": "2026-03-31T21:10:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zigrlm",
+                "description": "Zig runtime for Recursive Language Model workflows, inspired by alexzhang13/rlm",
+                "stargazers_count": 1,
+                "language": "Zig",
+                "pushed_at": "2026-04-21T14:17:06Z",
+                "fork": false,
+                "topics": [
+                  "agents",
+                  "recursive-language-models",
+                  "rlm",
+                  "zig"
+                ]
+              },
+              {
+                "name": "agentscope",
+                "description": "Build and run agents you can see, understand and trust.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-16T14:11:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aiq",
+                "description": "The AI-Q NVIDIA Blueprint is an open reference example for building intelligent AI agents that connect to your enterprise data, reason using state-of-the-art models, and deliver trusted business insights.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-06T23:05:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nemofactory",
+                "description": "NeMo Data Designer-first synthetic data framework with DSPy compilation and GEPA optimization.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-12T16:30:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "plugins",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-04-12T16:07:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FluxEM",
+                "description": "Deterministic domain encoders with embedding-space arithmetic (IEEE-754 semantics)",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-04-12T15:21:18Z",
+                "fork": false,
+                "topics": [
+                  "arithmetic",
+                  "embeddings",
+                  "machine-learning",
+                  "math",
+                  "music-theory",
+                  "neural-networks",
+                  "numerical-computing",
+                  "python",
+                  "transformers"
+                ]
+              },
+              {
+                "name": "mmbnchips",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-11T22:30:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chime-grims",
+                "description": "Astrophysical measurement instruments built on Bown's engineering principles \u2014 JWST channel diagnostics + GW ringdown coupling",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-06T17:32:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reCUDA",
+                "description": "CUDA/Triton kernel optimization and runtime patching for LLM inference",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-27T12:54:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills",
+                "description": "Public repository for Agent Skills",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-23T15:01:28Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:44.863965+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

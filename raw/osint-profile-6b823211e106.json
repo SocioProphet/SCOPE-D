@@ -1,0 +1,543 @@
+{
+  "profileId": "osint-profile-6b823211e106",
+  "target": "Arison99",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:00.612050+00:00",
+  "completedAt": "2026-06-21T15:31:02.072384+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-226afd5b",
+      "lookupType": "github_context",
+      "target": "Arison99",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Arison99",
+            "name": "Byonanebye Arison",
+            "type": "User",
+            "company": "MedicMate",
+            "blog": "",
+            "location": "Kampala",
+            "bio": "Software Engineer",
+            "public_repos": 54,
+            "followers": 1782,
+            "following": 1737,
+            "created_at": "2023-12-24T00:54:18Z",
+            "updated_at": "2026-06-10T18:15:40Z",
+            "html_url": "https://github.com/Arison99",
+            "avatar_url": "https://avatars.githubusercontent.com/u/154712868?v=4",
+            "repos": [
+              {
+                "name": "metrics",
+                "description": "\ud83d\udcca An infographics generator with 30+ plugins and 300+ options to display stats about your GitHub account and render them as SVG, Markdown, PDF or JSON!",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-16T01:19:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Grafinet",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-10T22:09:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Arison99",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2026-06-09T19:57:12Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "School-Management-System",
+                "description": "School Mgt System for schools",
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-20T13:18:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Indabax-AI-Club-UTAMU",
+                "description": "Website for the club",
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2024-12-11T14:23:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wireguard-linux",
+                "description": "Mirror only. Official repository is at https://git.zx2c4.com/wireguard-linux",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-06T11:07:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wireguard-go",
+                "description": "Mirror only. Official repository is at https://git.zx2c4.com/wireguard-go",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-21T23:45:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "arkime",
+                "description": "Arkime is an open source, large scale, full packet capturing, indexing, and database system.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-10-08T23:32:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Secure-Softex-Ltd",
+                "description": "Ecommerce website designed using HTML, CSS, JS.",
+                "stargazers_count": 15,
+                "language": "HTML",
+                "pushed_at": "2024-11-04T09:58:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LocalHive",
+                "description": " A streamlined tool for local development, seamlessly connecting known databases like MongoDB, SQLite, etc with a local S3 bucket. Acting as a hub of activity, it ensures efficient data flow and storage, fostering a productive development environment, much like the coordination within a beehive.",
+                "stargazers_count": 28,
+                "language": "C++",
+                "pushed_at": "2025-06-13T21:15:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cancer-Fight",
+                "description": "A Machine Learning research tool that can be used to scan x-ray mammogram images  for breast cancer. 30+ Features are extracted from the uploaded image through an image scanner and sent to the  model for prediction. For more information, read through the Readme.md",
+                "stargazers_count": 12,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-04-08T18:11:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TimeTable-Generator",
+                "description": "A web based time table generator that uses the CSP to to come up with a time table.",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-03-30T10:37:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sparrow",
+                "description": "Sparrow is a comprehensive telecommunications system designed to handle modern mobile money transactions, and services. Built with Java and Spring Boot, Sparrow provides a robust backend to manage the complexities of mobile money and exposes REST API and XML endpoints that can be used in your apps to test mobile money",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2025-08-07T18:47:31Z",
+                "fork": false,
+                "topics": [
+                  "java",
+                  "mobile-money",
+                  "mvc-architecture",
+                  "rest-api",
+                  "spring-boot",
+                  "swing-gui",
+                  "ussd",
+                  "xml"
+                ]
+              },
+              {
+                "name": "Mobile-Money-Simulator",
+                "description": "This was a class assignment, but i decided to come up with a Mobile money simulator in java using Event Driven Programming & OOP with SOLID principles. The program provides a simulation for a MoMo user account.",
+                "stargazers_count": 12,
+                "language": "Java",
+                "pushed_at": "2025-03-24T06:26:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NoteBook",
+                "description": "A simple web app that stores your pdfs by encrypting and compressing them before being stored in CouchDB, i used this to learn GraphQL & Domain Driven design in python",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-01-01T18:35:10Z",
+                "fork": false,
+                "topics": [
+                  "appolloclient",
+                  "couchdb",
+                  "data-driven-design",
+                  "distributed-systems",
+                  "flask",
+                  "graphql",
+                  "react"
+                ]
+              },
+              {
+                "name": "TranzPortal",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-06-28T17:59:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ViTalk",
+                "description": "Voice based web app",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-06-28T18:04:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C-and-G",
+                "description": "A wordpress theme. Designed with permission from LwegaTech who is the appropiate owner of the original theme.",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2025-04-09T20:43:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DSA-in-Java",
+                "description": "Data structures and Algorithms in Java",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2025-03-17T18:23:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DSA-in-c",
+                "description": "Data Structures and algorithms in C",
+                "stargazers_count": 8,
+                "language": "C",
+                "pushed_at": "2025-01-22T10:30:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RUCH-EVENTS",
+                "description": "Website for Ruch Events",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-12-03T15:18:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DSA-in-Python",
+                "description": "This repo is about Data Structures & Algorithms in Python. Different known Algorithms are provided with their visualizations using Matplotlib",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-01-03T13:19:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chokidar",
+                "description": "Minimal and efficient cross-platform file watching library",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-20T14:28:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Yo-clinic-v1.0.1",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-28T18:04:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nextjs-flask",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-10-11T20:45:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "C-Programming",
+                "description": "These are programs that i wrote in C for practice.",
+                "stargazers_count": 16,
+                "language": "C",
+                "pushed_at": "2024-12-31T22:40:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Eloquent-JavaScript",
+                "description": "The code contained in here was copied from Eloqent Js by Marjin Haverbeke for my personal practice.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-22T10:30:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "translate-sunbird-api",
+                "description": "sunbird-translate-one-page-html-and-javascript-demo",
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2024-09-22T14:22:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Data-Visualization-in-Matplotlib",
+                "description": "This repo contains different data visualization techniques in python",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-11-02T08:36:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Julia_Sets",
+                "description": "This is a repo about Fractals written in different languages. The fractal exploited here is the Julia Set of the form z = z\u00b2 + c",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-01-08T08:42:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Yo-clinic-v.1.0.2",
+                "description": "New version of Yo-clinic, the frontend is developed using React.js and Tailwind.css for the components.  The backend is developed using Django(Python) and Sqlite for the Datababase. Vite.js is used to parse our pages as SPAs and uses SSR for fast page loading.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-29T19:23:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Yo-Clinic",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-21T05:34:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GitGrowBot",
+                "description": "An automation tool who follows, unfollows, stars, and unstars on autopilot so you can focus on coding while your community grows organically.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-10-06T10:17:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Fruit-Pedia",
+                "description": "A web tool for searching about fruits",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-02-16T15:29:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoFore",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2025-02-05T13:02:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Github-stats-transparent",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-01-09T10:29:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PHP-Backend",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2025-01-08T23:16:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Quick-Food",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-31T22:47:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "top-github-users",
+                "description": "Check your ranking in GitHub! Don't forget to star \u2b50 this repository.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-07T17:56:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bug-github-farms-points",
+                "description": "Auto Farms Points BUG in Github Author: Bocaletto Luca Hi there! I\u2019m Luca (@bocaletto-luca), and I\u2019ve put together this repo to demonstrate a surprising \u201cfeature\u201d (or vulnerability?) in GitHub\u2019s contribution model. With a single workflow file, you can automatically farm commits, issues, PRs, wiki edits, releases and comments every hour\u2014artificially",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-07-24T16:01:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "automq",
+                "description": "AutoMQ is a stateless Kafka on S3. 10x Cost-Effective. No Cross-AZ Traffic Cost. Autoscale in seconds. Single-digit ms latency. Multi-AZ Availability.",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2025-08-07T20:07:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "philoagents-course",
+                "description": "When Philosophy meets AI",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-05-08T14:33:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TermuxCyberArmy",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-05-27T01:03:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DSA-in-Golang",
+                "description": "Data Structures & Algorithms in Golang",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2025-01-10T11:54:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoCrack",
+                "description": "Wi-Fi Automatic Crack",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-27T01:06:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VARIOUS",
+                "description": "Most Complete Hacking Toolkit",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-27T01:07:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "no-as-a-service",
+                "description": "No-as-a-Service (NaaS) is a simple API that returns a random rejection reason. Use it when you need a realistic excuse, a fun \u201cno,\u201d or want to simulate being turned down in style.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-12T13:09:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "socialphish",
+                "description": "The most complete Phishing Tool, with 32 templates +1 customizable. Legal disclaimer by creators: Usage of SocialPhish for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-12T05:06:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-angineers-handbook",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-03-11T08:06:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AI-Powered-Full-Stack-App",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-03-27T11:29:07Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:02.071722+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

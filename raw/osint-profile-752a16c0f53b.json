@@ -1,0 +1,694 @@
+{
+  "profileId": "osint-profile-752a16c0f53b",
+  "target": "acetinkaya",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:50:05.878874+00:00",
+  "completedAt": "2026-06-20T16:50:07.702852+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-03800bb0",
+      "lookupType": "github_context",
+      "target": "acetinkaya",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "acetinkaya",
+            "name": "Ali Cetinkaya",
+            "type": "User",
+            "company": null,
+            "blog": "https://alicetinkaya.site/",
+            "location": "TURKEY",
+            "bio": "AI & Intelligent Systems | Technical Instructor",
+            "public_repos": 117,
+            "followers": 660,
+            "following": 406,
+            "created_at": "2018-01-15T09:00:24Z",
+            "updated_at": "2026-05-18T17:58:37Z",
+            "html_url": "https://github.com/acetinkaya",
+            "avatar_url": "https://avatars.githubusercontent.com/u/35449105?v=4",
+            "repos": [
+              {
+                "name": "turkiye-daily-open-data",
+                "description": "Automatically updated daily open datasets from T\u00fcrkiye for AI, machine learning, forecasting and time-series research.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-06-20T15:42:01Z",
+                "fork": false,
+                "topics": [
+                  "data-science",
+                  "machine-learning",
+                  "matplotlib-python",
+                  "time-series-analysis"
+                ]
+              },
+              {
+                "name": "Muhendislik-Alaninda-Yapay-Zeka-YZ-Icerikli-Arastirmalarda-Yaklasimlar",
+                "description": "M\u00fchendislik Alan\u0131nda Yapay Zeka (YZ) \u0130\u00e7erikli Ara\u015ft\u0131rmalarda Yakla\u015f\u0131mlar",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-11-27T05:39:52Z",
+                "fork": false,
+                "topics": [
+                  "algoritmalar",
+                  "algortihms",
+                  "programlama",
+                  "yapay-zeka"
+                ]
+              },
+              {
+                "name": "robotik-arduino-uygulamalari",
+                "description": "Robotik Dersi Uygulamalar\u0131",
+                "stargazers_count": 121,
+                "language": "C++",
+                "pushed_at": "2025-08-18T09:33:11Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "atmega328p",
+                  "robotics-programming",
+                  "robotik"
+                ]
+              },
+              {
+                "name": "DeepLearningTurkiye",
+                "description": "Deep Learning T\u00fcrkiye Pratik Derin Ogrenme Uygulamalar\u0131",
+                "stargazers_count": 79,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2019-10-29T20:32:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scholar-google-ogr-gor-ali-cetinkaya",
+                "description": "\u00d6\u011fr. G\u00f6r. Ali \u00c7ET\u0130NKAYA // MSc. Lect. Ali \u00c7ET\u0130NKAYA",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-01-30T07:37:40Z",
+                "fork": false,
+                "topics": [
+                  "academic-project",
+                  "carrier",
+                  "citations"
+                ]
+              },
+              {
+                "name": "IGU_SEM_Otonom_Sistemler_Egitimi",
+                "description": "19-28 Ocak 2026 tarihleri aras\u0131nda IGU SEM b\u00fcnyesinde ger\u00e7ekle\u015ftirilen uygulamal\u0131 e\u011fitimlerin kaynak dosyalar\u0131n bulundu\u011fu b\u00f6l\u00fcm\u00fcd\u00fcr.",
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-01-20T17:50:41Z",
+                "fork": false,
+                "topics": [
+                  "colaboratory",
+                  "google-cloud-platform",
+                  "python3"
+                ]
+              },
+              {
+                "name": "Algoritmalar-Veri-Yapilari-ve-Yapay-Zeka-Uygulamalari-Atolyesi",
+                "description": "18.04.2026 - \u0130lim Yayma Cemiyeti - Ey\u00fcpsultan / \u0130stanbul - Uygulama At\u00f6lyesi \u00c7al\u0131\u015fmalar\u0131",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-25T09:40:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smartdoc-ai-fastapi-ocr",
+                "description": "FastAPI-based Intelligent Document Processing API with OCR, text extraction, document analysis, chunking, and scalable architecture for AI-powered applications.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-04T21:09:33Z",
+                "fork": false,
+                "topics": [
+                  "extraction-api",
+                  "fastapi",
+                  "ocr"
+                ]
+              },
+              {
+                "name": "smart-web-data-fastapi",
+                "description": "FastAPI-based TCMB daily exchange rate API with XML parsing, daily data storage, and chart-ready historical analytics.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-06T00:42:53Z",
+                "fork": false,
+                "topics": [
+                  "charts",
+                  "fastapi",
+                  "tcmb"
+                ]
+              },
+              {
+                "name": "Mikrodenetleyici-ve-nesnelerin-interneti-IOT-egitimi",
+                "description": "ESP32 tabanl\u0131 Mikrodenetleyici ve Nesnelerin \u0130nterneti (IoT) e\u011fitim i\u00e7erikleri, uygulamalar ve proje \u00f6rnekleri.",
+                "stargazers_count": 28,
+                "language": null,
+                "pushed_at": "2026-05-14T13:32:54Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "esp32",
+                  "iot"
+                ]
+              },
+              {
+                "name": "AwqatSalah",
+                "description": "Diyanet \u0130\u015fleri Ba\u015fkanl\u0131\u011f\u0131 Namaz Vakti Api Kullan\u0131m \u00d6rne\u011fi",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-07-03T12:52:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "acetinkaya",
+                "description": "AI Consultant and Instructor at IYC. Specializing in artificial intelligence, deep learning, fuzzy logic, embedded systems, and algorithm development. Mentoring student teams and contributing to T\u00dcB\u0130TAK and TEKNOFEST-oriented projects while developing open-source AI & autonomous systems app.",
+                "stargazers_count": 28,
+                "language": null,
+                "pushed_at": "2026-05-24T20:22:16Z",
+                "fork": false,
+                "topics": [
+                  "algorithms-and-data-structures",
+                  "artificial-intelligence-algorithms",
+                  "bulanik-mantik",
+                  "fuzzy",
+                  "fuzzy-logic",
+                  "fuzzylogic",
+                  "makine-ogrenmesi"
+                ]
+              },
+              {
+                "name": "Python-Google-Colab-Algoritmalar-ve-Veri-Yapilari-Egitimi",
+                "description": "Python + Google Colab: Algoritmalar ve Veri Yap\u0131lar\u0131 E\u011fitimi (S\u0131f\u0131rdan \u0130leriye)",
+                "stargazers_count": 109,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-05-02T19:31:47Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "datastructures-algorithms",
+                  "python3",
+                  "udemy-course"
+                ]
+              },
+              {
+                "name": "Otonom-Sistemler-temel-Egitim-ve-Uygulama-Sertifika-Programi",
+                "description": "Otonom Sistemler Temel E\u011fitim ve Uygulama Sertifika Program\u0131",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-12-22T22:02:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "The-Artificial-Intelligence-Based-Literary-Text-Analysis",
+                "description": "The Artificial Intelligence Based Literary Text Analysis: A Novel Concept on Emotional and Conceptual Mapping ction Platform for Addressable TV Advertising for the Polish Media Market",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-01-01T08:47:23Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "text-classification"
+                ]
+              },
+              {
+                "name": "Yenilenebilir-Enerji-Yapay-Zeka-Destekli-Yaklasimlar",
+                "description": "Yenilenebilir Enerji Kaynaklar\u0131n\u0131n Kullan\u0131m\u0131nda Yapay Zeka Destekli Yakla\u015f\u0131mlar\u0131n Kar\u015f\u0131la\u015ft\u0131r\u0131lmas\u0131 ve Analizi",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-01-01T08:43:19Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "energy",
+                  "renewable-energy"
+                ]
+              },
+              {
+                "name": "Akademik-ve-Kariyer-Basarilar",
+                "description": "\u26a1 Akademik ve Kariyer Ba\u015far\u0131lar | Academic and Career Achievements",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-04-21T22:01:56Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "algorithms-and-data-structures",
+                  "artificial-intelligence",
+                  "fuzzy-logic",
+                  "yapay-sinir-aglari",
+                  "yapay-zeka"
+                ]
+              },
+              {
+                "name": "Algoritmadan-ilhama-uretken-yapay-zekanin-sanatsal-kodlari",
+                "description": " Algoritmadan \u0130lham\u2019a: \u00dcretken Yapay Zekan\u0131n Sanatsal Kodlar\u0131 - IDAF'25",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-04-21T19:40:41Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "artificial-intelligence",
+                  "generative-ai",
+                  "googlecolab",
+                  "idaf-25",
+                  "python3",
+                  "yapayzeka"
+                ]
+              },
+              {
+                "name": "HouSec",
+                "description": "Think Smart Live Smarter",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-06-25T07:16:44Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "neural-networks",
+                  "python3"
+                ]
+              },
+              {
+                "name": "ai_aLi",
+                "description": "AI Applications for TURKIYE",
+                "stargazers_count": 110,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-12-25T22:26:38Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "deep-learning",
+                  "fuzzy-logic",
+                  "image-processing"
+                ]
+              },
+              {
+                "name": "password-generator",
+                "description": "A modern and simple password generator built using HTML, CSS and JS to create fast and secure passwords.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-01T18:45:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Python-Programlama-Rehberi",
+                "description": null,
+                "stargazers_count": 34,
+                "language": null,
+                "pushed_at": "2025-06-04T04:50:28Z",
+                "fork": false,
+                "topics": [
+                  "googlecolab",
+                  "python",
+                  "pythonprogramladili",
+                  "pythonprogramming"
+                ]
+              },
+              {
+                "name": "unit-converter",
+                "description": "A user-friendly unit conversion application built with pure HTML, CSS, and Vanilla JavaScript. Convert between various units of measurement with ease and precision.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-05T18:59:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "etkinliklervefaaliyetler",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-06-10T05:01:59Z",
+                "fork": false,
+                "topics": [
+                  "etkinlik",
+                  "festival",
+                  "fuar"
+                ]
+              },
+              {
+                "name": "C-Programlama-Rehberi",
+                "description": "C Programlama Dili Rehberi",
+                "stargazers_count": 16,
+                "language": "C",
+                "pushed_at": "2025-06-12T19:35:25Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "cprogramlamadersi",
+                  "cprogramming",
+                  "cprogramming-language"
+                ]
+              },
+              {
+                "name": "multi-step-signup",
+                "description": "A modern, responsive signup system with a step-by-step registration flow built using HTML, CSS, and vanilla JavaScript.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-18T16:26:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PyLabMind",
+                "description": "\u0130stanbul Geli\u015fim \u00dcniversitesi (\u0130G\u00dc) \"PyLabMind\" tak\u0131m\u0131n\u0131n \u00e7al\u0131\u015fmalar\u0131n\u0131n tan\u0131t\u0131m sayfas\u0131d\u0131r.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-19T22:45:22Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "artificial-intelligence",
+                  "programming",
+                  "project",
+                  "python3"
+                ]
+              },
+              {
+                "name": "k-NN-Siniflandirma-Yontemi",
+                "description": "Makine \u00d6\u011frenmesi Algoritmalar\u0131 Kitab\u0131 / B\u00f6l\u00fcm 4.4. k-NN Siniflandirma Yontemi / Nobel Akademik Yay\u0131nc\u0131l\u0131k",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-28T17:27:49Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "knn-classification",
+                  "machine-learning-algorithms"
+                ]
+              },
+              {
+                "name": "DreSync",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-06-29T11:30:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gercekzamanliyuztespiticinyapaysiniragitabanlibirgoruntuanaliziyaklasimi",
+                "description": "Ger\u00e7ek Zamanl\u0131 Y\u00fcz Tespiti \u0130\u00e7in Yapay Sinir A\u011f\u0131 Tabanl\u0131 Bir G\u00f6r\u00fcnt\u00fc Analizi Yakla\u015f\u0131m\u0131",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-07-29T17:04:06Z",
+                "fork": false,
+                "topics": [
+                  "artficial-intelligence",
+                  "image-processing",
+                  "yapay-sinir-aglari"
+                ]
+              },
+              {
+                "name": "dogruakimdevreleri",
+                "description": "ELP155-DO\u011eRU AKIM DEVRELER\u0130",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-07-29T21:37:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GenAI-Digital",
+                "description": "\u00dcretken Yapay Zeka \u0130le Dijital D\u00f6n\u00fc\u015f\u00fcm: Gelece\u011fin Kariyer Alanlar\u0131 ",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-08-05T08:42:47Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "digitaltransformation",
+                  "genai"
+                ]
+              },
+              {
+                "name": "Temel-Elektronik",
+                "description": "Temel Elektronik 1",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-08-15T21:28:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "otonomdersi",
+                "description": "Otonom Sistemlere Giri\u015f",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-10-02T05:19:24Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "otonom",
+                  "system"
+                ]
+              },
+              {
+                "name": "temelelektrik",
+                "description": "TEMEL ELEKTR\u0130K I",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-10-17T09:50:49Z",
+                "fork": false,
+                "topics": [
+                  "electrical-engineering",
+                  "electron",
+                  "electronics"
+                ]
+              },
+              {
+                "name": "Machine-Learning-Based-Detection-of-Distributed-Denial-of-Service-DDoS-Attacks",
+                "description": "Machine Learning-Based Detection of Distributed Denial-of-Service (DDoS) Attacks",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-10-20T07:08:35Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "ddos-attacks",
+                  "machine-learning"
+                ]
+              },
+              {
+                "name": "GenAI-Uretken-YZ-ile-Dijital-Donusum",
+                "description": "\u00dcRETKEN YAPAY ZEKA \u0130LE D\u0130J\u0130TAL D\u00d6N\u00dc\u015e\u00dcM: GELECE\u011e\u0130N KAR\u0130YER ALANLARI",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-10-22T19:49:22Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "carreer",
+                  "genai"
+                ]
+              },
+              {
+                "name": "Temel-Elektronik-USB-Protokolu",
+                "description": "Elektroni\u011fin dijital d\u00fcnyaya a\u00e7\u0131lan kap\u0131s\u0131: USB Protokol\u00fc",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-11-09T19:14:02Z",
+                "fork": false,
+                "topics": [
+                  "usb",
+                  "usb-devices"
+                ]
+              },
+              {
+                "name": "mind-mosaic-game",
+                "description": "A modern, zen-inspired reimagining of the classic 15-puzzle. Slide tiles, solve challenges across three difficulty levels, and bring order to chaos using smart hints and magic tools.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-11-24T20:25:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Exploring-the-Open-Source-Concept-to-Enhance-the-Learning-and-Exploration-Curve-of-AI-Architecture",
+                "description": "Exploring the Open-Source Concept to Enhance the Learning and Exploration Curve of AI Architecture",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-12-10T22:05:11Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "architecture",
+                  "open-source"
+                ]
+              },
+              {
+                "name": "temelelektronikkaynaklari",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-04-19T22:03:18Z",
+                "fork": false,
+                "topics": [
+                  "elektronik",
+                  "temelelektronik"
+                ]
+              },
+              {
+                "name": "otomatikkontrolkaynaklari",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-04-19T22:07:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stm32f4-kaynaklari",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-03-26T18:01:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "imbalanced-image-analysis-ai",
+                "description": "YAPAY ZEKA TEKN\u0130KLER\u0130 \u0130LE G\u00d6R\u00dcNT\u00dc VER\u0130 SETLER\u0130 \u00dcZER\u0130NDE ANAL\u0130Z \u0130\u015eLEMLER\u0130: DENGES\u0130Z VER\u0130 PROBLEMLER\u0130N\u0130N ANLA\u015eILMASI VE \u00c7\u00d6Z\u00dcM \u00d6NER\u0130LER\u0130",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-04-03T22:13:37Z",
+                "fork": false,
+                "topics": [
+                  "goruntu-isleme",
+                  "image-processing",
+                  "imbalanced-data",
+                  "opencv-python"
+                ]
+              },
+              {
+                "name": "Bulanikmantikkaynaklari",
+                "description": "Bulan\u0131k Mant\u0131k ile ilgili kaynak kitaplar\u0131, dok\u00fcmanlar\u0131 ve e\u011fitim materyallerini i\u00e7eren bir listedir. A\u00e7\u0131k kaynak ve akademik i\u00e7eriklere odaklan\u0131lm\u0131\u015ft\u0131r.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-03-29T08:23:38Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "bulanik-mantik",
+                  "fuzzy-logic"
+                ]
+              },
+              {
+                "name": "metaair",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-04-11T19:02:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DJI_Action5_Pro_Android_kurulumu",
+                "description": "DJI_Action5_Pro_kurulumu",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-04-25T21:33:08Z",
+                "fork": false,
+                "topics": [
+                  "action5",
+                  "actioncam",
+                  "dji",
+                  "dji-action5-pro",
+                  "dji-android",
+                  "dji-mimo"
+                ]
+              },
+              {
+                "name": "Google_Colab_Kullanimi_ve_Ayarlari",
+                "description": "Google Colab \u00fczerinde kod geli\u015ftirme, veri i\u015fleme ve proje y\u00f6netimi i\u00e7in ad\u0131m ad\u0131m kullan\u0131m k\u0131lavuzu.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-04-27T18:24:07Z",
+                "fork": false,
+                "topics": [
+                  "bulut",
+                  "data-science",
+                  "googlecolab",
+                  "googlecolaboratory",
+                  "python"
+                ]
+              },
+              {
+                "name": "CProgramlamaKaynaklari",
+                "description": "C Programlama Dili ile ilgili kaynak kitaplar\u0131, dok\u00fcmanlar\u0131 ve e\u011fitim materyallerini i\u00e7eren bir listedir. A\u00e7\u0131k kaynak ve akademik i\u00e7eriklere odaklan\u0131lm\u0131\u015ft\u0131r.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-04-19T22:08:32Z",
+                "fork": false,
+                "topics": [
+                  "books",
+                  "c",
+                  "c-language-programming",
+                  "education",
+                  "programming"
+                ]
+              },
+              {
+                "name": "MatlabProgramlamaKaynaklari",
+                "description": "Matlab Programlama Dili ile ilgili kaynak kitaplar\u0131, dok\u00fcmanlar\u0131 ve e\u011fitim materyallerini i\u00e7eren bir listedir. A\u00e7\u0131k kaynak ve akademik i\u00e7eriklere odaklan\u0131lm\u0131\u015ft\u0131r.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-03-18T22:09:20Z",
+                "fork": false,
+                "topics": [
+                  "books",
+                  "education",
+                  "matlab",
+                  "matlab-deep-learning",
+                  "matlab-toolbox"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:50:07.701979+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

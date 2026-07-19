@@ -1,0 +1,339 @@
+{
+  "profileId": "osint-profile-a87a5288a566",
+  "target": "xcontcom",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:47.667330+00:00",
+  "completedAt": "2026-06-20T13:52:48.042956+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-12eb80de",
+      "lookupType": "github_context",
+      "target": "xcontcom",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "xcontcom",
+            "name": "Serhii Herasymov",
+            "type": "User",
+            "company": "Independent developer",
+            "blog": "xcont.com",
+            "location": "Ireland",
+            "bio": "Software engineer. JS, algorithms, visual stuff.",
+            "public_repos": 18,
+            "followers": 4416,
+            "following": 5227,
+            "created_at": "2025-04-28T21:25:43Z",
+            "updated_at": "2026-05-13T01:14:35Z",
+            "html_url": "https://github.com/xcontcom",
+            "avatar_url": "https://avatars.githubusercontent.com/u/209551153?v=4",
+            "repos": [
+              {
+                "name": "neuroparticles2",
+                "description": "Artificial life. Particles driven by cellular automata, fighting on a grid and evolving through genetic algorithms.",
+                "stargazers_count": 68,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-25T17:11:47Z",
+                "fork": false,
+                "topics": [
+                  "artificial-life",
+                  "cellular-automata",
+                  "emergent-behavior",
+                  "evolution",
+                  "genetic-algorithm",
+                  "particles"
+                ]
+              },
+              {
+                "name": "fractogenesis",
+                "description": "Fractal structures grown from a single point, using either cellular automata rules or convolutional kernels.",
+                "stargazers_count": 65,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-04T19:15:20Z",
+                "fork": false,
+                "topics": [
+                  "cellular-automata",
+                  "convolutional-layers",
+                  "fractals",
+                  "generative-art",
+                  "genetic-algorithm"
+                ]
+              },
+              {
+                "name": "neuroparticles",
+                "description": "Artificial life. Particles driven by neural networks, fighting on a grid and evolving through genetic algorithms.",
+                "stargazers_count": 79,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-09T21:23:51Z",
+                "fork": false,
+                "topics": [
+                  "artificial-life",
+                  "emergent-behavior",
+                  "evolutionary-algorithms",
+                  "fcnn",
+                  "fully-connected-neural-network",
+                  "genetic-algorithm",
+                  "javascript",
+                  "javascript-game",
+                  "life-simulation",
+                  "neural-network",
+                  "neuroevolution",
+                  "particles",
+                  "perceptron",
+                  "self-organization",
+                  "simulation",
+                  "toroidal-topology",
+                  "zero-player-game"
+                ]
+              },
+              {
+                "name": "perfect-shuffle-cryptography",
+                "description": "This project demonstrates a minimalist, fully deterministic file encryption scheme built from perfect shuffle permutations",
+                "stargazers_count": 62,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-07T13:56:22Z",
+                "fork": false,
+                "topics": [
+                  "cryptography",
+                  "cryptography-algorithms",
+                  "cryptography-tools",
+                  "javascript",
+                  "nodejs",
+                  "obfuscation",
+                  "perfect-shuffle"
+                ]
+              },
+              {
+                "name": "billiard-fractals",
+                "description": "Exploring fractals generated from symbolic billiards, irrational discretization, and curved surface slicing. A bridge between number theory and emergent geometry.",
+                "stargazers_count": 131,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-19T11:00:07Z",
+                "fork": false,
+                "topics": [
+                  "dynamical-systems",
+                  "fractals",
+                  "math",
+                  "mathematics"
+                ]
+              },
+              {
+                "name": "evolving-cellular-automata",
+                "description": "Evolving Cellular Automata for Pattern Emergence",
+                "stargazers_count": 108,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-07T02:41:18Z",
+                "fork": false,
+                "topics": [
+                  "cellular-automata",
+                  "emergence",
+                  "genetic-algorithm",
+                  "javascript",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "initial-state-evolution",
+                "description": "This project explores artificial evolution in a Turing-complete universe. Two populations of cellular automata fields evolve via genetic algorithms, interacting through Conway\u2019s Game of Life. Fitness is not fixed - it emerges from co-evolution. A simulation of open-ended digital life.",
+                "stargazers_count": 24,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-29T18:46:08Z",
+                "fork": false,
+                "topics": [
+                  "cellular-automata",
+                  "genetic-algorithm"
+                ]
+              },
+              {
+                "name": "arduino-cellular-automata",
+                "description": "Conway's Game of Life runs on MAX7219 8x8 Dot Matrix using Arduino Uno REV3",
+                "stargazers_count": 20,
+                "language": "C++",
+                "pushed_at": "2025-06-21T14:46:35Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "cellular-automata"
+                ]
+              },
+              {
+                "name": "perfect-shuffle-music",
+                "description": "An experimental evolutionary music generator that uses perfect shuffle crossover to create evolving MIDI sequences",
+                "stargazers_count": 29,
+                "language": "PHP",
+                "pushed_at": "2025-07-01T00:08:21Z",
+                "fork": false,
+                "topics": [
+                  "midi",
+                  "music-composition",
+                  "music-generation",
+                  "perfect-shuffle"
+                ]
+              },
+              {
+                "name": "cnn-gan",
+                "description": "What if we replace the Convolution Layers inside GANs (Generative Adversarial Networks) with Cellular Automata. And train the Cellular Automata using a Genetic Algorithm.",
+                "stargazers_count": 23,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-02T23:51:23Z",
+                "fork": false,
+                "topics": [
+                  "cellular-automata",
+                  "cnn",
+                  "gan",
+                  "generative-adversarial-network",
+                  "genetic-algorithm"
+                ]
+              },
+              {
+                "name": "particles",
+                "description": "2D particle simulation with Coulomb-like forces, toroidal boundaries, and live controls in JavaScript.",
+                "stargazers_count": 26,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-03T00:32:54Z",
+                "fork": false,
+                "topics": [
+                  "coulomb",
+                  "coulomb-interactions",
+                  "coulomb-law",
+                  "particle-physics",
+                  "particles",
+                  "physics"
+                ]
+              },
+              {
+                "name": "xor-patterns",
+                "description": "A tiny side project to keep some useful Node.js scripts in one place. Tools to generate MP4 videos and GIFs.",
+                "stargazers_count": 21,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-05T20:29:43Z",
+                "fork": false,
+                "topics": [
+                  "fractals",
+                  "nodejs",
+                  "xor"
+                ]
+              },
+              {
+                "name": "binary-sequence-visualizer",
+                "description": "Interactive binary fractal visualizer with dynamic HSL coloring and Node.js scripts to export GIF/MP4.",
+                "stargazers_count": 26,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-05T20:41:45Z",
+                "fork": false,
+                "topics": [
+                  "dynamical-systems",
+                  "fractals",
+                  "generative-art",
+                  "javascript",
+                  "math",
+                  "nodejs",
+                  "sturmian",
+                  "visualization",
+                  "visualization-tools"
+                ]
+              },
+              {
+                "name": "xcontcom.github.io",
+                "description": "GitHub Pages root",
+                "stargazers_count": 19,
+                "language": "HTML",
+                "pushed_at": "2025-12-09T01:25:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "perfect-shuffle",
+                "description": "Deterministic fractal generation using recursive spatial permutations of binary fields",
+                "stargazers_count": 37,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-10T14:40:26Z",
+                "fork": false,
+                "topics": [
+                  "fractals",
+                  "generative-art",
+                  "perfect-shuffle"
+                ]
+              },
+              {
+                "name": "xcontcom",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 55,
+                "language": null,
+                "pushed_at": "2025-12-20T14:37:13Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "fractals",
+                "description": "geometric fractal and genetic algorithms",
+                "stargazers_count": 54,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-21T02:45:40Z",
+                "fork": true,
+                "topics": [
+                  "fractals",
+                  "genetic-algorithm",
+                  "geometry"
+                ]
+              },
+              {
+                "name": "t-fractal",
+                "description": "A small web app to create fractals by layering a simple seed pattern at different scales.",
+                "stargazers_count": 64,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-05T23:07:06Z",
+                "fork": false,
+                "topics": [
+                  "cga",
+                  "fractal",
+                  "javascript",
+                  "t-fractal"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:48.042100+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

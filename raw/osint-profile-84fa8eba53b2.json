@@ -1,0 +1,620 @@
+{
+  "profileId": "osint-profile-84fa8eba53b2",
+  "target": "mwakidenis",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:00.344288+00:00",
+  "completedAt": "2026-06-20T13:53:01.237092+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-43e3a994",
+      "lookupType": "github_context",
+      "target": "mwakidenis",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mwakidenis",
+            "name": "\u00a0\ud83d\udc18",
+            "type": "User",
+            "company": null,
+            "blog": "https://mwakidenis.pages.dev/",
+            "location": "Nairobi",
+            "bio": "I believe a good website should feel like a warm hug. \u0645\u0646 \u0627\u0644\u0641\u0643\u0631\u0629 \u0625\u0644\u0649 \u0627\u0644\u0646\u0638\u0627\u0645 \u0627\u0644\u0628\u064a\u0626\u064a\u060c \u0623\u0642\u0648\u0645 \u0628\u0643\u062a\u0627\u0628\u0629 \u0643\u0648\u062f \u0646\u0638",
+            "public_repos": 144,
+            "followers": 2460,
+            "following": 4003,
+            "created_at": "2024-09-19T10:00:20Z",
+            "updated_at": "2026-06-05T17:09:08Z",
+            "html_url": "https://github.com/mwakidenis",
+            "avatar_url": "https://avatars.githubusercontent.com/u/182089390?v=4",
+            "repos": [
+              {
+                "name": "Freelancy-FreelanceSystem",
+                "description": "Freelancy is a full-stack freelance management system built with Laravel 10 API, Vue 3, and Tailwind CSS. It connects clients and freelancers with features like real-time messaging, JWT authentication, live search with filtering, customizable profiles, and role-based access.",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2026-06-20T13:52:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Mpesa-Based_Wi-Fi-Hotspot_Billing_System",
+                "description": "\ud83d\udcf6 A fast, automated Hotspot Billing system powered by M-Pesa STK Push for instant, secure user access. Built with Node.js, MySQL, Next.js, and React, it delivers smooth payments, smart access control, and optional MikroTik-RB750UPr2 integration. \u26a1\ud83d\udd10",
+                "stargazers_count": 93,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:17:25Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "mikrotik",
+                  "mpesa",
+                  "mysql",
+                  "nextjs",
+                  "nodejs",
+                  "prisma",
+                  "react"
+                ]
+              },
+              {
+                "name": "E-Commerce-Website",
+                "description": "This project is an e-commerce website featuring three roles: Admin, User, and Guest. It consists of two systems: MainSystem for core functionalities like browsing, shopping, and management, and SubSystem for payment processing. Built using Node.js, Express.js, and TailwindCSS, it ensures a modern, scalable, and user-friendly experience.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:22:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DigiFarm",
+                "description": "\ud83c\udf31\ud83d\ude9c A full-stack web application revolutionizing agricultural support by providing \ud83e\udde0 intelligent crop diagnostics, \ud83d\uded2 seamless marketplace integration, and \ud83d\udcda a comprehensive farming knowledge hub. Built with \u26a1 Django REST Framework backend and \ud83c\udf10 React frontend.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:18:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mern-social-media",
+                "description": "Complete React MERN Full Stack Social Media App",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:18:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ducky-HXP-Virus",
+                "description": "Most Powerfull \ud83d\ude08Crash any android device with virus from any link using termux or kali linux",
+                "stargazers_count": 21,
+                "language": "Shell",
+                "pushed_at": "2026-06-20T13:18:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SambaPOS-3",
+                "description": "Touch Screen Restaurant POS",
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2026-06-20T13:17:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "postiz-app",
+                "description": "\ud83d\udce8 The ultimate social media scheduling tool, with a bunch of AI  \ud83e\udd16",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:17:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pentagi",
+                "description": "\u2728 Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2026-06-20T13:16:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "miktrotik-hotspot-billing",
+                "description": "Connect. Pay. Browse \u2014 Seamlessly.  This is a comprehensive WiFi billing system designed specifically for Kenya, featuring M-Pesa integration, MikroTik router control, and a modern web-based admin dashboard.",
+                "stargazers_count": 32,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:17:29Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "mikrotik",
+                  "mpesa",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS",
+                "description": "Singitronic is Next.js and Node.js full-stack e-commerce website with a free source code. Our application comes with the fully functional admin panel and it is fully open-source. Our free online store website is completely responsive and manually tested. You can use our e-commerce project as a template or boilerplate for you next project.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:17:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react",
+                "description": "The library for web and native user interfaces.",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:17:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TicketHub",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:17:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "developEarn",
+                "description": null,
+                "stargazers_count": 42,
+                "language": null,
+                "pushed_at": "2026-06-20T13:17:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TakaSmart-Reward-System",
+                "description": "TakaSmart is a revolutionary smart recycling platform that gamifies waste management and promotes environmental sustainability! \ud83c\udf1f Built with cutting-edge technology, our platform makes recycling fun, rewarding, and socially engaging.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:17:27Z",
+                "fork": false,
+                "topics": [
+                  "plpgsql",
+                  "react",
+                  "supabase",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "yt-dlp",
+                "description": "A feature-rich command-line audio/video downloader",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:17:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "v3-Portfolio-Website-2026",
+                "description": null,
+                "stargazers_count": 42,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T13:17:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Easy-Code-Lab",
+                "description": " An interactive, browser-based learning tool that helps complete beginners build mental models around HTML and CSS and Javascript through visual, hands-on exercises.  Built for students fresh out of high school who have never written a line of code. No prior knowledge required.",
+                "stargazers_count": 63,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:17:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MPESA-APP",
+                "description": "This project is a modern mobile payment application that integrates Safaricom\u2019s M-Pesa Daraja API with a Flutter frontend and a Node.js + Express backend. It delivers a smooth and reliable payment experience by combining powerful backend processing with an intuitive mobile interface.",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-06-20T13:17:08Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "cmake",
+                  "cors",
+                  "cpp",
+                  "daraja-api",
+                  "dart",
+                  "express",
+                  "flutter",
+                  "javascript",
+                  "stk-push",
+                  "swift"
+                ]
+              },
+              {
+                "name": "fullstack-ecommerce-nextjs-shopify",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:17:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio-api-admin-panel",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:17:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "superpowers",
+                "description": "An agentic skills framework & software development methodology that works.",
+                "stargazers_count": 16,
+                "language": "Shell",
+                "pushed_at": "2026-06-20T13:16:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Calculator_pro",
+                "description": "A Pro Calculator responsive with HTML CSS JavaScript \ud83e\uddee",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:17:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Freeradius",
+                "description": "Freeradius Server Configs For Billing System",
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2026-06-20T13:16:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tts-website",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:16:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MikReMan",
+                "description": "MikroTik Remote Manager - Designed for accessing MikroTik remotely",
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2026-06-20T13:16:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "POS",
+                "description": "Main POS Application",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2026-06-20T13:16:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "UN-OFFICIAL-KPLC-TOKEN-HISTORY-VIEW",
+                "description": "Unofficial web tool and API for accessing Kenya Power (KPLC) prepaid token purchase history. Features a Public REST API for developers.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-06-20T13:16:44Z",
+                "fork": false,
+                "topics": [
+                  "kplc",
+                  "reverse-engineering",
+                  "unofficial-api"
+                ]
+              },
+              {
+                "name": "carbon-lang",
+                "description": "Carbon Language's main repository: documents, design, implementation, and related tools. (NOTE: Carbon Language is experimental; see README)",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2026-06-20T13:16:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PayloadsAllTheThings",
+                "description": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF",
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:16:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mwakidenis.com",
+                "description": "\u26a1mwakidenis.com \u2014 Modern Next.js Creative Portfolio & Blog Platform with GSAP Animations, Markdown Content Management, Dynamic Project Layouts, Responsive Design, and Cloudflare Pages Deployment",
+                "stargazers_count": 46,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:16:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Chat-X3--ongea",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:16:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "device-activity-tracker",
+                "description": "A phone number can reveal whether a device is active, in standby or offline (and more). This PoC demonstrates how delivery receipts + RTT timing leak sensitive device-activity patterns. (WhatsApp / Signal)",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:16:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HornBill",
+                "description": "Multi-Tenant ISP Billing Manager  (Repository files hidden by default)",
+                "stargazers_count": 43,
+                "language": null,
+                "pushed_at": "2026-06-20T13:16:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio_website",
+                "description": "\ud83d\udcbc Portfolio | \ud83c\udf10 Web & Mobile Projects | \ud83d\udcbb Clean Code | \ud83c\udfa8 UI/UX Design | \ud83d\ude80 Fast & Interactive | \ud83c\udf1f Modern Tech | \ud83d\udceb Connect | \ud83d\udd17 Live Demos | \ud83e\udd1d Collaboration | \u2728 Enjoy!",
+                "stargazers_count": 80,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:16:17Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "javascript",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "Green-AI",
+                "description": "\ud83c\udf31 Green- AI-Powered Waste-to-Energy Platform Transform waste into sustainable energy using cutting-edge AI technology. GreenTech combines real-time monitoring, predictive analytics, and community engagement to optimize waste processing and energy generation.",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:16:11Z",
+                "fork": false,
+                "topics": [
+                  "gpt",
+                  "lucide-react",
+                  "pythonmachinelearning",
+                  "react",
+                  "react-router",
+                  "recharts",
+                  "shadcn-ui",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "webpage2app",
+                "description": "(\u2310\u25a0_\u25a0)Turn any webpage into a desktop app with a single command \u2014 perfect for hackers who want to clone webpages and apps.",
+                "stargazers_count": 33,
+                "language": "Rust",
+                "pushed_at": "2026-06-20T13:16:11Z",
+                "fork": false,
+                "topics": [
+                  "rust"
+                ]
+              },
+              {
+                "name": "daloradius",
+                "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2026-06-20T13:15:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "banknet",
+                "description": "Capstone \u2013 part of a larger project, with code to be used on a Raspberry Pi; not a website.",
+                "stargazers_count": 24,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T13:15:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BD-Frontend",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:15:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "E-COMMERCE",
+                "description": "A full-stack E-Commerce web application built with the MERN stack + TypeScript (TSX). Features include JWT authentication, user roles, an admin dashboard, product management, and order tracking. The app also implements a complete CRUD API for seamless data operations.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:15:49Z",
+                "fork": false,
+                "topics": [
+                  "analytics",
+                  "cart",
+                  "crud-operation",
+                  "go",
+                  "golang",
+                  "javascript",
+                  "jwt-authentication",
+                  "mern-stack",
+                  "rest-api",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "NetCollaborate",
+                "description": "Group Connect is a collaborative web platform that helps students find study partners, form study groups, and organize sessions based on shared subjects or interests. It promotes peer learning, teamwork, and consistency among campus students.",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:15:42Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "fastapi",
+                  "jwt",
+                  "python",
+                  "redux",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "smart-farmer",
+                "description": "The AI Crop Doctor is a smart platform empowering farmers and gardeners to monitor and manage plant health with ease. Leveraging advanced machine learning and computer vision, it delivers instant, accurate diagnoses with just a single photo \ud83d\udcf8. Receive expert-validated treatment recommendations and actionable insights to keep your crops thriving.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:14:20Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "computer-vision",
+                  "machine-learning",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "aves",
+                "description": "Aves is a gallery and metadata explorer app, built for Android with Flutter.",
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2026-06-20T13:14:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Kazi-Haven",
+                "description": "Welcome to KaziHaven \u2013 your ultimate job portal connecting job seekers with top employers seamlessly. Whether you're searching for your dream job or looking to hire exceptional talent, KaziHaven has you covered! \ud83c\udf1f\ud83d\udcbc\ud83d\ude80",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:14:18Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "expressjs",
+                  "html",
+                  "javascript",
+                  "jwt",
+                  "mongodb",
+                  "mongoose",
+                  "nodejs",
+                  "render",
+                  "vercel"
+                ]
+              },
+              {
+                "name": "mitrokit-ventures",
+                "description": "Next.js personal brand website with admin dashboard",
+                "stargazers_count": 50,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:14:17Z",
+                "fork": false,
+                "topics": [
+                  "admin-dashboard",
+                  "api-client",
+                  "authentication-backend",
+                  "javascript",
+                  "nextjs",
+                  "reactjs",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "DEVFOLIO",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T13:14:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "p.d.f.t",
+                "description": null,
+                "stargazers_count": 47,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T13:14:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Laravel-School-Management-System",
+                "description": "Laravel School Management System (LAVSMS)",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2026-06-20T13:14:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Git-GitHub-Fundmentals",
+                "description": "\ud83c\udf3f\ud83c\udf3eThis repository documents the journey into open-source projects using Git and GitHub, exploring version control, collaboration, and practical real-world workflows.",
+                "stargazers_count": 2,
+                "language": "Markdown",
+                "pushed_at": "2026-06-20T13:13:57Z",
+                "fork": false,
+                "topics": [
+                  "markdown"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:01.236311+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

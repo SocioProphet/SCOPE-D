@@ -1,0 +1,533 @@
+{
+  "profileId": "osint-profile-dd2e1fb0e180",
+  "target": "mikedemarais",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:43.393839+00:00",
+  "completedAt": "2026-06-21T15:30:44.510914+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-57021b10",
+      "lookupType": "github_context",
+      "target": "mikedemarais",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mikedemarais",
+            "name": "Michael Demarais",
+            "type": "User",
+            "company": "@rainbow-me",
+            "blog": "http://twitter.com/mikedemarais",
+            "location": "New York, NY",
+            "bio": "cofounder @rainbow-me",
+            "public_repos": 70,
+            "followers": 1839,
+            "following": 9889,
+            "created_at": "2012-01-12T16:05:15Z",
+            "updated_at": "2026-01-05T00:02:42Z",
+            "html_url": "https://github.com/mikedemarais",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1325144?v=4",
+            "repos": [
+              {
+                "name": "granola-ts-client",
+                "description": "A TypeScript client for the Granola API",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-18T18:55:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "grok-skill",
+                "description": "Claude Code Skill that routes Twitter/X prompts to Grok-4 Live Search.",
+                "stargazers_count": 18,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-07T20:18:26Z",
+                "fork": false,
+                "topics": [
+                  "claude-code",
+                  "claude-code-skills",
+                  "claude-skills",
+                  "grok",
+                  "openrouter",
+                  "xai"
+                ]
+              },
+              {
+                "name": "raycast-openrouter",
+                "description": "Browse and search 300+ AI models available on OpenRouter directly from Raycast",
+                "stargazers_count": 21,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-28T18:50:30Z",
+                "fork": false,
+                "topics": [
+                  "openrouter",
+                  "raycast"
+                ]
+              },
+              {
+                "name": "granola-to-markdown",
+                "description": "Exports Granola meeting notes and transcripts to Markdown files",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-10T19:56:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "oracle",
+                "description": "Ask the oracle when you're stuck. Invoke GPT-5 Pro with a custom context and files.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-06T03:56:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "are-scooters-in-new-york",
+                "description": "\ud83d\udef4\ud83d\uddfd\u2753",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2018-08-09T09:09:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "telegram-organizer",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-02-19T01:28:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sora-mcp",
+                "description": "An MCP server to use Sora video generation APIs",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T00:23:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "granola-ingest",
+                "description": "[WIP] A janky TypeScript application using Bun to monitor and ingest Granola meeting data into SQLite.",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-29T00:38:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "raycast-extensions",
+                "description": "Everything you need to extend Raycast.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-26T23:08:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native-qrcode-svg",
+                "description": "A QR Code generator for React Native based on react-native-svg and node-qrcode.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2018-12-12T06:34:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "madeinkc",
+                "description": "The website for the Made in KC movement.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2012-12-17T03:27:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kcstartupvillage",
+                "description": "the hompage for KCStartupVillage",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2012-10-23T19:40:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dai-plugin-walletconnect",
+                "description": "Wallet Connect Plugin in Dai.js",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2019-11-12T03:16:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "walletconnect-example-dapp",
+                "description": "Example Dapp for trying out WalletConnect",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2019-05-29T03:08:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-coin-icon",
+                "description": "Cross-platform component that displays an icon for a given cryptocurrency symbol",
+                "stargazers_count": 25,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-04T03:37:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bootstrap",
+                "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2013-03-17T19:11:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "phantomjs",
+                "description": "Headless WebKit with JavaScript API",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2012-10-17T04:51:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FoldScroll",
+                "description": "Experimental CSS 3D scroll behavior",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2012-09-11T20:48:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Front-end-Developer-Interview-Questions",
+                "description": "A list of questions you can use to help interview potential candidates for a front-end development position.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2012-08-21T16:26:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "player-api",
+                "description": "Examples for our JavaScript and ActionScript player APIs.",
+                "stargazers_count": 1,
+                "language": "ActionScript",
+                "pushed_at": "2012-01-02T16:07:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mailcheck",
+                "description": "Email domain spelling suggester",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2012-06-24T01:46:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jquery-ui-bootstrap",
+                "description": "A jQuery UI theme based on Twitter Bootstrap",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2012-07-10T12:54:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gmaps",
+                "description": "the easiest way to use Google Maps",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2012-07-30T00:08:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hammer.js",
+                "description": "A javascript library for multi-touch gestures :// You can touch this",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2012-07-31T10:41:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gauge.js",
+                "description": "100% native and cool looking JavaScript gauge",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2012-07-16T22:35:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "masonry",
+                "description": "The flip-side of CSS Floats. jQuery plugin that rearranges item elements to a grid.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2012-05-14T18:27:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Font-Awesome",
+                "description": "The iconic font designed for use with Twitter Bootstrap",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2012-06-04T19:37:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "handlebars.js",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2012-05-07T03:53:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "coffee-script",
+                "description": "Unfancy JavaScript",
+                "stargazers_count": 2,
+                "language": "CoffeeScript",
+                "pushed_at": "2012-04-25T21:33:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "eth-phishing-detect",
+                "description": "Utility for detecting phishing domains targeting Ethereum users",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2020-06-15T08:32:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rainbow-token-list",
+                "description": "it not ready yet",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2021-08-16T19:17:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mint-page-template",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-11-16T21:27:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dumpservices",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-05-06T07:46:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fart-gobblers",
+                "description": "An experimental decentralized art factory by Justin Roiland and Paradigm.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-09-20T06:52:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dripsy",
+                "description": "\ud83c\udf77 A responsive, theme-based design system for Expo + React Native Web.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2020-12-22T08:11:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-mastodon",
+                "description": "Curated list of awesome Mastodon-related stuff!",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2018-11-01T21:43:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "balance-manager",
+                "description": "A tool to manage your wallets",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2018-05-14T23:12:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cordova-diagnostic-plugin",
+                "description": "Cordova/Phonegap plugin to manage device settings",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2016-09-19T14:51:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "phonegap-plugin-barcodescanner",
+                "description": "cross-platform BarcodeScanner for Cordova / PhoneGap",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2016-10-22T06:43:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native-safe-area-view",
+                "description": "JS only version of SafeAreaView for supporting iPhone X safe area insets.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-03T18:49:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native-reanimated",
+                "description": "React Native's Animated library reimplemented",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2019-04-25T18:27:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native-text-input-mask",
+                "description": "Text input mask for React Native, Android and iOS",
+                "stargazers_count": 2,
+                "language": "Swift",
+                "pushed_at": "2019-09-16T01:40:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-file-reader-input",
+                "description": "React file input component for complete control over styling and abstraction from file reading.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2017-02-23T22:39:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native-tab-view",
+                "description": "A cross-platform Tab View component for React Native",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2019-06-26T08:45:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vscode-react-native",
+                "description": "VSCode extension for React Native - supports debugging and editor integration",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2019-06-20T11:51:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "walletconnect-monorepo",
+                "description": "WalletConnect Monorepo ",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2019-05-28T13:16:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "recompose",
+                "description": "A React utility belt for function components and higher-order components.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2017-07-31T23:55:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native-gesture-handler",
+                "description": "Declarative API exposing platform native touch and gesture system to React Native.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2019-08-06T10:05:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "uniswap-frontend",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2018-12-17T00:58:15Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:44.510389+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

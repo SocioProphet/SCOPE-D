@@ -1,0 +1,577 @@
+{
+  "profileId": "osint-profile-983dca5daa97",
+  "target": "CelaDaniel",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:37.662881+00:00",
+  "completedAt": "2026-06-21T15:27:38.916625+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1b3badf4",
+      "lookupType": "github_context",
+      "target": "CelaDaniel",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "CelaDaniel",
+            "name": "Daniel Cela",
+            "type": "User",
+            "company": "@deltatre-digital, @deltatre-vxp, @deltatre-innovation-lab",
+            "blog": "https://www.danielcela.com",
+            "location": "Remote, Worldwide",
+            "bio": "Senior Software & AI Engineer (Full Stack) | NestJS, React, Next.js, TypeScript | Specialist in Agentic Workflows & RAG | Scaling AWS Cloud Solutions",
+            "public_repos": 121,
+            "followers": 12966,
+            "following": 9794,
+            "created_at": "2015-08-03T09:44:00Z",
+            "updated_at": "2026-06-21T09:05:14Z",
+            "html_url": "https://github.com/CelaDaniel",
+            "avatar_url": "https://avatars.githubusercontent.com/u/13622306?v=4",
+            "repos": [
+              {
+                "name": "free-ai-resources-x",
+                "description": "\ud83c\udf1f A curated collection of free, high quality AI tools \ud83e\udd16, APIs \ud83d\udd17, datasets \ud83d\udcca, and learning resources \ud83d\udcda covering machine learning \ud83e\udde0, deep learning \ud83e\udde9, generative AI \ud83c\udfa8, NLP \ud83d\udcac, and data science \ud83d\udcc8. Designed to help developers \ud83d\udc69\u200d\ud83d\udcbb, researchers \ud83d\udd2c, and creators \u2728 explore and build with AI faster \u26a1.",
+                "stargazers_count": 533,
+                "language": null,
+                "pushed_at": "2026-05-21T19:29:45Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-agents",
+                  "ai-courses",
+                  "ai-ethics",
+                  "ai-tools",
+                  "artificial-intelligence",
+                  "awesome",
+                  "awesome-list",
+                  "computer-vision",
+                  "data-science",
+                  "deep-learning",
+                  "free-resources",
+                  "generative-ai",
+                  "large-language-models",
+                  "learning-resources",
+                  "llm",
+                  "machine-learning",
+                  "nlp",
+                  "prompt-engineering",
+                  "reinforcement-learning"
+                ]
+              },
+              {
+                "name": "Lerna-Docker-Express-React",
+                "description": "Full Stack app, CRUD functionalities (EXPRESS + REACT)",
+                "stargazers_count": 37,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-22T19:36:50Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "express",
+                  "lerna-monorepo",
+                  "material-ui",
+                  "mysql",
+                  "nodejs",
+                  "phpmyadmin-docker",
+                  "postman",
+                  "react"
+                ]
+              },
+              {
+                "name": "CelaDaniel",
+                "description": "\ud83d\udcdd A self updating github profile",
+                "stargazers_count": 86,
+                "language": null,
+                "pushed_at": "2026-05-14T20:43:58Z",
+                "fork": false,
+                "topics": [
+                  "github-profile",
+                  "github-profile-readme",
+                  "github-profile-readme-md",
+                  "github-readme",
+                  "github-readme-profile",
+                  "profile",
+                  "profile-readme",
+                  "readme-md",
+                  "readme-profile",
+                  "software-engineer"
+                ]
+              },
+              {
+                "name": "Covid_Tracker",
+                "description": "CovidApp will shows a statistical view about corona virus over the world",
+                "stargazers_count": 27,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-22T19:40:17Z",
+                "fork": false,
+                "topics": [
+                  "chartjs",
+                  "material-ui",
+                  "react"
+                ]
+              },
+              {
+                "name": "Crwn-Clothing",
+                "description": "Crwn-Clothing E-commerce",
+                "stargazers_count": 30,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-22T19:43:37Z",
+                "fork": false,
+                "topics": [
+                  "react",
+                  "redux"
+                ]
+              },
+              {
+                "name": "3Fiber-Horse-Rider",
+                "description": "Portfolio of an portugal's champion in the exhilarating world of horse riding.",
+                "stargazers_count": 26,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-22T19:21:39Z",
+                "fork": false,
+                "topics": [
+                  "3dmodels",
+                  "react",
+                  "react-3-fiber",
+                  "vite"
+                ]
+              },
+              {
+                "name": "platforms",
+                "description": "A full-stack Next.js app with multi-tenancy and custom domain support. Built with Next.js App Router and the Vercel Domains API.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-06-08T20:36:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "folio",
+                "description": "Interactive Portfolio with Next, GSAP, Tailwind, and React",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-10-10T10:40:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "swarm-dashboard",
+                "description": "A Simple Monitoring Dashboard for Docker Swarm Cluster",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-09-23T13:21:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "travel-app",
+                "description": "Hilink Travel Web App",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-03-01T13:04:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ecommerce-react",
+                "description": "eCommerce web application using React, Redux, Redux-Saga, Firebase and SASS. ",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-07-22T17:06:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "React-Weather-App",
+                "description": "This web app, developed as a final project for SheCodes Plus, is built with React.js. It enables users to search for weather conditions worldwide and delivers current weather information. The app retrieves weather data using the SheCodes Weather API.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-07-12T12:32:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "diaryapp",
+                "description": "Privacy focused diary app with React Native",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-07-14T11:40:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Instagram-Clone-ReactJS",
+                "description": "This project is a Clone of the original Instagram UI. This Project provides some basic features, similar to the original application. \u2744\ud83d\ude80\u2764 ",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2024-09-25T18:05:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Portfolio",
+                "description": "My portfolio built with Next.js, Tailwind, Drizzle, and Vercel.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-09-10T09:52:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "eudisity",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-02-22T21:29:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "task-manager-api",
+                "description": "A Task Manager RESTFul API built using Node.JS and MongoDB",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2024-09-27T23:03:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "KineticSlider",
+                "description": "Javascript Slider",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2020-09-08T18:01:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Responsive-Landing-Page",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2020-09-08T18:04:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "r3f-scrolling-animation-tutorial",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-05T12:27:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wawa-guys-final",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-05T21:36:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "movies",
+                "description": "React + Node multi service application",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-09-17T19:53:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HooBank",
+                "description": "HooBank",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-01T13:04:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "movie-app",
+                "description": "Movie application with TMDB API, build with React JS",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-03-21T10:07:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bee-queue",
+                "description": "A simple, fast, robust job/task queue for Node.js, backed by Redis.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-09-25T00:36:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Basement",
+                "description": "Simple Landing Page",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-09-08T17:58:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "node-express-prisma-rest",
+                "description": "Node express Typescript Prisma ORM REST api",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-06-30T12:28:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "simple-meditation-app-expo-react-native",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-06-10T18:57:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "project_next13_car_showcase",
+                "description": "Build and Deploy a Modern Next.js 13 Application | React, Next JS 13, TypeScript, Tailwind CSS",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-07-02T16:43:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "React-Material-UI-Admin",
+                "description": "React Admin is a React template built with Material-UI",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-07-15T22:00:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "todo-app-laravel",
+                "description": "This project is a Todo application built using Laravel, Vue.js, Inertia.js, and Tailwind CSS.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-08-09T08:58:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "multer",
+                "description": "Node.js middleware for handling `multipart/form-data`.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-08-14T05:14:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zoom-clone",
+                "description": "Learn to develop a professional enterprise-ready video conferencing app in hours using Next.js 14, Stream, and Tailwind CSS.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-08-20T02:17:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MongoDBExpressReactNodeJSReference",
+                "description": "MongoDB, Express, Node.JS and React (MERN) reference implementation",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-08-20T14:12:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "stack_overflow_nextjs14",
+                "description": "Ultimate Next.js 14 Course",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-08-20T21:30:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "node-url-shortener",
+                "description": "URL Shortener in Base58 using Node.js, Express, Sequelize, Mocha and Bootstrap",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-09-17T02:02:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "JourneyCusine",
+                "description": "MENR HOTEL BOOKING APPLICATION",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-09-17T22:38:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-md-editor",
+                "description": "A simple markdown editor with preview, implemented with React.js and TypeScript. ",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-09-20T01:03:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "xora",
+                "description": "Learn how to build and deploy a SaaS landing page with modern UI and mobile-first principles while strengthening your React.js and Tailwind CSS skills.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-09-20T10:57:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "google-github-oauth2-nodejs",
+                "description": "In this article, I'll walk you through the process of setting up Google OAuth2 in a Node.js application, including creating the OAuth project on the Google API console, configuring the OAuth Client ID and secret, and implementing the necessary code in the Node.js project.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-01-28T12:17:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "express-redis-docker",
+                "description": "A Node/Express app with Redis through Docker Compose",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-02-27T15:00:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "React-Typescript-Quiz-App",
+                "description": "React-Typescript Quiz App built using React.JS & Typescript, where you can solve quiz questions and the app will calculate the success score automatically.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-02-15T15:44:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native-countdown-timer",
+                "description": "The Countdown Timer mobile app was built using React Native with Expo. It's simply a countdown timer that allows users to add minutes and then start, pause, or accelerate the countdown.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-02T19:11:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chat-app",
+                "description": "A chat app built with Node.js, Socket.io, React.js, and Tailwind CSS.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-13T19:07:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "loadbalancer-nginx-docker-nodejs",
+                "description": "This project is a simple load balancer built using Nginx and Node.js, and containerized with Docker. It allows you to distribute incoming traffic across multiple Node.js servers, providing increased availability and performance.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-04-22T13:54:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ecommerce-shop-react-app",
+                "description": "Responsive e-commerce website built using React and Tailwind CSS, with data fetched from the Fake Store API.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-27T22:28:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react_native_petlover",
+                "description": "A react native application using authentication through an API rest.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-05-05T12:17:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nasa-images",
+                "description": "product like nasa images gallery using react - redux",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-05-07T05:03:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cf-shopping-list",
+                "description": "A very simple Shoppinglist App for mobile devices (phones) using React Native, which provides users with the possibility to create shoppinglists that can have two items per list. Shoppinglists will also be available when user does not have an internet connection.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-05-30T11:26:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Expense-Tracker-React-Native-App",
+                "description": "The React Native Expense Tracker is a mobile application built using the React Native framework. It provides users with a convenient and intuitive way to track and manage their expenses, helping them stay organized and in control of their finances.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-05-31T09:38:33Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:38.915807+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "profileId": "osint-profile-623684d2d955",
+  "target": "FaezehRahimian",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:37.560324+00:00",
+  "completedAt": "2026-06-21T15:29:37.927645+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1bcfd720",
+      "lookupType": "github_context",
+      "target": "FaezehRahimian",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "FaezehRahimian",
+            "name": "Faezeh",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Iran",
+            "bio": "A member of Turing Research Team &\ud83e\uddd1\u200d\ud83d\udcbb\r\nI am a computer software engineering student\r\n",
+            "public_repos": 4,
+            "followers": 2488,
+            "following": 6039,
+            "created_at": "2024-02-22T15:17:33Z",
+            "updated_at": "2024-10-31T20:00:23Z",
+            "html_url": "https://github.com/FaezehRahimian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/160883038?v=4",
+            "repos": [
+              {
+                "name": "FaezehRahimian",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-10-31T19:46:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-12T22:02:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-26T04:33:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-03T21:03:09Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:37.926474+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

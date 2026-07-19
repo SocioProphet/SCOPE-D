@@ -1,0 +1,100 @@
+{
+  "profileId": "osint-profile-948b566ac2ba",
+  "target": "MaryamFereidooni",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:56.378788+00:00",
+  "completedAt": "2026-06-21T15:29:56.704702+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-61963e6f",
+      "lookupType": "github_context",
+      "target": "MaryamFereidooni",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "MaryamFereidooni",
+            "name": "MaryamFereidooni",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 3,
+            "followers": 2235,
+            "following": 4148,
+            "created_at": "2024-04-30T10:19:44Z",
+            "updated_at": "2026-05-29T09:14:52Z",
+            "html_url": "https://github.com/MaryamFereidooni",
+            "avatar_url": "https://avatars.githubusercontent.com/u/168538552?v=4",
+            "repos": [
+              {
+                "name": "testpush",
+                "description": "Turing research group.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-02-25T08:50:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MaryamFereidooni",
+                "description": null,
+                "stargazers_count": 22,
+                "language": null,
+                "pushed_at": "2024-10-27T10:35:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Project1",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-02T09:00:23Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:56.704375+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

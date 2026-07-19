@@ -1,0 +1,397 @@
+{
+  "profileId": "osint-profile-5905c7e04f8e",
+  "target": "MarcosPPazzinatto",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:36.333052+00:00",
+  "completedAt": "2026-06-20T13:53:37.203365+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-514da68b",
+      "lookupType": "github_context",
+      "target": "MarcosPPazzinatto",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "MarcosPPazzinatto",
+            "name": "Marcos Paulo Pazzinatto",
+            "type": "User",
+            "company": "Pazzinatto Studios LLC",
+            "blog": "https://www.linkedin.com/in/marcos-paulo-pazzinatto",
+            "location": "USA",
+            "bio": "Staff Software Engineer and DevOps Engineer | Tech Leader | Cloud & Kubernetes\r\n\r\nFocused on observability, security, and high availability",
+            "public_repos": 36,
+            "followers": 1595,
+            "following": 3210,
+            "created_at": "2025-06-10T20:18:46Z",
+            "updated_at": "2026-05-23T11:38:00Z",
+            "html_url": "https://github.com/MarcosPPazzinatto",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215746734?v=4",
+            "repos": [
+              {
+                "name": "migration-redis-tools",
+                "description": "The goal of this project is to help you with redis migration",
+                "stargazers_count": 4,
+                "language": "Shell",
+                "pushed_at": "2025-07-23T11:33:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shell-scripts-collection",
+                "description": "A collection of useful and reusable shell scripts for automation and productivity.",
+                "stargazers_count": 10,
+                "language": "Shell",
+                "pushed_at": "2025-08-20T11:28:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mirai-erp",
+                "description": "ERP para organiza\u00e7\u00f5es sociais, beneficentes e sem fins lucrativos, desenvolvido pela Studio Mirai.",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-05-23T12:41:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cloud-security-guardrails",
+                "description": "Practical collection of cloud/Kubernetes security guardrails + CI routine that runs automatic scans (secrets, deps, IaC, container, code), generates SBOM and publishes results.",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2025-09-01T11:25:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MarcosPPazzinatto",
+                "description": "Personal GitHub profile README",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-05-09T14:54:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bitcoin-mining-poc",
+                "description": "Educational Proof-of-Concept showing Bitcoin Proof-of-Work: a local PoW simulator and a regtest miner using Bitcoin Core RPC.",
+                "stargazers_count": 17,
+                "language": "Go",
+                "pushed_at": "2025-09-29T11:19:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bitcoin-network-poc",
+                "description": "A lightweight Python Proof of Concept for observing Bitcoin network metrics and exposing them via REST and Prometheus.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-01-28T10:58:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bitcoin-price-tracker",
+                "description": "A minimal, extensible Bitcoin price tracker with a clean CLI, optional alerts, simple ASCII charts, Docker support, and GitHub Actions CI. Default data source: CoinGecko (no API key required).",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-10-09T11:25:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bitcoin-transaction-analyzer",
+                "description": "A command-line and API tool that analyzes Bitcoin transactions, providing detailed insights about inputs, outputs, fees, and confirmation status using Bitcoin blockchain data.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-10-16T11:40:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chia-proof-of-space-poc",
+                "description": "A chia-proof-of-concept implementation of a Proof-of-Space inspired blockchain system.   Demonstrates plotting (disk allocation) and farming (challenge validation) in Go.",
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2025-10-02T11:30:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "harvardx-data-science-exercises",
+                "description": "The purpose of this repository is to store the course exercises.",
+                "stargazers_count": 4,
+                "language": "R",
+                "pushed_at": "2025-07-15T10:55:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "orchestra-ai-framework",
+                "description": "A modular AI framework inspired by an orchestra, each section (strings, brass, woodwinds, percussion, etc.) represents a specialized family of algorithms working together under a central conductor.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-10-24T12:09:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "c-template-project",
+                "description": "A minimal template for C programming projects with organized structure and Makefile support.",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2025-07-16T10:54:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "harvardx-capstone-twitter-geo-nlp-classification",
+                "description": "A machine learning project to classify the geographical region of tweets based on their content using natural language processing techniques. Developed as part of the HarvardX Data Science Capstone.",
+                "stargazers_count": 3,
+                "language": "R",
+                "pushed_at": "2025-07-17T11:23:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scala-template-project",
+                "description": "A minimal and clean Scala project template with standard structure, SBT build, and examples for quick setup and development.",
+                "stargazers_count": 3,
+                "language": "Scala",
+                "pushed_at": "2025-07-21T10:44:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "plsql-template-project",
+                "description": "This repository provides a structured PL/SQL project template including examples of procedures, functions, triggers, packages, and views. It's designed to support learning and maintainability of Oracle database code.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-08-04T11:30:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "terraform-gcp-memorystore",
+                "description": "Terraform module to provision and manage Google Cloud Memorystore instances with configurable settings for Redis or Memcached.",
+                "stargazers_count": 3,
+                "language": "HCL",
+                "pushed_at": "2025-08-12T11:31:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "terraform-akamai-infra",
+                "description": "This project provides a Terraform module and examples to manage Akamai configurations, including Property Rules, Edge Hostnames, and CP Codes.",
+                "stargazers_count": 3,
+                "language": "HCL",
+                "pushed_at": "2025-08-08T11:08:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kafka-drain-checker",
+                "description": "CLI tool to monitor and validate Kafka topic draining during cluster migrations, ensuring zero-downtime cutovers.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-08-18T11:18:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chaos-engineering-toolkit",
+                "description": "Repository with practical scripts and experiments to simulate failures in cloud and Kubernetes environments. Focused on reliability testing and chaos engineering practices.",
+                "stargazers_count": 3,
+                "language": "Shell",
+                "pushed_at": "2025-08-28T11:32:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cloud-cost-optimizer",
+                "description": "Scripts and tools to estimate and compare cloud infrastructure costs between AWS and GCP, including optimization suggestions.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-08-21T11:33:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cloud-ml-cost-anomaly",
+                "description": "End-to-end MLOps pipeline for detecting cloud cost anomalies on Kubernetes, integrating Argo Workflows, MLflow, Feast, and KServe with Datadog observability.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-05T11:41:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "java-database-connections-playground",
+                "description": "A practice repository for connecting Java applications to PostgreSQL and MongoDB using different approaches.",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2025-09-16T11:48:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-list-map-iteration-examples",
+                "description": "Examples of lists, map, foreach, and for(i) iteration in Python",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-12T11:29:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wisdom-display-oled",
+                "description": "Simple MicroPython project to display a counter on the RoboCore BlackBoard Wisdom's 0.96\" OLED screen using SSD1306.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-06-13T11:48:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wisdom-temperatura-humidity-meter",
+                "description": "A simple MicroPython project that reads temperature and humidity from the HTU21D sensor and controls LEDs to indicate environment conditions.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-06-16T12:29:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-project-template",
+                "description": "A basic template for Python projects with a minimal folder structure and documentation.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-06-25T12:01:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "java-project-template",
+                "description": "A basic Java project structure for quick setup and development.",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2025-06-26T11:30:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "go-project-structure",
+                "description": "A scalable and organized folder structure for Go projects.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-06-27T11:54:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wisdom-level-meter",
+                "description": "A simple level meter project using the RoboCore BlackBoard Wisdom to measure and display levels",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-06-27T11:55:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "terraform-k8s-aws-cluster",
+                "description": "Terraform project to provision a minimal Kubernetes cluster on AWS, including VPC and IAM setup.",
+                "stargazers_count": 2,
+                "language": "HCL",
+                "pushed_at": "2025-06-27T11:56:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ruby-project-template",
+                "description": "A minimal Ruby project template with basic folder structure and configuration to kickstart development.",
+                "stargazers_count": 2,
+                "language": "Ruby",
+                "pushed_at": "2025-06-28T11:41:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust-project-template",
+                "description": "A basic Rust project template with a clean folder structure, ready for new CLI or library development.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-07-01T11:35:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "harvardx-capstone-movielens",
+                "description": "Capstone project from HarvardX Data Science Professional Certificate: a movie recommendation system using the MovieLens 10M dataset.",
+                "stargazers_count": 2,
+                "language": "R",
+                "pushed_at": "2025-07-15T11:26:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wisdom-big-rgb-led",
+                "description": "Control RGB LED with blinking and fading effects using RoboCore BlackBoard Wisdom.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-06-12T12:08:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wisdom-bar-graph",
+                "description": "Educational project using the Bar Graph component of the RoboCore BlackBoard Wisdom to visualize intensity levels (20%, 50%, 75%, 100%) with LEDs.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-06-12T12:19:14Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:37.202015+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

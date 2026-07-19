@@ -1,0 +1,605 @@
+{
+  "profileId": "osint-profile-25c2c3aaa69c",
+  "target": "morganm94",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:54.964550+00:00",
+  "completedAt": "2026-06-20T13:53:55.967958+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-868b4bba",
+      "lookupType": "github_context",
+      "target": "morganm94",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "morganm94",
+            "name": "Morgan Mastrangelo",
+            "type": "User",
+            "company": "Drivingo",
+            "blog": "https://morganmdev.com",
+            "location": "St. Petersburg, FL, USA",
+            "bio": "Senior AI/ML Engineer",
+            "public_repos": 41,
+            "followers": 1367,
+            "following": 2190,
+            "created_at": "2020-07-27T09:39:59Z",
+            "updated_at": "2026-06-12T00:56:29Z",
+            "html_url": "https://github.com/morganm94",
+            "avatar_url": "https://avatars.githubusercontent.com/u/68848623?v=4",
+            "repos": [
+              {
+                "name": "deepgram-cli",
+                "description": "CLI for Deepgram's automated speech recognition APIs.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-09T09:01:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "morganm94",
+                "description": "My GitHub Profile",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-10-31T17:08:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Object-Detection",
+                "description": "AI-powered Tracking, Speed Monitoring, and License Plate Recognition. This project focuses on the study and implementation of various object detection techniques. It covers a wide range of objects including faces, vehicles, and more. Different methods are employed to achieve accurate and efficient detection.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-03-19T15:41:36Z",
+                "fork": false,
+                "topics": [
+                  "dlib",
+                  "numpy",
+                  "object-detection",
+                  "opencv",
+                  "pandas",
+                  "pip",
+                  "python",
+                  "pytorch",
+                  "ultralytics"
+                ]
+              },
+              {
+                "name": "AI-Voice-Assistance",
+                "description": "AI-based voice assistant implemented in Python for hands-free interactions with computers.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2024-03-23T10:30:30Z",
+                "fork": false,
+                "topics": [
+                  "nlp",
+                  "python",
+                  "voice-assistant"
+                ]
+              },
+              {
+                "name": "startup-nextjs-template",
+                "description": "SaaS Next.js template built with TNT (TypeScript, Next.js, Tailwind CSS)",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2024-03-30T05:05:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Diet-Recommender",
+                "description": "Provides personalized diet and workout recommendations based on user input. The recommendations are generated using a language model (LLM) for a more interactive experience.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2024-10-14T09:16:54Z",
+                "fork": false,
+                "topics": [
+                  "langchain",
+                  "openai",
+                  "python",
+                  "python-dotenv",
+                  "pytorch",
+                  "streamlit"
+                ]
+              },
+              {
+                "name": "make-real",
+                "description": "\ud83c\udfa8 A revolutionary tool designed to streamline the process of website development. With tldraw, users can transform their sketches of website interfaces into fully functional web pages with just a click of a button.",
+                "stargazers_count": 24,
+                "language": "TypeScript",
+                "pushed_at": "2024-03-26T04:54:24Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "radix-ui",
+                  "tailwindcss",
+                  "tldraw",
+                  "typescript",
+                  "vercel"
+                ]
+              },
+              {
+                "name": "demoss",
+                "description": "DeMOSS is an anti-thesis to MOSS. It is a tool designed to evade MOSS, a plagiarism detection system used extensively by many universities to prevent students cheat in programming assignments.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-18T10:32:34Z",
+                "fork": false,
+                "topics": [
+                  "code-mirror",
+                  "demo-app",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "Number-Plate-Detection-Recognition",
+                "description": "Utilizing a deep learning algorithm, this project showcases a highly efficient number plate detection and recognition system for images and videos.",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-03-18T11:06:47Z",
+                "fork": false,
+                "topics": [
+                  "image-processing",
+                  "jupyter-notebook",
+                  "ocr-recognition",
+                  "pip",
+                  "python",
+                  "pytorch"
+                ]
+              },
+              {
+                "name": "finalgoal-svelte-admin-dashboard",
+                "description": "Free and open-source admin dashboard template built with Flowbite, Svelte, and Tailwind CSS",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-11-21T16:46:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ip-address-tracker",
+                "description": "\ud83d\udccd A website to track and obtain information based on an IP address or a domain. This is a solution to the IP address tracker challenge on Frontend Mentor. To get the IP Address info I used the IP Geolocation API by IPify. To generate the map I used Leaflet.js.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-09T16:23:05Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "frontend-mentor",
+                  "ipify",
+                  "javascript",
+                  "leafletjs",
+                  "react",
+                  "styled-components",
+                  "vite"
+                ]
+              },
+              {
+                "name": "astro-landing",
+                "description": "My trial version - Landing page built with Astro",
+                "stargazers_count": 1,
+                "language": "Astro",
+                "pushed_at": "2024-06-09T16:30:13Z",
+                "fork": false,
+                "topics": [
+                  "astro",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "where-in-the-world",
+                "description": "A website that allows people to search information about countries.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-09T16:23:45Z",
+                "fork": false,
+                "topics": [
+                  "autoprefixer",
+                  "frontend-mentor",
+                  "javascript",
+                  "reactjs",
+                  "restcountries-api",
+                  "tailwindcss",
+                  "vite"
+                ]
+              },
+              {
+                "name": "greenhouse-ats",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-13T16:00:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "finalgoal-svelte-ecommerce",
+                "description": "The open-source storefront for any ecommerce. Built with a PWA and headless approach, using a modern JS stack. Works with Litekart, Medusa. WIP for Woocommerce, Bigcommerce and Shopify.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-21T21:52:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SEO-friendly",
+                "description": "A minimal, accessible and SEO-friendly Astro blog theme",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-06T16:52:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vite-react-troubleshooting",
+                "description": "My solution for resolving issues with react-router-dom in Vite + React project on production.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-01T16:17:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "d1-manager",
+                "description": "D1 Manager is a web UI and API for Cloudflare D1, a serverless SQL database. It provides a user-friendly interface for managing databases, tables, and records, as well as an API for performing operations programmatically.",
+                "stargazers_count": 0,
+                "language": "Svelte",
+                "pushed_at": "2024-06-11T23:58:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "liquid",
+                "description": "Liquid markup language. Safe, customer facing template language for flexible web apps. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-10T17:31:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sveltekit-weather-app",
+                "description": "Simple weather app built with Sveltekit, Vite and TypeScript",
+                "stargazers_count": 0,
+                "language": "Svelte",
+                "pushed_at": "2024-06-11T23:45:31Z",
+                "fork": false,
+                "topics": [
+                  "eslint",
+                  "prettier",
+                  "sveltekit",
+                  "tailwindcss",
+                  "typescript",
+                  "weather-app"
+                ]
+              },
+              {
+                "name": "word-guessing-demo",
+                "description": "Demo SvelteKit application - Word guessing game",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-11T23:43:38Z",
+                "fork": false,
+                "topics": [
+                  "demo-app",
+                  "eslint",
+                  "playwright",
+                  "scss",
+                  "svelte",
+                  "sveltekit",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "lightning-privacy-research",
+                "description": "This is a work-in-progress documentation to specify the design of a light-weight privacy-focused lightning client.",
+                "stargazers_count": 0,
+                "language": "Astro",
+                "pushed_at": "2024-06-11T23:42:58Z",
+                "fork": false,
+                "topics": [
+                  "astro",
+                  "documentation",
+                  "research",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "cal.com",
+                "description": "Scheduling infrastructure for absolutely everyone.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-11T22:12:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "freeCodeCamp",
+                "description": "My freeCodeCamp solutions",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-09T16:28:55Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "javascript",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "Jobzilla",
+                "description": "An app to find your next job. Built with Next.js and Tailwind CSS with the help of the Infojobs API and leaflet.js for the map.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-09T16:27:40Z",
+                "fork": false,
+                "topics": [
+                  "frontend-mentor",
+                  "javascript",
+                  "nextjs",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "number-guess-game",
+                "description": "Online Number Guessing Game",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-09T16:26:56Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "nextjs",
+                  "number-guessing-game",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "clickplay",
+                "description": "ClickPlay Game - ClickPlay, Spacebar, Scrolling and Typing test.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-09T16:26:16Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "material-ui",
+                  "nextjs",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "password-generator",
+                "description": "Generate strong passwords with Passwordss. The passwords are generated locally in your browser and are never sent to the server. Passwordss is a simple, secure, and free password generator. You can use it to create strong passwords for your online accounts and protect your data from hackers.",
+                "stargazers_count": 0,
+                "language": "Svelte",
+                "pushed_at": "2024-06-09T16:25:41Z",
+                "fork": false,
+                "topics": [
+                  "eslint",
+                  "figma",
+                  "javascript",
+                  "prettier",
+                  "svelte",
+                  "tailwindcss",
+                  "vercel"
+                ]
+              },
+              {
+                "name": "quiz-game",
+                "description": "\ud83c\udfb4 Quizi is a quiz/trivia game made with with Cohere AI. You can select different game modes and topics, you also have wildcards.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-09T16:25:05Z",
+                "fork": false,
+                "topics": [
+                  "animatecss",
+                  "cohere",
+                  "figma",
+                  "frontend-mentor",
+                  "nextjs",
+                  "react-icons",
+                  "reactjs",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "space-tourism",
+                "description": "\ud83e\ude90 My solution for the famous frontend-mentor challenge \"Space tourism\", made with react, JS and CSS in Next.js.",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2024-06-09T16:24:25Z",
+                "fork": false,
+                "topics": [
+                  "eslint",
+                  "frontend-mentor",
+                  "javascript",
+                  "nextjs",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "chatwoot",
+                "description": "Open-source customer engagement suite, an alternative to Intercom, Zendesk, Salesforce Service Cloud etc. \ud83d\udd25\ud83d\udcac",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-08T08:12:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Food-Identifier",
+                "description": "An Interactive web application for identifying food names based on the images, providing nutritional facts.",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-03-26T04:47:48Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "javascript",
+                  "knn",
+                  "mobilenet",
+                  "python",
+                  "random-forest",
+                  "vgg16"
+                ]
+              },
+              {
+                "name": "morganm94.github.io",
+                "description": "My Portfolio Website for hosting",
+                "stargazers_count": 4,
+                "language": "CSS",
+                "pushed_at": "2024-03-23T11:06:07Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "css3",
+                  "html5",
+                  "jquery",
+                  "portfolio",
+                  "smooth-scrolling"
+                ]
+              },
+              {
+                "name": "Data-EDA",
+                "description": "Contains code and documentation for conducting Exploratory Data Analysis (EDA) on various datasets. The EDA process involves examining and visualizing datasets to better understand their characteristics, relationships, and insights that can be derived from them.",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-03-23T10:49:55Z",
+                "fork": false,
+                "topics": [
+                  "matplotlib",
+                  "numpy",
+                  "pandas",
+                  "python",
+                  "seborn"
+                ]
+              },
+              {
+                "name": "Face-Recognition",
+                "description": "Discover the brilliance of our small yet impactful project, leveraging Smart Face Recognition and Heart-rate Measurement.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-03-23T10:42:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MultiCorrupt",
+                "description": "A Multi-Modal Robustness Dataset and Benchmark of LiDAR-Camera Fusion for 3D Object Detection.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-03-19T15:51:50Z",
+                "fork": false,
+                "topics": [
+                  "3d-models",
+                  "docker",
+                  "dockerfile",
+                  "jupyter-notebook",
+                  "pip",
+                  "python",
+                  "shell",
+                  "stable-diffusion"
+                ]
+              },
+              {
+                "name": "Segementation",
+                "description": "Revolutionizing data annotation, my project focuses on automating the annotation process through the integration of advanced object detection and segmentation techniques.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-03-18T10:45:50Z",
+                "fork": false,
+                "topics": [
+                  "jupyter",
+                  "keras",
+                  "knn",
+                  "llms",
+                  "python",
+                  "pytorch",
+                  "segementation",
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "dsc-logistic-regression-in-scikit-learn",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-08-30T14:43:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Auto-GPT-Benchmarks",
+                "description": "A repo built for the purpose of benchmarking the performance of agents, regardless of how they are set up and how they work.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-12-09T09:52:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dsc-visualizing-confusion-matrices-lab",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-12-06T17:27:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Best-README-Template",
+                "description": "An awesome README template to jumpstart your projects! ",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-02T11:35:15Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:55.967185+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

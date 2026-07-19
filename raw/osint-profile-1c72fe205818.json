@@ -1,0 +1,561 @@
+{
+  "profileId": "osint-profile-1c72fe205818",
+  "target": "JuanBindez",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:52.580115+00:00",
+  "completedAt": "2026-06-20T16:47:55.152720+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-958fc59b",
+      "lookupType": "github_context",
+      "target": "JuanBindez",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "JuanBindez",
+            "name": "Juan Bindez",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Brazil",
+            "bio": null,
+            "public_repos": 198,
+            "followers": 1182,
+            "following": 1757,
+            "created_at": "2021-02-19T14:49:44Z",
+            "updated_at": "2026-06-10T00:30:17Z",
+            "html_url": "https://github.com/JuanBindez",
+            "avatar_url": "https://avatars.githubusercontent.com/u/79322362?v=4",
+            "repos": [
+              {
+                "name": "pytubefix",
+                "description": "Python3 library for downloading YouTube Videos. ",
+                "stargazers_count": 1517,
+                "language": "Python",
+                "pushed_at": "2026-06-18T13:31:23Z",
+                "fork": false,
+                "topics": [
+                  "pytube",
+                  "pytubefix",
+                  "youtube-downloader"
+                ]
+              },
+              {
+                "name": "CVE-2026-31431",
+                "description": "Copy Fail - CVE-2026-31431",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2026-06-05T02:59:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RafaTube",
+                "description": "RafaTube",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-10T00:43:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DPKG-ERROR-DOC",
+                "description": "dpkg error",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-08-03T16:55:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "macvendorscli",
+                "description": "CLI tool and Python3 library for offline MAC address vendor lookup using the IEEE OUI database.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-18T12:07:24Z",
+                "fork": false,
+                "topics": [
+                  "macvendors"
+                ]
+              },
+              {
+                "name": "brachinus",
+                "description": "AES-256 CBC file encryption library with support for individual files and directory batch operations.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-16T14:05:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DYGTube-Downloader",
+                "description": "This software effectively allows you to download MP3 and MP4, with a friendly and intuitive interface, runs on Windows and Linux",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2024-05-01T20:04:45Z",
+                "fork": false,
+                "topics": [
+                  "download-managers",
+                  "download-videos",
+                  "downloader",
+                  "downloader-for-youtube",
+                  "linux-desktop",
+                  "python3",
+                  "ubuntu",
+                  "windows-10",
+                  "windows11",
+                  "youtube"
+                ]
+              },
+              {
+                "name": "TraceScan-v1.0-alpha",
+                "description": "This software is a simple and user friendly traceroute, ping and whois tool to check your internet connection.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2023-04-26T19:48:13Z",
+                "fork": false,
+                "topics": [
+                  "network",
+                  "ping",
+                  "testing-tools",
+                  "traceroute"
+                ]
+              },
+              {
+                "name": "minal",
+                "description": "terminal emulator made with SDL",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-18T00:31:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mintstick",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-14T17:54:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wifitest",
+                "description": "Python 3 library for wifi testing.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-06-20T01:55:46Z",
+                "fork": false,
+                "topics": [
+                  "wifi",
+                  "wifi-hacking",
+                  "wifi-network",
+                  "wifi-password",
+                  "wifi-security"
+                ]
+              },
+              {
+                "name": "nginx-proxy-manager",
+                "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-20T15:02:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vpsverify",
+                "description": "vps verify",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-04-02T21:18:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FRP-ADB-ANDROID-DOC",
+                "description": "Factory Reset Protetion",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-08-26T23:49:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cvision",
+                "description": "cvision pytubefix and ultralytic",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-02-16T00:58:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "INITRAMFS-ERROR-LINUX",
+                "description": "COMANDOS PARA CORRIGIR ERRO",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-08-03T17:02:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DICOMViewer",
+                "description": "software para vizualiza\u00e7\u00e3o de imagens de radiologia de arquivos .dcm (DICOM) , e de convers\u00e3o de .dcm para .png",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2023-10-01T17:28:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mercadopago-integracao-flask",
+                "description": "Integrando a API Mercado Pago em um projeto Flask \ud83d\udcb0",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-05-01T21:40:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WaitePath",
+                "description": "this software promises to be a tarot waite game based on peladan card reading",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2023-06-09T20:31:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "metadatatube",
+                "description": "m4a matadata",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-11-21T01:44:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "articles",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-15T16:22:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TERMUX-APK",
+                "description": "apk Termux",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-11T18:25:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Enigma",
+                "description": "Web version of the Enigma machine, based on the source code from the 101Computing.net website.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-02T18:22:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "APRENDENDO-C",
+                "description": "APRENDENDO E TESTANDO C",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2025-09-08T20:15:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ubuntu-requirements.sh",
+                "description": "requirements softwares install apt",
+                "stargazers_count": 3,
+                "language": "Shell",
+                "pushed_at": "2024-12-16T01:35:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "einar",
+                "description": "Python3 library that implements AES-128, AES-192, AES-256 encryption in ECB and CBC modes.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-08-10T23:33:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Perceptron",
+                "description": "RN",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-08-04T02:34:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PYAUTO",
+                "description": "automa\u00e7\u00e3o com python",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-03-12T00:31:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LAMP-SERVER-UBUNTU",
+                "description": "Linux, Apache, MySQL, PHP/Perl/Python",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-06-21T20:06:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-login",
+                "description": "html css bootstrap login page",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2021-09-25T12:40:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github_unfollowers-contrib",
+                "description": "Keep track of who unfollows you on Github",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-06-12T13:17:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PCHDjango",
+                "description": "PCHDjango is a turnkey e-commerce platform built on the powerful Django Framework. With its login screen for customers and shopping cart and ordering system, it is a great base for developers to build and enhance their online stores. Its flexibility, security and ease of customization make it an ideal choice for e-commerce projects of any size.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-08-28T14:57:32Z",
+                "fork": false,
+                "topics": [
+                  "django-application",
+                  "django-ecommerce",
+                  "ecomerce-web-app",
+                  "ecommerce"
+                ]
+              },
+              {
+                "name": "Django-Crud",
+                "description": "crud com Django - cbv",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-06-20T18:07:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "informacoes-conexao",
+                "description": "Mostra as informa\u00e7\u00f5es da conex\u00e3o",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-05T19:45:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pytube",
+                "description": "A lightweight, dependency-free Python library (and command-line utility) for downloading YouTube Videos.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-15T06:51:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RouterOS-api",
+                "description": "Python API to RouterBoard devices produced by MikroTik.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-07T13:37:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bifrost-Media-Converter",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-11-10T05:43:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DreamCraft3D",
+                "description": "[ICLR 2024] Official implementation of DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-22T11:09:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "moodle",
+                "description": "Moodle - the world's open source learning platform",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-01T14:54:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "learn-assembly",
+                "description": "learn",
+                "stargazers_count": 0,
+                "language": "Assembly",
+                "pushed_at": "2025-03-24T19:12:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "minix-vm",
+                "description": "run minix in vm",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2025-03-22T15:02:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bootloader-x86",
+                "description": "bootloader in assembly x86",
+                "stargazers_count": 0,
+                "language": "Assembly",
+                "pushed_at": "2025-03-13T19:26:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "converter-to-binary",
+                "description": "converter to binary",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-03-06T02:26:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "msdos",
+                "description": "MS-DOS Source Code 1.X and 2.0",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2016-07-04T19:31:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ESFT",
+                "description": "Expert Specialized Fine-Tuning",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-09-22T15:46:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BGPurge",
+                "description": "This software extracts the background of images and turns it into png",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-08-28T00:06:07Z",
+                "fork": false,
+                "topics": [
+                  "extractor",
+                  "images",
+                  "png",
+                  "removebackground"
+                ]
+              },
+              {
+                "name": "BeeWare-New-Project",
+                "description": "new project in linux",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-05-14T23:54:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backend-urubu-do-pix-contrib",
+                "description": "contrib",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-05-03T22:29:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AuntoConfRadio",
+                "description": "configura radio litebeam m5  com pyautogui",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2022-01-27T00:52:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Aprendendo-Kotlin",
+                "description": "Kotlin",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-07-18T14:59:22Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:55.151765+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

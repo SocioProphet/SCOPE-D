@@ -1,0 +1,613 @@
+{
+  "profileId": "osint-profile-83281bf23ebe",
+  "target": "ai-in-pm",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:14.250703+00:00",
+  "completedAt": "2026-06-20T16:49:16.413813+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-90b62ded",
+      "lookupType": "github_context",
+      "target": "ai-in-pm",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ai-in-pm",
+            "name": "AI in PM",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Influencing AI in Project Management.",
+            "public_repos": 315,
+            "followers": 802,
+            "following": 2309,
+            "created_at": "2018-03-02T18:35:33Z",
+            "updated_at": "2026-06-10T03:22:15Z",
+            "html_url": "https://github.com/ai-in-pm",
+            "avatar_url": "https://avatars.githubusercontent.com/u/36999549?v=4",
+            "repos": [
+              {
+                "name": "Titans---Learning-to-Memorize-at-Test-Time",
+                "description": "Multi-agent demo platform for Titans (arXiv:2501.00663) \u2014 neural networks that learn to memorize at test time. 7 AI agents, native desktop UI.",
+                "stargazers_count": 418,
+                "language": "Python",
+                "pushed_at": "2026-06-15T06:20:16Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-agent",
+                  "anthropic",
+                  "deep-learning",
+                  "llm",
+                  "memory-augmented-neural-networks",
+                  "openai",
+                  "python",
+                  "test-time-compute",
+                  "titans",
+                  "transformer"
+                ]
+              },
+              {
+                "name": "Kali-AI",
+                "description": "KaliAI is an advanced AI assistant designed to help security professionals and ethical hackers leverage Kali Linux tools effectively and safely. It provides guidance, explanations, and security insights while emphasizing ethical considerations and best practices.",
+                "stargazers_count": 33,
+                "language": "Python",
+                "pushed_at": "2025-03-25T14:39:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Co-Scientist",
+                "description": "AI Co-Scientist is a comprehensive multi-agent AI system designed for scientific research and hypothesis generation. ",
+                "stargazers_count": 21,
+                "language": "Python",
+                "pushed_at": "2025-03-04T23:04:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DAPO",
+                "description": "This repository contains an implementation of the Decoupled Clip and Dynamic Sampling Policy Optimization (DAPO) algorithm for reinforcement learning with language models.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-03-21T19:57:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rStar-Math",
+                "description": "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking",
+                "stargazers_count": 39,
+                "language": "Python",
+                "pushed_at": "2025-01-13T02:20:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NemoClawd",
+                "description": "\ud83e\udd16 NemoClawd \u2014 NVIDIA NeMo Agent Toolkit + ClawdBot in one bridge-first AI workspace. TypeScript orchestrates NeMo Python workflows. Enterprise AI Digital Project Manager.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-04-07T01:51:58Z",
+                "fork": false,
+                "topics": [
+                  "a2a",
+                  "ai-agent",
+                  "ai-workflow",
+                  "autonomous-agents",
+                  "clawdbot",
+                  "digital-project-manager",
+                  "enterprise-ai",
+                  "hitl",
+                  "langchain",
+                  "llm",
+                  "mcp",
+                  "multiagent",
+                  "nemo-agent-toolkit",
+                  "nodejs",
+                  "nvidia",
+                  "nvidia-nemo",
+                  "open-source",
+                  "python",
+                  "typescript",
+                  "workflow-engine"
+                ]
+              },
+              {
+                "name": "CAG-Cache-Augmented-Generation",
+                "description": "This project implements a demonstrator agent that compares the Cache-Augmented Generation (CAG) Framework with traditional Retrieval-Augmented Generation (RAG) using various LLMs.",
+                "stargazers_count": 33,
+                "language": "Python",
+                "pushed_at": "2024-12-30T19:11:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Small-Language-Model-SLM-Guide",
+                "description": "Comprehensive-Guide-for-Small-Language-Model-Development",
+                "stargazers_count": 26,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-20T04:14:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AdamBrowser",
+                "description": "Adam Browser is a sophisticated AI-powered browser automation system that understands natural language commands and executes complex web interactions including form filling, navigation, travel booking, and map directions.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-04T01:57:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PMO-CrewAI",
+                "description": "Utilize Autonomous AI Agents in a Project Management Office (PMO)",
+                "stargazers_count": 29,
+                "language": "Python",
+                "pushed_at": "2024-04-24T13:25:06Z",
+                "fork": false,
+                "topics": [
+                  "evm",
+                  "pmp",
+                  "project",
+                  "project-management",
+                  "projectschedule",
+                  "risk-management",
+                  "stakeholder-management"
+                ]
+              },
+              {
+                "name": "Recursive-Self-Improvement-AI-Agent",
+                "description": "A Python framework implementing self-modifying AI agents based on G\u00f6del's incompleteness theorems. This framework enables agents to analyze and modify their own code during runtime, achieve self-awareness, and recursively optimize their decision-making processes.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-12-30T14:57:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Adam-2.0-AI-PM-Co-Pilot",
+                "description": "Adam 2.0 was created to be an Artificial Intelligence Project Manager Co-Pilot.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-06-30T19:10:04Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "chatbot",
+                  "gui",
+                  "project-management"
+                ]
+              },
+              {
+                "name": "AI-Show-Me-Ur-Work",
+                "description": "This project implements an AI agent that demonstrates its problem-solving process by showing its work step by step. The agent uses a scratchpad to record intermediate computations and reasoning steps, making it ideal for educational purposes or understanding complex calculations.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-04-04T13:44:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "U-got-Claude",
+                "description": "\ud83d\ude80 Open source Claude Code CLI source code. Advanced AI Agent for developers. Includes TypeScript codebase for LLM tool-calling, agentic workflows, and terminal UI. Remember this is just the skeleton not the brain itself. Found by Chaofan Shou. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-01T18:55:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "materials",
+                "description": "Bonus materials, exercises, and example projects for our Python tutorials",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-03-28T00:23:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NemoClawd-1",
+                "description": "NVIDIA plugin for secure installation of OpenClaw",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-16T20:15:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PaperBananaFX",
+                "description": "PaperBananaFX is a JavaFX desktop orchestration demo for a real-time AI workflow. It targets a specific bottleneck in the \"AI scientist\" workflow: converting method text and figure captions into publication-ready illustrations with semantic fidelity to the method and stylistic conformity to modern research-paper aesthetics.",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-03-16T19:13:42Z",
+                "fork": false,
+                "topics": [
+                  "ai-scientist",
+                  "orchestrator",
+                  "paperbanana",
+                  "paperbananafx"
+                ]
+              },
+              {
+                "name": "awesome-langchain",
+                "description": "\ud83d\ude0e Awesome list of tools and projects with the awesome LangChain framework",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-14T17:08:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-mcp-servers",
+                "description": "Awesome MCP Servers - A curated list of Model Context Protocol servers",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-09-04T20:04:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-ai-agents",
+                "description": "A list of AI autonomous agents",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-15T17:57:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-llm-apps",
+                "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-15T17:56:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Geospatial-Command-Center-Iran",
+                "description": "A real-time, multi-agent OSINT intelligence platform built on Spring Boot 3 + Kotlin that ingests, geo-resolves, validates, fuses, and displays conflict events across Iran on a live interactive map.",
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2026-03-14T18:51:12Z",
+                "fork": false,
+                "topics": [
+                  "geospatial-command-center",
+                  "iran",
+                  "war"
+                ]
+              },
+              {
+                "name": "OLMOTrace-Agent",
+                "description": "An interactive demonstration of OLMOTRACE, a system that traces language model outputs back to their training data in real-time.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-04-12T14:54:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CrawlOps",
+                "description": "CrawlOps is an operations-grade, agentic web crawling platform built for teams that need reliable extraction, browser automation, and intelligent content capture at production scale.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-03T16:43:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FPV-Drone-AI-Agent",
+                "description": "AI-powered autonomous control AI Agent for the EMAX Nanohawk 1S FPV Drone.",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-03-08T19:05:50Z",
+                "fork": false,
+                "topics": [
+                  "ai-agent",
+                  "autonomous-drone",
+                  "betaflight",
+                  "drone",
+                  "emax",
+                  "emax-nanohawk",
+                  "expresslrs",
+                  "flight-controller",
+                  "fpv-drone",
+                  "fpv-goggles",
+                  "llama-cpp",
+                  "mavlink"
+                ]
+              },
+              {
+                "name": "ES-Agent---Longest-Path",
+                "description": "This project implements an AI agent that analyzes project schedules using both Critical Path Method (CPM) and Earned Schedule (ES) techniques.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-03-27T05:41:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Evolving-Deeper-LLM-Thinking",
+                "description": "A multi-agent system demonstrating the principles of Mind Evolution through collaborative problem-solving using different LLM providers.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2025-01-26T16:20:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM-HoneyPot",
+                "description": "A sophisticated cybersecurity system that integrates Large Language Models (LLMs) with Honeypot systems, managed by a team of specialized AI agents.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-02-05T02:26:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "clawlaborator",
+                "description": "Your own Enterprise AI assistant. Any OS. Any Platform. The clawlaborator way.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-15T19:15:50Z",
+                "fork": true,
+                "topics": [
+                  "clawlaborator",
+                  "openclaw"
+                ]
+              },
+              {
+                "name": "AI-Agent-IDGen",
+                "description": "A comprehensive system for generating and managing unique identifiers for AI agents. Track agent activities, monitor performance metrics, and generate detailed reports with our advanced identification and oversight platform.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-27T00:43:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-eye-agent",
+                "description": "AI Eye Agent that trains itself on your eye movement, then moves the cursor where your eyes move on the desktop screen.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-12-23T03:11:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NeuroSim-Engine",
+                "description": "A high-fidelity neural simulation engine for modeling neurocognitive interactions with autism and PTSD overlays.",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-02-21T00:41:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NeuroBM",
+                "description": "NeuroBM is a research and educational platform for cognitive modeling using Boltzmann machines. It provides a framework for exploring cognitive dynamics, hypothesis generation, and understanding human-technology interaction patterns. It is only to be used to study how the Human Brain works as technology is all around us in 2025 and onwards.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-02-21T00:35:54Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "boltzmann-machine",
+                  "chatgpt",
+                  "cognitive-neuroscience",
+                  "diary-of-a-ceo"
+                ]
+              },
+              {
+                "name": "EMPIRE",
+                "description": "EMPIRE: Environment and Maturity Program Insight through Robotic Engines",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-01T03:10:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "StorybooksCrewAI-Groq",
+                "description": "Create storybooks using CrewAI, Groq, and Ollama",
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2024-03-17T20:55:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proximal-Policy-Optimization-Algorithms",
+                "description": "This repository contains a clean and efficient implementation of the Proximal Policy Optimization (PPO) algorithm, a state-of-the-art policy gradient method for reinforcement learning.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-12-27T15:00:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "A.D.A.M.---SLM",
+                "description": "Applied Decision Architecture Matrix - Small Language Model",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-07-25T17:11:38Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "local-slm",
+                  "no-api-key",
+                  "no-frontier-llm",
+                  "private-slm",
+                  "self-contained",
+                  "slm",
+                  "small-language-model"
+                ]
+              },
+              {
+                "name": "Enigma-Machine-SIM",
+                "description": "This enigma-simulator project is an educational tool which simulates the workings of an [Enigma machine][wiki-enigma], the Germans' main military encryption tool during [World War II][wiki-ww2]. The software allows users to encrypt and decrypt messages.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-24T02:01:17Z",
+                "fork": false,
+                "topics": [
+                  "enigma-machine",
+                  "nationalsecurity",
+                  "nsa"
+                ]
+              },
+              {
+                "name": "CRUD-Agentic-System",
+                "description": "A collaborative AI agent system for efficient database management using six specialized agents for data operations, security, and analytics.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-04-04T13:43:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Replicates-Itself",
+                "description": "This project implements a theoretical framework for AI self-replication in a controlled, simulated environment. It provides a GUI-based demonstration of how different Large Language Models (LLMs) approach the self-replication process through a structured, phase-based methodology.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-17T04:50:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ami-java-app-template",
+                "description": "Artificial Machine Intelligence (AMI) Java Application Template",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-01-16T18:46:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "In-Context-Scheming",
+                "description": "A simulation framework for studying AI agent behaviors related to deception, oversight evasion, and strategic manipulation.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-01-31T14:39:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "V-JEPA-Agent",
+                "description": "An interactive demonstration of V-JEPA (Video-based Joint-Embedding Predictive Architecture), a PhD-level Artificial Machine Intelligence (AMI) that showcases how V-JEPA works for learning visual representations from video data.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-04-17T18:44:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PathRAG",
+                "description": "This project demonstrates the PathRAG implementation using a team of 6 AI agents at PhD level to show how PathRAG prunes graph-based RAG using relational paths.",
+                "stargazers_count": 15,
+                "language": "HTML",
+                "pushed_at": "2025-02-27T02:06:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PMO-AI-Agents",
+                "description": "PMO AI Agents is a Python library for creating and managing AI-powered Project Management Office (PMO) environments. ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-07-02T20:36:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PM-WebGrid",
+                "description": "A Python implementation of a Webgrid-inspired Project Management simulation designed to assess and enhance a project manager's decision-making speed, accuracy, and prioritization skills.  Inspired by Neuralink - Webgrid",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-08-25T01:51:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docs",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "MDX",
+                "pushed_at": "2024-08-15T21:17:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GD-JEST",
+                "description": "Algorithm for Just Enough Semantic Typing",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-26T20:59:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AlphaEvolve_Demo",
+                "description": "This project provides an interactive demonstration of the AlphaEvolve paper, allowing users to explore the concepts and methodologies presented in the research.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-09-05T15:48:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "academicpapers",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-04T14:31:26Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:16.412653+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

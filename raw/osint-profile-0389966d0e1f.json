@@ -1,0 +1,91 @@
+{
+  "profileId": "osint-profile-0389966d0e1f",
+  "target": "fuwifur",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:25.921051+00:00",
+  "completedAt": "2026-06-21T15:32:26.256640+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3b7ef95d",
+      "lookupType": "github_context",
+      "target": "fuwifur",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "fuwifur",
+            "name": "fuwi",
+            "type": "User",
+            "company": null,
+            "blog": "https://guns.lol/fuwifur",
+            "location": "im not a bot, add discord to be friends",
+            "bio": "discord: fuwifur\r\na huge gamer and a cross-platform creator\r\ni will follow you back on github if you follow me, and also i am not a bot neither using auto thing",
+            "public_repos": 2,
+            "followers": 1410,
+            "following": 10322,
+            "created_at": "2020-11-30T15:51:58Z",
+            "updated_at": "2026-06-10T01:31:09Z",
+            "html_url": "https://github.com/fuwifur",
+            "avatar_url": "https://avatars.githubusercontent.com/u/75265475?v=4",
+            "repos": [
+              {
+                "name": "Test-2",
+                "description": "hello hi again",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-12-10T08:38:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Test",
+                "description": "hello hi",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-12-08T22:36:06Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:26.255944+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

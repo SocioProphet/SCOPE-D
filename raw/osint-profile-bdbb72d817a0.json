@@ -1,0 +1,100 @@
+{
+  "profileId": "osint-profile-bdbb72d817a0",
+  "target": "Elenavz83",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:15.027514+00:00",
+  "completedAt": "2026-06-21T15:29:15.378270+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e1f4c3c3",
+      "lookupType": "github_context",
+      "target": "Elenavz83",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Elenavz83",
+            "name": "Elena valizadeh",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "IT engineer at Turing Research Team",
+            "public_repos": 3,
+            "followers": 2795,
+            "following": 6286,
+            "created_at": "2024-02-23T20:37:30Z",
+            "updated_at": "2025-05-25T14:16:48Z",
+            "html_url": "https://github.com/Elenavz83",
+            "avatar_url": "https://avatars.githubusercontent.com/u/161081790?v=4",
+            "repos": [
+              {
+                "name": "ubookshop",
+                "description": "Turing research group.",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-04T11:44:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": "Turing research group.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-19T07:08:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": "Turing research group.",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-19T07:05:15Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:15.377618+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

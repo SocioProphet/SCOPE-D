@@ -1,0 +1,208 @@
+{
+  "profileId": "osint-profile-bdb592d9471c",
+  "target": "gaqx",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:53.501535+00:00",
+  "completedAt": "2026-06-21T15:27:54.108442+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ff49aba2",
+      "lookupType": "github_context",
+      "target": "gaqx",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "gaqx",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 15,
+            "followers": 7213,
+            "following": 25723,
+            "created_at": "2023-09-30T10:44:07Z",
+            "updated_at": "2025-11-10T17:43:57Z",
+            "html_url": "https://github.com/gaqx",
+            "avatar_url": "https://avatars.githubusercontent.com/u/146537917?v=4",
+            "repos": [
+              {
+                "name": "Binance.Net",
+                "description": "A C# .netstandard client library for the Binance REST and Websocket Spot and Futures API focusing on clear usage and models",
+                "stargazers_count": 27,
+                "language": null,
+                "pushed_at": "2024-04-09T19:51:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Kraken.Net",
+                "description": "A C# .netstandard client library for the Kraken REST and Websocket Spot and Futures API focusing on clear usage and models",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2024-04-07T19:40:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CoinEx.Net",
+                "description": "A C# .netstandard client library for the CoinEx REST and Websocket Spot API focusing on clear usage and models",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2024-04-06T12:01:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bybit.Net",
+                "description": "A C# .netstandard client library for the Bybit REST and Websocket V5 API focusing on clear usage and models",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-03T14:52:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bitget.Net",
+                "description": "A C# .netstandard client library for the Bitget REST and Websocket Spot and Futures API focusing on clear usage and models",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-04-06T18:14:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bitfinex.Net",
+                "description": "A C# .netstandard client library for the Bitfinex REST and Websocket API focusing on clear usage and models",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-03T19:31:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BingX.Net",
+                "description": "A C# .netstandard client library for the BingX REST and Websocket Spot and Futures API focusing on clear usage and models",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-04-04T14:42:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aggr",
+                "description": "Cryptocurrency trades aggregator",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-03-30T23:35:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OKX.Net",
+                "description": "A C# .netstandard client library for the OKX REST and Websocket Spot and Futures API focusing on clear usage and models",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-03T14:53:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Mexc.Net",
+                "description": "A C# .netstandard client library for the Mexc REST and Websocket Spot API focusing on clear usage and models",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-03T14:53:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Kucoin.Net",
+                "description": "A C# .netstandard client library for the Kucoin REST and Websocket Spot and Futures API focusing on clear usage and models",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-04-03T19:40:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Huobi.Net",
+                "description": "A C# .netstandard client library for the Huobi REST and Websocket Spot and Swap API focusing on clear usage and models",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-04-03T19:38:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CoinGecko.Net",
+                "description": "A C# .netstandard client library for the CoinGecko REST API focusing on clear usage and models",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-03T14:52:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Finpro",
+                "description": "FinPro prioritizes user experience with its user-friendly interfaces. It includes components specifically designed for financial applications such as investment, banking, financial analysis, and cryptocurrency, which speeds up your design process and helps you achieve excellent results.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-04-18T08:35:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "java-springboot",
+                "description": "This repository contains the source code and assignment solutions for the (Java & React) Software Developer Training Camp \u2013 Java module. I prepared these resources to support others in their learning journey.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-07-22T12:31:00Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:54.108121+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

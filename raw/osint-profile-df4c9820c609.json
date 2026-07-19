@@ -1,0 +1,275 @@
+{
+  "profileId": "osint-profile-df4c9820c609",
+  "target": "murapadev",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:52.012903+00:00",
+  "completedAt": "2026-06-21T15:27:52.619448+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-07087796",
+      "lookupType": "github_context",
+      "target": "murapadev",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "murapadev",
+            "name": "Pablo RM",
+            "type": "User",
+            "company": null,
+            "blog": "https://murapa.dev",
+            "location": "Spain",
+            "bio": "Software Developer with a focus on web development encompassing both Frontend and Backend. Experienced in cross-platform application development.",
+            "public_repos": 16,
+            "followers": 7327,
+            "following": 7706,
+            "created_at": "2015-01-16T05:07:31Z",
+            "updated_at": "2026-05-23T04:19:46Z",
+            "html_url": "https://github.com/murapadev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10557163?v=4",
+            "repos": [
+              {
+                "name": "NeuralDeck",
+                "description": "Your invisible AI command center. All your AIs on the same place",
+                "stargazers_count": 5,
+                "language": "C#",
+                "pushed_at": "2026-06-08T21:35:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PicoZen",
+                "description": "An alternative AND UNOFFICIAL library and utility app for PICO XR (and Quest). Designed to look and feel like it came stock.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-08-30T16:56:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VsCodex",
+                "description": "A VsCode extension that add the capabilities of OpenAi Playground.",
+                "stargazers_count": 22,
+                "language": "HTML",
+                "pushed_at": "2023-03-24T08:42:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GBJava",
+                "description": "A WIP GB emulator made from scratch in java.",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2026-03-26T10:36:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "YoutubeNLP",
+                "description": "A Streamlit application for analyzing YouTube video comments using Natural Language Processing techniques.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-03-26T10:36:55Z",
+                "fork": false,
+                "topics": [
+                  "comments",
+                  "nlp",
+                  "nltk",
+                  "sentimental",
+                  "youtube"
+                ]
+              },
+              {
+                "name": "HAMC",
+                "description": "HAMC (Hierarchical Adaptive Model Collapse) is an implementation of procedural content generation that combines different texture generations methods.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-09-17T19:42:13Z",
+                "fork": false,
+                "topics": [
+                  "connectivity-constraints",
+                  "content-generation",
+                  "entropy-based",
+                  "game-development",
+                  "generative-algorithms",
+                  "hierarchical-generation",
+                  "map-generation",
+                  "multi-level-generation",
+                  "pcg",
+                  "procedural-generation",
+                  "python",
+                  "terrain-generation",
+                  "wave-function-collapse",
+                  "weighted-generation",
+                  "wfc"
+                ]
+              },
+              {
+                "name": "murapadev",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-01T23:49:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hermes-agent",
+                "description": "The agent that grows with you",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-01T23:37:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ionic6SweetAlert",
+                "description": "A repo with SweetAlert2 and Ionic 6 to reproduce an error",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2022-05-24T13:46:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "venvswitch",
+                "description": "Smart Python virtual environment switching for Zsh",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2026-03-26T10:36:56Z",
+                "fork": false,
+                "topics": [
+                  "oh-my-zsh",
+                  "oh-my-zsh-plugin",
+                  "python-virtual-environment",
+                  "virtual-environment-manager"
+                ]
+              },
+              {
+                "name": "strap",
+                "description": "A small, efficient C library providing missing utilities for safe and comfortable string manipulation and time helpers. Designed to be lightweight, portable, and easy to integrate into C projects.",
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2026-03-26T10:36:57Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "library",
+                  "parser",
+                  "string",
+                  "timeutils"
+                ]
+              },
+              {
+                "name": "ZTodo",
+                "description": "A powerful, SQLite-based task management plugin for Oh-My-Zsh that provides persistent storage, priority levels, categories, deadlines, and efficient search capabilities. Designed for developers who live in the terminal and want a seamless, integrated todo management experience.",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2026-03-26T10:36:58Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "oh-my-zsh",
+                  "oh-my-zsh-custom",
+                  "oh-my-zsh-plugin",
+                  "productivity",
+                  "shell",
+                  "task-management",
+                  "terminal",
+                  "todo",
+                  "zsh",
+                  "zsh-plugin",
+                  "ztodo"
+                ]
+              },
+              {
+                "name": "background-remover",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-03-26T10:36:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ImageUpscaler",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-03-26T10:37:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "face-catcher",
+                "description": "A Python script that downloads AI-generated face images from thispersondoesnotexist.com and automatically classifies them by age and ethnicity using advanced deep learning models.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-03-26T10:37:02Z",
+                "fork": false,
+                "topics": [
+                  "computer-vision",
+                  "deepface",
+                  "machine-learning",
+                  "opencv",
+                  "python",
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "Populpy",
+                "description": "Fetch related searches for a given query from Google Trends, and for each related search, it retrieves the date it was most popular and its popularity score",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-04-05T21:29:18Z",
+                "fork": false,
+                "topics": [
+                  "google",
+                  "query",
+                  "searchs",
+                  "trends"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:52.619002+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

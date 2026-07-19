@@ -1,0 +1,487 @@
+{
+  "profileId": "osint-profile-5b2b1dc6177b",
+  "target": "ZhuChenn",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:39.441254+00:00",
+  "completedAt": "2026-06-20T13:53:40.528659+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-50b026d8",
+      "lookupType": "github_context",
+      "target": "ZhuChenn",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ZhuChenn",
+            "name": "Zhu",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "China",
+            "bio": "Software Engineer, Web Development.\r\n",
+            "public_repos": 46,
+            "followers": 1478,
+            "following": 1188,
+            "created_at": "2014-06-23T07:38:10Z",
+            "updated_at": "2026-01-11T13:04:49Z",
+            "html_url": "https://github.com/ZhuChenn",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7961988?v=4",
+            "repos": [
+              {
+                "name": "RetryMechanism",
+                "description": "Intelligent Adaptive Resource Optimizer with Auto-Retry capabilities, ensuring Scalable and Resilient Configurable Operation Engine.",
+                "stargazers_count": 15,
+                "language": "Go",
+                "pushed_at": "2025-10-28T15:05:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "booify",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-02-24T02:51:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HealthChecker",
+                "description": "Instantaneous Anomaly Detector and Automated Incident Manager orchestrator. featuring automated-incident-response capabilities with scalable architecture",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T15:06:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AIPAC-tracker",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-02-04T00:56:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Joe",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-01-14T06:10:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zkGuard",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-11-18T19:11:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SchemaValidator",
+                "description": "Efficient schema governance via distributed processing, auto-scaling, and real-time analytics orchestrator. implementing modern low-latency-validation patterns",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-29T23:04:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeFi",
+                "description": "Real-Time Smart Contract Insight Engine that leverages Machine Learning and Distributed Ledger Analysis capabilities.",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2025-10-29T23:10:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ProxyServer",
+                "description": "Distributed Real-Time Data Processing Infrastructure leveraging caching for scalable, highly available, and secure enterprise ProxyServer Platform.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:43:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CachingLayer",
+                "description": "Dynamically orchestrated distributed caching fabric optimized for auto-scaling and load balancing across multi-node Platform.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:42:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CloudAdapter",
+                "description": "Enterprise-grade CloudAdapter enables intelligent, real-time data processing and predictive analytics fusion via a highly scalable, distributed gateway.",
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:39:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DatabasePool",
+                "description": "Synergized DatabasePool orchestrates adaptive, predictive caching and failover resilience across dynamic, tiered Nexus.",
+                "stargazers_count": 5,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:41:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ContainerOrchestrator",
+                "description": "Decentralized container orchestrator for scalable, self-aware service mesh automation and adaptive deployment orchestration hub.",
+                "stargazers_count": 8,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:38:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MicroserviceCore",
+                "description": "Modularized, containerized service mesh orchestrates intelligent, auto-scaling API gateways through adaptive, microservice-aware controller.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T15:37:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebSocket",
+                "description": "Adaptive, Auto-Scaling WebSocketHub orchestrates intelligent, distributed pub-sub deployments with seamless gateway functionality.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:36:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RE",
+                "description": "Sophisticated enterprise-crafted RESTfulAPI framework leveraging adaptive caching and intelligent content-routing strategies. implementing modern content-routing patterns",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:35:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StreamProcessor",
+                "description": "Decentralized, cloud-native StreamProcessor Core enables scalable, real-time stream-based data ingestion and high-throughput processing as a unified Module.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T15:33:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GraphQ",
+                "description": "Self-Healing, Adaptive GraphQLServer for Intelligent Query Optimization, Enhanced Caching, and Secure Distributed Infrastructure.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T15:34:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QueueWorker",
+                "description": "Decentralized task-execution orchestrator dynamically allocating resources for optimized, intelligent load-balancing and high-throughput pipeline Broker",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:31:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BackupService",
+                "description": "Self-Healing BackupService Appliance enabling Real-Time Monitoring, Automated Failover, and Adaptive Scalability. providing enterprise-grade BackupService solutions",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:30:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebStack",
+                "description": "Transformative Web3Stack enables decentralized, blockchain-driven event sourcing with AI-optimized auto-scaling protocol. with modular architecture",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:27:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenManager",
+                "description": "Microservices-driven, Multi-tenant TokenManager orchestrates Event-driven workflows with High Availability and Adaptive Scalability Core.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:25:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockchainS",
+                "description": "Enterprise-class BlockchainSDK: Decentralized Identity Manager and Real-time Data Orchestrator for Secure, Scalable, and Adaptive Gateway.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:26:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EthDashboard",
+                "description": "Continuous, adaptive analytics insights delivered through an intelligent, cloud-optimized EthDashboard portal. implementing modern auto-scaling and load balancing patterns",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:24:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CryptoA",
+                "description": "Decentralized, self-healing, and auto-scaling CryptoAPI Framework for high-performance, real-time transaction processing, optimized SmartSuite.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:23:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OR",
+                "description": "Data-Driven Multi-Dimensional Modeling Interface for Scalable, Intelligent, Distributed Data Analytics and Real-Time Insights Integration.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:21:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CommandHandler",
+                "description": "Dynamic event-driven CommandHandler orchestrator for scalable, intelligent API gateway integration and distributed system control.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:18:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QueryBuilder",
+                "description": "Synthesizing multi-node query distribution with intelligent auto-scaling, our QueryBuilder ensures Scalable, Efficient Data Orchestration across DataPlatform.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-10-28T15:20:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EventBus",
+                "description": "Effortless event-driven communication unfolds across a resilient, self-healing network Hub. with Real-time architecture",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:17:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WorkflowEngine",
+                "description": "Autonomous adaptive workflow orchestrator dynamically allocates resources for intelligent processing and seamless execution as a distributed decision executor.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:16:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SchedulerService",
+                "description": "Event-Driven Orchestrator for Dynamic Resource Allocation and Adaptive Scaling across Distributed Workload Gateways.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:15:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ParserEngine",
+                "description": "High-Performance, Semantically-Aware ParserEngine, leveraging Auto-Scaling intelligence for Adaptive, Predictive processing and Dynamic Data Transformation.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:13:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SerializerKit",
+                "description": "Asynchronous Data Streaming orchestrator, enabling Scalable, Multi-Threaded processing for Real-Time, Highly-Available applications, built on SerializerKit Framework.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:14:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CompressionUtil",
+                "description": "Real-time, high-speed data decompression and transfer optimized via scalable, intelligent distributed processing solution.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:12:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EncryptionLib",
+                "description": "Automated encryption orchestration and distributed key management empower robust Cryptographic Service Ecosystems.",
+                "stargazers_count": 11,
+                "language": "Go",
+                "pushed_at": "2025-10-28T15:11:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SecretVault",
+                "description": "Secure, self-healing data sanctum leveraging real-time compression and end-to-end encryption, ensuring ultra-high availability and resilient vault manager.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T15:10:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MetricsCollector",
+                "description": "Predictive analytics-driven MetricsCollector optimizes resource utilization with real-time adaptive sampling and granular insights on DataPlatform.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:08:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TracingService",
+                "description": "Adaptive Real-time Tracing Service: Orchestrating End-to-End Visibility with Machine-Learning-Infused Optimization and Distributed Scalability Core.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-10-28T15:09:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "three",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2019-04-25T09:41:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JD_tools",
+                "description": "\u8585\u7f8a\u6bdb\u5c0f\u5de5\u5177",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-08-17T01:37:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "koa2",
+                "description": "koa2",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-11-26T14:20:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test",
+                "description": "\u9879\u76ee\u63cf\u8ff0",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-11-26T07:06:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "learn-javascript",
+                "description": "JavaScript\u5168\u6808\u6559\u7a0b\u53c2\u8003\u6e90\u7801\u2192 http://t.cn/R2Elz3O \u8d5e\u52a9\u2192 http://t.cn/R5bhVpf",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-08-21T06:49:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "express1",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-11-17T00:33:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "frist",
+                "description": "test git",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-05-07T01:54:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "musicapp",
+                "description": "\u64ad\u653e\u5668",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2017-12-04T00:59:33Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:40.527031+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

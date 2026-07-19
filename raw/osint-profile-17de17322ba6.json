@@ -1,0 +1,115 @@
+{
+  "profileId": "osint-profile-17de17322ba6",
+  "target": "SWxEng",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:56.705653+00:00",
+  "completedAt": "2026-06-21T15:29:57.065848+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-840c42c9",
+      "lookupType": "github_context",
+      "target": "SWxEng",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "SWxEng",
+            "name": "Software Engineer - \u0645\u0647\u0646\u062f\u0633 \u0628\u0631\u0645\u062c\u064a\u0627\u062a",
+            "type": "User",
+            "company": "Virtual World \u0627\u0644\u0639\u0627\u0644\u0645 \u0627\u0644\u0627\u0641\u062a\u0631\u0627\u0636\u0649",
+            "blog": "https://192.168.1.1/",
+            "location": "Cyber Space \u0627\u0644\u0641\u0636\u0627\u0621 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a",
+            "bio": "\u0645\u0637\u0648\u0631\u0647\u0648\u0627\u064a\u0629 \u0646\u0634\u0627\u0637 \u0645\u0646\u062a\u0638\u0645 \u0623\u0648 \u0627\u0647\u062a\u0645\u0627\u0645 \u064a\u0645\u0627\u0631\u0633 \u0641\u064a \u0627\u0644\u063a\u0627\u0644\u0628 \u062e\u0644\u0627\u0644 \u0623\u0648\u0642\u0627\u062a \u0627\u0644\u0641\u0631\u0627\u063a \u0628\u0642\u0635\u062f \u0627\u0644\u0645\u062a\u0639\u0629 \u0623\u0648 \u0627\u0644\u0631\u0627\u062d\u0629 \u0648\u062a\u0624\u062f\u064a \u0625\u0644\u0649 \u0627\u0643\u062a\u0633\u0627\u0628 \u0645\u0647\u0627\u0631\u0627\u062a \u0648\u0645\u0639\u0631\u0641\u0629 \u0643\u0628\u064a\u0631\u0629 \u0648\u0644\u0627 \u064a\u0642\u0635\u062f \u0628\u0647\u0627 \u062a\u062d\u0642\u064a\u0642 \u0627\u0644\u0623\u062c\u0631 \u0648\u0625\u0646\u0645\u0627 \u0627\u0644\u0645\u062a\u0639",
+            "public_repos": 4,
+            "followers": 2234,
+            "following": 13558,
+            "created_at": "2019-09-10T00:23:54Z",
+            "updated_at": "2026-05-26T12:44:50Z",
+            "html_url": "https://github.com/SWxEng",
+            "avatar_url": "https://avatars.githubusercontent.com/u/55116927?v=4",
+            "repos": [
+              {
+                "name": "Hello-World",
+                "description": "! \u0645\u0631\u062d\u0628\u0627 \u0628\u0627\u0644\u0639\u0627\u0644\u0645",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2022-09-04T14:56:07Z",
+                "fork": false,
+                "topics": [
+                  "hello",
+                  "hello-world",
+                  "hello-world-github",
+                  "helloworld",
+                  "world"
+                ]
+              },
+              {
+                "name": "SWxEng",
+                "description": "\u0645\u0647\u0646\u062f\u0633 \u0628\u0631\u0645\u062c\u064a\u0627\u062a",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-03-16T07:48:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SWxEng.github.io",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-09-10T02:53:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Donate",
+                "description": "\u062a\u0628\u0631\u0639",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-08-31T04:41:36Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:57.065531+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

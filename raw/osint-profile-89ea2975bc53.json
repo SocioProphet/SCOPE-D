@@ -1,0 +1,646 @@
+{
+  "profileId": "osint-profile-89ea2975bc53",
+  "target": "Jones-6199",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:53.697175+00:00",
+  "completedAt": "2026-06-21T15:28:54.887847+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ed90b733",
+      "lookupType": "github_context",
+      "target": "Jones-6199",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Jones-6199",
+            "name": "Younes BENZIANE",
+            "type": "User",
+            "company": "Founder at @MeetYourSkills || Active Member GCE @Campus-Experts-Algeria  ||  Frontend Engineer at @STEM-for-Others",
+            "blog": "benzianeyounes.me",
+            "location": "Agiers, Algeria",
+            "bio": "Sr. Software Engineer || Frontend Specialist || Passionate about learning and teaching programming || Open Source Contributor || Technical Content Creator ||",
+            "public_repos": 118,
+            "followers": 3107,
+            "following": 14202,
+            "created_at": "2025-08-10T14:29:41Z",
+            "updated_at": "2026-06-09T14:04:06Z",
+            "html_url": "https://github.com/Jones-6199",
+            "avatar_url": "https://avatars.githubusercontent.com/u/225714054?v=4",
+            "repos": [
+              {
+                "name": "Jones-6199",
+                "description": null,
+                "stargazers_count": 38,
+                "language": null,
+                "pushed_at": "2026-06-19T23:23:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dashbord-SSR",
+                "description": "Customer management dashboard built with Express.js, MongoDB, and EJS, featuring CRUD operations, Bootstrap UI, and Moment.js integration.",
+                "stargazers_count": 30,
+                "language": "EJS",
+                "pushed_at": "2026-02-27T16:45:38Z",
+                "fork": false,
+                "topics": [
+                  "ejs-template-engine",
+                  "expressjs",
+                  "momentjs",
+                  "mongodb",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "Product-System-Managment",
+                "description": "Product System Management application built using HTML, CSS, and JavaScript. It allows users to add, edit, delete, and search for products while storing all data in the browser using localStorage. The interface is clean and easy to use, and the system helps practice core CRUD operations, form handling, DOM manipulation.",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-28T22:24:36Z",
+                "fork": false,
+                "topics": [
+                  "javascript-applications",
+                  "vanilla-javascript"
+                ]
+              },
+              {
+                "name": "Syfit-Gym",
+                "description": "SyFit GYM - A clean and responsive website for a fitness brand. Focused on performance, accessibility, and modern design aesthetics.",
+                "stargazers_count": 22,
+                "language": "HTML",
+                "pushed_at": "2026-02-28T22:25:55Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "fontawesome",
+                  "html5",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "Windows-xp-portfolio",
+                "description": "Windows XP\u2013inspired personal portfolio built with React (Vite) and Tailwind CSS. This project recreates the classic Windows XP desktop experience while showcasing my projects, skills, and contact information in a creative and interactive way.",
+                "stargazers_count": 67,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-03T01:15:11Z",
+                "fork": false,
+                "topics": [
+                  "clsx",
+                  "framer-motion",
+                  "momentjs",
+                  "react-dom",
+                  "react-hooks",
+                  "react-js",
+                  "tailwindcss",
+                  "windows-xp-portfolio"
+                ]
+              },
+              {
+                "name": "NutriFlow",
+                "description": "NutriFlow Pro is a modern fitness tracking app that helps users monitor calories, workouts, hydration, sleep, and daily health progress through a clean and intuitive dashboard.",
+                "stargazers_count": 26,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-06T15:36:08Z",
+                "fork": false,
+                "topics": [
+                  "calories-calculator",
+                  "calories-tracker",
+                  "fitness-application",
+                  "fitness-goals",
+                  "vanilla-javascript"
+                ]
+              },
+              {
+                "name": "skills-secure-repository-supply-chain",
+                "description": "GitHub Education exercise on securing the repository supply chain and ensuring safe dependencies using GitHub tools.",
+                "stargazers_count": 24,
+                "language": "C#",
+                "pushed_at": "2026-05-01T10:08:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ecommerce-SaaS",
+                "description": "E-commerce web application built with Vue.js, Firebase, and Sass, featuring secure authentication, real-time data management, and a seamless shopping experience.",
+                "stargazers_count": 50,
+                "language": "Vue",
+                "pushed_at": "2026-05-08T18:05:41Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "saas-application",
+                  "vuejs"
+                ]
+              },
+              {
+                "name": "Fitnesszone",
+                "description": "GYM and fitness web application built to showcase training programs, memberships, and a seamless user experience with a modern and engaging interface.",
+                "stargazers_count": 55,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-08T18:32:00Z",
+                "fork": false,
+                "topics": [
+                  "gym",
+                  "gym-website",
+                  "javascript",
+                  "reactjs",
+                  "tailwind-css"
+                ]
+              },
+              {
+                "name": "skills-deploy-to-azure",
+                "description": "GitHub Education exercise on deploying applications to Microsoft Azure using GitHub Actions",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-06T19:23:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-test-with-actions",
+                "description": "GitHub Education exercise on running automated tests using GitHub Actions",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-12-06T19:20:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-write-javascript-actions",
+                "description": "Practice project from GitHub Education focused on creating, configuring, and running a custom JavaScript GitHub Action. Includes hands-on work with workflows, action metadata, and automation basics",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-12-06T19:31:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-publish-packages",
+                "description": "GitHub Education exercise on publishing and managing packages using GitHub Packages and GitHub Actions",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2025-12-06T19:27:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reqres",
+                "description": "Powerful classes for http requests and responses",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-12-11T06:53:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "skills-hello-github-actions",
+                "description": "Exercise: Create and run a GitHub Actions Workflow (Introductory GitHub Education exercise on creating and running your first GitHub Actions workflow)",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-01-01T20:21:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tarmeez-academy-api-challenge",
+                "description": "Vanilla JavaScript API challenge by Tarmeez Academy, practicing REST API consumption, async requests, and error handling without promises.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-24T20:51:58Z",
+                "fork": false,
+                "topics": [
+                  "fetch-api",
+                  "vanilla-javascript"
+                ]
+              },
+              {
+                "name": "tarmeez-academy-promises-challenge",
+                "description": "Tarmeez Academy Challenge: Fetching data from APIs and dynamically rendering it in the UI using JavaScript Promises and Fetch API",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-12T15:13:29Z",
+                "fork": false,
+                "topics": [
+                  "promises-in-javascript"
+                ]
+              },
+              {
+                "name": "material-ui-dark-mode",
+                "description": "Small collection of reusable Material UI dark mode setup files, saved for quick access and easy integration into future React projects.small collection of reusable Material UI dark mode setup files, saved for quick access and easy integration into future React projects.",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-24T20:54:13Z",
+                "fork": false,
+                "topics": [
+                  "dark-mode",
+                  "dark-theme",
+                  "material-ui"
+                ]
+              },
+              {
+                "name": "vscode-settings",
+                "description": "Clean and optimized VS Code settings.json for developers. Focused on productivity, code formatting, and a minimal, distraction-free workflow. Open source. feel free to use, tweak, and contribute.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-01-24T20:54:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Customer-Management-Dashboard",
+                "description": "Responsive customer management dashboard built with Bootstrap. It provides essential admin features such as adding, editing, and deleting customers, organized navigation, and logout functionality. Designed to demonstrate practical UI/UX skills and dashboard architecture.",
+                "stargazers_count": 14,
+                "language": "HTML",
+                "pushed_at": "2026-01-24T20:54:46Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "dashboard-application"
+                ]
+              },
+              {
+                "name": "easy-bank-landing-page",
+                "description": "Responsive landing page for a bank, showcasing services and user-friendly design.",
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2026-01-24T20:54:57Z",
+                "fork": false,
+                "topics": [
+                  "bank-landing-page"
+                ]
+              },
+              {
+                "name": "Fooddddie",
+                "description": "A responsive restaurant landing page built with Bootstrap and custom CSS, featuring a clean layout, modern design, and mobile-friendly user experience.",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2026-01-24T20:55:10Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "css3",
+                  "html5",
+                  "restaurent-website"
+                ]
+              },
+              {
+                "name": "restaurant-web-landing-page-frw",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2026-01-24T20:55:23Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "html5",
+                  "vanila-javascript"
+                ]
+              },
+              {
+                "name": "Error-Handling-Try-Catch-Finally-Throw",
+                "description": "An example demonstrating JavaScript error handling using try, catch, and finally blocks to safely manage runtime errors and ensure final execution steps.",
+                "stargazers_count": 16,
+                "language": "HTML",
+                "pushed_at": "2026-01-24T20:55:56Z",
+                "fork": false,
+                "topics": [
+                  "finally",
+                  "try-catch",
+                  "vanilla-javascript"
+                ]
+              },
+              {
+                "name": "AllureBay-Store",
+                "description": "AllureBay is a modern, responsive e-commerce web application built with React and Material-UI. It provides a smooth and visually appealing shopping experience, featuring product listings, product details, ratings, and an intuitive user interface.",
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-24T21:00:36Z",
+                "fork": false,
+                "topics": [
+                  "eccomerce-app",
+                  "material-ui",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "Full-Stack-Store",
+                "description": "Full-stack e-commerce website built with React for the frontend and Strapi CMS for the backend, allowing users to browse products, add items to the cart, and manage orders.",
+                "stargazers_count": 28,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-24T21:00:45Z",
+                "fork": false,
+                "topics": [
+                  "ecommerce-website",
+                  "reactjs",
+                  "strapi-cms"
+                ]
+              },
+              {
+                "name": "Admin-Dashboard",
+                "description": "Professional admin dashboard built with React and Material UI, designed for scalability, performance, and clean user experience.",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-24T21:00:55Z",
+                "fork": false,
+                "topics": [
+                  "admin-dashboard",
+                  "mui",
+                  "react-app"
+                ]
+              },
+              {
+                "name": "Islamic-Prayer-Times",
+                "description": "Prayer times web application built with React and Material UI, It uses the Aladhan API to display accurate daily prayer times and calculate the remaining time until the next prayer for Makkah Al-Mukarramah, Madinah, and Riyadh.",
+                "stargazers_count": 24,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-24T21:01:02Z",
+                "fork": false,
+                "topics": [
+                  "apis",
+                  "islamic-prayer-times",
+                  "material-ui",
+                  "momentjs",
+                  "react-application"
+                ]
+              },
+              {
+                "name": "Algeriene-ramadhan-Imsak-iftar-prayer-times",
+                "description": "Web app that displays Ramadan 2026 Imsak, Iftar, and prayer times for all 58 Algerian wilayas. Users can select their wilaya to get accurate timings, with Quran verses and authentic Hadith shown for each prayer time. Built using pure HTML, CSS, Vanilla JavaScript, Axios, and Aladhan API.",
+                "stargazers_count": 16,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-24T21:01:11Z",
+                "fork": false,
+                "topics": [
+                  "imsak-application",
+                  "rest-api",
+                  "vanilla-javascript"
+                ]
+              },
+              {
+                "name": "task-manager-app",
+                "description": "Task management app powered by React + Vite with Material UI, featuring advanced task handling, state management.",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2026-02-08T15:17:13Z",
+                "fork": false,
+                "topics": [
+                  "material-ui",
+                  "reactjs",
+                  "task-manager"
+                ]
+              },
+              {
+                "name": "CRUD-Project---React-Js",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-10-05T14:45:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data-Fetching-React-js",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-01T22:11:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Routing-Using-React-Js",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-02T01:44:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Lazy-Loading-React-Js",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-02T22:09:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "material-ui-fw",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-03T17:01:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LI--updated",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2025-10-03T13:21:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crud-js",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-10-12T13:12:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "system-managment-app",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-10-16T18:04:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Portfolio",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-19T14:26:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Coffe-Shop-Website",
+                "description": "Coffe shop website built using pure HTML, CSS, and JavaScript. It features a modern and cozy coffee-themed layout with sections like the hero area, menu, about, services, and contact. The website is fully responsive and includes smooth interactions and animations to enhance the user experience. It was created to pr",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-11-02T00:06:16Z",
+                "fork": false,
+                "topics": [
+                  "coffee-shop"
+                ]
+              },
+              {
+                "name": "Ecommerce-Website",
+                "description": "A full eCommerce website built with pure HTML, CSS, and JavaScript, featuring a modern UI and smooth user experience. It includes product listings, a shopping cart system, dynamic interactions, and responsive layouts without using any external libraries or frameworks. The goal of the project is to practice building complete website ",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-11-02T20:07:55Z",
+                "fork": false,
+                "topics": [
+                  "css-flexbox",
+                  "css-grid",
+                  "css3",
+                  "functions",
+                  "html5",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "creating-elements-using-tailwind-css",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-11-03T22:17:07Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "html5",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "projects-using-bootstrap",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-11-04T14:22:42Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "html5"
+                ]
+              },
+              {
+                "name": "Bootstrap-ex",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-11-04T16:31:47Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap"
+                ]
+              },
+              {
+                "name": "packages",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-04T16:42:12Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "packages"
+                ]
+              },
+              {
+                "name": "ain-javascript",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-04T16:43:13Z",
+                "fork": false,
+                "topics": [
+                  "javascript"
+                ]
+              },
+              {
+                "name": "toolkit-tools",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-04T16:44:29Z",
+                "fork": false,
+                "topics": [
+                  "framework"
+                ]
+              },
+              {
+                "name": "dom",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-04T16:46:20Z",
+                "fork": false,
+                "topics": [
+                  "dom",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "sass-packages",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "SCSS",
+                "pushed_at": "2025-11-04T16:49:10Z",
+                "fork": false,
+                "topics": [
+                  "scss",
+                  "scss-styles"
+                ]
+              },
+              {
+                "name": "bootstrap-packages-javascript",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-11-04T17:53:14Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:54.887373+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

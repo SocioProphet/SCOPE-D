@@ -1,0 +1,432 @@
+{
+  "profileId": "osint-profile-698441917158",
+  "target": "Kobra-soft",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:59.946846+00:00",
+  "completedAt": "2026-06-20T16:49:00.651896+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-11709483",
+      "lookupType": "github_context",
+      "target": "Kobra-soft",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Kobra-soft",
+            "name": null,
+            "type": "User",
+            "company": "kobra.soft01@gmail.com",
+            "blog": "",
+            "location": "Midlands, UK",
+            "bio": "Full Stack Web & Mobile App Developer | \ud83c\udf93 BSc Degree in Computing Science. FOLLOW ME > I WILL FOLLOW YOU BACK! :)",
+            "public_repos": 36,
+            "followers": 879,
+            "following": 863,
+            "created_at": "2022-08-29T17:03:06Z",
+            "updated_at": "2026-02-01T17:42:23Z",
+            "html_url": "https://github.com/Kobra-soft",
+            "avatar_url": "https://avatars.githubusercontent.com/u/112418998?v=4",
+            "repos": [
+              {
+                "name": "apple_website",
+                "description": "Apple iPhone 15 3D Web App Clone [REACT / VITE]",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-09T18:38:52Z",
+                "fork": false,
+                "topics": [
+                  "3d-graphics",
+                  "3d-models",
+                  "reactjs",
+                  "responsive-design",
+                  "tailwindcss",
+                  "typography",
+                  "vitejs"
+                ]
+              },
+              {
+                "name": "my-svelte-app",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-24T22:19:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-nuxt-app",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-11T20:40:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "airbnb_clone_rn",
+                "description": "Airbnb Clone - SDK 51 (September 2024) | reverse engineered full UI design screens | Haptic Touch Feedback | NavMenuSlider(SVG's) <-> (see SCREENSHOTS folder for UI Design screens)",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-09T14:40:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "netflix-clone-nextjs",
+                "description": "Netflix Clone - TypeScript, using Prisma & TMDB API for the back-end. (Login screen | Authentication | Nav Menu's | Responsive Design | Breakpoints | Movie Video Trailer with information etc)",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-29T12:10:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deliveroo-clone",
+                "description": "Deliveroo Clone - SDK 51 (September 2024) / reverse engineered full UI design screens, using SANITY.IO for the back-end / shopping basket) (see SCREENSHOTS folder for UI Design screens)",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-09T12:50:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "3d_portfolio_react",
+                "description": "3D Portfolio Web App [REACT / VITE] ",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-09T19:01:08Z",
+                "fork": false,
+                "topics": [
+                  "3d-graphics",
+                  "3d-models",
+                  "animation-css",
+                  "reactjs",
+                  "typography",
+                  "vitejs"
+                ]
+              },
+              {
+                "name": "ks_profile_app",
+                "description": "GSAP / Animations / transitions 3D (Work In progress)",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-23T19:04:02Z",
+                "fork": false,
+                "topics": [
+                  "animations",
+                  "design",
+                  "scrolltrigger",
+                  "transitions",
+                  "typography"
+                ]
+              },
+              {
+                "name": "my-astro-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Astro",
+                "pushed_at": "2025-06-22T11:54:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-gatsby-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-18T21:57:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-blitz-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-02T13:25:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mv-blitz-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-27T22:43:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-remix-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-16T21:59:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NewSDK_MobileApp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-12T21:53:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-nextjs-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-07T21:04:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-06T11:06:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-app-sdk49",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-22T23:08:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kobra-soft",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-12-11T23:59:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FlashLive",
+                "description": "A helper library for accessing the FlashLive API for sports on RapidAPI.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-03-09T18:11:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ecommerce-app",
+                "description": "Basic Ecommerce Mobile App - with JSON data for modelling mapping the shop data. Did this to see if new SDK 47 is working for my portfolio links. ",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-05-15T11:44:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "coffee_app",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-12T09:24:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Coding-test_React-native__ExpoGo-Version",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-26T14:56:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "3column_webpage_demo_react_vite",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-07T10:14:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-app",
+                "description": "SDK 52 - React Native Mobile App (TESTING)",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-28T19:51:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-sdk51-app",
+                "description": "React Native Mobile App - (SDK51) / ExpoGo & EAS Build [TEST]",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-11T09:01:40Z",
+                "fork": false,
+                "topics": [
+                  "expo",
+                  "java",
+                  "navigation",
+                  "react-native",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "TestAppSDK47",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2023-12-29T03:10:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stripe-payment-elements-with-https-demo",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-07-17T21:49:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "netflix-clone-nextjs-webapp",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-04-23T17:49:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "newsapp_nextjs_typescript",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-08-20T20:19:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ups-clone-2.0",
+                "description": "UPS Clone Mobile App - using a local host address to use the STEPZEN / apollo client backend for UPS data, mapping etc. Only works on local host. SDK48",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-06-08T11:37:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "splashscreen_rn",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-05T20:30:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testAppNewSDK",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-22T23:49:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "news-app",
+                "description": "News App for website and mobile devices, using TailwindCSS and JSON data from the MediaStack News API to populate the news cards. Dark Mode / Light Mode, Nav Menu, Nav Links and (TBC) a search function. (PAUSED Build - working on Airbnb & Netflix clones) ",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-01-08T00:33:23Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "dark-mode",
+                  "json-data",
+                  "light-mode",
+                  "react-router-dom",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "uber-clone",
+                "description": "1st React Native Mobile App - basic UBER Clone, using (Google Maps API) to display taxi travel data. SDK46",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-04T18:28:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kobra-soft-react-native-app1",
+                "description": "K-S Mobile App - Stack Navigation and Nested Navigation (Login Screens, Nav Menu, bottom tab menu, further screens to be done soon)- SDK47",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-05-15T11:01:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QD",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-08-26T21:19:05Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:00.650870+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

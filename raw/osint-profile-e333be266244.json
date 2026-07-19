@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-e333be266244",
+  "target": "szenled",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:12.522880+00:00",
+  "completedAt": "2026-06-20T16:48:13.957186+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c4471d19",
+      "lookupType": "github_context",
+      "target": "szenled",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "szenled",
+            "name": "Szen",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 55,
+            "followers": 1078,
+            "following": 832,
+            "created_at": "2019-10-21T14:45:54Z",
+            "updated_at": "2026-02-26T14:29:29Z",
+            "html_url": "https://github.com/szenled",
+            "avatar_url": "https://avatars.githubusercontent.com/u/56835662?v=4",
+            "repos": [
+              {
+                "name": "TokenNode",
+                "description": "Decentralized graph-based routing orchestrates intelligent real-time processing across a dynamically scalable data fabric for seamless ecosystem Network.",
+                "stargazers_count": 22,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-07T01:48:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockForge",
+                "description": "Data-Driven, Blockchain-Integrated Ledger Core, Empowering Scalable, Immutable-Data-Store Operations on a Distributed Computing Engine.",
+                "stargazers_count": 12,
+                "language": "PHP",
+                "pushed_at": "2026-02-07T17:33:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VaultTrade",
+                "description": "Neural-intelligence driven VaultTrade platform integrates risk management with 24/7 market data feeds, a scalable distributed Core.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-07T01:41:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AssetChain",
+                "description": "Machine-Learning-Optimized Dynamic Resource Orchestrator for Highly Scalable Enterprise AssetChain Operations across a Decentralized Trust Network.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-07T01:33:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NF",
+                "description": "Contract-based blockchain fabricator leverages decentralized intelligence for scalable, high-performance NFT asset validation and data harmonization optimizer.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-02-07T01:27:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chainNexusKit",
+                "description": "Decentralized Cognitive Network Orchestrator for Intelligent Data Flow Management across Scalable Cloud Exchange",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-02-06T17:23:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smartAuroraPlatform",
+                "description": "Fusion-Driven Edge Intelligence Platform, harnessing adaptive analytics and AI-driven anomaly detection within the Atlas of Modern Enterprise.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T17:15:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smartMirageAI",
+                "description": "Intelligent, Adaptive Ecosystem Engine providing enterprise-grade smartMirage solutions implementing modern Machine-Learning-Driven patterns featuring Context-Aware-Decision-Making capabilities",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2026-02-06T17:08:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chainCrestCore",
+                "description": "Decentralized, self-healing microservices orchestration framework for real-time edge-computing and intelligent auto-scaling applications infrastructure.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T17:30:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "apiVortexEdge",
+                "description": "Cloud-Native, Real-Time Data Processing Orchestration Engine for Scalable Machine Learning Model Deployment Gateways",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T17:37:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "evmBridgeAI",
+                "description": "Evolving Edge Architecture enables Scalable, Intelligent, Real-time Event Processing across Distributed Systems Infrastructure Engine",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-02-06T11:26:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webDeployFramework",
+                "description": "OmniSync orchestrates secure, efficient, and seamless global deployments across serverless architecture pipelines.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T11:37:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webStackSystems",
+                "description": "Artificially synthesized Service-Oriented Systems leveraging Microservices Autonomy, fostering Scalable Resilient Distributed Infrastructure",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T11:28:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodeBridgeFramework",
+                "description": "Cloud-agnostic nodeBridge empowers real-time, event-driven applications with intelligent, scalable distributed architectures to seamlessly interconnect.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T11:44:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidityGateEdge",
+                "description": "Distributed, Edge-Computing enabled, Real-time Data Orchestrator for Intelligent Event-Driven Architecture and Scalable Enterprise Governance Manager",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-02-06T11:54:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "evmLinkerAI",
+                "description": "Cloud-Orchestrated, Real-Time Analytics-Driven evmLinker Enriches Enterprise Virtualization Platforms with Intelligent, Distributed Architecture.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T12:02:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deploySyncEdge",
+                "description": "Self-healing, distributed caching fabric that ensures continuous integration, synchronization and orchestration across microservices.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-02-06T12:10:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "contractLinkerTools",
+                "description": "Sophisticated contractLinker Seamlessly Integrates Scalable Clause Management with Intelligent Contract Interpretation Across Distributed Systems, a Strategic Orchestrator.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T12:17:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "evmSparkStudio",
+                "description": "Edge-Activated Autonomous Systems Ecosystem Framework featuring Real-time Data Processing enterprise-grade evmSpark solutions implementing modern Machine Learning Integration patterns",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T12:23:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deployRelayLab",
+                "description": "Adaptive Edge Proxy for Real-Time, Event-Driven Applications, Ensuring Scalable and Fault-Tolerant Load Balancing.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T12:30:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "contractGlowStudio",
+                "description": "Elevated Infrastructure-as-a-Service Platform utilizing event-driven processing for intelligent, multi-tenant, and distributed contractGlow applications.",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-02-06T12:38:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "evmGlowEngine",
+                "description": "Intelligent Vision Processing evmGlow Seamlessly Integrates Adaptive AI with Data Analytics at the Edge of Enterprise Applications Convergence.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T12:46:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deployPulseKit",
+                "description": "Containerized deployment orchestrator leveraging predictive analytics for intelligent, scalable, and self-healing distributed systems architecture framework.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-02-06T12:54:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "contractDriftKit",
+                "description": "Predictive Contract Governance Platform leveraging AI-driven analytics for Automated Dispute Resolution and Scalable Obligation Tracking Optimizer.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T13:02:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "evmShiftPro",
+                "description": "Elastic, modular, and containerized evmShift platform integrates real-time processing with cloud-native streaming and API gateway capabilities.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T13:10:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deployShiftFramework",
+                "description": "Intelligent, adaptive, and self-healing deployShift projects leverage real-time processing, capabilities, Here are six technical suffixes for deployShift projects:",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T13:18:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "contractRelayDev",
+                "description": "Scalable, real-time contractRelay orchestrator leveraging cloud-agnostic auto-scaling, API gateway robust async processing capabilities as a centralized contract manager.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-02-06T13:23:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodeGlideKit",
+                "description": "Adaptive, Predictive, High-Performance nodeGlide Engine Leverages AI-Driven Insights for Proactive, Real-World Event Handling and Intelligent Business Solution",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T13:29:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidityGlideEngine",
+                "description": "Real-Time Deployment Orchestration for Automated Testing and Continuous Integration with Enterprise-Grade solidityGlide Engine.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T13:36:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "apiWaveTech",
+                "description": "Cloud-agnostic apiWave orchestrates distributed, intelligent event-driven workflows, enabling Predictive Analytics Exchange. providing enterprise-grade apiWave solutions",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T13:43:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodeSurgeAI",
+                "description": "Hyperconverged, Microservices-Optimized nodeSurge enables Scalable, Predictive Analytics-driven Distributed Network. featuring Multi-Cloud Deployments capabilities with Real-Time architecture",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-02-06T13:52:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "soliditySurgeCloud",
+                "description": "Enterprise-Grade soliditySurge: Real-Time Transaction Processing and Scalable Consensus Mechanisms converge in an Intelligent Distributed Core Suite.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T13:59:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "apiStormKit",
+                "description": "Cloud-orchestrated apiStorm Platform, harnessing auto-scaling and load balancing for intelligent, distributed API-led integration solutions.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-02-06T14:06:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodeBlazeFramework",
+                "description": "Here are six key pillars for NodeBlaze: high-speed, real-time processing, scalable, fault-tolerant, microservices-oriented, and highly customizable framework module.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T14:15:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidityBlazePlatform",
+                "description": "Blockchain-Based Decentralized Application Accelerator for Highly-Scalable Gas Optimization and Intelligent Deployment Optimizer.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T14:23:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidityPeakFramework",
+                "description": "At the edge of predictive analytics convergence, solidityPeak orchestrates intelligent, real-time data processing for scalable, distributed systems leader.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T14:36:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smartQuakeTools",
+                "description": "Cloud-synched, AI-driven smartQuake orchestrates resilient, high-availability emergency response systems for disaster recovery and business continuity.",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-02-06T14:42:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "apiTempestCore",
+                "description": "At the Edge of Real-time Innovation, apiTempest Orchestrates Seamless API Tempest: adaptive, resilient, intelligent, scalable, efficient, and secure.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T14:49:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodePhantomHub",
+                "description": "Hyper-Converged, Auto-Scaling, Real-Time Data Processing Framework for Seamless, Scalable, High-Performance Distributed Data Processing Nodes.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-02-06T14:56:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chainAetherPlatform",
+                "description": "Unlocking Hyperconverged Potential with Real-time, Decentralized ChainAether Fabric Orchestrator CoreEngine. providing enterprise-grade chainAether solutions",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T15:02:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deployHorizonEngine",
+                "description": "High-Performance, Real-Time Cloud Orchestration Drives Scalable, Intelligent Distributed Deployment Automation. featuring Predictive Analytics capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T15:18:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "apiNebulaPro",
+                "description": "Elevating API Nebula software with intelligent load balancing and adaptive queuing, powered by real-time, multi-protocol connectivity.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T15:11:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidityVanguardPlatform",
+                "description": "Blockchain-infused, decentralized, and dynamically adaptive, Real-time contract execution, Proxima. describe SolidityVanguard: architecture implementing modern Intelligent contract debugging patterns",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-02-06T15:26:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deployVortexFramework",
+                "description": "Event-Driven Microservices Architecture for Real-Time Failover Replication and Scalable Distributed Processing Infrastructure Framework.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T15:40:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidityEclipseEdge",
+                "description": "Edge-Compute Framework for Secure Multi-Party Computation on Ethereum Network Environments as a Decentralized Processing Service.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-06T15:44:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smartQuantumTech",
+                "description": "Harnessing Quantum Paradoxes, smartQuantum Orchestrates Simultaneous Optimization on a Distributed, Scalable Computational Catalyst Engine.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T15:51:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deployAuroraKit",
+                "description": "Comprehensive deployment orchestration for real-time data processing and enterprise-grade deployAurora projects: synchronized, scalable, predictive, autonomous, resilient, and heterogeneous.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T15:56:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidityRiftHub",
+                "description": "Real-time, distributed smart-contract-execution orchestration enables intelligent, decentralized identity management within a scalable, blockchain-centric architecture Engine.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T16:00:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "evmMiragePlatform",
+                "description": "EVMirage empowers Adaptive Scalability with AI-driven instance provisioning, Real-time Security, and robust, flexible, secure Core.",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2026-02-06T16:08:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webZenithEdge",
+                "description": "Proxima-scale webZenith orchestrates predictive auto-scaling, leveraging adaptive elasticity and flexible deployment frameworks to power Atlas.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T16:13:46Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:13.956229+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "profileId": "osint-profile-6789e6c36040",
+  "target": "sabeerbikba",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:57.900882+00:00",
+  "completedAt": "2026-06-21T15:32:58.548368+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6c1569b1",
+      "lookupType": "github_context",
+      "target": "sabeerbikba",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "sabeerbikba",
+            "name": "sabeer bikba",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Karnataka, India",
+            "bio": "\r\nSelf-taught Web Developer | Nuxt.js",
+            "public_repos": 17,
+            "followers": 1252,
+            "following": 80,
+            "created_at": "2019-12-31T07:50:04Z",
+            "updated_at": "2026-05-05T05:48:14Z",
+            "html_url": "https://github.com/sabeerbikba",
+            "avatar_url": "https://avatars.githubusercontent.com/u/59386700?v=4",
+            "repos": [
+              {
+                "name": "dev.tools",
+                "description": "A collection of useful developer tools built with React.",
+                "stargazers_count": 38,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-18T04:30:33Z",
+                "fork": false,
+                "topics": [
+                  "all-search-engines",
+                  "color-code-convertor",
+                  "css-tools",
+                  "developer-tools",
+                  "grapesjs-editor",
+                  "hash-generator",
+                  "html-preview",
+                  "lorem-ipsum-generator",
+                  "markdown-preview",
+                  "meta-tags-generator",
+                  "namecase-converter",
+                  "qrcode-generator",
+                  "react",
+                  "react-preview",
+                  "text-tools",
+                  "typescript-playground",
+                  "unit-converter",
+                  "web-development",
+                  "word-counter"
+                ]
+              },
+              {
+                "name": "portfolio",
+                "description": "My personal Portfolio website (under development)",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-29T06:03:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nuxt-intercepting-routes",
+                "description": "A production-ready Nuxt 3 implementation of Next.js style Intercepting Routes. Features Instagram-like soft navigation, deep linking, and full SEO optimization.",
+                "stargazers_count": 2,
+                "language": "Vue",
+                "pushed_at": "2026-01-14T11:50:04Z",
+                "fork": false,
+                "topics": [
+                  "intercepting-routes",
+                  "modal-routing",
+                  "nuxt",
+                  "nuxt3",
+                  "parallel-routes",
+                  "seo-friendly",
+                  "soft-navigation",
+                  "vue3"
+                ]
+              },
+              {
+                "name": "rickshaw",
+                "description": "Rickshaw Tours website",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-01T10:12:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sabeerbikba",
+                "description": null,
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2024-12-02T15:07:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bookmark-manager",
+                "description": "Bookmark Manager is a PHP web application that allows users to manage their bookmarks effectively. It provides features for adding bookmarks, deleting bookmarks, creating user accounts, and logging out.",
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2023-12-14T08:08:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gmailer",
+                "description": "Gmailer is a simple PHP project that demonstrates how to send emails using PHPMailer and Gmail.",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2023-12-14T11:58:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Emoji-HTML-CSS",
+                "description": "Grid-based design showcasing the stylish '\ud83d\ude0e' emoji.",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2024-03-17T11:39:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webrtc-video-call",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-09-09T19:27:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mobile-store",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-26T04:55:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "instagram-login-page",
+                "description": "Instagram login page clone.",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2023-05-03T10:49:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Html-calculator",
+                "description": "Simple calculator using html css and javascript.",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2023-05-03T10:36:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "git-commit-message",
+                "description": "Git commit message: how to write a great git commit message and commit template for version control",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-05-20T11:25:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "funngro",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2025-01-25T11:29:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ClassicCSS",
+                "description": "This repository contains curated collection of CSS libraries.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-07-29T15:10:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-hooks",
+                "description": "React hooks",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-08T05:59:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wiceweb",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2024-05-03T10:43:51Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:58.547573+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

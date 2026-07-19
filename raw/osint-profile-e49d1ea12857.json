@@ -1,0 +1,95 @@
+{
+  "profileId": "osint-profile-e49d1ea12857",
+  "target": "filedonkey",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:39.597311+00:00",
+  "completedAt": "2026-06-21T15:29:39.908554+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c48d0736",
+      "lookupType": "github_context",
+      "target": "filedonkey",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "filedonkey",
+            "name": "FileDonkey",
+            "type": "User",
+            "company": null,
+            "blog": "https://filedonkey.app",
+            "location": "Ukraine",
+            "bio": "A small utility for file sharing between your devices that are connected to the same local network.",
+            "public_repos": 1,
+            "followers": 2433,
+            "following": 2786,
+            "created_at": "2025-04-09T09:20:44Z",
+            "updated_at": "2026-05-08T11:06:49Z",
+            "html_url": "https://github.com/filedonkey",
+            "avatar_url": "https://avatars.githubusercontent.com/u/206841003?v=4",
+            "repos": [
+              {
+                "name": "filedonkey",
+                "description": "A small utility for file sharing between your devices that are connected to the same local network.",
+                "stargazers_count": 346,
+                "language": "C++",
+                "pushed_at": "2026-05-29T20:17:23Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "connectivity",
+                  "desktop",
+                  "file-sharing",
+                  "file-transfer",
+                  "ios",
+                  "linux",
+                  "macos",
+                  "mobile",
+                  "network",
+                  "ultility",
+                  "windows"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:39.907734+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

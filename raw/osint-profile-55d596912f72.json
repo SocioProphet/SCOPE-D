@@ -1,0 +1,594 @@
+{
+  "profileId": "osint-profile-55d596912f72",
+  "target": "Bd-Mutant7",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:49.304223+00:00",
+  "completedAt": "2026-06-20T13:53:50.213470+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-98ed7ff3",
+      "lookupType": "github_context",
+      "target": "Bd-Mutant7",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Bd-Mutant7",
+            "name": "7",
+            "type": "User",
+            "company": null,
+            "blog": "https://bd-mutant7-portifolio-82ra.vercel.app/",
+            "location": "Nairobi, Kenya",
+            "bio": "Discord: 0xBd-Mutant7\ud83d\ude08        \r\nPenetration Testing, Network Exploration, and Digital Forensics via CTFs.          \r\n\r\n",
+            "public_repos": 88,
+            "followers": 1399,
+            "following": 2647,
+            "created_at": "2024-09-19T17:33:38Z",
+            "updated_at": "2026-05-07T09:43:45Z",
+            "html_url": "https://github.com/Bd-Mutant7",
+            "avatar_url": "https://avatars.githubusercontent.com/u/182138871?v=4",
+            "repos": [
+              {
+                "name": "mitmproxy",
+                "description": "An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:44:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "whatsapp2llm",
+                "description": "get all whatsapp messages and pass it to llm of your choice as context",
+                "stargazers_count": 6,
+                "language": "Swift",
+                "pushed_at": "2026-06-20T13:17:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "simpzone",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T13:17:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bl00dym4ry",
+                "description": "Trojan (Ransomware) Phishing Simulator for Cybersecurity Training.",
+                "stargazers_count": 8,
+                "language": "C",
+                "pushed_at": "2026-06-20T13:16:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ClimaPy",
+                "description": "ClimaPy is a Django-based command-line weather application that provides real-time weather information for cities worldwide. Originally developed as a learning project, it has evolved into a practical tool for developers and weather enthusiasts.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:16:42Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "command-line",
+                  "django",
+                  "openweathermap-api",
+                  "python",
+                  "weather-api"
+                ]
+              },
+              {
+                "name": "Networking-Toolbox",
+                "description": "\ud83d\udca5 A growing collection of 100+ offline-first networking tools & utilities for developers who care about reliability beyond the internet. Built for disconnected systems, edge networks, and resilient infrastructure \u2014 mesh, peer-to-peer, LAN, and practical local-first tooling. LAN > Cloud. \ud83e\udde0\ud83d\udce1\ud83d\udca5\ud83d\udee0\ufe0f",
+                "stargazers_count": 4,
+                "language": "Svelte",
+                "pushed_at": "2026-06-20T13:16:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Wifi_BruteForce",
+                "description": "A script to find all Wifi Networks in the area and try the 100K most used passwords",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:16:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Mpesa-Based_Wi-Fi-Hotspot_Billing_System",
+                "description": "\ud83d\udcf6 A fast, automated Hotspot Billing system powered by M-Pesa STK Push for instant, secure user access. Built with Node.js, MySQL, Next.js, and React, it delivers smooth payments, smart access control, and optional MikroTik-RB750UPr2 integration. \u26a1\ud83d\udd10",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:16:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WhatsappBOT",
+                "description": "Send messages to any person in any time how much you want.  ",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:16:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cybersecurity-Threats-Guide",
+                "description": "Cybersecurity Threats & Vulnerabilities Guide is a comprehensive educational resource that provides detailed documentation, detection scripts, and prevention strategies for various cybersecurity threats. ",
+                "stargazers_count": 17,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:16:02Z",
+                "fork": false,
+                "topics": [
+                  "arp-poisoning",
+                  "csrf",
+                  "ddos-attacks",
+                  "man-in-the-middle-attack",
+                  "phishing",
+                  "port-scanning",
+                  "ransomware-dectection",
+                  "researchers",
+                  "rootkits",
+                  "session-hijacking",
+                  "sql-injection",
+                  "students",
+                  "system-administrators",
+                  "trojans",
+                  "worms",
+                  "xss-attacks"
+                ]
+              },
+              {
+                "name": "Port-Scanner",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T13:16:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Modern-App-Color-Combos",
+                "description": " Research-backed color combinations for modern app development. Includes primary palettes, dark mode variants, luxury styles, and real-world case studies for 15+ app categories. WCAG compliant and developer-ready. STILL WORKING ON IT\ud83d\udc47\u2692\ufe0f\ud83c\udfe2.",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2026-06-20T13:14:22Z",
+                "fork": false,
+                "topics": [
+                  "accessibility",
+                  "app-development",
+                  "color-combinations",
+                  "color-palette",
+                  "color-psychology",
+                  "css-variables",
+                  "dark-mode",
+                  "design-resources",
+                  "design-system",
+                  "design-tools",
+                  "flutter",
+                  "frontend-development",
+                  "mobile-app-design",
+                  "react-native",
+                  "swiftui",
+                  "ui-design",
+                  "ui-inspirations",
+                  "ux-design",
+                  "wcag",
+                  "web-design"
+                ]
+              },
+              {
+                "name": "awesome-privacy",
+                "description": "\ud83e\udd84  A curated list of privacy & security-focused software and services",
+                "stargazers_count": 12,
+                "language": "Astro",
+                "pushed_at": "2026-06-20T13:14:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-unfollow-nonfollowers",
+                "description": "A Python script that uses the GitHub API to automatically unfollow users who don't follow you back, with preview mode and rate limit handling.",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:14:17Z",
+                "fork": false,
+                "topics": [
+                  "api-client-python",
+                  "automation",
+                  "followers-tracker",
+                  "github-api",
+                  "github-manager",
+                  "github-tool",
+                  "python",
+                  "unfollow-users"
+                ]
+              },
+              {
+                "name": "termux-app",
+                "description": "Termux - a terminal emulator application for Android OS extendible by variety of packages.",
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2026-06-20T13:14:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AgriSync",
+                "description": "AgriSync is a working agriculture management app in active development. Core features are live, with authentication, login, and more coming soon.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:13:49Z",
+                "fork": false,
+                "topics": [
+                  "agriculture",
+                  "farm-management",
+                  "open-source",
+                  "web-app"
+                ]
+              },
+              {
+                "name": "Network-Packet-Sniffer-Traffic-Analyse-GUI",
+                "description": "Captures & Analyses live network traffic in real time to detect suspicious activities using rule-based, MITRE-mapped, and machine-learning techniques.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:11:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SSRF_Vulnerable_Lab",
+                "description": "This Lab contain the sample codes which are vulnerable to Server-Side Request Forgery attack",
+                "stargazers_count": 7,
+                "language": "PHP",
+                "pushed_at": "2026-06-20T13:10:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PayloadsAllTheThings",
+                "description": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:09:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VulnGuard",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T13:09:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "evilginx2",
+                "description": "Standalone man-in-the-middle attack framework used for phishing login credentials along with session cookies, allowing for the bypass of 2-factor authentication",
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2026-06-20T13:08:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Bd-Mutant7",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-06-20T13:08:11Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "GrabAccess",
+                "description": "Bootkit / Windows Login Password Bypass Tool",
+                "stargazers_count": 9,
+                "language": "C",
+                "pushed_at": "2026-06-20T13:07:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Password-Analyzer",
+                "description": null,
+                "stargazers_count": 18,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T13:06:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "eips",
+                "description": "Enhanced IP Spoofing",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:06:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sample-repo",
+                "description": "This is my first sample Github project",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-06-20T13:05:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Phishing-Simulation-Tool",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "EJS",
+                "pushed_at": "2026-06-20T13:05:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Meridian",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:05:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "anti-theft-charge",
+                "description": "\ud83d\udd0b Safely charge your phone in public places without the worry of it being stolen",
+                "stargazers_count": 9,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-20T13:04:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hidden-tear",
+                "description": "ransomware  open-sources",
+                "stargazers_count": 9,
+                "language": "C#",
+                "pushed_at": "2026-06-20T13:04:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kibanda-POS",
+                "description": "KibandaPOS is a digital solution developed under the KibandaPOA Initiative, a community-driven effort to improve local services using simple and accessible technology. The initiative empowers small-scale food vendors and mjengo mess operations\u2014informal food services feeding construction workers and laborers\u2014by providing tools to manage daily tasks.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T13:04:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "core",
+                "description": ":house_with_garden: Open source home automation that puts local control and privacy first.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-06-20T13:01:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Wifi-Hacking",
+                "description": "Cyber Security Tool For Hacking Wireless Connections Using Built-In Kali Tools. Supports All Securities (WEP, WPS, WPA, WPA2/TKIP/IES)",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-06-20T12:58:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wifi-hacker",
+                "description": "Shell Script For Attacking Wireless Connections Using Built-In Kali Tools. Supports All Securities (WEP, WPS, WPA, WPA2)",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2026-06-20T12:57:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cybersecurity-threats-guide-app",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T12:56:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Accurate-Cyber-Defense-Purple-Hat-Bot",
+                "description": "Accurate Cyber Defense Purple Hat Bot is a lightweight cyber security tool designed to detect and monitor threats in real time. Easily configurable with Telegram, it instantly alerts admins of suspicious activity. Built for speed, simplicity, and strong cyber defense.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-06-20T12:56:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Notes-upload-and-download-website-frontend",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T12:55:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UNIverse",
+                "description": "University Management System",
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2026-06-20T12:24:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackTheWorld",
+                "description": "An Python Script For Generating Payloads that Bypasses All Antivirus so far .",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-06-20T12:22:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Keylogger",
+                "description": "Get Keyboard,Mouse,ScreenShot,Microphone Inputs from Target Computer and Send to your Mail.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-06-20T12:20:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Portara",
+                "description": "\ud83d\udd0d Portara - Electron desktop app to scan for and terminate processes using open TCP ports. Clean up stray dev servers instantly.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T12:20:39Z",
+                "fork": false,
+                "topics": [
+                  "electron-app",
+                  "electron-builder",
+                  "open-source",
+                  "port-scanner",
+                  "sveltejs",
+                  "tcp-ports",
+                  "typescript",
+                  "windows-subsystem-linux"
+                ]
+              },
+              {
+                "name": "FaceRecognitionSecurity",
+                "description": "Face Recognition Security",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-06-20T12:20:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Bd-Mutant7-Portifolio-template",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T12:20:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pentagi",
+                "description": "\u2728 Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+                "stargazers_count": 13,
+                "language": "Go",
+                "pushed_at": "2026-06-20T12:19:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Kuza-Market",
+                "description": "This Repo contains a second hand ecommerce campus platform",
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T12:19:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Google-Drive-Uploader",
+                "description": "Telegram bot To upload Files To Google Drive Remotely @gdriveupme_bot (outdated) ",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-06-20T12:19:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Practical-Ethical-Hacking-Resources",
+                "description": "Compilation of Resources from TCM's Practical Ethical Hacking Udemy Course ",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-06-20T12:19:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ethical-Hacking-Tools",
+                "description": "Complete Listing and Usage of Tools used for Ethical Hacking",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-06-20T12:19:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DahuaLoginBypass",
+                "description": "Chrome extension that uses vulnerabilities CVE-2021-33044 and CVE-2021-33045 to log in to Dahua cameras without authentication.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T12:19:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "digital-clock",
+                "description": "This is a clock",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2026-06-20T12:18:44Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:50.212626+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "profileId": "osint-profile-8a5e2264dc57",
+  "target": "codingscode",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:17.180803+00:00",
+  "completedAt": "2026-06-21T15:32:19.360325+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8819e0db",
+      "lookupType": "github_context",
+      "target": "codingscode",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "codingscode",
+            "name": "Heronnes Pereira",
+            "type": "User",
+            "company": "Freelancer",
+            "blog": "https://www.linkedin.com/in/heronnes-pereira",
+            "location": "Brazil",
+            "bio": "Java, MongoDB, Python, FreeCad",
+            "public_repos": 189,
+            "followers": 1426,
+            "following": 8290,
+            "created_at": "2019-05-05T14:56:31Z",
+            "updated_at": "2026-06-21T13:28:02Z",
+            "html_url": "https://github.com/codingscode",
+            "avatar_url": "https://avatars.githubusercontent.com/u/50297646?v=4",
+            "repos": [
+              {
+                "name": "Javaplustestes",
+                "description": "Javaplustestes",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-06-19T15:02:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FreeCad_plus",
+                "description": "FreeCad_plus",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-29T11:58:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FreeCad_pub",
+                "description": "FreeCad publico",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-06-30T12:13:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "axios_docs",
+                "description": "Axios Docs",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-20T00:31:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-doc",
+                "description": "Express Documenta\u00e7\u00e3o",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-16T00:47:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rjs_cadastro001",
+                "description": "React exemplo de cadastro",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-18T01:16:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reactnative_from_zero_to_hero",
+                "description": "reactnative_from_zero_to_hero",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-04T02:33:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Android11_curso",
+                "description": "Android11_curso",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2023-06-16T15:27:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react_native_brasil-hp",
+                "description": "React Native",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2025-04-27T12:18:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "codingscode",
+                "description": "Heronnes Pereira",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-05-22T13:28:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Imersao-react-alura",
+                "description": "Imers\u00e3o React Alura",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T22:00:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Adicionando-Removendo-Produtos",
+                "description": "Adicionando e removendo produtos",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T20:19:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Purchasing-Products",
+                "description": "Adding and removing products",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T20:38:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IMC-Indice-de-Massa-Corporea",
+                "description": "IMC - Indice de Massa Corp\u00f3rea",
+                "stargazers_count": 0,
+                "language": "Vue",
+                "pushed_at": "2024-11-19T01:12:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BMI-Body-Mass-Index",
+                "description": "BMI - Body Mass Index",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2024-11-19T01:12:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hx001",
+                "description": "hx001",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T18:38:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Calculadora",
+                "description": "Calculadora react",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T18:37:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-passando-dados",
+                "description": "React Passando Dados",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-12T08:00:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "curso_node",
+                "description": "Curso de Node (Node Course)",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-13T13:10:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "curso_vue",
+                "description": "curso vue",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-05T07:33:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Atualizar-Saldo",
+                "description": "Atualizar Saldo",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2019-12-05T14:14:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Area-Triangulo",
+                "description": "\u00c1rea de Triangulo",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2019-11-13T16:06:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api-restful-node-mongodb",
+                "description": "api restful node&mongodb",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-05-07T13:56:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api-node-express-mongodb_exemplo01",
+                "description": "api+node+express_exemplo01",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-18T01:15:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "android-sqlite",
+                "description": "android sqlite",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2020-02-04T01:42:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "android-lista-de-tarefas-",
+                "description": "lista de tarefas",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2020-03-05T23:49:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Adicionar-Remover-Produtos1",
+                "description": "Adicionar-Remover-Produtos 1",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2019-11-13T16:14:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "7_jogos_javascript",
+                "description": "7 jogos javascript (7 games)",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-02T02:14:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "escrever-texto-em-arquivo",
+                "description": "escrever texto em arquivo",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2020-01-27T01:16:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hexapode_React",
+                "description": "Hexapode feito com React",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2020-10-06T02:00:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Maior_Menor_Valor",
+                "description": "Maior e Menor valor recebidos",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2019-11-12T15:47:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "carro-locacao",
+                "description": "carro loca\u00e7\u00e3o",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2020-02-19T22:02:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Restaurante-React",
+                "description": "Aplica\u00e7\u00e3o React em um Restaurante",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2021-12-09T01:58:03Z",
+                "fork": false,
+                "topics": [
+                  "app",
+                  "css",
+                  "frontend",
+                  "hooks",
+                  "html",
+                  "javascript",
+                  "jsonserver",
+                  "react",
+                  "reactjs",
+                  "restaurante"
+                ]
+              },
+              {
+                "name": "game_dev_alura",
+                "description": "Game from Alura Course",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2020-07-09T15:39:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "React-23",
+                "description": "React-23",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-11T20:11:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "projeto_backend_frontend",
+                "description": "projeto backend",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2023-01-11T01:15:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Imersao-React-Alura-2",
+                "description": "2\u00aa Imers\u00e3o Alura React",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-30T17:35:44Z",
+                "fork": false,
+                "topics": [
+                  "alura",
+                  "aluraquiz",
+                  "imersao-react"
+                ]
+              },
+              {
+                "name": "Curso_React_Native",
+                "description": "Curso React Native ( React Native Course)",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2021-08-18T01:12:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rn_miniprojeto01",
+                "description": "Miniprojeto com React Native",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2023-05-03T02:31:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C_outros_testes1",
+                "description": "Testes com Linguagem C",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2023-04-28T13:44:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nlw_4",
+                "description": "NLW 4",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2021-03-25T02:00:22Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "frontend",
+                  "javascript",
+                  "next",
+                  "nextjs",
+                  "nlw4",
+                  "node",
+                  "nodejs",
+                  "react",
+                  "reactjs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "crudApplication_react-node-express-mongodb",
+                "description": "crudApplication_react+node+express+mongodb",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-19T00:52:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native_tictactoe",
+                "description": "react-native_tictactoe",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-19T00:27:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sms-nodejs",
+                "description": "sms-nodejs",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-01T00:14:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crud-node-mongodb-mongoose1",
+                "description": "crud node mongodb mongoose",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-18T01:38:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jogo-da-memoria-rascunho",
+                "description": "Jogo da mem\u00f3ria (rascunho)",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-12T12:19:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "React-25-http-ajax",
+                "description": "React-25-http-ajax",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-06T01:43:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vue1",
+                "description": "Vue1",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-01-05T03:56:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-crud-exemplo1",
+                "description": "react-native-crud-exemplo1",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2023-03-27T15:19:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reactjs-axios-exemplo1",
+                "description": "reactjs+axios exemplo1",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-18T00:48:34Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:19.359605+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

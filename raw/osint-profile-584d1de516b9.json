@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-584d1de516b9",
+  "target": "KittenChanCorruptionArc",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:06.801915+00:00",
+  "completedAt": "2026-06-21T15:32:07.148456+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a37ad56a",
+      "lookupType": "github_context",
+      "target": "KittenChanCorruptionArc",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "KittenChanCorruptionArc",
+            "name": "\ua4b0\u1422. .\u1422\ua4b1 \u200e",
+            "type": "User",
+            "company": null,
+            "blog": "\u00b7 \u00b7 \u2500 \u00b7\ud81a\udd78\u00b7 \u2500 \u00b7 \u00b7",
+            "location": null,
+            "bio": "\u1bd3 FOLLOW MY MAIN .\u141f.\u141f .. > _ < \u1bd3 \u279c { @BunnyClouds } . \ua4b1 \u0b18(\u0a6d\u25cc\u02ca\u1d55\u02cb)\u0a6d* \u0a48\u2661\u2027\u208a\u02da \u00ab  \u01d0 \u2113o\u035fv\u035f\uaac0 \u10e7o\u03c5 .\u141f ",
+            "public_repos": 1,
+            "followers": 1452,
+            "following": 5870,
+            "created_at": "2024-09-08T06:44:53Z",
+            "updated_at": "2026-05-21T21:57:00Z",
+            "html_url": "https://github.com/KittenChanCorruptionArc",
+            "avatar_url": "https://avatars.githubusercontent.com/u/180819078?v=4",
+            "repos": [
+              {
+                "name": "KittenChanCorruptionArc",
+                "description": "\ufe36\u05aa\ufe36\ufe36\u05aa\ufe36\ufe36\ufe36\u05aa\ufe36\ufe36\u05aa\ufe36\ufe36\u0f72\u0f80\ufe36\ufe36\u05aa\ufe36\ufe36\ufe36\u05aa\ufe36\ufe36\u05aa\ufe36\ufe36\u05aa",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-11-10T11:41:10Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:07.147447+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

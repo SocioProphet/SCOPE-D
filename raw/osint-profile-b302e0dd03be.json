@@ -1,0 +1,483 @@
+{
+  "profileId": "osint-profile-b302e0dd03be",
+  "target": "kenjiwizard",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:49.085720+00:00",
+  "completedAt": "2026-06-20T16:47:50.379963+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5e844e03",
+      "lookupType": "github_context",
+      "target": "kenjiwizard",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "kenjiwizard",
+            "name": "Kenji",
+            "type": "User",
+            "company": null,
+            "blog": "https://fluxvpn.org/",
+            "location": "Harare",
+            "bio": null,
+            "public_repos": 45,
+            "followers": 1192,
+            "following": 994,
+            "created_at": "2022-12-11T13:51:24Z",
+            "updated_at": "2026-03-30T00:42:07Z",
+            "html_url": "https://github.com/kenjiwizard",
+            "avatar_url": "https://avatars.githubusercontent.com/u/120318704?v=4",
+            "repos": [
+              {
+                "name": "flux-vpn",
+                "description": "Free, open-source VPN for desktop & mobile. No accounts. No logs. No ads. Just a secure tunnel.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-03-30T21:34:57Z",
+                "fork": false,
+                "topics": [
+                  "vpn",
+                  "vpn-client",
+                  "vpn-server",
+                  "vpn-service"
+                ]
+              },
+              {
+                "name": "SolidityMesh",
+                "description": "Proactive event-driven networks converge AI-powered optimization to enable self-healing, highly scalable mesh frameworks.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-02-02T16:01:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SlitherRelay",
+                "description": "Edge-empowered, Asynchronous data relayer with Fault-tolerant capabilities, powering scalable, cloud-ready Automation Studio.",
+                "stargazers_count": 14,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T17:37:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "InfuraNode",
+                "description": "Robust, self-healing Blockchain Gateway for decentralized, high-performance Smart Contract Execution platforms Engine.",
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T16:09:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ScribRelay",
+                "description": "Unlocking Real-Time Content Routing with Dynamic Caching, fueled by AI-Driven Policies, Pulse.",
+                "stargazers_count": 16,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T11:39:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MoralisRelay",
+                "description": "High-velocity cloud fabricator for real-time data processing and auto-scaling, delivering scalable, reliable, and highly available enterprise services.",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T00:10:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ViemRelay",
+                "description": "Real-Time ViemRelay platform featuring cloud-ready technology and advanced modern-design for modern Runtime",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T17:19:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwarmRelay",
+                "description": "Effortless, Self-Organizing Network Operations via Adaptive Peer-to-Peer Load Balancing for Enhanced Distributed Systems Infrastructure.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T17:09:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TruffleRelay",
+                "description": "Effortlessly processing massive workloads through intelligent load balancing, ensuring always-on, real-time data traversal via high-performance TruffleRelay Catalyst.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-02-02T16:52:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TxRelay",
+                "description": "Autonomous edge-orchestrated TxRelay middleware for asynchronous message brokering and highly-distributed, fault-tolerant operation.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T16:45:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DappNode",
+                "description": "Automated, self-replicating, high-availability clusters ensure perpetual uptime for distributed, intelligent DappNode. providing enterprise-grade DappNode solutions",
+                "stargazers_count": 12,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T16:35:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OrbitWallet",
+                "description": "Cloud-agile, multi-chain asset orchestrator for enterprise-grade digital assets, harnessing identity management and distributed intelligence on a scalable Platform.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T16:17:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ModalVyper",
+                "description": "High-Performance, Scalable, and Intelligent Data Processing Platform for Distributed Predictive Analytics Workloads on Edge Compute Clusters.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T16:26:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RelayManifold",
+                "description": "Real-time data convergence and streaming analytics hub, leveraging intelligent multi-tenancy, and fine-grained isolation to become a seamless orchestrator.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T12:01:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QuantumSmart",
+                "description": "Context-Adaptive SmartCeramic Coating Manager for Real-Time Thermal Regulation and Self-Healing High-Temperature Durability Optimization.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T12:16:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SyncThe",
+                "description": "Cloud-agnostic SyncTheGraph enables autonomous, adaptive, and fault-tolerant decentralized data orchestration, a resilient Hub.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-02-02T12:08:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MintVault",
+                "description": "Compressing vast datasets into streamlined formats, MintVault leverages adaptive architecture for intelligent, scalable data Security.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-02-02T11:21:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwarmNftport",
+                "description": "Hyper-Converged Event-Driven Architecture for Seamless Multi-Cloud NFT Processing and Dynamic Asset Orchestration Controller.",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T11:53:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MoralisDrop",
+                "description": "Sophisticated MoralisDrop architecture seamlessly integrates real-time analytics with intelligent auto-scaling, unlocking a dynamic, scalable, and distributed gateway.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T11:44:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZoraBridge",
+                "description": "Adaptive Real-time Network Resilience Orchestrator ZoraBridge enables intelligent, self-healing distributed systems as a secure gateway.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T11:36:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PinataBlock",
+                "description": "Cloud-Agnostic PinataBlock Orchestrator: A Self-Healing, Predictive Analytics-Driven, Distributed Intelligence Platform System providing enterprise-grade PinataBlock solutions",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T11:28:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MeshWagmi",
+                "description": "Adaptive, real-time rendering mesh aggregator with zero-latency updates and dynamic mesh optimization capabilities.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T11:14:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CeramicArweave",
+                "description": "Autonomous Data Orchestrator for CeramicArweave, enabling Distributed, fault-tolerant, real-time data synchronization across a scalable Studio.",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T11:05:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CertoraQuick",
+                "description": "Instantaneous Smart-Contract Validation across Distributed Blockchain Networks with Real-Time Verification Analytics. featuring Smart-contract-testing capabilities",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T10:58:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CastHardhat",
+                "description": "CloudNative Framework for CastHardhat enables Event-Driven Architecture, Auto-Scaling, and Distributed Intelligence across scalable enterprise Platform.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T10:51:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PriManticore",
+                "description": "Instantaneous load-balancing, self-healing, and real-time processing capabilities converge in PriManticoreSwarmNet orchestrator. with self-optimizing architecture",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T07:54:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FluHivemind",
+                "description": "Real-time data convergence through Multi-Cloud Integration, Secure Orchestration, and Adaptive AI-driven Governance, forging a resilient Enterprise Gateway.",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T08:06:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ApeRelay",
+                "description": "Robust, self-healing mesh topology with intelligent failover-recovery and adaptive optimization, ensuring seamless network resilience.",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T08:13:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwiVault",
+                "description": "Cloud-agnostic, Decentralized-Application-Ready, Web3-Integrated, Scalable, Intelligent Node. providing enterprise-grade SwiVaultRpcRpcEvm solutions implementing modern Real-Time-Data-Processing patterns featuring Real-Time-Data-Processing capabilities",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-02-02T08:26:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockSync",
+                "description": "Ultra-low-latency, event-driven data conduit for predictive analytics, amplifying intelligent scalability across decentralized networks to unified enterprise gateway.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-02-02T08:33:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ContractMesh",
+                "description": "Cloud-agnostic ContractMesh orchestrates self-healing, scalable networks with intelligent, distributed, real-time processing capabilities through a seamless gateway.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-02T08:41:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HardhatNode",
+                "description": "Elevate blockchain application development with HardhatNode, a Cloud-Hosted, Auto-Scaling Blockchain Cluster. implementing modern State Management patterns",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-02-02T08:47:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QuickNode",
+                "description": "Cloud-agnostic, event-driven QuickNode orchestrates distributed, auto-scaling clusters as a unified, intelligent processing Hub.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-02-02T08:54:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WagmiWallet",
+                "description": "Sophisticated, decentralized, multi-signature-enabled WagmiWallet empowers enterprise-grade transactions with intelligent, distributed, real-time-processing capabilities on a cutting-edge ecosystem platform.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-02T09:09:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArweaveEther",
+                "description": "Decentralized, autonomous data repositories on Arweave, anchored by transparent, immutable smart contract execution mechanisms protocol.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-02-02T09:02:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AnvilVyper",
+                "description": "Adaptive, event-driven architecture enables intelligent, distributed processing with auto-scaling, ultra-low-latency messaging across a robust, cloud-native information conduit broker.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-02T09:15:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SlangAlchemy",
+                "description": "Intelligent Adaptive Resource Orchestrator Platform implementing modern Auto-Scaling patterns featuring Dynamic Resource Allocation capabilities with Scalable architecture",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-02T09:22:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwarmFilecoin",
+                "description": "Adaptive resilient data storage fabric leveraging dynamic node clustering for scalable fault-tolerant orchestration.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-02-02T09:29:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RelayRainbow",
+                "description": "Elevated load-balancing orchestrator for RelayRainbow, ensuring fault-tolerant, highly-available, event-driven architecture with real-time response controller.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-02-02T09:36:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SyncForge",
+                "description": "Resilient Data Harmony Engine for Seamless, Event-Driven Synchronization, Ensuring Highly Available, Scalable, and Adaptive Performance Amplifier.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2026-02-02T09:43:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartHivemind",
+                "description": "Real-time Predictive Analytics Framework for Autonomous Distributed Decision-Making Across Scalable Data Infrastructure.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-02-02T10:09:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SolidityBridge",
+                "description": "Sophisticated SolidityBridge platform empowers high-performance, scalable, and adaptive decentralized data storage and retrieval across distributed cryptographic processing Hubs.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T10:16:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "InfuraHub",
+                "description": "Blockchain-empowered, real-time data processing and secure transmission hub for scalable, distributed enterprise networks.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T10:23:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ViemBridge",
+                "description": "Neural-Infused ViemBridge unifies disparate data streams in real-time, providing an adaptive and highly available data gateway.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T10:43:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwarmBlock",
+                "description": "Self-reconfiguring, real-time data orchestrator that dynamically scales and adapts with an integrated, predictive workload controller.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-02-02T10:35:59Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:50.378862+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

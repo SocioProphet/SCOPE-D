@@ -1,0 +1,554 @@
+{
+  "profileId": "osint-profile-05d8f8301d55",
+  "target": "devcrafta",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:13.332926+00:00",
+  "completedAt": "2026-06-21T15:33:15.204674+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-875bdb7c",
+      "lookupType": "github_context",
+      "target": "devcrafta",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "devcrafta",
+            "name": "devcrafta",
+            "type": "User",
+            "company": "The truly closest person is the one who knows your past, believes in your future, and now accepts you the way you are.",
+            "blog": "",
+            "location": null,
+            "bio": "Software Engineer | Project Manager | 8 Years Industry Experience",
+            "public_repos": 101,
+            "followers": 1212,
+            "following": 1198,
+            "created_at": "2020-09-15T00:32:04Z",
+            "updated_at": "2026-06-21T13:53:48Z",
+            "html_url": "https://github.com/devcrafta",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71299022?v=4",
+            "repos": [
+              {
+                "name": "Github-Follow-Unfollow-Automation-Bot-Github-Action",
+                "description": "\ud83d\udc54 A main feature that automatically unfollows users who don\u2019t follow, and another that follows back users who follow you but weren\u2019t being followed. A GitHub Action updates the README file with your follower list and your current profile information.",
+                "stargazers_count": 26,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-08T14:52:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChatGPT-React-Next-Web",
+                "description": "\ud83d\ude80 Responsive chat application powered by OpenAI's GPT-4, with chat streaming, code highlighting, code execution, development presets, and more. The app is built using Next.js and TypeScript, and it's designed to be easy to use, customize, and extend. ",
+                "stargazers_count": 37,
+                "language": "TypeScript",
+                "pushed_at": "2023-12-14T00:22:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChatGPT-Extension-Vsix",
+                "description": "\ud83d\udde3 VsCode AI ChatGPT Extension Vsix",
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2023-03-20T12:04:04Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "chatgpt",
+                  "chatgpt3",
+                  "extension",
+                  "gpt",
+                  "openai",
+                  "vscode",
+                  "vscode-extension",
+                  "vscode-extension-pack",
+                  "vscode-plugin",
+                  "vscode-snippets",
+                  "vsix"
+                ]
+              },
+              {
+                "name": "News-Web-Nextjs-Node",
+                "description": "\ud83d\udcf0 News Website",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-22T00:58:51Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "Crypto-Casino-Platform",
+                "description": "\ud83c\udf71 This application is for everyone (be it individual entrepreneurs or small organizations) who wants to quickly start their own online gaming business, but doesn\u2019t have time and / or sufficient funds to develop a tailor made solution or buy expensive casino software packages from other vendors.",
+                "stargazers_count": 69,
+                "language": "PHP",
+                "pushed_at": "2023-12-14T00:19:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Bankwire-Prestashop",
+                "description": "\ud83e\udde3 Accept payments for your products via bank wire transfer.",
+                "stargazers_count": 12,
+                "language": "PHP",
+                "pushed_at": "2021-12-21T00:11:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChatGPT-Tools",
+                "description": "\ud83d\udc5c ChatGPT-Tools",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2023-04-19T02:38:23Z",
+                "fork": false,
+                "topics": [
+                  "chatgpt",
+                  "docs",
+                  "tools",
+                  "website"
+                ]
+              },
+              {
+                "name": "Github-OctoCat-Collector",
+                "description": "\ud83d\udd4a Github OctoCat Collector",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-04-14T01:12:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hashnode-Blogs",
+                "description": "\ud83d\udd03 Hashnode-Blogs Sync",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-06-23T02:46:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": ".github",
+                "description": "\ud83d\udc95\ud83d\udc95\ud83d\udc95\ud83d\udc95\ud83d\udc95",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2023-06-15T16:50:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Eoorox-Gaming-Esport-HTML",
+                "description": "\ud83c\udfae Eoorox \u2013 Gaming and eSports HTML5 Template is a modern, clean & powerful, contrast design that is perfect for the game portal, clans, gaming, eSports, gaming studio, game communities, gaming news, and store. You can also display a list of your games, announce your streams, matches, present your gaming clan and get everything else a modern eSport",
+                "stargazers_count": 21,
+                "language": "HTML",
+                "pushed_at": "2023-04-13T20:14:38Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "Typescript-React-Template",
+                "description": "\ud83c\udf00 Typescript React Template",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2023-04-13T20:18:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "huniko519.github.io",
+                "description": "\ud83d\uddbc\ufe0f My Profile",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-28T23:44:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Apex-Tracker",
+                "description": "\ud83e\udda7 Apex tracker",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2023-05-11T23:39:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Laravel-authentication",
+                "description": "\ud83c\udf37 Laravel Authentication script",
+                "stargazers_count": 12,
+                "language": "PHP",
+                "pushed_at": "2025-07-09T00:50:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vuely-Vue",
+                "description": "\ud83d\udd96 Vuely Vue",
+                "stargazers_count": 13,
+                "language": "Vue",
+                "pushed_at": "2020-10-18T01:32:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Personality-Insight",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-22T15:37:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Huniko519",
+                "description": "Huniko519/Huniko519 is a \u2728special \u2728 repository that you can use to add a README.md to your GitHub profile.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-09-17T14:50:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Django-Company-LandingPage",
+                "description": "\ud83e\udded Django Company LandingPage",
+                "stargazers_count": 13,
+                "language": "CSS",
+                "pushed_at": "2022-05-20T14:15:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Omdb-Test-React",
+                "description": "\ud83c\udfb1 Omdb test react project",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2022-04-04T14:57:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LibraryApp-React-Redux",
+                "description": "\ud83d\udc54 LibraryAPP React Redux | Library Management System: A web app for the management of books, users and the Issue and Return of Books in a library.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2021-12-08T18:02:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vikinger-Html",
+                "description": " \ud83c\udf64Vikinger HTML templete",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2022-07-15T13:14:57Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html"
+                ]
+              },
+              {
+                "name": "Dating-Web",
+                "description": "\ud83d\udc9d Dating Web",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2022-07-22T12:16:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vcard-Personal-Website",
+                "description": "\ud83d\udc64 Vcard Personal Website",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2023-02-26T07:20:13Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html"
+                ]
+              },
+              {
+                "name": "Email-Verifierpro",
+                "description": "\ud83d\udd5b Email Verify Pro Script",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2020-12-20T14:27:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Esar-Admin",
+                "description": "\ud83d\uded2 Esar Admin",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2022-03-02T13:03:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Esar-Admin-Dashboard-Laravel-React",
+                "description": "\ud83d\uded2 Esar Admin Dashboard Laravel",
+                "stargazers_count": 9,
+                "language": "PHP",
+                "pushed_at": "2022-03-03T00:40:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Socialmatch-video-call",
+                "description": "\ud83d\udcde Socialmatch Video Call",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2021-12-06T00:35:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Peep-Matches",
+                "description": "\ud83d\udc96 Dating Platform",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2020-12-20T07:58:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Store-gaming-website-HTML",
+                "description": "\ud83c\udf73 Store gaming website HTML",
+                "stargazers_count": 14,
+                "language": "HTML",
+                "pushed_at": "2021-12-04T13:14:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Trading-View-React",
+                "description": "\ud83d\udcb9 Trading View",
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2022-08-10T08:56:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Codeigniter-Sample-Login",
+                "description": "\ud83e\udeb5 Codeigniter Sample Login",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2020-09-15T01:22:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Angularjs-sample",
+                "description": "\ud83e\uddee Angular JS Sample",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2020-10-15T03:06:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Chat-Work-Twillo",
+                "description": "\ud83d\udd31 Chart Work Twillio",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2020-10-18T01:25:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Json-api-Laravel",
+                "description": "\ud83d\uddef\ufe0f Json api Laravel",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2020-11-22T00:59:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Social-login-Laravel",
+                "description": "\ud83c\udf65 Laravel Socialite",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2020-11-23T01:54:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Volunteer-Laravel",
+                "description": "\u26a1 Voluntter Web",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2020-11-23T02:05:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Livesmart-video-chat-Laravel",
+                "description": "\ud83d\udc8b Livesmart video chat script",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-25T01:58:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ecommerce-Next.js",
+                "description": "\ud83e\ude70 Fastest E-commerce template built with React, NextJS, TypeScript, GraphQL, Type-GraphQL & Styled-Components. Its very easy to use, we used graphql and type-graphql, you can build your schema very easily. GraphQL playground makes it\u2019s own documentation, your frontend team will love using it.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2020-11-23T19:57:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Freelancer-feed-assistant",
+                "description": "\ud83c\udf20 Freelancer Feed Assistant",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-25T11:07:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fullcalendar-custom-style",
+                "description": "\ud83e\uddee Fullcalendar Custom Style",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-27T17:25:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IP-Address-Users-Location-Detect",
+                "description": "\u2795 IP address - Users location detect",
+                "stargazers_count": 13,
+                "language": "PHP",
+                "pushed_at": "2020-11-28T01:40:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ajax-contact-form-and-send-mail-PHP",
+                "description": "\ud83d\udec2 Ajax contact form",
+                "stargazers_count": 12,
+                "language": "CSS",
+                "pushed_at": "2020-11-28T16:33:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Razorpay-payment-gateway-for-perfex-crm",
+                "description": "\ud83d\udcb6 Razorpay Payment Gateway",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2020-11-29T23:35:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nextend-Smart-Slider",
+                "description": "\ud83c\udf3a Nextend Smart Slider3_pro",
+                "stargazers_count": 13,
+                "language": "PHP",
+                "pushed_at": "2020-11-30T06:56:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PDF-viewer",
+                "description": "\ud83d\ude36\u200d\ud83c\udf2b\ufe0f PDF viewer",
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2020-12-03T18:59:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pay-Page-PHP",
+                "description": "\ud83e\udd73 Pay page",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2020-12-03T19:09:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebViewer-PDF-rendering-the-best-example",
+                "description": "\ud83c\udf44 WebViewer(PDF)",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2020-12-06T12:03:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Best-all-option-PDF-Viewer",
+                "description": "\ud83e\uddca PDF_Viewer",
+                "stargazers_count": 11,
+                "language": "CSS",
+                "pushed_at": "2020-12-06T12:53:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Audio-play-Jquery",
+                "description": "\ud83c\udf41 Jquery Audio play",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2020-12-07T10:42:46Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:15.203871+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

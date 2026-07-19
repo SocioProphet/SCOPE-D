@@ -1,0 +1,418 @@
+{
+  "profileId": "osint-profile-ffad2f822e9e",
+  "target": "Dragon0513",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:26.441535+00:00",
+  "completedAt": "2026-06-21T15:33:27.335379+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-512b2da5",
+      "lookupType": "github_context",
+      "target": "Dragon0513",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Dragon0513",
+            "name": "Night Fury",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "I'm a Senior AI Full-Stack Engineer with extensive experience specializing in cutting-edge solutions, web development, AI and blockchain solutions.",
+            "public_repos": 38,
+            "followers": 1198,
+            "following": 1717,
+            "created_at": "2024-11-13T10:20:28Z",
+            "updated_at": "2026-06-05T18:31:27Z",
+            "html_url": "https://github.com/Dragon0513",
+            "avatar_url": "https://avatars.githubusercontent.com/u/188321768?v=4",
+            "repos": [
+              {
+                "name": "lead_generation_frontend",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T01:20:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lead_generation",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-18T05:49:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MintingManager_amoy_deploy",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Solidity",
+                "pushed_at": "2025-06-25T23:30:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django-reversion-rest",
+                "description": null,
+                "stargazers_count": 22,
+                "language": "Python",
+                "pushed_at": "2025-02-11T21:23:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hive",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-30T21:51:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nextjs-typescript-react-stripe-js",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-25T21:42:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-dotnet-ninja",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-19T11:50:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-async-decorator",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-19T16:34:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-desktop-apps",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "C#",
+                "pushed_at": "2024-11-19T12:01:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-dotnet",
+                "description": null,
+                "stargazers_count": 21,
+                "language": "C#",
+                "pushed_at": "2024-11-19T11:43:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "grocery-shop",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2024-11-18T08:17:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-ml-github",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-02T06:34:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "education-flask",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2024-11-18T11:04:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "movie-streaming",
+                "description": null,
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2024-11-18T13:51:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chatbot-flask",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "HTML",
+                "pushed_at": "2024-11-18T08:38:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "netflix-vue",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "Vue",
+                "pushed_at": "2024-11-19T05:15:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "real-time-chat-next-supabase",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-19T21:09:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "supa-vacation",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-19T21:19:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "expenses-netlify-app",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-22T15:21:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Inventory-Management-System",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-22T15:27:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "minecraft-chat",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "CSS",
+                "pushed_at": "2024-11-25T21:25:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "twitter-fullstack-clone",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-25T21:28:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NextJSReactServersideRendering",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-25T21:35:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactGraphQL",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-25T21:47:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "next-starter",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-25T21:53:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nft-platform-contracts",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-25T22:23:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web3jobs",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-25T22:11:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dex-integration-with-Cosmwasm",
+                "description": null,
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2024-12-04T00:38:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "assignment-backend-main",
+                "description": null,
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2024-12-02T07:35:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dapp-projects",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-25T22:29:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "URL-Shortener",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-07T19:03:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reth",
+                "description": "Modular, contributor-friendly and blazing-fast implementation of the Ethereum protocol, in Rust",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-02-27T16:35:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "laravel_tall_test",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2025-03-05T14:13:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "visa-monitor-widget",
+                "description": null,
+                "stargazers_count": 21,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-20T08:54:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "graphql-rails",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Ruby",
+                "pushed_at": "2025-05-07T14:37:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spellbook-paid-test",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-16T02:24:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ResellerGPT",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-07-08T15:37:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dragon0513",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 21,
+                "language": null,
+                "pushed_at": "2025-08-15T05:43:57Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:27.334609+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

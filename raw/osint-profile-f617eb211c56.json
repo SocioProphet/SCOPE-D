@@ -1,0 +1,244 @@
+{
+  "profileId": "osint-profile-f617eb211c56",
+  "target": "rensii-1996",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:27.338069+00:00",
+  "completedAt": "2026-06-21T15:33:28.162003+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b311cc0c",
+      "lookupType": "github_context",
+      "target": "rensii-1996",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "rensii-1996",
+            "name": "Ren Si",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "I love programming :)",
+            "public_repos": 19,
+            "followers": 1193,
+            "following": 3332,
+            "created_at": "2024-08-13T11:01:01Z",
+            "updated_at": "2025-09-17T09:34:11Z",
+            "html_url": "https://github.com/rensii-1996",
+            "avatar_url": "https://avatars.githubusercontent.com/u/178283704?v=4",
+            "repos": [
+              {
+                "name": "RDP-Brute-Force",
+                "description": "FastRDP is a tool for brute force attacks on the Remote Desktop Protocol (RDP) on the Windows operating system, which allows users to remotely connect to computers and servers. ",
+                "stargazers_count": 37,
+                "language": "C#",
+                "pushed_at": "2024-12-30T10:57:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MachineLearning",
+                "description": "A collection of various algorithms under ML.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-03-03T02:07:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "qgate-model",
+                "description": "ML/AI meta-model, used in MLRun/Iguazio/Nuclio, see qgate-sln-<solution>",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-08-23T08:53:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SMB-Brute-Force",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2025-06-11T10:37:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "task-tracker",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-09-20T07:10:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cnnClassification",
+                "description": "using a convolutional neural network using TensorFlow for image classification",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-06-11T12:46:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sorting_algos",
+                "description": "Visualization of sorting algorithms",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-11T10:52:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "leetcode-algorithms",
+                "description": "Leetcode solutions",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-07-11T17:49:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "shutter-blender-client",
+                "description": "Photography Service  Website",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-12-21T14:44:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "space-travelers-hub",
+                "description": "Explore the cosmos with us! \ud83c\udf1f Embark on captivating space missions and book rockets for an unforgettable journey into the unknown. Get ready to experience the thrill of space travel like never before! \ud83d\ude80\ud83c\udf20",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-08-12T13:20:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "React_js",
+                "description": "For Study",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-09-16T06:29:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Quick-Sort",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-09-16T08:27:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Trabalho_ADA_ProgII",
+                "description": "KNN and K-Means from scratch using a dataset of images from https://www.kaggle.com/c/dogs-vs-cats/data",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-01-29T22:18:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rensii-1996",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-08-27T11:56:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AssistentePessoal",
+                "description": "Assistente pessoal virtual desenvolvida com Python \ud83e\udd16",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-11-12T22:59:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Simple-Program-With-Python",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-08-15T07:23:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "opencvWithPython",
+                "description": "OpenCv ile Python - Video ve Resim Analizleri",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2017-12-01T16:58:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hotel-booking-app",
+                "description": "Hotel booking program in Python. Unit testing done using Pytest.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-02-25T01:48:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "safaricom-daraja-nodejs",
+                "description": "Standalone M-Pesa payments service using the new Daraja Payment API by Safaricom.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-25T22:12:52Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:28.161111+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

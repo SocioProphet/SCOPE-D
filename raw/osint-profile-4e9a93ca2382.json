@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-4e9a93ca2382",
+  "target": "crypto0402",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:26.258855+00:00",
+  "completedAt": "2026-06-21T15:32:26.596805+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1b3ec82a",
+      "lookupType": "github_context",
+      "target": "crypto0402",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "crypto0402",
+            "name": "Follow me\ud83d\udc96 Give me star\u2b50",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Please follow and give me star.",
+            "public_repos": 1,
+            "followers": 1397,
+            "following": 3582,
+            "created_at": "2025-03-27T22:53:03Z",
+            "updated_at": "2025-06-30T08:39:24Z",
+            "html_url": "https://github.com/crypto0402",
+            "avatar_url": "https://avatars.githubusercontent.com/u/205245931?v=4",
+            "repos": [
+              {
+                "name": "give-me-star",
+                "description": null,
+                "stargazers_count": 76,
+                "language": null,
+                "pushed_at": "2025-03-28T02:46:34Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:26.595614+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "profileId": "osint-profile-8611d00b07bb",
+  "target": "Ali1Safi",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:23.513790+00:00",
+  "completedAt": "2026-06-21T15:28:23.986234+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-cbca7d87",
+      "lookupType": "github_context",
+      "target": "Ali1Safi",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Ali1Safi",
+            "name": "Ali.safi",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "IT Engineer at Turning Research Team ",
+            "public_repos": 7,
+            "followers": 3701,
+            "following": 9211,
+            "created_at": "2024-03-08T10:46:39Z",
+            "updated_at": "2025-11-14T15:10:36Z",
+            "html_url": "https://github.com/Ali1Safi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/162697917?v=4",
+            "repos": [
+              {
+                "name": "ubook-shop",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-02T22:11:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-13T18:19:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ali1Safi",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2024-11-21T19:11:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-14T17:54:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tamrin",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2024-07-31T07:57:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Rar-EXa16432.6084",
+                "description": "Turing research group.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-17T07:02:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "push",
+                "description": "Turing research group.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-17T07:15:07Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:23.985648+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

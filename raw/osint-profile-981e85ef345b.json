@@ -1,0 +1,496 @@
+{
+  "profileId": "osint-profile-981e85ef345b",
+  "target": "illusive7ai",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:45.986021+00:00",
+  "completedAt": "2026-06-20T16:48:47.223417+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-d1c7f7ff",
+      "lookupType": "github_context",
+      "target": "illusive7ai",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "illusive7ai",
+            "name": "Illusivehacks",
+            "type": "User",
+            "company": "IllusiveHacks Corp",
+            "blog": "https://williamportfolio-eosin.vercel.app/",
+            "location": "Nowhere",
+            "bio": "Security researcher. Building offensive & defensive tools for education. Wi-Fi auditing | Python scripting | Ethical hacking | Batch scripting.",
+            "public_repos": 47,
+            "followers": 959,
+            "following": 1493,
+            "created_at": "2026-01-22T13:14:12Z",
+            "updated_at": "2026-05-27T10:25:12Z",
+            "html_url": "https://github.com/illusive7ai",
+            "avatar_url": "https://avatars.githubusercontent.com/u/256570654?v=4",
+            "repos": [
+              {
+                "name": "illusive7ai",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-06-20T16:06:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cipher-Menace",
+                "description": "This is a Ransomware/ Security demonstration/ Educational Security lock screen",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-05-01T16:00:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Phone-Locator",
+                "description": "This is a python script for geolocating phone numbers.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-04-29T12:45:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Admin-crawler",
+                "description": "This tool is a GUI\u2011based security scanner that automatically hunts for hidden admin panels on a target website. It uses intelligent path discovery (including CMS detection, AI\u2011assisted analysis and common wordlists) to locate administrative interfaces, then generates a detailed report with security findings and optional PDF export.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2026-05-01T15:10:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Whatsapp-Unban",
+                "description": "This is a simple website that assist users to unban both permanent and temporary banned whatsapp accounts.",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-05-01T15:34:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Williams-Blog",
+                "description": "My personal Blog",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-05-27T10:22:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Telegram-controlled-remote-backdoor-spyware",
+                "description": "Spyware. This application implements a Telegram bot that provides remote command execution and surveillance capabilities on a Windows-based system. The bot allows authorized users to execute system commands, capture media and retrieve system information through a Telegram interface.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-05-21T08:52:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "William-s-Portfolio",
+                "description": "My Personal Portfolio",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-06-02T11:54:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WI-FI-Brute-Forcer-Key-Combinator-",
+                "description": "WI-FI Bruteforcing | Network Security Assessment Tools | Password Generation & WPA/WPA2 Cracking",
+                "stargazers_count": 13,
+                "language": "Batchfile",
+                "pushed_at": "2026-05-06T18:35:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ping-flooding",
+                "description": "This is a python script that performs ping flooding on a specific ip address or domain",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-05-01T15:51:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Github-Mass-Following",
+                "description": "This is a an automated python script that performs mass following and unfollowing to increase a specific github account followers organically(follow backs)",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-05-15T13:03:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Mawingu-User-Manual",
+                "description": "The user manual for mawingu users.",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-05-04T09:01:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Terms-and-Conditions-Mawingu",
+                "description": "Terms and conditions for mawingu packet analyzer",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2026-05-04T08:56:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PDF-Suite",
+                "description": "PDF Suite is a comprehensive desktop application that provides an all-in-one solution for PDF manipulation and image processing tasks.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-05-10T09:12:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nyx_AI-Assistant",
+                "description": "Voice-Activated Artificial Intelligence Assistant | Local AI Integration.  Currently not complete but provided a very simple base that people can use to make their own AIs. Do not forget to star if it interests you!",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-05-02T05:20:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Mawingu-stresstool",
+                "description": "This is a GUI python project that i used as the attackers side for my final year project. This project is to be continued and more functionalities added.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-05-01T14:55:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LinkForge---URL-Shortner",
+                "description": "A professional URL shortening application that provides link compression, QR code generation, bulk processing capabilities and rich link previews.",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-05-03T18:30:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Run-as-Admininstrator",
+                "description": "Batch script",
+                "stargazers_count": 7,
+                "language": "Batchfile",
+                "pushed_at": "2026-04-29T12:48:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data-Extractor-and-backup",
+                "description": "Batch script for data extraction and backup",
+                "stargazers_count": 7,
+                "language": "Batchfile",
+                "pushed_at": "2026-04-29T12:52:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Reboot",
+                "description": "This is a batch script that can reboot your laptop upon execution or using a Automated USB (Rufus).",
+                "stargazers_count": 7,
+                "language": "Batchfile",
+                "pushed_at": "2026-04-29T12:57:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shutdown",
+                "description": "This is a batch script that can shutdown your laptop upon execution or using a Automated USB (Rufus).",
+                "stargazers_count": 7,
+                "language": "Batchfile",
+                "pushed_at": "2026-04-29T12:59:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IP-and-MAC-address-fetcher",
+                "description": "This is a batch script that fetchers both the IP and Mac address of a device when executed and also when using an automated USB (Rufus).",
+                "stargazers_count": 7,
+                "language": "Batchfile",
+                "pushed_at": "2026-04-29T13:02:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Email-hijacking",
+                "description": "Email hijacking batch script",
+                "stargazers_count": 7,
+                "language": "Batchfile",
+                "pushed_at": "2026-04-29T13:04:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CAT_Project_WilliamKitungo",
+                "description": "CAT",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-04-29T13:08:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ip_logger",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-04-29T13:12:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "movies-bot",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-04-29T13:15:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dvwa_scanner",
+                "description": "This tool is a CLI\u2011based DAST (Dynamic Application Security Testing) scanner that automatically tests web applications for OWASP Top 10 vulnerabilities (e.g., injection, access control). It supports authenticated scanning (form/basic/bearer), configurable security levels, deep payload injection, concurrent crawling and outputs detailed reports.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-04-30T14:48:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Phishing-Website---Data-capture",
+                "description": "This project is a **data capture simulation** disguised as a \"4000 YouTube WatchTime hours\" offer.",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2026-05-01T14:41:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "whatsapp-crashing",
+                "description": "Python script for crashing whatsapp",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-04-29T12:35:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backdoor-v2",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "VBScript",
+                "pushed_at": "2026-04-24T17:01:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cybersecurity-Suite",
+                "description": "Multi-Tool Security Toolkit | Encryption | Hashing | Encoding",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-05-01T15:22:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Weatherapp",
+                "description": "A comprehensive command-line weather application that retrieves current weather conditions and forecasts using dual data sources: Google Search scraping (primary) with OpenWeatherMap API fallback.",
+                "stargazers_count": 6,
+                "language": "Shell",
+                "pushed_at": "2026-05-03T17:20:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Reaction-Bot",
+                "description": "An intelligent Telegram bot that uses **advanced AI sentiment analysis** to automatically react to messages with the most relevant emojis.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-05-03T11:01:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SAM-Toolkit-Security-Account-Manager-Extractor",
+                "description": "SAM Database Extraction & Password Cracking Toolkit | Windows Security Research",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-05-02T05:43:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Phantom-SubFinder",
+                "description": "Ultimate Reconnaissance Tool | Subdomain Discovery | Network Mapping",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-05-03T08:57:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backdoor-v1",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Batchfile",
+                "pushed_at": "2026-04-24T16:56:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tictactoe_Game",
+                "description": "Tic Tac Toe Game using python",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-04-24T16:49:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CameraHack",
+                "description": "Hacking camera",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-04-24T16:42:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MovingImg",
+                "description": "MovingImg Website",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-04-24T16:38:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Bluebugging",
+                "description": "Bluetooth",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-04-24T16:35:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Screensharing-V2",
+                "description": "A peer-to-peer screen sharing application using WebRTC and Socket.io for signaling.",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-04-24T16:29:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "screenshare",
+                "description": "Screensharing python code ",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-04-24T16:33:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PasswordStealer",
+                "description": "Copy Chrome's saved passwords file \u2014 which contains all stored usernames and passwords in plaintext (well, encrypted but easily decrypted).",
+                "stargazers_count": 5,
+                "language": "Batchfile",
+                "pushed_at": "2026-04-24T16:12:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dreaded-v2",
+                "description": "A modular WhatsApp bot based on baileys.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-10-08T09:02:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "alela",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-08-11T08:30:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dreaded-md",
+                "description": "WhatsApp bot built with nodeJs and Baileys multidevice.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-07-06T01:31:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Flash-Md",
+                "description": "Feel Free To Use FLASH-MD, Remember To STAR\ud83c\udf1f The Repo After Forking ",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-07-20T12:00:23Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:47.222346+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

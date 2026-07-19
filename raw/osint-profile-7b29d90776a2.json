@@ -1,0 +1,526 @@
+{
+  "profileId": "osint-profile-7b29d90776a2",
+  "target": "joyfulmagician",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:59.743505+00:00",
+  "completedAt": "2026-06-21T15:32:01.355655+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-2a6b4339",
+      "lookupType": "github_context",
+      "target": "joyfulmagician",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "joyfulmagician",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Deliberate practice is not simply performing a task.",
+            "public_repos": 68,
+            "followers": 1496,
+            "following": 3027,
+            "created_at": "2023-10-02T01:42:53Z",
+            "updated_at": "2026-05-27T06:21:46Z",
+            "html_url": "https://github.com/joyfulmagician",
+            "avatar_url": "https://avatars.githubusercontent.com/u/146685915?v=4",
+            "repos": [
+              {
+                "name": "FlashUSDT",
+                "description": "This is about flash ERC20/TRC20 USDT",
+                "stargazers_count": 37,
+                "language": "Solidity",
+                "pushed_at": "2024-10-29T17:03:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hibernate-orm",
+                "description": "Idiomatic persistence for Java and relational databases",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T17:53:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "struts",
+                "description": "Apache Struts is a free, open-source, MVC framework for creating elegant, modern Java web applications",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-17T01:35:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "spring-boot",
+                "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-15T14:10:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "spring-framework",
+                "description": "Spring Framework",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-15T13:44:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "socket.io",
+                "description": "Bidirectional and low-latency communication for every platform",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-09T08:32:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vuejs-core",
+                "description": "\ud83d\udd96 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-12T14:01:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hapi",
+                "description": "The Simple, Secure Framework Developers Trust",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-06T10:38:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nuxt",
+                "description": "the full-stack Vue framework",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-12T18:54:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "koa",
+                "description": "Expressive middleware for node.js using ES2017 async functions",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-10T15:35:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fastify",
+                "description": "Fast and low overhead web framework, for Node.js",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-10T09:10:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react",
+                "description": "The library for web and native user interfaces.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-27T00:35:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flask",
+                "description": "The Python micro framework for building web applications.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-31T14:42:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yii2",
+                "description": "Yii 2: The Fast, Secure and Professional PHP Framework",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-07T20:21:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cakephp",
+                "description": "CakePHP: The Rapid Development Framework for PHP - Official Repository",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-03T16:07:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nest",
+                "description": "A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications with TypeScript/JavaScript \ud83d\ude80",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-05T07:39:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "node",
+                "description": "Node.js JavaScript runtime \u2728\ud83d\udc22\ud83d\ude80\u2728",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-04T05:38:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "express",
+                "description": "Fast, unopinionated, minimalist web framework for node.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-02T05:27:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fastapi",
+                "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-01T17:55:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "django",
+                "description": "The Web framework for perfectionists with deadlines.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-29T15:46:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "symfony",
+                "description": "The Symfony PHP framework",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-28T16:38:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tanstack-table",
+                "description": "\ud83e\udd16 Headless UI for building powerful tables & datagrids for TS/JS -  React-Table, Vue-Table, Solid-Table, Svelte-Table",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-25T14:55:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tanstack-form",
+                "description": "\ud83e\udd16 Headless, performant, and type-safe form state management for TS/JS, React, Vue, Angular, Solid, and Lit.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-26T18:29:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tanstack-query",
+                "description": "\ud83e\udd16 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/JS, React Query, Solid Query, Svelte Query and Vue Query.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-27T05:47:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "shadcn-ui",
+                "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-27T05:17:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tailwindcss",
+                "description": "A utility-first CSS framework for rapid UI development.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-26T21:35:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "next.js",
+                "description": "The React Framework",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-27T06:05:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CodeIgniter4",
+                "description": "Open Source PHP Framework (originally from EllisLab)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-27T05:49:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "laravel",
+                "description": "Laravel is a web application framework with expressive, elegant syntax. We\u2019ve already laid the foundation for your next big idea \u2014 freeing you to create without sweating the small things.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-25T23:11:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "easy-consulting-react",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-03T07:47:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JoyfulMagician",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 22,
+                "language": null,
+                "pushed_at": "2024-11-17T16:06:39Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Scrapping",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-10-30T02:35:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TaraSwap",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-23T12:41:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Portfolio",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-17T02:17:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JobApply",
+                "description": "This is about auto job applier on Linkedin.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-20T05:35:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Py_Mini_Projects",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-12-18T21:48:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PasswordManager",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-11-07T09:22:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Face_recognition_based_attendance_system",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-11-07T09:20:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "emailbomber",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2023-11-07T09:16:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tailwindcss-customized",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2023-09-27T21:53:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lexical",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-02T12:09:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "microfrontend-angular-react",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2023-10-30T07:18:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-swagger-starter-kit",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2023-10-30T07:16:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chat-MERN-backend",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-30T07:15:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "3D-port",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-30T07:14:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-electron-cash-flow",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-25T13:59:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-cash-flow",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-25T13:57:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blurhash",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2023-10-25T13:52:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "https-proxy-cli",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-24T19:19:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "llama_gpt",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2023-10-14T15:51:16Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:01.354810+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

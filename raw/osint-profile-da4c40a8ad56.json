@@ -1,0 +1,537 @@
+{
+  "profileId": "osint-profile-da4c40a8ad56",
+  "target": "HackEzra",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:47.152347+00:00",
+  "completedAt": "2026-06-20T16:49:48.086197+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b94c52fa",
+      "lookupType": "github_context",
+      "target": "HackEzra",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "HackEzra",
+            "name": "Ezra",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "127.0.0.1",
+            "bio": "Developer | Application Security | Vulnerability Researcher",
+            "public_repos": 54,
+            "followers": 714,
+            "following": 696,
+            "created_at": "2021-10-11T14:04:20Z",
+            "updated_at": "2026-02-13T06:38:27Z",
+            "html_url": "https://github.com/HackEzra",
+            "avatar_url": "https://avatars.githubusercontent.com/u/92317816?v=4",
+            "repos": [
+              {
+                "name": "Ethical",
+                "description": "Ethical hacking notes pdf",
+                "stargazers_count": 57,
+                "language": null,
+                "pushed_at": "2024-09-28T08:13:43Z",
+                "fork": false,
+                "topics": [
+                  "hacking",
+                  "offensive-security",
+                  "pentesting",
+                  "python",
+                  "shell-script"
+                ]
+              },
+              {
+                "name": "advanced-ethical",
+                "description": "Ethical hacking resources ",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-01-22T08:12:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-admin",
+                "description": "A frontend Framework for building B2B applications running in the browser on top of REST/GraphQL APIs, using ES6, React and Material Design",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-05T09:52:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gym-management-system",
+                "description": "A java based gym management system.",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2023-02-14T16:07:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dairy-farm-management-system",
+                "description": "php based dairy farm management system",
+                "stargazers_count": 7,
+                "language": "SCSS",
+                "pushed_at": "2024-01-12T17:48:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackEzra",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-09-15T13:45:59Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "500-udemy-primes",
+                "description": "500+ udemy collection in mega.nz",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-07-09T17:10:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "30-Days-Of-JavaScript",
+                "description": "30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript programming language in 30 days. This challenge may take more than 100 days,  please just follow your own pace. ",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-29T17:21:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "30-Days-Of-Python",
+                "description": "30 days of Python programming challenge is a step-by-step guide to learn the Python programming language in 30 days. This challenge may take more than100 days, follow your own pace. ",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-06-29T17:20:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mega-collection",
+                "description": "programming languages set",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-06-22T07:04:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "z-buffer-algorithm-",
+                "description": "was a group work but turned it to a repo",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2023-02-15T19:45:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Machine-learning",
+                "description": "ML basics",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-10-01T08:42:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pages",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2022-10-01T08:45:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cool",
+                "description": "best wp-themes",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-10-13T12:53:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "h4cker",
+                "description": "This repository is primarily maintained by Omar Santos (@santosomar) and includes thousands of resources related to ethical hacking  / penetration testing, digital forensics and incident response (DFIR), vulnerability research, exploit development, reverse engineering, and more.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-12-05T09:53:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "js",
+                "description": "Js practice codes",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-14T07:02:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DevilX",
+                "description": "A very dangerous tool for termux.",
+                "stargazers_count": 4,
+                "language": "Shell",
+                "pushed_at": "2024-06-15T14:11:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CommunityWriterPrograms",
+                "description": "A list of Developer Community Writer Programs",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-06-15T14:06:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hotel-booking",
+                "description": "hotel booking project:)",
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2024-06-03T20:52:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "onepager",
+                "description": "Onepage Theme/Website Builder for WordPress",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-02-17T21:01:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "introduction",
+                "description": "Digging into to github.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-10-11T14:09:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Microsoft-Azure-500",
+                "description": "Kyline Academy certification.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-10-21T20:08:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ethical-hacking-resource",
+                "description": "Top 10 ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-11-01T20:15:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "online-certified-courses",
+                "description": "All links to online tutorials",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-11-02T17:15:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Search-Engine-optimization-",
+                "description": "SEO",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-12-01T19:08:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sites",
+                "description": "Curated collection ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-01-01T20:54:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jQuery",
+                "description": "jQ starter pack",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-01-17T19:40:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QR-CODE-GENERATOR-",
+                "description": "QR code generator-javascript",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-01-28T12:11:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "file-synch-tool",
+                "description": "File synchronization tool",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-01-25T12:15:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bounce-it-back",
+                "description": "audio BIB",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-31T06:38:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "feedback",
+                "description": "feedback app",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-31T06:45:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scientific-calc",
+                "description": "scientific calculator ",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-01-31T07:04:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "online-store",
+                "description": "camera online store",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2023-01-31T14:05:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple-food-ordering",
+                "description": "CPP food ordering simple project.",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2023-02-03T11:28:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "movie-ticketing-system",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2023-02-03T11:53:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "audio-player-",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2023-02-04T20:23:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "currency-converter-",
+                "description": "Currency converter ",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2023-02-10T06:47:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Library-management-",
+                "description": "Library management system ",
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2023-02-10T06:52:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Online-clothing-store",
+                "description": "php based online store.",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2023-02-13T15:22:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-mini-projects",
+                "description": ".py mini projects",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-02-22T11:52:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ISP-management-system",
+                "description": "Java based ISP management system",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2023-02-20T20:56:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "angular-app-master",
+                "description": "Angular app components ",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-02-27T08:09:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "x",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-03-06T20:26:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PENTESTING-BIBLE",
+                "description": "articles",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-04-03T07:40:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "php_msql_project",
+                "description": "php mysql project ",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-08-12T05:48:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Voting-System",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-01-02T07:29:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Car-Rental",
+                "description": "Carjack is a simple car rental web app made using PHP and MySQL following MVP and Object Oriented design pattern!",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2024-01-03T07:08:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MyPyMini",
+                "description": "Mini-Py projects",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-01-10T04:37:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "R3D-T3AM",
+                "description": "List of red team repos",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-01-11T09:27:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hospital-Management",
+                "description": "Hospital Management System Group Project",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-01-10T15:03:42Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "project",
+                  "python"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:48.085219+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

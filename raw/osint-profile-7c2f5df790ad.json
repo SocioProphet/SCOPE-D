@@ -1,0 +1,406 @@
+{
+  "profileId": "osint-profile-7c2f5df790ad",
+  "target": "flaviopavim",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:10.802725+00:00",
+  "completedAt": "2026-06-21T15:28:11.751943+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c6dcac06",
+      "lookupType": "github_context",
+      "target": "flaviopavim",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "flaviopavim",
+            "name": "Fl\u00e1vio Pavim",
+            "type": "User",
+            "company": "WhiteHats",
+            "blog": "https://www.flaviopavim.com.br",
+            "location": null,
+            "bio": "Skills with lot types of softwares:\r\n\r\nWeb, Desktop, Mobile - \r\n\r\nPhp&MySql, Javascript, Html, Css, Python, Dart, Java, C, C++, C#, Arduino",
+            "public_repos": 37,
+            "followers": 4206,
+            "following": 42216,
+            "created_at": "2015-10-23T19:25:30Z",
+            "updated_at": "2026-06-18T04:49:50Z",
+            "html_url": "https://github.com/flaviopavim",
+            "avatar_url": "https://avatars.githubusercontent.com/u/15269375?v=4",
+            "repos": [
+              {
+                "name": "aspirador-arduino",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "C++",
+                "pushed_at": "2024-01-14T20:33:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flaviamattioli.com.br",
+                "description": "Fl\u00e1via Mattioli Psic\u00f3loga",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2024-04-30T17:18:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-game-ia",
+                "description": "Game simples com IA - Em desenvolvimento",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-07-14T05:41:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tetris-javascript",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2023-07-14T14:26:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-crud-mysql",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-29T00:56:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crypt_app",
+                "description": "Crypt by WhiteHats",
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2022-06-19T21:21:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-crud-test",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2022-02-01T02:46:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cp2p-network",
+                "description": "Simple c++ p2p chat",
+                "stargazers_count": 6,
+                "language": "C",
+                "pushed_at": "2021-10-05T00:11:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "java-test",
+                "description": "Teste API Rest em Java",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2021-07-05T05:24:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cp2p",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "C",
+                "pushed_at": "2021-07-10T00:01:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quadro",
+                "description": "Quadro de leds com ESP32 conectado em API",
+                "stargazers_count": 6,
+                "language": "C++",
+                "pushed_at": "2024-01-20T04:38:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "protetoras",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2023-12-16T17:30:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alarme-mercadobitcoin",
+                "description": "Alarme pra quando uma ordem de compra ou venda estiver pr\u00f3ximo de atingir - totalmente edit\u00e1vel",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-11-27T14:51:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "notes",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Dart",
+                "pushed_at": "2023-10-15T16:38:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-compiler",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2023-05-08T06:02:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crypt",
+                "description": "Crypt app in Flutter",
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2023-04-02T06:42:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "whitehats.com.br",
+                "description": "WhiteHats BR site",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2024-03-19T14:26:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bluetooth-control-arduino-pro-mini",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "C++",
+                "pushed_at": "2024-03-15T17:16:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alarm-test",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2024-02-09T15:09:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "arduino-bluetooth-switch",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "C++",
+                "pushed_at": "2024-02-04T22:53:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flaviopavim",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-09-10T02:21:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node-test",
+                "description": "Simple Node.js test",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-27T22:17:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-security",
+                "description": "Default security to PHP scripts",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2024-12-30T17:16:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-crypt",
+                "description": "My cypher collection in PHP",
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2025-01-12T17:34:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "you-code",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-16T17:47:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "recognition",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-02-06T03:25:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cpp",
+                "description": "My C++ compilation",
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2025-10-17T17:45:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "arduino",
+                "description": "My Arduino compilation",
+                "stargazers_count": 10,
+                "language": "C++",
+                "pushed_at": "2025-12-10T08:42:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "checklist",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Dart",
+                "pushed_at": "2026-01-15T08:43:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python",
+                "description": "My Python compilation",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2026-01-20T17:43:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple-calendar",
+                "description": "Simple calendar maded in Dart (Flutter) with native Java SQL database. Just to use like a Java CRUD example",
+                "stargazers_count": 18,
+                "language": "Dart",
+                "pushed_at": "2020-09-09T16:56:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Mesa-de-led",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2018-04-20T16:12:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-crypt",
+                "description": "Cryptography made in Python, thats shuffle and unshuffle strings",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2020-01-29T14:50:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rgb-led-table-tic-tac-toe",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2018-04-24T19:17:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cpp-crypt",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2020-02-23T23:26:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dart-crypt",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2020-02-23T23:35:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "java-crypt",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2020-02-23T23:40:02Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:11.751193+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "profileId": "osint-profile-103c02e12c5c",
+  "target": "RamonLarcherRibeiro",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:02.942266+00:00",
+  "completedAt": "2026-06-21T15:32:03.558371+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-37e2d67e",
+      "lookupType": "github_context",
+      "target": "RamonLarcherRibeiro",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "RamonLarcherRibeiro",
+            "name": "Ramon Larcher",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Brasil",
+            "bio": null,
+            "public_repos": 12,
+            "followers": 1474,
+            "following": 5945,
+            "created_at": "2023-03-06T18:30:26Z",
+            "updated_at": "2025-07-31T01:25:54Z",
+            "html_url": "https://github.com/RamonLarcherRibeiro",
+            "avatar_url": "https://avatars.githubusercontent.com/u/127141288?v=4",
+            "repos": [
+              {
+                "name": "node_curso",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-14T00:14:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "page-login-night",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Vue",
+                "pushed_at": "2024-06-22T21:48:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "100DaysOfCodeJava",
+                "description": null,
+                "stargazers_count": 20,
+                "language": "Java",
+                "pushed_at": "2024-08-27T23:49:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gerador_de_senhas",
+                "description": "gerador de senhas aleat\u00f3rias em c",
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2024-04-29T01:22:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sockets_tcp_C",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2024-05-12T05:37:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "calculadora",
+                "description": "calculadora em c",
+                "stargazers_count": 6,
+                "language": "C",
+                "pushed_at": "2024-04-30T01:53:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HatedInTheNation",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Vue",
+                "pushed_at": "2024-06-23T14:27:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webBee",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Vue",
+                "pushed_at": "2024-06-21T02:58:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ordenacao_selecao_c",
+                "description": "Esta \u00e9 uma fun\u00e7\u00e3o C de ordena\u00e7\u00e3o (classifica\u00e7\u00e3o por sele\u00e7\u00e3o) que classifica um array de inteiros em ordem crescente.",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2024-05-16T07:09:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sockets_udp",
+                "description": "comunica\u00e7\u00e3o usando sockets udp ",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-04-30T09:39:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sockets_tcp",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-04-30T10:53:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RamonLarcherRibeiro",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-06-21T04:26:00Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:03.557571+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "profileId": "osint-profile-0fc6a492eebf",
+  "target": "NOUHABL",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:52.603572+00:00",
+  "completedAt": "2026-06-21T15:31:53.622628+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-71ac5a81",
+      "lookupType": "github_context",
+      "target": "NOUHABL",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "NOUHABL",
+            "name": "NOUHA",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Algeria ",
+            "bio": "\ud83d\ude80 Full Stack Developer | \ud83d\udca1 AI Enthusiast | \ud83c\udf93 Computer Engineering Student                                                \r\n|Since 2021(Old Account Suspended)",
+            "public_repos": 34,
+            "followers": 1520,
+            "following": 2366,
+            "created_at": "2025-05-26T03:06:20Z",
+            "updated_at": "2026-03-16T00:52:17Z",
+            "html_url": "https://github.com/NOUHABL",
+            "avatar_url": "https://avatars.githubusercontent.com/u/213374654?v=4",
+            "repos": [
+              {
+                "name": "Studytracker-rm",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-19T03:00:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Real-Estate",
+                "description": "A modern real estate web application that displays available properties for sale and rent. Users can browse listings, view property details, and filter results by location, price, and type. Built with a clean UI and real-time data integration to help users easily find their next home or investment opportunity.",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2025-07-07T14:38:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GDGC-website01",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-31T02:35:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "registration.01",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-29T11:30:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-integration",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-12-17T02:13:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tailwind_task",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-12-01T20:09:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tailwind-Task",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-12-01T20:36:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Quizz-App",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-24T23:53:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Properties-market",
+                "description": "A dynamic web application for browsing and managing property listings in the real estate market. Users can explore a wide range of properties for sale or rent, with advanced search filters, detailed property pages, and real-time availability. Designed for performance, responsiveness, and a seamless user experience.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-11T23:43:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "YelpCamp",
+                "description": "A full-stack web application where users can discover, review, and share camping spots. The platform features campground listings with images, descriptions, prices, and locations. Users can sign up, log in, post their own campgrounds, leave reviews, and comment on others'. Built with authentication and authorization to protect user data and ensure ",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-03T16:42:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "x86-assembly-string-reversal",
+                "description": "Asks the user to enter a string (up to 100 characters)  Reverses the string  Displays the reversed string  This program is written for Linux, using NASM (Netwide Assembler) with system calls (int 0x80). It should be assembled with nasm -f elf32 and linked with ld -m elf_i386.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-27T22:24:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-forms",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-22T22:06:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TicTacToe-Game",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-07-20T21:13:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NOUHABL",
+                "description": "Welcome to my GitHub Profile!",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-09-24T23:54:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ToDoList",
+                "description": "A Simple To Do List App made 2 years ago",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-19T01:36:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gesture-Controller",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-07-16T14:50:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "t",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-07-18T18:43:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sonar-Scanner",
+                "description": "This project contains the Arduino code for a simple ultrasonic sonar scanner using a servo motor and an HC-SR04 ultrasonic sensor. The system scans the environment by rotating the sensor and measuring distances in a defined arc, then sends the data to the serial monitor or can be visualized on a connected interface.",
+                "stargazers_count": 6,
+                "language": "C++",
+                "pushed_at": "2025-07-18T18:45:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "File-sharing-Uploading-web-App",
+                "description": "A simple and secure web application for uploading, sharing, and downloading files. Users can drag and drop files, generate unique sharing links, and access shared files across devices. Built for fast performance and ease of use, with features like file previews, expiration dates, and download tracking.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-07-16T14:53:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Steamlit_Python",
+                "description": "Getting introduced to the streamlit world. Looks like a great ideas are coming!",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-11-20T23:43:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WATER-LEVEL-SENSOR-",
+                "description": " Water Level Sensor with LED Indicator (Arduino) An Arduino-based project that monitors water levels using a water sensor and displays the status through LEDs. The system lights up different LEDs based on the current water level, making it ideal for tank monitoring and smart water management. Simple, efficient, and great for beginners in embedded",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2025-07-06T13:09:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cool-Age-Calculator",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2025-06-29T00:20:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LuckyN-Game",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-25T00:24:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LuckyN",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-06-25T00:22:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "soccer-keeper-game",
+                "description": "A fast-paced soccer mini-game where you play as the goalkeeper! Test your reflexes by blocking incoming shots and aim for the highest score. Built with smooth animations, responsive controls, and increasing difficulty to keep the game challenging and fun.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-23T01:58:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Clicker.01",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2025-06-20T03:08:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Slot-Machine-Game",
+                "description": "A simple and interactive slot machine game built for the web. Spin the reels, match the symbols, and test your luck! Designed with smooth animations, engaging visuals, and responsive gameplay. Perfect for learning basic game logic, state management, and UI design.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-06-18T00:06:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "authDemo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2025-06-17T21:53:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sesh",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-07T01:24:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dice-Game",
+                "description": "Dice Game Components",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-15T20:14:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "to-do-list",
+                "description": "simple old to do list made 4 years ago",
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2025-07-14T20:11:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DHT-Sensor",
+                "description": "Arduino code for DHT sensor",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2025-07-14T20:08:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Keypad-display-on-LCD",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2025-07-07T14:41:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "joystick-control-4LED",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2025-07-07T23:14:48Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:53.621869+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

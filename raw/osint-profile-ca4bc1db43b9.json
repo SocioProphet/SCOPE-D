@@ -1,0 +1,253 @@
+{
+  "profileId": "osint-profile-ca4bc1db43b9",
+  "target": "CurtisChou-51",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:18.975874+00:00",
+  "completedAt": "2026-06-20T16:48:19.592809+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4dcdf7fc",
+      "lookupType": "github_context",
+      "target": "CurtisChou-51",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "CurtisChou-51",
+            "name": "Curtis",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Taiwan",
+            "bio": "Software Engineer",
+            "public_repos": 20,
+            "followers": 1068,
+            "following": 1060,
+            "created_at": "2020-09-19T12:34:35Z",
+            "updated_at": "2026-05-26T11:01:04Z",
+            "html_url": "https://github.com/CurtisChou-51",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71554373?v=4",
+            "repos": [
+              {
+                "name": "CurtisChou-51",
+                "description": "Welcome to my profile!",
+                "stargazers_count": 33,
+                "language": null,
+                "pushed_at": "2026-06-20T01:00:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dev-toolkit-and-notes",
+                "description": "\u7d00\u9304\u4e00\u4e9b\u958b\u767c\u7b46\u8a18\u3001Troubleshooting\u3001\u81ea\u88fd\u7684\u5c0f\u5de5\u5177\u3001Cheatsheet",
+                "stargazers_count": 58,
+                "language": "C#",
+                "pushed_at": "2026-06-13T14:19:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OAuthExample",
+                "description": "OAuth \u767b\u5165\u529f\u80fd\u7684\u7bc4\u4f8b",
+                "stargazers_count": 20,
+                "language": "C#",
+                "pushed_at": "2025-01-20T07:11:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "developer-persona",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-04T08:52:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QueryPhone",
+                "description": "\u96fb\u8a71\u865f\u78bc\u67e5\u8a62\uff0c\u8f38\u5165\u96fb\u8a71\u865f\u78bc\u4e26\u67e5\u8a62\u7279\u5b9a\u7db2\u7ad9\uff0c\u5feb\u901f\u7372\u53d6\u76f8\u95dc\u8cc7\u8a0a\u6458\u8981",
+                "stargazers_count": 31,
+                "language": "C#",
+                "pushed_at": "2026-03-13T03:57:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WindowsServiceExample",
+                "description": "Windows Service with Quartz.NET for Scheduled Tasks",
+                "stargazers_count": 31,
+                "language": "C#",
+                "pushed_at": "2026-04-29T09:08:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GoogleDriveConsole",
+                "description": "\u6b64\u70ba\u7c21\u6613\u7684 GoogleDrive \u6a94\u6848\u4e0b\u8f09\u5de5\u5177\uff0c\u7528\u65bc\u81ea\u52d5\u4e0b\u8f09\u7279\u5b9a\u8cc7\u6599\u593e\u5167\u7684\u6240\u6709\u6a94\u6848\u3002\u4e0d\u7528\u624b\u52d5\u767b\u5165\u6216\u662f OAuth \u9a57\u8b49\u3002",
+                "stargazers_count": 41,
+                "language": "C#",
+                "pushed_at": "2026-03-16T01:36:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GeoJsonRandom",
+                "description": "GeoJsonRandom \u662f\u4e00\u500b\u57fa\u65bc GeoJSON \u8cc7\u6599\u7684\u96a8\u6a5f\u5730\u7406\u4f4d\u7f6e\u7522\u751f\u5de5\u5177\u3002\u6b64\u5de5\u5177\u53ef\u4ee5\u6839\u64da\u5be6\u969b\u5730\u7406\u8cc7\u6599\u7522\u751f\u5408\u7406\u7684\u96a8\u6a5f\u5ea7\u6a19\u3002",
+                "stargazers_count": 32,
+                "language": "C#",
+                "pushed_at": "2025-03-05T08:33:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "YouTube-Downloader",
+                "description": "My fork add Docker support to enable running the YouTube downloader application without a local Python environment.",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2025-03-22T08:24:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ReportDevHelper",
+                "description": "Tools I use to develop HTML reports",
+                "stargazers_count": 11,
+                "language": "C#",
+                "pushed_at": "2025-04-29T09:57:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Excel-to-SQL",
+                "description": "Drag and drop to convert Excel to SQL insert statements.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-12T02:44:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PDF-Rearrange",
+                "description": "Drag and drop to reorder PDF pages and export the sorted PDF file.",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-11T09:22:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Donet-AI-KGgen",
+                "description": ".NET 9 Microsoft.Extensions.AI exercise - generate knowledge graph",
+                "stargazers_count": 13,
+                "language": "C#",
+                "pushed_at": "2026-02-24T07:49:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlazorFileRenameTool",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-03-27T16:39:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FileUploadWithResume",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "C#",
+                "pushed_at": "2024-10-30T02:00:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MSU-marketplace-NFT-quick-search",
+                "description": "This Chrome extension adds a context menu option to quickly search for selected NFT items on the MSU Marketplace.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-16T08:01:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PatternFileCategorizer",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2026-05-07T15:21:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-stats",
+                "description": "GitHub Stats visualization. This is a project created from jstrieb/github-stats, I changed the workflow to store the svg files in the output branch.",
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2026-06-20T01:18:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RefactoringDojo",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "C#",
+                "pushed_at": "2025-01-24T02:02:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "leaflet-easyPrint",
+                "description": "A leaflet plugin which adds an icon to print the map - Demo @ http://rowanwins.github.io/leaflet-easyPrint/",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-16T01:57:36Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:19.590776+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

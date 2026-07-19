@@ -1,0 +1,331 @@
+{
+  "profileId": "osint-profile-5ebd4663d4e0",
+  "target": "jacobsomer",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:30.984161+00:00",
+  "completedAt": "2026-06-21T15:28:31.809456+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-fd6dc1cd",
+      "lookupType": "github_context",
+      "target": "jacobsomer",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jacobsomer",
+            "name": "Jacob Somer",
+            "type": "User",
+            "company": "Amazon",
+            "blog": "",
+            "location": null,
+            "bio": "Data Center Technician with endless curiosity and willingness to explore beyond the existing boundaries in tech. ",
+            "public_repos": 28,
+            "followers": 3509,
+            "following": 84654,
+            "created_at": "2020-01-24T15:07:20Z",
+            "updated_at": "2026-02-04T02:13:19Z",
+            "html_url": "https://github.com/jacobsomer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/60264650?v=4",
+            "repos": [
+              {
+                "name": "x-web-crawler",
+                "description": "x-web-crawler is a Python package designed to automate interactions on social media platforms like Twitter (X) and GitHub. It streamlines tasks like liking posts, following users, and gathering account data efficiently.",
+                "stargazers_count": 83,
+                "language": "Python",
+                "pushed_at": "2025-01-10T21:35:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Modern-Portfolio-Theory-and-LSTMs",
+                "description": "A project using deep learning to forecast stock prices and covariance. Uses multiple threads to gather data and optimize portfolio using numerous APIs.",
+                "stargazers_count": 73,
+                "language": "Python",
+                "pushed_at": "2021-01-05T19:11:16Z",
+                "fork": false,
+                "topics": [
+                  "deep-learning",
+                  "lstm",
+                  "prediction",
+                  "rnn",
+                  "time-series"
+                ]
+              },
+              {
+                "name": "CalCourtGPT",
+                "description": "CalCourtGPT is a fine-tuned language model that provides legal counsel based on the California Rules of Court as of January 1, 2022. It is trained to answer questions for individuals and startups in California court cases.",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2023-01-22T03:51:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jacobsomer",
+                "description": null,
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2026-01-06T16:00:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Document-Chat",
+                "description": "Code for a chat interface that integrates with multiple document types",
+                "stargazers_count": 29,
+                "language": "TypeScript",
+                "pushed_at": "2024-04-23T14:22:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jacobsomer.github.io",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2021-08-09T13:15:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "java-sql-demo",
+                "description": "A Java program that executes SQL commands to a locally hosted database using the JDBC API.",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2021-01-15T13:22:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "py-pdf-search",
+                "description": "A python library for indexing and querying PDFS with a few lines of code.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2023-06-27T18:15:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "M5-Forcasting-LSTM-",
+                "description": "LSTM for predicting Walmart Sales",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2020-07-10T18:21:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Serverless-stack-api",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-09T22:21:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scope",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-04-14T19:36:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LangChain-Document-Embeddings-Service",
+                "description": "Containerized flask environment for extracting text from pdfs, powerpoints, xl spreadsheets, and youtube channels.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2023-09-12T20:12:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-nlp",
+                "description": ":book: A curated list of resources dedicated to Natural Language Processing (NLP)",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2020-08-20T15:05:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Basketball-ML-Prediction",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2020-08-02T22:51:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "debajoti",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-11-03T16:54:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MNIST-Classifier-Pytorch",
+                "description": "Convolutional Neural Network with 2 Convolutional Layers and 3 Linear Layers with Cross Entropy Loss. ",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2020-12-08T19:03:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Go-Board",
+                "description": "Go Board UI",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-20T03:02:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "geoDev-GAN-Presentation",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2021-03-05T06:44:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AlphaGoLite",
+                "description": "Full-stack project involving creating A.I. model (largely inspired by AlphaGo) to play Go and an interface to play with other players and play against the A.I.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2021-07-17T21:54:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Google-Trends-and-Unemployment",
+                "description": "Repository for Time-Series Econometrics Term Paper",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2021-08-04T04:45:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jacobsomer_project1.io",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-02-24T18:12:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tajikistan_Final_Project",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "R",
+                "pushed_at": "2020-05-27T17:02:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AVL_Tree",
+                "description": "Self-balancing AVL Tree with Visualize() method",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2020-08-02T22:51:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lefye",
+                "description": "App that uses alternative data sources to provide the user a more enhanced music experience.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-06T19:44:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Multivariate-Climate-Forecast",
+                "description": "Used keras lstm to forecast climate",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2021-01-13T01:21:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HooHacks-2021-Recycle",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2021-04-01T18:13:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TribeHacks-2021",
+                "description": "Zach and Jacob's repository for TribeHacks submission 2021. Aim to make an impact in current events.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2021-09-20T20:39:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CypherVII-Schedule-Advisor",
+                "description": "Degree Works with a more intuitive UX/UI",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-03-27T16:16:18Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:31.808726+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

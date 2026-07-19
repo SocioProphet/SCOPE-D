@@ -1,0 +1,327 @@
+{
+  "profileId": "osint-profile-98c933af9b13",
+  "target": "JavadTorabiKh",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:05.163049+00:00",
+  "completedAt": "2026-06-20T16:49:05.835076+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8d966349",
+      "lookupType": "github_context",
+      "target": "JavadTorabiKh",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "JavadTorabiKh",
+            "name": "javadTorabi",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "\ud83d\udd0c Electrical Engineer | \ud83d\udcbb IT Master's (MIS) | \ud83d\ude80  Programmer\r\n",
+            "public_repos": 17,
+            "followers": 815,
+            "following": 836,
+            "created_at": "2023-05-10T16:05:56Z",
+            "updated_at": "2026-06-01T11:43:40Z",
+            "html_url": "https://github.com/JavadTorabiKh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/133141970?v=4",
+            "repos": [
+              {
+                "name": "JavadTorabiKh",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2026-06-20T03:27:35Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "config",
+                  "developer",
+                  "github-config",
+                  "it-manager",
+                  "programmer"
+                ]
+              },
+              {
+                "name": "Business-intelligence-system",
+                "description": "This API provides advanced business analytics capabilities for company data, offering 10 core analytical functions to transform raw business data into actionable insights. The system is built with Python and Flask, designed for reliability, scalability, and performance.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-10-01T06:42:50Z",
+                "fork": false,
+                "topics": [
+                  "analysis",
+                  "business-analytics",
+                  "business-intelligence",
+                  "data-analysis",
+                  "mashine-learning"
+                ]
+              },
+              {
+                "name": "CoinPrice",
+                "description": "The Crypto Token Info API is a fast and straightforward application programming interface designed to provide users with essential information about cryptocurrencies and tokens.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-06-16T21:43:42Z",
+                "fork": false,
+                "topics": [
+                  "coinmarketcap",
+                  "cryptocurrency",
+                  "prices",
+                  "token"
+                ]
+              },
+              {
+                "name": "StellarChainAnalysis",
+                "description": "The Stellar Blockchain Analysis Project is an initiative aimed at providing insights, analytics, and tools for understanding the Stellar blockchain ecosystem. ",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2026-06-16T20:08:19Z",
+                "fork": false,
+                "topics": [
+                  "accounts",
+                  "address",
+                  "analysis",
+                  "block",
+                  "blockchain",
+                  "blockchain-technology",
+                  "ledger",
+                  "on-chain-analysis",
+                  "stellar",
+                  "translation",
+                  "xlm"
+                ]
+              },
+              {
+                "name": "TransferRust",
+                "description": "A blazing-fast and secure API built with Rust to create and submit transactions on a blockchain network.",
+                "stargazers_count": 10,
+                "language": "Rust",
+                "pushed_at": "2025-09-20T11:38:39Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "blockchain-technology",
+                  "move",
+                  "rust",
+                  "transactions"
+                ]
+              },
+              {
+                "name": "JTK_CryptoToken",
+                "description": "JTK is a personal token based on the ERC-20 standard on the Ethereum network, created with the aim of learning, experimenting, and developing blockchain-based projects.",
+                "stargazers_count": 10,
+                "language": "Solidity",
+                "pushed_at": "2025-10-25T08:48:38Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "cryptocurrency",
+                  "erc20",
+                  "personal-token",
+                  "smart-contracts",
+                  "solidity",
+                  "token"
+                ]
+              },
+              {
+                "name": "EthereumMixer",
+                "description": "Ethereum Mixer is a decentralized tool designed to enhance privacy in Ethereum transactions. It allows users to obscure their identities by blending their funds with those of others, effectively preventing unauthorized tracking of their activities on the blockchain.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-09-24T12:04:29Z",
+                "fork": false,
+                "topics": [
+                  "contracts",
+                  "cryptocurrency",
+                  "ethereum",
+                  "solidity"
+                ]
+              },
+              {
+                "name": "AetherChain",
+                "description": "In an era of centralized digital control, we've witnessed the erosion of true ownership. Your data, your transactions, your digital existence\u2014all mediated by trusted third parties. AetherChain emerges as the antidote to digital feudalism.",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2025-11-02T09:21:34Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "consensus",
+                  "crypto",
+                  "cryptocurrencies",
+                  "decentralized",
+                  "golang",
+                  "proof-of-work",
+                  "transactions"
+                ]
+              },
+              {
+                "name": "microservices-k8s-lab",
+                "description": "\ud83d\ude80 Complete Kubernetes Microservices Lab | FastAPI , Node.js , Vue.js  , Redis A practical guide to building, deploying, and scaling microservices on Kubernetes. Perfect for developers learning cloud-native development.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-09T07:27:22Z",
+                "fork": false,
+                "topics": [
+                  "api-gateway",
+                  "cloud-native",
+                  "devops",
+                  "distributed-systems",
+                  "docker",
+                  "fastapi",
+                  "hands-on-lab",
+                  "kubernetes",
+                  "microservices",
+                  "nodejs",
+                  "tutorial",
+                  "vuejs"
+                ]
+              },
+              {
+                "name": "RestaurantOrderDeliverySystem",
+                "description": "The Restaurant Order Delivery System is designed to streamline the process of managing and delivering orders from restaurants to delivery agents. It utilizes key technologies and design patterns to enhance efficiency and responsiveness.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-11-13T20:33:01Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "observer",
+                  "python",
+                  "restuarant"
+                ]
+              },
+              {
+                "name": "BlogAPI",
+                "description": "Personal Blog of Javad Torabi! This blog serves as a platform for sharing insights, experiences, and reflections on various topics. It offers readers a glimpse into my life, thoughts, and the lessons I've learned along the way.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-11-17T17:37:31Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "personal-website",
+                  "site"
+                ]
+              },
+              {
+                "name": "DevOpsAnsible",
+                "description": "A hybrid intelligent system for automated web cluster management and backup on VMware ESXi",
+                "stargazers_count": 10,
+                "language": "Jinja",
+                "pushed_at": "2025-11-18T13:23:18Z",
+                "fork": false,
+                "topics": [
+                  "admin-server",
+                  "ansible",
+                  "docker",
+                  "gitlab",
+                  "server"
+                ]
+              },
+              {
+                "name": "github-readme-stats",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-01T07:04:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web3.py",
+                "description": "A python interface for interacting with the Ethereum blockchain and ecosystem.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-08-09T09:58:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ProxyDesignPattern",
+                "description": "The Proxy Design Pattern in the User Registration System project demonstrates how to use a proxy as an intermediary to manage user registration processes. This pattern enhances software architecture by providing a layer that can handle security, authentication, and performance optimizations.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-08-23T10:49:21Z",
+                "fork": false,
+                "topics": [
+                  "patterns",
+                  "proxy",
+                  "python",
+                  "registration"
+                ]
+              },
+              {
+                "name": "TradingRobot",
+                "description": "**A high-frequency market-making engine with risk-aware executionProfessional-grade *algorithmic trading infrastructure for crypto markets*",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-07-15T06:15:50Z",
+                "fork": false,
+                "topics": [
+                  "crypto",
+                  "tokens",
+                  "trading-strategies",
+                  "tradingbot",
+                  "training"
+                ]
+              },
+              {
+                "name": "TokenMarker",
+                "description": "The ERC-20 Token Deployment & Django API Integration project provides a comprehensive solution for creating and managing ERC-20 tokens on the Ethereum blockchain through a user-friendly Django API. ",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2025-09-05T17:34:32Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "ethereum",
+                  "solidity"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:05.833964+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

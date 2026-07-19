@@ -1,0 +1,859 @@
+{
+  "profileId": "osint-profile-80dcecdfadb3",
+  "target": "MiladJoodi",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:44.192013+00:00",
+  "completedAt": "2026-06-21T15:29:45.904602+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b63087f0",
+      "lookupType": "github_context",
+      "target": "MiladJoodi",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "MiladJoodi",
+            "name": "Joodi",
+            "type": "User",
+            "company": "MiladJoodi1@gmail.com",
+            "blog": "",
+            "location": "Freelance \u25ed",
+            "bio": "Freelance Frontend Developer",
+            "public_repos": 126,
+            "followers": 2382,
+            "following": 1219,
+            "created_at": "2018-09-23T17:59:59Z",
+            "updated_at": "2026-05-28T09:51:17Z",
+            "html_url": "https://github.com/MiladJoodi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/43522323?v=4",
+            "repos": [
+              {
+                "name": "Joodi_me",
+                "description": "joodi.me",
+                "stargazers_count": 42,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-10T18:14:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Zarinpal",
+                "description": "\ud835\udc19\ud835\udc1a\ud835\udc2b\ud835\udc22\ud835\udc27\ud835\udc0f\ud835\udc1a\ud835\udc25 \ud83d\ude80          A modern frontend application for a payment services website, built with Next.js and TypeScript. The platform focuses on providing fast, secure, and user-friendly payment solutions, with an emphasis on reliability and a smooth user experience.",
+                "stargazers_count": 24,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-11T10:42:06Z",
+                "fork": false,
+                "topics": [
+                  "framer-motion",
+                  "frontend",
+                  "lucide-react",
+                  "next-themes",
+                  "nextjs",
+                  "radix",
+                  "radix-ui",
+                  "react",
+                  "recharts",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "PersianTime",
+                "description": "A simple utility to convert any date or time to Iran's local time with Persian date formatting. \u2b50",
+                "stargazers_count": 17,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-27T14:28:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Online_Glocery_Store_Next.js_Tailwind_Strapi",
+                "description": "Created a fully-featured Online Grocery Store application utilizing Next.js 14, Strapi, Tailwind CSS, and Shadcn UI. \u2728 The visual elements of this project are available for viewing across multiple platforms, as detailed in the project description. \u2714\ufe0f",
+                "stargazers_count": 40,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-21T16:14:02Z",
+                "fork": false,
+                "topics": [
+                  "fullstack",
+                  "nextjs",
+                  "shadcn-ui",
+                  "strapi",
+                  "strapi-cms",
+                  "tailwind",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "Mortgages_Hamed",
+                "description": "A Full Stack web application suitable for Mortgage use. In this project, an admin dashboard has also been developed, allowing you to publish new content. Authentication in this project is implemented using Clerk. \ud83e\udd29",
+                "stargazers_count": 24,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-21T21:02:18Z",
+                "fork": false,
+                "topics": [
+                  "clerk",
+                  "fullstack",
+                  "hookform",
+                  "mongoose",
+                  "mortgage",
+                  "nextjs",
+                  "react-hook-form",
+                  "reactjs",
+                  "server-actions",
+                  "shadcn",
+                  "surveyjs",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript",
+                  "zod-validation"
+                ]
+              },
+              {
+                "name": "Light-Saas-Landing-Page",
+                "description": "This project involves creating a comprehensive website for your business using a versatile SaaS website UI Kit. The kit includes a variety of layouts, responsive breakpoints, and engaging 3D elements in diverse styles, ensuring a dynamic and visually appealing user experience.\u2714\ufe0f ",
+                "stargazers_count": 44,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-21T16:01:49Z",
+                "fork": false,
+                "topics": [
+                  "framer-motion",
+                  "nextjs14",
+                  "react",
+                  "reactjs",
+                  "saas",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "MiladJoodi",
+                "description": null,
+                "stargazers_count": 37,
+                "language": null,
+                "pushed_at": "2026-06-20T22:36:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Joodi",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-27T14:29:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Facultyfind",
+                "description": "A portfolio project where I implemented a Figma design into a fully functional web page using Next.js and Tailwind CSS. \ud83d\udcbb",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-12T20:26:11Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "nextjs15",
+                  "shadcn",
+                  "tailwind",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "Coffee_Shop_Fullstack",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-19T21:18:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fullstack_Invoice_Manager",
+                "description": "Build a full-featured Invoice Manager with Next.js 14 using CRUD, Server Actions, Pagination, Search, and Email sending in this hands-on fullstack project.",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-23T13:35:44Z",
+                "fork": false,
+                "topics": [
+                  "crud",
+                  "crud-sample",
+                  "frontend",
+                  "fullstack",
+                  "fullstack-crud-operations",
+                  "javascript",
+                  "nextjs",
+                  "reactjs",
+                  "serveractions",
+                  "tailwind",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "NextLoginFlow_Decamond",
+                "description": "NextLoginFlow is a clean and simple Next.js project demonstrating user authentication with client-side routing and session management. \ud83c\udf81",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-14T01:57:06Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "frontend",
+                  "html",
+                  "nextjs",
+                  "nextjs15",
+                  "react",
+                  "reactjs",
+                  "sass",
+                  "scss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Next-Express-Drizzle",
+                "description": "Full-stack CRUD app using Next.js, Express, Drizzle ORM, and PostgreSQL \ud83d\udca1",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-23T14:18:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-followers-tracker",
+                "description": "A simple web app that keeps track of your GitHub followers \ud83d\udc65. You can easily spot who followed or unfollowed you since your last visit.",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-25T15:43:41Z",
+                "fork": true,
+                "topics": [
+                  "css",
+                  "github",
+                  "githubtraining",
+                  "html",
+                  "html5",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "PWA_Starter",
+                "description": "A starter kit to quickly build fast, offline-capable Progressive Web Apps using Next.js 15 and TypeScript. Includes service worker setup, manifest configuration, and ready-to-use PWA features for a seamless user experience across devices. \ud83d\ude80",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-26T19:53:39Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "javascript",
+                  "nextjs",
+                  "pwa",
+                  "pwa-app",
+                  "pwa-example",
+                  "react",
+                  "reactjs",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Nextjs-Prisma-ServerAction-MongoDB-CRUD",
+                "description": "Simple NextJS app demonstrating CRUD with Prisma, Server Actions, and MongoDB. Clean code, minimal UI, and real-world server-side form handling \u26a1\ufe0f",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-28T22:12:21Z",
+                "fork": false,
+                "topics": [
+                  "mongodb",
+                  "mongodb-atlas",
+                  "nextjs",
+                  "nextjs15",
+                  "prisma",
+                  "prisma-orm",
+                  "react",
+                  "reactjs",
+                  "server",
+                  "serveraction",
+                  "serveractions",
+                  "tailwindcss",
+                  "typescript",
+                  "zod"
+                ]
+              },
+              {
+                "name": "Nextjs-Testing-Examples",
+                "description": "A collection of practical React component tests using Jest and React Testing Library \ud83e\uddea\ud83d\udee0\ufe0f Includes UI behavior, form handling, API mocking, and error states \u2014 everything you need to write solid front-end tests \u2705\ud83d\udccb",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-01T17:38:50Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "javascript",
+                  "jest",
+                  "jest-tests",
+                  "nextjs",
+                  "nextjs15",
+                  "react",
+                  "reactjs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "NextAuth-Demo",
+                "description": "A full-stack Next.js app demonstrating secure authentication with NextAuth and Prisma. \ud83d\udd10 Built for simplicity, scalability, and easy MongoDB integration.",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-05T19:00:32Z",
+                "fork": false,
+                "topics": [
+                  "authjs",
+                  "bcryptjs",
+                  "fullstack",
+                  "javascript",
+                  "next-auth",
+                  "nextauth",
+                  "nextauthjs",
+                  "nextjs",
+                  "nextjs15",
+                  "prisma",
+                  "prisma-orm",
+                  "react",
+                  "reactjs",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "D3-Charts-Pantohealth",
+                "description": "Chart rendering React app using D3.js for Pantohealth \u2014 supports single and multi-series data visualization \ud83d\udcca",
+                "stargazers_count": 18,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-06T16:19:02Z",
+                "fork": false,
+                "topics": [
+                  "d3",
+                  "d3js",
+                  "nextjs",
+                  "nextjs15",
+                  "react",
+                  "reactjs",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Github-Followers-Tracker_v2",
+                "description": "Monitor your GitHub follower activity \u2014 find out who's new and who's gone.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-18T15:08:00Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "github",
+                  "nextjs",
+                  "react",
+                  "reactjs",
+                  "shadcn",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "Storybook_Demo",
+                "description": "Just a practice project for setting up and testing Storybook with Next.js.",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-22T00:07:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Full-Stack-Blog-App-with-Next.js15-MongoDB-Tailwind",
+                "description": "A full stack blog application built with Next.js 15, MongoDB, and Tailwind CSS featuring frontend, backend, and admin panel. \ud83d\udcda",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-25T13:06:39Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "full-stack",
+                  "fullstack",
+                  "javascript",
+                  "mongodb",
+                  "mongoose",
+                  "nextjs",
+                  "nextjs15",
+                  "react",
+                  "reactjs",
+                  "tailwind",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "Next-Fullstack-Auth",
+                "description": "A Next.js 15 project implementing secure user authentication with JWT, refresh tokens, and protected routes. Includes full client-side forms for registration and login, server-side token verification, and dashboard access control.",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-09T11:52:07Z",
+                "fork": false,
+                "topics": [
+                  "access-token",
+                  "argon2",
+                  "fullstack",
+                  "jose",
+                  "mongodb",
+                  "nextjs",
+                  "prisma",
+                  "prisma-orm",
+                  "react",
+                  "react-hook-form",
+                  "reactjs",
+                  "refresh-token",
+                  "tailwind",
+                  "tailwindcss",
+                  "zod"
+                ]
+              },
+              {
+                "name": "Frontend-Interview",
+                "description": "\ud83e\udde9 \ud835\uddea\ud835\uddf6\ud835\uddf8\ud835\uddf6\ud835\uddd9\ud835\uddff\ud835\uddfc\ud835\uddfb\ud835\ude01 is a front-end interview question bank covering topics like React, Next.js, TypeScript, and more.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-10T18:08:18Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "javascript",
+                  "nextjs",
+                  "nextjs15",
+                  "radix",
+                  "radix-ui",
+                  "react",
+                  "reactjs",
+                  "shadcn",
+                  "shadcn-ui",
+                  "tailwind",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "MiladJoodi.github.io",
+                "description": null,
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2025-09-20T15:29:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Restaurant_Food_Delivery_App",
+                "description": "Restaurant Food Delivery App Design - Typescript, React.js, Next.js & Tailwind | Responsive Food Ordering Website",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-02T16:48:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArvanCloud",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-13T21:24:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Snapp",
+                "description": "A modern, customizable \ud835\udde6\ud835\uddfb\ud835\uddee\ud835\uddfd\ud835\uddfd clone built with \ud835\udde1\ud835\uddf2\ud835\ude05\ud835\ude01.\ud835\uddf7\ud835\ude00 and \ud835\udde7\ud835\uddee\ud835\uddf6\ud835\uddf9\ud835\ude04\ud835\uddf6\ud835\uddfb\ud835\uddf1 \ud835\uddd6\ud835\udde6\ud835\udde6, featuring over 30 pages and a clean, responsive design.",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-18T18:40:22Z",
+                "fork": true,
+                "topics": [
+                  "frontend",
+                  "nextjs",
+                  "nextjs16",
+                  "open-source",
+                  "react",
+                  "reactjs",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "TokenBox",
+                "description": "\ud835\udc13\ud835\udc28\ud835\udc24\ud835\udc1e\ud835\udc27\ud835\udc01\ud835\udc28\ud835\udc31  is a lightweight Chrome extension that helps you test API logins and manage tokens without friction. \ud83d\udd10",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2025-12-05T16:08:50Z",
+                "fork": false,
+                "topics": [
+                  "chrome",
+                  "chrome-extension",
+                  "chrome-extensions",
+                  "extension",
+                  "google",
+                  "googlechrome",
+                  "googleextension",
+                  "token"
+                ]
+              },
+              {
+                "name": "Tariboon-News",
+                "description": "A production-grade Persian news portal built with Next.js 16, TypeScript & Tailwind CSS v4. Features full RTL layout, dark mode, 50 articles, 12 categories, admin panel with Zustand, and static generation \u2014 no backend required.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-26T12:05:59Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "lucide-react",
+                  "nextjs",
+                  "nextjs16",
+                  "radix-ui",
+                  "reacthookform",
+                  "recharts",
+                  "shadcn",
+                  "shadcn-ui",
+                  "sonner",
+                  "typescript",
+                  "vercel",
+                  "zustand"
+                ]
+              },
+              {
+                "name": "Civora-Dashboard",
+                "description": "Civora is a construction project management system that allows teams to easily track projects, their progress, and status. Built with Next.js 15 and TypeScript, the project features a responsive and visually appealing UI using Tailwind CSS, Shadcn/UI, and Animated Components.",
+                "stargazers_count": 18,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-28T19:06:45Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "css3",
+                  "dashboard",
+                  "html",
+                  "html5",
+                  "nextjs",
+                  "nextjs15",
+                  "react",
+                  "reactjs",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Tripix",
+                "description": "Travel booking platform \u2014 Search & book bus, train, and flight tickets in one place. Built with Next.js 16, React 19, Tailwind CSS v4, Zustand, and Framer Motion.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-21T14:34:03Z",
+                "fork": false,
+                "topics": [
+                  "framer-motion",
+                  "nextjs",
+                  "nextjs16",
+                  "open-source",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript",
+                  "zustand"
+                ]
+              },
+              {
+                "name": "Tripix-RTL",
+                "description": "Modern Persian (RTL) travel booking platform \u2014 Search & book bus, train, and flight tickets. Built with Next.js 16, React 19, Tailwind CSS v4, and Jalali calendar.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-21T19:09:20Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "nextjs16",
+                  "open-source",
+                  "react",
+                  "reactjs",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript",
+                  "zustand"
+                ]
+              },
+              {
+                "name": "Skeletonix",
+                "description": "Plug-and-play React Skeleton Loader for fast, smooth placeholders.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-22T20:03:29Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "npm",
+                  "npm-package",
+                  "react",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "ThreeJS-Portfolio",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-05T22:17:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tapsi",
+                "description": "A multi-page Next.js app with an RTL Persian UI for a Tapsi-style ride-hailing and on-demand delivery platform.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-12T01:24:16Z",
+                "fork": true,
+                "topics": [
+                  "frontend",
+                  "nextjs",
+                  "open-source",
+                  "react",
+                  "reactjs",
+                  "tailwind",
+                  "tailwindcss",
+                  "tapsi",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Magazine-CMS-Fullstack",
+                "description": "Full-stack magazine platform \u2014 Next.js, Prisma, REST API, comments & views. (\ud835\uddf0\ud835\ude02\ud835\uddff\ud835\uddff\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\uddf9\ud835\ude06 \ud835\uddf6\ud835\uddfb \ud835\uddf1\ud835\uddf2\ud835\ude03\ud835\uddf2\ud835\uddf9\ud835\uddfc\ud835\uddfd\ud835\uddfa\ud835\uddf2\ud835\uddfb\ud835\ude01...)",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-18T11:19:03Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "fullstack",
+                  "javascript",
+                  "nextjs",
+                  "nextjs16",
+                  "react",
+                  "reactjs",
+                  "shadcn",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "School_Management_Dashboard_UI_Design",
+                "description": "React Next.js admin dashboard project. School management app design with Next.js and Tailwind. Admin, teacher, student, and parent dashboards with responsive tables and animated charts.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-02T17:42:01Z",
+                "fork": false,
+                "topics": [
+                  "authentication",
+                  "nextjs",
+                  "react",
+                  "reactjs",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Photography_Website",
+                "description": "In this project, I employed a range of cutting-edge technologies, including Next.js, Tailwind CSS, ShadCN UI, Framer Motion, React Count Up, React Awesome Reveal, and next-theme. For a comprehensive demonstration and additional details, please refer to the project description. \u2714\ufe0f\u26f3\ufe0f",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-13T00:30:22Z",
+                "fork": false,
+                "topics": [
+                  "framer-motion",
+                  "next-theme",
+                  "nextjs",
+                  "reactjs",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "ToPersianNumber",
+                "description": "Convert English numbers to Persian for Next.js and React.js projects. \u2b50",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-27T10:40:24Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "javascript",
+                  "nextjs",
+                  "nodejs",
+                  "reactjs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "WebRTC_Video_Conference",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-20T17:33:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ECommerce_with_Admin_Panel_FullStack_Redux",
+                "description": "Full Stack eCommerce with Admin Panel useing Typescript, Next.js 14, Redux.js, Next-Auth, Tailwind_Css, MongoDB & Uploadthing. (undone\u26a0\ufe0f)",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-03-19T18:09:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Next.js_and_Hono.js_Starter_Project",
+                "description": "A simple starter project to set up Next.js & Hono.js together! Perfect for beginners to explore these technologies. \u26a1",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-04T13:03:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Admin-Dashboard_Next",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-20T11:04:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Mern-BlogApp-Fullstack",
+                "description": "Full-stack blog app tutorial with React, Node.js, Express, MongoDB, TailwindCSS, Clerk Authentication, and React Query for building, deploying, and managing posts with infinite scroll, user roles, and more! \ud83c\udf10\ud83d\udcda",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-13T18:54:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tanstack_Query",
+                "description": "Learn Tanstack Query",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-09T20:39:00Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "nextjs14",
+                  "react-query-axios",
+                  "reactjs",
+                  "tailwind",
+                  "tailwindcss",
+                  "tanstack-query",
+                  "tanstack-query-axios",
+                  "tanstack-react-query"
+                ]
+              },
+              {
+                "name": "nextjs-ai-chatbot",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-09T00:19:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Express_Learn_02",
+                "description": "Express Amir Najafi \ud83c\udf93 \ud83d\udca1",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-15T21:47:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MERN_Stack_CRUD",
+                "description": "This project demonstrates a simple full-stack CRUD application built with the MERN stack (MongoDB, Express.js, React.js, and Node.js). It covers the basics of working with APIs, handling user data, and displaying it in a React frontend.",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-20T14:04:59Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "bulma",
+                  "dotenv",
+                  "express",
+                  "expressjs",
+                  "fullstack",
+                  "fullstackreact",
+                  "mern-stack",
+                  "mernstack",
+                  "mongodb",
+                  "mongoose",
+                  "nodejs",
+                  "react",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "Doctor_Appointment_Booking_App",
+                "description": "Developed a Doctor Appointment Booking app utilizing Next.js, React.js, Strapi, and Tailwind CSS. This application streamlines the appointment scheduling process and enhances user experience. \ud83d\udc4c",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-07T11:01:11Z",
+                "fork": false,
+                "topics": [
+                  "reactjs",
+                  "strapi",
+                  "tailwindcss"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:45.903643+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

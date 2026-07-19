@@ -1,0 +1,283 @@
+{
+  "profileId": "osint-profile-5eb477d06be6",
+  "target": "pouryaPKGit",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:06.241912+00:00",
+  "completedAt": "2026-06-21T15:32:06.799236+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c977b8fd",
+      "lookupType": "github_context",
+      "target": "pouryaPKGit",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "pouryaPKGit",
+            "name": "pourya pourkhani",
+            "type": "User",
+            "company": "Best Web",
+            "blog": "https://best-web.vercel.app/",
+            "location": null,
+            "bio": "I am a Front-End Developer specialized in Next.js and related web development technologies. I am passionate about designing and implementing ",
+            "public_repos": 23,
+            "followers": 1456,
+            "following": 1310,
+            "created_at": "2024-09-19T09:53:09Z",
+            "updated_at": "2026-05-16T05:17:17Z",
+            "html_url": "https://github.com/pouryaPKGit",
+            "avatar_url": "https://avatars.githubusercontent.com/u/182088688?v=4",
+            "repos": [
+              {
+                "name": "gym",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-24T08:04:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Future-Imperfect",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-09-28T12:58:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "d3",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-02T18:08:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HiSchool",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-07T17:36:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pouryaPKGit",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-09-19T17:11:42Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "ToolJet",
+                "description": "Low-code platform for building business applications. Connect to databases, cloud storages, GraphQL, API endpoints, Airtable, Google sheets, OpenAI, etc and build apps using drag and drop application builder. Built using JavaScript/TypeScript. \ud83d\ude80",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-07-16T08:12:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "techstack-generator",
+                "description": "\ud83d\udd79Techstack generator that can show dynamic technology stack.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-09T16:19:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mehraco",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-29T07:31:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ParhamPK03",
+                "description": "Hello World This is My Profile.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-09-19T12:36:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Todo-List",
+                "description": "Todo list for testing with TS React",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-10T06:09:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Short-page-Vigen",
+                "description": "The part of  Vigen website With Ts and React for testing .",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-10T06:03:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Todo-List-Redux",
+                "description": "Short part of Todo List page with Redux",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-13T18:56:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sofa-Shop",
+                "description": "sofa website is a shop and seals sofa bed chair and .... ",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-03T13:41:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gaming-Shop",
+                "description": "Gaming Shop is a website wich you can buy :  Cpu , Gpu , headphones and ... ",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-03T13:41:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KallaMaster",
+                "description": "this website is a TecHome web and you can buy Tecnologies and Household Items . and for Buying you should have an account",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-24T18:49:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Torang_Resturant",
+                "description": "Torang website is an a resturant wich serves Iranian foods like kabab, tahchin and ....",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-24T18:52:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tools_Shop",
+                "description": "ToolsShop is tools website wich you can find some tools like drill generators and something like that",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-24T18:51:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tomato-resturant",
+                "description": "Tomato resturant in a website wich deliverd food like salad, rolls, pasta, and .... wich make with react ",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-24T18:54:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TecnoKalla",
+                "description": "TecnoKalla is an website wich you can find something like smart phones laptops shoes T-shirt  and something like that",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-24T18:55:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tour",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-13T07:07:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Luigi_Store",
+                "description": "Luigi Store is website wich seals tecnologies like phone laptop and it's make with next and typescript",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-13T07:49:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Clozet",
+                "description": "Clozet is a website wich seal cloths to woamn man and child and the website made with react next tailwind typescript",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-13T07:49:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "next.js",
+                "description": "The React Framework",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-07-15T19:37:49Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:06.798544+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

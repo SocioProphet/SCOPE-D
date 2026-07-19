@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-d435e176b569",
+  "target": "kakaka-byte",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:52.260913+00:00",
+  "completedAt": "2026-06-21T15:31:52.599694+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ca72262c",
+      "lookupType": "github_context",
+      "target": "kakaka-byte",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "kakaka-byte",
+            "name": "KaKaKa",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "I'm a Full-Stack, AI and Automation developer. My strengths include accurate analysis of client requirements, quick decision-making, and a flexible development.",
+            "public_repos": 1,
+            "followers": 1525,
+            "following": 3579,
+            "created_at": "2025-08-14T01:59:55Z",
+            "updated_at": "2026-06-01T12:13:40Z",
+            "html_url": "https://github.com/kakaka-byte",
+            "avatar_url": "https://avatars.githubusercontent.com/u/226429195?v=4",
+            "repos": [
+              {
+                "name": "preview_shop",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-07T01:36:36Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:52.598950+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

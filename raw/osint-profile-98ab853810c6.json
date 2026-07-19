@@ -1,0 +1,163 @@
+{
+  "profileId": "osint-profile-98ab853810c6",
+  "target": "tf8888",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:27.999263+00:00",
+  "completedAt": "2026-06-21T15:29:28.514679+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c21cf051",
+      "lookupType": "github_context",
+      "target": "tf8888",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "tf8888",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 10,
+            "followers": 2611,
+            "following": 6920,
+            "created_at": "2023-02-01T09:53:42Z",
+            "updated_at": "2026-06-02T11:01:09Z",
+            "html_url": "https://github.com/tf8888",
+            "avatar_url": "https://avatars.githubusercontent.com/u/124145401?v=4",
+            "repos": [
+              {
+                "name": "skiff-apps",
+                "description": "Privacy-first, end-to-end encrypted Mail, Pages, Drive, and Calendar.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-12T06:04:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "scrape-rss-bot",
+                "description": "[RETIRED]: Slack bot that converts posted links to a channel-specific RSS feed.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-12-09T17:35:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nextjs-animated-slider-",
+                "description": "Stunning animated slider website built using Next.js, Framer Motion, and Tailwind CSS.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-11-22T09:52:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "paintbynumbersgenerator",
+                "description": "Paint by numbers generator",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-04-06T21:01:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-planner",
+                "description": ":pencil2: A React Component for plans design. Draw a 2D floorplan and navigate it in 3D mode.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-04-20T01:42:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "discourse",
+                "description": "A platform for community discussion. Free, open, simple.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-01-13T20:00:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bd-challenge-v3",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-20T02:51:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "IconStreamer-mobile",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-04T23:15:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IconStreamer",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-04T23:19:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dashboard-assessment",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-13T23:03:55Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:28.513887+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

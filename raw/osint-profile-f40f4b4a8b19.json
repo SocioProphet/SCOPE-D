@@ -1,0 +1,547 @@
+{
+  "profileId": "osint-profile-f40f4b4a8b19",
+  "target": "0xPleiades",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:05.840276+00:00",
+  "completedAt": "2026-06-20T16:49:06.947036+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b3d49724",
+      "lookupType": "github_context",
+      "target": "0xPleiades",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "0xPleiades",
+            "name": "Pleiades",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Here is blockchain/AI developer,  who has contributed to blockchain+AI products that required both technical depth and scalability.",
+            "public_repos": 63,
+            "followers": 816,
+            "following": 1193,
+            "created_at": "2025-07-03T02:31:44Z",
+            "updated_at": "2026-06-04T20:52:00Z",
+            "html_url": "https://github.com/0xPleiades",
+            "avatar_url": "https://avatars.githubusercontent.com/u/219066719?v=4",
+            "repos": [
+              {
+                "name": "0xpleiades",
+                "description": null,
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2025-08-31T14:37:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust-bin",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "Rust",
+                "pushed_at": "2025-08-30T09:10:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solana-Explorer",
+                "description": "Explorer for Solana clusters",
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2025-08-30T03:33:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lottery-smart-contract",
+                "description": "This project serves educational purposes, offering a web application that allows users to place bets on randomly generated numbers using Ether. A smart contract manages the bets, receives Ether, and determines the winning number randomly. The participant with the correct number receives the accumulated Ether sum.",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-29T13:37:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GameLedger-Decentralized-Backend",
+                "description": "GameLedger is a decentralized gaming platform built on Ethereum, offering transparent and fair gameplay through Solidity smart contracts. Our platform currently features a decentralized version of the popular Mines game, where players can bet and win cryptocurrency in a transparent environment. Powered by blockchain technology",
+                "stargazers_count": 17,
+                "language": "Solidity",
+                "pushed_at": "2025-08-29T14:16:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartContracts-GamingPlatform",
+                "description": "Smart-contracts to build a whole casual games platform, including a factory allowing anyone to create new games. Many features can still be added, this is just meant to be a good starting point.",
+                "stargazers_count": 18,
+                "language": "Solidity",
+                "pushed_at": "2025-08-29T13:11:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solid-grinder",
+                "description": "A 100% opensource CLI that goes along with building blocks of smart contract. This toolbox can reduce L2 gas cost by encoding calldata for dApps development to use as little bytes of calldata as possible.",
+                "stargazers_count": 18,
+                "language": "Solidity",
+                "pushed_at": "2025-08-29T10:53:00Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "cli",
+                  "dapp",
+                  "ethereum",
+                  "solidity"
+                ]
+              },
+              {
+                "name": "Ethereum-Rating-and-Review",
+                "description": "A blockchain rating & review management system for e-commerce built on the Ethereum blockchain.",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-29T11:49:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solana-Web3",
+                "description": "Adaptive landing page from real website Solana Web3. This project recreates the UI/UX of a live Web3-based website using only HTML, CSS, and JavaScript. The layout is fully responsive and structured with semantic HTML5 and modern CSS techniques like Flexbox and Grid.",
+                "stargazers_count": 20,
+                "language": "HTML",
+                "pushed_at": "2025-08-29T10:13:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cryptoTransactions",
+                "description": "Web 3.0 project. Allows you to connect MetaMask to the website and send Etherium with a message and a GIF using a smart contract across the blockchain. All transactions are tracked and can be viewed at the bottom of the website.",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-29T10:10:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "etherium-solidity-projects",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-29T10:07:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Voting-Dapp",
+                "description": "Voting DAPP made using etherium and reactjs. Bringing blockchain into voting will help remove these frauds and make voting more open for all to actually see the number of votes without knowing the voters",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-29T08:46:27Z",
+                "fork": false,
+                "topics": [
+                  "dapp",
+                  "ehtereum",
+                  "material-ui",
+                  "reactjs",
+                  "solidity",
+                  "web3"
+                ]
+              },
+              {
+                "name": "token-presale-smart-contract",
+                "description": "A complete Solana token presale smart contract built with Anchor framework. This is a full-working project that provides a robust foundation for token presales on Solana blockchain.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-29T08:04:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-trading-bot",
+                "description": "A trading bot that automates swaps on the Solana blockchain. Useful for implementing a simple dollar-cost-averaging strategy.",
+                "stargazers_count": 17,
+                "language": "Rust",
+                "pushed_at": "2025-11-02T20:05:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "xchanted",
+                "description": "This example shows how to use Tailwind CSS (v3.0) with Next.js. It follows the steps outlined in the official Tailwind docs.",
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-28T17:46:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-copycat",
+                "description": "Make a copy of the home page of the solana.com website with React and SCSS.",
+                "stargazers_count": 16,
+                "language": "SCSS",
+                "pushed_at": "2025-08-28T15:48:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-app-wallet",
+                "description": "Solana APP is another version of sollet wallet for mobile  Solana Pay is the entry point into the system. It lives directly between web2 & web3, receiving web2 payloads & converting them into web3 transactions. The power of this really can\u2019t be overstated. The contours of this design space are unexplored and sure to hold amazing things.",
+                "stargazers_count": 15,
+                "language": "Java",
+                "pushed_at": "2025-08-28T15:18:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-sniper-bot",
+                "description": "Kana is a Sniper bot that sniper all the tokens on Solana features including a Fast sniper.",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2025-08-28T14:40:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nftape.me",
+                "description": "Enjoy apeing into NFTs and wonder how good of a JPEG flippoor you really are?",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-28T13:21:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "explorer-bbscoin-click",
+                "description": "It takes data from daemon bbscoind. It should be accessible from the Internet.",
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2025-08-21T08:36:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "phantasma-deposit",
+                "description": "Phantasma Deposit is a decentralized application (dApp) that empowers users to easily swap tokens from Ethereum or Binance Smart Chain to Phantasma.",
+                "stargazers_count": 11,
+                "language": "Svelte",
+                "pushed_at": "2025-08-21T08:29:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crypto-market",
+                "description": "CryptoMarket is a prototype. It is a Marketplace that runs over the Etherem Blockchain. It is able to manage products (and orders, too).",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-20T10:08:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "book-myseat",
+                "description": "Blockchain based Ticket purchasing application. It's just a personal project and lot of features are still to be implemented. Prototype of UI has been made with possible features to be implemented and blockchain part coding is near done. It is deployed over Polygon Mumbai testnet.",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-21T09:19:01Z",
+                "fork": false,
+                "topics": [
+                  "dapp",
+                  "solidity"
+                ]
+              },
+              {
+                "name": "switch-trade-coin",
+                "description": "Abstract. Actually on the crypto currency market there are a lot of blockchain solution which offers smart contracts solution. These allows you to create a mashine readable smart contract which will run on the blockchain by some specific algorithms. To use these type of smart contracts you have to learn programming language or hire someone to write",
+                "stargazers_count": 14,
+                "language": "Java",
+                "pushed_at": "2025-08-21T09:05:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "code-challenge-blockchain-wallet",
+                "description": "Check out your wallet and mine minacoins.",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-21T08:51:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SafePal-Wallet-Multi-Crypto-Secure-Gui-Multi-Coin-Storage",
+                "description": "Welcome to the Blockchain Wallet project, a robust C++-based application that seamlessly blends the potency of blockchain technology with the versatility of a cryptocurrency wallet. Our mission is to furnish users with a frictionless and fortified means to oversee their digital wealth while harnessing the boundless potential.",
+                "stargazers_count": 13,
+                "language": "C++",
+                "pushed_at": "2025-08-21T08:43:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solana-pumpfun-contract",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-02T22:02:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crowd-fund-chain",
+                "description": "A decentralized crowdfunding platform leveraging blockchain technology to empower users to create and support campaigns for various causes. The platform should facilitate seamless interaction between campaign creators and donors while ensuring transparency, security, and accessibility.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-20T09:41:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeFiHackLabs",
+                "description": "Reproduce DeFi hacked incidents using Foundry.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-09-21T23:40:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Solana-Web3.js",
+                "description": "Solana JavaScript SDK",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-08-13T08:04:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mining-pool-rest-api",
+                "description": "Rest API & PostgreSql",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-10-03T04:38:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidity-lottery",
+                "description": "Smart contract lottery system - also transfers the entire lottery bounty amount to the winner's wallet almost immediately.",
+                "stargazers_count": 1,
+                "language": "Solidity",
+                "pushed_at": "2025-10-04T10:19:29Z",
+                "fork": false,
+                "topics": [
+                  "lottery",
+                  "smart-contract",
+                  "solidity"
+                ]
+              },
+              {
+                "name": "flutter-eth-wallet",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2025-10-04T10:32:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hardhat-smart-wallet",
+                "description": "Personal Wallet on EVM",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-04T10:23:35Z",
+                "fork": false,
+                "topics": [
+                  "evm",
+                  "hardhat",
+                  "wallet"
+                ]
+              },
+              {
+                "name": "Medical-Blockchain",
+                "description": " MedBloc: Blockchain for the NZ healthcare system",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-11-04T19:53:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Medical_Suite",
+                "description": "A compilation of various disease detecting modules deployed at once for a comprehensive medical study",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-15T03:16:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "safety-explorer-suite",
+                "description": "The Safety Explorer Suite is a central location for custom charts related to safety monitoring",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-05-06T22:51:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "candy-machine-ui",
+                "description": "Reference minting UI implementation for the Metaplex Candy Machine Program",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-23T09:37:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Blockchain-AI-Agent",
+                "description": "Blockchain AI Agent is an open-source framework that enables developers to integrate AI-powered agents with Solana and EVM (Ethereum Virtual Machine) blockchains.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-06T15:50:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Solana_AIAgent_Trading",
+                "description": "\ud83d\udd25Blockchain AI Agent for Solana Trading -AI Agent Trading Tool for the Solana memecoin - Solana AI Agent for Trading - Groundbreaking Solana AI Agent Strategy",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-07T16:10:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "warengonzaga",
+                "description": "My Personal GitHub ReadMe. \ud83d\udcbb\ud83d\udc96\u2615",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-08-30T15:04:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "btc-mining-pool",
+                "description": "Known Bitcoin mining pool coinbase tags and coinbase output addresses. Generated files: https://github.com/bitcoin-data/mining-pools/tree/generated",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-09-24T03:15:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bitpool",
+                "description": "digital coin mining pool",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-01-01T09:12:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "myportfolio-v0",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-11T03:42:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-project",
+                "description": "This is a short collection of Python scripts I made, they do random stuff, and each has a folder. I will keep them well documented with a README for everything.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-07-10T05:36:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "asteroids",
+                "description": "Start your space adventure",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-10T05:39:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chat-room",
+                "description": "A quick and simple chatroom made with socket.io with support for many different rooms.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-11T05:12:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "snake-game",
+                "description": "A simple snake game made for a personal gamejam with a few friends, the theme was \"retro\", this was made in 20 minutes. 5 minutes was for planning, 15 minutes was used for programming, designing, and everything else.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-11T05:27:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-discord-bot",
+                "description": "A Discord bot that automatically assigns roles to new users who join your server using slash commands.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-11T05:40:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "typing-site",
+                "description": "A web-based tool to create customizable typing animation GIFs. Users can input text, adjust animation settings, and download the resulting GIF.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-11T05:59:09Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:06.946108+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

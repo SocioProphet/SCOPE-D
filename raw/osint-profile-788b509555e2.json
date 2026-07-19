@@ -1,0 +1,718 @@
+{
+  "profileId": "osint-profile-788b509555e2",
+  "target": "Ali-hey-0",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:35.169259+00:00",
+  "completedAt": "2026-06-20T13:53:36.327306+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-fda569ed",
+      "lookupType": "github_context",
+      "target": "Ali-hey-0",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Ali-hey-0",
+            "name": "Ali Heydari",
+            "type": "User",
+            "company": null,
+            "blog": "https://github.com/Ali-hey-0/Ali-hey-0",
+            "location": "iran,zanjan",
+            "bio": "\ud83d\udcbb Backend Dev & AI Enthusiast | Python, Node.js, Next.js, MongoDB, MySQL, Cybersecurity | Exploring PyTorch & Deep Learning | Passionate about scalable systems",
+            "public_repos": 66,
+            "followers": 1669,
+            "following": 8997,
+            "created_at": "2024-01-23T15:03:13Z",
+            "updated_at": "2026-06-03T20:05:49Z",
+            "html_url": "https://github.com/Ali-hey-0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/157505360?v=4",
+            "repos": [
+              {
+                "name": "bluetooth_ble_app_weight",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2026-06-19T10:57:39Z",
+                "fork": false,
+                "topics": [
+                  "android-application",
+                  "app",
+                  "ble",
+                  "bluetooth",
+                  "maui-apps",
+                  "sensor"
+                ]
+              },
+              {
+                "name": "Yolo8n_AI_doc",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-06-19T10:55:28Z",
+                "fork": false,
+                "topics": [
+                  "microcontroller",
+                  "object-detection",
+                  "onnx",
+                  "rknn",
+                  "yolov8"
+                ]
+              },
+              {
+                "name": "Ali-hey-0",
+                "description": null,
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2026-06-19T10:30:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nightmare-exploit-roadmap",
+                "description": "A structured binary exploitation curriculum covering stack, heap, mitigations, ROP, and automated exploitation.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-01-01T14:11:42Z",
+                "fork": false,
+                "topics": [
+                  "angr",
+                  "binary-exploitation",
+                  "ctf",
+                  "curriculum",
+                  "exploit-development",
+                  "format-string",
+                  "glibc",
+                  "heap-exploitation",
+                  "learning-roadmap",
+                  "mitigations",
+                  "offensive-security",
+                  "pwn",
+                  "reverse-engineering",
+                  "rop",
+                  "security-research",
+                  "symbolic-execution",
+                  "z3"
+                ]
+              },
+              {
+                "name": "owasp",
+                "description": " OWASP Security Training & Penetration Testing Lab",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2026-05-18T07:39:02Z",
+                "fork": false,
+                "topics": [
+                  "command-injection",
+                  "mit-license",
+                  "rce",
+                  "recon",
+                  "sql-injection",
+                  "ssti"
+                ]
+              },
+              {
+                "name": "DALI",
+                "description": "A GPU-accelerated library containing highly optimized building blocks and an execution engine for data processing to accelerate deep learning training and inference applications.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-16T13:41:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LLMs-from-scratch",
+                "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-11-03T03:05:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Rust_Roadmap",
+                "description": "A comprehensive, hands-on learning repository covering Rust programming from fundamentals to advanced topics \u2014 including networking, async programming, macros, and system design.",
+                "stargazers_count": 9,
+                "language": "Rust",
+                "pushed_at": "2026-02-10T12:47:39Z",
+                "fork": false,
+                "topics": [
+                  "cargo",
+                  "project",
+                  "roadmap",
+                  "rust",
+                  "rust-community",
+                  "rust-crate",
+                  "rust-lang",
+                  "rust-library",
+                  "tools"
+                ]
+              },
+              {
+                "name": "Ultimate-RAT-Collection",
+                "description": "For educational purposes only, exhaustive samples of 450+ classic/modern trojan builders including screenshots.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-17T22:49:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Qiskit",
+                "description": "Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-12-15T16:21:46Z",
+                "fork": false,
+                "topics": [
+                  "python",
+                  "quantum",
+                  "quantum-computing",
+                  "sdk"
+                ]
+              },
+              {
+                "name": "DeepLearning-YouTube",
+                "description": "Course Link On YouTube Below  ",
+                "stargazers_count": 16,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-03-06T06:23:32Z",
+                "fork": false,
+                "topics": [
+                  "deep-learning",
+                  "machine-learning",
+                  "pytorch"
+                ]
+              },
+              {
+                "name": "BarcodeScannerAPI",
+                "description": "BarcodeScannerAPI is a Node.js-based backend project that provides robust and efficient functionality for scanning, processing, and managing barcodes. This API enables seamless integration with any application requiring barcode recognition or data management. ",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2025-12-23T03:00:42Z",
+                "fork": false,
+                "topics": [
+                  "backend",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "Assembly-File-Encryption",
+                "description": "CryptoVault Pro \u2014 Assembly File Encryption",
+                "stargazers_count": 2,
+                "language": "Assembly",
+                "pushed_at": "2025-12-29T09:29:57Z",
+                "fork": false,
+                "topics": [
+                  "academic",
+                  "assembly",
+                  "crypto",
+                  "low-level",
+                  "university"
+                ]
+              },
+              {
+                "name": "practical-tutorials-project-based-learning",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-12-11T19:15:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MyBlog",
+                "description": "this my personal blog",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-16T17:49:26Z",
+                "fork": false,
+                "topics": [
+                  "blog",
+                  "personal-blog",
+                  "personal-site"
+                ]
+              },
+              {
+                "name": "Hacking-Tools",
+                "description": "\ud83c\udf10Collate and develop network security, Hackers technical documentation and tools, code.",
+                "stargazers_count": 13,
+                "language": "Batchfile",
+                "pushed_at": "2025-03-06T05:11:47Z",
+                "fork": false,
+                "topics": [
+                  "crack",
+                  "dark-web-tutorials",
+                  "darkweb",
+                  "hacki",
+                  "kali",
+                  "linio",
+                  "vpn"
+                ]
+              },
+              {
+                "name": "pycryptovault",
+                "description": "CryptoVault Pro A modern, secure, and user-friendly file encryption and decryption tool with a professional GUI",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-12-26T12:34:50Z",
+                "fork": false,
+                "topics": [
+                  "aes-256-gcm",
+                  "chacha20",
+                  "cryptography",
+                  "encryption",
+                  "fernet"
+                ]
+              },
+              {
+                "name": "php-website",
+                "description": "EduPortal is a project that implements a simple school website using PHP and MySQL",
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2025-12-23T02:55:49Z",
+                "fork": false,
+                "topics": [
+                  "mysql",
+                  "php"
+                ]
+              },
+              {
+                "name": "EvoSynth",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-10T10:26:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bullet-Physics-SDK",
+                "description": "Bullet Physics SDK: real-time collision detection and multi-physics simulation for VR, games, visual effects, robotics, machine learning etc.",
+                "stargazers_count": 11,
+                "language": "C++",
+                "pushed_at": "2025-03-10T21:47:46Z",
+                "fork": false,
+                "topics": [
+                  "computer-animation",
+                  "game-development",
+                  "pybullet",
+                  "reinforcement-learning",
+                  "robotics",
+                  "simulation",
+                  "simulator",
+                  "virsual-reality"
+                ]
+              },
+              {
+                "name": "forecast-fusion",
+                "description": "Multivariate weather forecasting with Transformers and FastAPI \u2014 featuring real-time predictions and interactive visualization",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-07-10T12:18:34Z",
+                "fork": false,
+                "topics": [
+                  "deep-learning",
+                  "fastapi",
+                  "python",
+                  "pytorch",
+                  "transformer",
+                  "weather-forecast"
+                ]
+              },
+              {
+                "name": "Aion",
+                "description": "FSociety Genesis is an advanced botnet/C2 simulation demonstrating cutting-edge offensive security techniques in a single Python framework. This lab-safe implementation includes quantum cryptography, AI-driven attacks, federated learning, blockchain command tracking, and multi-vector attack capabil",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-11-23T22:58:38Z",
+                "fork": false,
+                "topics": [
+                  "botnet",
+                  "ctf",
+                  "osint",
+                  "security"
+                ]
+              },
+              {
+                "name": "Simulation",
+                "description": "An interactive 3D visualization of the universe spanning 65 orders of magnitude, from quantum scales (-35) to cosmic scales (+30). Built with Three.js, this project combines physics simulations, real-time rendering, and educational content to explore the universe at every scale.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-12-06T06:02:12Z",
+                "fork": false,
+                "topics": [
+                  "dna",
+                  "orbital-simulation",
+                  "physics",
+                  "physics-simulation",
+                  "simulation",
+                  "solar-system",
+                  "universe"
+                ]
+              },
+              {
+                "name": "config-scrapper-",
+                "description": "Telegram Channel Config Scraper",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-11-09T14:57:36Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "scraper"
+                ]
+              },
+              {
+                "name": "-IBM-Granite-For-PDF",
+                "description": "Granite Snack Cookbook -- easily consumable recipes (python notebooks) that showcase the capabilities of the Granite models",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-21T07:17:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-llm-apps",
+                "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-01T02:40:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GO-Practice",
+                "description": "Golang CRUD ",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-03-26T03:19:31Z",
+                "fork": false,
+                "topics": [
+                  "go",
+                  "golang",
+                  "postgres"
+                ]
+              },
+              {
+                "name": "forecast-Attention-Model",
+                "description": "A deep learning framework for time series forecasting using attention mechanisms. This repository provides an implementation of state-of-the-art neural architectures designed for accurate and interpretable time series prediction tasks such as energy consumption, stock price, weather data, and more.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-02T14:51:06Z",
+                "fork": false,
+                "topics": [
+                  "attention",
+                  "deep-learning",
+                  "forecast",
+                  "ml"
+                ]
+              },
+              {
+                "name": "heroui",
+                "description": "\ud83d\ude80 Beautiful, fast and modern React UI library. (Previously NextUI)",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-05T14:50:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "browser-fingerprint-collector",
+                "description": "for reading the source code please use tools like notebook and other programs cause many of editors can't display it correctly ",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-11-06T12:22:01Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "information-gathering",
+                  "undetactable"
+                ]
+              },
+              {
+                "name": "datasets",
+                "description": "\ud83e\udd17 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-06T17:13:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-courses",
+                "description": ":books: List of awesome university courses for learning Computer Science!",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-05-04T12:49:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-interview-questions",
+                "description": ":octocat: A curated awesome list of lists of interview questions. Feel free to contribute! :mortar_board: ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-07-29T14:21:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Awesome-Hacking",
+                "description": "A collection of various awesome lists for hackers, pentesters and security researchers",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-01-18T01:48:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Go_Explain",
+                "description": "Go Tutorial",
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2025-03-21T10:59:56Z",
+                "fork": false,
+                "topics": [
+                  "go",
+                  "golang",
+                  "golang-library"
+                ]
+              },
+              {
+                "name": "energy_forecast",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-02T15:18:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TimeSeries-Weathe",
+                "description": "A robust and modular application for analyzing, forecasting, and visualizing weather time series data. This project leverages modern Python libraries for data manipulation, statistical analysis, time series forecasting, and interactive visualization.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-02T15:02:32Z",
+                "fork": false,
+                "topics": [
+                  "deep-learning",
+                  "ml",
+                  "pytorch",
+                  "weather-forecast"
+                ]
+              },
+              {
+                "name": "diabetes_prediction",
+                "description": "A machine learning project for predicting the likelihood of diabetes in patients based on clinical features. This repository provides an end-to-end pipeline: from data loading and preprocessing to model training, evaluation, and prediction.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-02T15:12:18Z",
+                "fork": false,
+                "topics": [
+                  "diabetes-prediction",
+                  "machine-learning",
+                  "pipeline"
+                ]
+              },
+              {
+                "name": "time_series_transformer",
+                "description": "\ud83c\udf24\ufe0f Time Series Weather Forecasting with Transformer",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-02T14:32:25Z",
+                "fork": false,
+                "topics": [
+                  "ml",
+                  "transfer-learning",
+                  "weather-forecast"
+                ]
+              },
+              {
+                "name": "Transformer-Weather-Predictor",
+                "description": "An end-to-end deep learning pipeline for multivariate weather forecasting using a Transformer-based model.   Includes: data preprocessing, training, prediction, and an interactive FastAPI web interface.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-07-10T05:58:12Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "deeplearning",
+                  "fastapi",
+                  "python",
+                  "pytorch",
+                  "transfer-learning"
+                ]
+              },
+              {
+                "name": "TensorTrade-with-Reinforcement-Learning",
+                "description": "An open source reinforcement learning framework for training, evaluating, and deploying robust trading agents.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-03-11T01:27:14Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "machine-learning",
+                  "open-source",
+                  "reinforcement-learning",
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "Models-Master",
+                "description": "Models and examples built with TensorFlow",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-03-10T20:29:56Z",
+                "fork": false,
+                "topics": [
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "CrossPlatformMediaBot",
+                "description": " powerful tool designed to make media management easier by integrating Telegram, Instagram, and Twitter APIs. The bot allows users to upload media from Instagram to a designated Telegram channel, making it easier to share content with others.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-02-18T15:55:51Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "python",
+                  "script"
+                ]
+              },
+              {
+                "name": "Kali-Tools",
+                "description": "ALL IN ONE Hacking Tool For Hackers",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2025-03-06T05:04:26Z",
+                "fork": false,
+                "topics": [
+                  "hacking",
+                  "kali-linux"
+                ]
+              },
+              {
+                "name": "InstaCommentScraper",
+                "description": "InstaCommentScraper  is a Python tool designed to scrape all comments from Instagram posts by using their URLs. It retrieves valuable user data from comments, making it ideal for social media analysis, marketing research, and content engagement tracking. \ud83d\ude80",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-02-06T02:35:13Z",
+                "fork": false,
+                "topics": [
+                  "meta",
+                  "python",
+                  "scraper",
+                  "script"
+                ]
+              },
+              {
+                "name": "Freqtrade",
+                "description": "Free, open source crypto trading bot",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-02-09T20:47:17Z",
+                "fork": false,
+                "topics": [
+                  "bitcoin",
+                  "cryptocurrency",
+                  "python",
+                  "telegeram-bot",
+                  "trade",
+                  "trade-bot",
+                  "trading"
+                ]
+              },
+              {
+                "name": "node-js-website",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-28T07:06:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebPulse",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-25T11:46:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ali-hey-0-Bitcoin-Price-Prediction-API-GRU",
+                "description": "simple bitcoin price prediction by GRU",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-08-26T12:10:28Z",
+                "fork": false,
+                "topics": [
+                  "gru",
+                  "ml",
+                  "python",
+                  "pytorch"
+                ]
+              },
+              {
+                "name": "-cifar10-transfer-learning-resnet18-",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-08-26T12:39:48Z",
+                "fork": false,
+                "topics": [
+                  "cnn",
+                  "ml",
+                  "pytorch",
+                  "resnet-18",
+                  "transfer-learning"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:36.325955+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "profileId": "osint-profile-a20ce103db71",
+  "target": "zyferlink",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:04.564379+00:00",
+  "completedAt": "2026-06-21T15:33:05.252755+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-339794a3",
+      "lookupType": "github_context",
+      "target": "zyferlink",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "zyferlink",
+            "name": "Rajitha / Zyfer",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Colombo, Sri Lanka",
+            "bio": "\u26a1\ufe0e Senior Software Engineer | UI\u2425UX Expert | Android, Flutter, React Native",
+            "public_repos": 31,
+            "followers": 1238,
+            "following": 1535,
+            "created_at": "2024-10-10T11:17:28Z",
+            "updated_at": "2026-05-28T08:22:48Z",
+            "html_url": "https://github.com/zyferlink",
+            "avatar_url": "https://avatars.githubusercontent.com/u/184507786?v=4",
+            "repos": [
+              {
+                "name": "github-best-practices",
+                "description": "A simple guide to help developers avoid mistakes, keep repositories in good shape, and follow GitHub's rules. Learn how to avoid flags and suspensions by using good commit practices, managing your repo well, and following the right conduct.",
+                "stargazers_count": 43,
+                "language": null,
+                "pushed_at": "2024-10-20T13:11:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "velvaine-store-nextjs",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-20T19:06:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "android-mvi-base",
+                "description": "Clean-Feature-MVI is a modular Android architecture using MVI (Model-View-Intent) for predictable state management and clear separation of concerns. It follows a feature-based structure, making it easy to scale and maintain apps.",
+                "stargazers_count": 9,
+                "language": "Kotlin",
+                "pushed_at": "2025-02-22T16:31:00Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "architecture-components",
+                  "datastore",
+                  "kotlin",
+                  "mvi-architecture",
+                  "retrofit2",
+                  "room-database",
+                  "unidirectional-data-flow"
+                ]
+              },
+              {
+                "name": "modular-mvi-architecture-android",
+                "description": "This repo introduces a modular MVI architecture for Android apps, breaking things into clear, focused modules for better organization, scalability, and maintainability. Perfect for keeping your code clean and development smooth!",
+                "stargazers_count": 27,
+                "language": "Kotlin",
+                "pushed_at": "2025-02-11T12:00:35Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "architecture",
+                  "datastore-android",
+                  "hilt-android",
+                  "jetpack-compose",
+                  "mvi-architecture",
+                  "retrofit2",
+                  "room-database"
+                ]
+              },
+              {
+                "name": "apple-react-web-app",
+                "description": " Bring the Apple iPhone 15 Pro website to life with GSAP animations and Three.js 3D effects. This project is packed with smooth animations and eye-catching 3D models!",
+                "stargazers_count": 43,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-19T20:25:21Z",
+                "fork": false,
+                "topics": [
+                  "gsap",
+                  "reactjs",
+                  "tailwindcss",
+                  "threejs",
+                  "vite"
+                ]
+              },
+              {
+                "name": "styles-by-nova-android-app",
+                "description": "Styles by Nova - is your go to fashion app for men, women, and kids, offering fresh style tips, trending outfits, and grooming advice to keep you looking your best.",
+                "stargazers_count": 53,
+                "language": "Kotlin",
+                "pushed_at": "2025-06-19T20:30:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pokemon-verse-flutter-app",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2025-04-03T13:50:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "podcast-website-nextjs-app",
+                "description": "\ud83c\udf99\ufe0f VoiceFlow : A frontend only podcast website template inspired by modern podcast hosts. Built with Next.js and TailwindCSS, featuring responsive layouts, and client side interactions.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-23T07:15:21Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "react",
+                  "tailwind-css"
+                ]
+              },
+              {
+                "name": "tan-prime-shop-tanstack-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-01T11:54:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZyferLink",
+                "description": "Learn more about me, my work, and projects on GitHub, including my portfolio and contributions.",
+                "stargazers_count": 34,
+                "language": null,
+                "pushed_at": "2026-02-13T12:12:17Z",
+                "fork": false,
+                "topics": [
+                  "markdown",
+                  "shields-io"
+                ]
+              },
+              {
+                "name": "hexa-harry-potter-android-app",
+                "description": "An Android app that brings Harry Potter's magic to life with voice-activated spells like 'Lumos' to control your phone\u2019s features.",
+                "stargazers_count": 36,
+                "language": "Kotlin",
+                "pushed_at": "2025-06-19T20:28:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "coffee-lab-reactnative-app",
+                "description": " CoffeeLab: Coffee Shop App.  A React Native app powered by Zustand for managing coffee orders. Browse coffees and beans, view details, search, favorite items, and place orders easily.",
+                "stargazers_count": 37,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-19T20:37:12Z",
+                "fork": false,
+                "topics": [
+                  "nativewind",
+                  "react-native",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "android-discovery-lab",
+                "description": "This repository documents my journey through the Android Developer guidelines using Kotlin. It includes step-by-step instructions, screenshots, and explanations for each unit.",
+                "stargazers_count": 25,
+                "language": null,
+                "pushed_at": "2025-06-19T20:38:39Z",
+                "fork": false,
+                "topics": [
+                  "android-development",
+                  "android-studio",
+                  "kotlin"
+                ]
+              },
+              {
+                "name": "android-canvas-themes",
+                "description": "Standard colors (Material design colors, HTML color codes) for use in Android app development.",
+                "stargazers_count": 32,
+                "language": "Kotlin",
+                "pushed_at": "2025-06-19T20:39:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-training-cli-dart",
+                "description": "A collection of simple Dart command-line programs aimed at helping beginners practice fundamental programming concepts.",
+                "stargazers_count": 25,
+                "language": "Dart",
+                "pushed_at": "2024-10-21T15:08:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-training-cli-swift",
+                "description": "A collection of simple Swift command-line programs aimed at helping beginners practice fundamental programming concepts.",
+                "stargazers_count": 26,
+                "language": "Swift",
+                "pushed_at": "2024-10-21T13:57:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-training-cli-java",
+                "description": "A collection of simple Java command-line programs aimed at helping beginners practice fundamental programming concepts.",
+                "stargazers_count": 30,
+                "language": "Java",
+                "pushed_at": "2024-10-21T16:11:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "personal-landing-page-web",
+                "description": null,
+                "stargazers_count": 24,
+                "language": "SCSS",
+                "pushed_at": "2024-10-21T19:59:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-training-cross-lang",
+                "description": null,
+                "stargazers_count": 21,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-26T10:47:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "markdown-syntax-guide",
+                "description": "This Markdown Syntax Guide repo offers a complete guide to mastering Markdown for repositories, blogs, and documentation.",
+                "stargazers_count": 28,
+                "language": null,
+                "pushed_at": "2024-10-24T10:31:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "git-safe",
+                "description": "A simple guide to GitHub\u2019s rules to help you avoid flags and keep your account safe.",
+                "stargazers_count": 25,
+                "language": null,
+                "pushed_at": "2024-10-27T20:11:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-training-flutter-dart",
+                "description": "A repository for mastering Flutter development, from basics to intermediate concepts. Ideal for developers looking to strengthen their mobile development foundations.",
+                "stargazers_count": 24,
+                "language": "Dart",
+                "pushed_at": "2024-11-06T15:34:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-now-flutter-app",
+                "description": "A Flutter app that fetches live weather data based on your location, displaying real-time conditions, forecasts, and weather icons in a clean, intuitive interface.",
+                "stargazers_count": 28,
+                "language": "Dart",
+                "pushed_at": "2024-12-03T11:06:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lyxa-live-flutter-app",
+                "description": "LYXA Live is a dynamic social media app built with Flutter and Dart, designed to help users Share, Live, and Inspire. This app provides an engaging platform for users to connect, share their stories, and inspire each other with its sleek, user-friendly interface.",
+                "stargazers_count": 34,
+                "language": "Dart",
+                "pushed_at": "2024-12-07T16:39:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-training-leetcode-challenges",
+                "description": null,
+                "stargazers_count": 25,
+                "language": "Kotlin",
+                "pushed_at": "2025-01-02T10:04:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-training-cli-kotlin",
+                "description": null,
+                "stargazers_count": 27,
+                "language": "Kotlin",
+                "pushed_at": "2025-01-07T15:15:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bite-map-android-app",
+                "description": "Experimental, learning-focused project. BiteMap is an Android app that helps you find nearby restaurants and navigate to them easily. Tap to see nearby options, get directions via Google Maps, or search for specific places. \ud83d\udee0\ufe0f\ud83d\udcda\ud83d\uddfa\ufe0f",
+                "stargazers_count": 23,
+                "language": "Kotlin",
+                "pushed_at": "2025-02-19T20:34:39Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "maps-api",
+                  "places-api"
+                ]
+              },
+              {
+                "name": "android-shopping-list-sample",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Kotlin",
+                "pushed_at": "2025-02-27T14:47:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "velvaine-admin-nextjs",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-20T19:05:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vidbox-reactnative-expo-app",
+                "description": "VidBox: Built with React Native Expo and NativeWind, VidBox lets users easily share AI videos while offering a smooth and functional design.",
+                "stargazers_count": 30,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-19T20:36:23Z",
+                "fork": false,
+                "topics": [
+                  "expo",
+                  "javascript",
+                  "nativewind",
+                  "react-native"
+                ]
+              },
+              {
+                "name": "simple-ecommerce-backend-nodejs",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-26T11:43:49Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:05.252129+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

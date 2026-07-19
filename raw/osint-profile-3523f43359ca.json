@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-3523f43359ca",
+  "target": "Viktotovich",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:59.831283+00:00",
+  "completedAt": "2026-06-21T15:33:01.868864+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-fc4de66b",
+      "lookupType": "github_context",
+      "target": "Viktotovich",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Viktotovich",
+            "name": "Vladimir Laskin",
+            "type": "User",
+            "company": "V and Bruno LLC.",
+            "blog": "https://www.vandbruno.net",
+            "location": "Dubai",
+            "bio": "The Phoon to the AI Zblock. \r\n\r\nWill write your backend blindfolded in Adonis. Make laps around NextJS, eat bug fixes for lunch, and deploy by dinner.",
+            "public_repos": 76,
+            "followers": 1246,
+            "following": 1968,
+            "created_at": "2023-10-15T21:33:26Z",
+            "updated_at": "2026-06-02T16:23:52Z",
+            "html_url": "https://github.com/Viktotovich",
+            "avatar_url": "https://avatars.githubusercontent.com/u/148013724?v=4",
+            "repos": [
+              {
+                "name": "uuid-fold-er",
+                "description": "Part of the upcoming projects and is meant to take a UUID and fold it into a URL friendly version. i.e: /8b4da03b-88b2-4a63-a55a-940eff4c549a becomes /8bd4da, if there is a collission, it unfolds more ",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-15T15:02:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "agency-agents",
+                "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-15T21:37:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hash-map",
+                "description": "Creating a fully functional hashmap that will use buckets, a hash function - and the standard set of methods. The goal of this project is to figure out how to create a hash function on my own based on the limited information that is provided.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-19T22:55:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nginx-x-docker",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Dockerfile",
+                "pushed_at": "2026-02-16T15:31:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quick-skillcheck-questionaire",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-02-09T15:02:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-flavors",
+                "description": "Docker quick cheat-sheet",
+                "stargazers_count": 2,
+                "language": "Dockerfile",
+                "pushed_at": "2026-02-02T19:07:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "penguino",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-17T20:31:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "battleship",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-08T20:34:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VB-Backend",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-05T09:46:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "memory-card-project",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-06T18:13:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "v2k-oss",
+                "description": "OSS Content Management System V2K. I've built 2 internal tools, so why the hell not build one that is simple, open-source, and has backend functionalities as well? If you love something, share it with the world",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-09-29T11:11:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "viktotovich",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-12-18T15:14:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nexjs-isolated-errors-and-error-types",
+                "description": "Isolated Error types + Error obj for use with NextJS. Does not come with NextJS (as we just need to isolate the Errors). For use in Penguino and other projects. ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-12-12T10:11:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gyastrox",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-03T22:30:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FC-Drive",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-17T10:39:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "basic-info-site",
+                "description": "Practicing backend custom HTTP server creation with NodeJS",
+                "stargazers_count": 1,
+                "language": "EJS",
+                "pushed_at": "2025-01-28T21:57:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-router-testing",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-29T13:59:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-data-handling",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-06T14:56:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-ejs-setup",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-06T23:13:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-x-pSQL",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-07T17:52:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-inventory-app",
+                "description": "Creating a real world functional app with express",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-21T15:00:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mini-message-board",
+                "description": "A practice project to solidify using (M)VC pattern of backend development. This will only implement the View and Controller, but eventually I will integrate a Model as well in my further, more complex projects.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-08T21:57:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-passport-authentication-template",
+                "description": "A private template for log-in / sign-up / log-out routes with authentication.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-27T21:50:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-authentication",
+                "description": "Password.js x Express x EJS x Express Session - first blood in express-authentication",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-24T12:25:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "members-only",
+                "description": "Testing authentication with a real world app",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-05T17:47:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "prisma-testing",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-10T14:21:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "prisma-first-blood",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-06T19:05:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rest-curl-ing-",
+                "description": "Practicing working with curl and res.json, creating RESTful API's",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-18T19:34:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "caroussel",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-16T12:43:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "adonis-basics",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-02T17:54:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VB-profiles",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Astro",
+                "pushed_at": "2025-05-21T16:33:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VB-backend-adonis",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-01T20:22:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "adonis-inertia-first-blood",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-26T22:01:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VB-admin",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-27T21:13:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "next-trial",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-04T11:24:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "penguino-social-on-astro",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-17T21:20:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "astro-first-blood",
+                "description": "React Router is up to funny stuff, decided to get comfortable with Astro x React instead",
+                "stargazers_count": 0,
+                "language": "Astro",
+                "pushed_at": "2025-01-27T18:32:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shopping-cart-on-vite",
+                "description": "Creating a React x Vite shopping app made possible by React Routes ",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-20T18:51:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "useReducer-practice-React",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-19T14:20:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-routers-sample-app",
+                "description": "A sample app to further test my knowledge, the tutorial followed is curtosy of reactrouter's documentation",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-10T20:42:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-routers-first-blood",
+                "description": "Testing out React Router",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-10T15:43:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "full-vite-setup-template",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-10T14:57:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "first-tests-with-vitest",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-08T21:26:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "classy-react",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-06T21:20:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vite-first-blood",
+                "description": "Trying out Vite for a tiny React test/project/first run",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-03T20:41:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "React-CV-Maker",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-02T10:23:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mock-responsive-site",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2024-12-23T15:00:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testing-mocking-with-jest",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-29T22:13:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testing-with-jest",
+                "description": " Practicing testing, and TDD. I had to take a step from BST as I felt like I needed to learn testing first ",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-28T18:50:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "curriculum-fork",
+                "description": "The open curriculum for learning web development (forked)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-27T10:37:19Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:01.868254+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

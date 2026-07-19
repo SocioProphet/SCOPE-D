@@ -1,0 +1,250 @@
+{
+  "profileId": "osint-profile-2c22d0136748",
+  "target": "taisprestes01",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:59.074510+00:00",
+  "completedAt": "2026-06-20T13:52:59.554246+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-85dd56fb",
+      "lookupType": "github_context",
+      "target": "taisprestes01",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "taisprestes01",
+            "name": "Tais Prestes",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "The projects here are focused on the financial market and digital marketing automation.",
+            "public_repos": 15,
+            "followers": 2606,
+            "following": 2082,
+            "created_at": "2022-06-27T01:55:46Z",
+            "updated_at": "2026-03-31T11:21:15Z",
+            "html_url": "https://github.com/taisprestes01",
+            "avatar_url": "https://avatars.githubusercontent.com/u/108246691?v=4",
+            "repos": [
+              {
+                "name": "site-do-paulo",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-11T22:21:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "iq-option-data-analysis",
+                "description": "Trading analysis tools for IQ Option.",
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2024-02-18T18:15:44Z",
+                "fork": true,
+                "topics": [
+                  "analysis-informative",
+                  "big-data",
+                  "binary-options",
+                  "data-analysis",
+                  "forex-trading",
+                  "informative-chart",
+                  "insights-data",
+                  "iq-option"
+                ]
+              },
+              {
+                "name": "Pocket-Option-API",
+                "description": "This repository hosts an API for interacting with Pocket Option, a trading platform. ",
+                "stargazers_count": 34,
+                "language": null,
+                "pushed_at": "2024-02-20T03:26:00Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "automatic-trading",
+                  "bot-pocket-option",
+                  "pocket-option",
+                  "pocket-option-api",
+                  "pocketoption",
+                  "trade-bot",
+                  "trader-bot",
+                  "trading"
+                ]
+              },
+              {
+                "name": "taisprestes01",
+                "description": null,
+                "stargazers_count": 28,
+                "language": null,
+                "pushed_at": "2026-06-20T13:11:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tiktok-uploader",
+                "description": "tiktok-uploader is a Python-based project that automates the process of uploading videos to TikTok using the official TikTok API. It handles the full OAuth 2.0 authentication flow.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-07-09T06:09:47Z",
+                "fork": false,
+                "topics": [
+                  "account",
+                  "api",
+                  "automation",
+                  "dark",
+                  "python",
+                  "python3",
+                  "reddit",
+                  "tiktok",
+                  "tiktok-api",
+                  "tiktok-automation",
+                  "tiktok-upload",
+                  "tiktok-uploader",
+                  "trending"
+                ]
+              },
+              {
+                "name": "TikTok-Live-Connector",
+                "description": "Node.js library to receive live stream events (comments, gifts, etc.) in realtime from TikTok LIVE.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-08-14T18:11:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CryptoAlert",
+                "description": "Track your cryptocurrency portfolios, receive price alerts, explore new investment opportunities and access real-time market analysis",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-04-03T02:15:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cryptocurrency-wallet-generator",
+                "description": "Wallet generator for bitcoin, create your own wallet and make real transactions.",
+                "stargazers_count": 25,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-05T23:29:23Z",
+                "fork": false,
+                "topics": [
+                  "bitcoin",
+                  "bitcoin-wallet",
+                  "crypto",
+                  "cryptocurrency",
+                  "money",
+                  "wallet",
+                  "wallet-generation",
+                  "wallet-generator"
+                ]
+              },
+              {
+                "name": "ObraBoa",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-02-20T00:46:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TopREITs",
+                "description": "TopREITs is the perfect filter for finding the best REITs, with accurate and up-to-date metrics. Simplify your choices and invest confidently in the most promising options.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2024-11-17T21:25:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SoftwareEngineeringExplained",
+                "description": "Welcome to SoftwareEngineeringExplained! This repository is dedicated to providing comprehensive explanations and solutions for exercises in the field of software engineering. ",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-06-25T17:13:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tradeogre-api",
+                "description": "TradeOgre API provides an easy to use API for anyone to access the market.",
+                "stargazers_count": 17,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-16T18:35:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Coinfolio",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "HTML",
+                "pushed_at": "2024-06-11T23:21:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tiktok_live_bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-08-14T23:25:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "test",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-07-11T03:47:08Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:59.553397+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

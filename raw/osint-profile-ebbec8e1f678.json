@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-ebbec8e1f678",
+  "target": "monster0318",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:22.875539+00:00",
+  "completedAt": "2026-06-20T16:49:24.045896+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3cfe020f",
+      "lookupType": "github_context",
+      "target": "monster0318",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "monster0318",
+            "name": "JuMin Park",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Senior Software Engineer| AI & Crypto Integration | React, Vue, Angular | Python, Java, Ruby | Clean code, scalable systems, and real-world impact",
+            "public_repos": 78,
+            "followers": 781,
+            "following": 2460,
+            "created_at": "2025-01-12T09:05:19Z",
+            "updated_at": "2026-06-18T04:06:18Z",
+            "html_url": "https://github.com/monster0318",
+            "avatar_url": "https://avatars.githubusercontent.com/u/194675221?v=4",
+            "repos": [
+              {
+                "name": "LB-Microservice-Django-Docker",
+                "description": "A load-balanced microservice architecture built with Django, containerized using Docker. Features independent Django services with RESTful APIs, orchestrated for scalability and fault tolerance, leveraging Docker Compose or Kubernetes for seamless deployment and load distribution across multiple instances.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2025-05-21T16:22:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Transport-Track-Center",
+                "description": "A comprehensive transportation tracking system designed to monitor and manage logistics operations in real-time. Integrates advanced technologies like GPS and RFID for accurate shipment tracking, providing a user-friendly interface with custom alerts and detailed analytics for efficient supply chain management.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-20T15:17:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "movie-manage",
+                "description": "A streamlined movie management system designed to organize and track movie collections with ease. Features include movie cataloging, search functionality, and user-friendly interfaces for adding, editing, and categorizing films by title, genre, release year, and more, ideal for personal or small-scale theater use.",
+                "stargazers_count": 15,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-14T00:34:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Doc-Search",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-03T16:34:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gorgeous-E-Commerce-Site-final",
+                "description": "A sophisticated and responsive e-commerce platform tailored for fashion retail, built with modern web technologies. Features a visually appealing UI with product filtering, shopping cart, secure checkout, and user account management, designed to deliver an elegant and seamless online shopping experience.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-28T13:33:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mockup-netiflex-backend",
+                "description": "A mock backend service for a Netflix-like streaming platform, built to simulate API endpoints for user authentication, content streaming, and recommendation systems. Designed for testing and development purposes with a focus on scalability and performance.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2025-05-20T14:55:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sd-webui-reactor-sfw",
+                "description": "A safe-for-work face-swapping extension for Stable Diffusion WebUI (A1111, SD.Next, Cagliostro), offering fast and efficient face swaps with CPU-friendly performance, high-resolution support, and advanced features like face mask correction and multiple face detection.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-06-02T13:22:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tinkware",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-24T16:31:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "monster0318",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-08-29T15:15:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-app-user-stats-github",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-04T11:55:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "supabase-nuxt-ecommerce",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "Vue",
+                "pushed_at": "2025-06-03T14:30:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "twitter-spring-reactjs",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-03T14:47:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fullstack-go-angular",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-02T14:00:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spring-boot-vuejs-fullstack-examples",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2025-06-03T14:28:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spring-boot-react-fullstack",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-02T13:22:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fullstack-javascript-architecture",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-02T14:00:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SpringBoot-Projects-FullStack",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2025-06-02T13:22:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "E-Commerce-Node.js-Angular-Full-Stack",
+                "description": "A full-stack e-commerce application built with Node.js and Angular, featuring a robust backend for product management, user authentication, and payment processing, paired with a dynamic, responsive frontend for a seamless shopping experience.",
+                "stargazers_count": 17,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-02T13:22:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Full-Stack-Nuxt.js-Web-Development",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-01T13:27:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fastify-frontend",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-22T15:21:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fastify-api",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-22T14:56:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Email-Management",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "Go",
+                "pushed_at": "2025-06-02T13:22:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FlaskApiEcommerce",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2025-06-02T13:22:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mevn-stack-vue.js-2-example",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-01T13:28:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mern-ecommerce",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-01T13:27:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "master-laravel-vue-fullstack",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "PHP",
+                "pushed_at": "2025-06-01T13:27:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "generator-ng-fullstack",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-01T13:27:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "local-deep-research",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2025-06-01T13:27:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "generator-angular-material-fullstack",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-01T13:27:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fullstack-trading-dashboard",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2025-06-01T13:27:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fullstack-SaaS-Boilerplate",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-01T13:27:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fullstack-oauth2-angular-spring-boot-keycloak",
+                "description": "A full-stack application demonstrating secure authentication and authorization using OAuth2 with Keycloak, featuring an Angular frontend and a Spring Boot backend. Includes JWT-based token validation, role-based access control, and seamless integration with Keycloak for user management.",
+                "stargazers_count": 14,
+                "language": "Java",
+                "pushed_at": "2025-06-01T13:27:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fullstack-laravel-vue",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "PHP",
+                "pushed_at": "2025-06-01T13:27:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FullStack-Angular-GraphQL-final-",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-01T13:27:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-react-fullstack",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-29T17:59:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FullStack-Angular-SpringBoot",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-21T16:06:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FinGPT-new",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-05-21T15:43:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-fullstack-graphql",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-20T15:28:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-forum-app",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "Vue",
+                "pushed_at": "2025-05-20T15:29:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VueVuexEcommerceRestApi",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "Vue",
+                "pushed_at": "2025-05-20T15:26:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackerRank-Certificates",
+                "description": null,
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-04-18T00:18:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flow-middleware",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-02T00:57:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "colly",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-07-02T00:54:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Moya",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Swift",
+                "pushed_at": "2025-07-03T00:51:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-04T01:21:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "V2ex-Swift",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Swift",
+                "pushed_at": "2025-07-05T03:08:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "error_highlight",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Ruby",
+                "pushed_at": "2025-07-02T00:55:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "image-hdr",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-03T00:49:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hospitalMS",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Blade",
+                "pushed_at": "2025-07-03T00:47:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JackInTheBox",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-03T00:49:54Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:24.044532+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

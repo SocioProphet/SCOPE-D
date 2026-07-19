@@ -1,0 +1,590 @@
+{
+  "profileId": "osint-profile-818f20d108c7",
+  "target": "esin",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:35.358186+00:00",
+  "completedAt": "2026-06-21T15:27:36.129709+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-045b3d22",
+      "lookupType": "github_context",
+      "target": "esin",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "esin",
+            "name": "Andrey Esin",
+            "type": "User",
+            "company": null,
+            "blog": "andrey.es",
+            "location": null,
+            "bio": "Linux Administrator, DevOps Engineer and Go Developer",
+            "public_repos": 52,
+            "followers": 18275,
+            "following": 190688,
+            "created_at": "2009-04-02T12:01:48Z",
+            "updated_at": "2026-01-30T21:01:37Z",
+            "html_url": "https://github.com/esin",
+            "avatar_url": "https://avatars.githubusercontent.com/u/69767?v=4",
+            "repos": [
+              {
+                "name": "intheshell",
+                "description": "Some Go and Linux magic \ud83d\udc7b",
+                "stargazers_count": 155,
+                "language": "Go",
+                "pushed_at": "2023-06-30T20:22:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bfx-hf-algo",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2018-10-24T09:39:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dump1090-exporter",
+                "description": "Prometheus exporter for antirez/dump1090",
+                "stargazers_count": 29,
+                "language": "Go",
+                "pushed_at": "2023-10-31T18:03:19Z",
+                "fork": false,
+                "topics": [
+                  "dump",
+                  "dump1090",
+                  "grafana",
+                  "prometheus",
+                  "prometheus-exporter"
+                ]
+              },
+              {
+                "name": "kubectlsafe",
+                "description": "Safe operations in kubectl with plugin kubectlsafe",
+                "stargazers_count": 42,
+                "language": "Shell",
+                "pushed_at": "2021-01-18T07:11:31Z",
+                "fork": false,
+                "topics": [
+                  "bash",
+                  "bash-script",
+                  "kubectl",
+                  "kubectl-plugin",
+                  "kubectl-plugins",
+                  "kubernetes",
+                  "kubernetes-deployment",
+                  "kubernetes-operator"
+                ]
+              },
+              {
+                "name": "pgadmin4-oc",
+                "description": "pgAdmin4 for OpenShift",
+                "stargazers_count": 23,
+                "language": "Dockerfile",
+                "pushed_at": "2020-04-08T08:40:23Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "openshift",
+                  "openshift-application",
+                  "pgadmin",
+                  "pgadmin4"
+                ]
+              },
+              {
+                "name": "telegram_online",
+                "description": "Telegram client to be forever online",
+                "stargazers_count": 68,
+                "language": "Shell",
+                "pushed_at": "2025-01-09T11:39:42Z",
+                "fork": false,
+                "topics": [
+                  "online",
+                  "telegram",
+                  "telegram-cli",
+                  "telegram-client"
+                ]
+              },
+              {
+                "name": "wokidocker",
+                "description": "Docker image with useful utils",
+                "stargazers_count": 14,
+                "language": "Dockerfile",
+                "pushed_at": "2023-07-10T10:37:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "esin",
+                "description": null,
+                "stargazers_count": 40,
+                "language": null,
+                "pushed_at": "2026-04-22T15:20:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "twiny",
+                "description": "Twiny is a small(~20 K with UPX packing, and ~60 K without) utility for twitting",
+                "stargazers_count": 13,
+                "language": "C++",
+                "pushed_at": "2019-05-30T15:17:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "changepid",
+                "description": "Linux kernel module for changing the pid for running processes",
+                "stargazers_count": 10,
+                "language": "C",
+                "pushed_at": "2017-12-19T14:33:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "unetbootin",
+                "description": "UNetbootin installs Linux/BSD distributions to a partition or USB drive",
+                "stargazers_count": 14,
+                "language": "C++",
+                "pushed_at": "2021-10-22T16:03:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jenkins-agent",
+                "description": "Jenkins agent with some improvements",
+                "stargazers_count": 11,
+                "language": "Shell",
+                "pushed_at": "2022-07-17T15:33:06Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "jenkins",
+                  "jenkins-agent",
+                  "jenkins-docker"
+                ]
+              },
+              {
+                "name": "yandex-cloud",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Shell",
+                "pushed_at": "2022-09-15T08:42:34Z",
+                "fork": false,
+                "topics": [
+                  "serverless",
+                  "yandex",
+                  "yandex-cloud",
+                  "yandex-cloud-containers"
+                ]
+              },
+              {
+                "name": "ghunfollow",
+                "description": "GitHub unfollower",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-01-12T08:25:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docs",
+                "description": "Yandex Cloud documentation",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-01-07T15:12:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pocketotp",
+                "description": "PocketOTP - ESP based TOTP authenticator",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2025-01-29T16:29:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "icmp_exp",
+                "description": "The application allows you to respond to ICMP requests exponentially",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-01-07T15:31:18Z",
+                "fork": false,
+                "topics": [
+                  "golang",
+                  "icmp",
+                  "just-for-fun"
+                ]
+              },
+              {
+                "name": "imdb_rating",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2024-12-17T10:43:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "theGITGame",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-09-22T13:23:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "3x-ui",
+                "description": "Xray panel supporting multi-protocol multi-user expire day & traffic & ip limit (Vmess & Vless & Trojan &  ShadowSocks & Wireguard) ",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-08-28T10:00:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "speed",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2024-07-24T12:50:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "geat-it-later",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-03-20T20:34:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "plugin-git",
+                "description": "Woodpecker plugin for cloning Git repositories",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-02-11T07:08:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "r2dbc-postgresql",
+                "description": "Postgresql R2DBC Driver",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-02-14T10:50:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "myip",
+                "description": "\u041a\u043e\u043d\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u044f nginx \u0434\u043b\u044f \u043f\u0440\u043e\u0435\u043a\u0442\u0430 | nginx configuration files",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2025-12-08T15:58:29Z",
+                "fork": false,
+                "topics": [
+                  "geoip",
+                  "ip",
+                  "ip-address",
+                  "nginx"
+                ]
+              },
+              {
+                "name": "clockwork",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2023-06-06T15:39:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jsonify",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2023-01-27T19:24:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "plainify",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2023-01-27T19:27:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "markThisTab",
+                "description": "Chrome extension, which marks tabs",
+                "stargazers_count": 28,
+                "language": "JavaScript",
+                "pushed_at": "2022-01-28T18:21:54Z",
+                "fork": false,
+                "topics": [
+                  "chrome",
+                  "chrome-extension",
+                  "favicon",
+                  "productivity"
+                ]
+              },
+              {
+                "name": "the-pig",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "HTML",
+                "pushed_at": "2022-01-12T13:50:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "morse",
+                "description": "Morse code API with AWS Lambda",
+                "stargazers_count": 25,
+                "language": "Go",
+                "pushed_at": "2021-11-04T20:23:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ghfollow",
+                "description": null,
+                "stargazers_count": 44,
+                "language": "Go",
+                "pushed_at": "2025-02-18T19:45:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "maps",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "HTML",
+                "pushed_at": "2021-09-01T07:35:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hass-xiaomi-miot",
+                "description": "Automatic integrate all Xiaomi devices to HomeAssistant via miot-spec, support Wi-Fi, BLE, ZigBee devices. \u5c0f\u7c73\u7c73\u5bb6\u667a\u80fd\u5bb6\u5c45\u8bbe\u5907\u63a5\u5165Hass\u96c6\u6210",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-03-19T13:30:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mpping",
+                "description": "mpping - is a MiningPool (\u209c\u1d63\u1d64\u2091)Ping utility",
+                "stargazers_count": 33,
+                "language": "Go",
+                "pushed_at": "2020-04-19T18:01:32Z",
+                "fork": false,
+                "topics": [
+                  "mining",
+                  "mining-monitor",
+                  "mining-pool",
+                  "ping"
+                ]
+              },
+              {
+                "name": "dris",
+                "description": "[D]ocker [R]emote [I]mage [S]ize",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2019-01-29T15:45:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hugo-theme-jane",
+                "description": "A readable & concise theme for Hugo, color schemes to choose, easy to personalize. Working well since 2018.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-18T18:53:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "calathea",
+                "description": null,
+                "stargazers_count": 20,
+                "language": "Shell",
+                "pushed_at": "2021-02-24T14:07:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Esin-s-scripts",
+                "description": "Scripts, which i wrote for automation some processes ",
+                "stargazers_count": 14,
+                "language": "Shell",
+                "pushed_at": "2017-04-27T09:07:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "score",
+                "description": "Evalute everything from 0 to 9",
+                "stargazers_count": 26,
+                "language": null,
+                "pushed_at": "2020-01-30T09:39:46Z",
+                "fork": false,
+                "topics": [
+                  "counting",
+                  "css",
+                  "html",
+                  "html5",
+                  "js",
+                  "score"
+                ]
+              },
+              {
+                "name": "ethashdag",
+                "description": "DAG - dataset, generated with Dagger Hashimoto algo",
+                "stargazers_count": 18,
+                "language": "Go",
+                "pushed_at": "2019-06-14T10:48:48Z",
+                "fork": false,
+                "topics": [
+                  "dag",
+                  "dagger",
+                  "ethash",
+                  "ethereum"
+                ]
+              },
+              {
+                "name": "TL-TROJAN",
+                "description": "A collection of source code for various RATs, Stealers, and other Trojans.",
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2019-08-25T00:09:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "browser-authenticator",
+                "description": "Two- / Multi- Factor Authenication (2FA / MFA / OTP) for browser JavaScript",
+                "stargazers_count": 16,
+                "language": "HTML",
+                "pushed_at": "2018-05-28T00:20:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "otpbackup",
+                "description": null,
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2019-01-23T20:20:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zabitok-front",
+                "description": null,
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2019-10-23T15:06:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sibeeshvenu",
+                "description": "I am showing the image of the titles of my recent 5 blog posts on my GitHub home page automatically. I did it using the Azure Function, Azure is Love, right?",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2021-06-12T14:15:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pullme",
+                "description": "Docker image, just shows how much it was pulled",
+                "stargazers_count": 19,
+                "language": "Go",
+                "pushed_at": "2020-08-03T15:39:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "messagit-store",
+                "description": null,
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2020-06-02T07:27:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MadelineProtoDocs",
+                "description": " Async PHP client/server API for the telegram MTProto protocol ",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2022-11-09T08:46:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hms-push-serverdemo-go",
+                "description": "Golang sample code encapsulates APIs of the HUAWEI Push Kit server. It provides many sample programs for your reference or usage.",
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2021-02-20T06:01:58Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:36.128857+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

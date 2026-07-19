@@ -1,0 +1,577 @@
+{
+  "profileId": "osint-profile-6d3066670021",
+  "target": "g1f1",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:12.274759+00:00",
+  "completedAt": "2026-06-21T15:30:13.829925+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a2a0147d",
+      "lookupType": "github_context",
+      "target": "g1f1",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "g1f1",
+            "name": "George Filippas",
+            "type": "User",
+            "company": "CEO JetinAI - Beyond Intelligence",
+            "blog": "https://www.jetinai.com",
+            "location": "Agrinio, Greece",
+            "bio": "\ud83d\udccc into @JetinAI these days \r\n",
+            "public_repos": 67,
+            "followers": 2052,
+            "following": 597,
+            "created_at": "2015-11-10T12:39:27Z",
+            "updated_at": "2026-04-28T19:12:10Z",
+            "html_url": "https://github.com/g1f1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/15780862?v=4",
+            "repos": [
+              {
+                "name": "react",
+                "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2022-01-22T04:44:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": ".github-JetinAI",
+                "description": "JetinAI \u2014 Think Beyond Intelligence",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-10-22T16:25:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vscode-github",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-17T22:08:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "next.js",
+                "description": "The React Framework",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-06T22:25:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sa",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-02-09T23:52:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ollama",
+                "description": "Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models.",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2025-02-08T21:07:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LLaMA-Factory",
+                "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2025-02-06T04:39:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cpython",
+                "description": "The Python programming language",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2025-02-05T15:12:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ChatGPT",
+                "description": "Build your own Chat GPT with python. Don't forget to star \ud83c\udf1f this repository.",
+                "stargazers_count": 27,
+                "language": "Python",
+                "pushed_at": "2025-01-21T20:11:08Z",
+                "fork": false,
+                "topics": [
+                  "chat",
+                  "chatbot",
+                  "chatgpt",
+                  "gtp",
+                  "integration"
+                ]
+              },
+              {
+                "name": "SuppressDDoS",
+                "description": "Suppressing Distributed Denial-of-Service (DDoS) attacks at the terminal level. Don't forget to star \ud83c\udf1f this repository.",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2025-01-21T00:45:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chamilo-lms",
+                "description": "Chamilo is a learning management system focused on ease of use and accessibility",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2023-10-30T23:40:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "translations",
+                "description": "OceanWP Translations",
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2023-02-23T01:30:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "begin-wp-plugin",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2022-05-23T19:04:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NewsAPP",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "Java",
+                "pushed_at": "2022-02-23T14:50:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "APD",
+                "description": "Apache PHP Docker - Don't forget to star \ud83c\udf1f this repository.",
+                "stargazers_count": 32,
+                "language": "Dockerfile",
+                "pushed_at": "2025-01-22T14:58:06Z",
+                "fork": false,
+                "topics": [
+                  "apache",
+                  "cloud",
+                  "container",
+                  "containerization",
+                  "devops",
+                  "docker",
+                  "image",
+                  "php",
+                  "php81",
+                  "sysadmin"
+                ]
+              },
+              {
+                "name": "website",
+                "description": "Githack.org website. We essentially create tools, documentation or utilities and provide them to the open source community. This is how we help other programmers and young people get involved.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2022-02-06T23:42:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "githack",
+                "description": "Githack is a manual that guides you on how to use git's functionalities in the best possible way. Don't forget to star \ud83c\udf1f this repository.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2022-02-09T12:25:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RepoPromotion",
+                "description": "A frontend page that displays the star and fork options by the repository. Don't forget to star \ud83c\udf1f this repository.",
+                "stargazers_count": 38,
+                "language": "HTML",
+                "pushed_at": "2022-02-12T17:24:43Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "github",
+                  "github-pages",
+                  "promotion",
+                  "repository",
+                  "web",
+                  "website"
+                ]
+              },
+              {
+                "name": "snk",
+                "description": "\ud83d\udfe9\u2b1c Generates a snake game from a github user contributions graph and output a screen capture as animated svg or gif",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2021-11-18T16:51:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "feedback",
+                "description": "Public feedback discussions for Githack Organization Discussions, Codespaces, Sponsors, Issues and more!",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2022-01-29T23:28:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TranslationMenu",
+                "description": "\ud83d\udcd6 markdown file translation menu",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2022-01-25T17:32:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blasty-vs-pkexec.c",
+                "description": "\ud83d\udc27MAJOR BUG GRANTS ROOT FOR ALL MAJOR LINUX DISTRIBUTIONS ",
+                "stargazers_count": 28,
+                "language": "C",
+                "pushed_at": "2022-02-01T16:20:48Z",
+                "fork": false,
+                "topics": [
+                  "cloud",
+                  "ctf",
+                  "linux",
+                  "pwned",
+                  "rootkit",
+                  "vulnerability"
+                ]
+              },
+              {
+                "name": "git",
+                "description": "Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2022-01-27T01:19:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "POA-Doc",
+                "description": "\ud83e\udd29PrivateOpenAssets (POA) HTML Documentation\ud83d\udcaf\ud83e\udd29\ud83d\udcaa",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2022-01-05T22:51:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "eclectic-leetcode",
+                "description": "leetcode solutions from a diverse range of sources. \ud83d\udc83\ud83c\udffc\ud83c\udfb6",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2022-01-14T06:33:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HTML-LAB",
+                "description": "My public HTML lab/workshop. Don't forget to star \ud83c\udf1f this repository.",
+                "stargazers_count": 41,
+                "language": "HTML",
+                "pushed_at": "2022-01-23T06:48:42Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "frontend",
+                  "gh-pages",
+                  "html5",
+                  "javascript",
+                  "lab",
+                  "webview"
+                ]
+              },
+              {
+                "name": "HelloWorld",
+                "description": "List of Hello World programs in many programming languages. Don't forget to star \ud83c\udf1f this repository.",
+                "stargazers_count": 53,
+                "language": "Portugol",
+                "pushed_at": "2025-01-20T23:36:31Z",
+                "fork": false,
+                "topics": [
+                  "helloworld",
+                  "ide",
+                  "ideas",
+                  "idle",
+                  "introduction",
+                  "lab",
+                  "labs",
+                  "language",
+                  "library",
+                  "programming",
+                  "scratch",
+                  "submodule",
+                  "tutorial"
+                ]
+              },
+              {
+                "name": "top-github-users",
+                "description": "Check your ranking in GitHub! Don't forget to star \u2b50 this repository.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2022-01-11T16:11:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-colors",
+                "description": "\ud83c\udf08 Github colors for all the languages",
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2025-01-20T23:39:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "python-1",
+                "description": "Official Python client library for kubernetes",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2021-12-28T19:11:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "POA-Doc-Hack",
+                "description": "Generated to hack / php files",
+                "stargazers_count": 11,
+                "language": "CSS",
+                "pushed_at": "2022-01-10T00:26:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "index.php",
+                "description": "tests",
+                "stargazers_count": 10,
+                "language": "Hack",
+                "pushed_at": "2022-01-03T00:57:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-src",
+                "description": "The PHP Interpreter",
+                "stargazers_count": 15,
+                "language": "C",
+                "pushed_at": "2025-01-15T04:38:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Python",
+                "description": "All Algorithms implemented in Python",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2021-12-30T09:07:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": ".special",
+                "description": "Homepage Github organization special repo",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2021-12-12T15:11:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "koel",
+                "description": "\ud83d\udc26 A personal music streaming server that works.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2021-12-22T10:17:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "datasette-plugin-template-repository-demo",
+                "description": "Demo of simonw/datasette-plugin-template-repository",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2021-08-28T19:52:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bootstrap",
+                "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2021-10-25T12:06:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "training-kit",
+                "description": "Open source courseware for Git and GitHub",
+                "stargazers_count": 14,
+                "language": "HTML",
+                "pushed_at": "2022-02-12T17:08:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dolibarr-doxygen",
+                "description": "Dolibarr's Doxygen docs regenerated weekly for develop branch and latest branches",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2021-10-19T23:15:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dolibarr",
+                "description": "Dolibarr ERP CRM is a modern software package to manage your company or foundation activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...). It is open source software written in PHP and designed for small and medium businesses, foundations and freelancers. You can freely install, use and distribute it as a standalone application or as a web application to use it from every internet access and media.",
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2021-10-25T22:20:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "composer",
+                "description": "Dependency Manager for PHP",
+                "stargazers_count": 9,
+                "language": "PHP",
+                "pushed_at": "2021-10-28T20:50:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jquery",
+                "description": "jQuery JavaScript Library",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2021-10-19T09:27:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "laravel",
+                "description": "A PHP framework for web artisans.",
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2021-12-24T01:09:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wifi-hacker",
+                "description": "Shell Script For Attacking Wireless Connections Using Built-In Kali Tools. Supports All Securities (WEP, WPS, WPA, WPA2)",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2020-09-08T11:53:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "amp-wp",
+                "description": "Enable AMP on your WordPress site, the WordPress way.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2021-04-01T04:29:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "woocommerce",
+                "description": "An open source eCommerce plugin for WordPress.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2021-02-04T00:08:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": ".github",
+                "description": "ISSUE_TEMPLATE",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2021-12-13T13:31:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kayenta",
+                "description": "Automated Canary Service",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2020-11-11T03:16:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WordPress",
+                "description": "WordPress, Git-ified. This repository is just a mirror of the WordPress subversion repository. Please do not send pull requests. Submit pull requests to https://github.com/WordPress/wordpress-develop and patches to https://core.trac.wordpress.org/ instead.",
+                "stargazers_count": 15,
+                "language": "PHP",
+                "pushed_at": "2023-02-09T01:08:14Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:13.829489+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

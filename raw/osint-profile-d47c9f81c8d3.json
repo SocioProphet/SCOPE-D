@@ -1,0 +1,217 @@
+{
+  "profileId": "osint-profile-d47c9f81c8d3",
+  "target": "laurence57l",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:41.990129+00:00",
+  "completedAt": "2026-06-21T15:32:42.567110+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-858fb8db",
+      "lookupType": "github_context",
+      "target": "laurence57l",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "laurence57l",
+            "name": "Typhon",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 16,
+            "followers": 1332,
+            "following": 4401,
+            "created_at": "2014-04-14T22:46:10Z",
+            "updated_at": "2025-04-02T11:25:00Z",
+            "html_url": "https://github.com/laurence57l",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7295843?v=4",
+            "repos": [
+              {
+                "name": "typhon-frontend",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-23T16:43:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jesse-bot",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-19T12:47:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laurence57l",
+                "description": "This is my portfolio",
+                "stargazers_count": 29,
+                "language": null,
+                "pushed_at": "2025-02-21T15:23:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KeyKey",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "C",
+                "pushed_at": "2012-12-04T11:12:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bnc-trading-bot",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-02-19T11:32:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "freqtrade-bot",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-02-19T12:01:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dev-roadmap",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-07T15:59:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM-Aim",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-02-06T05:20:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM-Application",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-06T00:32:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LANGCHAIN",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-06T00:25:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-GENERATE-LIST",
+                "description": "END THE END",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-02-06T00:02:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MoneyPrinterBoostTurbo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-02-19T11:54:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my_airflow",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-02-08T04:01:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM-BigAgi",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-02-07T12:15:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test_cont",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-02-07T12:10:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM-Projects",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-02-07T08:53:02Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:42.566399+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

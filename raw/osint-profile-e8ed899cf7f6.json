@@ -1,0 +1,200 @@
+{
+  "profileId": "osint-profile-e8ed899cf7f6",
+  "target": "connebrink",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:12.494531+00:00",
+  "completedAt": "2026-06-21T15:32:12.991777+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f017b772",
+      "lookupType": "github_context",
+      "target": "connebrink",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "connebrink",
+            "name": "Clas Onnebrink",
+            "type": "User",
+            "company": "Deutsche Glasfaser",
+            "blog": "",
+            "location": "Germany",
+            "bio": "Software Engineer",
+            "public_repos": 10,
+            "followers": 1438,
+            "following": 17733,
+            "created_at": "2016-11-09T12:38:16Z",
+            "updated_at": "2026-04-16T09:56:36Z",
+            "html_url": "https://github.com/connebrink",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23358277?v=4",
+            "repos": [
+              {
+                "name": "mtserver",
+                "description": "Simple Multihread Server in Python",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-04-04T20:18:14Z",
+                "fork": false,
+                "topics": [
+                  "education",
+                  "example",
+                  "nodependencies",
+                  "python3",
+                  "simple"
+                ]
+              },
+              {
+                "name": "mls",
+                "description": "Replacement for ls command",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2025-06-08T20:07:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "connebrink",
+                "description": "Something about me",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-01-22T17:09:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jsprint",
+                "description": "Print JSon  pretty with different color themes!",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-03-25T16:36:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "s3exp",
+                "description": "S3 Bucket Exporter",
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2025-04-03T21:31:37Z",
+                "fork": false,
+                "topics": [
+                  "export",
+                  "modern-cpp",
+                  "s3",
+                  "s3-bucket",
+                  "s3-storage"
+                ]
+              },
+              {
+                "name": "gol",
+                "description": "Game of life (Conway)",
+                "stargazers_count": 11,
+                "language": "C++",
+                "pushed_at": "2025-04-03T21:13:04Z",
+                "fork": false,
+                "topics": [
+                  "cpp17",
+                  "cpp20",
+                  "modern-cpp",
+                  "sfml"
+                ]
+              },
+              {
+                "name": "ccat",
+                "description": "Cat out at given offset with given length in different formats",
+                "stargazers_count": 6,
+                "language": "C++",
+                "pushed_at": "2025-04-23T22:56:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "calcpi",
+                "description": "Calculate of Pi with different methods",
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2025-04-18T19:59:15Z",
+                "fork": false,
+                "topics": [
+                  "math",
+                  "modern-cpp",
+                  "pi",
+                  "sfml"
+                ]
+              },
+              {
+                "name": "pcm",
+                "description": "Past Check Mounts",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2025-03-28T13:07:56Z",
+                "fork": false,
+                "topics": [
+                  "cpp17",
+                  "cpp20",
+                  "directory",
+                  "linux",
+                  "modern-cpp",
+                  "monitoring",
+                  "mounts",
+                  "server"
+                ]
+              },
+              {
+                "name": "lapps",
+                "description": "List Applications (.desktop) to pick up for example with dmenu",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2026-01-05T19:31:41Z",
+                "fork": false,
+                "topics": [
+                  "apps",
+                  "cpp",
+                  "dmenu",
+                  "example",
+                  "simple"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:12.990780+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

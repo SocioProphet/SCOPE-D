@@ -1,0 +1,526 @@
+{
+  "profileId": "osint-profile-7b482876f7ec",
+  "target": "YoussefMoHlemyAlpha",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:48.564279+00:00",
+  "completedAt": "2026-06-21T15:30:49.493598+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-70f7f6a0",
+      "lookupType": "github_context",
+      "target": "YoussefMoHlemyAlpha",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "YoussefMoHlemyAlpha",
+            "name": "Youssef MO Helmy ",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Alexandria , Egypt",
+            "bio": "AI & Backend Engineer | Specialized in Scalable APIs & ML-Driven Applications | Node.js \u2022 FastAPI \u2022 TensorFlow | RAG, NLP, CV | IoT & Cloud-Connected Systems",
+            "public_repos": 58,
+            "followers": 1820,
+            "following": 11142,
+            "created_at": "2024-02-28T20:33:39Z",
+            "updated_at": "2026-05-17T21:26:03Z",
+            "html_url": "https://github.com/YoussefMoHlemyAlpha",
+            "avatar_url": "https://avatars.githubusercontent.com/u/161648183?v=4",
+            "repos": [
+              {
+                "name": "YoussefMoHlemyAlpha",
+                "description": "My profile",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2026-06-21T05:01:25Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Food_Ordering_Web-App",
+                "description": "A full-stack web application for ordering food, designed to streamline the process for Customers, Administrators, and Delivery Personnel.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-09T17:50:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "backend-interview-questions",
+                "description": "Comprehensive backend interview questions covering general concepts, .NET Core, Node.js, and PHP Laravel - 169 questions total",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-12-04T10:29:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Smart-Cooling-System-IoT-Final-Project",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2025-11-25T19:11:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Resume-ATS-Tracking-System",
+                "description": "ATS Resume Expert is an AI-powered tool that reviews resumes against job descriptions. It evaluates candidate strengths, identifies missing skills, and calculates a match percentage using advanced AI. Streamline recruitment and improve hiring decisions with fast, professional insights.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2025-11-19T00:31:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "E-Commerce",
+                "description": "This E-Commerce Platform is a modern, scalable web application built using NestJS for the backend, MongoDB for data persistence, and JWT (JSON Web Tokens) for secure user authentication.  It provides a complete foundation for any online store, featuring user registration and login, product management, cart and order functionality.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-19T00:13:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Classification-Spam-Emails-",
+                "description": "An intelligent email spam classification system that uses a machine learning model to automatically detect and filter spam emails in Gmail. Built with Python, PyTorch, FastAPI, and the Gmail API, it classifies emails as Spam or Ham and moves spam messages to the appropriate folder automatically.",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-04T10:29:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Generative-MCQ-with-Bloom-s-Taxonomy",
+                "description": "Bloom\u2019s Taxonomy RAG Tutor is an AI-powered learning app that transforms lesson PDFs into interactive quizzes. Using RAG, FAISS, and LLMs, it generates Bloom-based MCQs across all levels, lets students test knowledge, and provides analytics to track performance and mastery.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-09-04T02:53:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SocialApp",
+                "description": "SocialApp is a robust, scalable backend API for a modern social networking platform. Built with Node.js, Express, TypeScript, MongoDB, AWS S3 and Web Socket, it provides a solid foundation for user management, content sharing, and secure media storage. The architecture emphasizes modularity, maintainability, and extensibility for future growth.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-24T18:28:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Youtube-Video-Summarizer",
+                "description": "The YouTube Video Summarizer is an AI-powered web application that allows users to generate concise summaries of YouTube videos by extracting and processing their transcripts.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-08-26T12:11:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChatBot-to-Write-Python-Code-RAG-Application-LLM-LLaMA-2-",
+                "description": "AI Python Tutor (Local RAG) is a Streamlit-based coding assistant powered by local Retrieval-Augmented Generation (RAG).",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-08-23T11:41:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sarah_APP",
+                "description": "A modular Node.js backend for user authentication, messaging, and user management. Built with Express, MongoDB, and Joi, SarahApp features robust validation, secure authentication, and a scalable architecture for modern web applications.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-22T16:20:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChatBot-with-Multiple-PDFs-RAG-Application-",
+                "description": "This project is a Streamlit-based web app that lets you upload multiple PDF documents and interact with them in natural language. It uses Google Gemini (via LangChain) for embeddings and question-answering, along with FAISS as the vector store for efficient document retrieval.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2025-08-21T11:07:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ITI-React-Assignment1",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-01T21:38:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "To-Do-list-Web-App",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-02T15:36:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Obstacle-avoidance-AND-autonomous-parking-Car",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2025-05-12T20:18:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "book-Recommendation-System",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-21T18:16:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rock-paper-scissors-Computer-Vision-Project",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-01-25T21:11:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fire-Detection-System-with-Yolo-v8",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-01-23T10:56:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Rice-Classification-CNN-Model-With-99.5-Accuracy",
+                "description": "Project Summary: Rice Image Classification Using Convolutional Neural Networks This project involves developing a Convolutional Neural Network (CNN) model to classify images of rice grains into five categories: Arborio, Basmati, Ipsala, Jasmine, and Karacadag. The dataset consists of 75,000 labeled images sourced from the Rice Image Dataset",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-01-22T10:57:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Retina-Blood-Vessel-Segmentation",
+                "description": "The project uses a deep learning model trained on medical retina images to segment the blood vessels, aiding in the diagnosis of retinal diseases. The application is built using FastAPI and integrates with a pre-trained U-Net model for image segmentation.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-01-21T18:33:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "-Identifying-road-lanes-for-autonomous-driving-systems",
+                "description": "Our Lane Line Detection Project is a critical component in autonomous driving systems, enabling vehicles to recognize road boundaries and navigate safely. This is achieved by focusing on advanced image preprocessing techniques and utilizing deep learning (U-NET Architecture) methods to enhance detection accuracy and reliability. ",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-01-02T19:07:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Speech-Recognition-from-Zero-To-nine-Project",
+                "description": "Speech Commands Recognition Project This project is a neural network-based approach to recognizing spoken commands using the Google Speech Commands dataset. The project aims to classify spoken digits (zero to nine) using extracted MFCC (Mel-frequency cepstral coefficients) features and data augmentation techniques.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-11-09T19:50:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Satellite-Image-Classification-System-using-VGG19-and-Xception",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-09-21T17:49:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_ML_01",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-10-01T19:37:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Brain-Cancer-Prediction-System",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-09-20T22:18:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Lungs-and-Colon-Prediction-System-CNN-",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-09-20T19:45:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IoT-Training-Module-2-Assignment",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2024-08-04T18:17:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Fake_News_Prediction_System",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-26T12:38:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Visual-Recognition-Project",
+                "description": " Deep Sea Creature Detection with YOLO11 && Football Match Detection with YOLO8",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-18T13:09:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Knowledge_Base_Final_Project",
+                "description": "RAG-based assistant for a domain of their own choice. The system retrieves relevant passages from a curated knowledge base built around the chosen domain, and generates grounded, cited responses via a large language model. .",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-10T18:23:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RAG_From_Scratch",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-10T15:50:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MedicalChatBot-Website",
+                "description": "\ud83c\udf10 MedicalChatBot Website \u2013 An AI-powered chatbot that provides reliable medical information in real-time. Built with FastAPI, LangChain, ChromaDB, and Ollama, it lets users ask health-related questions through a clean web interface, get intelligent answers, and experience smooth interactions with a modern chat design.",
+                "stargazers_count": 12,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-14T10:05:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Heart-Disease-Prediction-System-",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-26T09:43:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Classification-Questions-into-Bloom-s-levels",
+                "description": "\ud83c\udf93 AI-powered Bloom's Taxonomy classifier for educational questions. Upload PDFs or enter questions to automatically classify them into cognitive levels. Supports English & Arabic. Built with Qwen3 4B via Ollama + Gradio UI.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-03-07T14:34:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "multimodal-video-rag",
+                "description": "Ask questions about any video and get accurate answers grounded in the actual content. Uses multi-modal AI (vision + speech + language models) with FAISS vector search to analyze videos, extract information, and generate responses. Includes hallucination detection to measure answer accuracy.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-09T03:17:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GraphRAG-Edu-Suite",
+                "description": "Dual-model GraphRAG system using Gemma3 for extraction and for generation and llama 3.2 for grading and reviewing questions. Optimized for 4GB VRAM with dynamic hardware swapping and Neo4j graph memory.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-03-08T21:46:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-ML-Driven-Companies-In-Egypt",
+                "description": "A list of AI/ML driven companies in Egypt",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-02-13T15:54:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "IoT-Training-Module-1-Assignment",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2024-07-26T09:39:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Gold-Price-Prediction-System-Using-RandomForestRegressor",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-26T09:43:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UneeqInterns_Task_4",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-08T09:38:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UneeqInterns_Task_3",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-06T15:45:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UneeqInterns_Task_2",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-04T21:22:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UneeqInterns_Task_1",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-03T00:22:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BharatIntern_ML_03",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-06-21T23:21:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BharatIntern_ML_02",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-06-21T17:33:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BharatIntern_ML_01",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-06-21T00:15:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_ML_03",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-06-15T14:36:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_ML_02",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-06-13T09:12:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Recommendation-system",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-05-30T15:28:53Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:49.492898+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

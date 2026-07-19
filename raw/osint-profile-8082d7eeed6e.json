@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-8082d7eeed6e",
+  "target": "Motaman-M",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:15.380430+00:00",
+  "completedAt": "2026-06-21T15:29:16.920367+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-33ab79c2",
+      "lookupType": "github_context",
+      "target": "Motaman-M",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Motaman-M",
+            "name": "Motaman",
+            "type": "User",
+            "company": null,
+            "blog": "https://www.youtube.com/channel/UCjnMTNznGlqF-LqCrLAQSvQ",
+            "location": null,
+            "bio": "Blockchan Researcher",
+            "public_repos": 124,
+            "followers": 2786,
+            "following": 9952,
+            "created_at": "2022-11-08T11:25:50Z",
+            "updated_at": "2025-09-16T05:31:35Z",
+            "html_url": "https://github.com/Motaman-M",
+            "avatar_url": "https://avatars.githubusercontent.com/u/117732277?v=4",
+            "repos": [
+              {
+                "name": "You-Dont-Know-JS",
+                "description": ":green_book::ledger: (PT-BR translation) JS Book Series.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2018-10-10T19:51:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TaskForm",
+                "description": "web-site focado em produtividade e organiza\u00e7\u00e3o, inclus\u00e3o de varios aplicativos e apps em um unico hub de produtividade todos categorizados e distribuidos de forma homogenea.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-02-05T19:51:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "near-ca",
+                "description": "An SDK for controlling Ethereum EOAs from a Near Account",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-02-17T13:29:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "agent-next-boilerplate",
+                "description": "NextJS Boilerplate for Bitte Open Agents",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-02-11T11:46:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Zarith",
+                "description": "The Zarith library implements arithmetic and logical operations over arbitrary-precision integers and rational numbers. The implementation, based on GMP, is very efficient.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2025-01-17T08:31:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "js_of_ocaml",
+                "description": "Compiler from OCaml to Javascript.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-02-14T16:52:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nexus-docs",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-12-14T00:45:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "network-api",
+                "description": "High-performance interface for supplying compute to the Nexus network.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-01-06T02:09:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "keplr-chain-registry",
+                "description": "Protocol for Integrating Non-Native Chains to Keplr",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2025-02-13T07:35:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "intentkit",
+                "description": "An open and fair framework for everyone to build AI agents equipped with powerful skills. Launch your agent, improve the world, your wallet, or both!",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-01-27T02:37:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "docs",
+                "description": "ideal2",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-12-30T21:01:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "revm",
+                "description": "Rust implementation of the Ethereum Virtual Machine.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-12-31T15:43:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "apps",
+                "description": "Basic Polkadot/Substrate UI for interacting with a Polkadot and Substrate node. This is the main user-facing application, allowing access to all features available on Substrate chains.",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-11-26T18:00:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "node-bootstrap",
+                "description": "ideal",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-11-14T16:47:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "allora-testnet",
+                "description": "1",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-07-17T11:45:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "new",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-06-28T19:55:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gitty",
+                "description": null,
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2024-06-22T18:49:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sonic-tx",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-06-19T17:02:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wormhole",
+                "description": "A reference implementation for the Wormhole blockchain interoperability protocol.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-06-12T17:58:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nanoGPT",
+                "description": "The simplest, fastest repository for training/finetuning medium-sized GPTs.",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-01-27T03:35:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "injective-ts",
+                "description": "Collection of TypeScript packages that consume and interact with the Injective Chain",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-12-22T10:49:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tictacoeMotaman",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Shell",
+                "pushed_at": "2025-03-06T12:35:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mantle",
+                "description": "Mantle | Mass adoption of decentralized & token-governed technologies.  With Mantle Network, Mantle Treasury, and token holder-governed products initiatives.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-09-27T02:49:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chotto",
+                "description": "Ethereum's Power of Tau client CLI implementation written in Java",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-03-02T20:58:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "core",
+                "description": "The Lens Protocol",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-07-17T01:09:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ethers.js",
+                "description": "Complete Ethereum library and wallet implementation in JavaScript.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-04-23T14:08:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sei-chain",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-04-21T19:51:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "metamask-extension",
+                "description": ":globe_with_meridians: :electric_plug: The MetaMask browser extension enables browsing Ethereum blockchain enabled websites",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-04-21T22:01:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "inpage-provider-playground",
+                "description": "Example of inpage provider integration",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-03-13T12:11:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "avalanche-faucet",
+                "description": "Avalanche Faucet for Fuji Network and Subnets.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-03-15T02:20:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aztec-connect",
+                "description": "aztec connect repository",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-03-12T07:39:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "optimism",
+                "description": "Optimism is Ethereum, scaled.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-02-28T16:19:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "snaps-monorepo",
+                "description": "Monorepo for Snaps dependencies.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-01-24T16:50:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpenCut",
+                "description": "The open-source CapCut alternative",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-07-12T15:15:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ff2Cql",
+                "description": "A simple transfer data between NiFi and CQL solution (support Apache Cassandra, ScyllaDB, AstraDB, etc.).",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-05-20T20:43:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-movie-app",
+                "description": "creating movie app with advance features using the reactjs, redux,and many more latest  react library.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2024-07-05T05:45:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Internshipwebsite",
+                "description": "internship1",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-06-19T12:24:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bioinformatics-Influenza_complete_genome_analysis",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-04-21T14:46:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RentalMS",
+                "description": "Rental Management System  for Real Estate and Landlords",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-04-22T03:21:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "books",
+                "description": "Free Accounting Software",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-04-23T04:40:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Portfolio",
+                "description": "My portfolio website",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-04-24T11:03:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Page-Analyzer",
+                "description": "Web service for analyzing web pages for SEO optimization. Written on a slim microframework. You can get such information as: response status, h1, title and description.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-04-24T19:15:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "koutoubia-wishlist",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-04-28T08:19:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bank-self-service-terminal",
+                "description": "\ud83d\ude80 ATM Simulator - Java CLI Application",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-04-30T21:05:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "merida",
+                "description": "\ud83d\udd75\ufe0f Secure platform for anonymous file sharing. ",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-05-03T22:08:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NODEJS-EXPRESS-JS-AUTHENTICATION-WITH-JWT",
+                "description": "2024 NODE JS AUTHENTICATION WITH JWT ",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-05-05T08:35:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "XDP-Firewall",
+                "description": "A firewall that utilizes the Linux kernel's XDP hook. The XDP hook allows for very fast network processing on Linux systems. This is great for dropping malicious traffic from a (D)DoS attack. IPv6 is supported with this firewall! I hope this helps network engineers/programmers interested in utilizing XDP!",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-05-05T17:30:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NavidEvx",
+                "description": "Github Profile",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-05-08T19:02:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AI-7j",
+                "description": "CHATBOT ( 7 JUNE ) powered by [ flask X react ] based on LLM",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-05-08T21:22:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "THELIGHTNINGTHIEF",
+                "description": "hy",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-05-15T05:56:37Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:16.919569+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

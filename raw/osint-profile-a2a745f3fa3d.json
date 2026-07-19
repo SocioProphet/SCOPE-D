@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-a2a745f3fa3d",
+  "target": "impulsivepersona",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:36.341847+00:00",
+  "completedAt": "2026-06-21T15:31:36.672337+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-55d45fb0",
+      "lookupType": "github_context",
+      "target": "impulsivepersona",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "impulsivepersona",
+            "name": "\u3164",
+            "type": "User",
+            "company": "\u3164 @yvoisen\u3164 main\u3164\u3164 \u3164 \u3164 \u3164 \u3164 \u3164 \u3164 ",
+            "blog": "\u3164 i don't check who i'm following.\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164  js block if unwanted, kay? cool",
+            "location": "\u3164 bakery\u3164/\u3164anywhere atm\u3164\u3164\u3164\u3164\u3164\u3164",
+            "bio": "\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164 \u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164the greatest .\u3164\u3164\u3164\u3164\u3164\u3164\u3164\u3164",
+            "public_repos": 1,
+            "followers": 1582,
+            "following": 4059,
+            "created_at": "2025-06-20T21:51:42Z",
+            "updated_at": "2026-03-02T16:18:56Z",
+            "html_url": "https://github.com/impulsivepersona",
+            "avatar_url": "https://avatars.githubusercontent.com/u/217272102?v=4",
+            "repos": [
+              {
+                "name": "impulsivepersona",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-03-26T15:37:26Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:36.671484+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

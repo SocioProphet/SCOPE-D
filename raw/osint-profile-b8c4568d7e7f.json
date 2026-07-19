@@ -1,0 +1,676 @@
+{
+  "profileId": "osint-profile-b8c4568d7e7f",
+  "target": "rr3s1",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:52.312488+00:00",
+  "completedAt": "2026-06-20T16:48:53.712238+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-2cc46f1c",
+      "lookupType": "github_context",
+      "target": "rr3s1",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "rr3s1",
+            "name": "Rares Silviu Lazar",
+            "type": "User",
+            "company": "Aesary",
+            "blog": "www.aesary.co.uk",
+            "location": "London",
+            "bio": "I build web & mobile apps with Next.js, TypeScript and React Native, exploring 3D & AI. Always learning how to build more resilient systems.",
+            "public_repos": 52,
+            "followers": 930,
+            "following": 5926,
+            "created_at": "2020-12-03T13:07:20Z",
+            "updated_at": "2026-04-09T19:41:32Z",
+            "html_url": "https://github.com/rr3s1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/75430531?v=4",
+            "repos": [
+              {
+                "name": "AI-resume-ATS",
+                "description": "An intelligent resume analyzer that uses AI to match candidates with high-level roles. Features secure authentication, resume uploads and a clean, modern UI built with React and Puter.js.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-18T06:23:00Z",
+                "fork": false,
+                "topics": [
+                  "puter-app",
+                  "puterjs",
+                  "react-router-v7",
+                  "tailwindcss",
+                  "typescript",
+                  "vite",
+                  "zustand"
+                ]
+              },
+              {
+                "name": "react-native-speakmate-ai",
+                "description": "Mobile language learning platform with onboarding, lessons, authentication and real-time AI conversation practice, developed with React Native, Expo, TypeScript, NativeWind, Clerk, Stream, Zustand and PostHog.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-25T19:48:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "prestige-salon",
+                "description": "Prestige hairstyle salon landing page designed to streamline appointment booking, marketing of services and client testimonials using React 19, Spline 3D and GSAP Animations.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-15T06:39:30Z",
+                "fork": false,
+                "topics": [
+                  "convex",
+                  "gsap",
+                  "react",
+                  "spline",
+                  "tailwindcss",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "University-Dashboard-Backend",
+                "description": "Backend side of a management system powered by Node.js, Express, NeonDB & Drizzle; integrating Better-Auth, Arcjet, and Cloudinary for a secure, type-safe, and scalable academic infrastructure.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-16T19:35:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-skills-market",
+                "description": "A high-performance, full-stack platform for discovering and sharing AI Agent capabilities. Crafted with TanStack Start, Tailwind TypeScript, Clerk auth, Firebase real-time data and PostHog analytics.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-04-18T20:03:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FlowArchitect",
+                "description": "AI-powered collaborative system architect for software teams. Turn natural language prompts into live architecture diagrams, collaborate in real time, refine nodes and edges, and generate downloadable Markdown technical specs from the final canvas. Built with Next.js, Liveblocks, Trigger.dev, Clerk, Prisma, PostgreSQL and Tailwind CSS.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-02T21:26:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-interviews-system",
+                "description": "AI Mock Interview System (Next.js, Tailwind, Vapi, Firebase)",
+                "stargazers_count": 17,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T21:30:53Z",
+                "fork": false,
+                "topics": [
+                  "firebase",
+                  "nextjs",
+                  "shadcn-ui",
+                  "tailwindcss",
+                  "vapi-ai",
+                  "zod"
+                ]
+              },
+              {
+                "name": "auraaesthetics",
+                "description": "A management system for an aesthetics clinic built with using Next.js, Appwrite, TypeScript, and TailwindCSS. Key features include patient registration, appointment booking, admin management of appointments, SMS notifications, file uploads.",
+                "stargazers_count": 18,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T21:42:21Z",
+                "fork": false,
+                "topics": [
+                  "appwrite",
+                  "framer-motion",
+                  "nextjs",
+                  "spline",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Tickets-Market",
+                "description": "Modern event ticketing platform with real-time queueing and instant payment. Developed with Next.js 14, Convex, Clerk, and Stripe Connect. Smart waiting lists, automatic refunds, rate limiting and a beautiful UI by using Shadcn ",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-15T10:53:23Z",
+                "fork": false,
+                "topics": [
+                  "clerk-auth",
+                  "convex",
+                  "next-js",
+                  "shadcn-ui",
+                  "stripe-payments"
+                ]
+              },
+              {
+                "name": "ai-floorplan-to-3d",
+                "description": "A full-stack architectural visualization app using Claude & Gemini AI to convert 2D sketches into 3D masterpieces. Built with React, TailwindCSS, and Puter's serverless workers & KV storage.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-04-02T19:49:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crypto-analytics",
+                "description": "A real-time crypto analytics platform with global market stats, trending tokens, a searchable tokens table and a full token detail page featuring charts, live prices, and exchange data.  Powered by the CoinGecko API REST endpoints and crypto WebSocket API to stream real-time, sub-second, ultra-low latency market data",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-13T12:54:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio-v2",
+                "description": "The second version of my portfolio landing page build using Next.JS, Typescript, Three.js, Framer Motion, Tailwind CSS, GSAP and Spline",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T21:31:58Z",
+                "fork": false,
+                "topics": [
+                  "framer-motion",
+                  "gsap",
+                  "nextjs",
+                  "spline",
+                  "tailwindcss",
+                  "threejs"
+                ]
+              },
+              {
+                "name": "rr3s1",
+                "description": null,
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2026-04-08T20:46:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JSM_yc_directory",
+                "description": "A Next.js 15 platform for entrepreneurs to submit and browse startup ideas in virtual pitch competitions. Features include GitHub auth, pitch submission, detailed views, search, filtering, editor picks, and a minimalistic, user-friendly design using React 19, Sanity, and TailwindCSS.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-19T14:07:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pdf2md-client",
+                "description": "A client-side web app that extracts text from PDF files in the browser, normalizes it, applies light Markdown structure, and lets you preview and download a `.md` file. Nothing is uploaded to a server; parsing runs entirely in your tab.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-12T11:09:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "University-Dashboard-Frontend",
+                "description": "Frontend side of a dashboard built with Next.js, Refine, and TypeScript; featuring role-based UI, real-time analytics, and a Classroom-style enrollment system for a seamless academic infrastructure.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-15T18:30:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Real-Estate-MobileApp",
+                "description": "Real estate Android app built with React Native featuring Google auth, dynamic listings, user profiles and Tailwind UI. Powered by Expo, Appwrite & TypeScript.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-23T20:34:18Z",
+                "fork": false,
+                "topics": [
+                  "appwrite",
+                  "expo",
+                  "google-auth",
+                  "reat-native",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "devops-acquisitions",
+                "description": "An API project developed using Docker, Warp, Arcjet, with automated CI/CD, and a backend implemented with Node.js, Express.js, Neon Postgres, Drizzle ORM, and Zod. Secure, scalable, and production-ready.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-04T21:31:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "websockets-sports-frontend",
+                "description": "A real-time sports broadcasting backend service. Delivers instant play-by-play commentary and live score updates to frontend clients via a highly scalable WebSocket architecture and REST APIs.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-03T20:01:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "websockets-sports-backend",
+                "description": "Express + Postgres demo for live match commentary with a WebSocket broadcast channel. Focus is on WS patterns (heartbeats, backpressure, message validation, subscriptions)",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T22:37:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BookWise-Uni-Library",
+                "description": "University Library Management System with industry-standard practices; from rate-limiting, DDoS protection, caching, optimizations, multi-media uploads, complex DB queries and advanced error handling to automated workflows with custom notifications.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T21:10:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "food-order-mobile",
+                "description": "Full-stack Food Delivery app features Google Authentication, dynamic search and filters, cart functionality and powered by Appwrite for backend, database and file storage.",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-11T16:48:45Z",
+                "fork": false,
+                "topics": [
+                  "appwrite",
+                  "expo",
+                  "native-wind",
+                  "react-native",
+                  "typescript",
+                  "zustand"
+                ]
+              },
+              {
+                "name": "ai-book-conversation",
+                "description": "AI-powered platform that transforms static PDFs into interactive, voice-driven experiences. It enables real-time conversations with your books using natural voice synthesis and customizable personas. The app includes PDF text extraction, secure authentication, and persistent session transcripts to create a seamless conversational library.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-03-27T22:57:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Renewly-React-Native",
+                "description": "A full-stack subscription management mobile app built with React Native, Expo, Node.js, and MongoDB. Features active expense tracking, secure Clerk authentication, and automated billing email reminders.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-01T20:32:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JSM-SaaS-Landing-Page",
+                "description": "Fully responsive, high-performance landing page designed for SaaS applications, based on a tutorial by JavaScript Mastery on YT. Built with React.js, Tailwind CSS, and Vite, it features a clean, modular architecture and demonstrates advanced front-end development techniques.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-23T09:27:29Z",
+                "fork": false,
+                "topics": [
+                  "react-js",
+                  "tailwindcss",
+                  "vitejs"
+                ]
+              },
+              {
+                "name": "JSM_3D_ThreeJS_Portfolio",
+                "description": "3D portfolio build with Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations and styled with Tailwind CSS. Highlights include a 3D hacker room, animated timeline, dynamic project showcase and responsive design.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-27T12:22:18Z",
+                "fork": false,
+                "topics": [
+                  "email-js",
+                  "node-js",
+                  "react-js",
+                  "tailwindcss",
+                  "three-drei",
+                  "three-fiber",
+                  "three-js",
+                  "vite-js"
+                ]
+              },
+              {
+                "name": "events-dev",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-22T22:25:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stock-tracker-app",
+                "description": "Stock Market app built with Next.js, Shadcn, Better Auth, and Inngest. Track prices, set alerts, explore insights, manage watchlists, and automate workflows for notifications and analytics.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-23T23:18:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cocktails-gsap",
+                "description": "Animated GSAP landing page using React, Tailwind & GSAP",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-14T20:48:27Z",
+                "fork": false,
+                "topics": [
+                  "gsap",
+                  "react",
+                  "tailwind-css",
+                  "vite"
+                ]
+              },
+              {
+                "name": "docker",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-23T22:34:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api-subscription-tracker",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-22T11:49:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cards",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-11T21:24:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "business-link-vm",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-08T20:19:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nike-store",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-02T20:04:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stock-market",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-01T17:44:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-admin-dashboard",
+                "description": "Modern AI travel agency with an admin dashboard and generated AI-powered trip itineraries based on country, travel style, interests, group type and budget",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-20T06:26:43Z",
+                "fork": false,
+                "topics": [
+                  "react",
+                  "react-router-v7",
+                  "syncfusion",
+                  "tailwind",
+                  "tailwind-css"
+                ]
+              },
+              {
+                "name": "mobile-movie-app",
+                "description": "Built with Expo, TypeScript and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-11T16:11:20Z",
+                "fork": false,
+                "topics": [
+                  "appwrite",
+                  "expo",
+                  "nativewind",
+                  "react-native",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "appmovies-r19",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-02T14:27:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LearnHeaven-App",
+                "description": "A Learning Management App built with React, Node.js, DynamoDB, AWS S3 and Clerk, featuring dynamic course creation, secure video uploads, user authentication and interactive dashboards.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-15T10:53:02Z",
+                "fork": false,
+                "topics": [
+                  "aws",
+                  "aws-ecr",
+                  "aws-lambda",
+                  "clerk-auth",
+                  "docker",
+                  "dynamodb",
+                  "next-js",
+                  "node-js",
+                  "s3-bucket",
+                  "shadcn"
+                ]
+              },
+              {
+                "name": "Food-Ordering",
+                "description": "Full-stack food delivery platform built with React/Node.js, Auth0 authentication, Stripe payments, MongoDB, Vite, ShadCN, real-time order tracking, restaurant management and search functionality.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-22T09:32:36Z",
+                "fork": false,
+                "topics": [
+                  "apis",
+                  "auth0",
+                  "cloudinary",
+                  "node-js",
+                  "react-js",
+                  "stripe-payments"
+                ]
+              },
+              {
+                "name": "Ecommerce",
+                "description": "Full stack integrated E-Commerce website with an Admin Dashboard using Next.js 14, Stripe for payment, TypeScript, MongoDB for all database management, Clerk for authentication and user management, React-Hook-Form for form validation, Tailwind CSS & Shadcn.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-04T22:51:12Z",
+                "fork": false,
+                "topics": [
+                  "clerk-auth",
+                  "ecommerce",
+                  "next-js-14",
+                  "shadcn-ui",
+                  "stripe-payments",
+                  "tailwind-css"
+                ]
+              },
+              {
+                "name": "uber_mobile",
+                "description": "Full-stack Uber Clone with React Native, Stripe, Google Maps, Clerk & Tailwind CSS. Modern UI, real-time tracking, secure payments and user management.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-15T10:52:00Z",
+                "fork": false,
+                "topics": [
+                  "clerk-auth",
+                  "expo",
+                  "google-maps-api",
+                  "postgresql",
+                  "react-native",
+                  "stripe-payments",
+                  "tailwind-css",
+                  "zustand"
+                ]
+              },
+              {
+                "name": "3D-iPhone15-GSAP",
+                "description": "Apple iPhone 15 Pro website using React.js, TailwindCSS,  GSAP and Three.js for displaying iPhone 15 Pro models in various colors and shapes",
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-28T19:26:27Z",
+                "fork": false,
+                "topics": [
+                  "gsap",
+                  "react-js",
+                  "tailwindcss",
+                  "three-drei",
+                  "three-fiber",
+                  "three-js",
+                  "vite"
+                ]
+              },
+              {
+                "name": "EasyRead",
+                "description": "A template README for maintaining project process",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-05-30T17:16:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awwWW",
+                "description": "AwwWW / Awwwards Winning Website | Modern Website inspired by Zentry, featuring scroll-triggered animations, geometric transitions and video storytelling. Designed with GSAP, React.js and Tailwind CSS, this app offers responsive, polished UI/UX with dynamic 3D hover effects, seamless video integration and unique clip-path animations. ",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-10T18:50:38Z",
+                "fork": false,
+                "topics": [
+                  "gsap",
+                  "react-js",
+                  "vite-js"
+                ]
+              },
+              {
+                "name": "gsap_animations",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-30T20:36:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jsm_storeit",
+                "description": "A storage platform for seamless file management, by using React 19, Next.js 15, Appwrite, TailwindCSS, and ShadCN. Features include auth, file uploads, viewing, sharing, global search, sorting and a modern responsive dashboard.",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-06T13:01:16Z",
+                "fork": false,
+                "topics": [
+                  "appwrite",
+                  "next-js",
+                  "react-js",
+                  "shadcn-ui",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "jsm_medical_schedule_app",
+                "description": "A healthcare platform that streamlines patient registration, appointment scheduling and medical records with complex forms and SMS notifications. Built with Next.js, Appwrite, Typescript, TailwindCSS, ShadCN and Twilio",
+                "stargazers_count": 23,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-06T13:02:30Z",
+                "fork": false,
+                "topics": [
+                  "appwrite",
+                  "next-js",
+                  "shadcn-ui",
+                  "tailwindcss",
+                  "twilio-sms-api",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "portfoli0_jsm",
+                "description": "A modern portfolio built using Next.js, Three.js for 3D elements, Framer Motion for animations, and styled with Tailwind CSS. Designed to leave a memorable impact, it features interactive 3D elements, a bento-style layout, testimonials and dynamic animations. Responsive across all devices.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-14T15:24:32Z",
+                "fork": false,
+                "topics": [
+                  "framer-motion",
+                  "nextjs",
+                  "reactjs",
+                  "tailwindcss",
+                  "three-js"
+                ]
+              },
+              {
+                "name": "nextjs15tutorial",
+                "description": "JSM Mastery Next.js 15 Crash Course",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-27T11:20:36Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:53.711311+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

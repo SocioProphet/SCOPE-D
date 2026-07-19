@@ -1,0 +1,525 @@
+{
+  "profileId": "osint-profile-3a53275f0749",
+  "target": "ngsnethawarya",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:40.533724+00:00",
+  "completedAt": "2026-06-20T13:53:42.497832+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3dddcc6f",
+      "lookupType": "github_context",
+      "target": "ngsnethawarya",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ngsnethawarya",
+            "name": "Ngsnet G. Hawarya",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "United States",
+            "bio": "M.S. Cybersecurity | Ethical Hacking | Digital Forensics | SIEM | Network Defense | AI & Cloud Security\r\nCybersecurity professional specializing in network fore",
+            "public_repos": 88,
+            "followers": 1477,
+            "following": 3642,
+            "created_at": "2024-12-18T00:35:16Z",
+            "updated_at": "2026-05-26T16:38:06Z",
+            "html_url": "https://github.com/ngsnethawarya",
+            "avatar_url": "https://avatars.githubusercontent.com/u/192052237?v=4",
+            "repos": [
+              {
+                "name": "ngsnethawarya",
+                "description": "M.S. Cybersecurity | Network Defense | Cyber Threat Analysis",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-06-20T01:59:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cybersecurity-home-server",
+                "description": "Building and documenting my cybersecurity home server and virtual lab environment.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-06-19T23:55:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "incident-response-playbooks",
+                "description": "Simple incident response checklists and playbooks for phishing, malware, and suspicious login events.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T03:49:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "learning-in-public-still-feels-weird",
+                "description": "Final reflection on learning publicly",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T00:17:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "thinking-before-command",
+                "description": "A reminder to think before running commands.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-14T04:13:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tiny-log-cleaner",
+                "description": "A small script to clean noisy log files for easier reading.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-14T04:13:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "why-input-validation-matters",
+                "description": "Demonstrating why unchecked input is dangerous.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-14T04:12:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cybersecurity-study-roadmap",
+                "description": "Add cybersecurity study roadmap and learning plan",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-14T04:12:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "checking-open-ports-manually",
+                "description": "Simple port check without heavy tools.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-12T00:45:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reading-auth-logs-like-a-human",
+                "description": ": Simple parsing of authentication logs",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-12T00:45:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ip-address-extractor",
+                "description": "A Python script that extracts IP addresses from text or log files.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-08T02:15:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "failed-login-counter",
+                "description": "A Python script that counts failed login attempts from a sample authentication log.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-08T02:14:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-log-reader",
+                "description": "A simple Python tool that reads log files and highlights suspicious keywords such as failed login, denied access, error, warning, and unauthorized activity.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-08T02:14:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "human-vision-ui",
+                "description": "An experimental Angular interface for capturing face images and testing biometric API interactions during development.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-07T05:45:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ethical-hacking-projects",
+                "description": "Hands-on cybersecurity projects and labs focused on ethical hacking, SOC practices, and network security. Includes Wireshark captures, Snort configs, and Python scripts.",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2026-06-07T05:44:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "small-monitoring-ideas",
+                "description": "Simple ideas for lightweight monitoring.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-06T15:17:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "threat-detection-lab",
+                "description": "Threat detection, SIEM practice, log analysis, and cybersecurity investigation examples.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-29T21:33:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "timestamps-explained-simply",
+                "description": "Converting timestamps into readable time",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-29T21:48:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "linux-security-hardening",
+                "description": "Linux security hardening guides, commands, firewall rules, monitoring, and server protection practices.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-29T21:33:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "home-lab-network-security",
+                "description": "Add home lab network security documentation",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-29T21:29:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cyber-awareness-demo-",
+                "description": "A harmless cybersecurity awareness project designed to teach friends and family how to recognize suspicious links, phishing attempts, and unsafe online behavior. This demo does not collect passwords or personal information.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-05-26T01:52:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alerts-are-not-incidents",
+                "description": "A simple distinction between alerts and incidents.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-22T14:16:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ignore-with-intention",
+                "description": "Learning when ignoring something is the right choice.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-27T02:49:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "passwords-people-actually-use",
+                "description": "A short study note + example script about weak passwords.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-15T04:29:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "how-i-broke-my-lab",
+                "description": "Real mistakes = credibility.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-06T01:34:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "epetition-builds-understanding.",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-03-24T01:35:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "small-scripts-big-confidence",
+                "description": "Why tiny scripts helped my cybersecurity confidence.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-23T03:01:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "why-reading-errors-is-a-skill",
+                "description": "Learning to read error messages properly",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-08T23:45:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "consistency-beats-intensity",
+                "description": "Why consistent effort matters more than bursts of work.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-06T02:10:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "security-is-patterns",
+                "description": "Observing patterns instead of single events.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-04T05:27:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "normal-behavior-matters",
+                "description": "Why understanding normal system behavior is critical.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-02-28T01:19:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blue-team-daily",
+                "description": "A daily Blue Team learning log focused on defensive security fundamentals and hands-on practice.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-23T03:48:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "learning-before-understanding",
+                "description": "Notes on learning concepts before fully understanding them in cybersecurity.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-20T20:01:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "log-file-suspicion-scanner",
+                "description": "A simple Python script that scans log files for suspicious activity.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-02-19T22:56:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tech-lab",
+                "description": "Personal repository for technology experiments, scripts, and learning projects.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-19T03:10:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "risk-over-fear",
+                "description": "Choosing risk-based thinking.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-02-11T03:28:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ngsnethawarya-blue-team-daily",
+                "description": "small security concept per day",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-05T02:24:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "logwatch-lite",
+                "description": "A lightweight Python tool for parsing Linux authentication logs and identifying suspicious login behavior for learning and analysis purposes.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-02-05T02:22:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "password-hygiene-checker-python",
+                "description": "Simple Python script to check basic password security hygiene",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-02-05T02:19:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "printer-troubleshooting-a-plus",
+                "description": "Printer troubleshooting cheat sheet for CompTIA A+",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-04T01:33:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "security-is-context",
+                "description": "Short thoughts on why context matters more than alerts",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-31T05:41:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "network-port-scanner",
+                "description": "A lightweight Python port scanner for cybersecurity lab practice and network analysis.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-01-31T05:40:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "questions-before-tools",
+                "description": "Asking the right questions before using security tools",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-31T05:39:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "slow-is-safe",
+                "description": "A reminder that slowing down improves security work.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-27T01:12:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "camera-workbench",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-27T01:11:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "port-scanner-pro",
+                "description": "Threaded TCP port scanner for lab use (educational)",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-01-25T03:37:18Z",
+                "fork": false,
+                "topics": [
+                  "python-security-network-port-scanner-lab-tools"
+                ]
+              },
+              {
+                "name": "dev-daily-notes",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-22T01:13:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "learning-journal",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-19T05:08:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "netrisk-sim",
+                "description": "A simple Python-based network risk simulation tool that assigns risk scores to hosts based on exposed services and configuration factors.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-01-17T03:15:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mobile-basics-a-plus",
+                "description": "Mobile device basics for CompTIA A+ 220-1201",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-04T22:20:08Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:42.496929+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

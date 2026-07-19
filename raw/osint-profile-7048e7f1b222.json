@@ -1,0 +1,216 @@
+{
+  "profileId": "osint-profile-7048e7f1b222",
+  "target": "thisalireza",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:11.542945+00:00",
+  "completedAt": "2026-06-21T15:32:12.161379+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e5bd798d",
+      "lookupType": "github_context",
+      "target": "thisalireza",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "thisalireza",
+            "name": "Alireza",
+            "type": "User",
+            "company": "Betono",
+            "blog": "https://aalireza.ir",
+            "location": "/home/alireza",
+            "bio": "Front-End Developer - JS | TS | Angular ",
+            "public_repos": 12,
+            "followers": 1442,
+            "following": 2018,
+            "created_at": "2021-03-24T12:40:58Z",
+            "updated_at": "2026-02-21T19:09:46Z",
+            "html_url": "https://github.com/thisalireza",
+            "avatar_url": "https://avatars.githubusercontent.com/u/81307350?v=4",
+            "repos": [
+              {
+                "name": "shopping-angular",
+                "description": "Shopping Angular is an Apple Store e-commerce built with Angular 17. The project uses Material/Bootstrap (MDB) to provide polished UI components and example assets. Designed as a learning resource and starter template for frontend developers exploring Angular and UI design.",
+                "stargazers_count": 15,
+                "language": "HTML",
+                "pushed_at": "2025-11-16T19:51:12Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "mdbootstrap",
+                  "shopping-site",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "thisalireza",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-10-21T04:35:21Z",
+                "fork": false,
+                "topics": [
+                  "angular-developer"
+                ]
+              },
+              {
+                "name": "data-table",
+                "description": "Data-Table is a lightweight and flexible for displaying and interacting with tabular data in web applications. It includes essential table features such as sorting, filtering, pagination, and row selection, while remaining easy to customize and extend. ",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-20T06:09:38Z",
+                "fork": false,
+                "topics": [
+                  "data-tables",
+                  "fetch-api",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "Weather-app",
+                "description": "  Weather-app is a lightweight, responsive application that provides current weather conditions and short-term forecasts for any location. It fetches live data from public weather APIs and displays temperature, humidity, wind speed, and descriptive icons for quick, at-a-glance information. ",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-28T19:01:46Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "rapidapi",
+                  "typescript",
+                  "weather-app"
+                ]
+              },
+              {
+                "name": "DarkMode",
+                "description": "DarkMode Ui",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-06-16T13:12:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "keen-slider",
+                "description": "This repository implements an iOS-style time picker powered by keen-slider, delivering smooth swipe gestures and a natural scrolling wheel experience. It\u2019s designed for easy integration, customization of ranges and step intervals, and responsive touch performance. Use keen-slider for Timepicker ios.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-21T03:57:48Z",
+                "fork": false,
+                "topics": [
+                  "ios",
+                  "keen-slider",
+                  "slider",
+                  "timepicker"
+                ]
+              },
+              {
+                "name": "modal-in-angular",
+                "description": "simple modal",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-05T22:02:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crud-app",
+                "description": "CRUD APP WITH ANGULAR 19",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-27T18:59:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ssl-generator",
+                "description": "create ssl generator for big blue button and ssl for domain",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2025-07-18T14:09:16Z",
+                "fork": false,
+                "topics": [
+                  "bbb",
+                  "bigbluebutton",
+                  "https",
+                  "linux",
+                  "ssl"
+                ]
+              },
+              {
+                "name": "lazyLoading",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-06T17:18:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Leaflet-Project",
+                "description": "use leaflet js and openstreetmap to showing map",
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2025-08-09T04:03:40Z",
+                "fork": false,
+                "topics": [
+                  "leafletjs",
+                  "map",
+                  "openstreatmap"
+                ]
+              },
+              {
+                "name": "backdoor-wordpress",
+                "description": "script to create a new WordPress user with a dynamic credential and role.",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2025-08-24T18:28:16Z",
+                "fork": false,
+                "topics": [
+                  "backdoor",
+                  "php",
+                  "wordpress"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:12.160422+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,576 @@
+{
+  "profileId": "osint-profile-df9845599c27",
+  "target": "peter279k",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:10.976096+00:00",
+  "completedAt": "2026-06-20T13:53:13.308671+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4cdd6da9",
+      "lookupType": "github_context",
+      "target": "peter279k",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "peter279k",
+            "name": "Chun-Sheng, Li",
+            "type": "User",
+            "company": "Institute for Information Industry",
+            "blog": "https://peterli.website",
+            "location": "Taipei, Taiwan",
+            "bio": "Hacker's thought.\r\nDon't know, but want to do.",
+            "public_repos": 991,
+            "followers": 2219,
+            "following": 6967,
+            "created_at": "2014-10-04T22:11:17Z",
+            "updated_at": "2026-06-16T12:00:09Z",
+            "html_url": "https://github.com/peter279k",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9021747?v=4",
+            "repos": [
+              {
+                "name": "github-follower-bot",
+                "description": "My GitHub Follower Bot",
+                "stargazers_count": 62,
+                "language": "Python",
+                "pushed_at": "2026-06-20T01:21:04Z",
+                "fork": false,
+                "topics": [
+                  "github-api",
+                  "github-followers"
+                ]
+              },
+              {
+                "name": "modernist",
+                "description": "A Theme for GitHub Pages",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-06-09T16:39:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "peter279k.github.io",
+                "description": "My short biography and experiences",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2026-06-09T15:36:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "linjose.github.io",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-09T15:50:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yt-dlp-api",
+                "description": "The simple yt-dlp-api server is used to extract YouTube video URL easily",
+                "stargazers_count": 22,
+                "language": "HTML",
+                "pushed_at": "2026-06-04T14:07:32Z",
+                "fork": false,
+                "topics": [
+                  "fastapi",
+                  "python312",
+                  "yt-dlp",
+                  "yt-download",
+                  "yt-downloader"
+                ]
+              },
+              {
+                "name": "fmsa",
+                "description": "FMSA: A Universal Microservice Architecture Based on FHIR Medical Informatics Standard",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-05-28T17:57:25Z",
+                "fork": false,
+                "topics": [
+                  "fastapi",
+                  "fhir",
+                  "healthcare",
+                  "healthcare-platform",
+                  "medical-informatics",
+                  "medical-informatics-platform",
+                  "medical-system",
+                  "microservice",
+                  "microservices-architecture",
+                  "python312"
+                ]
+              },
+              {
+                "name": "today-co",
+                "description": "Recommend the top 10 adult video every week/day.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2021-06-02T01:12:45Z",
+                "fork": false,
+                "topics": [
+                  "eloquent",
+                  "mysql",
+                  "orm",
+                  "php7",
+                  "python3",
+                  "silex"
+                ]
+              },
+              {
+                "name": "web-youtube-downloader",
+                "description": "This is the web-based youtube-downloader service",
+                "stargazers_count": 28,
+                "language": "HTML",
+                "pushed_at": "2023-04-21T08:17:51Z",
+                "fork": false,
+                "topics": [
+                  "youtube-downloader"
+                ]
+              },
+              {
+                "name": "dynamic-values-system",
+                "description": "Enterprise-grade real-time dynamic values system with military-grade security, WAF, rate limiting, and Redis cluster support.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-27T19:12:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fmsa-load-test",
+                "description": "The load test tool for FMSA",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-29T10:07:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "swarm-auto-scaler",
+                "description": "A simple Automatic Service Scaler in the Docker Swarm Cluster",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-04-25T17:07:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nifi_persistence",
+                "description": "Apache NiFi 2.x for docker-compose with persistence storages",
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2026-03-16T10:15:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data_CentricProcess",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-13T19:15:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cdc-data-mirror",
+                "description": "\u75be\u75c5\u7ba1\u5236\u7f72\u90e8\u5206\u958b\u653e\u8cc7\u6599\u96c6\u93e1\u50cf",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-04-10T10:40:16Z",
+                "fork": false,
+                "topics": [
+                  "cdc",
+                  "covid-19",
+                  "covid-19-data",
+                  "covid19-tw",
+                  "taiwan"
+                ]
+              },
+              {
+                "name": "php-jwt-1",
+                "description": "PHP package for JWT",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-12-20T10:51:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fhir-data-generator",
+                "description": "The FHIR data generator is compatible with the some MI-TW scenarios",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-04-02T18:04:17Z",
+                "fork": false,
+                "topics": [
+                  "fhir",
+                  "fhir-client"
+                ]
+              },
+              {
+                "name": "menstruation",
+                "description": "The menstruation calculator",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2017-04-03T12:30:59Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap3",
+                  "calculator",
+                  "jquery",
+                  "php7",
+                  "slim-framework",
+                  "slim3"
+                ]
+              },
+              {
+                "name": "historical_weather",
+                "description": "\u81fa\u7063\u6b77\u53f2\u6c23\u8c61\u89c0\u6e2c\u8cc7\u6599\u5eab Taiwan Historical Meteorological Observations Database",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-03-07T09:07:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "crontab-docker",
+                "description": "\ud83d\udd53 The best crontab container for your docker compose file.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-17T13:23:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nifikop",
+                "description": "The NiFiKop NiFi Kubernetes operator makes it easy to run Apache NiFi on Kubernetes. Apache NiFI is a free, open-source solution that support powerful and scalable directed graphs of data routing, transformation, and system mediation logic.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-29T19:55:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "docker_fhir_validator",
+                "description": "The Docker image is for FHIR core validator with OpenJDK 11 and OpenJDK 17",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2025-10-03T15:19:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PHUB",
+                "description": "A lightweight API for Pornhub",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-06T17:11:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HomoglyphsCJK",
+                "description": "An efficient and useful tool to fuzzy match Japanese, Korean, Simplified Chinese or Traditional Chinese words.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-01T08:59:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "burst-tolerance-for-stateful-microservices",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2026-01-02T09:34:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "phpservermonitor",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-02-02T15:36:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SciencePlots",
+                "description": "Matplotlib styles for scientific plotting",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-19T16:59:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "peter279k",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-02-08T05:00:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-shell-utils",
+                "description": "This is Linux commands porting to execute on Windows",
+                "stargazers_count": 1,
+                "language": "Perl",
+                "pushed_at": "2016-06-30T16:40:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gwp-factors",
+                "description": "The crawler is about the GWP factors.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-05-17T16:53:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "keycloak-action",
+                "description": "Executes Keycloak Admin CLI against a defined server.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-12-13T15:54:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "apache-nifi-kafka",
+                "description": "The demonstration for integrating Apache NiFi with Kafka",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-11-19T13:13:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "iottalk-home-assignment2024",
+                "description": "This project is for IotTalk course in the NTOU 2024.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-11-12T06:08:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "helloworld_http_function",
+                "description": "This is the HelloWorld HTTP GCP Cloud function example",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2024-10-09T16:14:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pyjwt",
+                "description": "JSON Web Token implementation in Python",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-08T13:12:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fhir-owl",
+                "description": "Transforms OWL ontologies into FHIR code systems.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-09-16T09:04:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "openant",
+                "description": "ANT and ANT-FS Python Library",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-12T05:33:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tw_core_ig_validator",
+                "description": "The Docker image for TW Core IG validator",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-02T10:13:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EP-MQTT",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-19T06:46:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "php-crawler-labs-2024",
+                "description": "\u9032\u968ePHP\u7db2\u8def\u722c\u87f2\u958b\u767c\u7d93\u9a57\u8ac720240622",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2024-06-21T17:20:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ix3-TMT",
+                "description": "ix3-TMT(Team-Management-Tool) is a tool for managing digital consultancy team-delivered professional reports.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-03T17:50:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "web-extract-worker",
+                "description": "The web-based extract text to image worker :).",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-04-15T04:03:22Z",
+                "fork": false,
+                "topics": [
+                  "cloudflare-pages",
+                  "cloudflare-workers-ai",
+                  "workers-ai"
+                ]
+              },
+              {
+                "name": "ClickBench",
+                "description": "ClickBench: a Benchmark For Analytical Databases",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-20T06:19:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "docs",
+                "description": "Source repo for Docker's Documentation",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-13T13:27:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bench",
+                "description": "Micro PHP benchmark library",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-03-12T06:49:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "phpbrew",
+                "description": "Brew & manage PHP versions in pure PHP at HOME",
+                "stargazers_count": 1,
+                "language": "Makefile",
+                "pushed_at": "2024-10-08T11:06:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "clickhouse-docs",
+                "description": "Official documentation for the ClickHouse database management system",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-10T16:30:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ClickHouse",
+                "description": "ClickHouse\u00ae is a free analytics DBMS for big data",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2024-10-02T15:08:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "collections",
+                "description": "A simple PHP collection implementation",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2024-04-18T15:44:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "figlet-generator",
+                "description": "Help you generating \"figlet texts\" :)",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2024-05-17T23:34:11Z",
+                "fork": false,
+                "topics": [
+                  "figlet-texts",
+                  "laravel",
+                  "php"
+                ]
+              },
+              {
+                "name": "facebook_page_scraper",
+                "description": "Scrapes facebook's pages front end with no limitations & provides a feature to turn data into structured JSON or CSV",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-07-31T17:42:19Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:13.307918+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

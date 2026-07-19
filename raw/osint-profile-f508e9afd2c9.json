@@ -1,0 +1,240 @@
+{
+  "profileId": "osint-profile-f508e9afd2c9",
+  "target": "jq2",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:58.055617+00:00",
+  "completedAt": "2026-06-20T16:49:58.695103+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-395cd975",
+      "lookupType": "github_context",
+      "target": "jq2",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jq2",
+            "name": "Danny Caroline",
+            "type": "User",
+            "company": null,
+            "blog": "https://jq2.github.io/",
+            "location": null,
+            "bio": "Self-taught AI researcher and hacker (A.K.A Real Programmer)",
+            "public_repos": 17,
+            "followers": 672,
+            "following": 9938,
+            "created_at": "2017-03-14T01:42:02Z",
+            "updated_at": "2026-06-10T20:04:18Z",
+            "html_url": "https://github.com/jq2",
+            "avatar_url": "https://avatars.githubusercontent.com/u/26396467?v=4",
+            "repos": [
+              {
+                "name": "erythros",
+                "description": "An operating system based on TempleOS",
+                "stargazers_count": 85,
+                "language": "HolyC",
+                "pushed_at": "2024-01-02T17:20:32Z",
+                "fork": false,
+                "topics": [
+                  "cia",
+                  "cyberpunk",
+                  "erythros",
+                  "fbi",
+                  "holyc",
+                  "operating-system",
+                  "templeos"
+                ]
+              },
+              {
+                "name": "cursos",
+                "description": "Cursos da universidade hacker, em Portugu\u00eas.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2019-12-27T21:12:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Arquivo_de_Log",
+                "description": "Dan_Morris Public Information Tracker.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-03-25T15:52:55Z",
+                "fork": false,
+                "topics": [
+                  "experiments",
+                  "information-retrieval",
+                  "information-tracker",
+                  "log",
+                  "notes"
+                ]
+              },
+              {
+                "name": "cia-hacking-tool-archive",
+                "description": "Curated archive of tools from the Wikileaks CIA hacking tool leak, pull requests welcome https://wikileaks.org/ciav7p1/",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2017-03-07T15:11:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jq2",
+                "description": "\ud83d\udc30\ud83d\udc07 Follow The White Rabbit \ud83d\udc30\ud83d\udc07",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2020-08-06T19:50:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "manifestos",
+                "description": "Manifesto de todo o projeto",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2019-04-15T04:56:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "JOS",
+                "description": "Backup archive of the J operating system by Terry Davis",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2019-10-13T12:05:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "asmttpd",
+                "description": "Web server for Linux written in amd64 assembly.",
+                "stargazers_count": 1,
+                "language": "Assembly",
+                "pushed_at": "2019-01-24T04:11:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "emacs",
+                "description": "Mirror of GNU Emacs",
+                "stargazers_count": 1,
+                "language": "Emacs Lisp",
+                "pushed_at": "2021-10-05T16:35:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "spacemacs",
+                "description": "A community-driven Emacs distribution - The best editor is neither Emacs nor Vim,  it's Emacs *and* Vim!",
+                "stargazers_count": 1,
+                "language": "Emacs Lisp",
+                "pushed_at": "2018-11-07T22:15:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gentoo",
+                "description": "The Gentoo ebuild repository mirror",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2019-01-20T05:43:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "papers",
+                "description": "Useful papers",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2017-10-24T20:25:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zion",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-06-04T12:36:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portalbr.github.io",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-12-10T05:34:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jq2.github.io",
+                "description": "jq2's blog site",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-10-28T23:33:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webkit",
+                "description": "Unofficial mirror of the WebKit SVN repository",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2019-01-25T06:17:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GoogleCLI",
+                "description": "GoogleCLI Web Scanner",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2017-11-22T01:47:34Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:58.694269+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

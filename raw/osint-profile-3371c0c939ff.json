@@ -1,0 +1,118 @@
+{
+  "profileId": "osint-profile-3371c0c939ff",
+  "target": "GrayMamoru",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:03.617414+00:00",
+  "completedAt": "2026-06-21T15:28:04.035605+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-aba01bcb",
+      "lookupType": "github_context",
+      "target": "GrayMamoru",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "GrayMamoru",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Riga",
+            "bio": null,
+            "public_repos": 5,
+            "followers": 5217,
+            "following": 12841,
+            "created_at": "2024-02-28T11:00:30Z",
+            "updated_at": "2025-11-09T00:19:45Z",
+            "html_url": "https://github.com/GrayMamoru",
+            "avatar_url": "https://avatars.githubusercontent.com/u/161590789?v=4",
+            "repos": [
+              {
+                "name": "JFXCrypto",
+                "description": "\ud83d\udd10 150+ Algorithms, Reactive GUI, and More: Text & File Encryption, Hashing, MAC, Key Generation, and Password Strength Evaluation for desktop. JCA, JCE with Bouncy Castle",
+                "stargazers_count": 28,
+                "language": "Java",
+                "pushed_at": "2024-12-02T21:23:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-java-client",
+                "description": "A Java client to Github API",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-07-10T13:43:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GrayMamoru",
+                "description": null,
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2024-07-27T16:15:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gitlab4j-api",
+                "description": "GitLab4J API (gitlab4j-api) provides a full featured Java client library for working with GitLab repositories via the GitLab REST API",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2024-07-09T13:59:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Demo",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-02-28T11:15:11Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:04.034892+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

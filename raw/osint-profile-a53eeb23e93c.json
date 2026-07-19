@@ -1,0 +1,634 @@
+{
+  "profileId": "osint-profile-a53eeb23e93c",
+  "target": "FlutterSmith",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:01.557429+00:00",
+  "completedAt": "2026-06-21T15:29:02.866166+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1fac1464",
+      "lookupType": "github_context",
+      "target": "FlutterSmith",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "FlutterSmith",
+            "name": "Ahmed Hamdy",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Think. Code. Love.",
+            "public_repos": 55,
+            "followers": 3006,
+            "following": 6993,
+            "created_at": "2022-11-11T21:31:13Z",
+            "updated_at": "2026-05-25T14:47:47Z",
+            "html_url": "https://github.com/FlutterSmith",
+            "avatar_url": "https://avatars.githubusercontent.com/u/118023886?v=4",
+            "repos": [
+              {
+                "name": "xo_game",
+                "description": "Advanced X\u2011O Game is an innovative and feature\u2011rich implementation of the classic Tic Tac Toe game built with Flutter. It leverages the BLoC pattern for robust state management and uses sqflite for persisting game history.",
+                "stargazers_count": 2,
+                "language": "Dart",
+                "pushed_at": "2026-06-14T21:34:03Z",
+                "fork": false,
+                "topics": [
+                  "bloc",
+                  "dart",
+                  "flutter",
+                  "x-o",
+                  "x-o-game"
+                ]
+              },
+              {
+                "name": "FlutterSmith",
+                "description": "A quick overview of my skills, projects, and interests as a developer. Explore my repositories to see what I\u2019m working on!",
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2026-06-21T03:35:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "underground-streetwear",
+                "description": "Streetwear brand site template. Next.js 15, TypeScript, Tailwind v4, Framer Motion. Cart, product pages, forms, lookbook. Firebase backend needed.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-20T17:21:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "E-FruitsHub",
+                "description": "A modern e-commerce mobile app built with Flutter, offering a seamless platform for purchasing fresh, organic vegetables. Features include product browsing, cart management, secure payments, and push notifications, backed by Firebase services. ",
+                "stargazers_count": 2,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T22:08:27Z",
+                "fork": false,
+                "topics": [
+                  "cross-platform",
+                  "dart",
+                  "ecommerce",
+                  "firebase",
+                  "firebase-auth",
+                  "flutter",
+                  "material-design",
+                  "matrial-desgine",
+                  "mobile-app",
+                  "online-store",
+                  "payment-gateway",
+                  "push-notifications",
+                  "responsive",
+                  "shopping-cart"
+                ]
+              },
+              {
+                "name": "bulls-and-cows-solver",
+                "description": "A Knuth-minimax Bulls and Cows solver with a rich terminal UI. Cracks any 4-unique-digit secret in ~5 guesses.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-14T18:15:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Taafi",
+                "description": "\u062a\u0639\u0627\u0641\u064a \u2014 \u0631\u0641\u064a\u0642\u0643 \u0627\u0644\u062e\u0627\u0635 \u0641\u064a \u0631\u062d\u0644\u0629 \u0627\u0644\u062a\u0639\u0627\u0641\u064a | Privacy-first Arabic recovery companion app with streak tracking, encrypted journal, SOS toolkit, accountability partners & habit building. Built with Flutter & Firebase.",
+                "stargazers_count": 2,
+                "language": "Dart",
+                "pushed_at": "2026-04-14T14:53:14Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "arabic",
+                  "clean-architecture",
+                  "dart",
+                  "encryption",
+                  "firebase",
+                  "flutter",
+                  "ios",
+                  "mental-health",
+                  "mobile-app",
+                  "offline-first",
+                  "privacy",
+                  "recovery",
+                  "riverpod"
+                ]
+              },
+              {
+                "name": "github-readme-stats",
+                "description": ":zap: Dynamically generated stats for your github readmes",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-31T00:50:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "E-VeggieStore",
+                "description": "A modern e-commerce mobile app built with Flutter, offering a seamless platform for purchasing fresh, organic vegetables. Features include product browsing, cart management, secure payments, and push notifications, backed by Firebase services.",
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:49:10Z",
+                "fork": false,
+                "topics": [
+                  "cross-platform",
+                  "dart",
+                  "ecommerce",
+                  "firebase",
+                  "firebase-authentication",
+                  "firebase-firestore",
+                  "flutter",
+                  "flutter-provider",
+                  "material-design",
+                  "mobile-app",
+                  "online-store",
+                  "payment-gateway",
+                  "push-notifications",
+                  "responsive-ui",
+                  "shopping-cart",
+                  "vegetables"
+                ]
+              },
+              {
+                "name": "war-house",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-10T21:43:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BreakSchedule",
+                "description": "Break Reminder App is a Flutter application designed to help users boost productivity by reminding them to take regular breaks. With customizable break intervals, live countdown timers, push notifications, and wellbeing tips, it ensures you stay refreshed throughout your day.",
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:35:08Z",
+                "fork": false,
+                "topics": [
+                  "bloc",
+                  "break-reminder",
+                  "break-reminder-app",
+                  "dart",
+                  "flutter",
+                  "local-notifications",
+                  "mobile-app",
+                  "notifications",
+                  "productivity",
+                  "wellbeing"
+                ]
+              },
+              {
+                "name": "iOS-ProCalc",
+                "description": "ProCalc is a feature-rich Flutter-based calculator app inspired by the iOS calculator. It includes advanced arithmetic functions, memory operations, and history tracking, providing a seamless and modern user experience.",
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:35:04Z",
+                "fork": false,
+                "topics": [
+                  "arithmetic",
+                  "calculator",
+                  "calculator-app",
+                  "dart",
+                  "flutter",
+                  "flutter-apps",
+                  "history",
+                  "ios-style",
+                  "math",
+                  "math-expressions",
+                  "memory-functions",
+                  "mobile-app",
+                  "opensource",
+                  "opensource-projects",
+                  "provider",
+                  "state-management",
+                  "trigonometry"
+                ]
+              },
+              {
+                "name": "expense-tracker",
+                "description": "expense tracker is a modern expense tracking and budgeting app built with Flutter. It offers an intuitive interface for recording expenses, visualizing spending trends, and managing your budget efficiently.",
+                "stargazers_count": 2,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:27:00Z",
+                "fork": false,
+                "topics": [
+                  "budget-management",
+                  "data-visualization",
+                  "expense-tracking",
+                  "flchart",
+                  "flutter",
+                  "flutter-apps",
+                  "hive",
+                  "local-persistence",
+                  "provider",
+                  "provider-state-management"
+                ]
+              },
+              {
+                "name": "Count-Down-App",
+                "description": "Countdown App is a Flutter project that lets users create, customize, and manage countdown events with real\u2011time timers, local SQLite persistence, and scheduled push notifications.",
+                "stargazers_count": 0,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:20:16Z",
+                "fork": false,
+                "topics": [
+                  "cross-platform-support",
+                  "customizations",
+                  "dart",
+                  "event-management",
+                  "flutter",
+                  "live-countdown-timer",
+                  "local-persistence",
+                  "push-notifications",
+                  "state-management"
+                ]
+              },
+              {
+                "name": "mycart_view",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:20:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Route_tracker",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:20:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "responsive_dash_board",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flutter_with_google_maps",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Adaptive-layout",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bookish_app",
+                "description": "Bookish App is a Flutter-based application for managing and exploring your book collection with ease. Featuring secure authentication, a modern UI, and cross-platform support for Android and iOS.",
+                "stargazers_count": 16,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:48Z",
+                "fork": false,
+                "topics": [
+                  "app-development",
+                  "authentication",
+                  "book-management",
+                  "cross-platform",
+                  "dart",
+                  "flutter",
+                  "mobile-app"
+                ]
+              },
+              {
+                "name": "neculs_project",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple_file_uploader",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scholar_chat_app",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple_bmi_calculator",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "store_app",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "news_app",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple_weather_app",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "notes_app",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2026-04-10T21:19:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SuNfuuL",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-10T21:19:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "warhouse",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Dart",
+                "pushed_at": "2025-02-25T13:45:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "task-manager",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-09T23:24:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TaskFlow",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-10T13:21:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Flosy",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-06T23:25:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple_counter_app",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2024-08-03T14:17:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flutter-tips-and-tricks",
+                "description": "My Flutter Tips & Tricks on Twitter \ud83d\udc47",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-06-07T16:19:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AOORA",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2024-07-03T19:19:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "free-programming-books",
+                "description": ":books: Freely available programming books",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-06-09T06:48:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "devtools",
+                "description": "Performance tools for Flutter",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-06-09T08:02:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "packages",
+                "description": "A collection of useful packages maintained by the Flutter team",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-06-09T17:01:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "30-seconds-of-code",
+                "description": "Short code snippets for all your development needs",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-03T18:48:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "food-ecommerce",
+                "description": "a website to sell food products",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-07-25T21:30:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tech-interview-handbook",
+                "description": "\ud83d\udcaf Curated coding interview preparation materials for busy software engineers",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-06-07T08:00:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-flutter",
+                "description": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-05-28T21:20:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "public-apis",
+                "description": "A collective list of free APIs",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-06-05T21:09:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "samples",
+                "description": "A collection of Flutter examples and demos",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-06-07T06:28:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Best-Flutter-UI-Templates",
+                "description": "completely free for everyone. Its build-in Flutter Dart.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-06-07T07:04:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flutter-action",
+                "description": "Flutter environment for use in GitHub Actions. It works on Linux, Windows, and macOS.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-06-07T08:24:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "coding-interview-university",
+                "description": "A complete computer science study plan to become a software engineer.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-06-09T03:10:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "durger-king",
+                "description": "A simple example to Telegram web-apps with JavaScript & PHP",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-11-28T16:29:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chat_app",
+                "description": "Chat app using MVVM and Firebase",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-11-23T01:24:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hotel-booking",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-10-06T01:39:18Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:02.865290+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

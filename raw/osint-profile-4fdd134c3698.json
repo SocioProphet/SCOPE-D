@@ -1,0 +1,469 @@
+{
+  "profileId": "osint-profile-4fdd134c3698",
+  "target": "cfrBernard",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:59.251841+00:00",
+  "completedAt": "2026-06-21T15:28:00.068098+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1b81d98e",
+      "lookupType": "github_context",
+      "target": "cfrBernard",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "cfrBernard",
+            "name": "C. Bernard",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "France ",
+            "bio": "\ud83d\udc0d Open Source Tooling | Python, Unity (C#) | Code & Coffee Addict \u2615",
+            "public_repos": 44,
+            "followers": 5668,
+            "following": 5991,
+            "created_at": "2023-12-10T20:10:13Z",
+            "updated_at": "2026-05-09T19:54:57Z",
+            "html_url": "https://github.com/cfrBernard",
+            "avatar_url": "https://avatars.githubusercontent.com/u/153459846?v=4",
+            "repos": [
+              {
+                "name": "Platformer_2D",
+                "description": "2D Platformer Game Project, using Unity. It draws inspiration from Metroidvania games and classic platformers, while aiming to explore a deeper narrative.",
+                "stargazers_count": 64,
+                "language": "C#",
+                "pushed_at": "2025-03-16T00:35:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BulkCropper",
+                "description": "Fast and lightweight image segmentation tool designed to automatically crop individual LEGO\u00ae parts from a single image into PNG files. Now with an optional Brickognize API integration and GUI.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-06-20T04:54:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MaskMapWizard",
+                "description": "This is a simple Python app, designed to help you create Mask Maps by combining multiple textures into a single RGBA image. It\u2019s a powerful solution for optimizing textures in Unity HDRP.",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2025-08-11T12:38:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EX-BS-3D",
+                "description": "First 3D project with Unity \u2013 a physics-driven basketball arcade game. \ud83c\udfc0",
+                "stargazers_count": 12,
+                "language": "ShaderLab",
+                "pushed_at": "2025-08-04T10:22:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "To-Do-List",
+                "description": "A simple task management web app built with HTML/CSS, and JavaScript. Stores tasks locally using localStorage for easy access and privacy.",
+                "stargazers_count": 46,
+                "language": "CSS",
+                "pushed_at": "2025-08-08T10:00:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Idle-Sleep-Manager",
+                "description": "Python-based application to enforce system sleep after a set period of user inactivity, even when video players or streaming services prevent it.",
+                "stargazers_count": 26,
+                "language": "Python",
+                "pushed_at": "2025-08-08T10:11:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Seamless-coop-fix",
+                "description": "FOR ELDENRING. Fix the \"This version of seamless co-op (1.X.X) is deprecated and requires an update\" message that appears with a downgraded version of the mod.",
+                "stargazers_count": 39,
+                "language": "Batchfile",
+                "pushed_at": "2025-08-08T10:09:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CSV-Navigator",
+                "description": "A lightweight Python interface for exploring CSV files with filtering, statistics, and visualizations. Perfect for quick data inspection and analysis.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-08-08T10:12:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "audio-capture-app",
+                "description": "This is a simple Python app, designed for capturing and organizing improvised audio recordings. It allows users to easily save audio snippets with customizable filenames and durations.",
+                "stargazers_count": 52,
+                "language": "Python",
+                "pushed_at": "2025-08-08T10:14:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Interactive-quiz",
+                "description": "Interactive quiz developed using HTML/CSS and JavaScript. Open Trivia Database API generate questions based on category selection and a progressive difficulty system.",
+                "stargazers_count": 50,
+                "language": "CSS",
+                "pushed_at": "2025-08-09T09:33:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UnityTimelapse",
+                "description": "Simple script designed to make timelapses in Unity HDRP. Version 0.4.4 -> Has only a directional light rotation, volumetric cloud offset animation and water simulation speed.",
+                "stargazers_count": 8,
+                "language": "C#",
+                "pushed_at": "2025-08-12T17:16:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MaskMapWizard_Unity",
+                "description": "C# Script designed to help you create Mask Maps by combining multiple textures into a single RGBA image. It\u2019s a powerful solution for optimizing textures in Unity HDRP.",
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2025-08-12T19:51:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OpenWallpaper",
+                "description": "Wallpaper app for desktop (WIP) .NET // WPF \u2013 MVVM. ",
+                "stargazers_count": 10,
+                "language": "C#",
+                "pushed_at": "2025-08-12T20:15:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ASCII-Tree-Project",
+                "description": "Python interface to visualize any project structure in clean ASCII tree format, with custom ignore support and export options.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-08-31T07:38:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TES-Modding",
+                "description": "A series of guides designed to help players and modders customize their experience in The Elder Scrolls (TES) games. ",
+                "stargazers_count": 25,
+                "language": null,
+                "pushed_at": "2025-08-22T17:04:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GitHubStats",
+                "description": "Simple desktop application that lets you quickly view a GitHub user's statistics. Built with customtkinter, it fetches data from the GitHub API and presents it in a clean and interactive interface.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-09-04T11:23:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MRS_TempMailStash",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-09-11T22:49:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TT-HD-3D",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "C#",
+                "pushed_at": "2025-11-04T10:41:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "high-perf-data-pipeline",
+                "description": "High-performance ETL pipeline processing 500k+ rows in ~400ms. Built with Python & Rust-based Polars. Optimized for automated data cleaning.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-11-24T20:28:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ML-Fraud-Analysis",
+                "description": " Fraud detection on banking transactions (Kaggle dataset). CLI support.",
+                "stargazers_count": 11,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-01T06:07:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cfrBernard",
+                "description": null,
+                "stargazers_count": 41,
+                "language": null,
+                "pushed_at": "2025-12-17T00:25:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MyGitCheatSheet",
+                "description": "I needed a reference that includes not only the usual commands, but also some less common ones I use frequently \u2013 especially submodule commands. It's a compact, and printable PDF.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-01-01T13:26:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GitHub-Follower-Management",
+                "description": "This script allows you to manage your GitHub subscriptions. It can automatically follow and unfollow back. With variables features.",
+                "stargazers_count": 98,
+                "language": "Python",
+                "pushed_at": "2026-01-09T08:35:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dart-Tracker",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-15T13:58:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MyProjects",
+                "description": "A curated overview of my open-source work.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-02-11T09:40:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Password-Generator-Chrome",
+                "description": "Chrome extension that allows users to generate strong and secure passwords with just one click. ",
+                "stargazers_count": 30,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-12T09:40:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "XML_Manipulator",
+                "description": "Simple CLI tool to manipulate and split BrickLink inventory XML files for upload to Rebrickable (or other platforms).",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-12T09:37:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Unity-Scene-Showcase",
+                "description": "A showcase of Unity scenes built in HDRP. This repository is both a visual portfolio and a technical breakdown of how each scene was built \u2013 from blockout to final polish.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-12T09:51:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UnityLiteL10n",
+                "description": "A minimal JSON-Based localization tool for Unity \u2013 Designed for small projects. [v0.8.0] This tool currently supports static text only. Variables, plurals, and advanced formatting are not implemented yet.",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2026-05-16T03:45:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Password-Generator-Python",
+                "description": "Password Generator Python",
+                "stargazers_count": 25,
+                "language": "Python",
+                "pushed_at": "2025-03-06T22:56:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nonsense-Math",
+                "description": null,
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2025-03-27T19:55:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Components-Hub",
+                "description": null,
+                "stargazers_count": 27,
+                "language": null,
+                "pushed_at": "2025-03-26T19:55:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ant-colony-optimization",
+                "description": "A simple graphical simulation of ants using React and an HTML5 canvas. This project was designed as a learning exercise to explore concepts like simulation, sprite animation, and canvas interaction.",
+                "stargazers_count": 34,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-16T16:20:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RflexProtoGame",
+                "description": "Reflex is a proto-game that I coded to kill time. It's a simple implementation in JavaScript using the  DOM to manipulate HTML and CSS elements.",
+                "stargazers_count": 29,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-18T07:08:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Oblivion-Remastered-Stuff",
+                "description": "Exploration and tinkering.",
+                "stargazers_count": 9,
+                "language": "Batchfile",
+                "pushed_at": "2025-04-24T14:37:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "3D-Models",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-05-05T09:28:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OWMedia",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-21T14:40:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FA-HD-3D",
+                "description": "Custom Unity Framework",
+                "stargazers_count": 5,
+                "language": "ShaderLab",
+                "pushed_at": "2025-05-13T15:11:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "git-tips",
+                "description": "Some useful info about working with git",
+                "stargazers_count": 3,
+                "language": "Shell",
+                "pushed_at": "2025-07-21T16:22:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "EX-TD-3D",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-03-28T18:36:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "To-Do-List-Chrome",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-02-22T08:23:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QR-Reader-Chrome",
+                "description": "A Chrome extension that runs in the background, allowing users to effortlessly scan QR codes displayed on web pages.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-03-01T19:31:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ST-TD-2D",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-03-09T06:04:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ST-AR-2D",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-03-21T12:42:50Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:00.067377+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "profileId": "osint-profile-62e730f4496d",
+  "target": "howls-moving-castle",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:38.265502+00:00",
+  "completedAt": "2026-06-21T15:31:38.569239+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a85bf9b8",
+      "lookupType": "github_context",
+      "target": "howls-moving-castle",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "howls-moving-castle",
+            "name": "\u2726\ufe0e",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "@OBITO-UCHlHA || block if needed",
+            "public_repos": 0,
+            "followers": 1565,
+            "following": 4680,
+            "created_at": "2025-01-29T22:28:37Z",
+            "updated_at": "2025-08-05T16:34:54Z",
+            "html_url": "https://github.com/howls-moving-castle",
+            "avatar_url": "https://avatars.githubusercontent.com/u/197007866?v=4",
+            "repos": [],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:38.567834+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

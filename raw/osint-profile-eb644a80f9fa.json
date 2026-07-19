@@ -1,0 +1,154 @@
+{
+  "profileId": "osint-profile-eb644a80f9fa",
+  "target": "Laqrabti",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:10.235981+00:00",
+  "completedAt": "2026-06-21T15:28:10.800487+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c9cdb530",
+      "lookupType": "github_context",
+      "target": "Laqrabti",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Laqrabti",
+            "name": "Laqrabti Hassan",
+            "type": "User",
+            "company": null,
+            "blog": "inspiringtrip.com",
+            "location": null,
+            "bio": "I\u2019m a Solution Architect with 5 years of experience, passionate about building scalable, efficient systems.",
+            "public_repos": 9,
+            "followers": 4187,
+            "following": 11737,
+            "created_at": "2023-06-26T04:07:09Z",
+            "updated_at": "2026-05-30T05:28:27Z",
+            "html_url": "https://github.com/Laqrabti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/137748143?v=4",
+            "repos": [
+              {
+                "name": "Laqrabti",
+                "description": "Cloud Solution Architect | AWS & DevOps Engineer | Designing Scalable, Secure Cloud Systems",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-05-08T03:07:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Clean-architecture-next.js",
+                "description": null,
+                "stargazers_count": 33,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-21T00:15:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Experimental-project",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-16T22:29:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML-API-integration",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2025-10-19T00:14:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "golang_project",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "Go",
+                "pushed_at": "2024-12-08T02:40:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Middleware-protection-layers",
+                "description": null,
+                "stargazers_count": 23,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-19T22:51:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Smi-repository-dyalk-hna-",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-05-12T03:29:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Portfolio-",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-07T22:11:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stanford-CS229",
+                "description": "Python solutions to the problem sets of Stanford's graduate course on Machine Learning, taught by Prof. Andrew Ng",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-06-23T18:16:18Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:10.799434+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

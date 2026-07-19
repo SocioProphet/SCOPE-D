@@ -1,0 +1,428 @@
+{
+  "profileId": "osint-profile-9f3d690c9ffd",
+  "target": "Bifenzine",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:29.187045+00:00",
+  "completedAt": "2026-06-20T13:53:29.652333+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-335f610a",
+      "lookupType": "github_context",
+      "target": "Bifenzine",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Bifenzine",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 24,
+            "followers": 1791,
+            "following": 3463,
+            "created_at": "2023-08-09T19:08:01Z",
+            "updated_at": "2026-05-31T18:38:12Z",
+            "html_url": "https://github.com/Bifenzine",
+            "avatar_url": "https://avatars.githubusercontent.com/u/141869601?v=4",
+            "repos": [
+              {
+                "name": "Modjodjodjo-Forum-Advanced-Social-Platform",
+                "description": "Modjodjodjo Forum is a social platform with a sleek UI, built on MERN and React Native. It offers OAuth login, category-based forums, clan creation, multimedia support, real-time chat, and AI assistance. Enjoy smooth interactions, social sharing, and optimized cloud storage with 80% compression for top performance.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-23T14:55:13Z",
+                "fork": false,
+                "topics": [
+                  "ai-assistant",
+                  "chat",
+                  "cloudstorage",
+                  "compression-algorithm",
+                  "cronjob",
+                  "cross-platform",
+                  "mern",
+                  "mongodb",
+                  "nodejs",
+                  "notifications",
+                  "oauth2",
+                  "passportjs",
+                  "react",
+                  "sockets",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "goose",
+                "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-10T02:51:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "career-ops",
+                "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-09T16:18:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CauseBank-Crowdfunding-Platform-for-Charities",
+                "description": "CauseBank is a powerful crowdfunding platform for charities, offering secure donations, easy organization verification, and seamless payment processing. With advanced search, KYC validation, cloud storage, and image/video compression, CauseBank ensures transparency, trust, and efficiency\u2014empowering both donors and organizations.",
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2025-02-23T14:50:36Z",
+                "fork": false,
+                "topics": [
+                  "ci-cd",
+                  "cloudstorage",
+                  "docker",
+                  "java",
+                  "javamailsender",
+                  "material-ui",
+                  "maven",
+                  "mongodb",
+                  "nginx",
+                  "oauth2",
+                  "postgresql",
+                  "rbac",
+                  "react",
+                  "spring-boot",
+                  "spring-security",
+                  "stripe",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "Bifenzine",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-01-21T18:42:44Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "WireOnWeb-Platform",
+                "description": "WireOnWeb - Software Development Solutions:We build scalable, high-performance solutions tailored to meet the unique needs of businesses, with a focus on SEO optimization and seamless user experiences.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-28T14:50:02Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Kawai-Converter-ANKI-notes-to-Excell",
+                "description": "\ud83c\udfaf Kawai-Converter is a sleek and efficient Python tool that transforms your ANKI flashcards into neatly organized Excel spreadsheets. With a user-friendly graphical interface powered by Tkinter, it offers an easy way to convert multiple decks, preserving your original formatting and ensuring smooth integration with Excel. \u2728",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-02-25T15:40:01Z",
+                "fork": false,
+                "topics": [
+                  "anki",
+                  "anki-deck",
+                  "converter",
+                  "excel",
+                  "pandas",
+                  "python"
+                ]
+              },
+              {
+                "name": "alt-sendme",
+                "description": "Send files and folders anywhere in the world without storing in cloud - any size, any format, no accounts, no restrictions.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-15T17:31:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "EV-Station-Website-full-stack",
+                "description": "A full-stack web application for electric vehicle (EV) station management, built with HTML, CSS, jQuery, SQL, PHP, and Babylon.js. This project includes features for station location, availability tracking, and 3D visualization of station layouts.",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2024-08-06T12:52:43Z",
+                "fork": false,
+                "topics": [
+                  "3d",
+                  "3d-models",
+                  "3dviewer",
+                  "ajax",
+                  "babylonjs",
+                  "bootstrap",
+                  "google-maps-api",
+                  "html-css-javascript",
+                  "jquery",
+                  "php",
+                  "sql"
+                ]
+              },
+              {
+                "name": "CarSearchHub-Discover-React-and-Explore-Cars-REACT-TAILWINDCSS-NODEJS-EXPRESS-SQL-",
+                "description": "CarSearchHub: Web app for car discovery. React frontend, Tailwind CSS, Node.js/Express backend, SQL database. Search, compare, and explore vehicles effortlessly.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-06T11:42:18Z",
+                "fork": false,
+                "topics": [
+                  "express",
+                  "nodejs",
+                  "react",
+                  "sql",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "MetaGPT",
+                "description": "\ud83c\udf1f The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-04T05:57:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "redux-and-redux-toolkit-tutorial-with-crud",
+                "description": "redux and redux toolkit project with vite and backend for crud operations",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-06T10:24:42Z",
+                "fork": false,
+                "topics": [
+                  "express",
+                  "mongodb",
+                  "nodejs",
+                  "react",
+                  "redux",
+                  "redux-thunk",
+                  "redux-toolkit",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "tanstack-tutorial-with-crud",
+                "description": "tanstack tutorial using typescript and a backend for crud operations",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-06T11:22:13Z",
+                "fork": false,
+                "topics": [
+                  "express",
+                  "mongodb",
+                  "nodejs",
+                  "react",
+                  "tanstack-query",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "ShoeVerse-3D-Footwear-Viewer",
+                "description": "ShoeVerse is a web-based 3D footwear visualization platform. It offers an immersive experience for exploring detailed 3D models of shoes, enhancing online shopping and sneaker appreciation.",
+                "stargazers_count": 4,
+                "language": "CSS",
+                "pushed_at": "2024-08-06T12:02:35Z",
+                "fork": false,
+                "topics": [
+                  "3d",
+                  "3d-models",
+                  "3dviewer",
+                  "babylonjs",
+                  "css",
+                  "html"
+                ]
+              },
+              {
+                "name": "Business-management-Csharp-ASP.NET",
+                "description": "A business management application built with C# and ASP.NET. This project includes features such as employee management, inventory tracking, sales analytics, and reporting.",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2024-08-06T13:12:10Z",
+                "fork": false,
+                "topics": [
+                  "asp",
+                  "aspdotnet",
+                  "auth",
+                  "csharp",
+                  "dotnet",
+                  "guna-ui",
+                  "net",
+                  "sql-server"
+                ]
+              },
+              {
+                "name": "RE-GAME-Mobile-Gaming-Platform",
+                "description": "Developed ReGame, a full-stack gaming platform enabling users to access a diverse collection of games for various consoles. ReGame empowers gamers to explore and enjoy their favorite titles effortlessly, providing a centralized hub for gaming enthusiasts.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-23T14:12:16Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "expo",
+                  "expo-router",
+                  "game-development",
+                  "games",
+                  "mongodb",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "n8n-workflows",
+                "description": "all of the workflows of n8n i could find (also from the site itself)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-09-28T13:49:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "expo",
+                "description": "An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-09-26T19:30:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TaskManager",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-28T14:41:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "machine-learning-housing-price-predection",
+                "description": "This project predicts housing prices using machine learning. It includes a dataset (housing.csv) and a Python script (machinel.py) to train the predictive model. The repository provides resources and code for implementing and understanding the model.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-07-17T11:05:56Z",
+                "fork": false,
+                "topics": [
+                  "anaconda",
+                  "machine-learning",
+                  "python",
+                  "spider"
+                ]
+              },
+              {
+                "name": "gestion-commercial-j2ee",
+                "description": "This project is a Java EE (J2EE) application aimed at managing commercial activities within an organization. It leverages the power of Java EE technologies to provide a robust and scalable solution for handling various aspects of commercial management.",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2024-07-17T12:02:57Z",
+                "fork": false,
+                "topics": [
+                  "j2ee",
+                  "java",
+                  "maven",
+                  "mvc",
+                  "sql",
+                  "tomcat"
+                ]
+              },
+              {
+                "name": "TransLingo-Multilingual-Sound-Mapping",
+                "description": "TransLingo is a React and Chakra UI-based web application that allows users to compare and map sounds between different languages. Built with Node.js, Express.js, and SQL, it provides an interactive platform for linguistic analysis and translation studies.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-02T15:05:56Z",
+                "fork": false,
+                "topics": [
+                  "chakra-ui",
+                  "dark-mode",
+                  "express",
+                  "languages",
+                  "nodejs",
+                  "react",
+                  "sql"
+                ]
+              },
+              {
+                "name": "DIGIART-Learn-and-Explore-Digital-Artistry",
+                "description": "DIGIART is a platform built with HTML, CSS, and JavaScript, offering tutorials to learn digital art and showcasing the work of various artists. Our mission is to build a vibrant community of digital artists and enthusiasts.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2024-08-06T12:17:42Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "css",
+                  "html",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "DramaWebI",
+                "description": "A web application for discovering and watching dramas, utilizing the TMDB API for fetching movie and TV show data. This project features search and categorization",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-06T13:02:48Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "axios",
+                  "react",
+                  "tailwindcss",
+                  "ui-components",
+                  "ux-ui"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:29.651605+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

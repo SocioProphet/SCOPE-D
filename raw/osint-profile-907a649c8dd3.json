@@ -1,0 +1,280 @@
+{
+  "profileId": "osint-profile-907a649c8dd3",
+  "target": "rob0pup",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:36.137093+00:00",
+  "completedAt": "2026-06-21T15:32:36.764231+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3a28becc",
+      "lookupType": "github_context",
+      "target": "rob0pup",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "rob0pup",
+            "name": "R\u00b2",
+            "type": "User",
+            "company": "R\u00b2 Consulting",
+            "blog": "https://robinrahman.pro",
+            "location": "Malaysia / Singapore / Japan / US",
+            "bio": null,
+            "public_repos": 23,
+            "followers": 1381,
+            "following": 13700,
+            "created_at": "2018-04-11T12:17:00Z",
+            "updated_at": "2026-06-20T14:46:36Z",
+            "html_url": "https://github.com/rob0pup",
+            "avatar_url": "https://avatars.githubusercontent.com/u/38285616?v=4",
+            "repos": [
+              {
+                "name": "claude-code-temps",
+                "description": "CLI tool for configuring and monitoring Claude Code",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-06-20T00:02:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "medusa-pos-app",
+                "description": "Cross-platform Point of Sale desktop app built on Medusa and Tauri 2",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-18T08:19:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "openclaw",
+                "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T10:05:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "visual-sales-agent",
+                "description": "A Virtual Sales Agent that uses LangChain, LangGraph, and Gemini Flash to simulate customer interactions. Features include product inquiries, order management, and personalized recommendations through a user-friendly Streamlit interface.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2026-05-16T19:00:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "id-based-rag",
+                "description": "ID-based RAG FastAPI: Integration with Langchain and PostgreSQL/pgvector",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2026-05-17T15:15:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "system-design-primer",
+                "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-05-21T11:13:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tech-interview-handbook",
+                "description": "\ud83d\udcaf Curated coding interview preparation materials for busy software engineers",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-07-10T00:25:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fashion-product-generator",
+                "description": "Easy demo for finetuning a pre-trained Stable Diffusion XL with LoRA using the collected fashion dataset from scratch.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-18T18:54:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "designmd-supply",
+                "description": "A supply of the world's designmds",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-29T20:45:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "footlocker-sneaker",
+                "description": "Sneaker BOT for Footlocker USA",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2026-06-02T18:38:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "erc20-launchpad",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Solidity",
+                "pushed_at": "2026-05-17T16:03:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tripos",
+                "description": "Cambridge Maths Tripos notes",
+                "stargazers_count": 1,
+                "language": "TeX",
+                "pushed_at": "2018-04-11T13:46:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cam-notes",
+                "description": "My Cambridge Lecture Notes",
+                "stargazers_count": 1,
+                "language": "TeX",
+                "pushed_at": "2018-05-14T15:52:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "project-based-learning",
+                "description": "Curated list of project-based tutorials",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-08-15T05:33:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "state-of-the-art-shitcode",
+                "description": "\ud83d\udca9State-of-the-art shitcode principles your project should follow to call it a proper shitcode",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-07-07T21:22:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "faker-ruby",
+                "description": "A library for generating fake data such as names, addresses, and phone numbers.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-08T02:19:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Rust-Full-Stack",
+                "description": "Rust projects here are easy to use. There are blog posts for them also.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-05-10T09:50:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rack",
+                "description": "A modular Ruby web server interface.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-12T11:04:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ruby-lsp",
+                "description": "An opinionated language server for Ruby",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-11T21:33:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aws-sdk-ruby",
+                "description": "The official AWS SDK for Ruby",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-09T19:19:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rails",
+                "description": "Ruby on Rails",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-06T08:59:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "generative-ai-with-javascript",
+                "description": "Join a time-traveling adventure where you meet history\u2019s legends while learning Generative AI technologies! \u2728",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-25T11:38:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Territorial",
+                "description": "First ever client for Territorial.io !",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-08T13:17:01Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:36.763747+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

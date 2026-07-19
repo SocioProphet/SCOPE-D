@@ -1,0 +1,292 @@
+{
+  "profileId": "osint-profile-9bf3309f7182",
+  "target": "Dark-Xploit",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:21.186743+00:00",
+  "completedAt": "2026-06-21T15:32:22.015374+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-bb9f78d5",
+      "lookupType": "github_context",
+      "target": "Dark-Xploit",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Dark-Xploit",
+            "name": "Tylor",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Kenya",
+            "bio": "Darkness isn't just a theme, it's the codebase. #Dark-Xploit",
+            "public_repos": 24,
+            "followers": 1426,
+            "following": 1299,
+            "created_at": "2024-10-16T06:39:44Z",
+            "updated_at": "2026-06-03T15:55:18Z",
+            "html_url": "https://github.com/Dark-Xploit",
+            "avatar_url": "https://avatars.githubusercontent.com/u/185170039?v=4",
+            "repos": [
+              {
+                "name": "CypherX",
+                "description": "\ud835\ude4f\ud835\ude43\ud835\ude40 \ud835\ude4a\ud835\ude41\ud835\ude41\ud835\ude44\ud835\ude3e\ud835\ude44\ud835\ude3c\ud835\ude47 \ud835\ude3e\ud835\ude54\ud835\ude4b\ud835\ude43\ud835\ude40\ud835\ude4d \ud835\ude53 \ud835\ude4d\ud835\ude40\ud835\ude4b\ud835\ude4a\ud835\ude4e\ud835\ude44\ud835\ude4f\ud835\ude4a\ud835\ude4d\ud835\ude54.",
+                "stargazers_count": 2830,
+                "language": "Dockerfile",
+                "pushed_at": "2026-06-05T16:14:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CypherX-Ultra",
+                "description": "Mini Version of CypherX which is very lightweight and has multi-session support",
+                "stargazers_count": 177,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T09:57:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Baileys",
+                "description": "WhatsApp API",
+                "stargazers_count": 21,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-28T15:13:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SPACE-MD",
+                "description": null,
+                "stargazers_count": 1101,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-21T18:15:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AUTO-STATUS-BOT",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-09-25T23:26:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Assistant",
+                "description": "A chatbot application leveraging TensorFlow and Keras for AI model development, Angular for a responsive user interface, and Firebase for real-time backend services. This project demonstrates AI/ML integration with modern web development and cloud deployment.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-11-21T19:50:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "twenty",
+                "description": "Building a modern alternative to Salesforce, powered by the community.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-08-05T09:30:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "whatsapp-web.js",
+                "description": "A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2025-08-18T16:39:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Dark-Xploit",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 33,
+                "language": null,
+                "pushed_at": "2026-03-31T18:12:06Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "UltraX-Plugins",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-27T17:42:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "linux",
+                "description": "Linux kernel source tree",
+                "stargazers_count": 12,
+                "language": "C",
+                "pushed_at": "2026-04-01T07:33:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "XPLOADER-BOT",
+                "description": "\ud835\ude4f\ud835\ude43\ud835\ude40 \ud835\ude4a\ud835\ude41\ud835\ude41\ud835\ude44\ud835\ude3e\ud835\ude44\ud835\ude3c\ud835\ude47 \ud835\ude53\ud835\ude4b\ud835\ude47\ud835\ude4a\ud835\ude3c\ud835\ude3f\ud835\ude40\ud835\ude4d \ud835\ude3d\ud835\ude4a\ud835\ude4f \ud835\ude4d\ud835\ude40\ud835\ude4b\ud835\ude4a\ud835\ude4e\ud835\ude44\ud835\ude4f\ud835\ude4a\ud835\ude4d\ud835\ude54. ",
+                "stargazers_count": 68,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-06T15:04:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dreaded-v2",
+                "description": "A modular WhatsApp bot based on baileys.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-08T14:26:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Lilychanj-BaseBot",
+                "description": "Base Script WhatsApp Bot",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-11-08T12:13:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Advanced-search-operators-list",
+                "description": "List of the links to the docs for different services, which explain using of advanced search operators",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-02-22T02:23:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "leyscoders-api",
+                "description": "Free Open Source",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2021-03-31T05:24:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Zaramwol",
+                "description": "no credit userbot edited by @afnanplk and @Raashii",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-12-13T12:39:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Code-Server-Container",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2022-10-16T15:50:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "open-api",
+                "description": "Base Script for API Website",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-02T23:29:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "X-api",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-28T12:28:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "build-your-own-x",
+                "description": "Master programming by recreating your favorite technologies from scratch.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-29T21:02:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "refine",
+                "description": "A React Framework for building  internal tools, admin panels, dashboards & B2B apps with unmatched flexibility.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-08-04T08:15:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "puter",
+                "description": "\ud83c\udf10 The Internet OS! Free, Open-Source, and Self-Hostable.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-08-05T06:18:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "balzz",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-12-27T16:49:44Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:22.012780+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

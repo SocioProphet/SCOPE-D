@@ -1,0 +1,190 @@
+{
+  "profileId": "osint-profile-9d180bdc48b0",
+  "target": "MrpasswordTz",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:22.226807+00:00",
+  "completedAt": "2026-06-20T16:48:22.693955+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8bc80601",
+      "lookupType": "github_context",
+      "target": "MrpasswordTz",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "MrpasswordTz",
+            "name": "Mr.passwordTZ",
+            "type": "User",
+            "company": "cyber security ",
+            "blog": "",
+            "location": null,
+            "bio": "cyber security Researcher",
+            "public_repos": 13,
+            "followers": 1054,
+            "following": 821,
+            "created_at": "2022-05-03T09:00:05Z",
+            "updated_at": "2026-05-30T10:23:59Z",
+            "html_url": "https://github.com/MrpasswordTz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/104827262?v=4",
+            "repos": [
+              {
+                "name": "MrpasswordTz",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-06-20T13:56:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sqlkiller",
+                "description": "SQLKiller is a powerful and easy-to-use Python tool designed to automate SQL injection attacks. Compatible with both Linux and Termux, this tool is perfect for penetration testers and security enthusiasts looking to identify and exploit SQL injection vulnerabilities in web applications.",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2024-12-12T19:44:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bantuhunterAI",
+                "description": "BantuHunterAI is an autonomous, AI-powered security auditing and penetration testing platform designed to discover, verify, and exploit vulnerabilities with human-like precision.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-09T09:17:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "acunetix-cli",
+                "description": "A powerful Python CLI wrapper for Acunetix Vulnerability Scanner . Automate web security scans, manage targets, and generate reports directly from your terminal",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-03-08T12:45:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "leakhunter",
+                "description": "AI-powered breach intelligence platform for searching, analyzing, and monitoring exposed digital identities.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-01-21T09:38:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IP-RECON",
+                "description": "Ip-Recon is a python powerful reconnaissance tool for retrieving ip address information by using Geo.ipfy API, it developed for  termux and linux",
+                "stargazers_count": 39,
+                "language": "Python",
+                "pushed_at": "2024-07-13T22:16:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "raTrix",
+                "description": "raTrix is a powerful Android administration tool designed for Linux systems. It utilizes Python on the client-side and Java on the server-side to provide a robust and efficient management solution.",
+                "stargazers_count": 22,
+                "language": "Smali",
+                "pushed_at": "2024-12-28T00:46:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webripper-pro",
+                "description": "Webripper Pro is a comprehensive, professional-grade web vulnerability scanner that automates the detection of security flaws in websites. It is designed for penetration testers, bug bounty hunters, and security professionals seeking fast, actionable insights into the security posture of web applications.",
+                "stargazers_count": 41,
+                "language": "Python",
+                "pushed_at": "2025-07-04T23:23:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NetscanPro",
+                "description": "NetScanPro is a powerful network scanning tool that enables users to identify active devices on a network and detect potential vulnerabilities.  NetScanPro is an essential network security too. It uses NMAP",
+                "stargazers_count": 43,
+                "language": "Python",
+                "pushed_at": "2025-09-03T01:13:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WAFHUNTER",
+                "description": "WAFHUNTER is a Python script designed to detect Web Application Firewalls (WAFs) on websites. It uses a comprehensive list of WAF signatures to identify the presence of a WAF on a target website.",
+                "stargazers_count": 61,
+                "language": "Python",
+                "pushed_at": "2026-05-23T08:26:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cybervigil",
+                "description": "Cybervigil Al is a powerful and intelligent ethical hacking assistant designed specifically for LinUX systems. Built using Python and Al technology, Cybervigil aims to assist ethical hackers and security professionals in their efforts to identify and mitigate vulnerabilities and enhance the security of their systems.",
+                "stargazers_count": 31,
+                "language": "Python",
+                "pushed_at": "2025-07-13T22:11:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SessionGen",
+                "description": "Wa session gen ID",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-19T13:52:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Bongosec",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-01-18T12:04:12Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:22.690566+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

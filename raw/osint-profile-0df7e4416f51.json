@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-0df7e4416f51",
+  "target": "RafaelGallo",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:49.355747+00:00",
+  "completedAt": "2026-06-21T15:31:50.925105+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-16477f1d",
+      "lookupType": "github_context",
+      "target": "RafaelGallo",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "RafaelGallo",
+            "name": "Rafael Gallo",
+            "type": "User",
+            "company": "Data Scientist ",
+            "blog": "",
+            "location": "Brazil - S\u00e3o Paulo",
+            "bio": "Achieve glory by arduous, thorny paths - Ad Astra",
+            "public_repos": 318,
+            "followers": 1534,
+            "following": 3551,
+            "created_at": "2018-10-25T00:16:26Z",
+            "updated_at": "2026-06-19T13:11:21Z",
+            "html_url": "https://github.com/RafaelGallo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/44452165?v=4",
+            "repos": [
+              {
+                "name": "Retail-Historical-Sales-Forecasting",
+                "description": "Forecasting Weekly Department Sales Across 45 Retail Stores Using Time Series, Gradient Boosting, and Deep Learning",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-28T05:16:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "enso-forecasting-arima-sarima-prophet",
+                "description": "This project builds and evaluates classical time series models for **early prediction of ENSO phase transitions** at lead times of **1, 3, and 6 months**, using monthly climate indices from 1980 to 2026.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-27T03:28:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deploy_mlops_LLM_Hallucination_Detection",
+                "description": "Deploy LLM Hallucination Detection NLP",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-26T21:16:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM-Hallucination-Benchmark-nlp",
+                "description": "Projeto NLP machine learning Benchmark  modelos LLM",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-26T21:14:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MLOps-Deploy-Forecast-Retail-Sales",
+                "description": "This project includes a production-ready MLOps pipeline for model serving, monitoring, and automated retraining using modern infrastructure tools.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-26T04:46:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Forecast-Retail-Sales-Hass-Avocado",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-26T04:24:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NLP_Transformer_Airline_Reviews",
+                "description": "A Transformer-Based NLP System for Airline Experience Analysis",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-24T22:30:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Google-ADS---Machine-learning-predicts-new-leads.",
+                "description": "Supervised Regression + Unsupervised Clustering on Digital Marketing Data",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-24T04:26:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mri-stroke-detection-deep-learning",
+                "description": "Deep learning pipeline for automated brain stroke detection and classification from MRI scans. Implements VGG16 transfer learning with fine-tuning, Keras Tuner hyperparameter optimization, Grad-CAM explainability, and a Conditional GAN (CGAN) for synthetic MRI generation. Built with TensorFlow/Keras for clinical triage support.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-24T04:08:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Case_Koin_ml",
+                "description": "Case tecnico para cientista de dados Koin",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-01T01:11:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "enso-forecast",
+                "description": "Backend pipeline for constructing, validating, and benchmarking a monthly ENSO phase prediction dataset. Ingests NOAA CPC indices, engineers physically-informed features, and exports a clean tabular dataset for Kaggle.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-20T02:40:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "openai-cookbook",
+                "description": "Examples and guides for using the OpenAI API",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-18T20:44:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Project_Fraud_card_1M_transactions",
+                "description": "Projeto ML fraude ",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-12T16:16:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "case-ds-datarisk",
+                "description": "Case t\u00e9cnico datarisk para cientista de dados",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-17T08:39:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "datarisk-case-ds",
+                "description": "Desafio t\u00e9cnico aplicado no processo seletivo da Datarisk para cientistas de dados.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-16T13:05:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ML_deploy_Recommendation_system",
+                "description": "Deploy Recommendation system MLOps ",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-05T23:08:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM_Engineering_prompt_LLama3_Sentiment_analysis_climate",
+                "description": "LLM Llama sentiment analysis model repository",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-11-26T18:49:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML_System_recommendation_products_amazon_products",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-20T03:58:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML_noaa_icoads",
+                "description": "Projeto machine learning regress\u00e3o linear previs\u00e3o temperatura oceano usando base dados NOAA com consulta SQL BigQuery.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-20T02:11:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML_fraud_Citibank",
+                "description": "Modelo machine learning previs\u00e3o cart\u00e3o credito fraude cart\u00e3o Citibank.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-18T22:30:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Projetos_dsa",
+                "description": "Projetos da forma\u00e7\u00e3o cientista de dados data science academy ",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-09-09T23:42:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "conversational-datasets",
+                "description": "Large datasets for conversational AI",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2019-11-16T03:50:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FIAP-LLM-generative-models",
+                "description": "FIAP - Projeto curso generative models LLM",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-05T19:09:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM_eng_prompt_BR_Tucano",
+                "description": "LLM Brasileiro Tucano - Uma aplica\u00e7\u00e3o b\u00e1sica com LLM",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-05T04:31:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM_gemma_cookbook",
+                "description": "A collection of guides and examples for the Gemma open models from Google.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-15T00:57:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llm_rag_report_agent",
+                "description": "Agente LLM criar relatorio faz extra\u00e7\u00e3o de documentos.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-03-25T05:48:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OpenBioMed",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-20T17:34:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LLMs-in-Enterprise",
+                "description": "LLM Development, Design Patterns and Best Practices, First Edition - Published by Packt",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-15T13:51:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Case_tecnico_KPMG_ecommerce",
+                "description": "Case t\u00e9cnico",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-21T18:29:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deploy_case_ml_koin",
+                "description": "Deploy aplica\u00e7\u00e3o case machine learning Inadimpl\u00eancia usando docker streamlit",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-01T01:28:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI_Saude",
+                "description": "Esse projeto intelig\u00eancia artificial aplicando machine learning, an\u00e1lise de dados, depp learning intentifica\u00e7\u00e3o cancer de mama. Este projeto dedicado m\u00eas Outubro rosa.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-11-20T01:15:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML_NLP_Doc2Vec",
+                "description": "Projeto processamento linguagem natural aplicando modelo Doc2Vec modelos word embedding",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-01T20:25:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Matematica_data_science",
+                "description": "Reprositorio aplica\u00e7\u00e3o matematica para data science",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-03T18:10:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Android_IA_CNN_YOLOv8",
+                "description": "Projeto aplicativo android usando YOLOv8",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-07T02:48:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Medical-LLM-Vision-",
+                "description": "AI/Medical Imaging, using Vision-Language Models, explainability, uncertainty, and support for clinical decision-making.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-24T22:53:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NLP-Transformer-RoBERTa-BERT-",
+                "description": "Projeto nlp transformrs analise de sentimento usando modelo RoBERTa BERT ",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-23T22:32:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "darts",
+                "description": "A python library for user-friendly forecasting and anomaly detection on time series.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-04-13T18:55:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "5-Day-AI-Agents-",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-23T04:49:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Capstone-Project-IA-Agent-Kaggle-Google",
+                "description": "Projeto final curso de Agentes LLM do Google",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-23T04:31:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WhatsApp-Emotion-Classifier-NLP",
+                "description": "Projeto de **Classifica\u00e7\u00e3o de Emo\u00e7\u00f5es em Status do WhatsApp**, desenvolvido em Python e Streamlit.   O modelo usa *TF-IDF + Regress\u00e3o Log\u00edstica* para prever emo\u00e7\u00f5es **\ud83d\ude21 Angry**, **\ud83d\ude04 Happy** e **\ud83d\ude22 Sad** com base em textos curtos.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-28T01:01:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Case-Tecnico-Data-Science-Labs",
+                "description": "Case tecnico paipe",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-20T03:02:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Transformers-fine-tuning-BERT-",
+                "description": "Este reposit\u00f3rio oferece recursos e c\u00f3digo para entender e implementar o fine-tuning usando o modelo BERT (Bidirectional Encoder Representations from Transformers) para tarefas de processamento de linguagem natural (PLN).",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-27T16:05:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "portiforio_FIAP_MBA_DataScience",
+                "description": "portiforio projetos entregaveis durante sobe MBA Data Science IA da FIAP",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-06-17T05:29:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "medal_dataset",
+                "description": "Large medical text dataset curated for abbreviation disambiguation, designed for natural language understanding pre-training in the medical domain",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-18T01:52:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Project_SAS_COV19",
+                "description": "Projeto ciencias de dados sobe a Covid19 projetos ligado ETL, An\u00e1lise de dados, Modelagem preditiva, NLP",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-06T22:46:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ModernBERT",
+                "description": "Bringing BERT into modernity via both architecture changes and scaling",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-30T18:09:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "EuroSAT_Sentinel_2",
+                "description": "EuroSAT: Land Use and Land Cover Classification with Sentinel-2",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-03-09T11:53:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Generative_Deep_Learning_2nd_Edition",
+                "description": "The official code repository for the second edition of the O'Reilly book Generative Deep Learning: Teaching Machines to Paint, Write, Compose and Play.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-02T14:32:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "robo_trader_LLM_Qlearning_RNN",
+                "description": "Projeto rob\u00f4 trader materia aprendizado por refor\u00e7o utilizando LLM Qlearning RNN",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-06-28T03:40:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cognitive-Environments-FIAP",
+                "description": "Projeto Cognitive Environments FIAP ",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-09-28T21:53:46Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:50.924197+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

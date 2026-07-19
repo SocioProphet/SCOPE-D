@@ -1,0 +1,530 @@
+{
+  "profileId": "osint-profile-9b650ebaa8a3",
+  "target": "ivasik-k7",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:43.899989+00:00",
+  "completedAt": "2026-06-21T15:31:45.201649+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-465b7797",
+      "lookupType": "github_context",
+      "target": "ivasik-k7",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ivasik-k7",
+            "name": "Ivan",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Gdansk, Poland",
+            "bio": "\ud83c\uddfa\ud83c\udde6 ",
+            "public_repos": 52,
+            "followers": 1546,
+            "following": 7692,
+            "created_at": "2020-01-14T10:09:05Z",
+            "updated_at": "2026-03-19T12:47:09Z",
+            "html_url": "https://github.com/ivasik-k7",
+            "avatar_url": "https://avatars.githubusercontent.com/u/59869036?v=4",
+            "repos": [
+              {
+                "name": "terraform-shared-modules",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HCL",
+                "pushed_at": "2026-06-18T09:53:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "census-pcf",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-06-09T15:01:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vminv",
+                "description": "VMware vSphere pre-migration inventory & assessment",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-06-20T05:32:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidus-finops",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HCL",
+                "pushed_at": "2026-05-31T12:50:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ddd-shared",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HCL",
+                "pushed_at": "2026-05-13T13:26:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tfkit",
+                "description": "A toolkit for analyzing, visualizing, and validating Terraform infrastructure code",
+                "stargazers_count": 23,
+                "language": "Python",
+                "pushed_at": "2025-12-19T11:15:51Z",
+                "fork": false,
+                "topics": [
+                  "terrafrom",
+                  "tool"
+                ]
+              },
+              {
+                "name": "web-aws-cost-explorer",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-17T08:41:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "claude-certified-architect-program",
+                "description": "Claude Certified Architect learning roadmap with cheetsheets. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-03-26T08:17:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ivasik-k7",
+                "description": "This repository hosts the code for my personal resume, where you can learn about my background, skills, projects, and more.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-11-02T23:10:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-archon-lex",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-11T17:06:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VideoProcessor",
+                "description": "This repository provides tools to automatically generate subtitles for videos using artificial intelligence. It includes features to download videos from the internet, extract audio tracks, and create accurate subtitles.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-06-06T17:29:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api-archon-auth-providers",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-31T17:26:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tgbot-cashimine",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-31T16:15:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webpack-starting-config",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-07T19:14:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fastlane-Bitrise",
+                "description": "This repository provides a comprehensive guide and example configurations for setting up CI/CD using Fastlane and Bitrise. Learn how to automate the build, test, and release process for your mobile applications with ease.",
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2024-04-06T15:30:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-tfkit-landing",
+                "description": "This repository contains the source code for the official tfkit landing page. Built with modern web technologies to provide an excellent user experience for developers exploring the toolkit.",
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2025-12-19T11:24:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "environment_setup",
+                "description": "The Environment Enroller script simplifies the setup of a development environment on Unix-like operating systems. It installs essential utilities like curl, git, and vim, sets up Python3 with aliases, configures NVM and Node.js (defaulting to Node.js 18), and ensures the AWS CLI and AWS CDK are installed.",
+                "stargazers_count": 10,
+                "language": "Shell",
+                "pushed_at": "2024-07-26T09:17:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "auto_connector",
+                "description": "Automate GitHub user follow/unfollow operations using Python with this GitHub Connector Service. Follow or unfollow users programmatically using the GitHub API v3.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-12-03T16:34:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-bmi-calculator",
+                "description": "Max idi nahui",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-28T14:38:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tfkit-vscode",
+                "description": "A VS Code extension that brings Terraform analysis and visualization directly into your editor. Scan projects, generate dependency graphs, validate configurations, and manage infrastructure code without leaving VS Code.",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-04T12:10:23Z",
+                "fork": false,
+                "topics": [
+                  "terraform",
+                  "tfkit",
+                  "vscode"
+                ]
+              },
+              {
+                "name": "sys_hc",
+                "description": "Bash script designed to monitor and report on the health and performance of your system. It includes checks for service status, system information, performance metrics, resource usage, disk space, and network details, making it an essential tool for both development and production environments",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2024-07-28T18:24:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML-Services",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2021-11-17T11:40:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2021-08-02T13:25:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "space_pod",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2021-08-03T20:57:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2021-01-12T16:21:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-calendars",
+                "description": "React Native Calendar Components \ud83d\uddd3\ufe0f \ud83d\udcc6 ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-10-07T07:31:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rcc-infinite-load",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-06T08:00:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai_doc",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-11-14T13:17:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express-mongo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-13T07:40:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node.js-user-registration-mongodb",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-06T11:23:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github_actions_test",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2023-12-15T15:37:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scroll_picker",
+                "description": "An scrollable picker flutter package",
+                "stargazers_count": 2,
+                "language": "Dart",
+                "pushed_at": "2023-12-13T10:34:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sonar_installer",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2024-01-15T15:36:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "autoinst",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-03-11T14:44:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pandoc",
+                "description": "The pandoc script that could be integrated to CI/CD for convertation purposes",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2024-01-20T15:34:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DjangoQuestionsTest",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-05-27T13:55:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pdf_converter",
+                "description": "Ruby script responsible for converting adoc documentation to pdf document",
+                "stargazers_count": 2,
+                "language": "Ruby",
+                "pushed_at": "2024-04-06T19:52:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubuntu-python-poetry",
+                "description": "A Docker image based on Ubuntu Jammy (22.04) with Python 3.11 and Poetry installed, configured with essential development tools and utilities.",
+                "stargazers_count": 2,
+                "language": "Dockerfile",
+                "pushed_at": "2024-06-21T13:00:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bill_of_materials",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-06-10T09:57:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "image-gen-hub",
+                "description": "Automated Image Generation with Multiple Providers and RabbitMQ Queue Integration",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-07-12T19:29:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubuntu-node",
+                "description": "This repository provides a Docker setup for creating a development environment based on Ubuntu Jammy (22.04) with Node.js and npm. It includes essential tools and configurations to streamline JavaScript development.",
+                "stargazers_count": 3,
+                "language": "Dockerfile",
+                "pushed_at": "2024-07-01T13:53:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "leetcode_stats",
+                "description": "Python API for Leetcode statistic",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-07-21T18:01:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vscode-extension-helper",
+                "description": "This repository offers Bash scripts for managing Visual Studio Code (VS Code) extensions effortlessly",
+                "stargazers_count": 3,
+                "language": "PowerShell",
+                "pushed_at": "2024-07-19T07:58:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JobApplicationAPI",
+                "description": "A Python server to efficiently manage and track job applications. Features include application tracking, search and filter capabilities, notifications for follow-ups and deadlines, and secure user authentication to protect your data.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-07-14T15:24:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "telegram_webapp",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-07-24T12:16:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vindecoder",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-08-18T20:13:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aws_mentorship",
+                "description": "Mentorship tests",
+                "stargazers_count": 2,
+                "language": "HCL",
+                "pushed_at": "2025-04-29T10:41:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "azure-devops-branch-manager",
+                "description": "ADBM helps automate Git branch creation from Azure DevOps work items. Configure your project and PAT, then create branches with details from work items.",
+                "stargazers_count": 4,
+                "language": "Shell",
+                "pushed_at": "2024-08-01T18:40:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-agro-solutions",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-28T20:44:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "redux-simple-flow-explanation",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T22:04:34Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:45.200537+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

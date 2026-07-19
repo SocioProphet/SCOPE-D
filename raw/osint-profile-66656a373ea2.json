@@ -1,0 +1,526 @@
+{
+  "profileId": "osint-profile-66656a373ea2",
+  "target": "AI0228",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:32.456907+00:00",
+  "completedAt": "2026-06-21T15:28:34.828247+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-04f1f172",
+      "lookupType": "github_context",
+      "target": "AI0228",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "AI0228",
+            "name": "AI",
+            "type": "User",
+            "company": null,
+            "blog": "https://www.dimeadozen.ai/",
+            "location": null,
+            "bio": "I am Experienced AI & ML Engineer|| Full Stack Data Scientist with 6 years of experiences.",
+            "public_repos": 145,
+            "followers": 3436,
+            "following": 78509,
+            "created_at": "2023-09-23T15:53:33Z",
+            "updated_at": "2024-03-14T05:55:16Z",
+            "html_url": "https://github.com/AI0228",
+            "avatar_url": "https://avatars.githubusercontent.com/u/145859755?v=4",
+            "repos": [
+              {
+                "name": "ai-collection",
+                "description": "The Generative AI Landscape - A Collection of Awesome Generative AI Applications",
+                "stargazers_count": 21,
+                "language": null,
+                "pushed_at": "2024-03-22T04:58:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Data-Science-Projects-main",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-02-19T09:08:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "car_detection_yolov8",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-02-25T14:41:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chatbot",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2023-11-29T06:30:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI0228",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-02-09T15:39:04Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "ComfyUI-Colab-Notebook",
+                "description": "ComfyUI Colab Notebook for Image and Video Generation.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-27T11:38:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chatgpt_render",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-29T06:35:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "body-type-measurement",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-28T14:32:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AutoLLM-RAG-Demo",
+                "description": "AutoLLM RAG Demo built using Auto LLM library.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-03T20:17:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Analyzing-TV-Data",
+                "description": "Use data manipulation and visualization to explore one of two different television broadcast datasets: The Super Bowl and hit sitcom The Office!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-01-30T20:41:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "auto_testing_system",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-29T06:17:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "arbitrage_bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2023-11-29T02:42:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "assistant-master",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-11-30T09:08:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Create-Vector-Store-from-Scratch",
+                "description": "Create Vector Store from Scratch in pure Python.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-15T07:10:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Data-Science-Book",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-02-20T21:15:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NLTK-Bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-02-23T09:27:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data-Science-Job-Market-Analysis-master",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-02-23T07:23:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "generative-ai-for-beginners",
+                "description": "18 Lessons, Get Started Building with Generative AI  \ud83d\udd17 https://microsoft.github.io/generative-ai-for-beginners/",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-02-28T18:14:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NextJS-AI-SaaS",
+                "description": "The project \"NextJS-AI-SaaS\" combines the Next.js framework with Artificial Intelligence to create a Software as a Service (SaaS) solution that leverages AI capabilities. This project involves developing a web application using Next.js, a popular React framework known for its performance and scalability. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-01-03T22:38:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "crack_detection_private",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2023-11-29T06:38:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chatllama",
+                "description": "ChatLLaMA \ud83d\udce2 Open source implementation for LLaMA-based ChatGPT runnable in a single GPU. 15x faster training process than ChatGPT",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-03-07T09:07:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-deep-reinforcement-learning-in-finance",
+                "description": "\ud83d\udd2c A collection for those AI (RL / DL / SL / Evoluation / Genetic Algorithm) used in financial market. otherwise, we add Technology Analysis / Alpha Research / Arbitrage and other useful strategies tools & docs in quantitative finance market.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2019-05-18T08:03:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "carboncentrik-calculator",
+                "description": "A simple Streamlit app for calculating the Carbon Footprint. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-12-10T08:42:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gptea-github-news",
+                "description": "Get AI newsletter recommendations tailored to developers and startups using ChatGPT prompt.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-05T06:21:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-summarizer",
+                "description": "Modern OpenAI GPT-4 Article Summarizer",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-12T04:04:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yolov8_tracking",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2023-11-29T07:06:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "funNLP",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-03-06T12:50:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "anything-llm",
+                "description": "A multi-user ChatGPT for any LLMs and vector database. Unlimited documents, messages, and storage in one privacy-focused app. Now available as a desktop application!",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-06T16:05:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "python-AI-Selenium",
+                "description": "A collection of free AIs to use with python",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-14T15:08:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "JavaAndGroovy",
+                "description": "Example project using both Groovy and Java interchangeably [maven and gradle]",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2013-07-27T20:26:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TV-Show-Success-Prediction",
+                "description": "Model that predicts whether a show will be a winner or loser based on summary description and characteristics",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2017-09-26T23:59:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Chat-with-PDF-Chatbot",
+                "description": "This Chatbot is an interactive app developed to assist users to interact with their PDF. It is built using Open Source Stack. No OpenAI is required.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-29T18:18:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Search-Your-PDF-App",
+                "description": "Search Your PDF App using Langchain, ChromaDB, Sentence Transformers, and LaMiNi LM Model. This app is completely powered by Open Source Models.  No OpenAI key is required.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-08T05:38:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Investment-Banker-Chatbot",
+                "description": "Investment Banker Chatbot using Intel's Neural Chat 7B LLM, BGE Embeddings, ChromaDB, Langchain, and CTransformers.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-27T18:09:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Create-Llama-RAG-App",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-26T07:36:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Medical-RAG-using-Meditron-7B-LLM",
+                "description": "Medical RAG QA App using Meditron 7B LLM, Qdrant Vector Database, and PubMedBERT Embedding Model.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-03T11:17:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unsloth-Fine-Tuning",
+                "description": "Unsloth Fine Tuning",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-01-12T11:02:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Metadata-Enrichment-using-KeyBERT",
+                "description": "Metadata Enrichment using KeyBERT for advanced and improved RAG.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-09T17:59:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Starling-7B-LLM-Notebook",
+                "description": "Starling 7B LLM Notebook",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-09T14:03:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Fastest-Image-Generation-using-LCM-LoRA",
+                "description": "Fastest Image Generation using LCM LoRA.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-24T21:44:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Evaluation-of-LLMs-and-RAGs",
+                "description": "A complete guide to evaluate LLMs and RAGs. Both theory and code based approaches covered.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-16T06:19:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Giskard-RAG-Evaluation-Demo",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-06T19:28:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VoiceBot_LipSync",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-29T06:58:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "text_to_html_django",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-29T06:58:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "walletpay",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2023-11-29T08:26:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pose_detection_mmpose",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-29T06:49:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "foodgram",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-29T06:42:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HR_VITON",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2023-11-29T06:53:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PDF_CHAT",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-11-29T06:47:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PDF_chatbot",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-11-29T06:48:49Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:34.827437+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

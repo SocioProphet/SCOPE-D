@@ -1,0 +1,172 @@
+{
+  "profileId": "osint-profile-5163f7287a3f",
+  "target": "mhmdghaedi",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:23.292163+00:00",
+  "completedAt": "2026-06-21T15:31:23.819384+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f694da21",
+      "lookupType": "github_context",
+      "target": "mhmdghaedi",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mhmdghaedi",
+            "name": "mhmd",
+            "type": "User",
+            "company": null,
+            "blog": "mhmdghaedi.ir",
+            "location": "shiraz",
+            "bio": "I'm a senior full-stack developer.\r\nReactJS, NextJS, NodeJS, JavaScript, C#, Data scientist, deep learning, Machine learning",
+            "public_repos": 11,
+            "followers": 1642,
+            "following": 3116,
+            "created_at": "2023-10-29T08:39:12Z",
+            "updated_at": "2026-04-28T16:44:59Z",
+            "html_url": "https://github.com/mhmdghaedi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/149295862?v=4",
+            "repos": [
+              {
+                "name": "mhmduie3",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-10T06:58:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "calculater",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2024-07-22T10:49:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mystore",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-08-08T19:44:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mhmdghaedi",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-09-23T16:05:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubookshop",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-19T16:41:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-19T16:22:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-19T16:23:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "market",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-01T21:15:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "game",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-22T10:48:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "practice",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "CSS",
+                "pushed_at": "2024-07-22T10:46:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "push",
+                "description": "Turing research group.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-14T18:51:39Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:23.818603+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

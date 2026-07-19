@@ -1,0 +1,379 @@
+{
+  "profileId": "osint-profile-13c99331adb5",
+  "target": "ragibalasad",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:36.674413+00:00",
+  "completedAt": "2026-06-21T15:31:37.588706+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ab3b6e36",
+      "lookupType": "github_context",
+      "target": "ragibalasad",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ragibalasad",
+            "name": "Ragib Al Asad",
+            "type": "User",
+            "company": "@DevEleven-io",
+            "blog": "",
+            "location": null,
+            "bio": "Open source contributor.",
+            "public_repos": 29,
+            "followers": 1570,
+            "following": 474,
+            "created_at": "2020-11-18T14:07:09Z",
+            "updated_at": "2026-05-31T13:49:58Z",
+            "html_url": "https://github.com/ragibalasad",
+            "avatar_url": "https://avatars.githubusercontent.com/u/74665386?v=4",
+            "repos": [
+              {
+                "name": "thanks-for-the-star",
+                "description": "Star this repo and get an instant follow back \ud83d\udc96",
+                "stargazers_count": 65,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-29T16:34:43Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "github-webhook",
+                  "nextjs14",
+                  "serverless-functions"
+                ]
+              },
+              {
+                "name": "is-zero-zero",
+                "description": "wonderfully overengineered python project that proves 0 == 0",
+                "stargazers_count": 29,
+                "language": "Python",
+                "pushed_at": "2026-04-08T17:05:10Z",
+                "fork": false,
+                "topics": [
+                  "is-zero-zero",
+                  "math",
+                  "python"
+                ]
+              },
+              {
+                "name": "gitstuff",
+                "description": "\ud83d\ude3a Track your github followers quick and easy",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-22T21:46:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ragib-portfolio",
+                "description": "my portfolio website built with next.js and tailwindcss",
+                "stargazers_count": 33,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-20T14:30:38Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "portfolio-website",
+                  "react",
+                  "tailwind"
+                ]
+              },
+              {
+                "name": "git-stache",
+                "description": "clone all of  your github repositories at once",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-10T13:18:04Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "git-clone",
+                  "github"
+                ]
+              },
+              {
+                "name": "ccr-blood-registry",
+                "description": "Open-source student blood donor registry \u2014 built for Carmichael College Rangpur, forkable for any institution",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-15T22:25:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "osint-map",
+                "description": "\ud83c\udf10 OSINT mapping app for real-time tracking of geopolitical events.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-30T14:09:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ragibalasad",
+                "description": "My profile README",
+                "stargazers_count": 22,
+                "language": null,
+                "pushed_at": "2026-01-09T16:16:35Z",
+                "fork": false,
+                "topics": [
+                  "github-config",
+                  "readme-profile"
+                ]
+              },
+              {
+                "name": "node-pathways",
+                "description": "Find the shortest path between two nodes in a network of interconnected nodes",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-21T09:01:30Z",
+                "fork": false,
+                "topics": [
+                  "astar-algorithm",
+                  "pathfinding"
+                ]
+              },
+              {
+                "name": "lan-shout",
+                "description": "CLI tool for instant messaging across LAN",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-02-06T17:10:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gocloudy",
+                "description": "CLI tool that provides weather forecasts directly to your terminal.",
+                "stargazers_count": 24,
+                "language": "Go",
+                "pushed_at": "2024-10-12T20:50:32Z",
+                "fork": false,
+                "topics": [
+                  "cli-application",
+                  "forecast",
+                  "go",
+                  "weatherapi"
+                ]
+              },
+              {
+                "name": "block-bad-sites",
+                "description": "Block access to thousands of corn \ud83c\udf3d websites on your PC \ud83d\udca9",
+                "stargazers_count": 26,
+                "language": "Python",
+                "pushed_at": "2025-05-01T16:41:10Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "blocker",
+                  "corn",
+                  "python3",
+                  "script"
+                ]
+              },
+              {
+                "name": "low-level-dev-portfolio",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-16T12:09:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CustomVSCodeTheme",
+                "description": "A Theme for VS Code. Color theme designed to match my personal choice.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2021-04-29T13:38:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "custom-bashrc",
+                "description": "Custom bashrc for linux terminal",
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2026-01-08T00:36:48Z",
+                "fork": false,
+                "topics": [
+                  "bashrc",
+                  "shell-script"
+                ]
+              },
+              {
+                "name": "community-chess",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-06-21T10:16:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chess",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-17T07:38:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-readme-stats",
+                "description": ":zap: Dynamically generated stats for your github readmes",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-01-05T18:01:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ChatRoom",
+                "description": "A LAN based chat application",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-10-11T15:08:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChatRoom-Server",
+                "description": "TCP server for the app ChatRoom",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2024-10-11T15:05:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Terminal-Chat-UI",
+                "description": "Terminal chat application UI built with python curses library.",
+                "stargazers_count": 24,
+                "language": "Python",
+                "pushed_at": "2024-09-19T12:44:50Z",
+                "fork": false,
+                "topics": [
+                  "cli-app",
+                  "curses",
+                  "messaging-app",
+                  "python3",
+                  "terminal-based",
+                  "tui-app"
+                ]
+              },
+              {
+                "name": "count-to-one-billion",
+                "description": "speed test of counting to one billion with different programming languages",
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2024-09-27T17:38:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SomeRoom",
+                "description": "Real-time chatroom application tailored for group conversations.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2024-10-12T00:11:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dictionary-maker",
+                "description": "A simple web application built with Flask that allows users to create, view, and manage a dictionary of words. ",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-10-15T12:10:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "next-blog",
+                "description": "\ud83d\udcdc Full-stack blogging platform with wildcard domains. e.g. you.frostcore.tech + user interactions + SSR & SSG",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-08T11:47:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "memorial-website",
+                "description": "Production deployment fork",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-20T16:01:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kivy-Calculator",
+                "description": "GUI calculator application built with Python's Kivy module.",
+                "stargazers_count": 9,
+                "language": "kvlang",
+                "pushed_at": "2024-06-12T09:12:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-profile-experiments",
+                "description": "Repo for all kinds of tests and expeiments on github profile",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2024-09-29T15:12:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "n-body-simulation",
+                "description": "Charged particles orbit simulation in julia",
+                "stargazers_count": 0,
+                "language": "Julia",
+                "pushed_at": "2024-09-25T08:28:47Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:37.587891+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

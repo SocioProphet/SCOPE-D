@@ -1,0 +1,163 @@
+{
+  "profileId": "osint-profile-511ae6d4d6d8",
+  "target": "ilyesw",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:19.785843+00:00",
+  "completedAt": "2026-06-21T15:28:20.322585+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-bbe3a1d1",
+      "lookupType": "github_context",
+      "target": "ilyesw",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ilyesw",
+            "name": "\u0131\u0196\u10e7\u025b\u0282 \ud83c\udf1f",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 10,
+            "followers": 3850,
+            "following": 9784,
+            "created_at": "2023-11-28T15:43:00Z",
+            "updated_at": "2026-06-03T14:59:10Z",
+            "html_url": "https://github.com/ilyesw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/152307969?v=4",
+            "repos": [
+              {
+                "name": "ilyesw",
+                "description": null,
+                "stargazers_count": 25,
+                "language": null,
+                "pushed_at": "2026-06-18T11:41:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Facial-Recognition",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-09T12:58:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Charity-Link",
+                "description": "Plateforme humanitaire de dons en ligne avec Chatbot IA \u2014 PFE",
+                "stargazers_count": 2,
+                "language": "Blade",
+                "pushed_at": "2026-05-25T22:59:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Free-Certifications",
+                "description": "A curated list of free courses & certifications.",
+                "stargazers_count": 34,
+                "language": null,
+                "pushed_at": "2024-10-31T23:28:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Android-Kotlin-ToDoList",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2026-02-09T12:05:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Implementing-a-Machine-Learning-pipeline-with-Amazon-SageMaker",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-09T12:37:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LifeLeft-SOAP-Project",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-02-09T11:40:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gestion-Soutenance",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2026-02-09T11:08:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gestion-Associations",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-09T10:20:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ebook-2",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2017-11-29T09:29:12Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:20.321484+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

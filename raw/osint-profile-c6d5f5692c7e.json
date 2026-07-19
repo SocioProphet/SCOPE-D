@@ -1,0 +1,603 @@
+{
+  "profileId": "osint-profile-c6d5f5692c7e",
+  "target": "NamesMT",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:33.004512+00:00",
+  "completedAt": "2026-06-20T16:48:34.976530+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ab445968",
+      "lookupType": "github_context",
+      "target": "NamesMT",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "NamesMT",
+            "name": "Trung Dang",
+            "type": "User",
+            "company": "@topnames",
+            "blog": "",
+            "location": "Viet Nam",
+            "bio": "Never say \"I don't know why it works\" in coding. Dive in and understand it.",
+            "public_repos": 122,
+            "followers": 978,
+            "following": 878,
+            "created_at": "2016-11-20T11:11:06Z",
+            "updated_at": "2026-06-01T05:58:27Z",
+            "html_url": "https://github.com/NamesMT",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23612546?v=4",
+            "repos": [
+              {
+                "name": "spreadsheet-i18n--mono",
+                "description": "Libraries and applications for internationalization with spreadsheets",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-29T06:13:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "starter-monorepo",
+                "description": "Monorepo with \ud83e\udd16 AI goodies | LLM Chat | \ud83d\udd25Hono + OpenAPI & RPC, Nuxt, Convex, SST Ion, WorkOS AuthKit, Tanstack Query, Shadcn, UnoCSS, Spreadsheet I18n, Lingo.dev, grammY Telegram Bot",
+                "stargazers_count": 191,
+                "language": "Vue",
+                "pushed_at": "2026-04-21T05:28:44Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "arktype",
+                  "boilerplate",
+                  "convex",
+                  "fullstack",
+                  "hono",
+                  "i18n",
+                  "kinde",
+                  "llm",
+                  "monorepo",
+                  "nuxt",
+                  "openapi",
+                  "rpc",
+                  "scalar",
+                  "shadcn",
+                  "starter",
+                  "tanstack-query",
+                  "unocss",
+                  "vue",
+                  "vue-query"
+                ]
+              },
+              {
+                "name": "linux-stuff",
+                "description": "Some preconfigured Linux images and scripts",
+                "stargazers_count": 14,
+                "language": "Shell",
+                "pushed_at": "2026-06-19T21:11:00Z",
+                "fork": false,
+                "topics": [
+                  "alpine",
+                  "aws-cli",
+                  "fnm",
+                  "nodejs",
+                  "ubuntu",
+                  "zsh"
+                ]
+              },
+              {
+                "name": "hono-cookie-state",
+                "description": "Simple library to persist data / states in cookies for Hono, securely (via iron-webcrypto) and with type-safety",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-30T04:32:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RooFlow-generic",
+                "description": "RooFlow's fork that aims to be more generic, so that it could be used in collaborated projects (OSS)",
+                "stargazers_count": 15,
+                "language": "Batchfile",
+                "pushed_at": "2025-04-24T03:27:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "starter-ts",
+                "description": "Opinionated starter template for TypeScript library (DevContainer included)",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-24T09:30:28Z",
+                "fork": false,
+                "topics": [
+                  "boilerplate",
+                  "starter",
+                  "template",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "nuxt-modern-cropper",
+                "description": "Power-packed wrapper over `cropperjs`",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-04T08:58:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-modern-cropper",
+                "description": "Power-packed wrapper over `cropperjs`",
+                "stargazers_count": 7,
+                "language": "Vue",
+                "pushed_at": "2025-04-04T13:35:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "config-rocket",
+                "description": "Easily create and deploy configurable config packs!",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-25T18:20:03Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "configurable",
+                  "cookiecutter",
+                  "template",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "kontroll",
+                "description": "Tiny, dead-simple package for function behavior controls like debounce, throttle, countdown",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-17T05:17:35Z",
+                "fork": false,
+                "topics": [
+                  "behavior",
+                  "control",
+                  "debounce",
+                  "function",
+                  "invoke",
+                  "limit",
+                  "throttle"
+                ]
+              },
+              {
+                "name": "repo-release",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-28T07:12:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fetch-result-please",
+                "description": "Get a consumable result from a JS fetch `Response`, smartly and easily.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-08T04:51:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easy-spreadsheet-write",
+                "description": "Easy UX/DX for creating spreadsheet files!",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-17T08:25:22Z",
+                "fork": true,
+                "topics": [
+                  "csv",
+                  "excel",
+                  "export",
+                  "json",
+                  "sheetjs",
+                  "spreadsheet",
+                  "xlsx"
+                ]
+              },
+              {
+                "name": "roo-rocket",
+                "description": "Easily create and deploy configurable Roo Code config packs!",
+                "stargazers_count": 45,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-25T13:42:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hono-adapter-aws-lambda",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-22T04:21:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "timezone-convert",
+                "description": "Convert between timezone formats",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-03T11:17:57Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "convert",
+                  "iana",
+                  "timezone",
+                  "tzid",
+                  "windows",
+                  "windows-timezone"
+                ]
+              },
+              {
+                "name": "lambda-voie",
+                "description": "A very opinionated AWS Lambda router",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-15T15:26:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NamesMT",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-01-22T02:32:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sencrypt",
+                "description": "Simple encrypted secret helper",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-18T12:04:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aes-gcm",
+                "description": "Dead simple, modern, cross-platform AES-GCM encryption util package.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-14T07:09:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shash",
+                "description": "Simple stateful-salt hash helper",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-18T19:14:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "obnoxious-log",
+                "description": "Meme package - https://youtu.be/7vSb1CtCad0?t=303",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T11:45:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utils",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-07T14:12:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hono-wait-until",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-25T11:53:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scripts-arduino",
+                "description": "Repo for some of my random arduino scripts",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2022-06-17T22:28:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hono-object-storage-pmtiles-server",
+                "description": "Example repo for a Hono tile server in front of a pmtiles source stored in object storage (S3-compatible) provider",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-12T14:03:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pmtiles-sources",
+                "description": "Some example `pmtiles` `Source` classes",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T07:59:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "unplugin-sheet-i18n",
+                "description": "unplugin-sheet-i18n enables doing your i18n in a [spread]sheet for a better collaborative experience with non-coders and maintainability.",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-14T04:16:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FastFlowLM",
+                "description": "Run LLMs on AMD Ryzen\u2122 AI NPUs in minutes. Just like Ollama - but purpose-built and deeply optimized for the AMD NPUs.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-13T09:50:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Roo-Code",
+                "description": "Roo Code (prev. Roo Cline) gives you a whole dev team of AI agents in your code editor.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-12T17:03:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nuxt",
+                "description": "The Intuitive Vue Framework.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-24T05:20:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hono",
+                "description": "Fast, Lightweight, Web-standards",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-17T12:22:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "roe.dev",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-02T12:27:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "convex-nuxt",
+                "description": "Convex module for Nuxt 3",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-11T17:25:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue-sonner",
+                "description": "\ud83d\udd14 An opinionated toast component for Vue & Nuxt.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-15T04:59:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "convex-js",
+                "description": "TypeScript/JavaScript client library for Convex",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-17T04:30:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "convex-vue",
+                "description": "Convex integration for Vue",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-17T04:40:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue-plugins",
+                "description": "        Discover and explore the best Vue.js plugins to supercharge your applications.  Curated by the community, maintained by developers.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-25T09:42:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "website",
+                "description": "Repository for hono.dev",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-08-01T07:30:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "antfu-utils",
+                "description": "Collection of common JavaScript / TypeScript utils",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-21T09:07:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chat",
+                "description": "\"Chat\" is a fully open-source, super-efficient, powerful, yet friendly LLM Chat system",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-06-17T04:48:08Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "brainstorm",
+                  "chat",
+                  "llm",
+                  "multi-users"
+                ]
+              },
+              {
+                "name": "inspira-ui",
+                "description": "Build beautiful website using Vue & Nuxt.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-27T09:57:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rm-samples",
+                "description": "Sample repo for how to create your `item` repository for `Roo Marketplace`, check the different branches :)",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-01T06:21:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "config-packs",
+                "description": "My `config-rocket` ecosystem config packs!",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-23T05:17:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "config-packs-template",
+                "description": "Template repo for `config-rocket` ecosystem config pack creators.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-23T05:17:32Z",
+                "fork": false,
+                "topics": [
+                  "config-pack",
+                  "config-rocket"
+                ]
+              },
+              {
+                "name": "docker-action",
+                "description": "Template for creating a local docker action repo for testing things based on a docker image.",
+                "stargazers_count": 0,
+                "language": "Dockerfile",
+                "pushed_at": "2024-06-23T08:49:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AlpineWSL",
+                "description": "Alpine Linux based WSL distribution. Supports multi-install. Lightest WSL distribution.",
+                "stargazers_count": 0,
+                "language": "Makefile",
+                "pushed_at": "2025-03-09T16:39:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "utils-lambda",
+                "description": "collection of some useful utilities and types targeting AWS Lambda.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-18T15:29:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Chivo",
+                "description": "Open Source grotesque sans-serif typeface family",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-01-01T10:29:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "starter-nuxt",
+                "description": "Nuxt, Shadcn, Primevue, Unocss",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-26T08:35:15Z",
+                "fork": false,
+                "topics": [
+                  "boilerplate",
+                  "nuxt",
+                  "primevue",
+                  "shadcn",
+                  "starter",
+                  "unocss",
+                  "vue"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:34.975552+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

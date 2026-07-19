@@ -1,0 +1,535 @@
+{
+  "profileId": "osint-profile-749343cbd4a1",
+  "target": "arch-yunus",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:44.400511+00:00",
+  "completedAt": "2026-06-20T13:52:45.602621+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ae4072f9",
+      "lookupType": "github_context",
+      "target": "arch-yunus",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "arch-yunus",
+            "name": "Bahattin Yunus \u00c7ET\u0130N",
+            "type": "User",
+            "company": "Tulpar Aero-Dynamics",
+            "blog": "https://bionluk.com/bahattinyunus",
+            "location": "T\u00fcrkiye",
+            "bio": "AI Researcher & Edge-AI Developer | Tech Philosophy | Freelance Academic Researcher | Empowered by AI Technologies",
+            "public_repos": 348,
+            "followers": 5600,
+            "following": 9112,
+            "created_at": "2021-05-04T13:01:30Z",
+            "updated_at": "2026-05-30T12:07:07Z",
+            "html_url": "https://github.com/arch-yunus",
+            "avatar_url": "https://avatars.githubusercontent.com/u/83650878?v=4",
+            "repos": [
+              {
+                "name": "university-courses",
+                "description": "\ud83c\udfdb\ufe0f Akademik \u0130\u015fletim Sistemi: M\u00fcltidisipliner Solopreneurlar i\u00e7in AI entegreli bilgi cephaneli\u011fi. \u2699\ufe0f Meta-M\u00fchendislik, Bilim ve Gelece\u011fin Teknolojileri. \ud83d\ude80\ud83d\udc8e",
+                "stargazers_count": 40,
+                "language": "Python",
+                "pushed_at": "2026-05-25T15:47:11Z",
+                "fork": false,
+                "topics": [
+                  "university-notes-akademik-open-source-education"
+                ]
+              },
+              {
+                "name": "ai_courses",
+                "description": "Bu depo, yapay zeka (AI) ve programlama alanlar\u0131nda ba\u015flang\u0131\u00e7tan ileri seviyeye kadar uzanan, T\u00fcrk\u00e7e e\u011fitim materyalleri, pratik kod \u00f6rnekleri ve se\u00e7ilmi\u015f kaynaklar sunmaktad\u0131r. Amac\u0131m\u0131z, karma\u015f\u0131k AI konseptlerini anla\u015f\u0131l\u0131r k\u0131lmak ve T\u00fcrkiye'deki kaynak havuzuna sistematik bir katk\u0131 sa\u011flamakt\u0131r.",
+                "stargazers_count": 21,
+                "language": "Python",
+                "pushed_at": "2026-04-24T21:05:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "teknofest_dikey_inisli_roket",
+                "description": "Vertical-Arch: Dikey \u0130ni\u015fli Roket Teknolojileri | TEKNOFEST 2025 kapsam\u0131nda geli\u015ftirilen, y\u00f6r\u00fcnge s\u0131n\u0131f\u0131 roketlerin geri kazan\u0131m\u0131 i\u00e7in tasarlanm\u0131\u015f geli\u015fmi\u015f otonom ini\u015f mimarisi. TVC (Thrust Vector Control) mekanizmas\u0131, Kalman filtresi tabanl\u0131 sens\u00f6r f\u00fczyonu ve Retro-Propulsion dinamiklerini i\u00e7eren; MISRA C standartlar\u0131nda aviyonik yaz\u0131l\u0131m .",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-12-29T14:25:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "teknofest_roket",
+                "description": "\ud83d\ude80 Teknofest 2026 Y\u00fcksek \u0130rtifa Roket Projesi: 10.000 feet (3.000m) hedef irtifaya ula\u015fmak i\u00e7in tasarlanm\u0131\u015f; \u00f6zg\u00fcn aviyonik sistemler, \u00e7ift a\u015famal\u0131 kurtarma (dual-deployment) mekanizmas\u0131 ve OpenRocket/ANSYS tabanl\u0131 aerodinamik optimizasyonlar\u0131 i\u00e7eren b\u00fct\u00fcnle\u015fik bir uzay m\u00fchendisli\u011fi projesidir.",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T07:04:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "arch-yunus",
+                "description": "AI Engineer & Aspiring Systems Architect | Specialized in Autonomous Systems, Cybersecurity & Defense Tech. Building the future of scalable and secure intelligent ecosystems.",
+                "stargazers_count": 48,
+                "language": "Python",
+                "pushed_at": "2026-06-20T09:30:08Z",
+                "fork": false,
+                "topics": [
+                  "defense-tech-cyber-ops-ai-systems"
+                ]
+              },
+              {
+                "name": "Tatta-Archive",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-19T08:17:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "btk-cpp-course",
+                "description": "BTK Akademi C++ e\u011fitim ser\u00fcveni kapsam\u0131nda; temel programlama, OOP prensipleri, bellek y\u00f6netimi ve wxWidgets ile GUI geli\u015ftirmeyi i\u00e7eren, detayl\u0131 a\u00e7\u0131klamal\u0131 kod ar\u015fivi ve uygulama \u00f6rnekleri.",
+                "stargazers_count": 11,
+                "language": "C++",
+                "pushed_at": "2026-04-24T21:13:28Z",
+                "fork": false,
+                "topics": [
+                  "cpp-btk-akademi-oop"
+                ]
+              },
+              {
+                "name": "btk-python-courses",
+                "description": "BTK Akademi Python e\u011fitimleri kapsam\u0131nda geli\u015ftirilen temel ve ileri seviye projeler, veri bilimi giri\u015f uygulamalar\u0131 ve algoritma \u00f6rneklerini i\u00e7eren kapsaml\u0131 \u00f6\u011frenme ar\u015fivi.",
+                "stargazers_count": 17,
+                "language": "Python",
+                "pushed_at": "2026-04-24T21:06:25Z",
+                "fork": false,
+                "topics": [
+                  "python-btk-akademi-data-science"
+                ]
+              },
+              {
+                "name": "gelistirme_araclari",
+                "description": "Yaz\u0131l\u0131m geli\u015ftirme ara\u00e7lar\u0131 (SDLC, IDE, Git, Docker, CI/CD) \u00fczerine kapsaml\u0131 ders notlar\u0131; \u00f6rnek Todo uygulamas\u0131 ve \u00dcretken Yapay Zeka (GenAI) / Prompt Engineering \u00e7al\u0131\u015fma alan\u0131n\u0131 i\u00e7eren e\u011fitim materyali.",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-24T21:09:22Z",
+                "fork": false,
+                "topics": [
+                  "software-development-tools-sdlc-git-github"
+                ]
+              },
+              {
+                "name": "Computer-Efficiency-Mastery",
+                "description": "Bilgisayar kullan\u0131m\u0131n\u0131 bir sanat formuna d\u00f6n\u00fc\u015ft\u00fcr\u00fcn. \u0130\u015fletim sistemi optimizasyonundan Neovim derinliklerine, Obsidian ile bilgi y\u00f6netiminden AI entegrasyonuna kadar her \u015feyi i\u00e7eren a\u00e7\u0131k kaynakl\u0131 bir verimlilik laboratuvar\u0131. \ud83e\udde0\ud83d\udcbb",
+                "stargazers_count": 25,
+                "language": "PowerShell",
+                "pushed_at": "2026-04-24T21:08:31Z",
+                "fork": false,
+                "topics": [
+                  "windows-optimization-ubuntu-setup"
+                ]
+              },
+              {
+                "name": "parlasan-parnassos-archive",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-13T11:26:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Datathon-2026",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-06-13T11:22:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Assembly-Learning-Journey",
+                "description": "\ud83d\udda5\ufe0f Assembly Learning Journey: x86-64 mimarisini ve \"low-level\" programlama mant\u0131\u011f\u0131n\u0131 s\u0131f\u0131rdan kavramak i\u00e7in haz\u0131rlanm\u0131\u015f kapsaml\u0131 bir e\u011fitim ser\u00fcvenidir. CPU register y\u00f6netimi, bellek adresleme modlar\u0131, sistem \u00e7a\u011fr\u0131lar\u0131 (syscall) ve OS Dev giri\u015f seviyesi projeleriyle bilgisayar\u0131n \"\u00f6z diline\" derinlemesine bir bak\u0131\u015f sunar.",
+                "stargazers_count": 11,
+                "language": "Assembly",
+                "pushed_at": "2026-03-06T19:22:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "The-Gobeklitepe-Chronology-Crisis",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-09T20:31:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sogut-ruhu",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-09T10:35:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "teknofest_onkolojide_3t",
+                "description": "\ud83e\udde0 TEKNOFEST 2026: Onkolojide 3T: Beyin kanseri oda\u011f\u0131nda; CRISPR tabanl\u0131 gen d\u00fczenleme, CAR-T h\u00fccre tedavileri ve yapay zeka destekli ila\u00e7 ke\u015ffi s\u00fcre\u00e7lerini birle\u015ftiren multidisipliner bir inovasyon projesidir. \u0130novatif \u00f6n tan\u0131dan hedefe y\u00f6nelik tedaviye kadar 8 ana kategoride ki\u015fiselle\u015ftirilmi\u015f t\u0131p \u00e7\u00f6z\u00fcmleri sunan teknik bir ekosistemdir.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-06-07T21:14:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "proje-muhendisligi-atlasi",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-06-03T12:46:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KIZAGAN-Cognitive-Electronic-Warfare",
+                "description": "Derin \u00d6\u011frenme ve RL Tabanl\u0131 Otonom Bili\u015fsel Elektronik Harp Platformu. LPI ve FHSS Sistemlerine Kar\u015f\u0131 Spektral \u00dcst\u00fcnl\u00fck. \ud83d\udef0\ufe0f G\u00f6klerin Dijital Muhaf\u0131z\u0131.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-06-05T08:31:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "teknofest_elektronik_harp",
+                "description": "TEKNOFEST 2026 Elektronik Harp Yar\u0131\u015fmas\u0131 i\u00e7in geli\u015ftirilen otonom Bili\u015fsel EH Platformu. SDR tabanl\u0131 sinyal tespiti, kestirimi ve AI destekli dinamik kar\u0131\u015ft\u0131rma/aldatma suit'i. \ud83d\udef0\ufe0f",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-06-04T13:42:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hizmet-i-hayatiye",
+                "description": "\ud83c\udf3f Hizmet-i Hayatiye: Hayat\u0131n fani y\u00fcz\u00fcn\u00fc bakiye \u00e7evirme gayreti. Kur\u2019an eczanesinden manevi tiryaklar, ilmin nurland\u0131r\u0131lmas\u0131 (marifetullah) ve t\u0131p ile maneviyat\u0131n kesi\u015fim noktas\u0131nda bir uyan\u0131\u015f (intibah) rehberi. \u2728\ud83d\udc8a",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-04T09:17:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cansuyu-kobi",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2026-06-02T19:15:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hizala-kobi",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-03T08:00:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "katman-katman-odoo",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-03T08:01:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OyunKutuphanesi",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2026-05-08T19:49:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sivil-Denizalt-Sistemleri-ve-TRL-Analiz-Reposu",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-08T14:12:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "prmon",
+                "description": "Standalone monitor for process resource consumption",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-07T16:05:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "netdata",
+                "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2026-05-07T18:46:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bcc",
+                "description": "BCC - Tools for BPF-based Linux IO analysis, networking, monitoring, and more",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-07T08:31:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pcp",
+                "description": "Performance Co-Pilot",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-04T10:39:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "node_exporter",
+                "description": "Exporter for machine metrics",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-07T16:35:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "telegraf",
+                "description": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-07T15:45:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tech-turkiye-awesome",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-05-07T03:53:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ari-Gok",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-07T04:49:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "maceraya-cagri",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-07T16:21:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "icsel-motivasyon-notlari",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-07T08:19:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KriptoSancak",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-05-05T17:57:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cyber-Security-Career-Path",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-03T09:15:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CTF-Playbook",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-03T09:35:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "arkun-adli-bilisim",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-03T13:31:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Bug-Bounty-Methodology",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2026-05-02T10:57:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hikmet-i-idris",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-02T07:02:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kok-Teke",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-02T07:02:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Orta-Avrupa-Turk-izleri",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-02T07:18:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kral-Arthur-Turk-Tezi",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-02T08:24:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kayip-Yol",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-02T09:02:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Millet-i-Kadime",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-02T09:04:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Bitiglig",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-02T08:36:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DAGHAN-KUT",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-02T06:42:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sumer-ibrahim-izleri",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-17T06:37:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hars-i-Milli",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-02T06:42:55Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:45.601827+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

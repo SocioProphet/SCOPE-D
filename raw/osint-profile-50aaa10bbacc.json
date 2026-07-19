@@ -1,0 +1,166 @@
+{
+  "profileId": "osint-profile-50aaa10bbacc",
+  "target": "S4IL21",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:53.066757+00:00",
+  "completedAt": "2026-06-21T15:27:53.499215+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6b530734",
+      "lookupType": "github_context",
+      "target": "S4IL21",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "S4IL21",
+            "name": "S4IL",
+            "type": "User",
+            "company": "Tatom [Owner]",
+            "blog": "https://s4il.is-a.dev/",
+            "location": "Barcelona, Spain",
+            "bio": "Code. Learn. Repeat. \ud83e\uddd1\u200d\ud83d\udcbb",
+            "public_repos": 10,
+            "followers": 7262,
+            "following": 605365,
+            "created_at": "2023-02-23T19:48:01Z",
+            "updated_at": "2026-06-07T16:34:58Z",
+            "html_url": "https://github.com/S4IL21",
+            "avatar_url": "https://avatars.githubusercontent.com/u/126200245?v=4",
+            "repos": [
+              {
+                "name": "Hill-Climb-Racing-Hacks",
+                "description": "S4IL's Open Sourced Hill Climb Racing Hack Menu made using Python",
+                "stargazers_count": 33,
+                "language": "Python",
+                "pushed_at": "2025-10-29T19:10:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "S4IL21.github.io",
+                "description": "My personal website!",
+                "stargazers_count": 46,
+                "language": "HTML",
+                "pushed_at": "2026-06-13T11:06:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bruce-for-cyberpi",
+                "description": "Hacking CyberPi and changing its firmware to Bruce, this is a hard project since the CyberPi wasn't made for costum firmwares and is very poorly documented online. UPDATE: I didn't manage to get it working, if you can help, feel free to PR",
+                "stargazers_count": 9,
+                "language": "C",
+                "pushed_at": "2026-02-18T21:39:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PhntVldacer1",
+                "description": "A web for PhntVldacer1! If you are Phnt: To set up the website, fork it, name the repo phntvldacer1.github.io, then go to settings it and enable pages, after go to phntvldacer1.github.io and it should work, if it doesn't, just tell me and I'll help you.",
+                "stargazers_count": 19,
+                "language": "HTML",
+                "pushed_at": "2024-08-27T13:19:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "s4mod",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2026-06-14T12:00:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "S4IL21",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 42,
+                "language": null,
+                "pushed_at": "2025-11-09T16:09:11Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "0",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2024-11-08T18:29:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "register",
+                "description": "Just a repo to make any changes to my '.is-a.dev' subdomain.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-13T12:09:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "web2app",
+                "description": "PyPI package for converting a website into an app.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-02-25T18:01:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-readme-stats",
+                "description": "Stats for my readme",
+                "stargazers_count": 25,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-08T21:31:21Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:53.498124+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

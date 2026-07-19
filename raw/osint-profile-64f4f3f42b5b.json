@@ -1,0 +1,619 @@
+{
+  "profileId": "osint-profile-64f4f3f42b5b",
+  "target": "marcbperez",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:43.767508+00:00",
+  "completedAt": "2026-06-20T16:49:44.721446+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3c13ce66",
+      "lookupType": "github_context",
+      "target": "marcbperez",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "marcbperez",
+            "name": "Marc B. Perez",
+            "type": "User",
+            "company": null,
+            "blog": "https://marcbperez.github.io",
+            "location": null,
+            "bio": null,
+            "public_repos": 41,
+            "followers": 731,
+            "following": 1314,
+            "created_at": "2010-11-15T16:54:12Z",
+            "updated_at": "2026-05-14T09:21:14Z",
+            "html_url": "https://github.com/marcbperez",
+            "avatar_url": "https://avatars.githubusercontent.com/u/482530?v=4",
+            "repos": [
+              {
+                "name": "pi-compute-device",
+                "description": "A portable device built with the Raspberry Pi Compute module.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2020-11-18T12:05:45Z",
+                "fork": false,
+                "topics": [
+                  "compute-module",
+                  "kicad",
+                  "raspberry-pi"
+                ]
+              },
+              {
+                "name": "debian-daily-driver",
+                "description": "A Debian 12, XFCE4 and LightDM setup for everyday life.",
+                "stargazers_count": 4,
+                "language": "Shell",
+                "pushed_at": "2024-11-30T12:19:34Z",
+                "fork": false,
+                "topics": [
+                  "debian",
+                  "debian-12",
+                  "lightdm",
+                  "xfce",
+                  "xfce4"
+                ]
+              },
+              {
+                "name": "skyscanner-business-client-java",
+                "description": "A Java client for the SkyScanner Business API.",
+                "stargazers_count": 9,
+                "language": "Java",
+                "pushed_at": "2020-11-18T12:06:55Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "gradle",
+                  "http-client",
+                  "java",
+                  "skyscanner"
+                ]
+              },
+              {
+                "name": "kicad-footprints",
+                "description": "A collection of symbols, footprints, 3D models and datasheets.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-10T17:28:52Z",
+                "fork": false,
+                "topics": [
+                  "kicad",
+                  "pcb-design",
+                  "pcb-footprints"
+                ]
+              },
+              {
+                "name": "markdown-pages",
+                "description": "A Static Site Generator for Markdown powered by Gradle, Pandoc, Spock, Preact and a minimalistic template.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-12T14:36:53Z",
+                "fork": false,
+                "topics": [
+                  "gradle",
+                  "markdown",
+                  "pandoc",
+                  "preact",
+                  "spock",
+                  "static-site-generator"
+                ]
+              },
+              {
+                "name": "react-image-crop",
+                "description": "An image cropping tool for React.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2021-02-02T16:26:17Z",
+                "fork": false,
+                "topics": [
+                  "canvas",
+                  "react",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "react-similarity-network",
+                "description": "Similarity graph for Foursquare places.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2020-11-15T12:58:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sorting-algorithms",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2019-12-14T18:06:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-spa",
+                "description": "A Docker container for deploying single-page applications.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2019-02-21T16:15:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-uncontrolled-forms",
+                "description": "Uncontrolled React forms inside a Redux boilerplate.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2019-02-20T19:56:08Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "forms",
+                  "gradle",
+                  "react",
+                  "redux"
+                ]
+              },
+              {
+                "name": "webgl-particles",
+                "description": "Particles in space made with Three.js and WebGL.",
+                "stargazers_count": 3,
+                "language": "Groovy",
+                "pushed_at": "2020-11-18T12:07:15Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "gradle",
+                  "javascript",
+                  "threejs",
+                  "webgl"
+                ]
+              },
+              {
+                "name": "react-availability",
+                "description": "Availability search for the web in React.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-18T12:06:09Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "gradle",
+                  "react"
+                ]
+              },
+              {
+                "name": "react-contacts",
+                "description": "Contacts browser for the web in React.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-18T12:06:15Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "gradle",
+                  "react"
+                ]
+              },
+              {
+                "name": "atmega32u4-minimal",
+                "description": "Expansion board for Atmega32u4.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-11-18T12:03:11Z",
+                "fork": false,
+                "topics": [
+                  "atmega32u4",
+                  "kicad"
+                ]
+              },
+              {
+                "name": "atmega328p-minimal",
+                "description": "Expansion board for Atmega328p.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-11-18T12:03:03Z",
+                "fork": false,
+                "topics": [
+                  "atmega328p",
+                  "kicad",
+                  "seeedstudio"
+                ]
+              },
+              {
+                "name": "react-redux-reddit",
+                "description": "Reddit viewer for the web in React and Redux.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-18T12:06:36Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "gradle",
+                  "javascript",
+                  "react",
+                  "redux"
+                ]
+              },
+              {
+                "name": "react-logviewer",
+                "description": "Log viewer for the web in React.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-18T12:06:29Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "gradle",
+                  "javascript",
+                  "react"
+                ]
+              },
+              {
+                "name": "react-redux-todo",
+                "description": "Todo list for the web in React and Redux.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-18T12:06:43Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "gradle",
+                  "javascript",
+                  "react",
+                  "redux"
+                ]
+              },
+              {
+                "name": "react-jobaddsearch",
+                "description": "Job add search for the web in React.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-18T12:06:22Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "gradle",
+                  "javascript",
+                  "react"
+                ]
+              },
+              {
+                "name": "flask-jobaddservice",
+                "description": "Job add service for Flask.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2020-11-18T12:04:27Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "flask",
+                  "gradle"
+                ]
+              },
+              {
+                "name": "android-blue-storm",
+                "description": "A white sound generator for Android.",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2020-11-18T11:53:51Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "gradle",
+                  "white-sound-generator"
+                ]
+              },
+              {
+                "name": "flask-logservice",
+                "description": "Log service for Flask.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2020-11-18T12:04:34Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "flask",
+                  "flask-restful",
+                  "flask-sqlalchemy",
+                  "gradle",
+                  "python"
+                ]
+              },
+              {
+                "name": "flask-restfuloauth2",
+                "description": "A Flask REST endpoint protected with OAuth2.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2020-11-18T12:04:48Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "flask",
+                  "flask-restful",
+                  "gradle",
+                  "oauth2",
+                  "python",
+                  "rest"
+                ]
+              },
+              {
+                "name": "arduino-device",
+                "description": "A portable device built with the Atmega328p.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-11-18T12:02:39Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "atmega328p",
+                  "kicad"
+                ]
+              },
+              {
+                "name": "bash-shortcuts",
+                "description": "Bash scripts to automate daily repetitive tasks.",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2020-11-18T12:03:18Z",
+                "fork": false,
+                "topics": [
+                  "bash",
+                  "docker",
+                  "gradle"
+                ]
+              },
+              {
+                "name": "python-webcrawler",
+                "description": "Crawls HTML pages for prices and other pieces of data.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2020-11-18T12:06:02Z",
+                "fork": false,
+                "topics": [
+                  "crawler",
+                  "docker",
+                  "gradle",
+                  "python"
+                ]
+              },
+              {
+                "name": "webgl-earth",
+                "description": "An earth in space made with Three.js and WebGL.",
+                "stargazers_count": 2,
+                "language": "Groovy",
+                "pushed_at": "2020-11-18T12:07:05Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "gradle",
+                  "javascript",
+                  "three-js",
+                  "webgl"
+                ]
+              },
+              {
+                "name": "django-polls",
+                "description": "Polls service for Django.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2020-11-18T12:03:55Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "docker",
+                  "gradle",
+                  "python"
+                ]
+              },
+              {
+                "name": "django-endpoint",
+                "description": "An end point to run Django services on.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2020-11-18T12:03:47Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "docker",
+                  "gradle",
+                  "python"
+                ]
+              },
+              {
+                "name": "flask-reportservice",
+                "description": "A Flask service to export PDF and XML reports.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2020-11-18T12:04:40Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "flask",
+                  "gradle",
+                  "python",
+                  "reporting"
+                ]
+              },
+              {
+                "name": "js-algorithms",
+                "description": "Algorithms implemented in JS.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2020-11-18T12:05:01Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "docker",
+                  "gradle",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "c-programming-security",
+                "description": "C programming examples that cover basic operations and security exploits.",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2020-11-18T12:03:39Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "docker",
+                  "gradle",
+                  "security"
+                ]
+              },
+              {
+                "name": "django-tasklist",
+                "description": "Task list service for Django.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2020-11-18T12:04:02Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "docker",
+                  "gradle",
+                  "python"
+                ]
+              },
+              {
+                "name": "cell-simulation-python",
+                "description": "Simulation environment written in Python and OpengGL.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2020-11-18T12:03:32Z",
+                "fork": false,
+                "topics": [
+                  "gradle",
+                  "opengl",
+                  "python"
+                ]
+              },
+              {
+                "name": "marcbperez.github.io",
+                "description": "Code, computers and electronics, Est. 2002.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2024-11-13T12:35:48Z",
+                "fork": false,
+                "topics": [
+                  "personal-website"
+                ]
+              },
+              {
+                "name": "marcbperez",
+                "description": "My README.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-04-21T17:25:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-gradle",
+                "description": "A Docker container for building Gradle projects.",
+                "stargazers_count": 2,
+                "language": "Groovy",
+                "pushed_at": "2020-11-18T12:04:10Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "docker-image",
+                  "gradle"
+                ]
+              },
+              {
+                "name": "edp-display-board",
+                "description": "Display Port controller for eDP displays.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2020-11-18T12:04:20Z",
+                "fork": false,
+                "topics": [
+                  "edp",
+                  "kicad"
+                ]
+              },
+              {
+                "name": "js-3d-engine",
+                "description": "A simple 3D engine for JavaScript.",
+                "stargazers_count": 2,
+                "language": "Processing",
+                "pushed_at": "2020-11-18T12:04:54Z",
+                "fork": false,
+                "topics": [
+                  "3d-engine",
+                  "docker",
+                  "gradle",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "mdl-estore",
+                "description": "Generic eStore template made with Material Design Lite and AngularJS.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-11-18T12:05:35Z",
+                "fork": false,
+                "topics": [
+                  "angularjs",
+                  "material-design"
+                ]
+              },
+              {
+                "name": "pi-zero-device",
+                "description": "A portable device built with the Raspberry Pi Zero W.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-11-18T12:05:55Z",
+                "fork": false,
+                "topics": [
+                  "kicad",
+                  "raspberry-pi-zero-w"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:44.719813+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

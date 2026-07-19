@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-61cc76409720",
+  "target": "EG0lST",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:25.731210+00:00",
+  "completedAt": "2026-06-21T15:31:26.077270+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1db7ef57",
+      "lookupType": "github_context",
+      "target": "EG0lST",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "EG0lST",
+            "name": " \u05c2\u00a0\u00a0 \u05b4\u00a0\u00a0 \u00a0Viktor\u00a0\u00a0\u00a0 \u02f3\u2800\u23f1",
+            "type": "User",
+            "company": "Following people for fun, I'm not some creep. \u2605  cool peoplee:: @fish-gienix @jxckspxrrxw @gambling-addict",
+            "blog": "Interact freely    .      C+H appreciated    .      \ud835\uddd02\ud835\uddc2       \u0b6d \u02da. \u1d4e\u1d4e",
+            "location": "\u2605;; Walking Talking and waving nerd emoji",
+            "bio": "  @MissConstruction  @Printerbattle my stupid friends I love you guys heart emoji dont go bald",
+            "public_repos": 1,
+            "followers": 1609,
+            "following": 3576,
+            "created_at": "2024-01-09T23:14:48Z",
+            "updated_at": "2026-05-06T11:44:55Z",
+            "html_url": "https://github.com/EG0lST",
+            "avatar_url": "https://avatars.githubusercontent.com/u/156142760?v=4",
+            "repos": [
+              {
+                "name": "BleedingCannibal",
+                "description": "\u2605",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-23T09:53:42Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:26.076340+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

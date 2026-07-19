@@ -1,0 +1,456 @@
+{
+  "profileId": "osint-profile-43830f704c1f",
+  "target": "Daxxtropezz",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:56.713016+00:00",
+  "completedAt": "2026-06-20T16:47:57.804260+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f31822e8",
+      "lookupType": "github_context",
+      "target": "Daxxtropezz",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Daxxtropezz",
+            "name": "John Paul Miraflores",
+            "type": "User",
+            "company": "Founder of  @clever-gang ",
+            "blog": "jpsmiraflores.me",
+            "location": "301: Moved Permanently",
+            "bio": "Dev$ec\u327fps Engineer",
+            "public_repos": 35,
+            "followers": 1151,
+            "following": 2596,
+            "created_at": "2022-07-13T10:00:40Z",
+            "updated_at": "2026-06-03T03:30:01Z",
+            "html_url": "https://github.com/Daxxtropezz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/109214126?v=4",
+            "repos": [
+              {
+                "name": "daxxtropezz",
+                "description": "A personal GitHub profile README built with Markdown and YAML. Highlights development tools, current projects, and interests as a full stack developer focused on clean code, modern UI/UX, and practical web solutions.",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2026-06-20T12:57:34Z",
+                "fork": false,
+                "topics": [
+                  "markdown",
+                  "workflows",
+                  "yaml"
+                ]
+              },
+              {
+                "name": "ZeroTrustKit",
+                "description": "ZeroTrustKit (ZTK) is a DevSecOps bootstrap platform for Ubuntu that automates the installation and management of cloud, security, container, Kubernetes, and infrastructure tools through an interactive terminal interface. Build secure environments faster with a single command.",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2026-06-07T12:16:42Z",
+                "fork": false,
+                "topics": [
+                  "cli-tools",
+                  "cloud",
+                  "cybersecurity",
+                  "devops",
+                  "devsecops",
+                  "zero-trust-kit"
+                ]
+              },
+              {
+                "name": "ghostwipe",
+                "description": "Terminal-based Linux maintenance utility for Debian-based systems. Automates package updates, cache cleanup, temporary file removal, and system housekeeping tasks.",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2026-06-07T12:14:51Z",
+                "fork": false,
+                "topics": [
+                  "debian-based",
+                  "ghostwipe",
+                  "launchpad",
+                  "linux",
+                  "script",
+                  "terminal-based",
+                  "ubuntu"
+                ]
+              },
+              {
+                "name": "scapy",
+                "description": "Scapy: the Python-based interactive packet manipulation program & library.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-24T05:49:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vantatime",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-12T14:14:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "liquid-master",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Ruby",
+                "pushed_at": "2025-01-27T01:59:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CamHacker",
+                "description": "Advanced camera phishing tool for security research and penetration testing. Features 3 responsive templates, dual tunneling support, IP geolocation, device profiling, and CLI operation. Educational use only.",
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2025-07-12T12:27:02Z",
+                "fork": false,
+                "topics": [
+                  "camhacker",
+                  "docker",
+                  "javascript",
+                  "php",
+                  "shell"
+                ]
+              },
+              {
+                "name": "FourcadeGames",
+                "description": "This repository showcases a classic Java games built with NetBeans. Includes Snake, Puzzle, Guessing Number, and Tic Tac Toe\u2014demonstrating clean code, basic game logic, and practical use of Java for desktop applications.",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2025-05-02T13:22:57Z",
+                "fork": false,
+                "topics": [
+                  "games",
+                  "guessing-number-game",
+                  "java",
+                  "jdk8",
+                  "netbeans",
+                  "puzzle-game",
+                  "snake-game",
+                  "tictactoe-game"
+                ]
+              },
+              {
+                "name": "github-readme-stats",
+                "description": ":zap: Dynamically generated stats for your github readmes",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-09T17:59:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nuxt-project",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-23T00:50:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cyber-jp-ruby",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "SCSS",
+                "pushed_at": "2025-04-12T04:39:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skill-icons",
+                "description": "Showcase your skills on your Github readme or resum\u00e9 with ease \u2728",
+                "stargazers_count": 1,
+                "language": "SVG",
+                "pushed_at": "2025-07-08T01:53:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bmis-v2",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-24T10:42:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cmd-portfolio",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-08T19:57:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jewellshije.github.io",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-05-23T03:29:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "employee-system",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Blade",
+                "pushed_at": "2024-10-23T13:53:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "asco_online_tracking",
+                "description": "The online tracking system for the Ad Standards Council.",
+                "stargazers_count": 2,
+                "language": "Dart",
+                "pushed_at": "2024-03-27T00:15:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "daxxtropezz.github.io",
+                "description": "This repository contains my portfolio",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-01T16:36:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-simple-calculator",
+                "description": "A Simple Calculator by Daxxtropezz",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2023-03-11T18:41:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "store-search-activity",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2023-03-19T07:01:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "computer-quiz-activity",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2023-03-19T07:04:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NyansLostInSpace",
+                "description": "A Java game desktop application that brings the whimsical charm of Nyan Cat directly to your desktop. Designed with simplicity and fun in mind, this project offers a delightful experience for fans and developers alike.",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2025-05-02T11:09:15Z",
+                "fork": false,
+                "topics": [
+                  "anya",
+                  "desktop-game",
+                  "game",
+                  "java",
+                  "netbeans",
+                  "nyancat",
+                  "zoro"
+                ]
+              },
+              {
+                "name": "online_shopping_system",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2023-03-18T21:42:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IPGetter",
+                "description": "A simple Java NetBeans application that retrieves the IP address of a given domain name. IPGetter helps users convert URLs like google.com into their corresponding IP addresses, making it useful for basic networking tasks, learning DNS concepts, or quick lookups.",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2025-05-02T11:18:24Z",
+                "fork": false,
+                "topics": [
+                  "desktop-application",
+                  "ip-converter",
+                  "java",
+                  "netbeans"
+                ]
+              },
+              {
+                "name": "nmap-cheatsheet",
+                "description": "\ud83d\udee1\ufe0f A handy Nmap cheat sheet for ethical hackers and cybersecurity enthusiasts. Includes common scan types, flags, and usage examples for quick reference.",
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2025-07-20T07:00:21Z",
+                "fork": false,
+                "topics": [
+                  "cheatsheet",
+                  "guide",
+                  "nmap",
+                  "nmap-scripts",
+                  "pentesting"
+                ]
+              },
+              {
+                "name": "pygoat",
+                "description": "dsoe",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-03-22T10:43:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bloodhound-cheatsheet",
+                "description": "A clear and structured cheatsheet designed for BloodHound users. This guide explains what BloodHound does, how to install it from scratch, and how to run common AD enumeration and analysis tasks. Built for beginners and professionals who want a quick reference while mapping Active Directory attack paths.",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2025-11-16T13:11:39Z",
+                "fork": false,
+                "topics": [
+                  "active-directory",
+                  "ad-attack-paths",
+                  "ad-enumeration",
+                  "bloodhound",
+                  "blue-team",
+                  "cheatsheet",
+                  "cybersecurity",
+                  "infosec",
+                  "neo4j",
+                  "pentesting",
+                  "red-team",
+                  "security-tools",
+                  "sharphound",
+                  "windows-security"
+                ]
+              },
+              {
+                "name": "PayloadsAllTheThings",
+                "description": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-15T16:37:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Hacking-Tools",
+                "description": "A curated list of penetration testing and ethical hacking tools, organized by category. This compilation includes tools from Kali Linux and other notable sources.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-04-07T14:56:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Password-Extraction-To-Discord-Flipper-BadUSB",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-10-18T22:13:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "skills-introduction-to-github",
+                "description": "My clone repository",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-12-01T04:56:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "codespaces-project",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-19T03:18:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "copilot-agent-mode",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-19T06:27:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "social-engineer-toolkit",
+                "description": "The Social-Engineer Toolkit (SET) repository from TrustedSec - All new versions of SET will be deployed here.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-21T15:46:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "introduction-to-github",
+                "description": "Get started using GitHub in less than an hour.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-08T19:57:04Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:57.803425+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

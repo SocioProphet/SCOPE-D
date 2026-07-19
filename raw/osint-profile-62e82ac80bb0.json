@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-62e82ac80bb0",
+  "target": "akiangeI",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:38.081593+00:00",
+  "completedAt": "2026-06-21T15:32:38.479639+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4a3e1131",
+      "lookupType": "github_context",
+      "target": "akiangeI",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "akiangeI",
+            "name": "\u02c3\u02c2\ufe52ellie",
+            "type": "User",
+            "company": "\u2e1d\u2e1d \u200e MY GIRLFRIEND <3 (@nidohl) ;; @antlerqueen, @lacecherries, @Iovefool, @6mee & all green names hihi ",
+            "blog": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+            "location": "\u0131ll\u0131 . c+h is fine always !! w2i plspls",
+            "bio": "main @mizaiz . following everyone i see / block if that bothers you >_< csm, alnst, arcane, omori, cherry crush, lis, etc",
+            "public_repos": 1,
+            "followers": 1357,
+            "following": 6207,
+            "created_at": "2025-02-03T03:26:55Z",
+            "updated_at": "2026-05-18T17:06:53Z",
+            "html_url": "https://github.com/akiangeI",
+            "avatar_url": "https://avatars.githubusercontent.com/u/197550813?v=4",
+            "repos": [
+              {
+                "name": "akiangeI",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-02T21:37:02Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:38.478938+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

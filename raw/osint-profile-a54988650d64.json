@@ -1,0 +1,464 @@
+{
+  "profileId": "osint-profile-a54988650d64",
+  "target": "K1rsN7",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:42.991614+00:00",
+  "completedAt": "2026-06-21T15:27:43.619799+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f64ba95b",
+      "lookupType": "github_context",
+      "target": "K1rsN7",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "K1rsN7",
+            "name": "Kirill Sukhorukov",
+            "type": "User",
+            "company": "Searching...",
+            "blog": "https://k1rsn7.github.io/",
+            "location": "Russia, Nizhny Novgorod",
+            "bio": "\u200d\ud83d\udcbb Data Scientist | \ud83d\udc68\u200d\ud83c\udf93 Student |\r\nI use @meowrch btw",
+            "public_repos": 22,
+            "followers": 9235,
+            "following": 9859,
+            "created_at": "2023-01-24T07:44:21Z",
+            "updated_at": "2026-06-14T13:56:26Z",
+            "html_url": "https://github.com/K1rsN7",
+            "avatar_url": "https://avatars.githubusercontent.com/u/123446875?v=4",
+            "repos": [
+              {
+                "name": "Escape_from_the_desert",
+                "description": ":joystick: Final project for the 2nd year of college.",
+                "stargazers_count": 37,
+                "language": "Java",
+                "pushed_at": "2025-02-20T16:23:08Z",
+                "fork": false,
+                "topics": [
+                  "college",
+                  "college-project",
+                  "game",
+                  "game-console",
+                  "java",
+                  "terminator"
+                ]
+              },
+              {
+                "name": "SubManager",
+                "description": "\ud83d\udc68\u200d\ud83d\udcbc SubManager is a cross-platform Python tool for automatically managing GitHub subscriptions",
+                "stargazers_count": 114,
+                "language": "Python",
+                "pushed_at": "2025-03-10T19:13:18Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "crontab",
+                  "follow",
+                  "follow-bot",
+                  "followers-and-following-lists",
+                  "following",
+                  "github",
+                  "github-api",
+                  "linux",
+                  "macos",
+                  "python",
+                  "python3",
+                  "subscribe",
+                  "subscriber",
+                  "subscription",
+                  "subscriptions",
+                  "windows",
+                  "windows-app"
+                ]
+              },
+              {
+                "name": "SchoolProject",
+                "description": "\ud83d\udc0d The first school project in python",
+                "stargazers_count": 30,
+                "language": "Python",
+                "pushed_at": "2025-02-19T18:13:51Z",
+                "fork": false,
+                "topics": [
+                  "calculator",
+                  "math",
+                  "mathematics",
+                  "python",
+                  "python3",
+                  "russian-language",
+                  "school",
+                  "school-project"
+                ]
+              },
+              {
+                "name": "Iron_Event",
+                "description": "\u0423\u041f 02 ",
+                "stargazers_count": 25,
+                "language": "Java",
+                "pushed_at": "2025-02-19T18:18:17Z",
+                "fork": false,
+                "topics": [
+                  "college",
+                  "college-project",
+                  "docker",
+                  "docker-compose",
+                  "java",
+                  "javafx",
+                  "mysql",
+                  "mysql-database",
+                  "practice",
+                  "practice-project"
+                ]
+              },
+              {
+                "name": "TechHaven",
+                "description": ":desktop_computer: College course project in the discipline \u041c\u0414\u041a 02.02 Instrumental means of software development",
+                "stargazers_count": 51,
+                "language": "CSS",
+                "pushed_at": "2025-02-24T13:45:02Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "bootstrap4",
+                  "college",
+                  "college-project",
+                  "computer",
+                  "css",
+                  "e-shop",
+                  "html",
+                  "javascript",
+                  "js",
+                  "mysql",
+                  "mysql-database",
+                  "php",
+                  "web",
+                  "website"
+                ]
+              },
+              {
+                "name": "meowrch2.0",
+                "description": "\u227d\u072b\u227c Meowrch: where Linux purrs with elegance and grace.",
+                "stargazers_count": 32,
+                "language": "Mustache",
+                "pushed_at": "2025-01-11T19:40:04Z",
+                "fork": true,
+                "topics": [
+                  "arch",
+                  "bspw",
+                  "linux",
+                  "linux-rice",
+                  "rofi",
+                  "theme"
+                ]
+              },
+              {
+                "name": "meowrch",
+                "description": "\u2764\ufe0f\u269c\ufe0f Meowrch: where Linux purrs with elegance and grace.",
+                "stargazers_count": 24,
+                "language": "CSS",
+                "pushed_at": "2024-07-12T19:52:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TerraWing",
+                "description": "\u0420\u0430\u0441\u043f\u043e\u0437\u043d\u0430\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u0435\u043f\u044f\u0442\u0441\u0442\u0432\u0438\u0439 \u043d\u0430 \u043f\u0443\u0442\u0438 \u0434\u0432\u0438\u0436\u0435\u043d\u0438\u044f \u0411\u041f\u041b\u0410 \u0438 \u0438\u0445 \u043a\u043b\u0430\u0441\u0441\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u044f. \u0410\u041f\u041a",
+                "stargazers_count": 36,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-20T16:27:45Z",
+                "fork": true,
+                "topics": [
+                  "agribusiness",
+                  "agroindustria",
+                  "ai",
+                  "compute",
+                  "data-science",
+                  "data-science-projects",
+                  "deep",
+                  "deep-neural-networks",
+                  "drone",
+                  "drones",
+                  "jupyter",
+                  "jupyter-notebook",
+                  "python"
+                ]
+              },
+              {
+                "name": "SportScanAI",
+                "description": "\ud83c\udfc5 AI-\u0441\u043f\u043e\u0440\u0442\u0442\u0435\u0445 \u2014 SportTechCup 2024",
+                "stargazers_count": 26,
+                "language": "Python",
+                "pushed_at": "2025-02-19T18:36:15Z",
+                "fork": true,
+                "topics": [
+                  "ai",
+                  "data-",
+                  "dock",
+                  "hackathon",
+                  "hackaton-project",
+                  "python",
+                  "sport-analytics",
+                  "sports"
+                ]
+              },
+              {
+                "name": "UP05",
+                "description": "Android Studio training practice ",
+                "stargazers_count": 24,
+                "language": "Java",
+                "pushed_at": "2024-04-22T16:16:01Z",
+                "fork": false,
+                "topics": [
+                  "android-studio",
+                  "college",
+                  "college-practise",
+                  "college-project",
+                  "java",
+                  "practice",
+                  "practice-project"
+                ]
+              },
+              {
+                "name": "k1rsn7.github.io",
+                "description": "\ud83d\udd2e My portfolio",
+                "stargazers_count": 60,
+                "language": "HTML",
+                "pushed_at": "2025-07-07T05:17:51Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "javascript",
+                  "js",
+                  "portfolio",
+                  "portfolio-website",
+                  "profile-website",
+                  "website"
+                ]
+              },
+              {
+                "name": "Defect-Detection",
+                "description": ":atom_symbol: ATOMIC HACK. Case: Detector of manufacturing defects",
+                "stargazers_count": 31,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-20T15:47:41Z",
+                "fork": true,
+                "topics": [
+                  "ai",
+                  "computer",
+                  "cv",
+                  "data-science",
+                  "dataset",
+                  "hackathon",
+                  "hackathon-project",
+                  "python",
+                  "python3",
+                  "yolo",
+                  "yolov8"
+                ]
+              },
+              {
+                "name": "Competition-organization",
+                "description": ":muscle: Coursework project for the 3rd year.",
+                "stargazers_count": 25,
+                "language": "Java",
+                "pushed_at": "2024-11-19T17:53:24Z",
+                "fork": false,
+                "topics": [
+                  "college",
+                  "college-project",
+                  "databa",
+                  "desctop-app",
+                  "gym",
+                  "java",
+                  "javafx",
+                  "mysql",
+                  "mysql-database",
+                  "system"
+                ]
+              },
+              {
+                "name": "BusinessLunchGAN",
+                "description": "\u0426\u0438\u0444\u0440\u043e\u0432\u043e\u0439 \u041f\u0440\u043e\u0440\u044b\u0432| Rutube Case | \u0423\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u0435 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0430 \u0432\u0438\u0434\u0435\u043e",
+                "stargazers_count": 36,
+                "language": "Python",
+                "pushed_at": "2025-02-20T16:14:05Z",
+                "fork": true,
+                "topics": [
+                  "ai",
+                  "deep",
+                  "deep-neural-networks",
+                  "gan-model",
+                  "git",
+                  "hackathon",
+                  "hackathon-project",
+                  "python",
+                  "python3"
+                ]
+              },
+              {
+                "name": "Acceptance-of-documents",
+                "description": ":spiral_notepad: The solution of the case \"Acceptance of accounting documents\" from the hackathon in Sochi 2023",
+                "stargazers_count": 27,
+                "language": "Python",
+                "pushed_at": "2025-02-20T15:37:40Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "document",
+                  "hackathon",
+                  "hackathon-project",
+                  "python",
+                  "python3"
+                ]
+              },
+              {
+                "name": "HackAI2023",
+                "description": ":studio_microphone: Case: Intelligent voice assistant for drivers",
+                "stargazers_count": 36,
+                "language": "Python",
+                "pushed_at": "2025-02-20T15:42:39Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "assistant",
+                  "hackathon",
+                  "hackathon-project",
+                  "python",
+                  "python3",
+                  "voice-assistant"
+                ]
+              },
+              {
+                "name": "Mushroom_Guide",
+                "description": ":mushroom: Chat bot for recognizing edible mushrooms.",
+                "stargazers_count": 43,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-19T18:09:18Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "computer-vision",
+                  "cv",
+                  "deep-learning",
+                  "deep-neural-networks",
+                  "jupy",
+                  "jupyter",
+                  "mushroom",
+                  "mushroom-classification",
+                  "python",
+                  "python3",
+                  "telegram-bot"
+                ]
+              },
+              {
+                "name": "K1rsN7_events",
+                "description": ":page_with_curl: List of participation in competitions and events",
+                "stargazers_count": 29,
+                "language": null,
+                "pushed_at": "2025-10-11T16:36:55Z",
+                "fork": false,
+                "topics": [
+                  "events",
+                  "profile"
+                ]
+              },
+              {
+                "name": "hackathon_IT_space_2022",
+                "description": ":video_game: Work in the interregional hackathon \"IT Space\" in the direction of \"Mobile game development\"",
+                "stargazers_count": 46,
+                "language": "C#",
+                "pushed_at": "2025-02-19T18:42:31Z",
+                "fork": false,
+                "topics": [
+                  "c-sharp",
+                  "c-sharp-unity",
+                  "college-students",
+                  "git",
+                  "hackathon",
+                  "hackathon-project",
+                  "mts",
+                  "unity"
+                ]
+              },
+              {
+                "name": "TrackDistributor",
+                "description": ":notes: A program for distributing music into folders",
+                "stargazers_count": 32,
+                "language": "Python",
+                "pushed_at": "2025-02-19T18:10:58Z",
+                "fork": false,
+                "topics": [
+                  "car",
+                  "car-multimedia",
+                  "music",
+                  "python",
+                  "python3",
+                  "random"
+                ]
+              },
+              {
+                "name": "readme-typing-svg",
+                "description": "\u26a1 Dynamically generated, customizable SVG that gives the appearance of typing and deleting text. Typing SVGs can be used as a bio on your GitHub profile readme or repository.",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2023-06-22T17:00:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "K1rsN7",
+                "description": ":octocat: Kirill Sukhorukov's Profile README ",
+                "stargazers_count": 69,
+                "language": null,
+                "pushed_at": "2025-08-04T18:12:47Z",
+                "fork": false,
+                "topics": [
+                  "profile",
+                  "profile-readme",
+                  "profile-readme-md"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:43.619071+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

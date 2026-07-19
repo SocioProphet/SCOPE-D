@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-7cdac4c0d0cb",
+  "target": "jackbereson",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:11.981603+00:00",
+  "completedAt": "2026-06-21T15:33:13.330132+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f389b87a",
+      "lookupType": "github_context",
+      "target": "jackbereson",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jackbereson",
+            "name": "Jack Bereson",
+            "type": "User",
+            "company": "Blockify",
+            "blog": "",
+            "location": "United States",
+            "bio": "From emptiness arises great vow",
+            "public_repos": 54,
+            "followers": 1217,
+            "following": 2445,
+            "created_at": "2016-04-20T07:32:40Z",
+            "updated_at": "2026-06-11T04:21:58Z",
+            "html_url": "https://github.com/jackbereson",
+            "avatar_url": "https://avatars.githubusercontent.com/u/18569187?v=4",
+            "repos": [
+              {
+                "name": "apiForTest",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-02T08:08:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jackbereson.github.io",
+                "description": "\u2728\u2728\u2728 Fullstack JS - MERNSTACK - Devops \u2728\u2728\u2728",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-11T17:43:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "1-mvc-spring-boot",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2025-12-07T03:43:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "450CauHoiSatHachGPLX",
+                "description": "450 c\u00e2u h\u1ecfi s\u00e1t h\u1ea1ch gi\u1ea5y ph\u00e9p l\u00e1i xe - Expo App",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-10T03:31:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lucky-carousel",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-07T07:10:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-swap-smartcontract",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-22T03:27:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "graphql-rust",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-05-30T15:50:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GPT-Scan-Strava",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-15T05:11:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-staking",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-20T03:10:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kafka-node",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-23T16:54:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OCR-Strava",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-15T06:48:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dexview",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-30T07:07:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crawler-template-core",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-02-21T12:37:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nue-pages",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-02T16:55:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Next-js-Boilerplate",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-07-03T17:13:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "traefik-portainer",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-06-27T15:01:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "terraform-digitalocean-cloudflare-dockerswarm",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HCL",
+                "pushed_at": "2023-06-25T13:53:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nginx-proxy-manager-stack",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-06-27T16:50:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pulumi-aws-docker-portainer",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-05-31T17:53:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aws-cdk-eks",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-05-30T03:51:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pulumi-aws",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-05-30T09:20:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-graphql-core",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-05-25T16:08:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "graphql-nextgen-design",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-05-22T03:05:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nestjs-dashboard",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-05-21T14:23:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nestjs-graphql-core",
+                "description": "Nest.js GraphQl Core Ts",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-01-02T09:29:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "diagrams",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2021-08-19T02:50:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "luaga",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2021-12-07T02:50:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kyuyo",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2022-09-30T16:32:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "contracts",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-10-18T13:07:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Batdongsan",
+                "description": "Thong tin bat dong san nha dat dat ne",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2023-07-26T07:28:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jacksparoow",
+                "description": "\u2728\u2728\u2728 Fullstack JS - MERNSTACK - Devops \u2728\u2728\u2728",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-30T03:44:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crashgame",
+                "description": "Online Crash Gambling Game Web App Built with the MERN Stack",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-11-21T17:35:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "metamask-mobile",
+                "description": "Mobile web browser providing access to websites that use the Ethereum blockchain",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-13T03:42:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cms-mongo",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2019-06-28T19:34:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ERC721-Permit",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-08-02T09:13:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mint-token-ton-dapp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-09T14:19:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "terraform-on-aws-eks",
+                "description": "Terraform on AWS EKS Kubernetes IaC SRE- 50 Real-World Demos ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-02-15T03:13:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chromium-core-wallet",
+                "description": "Core engine for the Brave browser for mobile and desktop. For issues https://github.com/brave/brave-browser/issues",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-09T15:18:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "graphql-mongodb-boilerplate",
+                "description": "A simple graphql boilerplate for services using actix-web, juniper and mongodb.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-05-02T22:14:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "plop-for-mkjs",
+                "description": "micro generator",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-12-04T04:11:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "UniPixelPlanet",
+                "description": "Unity PixelPlanet Generator",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-14T13:51:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nft-art-generator",
+                "description": "A tool to generate generative NFT art projects.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-11-09T11:31:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GoblinSlayer",
+                "description": "A hack-n-slash rpg 2D game inspired in Gablin Slayer series",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2019-05-17T15:02:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "terraform-digitalocean-portainer",
+                "description": "Terraform module example for provisioning and managing a Portainer instance on an DigitalOcean droplet",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2018-03-31T09:32:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wordpress-on-heroku",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2020-02-23T08:55:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Website",
+                "description": "Website for GoblinSlayer",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-09-04T10:52:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "devops-todoapp-backend",
+                "description": "Source Code demo series videos v\u1ec1 Google Kubernetes Engine & DevOps | Todo App Backend API s\u1eed d\u1ee5ng FastAPI",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-03-23T02:49:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "devops-todoapp-frontend",
+                "description": "Source Code demo series videos v\u1ec1 Google Kubernetes Engine & DevOps | Todo App Frontend s\u1eed d\u1ee5ng Create-react-app",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-03-23T02:50:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "devops-todoapp-infra-v2",
+                "description": "Source Code demo series videos v\u1ec1 Google Kubernetes Engine & DevOps | Terraform",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-03-23T05:13:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "devops-todoapp-manifests",
+                "description": "Source Code demo series videos v\u1ec1 Google Kubernetes Engine & DevOps | L\u01b0u tr\u1eef Kubernetes Manifest Files,  s\u1eed d\u1ee5ng Kustomize v\u1edbi GitHub Action Workflow \u0111\u1ec3 deploy. Action Secrets \u0111\u01b0\u1ee3c Provision b\u1edfi Terraform Code.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-03-23T06:44:24Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:13.329305+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

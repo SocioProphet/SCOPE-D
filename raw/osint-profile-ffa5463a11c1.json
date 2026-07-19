@@ -1,0 +1,175 @@
+{
+  "profileId": "osint-profile-ffa5463a11c1",
+  "target": "AbrahamGreenman",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:33.080640+00:00",
+  "completedAt": "2026-06-21T15:30:33.642062+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-81aff4a0",
+      "lookupType": "github_context",
+      "target": "AbrahamGreenman",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "AbrahamGreenman",
+            "name": "Abraham Greenman",
+            "type": "User",
+            "company": null,
+            "blog": "grnmn.com",
+            "location": "Queens / New York ",
+            "bio": "Generalist. ",
+            "public_repos": 9,
+            "followers": 1893,
+            "following": 4360,
+            "created_at": "2014-08-24T23:27:02Z",
+            "updated_at": "2026-06-04T03:05:04Z",
+            "html_url": "https://github.com/AbrahamGreenman",
+            "avatar_url": "https://avatars.githubusercontent.com/u/8540141?v=4",
+            "repos": [
+              {
+                "name": "ghostty-dynamic-themes",
+                "description": "Live Ghostty theme switching for Claude Code, Codex, Cursor, and AI agents using OSC escape sequences, with no config edits or restarts.",
+                "stargazers_count": 4,
+                "language": "Shell",
+                "pushed_at": "2026-05-01T19:23:23Z",
+                "fork": false,
+                "topics": [
+                  "agent-tools",
+                  "ai-agents",
+                  "ansi-escape-codes",
+                  "bash",
+                  "claude-code",
+                  "cli",
+                  "codex-cli",
+                  "cursor",
+                  "developer-tools",
+                  "dynamic-themes",
+                  "ghostty",
+                  "ghostty-terminal",
+                  "ghostty-themes",
+                  "macos",
+                  "openai-codex",
+                  "osc-escape-sequences",
+                  "shell-script",
+                  "terminal-colors",
+                  "terminal-themes",
+                  "themes"
+                ]
+              },
+              {
+                "name": "AbrahamGreenman",
+                "description": "Ace Greenman README.md",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-06-07T19:24:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JobForge",
+                "description": "AI-powered job search automation built on Open Code + Geometra MCP. So that means entirely free to use end to end. Evaluate offers, generate ATS-optimized CVs, scan portals, negotiate   offers, and track applications through a single pipeline.",
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-12T07:46:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "agentic-harness-book",
+                "description": "Book on architecture for agentic harness engineering. Meant to be consumed by llms too",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-14T14:53:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ForgeGuard",
+                "description": "Guard the Forge(that we made). ",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-06T05:07:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Automaton-World",
+                "description": "Constructing from imagination what the automaton world looks like",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-23T02:13:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "roomtemp-superconductor-gpd",
+                "description": "Used the GPD(Get Physics Done) Engine x Claude Code to find room temperature superconductor from first principles.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-03-30T10:02:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Beyond-Building",
+                "description": "Beyond Building: Purpose When Work Ends",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-22T23:32:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CharlieGreenman.github.io",
+                "description": "Portfolio etc.",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2015-11-26T04:18:10Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:33.641410+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

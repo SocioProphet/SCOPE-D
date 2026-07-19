@@ -1,0 +1,208 @@
+{
+  "profileId": "osint-profile-2a0cec3f09cc",
+  "target": "AbSomeone",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:13.590058+00:00",
+  "completedAt": "2026-06-21T15:28:14.265342+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-646a028f",
+      "lookupType": "github_context",
+      "target": "AbSomeone",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "AbSomeone",
+            "name": "SomeBody",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "pwn2found",
+            "public_repos": 15,
+            "followers": 4127,
+            "following": 24804,
+            "created_at": "2023-12-25T06:40:34Z",
+            "updated_at": "2026-03-09T06:12:34Z",
+            "html_url": "https://github.com/AbSomeone",
+            "avatar_url": "https://avatars.githubusercontent.com/u/154789021?v=4",
+            "repos": [
+              {
+                "name": "Attention-is-all-you-need",
+                "description": "Implementation of Google Brain's 2017 research paper. Attention is all you need! Trained and validated on Opus Books dataset",
+                "stargazers_count": 26,
+                "language": null,
+                "pushed_at": "2025-07-23T05:11:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bitcoin",
+                "description": "Bitcoin Core integration/staging tree",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2023-12-24T16:44:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TransformerAttention",
+                "description": "Transformer\u5185\u90e8\u306eSelf-Attention\u3092\u53ef\u8996\u5316\u3057\u307e\u3059\u3002",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2025-07-22T14:22:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Sunshine",
+                "description": "Self-hosted game stream host for Moonlight.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2025-10-01T20:07:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bochs",
+                "description": "Bochs - Cross Platform x86 Emulator Project",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2023-12-25T06:07:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "facex",
+                "description": "Full face stack that runs entirely in the browser. Detection, 576-point 3D mesh, recognition, anti-spoof, smile \u2014 all WebAssembly, zero server. Apache 2.0.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-05-14T23:59:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "moltbot-new",
+                "description": "Moltbot adds Windows version support and Chinese",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-01-29T01:03:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "go-ethereum",
+                "description": "Official Go implementation of the Ethereum protocol",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-12-24T14:04:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sigslot11",
+                "description": "SigSlot C++11 Version",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2021-01-11T13:46:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mtg",
+                "description": "Highly opinionated MTPROTO proxy for Telegram",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-03-07T00:41:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "linux",
+                "description": "Linux kernel source tree",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-04-04T02:04:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ttpoe",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-09-14T20:34:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llm.c",
+                "description": "LLM training in simple, raw C/CUDA",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-06-26T17:03:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpenSpec",
+                "description": "Spec-driven development for AI coding assistants.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-12-21T07:10:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "JoinFlow",
+                "description": "JoinFlow is a fully-featured Enterprise-Grade AI Agent Automation Platform designed to automate complex task execution through multi-agent collaboration. Whether it's web searching, data analysis, file operations, or report generation, JoinFlow can intelligently plan and efficiently complete any task.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-01-15T04:53:43Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:14.264697+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

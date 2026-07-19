@@ -1,0 +1,136 @@
+{
+  "profileId": "osint-profile-4ff5b9e197ea",
+  "target": "mxmnk",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:54.848421+00:00",
+  "completedAt": "2026-06-21T15:27:55.297855+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b2509b4e",
+      "lookupType": "github_context",
+      "target": "mxmnk",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mxmnk",
+            "name": "Jerzy",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Berlin, Germany",
+            "bio": "\u2b50\ufe0f Passionate Full-Stack Developer \u2b50\ufe0f",
+            "public_repos": 7,
+            "followers": 6454,
+            "following": 6883,
+            "created_at": "2018-12-20T17:27:13Z",
+            "updated_at": "2026-01-24T20:17:11Z",
+            "html_url": "https://github.com/mxmnk",
+            "avatar_url": "https://avatars.githubusercontent.com/u/46030850?v=4",
+            "repos": [
+              {
+                "name": "hooks",
+                "description": "Collection of hooks for React",
+                "stargazers_count": 83,
+                "language": "JavaScript",
+                "pushed_at": "2021-08-08T16:06:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "octopus",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-02T08:39:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "psychic-octo-computing-machine",
+                "description": null,
+                "stargazers_count": 45,
+                "language": "Smalltalk",
+                "pushed_at": "2021-09-20T10:15:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "no",
+                "description": "no",
+                "stargazers_count": 54,
+                "language": "Shell",
+                "pushed_at": "2021-09-20T10:14:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hey",
+                "description": null,
+                "stargazers_count": 69,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-06T12:07:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mxmnk",
+                "description": null,
+                "stargazers_count": 243,
+                "language": "Markdown",
+                "pushed_at": "2024-02-25T15:15:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "se",
+                "description": "Data Structures, Algorithms and Design Patterns",
+                "stargazers_count": 51,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-18T21:20:40Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:55.296776+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

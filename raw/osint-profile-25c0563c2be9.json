@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-25c0563c2be9",
+  "target": "amad3i",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:49.466845+00:00",
+  "completedAt": "2026-06-20T13:52:51.298084+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-14d49d70",
+      "lookupType": "github_context",
+      "target": "amad3i",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "amad3i",
+            "name": "Amad3i",
+            "type": "User",
+            "company": null,
+            "blog": "Discord: amad333i",
+            "location": "Earth",
+            "bio": "\ud83c\udfa8 Creator \u3000\u3000\u3000\u3000\u3000\u3000\ud83c\udf10 Indiehacker \u3000\u3000 \u3000\u3000\ud83e\udde0 Psychonaut\r\n",
+            "public_repos": 2378,
+            "followers": 3365,
+            "following": 3336,
+            "created_at": "2023-12-12T09:37:12Z",
+            "updated_at": "2026-05-17T05:40:10Z",
+            "html_url": "https://github.com/amad3i",
+            "avatar_url": "https://avatars.githubusercontent.com/u/153606278?v=4",
+            "repos": [
+              {
+                "name": "Clone-Wars",
+                "description": "100+ open-source clones of popular sites like Airbnb, Amazon, Instagram, Netflix, Tiktok, Spotify, Whatsapp, Youtube etc. See source code, demo links, tech stack, github stars.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-06T12:31:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react",
+                "description": "The library for web and native user interfaces.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-27T15:15:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native",
+                "description": "A framework for building native applications using React",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-27T19:20:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gplay-scraper",
+                "description": "GPlay Scraper is a powerful Python Google Play scraper library for extracting comprehensive app data from the Google Play Store. Scrape Google Play Store apps to get ratings, install counts, reviews, ASO metrics, developer information, and 65+ data fields",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-16T20:28:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fresh",
+                "description": "The next-gen web framework.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-25T08:43:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "podman",
+                "description": "Podman: A tool for managing OCI containers and pods.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-28T11:20:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "buildah",
+                "description": "A tool that facilitates building OCI images.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-28T02:55:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "skopeo",
+                "description": "Work with remote images registries - retrieving information, images, signing content",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-25T03:02:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "propeller",
+                "description": "Wasm orchestrator and rules engine built on the top of SuperMQ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-06T10:59:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ermine-ai",
+                "description": "https://ermine.ai -- 100% client-side live audio transcription, powered by transformers.js",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-04-06T17:45:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "js-libp2p",
+                "description": "A JavaScript Implementation of libp2p networking stack.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-26T03:09:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "caldera",
+                "description": "Automated Adversary Emulation Platform",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-15T10:40:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "create-react-app",
+                "description": "Set up a modern web app by running one command.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-15T01:32:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dref",
+                "description": " DNS Rebinding Exploitation Framework ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-04-27T17:33:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-wagtail",
+                "description": "A curated list of awesome packages, articles, and other cool resources from the Wagtail community.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-01-28T15:53:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Kalpana-agent",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-09-27T01:21:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rmtp-middleware",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-10-05T00:46:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "amad3i",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-04-11T09:29:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "king-phisher",
+                "description": "Phishing Campaign Toolkit",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-29T20:07:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AutoGPT",
+                "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-28T15:36:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "burn",
+                "description": "Burn is a next generation tensor library and Deep Learning Framework that doesn't compromise on flexibility, efficiency and portability.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-28T18:54:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "transformers",
+                "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-28T20:38:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-bugbounty-tools",
+                "description": "A curated list of various bug bounty tools",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-11-30T14:14:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "besu",
+                "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum client https://wiki.hyperledger.org/display/besu",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-28T17:26:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-ebpf",
+                "description": "A curated list of awesome projects related to eBPF.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-19T14:56:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SpiderSuite",
+                "description": "Advance web security spider/crawler",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-16T19:28:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "acuscan",
+                "description": "lets test an acunetix db for own python implementation",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-07T14:47:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "outline",
+                "description": "The fastest knowledge base for growing teams. Beautiful, realtime collaborative, feature packed, and markdown compatible.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-29T15:46:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "realworld",
+                "description": "\"The mother of all demo apps\" \u2014 Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-27T08:32:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "osxcollector",
+                "description": "A forensic evidence collection & analysis toolkit for OS X",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2019-06-19T15:40:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sellflow",
+                "description": "A beautiful, customizable open-source mobile app template for your Shopify storefront!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-31T06:33:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VanguardVote-FRONTEND",
+                "description": "VanguardVote is a modern polling and voting platform that provides users with an intuitive and secure way to participate in elections, surveys, and opinion polls. This frontend application ensures a responsive and seamless user experience.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-27T16:57:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "srt-translator",
+                "description": "AI-powered SRT subtitle translation tool with GUI and CLI\uff08AI\u9a71\u52a8\u7684SRT\u5b57\u5e55\u7ffb\u8bd1\u5de5\u5177\uff09",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-16T10:55:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "micro",
+                "description": "A modern and intuitive terminal-based text editor",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-28T00:25:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fl-reader",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-27T11:39:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Pluto.jl",
+                "description": "\ud83c\udf88 Simple reactive notebooks for Julia",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-26T21:33:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "free-ai-resources",
+                "description": "A curated collection of free, high-quality resources for learning about AI, including ML, deep learning, generative AI, natural language processing, data science, prompt engineering & AI ethics. It provides links to courses, tutorials and guides from reputable platforms to help learners and practitioners at all levels expand their knowledge in AI",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-05-24T05:51:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "argo-workflows",
+                "description": "Workflow Engine for Kubernetes",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-01T11:37:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "argo-cd",
+                "description": "Declarative Continuous Deployment for Kubernetes",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-01T15:27:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ardupilot",
+                "description": "ArduPlane, ArduCopter, ArduRover, ArduSub source",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-01T16:26:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "uv",
+                "description": "An extremely fast Python package and project manager, written in Rust.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-12-01T18:09:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aptos-core",
+                "description": "Aptos is a layer 1 blockchain built to support the widespread use of blockchain through better technology and user experience.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-01T18:28:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "superset",
+                "description": "Apache Superset is a Data Visualization and Data Exploration Platform",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-01T18:34:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hackerone-reports",
+                "description": "Top disclosed reports from HackerOne",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-07T12:33:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-telegram",
+                "description": "Collection great groups, channels, bots and libraries for Telegram",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-20T18:39:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yt-dlp-gui",
+                "description": "Desktop GUI for yt-dlp. Download videos and audio from 1000+ sites",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-20T10:28:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "atlantis",
+                "description": "Terraform Pull Request Automation",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-29T14:04:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llama_index",
+                "description": "LlamaIndex is the leading framework for building LLM-powered agents over your data.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-28T15:23:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HAL",
+                "description": "Hardware Abstraction Layer library.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-07-29T05:53:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "arm-trusted-firmware",
+                "description": "Read-only mirror of Trusted Firmware-A",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-28T04:40:42Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:51.297293+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "profileId": "osint-profile-6c5bd8e5a923",
+  "target": "revoltig4sg",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:32.806199+00:00",
+  "completedAt": "2026-06-21T15:33:33.899541+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-db1f1a55",
+      "lookupType": "github_context",
+      "target": "revoltig4sg",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "revoltig4sg",
+            "name": null,
+            "type": "User",
+            "company": "SoftMansion Tech",
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 34,
+            "followers": 1190,
+            "following": 1360,
+            "created_at": "2023-05-23T19:53:26Z",
+            "updated_at": "2026-03-18T14:56:49Z",
+            "html_url": "https://github.com/revoltig4sg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/134444531?v=4",
+            "repos": [
+              {
+                "name": "ServerMonitor",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "CSS",
+                "pushed_at": "2023-08-27T02:17:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "roid",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-12-09T16:24:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shopify",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Vue",
+                "pushed_at": "2023-08-26T16:30:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "daruma",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Dart",
+                "pushed_at": "2023-08-26T16:39:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blockchain",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-26T17:22:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Stock-Prediction-using-LSTM",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-08-19T17:50:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "viktor-lite",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2023-08-22T21:14:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kombo",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2023-08-26T15:33:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "go-play",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2023-08-26T16:15:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "go-master",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Go",
+                "pushed_at": "2023-08-26T15:04:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "atm-project",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2023-08-23T03:22:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Python-Media-Player",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-08-23T03:10:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ml-data-bot",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2023-08-19T18:04:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "protected_attributes",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Ruby",
+                "pushed_at": "2023-08-19T03:22:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "navigation-animation",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-26T16:26:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "masterPortfolio",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-19T18:03:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "truvisory",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-19T18:04:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio-deploy",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-19T18:46:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mobile-app",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-26T16:11:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-26T16:19:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "free-apps-store-system",
+                "description": null,
+                "stargazers_count": 18,
+                "language": "PHP",
+                "pushed_at": "2023-09-03T17:01:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "snipe-it",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2023-08-18T02:17:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mini-web-site-for-online-selling",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2023-08-19T03:07:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-portfolio",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-19T18:25:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nano-neuron",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-08-08T02:52:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tellhome-mean_stack",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-28T15:59:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "say-it",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2023-08-02T23:39:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RainyRoof_Restaurant_Website",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2023-08-08T03:33:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "timoanttila",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Vue",
+                "pushed_at": "2023-08-23T00:42:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "revoltig4sg",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-03T23:31:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jfilm-seeing",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-10-12T01:21:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Angular",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-12-03T02:11:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "topcorn-kotlin",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2023-10-28T13:57:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-tasklist-app",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-16T02:38:57Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:33.898760+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

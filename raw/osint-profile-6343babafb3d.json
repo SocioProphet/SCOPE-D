@@ -1,0 +1,403 @@
+{
+  "profileId": "osint-profile-6343babafb3d",
+  "target": "zha0090",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:18.411934+00:00",
+  "completedAt": "2026-06-20T13:53:18.879582+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-d1978f6f",
+      "lookupType": "github_context",
+      "target": "zha0090",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "zha0090",
+            "name": "Jack",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Developer? no, lord of AI",
+            "public_repos": 23,
+            "followers": 2021,
+            "following": 8113,
+            "created_at": "2025-08-02T14:17:09Z",
+            "updated_at": "2026-06-18T19:27:58Z",
+            "html_url": "https://github.com/zha0090",
+            "avatar_url": "https://avatars.githubusercontent.com/u/224280910?v=4",
+            "repos": [
+              {
+                "name": "databricks-industry-pixels",
+                "description": "\u2705 Ingest and index DICOM image metadata (.dcm and from zip archives) \u2705 Analyze DICOM image metadata with SQL and Machine Learning. \u2705 View, segment, label DICOM Images with OHIF viewer integrated into Lakehouse Apps and Databricks security model. \u2705 One button push to launch model training from OHIF viewer. \u2705 NVIDIA's MONAI Integration, AI to automat",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-23T14:43:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "agent_4_social_media",
+                "description": "This repository contains an 'agent' which can take in a URL, and generate a Twitter & LinkedIn post based on the content of the URL. It uses a human-in-the-loop (HITL) flow to handle authentication with different social media platforms, and to allow the user to make changes, or accept/reject the generated post.",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-27T01:18:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Multi-Agent-Task-Solver",
+                "description": "A flexible, production-ready agent orchestration system that enables multiple specialized AI agents to work together to solve complex tasks through coordinated execution with proper concurrency handling, retries, and timeout management.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2026-05-23T14:43:20Z",
+                "fork": false,
+                "topics": [
+                  "fastapi",
+                  "llm",
+                  "multiagent",
+                  "orchestration",
+                  "python"
+                ]
+              },
+              {
+                "name": "api-token-usage-alert",
+                "description": "Stop surprise API bills before they happen. API Spend Guard is a read-only, multi-provider cost monitoring platform for teams using OpenAI, Anthropic, GCP, and other AI/API services. It aggregates spend into one dashboard and sends real-time alerts when usage crosses your custom thresholds.",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-16T22:25:13Z",
+                "fork": false,
+                "topics": [
+                  "antropic",
+                  "bill",
+                  "gemini",
+                  "guard",
+                  "openai"
+                ]
+              },
+              {
+                "name": "zha0090",
+                "description": null,
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2026-06-20T13:43:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "talking-bot",
+                "description": "A ChatGPT-like chatbot with PHP and Python",
+                "stargazers_count": 7,
+                "language": "PHP",
+                "pushed_at": "2026-05-25T00:10:12Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "bot",
+                  "chatgpt",
+                  "docker",
+                  "php",
+                  "python"
+                ]
+              },
+              {
+                "name": "php-llm-integration",
+                "description": "This is a PHP library for Ollama. Ollama is an open-source project that serves as a powerful and user-friendly platform for running LLMs on your local machine. It acts as a bridge between the complexities of LLM technology and the desire for an accessible and customizable AI experience.",
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2026-05-25T00:11:28Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "composer",
+                  "llm",
+                  "ollama",
+                  "php"
+                ]
+              },
+              {
+                "name": "java-spring-boot-mark-logic",
+                "description": "Sample web application integrating MarkLogic 7 Java Client API with Spring Boot.",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2026-05-23T14:43:17Z",
+                "fork": false,
+                "topics": [
+                  "boot",
+                  "java",
+                  "logic",
+                  "mark",
+                  "spring"
+                ]
+              },
+              {
+                "name": "ai-voice-agent",
+                "description": "A comprehensive full-stack healthcare application that leverages AI-powered voice interactions for patient triage, symptom analysis, specialist mapping, and appointment booking. It is built with modern technologies including FastAPI, PostgreSQL, React, and integrated with leading AI models like Gemini and GPT-4.",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-23T14:43:03Z",
+                "fork": false,
+                "topics": [
+                  "fastapi",
+                  "gemini",
+                  "gpt-4",
+                  "langgraph",
+                  "postresql",
+                  "python",
+                  "razorpay",
+                  "react",
+                  "unicorn"
+                ]
+              },
+              {
+                "name": "tax-chatbot",
+                "description": "A hybrid RAG chatbot that answers financial and tax questions using structured data, regulatory documents, and AI-powered retrieval. Built with Django, FAISS, NetworkX, and OpenAI.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-05-23T14:43:31Z",
+                "fork": false,
+                "topics": [
+                  "chatbot",
+                  "faiss",
+                  "llm",
+                  "openai",
+                  "python",
+                  "rag",
+                  "tax",
+                  "taxgpt",
+                  "vector"
+                ]
+              },
+              {
+                "name": "chatbot-openwebui-react-native",
+                "description": "Open MobileUI is a production-ready, cross-platform mobile application that brings the full power of Open WebUI to iOS and Android devices. Built with React Native by zha0090, Open MobileUI transforms your self-hosted AI assistant into a native mobile experience.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-23T18:48:13Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "auth",
+                  "chat",
+                  "gpt",
+                  "mobile",
+                  "multimodel",
+                  "openwebui",
+                  "reactnative",
+                  "websocket"
+                ]
+              },
+              {
+                "name": "ai-algo",
+                "description": "LeetCode-style platform using Vue.js, Django, and DeepSeek to deliver AI-powered coding hints",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-09T16:24:54Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "assistant",
+                  "deepseek",
+                  "django",
+                  "vue"
+                ]
+              },
+              {
+                "name": "ecommerce_web",
+                "description": "This is an ecommerce web application developed using PHP and MySQL, with Bootstrap for the user interface. ",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2026-05-22T14:27:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blockchain-ehr-management",
+                "description": "Electronic Health Record (EHR) and Electronic Medical Record (EMR) systems. However, they still face some issues regarding the security of medical records, user ownership of data, data integrity etc. The solution to these issues could be the use of a novel technology, i.e., Blockchain. This technology offers to provide a secure, temper-proof pl\u2026",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-23T14:43:10Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "blockchain",
+                  "bootstrap5",
+                  "ehr",
+                  "etherium",
+                  "ganache-cli",
+                  "ipfs",
+                  "metamask",
+                  "react",
+                  "truffle-framwork"
+                ]
+              },
+              {
+                "name": "voguevilla",
+                "description": "Ecommerce Platform: Crafted a comprehensive ecommerce platform for clothes enthusiasts using Python Django, HTML, CSS, JavaScript. This project boasts a user-centric design with secure user authentication, an intuitive product catalog with dynamic filtering, a robust shopping cart system.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-09T05:28:19Z",
+                "fork": false,
+                "topics": [
+                  "ajax",
+                  "bootstrap",
+                  "css",
+                  "django",
+                  "java",
+                  "paypal",
+                  "python"
+                ]
+              },
+              {
+                "name": "mern-stack-ecommerce",
+                "description": "An ecommerce store built with MERN stack, and utilizes third party API's. This ecommerce store enable three main different flows or implementations",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-09T17:00:46Z",
+                "fork": false,
+                "topics": [
+                  "ecommerce",
+                  "express",
+                  "mern",
+                  "mongodb",
+                  "nodejs",
+                  "react"
+                ]
+              },
+              {
+                "name": "react-redux-ecommerce",
+                "description": "awesome E-commerce site using react and redux, with fast, flexible and responsive design",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-09T17:49:20Z",
+                "fork": false,
+                "topics": [
+                  "ecommerce",
+                  "react",
+                  "redux",
+                  "responsive-design"
+                ]
+              },
+              {
+                "name": "video-stream-youtube",
+                "description": "Portable, independent, web-based, simple streaming YouTube video queues and playlists for music videos, audiobooks, etc.",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-09T18:15:21Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "javascript",
+                  "music",
+                  "player",
+                  "playlist",
+                  "stream",
+                  "video",
+                  "web",
+                  "youtube",
+                  "youtube-video-queue"
+                ]
+              },
+              {
+                "name": "webrtc-nodejs-video-call",
+                "description": "A conference call implementation using WebRTC, Socket.io and Node.js",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-09T18:30:28Z",
+                "fork": false,
+                "topics": [
+                  "chat-application",
+                  "javascript",
+                  "nodejs",
+                  "socket-io",
+                  "video-call",
+                  "webrtc"
+                ]
+              },
+              {
+                "name": "spring-boot-starter",
+                "description": "MyBatis integration with Spring Boot",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2025-08-26T11:44:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "implementation_rag",
+                "description": "LLMs are trained on a large but fixed corpus of data, limiting their ability to reason about private or recent information. Fine-tuning is one way to mitigate this, but is often not well-suited for factual recall and can be costly. Retrieval augmented generation (RAG) has emerged as a popular and powerful mechanism to expand an LLM's knowledge base",
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-01-27T01:08:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "provider-comparator-via-concentrateAPI",
+                "description": "A CLI tool that pits two LLM providers against each other on the same prompts, uses a third LLM call as a judge, and generates an HTML leaderboard report. Built on the Concentrate AI unified API.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-03-19T04:14:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-integration-healthcare",
+                "description": "This repository is included artificial intelligence, machine learning, data science, computer vision projects related to healthcare.",
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-03-23T00:02:46Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "deeplearning",
+                  "healthcare",
+                  "medical-imaging",
+                  "medicalimageanalysis",
+                  "medicine-classification"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:18.878862+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,762 @@
+{
+  "profileId": "osint-profile-585e74d24224",
+  "target": "frangelbarrera",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:35.790777+00:00",
+  "completedAt": "2026-06-20T16:47:36.780405+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6e1087b6",
+      "lookupType": "github_context",
+      "target": "frangelbarrera",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "frangelbarrera",
+            "name": "Frangel Ra\u00fal Crespo Barrera",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Cybersecurity Engineer & Developer\r\nOT/IT Security | Ethical Hacking | Automation",
+            "public_repos": 41,
+            "followers": 1266,
+            "following": 1012,
+            "created_at": "2025-03-01T23:04:21Z",
+            "updated_at": "2026-05-23T20:41:30Z",
+            "html_url": "https://github.com/frangelbarrera",
+            "avatar_url": "https://avatars.githubusercontent.com/u/201400231?v=4",
+            "repos": [
+              {
+                "name": "OSINT-BIBLE",
+                "description": "A comprehensive 2026 guide to Open-Source Intelligence (OSINT): tools, methodologies, ethics, and techniques for responsible research and investigation.",
+                "stargazers_count": 459,
+                "language": null,
+                "pushed_at": "2026-04-23T01:48:37Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "data-analysis",
+                  "ethical-hacking",
+                  "forensics",
+                  "investigation",
+                  "open-source-intelligence",
+                  "osint",
+                  "privacy",
+                  "research-tools",
+                  "threat-intelligence"
+                ]
+              },
+              {
+                "name": "frangelbarrera",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-06-20T02:42:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Terra5",
+                "description": "WORLDVIEW - Tactical geospatial intelligence platform for macOS with live flight tracking, satellite positions, and earthquake monitoring",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-02-21T00:55:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-subnet-calculator",
+                "description": "Professional subnet calculator with CLI and web dashboard \u2014 built for network engineers",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-03-20T16:07:12Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "cybersecurity",
+                  "ipaddress",
+                  "networking",
+                  "python",
+                  "subnet"
+                ]
+              },
+              {
+                "name": "Network-Scanner",
+                "description": "An AI-powered network scanning platform for automated vulnerability assessment and penetration testing. Combines traditional security tools with intelligent analysis for comprehensive reconnaissance, risk assessment, and professional reporting.",
+                "stargazers_count": 16,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-19T13:36:02Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "cybersecurity",
+                  "ethical-hacking",
+                  "flask",
+                  "network-scanner",
+                  "nmap",
+                  "penetration-testing",
+                  "python",
+                  "react",
+                  "reconnaissance",
+                  "security-tools",
+                  "vulnerability-assessment"
+                ]
+              },
+              {
+                "name": "deepweb-leak-search",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T19:45:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Spyglass-malware-analysis",
+                "description": "Advanced malware analysis and honeypot framework for Windows with real-time dynamic & static analysis, network monitoring, and alerting.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-01-20T03:40:31Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "dynamic-analysis",
+                  "flask",
+                  "frida",
+                  "honeypot",
+                  "malware-analysis",
+                  "network-monitoring",
+                  "pe-analysis",
+                  "python",
+                  "rest-api",
+                  "security-tools",
+                  "sqlite",
+                  "static-analysis",
+                  "threat-hunting",
+                  "windows"
+                ]
+              },
+              {
+                "name": "Artificial-Intelligence-Universe",
+                "description": "The most expansive ecosystem of AI on GitHub. 800+ tools, autonomous agents, and next-gen resources. Your definitive map to the Artificial Intelligence Universe.",
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2026-02-01T17:27:34Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-agents",
+                  "ai-coding",
+                  "ai-development",
+                  "ai-directories",
+                  "ai-models",
+                  "ai-resources",
+                  "ai-tools",
+                  "artificial-intelligence",
+                  "automation",
+                  "deep-learning",
+                  "intelligent-machines",
+                  "intelligent-systems",
+                  "list",
+                  "machine-learning",
+                  "neural-network",
+                  "productivity",
+                  "reinforcement-learning",
+                  "research",
+                  "tools-collection"
+                ]
+              },
+              {
+                "name": "awesome-ai-agents",
+                "description": "A curated list of state-of-the-art AI Agents, frameworks, and autonomous workflows in 2026. Focuses on production-ready tools, OSINT, and coding assistants.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-06-01T18:18:41Z",
+                "fork": false,
+                "topics": [
+                  "2026",
+                  "ai",
+                  "ai-agents",
+                  "artificial-intelligence",
+                  "autonomous-agents",
+                  "awesome-list",
+                  "llm",
+                  "osint"
+                ]
+              },
+              {
+                "name": "theZoo",
+                "description": "A repository of LIVE malwares for your own joy and pleasure. theZoo is a project created to make the possibility of malware analysis open and available to the public.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-01T05:10:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "heretic",
+                "description": "Fully automatic censorship removal for language models",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-31T09:56:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Awesome-Hacking-with-AI",
+                "description": "The definitive guide to AI-powered offensive security, exploring advanced tactics in AI-driven phishing, malware development, botnet orchestration, and autonomous network exploitation. A comprehensive resource for ethical hackers, security researchers, and red teamers.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-02-18T14:12:37Z",
+                "fork": false,
+                "topics": [
+                  "ai-hacking",
+                  "ai-security",
+                  "artificial-intelligence",
+                  "autonomous-agents",
+                  "botnet",
+                  "cybersecurity",
+                  "ethical-hacking",
+                  "llm-agents",
+                  "malware",
+                  "network-security",
+                  "offensive-security",
+                  "pentesting",
+                  "phishing",
+                  "red-teaming"
+                ]
+              },
+              {
+                "name": "Abster-Intelligence",
+                "description": "Sovereign OSINT platform for modern investigators. Local-first, open-source, and privacy-centric.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-23T02:04:50Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "d3js",
+                  "forensics",
+                  "geoint",
+                  "graph-visualization",
+                  "intelligence-analysis",
+                  "investigation-tool",
+                  "investigative-journalism",
+                  "local-first",
+                  "nextjs",
+                  "osint",
+                  "privacy",
+                  "reconnaissance",
+                  "threat-intelligence",
+                  "typescript",
+                  "zero-trust"
+                ]
+              },
+              {
+                "name": "IndustrialScanner-Lite",
+                "description": "Modular ICS/OT cybersecurity toolkit for Modbus/TCP, Siemens S7Comm, and DNP3. Generates JSON/HTML reports and executive dashboards from PCAPs and safe Modbus scans. Includes sample PCAPs and ModbusPal for testing.",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-01-20T03:50:22Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "critical-infrastructure",
+                  "cybersecurity",
+                  "dashboard",
+                  "dnp3",
+                  "forensic-analysis",
+                  "ics-security",
+                  "industrial-automation",
+                  "industrial-control-systems",
+                  "modbus",
+                  "network-forensics",
+                  "operational-technology",
+                  "ot-security",
+                  "packet-analysis",
+                  "penetration-testing",
+                  "python",
+                  "s7comm",
+                  "scada",
+                  "threat-detection",
+                  "toolkit"
+                ]
+              },
+              {
+                "name": "Cloud-Misconfig-Scanner",
+                "description": "Multi\u2011cloud storage misconfiguration scanner for AWS, Azure, and GCP \u2014 with simulated mode for demo/testing and HTML, JSON, and text reports.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-01-20T03:41:26Z",
+                "fork": false,
+                "topics": [
+                  "aws-s3",
+                  "azure-blob-storage",
+                  "cibersecurity",
+                  "cloud-audit",
+                  "cloud-aws",
+                  "cloud-azure",
+                  "cloud-compliance",
+                  "cloud-gcp",
+                  "cloud-security",
+                  "gcp-storage",
+                  "infraestructure-se",
+                  "pentesting-tools",
+                  "security-scanner"
+                ]
+              },
+              {
+                "name": "wstg",
+                "description": "Community-maintained Spanish translation of the OWASP Web Security Testing Guide (WSTG). https://github.com/OWASP/wstg#translations.",
+                "stargazers_count": 8,
+                "language": "Dockerfile",
+                "pushed_at": "2026-01-03T04:16:05Z",
+                "fork": true,
+                "topics": [
+                  "ciberseguridad",
+                  "hacking-etico",
+                  "owasp",
+                  "pentesting",
+                  "security-guide",
+                  "security-testing",
+                  "seguridad-web",
+                  "wstg"
+                ]
+              },
+              {
+                "name": "ICS-Cybersecurity-Audit",
+                "description": "Comprehensive methodology, checklists, and hardening guides for ICS/OT Cybersecurity Audits based on IEC 62443 & NIST SP 800-82. Focus on defensive security practices and risk mitigation in industrial environments.",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2026-02-02T08:31:35Z",
+                "fork": false,
+                "topics": [
+                  "critical-infrastructure",
+                  "cybersecurity-audit",
+                  "hmi-security",
+                  "ics-security",
+                  "iec-62443",
+                  "industrial-cybersecurity",
+                  "network-segmentation",
+                  "nist-800-82",
+                  "ot-security",
+                  "pentesting",
+                  "plc-security",
+                  "scada-security",
+                  "threat-intelligence",
+                  "vulnerability-management",
+                  "zero-trust-ot"
+                ]
+              },
+              {
+                "name": "WinSecureAuditor-CIS-Windows-Security-Scanner",
+                "description": "Python tool to audit Windows 10/11/Server against CIS Benchmarks. 1000+ checks, HTML/JSON reports.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-05-20T18:37:25Z",
+                "fork": false,
+                "topics": [
+                  "benchmark-audit",
+                  "cis-benchmarks",
+                  "cybersecurity",
+                  "python",
+                  "registry-audit",
+                  "security-audit",
+                  "security-scanner",
+                  "windows",
+                  "windows-10",
+                  "windows-11",
+                  "windows-hardening",
+                  "windows-security"
+                ]
+              },
+              {
+                "name": "api-key-secure-generator",
+                "description": "A GitHub Action to generate cryptographically secure API keys for CI/CD pipelines. Features configurable length, automatic log masking, and seamless workflow integration using Python's secrets module.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-19T13:43:23Z",
+                "fork": false,
+                "topics": [
+                  "api-key",
+                  "automation",
+                  "ci-cd",
+                  "cryptography",
+                  "cybersecurity",
+                  "devops",
+                  "docker",
+                  "entropy",
+                  "github-action",
+                  "github-workflows",
+                  "python",
+                  "random",
+                  "secrets",
+                  "security",
+                  "token-generation"
+                ]
+              },
+              {
+                "name": "medical-saas-fullstack-boilerplate",
+                "description": "Full-stack Medical SaaS MVP: Boilerplate with AI Scribe, role-based security, and PostgreSQL.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-16T00:20:03Z",
+                "fork": false,
+                "topics": [
+                  "ai-medical-assistant",
+                  "clinic-management",
+                  "ehr-system",
+                  "gemini-api",
+                  "healthcare-it",
+                  "hipaa-compliance",
+                  "medical-software",
+                  "react-boilerplate",
+                  "saas-boilerplate",
+                  "typescript-fullstack",
+                  "zero-trust-architecture"
+                ]
+              },
+              {
+                "name": "aegistrace-threat-intelligence",
+                "description": "AegisTrace is a cyber threat intelligence platform that collects, enriches, and visualizes threat data from multiple sources, extracting actionable IoCs and delivering insights via an interactive dashboard.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-01-20T03:42:57Z",
+                "fork": false,
+                "topics": [
+                  "arima",
+                  "cti",
+                  "cybersecurity",
+                  "data-visualization",
+                  "malware-analysis",
+                  "nlp",
+                  "open-source-intelligence",
+                  "plotly",
+                  "python",
+                  "security-dashboard",
+                  "threat-intelligence"
+                ]
+              },
+              {
+                "name": "SpyNote-v6.4",
+                "description": "SpyNote V6.4 Android Trojan",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-06-25T20:34:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "StyxLoaderX-EDR-Evasion",
+                "description": "\"A modular framework for advanced EDR evasion on Windows x64, featuring dynamic syscalls, AES encryption, and process hollowing. 85% evasion rate against Sysmon.\"",
+                "stargazers_count": 6,
+                "language": "C++",
+                "pushed_at": "2025-12-14T08:25:57Z",
+                "fork": false,
+                "topics": [
+                  "assembly",
+                  "c-plus-plus",
+                  "cybersecurity",
+                  "edr-evasion",
+                  "ethical-hacking",
+                  "malware-analysis",
+                  "obfuscation",
+                  "penetration-testing",
+                  "process-hollowing",
+                  "process-injection",
+                  "red-team",
+                  "security-research",
+                  "syscalls",
+                  "windows",
+                  "windows-api"
+                ]
+              },
+              {
+                "name": "openclaude",
+                "description": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-04-03T17:40:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "claurst",
+                "description": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-01T07:33:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flutter-shopping-app",
+                "description": "A fully functional Flutter e-commerce application with dark theme, built with Material Design 3. Features product catalog, shopping cart, search, and FakeStore API integration. Portfolio project showcasing modern mobile development skills.",
+                "stargazers_count": 6,
+                "language": "Dart",
+                "pushed_at": "2026-01-20T03:49:14Z",
+                "fork": false,
+                "topics": [
+                  "android-app",
+                  "api-integration",
+                  "clean-architecture",
+                  "cross-platform",
+                  "dark-theme",
+                  "dart",
+                  "e-commerce",
+                  "fakestore-api",
+                  "flutter",
+                  "flutter-apps",
+                  "material-design",
+                  "material-design-3",
+                  "mobile-app",
+                  "mobile-development",
+                  "portfolio-project",
+                  "responsive-design",
+                  "shopping-app",
+                  "state-management"
+                ]
+              },
+              {
+                "name": "secure-agent-orchestrator",
+                "description": "Lightweight REST API for centralized control and orchestration of asynchronous commands to remote security agents. Built with FastAPI, optimized for 4GB RAM environments. Features JWT authentication, SQLite storage, asyncio concurrency, and real-time command tracking. Perfect for DevOps managing distributed security infrastructure.",
+                "stargazers_count": 17,
+                "language": "Python",
+                "pushed_at": "2026-01-26T23:41:30Z",
+                "fork": false,
+                "topics": [
+                  "agent-orchestration",
+                  "api",
+                  "cybersecurity",
+                  "devops",
+                  "distributed-systems",
+                  "fastapi",
+                  "jwt-authentication",
+                  "orchestration",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "phishing-detection-rnn-cnn",
+                "description": "Offline phishing detection model for websites using a hybrid CNN\u2013LSTM architecture. Operates without internet access, classifying URLs as legitimate or potentially malicious based on learned patterns.",
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-01-20T03:44:33Z",
+                "fork": false,
+                "topics": [
+                  "cnn",
+                  "cybersecurity",
+                  "hybrid-neural-network",
+                  "lstm",
+                  "machine-learning",
+                  "malware-prevention",
+                  "offline-models",
+                  "phishing-detection",
+                  "python",
+                  "rnn",
+                  "security-tools",
+                  "tensorflow",
+                  "threat-detection",
+                  "url-analysis"
+                ]
+              },
+              {
+                "name": "awesome-workflows",
+                "description": "Production-ready GitHub Actions workflows, templates & best practices for CI/CD, DevOps, Security, MLOps, and more.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-02-07T16:42:10Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "automation-tools",
+                  "ci-cd",
+                  "cicd",
+                  "devops",
+                  "devsecops",
+                  "github-actions",
+                  "github-workflows",
+                  "workflows"
+                ]
+              },
+              {
+                "name": "sentinelscope",
+                "description": "Modular OSINT framework for automated reconnaissance across GitHub, domains, phone numbers, and LinkedIn.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-01-20T03:47:04Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "cibersecurity",
+                  "github-api",
+                  "infosec",
+                  "linkedin",
+                  "osint",
+                  "phone-lookup",
+                  "python",
+                  "reconnaissance",
+                  "subdomains",
+                  "threat-intelligence",
+                  "whois"
+                ]
+              },
+              {
+                "name": "fitlife-app",
+                "description": "A Flutter UI template for building fitness tracking applications, featuring tabs for programs, diet, results, and activity tracking.",
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2026-01-26T23:39:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sentry-Vision-MVP",
+                "description": "Real-time object detection (people, phones, laptops) and QR scanning using YOLOv8. Includes tracking, analytics dashboard, audit logging, and ONNX optimization. Runs at 12-15 FPS on modest hardware. Ideal for DIY security cameras and edge computing.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-02-01T02:11:24Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "computer-vision",
+                  "edge-computing",
+                  "iot",
+                  "machine-learning",
+                  "object-detection",
+                  "onnx",
+                  "opencv",
+                  "python",
+                  "real-time",
+                  "security-camera",
+                  "streamlit",
+                  "surveillance",
+                  "yolo"
+                ]
+              },
+              {
+                "name": "blueprint",
+                "description": "A React-based UI toolkit for the web",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-19T01:38:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-pentest",
+                "description": "A collection of awesome penetration testing resources, tools and other shiny things",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-02T15:19:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-python",
+                "description": "An opinionated list of awesome Python frameworks, libraries, software and resources.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-02-02T07:00:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "public-apis",
+                "description": "A collective list of free APIs",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-01-28T15:07:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PayloadsAllTheThings",
+                "description": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-21T17:40:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "developer-roadmap",
+                "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-27T13:52:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Python",
+                "description": "All Algorithms implemented in Python",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-28T16:33:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sherlock",
+                "description": "Hunt down social media accounts by username across social networks",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-27T23:53:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pegasus_spyware",
+                "description": "decompiled pegasus_spyware",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2021-07-28T15:13:07Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:36.779418+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

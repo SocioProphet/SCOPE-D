@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-75257b0dc75c",
+  "target": "sigridjineth",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:20.937761+00:00",
+  "completedAt": "2026-06-21T15:28:22.445862+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-acf2a32e",
+      "lookupType": "github_context",
+      "target": "sigridjineth",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "sigridjineth",
+            "name": "Sigrid Jin (\u0e07'\u0300-'\u0301)\u0e07 oO",
+            "type": "User",
+            "company": "@ubc arts undergrad",
+            "blog": "sigridjin.medium.com",
+            "location": "Seoul, Korea & Vancouver, BC",
+            "bio": "\ud83d\udef8 \ud83c\udf0e \ud83d\ude80 \ud835\udd66\ud835\udd5d\ud835\udd65\ud835\udd63\ud835\udd52\ud835\udd65\ud835\udd59\ud835\udd5a\ud835\udd5f\ud835\udd5c \ud835\udd56\ud835\udd5f\ud835\udd58\ud835\udd5a\ud835\udd5f\ud835\udd56\ud835\udd56\ud835\udd63 \ud83d\udef0  \ud83e\ude90 \u00b0\u00b7",
+            "public_repos": 388,
+            "followers": 3777,
+            "following": 6813,
+            "created_at": "2018-07-10T10:47:09Z",
+            "updated_at": "2026-05-23T02:48:47Z",
+            "html_url": "https://github.com/sigridjineth",
+            "avatar_url": "https://avatars.githubusercontent.com/u/41055141?v=4",
+            "repos": [
+              {
+                "name": "hello-ansible-skills",
+                "description": "Ansible automation skills for Claude Code: playbook development, debugging, shell conversion, and interactive workflows.",
+                "stargazers_count": 65,
+                "language": "Shell",
+                "pushed_at": "2026-01-17T12:22:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "openclaw",
+                "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+                "stargazers_count": 24,
+                "language": null,
+                "pushed_at": "2026-03-17T11:29:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "oh-my-codex",
+                "description": "Sigrid's personal codex plugin",
+                "stargazers_count": 17,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-09T18:44:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "agentjson",
+                "description": "The parser that repairs broken JSON output for AI Agent Pipelines",
+                "stargazers_count": 117,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T08:46:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "near-indexer-for-explorer",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-09-07T10:20:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kubespray-skills",
+                "description": "Kubespray skills for Kubernetes cluster management",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-02-23T02:21:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gajae-code",
+                "description": "Gajae Code MVP",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-07T04:26:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ssr-py",
+                "description": "Unofficial Python Implementation of No More K-means: Single-Stage Sparse Coding for Efficient Multi-Vector Retrieval",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-06-06T16:59:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deepseek-week4",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-06T16:50:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "homelab",
+                "description": "Fell in love with the cluster-template, now my whole house needs to run on Kubernetes",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-02-18T11:43:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-slop-cleaner",
+                "description": "Detect AI-generated prose patterns (\"AI slop\") in any language. A Rust CLI handles fast regex scoring for universal structural signals (emoji, bold abuse, em dashes, plus-sign conjunctions). Language-specific and semantic patterns are defined in plain markdown and evaluated by an LLM agent, with no hardcoded language lists.",
+                "stargazers_count": 8,
+                "language": "Rust",
+                "pushed_at": "2026-04-27T11:28:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uclaw",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2026-04-11T21:50:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backdated-commit-forensics-skills",
+                "description": "A public-facing triage & forensics toolkit for spotting GitHub repositories that may have been rewritten with backdated, force-pushed commits.",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2026-04-10T15:52:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "oh-my-claudecode",
+                "description": "Teams-first Multi-agent orchestration for Claude Code",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2026-03-09T18:48:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "prisma-client-py",
+                "description": "Prisma Client Python is an auto-generated and fully type-safe database client designed for ease of use",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-05-27T15:07:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "how-to-build-a-coding-agent",
+                "description": "A workshop that teaches you how to build your own coding agent. Similar to Roo code, Cline, Amp, Cursor, Windsurf or OpenCode.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-08-24T03:14:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "interview-copilot-with-skills",
+                "description": "Build Your Team's Interview Copilot using Claude Skills",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-12-15T13:10:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pgvecto.rs",
+                "description": "Scalable Vector database plugin for Postgres, written in Rust, specifically designed for LLM",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-26T04:16:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "clawpark",
+                "description": "Interactive collectible-claw breeding demo",
+                "stargazers_count": 20,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-24T23:31:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "workday-mcp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-17T13:50:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hermes-agent",
+                "description": "The agent that grows with you",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-12T14:36:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "k8s-hard-way",
+                "description": "Building a Kubernetes Cluster From Scratch In Your Local Macbook Pro",
+                "stargazers_count": 12,
+                "language": "Shell",
+                "pushed_at": "2026-01-10T18:28:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sigridjineth",
+                "description": null,
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2026-04-24T22:20:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "newton-sdk",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-28T23:15:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pi-colgrep-plugins",
+                "description": "Pi coding agent extension for ColGREP \u2014 semantic code search powered by ColBERT late-interaction embeddings.",
+                "stargazers_count": 12,
+                "language": "Rust",
+                "pushed_at": "2026-04-22T10:29:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "eggroll-embedding-trainer",
+                "description": "A PyTorch implementation of gradient-free optimization for directly optimizing NDCG (Normalized Discounted Cumulative Gain) in neural information retrieval systems using Evolution Strategies.",
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2025-12-21T15:13:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "llama-stack",
+                "description": "Model components of the Llama Stack APIs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-09-25T17:35:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sample-codex-coauthor",
+                "description": "Sample Git hook + Codex skills for GitHub co-author attribution",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2026-03-22T06:21:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "claw-nk-captcha",
+                "description": "The OpenClaw plugin that filters out North Korean candidates with a single line of captcha.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-09T01:47:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "claude-kubeadm-skills",
+                "description": "A collection of Claude Code skills for setting up and troubleshooting Kubernetes clusters using kubeadm.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-01-24T23:14:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "decode-claudecode",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-07T05:56:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "oh-my-codex-1",
+                "description": "OmX - Oh My codeX: Your codex is not alone. Add hooks, agent teams, HUDs, and so much more.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-03-16T01:46:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "solana-mixture-of-node-experts",
+                "description": "Solana MoNE: Mixture of Node-based Experts",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-06T04:48:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "opengateway",
+                "description": "Open Gateway OG Credit Redeem",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-28T18:45:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "oh-my-geminicli",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-03-08T18:07:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "codex-visual-feedback",
+                "description": "Rust-first Codex plugin for macOS visual reasoning loops.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-02-28T06:54:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pq-vector",
+                "description": "Vector search using only Parquet and DataFusion",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-02-21T02:13:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "s3-vectors-rs",
+                "description": "The unofficial CLI of Amazon S3 Vectors (Preview) in Rust",
+                "stargazers_count": 17,
+                "language": "Rust",
+                "pushed_at": "2025-07-19T12:50:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mlx-rs",
+                "description": "Unofficial Rust bindings to Apple's mlx framework",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-08-17T16:33:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "inferGPT",
+                "description": "a simple c++ inference engine for gpt based architecture",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-12-03T16:17:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WeKnora",
+                "description": "LLM-powered framework for deep document understanding, semantic retrieval, and context-aware answers using RAG paradigm.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-17T14:10:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "embedding-compressor-rs",
+                "description": "Rust + Python implementation of the jzip spherical compression format for embeddings",
+                "stargazers_count": 11,
+                "language": "Rust",
+                "pushed_at": "2026-02-21T23:23:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "figbuild2026-safespace",
+                "description": "SafeSpace \u2014 Pre-Conscious Stress Forecasting iOS web app",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-10T02:56:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ant-tool-signature-proxy",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-08T09:30:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zkIdentity",
+                "description": "Private Identity Claim System with Zero-Knowledge for DarkForest.eth",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2022-05-15T03:38:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kimchi",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-02-28T09:52:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hwp2pdf",
+                "description": "hwp2pdf converter in Python",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-02-17T08:20:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sample-host-openclaw-on-amazon-bedrock-agentcore",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-24T05:56:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HyperliquidBench",
+                "description": "HyperliquidBench is a reproducible benchmark for measuring the operational competence of Hyperliquid on-chain trading agents.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-09-22T04:24:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "txtai",
+                "description": "\ud83d\udca1 All-in-one AI framework for semantic search, LLM orchestration and language model workflows",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-16T18:38:43Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:22.445063+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

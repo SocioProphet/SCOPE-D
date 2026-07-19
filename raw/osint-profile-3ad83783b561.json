@@ -1,0 +1,261 @@
+{
+  "profileId": "osint-profile-3ad83783b561",
+  "target": "sheriffsec",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:50:02.014976+00:00",
+  "completedAt": "2026-06-20T16:50:02.766799+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3043b973",
+      "lookupType": "github_context",
+      "target": "sheriffsec",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "sheriffsec",
+            "name": "Sheriff",
+            "type": "User",
+            "company": "Alien-x Company | located in Mars",
+            "blog": "",
+            "location": "Mars",
+            "bio": "Chasing progress, not perfection.",
+            "public_repos": 20,
+            "followers": 669,
+            "following": 1431,
+            "created_at": "2024-07-11T02:49:46Z",
+            "updated_at": "2026-06-04T12:13:40Z",
+            "html_url": "https://github.com/sheriffsec",
+            "avatar_url": "https://avatars.githubusercontent.com/u/175275306?v=4",
+            "repos": [
+              {
+                "name": "webshield-portal",
+                "description": "Official portal for WebShield - AI-Powered Web Vulnerability Scanner",
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2026-01-15T16:54:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sheriffsec",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-04T13:02:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shadow-scan",
+                "description": "AI-powered OSINT platform that automates reconnaissance, organizes investigation cases, and generates structured intelligence reports.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-22T17:46:10Z",
+                "fork": false,
+                "topics": [
+                  "ai-automation",
+                  "cyber-security",
+                  "digital-forensics",
+                  "ethical-hacking",
+                  "osint",
+                  "reconnaissance",
+                  "threat-intelligence"
+                ]
+              },
+              {
+                "name": "writeupforge",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-03T04:06:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "webshield-backend",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-01-14T08:26:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "secureLab",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-31T10:26:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "calculator-webapp",
+                "description": "A simple calculator performs Addition, Subtraction, Multiplication and Division ",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-23T06:07:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "thephantomdelux",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-01-31T17:58:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webshield-frontend",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-01-11T15:48:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Knightbot",
+                "description": "A simple WhatsApp bot to manage groups",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-15T14:10:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ethix-MD-V2",
+                "description": "Ethix-MD-V2 is a multi-device WhatsApp bot designed to provide enhanced functionality and automation for WhatsApp users. Developed by Ethix-Xsid, this repository offers an easy-to-deploy solution for integrating with WhatsApp through a bot interface.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-01T09:38:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "QueenElisa",
+                "description": "QUEEN-ELISA-MD New Repository. ||  Queen Elisa Automated whatsapp md bot created by mr nima using nodejs and baileys lib",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-20T17:04:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "X-BOT-MD",
+                "description": "A user-friendly WhatsApp bot developed by ASWIN SPARKY",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-02T10:56:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "suhailmd-2.0",
+                "description": "suhail md",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-04T20:22:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WASI-MD-V",
+                "description": "simple powrful wa bot",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-23T16:53:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "XLICON-V3-MD",
+                "description": "XLICON-V3 is a Cool Multi-Device WhatsApp bot developed by Salman Ahamed. It offers a wide range of extraordinary features, making it an advanced and user-friendly bot for various purposes.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-12T06:26:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "whatsapp-bot-md",
+                "description": "A whatsapp Multi Device bot based on baileys",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-11T23:00:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WASI-MD-V2",
+                "description": "WASI-MD-V2 is a Cool Multi-Device WhatsApp bot developed by WASI TECH. This bot is just developed for using whatsapp in funny ways.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-13T09:28:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Suhail-Md",
+                "description": "meet Suhail-Md, Your All-in-One WhatsApp Excitement Buddy! Enjoy a thrilling messaging experience like never before. Suhail-Md brings a world of excitement and joy to your chats \u2728\ud83e\udd16",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-15T06:52:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VAJIRA-MD",
+                "description": "\ud83c\uddf1\ud83c\uddf0King vajira md v5 update released\ud83c\uddf1\ud83c\uddf0",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-11T13:37:36Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:50:02.766121+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

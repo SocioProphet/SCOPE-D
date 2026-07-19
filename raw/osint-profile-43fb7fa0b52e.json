@@ -1,0 +1,850 @@
+{
+  "profileId": "osint-profile-43fb7fa0b52e",
+  "target": "NazmusSayad",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:56.077553+00:00",
+  "completedAt": "2026-06-21T15:27:57.008895+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e7060163",
+      "lookupType": "github_context",
+      "target": "NazmusSayad",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "NazmusSayad",
+            "name": "Nazmus Sayad",
+            "type": "User",
+            "company": "@OiPer",
+            "blog": "nazmussayad.com",
+            "location": "Khulna, Bangladesh",
+            "bio": "Passionate Software Engineer | Building my dreams with code.",
+            "public_repos": 49,
+            "followers": 6197,
+            "following": 6261,
+            "created_at": "2021-07-08T02:45:47Z",
+            "updated_at": "2026-06-16T19:17:12Z",
+            "html_url": "https://github.com/NazmusSayad",
+            "avatar_url": "https://avatars.githubusercontent.com/u/87106526?v=4",
+            "repos": [
+              {
+                "name": "Git-Stats",
+                "description": "Automates generation of GitHub activity stats and visual summaries.",
+                "stargazers_count": 32,
+                "language": "Python",
+                "pushed_at": "2026-06-21T15:00:27Z",
+                "fork": false,
+                "topics": [
+                  "activity-stats",
+                  "automation",
+                  "data-visualization",
+                  "github",
+                  "github-stats",
+                  "python"
+                ]
+              },
+              {
+                "name": ".dotfiles",
+                "description": "My personal dotfiles and PC setup, including configurations to customize and optimize my development environment.",
+                "stargazers_count": 35,
+                "language": "Go",
+                "pushed_at": "2026-06-20T08:39:32Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "configuration",
+                  "dev-environment",
+                  "developer-setup",
+                  "dotfiles",
+                  "go"
+                ]
+              },
+              {
+                "name": "release-note",
+                "description": "AI-powered CLI that generates release notes between two git tags, with flexible config and output to file or stdout.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-13T10:17:56Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "automation",
+                  "changelog",
+                  "cli",
+                  "developer-tools",
+                  "git",
+                  "npm",
+                  "openai",
+                  "release-notes",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "mytokens",
+                "description": "CLI to analyze local AI coding assistant usage data and estimate model costs with readable terminal reports.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-14T16:02:15Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "cli",
+                  "coding-assistant",
+                  "cost-estimation",
+                  "llm",
+                  "token-usage",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "affordable-ai-models",
+                "description": "AI providers ranked by free access, subscriptions, and cost efficiency.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-11T07:39:06Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-models",
+                  "cost-analysis",
+                  "free-ai",
+                  "llm",
+                  "model-comparison",
+                  "pricing"
+                ]
+              },
+              {
+                "name": "opencode-armor",
+                "description": "Blocks AI agents from accidentally starting long-running dev servers, watchers, or persistent processes.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-02T18:09:27Z",
+                "fork": false,
+                "topics": [
+                  "ai-agents",
+                  "cli",
+                  "dev-server",
+                  "opencode",
+                  "process-guard",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "models.dev",
+                "description": "AI Models Explorer UI using models.dev",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-04T18:54:30Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-models",
+                  "llm",
+                  "model-explorer",
+                  "models-dev",
+                  "nextjs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "create-src",
+                "description": "A simple CLI tool to create a project with an advanced, scalable structure. Supports Next.js templates with feature-based architecture and shadcn/ui integration.",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-06T08:14:04Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "javascript",
+                  "nextjs",
+                  "project-generator",
+                  "shadcn-ui",
+                  "starter-template"
+                ]
+              },
+              {
+                "name": "jsonc-patch",
+                "description": "Apply JSON patches while preserving comments in JSONC files",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-09T16:09:11Z",
+                "fork": false,
+                "topics": [
+                  "comments",
+                  "json",
+                  "json-patch",
+                  "jsonc",
+                  "parser",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "uni-run",
+                "description": "A universal CLI tool to run scripts in any language",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-30T23:33:58Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "cli",
+                  "developer-tools",
+                  "script-runner",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "prayer-time",
+                "description": "Accurate time for salah",
+                "stargazers_count": 40,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-01T04:07:08Z",
+                "fork": false,
+                "topics": [
+                  "islam",
+                  "islamic",
+                  "islamic-apps",
+                  "islamic-prayer-times",
+                  "javascript",
+                  "prayer-times",
+                  "salah"
+                ]
+              },
+              {
+                "name": "NazmusSayad",
+                "description": "GitHub profile repository for README and public links.",
+                "stargazers_count": 35,
+                "language": null,
+                "pushed_at": "2026-05-20T01:58:30Z",
+                "fork": false,
+                "topics": [
+                  "github-profile",
+                  "links",
+                  "personal-website",
+                  "portfolio",
+                  "profile-readme"
+                ]
+              },
+              {
+                "name": "tailwind-variant-group",
+                "description": "tailwind-group",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2024-07-28T20:50:13Z",
+                "fork": false,
+                "topics": [
+                  "class-utilities",
+                  "css",
+                  "npm-package",
+                  "tailwind-plugin",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "tictactoe",
+                "description": "Yoo... Can you beat me ?",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2022-06-06T17:50:26Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "game",
+                  "javascript",
+                  "tic-tac-toe",
+                  "web-game"
+                ]
+              },
+              {
+                "name": "type-writer",
+                "description": "Typewriter text animation project for web interfaces.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-06-24T18:30:32Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "frontend",
+                  "javascript",
+                  "text-animation",
+                  "typewriter-effect"
+                ]
+              },
+              {
+                "name": "chat-room-22",
+                "description": "Realtime chat web client for the Chat Room project.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-09-17T00:49:46Z",
+                "fork": false,
+                "topics": [
+                  "chat-app",
+                  "frontend",
+                  "javascript",
+                  "realtime",
+                  "websocket"
+                ]
+              },
+              {
+                "name": "vite-pwa",
+                "description": "Package to add service-worker caching support in Vite projects.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2022-11-04T13:48:34Z",
+                "fork": false,
+                "topics": [
+                  "caching",
+                  "npm-package",
+                  "pwa",
+                  "service-worker",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "chat-room-22.server",
+                "description": "Backend server for the Chat Room realtime application.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-16T06:17:52Z",
+                "fork": false,
+                "topics": [
+                  "backend",
+                  "chat-app",
+                  "javascript",
+                  "realtime",
+                  "server",
+                  "websocket"
+                ]
+              },
+              {
+                "name": "vite-vscode",
+                "description": "Tool to generate VS Code config files from Vite alias settings.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2023-01-14T06:00:19Z",
+                "fork": false,
+                "topics": [
+                  "config-generator",
+                  "developer-tools",
+                  "path-alias",
+                  "typescript",
+                  "vite",
+                  "vscode"
+                ]
+              },
+              {
+                "name": "image-viewer",
+                "description": "Simple web image viewer application.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-01-20T23:31:49Z",
+                "fork": false,
+                "topics": [
+                  "frontend",
+                  "html",
+                  "image-viewer",
+                  "javascript",
+                  "web-app"
+                ]
+              },
+              {
+                "name": "draw-code",
+                "description": "paint-code",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-24T17:05:37Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "code-extraction",
+                  "image-processing",
+                  "javascript",
+                  "ocr",
+                  "tesseract"
+                ]
+              },
+              {
+                "name": "get-lat-lon",
+                "description": "get-lat-lon",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2023-02-25T18:17:17Z",
+                "fork": false,
+                "topics": [
+                  "geolocation",
+                  "html",
+                  "latitude",
+                  "longitude",
+                  "maps",
+                  "web-tools"
+                ]
+              },
+              {
+                "name": "parallax-scrolling",
+                "description": "parallax-scrolling",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-16T18:07:45Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "frontend",
+                  "javascript",
+                  "parallax",
+                  "scroll-animation"
+                ]
+              },
+              {
+                "name": "dns",
+                "description": "DNS utility and experiment project for domain/network workflows.",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2023-04-22T21:05:08Z",
+                "fork": false,
+                "topics": [
+                  "dns",
+                  "domain-tools",
+                  "html",
+                  "networking",
+                  "web-tools"
+                ]
+              },
+              {
+                "name": "prox-effect",
+                "description": "JavaScript utility for mouse-based proximity interaction effects.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-06-15T16:14:40Z",
+                "fork": false,
+                "topics": [
+                  "animation",
+                  "frontend",
+                  "interaction",
+                  "javascript",
+                  "mouse-effects",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "coffee-calc",
+                "description": "Minimal calculator for coffee brew ratio planning.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-11-28T10:08:19Z",
+                "fork": false,
+                "topics": [
+                  "brew-ratio",
+                  "calculator",
+                  "coffee",
+                  "minimal-app",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "coffee-calculator",
+                "description": "Web app to calculate coffee brew ratios and measurements.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-11-29T04:48:08Z",
+                "fork": false,
+                "topics": [
+                  "brew-ratio",
+                  "calculator",
+                  "coffee",
+                  "typescript",
+                  "web-app"
+                ]
+              },
+              {
+                "name": "one-time-jwt",
+                "description": "TypeScript library for generating and verifying one-time JWTs with OTP.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-05T20:54:24Z",
+                "fork": false,
+                "topics": [
+                  "authentication",
+                  "jwt",
+                  "npm-package",
+                  "otp",
+                  "security",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "chrome.tab-mute",
+                "description": "Chrome extension to mute and unmute individual tabs quickly.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-19T13:34:27Z",
+                "fork": false,
+                "topics": [
+                  "browser-extension",
+                  "chrome-extension",
+                  "mute-tabs",
+                  "tab-management",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "code.auto-fold",
+                "description": "VS Code extension to automatically fold and unfold code sections.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-12T15:10:14Z",
+                "fork": false,
+                "topics": [
+                  "code-folding",
+                  "developer-tools",
+                  "productivity",
+                  "typescript",
+                  "vscode-extension"
+                ]
+              },
+              {
+                "name": "code-info",
+                "description": "CLI that analyzes a codebase and prints language and file summaries.",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-11T20:41:01Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "code-analysis",
+                  "developer-tools",
+                  "file-summary",
+                  "language-stats",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "public-blogs",
+                "description": "Blogs for https://www.nazmussayad.com/blogs",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-11-15T01:28:27Z",
+                "fork": false,
+                "topics": [
+                  "articles",
+                  "blog",
+                  "content",
+                  "markdown",
+                  "personal-website"
+                ]
+              },
+              {
+                "name": "chrome.one-eye-care",
+                "description": "Chrome extension focused on reducing eye strain while browsing.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-23T10:18:33Z",
+                "fork": false,
+                "topics": [
+                  "accessibility",
+                  "browser-extension",
+                  "chrome-extension",
+                  "eye-care",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "code.one-eye-care",
+                "description": "VS Code extension focused on eye-friendly editing experience.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-16T21:43:35Z",
+                "fork": false,
+                "topics": [
+                  "accessibility",
+                  "developer-tools",
+                  "eye-care",
+                  "theme",
+                  "typescript",
+                  "vscode-extension"
+                ]
+              },
+              {
+                "name": "daily-code",
+                "description": "A collection of robust, type-safe utilities and helpers for Node.js, browser, and server environments. Includes utilities for color conversion, random numbers, async waits, DOM manipulation, environment variables, and more.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-18T19:51:30Z",
+                "fork": false,
+                "topics": [
+                  "browser",
+                  "helpers",
+                  "library",
+                  "nodejs",
+                  "typescript",
+                  "utilities"
+                ]
+              },
+              {
+                "name": "code.editor-context",
+                "description": "VS Code extension that exposes IDE environment as context variables.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-30T17:06:49Z",
+                "fork": false,
+                "topics": [
+                  "developer-tools",
+                  "editor-context",
+                  "ide",
+                  "typescript",
+                  "vscode-extension"
+                ]
+              },
+              {
+                "name": "code.rm-comments",
+                "description": "Remove Comments will remove all comments from the current selection(s) or the whole document.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-18T20:25:53Z",
+                "fork": false,
+                "topics": [
+                  "code-cleanup",
+                  "comments",
+                  "developer-tools",
+                  "typescript",
+                  "vscode-extension"
+                ]
+              },
+              {
+                "name": "css-wrapper",
+                "description": "A web-based playground that generates responsive CSS wrapper components for different platforms. It creates consistent layout containers with customizable padding and max-width settings, supporting React, Vue, Angular, and vanilla CSS.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-18T20:37:20Z",
+                "fork": false,
+                "topics": [
+                  "code-generator",
+                  "css",
+                  "layout",
+                  "responsive-design",
+                  "typescript",
+                  "web-tools",
+                  "wrapper"
+                ]
+              },
+              {
+                "name": "landing-page-all-llms",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-06T16:59:09Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "landing-page",
+                  "llm",
+                  "nextjs",
+                  "react",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "netserv",
+                "description": "Local file server supporting FTP, HTTP, and web access.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-26T23:53:54Z",
+                "fork": false,
+                "topics": [
+                  "file-server",
+                  "ftp-server",
+                  "http-server",
+                  "local-network",
+                  "typescript",
+                  "web-server"
+                ]
+              },
+              {
+                "name": "gityo",
+                "description": "CLI tool to stage changes, generate commit messages, and commit faster.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-27T09:31:57Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "commit-message",
+                  "developer-tools",
+                  "git",
+                  "git-automation",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "college-routine",
+                "description": "Simple project to manage and view class routine schedules.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-06T02:59:48Z",
+                "fork": false,
+                "topics": [
+                  "college",
+                  "routine",
+                  "schedule",
+                  "student-tools",
+                  "typescript",
+                  "web-app"
+                ]
+              },
+              {
+                "name": "pwshac",
+                "description": "Reads current PowerShell aliases and prints remove commands.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-04-17T04:20:36Z",
+                "fork": false,
+                "topics": [
+                  "aliases",
+                  "cli",
+                  "powershell",
+                  "rust",
+                  "shell",
+                  "windows"
+                ]
+              },
+              {
+                "name": "shaka",
+                "description": "Generate aliases and functions for bash, zsh, fish, and PowerShell from a single YAML or JSONC config.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-04-20T11:06:41Z",
+                "fork": false,
+                "topics": [
+                  "aliases",
+                  "bash",
+                  "cli",
+                  "dotfiles",
+                  "fish",
+                  "powershell",
+                  "rust",
+                  "shell",
+                  "zsh"
+                ]
+              },
+              {
+                "name": "dlpui",
+                "description": "Cross platform UI for yt-dlp",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-22T23:29:07Z",
+                "fork": false,
+                "topics": [
+                  "cross-platform",
+                  "desktop-app",
+                  "typescript",
+                  "video-downloader",
+                  "youtube-downloader",
+                  "yt-dlp"
+                ]
+              },
+              {
+                "name": "dotsh",
+                "description": "Convert dotenv-style key-value pairs into shell-specific environment export commands.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-05-02T07:51:48Z",
+                "fork": false,
+                "topics": [
+                  "bash",
+                  "cli",
+                  "dotenv",
+                  "environment-variables",
+                  "powershell",
+                  "rust",
+                  "shell"
+                ]
+              },
+              {
+                "name": "bangladesh",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-07T14:19:15Z",
+                "fork": false,
+                "topics": [
+                  "bangladesh",
+                  "nextjs",
+                  "react",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "css-colors",
+                "description": "Interactive playground to explore and compare HSL, LCH, and OKLCH color spaces with live sliders",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-16T20:07:55Z",
+                "fork": false,
+                "topics": [
+                  "color-picker",
+                  "color-space",
+                  "colors",
+                  "css",
+                  "design-tools",
+                  "hsl",
+                  "lch",
+                  "oklch",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "opencode",
+                "description": "The open source coding agent.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-24T09:25:26Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:57.008166+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

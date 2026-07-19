@@ -1,0 +1,527 @@
+{
+  "profileId": "osint-profile-7742706e6cf1",
+  "target": "OfficialCodeVoyage",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:41.236858+00:00",
+  "completedAt": "2026-06-21T15:27:42.052091+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8409b736",
+      "lookupType": "github_context",
+      "target": "OfficialCodeVoyage",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "OfficialCodeVoyage",
+            "name": "Pavlo Bondarenko",
+            "type": "User",
+            "company": null,
+            "blog": "https://www.pavlobondarenko.net/",
+            "location": "Denver, CO",
+            "bio": "product | Claude Code very active user",
+            "public_repos": 52,
+            "followers": 9763,
+            "following": 953673,
+            "created_at": "2020-10-08T18:59:10Z",
+            "updated_at": "2026-02-27T23:00:49Z",
+            "html_url": "https://github.com/OfficialCodeVoyage",
+            "avatar_url": "https://avatars.githubusercontent.com/u/72575602?v=4",
+            "repos": [
+              {
+                "name": "GitHub_Follower_Bot_Automated",
+                "description": " You Follow Me ---> My Bot Follows you Back! Let's growth! Learn how you can set it up also!",
+                "stargazers_count": 106,
+                "language": "Python",
+                "pushed_at": "2024-10-07T19:57:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LinkedIn_Auto_Connector_Bot",
+                "description": "The LinkedIn Auto Connector Bot is a powerful tool designed to automate connection requests on LinkedIn. This bot helps users expand their professional network by sending connection requests to a targeted audience based on specified search criteria. ",
+                "stargazers_count": 85,
+                "language": "Python",
+                "pushed_at": "2025-09-28T23:06:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Github_Automation_Follower_Bot",
+                "description": "Following 1 000 000 people on GitHub w/ Automation",
+                "stargazers_count": 26,
+                "language": "Python",
+                "pushed_at": "2024-10-19T17:18:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OfficialCodeVoyage",
+                "description": null,
+                "stargazers_count": 44,
+                "language": null,
+                "pushed_at": "2026-06-21T00:39:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "computer-science",
+                "description": ":mortar_board: Path to a free self-taught education in Computer Science!",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-02-03T15:17:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FifaScore",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-15T03:34:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "other_website",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-02-11T06:01:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "azure-search-openai-demo",
+                "description": "A sample app for the Retrieval-Augmented Generation pattern running in Azure, using Azure AI Search for retrieval and Azure OpenAI large language models  to power ChatGPT-style and Q&A experiences.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-01-27T15:49:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gpt-engineer",
+                "description": "Specify what you want it to build, the AI asks for clarification, and then builds it.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-02-05T19:27:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "leetcode",
+                "description": "LeetCode practice",
+                "stargazers_count": 23,
+                "language": "Python",
+                "pushed_at": "2024-11-06T20:04:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fastfounder.ru_automation_bot",
+                "description": "FastFoundres.Ru - receive new post reminder everyday",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-11-16T15:37:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "student-free-stuff",
+                "description": "Just a list of free software dev tools students can get",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2022-01-06T14:05:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "human_AI_metathreads",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-06-15T19:25:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI_Linkedln_24-7",
+                "description": "AI_Linkedln_24/7",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-04-19T19:47:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Artificial-Intelligence-with-Python-Second-Edition",
+                "description": "Artificial Intelligence with Python Second Edition, published by Packt",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-04-10T10:50:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vercel_play",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-11-24T05:45:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackUTD2024-AI-Powered-Banking-Assistant",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-17T15:24:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackTX_Accessible_Learning_Assistant",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-03T18:05:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackUTA_NurseAI",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-10-13T14:16:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackSMU_Memory_Palace",
+                "description": "Helping seniors preserve their memories through the power of the Method of Loci, enhanced by AI",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-09T00:10:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackRice14_RecoveryIO",
+                "description": "RestoreIO is a rehabilitation app that uses computer vision to provide real-time feedback on knee exercises, back, shoulder, enhancing recovery after surgery.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-09-23T18:51:36Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "computer-vision",
+                  "mediapipe"
+                ]
+              },
+              {
+                "name": "boot.dev_games",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-22T16:03:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "agent-zero",
+                "description": "Agent Zero AI framework",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-07-30T22:54:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DFWM_antimat_telegram_bot",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-09-05T16:57:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pavlobondarenko.co",
+                "description": "My Personal Website",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2024-07-29T00:21:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "local-llms-analyse-finance",
+                "description": "In this project, I explored how local LLMs can be used to label data and support analyses. Specifically, I used Llama2 model to automatically categorise my bank transaction data.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-02-07T15:15:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dd_benchmarking",
+                "description": "Benchmarking Workshop Digital Divas 2023",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-02-11T18:16:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AIPractice",
+                "description": "Working through Packt Artificial Intelligence with Python 2nd Edition",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-07-25T17:09:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ghw-demo",
+                "description": "GHW Demo",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-10-17T07:38:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "multipleWindow3dScene",
+                "description": "A quick example of how one can \"synchronize\" a 3d scene across multiple windows using three.js and localStorage",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-29T18:41:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "new_new_site",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-02-11T18:32:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "interview_preparation",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-07-24T21:33:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ATLIOhack",
+                "description": "Atl IO hackathon - https://www.aiatl.io/ ",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-11-19T09:38:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackTX-2023_Pavlo",
+                "description": "eCommerce shopping application implemented with Django and OpenCV",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-10-22T05:19:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CSCE3201_practice",
+                "description": "UNT CSCE 3201 ",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-09-09T18:08:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Flipper-Zero-Sub-GHz-Jamming-Files",
+                "description": "Looking for those jamming files that were removed from custom firmwares? Here they are. Only for educational purposes, of course.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-05-09T09:20:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "iphoneSafeMedapp2",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Swift",
+                "pushed_at": "2025-03-21T01:57:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Medical-Report-AI",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-12-31T07:41:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "iphoneSafeMedapp",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-20T04:30:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "threads-graph-api",
+                "description": "A Javascript library to interface with the official Instagram Threads API",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-06-18T20:48:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MetaThreads",
+                "description": "MetaThreads is Meta Threads-API to interact with Instagram threads app, extract data and perform actions. The library is written in python. MetaThreads API lets you fetch user's threads, thread replies, user's data, user's friends. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-07-18T12:07:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "docker-templates",
+                "description": "\u2728 Docker samples for all languages",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-12-18T06:48:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AI-ATL-ECG",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-19T12:59:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "treehacks2024",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-02-17T19:41:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HopBotRepo",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-01-28T02:04:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vector-search-demos",
+                "description": "Vector search related demos for AI tour, including OpenAI embeddings and Azure AI vector search.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-01-25T14:29:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SOC-Interview-Questions",
+                "description": "SOC Interview Questions",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-03-18T07:33:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hoyahacks2024_HopBot",
+                "description": "Hoyahacks2024",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-01-28T04:31:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlackFriday-GPTs-Prompts",
+                "description": "List of free GPTs that doesn't require plus subscription ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-01-11T10:07:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "davinci_mp4_audio_fix",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-01T14:16:25Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:42.051304+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "profileId": "osint-profile-1fd97795013a",
+  "target": "Liuboshenko",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:42.500709+00:00",
+  "completedAt": "2026-06-20T13:53:43.251341+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-910f41cc",
+      "lookupType": "github_context",
+      "target": "Liuboshenko",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Liuboshenko",
+            "name": "Artem Liuboshenko",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 27,
+            "followers": 1462,
+            "following": 3281,
+            "created_at": "2021-08-02T11:34:38Z",
+            "updated_at": "2025-11-26T13:06:45Z",
+            "html_url": "https://github.com/Liuboshenko",
+            "avatar_url": "https://avatars.githubusercontent.com/u/88323640?v=4",
+            "repos": [
+              {
+                "name": "heretic",
+                "description": "Fully automatic censorship removal for language models",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T06:09:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MIPHI_internship_semester_2_SberAuto-subscription",
+                "description": "Sber Auto subscription visit-conversion ML: per-session target-action probability. End-to-end pipeline data -> EDA -> features -> CatBoost (ROC-AUC 0.713), served via FastAPI + Streamlit. Leakage-safe, unit-tested, reproducible.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-01T08:57:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bcm-user-daemon",
+                "description": "bcm-user-daemon is a tool for testing and debugging Broadcom's SDK, working with the bcm.user executable. It helps developers verify functionality, diagnose errors, and integrate SDK components. The daemon provides process control, logging, and monitoring of Broadcom hardware/software interactions, speeding up development and debugging.",
+                "stargazers_count": 19,
+                "language": "Shell",
+                "pushed_at": "2025-07-08T09:02:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "classification-of-oil-and-gas",
+                "description": "Machine learning project focused on predicting profitable oil and gas reserve locations (onshore and offshore) using geological and production data. It addresses the complexity of the exploration and production process and demonstrates how data-driven models can support decision-making in resource discovery and development.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-14T14:00:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fludrugml-mephi-coursework-efficiency-prediction",
+                "description": "\u0418\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0439 \u043f\u0440\u043e\u0435\u043a\u0442 \u043f\u043e \u0430\u043d\u0430\u043b\u0438\u0437\u0443 \u0438 \u043c\u043e\u0434\u0435\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044e \u0434\u0430\u043d\u043d\u044b\u0445 \u0445\u0438\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u0434\u043b\u044f \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0438 \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0432\u0438\u0440\u0443\u0441\u043d\u044b\u0445 \u043f\u0440\u0435\u043f\u0430\u0440\u0430\u0442\u043e\u0432. \u0412\u043a\u043b\u044e\u0447\u0430\u0435\u0442 EDA, \u0440\u0435\u0433\u0440\u0435\u0441\u0441\u0438\u044e (IC50, CC50, SI) \u0438 \u0437\u0430\u0434\u0430\u0447\u0438 \u043a\u043b\u0430\u0441\u0441\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u0438 \u0441 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435\u043c \u043c\u043e\u0434\u0435\u043b\u0435\u0439 \u0438 \u0432\u044b\u0431\u043e\u0440\u043e\u043c \u043e\u043f\u0442\u0438\u043c\u0430\u043b\u044c\u043d\u044b\u0445 \u0440\u0435\u0448\u0435\u043d\u0438\u0439.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-27T14:15:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "childs_protection_of_bad_videos",
+                "description": "[EN] Browser extension that blocks YouTube channels from a blacklist. Hides unwanted videos in the feed, intercepts SPA navigation to watch pages and redirects to a block screen. Supports Shorts blocking and blacklist import via JSON.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-30T23:11:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Xray-core-fork-from-origin",
+                "description": "Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-17T13:21:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "credit-card-default-prediction",
+                "description": "Credit Card Default Prediction project: machine learning pipeline to predict credit card default risk using customer data. Includes data preprocessing, feature engineering, model training, evaluation, and reproducible environment setup with Docker.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-04T09:23:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple-xray-core-fork-from-origin",
+                "description": "\u0421\u043a\u0440\u0438\u043f\u0442 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u044f\u0434\u0440\u0430 x-ray \u0441 \u043d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u043c\u0438 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u044f\u043c\u0438",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-01T20:25:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mephi-session-project-2026",
+                "description": "Fedora 43 Server administration project: static networking, nginx web server, ext4 filesystem management, SELinux/DAC access control, PAM authentication, and Linux capabilities configuration.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-04-10T22:52:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AB_test_HW_2_Analysis_effectiveness_recommendation_algorithm",
+                "description": "This project evaluates a new content recommendation algorithm using A/B testing on a large streaming platform. The analysis focuses on non-normal, noisy, and asymmetric watch-time distributions, with particular attention to changes in the long right tail driven by highly active users.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-29T12:45:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "openclaw",
+                "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-03-12T07:11:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NetAgents",
+                "description": "NetAgents is a multi-agent system designed to automate the configuration and management of network devices. Agents collaborate to perform complex networking tasks such as establishing neighbor relationships, configuring routing protocols, and maintaining topology consistency. The system enables scalable.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-12-08T08:01:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SimpleLlmWebChat",
+                "description": "A lightweight web interface for interacting with various LLMs. Features a clean, responsive chat UI, easy model switching, and simple backend integration. Perfect for quick AI prototyping and demos.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-30T07:12:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LocalLLMChat",
+                "description": "Web UI for local LLM inference. Run language models on your own machine with a clean chat interface. No cloud required - everything stays private and local.",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-30T06:12:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EcoWasteClassifier_MIPHI_project_practice",
+                "description": "EcoWasteClassifier \u2014 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u043a\u043b\u0430\u0441\u0441\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u0438 \u043e\u0442\u0445\u043e\u0434\u043e\u0432 \u0441 \u043d\u0435\u0439\u0440\u043e\u0441\u0435\u0442\u044c\u044e MobileNetV2. \u041c\u043e\u0434\u0435\u043b\u044c \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u0435\u0442 \u0442\u0438\u043f \u043c\u0443\u0441\u043e\u0440\u0430 \u043f\u043e \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044e \u0441\u0440\u0435\u0434\u0438 6 \u043a\u043b\u0430\u0441\u0441\u043e\u0432: cardboard, glass, metal, paper, plastic, trash. \u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0440\u0435\u0430\u043b\u0438\u0437\u043e\u0432\u0430\u043d \u0432 Google Colab \u0438 \u0432\u043a\u043b\u044e\u0447\u0430\u0435\u0442 \u0442\u0435\u0441\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043d\u0430 \u043d\u043e\u0432\u044b\u0445 \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f\u0445.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-14T15:38:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "miphi-session-python-analytics",
+                "description": "A first-semester MIPHI session assignment focused on Python-based data analysis. The project includes basic data processing, visualization, and analytical tasks designed to build foundational skills in working with datasets using Python.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-16T07:37:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "agent_scanning_hosts",
+                "description": "agent_scanning_hosts \u2013 An automation agent designed to scan and analyze network hosts. It helps detect active devices, gather basic information, and provide visibility into network infrastructure for monitoring or security purposes.",
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2025-11-05T13:24:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "linux-kernel-mpls-adder",
+                "description": "A C-based utility for managing MPLS routes in Linux via Netlink, bypassing iproute2 for direct kernel interaction. It allows adding, swapping, and encapsulating MPLS routes, providing precise control for network engineers and developers. Ideal for MPLS forwarding, automation, and low-level networking experiments. ",
+                "stargazers_count": 10,
+                "language": "C",
+                "pushed_at": "2025-02-25T11:25:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "recorder-screen-or-camera",
+                "description": "recorder-screen-or-camera",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-08-30T16:18:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lectures_and_seminars",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-09-11T17:29:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-ai-system-prompts",
+                "description": "\ud83e\udde0 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding: ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new, windsurf, notion, and MetaAI. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-08-26T01:31:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sonic-buildimage",
+                "description": "Scripts which perform an installable binary image build for SONiC",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-03-29T04:44:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "system-prompts-and-models-of-ai-tools",
+                "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus Agent Tools, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2025-10-20T19:16:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llm-council",
+                "description": "LLM Council works together to answer your hardest questions",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-22T23:35:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "crewAI",
+                "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-02T05:35:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "linux-kernel-route-adder",
+                "description": "A C utility to add static routes to the Linux kernel's Forwarding Information Base (FIB) using the Netlink protocol.",
+                "stargazers_count": 12,
+                "language": "C",
+                "pushed_at": "2024-12-15T15:55:15Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:43.250234+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

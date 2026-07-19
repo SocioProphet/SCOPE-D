@@ -1,0 +1,673 @@
+{
+  "profileId": "osint-profile-62003b901487",
+  "target": "geomachine",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:15.207433+00:00",
+  "completedAt": "2026-06-21T15:33:17.321314+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5dac7046",
+      "lookupType": "github_context",
+      "target": "geomachine",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "geomachine",
+            "name": "THE KRAKEN",
+            "type": "User",
+            "company": null,
+            "blog": "https://kraken.nesohq.org",
+            "location": null,
+            "bio": "Senior Software Engineer",
+            "public_repos": 89,
+            "followers": 1217,
+            "following": 2180,
+            "created_at": "2022-07-31T17:48:54Z",
+            "updated_at": "2026-05-03T07:25:48Z",
+            "html_url": "https://github.com/geomachine",
+            "avatar_url": "https://avatars.githubusercontent.com/u/110350034?v=4",
+            "repos": [
+              {
+                "name": "Engineering-philosophy",
+                "description": "Notes about Various Engineering Knowledge I gathered.",
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2024-10-09T14:58:30Z",
+                "fork": false,
+                "topics": [
+                  "cpp",
+                  "deployment",
+                  "java",
+                  "oop",
+                  "ubuntu",
+                  "vscode-settings"
+                ]
+              },
+              {
+                "name": "goLang",
+                "description": " Go: The Complete Developer's Guide by Stephen Grider",
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2025-02-02T10:56:29Z",
+                "fork": false,
+                "topics": [
+                  "array",
+                  "map",
+                  "reciever-parameter",
+                  "short-assignment",
+                  "slice",
+                  "struct",
+                  "types"
+                ]
+              },
+              {
+                "name": "geomachine",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-06-03T15:35:10Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "nestjs-final-project",
+                "description": "Complete nestjs course by stephen grider",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-20T06:48:19Z",
+                "fork": false,
+                "topics": [
+                  "decorators",
+                  "dependency-injection",
+                  "e2e-tests",
+                  "guards",
+                  "interceptors",
+                  "middlewares",
+                  "migrations-generator",
+                  "migrations-runner",
+                  "nestjs",
+                  "ormconfig",
+                  "query-builder",
+                  "session",
+                  "sqlite",
+                  "unit-testing",
+                  "validation-pipe"
+                ]
+              },
+              {
+                "name": "Node.js-Notes",
+                "description": "Complete nodejs course by Habibur Rahman",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-24T11:35:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kubernetes-notes",
+                "description": "A practical Kubernetes guide by Iqbal",
+                "stargazers_count": 7,
+                "language": "HCL",
+                "pushed_at": "2025-10-22T16:10:08Z",
+                "fork": false,
+                "topics": [
+                  "clusterip",
+                  "deployments",
+                  "nodeport",
+                  "pods",
+                  "services"
+                ]
+              },
+              {
+                "name": "advanced-github-actions-3017420",
+                "description": "Advanced Github Actions",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-16T21:11:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "khoshra",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-08T08:32:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker",
+                "description": "Learning docker step by step",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-09-24T05:09:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "next-ecommerce",
+                "description": "Admin Portal of E-commerce in Nextjs",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2023-08-08T17:10:31Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "clerkauth",
+                  "env",
+                  "javascript",
+                  "mysql",
+                  "nextjs13",
+                  "pagination",
+                  "planetscale",
+                  "prisma",
+                  "prismadb",
+                  "react-hook-form",
+                  "react-hot-toast",
+                  "shadcn-select",
+                  "shadcn-ui",
+                  "table-action",
+                  "tablefilter",
+                  "tailwindcss",
+                  "typescript",
+                  "zod",
+                  "zustand"
+                ]
+              },
+              {
+                "name": "redis",
+                "description": "Complete redis course by stephen grider",
+                "stargazers_count": 4,
+                "language": "Svelte",
+                "pushed_at": "2024-10-27T19:56:38Z",
+                "fork": false,
+                "topics": [
+                  "hyperloglog",
+                  "redis",
+                  "redis-hash",
+                  "redis-sets",
+                  "redis-string",
+                  "session",
+                  "sort",
+                  "sorted-sets",
+                  "sveltkit"
+                ]
+              },
+              {
+                "name": "rust-journey",
+                "description": "my rust practices",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-08-11T20:36:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Docker-B1",
+                "description": "Complete docker course by Habibur Rahman",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2024-11-18T15:07:21Z",
+                "fork": false,
+                "topics": [
+                  "container",
+                  "docker",
+                  "docker-hub",
+                  "docker-machine",
+                  "docker-server",
+                  "dockerclient",
+                  "dockerfile",
+                  "file-system",
+                  "image",
+                  "linux-shell",
+                  "nginx",
+                  "os",
+                  "phylosophy",
+                  "port-forwarding",
+                  "ubuntu",
+                  "volume-mapping"
+                ]
+              },
+              {
+                "name": "go-rest-ddd-tmpl",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-08-07T10:41:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "counter",
+                "description": "React Class/functional Component",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-26T09:16:14Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "axios",
+                  "class-components",
+                  "components",
+                  "fetch-api",
+                  "fullstack",
+                  "functional",
+                  "mern",
+                  "mern-stack",
+                  "onchange",
+                  "onclick",
+                  "react",
+                  "react-router-dom",
+                  "react-router-dom-v6",
+                  "redux",
+                  "rendering",
+                  "swagger"
+                ]
+              },
+              {
+                "name": "React.js-Notes",
+                "description": "Complete reactjs course by Habibur Rahman",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2023-07-04T16:41:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "info-hub",
+                "description": "ShareTrip Node.js assignment",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-28T21:35:43Z",
+                "fork": false,
+                "topics": [
+                  "artillery",
+                  "docker",
+                  "docker-compose",
+                  "expressjs",
+                  "javascript",
+                  "jest",
+                  "makefile",
+                  "module-pattern",
+                  "mysql",
+                  "nodejs",
+                  "sequelize",
+                  "supertest",
+                  "swagger"
+                ]
+              },
+              {
+                "name": "go-wallpapers",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-09-12T05:22:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-design",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2022-12-30T15:44:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebWizard",
+                "description": "Convert chrome tab to linux app by jsiqbal",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-15T21:17:22Z",
+                "fork": false,
+                "topics": [
+                  "extension-chrome",
+                  "js",
+                  "nodejs",
+                  "os"
+                ]
+              },
+              {
+                "name": "socketio",
+                "description": "SocketIO v4, with websockets - the 2024 details.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-05T05:09:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio-v2",
+                "description": "inspired portfolio modification",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-14T16:32:11Z",
+                "fork": true,
+                "topics": [
+                  "nextjs",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "ecommerce",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2023-11-26T19:46:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "digital-marriage-frontend",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-09-26T18:02:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "demeed-backend",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2022-10-01T04:08:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "demeed",
+                "description": "Node.js Backend Project",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2022-10-13T15:45:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shopon-frontend",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-03-05T17:20:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "promise-interview-ready",
+                "description": "Learn JavaScript Promises in a new way. This repository contains all the source code and examples that make you ready with promises, especially for your interviews \ud83d\ude09.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-08-27T15:07:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "test",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2022-09-20T19:06:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mern_stack_course",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-09-26T14:51:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "demo-portfolio",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2022-10-01T04:37:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zoo",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2022-10-18T22:33:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ichat",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-10-19T02:03:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-slider",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-10-22T22:50:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vanilla-js-counter",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2022-10-28T09:54:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "svelte-test",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2022-10-28T10:08:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "frontend-demeed",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2022-10-28T21:52:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-hooks",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-10-30T17:07:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "munib-counter",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-01T19:31:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ADA-CES",
+                "description": "react redux role based frontend application",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-04T16:50:47Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "bootstrap5",
+                  "css3",
+                  "formik",
+                  "formik-yup",
+                  "html5",
+                  "javascript",
+                  "jsx",
+                  "react-bootstrap",
+                  "react-dom",
+                  "react-redux",
+                  "react-router-dom",
+                  "react-scripts",
+                  "reactjs",
+                  "recharts",
+                  "redux",
+                  "redux-toolkit",
+                  "scss",
+                  "web-vitals",
+                  "yup"
+                ]
+              },
+              {
+                "name": "appointment-scheduling",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-08T13:33:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "heroku",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-18T18:09:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "redux-users",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-18T10:29:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-research",
+                "description": "practicing various react methods & techniques",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-18T19:20:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "facebook-login",
+                "description": "React Facebook Login",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-19T00:28:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-redux",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-23T00:22:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-role",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-11-24T16:18:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mobi-reach",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-24T16:16:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mobi-structure",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-05T18:36:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2023-01-10T12:20:31Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:17.320497+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

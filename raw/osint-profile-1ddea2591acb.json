@@ -1,0 +1,235 @@
+{
+  "profileId": "osint-profile-1ddea2591acb",
+  "target": "mennylevinski",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:38.866673+00:00",
+  "completedAt": "2026-06-20T16:48:39.360670+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5169ec2e",
+      "lookupType": "github_context",
+      "target": "mennylevinski",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mennylevinski",
+            "name": "Menahem Levinski",
+            "type": "User",
+            "company": null,
+            "blog": "https://secuditor.com/",
+            "location": null,
+            "bio": "Security Engineer | Python Developer | Building cybersecurity tools @secuditor ",
+            "public_repos": 12,
+            "followers": 967,
+            "following": 773,
+            "created_at": "2025-10-22T18:39:52Z",
+            "updated_at": "2026-05-31T14:08:21Z",
+            "html_url": "https://github.com/mennylevinski",
+            "avatar_url": "https://avatars.githubusercontent.com/u/239654071?v=4",
+            "repos": [
+              {
+                "name": "read_metadata",
+                "description": "Metadata Reader (EXE)",
+                "stargazers_count": 23,
+                "language": "Python",
+                "pushed_at": "2026-01-13T07:21:37Z",
+                "fork": false,
+                "topics": [
+                  "metadata",
+                  "python"
+                ]
+              },
+              {
+                "name": "cat_chase_ball",
+                "description": "Basic Python Game",
+                "stargazers_count": 40,
+                "language": "Python",
+                "pushed_at": "2025-12-01T16:28:59Z",
+                "fork": false,
+                "topics": [
+                  "games",
+                  "python"
+                ]
+              },
+              {
+                "name": "mennylevinski",
+                "description": "Introduction",
+                "stargazers_count": 64,
+                "language": null,
+                "pushed_at": "2026-06-20T04:19:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uspector-net",
+                "description": "Cross-platform network scanner, LAN discovery & port audit tool for IPv4 subnets",
+                "stargazers_count": 90,
+                "language": "Python",
+                "pushed_at": "2026-06-14T13:05:30Z",
+                "fork": false,
+                "topics": [
+                  "cli-app",
+                  "cross-platform",
+                  "cybersecurity",
+                  "lan-network",
+                  "network-scanner",
+                  "network-security",
+                  "port-scanner",
+                  "python",
+                  "security-tools",
+                  "terminal-tools"
+                ]
+              },
+              {
+                "name": "passive_web_scanner",
+                "description": "Passive web vulnerability scanner for ethical diagnostics",
+                "stargazers_count": 68,
+                "language": "Python",
+                "pushed_at": "2026-02-24T10:52:25Z",
+                "fork": false,
+                "topics": [
+                  "cross-platform",
+                  "cybersecurity",
+                  "ethical-hacking",
+                  "html-report",
+                  "osint-tool",
+                  "python",
+                  "security-tools",
+                  "tui-app",
+                  "url-scanner",
+                  "web-security"
+                ]
+              },
+              {
+                "name": "cloud_detector",
+                "description": "Cross-platform diagnostic cloud infrastructure scanner for ethical usage",
+                "stargazers_count": 22,
+                "language": "Python",
+                "pushed_at": "2026-01-13T07:22:24Z",
+                "fork": false,
+                "topics": [
+                  "cloud-security",
+                  "ethical-hacking",
+                  "html-report",
+                  "pentesting",
+                  "python",
+                  "security-tools",
+                  "web-testing"
+                ]
+              },
+              {
+                "name": "hash_checksum",
+                "description": "Hash output from files via Python script",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2026-01-17T14:36:20Z",
+                "fork": false,
+                "topics": [
+                  "checksum",
+                  "python"
+                ]
+              },
+              {
+                "name": "internet_speedtest",
+                "description": "Internet speed testing script",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-01-29T14:11:22Z",
+                "fork": false,
+                "topics": [
+                  "python",
+                  "speedtest"
+                ]
+              },
+              {
+                "name": "application_logger",
+                "description": "Example Python module for application logging",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-02-05T20:37:53Z",
+                "fork": false,
+                "topics": [
+                  "app-logger",
+                  "python"
+                ]
+              },
+              {
+                "name": "input_sanitizer",
+                "description": "Centralized data normalization utility",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-01-30T01:48:52Z",
+                "fork": false,
+                "topics": [
+                  "input-output",
+                  "python"
+                ]
+              },
+              {
+                "name": "multi_calculator",
+                "description": "Multi-Functional Calculator",
+                "stargazers_count": 31,
+                "language": "Python",
+                "pushed_at": "2026-02-24T10:22:18Z",
+                "fork": false,
+                "topics": [
+                  "binary-converter",
+                  "calculator",
+                  "cli-app",
+                  "cross-platform",
+                  "python"
+                ]
+              },
+              {
+                "name": "secuditor-lite",
+                "description": "Free diagnostic security tool for Windows endpoints, networks, IP utilities and device OpSec",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-05-19T22:01:40Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:39.359938+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

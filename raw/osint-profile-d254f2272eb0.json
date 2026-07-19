@@ -1,0 +1,127 @@
+{
+  "profileId": "osint-profile-d254f2272eb0",
+  "target": "deIiverer",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:20.756726+00:00",
+  "completedAt": "2026-06-21T15:32:21.183341+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-763735ff",
+      "lookupType": "github_context",
+      "target": "deIiverer",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "deIiverer",
+            "name": "Liang, pfp is me.",
+            "type": "User",
+            "company": "@bluevxmpire @Mxstique @simurians @8thball @februaryinfrills @bluevxmpire @jellykatss @yookiso @chevaIier @Viinixxs @vvraithangel @souIlove @Phainonirl @YumeKomi @Aqua-mouse @chuckknasty @tirgery123 @puresincerity @lotuses",
+            "blog": "",
+            "location": "hoyo or market! mostly hoyo okay?",
+            "bio": "hello, Inspo is fine. But Do not copy, alright? Thankyou~\r\n\r\nAsk for my socials. \u2014 wasian",
+            "public_repos": 5,
+            "followers": 1428,
+            "following": 2457,
+            "created_at": "2024-03-31T01:57:25Z",
+            "updated_at": "2026-06-04T16:54:32Z",
+            "html_url": "https://github.com/deIiverer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/165531864?v=4",
+            "repos": [
+              {
+                "name": "deIiverer",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-07T12:06:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "0-Porcelain",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-03-04T14:04:37Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "no",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-12-06T12:30:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sinnersumire",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-01-16T12:45:19Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Argentii",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-12-02T12:08:14Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:21.182265+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

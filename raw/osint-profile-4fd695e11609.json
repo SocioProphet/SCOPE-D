@@ -1,0 +1,181 @@
+{
+  "profileId": "osint-profile-4fd695e11609",
+  "target": "HasanAlasker",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:45.332516+00:00",
+  "completedAt": "2026-06-20T16:49:45.879363+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-fcd8ba5b",
+      "lookupType": "github_context",
+      "target": "HasanAlasker",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "HasanAlasker",
+            "name": "Hasan Alasker",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Frontend Engineer | React Native Developer | UI/UX Designer | MERN Stack Developer | Software Engineering",
+            "public_repos": 12,
+            "followers": 728,
+            "following": 697,
+            "created_at": "2023-10-20T14:00:34Z",
+            "updated_at": "2026-06-15T11:46:31Z",
+            "html_url": "https://github.com/HasanAlasker",
+            "avatar_url": "https://avatars.githubusercontent.com/u/148560423?v=4",
+            "repos": [
+              {
+                "name": "Servio-Car-Service-Tracker",
+                "description": "Servio is a cross-platform mobile application that helps drivers stay on top of vehicle maintenance, insurance renewals, and license deadlines \u2014 all in one place.",
+                "stargazers_count": 24,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T06:59:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Next_Tracker",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-15T17:41:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Next-App",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-06T13:18:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "React-Course",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-26T11:53:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TypeScript_Todo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-03T10:17:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sayarah-CarRental",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2026-06-02T13:33:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HasanAlasker",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2026-06-03T10:20:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Secure-Web-Applications-Project",
+                "description": "An academic project for the Secure Application Development course, focused on demonstrating secure web application design, threat modeling (STRIDE), risk assessment (DREAD), and practical security mitigations. The application logic is intentionally simple to emphasize security principles and analysis over feature complexity.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-22T07:47:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Mafqoodaty-Lost-Found",
+                "description": "Mafqoodaty is a Lost & Found web application built with the MERN stack, designed to help people report, discover, and recover lost items efficiently through a simple and intuitive interface.  The platform allows users to post lost or found items, browse reports, and connect with others to reunite belongings with their owners.",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-28T15:14:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hadithny-LiveChat",
+                "description": "Hadithny was built as a learning-focused project to explore how modern messaging platforms achieve real-time communication.  Instead of relying only on traditional API requests, this project uses persistent socket connections to instantly synchronize messages between user",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-17T16:35:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RentEase-Property-Management",
+                "description": "RentEase is a minimal, offline-first app that helps a building owner keep all renter information in one place. Forget flipping through heavy books or re-reading long contracts \u2014 with RentEase, all your important details are just a tap away.",
+                "stargazers_count": 21,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-20T15:25:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ajroo-Local-Marketplace",
+                "description": "Ajroo is a mobile-first platform that allows everyday people to lend and borrow household items \u2014 from tools and sports equipment to books and electronics. It's designed to encourage community trust, reduce waste, and save money through item-sharing.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-25T05:03:39Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:45.873348+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

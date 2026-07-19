@@ -1,0 +1,789 @@
+{
+  "profileId": "osint-profile-9e0af5f34f2b",
+  "target": "h-ssiqueira",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:42.212626+00:00",
+  "completedAt": "2026-06-20T16:49:43.763716+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-7004a37a",
+      "lookupType": "github_context",
+      "target": "h-ssiqueira",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "h-ssiqueira",
+            "name": "Henrique",
+            "type": "User",
+            "company": "Matera Systems",
+            "blog": "",
+            "location": "Brazil",
+            "bio": "Computer Engineer && Backend Developer\r\n",
+            "public_repos": 52,
+            "followers": 737,
+            "following": 1526,
+            "created_at": "2019-01-19T14:20:44Z",
+            "updated_at": "2026-05-17T16:19:32Z",
+            "html_url": "https://github.com/h-ssiqueira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/46844681?v=4",
+            "repos": [
+              {
+                "name": "h-ssiqueira",
+                "description": "Profile README, useful sites, vs code extensions and programs which I use",
+                "stargazers_count": 7,
+                "language": "Shell",
+                "pushed_at": "2026-06-20T03:34:29Z",
+                "fork": false,
+                "topics": [
+                  "github",
+                  "profile",
+                  "profile-readme",
+                  "readme-profile",
+                  "useful-sites"
+                ]
+              },
+              {
+                "name": "Architecture_Coding_Standards",
+                "description": "Reference for ISOs and RFCs related to architecture and coding standards",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-20T04:02:51Z",
+                "fork": false,
+                "topics": [
+                  "architecture",
+                  "coding",
+                  "iso",
+                  "isos",
+                  "patterns",
+                  "rfc",
+                  "rfcs",
+                  "standard",
+                  "standards"
+                ]
+              },
+              {
+                "name": "ProgramsCOLLEGE",
+                "description": "Codes and projects from college subjects",
+                "stargazers_count": 6,
+                "language": "C",
+                "pushed_at": "2023-11-28T01:08:54Z",
+                "fork": false,
+                "topics": [
+                  "assembly",
+                  "c",
+                  "college",
+                  "computer-engineering",
+                  "data-structures",
+                  "exercises",
+                  "java",
+                  "javascript",
+                  "packettracer",
+                  "pdf",
+                  "python",
+                  "vhdl"
+                ]
+              },
+              {
+                "name": "invest",
+                "description": "Simulation and calculation of investments using up to date interest rates",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-03-17T02:01:39Z",
+                "fork": false,
+                "topics": [
+                  "api-rest",
+                  "docker",
+                  "github-pages",
+                  "interest-rates",
+                  "investment",
+                  "java",
+                  "junit5",
+                  "k8s",
+                  "kaggle",
+                  "maven",
+                  "swagger"
+                ]
+              },
+              {
+                "name": "antifraud_transactions",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-12-23T01:38:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SkinLesionAI",
+                "description": "Skin cancer detection using CNNs with data analysis.",
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-02-28T00:17:10Z",
+                "fork": false,
+                "topics": [
+                  "cnn",
+                  "colab-notebook",
+                  "convnext",
+                  "data-aug",
+                  "deep-learning",
+                  "fine-tuning",
+                  "gans",
+                  "ham10000",
+                  "jupiter-notebook",
+                  "machine-learning",
+                  "melanoma",
+                  "python",
+                  "resnetv2",
+                  "segmentation",
+                  "skin-cancer",
+                  "skin-lesion-classification",
+                  "sqlite",
+                  "transfer-learning",
+                  "vision-transformer",
+                  "xception"
+                ]
+              },
+              {
+                "name": "Blood_sugar_level",
+                "description": "All measures obtained since Diabetes Mellitus 1 diagnosis",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-01T17:04:02Z",
+                "fork": false,
+                "topics": [
+                  "bloodsugar",
+                  "data-analysis",
+                  "data-visualization",
+                  "dataset",
+                  "diabetes",
+                  "kaggle",
+                  "kaggle-dataset",
+                  "medical"
+                ]
+              },
+              {
+                "name": "RinhaBackend2024Q1",
+                "description": "Rinha de Backend utilizando Java 21. Original contest: zanfranceschi/rinha-de-backend-2024-q1",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2024-04-13T15:22:11Z",
+                "fork": false,
+                "topics": [
+                  "java",
+                  "performance",
+                  "rinha-de-backend",
+                  "rinha-de-backend-2024-q1"
+                ]
+              },
+              {
+                "name": "Anagrama",
+                "description": "Anagrama utilizando as palavras \"Criatividade\" e \"Pensamento\"",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2021-07-04T17:23:23Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "codeblocks",
+                  "college-project"
+                ]
+              },
+              {
+                "name": "RedesA",
+                "description": "Simples comunica\u00e7\u00e3o entre dois computadores numa mesma rede",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-04-04T12:03:37Z",
+                "fork": true,
+                "topics": [
+                  "college-project",
+                  "linux",
+                  "networks",
+                  "python",
+                  "terminal"
+                ]
+              },
+              {
+                "name": "Lets_Code_-_Oscar",
+                "description": "Paradigma funcional em java",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2022-03-12T17:18:36Z",
+                "fork": false,
+                "topics": [
+                  "functional-programming",
+                  "java",
+                  "java-8",
+                  "javastreams",
+                  "letscode"
+                ]
+              },
+              {
+                "name": "pathfinding-BFS-AI",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2022-04-07T01:48:19Z",
+                "fork": false,
+                "topics": [
+                  "bfs",
+                  "pathfinding",
+                  "python"
+                ]
+              },
+              {
+                "name": "projeto-biblioteca-spring",
+                "description": "Projeto Let's Code",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-04-24T17:47:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Supermercado",
+                "description": "Documenta\u00e7\u00e3o dos m\u00f3dulos do projeto",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-05-17T01:47:58Z",
+                "fork": false,
+                "topics": [
+                  "documentation"
+                ]
+              },
+              {
+                "name": "Redes-backend",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-05-17T02:21:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Sistema-web-Almoxarifado",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-05-17T02:30:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "QRCode_Reader",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-05-17T02:47:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Banco-de-Dados-",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2022-05-22T19:43:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Deteccao-de-caligrafia",
+                "description": "Detec\u00e7\u00e3o de letras utilizando CNN",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2022-06-11T16:20:34Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "cnn",
+                  "cnn-keras",
+                  "college-project",
+                  "googlecolab",
+                  "handwriting-recognition"
+                ]
+              },
+              {
+                "name": "Sololearn",
+                "description": "Sololearn projects and problems",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2022-07-31T20:25:21Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "css",
+                  "html",
+                  "java",
+                  "javascript",
+                  "python",
+                  "r",
+                  "sololearn",
+                  "sql"
+                ]
+              },
+              {
+                "name": "Compilador",
+                "description": "Simple compiler and virtual machine for execution of DPL (Didatic Procedural Language)",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-12-06T11:32:09Z",
+                "fork": true,
+                "topics": [
+                  "compiler",
+                  "compiler-construction",
+                  "expression-analysis",
+                  "symbol-table",
+                  "syntatic"
+                ]
+              },
+              {
+                "name": "AppClinica",
+                "description": "AppClinica em C#",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-12-17T21:57:35Z",
+                "fork": true,
+                "topics": [
+                  "api",
+                  "backend",
+                  "scheduling"
+                ]
+              },
+              {
+                "name": "RinhaBackend2023q3",
+                "description": "Rinha de Backend utilizando Java 17",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2023-11-11T20:48:56Z",
+                "fork": false,
+                "topics": [
+                  "java",
+                  "rinha-de-backend",
+                  "rinha-de-backend-2023-q3"
+                ]
+              },
+              {
+                "name": "CSGO-CFGs",
+                "description": "Useful csgo cfgs",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-15T18:55:08Z",
+                "fork": false,
+                "topics": [
+                  "csgo",
+                  "csgoconfig"
+                ]
+              },
+              {
+                "name": "html-css",
+                "description": "Curso de HTML5 e CSS3",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-05-18T20:41:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "authentication",
+                "description": "Simple authentication app",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2024-08-07T00:50:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "music",
+                "description": "Albums, songs, members and lyrics from bands",
+                "stargazers_count": 1,
+                "language": "TSQL",
+                "pushed_at": "2024-08-30T17:30:18Z",
+                "fork": false,
+                "topics": [
+                  "java",
+                  "liquibase",
+                  "lyrics",
+                  "music",
+                  "spring-boot",
+                  "spring-boot-liquibase"
+                ]
+              },
+              {
+                "name": "h-ssiqueira.github.io",
+                "description": "Profile's site",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-11-24T17:35:09Z",
+                "fork": false,
+                "topics": [
+                  "github-pages",
+                  "githubio"
+                ]
+              },
+              {
+                "name": "followback",
+                "description": "Follow back your GitHub followers using the GitHub API.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-15T01:28:43Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "followback",
+                  "githubactions",
+                  "githubapi",
+                  "script"
+                ]
+              },
+              {
+                "name": "HackerRank-problems",
+                "description": "Problems solutions from HackerRank",
+                "stargazers_count": 6,
+                "language": "C",
+                "pushed_at": "2025-05-12T23:26:25Z",
+                "fork": false,
+                "topics": [
+                  "algorithm-challenges",
+                  "c",
+                  "hackerrank",
+                  "hackerrank-solutions",
+                  "java",
+                  "solutions"
+                ]
+              },
+              {
+                "name": "cryptoHash",
+                "description": "Encode and match passwords using hash functions",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2026-06-02T00:02:13Z",
+                "fork": false,
+                "topics": [
+                  "argon2",
+                  "bcrypt",
+                  "cryptography",
+                  "hash",
+                  "java",
+                  "maven",
+                  "md5",
+                  "pbkdf2",
+                  "quarkus",
+                  "scrypt",
+                  "sha256",
+                  "sha3",
+                  "shake"
+                ]
+              },
+              {
+                "name": "APIs-GOV",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-14T18:09:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sort_Algorithms",
+                "description": "Sorting algorithms in C programming with execution time.",
+                "stargazers_count": 7,
+                "language": "C",
+                "pushed_at": "2025-05-19T17:38:17Z",
+                "fork": false,
+                "topics": [
+                  "algorithm",
+                  "algorithms",
+                  "bigocomplexity",
+                  "bigonotation",
+                  "c",
+                  "contribution-welcome",
+                  "contributions-welcome",
+                  "execution-time",
+                  "hacktoberfest",
+                  "open-source",
+                  "opensource",
+                  "sort",
+                  "sorting",
+                  "sorting-algorithms"
+                ]
+              },
+              {
+                "name": "CPU-multicycle",
+                "description": "Implementa\u00e7\u00e3o de uma CPU multiciclo",
+                "stargazers_count": 0,
+                "language": "VHDL",
+                "pushed_at": "2021-07-09T15:48:08Z",
+                "fork": false,
+                "topics": [
+                  "college-project",
+                  "multicycle-processor",
+                  "vhdl"
+                ]
+              },
+              {
+                "name": "Lets_Code_-_Banco",
+                "description": "Aplica\u00e7\u00e3o que simula uma app banc\u00e1ria",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2022-03-05T12:31:58Z",
+                "fork": false,
+                "topics": [
+                  "banking-system",
+                  "java",
+                  "letscode",
+                  "oop"
+                ]
+              },
+              {
+                "name": "Gerenciamento-de-Matricula-",
+                "description": "Sistema de gerenciamento de matr\u00edcula de alunos, professores, disciplinas e cursos.",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2021-07-07T15:45:07Z",
+                "fork": true,
+                "topics": [
+                  "college-project",
+                  "enrollment-management",
+                  "java"
+                ]
+              },
+              {
+                "name": "Projeto-Estruturas-de-Dados-B",
+                "description": "Programa que analisa o tempo de execu\u00e7\u00e3o de 5 algoritmos de ordena\u00e7\u00e3o a partir de vetores de diferentes tamanhos.",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2021-07-07T16:15:29Z",
+                "fork": true,
+                "topics": [
+                  "c",
+                  "college-project",
+                  "execution-time",
+                  "sorting-algorithms"
+                ]
+              },
+              {
+                "name": "LFA---Gram-tica-Identificadora-de-Linguagem",
+                "description": "Analisador de sintaxe de uma simples linguagem de programa\u00e7\u00e3o",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2021-12-14T18:27:07Z",
+                "fork": true,
+                "topics": [
+                  "college-project",
+                  "formal-languages",
+                  "sintaxis-analyzer"
+                ]
+              },
+              {
+                "name": "Blackjack",
+                "description": "Blackjack em C, usando IDE Code::Blocks no sistema operacional Windows 10.",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2022-01-05T17:24:20Z",
+                "fork": false,
+                "topics": [
+                  "blackjack",
+                  "blackjack-game",
+                  "c",
+                  "codeblocks",
+                  "college-project"
+                ]
+              },
+              {
+                "name": "MyOS",
+                "description": "Simple Operating System",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2021-12-14T18:26:05Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "college-project",
+                  "kernel",
+                  "myos",
+                  "operating-system",
+                  "os"
+                ]
+              },
+              {
+                "name": "Academia_Cobra_Kai",
+                "description": "Making a payment manager system",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2021-08-02T14:04:07Z",
+                "fork": true,
+                "topics": [
+                  "access-control",
+                  "arduino",
+                  "c",
+                  "college-project",
+                  "java",
+                  "management-system",
+                  "mysql",
+                  "software-engineering",
+                  "sql"
+                ]
+              },
+              {
+                "name": "Batalha-Naval",
+                "description": "Batalha Naval em Assembly",
+                "stargazers_count": 1,
+                "language": "Assembly",
+                "pushed_at": "2021-10-16T23:17:13Z",
+                "fork": false,
+                "topics": [
+                  "assembly",
+                  "battleship-game",
+                  "college-project",
+                  "dosbox",
+                  "x86-assembly"
+                ]
+              },
+              {
+                "name": "Cryptography",
+                "description": "Cryptography programs",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2022-01-16T18:04:25Z",
+                "fork": false,
+                "topics": [
+                  "cipher-algorithms",
+                  "cryptography",
+                  "cryptography-algorithms"
+                ]
+              },
+              {
+                "name": "CPU-Pipeline",
+                "description": "Implementa\u00e7\u00e3o de uma CPU Pipeline baseando-se na CPU multiciclo.",
+                "stargazers_count": 3,
+                "language": "VHDL",
+                "pushed_at": "2021-07-09T15:48:04Z",
+                "fork": false,
+                "topics": [
+                  "college-project",
+                  "pipeline-cpu",
+                  "vhdl"
+                ]
+              },
+              {
+                "name": "Sistema_Empresa",
+                "description": "Sistema de uma empresa madeireira",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2021-12-14T18:27:00Z",
+                "fork": true,
+                "topics": [
+                  "college-project",
+                  "commercial-project",
+                  "site"
+                ]
+              },
+              {
+                "name": "onelinerhub",
+                "description": "Lib with 500+ minimalistic code pieces (and counting) with clear explanation @ onelinerhub.com ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-08-31T12:18:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Rotas_de_viagem",
+                "description": "Matriz de adjac\u00eancia de grafos para encontrar a rota c\u00edclica de maior lucro.",
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2021-06-16T13:48:42Z",
+                "fork": false,
+                "topics": [
+                  "adjacency-matrix",
+                  "c",
+                  "college-project",
+                  "data-structures",
+                  "graphs"
+                ]
+              },
+              {
+                "name": "Otimizacao_de_voos",
+                "description": "Projeto de otimiza\u00e7\u00e3o de v\u00f4os entre aeroportos.",
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2021-07-07T16:32:01Z",
+                "fork": false,
+                "topics": [
+                  "adjacency-list",
+                  "c",
+                  "college-project",
+                  "graphs"
+                ]
+              },
+              {
+                "name": "Quarentena-Cachorro-Quente",
+                "description": "Sistema de gerenciamento de pedidos entre cinco diferentes pontos de venda de cachorro quente.",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2021-07-08T19:18:30Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "codeblocks",
+                  "college-project",
+                  "data-structures"
+                ]
+              },
+              {
+                "name": "Projeto1Arquitetura",
+                "description": "Programa que calcula a m\u00e9dia aritm\u00e9tica de uma turma.",
+                "stargazers_count": 0,
+                "language": "Assembly",
+                "pushed_at": "2021-07-08T15:57:28Z",
+                "fork": true,
+                "topics": [
+                  "assembly-mips",
+                  "college-project"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:43.762711+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

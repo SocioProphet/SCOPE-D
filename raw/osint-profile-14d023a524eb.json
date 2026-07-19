@@ -1,0 +1,136 @@
+{
+  "profileId": "osint-profile-14d023a524eb",
+  "target": "CrisLottz",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:39.128772+00:00",
+  "completedAt": "2026-06-21T15:32:39.538298+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-45e07918",
+      "lookupType": "github_context",
+      "target": "CrisLottz",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "CrisLottz",
+            "name": "Cris Lottz",
+            "type": "User",
+            "company": "StrivexLabs",
+            "blog": "strivexlabs.com",
+            "location": "Nicaragua",
+            "bio": "Strivex Labs Co-Founder",
+            "public_repos": 7,
+            "followers": 1369,
+            "following": 2913,
+            "created_at": "2022-05-26T02:13:24Z",
+            "updated_at": "2026-05-14T20:42:57Z",
+            "html_url": "https://github.com/CrisLottz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/106290528?v=4",
+            "repos": [
+              {
+                "name": "CoreAsset-InventoryManagement-web-client",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T08:50:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CoreAsset-InventoryManagement-headless-api",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-06-20T08:49:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CrisLottz",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-06-19T08:08:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-profile-trophy",
+                "description": "\ud83c\udfc6 Add dynamically generated GitHub Stat Trophies  on your readme",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-19T08:04:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Nudge",
+                "description": "Project in development, original idea by an OCD dude for the use of other OCD dudes who love productivity and tracking.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-11-27T08:29:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "workforce-management",
+                "description": "Timetracking application",
+                "stargazers_count": 10,
+                "language": "PHP",
+                "pushed_at": "2026-06-01T15:42:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-readme-stats",
+                "description": ":zap: Dynamically generated stats for your github readmes",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-24T18:50:05Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:39.537677+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "profileId": "osint-profile-5a1464856085",
+  "target": "CAVIND46016",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:09.704656+00:00",
+  "completedAt": "2026-06-20T16:49:10.354538+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ab890840",
+      "lookupType": "github_context",
+      "target": "CAVIND46016",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "CAVIND46016",
+            "name": "Cavin Dsouza",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Boston",
+            "bio": "Senior Data Engineer",
+            "public_repos": 22,
+            "followers": 810,
+            "following": 2950,
+            "created_at": "2016-08-30T18:05:00Z",
+            "updated_at": "2025-08-25T06:43:04Z",
+            "html_url": "https://github.com/CAVIND46016",
+            "avatar_url": "https://avatars.githubusercontent.com/u/21344198?v=4",
+            "repos": [
+              {
+                "name": "Folder_Customization-Icons",
+                "description": "Automating applying icons to folders in Windows OS.",
+                "stargazers_count": 25,
+                "language": "Python",
+                "pushed_at": "2023-12-02T14:39:20Z",
+                "fork": false,
+                "topics": [
+                  "executable",
+                  "google-image-search",
+                  "gui",
+                  "icon",
+                  "icon-theme",
+                  "icons",
+                  "pyinstaller",
+                  "pylint",
+                  "python-script",
+                  "python3",
+                  "tkinter",
+                  "tkinter-graphic-interface",
+                  "tkinter-gui",
+                  "tkinter-python",
+                  "tkinter-widgets",
+                  "windows"
+                ]
+              },
+              {
+                "name": "Simple-Calculator-Web-app",
+                "description": "A simple calculator application using HTML, CSS, Javascript. Replication of the same using Django.",
+                "stargazers_count": 95,
+                "language": "Python",
+                "pushed_at": "2024-07-02T18:51:52Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "calculator-application",
+                  "calculator-web",
+                  "css",
+                  "django",
+                  "html",
+                  "javascript",
+                  "jquery"
+                ]
+              },
+              {
+                "name": "ETL",
+                "description": "Some utility scripts, tweaks and other essential info with regards to ETL",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-06-09T05:56:33Z",
+                "fork": false,
+                "topics": [
+                  "etl",
+                  "numpy",
+                  "pandas",
+                  "pandas-dataframe",
+                  "pandas-python",
+                  "python3",
+                  "swifter"
+                ]
+              },
+              {
+                "name": "Web-Scraping",
+                "description": "Contains the scripts for web scraping using 'beautifulsoup' and 'selenium'.",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2023-12-02T14:45:20Z",
+                "fork": false,
+                "topics": [
+                  "beautifulsoup4",
+                  "chromedriver",
+                  "geckodriver",
+                  "http",
+                  "http-requests",
+                  "postgresql",
+                  "pylint",
+                  "python3",
+                  "python35",
+                  "pythondictionary",
+                  "regex",
+                  "selenium",
+                  "selenium-python",
+                  "selenium-webdriver",
+                  "slashdot",
+                  "sql",
+                  "webscraping",
+                  "webscrapper"
+                ]
+              },
+              {
+                "name": "COVID-19",
+                "description": "This contains articles and user comments related to the 'Coronavirus', scraped from Slashdot, for analysis purposes.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2023-12-02T21:22:13Z",
+                "fork": false,
+                "topics": [
+                  "2019-ncov",
+                  "coronavirus",
+                  "covid-19",
+                  "ncov",
+                  "pandemic",
+                  "slashdot"
+                ]
+              },
+              {
+                "name": "Locational-Data-Scraping",
+                "description": "Generating Locational data by web-scraping using the traditional 'Store Finder' or 'Locate my Store' functionality provided on websites.",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2024-04-13T02:22:58Z",
+                "fork": false,
+                "topics": [
+                  "beautifulsoup4",
+                  "chromedriver",
+                  "demographics",
+                  "geckodriver",
+                  "geocoding",
+                  "json",
+                  "pickle",
+                  "python3",
+                  "regex",
+                  "requests-module",
+                  "selenium-python",
+                  "selenium-webdriver",
+                  "store-locator",
+                  "storelocator",
+                  "web-scraping",
+                  "webscraping"
+                ]
+              },
+              {
+                "name": "MATLAB-Coding",
+                "description": "https://www.mathworks.com/matlabcentral/profile/authors/2706119-cavin-dsouza",
+                "stargazers_count": 4,
+                "language": "Matlab",
+                "pushed_at": "2017-08-09T07:43:12Z",
+                "fork": false,
+                "topics": [
+                  "cryptography",
+                  "image-processing",
+                  "matlab"
+                ]
+              },
+              {
+                "name": "Xinu-Kernel-Programming",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2017-04-30T18:21:13Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "c-plus-plus"
+                ]
+              },
+              {
+                "name": "Advanced-SQL",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "PLpgSQL",
+                "pushed_at": "2017-12-14T16:48:33Z",
+                "fork": false,
+                "topics": [
+                  "hits-algorithm",
+                  "postgresql",
+                  "prims-algorithm",
+                  "relational-databases",
+                  "sql"
+                ]
+              },
+              {
+                "name": "Leet-Code",
+                "description": "Solutions to coding questions on https://leetcode.com/",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2018-07-16T09:43:03Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "leetcode",
+                  "leetcode-python",
+                  "leetcode-solutions"
+                ]
+              },
+              {
+                "name": "IntroductionToCryptography",
+                "description": "Programming assignments as part of the course \"CSCI-B504 Introduction to Cryptography\"",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2018-03-19T02:04:02Z",
+                "fork": false,
+                "topics": [
+                  "bytes",
+                  "ciphertext",
+                  "crypto",
+                  "cryptography",
+                  "padding",
+                  "python"
+                ]
+              },
+              {
+                "name": "Yelp-Dataset-Analysis",
+                "description": "Analyzing yelp dataset ==> https://www.yelp.com/dataset_challenge",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2018-07-26T06:38:00Z",
+                "fork": false,
+                "topics": [
+                  "afinn",
+                  "json",
+                  "naive-bayes-classifier",
+                  "nltk",
+                  "python",
+                  "sentiment-classification",
+                  "sentiment-lexicons",
+                  "sentimental-analysis",
+                  "yelp-challenge",
+                  "yelp-dataset",
+                  "yelp-dataset-analysis",
+                  "yelp-reviews"
+                ]
+              },
+              {
+                "name": "Project-Euler",
+                "description": "Solutions to coding challenges on https://projecteuler.net/archives",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2018-09-03T08:02:25Z",
+                "fork": false,
+                "topics": [
+                  "mathematics",
+                  "project-euler",
+                  "python",
+                  "python-3-6"
+                ]
+              },
+              {
+                "name": "Kaggle",
+                "description": "Exploratory data analysis on datasets available on Kaggle - https://www.kaggle.com/",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2018-11-17T21:34:24Z",
+                "fork": false,
+                "topics": [
+                  "data-mining",
+                  "data-science",
+                  "data-visualization",
+                  "exploratory-data-analysis",
+                  "exploratory-data-visualizations",
+                  "kaggle",
+                  "mysql",
+                  "ngrams",
+                  "postgresql",
+                  "psycopg2",
+                  "pymysql",
+                  "tarantino"
+                ]
+              },
+              {
+                "name": "Web-Comics-Scraping",
+                "description": "Web scraping of web comic sites listed by Al Sweigart",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2018-12-21T03:56:42Z",
+                "fork": false,
+                "topics": [
+                  "automatetheboringstuff",
+                  "beautifulsoup",
+                  "beautifulsoup4",
+                  "comics",
+                  "comics-downloader",
+                  "comics-scraper",
+                  "fpdf",
+                  "fpdf-library",
+                  "http",
+                  "pdf",
+                  "python",
+                  "recursion",
+                  "selenium-python",
+                  "selenium-webdriver",
+                  "webscraping"
+                ]
+              },
+              {
+                "name": "Hackerrank",
+                "description": "Solutions to coding challenges on https://www.hackerrank.com/",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2020-01-23T04:21:56Z",
+                "fork": false,
+                "topics": [
+                  "hackerrank-contests",
+                  "hackerrank-python",
+                  "hackerrank-solutions"
+                ]
+              },
+              {
+                "name": "Secret-Santa",
+                "description": "A simple GUI designed using Python's tkinter module that simulates the Secret Santa Gift exchange mechanism.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-05-28T07:15:45Z",
+                "fork": false,
+                "topics": [
+                  "email",
+                  "python",
+                  "python3",
+                  "secretsanta",
+                  "tkinter",
+                  "tkinter-gui",
+                  "tkinter-python"
+                ]
+              },
+              {
+                "name": "python-emails",
+                "description": "Send an email using a python script.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-12-02T14:10:37Z",
+                "fork": false,
+                "topics": [
+                  "email",
+                  "email-attachments",
+                  "email-sender",
+                  "email-validation",
+                  "gmail-smtp",
+                  "smtp",
+                  "smtp-mail",
+                  "smtp-server",
+                  "ssl",
+                  "tls"
+                ]
+              },
+              {
+                "name": "AlteryxGalleryAPI",
+                "description": "Python for Connecting and Working with Alteryx Gallery API",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-12-02T15:06:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "COVID-19-Email-Notifier",
+                "description": "Send latest Covid updates and statistics obtained from Worldometers via email to a group of recipients. This script is triggered by the Windows Task Scheduler to execute daily at a specified time.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-12-02T21:19:43Z",
+                "fork": false,
+                "topics": [
+                  "batch-script",
+                  "chromedriver",
+                  "covid-19",
+                  "covid-19-india",
+                  "email-sender",
+                  "pandemic",
+                  "pypdf2",
+                  "python3",
+                  "selenium",
+                  "task-scheduler",
+                  "vbs",
+                  "world-health-organization"
+                ]
+              },
+              {
+                "name": "Academic-Coursework",
+                "description": "Academic coursework completed as a Computer Science Student",
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2023-12-02T21:29:25Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "artificial-intelligence-algorithms",
+                  "astar-algorithm",
+                  "bfs",
+                  "bootstrap",
+                  "bubble-sort",
+                  "css",
+                  "dfs",
+                  "html",
+                  "indiana-university-bloomington",
+                  "insertion-sort",
+                  "javascript",
+                  "machine-learning",
+                  "markov-decision-processes",
+                  "mergesort",
+                  "python",
+                  "quicksort",
+                  "sorting-algorithms"
+                ]
+              },
+              {
+                "name": "Code-Signal",
+                "description": "Solutions to coding challenges on https://codesignal.com/",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2018-07-19T00:15:47Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "codefights",
+                  "codesignal-solutions"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:10.353756+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-9b86f2ad870b",
+  "target": "punkinloveez",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:22.301596+00:00",
+  "completedAt": "2026-06-21T15:33:22.662809+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-d6765d3b",
+      "lookupType": "github_context",
+      "target": "punkinloveez",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "punkinloveez",
+            "name": "ryusei",
+            "type": "User",
+            "company": "hi @sssleepyy @ukusyaoi",
+            "blog": "lmao",
+            "location": "shibuya",
+            "bio": "\u0f06 . my wife @savntz / alt \u2014 gave the acc to my little sister @v10rubys ",
+            "public_repos": 1,
+            "followers": 1204,
+            "following": 2458,
+            "created_at": "2024-07-07T10:28:42Z",
+            "updated_at": "2026-04-03T13:42:11Z",
+            "html_url": "https://github.com/punkinloveez",
+            "avatar_url": "https://avatars.githubusercontent.com/u/174937307?v=4",
+            "repos": [
+              {
+                "name": "nootnootbeep",
+                "description": "how to fucking delete this",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-05-26T09:44:01Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:22.661811+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

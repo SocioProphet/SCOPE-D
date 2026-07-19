@@ -1,0 +1,372 @@
+{
+  "profileId": "osint-profile-c3badfbc9a6c",
+  "target": "george0st",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:36.930787+00:00",
+  "completedAt": "2026-06-21T15:27:37.659821+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8cee6aa5",
+      "lookupType": "github_context",
+      "target": "george0st",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "george0st",
+            "name": "jist",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Europe, Czech Republic, Prague",
+            "bio": "The architect with an overlap into development and analysis. \"Almost everything is possible, it's just a matter of time\u231a, resources\ud83d\udcb0 and quality\u2b50\"",
+            "public_repos": 27,
+            "followers": 13585,
+            "following": 74898,
+            "created_at": "2021-12-09T11:11:51Z",
+            "updated_at": "2026-04-27T17:25:43Z",
+            "html_url": "https://github.com/george0st",
+            "avatar_url": "https://avatars.githubusercontent.com/u/95856749?v=4",
+            "repos": [
+              {
+                "name": "qgate-model",
+                "description": "ML/AI meta-model, used in MLRun/Iguazio/Nuclio, see qgate-sln-<MLRun | solution>",
+                "stargazers_count": 411,
+                "language": "Python",
+                "pushed_at": "2025-08-17T21:24:57Z",
+                "fork": false,
+                "topics": [
+                  "data-science",
+                  "feature-store",
+                  "iguazu",
+                  "machine-learning",
+                  "meta-model",
+                  "mlops",
+                  "mlrun",
+                  "nuclio",
+                  "quality-assessment",
+                  "quality-assurance",
+                  "quality-gate",
+                  "testing"
+                ]
+              },
+              {
+                "name": "faker",
+                "description": "Faker is a Python package that generates fake data for you.",
+                "stargazers_count": 146,
+                "language": "Python",
+                "pushed_at": "2024-06-16T13:04:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mlrun",
+                "description": "Machine Learning automation and tracking",
+                "stargazers_count": 111,
+                "language": "Python",
+                "pushed_at": "2024-06-19T19:03:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "qgate-perf",
+                "description": "Performance tests under quality gate solution (for python code).",
+                "stargazers_count": 163,
+                "language": "Python",
+                "pushed_at": "2024-11-17T14:19:34Z",
+                "fork": false,
+                "topics": [
+                  "multiprocessing",
+                  "multithreading",
+                  "performance-testing",
+                  "python",
+                  "quality-gate",
+                  "testing",
+                  "testset"
+                ]
+              },
+              {
+                "name": "qgate-graph",
+                "description": "The graph visualization under quality gate solution",
+                "stargazers_count": 113,
+                "language": "Python",
+                "pushed_at": "2024-12-04T11:28:58Z",
+                "fork": false,
+                "topics": [
+                  "graphs",
+                  "python",
+                  "quality-gate"
+                ]
+              },
+              {
+                "name": "qgate-sln-mlrun",
+                "description": "MLRun/Iguazio/Nuclio quality gate solution. The solution checks a quality of MLRun implementation/delivery.",
+                "stargazers_count": 302,
+                "language": "Python",
+                "pushed_at": "2025-08-05T17:33:23Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "data-science",
+                  "e2e",
+                  "feature-store",
+                  "genai",
+                  "iguazio",
+                  "machine-learning",
+                  "mlops",
+                  "mlrun",
+                  "mlrun-test",
+                  "nuclio",
+                  "quality-assessment",
+                  "quality-assurance",
+                  "quality-gate",
+                  "testing"
+                ]
+              },
+              {
+                "name": "qgate-examples",
+                "description": "Examples of quality gate usage.",
+                "stargazers_count": 104,
+                "language": "Python",
+                "pushed_at": "2024-11-21T22:59:00Z",
+                "fork": false,
+                "topics": [
+                  "examples",
+                  "python",
+                  "quality-gate"
+                ]
+              },
+              {
+                "name": "industry-machine-learning",
+                "description": "A curated list of applied machine learning and data science notebooks and libraries across different industries (by @firmai)",
+                "stargazers_count": 78,
+                "language": null,
+                "pushed_at": "2021-12-18T09:23:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nifi-site",
+                "description": "Apache NiFi website",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-03-27T21:32:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ff2Cql",
+                "description": "A simple transfer data between NiFi and CQL solution (support Apache Cassandra, ScyllaDB, AstraDB, etc.).",
+                "stargazers_count": 81,
+                "language": "Java",
+                "pushed_at": "2025-10-31T18:49:19Z",
+                "fork": false,
+                "topics": [
+                  "apache-cassandra",
+                  "apache-nifi",
+                  "astradb",
+                  "cassandra",
+                  "cql",
+                  "etl",
+                  "nifi",
+                  "nifi-processor",
+                  "orchestrator",
+                  "scylladb"
+                ]
+              },
+              {
+                "name": "george0st",
+                "description": "My github homepage",
+                "stargazers_count": 152,
+                "language": null,
+                "pushed_at": "2026-04-25T13:54:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "boomi-python",
+                "description": "Python library for the Boomi API.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-04-02T20:47:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cql-stress-mng",
+                "description": "Management of CQL stress tests with official 'cassandra-stress' tool",
+                "stargazers_count": 49,
+                "language": "Shell",
+                "pushed_at": "2025-01-28T15:43:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easy-cass-stress",
+                "description": null,
+                "stargazers_count": 29,
+                "language": null,
+                "pushed_at": "2024-09-09T19:59:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wcons",
+                "description": "The checker/scraper of web solutions",
+                "stargazers_count": 145,
+                "language": "Go",
+                "pushed_at": "2024-05-10T11:38:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "feast",
+                "description": "Feature Store for Machine Learning",
+                "stargazers_count": 72,
+                "language": null,
+                "pushed_at": "2023-11-17T17:59:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dlookr",
+                "description": "Tools for Data Diagnosis, Exploration, Transformation",
+                "stargazers_count": 64,
+                "language": null,
+                "pushed_at": "2023-11-17T11:41:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "2050-LandingPage",
+                "description": "Simple LandigPage. this Webpage still under upgrade . i will add more codes ",
+                "stargazers_count": 65,
+                "language": null,
+                "pushed_at": "2023-05-03T21:09:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pipdeptree",
+                "description": "A command line utility to display dependency tree of the installed Python packages",
+                "stargazers_count": 57,
+                "language": null,
+                "pushed_at": "2023-10-09T16:51:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kubernetes-training-answers",
+                "description": "Answer key for my Kubernetes for Beginners Course on Udemy",
+                "stargazers_count": 55,
+                "language": null,
+                "pushed_at": "2022-02-26T20:54:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ray",
+                "description": "Ray is a unified framework for scaling AI and Python applications. Ray consists of a core distributed runtime and a toolkit of libraries (Ray AIR) for accelerating ML workloads.",
+                "stargazers_count": 59,
+                "language": "Python",
+                "pushed_at": "2023-10-07T19:27:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "storey",
+                "description": "real-time data + ML pipeline",
+                "stargazers_count": 55,
+                "language": "Python",
+                "pushed_at": "2023-05-02T11:19:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "memcached",
+                "description": "memcached development tree",
+                "stargazers_count": 53,
+                "language": null,
+                "pushed_at": "2023-02-17T06:54:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "coveragepy",
+                "description": "The code coverage tool for Python",
+                "stargazers_count": 53,
+                "language": null,
+                "pushed_at": "2023-02-16T16:56:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mlrun_ui",
+                "description": "UI of MLRun \u2014 Machine Learning automation and tracking",
+                "stargazers_count": 55,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-02T18:29:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RapidFuzz",
+                "description": "Rapid fuzzy string matching in Python using various string metrics",
+                "stargazers_count": 56,
+                "language": null,
+                "pushed_at": "2022-03-25T12:24:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Levenshtein",
+                "description": "The Levenshtein Python C extension module contains functions for fast computation of Levenshtein distance and string similarity",
+                "stargazers_count": 55,
+                "language": null,
+                "pushed_at": "2022-01-26T12:12:41Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:37.658977+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

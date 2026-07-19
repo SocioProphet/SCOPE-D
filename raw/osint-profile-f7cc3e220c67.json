@@ -1,0 +1,100 @@
+{
+  "profileId": "osint-profile-f7cc3e220c67",
+  "target": "gambling-addict",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:47.622754+00:00",
+  "completedAt": "2026-06-21T15:27:47.971346+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f26bcd6c",
+      "lookupType": "github_context",
+      "target": "gambling-addict",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "gambling-addict",
+            "name": null,
+            "type": "User",
+            "company": "\u3164\u3164@the-divine-feminine \u3164@Printerbattle \u3164@KALININGRAD-OBLAST\u3164@kyuparin\u3164@Asrieluo\u3164@Leucole\u3164@accardi-florentino\u3164@da-wost\u3164@malepregnancy",
+            "blog": "",
+            "location": "cuds always ok, you don't have to ask",
+            "bio": "sign my ata\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\r\n\r\n@kyuparin @printerbattle the goats",
+            "public_repos": 3,
+            "followers": 8359,
+            "following": 85612,
+            "created_at": "2024-08-22T11:54:27Z",
+            "updated_at": "2026-06-14T13:22:19Z",
+            "html_url": "https://github.com/gambling-addict",
+            "avatar_url": "https://avatars.githubusercontent.com/u/179130175?v=4",
+            "repos": [
+              {
+                "name": "gambling-addict",
+                "description": null,
+                "stargazers_count": 53,
+                "language": null,
+                "pushed_at": "2026-06-21T09:28:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Example",
+                "description": null,
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2025-05-04T13:26:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jjijiij",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2025-04-05T21:27:10Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:47.970330+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

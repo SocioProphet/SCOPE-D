@@ -1,0 +1,253 @@
+{
+  "profileId": "osint-profile-8d18282cbb63",
+  "target": "umogal",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:11.910438+00:00",
+  "completedAt": "2026-06-21T15:29:12.570045+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-12865bb3",
+      "lookupType": "github_context",
+      "target": "umogal",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "umogal",
+            "name": "M.U. Mogal",
+            "type": "User",
+            "company": "Not a brit",
+            "blog": "",
+            "location": "Earth",
+            "bio": "Automata Theory & Formal Languages | \u2728 Star for Star \u2b50 | Computational Complexity & Algorithmic Analysis",
+            "public_repos": 20,
+            "followers": 2855,
+            "following": 4535,
+            "created_at": "2025-05-14T14:34:50Z",
+            "updated_at": "2026-06-19T08:42:29Z",
+            "html_url": "https://github.com/umogal",
+            "avatar_url": "https://avatars.githubusercontent.com/u/211694741?v=4",
+            "repos": [
+              {
+                "name": "umogal",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-05-15T16:02:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TerminalQuest",
+                "description": "A C-based terminal game with custom game engine inspired by the early days of programming",
+                "stargazers_count": 36,
+                "language": "C",
+                "pushed_at": "2025-10-18T09:11:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "iLedgerMonitor360",
+                "description": "Test to learn things",
+                "stargazers_count": 25,
+                "language": null,
+                "pushed_at": "2025-10-05T17:13:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SentimentAnalyser",
+                "description": "A text sentiment analyser written in python ",
+                "stargazers_count": 67,
+                "language": "Python",
+                "pushed_at": "2026-03-18T10:43:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio",
+                "description": "Rep to learn TailWindCSS",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2026-04-01T08:55:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tailwind-learning-",
+                "description": "Test repo to learn tailwind",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-03-05T10:22:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "register",
+                "description": "Grab your own sweet-looking '.is-a.dev' subdomain.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-26T12:01:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BasicVirusDetection-WindowsRepair",
+                "description": "W.I.P.",
+                "stargazers_count": 0,
+                "language": "PowerShell",
+                "pushed_at": "2026-03-26T08:24:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "umogal.github.io",
+                "description": "Pages",
+                "stargazers_count": 16,
+                "language": "HTML",
+                "pushed_at": "2026-03-26T11:56:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Light-Source",
+                "description": "Test",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-03-20T09:54:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IBM-Final",
+                "description": "Test",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-03-15T11:14:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Payment-Card-Validation-Tool",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "C",
+                "pushed_at": "2026-03-10T10:47:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IBM-Watson-NLP-Final-Project",
+                "description": "My Final Project for IBM AI Developer Professional Certification, after passing alll quizzes, exams and assignments.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-03-07T16:17:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cs50x-projects",
+                "description": "CS50x (Harvard) : My problem set and final project solutions",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-12-30T15:32:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "metrics",
+                "description": "\ud83d\udcca An infographics generator with 30+ plugins and 300+ options to display stats about your GitHub account and render them as SVG, Markdown, PDF or JSON!",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-28T10:06:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Exacta-IP",
+                "description": null,
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2025-10-06T14:47:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PlanetScale",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2025-10-06T13:12:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CommonGround",
+                "description": "A sustainable, scalable platform for local engagement that will create measurable environmental and social impact. While offering a diversified revenue model aligned with growth and utility!",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2025-10-05T12:48:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Digimeter",
+                "description": "Maps IP addresses to locations in a straightforward way",
+                "stargazers_count": 29,
+                "language": null,
+                "pushed_at": "2025-10-01T12:54:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-design-systems",
+                "description": "\ud83d\udc85\ud83c\udffb \u2692 A collection of awesome design systems",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-07-21T12:10:32Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:12.569362+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

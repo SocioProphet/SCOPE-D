@@ -1,0 +1,199 @@
+{
+  "profileId": "osint-profile-a16aec0631cb",
+  "target": "mrwhite4939",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:59.556825+00:00",
+  "completedAt": "2026-06-20T13:52:59.903064+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-cd118fda",
+      "lookupType": "github_context",
+      "target": "mrwhite4939",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mrwhite4939",
+            "name": "MrWhite",
+            "type": "User",
+            "company": "Trend Micro \u2014 \u30c8\u30ec\u30f3\u30c9\u30de\u30a4\u30af\u30ed",
+            "blog": "mrwhite4939.vercel.app",
+            "location": "Tokyo, Japan \u2014 \u6771\u4eac\u90fd, \u65e5\u672c",
+            "bio": "Hello, I'm Ren, call me Mr. White. Cybersecurity Engineer | Offensive Security, Pentesting, Exploit Development, Red Teaming, Bug Hunting \ud83c\udf10",
+            "public_repos": 14,
+            "followers": 2514,
+            "following": 15965,
+            "created_at": "2025-09-09T00:49:49Z",
+            "updated_at": "2026-03-01T07:09:33Z",
+            "html_url": "https://github.com/mrwhite4939",
+            "avatar_url": "https://avatars.githubusercontent.com/u/231139847?v=4",
+            "repos": [
+              {
+                "name": "mrwhite4939",
+                "description": null,
+                "stargazers_count": 21,
+                "language": null,
+                "pushed_at": "2026-01-17T23:43:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TONEIP",
+                "description": "TONEIP is a fast and accurate IP geolocation tool that provides detailed information about any IP address, including location, ISP, connection type, and VPN/Proxy detection. Simple, reliable, and easy to use.",
+                "stargazers_count": 35,
+                "language": "Shell",
+                "pushed_at": "2025-11-28T13:23:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "steghide",
+                "description": "It is simply a tool that hides a file or message in an image. ",
+                "stargazers_count": 26,
+                "language": "Shell",
+                "pushed_at": "2025-12-15T07:40:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RenPhisher",
+                "description": "It is a tool that tricks the victim's mind by creating a website that looks like the original site. It steals data and passwords",
+                "stargazers_count": 20,
+                "language": "HTML",
+                "pushed_at": "2025-11-25T11:07:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "self_guard",
+                "description": "Self\u2011Guard is a production-grade runtime integrity library that protects applications against debugging, memory tampering, timing attacks, and execution flow anomalies. It combines a C API, secure C++ core, and assembly checks to provide fail-secure, thread-safe, and high-performance protection for security-critical software.",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2026-03-01T06:52:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nullbyte-academy",
+                "description": "NullByte Academy is an advanced cybersecurity course that dives deep into CPU architecture, assembly, memory layouts, and reverse engineering. It bridges the gap between engineers and programmers, providing hands-on labs, visual guides, and practical exercises to master secure software design and vulnerability analysis.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-09T04:10:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RevengeDNS",
+                "description": "RevengeDNS is a defensive DNS security system built with TypeScript and Node.js. It inspects DNS traffic in real time, detects malicious domains (malware, phishing, ads), and redirects threats to a secure local sinkhole.",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-28T22:25:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GitForce",
+                "description": "GitForce is a Python tool for automating GitHub tasks like auto-following users, starring repositories, and following stargazers. It uses GitHub Personal Access Tokens for secure authentication, supports multi-threading, and includes smart rate-limiting to optimize performance across platforms.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-03-01T06:54:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hydra-os",
+                "description": "\ud83d\udda5\ufe0f Simulated OS project featuring a built-in classic Snake game.",
+                "stargazers_count": 11,
+                "language": "C",
+                "pushed_at": "2026-03-01T06:53:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HakkoAI",
+                "description": "Currently under maintenance",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2026-01-30T04:34:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DomainRecon",
+                "description": "DomainRecon is a lightweight PHP tool for domain reconnaissance, security analysis, and information gathering.",
+                "stargazers_count": 9,
+                "language": "PHP",
+                "pushed_at": "2026-03-01T06:53:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WhiteGui",
+                "description": "It is a script designed for Roblox.",
+                "stargazers_count": 8,
+                "language": "Lua",
+                "pushed_at": "2025-12-01T14:39:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MurjadScan",
+                "description": "This a tool use nmap. It is a very simple tool to use, designed for beginners.",
+                "stargazers_count": 12,
+                "language": "Shell",
+                "pushed_at": "2025-12-02T19:54:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "codejudge_hell",
+                "description": "CodeJudge_Hell is a courtroom-style static analysis tool for Python files. It puts every script on trial \u2014 with a Prosecutor, Defense Attorney, and Judge \u2014 then calculates the probability that the file is malicious and delivers a final verdict (CLEAN, YELLOW, or CRIMSON) with a confidence score.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-02-20T14:50:23Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:59.901920+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,826 @@
+{
+  "profileId": "osint-profile-e2af270067bd",
+  "target": "svendotdev",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:52.730235+00:00",
+  "completedAt": "2026-06-20T13:53:54.961492+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c8039aec",
+      "lookupType": "github_context",
+      "target": "svendotdev",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "svendotdev",
+            "name": "Sven.dev",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Full-Stack Engineer | \r\nWeb3/Blockchain Developer | \r\nAI Automation & Future-Tech Builder\r\n",
+            "public_repos": 101,
+            "followers": 1368,
+            "following": 2715,
+            "created_at": "2023-03-17T06:15:36Z",
+            "updated_at": "2025-12-07T04:39:41Z",
+            "html_url": "https://github.com/svendotdev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/128123195?v=4",
+            "repos": [
+              {
+                "name": "face-generator",
+                "description": "This is a face generator built with Python and deep learning libraries. As you can see in the README.md, it uses many people\u2019s faces. The goal is to combine features from different faces to generate entirely new ones.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-09-30T09:55:06Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "deep-learning",
+                  "face-generator",
+                  "python"
+                ]
+              },
+              {
+                "name": "BNB-pancakeswap-sniper-bundler-bot",
+                "description": "This is a PancakeSwap sniper\u2011bundler bot on BNB Chain. Like on Solana, the bot snipes newly launched tokens as soon as they go live and then sells the purchased tokens using bundled transactions. If you have any questions, just ask.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-08T20:45:34Z",
+                "fork": false,
+                "topics": [
+                  "bnb",
+                  "bundler",
+                  "etherum",
+                  "evm",
+                  "first-buyer",
+                  "professional-development",
+                  "sniper"
+                ]
+              },
+              {
+                "name": "AI-ppt-generator",
+                "description": "This is a PowerPoint-generating product. As you can see in the README, usually we have key points to present, but sometimes we don\u2019t have the time or the PPT skills to create a presentation. With this product, you just provide the points, and it automatically generates a PowerPoint presentation based on them.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-09-29T15:11:19Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "deep-learning",
+                  "ppt-generator",
+                  "python"
+                ]
+              },
+              {
+                "name": "telegram-verify-bot",
+                "description": "This is a verification bot on telegram. In this bot, I am using photon so implement register and login. Also, you can also see mini-app, this is main speciality of this bot.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-16T15:45:07Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "miniapp",
+                  "photon",
+                  "telegram",
+                  "telegrambot",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "solana-pumpfun-organic-volume-bot",
+                "description": "This is not common volume bot on pumpfun. This is organic volume bot on pump.fun. Here, organic means natural and being like human. If you use this bot, you can generate much more profits as soon",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-17T15:56:33Z",
+                "fork": false,
+                "topics": [
+                  "bit",
+                  "blockchain",
+                  "bot",
+                  "fun",
+                  "natural",
+                  "organic",
+                  "pump",
+                  "pump-fun",
+                  "solana",
+                  "typescript",
+                  "web3"
+                ]
+              },
+              {
+                "name": "Chat-bot",
+                "description": "This is AI chat bot. My bot can reply anything based on gpt-5.0. This bot is friendly and convieniently",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-16T17:11:52Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "bot",
+                  "chat",
+                  "gpt",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "geo-market",
+                "description": "This ai market anylizing platform. It uses ai-agent. By using ai-agent, we can always access to marketing platform and then can do trading. ",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-15T21:13:31Z",
+                "fork": false,
+                "topics": [
+                  "agent",
+                  "ai",
+                  "analyze",
+                  "market",
+                  "platform",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "evm-arbitrage",
+                "description": "Arbitrage smart contract for Polygon, works in combination with jerskisnow/Polygon-Arbitrage-Bot",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-26T17:13:46Z",
+                "fork": false,
+                "topics": [
+                  "amm",
+                  "arbitrage",
+                  "arbitrage-bots",
+                  "bot",
+                  "evm"
+                ]
+              },
+              {
+                "name": "BNB-Four.meme-sniper-bot",
+                "description": "This is a sniper bot for Four.meme on BNB. Every trader wants to be the first buyer of a token, and I built this bot to achieve that goal.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-08T22:58:32Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "bnb",
+                  "bot",
+                  "etherum",
+                  "evm",
+                  "four",
+                  "meme",
+                  "professional",
+                  "sniper"
+                ]
+              },
+              {
+                "name": "AI-voice-generator",
+                "description": "This is an AI product \u2014 a voice generator built with Python. It can generate different types of voices, such as male voices, female voices, children\u2019s voices, deep voices, light voices, and more.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-09-29T14:13:22Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "generator",
+                  "python",
+                  "voice"
+                ]
+              },
+              {
+                "name": "Core-NFT-MINT",
+                "description": "NFT Minting = the process of creating a new NFT on the blockchain.  1. Upload your image + metadata JSON to IPFS/Arweave/Pinata., 2. Call the NFT program (like Metaplex on Solana). 3. Mint instruction creates:",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-25T05:37:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "moonshot-trading-bot",
+                "description": "Trading bos is automated program that can gain profit on it's own. Rate of gainning profit depends on it's strategy such as arbitrage, snipper, bundler, volume, sandwich and copy-trading, etc...",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-07-10T09:40:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pumpfun-bundler",
+                "description": "This is pumpfun bundler bot.  when snipping token in solana, other buyers are interupted. To avoid this event, we are used to use bundler.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-16T15:58:50Z",
+                "fork": false,
+                "topics": [
+                  "block",
+                  "blockchain",
+                  "bot",
+                  "bundler",
+                  "pumpfun",
+                  "same",
+                  "slot",
+                  "solana",
+                  "trading",
+                  "typescript",
+                  "we3",
+                  "web3",
+                  "zero"
+                ]
+              },
+              {
+                "name": "WanderMind",
+                "description": "WanderMind is an AI-powered, multi-agent travel planner. It turns natural language input into smart, real-time itineraries using LLMs and modular AI agents. Get personalized suggestions for flights, weather, food, events, and more\u2014all displayed in a dynamic dashboard.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-13T11:00:24Z",
+                "fork": false,
+                "topics": [
+                  "agents",
+                  "ai-agents",
+                  "amadeus-api",
+                  "fastapi",
+                  "gemini",
+                  "google-maps-api",
+                  "langchain",
+                  "open-weather-api",
+                  "react",
+                  "tailwindcss",
+                  "ticketmaster-api",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "OdynAR",
+                "description": "OdynAR is an iOS app that turns posters into interactive AR experiences. Point your camera at a print, and it overlays a digital version you can tap to expand \u2014 blending physical visuals with immersive content.",
+                "stargazers_count": 5,
+                "language": "Swift",
+                "pushed_at": "2025-05-13T14:49:04Z",
+                "fork": false,
+                "topics": [
+                  "arkit",
+                  "ios-swift",
+                  "realitykit",
+                  "swift",
+                  "uikit"
+                ]
+              },
+              {
+                "name": "boilerplate-project-metricimpconverter",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-25T06:54:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Rocket.Chat",
+                "description": "The communications platform that puts data protection first.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-17T15:21:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AI-NFT-Marketplace",
+                "description": "An AI NFT marketplace is a digital platform where NFTs (Non-Fungible Tokens) are created, bought, and sold \u2014 but with AI (Artificial Intelligence) integrated to enhance the process. ",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-30T11:50:47Z",
+                "fork": false,
+                "topics": [
+                  "ai-driven-dynamic-nfts",
+                  "ai-generated-nfts",
+                  "ai-powered-recommendations",
+                  "chainlink",
+                  "ipns",
+                  "langchain",
+                  "marketplace",
+                  "nextjs",
+                  "nft",
+                  "openai",
+                  "solidity",
+                  "twilio",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "CSS-SCSS",
+                "description": "This repo is a project to design and implement various animations including 3D and slider using CSS and SCSS.",
+                "stargazers_count": 18,
+                "language": "CSS",
+                "pushed_at": "2024-06-17T06:16:10Z",
+                "fork": false,
+                "topics": [
+                  "3d",
+                  "animation",
+                  "css",
+                  "scss"
+                ]
+              },
+              {
+                "name": "raydium-cpmm-sniper",
+                "description": "A sniper targeting Raydium CPMM pools is an automated trading bot that watches for new CPMM pool creations or liquidity events on Raydium (Solana DEX) and immediately submits trades to buy (or sometimes sell) the token at the earliest moment\u2014often aiming for the first liquidity price tick. ",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-30T22:14:25Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "bot",
+                  "cpmm",
+                  "profit",
+                  "raydium",
+                  "sniper",
+                  "solana",
+                  "web3"
+                ]
+              },
+              {
+                "name": "FM-TIP-Calculator",
+                "description": "This project is solution of frontend mentor challenge.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-16T18:14:42Z",
+                "fork": false,
+                "topics": [
+                  "react",
+                  "scss",
+                  "styled-components",
+                  "typesc",
+                  "unit-testing",
+                  "vite",
+                  "vitest"
+                ]
+              },
+              {
+                "name": "mern-crud",
+                "description": "This repo is for crud. Crud means Create, read, update and delete. It is made by mern.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-11T14:37:57Z",
+                "fork": false,
+                "topics": [
+                  "mern",
+                  "mongo",
+                  "node",
+                  "react",
+                  "web2"
+                ]
+              },
+              {
+                "name": "raydium-sniper-bot",
+                "description": "Raydium Sniper Bot \u2014 an automated Solana/Raydium trading tool that detects newly created liquidity pools and executes ultra-fast buys to capture early token opportunities. Use cautiously \u2014 high reward but high risk.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-12T12:25:40Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "bot",
+                  "buyer",
+                  "first",
+                  "raydium",
+                  "sniper",
+                  "solana",
+                  "web3"
+                ]
+              },
+              {
+                "name": "EVM-Crash-Frontend",
+                "description": "\ud83d\ude80 Web3 gaming frontend for Crash, Miner, and Coinflip on EVM & multi-chain. Built with React, TypeScript, Phaser, SCSS, and Styled-Components. Features real-time gameplay via Socket.IO & Web3 integration with Ether.js. Scalable for Solana & other networks.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-27T08:56:41Z",
+                "fork": false,
+                "topics": [
+                  "coin-filp",
+                  "crash-game",
+                  "e2e",
+                  "evm",
+                  "gambling",
+                  "miner-game",
+                  "phaser3",
+                  "solana"
+                ]
+              },
+              {
+                "name": "bonkfun-copy-trading-bot",
+                "description": "bonkfun(letsbonkfun) copy trading bot . It is similar to pumpfun. In other wise, bonkfun is competitve with pumpfun.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-14T10:04:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "solana-relayer",
+                "description": "solana relayer",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-14T09:40:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "EasyDerma",
+                "description": "EasyDerma is an AI-powered skincare tool that analyzes facial images to diagnose skin conditions and recommend personalized routines. It combines a custom-trained CNN with the Gemini API for accurate assessments and product suggestions\u2014all in a clean, responsive web app.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-13T09:57:32Z",
+                "fork": false,
+                "topics": [
+                  "auth0",
+                  "flask",
+                  "gemini-ai",
+                  "keras-tensorflow",
+                  "mongodb",
+                  "nextjs",
+                  "react",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "SecretariatV",
+                "description": "My personal repository",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-04T14:23:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Todo-List-Backend",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2025-01-16T10:32:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EVM-dex-arbitrage",
+                "description": "Simple DEX Arbitrage \u2014 a beginner/intermediate Solidity project that demonstrates an on\u2011chain arbitrage bot. It includes a deployable arbitrage contract and scripts to deploy, run trades, and recover funds; meant for learning, not production.",
+                "stargazers_count": 0,
+                "language": "Solidity",
+                "pushed_at": "2025-11-12T12:34:13Z",
+                "fork": false,
+                "topics": [
+                  "arbitrage",
+                  "bot",
+                  "dex",
+                  "ethereum",
+                  "evm",
+                  "profittable"
+                ]
+              },
+              {
+                "name": "raydium-clmm",
+                "description": "Raydium AMM v3 is an open-source Concentrated Liquidity Market Maker (CLMM) built on Solana. It lets liquidity providers allocate funds within specific price ranges for higher efficiency and better yields, while traders benefit from deeper liquidity and lower slippage. The project uses Rust, Anchor, and Solana tools, and is licensed under Apache2.0",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-11-12T12:20:05Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "bot",
+                  "clmm",
+                  "raydium",
+                  "solana",
+                  "web3"
+                ]
+              },
+              {
+                "name": "raydium-amm",
+                "description": "The Raydium AMM is an on-chain smart contract based on the \u201cconstant product\u201d in a permissionless and decentralized manner built on the Solana blockchain.And it also shares its liquidity according to the Fibonacci sequence in the form of limit orders on OpenBook, the primary central limit order book (CLOB) of Solana",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-11-11T06:28:02Z",
+                "fork": false,
+                "topics": [
+                  "amm",
+                  "bot",
+                  "market-maker",
+                  "raydium",
+                  "solana"
+                ]
+              },
+              {
+                "name": "meteora-dlmm",
+                "description": "The DLMM Chain Pool Liquidity Management System is an automated tool built for Solana\u2019s DLMM (Discrete Liquidity Market Maker) pools. Its goal is to automatically manage and optimize liquidity distribution across multiple linked pools using the BidAsk model, reducing manual work and improving trading efficiency.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-11T06:22:14Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "bot",
+                  "dlmm",
+                  "meteora",
+                  "solana",
+                  "web3"
+                ]
+              },
+              {
+                "name": "lastSender-intergrated-",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-31T14:36:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HippChat",
+                "description": "A React Native chat application built with Expo that provides end-to-end encrypted messaging using Hippius S3 as the storage backend. Users are identified by Bittensor hotkeys derived from mnemonics, and all messages are encrypted using XChaCha20-Poly1305 sealed boxes.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-30T22:56:44Z",
+                "fork": false,
+                "topics": [
+                  "app",
+                  "chat",
+                  "encrypt",
+                  "native",
+                  "react",
+                  "react-native"
+                ]
+              },
+              {
+                "name": "evm-bnb-sniper-bundler-volume",
+                "description": "A high-performance trading bot infrastructure built for the BNB Smart Chain, offering automated token deployment, liquidity pool creation, and advanced trading strategies. Designed with precision, speed, and enterprise-grade reliability \u2014 ideal for developers, traders, and liquidity engineers.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-30T22:22:55Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "bot",
+                  "bundler",
+                  "ethereum",
+                  "evm",
+                  "sniper",
+                  "volume",
+                  "web3"
+                ]
+              },
+              {
+                "name": "react-native-chat-app",
+                "description": "HippChat is a React Native chat app with end-to-end encryption, where users are identified via Bittensor mnemonics, messages are securely stored on Hippius S3, and all communication is encrypted using XChaCha20-Poly1305 sealed boxes.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-27T08:26:05Z",
+                "fork": false,
+                "topics": [
+                  "app",
+                  "chat",
+                  "chat-app",
+                  "native",
+                  "react",
+                  "react-native"
+                ]
+              },
+              {
+                "name": "azure-deploy-app",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-19T11:04:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-expectation",
+                "description": "This program is an agent that provides weather forecasts. As you know, knowing the weather is very important in our daily lives. It is implemented using LSTM.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-30T09:57:15Z",
+                "fork": false,
+                "topics": [
+                  "agent",
+                  "ai",
+                  "customized",
+                  "deep",
+                  "expect",
+                  "learning",
+                  "lstm",
+                  "python",
+                  "weather"
+                ]
+              },
+              {
+                "name": "self-driving-car",
+                "description": "A self-driving car (also called an autonomous vehicle) is a vehicle that can navigate and drive without human input. It uses sensors, cameras, and AI to perceive its environment and make driving decisions. It is made by CNN.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-30T10:22:00Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "camera",
+                  "cnn",
+                  "deep",
+                  "image-recognition",
+                  "learning",
+                  "neural-network",
+                  "pattern-recognition",
+                  "python",
+                  "self-driving-car"
+                ]
+              },
+              {
+                "name": "jupiter-jito-volume-bot",
+                "description": "This is jupiter jito volume bot. A Jupiter\u2013Jito volume bot is an automated trading bot designed to generate trading volume on Solana\u2019s decentralized exchanges (DEXs), specifically via Jupiter Aggregator (for swaps) and Jito (for MEV optimization and bundle submission).",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-19T07:06:08Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "bot",
+                  "bundle",
+                  "fun",
+                  "jito",
+                  "pump",
+                  "pumpfun",
+                  "solana",
+                  "typescript",
+                  "volume",
+                  "web3"
+                ]
+              },
+              {
+                "name": "Telegram-solana-pumpfun-sniper-bot",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-19T07:50:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "last-sender-smart-contract",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-10-21T12:06:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solana-arbitrage-bot",
+                "description": "A Solana arbitrage bot is an automated trading program that exploits price differences of the same token across different DEXs (Decentralized Exchanges) or liquidity pools on the Solana blockchain.  It buys an asset where it\u2019s cheaper and sells it where it\u2019s more expensive \u2014 capturing the profit margin between them.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-19T07:22:59Z",
+                "fork": false,
+                "topics": [
+                  "arbitrage",
+                  "blockchain",
+                  "bot",
+                  "profittable",
+                  "smarty",
+                  "solana",
+                  "web3"
+                ]
+              },
+              {
+                "name": "pumpfun-comment-bot",
+                "description": "The Pump.Fun Comment Bot is an automation tool designed to enhance engagement and visibility for tokens launched on the Pump.Fun platform. By simulating authentic user interactions, it aims to increase the perceived activity and interest in a token, which can attract more traders and investors.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-23T14:49:00Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "bot",
+                  "comment",
+                  "feedback",
+                  "fun",
+                  "pump",
+                  "pumpfun",
+                  "solana"
+                ]
+              },
+              {
+                "name": "Pokemon-Showdown",
+                "description": "Pok\u00e9mon is a role-playing game (RPG) franchise centered around collecting, training, and battling creatures. Each Pok\u00e9mon has stats (HP, Attack, Defense, etc.), types (like Fire, Water, Grass), and moves that interact through a turn-based combat system with a type-effectiveness chart (e.g., Water beats Fire).",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-22T02:22:17Z",
+                "fork": false,
+                "topics": [
+                  "pokemon",
+                  "site",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "MTG-Advisor",
+                "description": "MTG Advisor is an AI-powered web app that analyzes U.S. senators\u2019 insider trades to generate stock movement predictions and personalized financial insights.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-13T01:38:27Z",
+                "fork": false,
+                "topics": [
+                  "flask",
+                  "google-gemini",
+                  "react",
+                  "selenium",
+                  "vite"
+                ]
+              },
+              {
+                "name": "Bifocal",
+                "description": "Bifocal is an AI-powered platform that analyzes message history to detect emotional abuse and escalating risks in conversations. It flags harmful behaviors from both the victim and offender perspectives using DSM-5-informed NLP and machine learning.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-05-13T07:15:58Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "bert",
+                  "flask",
+                  "google-web-speech",
+                  "huggingface",
+                  "ml",
+                  "python",
+                  "rag",
+                  "react",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "Spoko",
+                "description": "Spoko is a web app that helps individuals with speech disorders improve pronunciation and fluency through real-time AI feedback, gamified exercises, and personalized progress tracking\u2014accessible from anywhere.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-13T01:07:32Z",
+                "fork": false,
+                "topics": [
+                  "cloudflare",
+                  "google-speech",
+                  "mongodb",
+                  "nodejs",
+                  "react",
+                  "speech-to-text",
+                  "vite"
+                ]
+              },
+              {
+                "name": "3D-Portfolio",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-12-28T17:41:48Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:54.960697+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

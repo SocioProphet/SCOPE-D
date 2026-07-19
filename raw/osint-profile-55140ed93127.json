@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-55140ed93127",
+  "target": "cgrundman",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:11.754448+00:00",
+  "completedAt": "2026-06-21T15:28:12.585075+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-408c0fc5",
+      "lookupType": "github_context",
+      "target": "cgrundman",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "cgrundman",
+            "name": "Christian Grundman",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Kassel, Germany",
+            "bio": "Data Science || Deep Learning || Embedded Systems || Biomedical",
+            "public_repos": 51,
+            "followers": 4168,
+            "following": 6710,
+            "created_at": "2021-10-20T17:35:31Z",
+            "updated_at": "2026-06-19T18:39:57Z",
+            "html_url": "https://github.com/cgrundman",
+            "avatar_url": "https://avatars.githubusercontent.com/u/92883095?v=4",
+            "repos": [
+              {
+                "name": "travel-map-visualization",
+                "description": "Visualization for travel maps, segments given geographic regions for given sites via Voronoi algorithm.",
+                "stargazers_count": 43,
+                "language": "Python",
+                "pushed_at": "2026-06-20T21:34:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "isic_challenge_2024",
+                "description": "Submission for the ISIC Challenge for 2024",
+                "stargazers_count": 12,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-10-03T23:21:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "3d-pixel-plot",
+                "description": "Code for basice 3D plotting of pixelated estimation",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-08-21T05:31:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "svg-logos",
+                "description": "Repo for SVG images",
+                "stargazers_count": 32,
+                "language": "HTML",
+                "pushed_at": "2025-10-23T07:58:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nuclear-magnetic-resonance",
+                "description": "Introduction to NMR Technology",
+                "stargazers_count": 36,
+                "language": "Python",
+                "pushed_at": "2024-08-09T07:25:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gif-maker",
+                "description": "Basic library for making gifs",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-09-04T09:05:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cgrundman",
+                "description": "My personal repository",
+                "stargazers_count": 32,
+                "language": null,
+                "pushed_at": "2026-01-16T16:40:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EE575-air-velocity-sensor",
+                "description": "Code for working with an EE 575 air velocity sensor.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-10-28T14:26:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "esp32-fan",
+                "description": "Code for simple I/O control of a 5V fan.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-10-27T09:36:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "transparent-png-maker",
+                "description": "Code to take pngs and make the backgrounds transparent ",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-12-01T16:23:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ROS-tutorial",
+                "description": "Tutorial Material for ROS Programming",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2026-03-31T17:15:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cpp_fundametals",
+                "description": "Learning Space for C++",
+                "stargazers_count": 16,
+                "language": "C++",
+                "pushed_at": "2024-09-06T08:25:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "computed-tomography",
+                "description": "Complete CT Scanner Simulator",
+                "stargazers_count": 50,
+                "language": "MATLAB",
+                "pushed_at": "2024-12-05T21:01:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vector-field-plot",
+                "description": "Code for plotting a simple vector field",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-08-20T17:41:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ollama-api-starter",
+                "description": "Base code for calling the Ollama API",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-08-07T07:26:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Freenove_ESP32_WROVER_Board",
+                "description": "Fork of Freenove Board for programming",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-09-25T06:18:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "christian-grundman-website",
+                "description": "Repository for personal website",
+                "stargazers_count": 36,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-01T20:59:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "citizen-developer-business-architect",
+                "description": "Documentation for CDBA processes and knowledge.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-05-12T06:54:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "linux-networking",
+                "description": "Learning and getting familiar with Linux",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2025-05-23T16:41:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weight-tracker",
+                "description": "angular application for tracking weight",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-04-16T14:51:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "goals-app-frontend",
+                "description": "application to track and manage my personal and professional goals",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-04-08T09:57:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rf-ablation-monitor",
+                "description": "Code for a GUI monitoring and an RF Ablation device in operation.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-02-12T19:35:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vector-field-video-processor",
+                "description": "Repo demonstrating video processing to create a vector field.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-01-08T21:56:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "citizen-developer-practitioner",
+                "description": "Templates and best practices for Citizen Developer practitioners.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-05-12T06:55:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sql-intro-kaggle",
+                "description": "Introduction to SQL - Exercises from Kaggle",
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-12-30T21:12:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bash-learning",
+                "description": "Learning repo for bash script",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-12-13T22:43:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "conway-game-of-life",
+                "description": "Implementation for John Conway's Game of Life",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-11-22T14:55:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aws-saa-c03",
+                "description": "Learning materials for AWS Solution Architect Associate Certification",
+                "stargazers_count": 7,
+                "language": "Shell",
+                "pushed_at": "2025-01-01T18:00:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aws-clf-c02",
+                "description": "Learning materials for AWS Certification",
+                "stargazers_count": 19,
+                "language": "Shell",
+                "pushed_at": "2024-09-24T13:36:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "three.js",
+                "description": "Various projects in three.js from freeCodeCamp.org",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-16T13:24:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "matplotlib-custom-plots",
+                "description": "Repository for custom matplotlib plotting that can be called by Colab or Jupyter notebook.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2024-06-17T19:53:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-learning",
+                "description": "This repo is to store files created while learning development in React",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-12T15:01:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "freenove-esp32-wrover",
+                "description": "this repository contains a project for a image processor using an ESP32",
+                "stargazers_count": 12,
+                "language": "C",
+                "pushed_at": "2025-01-05T00:57:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smart_transcribe_api",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2024-11-10T21:28:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML-API",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2023-12-15T17:12:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZTM-TensorFlow-Developer",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-08T09:47:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bert",
+                "description": "TensorFlow code and pre-trained models for BERT",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2023-05-18T14:45:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MLOps-Project",
+                "description": "Introductory Project to introduce MLOps material",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2023-10-28T19:14:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Plant-Disease-Classification",
+                "description": "Deelp Learning Course Capstone Project",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-02-16T00:03:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "STM32-Tutorial",
+                "description": "Collection for simple projects to learn more about the STM32.",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2023-01-03T09:02:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tic-tac-toe",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2022-12-28T13:10:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ml-stethoscope",
+                "description": "Machine Learning code to train a model for stethoscope diagnosis",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-02-14T22:14:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Morse-Code-Translator",
+                "description": "translates string to morse code string",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2022-10-24T14:52:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Medical-Technology-ECG-Device",
+                "description": "Projects for Arduino that build to an ECG Device",
+                "stargazers_count": 14,
+                "language": "C++",
+                "pushed_at": "2022-07-08T20:08:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cv",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2022-05-13T10:11:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Computer-Vision-Uni-Luebeck",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2022-05-25T22:00:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Artificial-Intelligence",
+                "description": "AI topics demonstrated in MATLAB.",
+                "stargazers_count": 15,
+                "language": "MATLAB",
+                "pushed_at": "2024-05-10T21:19:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Computer-Vision",
+                "description": "Coursework in CV",
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2022-04-14T09:17:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Artificial-Intellligence-Python-Projects",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2022-04-16T21:38:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MATLAB-Introduction-Course",
+                "description": "All exercises to my introduction to MATLAB course.",
+                "stargazers_count": 8,
+                "language": "MATLAB",
+                "pushed_at": "2022-04-14T18:30:17Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:12.584342+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

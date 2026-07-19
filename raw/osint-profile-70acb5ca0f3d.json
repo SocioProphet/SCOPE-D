@@ -1,0 +1,145 @@
+{
+  "profileId": "osint-profile-70acb5ca0f3d",
+  "target": "maryam-kazemi",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:17.842341+00:00",
+  "completedAt": "2026-06-21T15:30:18.313327+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6502eb63",
+      "lookupType": "github_context",
+      "target": "maryam-kazemi",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "maryam-kazemi",
+            "name": "Maryam",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Computer Engineering Student, member of Turing Research Team",
+            "public_repos": 8,
+            "followers": 2032,
+            "following": 5372,
+            "created_at": "2024-02-22T20:43:35Z",
+            "updated_at": "2025-10-09T19:15:59Z",
+            "html_url": "https://github.com/maryam-kazemi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/160961164?v=4",
+            "repos": [
+              {
+                "name": "portfolio",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-07T15:10:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "maryam-kazemi",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-10-23T12:46:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-08T16:39:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-08T16:45:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-11-09T07:38:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubookshop",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-08T17:24:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Research-group",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-07-20T03:37:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wmongo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-26T05:27:01Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:18.312370+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,478 @@
+{
+  "profileId": "osint-profile-0bbd09667aee",
+  "target": "Kairatzh",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:26.039396+00:00",
+  "completedAt": "2026-06-21T15:30:27.195560+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e31bb198",
+      "lookupType": "github_context",
+      "target": "Kairatzh",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Kairatzh",
+            "name": "kirtzh",
+            "type": "User",
+            "company": "K.Zhubanov university",
+            "blog": "zhaksylykov.k06@gmail.com",
+            "location": "Aktobe, Kazakhstan",
+            "bio": "Kairat, 19y.o\r\n",
+            "public_repos": 45,
+            "followers": 1970,
+            "following": 5485,
+            "created_at": "2023-10-24T12:00:28Z",
+            "updated_at": "2026-05-23T12:07:01Z",
+            "html_url": "https://github.com/Kairatzh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/148870880?v=4",
+            "repos": [
+              {
+                "name": "CIDA-plugin",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-06-21T07:07:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kairatzh",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-01-14T15:00:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SuzyLinguist",
+                "description": "\u0418\u0418 \u0430\u0433\u0435\u043d\u0442 \u0434\u043b\u044f \u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u0438 \u043c\u0438\u043d\u0438 \u043a\u0443\u0440\u0441\u043e\u0432 \u043f\u043e \u0442\u0435\u043c\u0430\u043c ",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-09-15T09:42:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CIDA-CheXpert-Medicine-With-DenseNET",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-30T12:28:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Spam-Classification",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2026-01-12T15:12:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MultiModalNN-Simple",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-10T13:08:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Machine-Learning-Projects",
+                "description": "Top Machine Learning projects",
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-26T13:23:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Neural-Lie-Detector-for-Text",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-05-02T14:50:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CIDA",
+                "description": "Collective Intelligence via Deliberation and Aggregation",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-04-05T06:05:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MNIST-ablation-MLP",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-27T16:01:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CreditRiskScoring-MLP",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-27T15:51:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "100-PetProjectsML-DayChallenge",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-03-14T08:42:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SuzyHelpdesk",
+                "description": "\u0410\u0433\u0435\u043d\u0442 \u0434\u043b\u044f \u0442\u043e\u0433\u043e \u0447\u0442\u043e\u0431\u044b \u0447\u0438\u0442\u0430\u0442\u044c \u0438 \u043e\u0442\u0432\u0435\u0447\u0430\u0442\u044c \u043d\u0430 \u0432\u043e\u043f\u0440\u043e\u0441\u044b \u0441\u0432\u044f\u0437\u0430\u043d\u043d\u044b\u0435 \u0432 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0435 \u043a\u043e\u0442\u043e\u0440\u0443\u044e \u043e\u0431\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442 \u0430\u0433\u0435\u043d\u0442 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e RAG \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-08-14T08:12:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NIM-ML-Research",
+                "description": "\u041c\u043e\u0436\u0435\u0442 \u043b\u0438 \u043a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u0438\u0439 ML \u043e\u0442\u043a\u0440\u044b\u0442\u044c \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044e NIM \u0441 \u043d\u0443\u043b\u044f",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-03T14:58:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RIVA",
+                "description": "Run Intelligent Virtual Automations - open sourse language for LLM pipeline",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-02-12T15:27:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RAG-multiagent-benchmark",
+                "description": "\u041d\u0430\u0443\u0447\u043d\u0430\u044f \u0440\u0430\u0431\u043e\u0442\u0430 \u0434\u043b\u044f \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435 \u0430\u0433\u0435\u043d\u0442\u043e\u0432 \u0441 \u041f\u0410\u041c\u042f\u0422\u042c\u042e*",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-15T08:50:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-llm-apps",
+                "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-01-28T07:36:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RIFMA",
+                "description": "Run it for me AI ",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-01-28T17:27:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Research-Copilot",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-02-01T07:44:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StartupAgregatorNewsBot",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-01-22T14:50:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "STT-TTS-bot",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-24T13:10:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SuzyLawyer",
+                "description": "SuzyLawyer \u2014 \u044d\u0442\u043e \u0442\u0432\u043e\u0439 AI-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043e\u0442\u0432\u0435\u0447\u0430\u0435\u0442 \u043d\u0430 \u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0432\u043e\u043f\u0440\u043e\u0441\u044b, \u043e\u043f\u0438\u0440\u0430\u044f\u0441\u044c \u043d\u0430 \u0437\u0430\u043a\u043e\u043d\u044b.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-08-22T06:53:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TextGuardAI",
+                "description": "TextGuard AI \u2014 \u0441\u0435\u0440\u0432\u0438\u0441, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0435\u0442 \u0442\u0435\u043a\u0441\u0442 \u0438 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u0435\u0442 \u043a\u043b\u0430\u0441\u0441 \u0442\u043e\u043a\u0441\u0438\u0447\u043d\u043e\u0441\u0442\u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f (\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 / \u0442\u043e\u043a\u0441\u0438\u0447\u043d\u044b\u0439 / \u043d\u0435\u043d\u0430\u0432\u0438\u0441\u0442\u044c / \u0441\u043f\u0430\u043c) \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u043d\u0435\u0439\u0440\u043e\u0441\u0435\u0442\u0438 \u043d\u0430 PyTorch, \u043e\u0431\u0443\u0447\u0435\u043d\u043d\u043e\u0439 \u043d\u0430 \u043f\u0440\u043e\u0441\u0442\u043e\u043c TF-IDF + MLP.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-01-01T12:23:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TutorAIAgent",
+                "description": "\u0422\u0443\u0442\u043e\u0440\u0438\u0430\u043b \u0434\u043b\u044f \u0440\u0430\u0431\u043e\u0442\u044b \u0441 \u0418\u0418 \u0430\u0433\u0435\u043d\u0442\u0430\u043c\u0438(\u043a\u0430\u043a \u0441\u043e\u0437\u0434\u0430\u0442\u044c, \u043a\u0430\u043a \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c, \u043c\u0438\u043d\u0438 \u043f\u0440\u043e\u0435\u043a\u0442 \u0441 langchain+langgraph)",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-10-23T09:46:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeepTutor",
+                "description": "\"DeepTutor: AI-Powered Personalized Learning Assistant\"",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-12-31T16:13:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GrowlyBalakai",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Dockerfile",
+                "pushed_at": "2026-01-05T16:44:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CreditScoringSystem",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-01-12T16:21:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FillAI",
+                "description": "FillAI - \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0430\u0439\u0442 \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0434\u0435\u043b\u0430\u0435\u0442 \u043c\u0438\u043d\u0438 \u043a\u0443\u0440\u0441 \u043d\u0430 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u043d\u0443\u044e \u0442\u0435\u043c \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-11-13T09:47:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PipelinesML",
+                "description": "Full pipelines ML, DL, Sclearn, Torch and Transformers(HuggingFace)",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-12-29T10:04:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "frai",
+                "description": "Open-source toolkit for responsible AI: CLI + SDK to scan code, collect evidence, and generate model cards, risk files, evals, and RAG indexes.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-01T11:54:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DeepSeek-OCR",
+                "description": "Contexts Optical Compression",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-10-25T02:43:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TrainingDockerfile",
+                "description": "\u0422\u0440\u0435\u043d\u0438\u0440\u0443\u044e\u0441\u044c \u0441\u043e\u0431\u0438\u0440\u0430\u0442\u044c \u0440\u0430\u0437\u043d\u044b\u0435 \u0434\u043e\u043a\u0435\u0440 \u043e\u0431\u0440\u0430\u0437\u044b",
+                "stargazers_count": 2,
+                "language": "Dockerfile",
+                "pushed_at": "2026-01-05T12:07:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Story_collecting_agent",
+                "description": "Smart NLP-driven agent that turns your queries into structured story datasets using Google Search and Excel.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-08-21T13:22:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "free-ai-resources",
+                "description": "A curated collection of free, high-quality resources for learning about AI, including ML, deep learning, generative AI, natural language processing, data science, prompt engineering & AI ethics. It provides links to courses, tutorials and guides from reputable platforms to help learners and practitioners at all levels expand their knowledge in AI",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-05-24T05:51:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AliaAI",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-09-06T08:11:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "air-quality-predictor",
+                "description": "\u0421\u0443\u0442\u044c: \u041f\u043e\u0441\u0442\u0440\u043e\u0438\u0442\u044c \u043f\u043e\u043b\u043d\u043e\u0446\u0435\u043d\u043d\u044b\u0439 ML-\u0441\u0435\u0440\u0432\u0438\u0441, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043f\u0440\u0435\u0434\u0441\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u043e \u0432\u043e\u0437\u0434\u0443\u0445\u0430 (AQI) \u043f\u043e \u043a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u0438\u043c \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0430\u043c: \u0442\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u0430, \u0432\u043b\u0430\u0436\u043d\u043e\u0441\u0442\u044c, \u043a\u043e\u043d\u0446\u0435\u043d\u0442\u0440\u0430\u0446\u0438\u044f \u0433\u0430\u0437\u043e\u0432 \u0438 \u0442.\u0434. \u0421\u0435\u0440\u0432\u0438\u0441 \u0434\u0430\u0441\u0442 \u043f\u0440\u043e\u0433\u043d\u043e\u0437 + \u043e\u0431\u044a\u044f\u0441\u043d\u0435\u043d\u0438\u0435 (feature importance).",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-11-15T12:19:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UniGaze",
+                "description": "Official PyTorch implementation of the paper: UniGaze: Towards Universal Gaze Estimation via Large-scale Pre-Training.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-25T12:22:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ml-course",
+                "description": "Open Machine Learning course",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-29T15:46:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PriceProphet",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-08-15T15:22:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langchain-AI-Agents",
+                "description": "This project demonstrates the power of AI-driven agents using the LangChain framework. It showcases the development of AI agents that can interact with various tools, perform web searches, fetch real-time information, and take notes autonomously based on voice commands or text queries.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-08-23T05:14:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SuzyEducation-ml-core",
+                "description": "SuzyEdu start up",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-08-24T04:31:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "langgraph-studio",
+                "description": "Desktop app for prototyping and debugging LangGraph applications locally.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-06-23T20:46:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-LangGraph",
+                "description": "A curated list of awesome projects, resources, and tools for building stateful, multi-actor applications with LangGraph \ud83e\udd9c\ud83d\udd78\ufe0f",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-08-25T06:42:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SuzyYourEnglishAssistant",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-05-28T09:13:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SuzyAIPet",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-08-14T04:37:58Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:27.194591+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

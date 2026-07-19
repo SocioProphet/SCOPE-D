@@ -1,0 +1,118 @@
+{
+  "profileId": "osint-profile-8c8ac1e0001d",
+  "target": "unmitra",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:08.008870+00:00",
+  "completedAt": "2026-06-21T15:30:08.433461+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1e01c1d8",
+      "lookupType": "github_context",
+      "target": "unmitra",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "unmitra",
+            "name": "unmitra",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "\u4eac\u90fd\u5e02",
+            "bio": null,
+            "public_repos": 5,
+            "followers": 2147,
+            "following": 2480,
+            "created_at": "2014-08-08T14:02:15Z",
+            "updated_at": "2024-10-17T11:23:34Z",
+            "html_url": "https://github.com/unmitra",
+            "avatar_url": "https://avatars.githubusercontent.com/u/8395463?v=4",
+            "repos": [
+              {
+                "name": "xtra",
+                "description": null,
+                "stargazers_count": 22,
+                "language": null,
+                "pushed_at": "2024-01-21T15:14:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jff",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-03-15T07:38:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "codemod",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2024-01-21T15:14:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-programming-tutorials",
+                "description": null,
+                "stargazers_count": 22,
+                "language": null,
+                "pushed_at": "2024-01-21T15:13:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "unmitra",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-10-07T11:34:07Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:08.432749+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

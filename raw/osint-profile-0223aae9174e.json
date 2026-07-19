@@ -1,0 +1,72 @@
+{
+  "profileId": "osint-profile-0223aae9174e",
+  "target": "soapgraves",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:04.274774+00:00",
+  "completedAt": "2026-06-21T15:33:04.562818+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8c6c00ea",
+      "lookupType": "github_context",
+      "target": "soapgraves",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "soapgraves",
+            "name": "rudy",
+            "type": "User",
+            "company": "bsfs \u200e  \u200e  \u200e@aypeg \u200e  &\u200e \u200e  @oikawa-toruu ",
+            "blog": "",
+            "location": "barely online",
+            "bio": "m/w my boy @Tysonata \u200e",
+            "public_repos": 0,
+            "followers": 1248,
+            "following": 5601,
+            "created_at": "2024-04-13T23:03:40Z",
+            "updated_at": "2026-06-12T17:58:10Z",
+            "html_url": "https://github.com/soapgraves",
+            "avatar_url": "https://avatars.githubusercontent.com/u/166960668?v=4",
+            "repos": [],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:04.562343+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "profileId": "osint-profile-7c41d28a0fe3",
+  "target": "whitenight-eco",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:03.129511+00:00",
+  "completedAt": "2026-06-21T15:30:04.181987+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-757b86de",
+      "lookupType": "github_context",
+      "target": "whitenight-eco",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "whitenight-eco",
+            "name": "White Night",
+            "type": "User",
+            "company": "Project Manager | Full Stack Engineer",
+            "blog": "",
+            "location": null,
+            "bio": "Everything has two sides, both White & Dark~\r\nAlways see the bright side!",
+            "public_repos": 33,
+            "followers": 2176,
+            "following": 3654,
+            "created_at": "2023-08-03T08:51:29Z",
+            "updated_at": "2025-01-31T13:13:26Z",
+            "html_url": "https://github.com/whitenight-eco",
+            "avatar_url": "https://avatars.githubusercontent.com/u/141316498?v=4",
+            "repos": [
+              {
+                "name": "decentralized-chat-app",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2025-01-20T17:29:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "instagram-clone",
+                "description": "This is a Instagram-Clone.",
+                "stargazers_count": 27,
+                "language": "TypeScript",
+                "pushed_at": "2024-01-30T06:05:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "xtalk_swap",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2024-05-31T12:22:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SWE-agent",
+                "description": "SWE-agent takes a GitHub issue and tries to automatically fix it, using GPT-4, or your LM of choice. It solves 12.47% of bugs in the SWE-bench evaluation set and takes just 1 minute to run.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-05T22:08:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpenDevin",
+                "description": "\ud83d\udc1a OpenDevin: Code Less, Make More",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-08T04:54:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ft_contract",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2024-05-31T12:24:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vm-rust-contract",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2024-05-30T12:39:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "xtalk-contract",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2024-05-29T14:43:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-compose",
+                "description": "Awesome Docker Compose samples",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-15T09:31:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "invoice-management-portion",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-04-03T07:33:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pwa-badge-sample",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-15T06:17:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "whitenight-eco",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-01-21T14:18:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pyenv-win",
+                "description": "pyenv for Windows. pyenv is a simple python version management tool. It lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-02-24T21:20:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Profile-Badges",
+                "description": "\ud83d\udee1\ufe0f A list of all profile badges and how to obtain each one \ud83d\udee1\ufe0f",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-08T20:10:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "azure-sdk-for-python",
+                "description": "This repository is for active development of the Azure SDK for Python. For consumers of the SDK we recommend visiting our public developer docs at https://docs.microsoft.com/python/azure/ or our versioned developer docs at https://azure.github.io/azure-sdk-for-python. ",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-01-19T08:37:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "simple-django-project",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-03T19:12:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "go-gin-basis",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2023-09-07T13:15:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "book-store-management",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-01-10T15:55:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-01-10T15:35:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Chat-app",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-23T18:27:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MT4-Forex-Indicator",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "MQL4",
+                "pushed_at": "2023-11-24T11:03:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "job-administration",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-11-09T13:21:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "go-gin-devconnector",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-09-08T14:58:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stripe",
+                "description": "stripe escrow",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2018-11-04T11:05:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-node-stripe",
+                "description": "Basic stripe integration with react-node-stripe",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-03-11T06:27:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "XshellCrack",
+                "description": "XshellCrack is a secondary development based on SharpXDecrypt, rewritten with go language, increased the registry query Settings, more convenient for xshell local password cracking",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-01-30T12:56:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "stripe-payments",
+                "description": "Integration of Stripe Payments to React App + Node.js.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-23T16:51:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "project-based-learning",
+                "description": "Curated list of project-based tutorials",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-08-12T04:32:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dynamic-infinite-pagination-scroll-redux-toolkit",
+                "description": "\u041f\u0440\u043e\u0435\u043a\u0442 \"dynamic-infinite-pagination-scroll-redux-toolkit\" \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u0441\u043e\u0431\u043e\u0439 \u043f\u0440\u0438\u043c\u0435\u0440 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u043e\u0439 \u043f\u0430\u0433\u0438\u043d\u0430\u0446\u0438\u0438 \u0441 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0435\u043c \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0439 Redux Toolkit, React \u0438 React Router. \u042d\u0442\u043e\u0442 \u043f\u0440\u043e\u0435\u043a\u0442 \u0441\u043e\u0437\u0434\u0430\u043d \u0434\u043b\u044f \u0434\u0435\u043c\u043e\u043d\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u044d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u0441\u043f\u043e\u0441\u043e\u0431\u0430 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u0438 \u043e\u0442\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0431\u043e\u043b\u044c\u0448\u0438\u0445 \u043e\u0431\u044a\u0435\u043c\u043e\u0432 \u0434\u0430\u043d\u043d\u044b\u0445, \u043a\u043e\u0433\u0434\u0430 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c \u043f\u0440\u043e\u043a\u0440\u0443\u0447\u0438\u0432\u0430\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443 \u0432\u043d\u0438\u0437. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-08-11T18:38:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ashutosh00710",
+                "description": "If you are forking it, then show some appreciation and give it a star.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-10-01T13:53:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flow-diagram-builder",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-10-20T18:48:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chill-market",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-12-07T12:29:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pdfviwer-backend",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-20T13:17:08Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:04.181220+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

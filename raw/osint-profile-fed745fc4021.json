@@ -1,0 +1,267 @@
+{
+  "profileId": "osint-profile-fed745fc4021",
+  "target": "pfuhrmann",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:38.481647+00:00",
+  "completedAt": "2026-06-21T15:32:39.126159+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ff8d2121",
+      "lookupType": "github_context",
+      "target": "pfuhrmann",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "pfuhrmann",
+            "name": "Patrik Fuhrmann",
+            "type": "User",
+            "company": "@dealroom ",
+            "blog": "https://patrikfuhrmann.com",
+            "location": "The Netherlands",
+            "bio": "Engineering leader, building distributed platforms | GCP | Go | DevEx | Cloud-native | Head of Platform Engineering @dealroom | formerly @cloudflare ",
+            "public_repos": 21,
+            "followers": 1351,
+            "following": 1388,
+            "created_at": "2012-04-09T23:46:18Z",
+            "updated_at": "2026-06-20T05:20:31Z",
+            "html_url": "https://github.com/pfuhrmann",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1627445?v=4",
+            "repos": [
+              {
+                "name": "pfuhrmann",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-04-17T10:43:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PFHomesteadBundle",
+                "description": "Bundle for using Laravel Homestead seamlessly within your Symfony project",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2019-04-23T13:14:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "booking-example-microservices",
+                "description": "Example microservices implementing booking system using Laravel and Node.js",
+                "stargazers_count": 7,
+                "language": "PHP",
+                "pushed_at": "2023-03-19T21:16:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "compsearch",
+                "description": "API interfacing with elastic search written in Slim PHP microframework",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2026-01-28T08:55:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-demo-monitor",
+                "description": "Simple health tracker built in React with hooks and Sass",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2019-05-03T21:23:31Z",
+                "fork": false,
+                "topics": [
+                  "create-react-app",
+                  "react",
+                  "react-hooks",
+                  "sass"
+                ]
+              },
+              {
+                "name": "serverless-bootstrap",
+                "description": "Serverless starter project integrated with babel, jest, eslint and more",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2018-10-30T00:45:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ttt-front",
+                "description": "Tic-tac-toe game JS front-end",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2019-04-23T13:08:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ttt-api",
+                "description": "Tic-tac-toe game PHP API",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2022-05-25T19:14:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ttt-docker",
+                "description": "Tic-tac-toe docker development environment",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2017-07-22T21:25:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-banner-example",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2019-05-07T19:52:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "7.1-test",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2016-11-29T01:31:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sms-call-convert",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2017-02-10T01:06:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "phpalgos",
+                "description": "Some exercises implemented in PHP",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2015-07-03T00:08:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "battleship-game",
+                "description": "Singleplayer BattleShip Game In PHP",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2019-04-23T13:09:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-node-projects",
+                "description": "PHP & Node.js distributed components with centralized aggregator",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2019-04-23T13:11:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "read-write-prototype",
+                "description": "Reader/Writer Mode Android NFC App",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2015-03-27T01:53:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": ".net-distributed-system",
+                "description": "Distributed application using EF6, WinForms and .NET",
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2022-03-12T01:40:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": ".net-service-example",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2015-03-27T16:50:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "app.cw",
+                "description": "Application Development Coursework",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2019-04-23T13:13:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "do-chrome-app",
+                "description": "Implementation of the DigitalOcean API as Chrome Packaged App.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2014-08-18T00:40:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "code-examples",
+                "description": "PHP, Node.js code examples",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2014-04-29T12:30:41Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:39.125358+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

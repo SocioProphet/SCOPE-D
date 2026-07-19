@@ -1,0 +1,217 @@
+{
+  "profileId": "osint-profile-bc295fe79885",
+  "target": "samanes11",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:33.099236+00:00",
+  "completedAt": "2026-06-21T15:29:33.748343+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-fca47c8d",
+      "lookupType": "github_context",
+      "target": "samanes11",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "samanes11",
+            "name": "Saman Esmaellpour",
+            "type": "User",
+            "company": null,
+            "blog": "es-saman.ir",
+            "location": null,
+            "bio": "\ud83d\udcbb Software engineer at Turing Research Team",
+            "public_repos": 16,
+            "followers": 2563,
+            "following": 2272,
+            "created_at": "2024-03-01T13:09:12Z",
+            "updated_at": "2026-06-17T12:35:44Z",
+            "html_url": "https://github.com/samanes11",
+            "avatar_url": "https://avatars.githubusercontent.com/u/161844484?v=4",
+            "repos": [
+              {
+                "name": "telplayer",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Dart",
+                "pushed_at": "2026-06-21T14:23:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "musicBackend",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-21T09:32:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "admin-telplayer",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T19:17:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "focusmode",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-10T12:31:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-07T22:25:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uterial",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-01T15:18:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubooks",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-01T15:19:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wmongo",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-09-17T07:05:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wnox",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-17T07:06:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "samanes11",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-10-29T09:23:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubookshop",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-30T16:45:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-20T17:20:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-20T17:23:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utrialv2",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-19T17:54:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "start",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-25T11:12:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testt",
+                "description": "Turing research group.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-09-13T11:18:50Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:33.747380+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

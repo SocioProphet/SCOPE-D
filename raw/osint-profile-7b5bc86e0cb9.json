@@ -1,0 +1,100 @@
+{
+  "profileId": "osint-profile-7b5bc86e0cb9",
+  "target": "iurysantos-hub",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:40.272436+00:00",
+  "completedAt": "2026-06-21T15:29:40.680905+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-0ab68342",
+      "lookupType": "github_context",
+      "target": "iurysantos-hub",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "iurysantos-hub",
+            "name": "iury",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 3,
+            "followers": 2430,
+            "following": 7290,
+            "created_at": "2024-06-12T02:05:28Z",
+            "updated_at": "2024-06-12T03:15:17Z",
+            "html_url": "https://github.com/iurysantos-hub",
+            "avatar_url": "https://avatars.githubusercontent.com/u/172458433?v=4",
+            "repos": [
+              {
+                "name": "lista-c",
+                "description": null,
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2024-06-12T04:34:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "iurysantos-hub",
+                "description": "my readme",
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2024-06-12T03:38:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "list-css",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-06-12T02:21:29Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:40.680128+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

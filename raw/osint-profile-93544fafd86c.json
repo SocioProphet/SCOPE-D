@@ -1,0 +1,542 @@
+{
+  "profileId": "osint-profile-93544fafd86c",
+  "target": "jawherr",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:47.123506+00:00",
+  "completedAt": "2026-06-20T16:47:49.082282+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-7ad84a3a",
+      "lookupType": "github_context",
+      "target": "jawherr",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jawherr",
+            "name": "Jawher",
+            "type": "User",
+            "company": "Github",
+            "blog": "jawherkl-github-io.vercel.app",
+            "location": "Tunisia",
+            "bio": "Full-Stack Software Engineer | Open Source Contributor | AI Integration",
+            "public_repos": 83,
+            "followers": 1201,
+            "following": 2135,
+            "created_at": "2017-03-31T18:30:48Z",
+            "updated_at": "2026-01-20T19:55:01Z",
+            "html_url": "https://github.com/jawherr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/26824092?v=4",
+            "repos": [
+              {
+                "name": "machine-learning-algorithme",
+                "description": "This repository contains implementations of various machine learning algorithms in Jupyter Notebook format.",
+                "stargazers_count": 24,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-01-12T22:01:21Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "machine-learning",
+                  "machine-learning-algorithms"
+                ]
+              },
+              {
+                "name": "master-quarkus",
+                "description": "A professional Quarkus-based Java backend project to study and master modern backend development concepts with Quarkus.",
+                "stargazers_count": 14,
+                "language": "Java",
+                "pushed_at": "2026-01-28T21:58:24Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "java",
+                  "postgresql",
+                  "quarkus"
+                ]
+              },
+              {
+                "name": "jawherr",
+                "description": "\u2728 Hello! | Bonjour! | Hallo! | Ciao! | \u0645\u0631\u062d\u0628\u064b\u0627! | \u00a1Hola! | \u041f\u0440\u0438\u0432\u0435\u0442! | \u4f60\u597d!\u2728 This is my README repository will appear on my public profile.",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2026-01-26T14:58:47Z",
+                "fork": false,
+                "topics": [
+                  "readme"
+                ]
+              },
+              {
+                "name": "node-api-postgres",
+                "description": "This is a modern RESTful API built with Node.js and Express, designed to interact with a PostgreSQL database.",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-29T20:50:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "design-patterns-in-multiple-languages",
+                "description": "In this project, I will provide examples of all major design patterns and demonstrate how they are implemented in PHP, Go, Js and Java.",
+                "stargazers_count": 17,
+                "language": "PHP",
+                "pushed_at": "2026-01-29T20:50:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llm-twin-course",
+                "description": "\ud83e\udd16 \ud835\udddf\ud835\uddf2\ud835\uddee\ud835\uddff\ud835\uddfb for \ud835\uddf3\ud835\uddff\ud835\uddf2\ud835\uddf2 how to \ud835\uddef\ud835\ude02\ud835\uddf6\ud835\uddf9\ud835\uddf1 an end-to-end \ud835\uddfd\ud835\uddff\ud835\uddfc\ud835\uddf1\ud835\ude02\ud835\uddf0\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb-\ud835\uddff\ud835\uddf2\ud835\uddee\ud835\uddf1\ud835\ude06 \ud835\udddf\ud835\udddf\ud835\udde0 & \ud835\udde5\ud835\uddd4\ud835\uddda \ud835\ude00\ud835\ude06\ud835\ude00\ud835\ude01\ud835\uddf2\ud835\uddfa using \ud835\udddf\ud835\udddf\ud835\udde0\ud835\udde2\ud835\uddfd\ud835\ude00 best practices: ~ \ud835\ude34\ud835\ude30\ud835\ude36\ud835\ude33\ud835\ude24\ud835\ude26 \ud835\ude24\ud835\ude30\ud835\ude25\ud835\ude26 + 12 \ud835\ude29\ud835\ude22\ud835\ude2f\ud835\ude25\ud835\ude34-\ud835\ude30\ud835\ude2f \ud835\ude2d\ud835\ude26\ud835\ude34\ud835\ude34\ud835\ude30\ud835\ude2f\ud835\ude34",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2026-01-08T19:55:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "java-microservices",
+                "description": "This repository is a blueprint and starter kit for building high-performance, production-ready Java backend systems that can be implemented either as a performant monolith or as a scalable set.",
+                "stargazers_count": 15,
+                "language": "Java",
+                "pushed_at": "2026-01-09T22:24:43Z",
+                "fork": false,
+                "topics": [
+                  "do",
+                  "docker",
+                  "java",
+                  "microservices",
+                  "postrgresql",
+                  "quarkus",
+                  "spring-boot"
+                ]
+              },
+              {
+                "name": "cs-video-courses",
+                "description": "List of Computer Science courses with video lectures.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2024-11-06T19:31:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Data-Science--Cheat-Sheet",
+                "description": "Cheat Sheets",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-11-07T21:17:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aima-java",
+                "description": "Java implementation of algorithms from Russell And Norvig's \"Artificial Intelligence - A Modern Approach\"",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-12-20T15:19:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "master-spring",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-01-09T18:29:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "master-spring-boot",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-12-22T12:05:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "artificial-intelligence",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-12-22T12:04:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api-design",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-02T09:39:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "JawherKl",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-12-03T08:14:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "go-crud-graphql",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Go",
+                "pushed_at": "2025-03-02T09:39:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "go-crud-movie-api",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2025-03-02T09:39:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aima-python",
+                "description": "Python implementation of algorithms from Russell And Norvig's \"Artificial Intelligence - A Modern Approach\"",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-02-14T22:23:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "node-express-course",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-12-23T03:04:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ECommerce",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2023-11-25T14:36:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sf6Techwall",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2023-12-03T14:08:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HappyHour1",
+                "description": "Application de restauration",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2018-10-29T18:32:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sociale_app",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2019-08-18T09:37:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HappyHour",
+                "description": "Application de restauration",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2018-12-12T02:18:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kml",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2019-09-08T23:19:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MP_Syst-mes_d-exploitation",
+                "description": "Mini Projet Syst\u00e8mes d\u2019exploitation",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2019-10-15T20:50:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GestionBiblHibernate",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-09-17T17:29:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Systeme-de-gestion-des-comptes-bancaire",
+                "description": "Application desktop systeme de gestion des comptes bancaire",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-07-26T11:58:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "camunda-bpm-PFE",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2022-04-13T21:51:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "camunda-bpm-DemandeDoubleCorrection",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "SQLPL",
+                "pushed_at": "2022-04-13T22:06:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "formationSimple",
+                "description": "formation simple sans spring security",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-04-16T16:02:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "formation",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2022-05-09T18:49:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ISIUniversity",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2022-05-09T21:26:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RecognitionCortex",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2022-08-31T09:54:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RecognitionCortex_FrontEnd",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2022-08-31T10:34:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "getting-started",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2023-05-09T15:31:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Symfony_Crud",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2023-11-25T14:06:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TP2RN",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-06-03T13:23:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PoseEstimationProject",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2023-11-25T14:22:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HandTrackingProject",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2023-11-25T14:28:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Python_OOP",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2023-11-25T14:32:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodejs-microservices",
+                "description": "A modular production ready microservices system inspired by e-commerce architectures.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-07-18T16:00:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "clean-architecture",
+                "description": "This repository exists to bridge the gap between theory and practice in software architecture.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2025-05-02T16:19:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "portfolio-ideas",
+                "description": "A curation of awesome portfolio website ideas for developers and designers to draw inspiration from. Raise a pull request to add more. \ud83d\udc9c ",
+                "stargazers_count": 10,
+                "language": "Markdown",
+                "pushed_at": "2025-03-25T11:46:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "applied-llms",
+                "description": "A structured learning path for software engineers to master Large Language Models through theory, practical exercises, and project implementation.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-09-09T15:15:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-faq-bot",
+                "description": "AI-powered FAQ Bot is a backend solution built with NodeJS (Express) that integrates with OpenAI to provide AI-generated answers to user queries.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-02-19T13:06:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jawherkl.github.io",
+                "description": "Welcome to the repository for my personal portfolio website! This project showcases my technical skills, projects, and expertise in software engineering.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-02T09:38:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-models-integration",
+                "description": " AI Models Integration repository! This project provides seamless integration with various state-of-the-art AI models",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-02T09:38:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "devops-guide",
+                "description": "Welcome to the DevOps Guide repository! This project serves as a comprehensive resource for anyone interested in learning and implementing DevOps practices, tools, and workflows.",
+                "stargazers_count": 5,
+                "language": "Dockerfile",
+                "pushed_at": "2025-03-02T09:38:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FlutterExampleApps",
+                "description": "[Example APPS] Basic Flutter apps, for flutter devs.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-08-09T20:51:30Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:49.081441+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

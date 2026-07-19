@@ -1,0 +1,442 @@
+{
+  "profileId": "osint-profile-7bcff600c67e",
+  "target": "0xmurtimus",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:14.477238+00:00",
+  "completedAt": "2026-06-20T16:48:15.488969+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8447d418",
+      "lookupType": "github_context",
+      "target": "0xmurtimus",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "0xmurtimus",
+            "name": "Arvid Kahl",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Ontario, Canada",
+            "bio": "Writer, entrepreneur, and coder at heart. I co-founded and sold FeedbackPanda. Now building Podscan.fm, talking about it at tbf.fm. Be kind to each other.",
+            "public_repos": 41,
+            "followers": 1072,
+            "following": 837,
+            "created_at": "2022-07-18T20:50:32Z",
+            "updated_at": "2026-02-25T19:23:06Z",
+            "html_url": "https://github.com/0xmurtimus",
+            "avatar_url": "https://avatars.githubusercontent.com/u/109554692?v=4",
+            "repos": [
+              {
+                "name": "GaslessTransaction",
+                "description": "Streamlined Off-Chain Atomic Swaps enabled through Decentralized Identity Management, Intelligent Transaction Routing Verification Hub.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T05:40:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TraceTransaction",
+                "description": "Faster-than-Real-Time Transaction Profiler and Low-Latency Transaction Orchestrator Optimizer. with Secure architecture providing enterprise-grade TraceTransaction solutions",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-01-07T05:53:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TrendIndicator",
+                "description": "Intelligent TrendIndicator Analytics Engine harnessing real-time data processing, auto-scaling, and distributed architectures for enterprise-grade scalability Suite.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T06:08:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pod",
+                "description": "Turn Podcast Conversations Into Business Intelligence",
+                "stargazers_count": 48,
+                "language": "Rust",
+                "pushed_at": "2026-01-14T18:41:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletAnalytics",
+                "description": "Dynamic, Adaptive, and Scalable WalletAnalytics Hub Suite. implementing modern data encryption with quantum-resistant cryptography patterns with Secure architecture",
+                "stargazers_count": 27,
+                "language": "Rust",
+                "pushed_at": "2026-02-18T20:54:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "liquidmert",
+                "description": "Distributed NeuroSynapse Engine leveraging Predictive Modeling and Streaming Analytics to drive Intelligent Data Insights Explorer.",
+                "stargazers_count": 31,
+                "language": "Rust",
+                "pushed_at": "2026-02-19T16:05:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pool-POD",
+                "description": "liquidmert",
+                "stargazers_count": 26,
+                "language": "Go",
+                "pushed_at": "2026-01-14T19:03:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OnChain",
+                "description": "Cryptographic integrity ensured through AI-driven smart contract optimization within a decentralized, scalable Distributed Ledger Network.",
+                "stargazers_count": 20,
+                "language": "Go",
+                "pushed_at": "2026-01-07T06:22:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RiskDiversifier",
+                "description": "Intelligent, data-driven portfolio optimization algorithms harmonize Auto-adjusting portfolio rebalancing, performance monitoring, driving informed decision-making as a transformation catalyst.",
+                "stargazers_count": 8,
+                "language": "Go",
+                "pushed_at": "2026-01-07T06:15:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PortfolioManager",
+                "description": "Enterprise-grade PortfolioManager for intelligent multi-asset class portfolio orchestration with customizable risk governance and high-performance Return Optimizer.",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2026-01-07T06:12:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AssetAllocator",
+                "description": "Real-time, adaptive, and multi-asset aware, the AssetAllocator orchestrates scalable, intelligent processing across a distributed, high-performance engine.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-01-07T06:13:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TaxReporter",
+                "description": "Introducing TaxReporter's sophisticated architecture, where intelligent data harmonization meets adaptive multi-cloud orchestration.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-01-07T06:18:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ProfitCalculator",
+                "description": "Dynamic Insight Hub featuring Advanced algorithmic modeling for risk architecture implementing modern Real-time data ingestion and processing patterns",
+                "stargazers_count": 10,
+                "language": "Go",
+                "pushed_at": "2026-01-07T06:16:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TransactionHistory",
+                "description": "Transactional event streams, aggregated through distributed logging and scalable ingestion, enable actionable Financial TransactionHistory Insights Analytics.",
+                "stargazers_count": 20,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T06:19:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TradingStrategy",
+                "description": "Real-time Market-Driven Event-Triggered TradingStrategy Orchestrator for Scalable Distributed Data Feeds Simulator. providing enterprise-grade TradingStrategy solutions",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-07T06:11:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SignalGenerator",
+                "description": "Artificial-Intelligence driven High-Resolution-Signal-Generation leverages Multi-Channel-Signal-Processing for Scalable Real-Time Intelligent Signal Analysis and Synthesis on a Modular Platform",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-01-07T06:10:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VolatilityTracker",
+                "description": "Distributed Market Intelligence Platform leveraging AI-driven analytics for real-time position sizing, powered by a Scalable Risk Management Ecosystem.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2026-01-07T06:07:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArbitrageBot",
+                "description": "High-Frequency Trade-Execution-Optimization powered by Adaptive Auto-Scaling and Real-Time Market Analysis on a Fault-Tolerant Distributed Platform.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T06:06:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PathFinder",
+                "description": "Route-Intelligent Explorer for Dynamic Path Finding on a Scalable Distributed Platform providing enterprise-grade PathFinder solutions",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-01-07T06:05:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RouterOptimizer",
+                "description": "Real-time traffic orchestration optimized through adaptive, intelligent, and distributed processing, delivering scalable network controller.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2026-01-07T06:04:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TransferProxy",
+                "description": "Decentralized, Edge-Optimized TransferProxy leverages real-time low-latency-routing and adaptive load-balancing to serve as a resilient Network Interconnect Gateway.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-01-07T06:02:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ApprovalHelper",
+                "description": "Streamlined Collaborative Workflows through Real-time Dynamic Approval Pathways, Ensuring Scalable Intelligent Automation and Decision Optimizer",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-07T06:01:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AllowanceManager",
+                "description": "Predictive AllowanceManager harnesses scalable data-driven intelligence to optimize distributed workforce compensation in real-time systems Core.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-07T06:00:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BalanceChecker",
+                "description": "Precision-driven BalanceChecker leverages real-time data harmonization and intelligent alerting to power high-performance, scalable decision engines.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T05:59:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NonceTracker",
+                "description": "Decentralized NonceTracker empowers real-time analytics, adaptive nonce generation, and intelligent data orchestration across a resilient Ecosystem Hub Framework.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T05:57:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PendingTx",
+                "description": "Adaptive, AI-infused PendingTxSniffer optimizes high-performance, low-latency transaction monitoring with and scalable distributed processing capabilities, delivering a robust toolkit.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-07T05:56:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MemPool",
+                "description": "Blockchain-Optimized Distributed Transaction Verifier enables Scalable Real-Time Autonomous Network Management Core. with Distributed architecture",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-07T05:55:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OpcodeDebugger",
+                "description": "Advanced Real-time OpcodeDebugger for Distributed Systems: Enabling Scalable Multi-Threading Analysis with Dynamic Injection Insights Executor.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T05:52:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BytecodeAnalyzer",
+                "description": "Intelligent bytecode decoder empowers optimized dynamic-bytecode-manipulation and class-file-analysis for high-performance, low-latency, and scalable processor.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-07T05:51:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ContractVerifier",
+                "description": "Hyper-Scalable ContractVerifier enables Reliable, Efficient, and Adaptive Contract Management across Distributed Systems Core.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T05:50:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LogDecoder",
+                "description": "Data-intensive log processing engine empowering high-throughput, scalable, and intelligent distributed architecture optimization.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-07T05:47:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EventListener",
+                "description": "Context-aware, stateful EventListener architecture enables reactive, intelligent, and distributed processing at scale, powering the Adaptive Response Engine.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-01-07T05:46:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MultiCall",
+                "description": "Autonomous, Edge-driven MultiCallAggregator orchestrates event-driven transactions across multiple protocols with distributed, intelligent scalability for robust service.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T05:45:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BatchProcessor",
+                "description": "Dynamic workloads are effortlessly managed by the adaptive, asynchronous, concurrent, fault-tolerant BatchProcessor engine at optimal runtime.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T05:43:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RelayerNetwork",
+                "description": "Highly Evolved RelayerNetwork Orchestrates Scalable, Intelligent Event Processing Across Distributed Domains, Reducing Latency with Adaptive Fabric",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2026-01-07T05:42:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MetaTransfer",
+                "description": "Artificially synthesized edge-computing-enabled intelligence converges scalable, distributed systems into a high-throughput data orchestration engine framework.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-07T05:41:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeadlineExpiry",
+                "description": "Automated deadline management is facilitated through integrated calendar synchronization and real-time scheduling enforcement.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-07T05:38:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SlippageControl",
+                "description": "Self-optimizing, cloud-native SlippageControl orchestrator ensures intelligent, fault-tolerant Automated Trade Execution within adaptive Enterprise Execution Ecosystem Platform.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-07T05:37:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SandwichDefense",
+                "description": "Data-centric, AI-driven SandwichDefense orchestrates proactive anomaly-detection and adaptive incident-response within a self-healing module.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-07T05:36:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FrontRun",
+                "description": "Dynamic Microservices Orchestrator harnesses real-time event streams to execute adaptive workflow automation strategies on a distributed scheduler.",
+                "stargazers_count": 5,
+                "language": "Rust",
+                "pushed_at": "2026-01-07T05:35:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ME",
+                "description": "Real-time Transaction Clustering Engine for Scalable Blockchain Event Monitoring and Intelligent MEV Extraction Framework.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2026-01-07T05:35:24Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:15.487130+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

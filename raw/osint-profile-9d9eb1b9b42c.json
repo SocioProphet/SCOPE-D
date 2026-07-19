@@ -1,0 +1,699 @@
+{
+  "profileId": "osint-profile-9d9eb1b9b42c",
+  "target": "fbiego",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:37.466409+00:00",
+  "completedAt": "2026-06-20T13:53:38.431173+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c9425cbf",
+      "lookupType": "github_context",
+      "target": "fbiego",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "fbiego",
+            "name": "Felix Biego",
+            "type": "User",
+            "company": "LVGL kft @lvgl",
+            "blog": "fbiego.com",
+            "location": "Kenya",
+            "bio": "Embedded UI Developer",
+            "public_repos": 214,
+            "followers": 1517,
+            "following": 3988,
+            "created_at": "2018-12-11T16:35:22Z",
+            "updated_at": "2026-06-10T16:39:17Z",
+            "html_url": "https://github.com/fbiego",
+            "avatar_url": "https://avatars.githubusercontent.com/u/45796740?v=4",
+            "repos": [
+              {
+                "name": "dt78-esp32-firmware",
+                "description": "Firmware for the DT78 watch based on ESP32 microcontroller",
+                "stargazers_count": 64,
+                "language": "C",
+                "pushed_at": "2024-07-28T13:14:35Z",
+                "fork": false,
+                "topics": [
+                  "ble",
+                  "cst816s",
+                  "dt78",
+                  "dt78-firmware",
+                  "esp32",
+                  "esp32-pico-d4",
+                  "firmware",
+                  "gc9a01",
+                  "kxtj3-1057",
+                  "lvgl",
+                  "smartwatch"
+                ]
+              },
+              {
+                "name": "jarvis-lvgl-esp32",
+                "description": "Jarvis ESP32 Project: A sleek LVGL-powered user interface for the ESP32-S3 module, inspired by the Jarvis UI and seamlessly integrating with the Chronos app for BLE-synced time, weather, and notifications.",
+                "stargazers_count": 18,
+                "language": "C",
+                "pushed_at": "2024-08-25T16:29:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "auto-follow-unfollow",
+                "description": "Follow and unfollow users automatically",
+                "stargazers_count": 28,
+                "language": "PHP",
+                "pushed_at": "2026-06-20T12:28:36Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "automation",
+                  "followers",
+                  "following",
+                  "github",
+                  "php"
+                ]
+              },
+              {
+                "name": "ESP32_BLE_OTA_Arduino",
+                "description": "OTA update on ESP32 via BLE",
+                "stargazers_count": 271,
+                "language": "C++",
+                "pushed_at": "2024-08-12T09:11:49Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "arduino",
+                  "ble",
+                  "bluetooth-le",
+                  "bluetooth-low-energy",
+                  "esp32",
+                  "firmware",
+                  "ota",
+                  "ota-update",
+                  "spiffs"
+                ]
+              },
+              {
+                "name": "chronos-navio",
+                "description": "Chronos Navigatioin firmware for ESP32-based devices",
+                "stargazers_count": 9,
+                "language": "C++",
+                "pushed_at": "2026-06-07T13:33:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "google-play-scraper",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-06-20T02:43:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "esp32-c3-mini",
+                "description": "LVGL UI for ESP32 C3 mini 240*240  board (ESP32-2424S012)",
+                "stargazers_count": 506,
+                "language": "C",
+                "pushed_at": "2026-05-20T09:12:55Z",
+                "fork": false,
+                "topics": [
+                  "2424s012",
+                  "ble",
+                  "chronos",
+                  "elecrow",
+                  "esp32",
+                  "esp32-2424s012",
+                  "hacktoberfest",
+                  "lvgl",
+                  "native",
+                  "platformio",
+                  "platformio-ide",
+                  "ui"
+                ]
+              },
+              {
+                "name": "worldcup-2026",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2026-06-19T20:20:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lvgl-open--tutorials",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T17:39:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fbiego",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2026-06-19T09:58:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ESPConfig",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-06-19T07:52:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chronos-watchy",
+                "description": "Alternative BLE firmware for Watchy (Open Source E-Ink smartwatch)",
+                "stargazers_count": 37,
+                "language": "C",
+                "pushed_at": "2026-04-17T09:07:07Z",
+                "fork": false,
+                "topics": [
+                  "ble",
+                  "chronos",
+                  "e-ink",
+                  "esp32",
+                  "lvgl",
+                  "smart-watch",
+                  "watchy"
+                ]
+              },
+              {
+                "name": "commits-board",
+                "description": "A Billboard for the most active users per country based on committers.top",
+                "stargazers_count": 36,
+                "language": "PHP",
+                "pushed_at": "2026-06-15T19:04:32Z",
+                "fork": false,
+                "topics": [
+                  "billboard",
+                  "commit",
+                  "github"
+                ]
+              },
+              {
+                "name": "ESP32_BLE_OTA_Android",
+                "description": "Android app to perform OTA update on ESP32 via BLE",
+                "stargazers_count": 84,
+                "language": "Kotlin",
+                "pushed_at": "2023-03-02T08:18:46Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "ble",
+                  "esp32",
+                  "firmware",
+                  "ota",
+                  "ota-update"
+                ]
+              },
+              {
+                "name": "lvgl",
+                "description": "Embedded graphics library to create beautiful UIs for any MCU, MPU and display type. ",
+                "stargazers_count": 6,
+                "language": "C",
+                "pushed_at": "2026-06-15T10:08:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chronos-esp32",
+                "description": "A library for ESP32 to interface with Chronos app over BLE",
+                "stargazers_count": 162,
+                "language": "C++",
+                "pushed_at": "2025-11-23T15:14:34Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "app",
+                  "arduino",
+                  "arduino-library",
+                  "ble",
+                  "esp32",
+                  "hacktoberfest",
+                  "notifications",
+                  "platformio",
+                  "protocol",
+                  "rtc",
+                  "sync",
+                  "time"
+                ]
+              },
+              {
+                "name": "esp32-lvgl-watchface",
+                "description": "The ESP32 LVGL Watchfaces project enables the display of pre-built binary watchfaces on ESP32 microcontrollers using LVGL. Through a Kotlin script, it converts binary watchface files into LVGL-compatible code, simplifying the process.",
+                "stargazers_count": 53,
+                "language": "C",
+                "pushed_at": "2025-11-05T13:31:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dt78",
+                "description": "DT78 Smartwatch Reverse Engineering",
+                "stargazers_count": 99,
+                "language": "C++",
+                "pushed_at": "2024-07-28T13:18:29Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "ble",
+                  "bluetooth",
+                  "dt78",
+                  "dt78-firmware",
+                  "firmware",
+                  "hs6620",
+                  "notifications",
+                  "smartwatch",
+                  "watch",
+                  "watch-face",
+                  "watchface"
+                ]
+              },
+              {
+                "name": "ESP32Time",
+                "description": "An Arduino library for setting and retrieving internal RTC time on ESP32 boards",
+                "stargazers_count": 264,
+                "language": "C++",
+                "pushed_at": "2024-10-02T08:18:35Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "arduino-library",
+                  "esp32",
+                  "esp32-arduino",
+                  "rtc",
+                  "time"
+                ]
+              },
+              {
+                "name": "ESP32_OLED_BLE",
+                "description": "Receive Android notifications on ESP32 with an OLED screen via Bluetooth LE. Also functions as a clock, time is set automatically via BLE when connected to the app.",
+                "stargazers_count": 62,
+                "language": "C++",
+                "pushed_at": "2024-03-22T08:09:52Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "arduino",
+                  "bluetooth-low-energy",
+                  "clock",
+                  "esp32",
+                  "esp32-arduino",
+                  "esp32-internal-rtc",
+                  "notification",
+                  "oled",
+                  "smartwatch",
+                  "watch"
+                ]
+              },
+              {
+                "name": "CST816S",
+                "description": "An Arduino library for the Hynitron CST816S capacitive touch screen IC",
+                "stargazers_count": 77,
+                "language": "C++",
+                "pushed_at": "2026-03-15T10:37:52Z",
+                "fork": false,
+                "topics": [
+                  "arduino-library",
+                  "cst816s",
+                  "hynitron",
+                  "library",
+                  "touch",
+                  "touchscreen"
+                ]
+              },
+              {
+                "name": "car-hud",
+                "description": null,
+                "stargazers_count": 24,
+                "language": "C",
+                "pushed_at": "2026-01-01T11:34:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "c3-mini-lvgl-template",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "C",
+                "pushed_at": "2024-08-03T16:45:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-repo-stats-ui",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "C",
+                "pushed_at": "2025-10-02T10:23:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "windows-10-mobile-lvgl",
+                "description": "Windows 10 Mobile (Lumia) UI made with LVGL",
+                "stargazers_count": 69,
+                "language": "C",
+                "pushed_at": "2025-06-05T07:50:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Lumia-ESP32",
+                "description": "A demo project for WT32-SC01 module",
+                "stargazers_count": 76,
+                "language": "C",
+                "pushed_at": "2024-02-12T10:46:01Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "esp32",
+                  "ft6336u",
+                  "lcd",
+                  "lumia",
+                  "lvgl",
+                  "os",
+                  "st7789",
+                  "touch",
+                  "wt32-sc01"
+                ]
+              },
+              {
+                "name": "viewe_echo_ear",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-05-16T18:52:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rabbit-esp32",
+                "description": "A demo UI project for the WT32 SC01 Plus board inspired by Rabbit R1",
+                "stargazers_count": 15,
+                "language": "C",
+                "pushed_at": "2024-05-04T13:22:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DT78-App-Android",
+                "description": "Alternative app for the DT78 Smartwatch. Also works with DT92 & DT66. May work with watches that use the WearFit 2.0 app.",
+                "stargazers_count": 55,
+                "language": "Kotlin",
+                "pushed_at": "2023-06-05T07:40:59Z",
+                "fork": false,
+                "topics": [
+                  "dt66",
+                  "dt66-app",
+                  "dt78",
+                  "dt78-android",
+                  "dt78-app",
+                  "dt92",
+                  "dt92-app",
+                  "smartwatch",
+                  "wearfit",
+                  "wearfit-alternative"
+                ]
+              },
+              {
+                "name": "IOS-ESP32",
+                "description": "A demo project for WT32-SC01 module",
+                "stargazers_count": 69,
+                "language": "C",
+                "pushed_at": "2022-12-17T17:48:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "atom-watch",
+                "description": "Atom-Watch is a tiny smartwatch project built for the M5Stack AtomS3R (128x128 display)",
+                "stargazers_count": 26,
+                "language": "C",
+                "pushed_at": "2025-05-03T15:22:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Makefile",
+                "pushed_at": "2025-11-28T18:05:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZSWatch",
+                "description": "ZSWatch - the Open Source Zephyr\u2122 based Smartwatch, including both HW and FW.",
+                "stargazers_count": 15,
+                "language": "C",
+                "pushed_at": "2025-06-07T11:12:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BLE_OTA_Python",
+                "description": "A script for performing OTA update over BLE on ESP32",
+                "stargazers_count": 59,
+                "language": "Python",
+                "pushed_at": "2021-12-07T16:55:54Z",
+                "fork": false,
+                "topics": [
+                  "ble",
+                  "bleak",
+                  "computer",
+                  "esp32",
+                  "firmware",
+                  "ota",
+                  "ota-update",
+                  "python3"
+                ]
+              },
+              {
+                "name": "esp32-spotify-oled",
+                "description": "View your current playing song on ESP32 & OLED display using Spotify API",
+                "stargazers_count": 22,
+                "language": "C++",
+                "pushed_at": "2022-05-21T17:22:45Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "esp32",
+                  "oled",
+                  "spotify",
+                  "spotify-api",
+                  "spotify-player"
+                ]
+              },
+              {
+                "name": "chronos-osw",
+                "description": "LVGL & BLE firmware for OSW hardware",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2025-12-13T20:46:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Windows_32",
+                "description": "A demo project for ZX7D00CE01S",
+                "stargazers_count": 12,
+                "language": "C",
+                "pushed_at": "2023-06-01T13:01:12Z",
+                "fork": false,
+                "topics": [
+                  "esp-idf",
+                  "esp32-s3",
+                  "iot",
+                  "lvgl",
+                  "touchscreen",
+                  "windows",
+                  "zx7d00ce01"
+                ]
+              },
+              {
+                "name": "lvgl_editor",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-01T05:39:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "iOS-nRF-Blinky",
+                "description": "A starter app for new developers in the BLE world!",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-05-02T11:01:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "train_route",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Makefile",
+                "pushed_at": "2026-03-24T08:53:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "parallax",
+                "description": "Parallax Effect implementation on LVGL Pro",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2026-03-24T08:55:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "watch-face-wearfit",
+                "description": null,
+                "stargazers_count": 38,
+                "language": "Python",
+                "pushed_at": "2024-08-12T17:32:00Z",
+                "fork": false,
+                "topics": [
+                  "binary",
+                  "chronos",
+                  "smartwatch",
+                  "watch",
+                  "watchfaces",
+                  "wearfit",
+                  "wearfitpro"
+                ]
+              },
+              {
+                "name": "fluffy-chainsaw",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CMake",
+                "pushed_at": "2026-03-17T08:18:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "viewe_ui",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-11T09:03:10Z",
+                "fork": false,
+                "topics": [
+                  "editor",
+                  "lvgl",
+                  "lvgl-editor",
+                  "lvgl-pro",
+                  "lvgl-xml",
+                  "xml"
+                ]
+              },
+              {
+                "name": "webscreen_ziidi",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2026-03-12T06:49:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Timber",
+                "description": "An Arduino library that provides methods for displaying logs at different levels of importance or severity.",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-14T18:23:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lv-viewe-2.8",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "C++",
+                "pushed_at": "2026-02-17T09:42:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ziidi_screen",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-02-11T06:34:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webscreen-lvgl",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "C",
+                "pushed_at": "2026-02-10T18:43:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "viewe-7.0",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2024-11-26T12:00:08Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:38.430242+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

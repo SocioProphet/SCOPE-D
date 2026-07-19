@@ -1,0 +1,203 @@
+{
+  "profileId": "osint-profile-62e359566e46",
+  "target": "KostasSliazas",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:53.197216+00:00",
+  "completedAt": "2026-06-21T15:28:53.695958+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6e86cf24",
+      "lookupType": "github_context",
+      "target": "KostasSliazas",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "KostasSliazas",
+            "name": "Kostas",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "...",
+            "public_repos": 14,
+            "followers": 3093,
+            "following": 12995,
+            "created_at": "2017-08-25T09:01:17Z",
+            "updated_at": "2026-06-20T22:42:32Z",
+            "html_url": "https://github.com/KostasSliazas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/31342007?v=4",
+            "repos": [
+              {
+                "name": "project-kitten",
+                "description": "Variety of tools(web)  and links, each housed in its own folder within the repository. ",
+                "stargazers_count": 152,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-21T07:04:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "images-and-vectors-free.io",
+                "description": "https://kostassliazas.github.io/images-and-vectors-free.io/",
+                "stargazers_count": 36,
+                "language": "Shell",
+                "pushed_at": "2026-06-20T02:47:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "animations",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2026-04-16T09:46:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "extension-kremy-chrome-firefox",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-14T04:30:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "K7",
+                "description": "Simple Image Gallery - Vanilla JavaScript (Fullscreen & Swipe Support)",
+                "stargazers_count": 54,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-05T02:17:12Z",
+                "fork": false,
+                "topics": [
+                  "gallery-images",
+                  "image",
+                  "image-processing"
+                ]
+              },
+              {
+                "name": "KostasSliazas.github.io",
+                "description": "https://kostassliazas.github.io/",
+                "stargazers_count": 34,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-20T04:45:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kblocker-ff-extension",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-25T06:40:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-template",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2026-05-07T19:14:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-template1",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-05-09T04:28:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gallery",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-10T05:10:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": ".github",
+                "description": null,
+                "stargazers_count": 21,
+                "language": null,
+                "pushed_at": "2026-02-27T07:11:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "burundukas",
+                "description": "https://kostassliazas.github.io/burundukas/",
+                "stargazers_count": 23,
+                "language": "HTML",
+                "pushed_at": "2026-04-13T09:17:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "privacy",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2025-05-25T15:52:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "memory-game-kittens",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-21T19:02:09Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:53.695631+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

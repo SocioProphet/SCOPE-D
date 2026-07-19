@@ -1,0 +1,421 @@
+{
+  "profileId": "osint-profile-bdcff0ed5f66",
+  "target": "chrdek",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:04.329411+00:00",
+  "completedAt": "2026-06-20T16:49:05.159568+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-134340c2",
+      "lookupType": "github_context",
+      "target": "chrdek",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "chrdek",
+            "name": "ChrDek",
+            "type": "User",
+            "company": "Ham",
+            "blog": "",
+            "location": "Bacon",
+            "bio": "Software developer, blockchain & IoT technology enthusiast with a focus on security.",
+            "public_repos": 27,
+            "followers": 822,
+            "following": 1584,
+            "created_at": "2015-01-21T14:02:47Z",
+            "updated_at": "2025-11-28T11:36:20Z",
+            "html_url": "https://github.com/chrdek",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10632099?v=4",
+            "repos": [
+              {
+                "name": "chrdek.github.io",
+                "description": "Main projects site",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-06-14T13:49:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chrdek",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-09-29T08:29:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "git_unfollowing_pwsh",
+                "description": "test repo for wkflows gh action",
+                "stargazers_count": 0,
+                "language": "PowerShell",
+                "pushed_at": "2026-03-13T10:32:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testr-scripts-snippets",
+                "description": "A collection of testrunner sample scripts  in SoapUI for static content checks.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2019-11-24T22:54:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vuejs-imggallery",
+                "description": ":camera: :arrow_down_small:  A reactive image gallery displaying images via http with axios",
+                "stargazers_count": 2,
+                "language": "Vue",
+                "pushed_at": "2026-06-19T20:25:31Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "image-gallery",
+                  "images",
+                  "vue",
+                  "vuejs",
+                  "vuejs-imggallery"
+                ]
+              },
+              {
+                "name": "QueryablDataCalc",
+                "description": "Queryable Port of some methods of LinqDataCalc [ .NET 4.6.2+ ]",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2025-11-08T15:04:14Z",
+                "fork": false,
+                "topics": [
+                  "expression-builder",
+                  "expression-builders",
+                  "iqueryable",
+                  "linq",
+                  "linq-expressions",
+                  "linq-to-objects",
+                  "query-language",
+                  "queryable"
+                ]
+              },
+              {
+                "name": "LinqDataCalc",
+                "description": "\ud83d\udcc8 \ud83c\udfb2 Linq based data statistics set of extensions.",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-11-08T13:09:14Z",
+                "fork": false,
+                "topics": [
+                  "calculations",
+                  "calculator",
+                  "data-analysis",
+                  "data-analytics",
+                  "data-science",
+                  "data-statictics",
+                  "extension-methods",
+                  "extensions",
+                  "linq",
+                  "linq-extensions",
+                  "set-theory",
+                  "statistical-analysis",
+                  "statistics"
+                ]
+              },
+              {
+                "name": "linqpath_prerel",
+                "description": "Create different folder structures using Linq objects",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-11-08T13:02:11Z",
+                "fork": false,
+                "topics": [
+                  "directories",
+                  "folder-structure",
+                  "folders",
+                  "folders-creator",
+                  "linq",
+                  "linq-to-objects",
+                  "linq-to-path"
+                ]
+              },
+              {
+                "name": "PicProcessor",
+                "description": "AWS Lambda function for image processing and PDF conversion with DDoS protection and Docker support",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-04T17:36:05Z",
+                "fork": false,
+                "topics": [
+                  "api-gateway",
+                  "aws-lambda",
+                  "image-processing",
+                  "pdf-conversion",
+                  "pdf-converter",
+                  "serverless"
+                ]
+              },
+              {
+                "name": "512kb_fork.club",
+                "description": "[Fork Of] Website for the 512 KB Club",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-13T22:51:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bmac-DeFi",
+                "description": "\u2615 \"Buy me a coffee\" decentralized Financing app for ethereum apps/users",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-09T16:04:13Z",
+                "fork": false,
+                "topics": [
+                  "buymeacoffee",
+                  "ethereum",
+                  "ethereum-contract",
+                  "ethereum-dapp",
+                  "ethereum-dapps",
+                  "ethersjs",
+                  "solidity",
+                  "web3"
+                ]
+              },
+              {
+                "name": "PSStatsReporting",
+                "description": "\ud83d\udda5\ufe0f A local system stats reporting tool in plain powershell with a highcharts.js component for the frontend",
+                "stargazers_count": 1,
+                "language": "PowerShell",
+                "pushed_at": "2022-10-14T16:16:35Z",
+                "fork": false,
+                "topics": [
+                  "design-patterns",
+                  "highcharts-js",
+                  "powershell",
+                  "powershell-module",
+                  "powershell-modules",
+                  "powershell-script",
+                  "powershell-scripts",
+                  "powershell-ui",
+                  "wpf",
+                  "wpf-ui",
+                  "xaml"
+                ]
+              },
+              {
+                "name": "free-programming-books",
+                "description": ":books: Freely available programming books",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-10-12T13:48:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "exceldirectories",
+                "description": "An excel-based file directory viewer with Treeview and spire spreadsheet",
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2023-08-21T13:14:03Z",
+                "fork": false,
+                "topics": [
+                  "directory-listing",
+                  "directory-tree",
+                  "excel",
+                  "spire-library",
+                  "spire-xls",
+                  "spirepdf"
+                ]
+              },
+              {
+                "name": "do-it-in-keras",
+                "description": "Modern Deep Learning architectures and tasks implemented in Keras.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2021-10-23T21:02:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "onelinerhub",
+                "description": "Lib with 800+ (and counting) minimalistic code pieces with clear explanation @ onelinerhub.com",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-10-29T21:30:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Best-websites-changes",
+                "description": ":link: Fork - Some useful websites for programmers, prs",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-10-09T16:01:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "discord.js",
+                "description": "A powerful JavaScript library for interacting with the Discord API",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2021-10-15T18:43:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "JavaScriptPRs",
+                "description": "[ForkOf] Algorithms and Data Structures implemented in JavaScript for beginners, following best practices.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-12T11:21:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Nuspecexec",
+                "description": "Command line utility that generates .nuspec project files via linq to xml ",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2020-07-05T17:33:56Z",
+                "fork": false,
+                "topics": [
+                  "csharp",
+                  "linq-to-xml",
+                  "linq2nuspec",
+                  "linq2xml",
+                  "nuget",
+                  "nuspec",
+                  "xml"
+                ]
+              },
+              {
+                "name": "colab_varioustf",
+                "description": "Several tensorflow colab notebooks that I found  from various sources",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2022-09-03T12:00:58Z",
+                "fork": false,
+                "topics": [
+                  "image-classification",
+                  "keras",
+                  "keras-neural-networks",
+                  "tensorflow",
+                  "tensorflow-examples",
+                  "tensorflow-tutorials"
+                ]
+              },
+              {
+                "name": "npm-expansions",
+                "description": "Send us a pull request by editing expansions.txt",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-02-13T15:18:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "techn_contr",
+                "description": "Older ms-tech site contributions.",
+                "stargazers_count": 1,
+                "language": "PowerShell",
+                "pushed_at": "2020-10-13T22:57:45Z",
+                "fork": false,
+                "topics": [
+                  "archived",
+                  "tech",
+                  "technet-gallery"
+                ]
+              },
+              {
+                "name": "college_projects_old",
+                "description": "Older projects from my college days.",
+                "stargazers_count": 1,
+                "language": "Pascal",
+                "pushed_at": "2021-07-06T07:13:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bsc-tradebot-injs",
+                "description": "[Fork of] Automated Binance trading bot",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-06T16:56:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "selenium_scen",
+                "description": "\ud83e\uddea Selenium web site test case scenarios using multiple languages",
+                "stargazers_count": 2,
+                "language": "PowerShell",
+                "pushed_at": "2023-04-06T21:54:10Z",
+                "fork": false,
+                "topics": [
+                  "powershell-module",
+                  "selenium",
+                  "selenium-csharp",
+                  "selenium-javascript",
+                  "selenium-python",
+                  "selenium-webdriver"
+                ]
+              },
+              {
+                "name": "nuget-api-dataget",
+                "description": "Used for retrieving external NuGet api data in xml or json format (v2 or v3 api)",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-08T11:47:49Z",
+                "fork": false,
+                "topics": [
+                  "nuget",
+                  "nuget-package",
+                  "rest-api",
+                  "restful-api",
+                  "yaml"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:05.158726+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

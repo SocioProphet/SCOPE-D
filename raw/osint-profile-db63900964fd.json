@@ -1,0 +1,408 @@
+{
+  "profileId": "osint-profile-db63900964fd",
+  "target": "soladdev",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:14.233941+00:00",
+  "completedAt": "2026-06-21T15:30:15.128114+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c6a145ac",
+      "lookupType": "github_context",
+      "target": "soladdev",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "soladdev",
+            "name": "Solad Dev",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Solana & AI Full Stack Developer",
+            "public_repos": 26,
+            "followers": 2113,
+            "following": 10141,
+            "created_at": "2015-02-05T03:32:19Z",
+            "updated_at": "2026-05-15T18:31:16Z",
+            "html_url": "https://github.com/soladdev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10859679?v=4",
+            "repos": [
+              {
+                "name": "dextra-app",
+                "description": "Dextra targets **DeFi, NFT, and general Solana workflows** by pairing large language models with **function calling** and **Solana Agent Kit**\u2013style tooling. Authentication and embedded wallets are handled via **Privy**; chain reads and enhanced RPC flows use **Helius** where configured.",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-13T15:44:35Z",
+                "fork": false,
+                "topics": [
+                  "agent",
+                  "agent-kit",
+                  "defi",
+                  "helius",
+                  "nft",
+                  "postgresql",
+                  "prisma",
+                  "solana"
+                ]
+              },
+              {
+                "name": "jackpot-solana-frontend",
+                "description": "Fast and safe color management system in Rust",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-13T14:00:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "trojan-app",
+                "description": "A new markup-based typesetting system that is powerful and easy to learn.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-13T14:03:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "soladdev",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-05-15T06:33:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pnft-staking-dynamic",
+                "description": "An Anchor-based Solana program for staking programmable NFTs (pNFTs) and distributing configurable token rewards. The project includes the on-chain staking program, TypeScript helpers, and a command-line interface for administrator and user operations.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-09T06:05:58Z",
+                "fork": false,
+                "topics": [
+                  "anchor",
+                  "nft",
+                  "pnft",
+                  "smart-contract",
+                  "solana",
+                  "staking"
+                ]
+              },
+              {
+                "name": "teddies-nft",
+                "description": "A one-of-a-kind Web3 platform built to power the Teddies ecosystem.  A unique web3-native platform for the Teddies ecosystem. Earn points, unlock badges, flex your profile, participate in upcoming drops.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T15:23:04Z",
+                "fork": false,
+                "topics": [
+                  "aws",
+                  "gsap",
+                  "nft",
+                  "solana",
+                  "teddis",
+                  "turbo",
+                  "wallet",
+                  "wdk",
+                  "web3"
+                ]
+              },
+              {
+                "name": "solana-staking-contract",
+                "description": "A production-ready, Anchor-based staking program for the Solana blockchain with configurable rewards, multi-tier referral system, and flexible admin controls.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-03-16T15:49:51Z",
+                "fork": false,
+                "topics": [
+                  "anchor",
+                  "smart-contract",
+                  "solana",
+                  "staking-contract",
+                  "token"
+                ]
+              },
+              {
+                "name": "fourmeme-fork",
+                "description": "Four Meme UI is a Next.js-based web application for interacting with the Four Meme platform.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T15:34:40Z",
+                "fork": false,
+                "topics": [
+                  "evm",
+                  "four-meme"
+                ]
+              },
+              {
+                "name": "solana-meme-tool",
+                "description": "Meme Tool is an opinionated automation stack for Solana meme-coin launches and post-launch trading. The app wraps bundled token deployments, high-frequency trading automations, copy trading, and risk analytics into a single operational dashboard built with Next.js 14.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-16T14:18:42Z",
+                "fork": false,
+                "topics": [
+                  "meme-coin",
+                  "meme-tool",
+                  "solana",
+                  "solana-tool"
+                ]
+              },
+              {
+                "name": "monad-volume-bot",
+                "description": "A step-by-step PDF writer.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T20:37:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-arbitrge-bot",
+                "description": "High-performance Solana arbitrage bot for detecting and executing profitable trading opportunities across multiple DEXs (Raydium, Orca, Meteora, Jupiter) with Jito-MEV integration.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-03-16T10:04:04Z",
+                "fork": false,
+                "topics": [
+                  "arbitrage",
+                  "arbitrage-bot",
+                  "solana",
+                  "solana-arbitrage-bot",
+                  "solana-bot"
+                ]
+              },
+              {
+                "name": "flork-site",
+                "description": "Flork is a Solana-powered meme token inspired by the beloved online webcomic known for its quirky sock puppet characters drawn in MS Paint.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T15:09:52Z",
+                "fork": false,
+                "topics": [
+                  "anchor",
+                  "candy-machine",
+                  "metaplex",
+                  "nft",
+                  "solana",
+                  "wallet",
+                  "wdk"
+                ]
+              },
+              {
+                "name": "covbot",
+                "description": "A small chatbot written as part of my bachelor thesis.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-03-12T01:55:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fearless_simd",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-03-12T01:55:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fontations",
+                "description": "Reading and writing font files",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-03-12T01:56:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "krilla",
+                "description": "A high-level, ergonomic Rust library for creating PDF documents.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-03-12T02:14:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pumpfun-bundler-new",
+                "description": "Meme Core is a desktop application built with Rust and React for creating, deploying, and managing meme tokens on the Solana blockchain with Pump.fun integration.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-03-16T08:45:11Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "bundler",
+                  "bundler-bot",
+                  "bundling",
+                  "pumpfun",
+                  "pumpfun-bundler",
+                  "pumpfun-bundler-bot",
+                  "solana",
+                  "solana-bot",
+                  "solana-bundler-bot"
+                ]
+              },
+              {
+                "name": "pumpswap-volume-bot",
+                "description": "Pumpswap volume bot that makes endless buy and sell swap to increase trading volume and promote your token in fast speed.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-03-16T09:17:53Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "pumpfun",
+                  "pumpswap",
+                  "pumpswap-volume-bot",
+                  "volume-bot"
+                ]
+              },
+              {
+                "name": "solana-sniper",
+                "description": "This is a unmaintained and dirty PoC of using GRPC to detect newly launched tokens on Raydium and snipe them with the goal of being the first buy. Please feel free to use this in your own code. ",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-16T15:03:52Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "grpc",
+                  "grpc-sniper",
+                  "sniper",
+                  "sniper-bot",
+                  "solana",
+                  "solana-bot",
+                  "solana-sniper-bot"
+                ]
+              },
+              {
+                "name": "rusty2048",
+                "description": "**Rusty2048** is a modern, high-performance implementation of the classic 2048 puzzle game. Built entirely in Rust, it delivers exceptional performance across multiple platforms while maintaining a clean, maintainable codebase.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-03-17T19:14:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tauri-boilerplate",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-17T19:20:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uranus-frontend",
+                "description": "React web app (Create React App with CRACO/config-overrides for webpack) that powers a blockchain-connected \u201cMars colony\u201d\u2013style game / experience. Internally it\u2019s labeled \u201cMars Colony WebApp\u201d in the README, while the npm package name is parted-mars.",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-05-12T20:12:09Z",
+                "fork": false,
+                "topics": [
+                  "arcgis",
+                  "openglobus",
+                  "react",
+                  "redux-toolkit",
+                  "uranus",
+                  "web3"
+                ]
+              },
+              {
+                "name": "uranus-backend",
+                "description": "This service exposes HTTP endpoints under `/api` for storing and querying Solana NFT cache data (wallet, mint address, token metadata, authorities, and related fields). It connects to MongoDB on startup and serves a Swagger UI for exploring and testing endpoints locally.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T20:21:43Z",
+                "fork": false,
+                "topics": [
+                  "express",
+                  "nft",
+                  "openapi"
+                ]
+              },
+              {
+                "name": "uranus-contract",
+                "description": "Solana program built with Anchor (programs/uranus) plus a TypeScript CLI / client (cli/, lib/) that talks to it using @coral-xyz/anchor, Metaplex (mpl-token-metadata / umi), SPL Token, and web3.js.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T20:24:43Z",
+                "fork": false,
+                "topics": [
+                  "anchor",
+                  "coral",
+                  "metaplex",
+                  "solana",
+                  "spl",
+                  "token",
+                  "umi",
+                  "uranus",
+                  "web3"
+                ]
+              },
+              {
+                "name": "coinbase-x402",
+                "description": "Assets for the Typst compiler.",
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2026-05-12T20:32:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "meme-tools-frontend",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-13T13:54:25Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:15.127329+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

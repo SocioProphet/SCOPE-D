@@ -1,0 +1,724 @@
+{
+  "profileId": "osint-profile-5b2e1499ed36",
+  "target": "tatsuyafujisaki",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:02.631220+00:00",
+  "completedAt": "2026-06-20T16:49:04.325951+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-63555286",
+      "lookupType": "github_context",
+      "target": "tatsuyafujisaki",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "tatsuyafujisaki",
+            "name": "Tatsuya Fujisaki",
+            "type": "User",
+            "company": null,
+            "blog": "https://g.dev/tatsuyafujisaki",
+            "location": "Japan",
+            "bio": null,
+            "public_repos": 57,
+            "followers": 857,
+            "following": 839,
+            "created_at": "2012-06-11T15:27:16Z",
+            "updated_at": "2026-06-19T12:26:45Z",
+            "html_url": "https://github.com/tatsuyafujisaki",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1838962?v=4",
+            "repos": [
+              {
+                "name": "android-playground",
+                "description": "Personal playground for Android",
+                "stargazers_count": 10,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-19T15:16:12Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "kotlin",
+                  "playground"
+                ]
+              },
+              {
+                "name": "elemu",
+                "description": "ECHONET Lite\u6a5f\u5668\u30a8\u30df\u30e5\u30ec\u30fc\u30bf\u306f30\u7a2e\u985e\u4ee5\u4e0a\u306e\u6a5f\u5668\u30a8\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-06T08:07:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "echonet-lite-resources",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-13T11:56:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dotfiles",
+                "description": "Dotfiles and more",
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2026-06-08T08:06:21Z",
+                "fork": false,
+                "topics": [
+                  "applescript",
+                  "bashrc",
+                  "batch",
+                  "gitconfig",
+                  "gitignore",
+                  "inputrc",
+                  "maven-pom-xml",
+                  "maven-settings-xml",
+                  "npmrc",
+                  "registry",
+                  "vscode-settings-json",
+                  "zshrc"
+                ]
+              },
+              {
+                "name": "script-cheat-sheet",
+                "description": "Cheat sheets for various commands and scripts",
+                "stargazers_count": 18,
+                "language": "Batchfile",
+                "pushed_at": "2026-06-07T09:31:07Z",
+                "fork": false,
+                "topics": [
+                  "apt",
+                  "awk",
+                  "base64",
+                  "bash",
+                  "batch",
+                  "binary",
+                  "curl",
+                  "cut",
+                  "ffmpeg",
+                  "gradle",
+                  "imagemagick",
+                  "npm",
+                  "pip",
+                  "powershell",
+                  "protoc",
+                  "sed",
+                  "sips",
+                  "xcodeproj",
+                  "zsh"
+                ]
+              },
+              {
+                "name": "flutter-playground",
+                "description": "Personal playground for Flutter",
+                "stargazers_count": 0,
+                "language": "Dart",
+                "pushed_at": "2026-05-30T23:52:51Z",
+                "fork": false,
+                "topics": [
+                  "dart",
+                  "flutter",
+                  "playground"
+                ]
+              },
+              {
+                "name": "x-api-functions",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-24T08:34:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "egov-laws-chrome-extension",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-23T15:41:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-automated-follow-and-unfollow-back",
+                "description": "This script will follow new followers and unfollow unfollowers.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-23T04:39:23Z",
+                "fork": false,
+                "topics": [
+                  "deno",
+                  "github",
+                  "octokit",
+                  "typescript",
+                  "unfollow"
+                ]
+              },
+              {
+                "name": "pdf-compressor",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-23T04:36:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "playwright-playground",
+                "description": "Personal playground for Playwright",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-23T04:33:54Z",
+                "fork": false,
+                "topics": [
+                  "playground",
+                  "playwright"
+                ]
+              },
+              {
+                "name": "typescript-playground",
+                "description": "Personal playground for TypeScript",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-23T04:33:02Z",
+                "fork": false,
+                "topics": [
+                  "playground",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "apps-script-toolkit",
+                "description": "Personal cheat sheet for Apps Script",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-23T04:31:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "egov-law-simplifier",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-05T05:37:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kotlin-playground",
+                "description": "Personal playground for Kotlin and Java",
+                "stargazers_count": 12,
+                "language": "Kotlin",
+                "pushed_at": "2026-04-29T22:18:57Z",
+                "fork": false,
+                "topics": [
+                  "kotlin",
+                  "playground"
+                ]
+              },
+              {
+                "name": "django-playground",
+                "description": "Personal playground for Django",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-25T13:18:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Todoey-iOS16",
+                "description": "The iOS 16 version of Todoey-iOS13",
+                "stargazers_count": 1,
+                "language": "Swift",
+                "pushed_at": "2025-05-03T05:54:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "InspoQuotes-iOS13-StoreKit-Testing",
+                "description": "InspoQuotes-iOS13 using StoreKit Testing so that you don't need to join the Apple Developer Program.",
+                "stargazers_count": 1,
+                "language": "Swift",
+                "pushed_at": "2025-05-17T03:33:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "android-basics-kotlin-lemonade-app-solution",
+                "description": "Solution to the Lemonade app project in Android Basics in Kotlin",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2022-05-14T14:38:54Z",
+                "fork": true,
+                "topics": [
+                  "android",
+                  "codelab",
+                  "kotlin",
+                  "pathway"
+                ]
+              },
+              {
+                "name": "android-basics-kotlin-amphibians-app-solution",
+                "description": "Solution to the Amphibians app project in Android Basics in Kotlin",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2022-05-16T11:15:02Z",
+                "fork": true,
+                "topics": [
+                  "android",
+                  "codelab",
+                  "kotlin",
+                  "pathway"
+                ]
+              },
+              {
+                "name": "android-basics-kotlin-forage-app-solution",
+                "description": "Solution to the Forage app project in Android Basics in Kotlin",
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2022-05-22T08:01:09Z",
+                "fork": true,
+                "topics": [
+                  "android",
+                  "codelab",
+                  "kotlin",
+                  "pathway"
+                ]
+              },
+              {
+                "name": "android-basics-kotlin-water-me-app-solution",
+                "description": "Solution to the Water Me app project in Android Basics in Kotlin",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2022-05-29T08:08:26Z",
+                "fork": true,
+                "topics": [
+                  "android",
+                  "codelab",
+                  "kotlin",
+                  "pathway"
+                ]
+              },
+              {
+                "name": "android-basics-kotlin-dogglers-app-solution",
+                "description": "Solution to the Dogglers app project in Android Basics in Kotlin",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2022-10-06T00:00:34Z",
+                "fork": true,
+                "topics": [
+                  "android",
+                  "codelab",
+                  "kotlin",
+                  "pathway"
+                ]
+              },
+              {
+                "name": "android-basics-kotlin-lunch-tray-app-solution",
+                "description": "Solution to the Lunch Tray app project in Android Basics in Kotlin",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2022-10-06T00:00:44Z",
+                "fork": true,
+                "topics": [
+                  "android",
+                  "codelab",
+                  "kotlin",
+                  "pathway"
+                ]
+              },
+              {
+                "name": "kotlin-sorting-algorithms",
+                "description": "Sorting algorithms implemented in Kotlin",
+                "stargazers_count": 7,
+                "language": "Kotlin",
+                "pushed_at": "2021-12-11T10:26:16Z",
+                "fork": false,
+                "topics": [
+                  "bubble-sort",
+                  "heapsort",
+                  "insertion-sort",
+                  "kotlin",
+                  "merge-sort",
+                  "quicksort",
+                  "radix-sort",
+                  "selection-sort",
+                  "sorting-algorithms"
+                ]
+              },
+              {
+                "name": "android-expandablelistview-sample",
+                "description": "Android ExpandableListView sample",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2021-07-12T15:16:47Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "baseexpandablelistadapter",
+                  "expandablelistview",
+                  "kotlin",
+                  "simpleexpandablelistadapter"
+                ]
+              },
+              {
+                "name": "android-listview-sample",
+                "description": "Android ListView sample",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2021-07-08T13:33:04Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "kotlin",
+                  "listview"
+                ]
+              },
+              {
+                "name": "hackerrank-interview-preparation-kit-kotlin",
+                "description": "Solutions in Kotlin (or Java if Kotlin is unavailable) for the HackerRank Interview Preparation Kit",
+                "stargazers_count": 11,
+                "language": "Kotlin",
+                "pushed_at": "2021-04-30T17:42:12Z",
+                "fork": false,
+                "topics": [
+                  "hackerrank",
+                  "interview-preparation-kit",
+                  "java",
+                  "kotlin"
+                ]
+              },
+              {
+                "name": "hackerrank-30-days-of-code-solutions-kotlin-java",
+                "description": "Solutions in Kotlin (or Java if Kotlin is unavailable) to 30 Days of Code on HackerRank",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2021-04-11T01:55:55Z",
+                "fork": false,
+                "topics": [
+                  "30-days-of-code",
+                  "hackerrank",
+                  "java",
+                  "kotlin"
+                ]
+              },
+              {
+                "name": "countdown-timer",
+                "description": "My countdown timer for #AndroidDevChallenge Jetpack Compose Week 2",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2021-03-06T11:44:51Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "androiddevchallenge",
+                  "jetpack-compose",
+                  "kotlin"
+                ]
+              },
+              {
+                "name": "puppy-adoption-app",
+                "description": "My puppy adoption app for #AndroidDevChallenge Jetpack Compose Week 1",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2021-03-06T04:47:41Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "androiddevchallenge",
+                  "jetpack-compose",
+                  "kotlin"
+                ]
+              },
+              {
+                "name": "hackerrank-10-days-of-statistics-solutions-kotlin",
+                "description": "Solutions in Kotlin to 10 Days of Statistics on HackerRank",
+                "stargazers_count": 5,
+                "language": "Kotlin",
+                "pushed_at": "2021-01-24T23:33:45Z",
+                "fork": false,
+                "topics": [
+                  "10-days-of-statistics",
+                  "hackerrank",
+                  "kotlin"
+                ]
+              },
+              {
+                "name": "fsharp-cheat-sheet",
+                "description": "F# cheat sheet",
+                "stargazers_count": 2,
+                "language": "F#",
+                "pushed_at": "2021-01-21T15:38:09Z",
+                "fork": false,
+                "topics": [
+                  "cheat-sheet",
+                  "fsharp"
+                ]
+              },
+              {
+                "name": "aes-sample",
+                "description": "Example of using the Advanced Encryption Standard",
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2021-01-07T13:57:13Z",
+                "fork": false,
+                "topics": [
+                  "advanced-encryption-standard",
+                  "csharp"
+                ]
+              },
+              {
+                "name": "openxml-word-helper",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2021-01-07T13:56:49Z",
+                "fork": false,
+                "topics": [
+                  "csharp",
+                  "office-open-xml",
+                  "ooxml",
+                  "open-xml",
+                  "word"
+                ]
+              },
+              {
+                "name": "food-tracker",
+                "description": "My study from DWANGO\u2019s free iOS tutorial (Japanese)",
+                "stargazers_count": 1,
+                "language": "Swift",
+                "pushed_at": "2021-01-07T13:41:58Z",
+                "fork": false,
+                "topics": [
+                  "ios"
+                ]
+              },
+              {
+                "name": "hackerrank-10-days-of-javascript-solutions",
+                "description": "Solutions to 10 Days of JavaScript on HackerRank",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-07T13:36:15Z",
+                "fork": false,
+                "topics": [
+                  "10-days-of-javascript",
+                  "hackerrank",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "pairwise",
+                "description": "Pairwise (all-pairs) testing samples using Microsoft PICT",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-01-07T13:35:18Z",
+                "fork": false,
+                "topics": [
+                  "all-pairs",
+                  "pairwise",
+                  "pict",
+                  "testing"
+                ]
+              },
+              {
+                "name": "popular-movie",
+                "description": "Practice project for Android app",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2021-01-07T13:34:51Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "android-developer-nanodegree",
+                  "udacity"
+                ]
+              },
+              {
+                "name": "sql-cheat-sheet",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TSQL",
+                "pushed_at": "2021-01-07T13:33:10Z",
+                "fork": false,
+                "topics": [
+                  "access",
+                  "mysql",
+                  "sql",
+                  "sql-server",
+                  "sqlite"
+                ]
+              },
+              {
+                "name": "baking-app",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2021-01-07T13:31:35Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "android-developer-nanodegree",
+                  "java",
+                  "udacity"
+                ]
+              },
+              {
+                "name": "winforms-cheat-sheet",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2021-01-07T13:30:25Z",
+                "fork": false,
+                "topics": [
+                  "cheat-sheet",
+                  "csharp",
+                  "winforms"
+                ]
+              },
+              {
+                "name": "vba-cheat-sheet",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Visual Basic",
+                "pushed_at": "2021-01-07T13:29:49Z",
+                "fork": false,
+                "topics": [
+                  "cheat-sheet",
+                  "vba"
+                ]
+              },
+              {
+                "name": "csharp-cheat-sheet",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2021-01-07T13:29:03Z",
+                "fork": false,
+                "topics": [
+                  "charp",
+                  "cheat-sheet"
+                ]
+              },
+              {
+                "name": "compare-docs-excels",
+                "description": "Compare Microsoft Word files or Excel files by drag & dropping",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-07T13:28:27Z",
+                "fork": false,
+                "topics": [
+                  "excel",
+                  "javascript",
+                  "word"
+                ]
+              },
+              {
+                "name": "export-vba-to-git",
+                "description": "Export VBA of an Excel file to a git repository by double-clicking",
+                "stargazers_count": 1,
+                "language": "Visual Basic",
+                "pushed_at": "2021-01-07T13:27:03Z",
+                "fork": false,
+                "topics": [
+                  "git",
+                  "vba"
+                ]
+              },
+              {
+                "name": "competitive-programming-solutions",
+                "description": "C# solutions of miscellaneous programming contests",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2021-01-07T13:26:04Z",
+                "fork": false,
+                "topics": [
+                  "competitive-programming",
+                  "csharp"
+                ]
+              },
+              {
+                "name": "xaml-advanced",
+                "description": "Homework for DEV206.2x on edX",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2021-01-07T13:08:44Z",
+                "fork": false,
+                "topics": [
+                  "csharp",
+                  "edx",
+                  "xaml"
+                ]
+              },
+              {
+                "name": "xaml-beginner",
+                "description": "Homework for DEV206.1x on edX",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2021-01-07T13:06:14Z",
+                "fork": false,
+                "topics": [
+                  "csharp",
+                  "edx",
+                  "xaml"
+                ]
+              },
+              {
+                "name": "fsharp-openxml-samples",
+                "description": "Sample in F# with Office Open XML",
+                "stargazers_count": 2,
+                "language": "F#",
+                "pushed_at": "2021-01-07T12:58:52Z",
+                "fork": false,
+                "topics": [
+                  "fsharp",
+                  "office-open-xml",
+                  "ooxml",
+                  "open-xml"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:04.324714+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

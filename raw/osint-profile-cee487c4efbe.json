@@ -1,0 +1,100 @@
+{
+  "profileId": "osint-profile-cee487c4efbe",
+  "target": "KabeloM13",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:37.201992+00:00",
+  "completedAt": "2026-06-21T15:29:37.557894+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8e89823f",
+      "lookupType": "github_context",
+      "target": "KabeloM13",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "KabeloM13",
+            "name": "Kabelo M.",
+            "type": "User",
+            "company": "Freelance UX/UI & Front-End Developer",
+            "blog": "https://github.com/kabeloM.",
+            "location": "Johannesburg, South Africa",
+            "bio": "AI & ML | Digital Brand Strategist | UI Specialist | CX/UX/UI Developer | Web3 | HTML, CSS, JavaScript, React",
+            "public_repos": 3,
+            "followers": 2516,
+            "following": 7546,
+            "created_at": "2025-08-18T09:42:54Z",
+            "updated_at": "2026-05-22T06:49:48Z",
+            "html_url": "https://github.com/KabeloM13",
+            "avatar_url": "https://avatars.githubusercontent.com/u/227147147?v=4",
+            "repos": [
+              {
+                "name": "responsive-web-design",
+                "description": "FreeCodeCamp Responsive Web Design Certification Projects",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-09-25T19:28:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "javascript-algorithms-and-data-structures",
+                "description": "Projects for the JavaScript Algorithms and Data Structures Certification (Beta) from freeCodeCamp, demonstrating skills in JavaScript, algorithms, and problem-solving.",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2025-09-25T21:41:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kabeloM13",
+                "description": "Front-End Developer & UX/UI Designer | Portfolio & Projects",
+                "stargazers_count": 32,
+                "language": null,
+                "pushed_at": "2026-05-22T06:53:38Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:37.556864+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

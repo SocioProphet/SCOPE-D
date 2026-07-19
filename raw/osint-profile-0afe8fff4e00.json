@@ -1,0 +1,569 @@
+{
+  "profileId": "osint-profile-0afe8fff4e00",
+  "target": "slavaGanzin",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:45.074835+00:00",
+  "completedAt": "2026-06-21T15:28:46.407020+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-59ca7b65",
+      "lookupType": "github_context",
+      "target": "slavaGanzin",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "slavaGanzin",
+            "name": "Slava",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Nice, France",
+            "bio": null,
+            "public_repos": 106,
+            "followers": 3217,
+            "following": 42533,
+            "created_at": "2011-08-29T11:52:03Z",
+            "updated_at": "2026-05-04T22:22:11Z",
+            "html_url": "https://github.com/slavaGanzin",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1011721?v=4",
+            "repos": [
+              {
+                "name": "installer",
+                "description": "One-liner for installing binaries from Github releases",
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2026-06-19T16:48:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "await",
+                "description": "40K, small memory footprint, single binary that run list of commands in parallel and waits for their termination",
+                "stargazers_count": 265,
+                "language": "Python",
+                "pushed_at": "2026-05-21T23:00:52Z",
+                "fork": false,
+                "topics": [
+                  "async",
+                  "bash",
+                  "ci",
+                  "cli",
+                  "command-line-tool",
+                  "devops",
+                  "fish",
+                  "parallel",
+                  "posix",
+                  "runner",
+                  "util",
+                  "wait",
+                  "zsh"
+                ]
+              },
+              {
+                "name": "pi-vim",
+                "description": "Vim mode for Pi",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-15T09:43:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "http2-server",
+                "description": "Simple HTTP2/SPDY server similiar to http-server using express & node-spdy",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2020-09-22T12:41:31Z",
+                "fork": false,
+                "topics": [
+                  "http2",
+                  "http2-push",
+                  "nodejs",
+                  "server"
+                ]
+              },
+              {
+                "name": "awesome-cli-apps",
+                "description": "\ud83d\udda5 \ud83d\udcca \ud83d\udd79 \ud83d\udee0 A curated list of command line apps",
+                "stargazers_count": 12,
+                "language": "Shell",
+                "pushed_at": "2026-03-16T15:12:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "spacelift",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HCL",
+                "pushed_at": "2024-06-02T09:42:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "auto-require",
+                "description": "It's right way to automatically require your packages",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-21T00:20:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "stew",
+                "description": "\ud83e\udd58 An independent package manager for compiled binaries.",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2024-10-17T10:54:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "apprise",
+                "description": "Apprise - Push Notifications that work with just about every platform!",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-11-27T12:08:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "auditor",
+                "description": "Audio transcription/validation for STT",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2020-11-08T09:47:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ctrace",
+                "description": "Well-formatted and improved trace system calls and signals (when the debugger does not help)",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2019-11-18T14:59:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "netdata",
+                "description": "Real-time performance monitoring, done right! https://www.netdata.cloud",
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2020-05-06T18:59:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "idb-kv",
+                "description": "A tiny and simple API for indexeddb with automatic batching for out of the box performance.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-11-02T19:12:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Corrosion",
+                "description": "The official proxy of Titanium Network with enhanced support for a large majority of sites with hCAPTCHA support. Successor to Alloy Proxy.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-11-17T22:52:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "login-with",
+                "description": "Stateless login-with microservice for OAuth",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-01-21T13:06:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "multicast-dns",
+                "description": "Low level multicast-dns implementation in pure javascript",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-05-16T08:18:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zerotier-planet-builder",
+                "description": "A ZeroTierOne planet with zero-ui web interface docker image builder.  ",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-09-30T05:33:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "robotframework-browser",
+                "description": "Robot Framework Browser library powered by Playwright.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-10-11T09:18:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "arcgis-js-api",
+                "description": "Minified version of the ArcGIS API for JavaScript",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-12-14T18:18:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "callmemaybe",
+                "description": "Single binary local DNS server that launch commands if you ask for specific URL.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2023-02-04T11:38:18Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "dns",
+                  "docker",
+                  "magic"
+                ]
+              },
+              {
+                "name": "node-serialport",
+                "description": "Access serial ports with JavaScript. Linux, OSX and Windows. Welcome your robotic JavaScript overlords. Better yet, program them!",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-04-20T20:45:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pyfranc",
+                "description": "Text language detection basic on trigrams.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-12-29T19:34:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ReactRandomExchange",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-26T13:13:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TG-AutoReport",
+                "description": "\u0411\u043e\u0442 \u0434\u043b\u044f \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u043d\u0438\u0445 \u0441\u043a\u0430\u0440\u0433 \u043d\u0430 \u0441\u0435\u043f\u0430\u0440\u0430\u0442\u0438\u0441\u0442\u0441\u044c\u043a\u0456 \u043a\u0430\u043d\u0430\u043b\u0438",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2022-03-08T10:39:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ssh2-sftp-client",
+                "description": "a client for SSH2 SFTP ",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-05-24T21:59:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NLLB-Translator",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2023-06-14T17:08:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "modern-unix",
+                "description": "A collection of modern/faster/saner alternatives to common unix commands, which is maintained.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-01-23T22:29:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zerotier-service",
+                "description": "functions for the zerotier-one service json api\",",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-20T23:19:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "reveal.js",
+                "description": "The HTML Presentation Framework",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-09-08T11:48:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "graphs",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-26T15:41:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "oneuptime",
+                "description": "OneUptime is the complete open-source observability platform.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-22T15:03:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rconf",
+                "description": "rconf is configuration server with web UI that will sync service configuration to remote machines instantly.",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2024-01-26T09:20:31Z",
+                "fork": false,
+                "topics": [
+                  "ansible",
+                  "automation",
+                  "ci",
+                  "configuration",
+                  "configuration-management",
+                  "devops-tools",
+                  "docker",
+                  "puppet",
+                  "salt"
+                ]
+              },
+              {
+                "name": "geekle-test",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-01T12:18:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ramda.py",
+                "description": "Python clone of Ramda.js",
+                "stargazers_count": 86,
+                "language": "Python",
+                "pushed_at": "2024-04-23T12:41:16Z",
+                "fork": false,
+                "topics": [
+                  "curry",
+                  "fp",
+                  "functional-programming",
+                  "itertools",
+                  "python",
+                  "ramda",
+                  "toolz"
+                ]
+              },
+              {
+                "name": "sanitize-html",
+                "description": "Clean up user-submitted HTML, preserving whitelisted elements and whitelisted attributes on a per-element basis. Built on htmlparser2 for speed and tolerance",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2019-11-22T14:14:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fish-gencomplete",
+                "description": "Generate fish completions using command's --help",
+                "stargazers_count": 6,
+                "language": "Shell",
+                "pushed_at": "2020-04-20T11:23:23Z",
+                "fork": false,
+                "topics": [
+                  "completion",
+                  "fish",
+                  "manpage"
+                ]
+              },
+              {
+                "name": "InstaReport",
+                "description": "This is a script which reports targeted instagram accounts. Until it gets banned",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-10-02T16:44:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fast-require",
+                "description": "Automatically require all packages from your package.json",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2021-04-18T10:54:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GitGrow",
+                "description": "An automation tool who follows, unfollows, stars, and unstars on autopilot so you can focus on coding while your community grows organically. ",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-09-19T14:16:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ChatTest",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2021-08-02T19:03:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bonjour-service",
+                "description": "A Bonjour/Zeroconf protocol implementation in TypeScript",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-30T00:51:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-shell",
+                "description": "A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-12-29T22:26:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fzf",
+                "description": ":cherry_blossom: A command-line fuzzy finder",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-12-26T16:09:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "eat",
+                "description": "Eat everything \ud83e\uddc0",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2021-11-24T13:57:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fparser",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2021-08-19T14:58:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pyramda",
+                "description": "Python package supporting heavy functional programming through currying. Translation of the Ramda library from javascript to python.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2018-08-06T08:36:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "stand_kubernetes_cluster",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2019-06-13T12:47:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Robotcorder",
+                "description": "A chrome extension that generates test scripts",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-12-15T03:40:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "debug",
+                "description": "tiny node.js & browser debugging utility for your libraries and applications",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2017-02-06T13:23:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "afinn",
+                "description": "AFINN sentiment analysis in Python",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-08-09T11:56:49Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:46.406214+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "profileId": "osint-profile-7e040e1686d3",
+  "target": "ADAMSmugwe",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:53.717475+00:00",
+  "completedAt": "2026-06-20T16:48:54.652837+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c16b57a6",
+      "lookupType": "github_context",
+      "target": "ADAMSmugwe",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ADAMSmugwe",
+            "name": "Adams Mugwe",
+            "type": "User",
+            "company": "Safaricom PLC",
+            "blog": "",
+            "location": "Nairobi,Kenya.",
+            "bio": "A machine learning engineer. \r\nHey Dev!\r\n",
+            "public_repos": 28,
+            "followers": 938,
+            "following": 2767,
+            "created_at": "2025-02-20T07:32:53Z",
+            "updated_at": "2026-06-19T07:32:44Z",
+            "html_url": "https://github.com/ADAMSmugwe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/200044252?v=4",
+            "repos": [
+              {
+                "name": "binwise",
+                "description": "AI-powered waste classification API \u2014 photograph any waste item and instantly know which bin it belongs in. Built with CLIP zero-shot learning and Django REST Framework",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-03-23T07:27:05Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "computer-vision",
+                  "cosine-similarity",
+                  "machine-learning",
+                  "zeroshot-classification"
+                ]
+              },
+              {
+                "name": "driverkit-ec-deadlock-case-study-on-MacOS",
+                "description": "A forensic investigation into a macOS watchdog crash (remoted timeout) triggered by a USB\u2011C Ethernet adapter, revealing a DriverKit/Embedded Controller deadlock on Intel Macs running developer builds.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-16T10:19:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ADAMSmugwe",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-06-01T07:18:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "eo-tides",
+                "description": "Tide modelling tools for large-scale satellite Earth observation analysis",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-05T18:10:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "speech-recognition",
+                "description": "This project implements a Speech Emotion Recognition system using Mel-Frequency Cepstral Coefficients (MFCCs) and Deep Learning. The goal is to classify emotions from speech audio data by extracting acoustic features and training neural networks to recognize emotional patterns.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-06-09T22:47:18Z",
+                "fork": false,
+                "topics": [
+                  "acoustic-features",
+                  "cepstral-coefficients",
+                  "deep-learning",
+                  "speech-analysis",
+                  "speech-recognition"
+                ]
+              },
+              {
+                "name": "codealpha_tasks",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-06-09T22:49:17Z",
+                "fork": false,
+                "topics": [
+                  "confusion-matrix",
+                  "creditworthiness-prediction",
+                  "hyperparameter-optimization",
+                  "lightgbm",
+                  "logistic-regression",
+                  "machine-learning",
+                  "mnist-classification",
+                  "random-forest",
+                  "shap",
+                  "xgboost"
+                ]
+              },
+              {
+                "name": "malariagen-data-python",
+                "description": "Analyse MalariaGEN data from Python",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-03-31T09:30:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Face-recognition-",
+                "description": "A comprehensive Python-based face recognition system that can identify known individuals in real-time using a webcam. The system uses OpenCV for video processing and the face_recognition library for face detection and encoding",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-02-12T05:57:48Z",
+                "fork": false,
+                "topics": [
+                  "cloud",
+                  "computer-vision",
+                  "face-recognition",
+                  "machine-learning",
+                  "opencv",
+                  "python"
+                ]
+              },
+              {
+                "name": "KaboyAgrovet_ecommerce",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-08-21T16:05:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mpesa-API-wrapper-for-node.js",
+                "description": "MPesa SDK is a comprehensive, developer-friendly Node.js library for integrating Safaricom's MPesa Daraja API into your applications. Built with TypeScript and designed for production use, it provides a clean, intuitive interface for all MPesa payment operations.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-09T12:48:01Z",
+                "fork": false,
+                "topics": [
+                  "daraja-api",
+                  "mpesa-sdk",
+                  "payment-integration",
+                  "stkpush"
+                ]
+              },
+              {
+                "name": "mkuwebproject",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2025-11-20T07:03:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Micro-Neutral-Network",
+                "description": "A feedforward neural network implemented with NumPy",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-03-30T15:18:02Z",
+                "fork": false,
+                "topics": [
+                  "backpropagation",
+                  "convolutional-layers",
+                  "dataaugmentation",
+                  "evaluation-metrics",
+                  "machine-learning",
+                  "neural-network",
+                  "numpy",
+                  "optimizers"
+                ]
+              },
+              {
+                "name": "data-structures-assignment",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2026-04-07T08:17:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "the-ai-ear",
+                "description": "The AI Ear is an outside-the-box, frontier, enterprise-grade AI system that gives machines the ability to truly hear \u2014 not just transcribe, but holistically understand the acoustic world in real time.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-03-27T16:07:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ktickets",
+                "description": "A full-stack ticketing platform supporting events, movies, and sports.Build with React(Frontend) and Flask + PostgreSQL (Backend)",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-31T17:49:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ADAKEV-co.",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-12-19T16:34:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scholarship_portal",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-10T11:16:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "eVote-Kenya",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-24T13:02:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pytorch",
+                "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-05T20:04:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "portfolio",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-02-26T08:53:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "perch-farm",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-27T21:48:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Leetcode-daily-repository",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-18T07:41:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Adams-Mugwe-CV",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-13T09:20:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sureodds",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-05T06:15:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-fe-reactjs",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-11T08:10:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ALX_Simple_Quiz",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-07T07:39:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Form-Creation-Validation",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-07T07:26:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JS-Fundamentals",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-14T09:29:26Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:54.652010+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

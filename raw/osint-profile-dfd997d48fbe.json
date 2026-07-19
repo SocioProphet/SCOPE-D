@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-dfd997d48fbe",
+  "target": "sajjad-salam",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:57.215479+00:00",
+  "completedAt": "2026-06-21T15:28:58.960011+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-7420c9db",
+      "lookupType": "github_context",
+      "target": "sajjad-salam",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "sajjad-salam",
+            "name": "sajjad_salam",
+            "type": "User",
+            "company": "freelancer",
+            "blog": "",
+            "location": "iraq-baghdad",
+            "bio": "developer\r\n\r\n",
+            "public_repos": 67,
+            "followers": 3035,
+            "following": 4827,
+            "created_at": "2022-08-10T10:27:49Z",
+            "updated_at": "2026-01-23T12:58:55Z",
+            "html_url": "https://github.com/sajjad-salam",
+            "avatar_url": "https://avatars.githubusercontent.com/u/110976991?v=4",
+            "repos": [
+              {
+                "name": "control_system",
+                "description": "\u062a\u062d\u0643\u0645 \u0628 \u0646\u0636\u0627\u0645\u0643 \u0639\u0646 \u0637\u0631\u064a\u0642 \u0628\u0648\u062a \u062a\u064a\u0644\u064a\u062c\u0631\u0627\u0645 ",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-04-06T06:16:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vodu_downloader",
+                "description": "\u0627\u062f\u0627\u0629 \u062a\u062d\u0645\u064a\u0644 \u0645\u0633\u0644\u0633\u0644\u0627\u062a \u0645\u0646 \u0641\u0648\u062f\u0648",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-05-31T12:24:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PdfTxtBot",
+                "description": "\u0628\u064a \u062f\u064a \u0627\u0641 \u0627\u0644\u0649 \u0646\u0635 \u0627\u0648 \u0635\u0648\u0631",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-06-05T09:40:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sajjad-salam",
+                "description": "\u0645\u0644\u0641\u064a \u0627\u0644\u0634\u062e\u0635\u064a",
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2026-01-19T13:50:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "misba7",
+                "description": "\u0645\u0650\u0635\u0652\u0628\u064e\u0627\u062d \u0647\u0648 \u0625\u0637\u0627\u0631 \u0639\u0645\u0644 \u0645\u0646\u0647\u062c\u064a \u0648\u0645\u064f\u062d\u0643\u0645 \u0644\u0647\u0646\u062f\u0633\u0629 \u0627\u0644\u0633\u064a\u0627\u0642 (Context Engineering)\u060c \u0645\u0635\u0645\u0645 \u0644\u062a\u062d\u0648\u064a\u0644 \u0646\u0645\u0627\u0630\u062c \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0645\u0646 \u0623\u062f\u0648\u0627\u062a \u062a\u0648\u0644\u064a\u062f \u0639\u0627\u0645\u0629 \u0625\u0644\u0649 \u0623\u0646\u0638\u0645\u0629 \u062a\u0641\u0643\u064a\u0631 \u0645\u062a\u062e\u0635\u0635\u0629 \u0648\u0645\u0648\u062c\u0647\u0629 \u0646\u062d\u0648 \u0647\u062f\u0641 \u0645\u062d\u062f\u062f.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-08-21T09:38:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WhatsAppBotPro",
+                "description": "Automa\u00e7\u00e3o desktop de alta performance para envio massivo de mensagens. Desenvolvido em Python, Selenium e PySide6 (Interface Dark), simula navega\u00e7\u00e3o humana segura. Conecte via QR Code, insira a lista de alvos e execute. Inclui logs em tempo real, delay anti-bloqueio e sess\u00e3o persistente.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-02-20T08:08:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "senmana",
+                "description": "\u062a\u0637\u0628\u064a\u0642 \u0633\u064a\u0646\u0645\u0627\u0646\u0627 \u0644\u0644\u062a\u062d\u0645\u064a\u0644",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-02-16T16:12:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "own-gpt",
+                "description": "build your AI model  using python ",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-11-27T10:29:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "translator-bot",
+                "description": "vip translation for over 50 lang ",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-09-25T18:25:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "glow_effect_for_images",
+                "description": "\u062a\u0623\u062b\u064a\u0631 \u0627\u0644\u0627\u0636\u0627\u0626\u0629 \u0644\u0644\u0635\u0648\u0631 ",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-08-23T19:33:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "logo-generator",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-06-21T05:11:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api_gpt",
+                "description": "OpenAI API Free Reverse Proxy",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-05-29T19:18:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "theme-termux",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Shell",
+                "pushed_at": "2024-05-08T05:20:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubuntu",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2024-05-04T15:31:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "auto-follow-github",
+                "description": "script to automatically follow github accounts ",
+                "stargazers_count": 21,
+                "language": "Python",
+                "pushed_at": "2024-06-06T20:52:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai_bot_telegram",
+                "description": "\u0628\u0648\u062a \u062a\u064a\u0644\u064a\u062c\u0631\u0627\u0645 \u0644\u0644\u0631\u062f\u0648\u062f (\u0645\u062d\u0627\u062f\u062b\u0629 \u0641\u0642\u0637)",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-07-12T08:05:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DRAW",
+                "description": "\u0644\u0648\u063a\u0648 \u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0628\u0627\u064a\u062b\u0648\u0646",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2024-06-06T14:38:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "extract_text_from_pdf",
+                "description": "\u0633\u0643\u0631\u0628\u062a \u0627\u0633\u062a\u062e\u0631\u0627\u062c \u0627\u0644\u0646\u0635\u0648\u0635 \u0645\u0646 \u0645\u0644\u0641\u0627\u062a \u0628\u064a \u062f\u064a \u0627\u0641 + \u0628\u0648\u062a \u062a\u064a\u0644\u064a\u062c\u0631\u0627\u0645",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-06-05T09:18:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dxn",
+                "description": "\u062a\u0637\u0628\u064a\u0642 \u0645\u0628\u064a\u0639\u0627\u062a \u0644 \u0634\u0631\u0643\u0629 dxn ",
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2023-07-14T18:16:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "isp_website",
+                "description": "\u0645\u0648\u0642\u0639 \u0645\u0632\u0648\u062f \u0634\u0628\u0643\u0629 \u0627\u0646\u062a\u0631\u0646\u062a",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-04-26T19:26:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GPTsSystemPrompts",
+                "description": "Discover the leaked system instructions and prompts for ChatGPT's custom GPT plugins. A Database of ChatGPT's top trending + most used GPT's Custom Instructions Prompt LEAKED and ChatGPT's custom GPT plugins secret system prompts instructions REVEALED - Prompt Injections to Prompt Leaking",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-10-09T02:03:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "email_sender_bot",
+                "description": "\u0628\u0648\u062a \u0631\u0641\u0639 \u062e\u0627\u0631\u062c\u064a",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-04-10T18:15:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "time-name-telegram",
+                "description": "\u0633\u0627\u0639\u0629 \u0628\u062c\u0627\u0646\u0628 \u0627\u0633\u0645 \u062d\u0633\u0627\u0628\u0643 \u062a\u064a\u0644\u064a\u062c\u0631\u0627\u0645",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-04-09T10:25:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "youtube_downloader_bot",
+                "description": "\u0628\u0648\u062a \u062a\u064a\u0644\u064a\u062c\u0631\u0627\u0645 \u0644\u0644\u0628\u062d\u062b \u0648\u0627\u0644\u062a\u062d\u0645\u064a\u0644 \u0645\u0646 \u0627\u0644\u064a\u0648\u062a\u064a\u0648\u0628",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-04-09T19:00:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lite",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-03-11T20:55:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "basha-1",
+                "description": "\u0645\u0648\u0642\u0639 \u0628\u0627\u0634\u0647",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2024-03-23T12:10:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tree-of-thought-llm",
+                "description": "Tree of Thoughts \u0641\u064a \u0647\u0646\u062f\u0633\u0629 \u0627\u0644\u062a\u0644\u0642\u064a\u0646",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-02-12T04:59:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "telegram-pdf-bot",
+                "description": "A Telegram bot that can do a lot of things related to PDF files",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-03-15T08:16:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "python",
+                "description": "\u0645\u0644\u0627\u062d\u0636\u0627\u062a \u0628\u0627\u064a\u062b\u0648\u0646 ",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-03-14T04:06:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Portfolio-Using-Flutter",
+                "description": "\u062a\u0637\u0628\u064a\u0642 \u0628\u0648\u0631\u062a\u0641\u0648\u0644\u064a\u0648",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-02-23T08:31:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "transfer_member",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-03-11T15:17:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "virtual_emails",
+                "description": "\u0628\u0648\u062a \u062a\u064a\u0644\u064a\u062c\u0631\u0627\u0645 \u0639\u0645\u0644 \u0627\u064a\u0645\u064a\u0644\u0627\u062a \u0648\u0647\u0645\u064a\u0629 \u0645\u0639 \u0648\u0635\u0648\u0644 \u0631\u0633\u0627\u0626\u0644 \u0627\u0644\u062a\u062d\u0642\u0642",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-04-06T19:43:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "merge_pdf",
+                "description": "\u062f\u0645\u062c \u0645\u0644\u0641\u0627\u062a pdf",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-04-06T20:03:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aaaar",
+                "description": "\u0628\u0648\u062a \u062a\u0634\u063a\u064a\u0644 \u0627\u063a\u0627\u0646\u064a",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-03-08T11:50:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Prompt-Engineering",
+                "description": "\u0647\u0646\u062f\u0633\u0629 \u0627\u0644\u062a\u0644\u0642\u064a\u0646",
+                "stargazers_count": 6,
+                "language": "MDX",
+                "pushed_at": "2024-02-22T15:40:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "report_bot",
+                "description": "\u0643\u0627\u062a\u0628 \u062a\u0642\u0627\u0631\u064a\u0631 \u0628\u0623\u0633\u062a\u062e\u062f\u0627\u0645 \u0646\u0645\u0648\u0630\u062c gpt2",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-04-05T19:21:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "notes_app",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2024-03-12T04:03:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ocr-ar",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-06-04T10:50:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ocr-ar-en",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-06-04T11:02:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "code_war",
+                "description": "\u062d\u0631\u0628 \u0627\u0644\u0623\u0643\u0648\u0627\u062f",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-06-01T12:46:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python_scripts",
+                "description": "\u0633\u0648\u0631\u0633\u0627\u062a \u0628\u0627\u064a\u062b\u0648\u0646 \u0645\u0641\u064a\u062f\u0629",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2023-08-22T18:15:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "coffe_shop_app",
+                "description": "\u062a\u0637\u0628\u064a\u0642 \u0643\u0648\u0641\u064a \u0634\u0648\u0628",
+                "stargazers_count": 2,
+                "language": "Makefile",
+                "pushed_at": "2023-01-20T04:03:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "todo",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-05T11:29:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "javascript_learning",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-25T19:37:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "javascript_learn",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2022-12-23T16:08:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "estate_food",
+                "description": "\u062a\u0637\u0628\u064a\u0642 \u0644 \u0645\u0637\u0639\u0645 estate food",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2023-04-15T08:31:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "3D-Flip-Neon-Cards-with-Animation",
+                "description": "\u0627\u0646\u0645\u064a\u0634\u0646 \u0643\u0627\u0631\u062f",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-10-24T07:20:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sajjad",
+                "description": "\u0645\u0648\u0642\u0639\u064a \u0627\u0644\u0634\u062e\u0635\u064a",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2024-02-04T12:27:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "electric_store",
+                "description": "Electronics, mobile devices and laptops store project",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2022-11-18T18:49:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "messageApp",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-09-21T17:58:31Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:58.959244+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

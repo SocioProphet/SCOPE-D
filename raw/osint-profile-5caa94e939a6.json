@@ -1,0 +1,352 @@
+{
+  "profileId": "osint-profile-5caa94e939a6",
+  "target": "Robi2810",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:51.695676+00:00",
+  "completedAt": "2026-06-21T15:30:52.715891+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b31b8fea",
+      "lookupType": "github_context",
+      "target": "Robi2810",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Robi2810",
+            "name": "Rodion",
+            "type": "User",
+            "company": "Sberbank",
+            "blog": "https://github.com/Robi2810",
+            "location": "Moscow",
+            "bio": "DevOps @Sber",
+            "public_repos": 31,
+            "followers": 1803,
+            "following": 10176,
+            "created_at": "2022-02-09T14:28:22Z",
+            "updated_at": "2026-06-16T15:41:19Z",
+            "html_url": "https://github.com/Robi2810",
+            "avatar_url": "https://avatars.githubusercontent.com/u/99342659?v=4",
+            "repos": [
+              {
+                "name": "IDZ3",
+                "description": "Hard work with Assembly",
+                "stargazers_count": 3,
+                "language": "Assembly",
+                "pushed_at": "2022-11-27T18:08:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OS-idz-4",
+                "description": "Interesting UDP connection",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2023-06-11T20:57:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Robi2810",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-06-22T12:53:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UralKal",
+                "description": "creating web-site ",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-04T18:14:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Degenerator_Vishnyakova",
+                "description": "It's simple json-validator, you can use it to add restrictions to fields",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2023-07-14T20:48:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OS_IDZ_3",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2023-05-20T11:13:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SD-HW2",
+                "description": "Software Design HW2",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2022-12-28T11:30:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sem_OS_11",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2023-05-22T11:11:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sem_OS_12",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2023-05-22T11:01:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OS_IDZ_1",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2023-03-19T20:52:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sezam_redesign",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-09-15T19:10:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sezam",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-09T19:46:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "textual",
+                "description": "The lean application framework for Python.  Build sophisticated user interfaces with a simple Python API. Run your apps in the terminal and a web browser.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-01T10:37:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WSFA",
+                "description": "3rd course work",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2024-04-07T22:23:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebServiceFront",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-19T07:10:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "colloc_na_0",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-06-19T16:08:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CampusTravel",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-03-12T13:32:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "avs-idz-1",
+                "description": "\u0418\u0442\u043e\u0433\u043e\u0432\u043e\u0435 \u0434\u043e\u043c\u0430\u0448\u043d\u0435\u0435 \u0437\u0430\u0434\u0430\u043d\u0438\u0435 1 \u043f\u043e \u0410\u0412\u0421",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-10-23T17:16:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sitepoint-github-profile",
+                "description": "Create a GitHub Profile README",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-11-07T09:58:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "IDZ2",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Assembly",
+                "pushed_at": "2022-11-13T19:04:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NIS",
+                "description": "presentation",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-01-20T14:41:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "colloc",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2023-02-06T16:10:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "methodologies_hse_2022",
+                "description": "\u041d\u0418\u0421 \"\u041c\u0435\u0442\u043e\u0434\u043e\u043b\u043e\u0433\u0438\u0438 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0438 \u041f\u041e\", \u0424\u041a\u041d \u0412\u0428\u042d, \u0421\u0442\u0430\u0440\u0438\u0447\u043a\u043e\u0432 \u041d.\u042e., 2022/2023",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-01-20T15:22:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DZ_5",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2023-03-06T14:37:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DZ_4",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2023-03-06T13:58:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OS_IDZ_1w",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-19T11:27:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OS_IDZ_2",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2023-04-23T17:49:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeepSpace",
+                "description": "\u041a\u0443\u0440\u0441\u043e\u0432\u0430\u044f \u0440\u0430\u0431\u043e\u0442\u0430",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2023-05-22T10:38:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sem_OS_10",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2023-05-22T11:14:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "idz_kpo_4",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2023-06-06T20:46:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IDZ_1",
+                "description": "\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u043e\u0435 \u0434\u043e\u043c\u0430\u0448\u043d\u0435\u0435 \u0437\u0430\u0434\u0430\u043d\u0438\u0435 \u21161 \u0412\u0430\u0440\u0438\u0430\u043d\u0442 14   \u0412\u0438\u0448\u043d\u044f\u043a\u043e\u0432 \u0420\u043e\u0434\u0438\u043e\u043d \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0438\u0447 \u0433\u0440\u0443\u043f\u043f\u0430 \u0411\u041f\u0418213",
+                "stargazers_count": 0,
+                "language": "Assembly",
+                "pushed_at": "2022-10-23T19:42:14Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:52.715135+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

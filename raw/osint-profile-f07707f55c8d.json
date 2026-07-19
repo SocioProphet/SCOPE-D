@@ -1,0 +1,136 @@
+{
+  "profileId": "osint-profile-f07707f55c8d",
+  "target": "nastaranmofakhami",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:30.495509+00:00",
+  "completedAt": "2026-06-21T15:29:30.869998+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a4e45e6e",
+      "lookupType": "github_context",
+      "target": "nastaranmofakhami",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "nastaranmofakhami",
+            "name": "Nastaran",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "A member of Turing Research Team",
+            "public_repos": 7,
+            "followers": 2582,
+            "following": 4873,
+            "created_at": "2023-11-07T12:20:40Z",
+            "updated_at": "2026-04-26T15:32:24Z",
+            "html_url": "https://github.com/nastaranmofakhami",
+            "avatar_url": "https://avatars.githubusercontent.com/u/150142712?v=4",
+            "repos": [
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-15T07:38:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubookshop",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-24T14:15:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-19T09:27:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nastaranmofakhami",
+                "description": null,
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2024-11-02T18:27:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sakhtemandade",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-01-01T18:50:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sakhteman",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2024-08-29T18:53:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testpush",
+                "description": "Turing research group.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-02-14T09:51:22Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:30.868969+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

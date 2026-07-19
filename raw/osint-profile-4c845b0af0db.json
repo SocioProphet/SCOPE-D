@@ -1,0 +1,557 @@
+{
+  "profileId": "osint-profile-4c845b0af0db",
+  "target": "mustafacagri",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:37.803005+00:00",
+  "completedAt": "2026-06-20T13:52:38.430526+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-2c4608be",
+      "lookupType": "github_context",
+      "target": "mustafacagri",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mustafacagri",
+            "name": "Mustafa \u00c7a\u011fr\u0131 G\u00fcven",
+            "type": "User",
+            "company": null,
+            "blog": "http://www.mustafacagri.com/",
+            "location": "\u0130stanbul / \u2708\ufe0f \ud83c\udf0e",
+            "bio": "\ud83d\udc7e Senior Frontend Wizard \ud83c\udfa9 Vue.js 3 \u2604 Nuxt.js 3 \ud83c\udf1f Next.js 15 \ud83c\udf20 React.js 19 \ud83d\udcbb Javascript \ud83e\udd84 Node.js \u2603 Express.js \ud83c\udf38 Pinia \ud83d\udd25 Typescript \ud83c\udfa8 Tailwind ",
+            "public_repos": 42,
+            "followers": 14722,
+            "following": 122963,
+            "created_at": "2014-05-05T12:47:31Z",
+            "updated_at": "2026-06-16T08:27:01Z",
+            "html_url": "https://github.com/mustafacagri",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7488394?v=4",
+            "repos": [
+              {
+                "name": "vue3-chatgpt-ai",
+                "description": "\u2b50\ufe0f The most comprehensive ChatGPT repo with Vue 3: Vue ChatGPT AI! \u2b50\ufe0f Unlock the power of AI-driven conversations with OpenAI. \ud83d\ude80 Enjoy real-time messaging, seamless image/audio support, and Firebase integration. Built on Vue 3 & Vuetify 3, with Pinia for robust state management. Revolutionize user interactions with advanced technology! \ud83c\udf89",
+                "stargazers_count": 118,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-22T00:29:54Z",
+                "fork": false,
+                "topics": [
+                  "chatgpt",
+                  "firebase",
+                  "firebase-database",
+                  "firebase-realtime-database",
+                  "firebase-sdk",
+                  "firebase-storage",
+                  "openai",
+                  "openai-api",
+                  "openai-chatgpt",
+                  "pinia",
+                  "vue",
+                  "vue-ai",
+                  "vue-chatgpt",
+                  "vue3",
+                  "vuetify",
+                  "vuetify3"
+                ]
+              },
+              {
+                "name": "ai-quality-gate",
+                "description": "\ud83d\ude80 Kill the Junior AI Era. \ud83e\udd16 Level up your AI code to Principal standards. No more sloppy lines or junior mistakes. Automated ESLint \u2728 TypeScript \ud83d\udd27 Prettier \ud83c\udfa8 SonarQube \ud83d\udee1\ufe0f Security \ud83d\udd12 Complexity \ud83d\udcca in seconds. High-stakes quality, forced to ship only the best. \u26a1\ud83c\udfc6 Goodbye, bad code. Hello, Principal Engineer. \ud83d\ude80\u2728",
+                "stargazers_count": 32,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-01T21:48:34Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "automation",
+                  "codequality",
+                  "coding",
+                  "cursor",
+                  "devtools",
+                  "mcp",
+                  "mcp-server",
+                  "opensource",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "select2",
+                "description": "Select2 Generator: Make Your Own Select2!",
+                "stargazers_count": 14,
+                "language": "HTML",
+                "pushed_at": "2020-11-11T08:24:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "javascript-array-functions",
+                "description": "Javascript'te i\u015fimizi kolayla\u015ft\u0131ran ve s\u0131kl\u0131kla kulland\u0131\u011f\u0131m\u0131z array fonksiyonlar\u0131 ve bunlar\u0131n \u00f6rnekleri",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-10T14:31:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "find-mentor",
+                "description": "Find & match mentees and mentors!",
+                "stargazers_count": 8,
+                "language": "Vue",
+                "pushed_at": "2021-01-17T13:43:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "babel-watch-vanilla-js-boilerplate",
+                "description": "we are using babel and watch packages to develop our project",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2021-08-08T13:02:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-data-children-parent",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Vue",
+                "pushed_at": "2021-01-24T13:23:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node-express-mongodb-rest-api-boilerplate",
+                "description": "\ud83d\udc4d A boilerplate for building REST APIs in Node.js using Express.js and mongoose in ES6+",
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2021-10-24T17:13:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "promise-callback-async-await",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2022-09-04T19:56:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue3-pinia-typescript",
+                "description": "Here is a Vue 3 & Pinia & Typescript boilerplate for beginners",
+                "stargazers_count": 11,
+                "language": "Vue",
+                "pushed_at": "2023-02-12T17:05:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "materio-vuetify-vuejs-admin-template-free",
+                "description": "Production Ready, Carefully Crafted, Extensive Vuetifty Free Admin Template \ud83e\udd29",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2022-10-17T12:26:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "turkcekaynaklar-com",
+                "description": "\u00d6zenle se\u00e7ilmi\u015f T\u00fcrk\u00e7e kaynaklar listesi En: Curated list of Turkish resources ",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2023-02-13T14:00:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-todos",
+                "description": "\u2728 A simple and comprehensive Todo application built using React.js, Redux Toolkit, React Router, and Material-UI (MUI) \ud83c\udf89",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-13T19:57:40Z",
+                "fork": false,
+                "topics": [
+                  "mui",
+                  "react",
+                  "react-router",
+                  "redux",
+                  "redux-toolkit",
+                  "redux-toolkit-query"
+                ]
+              },
+              {
+                "name": "storybook-vue-3",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Vue",
+                "pushed_at": "2023-11-26T23:55:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-js-footer",
+                "description": "Scss (Sass), Vue Components, Typescript, Jest (Unit Test)",
+                "stargazers_count": 11,
+                "language": "Vue",
+                "pushed_at": "2024-02-22T21:09:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue3-runtime-template-test",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2024-04-21T19:45:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue3-runtime-template-next",
+                "description": "Vue component for compiling templates on the fly using a v-html like API",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-21T19:47:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue-mask-next",
+                "description": "\u2b50\ufe0f vue-mask-next: Empower your Vue 3 applications with effortless input field masking. Seamlessly apply custom patterns for enhanced user experience and data accuracy. \ud83c\udf89",
+                "stargazers_count": 13,
+                "language": "Vue",
+                "pushed_at": "2024-05-07T21:59:21Z",
+                "fork": false,
+                "topics": [
+                  "input",
+                  "mask",
+                  "vue",
+                  "vue-input",
+                  "vue-input-mask",
+                  "vue-mask",
+                  "vue-masked-input",
+                  "vue3",
+                  "vuejs",
+                  "vuejs3"
+                ]
+              },
+              {
+                "name": "vuetify",
+                "description": "\ud83d\udc09 Vue Component Framework",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-05-23T11:59:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue-latest-table",
+                "description": "data table for vue latest versions all time, currently it is perfect with vue 3",
+                "stargazers_count": 19,
+                "language": "Vue",
+                "pushed_at": "2024-05-23T15:00:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue3-highcharts-tailwind-boilerplate",
+                "description": "\u26a1\ufe0f Supercharge Your Data Visualization: Vue 3 HighCharts Tailwind Boilerplate! \u26a1\ufe0f Dive into dynamic charts and responsive UI with ease. \ud83c\udf1f Harness the power of Vue 3, Tailwind CSS, and Pinia for lightning-fast state management. \ud83d\ude80 Level up your web apps with modern technologies and a sleek, modular architecture!",
+                "stargazers_count": 22,
+                "language": "Vue",
+                "pushed_at": "2024-07-01T12:10:39Z",
+                "fork": false,
+                "topics": [
+                  "boilerplate",
+                  "highcharts",
+                  "pinia",
+                  "tailwind",
+                  "vue3"
+                ]
+              },
+              {
+                "name": "github-readme-stats",
+                "description": ":zap: Dynamically generated stats for your github readmes",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-22T00:33:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-vue",
+                "description": "\ud83c\udf89 A curated list of awesome things related to Vue.js",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2024-07-14T22:20:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue-companies-directory-by-country",
+                "description": "Discover Vue.js adopters worldwide! \ud83d\ude80 This repository showcases companies using Vue.js, organized by country. \ud83c\udf10 Explore which companies are hiring with hybrid or remote options, and dive into Vue.js opportunities globally. \ud83c\udf1f Join us in celebrating Vue.js excellence across industries and find your next Vue.js adventure! \ud83d\udcbc",
+                "stargazers_count": 42,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-15T21:33:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mevn-boilerplate",
+                "description": "\u2b50\ufe0f  the most comprehensive mevn stack boilerplate. \u2b50\ufe0f mongodb - express - vue 3 (admin dashboard) - nodejs - nuxt 3 (client) boilerplate (pinia, tiptap, slug, vuetify and vuexy and more...)  \ud83c\udf89",
+                "stargazers_count": 245,
+                "language": "Vue",
+                "pushed_at": "2024-09-17T20:50:35Z",
+                "fork": false,
+                "topics": [
+                  "boilerplate",
+                  "boilerplate-front-end",
+                  "express",
+                  "express-api",
+                  "expressjs",
+                  "material-ui",
+                  "mevn",
+                  "mevn-boilerplate",
+                  "mevn-stack",
+                  "nodejs",
+                  "nuxt",
+                  "nuxt3",
+                  "pinia",
+                  "store",
+                  "vue",
+                  "vue3",
+                  "vue3-admin",
+                  "vuejs",
+                  "vuetify",
+                  "vuexy"
+                ]
+              },
+              {
+                "name": "litelement-employee-management",
+                "description": "\ud83d\udcf1 Modern employee management system built with LitElement & Web Components. Simplified HR tasks with Vite bundling, Vitest testing, local storage, and multi-language support. Responsive UI with no external frameworks! \u2728",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-04T22:05:38Z",
+                "fork": false,
+                "topics": [
+                  "hr",
+                  "javascript",
+                  "litelement",
+                  "opensource",
+                  "vite",
+                  "vitest",
+                  "webcomponents"
+                ]
+              },
+              {
+                "name": "next-stripe-supabase-tailwind-typescript",
+                "description": "\ud83d\ude80 Production-ready Next.js SaaS Starter | \ud83d\udcb3 Stripe Payments & Subscriptions | \ud83d\udd10 Supabase Auth & Real-time DB | \ud83c\udfa8 Tailwind UI | \ud83d\udcf1 Responsive Design | \u26a1 TypeScript | \ud83c\udf19 Dark Mode | \ud83d\udcca Analytics Dashboard | \ud83c\udf10 SEO Ready | \u2728 The ultimate boilerplate to launch your SaaS fast!",
+                "stargazers_count": 42,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-28T10:31:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-threejs-easeljs-drawing-app",
+                "description": "\ud83d\ude80 Create cool graphics with our Tailwind & React \u269b\ufe0f drawing app! Use Three.js \ud83c\udf10, EaselJS \ud83c\udfa8, Vite \u26a1, TypeScript \ud83d\udd27. Easily draw shapes, move them around, and see them in 3D! Great for developers who want to explore their creativity! \u2728",
+                "stargazers_count": 24,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-18T02:24:10Z",
+                "fork": false,
+                "topics": [
+                  "drawing",
+                  "drawing-app",
+                  "drawing-application",
+                  "easel",
+                  "easeljs",
+                  "easeljs-graphics",
+                  "react",
+                  "react-hooks",
+                  "reactjs",
+                  "three-js",
+                  "threejs",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "reactcompanies",
+                "description": "\ud83c\udf1f Join ReactCompanies.com! \ud83c\udf1f A hub for React.js \u269b\ufe0f and Next.js \ud83d\udd17 developers to connect with top job opportunities. \ud83d\ude80 Built with TypeScript, TailwindCSS, and Supabase, we empower growth for developers and companies alike. \ud83d\udcbc\u2728 Discover your next career move or find the best talent today! \ud83c\udf10\ud83d\udc99",
+                "stargazers_count": 29,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-16T21:07:59Z",
+                "fork": false,
+                "topics": [
+                  "freelancer",
+                  "i18n",
+                  "next",
+                  "next14",
+                  "react",
+                  "react18",
+                  "supabase",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "mustafacagri",
+                "description": null,
+                "stargazers_count": 31,
+                "language": null,
+                "pushed_at": "2026-05-30T00:45:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "andrej-karpathy-skills",
+                "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-20T10:05:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue-composition-api-examples",
+                "description": "Vue 3, Vue.js Composition Api, Vue Js Progress, Vue Js Counter, Sass",
+                "stargazers_count": 10,
+                "language": "Vue",
+                "pushed_at": "2020-12-21T20:40:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoDivGeneratorJquery",
+                "description": "Auto Div Generator w/ jQuery & Bootstrap & Font Awesome",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2020-10-15T10:33:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-task-manager",
+                "description": "This project contains most of Vue.js features (Intermediate+ Level)",
+                "stargazers_count": 36,
+                "language": "Vue",
+                "pushed_at": "2020-11-24T19:02:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jquery.maskedinput",
+                "description": "jQuery Masked Input Plugin",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2017-12-10T20:02:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kodilan-com-frontend",
+                "description": "Frontend codebase of kodilan.com",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2021-01-03T00:04:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue-js-progress",
+                "description": "With Vue Js Progress, you will have the opportunity to create your own animated progress bars.",
+                "stargazers_count": 12,
+                "language": "Vue",
+                "pushed_at": "2020-10-20T20:32:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-pdf-viewer",
+                "description": "Vue Pdf Viewer is a simple and creative pdf reader for Vue.js.",
+                "stargazers_count": 18,
+                "language": "Vue",
+                "pushed_at": "2020-11-13T13:55:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-js-login",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "Vue",
+                "pushed_at": "2020-11-10T21:17:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-js-counter",
+                "description": "With Vue Counter, you can count up or down between two numbers.",
+                "stargazers_count": 14,
+                "language": "Vue",
+                "pushed_at": "2020-10-19T19:33:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CountriesAndCapitalCitiesVuejsGame",
+                "description": "Countries and Capital Cities Vue.js Game",
+                "stargazers_count": 11,
+                "language": "Vue",
+                "pushed_at": "2020-10-15T19:32:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-js-excel",
+                "description": "Easily export your json data to excel or import your excel file to your json data",
+                "stargazers_count": 13,
+                "language": "Vue",
+                "pushed_at": "2020-11-10T08:24:08Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:38.429654+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

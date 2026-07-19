@@ -1,0 +1,136 @@
+{
+  "profileId": "osint-profile-c954a32930fa",
+  "target": "sarahofai",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:27.602259+00:00",
+  "completedAt": "2026-06-21T15:29:27.997150+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-56a4a03e",
+      "lookupType": "github_context",
+      "target": "sarahofai",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "sarahofai",
+            "name": "Blue",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 7,
+            "followers": 2630,
+            "following": 45503,
+            "created_at": "2025-07-13T21:13:51Z",
+            "updated_at": "2026-04-16T08:09:44Z",
+            "html_url": "https://github.com/sarahofai",
+            "avatar_url": "https://avatars.githubusercontent.com/u/220635541?v=4",
+            "repos": [
+              {
+                "name": "awesome-workflow-automation",
+                "description": "A curated list of Workflow Automation  Software, Engines and Tools",
+                "stargazers_count": 49,
+                "language": null,
+                "pushed_at": "2025-12-20T12:03:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-vibe-coding",
+                "description": "A hand-picked collection of tools and resources for Vibe Coding",
+                "stargazers_count": 58,
+                "language": null,
+                "pushed_at": "2025-12-09T07:29:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-ai-tools",
+                "description": "A curated list of Artificial Intelligence Top Tools",
+                "stargazers_count": 49,
+                "language": null,
+                "pushed_at": "2025-12-13T04:24:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "how-to-vibecode",
+                "description": "A complete  vibe coding guide with python as a complete beginner.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-04-19T14:13:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sarahofai",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-04-16T08:13:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-substack",
+                "description": "A curated list of the best Substacks, resources, and tools for readers, writers, and creators on Substack.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2026-02-26T23:07:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zigbooks",
+                "description": "a list of top best zig programming language books",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-04-24T08:59:21Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:27.996133+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

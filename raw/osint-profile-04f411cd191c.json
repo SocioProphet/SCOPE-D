@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-04f411cd191c",
+  "target": "apple-m3",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:20.927237+00:00",
+  "completedAt": "2026-06-20T16:49:22.871089+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-393a72ee",
+      "lookupType": "github_context",
+      "target": "apple-m3",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "apple-m3",
+            "name": "Apple-M3",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Full Stack Expert with rich experience in building and developing blockchain solutions.\r\nAlso, Experienced Reverse Engineer",
+            "public_repos": 80,
+            "followers": 783,
+            "following": 1775,
+            "created_at": "2024-06-05T00:35:29Z",
+            "updated_at": "2025-12-11T12:42:29Z",
+            "html_url": "https://github.com/apple-m3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/171753180?v=4",
+            "repos": [
+              {
+                "name": "laravel-vue-admin-panel",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Vue",
+                "pushed_at": "2025-03-26T17:20:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-dapp-nft-min",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-10T17:24:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "swap-solidity",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Solidity",
+                "pushed_at": "2025-01-30T23:45:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pandore",
+                "description": "A shellcode loader powered by a web panel.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-11T18:16:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VirtualXP",
+                "description": "Virtual Machine running on a Web browser",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-01-25T20:18:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "win32.run",
+                "description": "Windows XP in the browser, with a File System, programs, XP-style File Picker and Saver dialogs, 3rd-party program, etc.  \ud83e\udd84 \ud83d\ude80 \ud83d\udcbd",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-02-24T17:50:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hooking-by-example",
+                "description": "A series of increasingly complex programs demonstrating function hooking on 64 bit Windows. Culminating in a program that hooks mspaint to make it always paint orange.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-03-24T02:21:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hook_dll",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2025-07-29T23:39:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-game-security",
+                "description": "awesome game security [Welcome to PR]",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-27T02:50:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ProcessHider_1",
+                "description": "Hide Process From Task Manager using Usermode API Hooking",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-08-26T15:06:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ProcessHider",
+                "description": "Post-exploitation tool for hiding processes from monitoring applications",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-06-18T19:02:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ReflectiveDLLInjection",
+                "description": "Reflective DLL injection is a library injection technique in which the concept of reflective programming is employed to perform the loading of a library from memory into a host process.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-09-03T17:48:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MemoryModule",
+                "description": "Library to load a DLL from memory.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-03T15:08:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "EaseFilterCPPExample",
+                "description": "EaseFilter File Security Filter Driver SDK. EaseFilter Comprehensive File Security SDK is a set of file system filter driver software development kit which includes file monitor filter driver, file access control filter driver, transparent file encryption filter driver, process filter driver and registry filter driver. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-29T01:17:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "picfolio",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2025-03-26T17:21:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Alzomar",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T17:23:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smart-contract-test",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T16:44:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Scraping-Betting-App",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-03-26T17:09:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "samples-typescript",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T17:09:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VinHide",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T17:10:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel-ecommerce",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2025-03-26T17:11:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DailyMovie",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T17:16:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "drag_drop_laravel",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2025-03-26T17:17:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Auto_DeleteSpecficFiles",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "PowerShell",
+                "pushed_at": "2025-03-26T17:17:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "amazon_scraper",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-03-26T17:18:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fcfs-bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T16:41:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crypto-trading-bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-03-26T16:40:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TLS-Twitter-Bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T16:36:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solid-template-wails",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-03-26T16:34:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PumpFun",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-26T16:32:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ton-dns-contract",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T16:30:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ton-token-bridge-func",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-26T16:29:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nyx-Cipher",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T16:23:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NotCoin-Clicker-Telegram-bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-03-26T16:18:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Jetton-Dex-in-Tact",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Tact",
+                "pushed_at": "2025-03-26T16:16:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GhostVault-ERC4626",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Solidity",
+                "pushed_at": "2025-03-26T16:14:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ERC4626-DEFI-VAULT-PROTOCOL",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Solidity",
+                "pushed_at": "2025-03-26T16:09:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nyx",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T16:02:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Auto-yield-polygon",
+                "description": "Automated yield aggregation of different lending protocols on Polygon",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-09-02T16:37:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "defi-sdk",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Solidity",
+                "pushed_at": "2025-01-31T14:29:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust-graphql-docker",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-01-31T14:28:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "openzeppelin-test-environment",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Solidity",
+                "pushed_at": "2025-01-31T14:24:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kava",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-01-31T14:06:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "contracts",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Solidity",
+                "pushed_at": "2025-01-31T13:51:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "server-push-hooks",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-31T13:47:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "metaboss",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-01-31T13:39:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scaffold-eth-2",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-31T13:37:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rollup-raptor",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Noir",
+                "pushed_at": "2025-01-31T13:32:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "op-stack-bridge",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-31T13:31:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docProcessor",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2025-01-31T13:28:01Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:22.869939+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

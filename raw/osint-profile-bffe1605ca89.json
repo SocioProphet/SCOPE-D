@@ -1,0 +1,145 @@
+{
+  "profileId": "osint-profile-bffe1605ca89",
+  "target": "danialtorkinezhad",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:45.874731+00:00",
+  "completedAt": "2026-06-21T15:30:46.345296+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8653f271",
+      "lookupType": "github_context",
+      "target": "danialtorkinezhad",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "danialtorkinezhad",
+            "name": "Danial",
+            "type": "User",
+            "company": "Turing team",
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 8,
+            "followers": 1834,
+            "following": 4892,
+            "created_at": "2024-07-21T17:48:18Z",
+            "updated_at": "2025-02-12T07:15:19Z",
+            "html_url": "https://github.com/danialtorkinezhad",
+            "avatar_url": "https://avatars.githubusercontent.com/u/176236970?v=4",
+            "repos": [
+              {
+                "name": "myrepo",
+                "description": "Turing research group.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-10-03T21:00:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "danialtorkinezhad",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-11-06T19:39:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wmongo",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-31T07:36:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubookshop",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-09T15:43:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-09T15:36:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-02T17:06:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Start",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-08T11:11:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testpush",
+                "description": "Turing research group.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-14T19:06:54Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:46.344653+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

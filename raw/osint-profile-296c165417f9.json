@@ -1,0 +1,406 @@
+{
+  "profileId": "osint-profile-296c165417f9",
+  "target": "MrMDrX",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:34.979872+00:00",
+  "completedAt": "2026-06-20T16:48:35.745405+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1ec0eccc",
+      "lookupType": "github_context",
+      "target": "MrMDrX",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "MrMDrX",
+            "name": "Med",
+            "type": "User",
+            "company": null,
+            "blog": "https://mrmdrx.github.io/",
+            "location": "Earth",
+            "bio": "Data/Software Engineer",
+            "public_repos": 37,
+            "followers": 974,
+            "following": 850,
+            "created_at": "2022-05-29T20:20:15Z",
+            "updated_at": "2026-02-02T17:46:40Z",
+            "html_url": "https://github.com/MrMDrX",
+            "avatar_url": "https://avatars.githubusercontent.com/u/106492427?v=4",
+            "repos": [
+              {
+                "name": "iChat",
+                "description": "A minimal chat application made in Flutter and Firebase \ud83d\ude80 .",
+                "stargazers_count": 6,
+                "language": "Dart",
+                "pushed_at": "2024-12-11T18:47:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mostaqem_desktop",
+                "description": "Mostaqem is an app for Islamic media like Quran without ads and subscriptions",
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2026-02-22T03:02:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MrMDrX",
+                "description": "Profile Readme File",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-06-20T14:12:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ProductRecommender",
+                "description": "This repository contains the code for a Product Recommendation System. The system leverages various recommendation approaches, including rank-based recommendations, collaborative filtering, and model-based collaborative filtering using Singular Value Decomposition (SVD).",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-01-29T16:57:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Email-Spam-Detector",
+                "description": "This repository contains a web application for detecting email spam using machine learning. The project includes a Jupyter Notebook (email-spam-detector.ipynb) for data analysis and model building, as well as a Flask web app (main.py) for deploying the trained model.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-01-06T03:05:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mini-social-media-htmx-flask-app",
+                "description": "Mini Social Media CRUD App using HTMX and Flask",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2024-01-31T23:56:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Power-BI-Marketing-Dashboard",
+                "description": "This Power BI dashboard provides a comprehensive analysis of key metrics for web marketing strategies.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-02-23T15:56:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Apple-Disease-Detection",
+                "description": "\ud83c\udf4eUsing CNNs, this project develops a machine learning model to detect and classify diseases in apple trees, trained on a dataset of healthy and diseased apple images, including apple scab, blotch apple, and rotten apple\ud83c\udf4f",
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-02-15T05:28:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "avito-scraper",
+                "description": "Avito Scraper is a Python tool for scraping listings data from Avito, a popular online marketplace. It allows users to extract information about cars, apartments, houses, and villas for sale in Morocco.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-02-07T02:49:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sales-Insights-Talend-Power-BI",
+                "description": "Implemented a Business Intelligence (BI) system for analyzing sales data to improve profitability, optimize inventory management, and enhance marketing strategies in a fictional retail company.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-02-23T23:06:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LondonCycleInsights",
+                "description": "Uncover the secrets of London's bike rides with data-driven insights. From Kaggle dataset to Tableau visualizations, explore ride patterns and weather correlations. Pedal through the data for a fresh perspective on London's cycling landscape. \ud83d\udeb4\u200d\u2642\ufe0f\ud83d\udcca",
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-02-23T18:16:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Posting-App-PHP",
+                "description": "This is a simple web application written in vanilla PHP that allows users to create, view, and delete posts. It uses a MySQL databse to store posts.",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2024-02-28T02:27:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Video-Encryptor",
+                "description": "\ud83d\udd10 Video Encryptor is a Python application that allows users to compress, encrypt, and decrypt video files. It provides a simple and intuitive graphical interface for selecting files and applying encryption algorithms. The application is designed to enhance data security and facilitate the secure storage and transfer of video content.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2024-02-28T03:40:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Svelte-Calculator",
+                "description": "\ud83d\udd22 This is a simple calculator app built using Svelte. It performs basic arithmetic operations such as addition, subtraction, multiplication, and division.",
+                "stargazers_count": 2,
+                "language": "Svelte",
+                "pushed_at": "2024-03-07T02:27:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Svelte-Image-Gallery",
+                "description": "\ud83d\uddbc\ufe0f This is an image gallery search app built using Svelte and the Unsplash API. It allows users to search for images based on keywords and view the results in a gallery format.",
+                "stargazers_count": 4,
+                "language": "Svelte",
+                "pushed_at": "2024-03-08T00:53:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MatchMoji",
+                "description": "\ud83c\udfaeEmoji Matching Game built using Svelte\ud83d\udd79\ufe0f",
+                "stargazers_count": 4,
+                "language": "Svelte",
+                "pushed_at": "2024-03-15T00:03:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArabicNER",
+                "description": "Arabic nested named entity recognition",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-25T20:18:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TodoMate",
+                "description": "TodoMate is a simple and intuitive Todo App that helps you organize your tasks efficiently",
+                "stargazers_count": 4,
+                "language": "Svelte",
+                "pushed_at": "2024-03-21T00:39:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Presentations-in-Svelte",
+                "description": "This project is an experiment with reveal.js using Svelte to create stunning presentations \u2728\ud83e\udd29",
+                "stargazers_count": 7,
+                "language": "Svelte",
+                "pushed_at": "2024-03-29T01:18:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dish-discovery",
+                "description": "A simple and intuitive recipe finder app that allows users to search for recipes, view detailed information, and save their favorite dishes for easy access \ud83c\udf73\ud83c\udf72",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-03T03:06:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TomaTick",
+                "description": "\ud83c\udf45 Pomodoro Timer App built with Flutter \ud83c\udfaf\ud83d\ude80",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2024-10-17T01:44:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mini-weather",
+                "description": "\ud83c\udf26\ufe0f Minimal Weather App in Flutter \ud83d\ude80",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2024-10-19T01:11:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mini-habits-tracker",
+                "description": "\u2728 A simple and intuitive habits tracking application built with Flutter \ud83d\ude80",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2024-10-20T22:06:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mini-music-player",
+                "description": "\ud83c\udfb5 A simple and minimal music player built with Flutter \ud83d\ude80, featuring a unique neumorphic design \ud83d\udc84.",
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2024-10-28T00:52:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "iFood",
+                "description": "\ud83c\udf54 \ud83c\udf55 A minimal food ordering app built with Flutter and Firebase \ud83d\ude80 that allows users to browse and order food online.",
+                "stargazers_count": 5,
+                "language": "Dart",
+                "pushed_at": "2024-11-03T02:24:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FitFlow",
+                "description": "A responsive \ud83d\udcf1 fitness dashboard ui built with Flutter \ud83d\ude80.",
+                "stargazers_count": 5,
+                "language": "Dart",
+                "pushed_at": "2024-12-04T17:38:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Knight-Timer",
+                "description": "\u265f\ufe0f A simple chess clock app built with Flutter. \ud83d\ude80",
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2025-07-27T23:06:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "diaryvault",
+                "description": "A personal diary application written in Flutter",
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2025-07-29T20:47:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WaStash",
+                "description": "\ud83d\udcf2 Your Favorite WhatsApp Statuses, Safely Stashed.",
+                "stargazers_count": 7,
+                "language": "Dart",
+                "pushed_at": "2025-08-06T17:00:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "eBookStore",
+                "description": "\ud83d\udcda Explore and manage your eBook collection with this mobile app built using Flutter. The application provides a user-friendly interface to browse, search, and organize eBooks efficiently. Utilizes Firebase as the backend database for seamless data management.",
+                "stargazers_count": 15,
+                "language": "Dart",
+                "pushed_at": "2024-01-29T23:46:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mrmdrx.github.io",
+                "description": "My Portfolio website built with HTML CSS and Vanilla JS",
+                "stargazers_count": 15,
+                "language": "HTML",
+                "pushed_at": "2024-02-24T23:28:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FilmFlix-App",
+                "description": "\ud83c\udf7f Yet Another Movies \ud83c\udfac App built with Flutter \ud83d\ude80.",
+                "stargazers_count": 6,
+                "language": "Dart",
+                "pushed_at": "2025-07-21T00:11:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NotesKeeper",
+                "description": "This is a simple Notes Keeper application built with Python using the Tkinter and CustomTkinter library for the GUI, MongoDB as the database, and bcrypt for password hashing. The application allows users to register, log in, and manage their notes.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2023-12-16T01:13:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChessGame",
+                "description": "Welcome to ChessGame, a simple yet engaging chess game implemented in Java using the Swing framework. This application allows users to play chess against each other on a graphical user interface.",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2023-12-01T08:57:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Web-Dev-Projects",
+                "description": "Web Development Projects",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2022-08-14T15:02:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mini-expenses-tracker",
+                "description": "\ud83d\udcb8 A simple and intuitive expenses tracking application built with Flutter \ud83d\ude80",
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2024-10-25T15:28:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Plan-it-backend",
+                "description": "\ud83d\udd25 Backend implementation for the Plant it app, an offline-first task management app.\ud83d\ude80",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-25T18:58:38Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:35.744499+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

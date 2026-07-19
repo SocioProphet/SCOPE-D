@@ -1,0 +1,157 @@
+{
+  "profileId": "osint-profile-2342f6cad467",
+  "target": "MdShawonForazi",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:52.620668+00:00",
+  "completedAt": "2026-06-21T15:27:53.065361+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c6d2f698",
+      "lookupType": "github_context",
+      "target": "MdShawonForazi",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "MdShawonForazi",
+            "name": "\ud835\ude48\ud835\ude59. \ud835\ude4e\ud835\ude5d\ud835\ude56\ud835\ude6c\ud835\ude64\ud835\ude63 \ud835\ude41\ud835\ude64\ud835\ude67\ud835\ude56\ud835\ude6f\ud835\ude5e",
+            "type": "User",
+            "company": "Creative IT Institute ",
+            "blog": "https://www.quora.com/profile/Md-Rakib-Hasan-Shawon",
+            "location": "Dhaka, Bangladesh ",
+            "bio": "\ud83d\udcbb \ud835\ude42\ud835\ude67\ud835\ude56\ud835\ude65\ud835\ude5d\ud835\ude5e\ud835\ude58 \ud835\ude3f\ud835\ude5a\ud835\ude68\ud835\ude5e\ud835\ude5c\ud835\ude63\ud835\ude5a\ud835\ude67 ",
+            "public_repos": 9,
+            "followers": 7281,
+            "following": 17388,
+            "created_at": "2024-10-22T18:03:13Z",
+            "updated_at": "2026-06-02T07:11:09Z",
+            "html_url": "https://github.com/MdShawonForazi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/185961339?v=4",
+            "repos": [
+              {
+                "name": "MS-Office-Programmes-",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2024-10-30T11:32:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Graphic-Design-",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-10-27T11:33:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "YOLO",
+                "description": "YOLO achievement ",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-08-24T19:15:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "achievement-test",
+                "description": "This is a test for Pull Shark achievement.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-08-10T22:07:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "snake-contributions",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-08-13T19:37:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MdShawonForazi",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 31,
+                "language": null,
+                "pushed_at": "2025-11-13T19:10:30Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "github-profile-readme-generator",
+                "description": "\ud83d\ude80 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-08-16T00:31:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "snk",
+                "description": "\ud83d\udfe9\u2b1c Generates a snake game from a github user contributions graph and output a screen capture as animated svg or gif",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-27T16:26:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Cool-GIFs-For-GitHub",
+                "description": "In repo, you will get so many of the cool font of GitHub README.md where you can use your profile best using my readme cool font which i provide all the in my repo.. Thanks!",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-03-22T10:51:24Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:53.064896+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "profileId": "osint-profile-b3b6ec1b7cd4",
+  "target": "Spartanlasergun",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:24.239719+00:00",
+  "completedAt": "2026-06-21T15:31:24.782334+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-23add180",
+      "lookupType": "github_context",
+      "target": "Spartanlasergun",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Spartanlasergun",
+            "name": "Narendra Singh",
+            "type": "User",
+            "company": null,
+            "blog": "spartanlasergun.github.io",
+            "location": "Trinidad and Tobago",
+            "bio": "Student.",
+            "public_repos": 11,
+            "followers": 1631,
+            "following": 2832,
+            "created_at": "2020-09-13T04:54:31Z",
+            "updated_at": "2026-06-06T02:12:36Z",
+            "html_url": "https://github.com/Spartanlasergun",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71204349?v=4",
+            "repos": [
+              {
+                "name": "A-Step-by-Step-Guide-to-BERT",
+                "description": "A step by step guide to using BERT for sentiment classification",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-03-28T00:49:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "calendar_widget",
+                "description": "Calendar widget for use with python tkinter",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2025-03-29T01:08:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Spartanlasergun",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-04-23T14:29:05Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "USC_Cover_Page_Tool",
+                "description": "Simple Cover Page Creation Tool for students at the University of the Southern Caribbean",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-03-29T14:59:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Spartanlasergun.github.io",
+                "description": "Web Design Experiments",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-03-29T14:24:31Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "javascript",
+                  "portfolio",
+                  "spartanlasergun"
+                ]
+              },
+              {
+                "name": "psyche",
+                "description": "personal experimentation with novel analytic techniques in psychology",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-03-29T13:51:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Logistic_Regression",
+                "description": "Programmatic solutions to exercises in the book \"Logistic Regression: A Self-Learning Text\" by David Kleinbaum & Mitchel Klein",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-03-29T01:31:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "java_bytecode_disassembler",
+                "description": "java bytecode disassembly library built in python",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-03-29T01:23:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Advanced_Level_Statistics",
+                "description": "Programmatic solutions to exercises in the book: \"a concise course in Advanced Level Statistics with worked examples\" by J. Crawshaw and J. Chambers",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-03-28T01:22:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OCTIS_fork",
+                "description": "OCTIS: Comparing Topic Models is Simple! A python package to optimize and evaluate topic models (accepted at EACL2021 demo track)",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-06-06T10:32:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Transformers-for-Natural-Language-Processing",
+                "description": "Transformers for Natural Language Processing, published by Packt",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-30T16:23:50Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:24.781391+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

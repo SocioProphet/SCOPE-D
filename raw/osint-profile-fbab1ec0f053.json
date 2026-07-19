@@ -1,0 +1,563 @@
+{
+  "profileId": "osint-profile-fbab1ec0f053",
+  "target": "chatman-media",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:40.105020+00:00",
+  "completedAt": "2026-06-21T15:28:41.385248+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-673d56a6",
+      "lookupType": "github_context",
+      "target": "chatman-media",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "chatman-media",
+            "name": "Alexander Kireyev",
+            "type": "User",
+            "company": "AK",
+            "blog": "chatman.media",
+            "location": "Phuket, Thailand",
+            "bio": "AI/LLM automation, chatbots & web products \u00b7 Founder of Timeline Studio \u00b7 Available for projects",
+            "public_repos": 230,
+            "followers": 3338,
+            "following": 3411,
+            "created_at": "2011-06-29T06:37:50Z",
+            "updated_at": "2026-05-17T21:53:40Z",
+            "html_url": "https://github.com/chatman-media",
+            "avatar_url": "https://avatars.githubusercontent.com/u/883279?v=4",
+            "repos": [
+              {
+                "name": "lead-engine",
+                "description": "AI sales-funnel engine \u2014 Telegram, WhatsApp & web widget, RAG, visa pipeline, admin UI, Postgres (monorepo)",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-21T14:40:50Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "bun",
+                  "chatbot",
+                  "monorepo",
+                  "multichannel",
+                  "postgresql",
+                  "rag",
+                  "recruitment",
+                  "sales-funnel",
+                  "telegram",
+                  "typescript",
+                  "whatsapp"
+                ]
+              },
+              {
+                "name": "chatman-media",
+                "description": "Personal Website",
+                "stargazers_count": 24,
+                "language": "HTML",
+                "pushed_at": "2026-06-21T13:39:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "timeline-studio",
+                "description": "Timeline Studio - Video Editing with AI",
+                "stargazers_count": 177,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-15T18:44:31Z",
+                "fork": false,
+                "topics": [
+                  "ai-assistant",
+                  "ai-storytelling",
+                  "ai-video-generation",
+                  "content-creation",
+                  "react",
+                  "shadcn-ui",
+                  "tauri",
+                  "tauri2",
+                  "timeline-studio",
+                  "typescript",
+                  "video-editing",
+                  "video-editor",
+                  "video-processing"
+                ]
+              },
+              {
+                "name": "farang-marketplace",
+                "description": "\ud83c\uddf9\ud83c\udded Premium marketplace platform for Thailand \u2014 real estate, vehicles, services & more. Monorepo with microservices, CRM, Telegram Mini App and TON payments.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-21T09:23:06Z",
+                "fork": false,
+                "topics": [
+                  "bun",
+                  "drizzle-orm",
+                  "fastify",
+                  "marketplace",
+                  "microservices",
+                  "promptpay",
+                  "react",
+                  "telegram",
+                  "thailand",
+                  "ton",
+                  "turborepo",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "handlebars.js",
+                "description": "Minimal templating on steroids.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-20T11:59:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "prettier",
+                "description": "Prettier is an opinionated code formatter.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-20T16:14:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-profile-trophy",
+                "description": "\ud83c\udfc6 Add dynamically generated GitHub Stat Trophies  on your readme",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T22:17:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "motion",
+                "description": "A modern animation library for React and JavaScript",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-20T20:10:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pug",
+                "description": "Pug \u2013 robust, elegant, feature rich template engine for Node.js",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-20T18:11:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "postcss",
+                "description": "Transforming styles with JS plugins",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-16T20:13:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sequelize",
+                "description": "Feature-rich ORM for modern Node.js and TypeScript, it supports PostgreSQL (with JSON and JSONB support), MySQL, MariaDB, SQLite, MS SQL Server, Snowflake, Oracle DB, DB2 and DB2 for IBM i.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-20T14:39:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mocha",
+                "description": "\u2615\ufe0f Classic, reliable, trusted test framework for Node.js and the browser",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-20T13:59:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "marked",
+                "description": "A markdown parser and compiler. Built for speed.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-16T01:37:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "knex",
+                "description": "A query builder for PostgreSQL, MySQL, CockroachDB, SQL Server, SQLite3 and Oracle, designed to be flexible, portable, and fun to use.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-20T10:09:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "memfs",
+                "description": "Node.js \"fs\" and browser \"File System API\" adapters and in-memory implementations \ud83d\udc4d",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-20T08:08:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vine",
+                "description": "VineJS is a form data validation library for Node.js",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-04-27T13:48:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PapaParse",
+                "description": "Fast and powerful CSV (delimited text) parser that gracefully handles large files and malformed input",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-19T07:11:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bignumber.js",
+                "description": "A JavaScript library for arbitrary-precision decimal and non-decimal arithmetic ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-18T19:33:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yargs",
+                "description": " yargs the modern, pirate-themed successor to optimist.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-19T02:29:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "InvokeAI",
+                "description": "Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-17T18:17:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cron-parser",
+                "description": "Node.js library for parsing crontab instructions",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-19T14:39:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flatted",
+                "description": "A fast and minimal circular JSON parser.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-19T17:50:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "magic-string",
+                "description": "Manipulate strings like a wizard",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-24T00:59:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jsdiff",
+                "description": "A javascript text differencing implementation.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-02T15:39:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "klona",
+                "description": "A tiny (240B to 501B) and fast utility to \"deep clone\" Objects, Arrays, Dates, RegExps, and more!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-10T00:50:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "js-yaml",
+                "description": "JavaScript YAML parser and dumper. Very fast.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T20:00:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Complex.js",
+                "description": "The RAW Complex.js is a complex numbers library written in JavaScript",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T18:48:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chalk",
+                "description": "\ud83d\udd8d Terminal string styling done right",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T17:43:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mime-types",
+                "description": "The ultimate javascript content-type utility.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-02T16:15:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "slugify",
+                "description": "Slugifies a string",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-01T22:53:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dequal",
+                "description": "A tiny (304B to 489B) utility to check for deep equality",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-10T00:05:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "immutable-js",
+                "description": "Immutable persistent data collections for Javascript which increase efficiency and simplicity.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-17T08:38:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mathjs",
+                "description": "An extensive math library for JavaScript and Node.js",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T17:11:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "picomatch",
+                "description": "Blazing fast and accurate glob matcher written JavaScript, with no dependencies and full support for standard and extended Bash glob features, including braces, extglobs, POSIX brackets, and regular expressions. Used by GraphQL, Jest, Astro, Snowpack, Storybook, bulma, Serverless, fdir, Netlify, AWS Amplify, Revogrid, rollup, routify, open-wc, imba",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T15:58:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fast-xml-parser",
+                "description": "Validate XML, Parse XML and Build XML rapidly without C/C++ based libraries and no callback.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T09:33:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yargs-parser",
+                "description": ":muscle: the mighty option parser used by yargs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T09:29:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "big.js",
+                "description": "A small, fast JavaScript library for arbitrary-precision decimal arithmetic.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T09:45:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "commander.js",
+                "description": "node.js command-line interfaces made easy",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T19:31:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chroma.js",
+                "description": "JavaScript library for all kinds of color manipulations",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T19:31:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "qs",
+                "description": "A querystring parser and serializer with nesting support",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-19T20:50:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "markdown-it",
+                "description": "Markdown parser, done right. 100% CommonMark support, extensions, syntax plugins & high speed",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T18:10:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "validator.js",
+                "description": "String validation",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T19:16:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "node-semver",
+                "description": "The semver parser for node (the one npm uses)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T13:21:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chrono",
+                "description": "A natural language date parser in Javascript",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T13:23:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "decimal.js",
+                "description": "An arbitrary-precision Decimal type for JavaScript",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-17T20:12:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "query-string",
+                "description": "Parse and stringify URL query strings",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-17T20:09:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mnemonist",
+                "description": "Curated collection of data structures for the JavaScript/TypeScript language.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-17T18:13:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "conform",
+                "description": "Progressively enhance HTML forms with React. Build resilient, type-safe forms with no hassle using web standards.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-17T18:32:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ajv",
+                "description": "The fastest JSON schema Validator. Supports JSON Schema draft-04/06/07/2019-09/2020-12 and JSON Type Definition (RFC8927)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-17T16:30:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "devalue",
+                "description": "Gets the job done when JSON.stringify can't",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-17T16:26:48Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:41.384445+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

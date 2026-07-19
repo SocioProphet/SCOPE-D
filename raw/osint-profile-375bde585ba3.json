@@ -1,0 +1,406 @@
+{
+  "profileId": "osint-profile-375bde585ba3",
+  "target": "khilkovetsmykhailo",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:24.970667+00:00",
+  "completedAt": "2026-06-21T15:32:25.917666+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-302f68bd",
+      "lookupType": "github_context",
+      "target": "khilkovetsmykhailo",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "khilkovetsmykhailo",
+            "name": "Mykhailo Khilkovets",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 37,
+            "followers": 1411,
+            "following": 2350,
+            "created_at": "2024-10-28T09:26:15Z",
+            "updated_at": "2025-05-13T18:13:07Z",
+            "html_url": "https://github.com/khilkovetsmykhailo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/186563337?v=4",
+            "repos": [
+              {
+                "name": "khilkovetsmykhailo",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-12-05T15:28:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BLST-CherryBomb",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2024-11-07T16:52:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ng-springboot-stockmarkets-dashboard",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2024-11-07T16:58:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-laravel-file-manager",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-07T17:03:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node-passport-zitadel",
+                "description": null,
+                "stargazers_count": 29,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-13T01:10:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "woocommerce-correios",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2024-11-07T16:04:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "magento_react_native_graphql",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-07T16:31:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NHL-data-feed",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-07T15:40:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "goblockchain",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2024-11-07T15:54:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pizza-delivery",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2024-11-07T15:19:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-pokedex-api-challenge",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-07T13:27:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-typing-test-app",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-07T15:48:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "js-ycfx5n",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-07T15:45:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django-erp-framework",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-11-07T01:24:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "teler-waf",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2025-01-14T19:09:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "healthCare-nuxtJs-Vue3",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Vue",
+                "pushed_at": "2024-11-06T20:34:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "helium",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-11-06T12:19:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel-vue-survey",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2024-11-06T14:50:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "better_mailer_previews",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Ruby",
+                "pushed_at": "2024-11-06T17:34:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Appointment-Scheduling",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-06T17:53:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-ecommerce",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-06T14:27:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wallet-engine",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2024-11-04T21:29:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SocialApp-ReactNative",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-04T21:22:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactiveUI",
+                "description": "An advanced, composable, functional reactive model-view-viewmodel framework for all .NET platforms that is inspired by functional reactive programming. ReactiveUI allows you to  abstract mutable state away from your user interfaces, express the idea around a feature in one readable place and improve the testability of your application.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-10-27T11:07:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "next-ecommerce",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-04T20:52:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SocialApp-React-Native",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-01T19:41:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ecommerce-backend",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-11-01T20:10:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel-vue-ecommerce",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2024-10-31T17:05:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ecommerce-test-jason",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-13T18:16:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-test",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-22T09:40:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pdf-parse",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-03-19T02:46:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fc3-admin-do-catalogo-python",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-03-19T02:35:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AMC-Theater",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-03-18T16:26:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Google-Sheet-MapBox",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-18T15:54:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jasypt-spring-boot",
+                "description": "Jasypt integration for Spring boot",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-02-08T08:53:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ERP-frontend",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-01T20:13:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "div_final",
+                "description": "final file for diversion 2024",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-02-04T06:48:29Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:25.916915+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

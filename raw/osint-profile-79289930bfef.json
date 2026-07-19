@@ -1,0 +1,427 @@
+{
+  "profileId": "osint-profile-79289930bfef",
+  "target": "Safae26",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:54.657938+00:00",
+  "completedAt": "2026-06-20T16:48:55.442003+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4578c723",
+      "lookupType": "github_context",
+      "target": "Safae26",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Safae26",
+            "name": "Safae",
+            "type": "User",
+            "company": "UMI",
+            "blog": "https://safae26.github.io/",
+            "location": "Meknes, Morocco",
+            "bio": "AI and Data Science Master's Student",
+            "public_repos": 39,
+            "followers": 925,
+            "following": 1853,
+            "created_at": "2023-11-04T20:27:34Z",
+            "updated_at": "2026-06-16T14:03:55Z",
+            "html_url": "https://github.com/Safae26",
+            "avatar_url": "https://avatars.githubusercontent.com/u/149904770?v=4",
+            "repos": [
+              {
+                "name": "shopping-app",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T05:19:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "financial-fraud-detection",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-02T14:41:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Safae26",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2026-06-20T03:36:09Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "medicare",
+                "description": "Full-stack AI Health Assistant featuring disease diagnostic modeling, medication recommendation systems, and real-time analyst dashboards. Implements JWT auth, RBAC security, and automated email verification.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-12T19:17:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RetailPulse",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-28T21:56:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bio_ner_app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-03-29T21:38:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "interactive-restaurant-menu",
+                "description": "A modern, feature-rich mobile application built with the Flutter framework, designed to revolutionize the way a restaurant presents its menu to customers. The app moves beyond a simple digital PDF to offer an engaging and interactive experience, allowing users to explore dishes, share their feedback, and easily access restaurant information.",
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2025-09-08T02:08:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "arabic-documents-classification",
+                "description": "Arabic Text Classification pipeline leveraging specialized Arabic NLP techniques and Deep Learning architectures (PyTorch) for high-accuracy document categorization.",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-13T23:44:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "text-summarization",
+                "description": "Abstractive Text Summarization using Transformers fine-tuned on the CNN/DailyMail dataset with PyTorch & Hugging Face.",
+                "stargazers_count": 11,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-02T16:15:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WildfireGuard-AI",
+                "description": "WilfireGuard AI App",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-15T14:04:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ml-modeling",
+                "description": "Complete NLP text classification pipeline with Random Forest - binary, multi-class, and multi-label classification implementations including preprocessing, vectorization, cross-validation, and hyperparameter optimization.",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-08T19:30:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_WD_01",
+                "description": "Created an interactive navigation menu using HTML, CSS, and JavaScript that dynamically changes color and style when scrolled or when hovering over menu items. Achievements include structuring the menu using HTML, styling it with CSS for an appealing design, and using JavaScript for interactivity.",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2023-11-04T21:39:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_WD_02",
+                "description": "Created a dynamic stopwatch web app using HTML, CSS, and JavaScript, featuring start, stop, reset, and lap time recording. Achievements include visually appealing design, JavaScript controls for the stopwatch, and lap tracking functionality.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-04T21:51:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "suivi-d-arriv-e",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2025-09-09T18:26:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rock_vs_mine_prediction",
+                "description": "A machine learning project that uses Logistic Regression to classify underwater objects as rocks \ud83d\uddff or mines \ud83d\udca3 based on sonar signal data. Processes 60 frequency features from the UCI Sonar Dataset to help submarines detect enemy explosives in ocean waters.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-04T15:24:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "diabetes-prediction",
+                "description": "A machine learning project that uses Support Vector Machine (SVM) to predict diabetes based on patient health metrics. Processes the PIMA Diabetes Dataset with 8 medical features to classify patients as diabetic or non-diabetic.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-04T22:37:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "house-price-prediction",
+                "description": "A machine learning project that predicts Boston housing prices using XGBoost regression. Features comprehensive data analysis, correlation studies, and model implementation to identify key factors influencing real estate values in Boston suburbs.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-08T22:46:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ridge-and-lasso-regression",
+                "description": "ML project comparing Ridge & Lasso regression to predict baseball player salaries. Includes EDA, feature engineering, and regularization techniques to handle multicollinearity and overfitting.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-12T22:27:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nlp-one-hot-encoding",
+                "description": "A hands-on guide to transforming raw text into numerical data! Covers essential NLP steps like cleaning, stemming/lemmatization, and creating word vectors using One-Hot Encoding.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-13T12:15:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "numerical-integration",
+                "description": "A Python implementation of the rectangle method for approximating definite integrals of continuous functions.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-13T15:50:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mushroom-classification-svm",
+                "description": "A comprehensive Support Vector Machine (SVM) implementation for binary classification of mushrooms as edible vs. poisonous. Features data preprocessing, multiple kernel testing, and hyperparameter optimization using GridSearchCV.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-15T13:50:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bag-of-words",
+                "description": "A complete Bag of Words pipeline built with Python, NLTK, and spaCy.  It demonstrates text preprocessing (tokenization, lowercasing, stopword removal, lemmatization) and converts text into numerical vectors using word frequency counts. Perfect for understanding fundamental NLP vectorization techniques.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-13T18:57:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nlp-text-processor",
+                "description": "A web application for text analysis and preprocessing. Users can input text and apply NLP techniques like tokenization, stop word removal, stemming, and POS tagging. Features an intuitive interface for real-time linguistic analysis and data preparation.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-11-28T23:05:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jpa-hibernate-spring-data-many-to-many-case",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2025-05-14T21:37:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IOC2",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2025-04-18T20:09:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "orm-test",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2025-05-11T13:52:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_WD_05",
+                "description": "This project utilizes the OpenWeatherMap API to provide real-time weather data for user-specified cities through a user-friendly interface. It displays current weather conditions, temperature, humidity, and wind speed based on user input, all achieved with HTML, CSS, and JavaScript.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-05T03:17:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_WD_04",
+                "description": "Created a personal portfolio website that showcases my journey as a Web Development intern, along with highlighting my skills, projects, and general accomplishments.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-11-05T01:32:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_WD_03",
+                "description": "Developed a dynamic Tic-Tac-Toe web app using HTML, CSS, and JavaScript. Highlights include creating game control functions for fair and enjoyable gameplay and managing player turns with JavaScript functions",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-04T22:05:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mcp-demo-spring-python",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2025-07-11T02:11:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "first_flutter_app",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2025-06-18T15:30:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Thymeleaf_SpringData_JPA_MVC",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2025-06-11T02:06:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spring-data-jpa-products-management-app",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2025-06-04T18:30:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IOC1",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2025-06-04T18:22:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "orm-jpa-hibernate-spring-data-hospital-management",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2025-06-04T18:21:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mini_projet_ioc",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2025-06-04T18:18:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ws-soap",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2025-06-04T18:15:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spring-mvc",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-06-04T18:01:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spring_mvc_hospital_app",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2025-05-22T19:54:48Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:55.441007+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}
