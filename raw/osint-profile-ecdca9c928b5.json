@@ -1,0 +1,181 @@
+{
+  "profileId": "osint-profile-ecdca9c928b5",
+  "target": "maryamdnn",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:43.607820+00:00",
+  "completedAt": "2026-06-21T15:29:44.189128+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5db2efc5",
+      "lookupType": "github_context",
+      "target": "maryamdnn",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "maryamdnn",
+            "name": "Horysa",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 12,
+            "followers": 2353,
+            "following": 4825,
+            "created_at": "2024-02-22T06:21:38Z",
+            "updated_at": "2025-09-06T06:18:47Z",
+            "html_url": "https://github.com/maryamdnn",
+            "avatar_url": "https://avatars.githubusercontent.com/u/160825015?v=4",
+            "repos": [
+              {
+                "name": "ubookshop",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-31T01:03:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "piush",
+                "description": "Turing research group.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-09T08:21:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "maryamdnn",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2024-11-01T04:58:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": "Turing research group.",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-23T12:52:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testpush",
+                "description": "Turing research group.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-02-15T05:59:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "myrepository",
+                "description": "Turing research group.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-10-23T11:20:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utrialv2",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-26T05:05:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubuntu-v2ray",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2024-08-26T04:59:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Debug",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-07-31T14:01:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Start",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-31T14:02:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Saas",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-09T13:48:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "file-push",
+                "description": "Turing research group.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-09T07:40:37Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:44.188031+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

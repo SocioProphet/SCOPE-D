@@ -1,0 +1,136 @@
+{
+  "profileId": "osint-profile-41990435fc72",
+  "target": "pwnedroot",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:52.651468+00:00",
+  "completedAt": "2026-06-20T13:52:52.964153+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f151bc9d",
+      "lookupType": "github_context",
+      "target": "pwnedroot",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "pwnedroot",
+            "name": "pwnedroot",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "United States",
+            "bio": "\ud83d\udc4b Hi there! I'm pwnedroot, a cybersecurity student with a strong focus on bug bounties and penetration testing. Follow me if you like my work!\ud83d\ude80",
+            "public_repos": 7,
+            "followers": 3196,
+            "following": 2929,
+            "created_at": "2024-07-21T01:37:50Z",
+            "updated_at": "2026-06-09T04:53:30Z",
+            "html_url": "https://github.com/pwnedroot",
+            "avatar_url": "https://avatars.githubusercontent.com/u/176189052?v=4",
+            "repos": [
+              {
+                "name": "pwnedroot.github.io",
+                "description": "My GitHub Page",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-12-22T07:56:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GithubFollowz",
+                "description": "Automated GitHub follower scraper and follow-back script for fun and experimentation.",
+                "stargazers_count": 33,
+                "language": "Python",
+                "pushed_at": "2026-06-01T20:18:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PredictionTraderBot",
+                "description": "Predictions Trading Bot Information",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2026-06-02T04:51:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BugBountyToolz",
+                "description": "A collection of open-source tools designed to streamline and enhance your bug bounty hunting. From reconnaissance and vulnerability scanning to exploitation and reporting, these tools are here to make your security research more efficient.",
+                "stargazers_count": 15,
+                "language": "Shell",
+                "pushed_at": "2026-06-01T20:16:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RedditTool",
+                "description": "Repo for a Reddit username finder i made for fun!",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-12-21T04:34:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PyAutoGuiScripts",
+                "description": "Scripts Created Using PyAutoGui to automate a variety of tasks.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-05-26T06:12:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pwnedroot",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-05-30T04:40:53Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:52.963089+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

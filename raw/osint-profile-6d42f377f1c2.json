@@ -1,0 +1,127 @@
+{
+  "profileId": "osint-profile-6d42f377f1c2",
+  "target": "Mohammadkrd1",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:55.206330+00:00",
+  "completedAt": "2026-06-21T15:30:55.610196+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5506b6c4",
+      "lookupType": "github_context",
+      "target": "Mohammadkrd1",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Mohammadkrd1",
+            "name": "Mohamed Krd",
+            "type": "User",
+            "company": "SpaceX",
+            "blog": "",
+            "location": "Zakho, Iraq",
+            "bio": "Not so much ",
+            "public_repos": 6,
+            "followers": 1794,
+            "following": 2055,
+            "created_at": "2023-08-17T20:05:42Z",
+            "updated_at": "2026-02-12T14:49:05Z",
+            "html_url": "https://github.com/Mohammadkrd1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/142540681?v=4",
+            "repos": [
+              {
+                "name": "MohamedKrd",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-02-07T23:19:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Strong-Password-Generator",
+                "description": "This Python script generates a random 20-character password with a mix of letters, digits, and special characters, copying it to the clipboard for easy use.",
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2024-11-15T18:48:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Youtube-video-downloader",
+                "description": "A simple youtube video downaloder written in python",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2024-12-04T06:54:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Login-page",
+                "description": "A login page coded with HTML,CSS ",
+                "stargazers_count": 10,
+                "language": "CSS",
+                "pushed_at": "2024-07-06T15:27:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Mohamedpr0",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2025-10-29T20:20:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Age-Calculator",
+                "description": "This Python program calculates your age in days, hours, minutes, and seconds based on your birthdate",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2024-12-27T00:08:56Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:55.609319+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

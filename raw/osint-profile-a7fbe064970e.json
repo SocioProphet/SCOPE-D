@@ -1,0 +1,559 @@
+{
+  "profileId": "osint-profile-a7fbe064970e",
+  "target": "SeppPenner",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:10.357883+00:00",
+  "completedAt": "2026-06-20T16:49:13.015071+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-099d0c6b",
+      "lookupType": "github_context",
+      "target": "SeppPenner",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "SeppPenner",
+            "name": "SeppPenner",
+            "type": "User",
+            "company": "H\u00e4mmer Electronics",
+            "blog": "https://franzhuber23.blogspot.de/",
+            "location": "Germany",
+            "bio": "I like cookies \ud83c\udf6a\ud83c\udf6a\ud83c\udf6a\ud83c\udf6a.\r\n\r\nAll repos now on https://gitlab.com/SeppPenner/, too. Repositories are synced.\r\n\r\nStay with Ukraine \ud83c\uddfa\ud83c\udde6 and Israel \ud83c\uddee\ud83c\uddf1.",
+            "public_repos": 1244,
+            "followers": 805,
+            "following": 4634,
+            "created_at": "2014-11-09T13:11:58Z",
+            "updated_at": "2026-05-27T11:50:56Z",
+            "html_url": "https://github.com/SeppPenner",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9639361?v=4",
+            "repos": [
+              {
+                "name": "awesome-german-piracy",
+                "description": "A curated list of (not only) German piracy sites.",
+                "stargazers_count": 998,
+                "language": "C#",
+                "pushed_at": "2024-12-11T13:29:24Z",
+                "fork": false,
+                "topics": [
+                  "anime",
+                  "animes",
+                  "awesome",
+                  "awesome-list",
+                  "films",
+                  "keygen",
+                  "keygenerator",
+                  "keygens",
+                  "manga",
+                  "movies",
+                  "music",
+                  "series",
+                  "torrent",
+                  "torrents",
+                  "tv",
+                  "usenet",
+                  "warez"
+                ]
+              },
+              {
+                "name": "CameraActivityChecker",
+                "description": "CameraActivityChecker is an executable to check if the camera gets activated.",
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2025-01-07T06:32:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WindowsHello",
+                "description": "WindowsHello is an assembly/ library to work with Microsoft's Windows Hello in aplications.",
+                "stargazers_count": 15,
+                "language": "C#",
+                "pushed_at": "2025-01-05T22:03:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ParkingLotDataCollection",
+                "description": "ParkingLotDataCollection is written and tested in Python 3. Its purpose is to unify parking lot data from APIs in Germany.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:32:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react",
+                "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2020-03-17T04:18:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mqttfx171-backup",
+                "description": "Mqtt.fx Backup just backups the page https://www.jensd.de/apps/mqttfx/1.7.1/ (Internet Archive link: https://web.archive.org/web/20210514230412/https://www.jensd.de/apps/mqttfx/1.7.1/) and its MQTT.fx client, version 1.7.1.",
+                "stargazers_count": 37,
+                "language": null,
+                "pushed_at": "2022-02-18T16:54:33Z",
+                "fork": false,
+                "topics": [
+                  "mqtt",
+                  "mqttfx"
+                ]
+              },
+              {
+                "name": "AESCryptoUploader",
+                "description": "AESCryptoUploader is a project to upload encrypted files to Google Drive and Mega.nz.",
+                "stargazers_count": 15,
+                "language": "C#",
+                "pushed_at": "2025-01-05T22:33:48Z",
+                "fork": false,
+                "topics": [
+                  "aes",
+                  "crypto",
+                  "cryptography",
+                  "google-drive",
+                  "gui",
+                  "gui-english",
+                  "gui-german",
+                  "screenshots"
+                ]
+              },
+              {
+                "name": "PortKnocker",
+                "description": "PortKnocker is a project to run a simple port knocking client for UDP and TCP connections.",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-01-09T14:55:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TagpackerSpammer",
+                "description": "TagpackerSpammer is a software written in Python 3. Its goal is to spam the website ",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:32:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TelegramMessageBot",
+                "description": "TelegramMessageBot is a project to send a message from a bot to a Telegram chat. The script was written and tested in Python 3.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:32:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SystemMonitor",
+                "description": "SystemMonitor is a project to store metrics like CPU or network usage from a system like the Raspberry Pi. The script was written and tested in Python 3.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:32:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RaspberryPiBackupClient",
+                "description": "RaspberryPiBackupClient is a project to backup certain directories from your Raspberry Pi to a WebDav server. The script was written and tested in Python 3.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:32:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MQTT2PostgresBridge",
+                "description": "MQTT2PostgresBridge is a project to connect a locally running broker to a Postgres database and store the messages in a database table. The project was written and tested in Python 3.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:32:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MQTT2MySQLBridge",
+                "description": "MQTT2MySQLBridge is a project to connect a locally running broker to a MySQL database and store the messages in a database table. The project was written and tested in Python 3.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:31:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MQTT2AWSS3Bridge",
+                "description": "MQTT2AWSS3Bridge is a project to connect a locally running broker to AWS S3 and upload the messages as a simple .txt file. The project was written and tested in Python 3.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:31:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GitlabVisibilitySetter",
+                "description": "GitlabVisibilitySetter is a script to make all repositories on Gitlab publicly accessible. (Useful for all that are #movingtogitlab) The script was written and tested in Python 3.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:31:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GitlabAutoPullMirroring",
+                "description": "GitlabAutoPullMirroring is a script to update all Gitlab repositories to be mirrored from Github (Pull from Github, push is currently not possible). Useful for all that are #movingtogitlab. The script was written and tested in Python 3.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:31:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GithubReleasesScraper",
+                "description": "GithubReleasesScraper is a script to get the releases of a Github project in a markdown formatted file. GithubReleasesScraper is written and tested in Python 3.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T19:31:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ransomware",
+                "description": "Ransomware is a project written in .Net and shows how ransomeware generally works. This repository should be used for educational reasons only!!",
+                "stargazers_count": 34,
+                "language": "C#",
+                "pushed_at": "2025-01-09T15:20:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NetCoreMQTTExampleCluster",
+                "description": "NetCoreMQTTExampleCluster is a project to run a multi MQTT broker system based on MQTTnet, Dapper (for database connection) and Orleans.",
+                "stargazers_count": 46,
+                "language": "C#",
+                "pushed_at": "2025-01-15T16:37:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SparkplugNet",
+                "description": "SparkplugNet is a library to use the Sparkplug industrial IoT (IIoT) standard in .Net. It uses MQTTnet in the background.",
+                "stargazers_count": 95,
+                "language": "C#",
+                "pushed_at": "2025-01-05T22:01:11Z",
+                "fork": false,
+                "topics": [
+                  "mqtt",
+                  "mqttnet",
+                  "sparkplug",
+                  "sparkplug-b",
+                  "sparkplugnet"
+                ]
+              },
+              {
+                "name": "simple-city-guesser",
+                "description": "A fun and interactive web application built with React that helps users learn world capital cities. The game displays an interactive world map where players need to guess capital cities of different countries.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-07T07:04:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EasyTorHiddenServicePython",
+                "description": "EasyTorHiddenServicePython is a project to run a simple Python webserver to serve files on the darknet. The project was written and tested in Python 3.",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2026-03-31T19:56:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PdfPasswordRemover",
+                "description": "PdfPasswordRemover is a project to remove passwords from PDF files.",
+                "stargazers_count": 88,
+                "language": "C#",
+                "pushed_at": "2025-01-07T20:31:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SensorDecoders",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-06-13T08:32:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Waterfox",
+                "description": "The official Waterfox \ud83d\udca7 source code repository",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-07-04T15:03:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cypress",
+                "description": "Fast, easy and reliable testing for anything that runs in a browser.",
+                "stargazers_count": 2,
+                "language": "CoffeeScript",
+                "pushed_at": "2026-01-21T22:58:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "outline-releases",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-03-16T20:30:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LinearCongruenceGeneratorC-",
+                "description": "Linear Congruence Generator implementation in C#.",
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2025-01-07T18:21:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CalDAV.NET",
+                "description": "CalDAV .NET client library",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-11-21T07:22:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CalDAVNet",
+                "description": "CalDAVNet is a project to access CalDAV servers and a fork of https://github.com/markatk/CalDAV.NET.",
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2025-01-05T21:30:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ccstatusline",
+                "description": "\ud83d\ude80 Beautiful highly customizable statusline for Claude Code CLI with powerline support, themes, and more.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-17T22:17:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DeleteFB",
+                "description": "A Selenium script to delete your Facebook content.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-01-21T23:20:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ClickHouse",
+                "description": "ClickHouse is a free analytic DBMS for big data.",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-01-21T23:19:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pytorch-transformers",
+                "description": "\ud83d\udc7e A library of state-of-the-art pretrained models for Natural Language Processing (NLP)",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-01-21T22:53:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LoadGamesFromPcGamesDownloadCom",
+                "description": "oadGamesFromPcGamesDownloadCom is written and tested in Python 3.7.4. Its purpose is to load all posts in a structured way from https://pcgames-download.com/. The project is no longer needed because the website went down (Probably due to DMCA takedown).",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2019-11-04T18:54:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BruteForcing",
+                "description": "Bruteforcing implementation in C#.",
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2025-01-05T21:20:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WordPressAttack",
+                "description": "WordPressAttack is written and tested in Python 3. Its purpose is to describe how a wordpress website can be attacked.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-01-10T15:03:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MQTT2MQTTBridge",
+                "description": "MQTT2MQTTBridge is a project to connect a locally running broker to a central MQTT broker. The project was written and tested in Python 3.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-01-10T14:26:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "outline-client",
+                "description": "Outline clients, developed by Jigsaw. The Outline clients use the popular Shadowsocks protocol, and lean on the Cordova and Electron frameworks to support Windows, Android / ChromeOS, Linux, iOS and macOS.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-03-19T03:10:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-mqtt",
+                "description": "A curated list of MQTT related stuff. :sparkles:",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-03-06T20:41:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "outline-server",
+                "description": "Outline Manager, developed by Jigsaw. The Outline Manager application creates and manages Outline servers, powered by Shadowsocks. It uses the Electron framework to offer support for Windows, macOS and Linux.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-03-19T03:04:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Lavalink4NET",
+                "description": "Lavalink4NET is a Lavalink wrapper with node clustering, caching and custom players for .NET with support for Discord.Net and DSharpPlus.",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2019-07-08T19:33:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MQTTnet.TestApp.WinForm",
+                "description": "MQTTnet.TestApp.WinForm is a test application to test MQTTnet. The assembly was originally created by @grammyleung.",
+                "stargazers_count": 16,
+                "language": "C#",
+                "pushed_at": "2025-01-07T19:55:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "valhalla",
+                "description": "Open Source Routing Engine for OpenStreetMap",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-09-25T17:51:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WindowsHelloChanges",
+                "description": "WindowsHelloChanges is just a repository to show the changes made to avoid the security issue under ",
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2020-04-16T17:46:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WindowsHelloTest",
+                "description": "WindowsHelloTest is an assembly/ library to test the Windows Hello nuget package I made. The assembly was written and tested in .Net 4.8.",
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2021-01-01T16:36:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DecimalMath",
+                "description": "DecimalMath is a library to calculate mathematic functions with the decimal data type.",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-01-05T21:37:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QRCoder",
+                "description": "A pure C# Open Source QR Code implementation",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-06-08T15:45:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "-sdk-container-demo-custom",
+                "description": "The SDK container demo with a custom base image.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-08-20T06:36:24Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:13.013860+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

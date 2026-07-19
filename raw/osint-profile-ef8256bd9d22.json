@@ -1,0 +1,231 @@
+{
+  "profileId": "osint-profile-ef8256bd9d22",
+  "target": "cojocaru-david",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:59.383186+00:00",
+  "completedAt": "2026-06-20T16:48:59.943335+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1e293133",
+      "lookupType": "github_context",
+      "target": "cojocaru-david",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "cojocaru-david",
+            "name": "Cojocaru David",
+            "type": "User",
+            "company": "Clinic Software",
+            "blog": "https://cojocarudavid.me",
+            "location": "Romania",
+            "bio": "\ud83d\udc4b Hi, I'm David, a 18yo coder. Crafting web wonders with JavaScript, PHP, and React. Linux lover automating tasks with Bash.",
+            "public_repos": 10,
+            "followers": 880,
+            "following": 681,
+            "created_at": "2021-06-06T21:10:58Z",
+            "updated_at": "2026-06-15T07:52:09Z",
+            "html_url": "https://github.com/cojocaru-david",
+            "avatar_url": "https://avatars.githubusercontent.com/u/85460567?v=4",
+            "repos": [
+              {
+                "name": "snippetslibrary.com",
+                "description": "SnippetsLibrary - A secure, lightning-fast code snippet manager to store, organize, and share your code with beautiful syntax highlighting.",
+                "stargazers_count": 65,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-11T00:41:15Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "bun",
+                  "cloudflare-workers",
+                  "code-snippets",
+                  "drizzle-orm",
+                  "github-oauth",
+                  "huno",
+                  "jwt",
+                  "postgresql",
+                  "react",
+                  "restful-api",
+                  "snippet-manager",
+                  "syntax-highlighting",
+                  "tailwindcss",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "cojocarudavid.me",
+                "description": "Blazing fast personal website built with Astro.js and styled with Tailwind CSS. ",
+                "stargazers_count": 74,
+                "language": "Astro",
+                "pushed_at": "2026-05-08T18:25:41Z",
+                "fork": false,
+                "topics": [
+                  "astrojs",
+                  "blazingly-fast",
+                  "blog",
+                  "javascript",
+                  "mywebsite",
+                  "netlify",
+                  "portfolio-website",
+                  "portofolio",
+                  "static",
+                  "tailwind",
+                  "tailwindcss",
+                  "typescript",
+                  "website"
+                ]
+              },
+              {
+                "name": "cojocaru-david",
+                "description": "\ud83d\udc4b 17-year-old coder from Romania \ud83c\uddf7\ud83c\uddf4 passionate about web development and cybersecurity. Proficient in Lua, HTML, JavaScript, PHP, Node.js, and more. Love Linux, music, and open for exciting projects! Let's connect: cojocarudavidmariusc@gmail.com \ud83d\ude80",
+                "stargazers_count": 21,
+                "language": null,
+                "pushed_at": "2026-03-06T17:00:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tailCi",
+                "description": "TailCI is a lightweight, fast, and modern web application built with CodeIgniter and styled with Tailwind CSS. It combines the simplicity of CodeIgniter\u2019s PHP framework with the utility-first power of Tailwind CSS for rapid development and clean design.",
+                "stargazers_count": 16,
+                "language": "PHP",
+                "pushed_at": "2026-06-13T19:11:26Z",
+                "fork": false,
+                "topics": [
+                  "codeigniter",
+                  "lightweight",
+                  "performance",
+                  "php",
+                  "starter-template",
+                  "tailci",
+                  "tailwindcss",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "portfolio",
+                "description": "A modern, high-performance personal portfolio and blog built with Astro.js. Designed to showcase your projects and technical writing with blazing-fast performance and exceptional SEO.",
+                "stargazers_count": 53,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T05:42:09Z",
+                "fork": false,
+                "topics": [
+                  "astro",
+                  "astrojs",
+                  "blog",
+                  "developer",
+                  "modern",
+                  "optimized",
+                  "portfolio",
+                  "react",
+                  "reactjs",
+                  "responsive",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "david-dark-code",
+                "description": "David Dark is a dark theme for VS Code. It is based on the github theme and the default dark theme. It is designed to be easy on the eyes and to be used for long periods of time.",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2026-03-03T18:08:21Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "dark-code",
+                  "dark-theme",
+                  "david",
+                  "html",
+                  "javascript",
+                  "theme",
+                  "visual-studio",
+                  "visual-studio-code",
+                  "visual-studio-extension",
+                  "visualstudio",
+                  "vscode",
+                  "vscode-extension",
+                  "vscode-theme",
+                  "vscode-themes"
+                ]
+              },
+              {
+                "name": "react-bits",
+                "description": "An open source collection of animated, interactive & fully customizable React components for building stunning, memorable websites.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-17T12:51:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cvelistV5",
+                "description": "CVE cache of the official CVE List in CVE JSON 5 format",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-06T16:40:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bhvr",
+                "description": "A monorepo template using Bun, Hono, Vite, and React",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-05-06T18:42:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "up-for-grabs.net",
+                "description": "This is a list of projects which have curated tasks specifically for new contributors. These issues are a great way to get started with a project, or to help share the load of working on open source projects. Jump in!",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-05T13:30:58Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:59.942425+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

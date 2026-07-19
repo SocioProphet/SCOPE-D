@@ -1,0 +1,190 @@
+{
+  "profileId": "osint-profile-df28750883c9",
+  "target": "DevNinja08",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:52.585374+00:00",
+  "completedAt": "2026-06-21T15:28:53.196138+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f3041851",
+      "lookupType": "github_context",
+      "target": "DevNinja08",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "DevNinja08",
+            "name": "Dev Ninja",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Coding Aspirant \ud83d\udcbb\r\n",
+            "public_repos": 13,
+            "followers": 3114,
+            "following": 6424,
+            "created_at": "2024-01-11T06:03:11Z",
+            "updated_at": "2025-11-03T05:43:15Z",
+            "html_url": "https://github.com/DevNinja08",
+            "avatar_url": "https://avatars.githubusercontent.com/u/156286676?v=4",
+            "repos": [
+              {
+                "name": "N8N-AI-Agents-Masterclass",
+                "description": "Learn n8n workflow automation with AI Agents \ud83e\udd16 | Step-by-step guide to build no-code workflows, automate tasks, and create intelligent pipelines \ud83d\ude80 | Integrate OpenAI, Hugging Face, LLMs, and external APIs \ud83c\udf10 | Master chatbots, data automation, and smart workflows using n8n. \ud83e\udde0",
+                "stargazers_count": 28,
+                "language": null,
+                "pushed_at": "2025-10-10T02:56:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Backend-Deployment",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-02-10T06:38:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Book-Finder-Application-iNeuron",
+                "description": "A React and Tailwind CSS project for searching books via the Open Library API, developed during a Physics Wallah- iNeuron Internship. Features responsive design and real-time book data.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-23T11:55:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lms-server",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-14T03:10:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lms-frontend",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-09-14T02:44:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Book-Finder-Application-iNeuron-v0",
+                "description": "A React and Tailwind CSS project for searching books via the Open Library API, developed during a Physics Wallah- iNeuron Internship. Features responsive design and real-time book data.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-24T02:35:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "30Days-JavaScript-Challenge",
+                "description": "30 Days of JavaScript Challenge Course \ud83c\udf75\u2764\ufe0f\u200d\ud83d\udd25 by Hitesh Choudhary (Founder of ChaiAurCode). Contributions are Opened, Feel Free to contribute in a better manner and only valid pull request get merged in the repository. ",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-05T06:52:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "crispy-doodle",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-02-23T06:58:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "codercanvas18",
+                "description": "Config File For Profile",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-07-07T14:37:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "opensource-contributers",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-07-17T03:10:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "javascript-code-challenges",
+                "description": "A collection of JavaScript modern interview code challenges for beginners to experts",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-07-28T06:39:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chinmaykaitade",
+                "description": "\ud83d\ude80 Passionate MERN Stack Developer crafting interactive web apps & exploring AI innovations. \ud83d\udcbb Building projects with React, Node.js, Express, MongoDB & sharing open-source contributions.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-09-14T03:24:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GitHub-Terminal-Stats-OpenSource",
+                "description": "Create dynamic, terminal-style GitHub Stats for your Profile README! Automatically updates with GitHub Actions.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-09-14T03:24:46Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:53.195807+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "profileId": "osint-profile-ffb7773c8658",
+  "target": "sezindartar",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:19.844898+00:00",
+  "completedAt": "2026-06-21T15:29:20.270537+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-bfd4c71f",
+      "lookupType": "github_context",
+      "target": "sezindartar",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "sezindartar",
+            "name": "Sezin ",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Python, C ve g\u00f6m\u00fcl\u00fc sistemlerle ba\u015flayan yolculu\u011fumu; ML, DL, NLP ve LLM ile s\u00fcrd\u00fcr\u00fcyorum.",
+            "public_repos": 9,
+            "followers": 2699,
+            "following": 4439,
+            "created_at": "2025-06-23T11:48:50Z",
+            "updated_at": "2025-11-16T19:01:58Z",
+            "html_url": "https://github.com/sezindartar",
+            "avatar_url": "https://avatars.githubusercontent.com/u/217591458?v=4",
+            "repos": [
+              {
+                "name": "project-base",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-30T19:23:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-chatbot",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2025-07-28T22:28:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MuratKomurcu1",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-08-25T22:27:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LLM",
+                "description": "Bu repo, B\u00fcy\u00fck Dil Modelleri (LLM'ler) \u00fczerine kapsaml\u0131 bir e\u011fitim serisinin kodlar\u0131n\u0131 i\u00e7erir. Proje, LLM'lerin temel kavramlar\u0131ndan ba\u015flayarak, embedding, prompt engineering, fine-tuning ve da\u011f\u0131t\u0131m gibi ileri konular\u0131 pratik \u00f6rneklerle ele al\u0131yor.",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2025-09-06T15:20:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NLP",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-28T23:38:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Deep-Learning",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-29T23:02:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sezindartar",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-09-06T15:24:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "-language-learning-assistant",
+                "description": null,
+                "stargazers_count": 23,
+                "language": "Python",
+                "pushed_at": "2025-08-04T20:25:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SimpleDataDashboard",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-07-16T15:11:51Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:20.269876+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

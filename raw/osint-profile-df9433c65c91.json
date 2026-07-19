@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-df9433c65c91",
+  "target": "vegata099",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:22.696783+00:00",
+  "completedAt": "2026-06-20T16:48:24.284330+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e6f1e138",
+      "lookupType": "github_context",
+      "target": "vegata099",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "vegata099",
+            "name": "Vegata",
+            "type": "User",
+            "company": "NunYa",
+            "blog": "",
+            "location": null,
+            "bio": "DBZ + 3D = FUN",
+            "public_repos": 73,
+            "followers": 1032,
+            "following": 765,
+            "created_at": "2023-08-26T16:39:39Z",
+            "updated_at": "2026-01-13T09:00:06Z",
+            "html_url": "https://github.com/vegata099",
+            "avatar_url": "https://avatars.githubusercontent.com/u/143282825?v=4",
+            "repos": [
+              {
+                "name": "SecretNet",
+                "description": "Protective Identity Mesh for Secure Data Exchange enables real-time encryption and access control through adaptive Framework.",
+                "stargazers_count": 26,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:36:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AptosMove",
+                "description": "AptosMove embodies Decentralized, Secure, Move-based data management, ensuring scalable, robust, fault-tolerant, and real-time data Engine.",
+                "stargazers_count": 9,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:30:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sakuyaweb3-debug",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-12T04:22:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FastLink",
+                "description": "Hyper-Converged, Cloud-Native FastLink Accelerates Enterprise Workloads with Self-Healing, Auto-Scale Distributed Architecture Platform",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2025-12-14T15:28:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LitProtocol",
+                "description": "Resilient, load-balanced architecture ensures seamless high-availability, robust security authentication, and efficient distributed infrastructure.",
+                "stargazers_count": 23,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T16:39:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SeiSpeed",
+                "description": "Automated performance acceleration through adaptive Auto-Scaling and Multi-Cloud orchestration, delivering Scalable, Intelligent Distributed Optimizer.",
+                "stargazers_count": 10,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:32:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NymMix",
+                "description": "Advanced-encryption NymMix suite empowers enterprises with scalable, secure, distributed data-anonymization through homomorphic-encryption methodologies.",
+                "stargazers_count": 20,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:37:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Studio-Aiva",
+                "description": "Professional-grade platform for integrating 2D/3D character models with AI. Build interactive, voice-enabled experiences with expression control, motion capture, and real-time AI responses",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-13T09:43:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JunoChain",
+                "description": "Decentralized, Smart-Contract-Enabled, Autonomous-Node-Managed Blockchain Infrastructure for Scalable, Intelligent Distributed Ledger Network. with Distributed architecture",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T16:35:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ThresholdKey",
+                "description": "Intelligent predictive analytics engine, driven by real-time machine learning integration, empowering the ThresholdKey Optimizer Module.",
+                "stargazers_count": 20,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T16:38:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EigenLayer",
+                "description": "Machine-learning orchestration via real-time event streams fuels scalable, intelligent, distributed processing Infrastructure.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T16:26:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LidoStake",
+                "description": "Autonomous, self-healing LidoStake infrastructure ensures real-time data processing and high-availability architecture as a resilient operations manager.",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:25:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CelestiaData",
+                "description": "Advanced Data Analytics Hub, fueled by a Predictive Analytics Engine, for Real-time Insight Warehouses.",
+                "stargazers_count": 11,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:27:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OsmosisDex",
+                "description": "Resilient Multi-Token Architecture enables Efficient Atomic-Transfer Processing, safeguarding transparent trades across decentralized Exchange.",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T16:34:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RocketPool",
+                "description": "Unlocking Decentralized Autonomy through Adaptive Node Orchestration and Blockchain-Enabled Governance at the Nexus.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-12-14T16:24:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MinaLight",
+                "description": "MinaLight: An Intelligent Edge-to-Core Management Engine for Real-Time Data Processing and Scalable Data Processing Platform.",
+                "stargazers_count": 10,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:28:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "InjectiveHub",
+                "description": "Decentralized, multi-cloud orchestrated smart contract execution environment ensuring scalable, fault-tolerant, high-throughput transactions across the Injective Network.",
+                "stargazers_count": 15,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:33:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SuiBlock",
+                "description": "Artificially orchestrating multi-cloud data convergence with autonomous, scalable, and distributed architecture, empowering the SuiBlock Engine.",
+                "stargazers_count": 8,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:31:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PendleYield",
+                "description": "Enterprise-grade PendleYield orchestrates real-time event-driven workflows with intelligent auto-scaling and adaptive distributed Optimizer.",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:22:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vegata099",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-13T09:44:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dasdaad",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-09T02:17:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BalancerPool",
+                "description": "Efficiently orchestrating resource-optimized distributed clusters for high-availability failover-recovery through intelligent, scalable network convergence Nexus Hub.",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:21:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SushiSwap",
+                "description": "AI-Driven SushiSwap Architecture Leverages Decentralized Autonomous Networks for Optimized Automated Smart Routing Catalyst",
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:19:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MakerDsr",
+                "description": "Artificial-Intelligence enabled Real-Time Processing empowers Data-Driven Decision Making across Scalable, Intelligent, Distributed Architecture Ecosystem Framework.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T16:17:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CompoundLend",
+                "description": "Distributed Enterprise Framework for CompoundLend, delivering Scalable Collateral Management and Adaptive Risk-Averse Optimizer.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-12-14T16:16:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "YearnStrat",
+                "description": "Real-time Data Orchestrator leveraging Distributed Analytics Engine for Scalable, Intelligent Market Insights Analysis.",
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:15:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MorphoVault",
+                "description": "Comprehensive threat posture management through integrated continuous intelligence and learning-driven risk assessments within a secure data vault repository.",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:14:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlastYield",
+                "description": "Precision-optimized real-time data processing engines fueled by predictive analytics and distributed modeling infrastructure.",
+                "stargazers_count": 5,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:13:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MantleNet",
+                "description": "Geo-spatially converged predictive analytics mesh with AI-driven real-time processing across scalable, distributed, intelligent networks orchestrator.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-12-14T16:12:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LineaProof",
+                "description": "Effortlessly processing vast datasets in real-time, LineaProof is an intelligent, distributed, and auto-scaled predictive modeling system.",
+                "stargazers_count": 5,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:11:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ScrollZero",
+                "description": "Elevating Omni-Experience Architecture with Adaptive Frictionless Navigation on the EdgeEngine. with Dynamic architecture",
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:10:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StarknetTools",
+                "description": "Intelligent Rollup Aggregation Orchestrator for Starknet, delivering scalable, adaptive, and highly distributed network capabilities.",
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:08:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zkSyncAI",
+                "description": "Intelligent Scalable Architecture Optimizer Hub providing enterprise-grade zkSync solutions with Intelligent architecture implementing modern Low-Latency Processing patterns",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-12-14T16:07:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BaseLayer",
+                "description": "Edge-Compute Fabric for Real-Time Data Processing, driven by Predictive Model Intelligence at Enterprise Core.",
+                "stargazers_count": 5,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:06:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OptimismStack",
+                "description": "Adaptive, self-healing architecture with real-time performance analytics and on-demand multi-cloud environments seamlessly integrates into a resilient software Framework.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:05:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StorybookU",
+                "description": "Effortless asynchronous rendering of highly-configurable, component-driven UI components at runtime. providing enterprise-grade StorybookUI solutions",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:02:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArbitrumRoll",
+                "description": "Distributed Real-time Analytics Orchestrator for ArbitrumRoll, streamlining optimized batch processing across multiple nodes to a centralized Nexus Hub.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:04:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CypressTest",
+                "description": "High-availability, self-healing, intelligent-test-decision-making engine for real-time data processing in a highly scalable, distributed pipeline.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:03:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NxMonorepo",
+                "description": "Distributed, multi-agent architecture with autonomous dependency resolution, enabling agile, modular development in a unified NxMonorepo Studio.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T16:01:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TurbopackFramework",
+                "description": "High-performance Turbopack engine enables autonomous, adaptive, and highly efficient minification and module-analysis operations across distributed infrastructure.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-12-14T16:00:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EsbuildSwift",
+                "description": "Adaptive, just-in-time compilation-driven EsbuildSwift harnesses intelligent dependency analysis, enabling scalable, autonomous development Engine.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-12-14T15:58:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BabelTrans",
+                "description": "Unlocking Linguistic Harmony with BabelTrans: Enterprise-Grade, Adaptive, Real-Time Translation Studio implementing modern AI-Powered Quality Scoring and Feedback patterns",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T15:58:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebpackCore",
+                "description": "Efficiently orchestrating dependency-management and lazy-loading with real-time adaptability across distributed microservices architecture Engine.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T15:56:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RollupPack",
+                "description": "Containerized application clusters dynamically scale and self-heal through machine-learning-driven high-availability and resource-efficient execution as a resilient task executor.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-12-14T15:55:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ViteBuild",
+                "description": "Edge-Optimized ViteBuild unleashes Scalable, Intelligent, Distributed On-Demand Build Pipelining. Task Management capabilities implementing modern Distributed Build Architecture patterns",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T15:54:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ElectronForge",
+                "description": "AI-optimized ElectronForge orchestrates auto-scaling, streaming-data-processing and dynamically reconfigures itself as a high-performance, self-healing resource manager.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-12-14T15:53:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TauriApp",
+                "description": "Neural-Network accelerated, cross-platform TauriApp with high-performance, edge-computing capabilities and WebAssembly runtime toolkit.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-14T15:52:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DrizzleDb",
+                "description": "Instantaneous Data Processing for Dynamic Environments: Seamlessly Scaling High-Performance Capabilities Here are six technical suffixes for DrizzleDb projects:",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-12-14T15:50:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LuciaPass",
+                "description": "High-Performance Adaptive Threat Mitigation Engine leveraging Advanced Machine Learning and Distributed Real-Time Intelligence.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-12-14T15:49:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PostmarkRelay",
+                "description": "Adaptive email management orchestration delivers high-volume, secure, and resilient email processing within a robust Suite.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-12-14T15:47:21Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:24.282896+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

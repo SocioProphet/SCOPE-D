@@ -1,0 +1,382 @@
+{
+  "profileId": "osint-profile-859a080f4757",
+  "target": "AhmadTigress",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:42.876702+00:00",
+  "completedAt": "2026-06-21T15:31:43.897385+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-0aed4fad",
+      "lookupType": "github_context",
+      "target": "AhmadTigress",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "AhmadTigress",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Nigeria",
+            "bio": "Data Scientist ||\r\nBugs are your life companions. They give both misery and joy.",
+            "public_repos": 34,
+            "followers": 1553,
+            "following": 2210,
+            "created_at": "2023-07-11T21:59:21Z",
+            "updated_at": "2026-06-16T15:20:41Z",
+            "html_url": "https://github.com/AhmadTigress",
+            "avatar_url": "https://avatars.githubusercontent.com/u/139285648?v=4",
+            "repos": [
+              {
+                "name": "rag_project",
+                "description": "Advanced multi-doc RAG agent",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-21T11:59:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AhmadTigress",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-05-24T12:49:57Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "exp-tracking-mlflow",
+                "description": "Experimentation tracking with MLFlow. ",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-10T19:55:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "exp-tracking-DVC",
+                "description": "Tracking our version data with DVC",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-29T20:18:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "water_potability_prediction",
+                "description": "An end-to-end MLOPs pipeline for water potability prediction ",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-28T10:36:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mlops_pipeline_with_modular_code",
+                "description": "MLOPS pipeline with modularity for reproducibility, maintainability, and scalability",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-26T19:54:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mlops_pipeline_1",
+                "description": "Initial steps of building mlops pipeline with DVC and  FastAPI",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-25T10:45:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "water_potability_API",
+                "description": "FastAPI-powered REST API for model serving",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-25T08:09:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Agentic_AI_Development",
+                "description": "Course track for Agentic AI Development",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2025-07-16T11:23:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Geospatial_Analysis",
+                "description": "Create interactive maps, and discover patterns in geospatial data.",
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-05-08T11:57:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Rag_System",
+                "description": "Medical knowledge assistant designed specifically for use in Obstetrics and Gynaecology (O&G). ",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-07-06T14:05:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "customer-s_support_agent",
+                "description": "A intelligent Matrix bot with RAG capabilities for customer support.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-01-27T11:10:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Google_Events",
+                "description": "An intelligent multi-agent system that automatically generates professional README files by analyzing GitHub repositories using Google's ADK framework and Gemini AI models.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-12-03T17:48:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "research_assistant_API",
+                "description": "RAG-powered API for querying research documents with semantic search",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-11-25T14:16:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Petals-to-the-Metal_Flower_Classification.",
+                "description": "Flower classification using Tensor Processing Unit(TPU) in Colab enviroment",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-13T21:07:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Intro_to_Machine_Learning",
+                "description": "Getting started with machine learning",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-14T19:55:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IBM_Data_Visualization",
+                "description": "Data visualization from Applied Data Science with Python. As part of my \"skills build\" learning path.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-05-14T15:55:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Computer_Vision",
+                "description": "A collection of notebooks, exercises, and notes from the Kaggle Computer Vision course. This repository documents my learning journey with the Pandas library for data analysis in Python.",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-04T17:35:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Intro_to_Deep_Learning",
+                "description": "My introductory course in deep learning on Kaggle. This repository contain my Notebooks and exercise during the course.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-05-06T21:07:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Time_Series",
+                "description": "A  collection of notebooks, exercises, and challenges for time series analysis and forecasting using statistical and machine learning methods.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-04T16:36:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data_Cleaning",
+                "description": "This repository provides hands-on exercises, Python scripts, and techniques for data cleaning, including handling missing data, scaling, parsing dates, encoding, and fixing inconsistencies.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-04-29T13:10:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pandas",
+                "description": "A collection of notebooks, exercises, and notes from the Kaggle Pandas course. This repository documents my learning journey with the Pandas library for data analysis in Python.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-04-21T19:28:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Perceptron_Algorithm",
+                "description": "This repository contains an implementation of the Perceptron Algorithm, one of the earliest machine learning models used for binary classification.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-03-15T10:43:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Check_Phase",
+                "description": "for learning purpose",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-02-23T13:49:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data_Analysis",
+                "description": "Data Analysis for learning purpose",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-18T10:06:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "e-learning",
+                "description": "for learning purpose",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-12-19T10:01:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Python-Programming",
+                "description": "This contains Python codes and projects.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-12T16:14:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python_playground",
+                "description": "This repository holds my special moments during coding journey. They include my mistakes, trials and the successful code i have written. ",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-20T21:14:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C_Programming",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-11-14T13:02:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-system_engineering-devops",
+                "description": "description of the repository",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2023-08-10T04:59:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-zero_day",
+                "description": "I'm now a ALX Student, this is my first repository as a full-stack engineer",
+                "stargazers_count": 3,
+                "language": "Shell",
+                "pushed_at": "2023-08-02T04:39:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-pre_course",
+                "description": "I'm now a ALX Student, this is my first repository as a full-stack engineer",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2023-07-28T16:02:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zero_day",
+                "description": "This is my first repository as a full-stack engineer",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-08-07T00:24:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-low_level_programming",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2023-08-23T05:18:05Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:43.896565+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

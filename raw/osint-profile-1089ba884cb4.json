@@ -1,0 +1,339 @@
+{
+  "profileId": "osint-profile-1089ba884cb4",
+  "target": "AshiteshSingh",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:50.023222+00:00",
+  "completedAt": "2026-06-20T16:49:50.799800+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4f59d450",
+      "lookupType": "github_context",
+      "target": "AshiteshSingh",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "AshiteshSingh",
+            "name": "Ashitesh",
+            "type": "User",
+            "company": null,
+            "blog": "ashitesh.me",
+            "location": "India",
+            "bio": "Machine Learning Engineer And Assemblyx86_64 coder  And Quantum Computing Researcher",
+            "public_repos": 28,
+            "followers": 705,
+            "following": 678,
+            "created_at": "2025-08-27T15:00:20Z",
+            "updated_at": "2026-06-18T01:00:01Z",
+            "html_url": "https://github.com/AshiteshSingh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/228955865?v=4",
+            "repos": [
+              {
+                "name": "AshiteshSingh",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-06-15T15:14:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tpu-Accelerated-Quantum-JAX",
+                "description": "High-performance, differentiable quantum state-vector & tensor network simulator in 100% pure JAX (no classical framework overhead). Accelerated on NVIDIA GPUs and Google Cloud TPU v6e-64/v5e VM clusters up to 37 qubits! Supported by Google's TPU Research Cloud (TRC) program.",
+                "stargazers_count": 25,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-12T05:16:30Z",
+                "fork": false,
+                "topics": [
+                  "google-cloud",
+                  "grovers-algorithm",
+                  "jax",
+                  "machine-learning",
+                  "nvidia-gpu",
+                  "python",
+                  "quantum-computing",
+                  "quantum-computing-research",
+                  "quantum-ml",
+                  "quantum-simulation",
+                  "shors-algorithm",
+                  "tpu",
+                  "xla"
+                ]
+              },
+              {
+                "name": "system_prompts_leaks",
+                "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-12T00:30:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "webmagazine",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2025-10-14T13:17:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "claude-code-sourcemap",
+                "description": "claude-code full original source code from source maps",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-04T15:34:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jax-tpu",
+                "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-04-25T15:24:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "claude-code-sourcemap1",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-16T04:37:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-engineer-roadmap",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-23T14:21:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "House-price-prediction",
+                "description": "House Price Prediction - Ultra Hybrid ML Pipeline combining XGBoost, LightGBM, GBR, ExtraTrees, and Transformer DNN",
+                "stargazers_count": 41,
+                "language": "Python",
+                "pushed_at": "2026-03-27T11:30:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "qiskit",
+                "description": "Qiskit is an open-source SDK for working with quantum computers at the level of extended quantum circuits, operators, and primitives.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-04-26T10:45:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Nueral-Search-Engine1",
+                "description": "Gemini 3 Powered Search Engine",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T10:58:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Perplexity-gui-copy",
+                "description": "Frontend-only clone of Perplexity AI's interface built with Next.js and TypeScript. GUI demonstration project with no backend functionality. https://perplexity-gui-clone.vercel.app",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-26T13:36:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "streamlit",
+                "description": "Streamlit \u2014 A faster way to build and share data apps.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-11-09T14:20:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Python_Programming",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-07T14:05:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tensorflow",
+                "description": "An Open Source Machine Learning Framework for Everyone",
+                "stargazers_count": 10,
+                "language": "C++",
+                "pushed_at": "2026-06-18T15:24:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pytorch",
+                "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-11-15T02:18:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "deepface",
+                "description": "A Lightweight Face Recognition and Facial Attribute Analysis (Age, Gender, Emotion and Race) Library for Python",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-09-26T12:24:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "placement-project-logistic-regression",
+                "description": "sample project on placement data(toy)",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-09-19T04:08:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "numpy",
+                "description": "The fundamental package for scientific computing with Python.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-11-15T08:48:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RealTimeFaceDetection_DeepLearning",
+                "description": "AI-powered face recognition security system using RetinaFace for real-time detection and identification. Built for Viksit Bharat Buildathon 2025 to enhance security infrastructure and contribute to Atmanirbhar Bharat's self-reliant technological solutions.",
+                "stargazers_count": 17,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-18T10:58:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Website_project",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-09-22T12:51:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "langchain-models",
+                "description": "Codes related to the model component in LangChain",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-02-12T03:09:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Linear-Regression-House-Price-Prediction",
+                "description": "\"Machine Learning model for predicting house prices",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-09-22T13:06:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Number-Guessing-Game-Python",
+                "description": "Python number guessing game (1-100) with multiple difficulty levels",
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-09-22T13:17:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Visual-Studio-Code-Projects",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-10-20T07:14:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Agentic-Ai-Course-5-Days-Google-Kaggle",
+                "description": "Hands-on implementation and notes from Google x Kaggle's 5-Day AI Agents Intensive Course (Nov 10-14, 2025). Exploring agent architectures, tools, memory, and production deployment.",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-14T11:38:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scikit-learn",
+                "description": "scikit-learn: machine learning in Python",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-11-14T12:06:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LiteRT",
+                "description": "LiteRT, successor to TensorFlow Lite. is Google's On-device framework for high-performance ML & GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-01-28T13:39:28Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:50.798785+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

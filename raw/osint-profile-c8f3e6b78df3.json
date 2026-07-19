@@ -1,0 +1,460 @@
+{
+  "profileId": "osint-profile-c8f3e6b78df3",
+  "target": "deadlyandro",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:24.288073+00:00",
+  "completedAt": "2026-06-20T16:48:25.818784+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-608027e4",
+      "lookupType": "github_context",
+      "target": "deadlyandro",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "deadlyandro",
+            "name": "andro",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 43,
+            "followers": 1023,
+            "following": 839,
+            "created_at": "2023-07-10T16:50:15Z",
+            "updated_at": "2026-06-15T01:26:59Z",
+            "html_url": "https://github.com/deadlyandro",
+            "avatar_url": "https://avatars.githubusercontent.com/u/139158377?v=4",
+            "repos": [
+              {
+                "name": "bepoch-core",
+                "description": "On-chain verifiable ML model lineage - BasEpoch core API. Every model release is an epoch, anchored on Base.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-27T16:18:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PrivacyShield",
+                "description": "Synthetic Risk Governance Engine utilizing advanced data encryption and real-time threat mitigation orchestration infrastructure.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:25:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TestnetFaucet",
+                "description": "Optimizing Real-time Transaction Processing, High-Performance Caching, and Fault-Tolerant Architectures TestnetFaucet projects: Expedited, Resilient, Optimized, Secure, Efficient, and Scalable.",
+                "stargazers_count": 17,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:29:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SignatureVerify",
+                "description": "Digital Transaction Authenticator leveraging Machine-Learning-Powered Real-Time Processing for Scalable Distributed Signature Verification.",
+                "stargazers_count": 27,
+                "language": "Rust",
+                "pushed_at": "2026-01-26T06:57:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LayerTwo",
+                "description": "Geo-Contextual Real-Time Data Processing Orchestrator for Multi-Cloud Distributed Enterprise Network with Autonomous architecture",
+                "stargazers_count": 8,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:24:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AmmCurve",
+                "description": "Automated, cloud-native deployment of AmmCurve orchestrates event-driven workflows as a scalable, distributed process optimizer.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:22:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FlashLoan",
+                "description": "Synthesizing real-time settlement dynamics with decentralized smart contract orchestration on a fault-tolerant ecosystem Network.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:21:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GasOptimizer",
+                "description": "Cloud-enabled, AI-infused predictive modeling for data-driven energy efficiency, delivering efficient, real-time insights to the GasOptimizerPlatform.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:28:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GovernanceVote",
+                "description": "Autonomous GovernanceVote Orchestrator harnessing Distributed Ledger integrity for Scalable Risk Analysis and Adaptive Decision-making Platform.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:16:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LendingPool",
+                "description": "Real-time lending intelligence converges with decentralized, secure, and AI-driven assessment, safeguarding trusted borrower identities at the Nexus Hub.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:20:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DexAggregator",
+                "description": "Efficiently consolidating decentralized transactions across multiple networks through a resilient, scalable, and optimized smart contract orchestration nexus.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:19:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StakingPool",
+                "description": "Decentralized Governance-enabled, Blockchain-based StakingPool Platform providing Scalable, Secure Data Storage and Resilient Framework.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:15:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OracleFeed",
+                "description": "High-performance OracleFeed enables scalable, real-time advanced analytics and auto-scaling insights across highly available, secure clusters via centralized console.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:14:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BridgeCross",
+                "description": "Cloud-Native BridgeCross Platform for Real-Time Event Processing and Adaptive Orchestration. with intelligent architecture",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:13:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenSwap",
+                "description": "Intelligent Cross-Chain TokenSwap enables scalable, distributed, multi-token support with adaptive liquidity Manager.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:12:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DefiYield",
+                "description": "Data-driven insights fueled by real-time market analytics and autonomous portfolio rebalancing orchestrator.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:11:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftMint",
+                "description": "Unlocking Seamless NftMint Experiences through Efficient Real-time Processing and Enterprise-grade Core. with adaptive architecture",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:09:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EthereumStack",
+                "description": "Here are six technical descriptors for EthereumStack software: Interconnected, scalable, autonomous, self-healing, resilient, and adaptive.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:03:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SolidityForge",
+                "description": "Enterprise-grade Blockchain Foundation for Scalable, Autonomous Distributed Transaction Processing Solutions. featuring Smart-contract-execution capabilities",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:01:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletConnect",
+                "description": "Multi-party consensus-driven transactions empowered by Enhanced Security Protocol, Adaptive Load Balancing, and secure bridge.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:00:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RollupScale",
+                "description": "Holistic Distributed Resource Orchestrator Seamlessly integrates Dynamic resource allocation RollupScale projects: scalable, robust, responsive, resilient, high-performance, and self-healing.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:08:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZkSnark",
+                "description": "Effortless scalability meets zero-knowledge security with our advanced, decentralized, private, secure, efficient, and transparent Zk-Snark Optimizer.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T13:06:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TenderlyDebug",
+                "description": "Cerebrally Optimized Code-Introspection Engine for Scalable, Adaptive Rollback-Management and Distributed Code-Caching. implementing modern Error-Isolation patterns",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T12:58:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DappBuilder",
+                "description": "Adaptive, cloud-agnostic DappBuilder leverages AI-driven auto-scaling for real-time template rendering, enhancing modular, decentralized workflows core.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T13:05:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AnkrRelay",
+                "description": "Blockchain-powered, self-healing, real-time transaction network that ensures secure, scalable, and autonomous data relaying through a resilient Gateway.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T12:57:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AlchemyNode",
+                "description": "Data-Driven Ecosystem Orchestrator leveraging Auto-Scaling and Machine Learning Integration for Intelligent, Scalable Distributed Processing Framework.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T11:56:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "InfuraA",
+                "description": "Edge-enabled InfuraAPI orchestrates scalable, high-performance processing with automatic scaling InfuraAPI projects: - InfuraAPI-XT, InfuraAPI-Plus, InfuraAPI-Pro, InfuraAPI-Max, InfuraAPI-XL, InfuraAPI-Evo.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T11:58:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MoralisStream",
+                "description": "Decentralized, auto-scaling MoralisStream orchestrates high-performance event-driven architecture across adaptive, intelligent hubs. featuring event-driven-architecture capabilities",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T12:52:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QuickNode",
+                "description": "Edge-Optimized, AI-Infused, Autonomic Scaling Framework for Enterprise-Grade Distributed Systems Architecture implementing modern Real-Time Analytics patterns",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T12:53:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ThirdwebKit",
+                "description": "Enterprise-grade ThirdwebKit enables secure, real-time smart contract management through highly scalable, transparent analytics dashboard portal.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T12:55:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChainstackHub",
+                "description": "Modular, real-time data orchestrator platform facilitating ChainstackHub's adaptive, scalable workflows manager. with adaptable architecture",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T12:56:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OpenZeppelin",
+                "description": "Decentralized Smart Contract Governance Ensured via Automated Compliance Enforcement and Verification across the Blockchain Network.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T11:42:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FoundryChain",
+                "description": "Cloud-agnostic FoundryChain orchestrator enables highly-parallelizable, self-healing, event-driven processing with adaptive workload manager.",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T11:43:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SandboxGame",
+                "description": "Evolving dynamic environments through adaptive procedural generation, intelligent auto-scaling, and distributed execution frameworks, powered by robust architecture.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T11:55:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DecentralandWorld",
+                "description": "DecentralandWorld enables immersive, user-centric experiences through dynamic identity mapping and spatially-aware interactions within a decentralized, autonomous mesh network.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T11:54:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "YearnVaults",
+                "description": "Hyper-Resilient Decentralized Autonomous Ecosystem Enabling Proactive Threat Simulation and Multi-Swap Execution within a Comprehensive Security Suite.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T11:52:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AaveProtocol",
+                "description": "Autonomous liquidity orchestration for on-chain interest rate protocols, with AaveProtocol projects: Scalable, Efficient, Transparent, Decentralized, Secure, and Optimized.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T11:51:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UniswapExchange",
+                "description": "Decentralized, smart contract-based trading platform leveraging a high-performance matching engine across a distributed Ledger Chain.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T11:49:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GraphIndex",
+                "description": "Real-time Data Unification Engine for Enterprise-Grade Scalability and Distributed Query Acceleration Catalyst.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T11:48:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TruffleSuite",
+                "description": "Self-Adaptive, Real-Time Processing-Optimized Distributed TruffleSuite Architecture for Intelligent Auto-Scaling Enterprise Framework. providing enterprise-grade TruffleSuite solutions",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-01-17T11:47:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HardhatTools",
+                "description": "Futuristic, Enterprise-Grade, Distributed Application Platform, Powering Scalable, Intelligent Containerization with Seamless, Real-Time Deployment Engine",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T11:46:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZeroProofs",
+                "description": "Artificially intelligent verification engines powered by self-sustaining, trustless, and immutable blockchain transactions optimizer.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T11:45:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RainbowWallet",
+                "description": "Blockchain-agnostic AI-empowered RainbowWallet enables secure, scalable multi-asset management across interoperable enterprise hubs.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-17T11:43:53Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:25.817745+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

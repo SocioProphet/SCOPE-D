@@ -1,0 +1,72 @@
+{
+  "profileId": "osint-profile-a95fe1a03163",
+  "target": "nelbeu",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:55.792096+00:00",
+  "completedAt": "2026-06-21T15:27:56.074860+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-99242d96",
+      "lookupType": "github_context",
+      "target": "nelbeu",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "nelbeu",
+            "name": "BETANCUR . N",
+            "type": "User",
+            "company": "National University of Colombia",
+            "blog": "",
+            "location": null,
+            "bio": "art & architectural historian #BetancurN #nelbeu\r\n\r\n",
+            "public_repos": 0,
+            "followers": 6352,
+            "following": 53427,
+            "created_at": "2025-04-11T13:50:59Z",
+            "updated_at": "2026-06-02T15:02:22Z",
+            "html_url": "https://github.com/nelbeu",
+            "avatar_url": "https://avatars.githubusercontent.com/u/207216445?v=4",
+            "repos": [],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:56.074129+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

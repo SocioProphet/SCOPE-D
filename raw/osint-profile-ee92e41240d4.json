@@ -1,0 +1,109 @@
+{
+  "profileId": "osint-profile-ee92e41240d4",
+  "target": "MelikaRezazadeh",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:05.305341+00:00",
+  "completedAt": "2026-06-21T15:32:05.650824+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-78722306",
+      "lookupType": "github_context",
+      "target": "MelikaRezazadeh",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "MelikaRezazadeh",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 4,
+            "followers": 1461,
+            "following": 2821,
+            "created_at": "2024-07-31T10:31:37Z",
+            "updated_at": "2025-09-22T12:02:42Z",
+            "html_url": "https://github.com/MelikaRezazadeh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177112755?v=4",
+            "repos": [
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-12T14:08:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubookshop",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-11T07:40:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MelikaRezazadeh",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-09-10T09:55:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-11T07:24:25Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:05.649953+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,526 @@
+{
+  "profileId": "osint-profile-1ab4782a9128",
+  "target": "krkarma777",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:50.216212+00:00",
+  "completedAt": "2026-06-20T13:53:51.157589+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-0c552f51",
+      "lookupType": "github_context",
+      "target": "krkarma777",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "krkarma777",
+            "name": "YUJUN OH",
+            "type": "User",
+            "company": "@PuzzleAI",
+            "blog": "http://linkedin.com/in/%EC%9C%A0%EC%A4%80-%EC%98%A4-9435b42b8/",
+            "location": "\ud83c\udf0d Seoul, South Korea",
+            "bio": "For fun.",
+            "public_repos": 40,
+            "followers": 1391,
+            "following": 1363,
+            "created_at": "2023-10-25T23:05:04Z",
+            "updated_at": "2026-05-27T17:22:01Z",
+            "html_url": "https://github.com/krkarma777",
+            "avatar_url": "https://avatars.githubusercontent.com/u/149022496?v=4",
+            "repos": [
+              {
+                "name": "GitHubUnfollowerTracker",
+                "description": "GitHubUnfollowerTracker is a web application designed to help users track unfollows among the people they follow on GitHub. Developed using Kotlin and Spring Boot, this application retrieves users' follower and following lists via the GitHub API to monitor changes.",
+                "stargazers_count": 24,
+                "language": "Kotlin",
+                "pushed_at": "2024-05-10T04:31:29Z",
+                "fork": false,
+                "topics": [
+                  "git",
+                  "github",
+                  "unfollow",
+                  "unfollower",
+                  "unfollowertracker"
+                ]
+              },
+              {
+                "name": "Leaf",
+                "description": "Project Leaf: Streamline your team's workflow with our free, stylish collaboration tool that blends the best of Slack, Jira, and Notion into one. Tailored for project management and team communication, Project Leaf is your go-to platform for enhanced productivity and security.",
+                "stargazers_count": 21,
+                "language": "HTML",
+                "pushed_at": "2024-06-22T04:18:45Z",
+                "fork": false,
+                "topics": [
+                  "collaboration",
+                  "discord",
+                  "jira",
+                  "notion",
+                  "slack",
+                  "tools",
+                  "trello"
+                ]
+              },
+              {
+                "name": "LeafNest",
+                "description": "Simplify your documentation and note-taking with Leaf. Our platform offers a sleek interface and powerful tools for seamless organization and collaboration. Perfect for students, professionals, and everyone in between, Leaf adapts to your needs, making knowledge capture and sharing effortless.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-11T04:06:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "korean-llm-cost",
+                "description": "Tokenizer efficiency and cost comparison for Korean text across major LLMs (frontier, Korean-specialized, and open multilingual).",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-08T05:33:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CHZZK-Ad-Blocker",
+                "description": "\uc774 \uc2a4\ud06c\ub9bd\ud2b8\ub294 \uce58\uc9c0\uc9c1\uc5d0\uc11c \uad11\uace0\ub97c \ube60\ub974\uac8c \uc2a4\ud0b5\uc2dc\ucf1c\uc90d\ub2c8\ub2e4.",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-16T04:53:40Z",
+                "fork": false,
+                "topics": [
+                  "ad-removal",
+                  "ad-skipping",
+                  "adblock",
+                  "chrome-extension",
+                  "chzzk",
+                  "firefox-extension",
+                  "javascript",
+                  "tampermonkey",
+                  "userscript",
+                  "video-ads"
+                ]
+              },
+              {
+                "name": "spring-ai-mapper",
+                "description": "Declarative structured output mapper for Spring AI (Feign-style interface for LLMs)",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2025-12-10T02:29:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "string-difference-finder",
+                "description": "A web tool to compare and highlight differences between two strings.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-25T21:22:20Z",
+                "fork": false,
+                "topics": [
+                  "compare-strings",
+                  "diff"
+                ]
+              },
+              {
+                "name": "k-mooc-macro-player",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-02-03T01:39:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nado",
+                "description": "\ub098\ub4e4\uc774 \ub3c4\uc6b0\ubbf8: \uc0ac\uc6a9\uc790\uac00 \uc57c\uc678 \ud65c\ub3d9\uc744 \uacc4\ud68d\ud560 \ub54c \ud544\uc694\ud55c \ubaa8\ub4e0 \uc815\ubcf4\ub97c \ud55c \ub208\uc5d0 \ubcfc \uc218 \uc788\uac8c \ud574\uc8fc\ub294 \uc6f9\uc0ac\uc774\ud2b8\uc785\ub2c8\ub2e4. \uc790\uc678\uc120 \uc9c0\uc218, \ub300\uae30 \uc815\uccb4 \uc9c0\uc218, \uccb4\uac10 \uc628\ub3c4\ub97c \uae30\ubc18\uc73c\ub85c \uc0ac\uc6a9\uc790\uc5d0\uac8c \ucd5c\uc801\uc758 \uc57c\uc678 \ud65c\ub3d9 \uc2dc\uac04\uc744 \ucd94\ucc9c\ud574\uc90d\ub2c8\ub2e4. \uc608\ub97c \ub4e4\uc5b4, \uc790\uc804\uac70 \ud0c0\uae30, \ub4f1\uc0b0, \ub610\ub294 \ud53c\ud06c\ub2c9 \ub4f1\uc758 \ud65c\ub3d9\uc5d0 \uc801\ud569\ud55c \uc2dc\uac04\uacfc \uc870\uac74\uc744 \uc54c\ub824\uc904 \uc218 \uc788\uc2b5\ub2c8\ub2e4.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-05-08T03:52:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "redis",
+                "description": "Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2019-07-18T18:36:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CleanAirTracker",
+                "description": "Clean Air Tracker is a website that utilizes the AirKorea OpenAPI from the Korea Environment Corporation to provide real-time air quality information, including particulate matter, fine particulate matter, and ozone. built with Express, TypeScript, Svelte, PostgreSQL, and TypeORM.",
+                "stargazers_count": 16,
+                "language": "Svelte",
+                "pushed_at": "2024-05-06T15:28:42Z",
+                "fork": false,
+                "topics": [
+                  "airquality",
+                  "airqualitymonitoringsystem",
+                  "express",
+                  "postgresql",
+                  "redis",
+                  "svelte",
+                  "typeorm",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "ForecastHubUijeongbu",
+                "description": "API for short-term regional forecasts using Korea Meteorological Administration data. Built with Java, Spring Boot, and MySQL.",
+                "stargazers_count": 9,
+                "language": "Java",
+                "pushed_at": "2024-04-30T01:36:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WitchEndFE",
+                "description": "Frontend for a Roguelike RPG developed with Vue.js. This project brings to life a turn-based combat system and procedurally generated dungeons, all accessible via a web browser. Designed to interface seamlessly with a NodeJS/NestJS backend.",
+                "stargazers_count": 12,
+                "language": "Vue",
+                "pushed_at": "2024-04-23T02:07:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WitchEndTS",
+                "description": "A web-based Roguelike RPG with procedurally generated dungeons and turn-based combat. Built with NodeJS, NestJS, TypeScript for a rich, browser-based RPG experience. Contributions welcome!",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2024-04-23T01:49:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TypeScriptExample",
+                "description": "\ud0c0\uc785\uc2a4\ud06c\ub9bd\ud2b8 \uacf5\ubd80\uc6a9 repository",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-04-17T03:36:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JasoseoBot",
+                "description": "\uc778\uacf5\uc9c0\ub2a5\uc744 \ud65c\uc6a9\ud558\uc5ec \ub9de\ucda4\ud615 \uc790\uae30\uc18c\uac1c\uc11c\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud574\uc8fc\ub294 \uc6f9 \uae30\ubc18 \uc11c\ube44\uc2a4\uc785\ub2c8\ub2e4.",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2024-04-15T01:52:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "socket-chat-exam",
+                "description": "\uc18c\ucf13\uacfc API \ud1b5\uc2e0\uc744 \uc774\uc6a9\ud55c \uc6f9 \ucc44\ud305 \uc11c\ube44\uc2a4",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2024-04-11T17:00:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spring-security",
+                "description": "Spring Security",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-04-08T17:44:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PaddleBounceGame",
+                "description": "A simple yet fun 2D paddle bounce game developed with LibGDX.",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2024-04-08T12:17:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sample",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-04-05T09:04:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "witchend",
+                "description": "A web-based Roguelike RPG with procedurally generated dungeons and turn-based combat. Built with SpringBoot, Java, JPA, and Thymeleaf for a rich, browser-based RPG experience. Contributions welcome!",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2024-04-07T11:43:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "usecase",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-31T11:35:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "productive-box",
+                "description": "Are you an early \ud83d\udc24 or a night \ud83e\udd89? Let's check out in gist",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-03-23T09:06:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "moonbam",
+                "description": "\ubb38\ud654\uc778\ub4e4\uc758 \ubc24\uc740 \uc601\ud654 \ucee4\ubba4\ub2c8\ud2f0 \ud50c\ub7ab\ud3fc\uc73c\ub85c, \uc0ac\uc6a9\uc790\ub4e4\uc774 \uc601\ud654\uc5d0 \ub300\ud55c \ud1a0\ub860\uc744 \ud558\uace0 \uc815\ubcf4\ub97c \uacf5\uc720\ud560 \uc218 \uc788\ub294 \uacf5\uac04\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4. \ubc31\uc5d4\ub4dc\ub294 Java\uc640 Spring Boot\ub97c \uc0ac\uc6a9\ud588\uc73c\uba70, \ud504\ub860\ud2b8\uc5d4\ub4dc\ub294 HTML, CSS, JavaScript\ub85c \uad6c\ud604\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2024-06-06T01:04:43Z",
+                "fork": false,
+                "topics": [
+                  "admin-dashboard",
+                  "chatgpt",
+                  "chatting",
+                  "community",
+                  "java",
+                  "movie",
+                  "movie-reviews",
+                  "movies-api",
+                  "spring-boot"
+                ]
+              },
+              {
+                "name": "krkarma777",
+                "description": null,
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2025-12-10T07:30:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AcornProject-Spring",
+                "description": "\uc885\ud569 \ubb38\ud654 \ucee4\ubba4\ub2c8\ud2f0 \ud504\ub85c\uc81d\ud2b8 spring",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2024-03-06T13:30:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "online-store",
+                "description": "SEED: An open-market platform built with JDK 17, Spring Boot, and Oracle DB, focusing on RESTful architecture and secure user experiences.",
+                "stargazers_count": 13,
+                "language": "Java",
+                "pushed_at": "2024-05-02T03:00:47Z",
+                "fork": false,
+                "topics": [
+                  "address-api",
+                  "chartjs",
+                  "ckeditor5",
+                  "hibernate",
+                  "java",
+                  "javascript",
+                  "jpa",
+                  "jwt",
+                  "oauth2",
+                  "online-shop",
+                  "oracle",
+                  "paypal",
+                  "restful-api",
+                  "shop",
+                  "spring-boot",
+                  "springsecurity6",
+                  "thymeleaf"
+                ]
+              },
+              {
+                "name": "AcornProject",
+                "description": "\uc885\ud569 \ubb38\ud654 \ucee4\ubba4\ub2c8\ud2f0 \ud504\ub85c\uc81d\ud2b8 servlet",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2024-02-21T08:16:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ItemService",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-12-16T05:39:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "springmvc",
+                "description": "Practice",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2023-12-14T00:42:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "servlet",
+                "description": "mvc servlet practice",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2023-12-11T05:19:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PracticeSpring2",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2023-12-06T04:32:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "practice",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2023-11-30T08:49:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SimpleChat",
+                "description": "Initial commit with basic chat server implementation.",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2024-05-24T17:36:49Z",
+                "fork": false,
+                "topics": [
+                  "chat",
+                  "java",
+                  "thread"
+                ]
+              },
+              {
+                "name": "UserManagement",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2023-11-24T16:39:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "comment-hub",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-25T07:36:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Javelin",
+                "description": "A high-performance, lightweight Java Web Application Server powered by Virtual Threads. \ud83d\ude80",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2025-04-07T05:06:54Z",
+                "fork": false,
+                "topics": [
+                  "concurrency",
+                  "high-performance",
+                  "http-server",
+                  "java",
+                  "java21",
+                  "javelin",
+                  "lightweight",
+                  "modern-java",
+                  "virtual-threads",
+                  "was",
+                  "web-server"
+                ]
+              },
+              {
+                "name": "resume-app",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-14T06:46:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JsonDataCreator",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-05-23T05:49:57Z",
+                "fork": false,
+                "topics": [
+                  "cors",
+                  "json",
+                  "server"
+                ]
+              },
+              {
+                "name": "JavaCoroutines",
+                "description": "A Java library to implement coroutine-like functionality with @Suspend annotation, inspired by Kotlin's suspend functions.",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2024-06-15T04:36:20Z",
+                "fork": false,
+                "topics": [
+                  "annotation-based-library",
+                  "asynchronous",
+                  "concurrency",
+                  "coroutines",
+                  "java",
+                  "kotlin-inspired",
+                  "non-blocking"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:51.156736+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

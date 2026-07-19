@@ -1,0 +1,673 @@
+{
+  "profileId": "osint-profile-ec78430ee482",
+  "target": "joaostack",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:50:03.740278+00:00",
+  "completedAt": "2026-06-20T16:50:05.455455+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-7b4b7891",
+      "lookupType": "github_context",
+      "target": "joaostack",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "joaostack",
+            "name": "Jo\u00e3o Henryque",
+            "type": "User",
+            "company": null,
+            "blog": "https://joaostack.vercel.app",
+            "location": "Pelotas, RS, Brazil",
+            "bio": "Computer lover\ud83d\udda5\ufe0f",
+            "public_repos": 60,
+            "followers": 661,
+            "following": 685,
+            "created_at": "2021-04-28T14:07:56Z",
+            "updated_at": "2026-06-20T08:00:37Z",
+            "html_url": "https://github.com/joaostack",
+            "avatar_url": "https://avatars.githubusercontent.com/u/83355344?v=4",
+            "repos": [
+              {
+                "name": "InstaMailChecker",
+                "description": "A OSINT tool that checks if the specified email is registered on Instagram.",
+                "stargazers_count": 19,
+                "language": "C#",
+                "pushed_at": "2026-06-11T07:48:34Z",
+                "fork": false,
+                "topics": [
+                  "checker",
+                  "cli",
+                  "email-osint",
+                  "hacking-tool",
+                  "instagram",
+                  "instagram-automation",
+                  "instagram-hack-tool-github",
+                  "instagram-osint",
+                  "mail",
+                  "osint",
+                  "osint-tool",
+                  "social-network",
+                  "spectre-console"
+                ]
+              },
+              {
+                "name": "joaostack",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-12T07:46:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stacknvim",
+                "description": "Neovim configuration for .NET/C#",
+                "stargazers_count": 1,
+                "language": "Lua",
+                "pushed_at": "2026-06-12T00:44:56Z",
+                "fork": false,
+                "topics": [
+                  "astronvim",
+                  "astronvim-config",
+                  "distribution",
+                  "neovim",
+                  "neovim-config",
+                  "neovim-distro",
+                  "nvim",
+                  "nvim-config",
+                  "nvim-distro",
+                  "stacknvim"
+                ]
+              },
+              {
+                "name": "WinDev-Environment",
+                "description": "Configura\u00e7\u00e3o do meu Windows voltado para o desenvolvimento DotNET/C#.",
+                "stargazers_count": 1,
+                "language": "PowerShell",
+                "pushed_at": "2026-06-07T21:27:50Z",
+                "fork": false,
+                "topics": [
+                  "configuration",
+                  "development-environment",
+                  "environment",
+                  "windows",
+                  "windows-11"
+                ]
+              },
+              {
+                "name": "my-portfolio",
+                "description": "Meu portf\u00f3lio que desenvolvi usando React e Tailwind",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-01T08:22:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArpPoison",
+                "description": "ArpPoison is a arp spoof tool coded in C# Language",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2026-03-04T08:18:44Z",
+                "fork": false,
+                "topics": [
+                  "arp",
+                  "arp-poisoning",
+                  "arp-spoofing",
+                  "arpspoof",
+                  "csharp",
+                  "cybersecurity",
+                  "dotnet",
+                  "hacking",
+                  "mitm",
+                  "networking",
+                  "pentesting",
+                  "sharppcap"
+                ]
+              },
+              {
+                "name": "hyprland",
+                "description": "Minha primeira configura\u00e7\u00e3o hyprland",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-05-25T13:51:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Android-Hacking",
+                "description": "Android Hacking tutorials",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-01-19T20:37:54Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "android-development",
+                  "android-haking",
+                  "android-root",
+                  "android-rooting",
+                  "bypass",
+                  "exploit",
+                  "exploitation",
+                  "root"
+                ]
+              },
+              {
+                "name": "neovim-config",
+                "description": "Configura\u00e7\u00e3o b\u00e1sica para neovim",
+                "stargazers_count": 2,
+                "language": "Lua",
+                "pushed_at": "2026-05-23T01:39:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vkBasaltSaturation",
+                "description": "Shader for digital vibrance & saturated colors",
+                "stargazers_count": 0,
+                "language": "HLSL",
+                "pushed_at": "2026-05-10T12:40:15Z",
+                "fork": false,
+                "topics": [
+                  "gaming",
+                  "linux",
+                  "linux-gaming",
+                  "shader",
+                  "shaders",
+                  "vkbasalt"
+                ]
+              },
+              {
+                "name": "SynPortScan",
+                "description": "A Syn-Ack port scanner based, coded in C# using SharpPcap Lib.",
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2026-04-30T04:40:56Z",
+                "fork": false,
+                "topics": [
+                  "computer-networks",
+                  "csharp",
+                  "nmap",
+                  "port-scanner",
+                  "portscanner"
+                ]
+              },
+              {
+                "name": "PacketGenerator",
+                "description": "Simple program for generating network packets",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2026-03-10T00:24:27Z",
+                "fork": false,
+                "topics": [
+                  "packet",
+                  "packet-generator",
+                  "scapy",
+                  "sharppcap"
+                ]
+              },
+              {
+                "name": "Instagram-Bruteforcer",
+                "description": "Instagram bruteforce coded in Python",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-03-14T21:11:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SimpleMalObfuscator",
+                "description": "Base64 and Powershell malware obfuscator based",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2026-03-04T18:41:19Z",
+                "fork": false,
+                "topics": [
+                  "bypass",
+                  "bypass-antivirus",
+                  "bypass-av",
+                  "malware",
+                  "malware-obfuscation",
+                  "obufscator"
+                ]
+              },
+              {
+                "name": "OsintApiSearch",
+                "description": "API to verify if an email is registered on the platform.",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2025-02-06T23:10:28Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "api-rest",
+                  "hacking",
+                  "osint",
+                  "osint-tool"
+                ]
+              },
+              {
+                "name": "VernamAlg",
+                "description": "Simples programa que gera texto cifrado em One-Time-Pad (OTP vernam)",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2024-11-04T04:08:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlogAPI",
+                "description": "Minimal API with authentication and blog posting",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2026-04-07T14:04:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "joaostack.netlify.app",
+                "description": "portf\u00f3lio antigo",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-18T14:09:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dotnet-makefile",
+                "description": "Arquivo Makefile que uso em projetos DotNET",
+                "stargazers_count": 0,
+                "language": "Makefile",
+                "pushed_at": "2026-03-16T09:41:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AlgoritmosEmCSharp",
+                "description": "Implementa\u00e7\u00f5es de Algoritmos e Estrutura de Dados",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2026-03-16T09:20:50Z",
+                "fork": false,
+                "topics": [
+                  "algorithm",
+                  "algorithms",
+                  "algoritmo",
+                  "algoritmos",
+                  "coding",
+                  "csharp",
+                  "leetcode"
+                ]
+              },
+              {
+                "name": "DllProccessLoader",
+                "description": "Minimalistic windows DLL injection tool for research, reverse engineering and security studies.",
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2025-12-15T02:15:24Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "cheat-development",
+                  "dll-injection",
+                  "game-haking",
+                  "malware-research",
+                  "pinvoke",
+                  "process-injection",
+                  "reverse-engineering",
+                  "winapi",
+                  "windows"
+                ]
+              },
+              {
+                "name": "ThreadPool",
+                "description": "Exemplo de implementa\u00e7\u00e3o de ThreadPool em C#",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2026-03-07T22:02:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PsycheLux",
+                "description": "Windows Terminal theme based on color psychology",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-28T00:24:37Z",
+                "fork": false,
+                "topics": [
+                  "colors",
+                  "colorscheme",
+                  "colorschemes",
+                  "terminal-theme",
+                  "themes",
+                  "windows-terminal",
+                  "windows-terminal-theme"
+                ]
+              },
+              {
+                "name": "FileDownloader",
+                "description": "Experimental Project | Dotnet File Downloader, with a simple & beautiful interface",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2026-02-18T08:33:08Z",
+                "fork": false,
+                "topics": [
+                  "dotnet",
+                  "download",
+                  "downloader",
+                  "file-downloader",
+                  "filedownloader",
+                  "spectre-console"
+                ]
+              },
+              {
+                "name": "joaostack.github.io",
+                "description": "Hacker is a Jekyll theme for GitHub Pages",
+                "stargazers_count": 0,
+                "language": "SCSS",
+                "pushed_at": "2026-02-18T08:29:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WinLogDumper",
+                "description": "Dump Windows Logs (old project)",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2026-02-05T23:34:53Z",
+                "fork": false,
+                "topics": [
+                  "dump",
+                  "dumper",
+                  "logs",
+                  "windows"
+                ]
+              },
+              {
+                "name": "bashrc",
+                "description": "My bashrc",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2026-01-26T23:05:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "joao406.github.io",
+                "description": "Site",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-21T13:07:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MultiConnectionId",
+                "description": "A script that allows multiple connections and receives data simultaneously, with each connected client having an ID.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-14T09:50:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BaseGui",
+                "description": "GUI Base64 and Base64 encoder/decoder",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-16T07:17:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NixBackup",
+                "description": "Tool for make backup in *Nix systems",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-21T12:51:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Go-Jogo-da-Forca",
+                "description": "Jogo da forca escrito em Go",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-23T22:07:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Go-Tabuada",
+                "description": "Programa que exibe a tabuada do 1 - 10, apenas para treinar a logica de programa\u00e7\u00e3o.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-18T17:36:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Conversor-Medida",
+                "description": "Conversor de medida simples escrito em Go",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-01T18:19:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Virtualbox-Load-Kernel-Modules",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-02T03:07:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "colly-scraping",
+                "description": "web crawler save links on CSV file",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-03T03:48:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "valida-cpf",
+                "description": "Algoritmo para validar CPF em GO",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-03T09:21:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jpkg",
+                "description": "My first Linux package manager coded in Bash",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2026-01-11T00:47:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nanorc",
+                "description": "nano config",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-24T13:35:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RandomUser",
+                "description": "Front-end for generating random user data",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-12T10:28:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "email-prediction-asterisks",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-09-05T00:38:38Z",
+                "fork": true,
+                "topics": [
+                  "attack",
+                  "bruteforce",
+                  "osint",
+                  "prediction"
+                ]
+              },
+              {
+                "name": "WT-RetroWave",
+                "description": "Windows Terminal Retrowave Based theme",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-08-05T22:40:15Z",
+                "fork": false,
+                "topics": [
+                  "retrowave",
+                  "synthwave",
+                  "windows-terminal-theme"
+                ]
+              },
+              {
+                "name": "Rot13-Alg",
+                "description": "Rot Algorithm implemented in C#",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2025-04-27T17:57:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UrlScan",
+                "description": "CLI sandbox for the web using UrlScan API",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2025-06-10T16:25:30Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "hacking",
+                  "osint",
+                  "tools",
+                  "urlscan"
+                ]
+              },
+              {
+                "name": "NetworkScanner",
+                "description": "ARP Broadcast based network host scanner",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2025-02-06T20:28:25Z",
+                "fork": false,
+                "topics": [
+                  "arp",
+                  "network",
+                  "network-scan",
+                  "scanner"
+                ]
+              },
+              {
+                "name": "materiais-de-estudos-sobre-data-science-deep-machine-learning",
+                "description": "\ud83d\udcbb \ud83d\udcd3 Guia de estudos (iniciante) sobre Intelig\u00eancia Artificial. Cont\u00e9m trilhas de aprendizagem, canais, cursos , livros etc. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-10-13T00:09:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CryptoPriceAPI",
+                "description": "This API performs web scraping on CoinDesk to retrieve all cryptocurrencies and their current prices",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2025-03-19T13:46:10Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "cryptocurrency",
+                  "cryptocurrency-api",
+                  "dotnet",
+                  "swagger"
+                ]
+              },
+              {
+                "name": "PortScan",
+                "description": "Scanner de portas",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2021-05-24T04:28:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LoginExtractor",
+                "description": "Tool for extract URL:USER:PASS to SQL file",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2025-03-18T18:11:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ThreadedServer",
+                "description": "Threaded TCP Server in C#",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2025-03-18T18:09:22Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:50:05.454682+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

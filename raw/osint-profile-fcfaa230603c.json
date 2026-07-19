@@ -1,0 +1,524 @@
+{
+  "profileId": "osint-profile-fcfaa230603c",
+  "target": "flameastro",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:22.017780+00:00",
+  "completedAt": "2026-06-21T15:32:22.935828+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1ee689b6",
+      "lookupType": "github_context",
+      "target": "flameastro",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "flameastro",
+            "name": "Flame",
+            "type": "User",
+            "company": null,
+            "blog": "127.0.0.1",
+            "location": "Santa Catarina, Brazil",
+            "bio": "Learning React \u269b\ufe0f",
+            "public_repos": 28,
+            "followers": 1427,
+            "following": 9170,
+            "created_at": "2025-09-02T22:22:42Z",
+            "updated_at": "2026-06-19T18:54:44Z",
+            "html_url": "https://github.com/flameastro",
+            "avatar_url": "https://avatars.githubusercontent.com/u/230046877?v=4",
+            "repos": [
+              {
+                "name": "programming-exercises",
+                "description": "A public repository where I share my programming exercises from CodeWars, LeetCode, BeeCrowd and others",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-06-21T01:00:20Z",
+                "fork": false,
+                "topics": [
+                  "algorithm",
+                  "beecrowd",
+                  "codewars",
+                  "dsa",
+                  "exercises",
+                  "leetcode",
+                  "logic",
+                  "programming"
+                ]
+              },
+              {
+                "name": "flameastro",
+                "description": "Special README.md Repository for flameastro",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-06-19T18:55:32Z",
+                "fork": false,
+                "topics": [
+                  "special",
+                  "special-repository"
+                ]
+              },
+              {
+                "name": "PROJETOS-JS",
+                "description": "\ud83d\udcda Reposit\u00f3rio para hospedar projetos JavaScript",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-19T17:53:56Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "practice",
+                  "project",
+                  "projects"
+                ]
+              },
+              {
+                "name": "free-programming-books",
+                "description": "(Fork) :books: Freely available programming books",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-09T15:12:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BibliotecaDev",
+                "description": "(Fork) \ud83d\udcda Biblioteca de livros essenciais da \u00e1rea da programa\u00e7\u00e3o",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-03T02:42:14Z",
+                "fork": true,
+                "topics": [
+                  "books",
+                  "free",
+                  "free-books"
+                ]
+              },
+              {
+                "name": "exs-py",
+                "description": "Um reposit\u00f3rio p\u00fablico onde compartilho os exerc\u00edcios de python realizados",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-06-12T00:24:03Z",
+                "fork": false,
+                "topics": [
+                  "exercises",
+                  "logic",
+                  "programming",
+                  "programming-language",
+                  "python",
+                  "python-exercises"
+                ]
+              },
+              {
+                "name": "transcript-youtube-video",
+                "description": "A bot that collects transcripts of YouTube videos.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-03-01T17:38:04Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "free",
+                  "playwright",
+                  "python",
+                  "transcript",
+                  "transcription",
+                  "videos",
+                  "youtube"
+                ]
+              },
+              {
+                "name": "viniciussantos03-projeto-one-piece",
+                "description": "Site feito por um f\u00e3 da obra One Piece! - viniciussantos03",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-12-19T18:23:07Z",
+                "fork": true,
+                "topics": [
+                  "css",
+                  "css3",
+                  "fork",
+                  "html",
+                  "html5",
+                  "landing-page",
+                  "one-piece",
+                  "project",
+                  "site",
+                  "website"
+                ]
+              },
+              {
+                "name": "SaintsHr-portfolio",
+                "description": "Projeto desenvolvido para portf\u00f3lio, com foco no aprendizado e pr\u00e1tica de desenvolvimento web.",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-12-09T19:27:47Z",
+                "fork": true,
+                "topics": [
+                  "css",
+                  "html",
+                  "html-css",
+                  "portfolio",
+                  "website"
+                ]
+              },
+              {
+                "name": "Logica",
+                "description": "Reposit\u00f3rio para treinar a l\u00f3gica",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-02-13T14:38:57Z",
+                "fork": false,
+                "topics": [
+                  "logic",
+                  "logic-training",
+                  "master",
+                  "programming"
+                ]
+              },
+              {
+                "name": "Ghost-Fly",
+                "description": "Ghost Fly is a project made in Godot Engine. Your goal is control a ghost and get the red crown - in the last scenario",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-11-26T16:08:12Z",
+                "fork": false,
+                "topics": [
+                  "game",
+                  "gamedev",
+                  "games",
+                  "ghost-fly",
+                  "godot",
+                  "godot-engine",
+                  "programming"
+                ]
+              },
+              {
+                "name": "aprendendo-git",
+                "description": "Reposit\u00f3rio para aprender git na pr\u00e1tica - Branchs, Commits, Push, Pull Requests, Merges e muito mais,",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-12-22T18:59:01Z",
+                "fork": false,
+                "topics": [
+                  "git",
+                  "git-version-control",
+                  "github",
+                  "training",
+                  "version-control",
+                  "versions"
+                ]
+              },
+              {
+                "name": "cats-lovers",
+                "description": "Um projeto educacional para amantes de gatos, criado para praticar HTML, CSS de forma simples e divertida",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-12-17T15:46:40Z",
+                "fork": false,
+                "topics": [
+                  "cat",
+                  "css",
+                  "css3",
+                  "html",
+                  "html-css",
+                  "html5",
+                  "project",
+                  "projeto",
+                  "site",
+                  "web",
+                  "website"
+                ]
+              },
+              {
+                "name": "P4dro-Dev-projeto-toquio",
+                "description": "Nesse projeto, realizei um site falando sobre a cidade que mais tenho vontade conhecer. Sendo ela, T\u00f3quio. Utilizei conceitos b\u00e1sicos de HTML + CSS para a cria\u00e7\u00e3o desse projeto!",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-12-11T23:01:57Z",
+                "fork": true,
+                "topics": [
+                  "css3",
+                  "html-css",
+                  "html5",
+                  "project",
+                  "projeto",
+                  "site",
+                  "web",
+                  "website"
+                ]
+              },
+              {
+                "name": "NASA-project",
+                "description": "A repository dedicated to NASA. Explore the curiosities this agency possesses and enhance your knowledge.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-12-08T14:03:02Z",
+                "fork": false,
+                "topics": [
+                  "astronomy",
+                  "css",
+                  "curiosity",
+                  "html",
+                  "html-css",
+                  "nasa",
+                  "nasa-agency",
+                  "project",
+                  "rover"
+                ]
+              },
+              {
+                "name": "Curso-HTML5",
+                "description": "Aprendendo Front-end",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-04T22:51:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "projeto-portfolio",
+                "description": "Projeto portf\u00f3lio desenvolvido com as instru\u00e7\u00f5es do professor Gustavo Guanabara.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-12-06T16:47:29Z",
+                "fork": false,
+                "topics": [
+                  "gustavo-guanabara",
+                  "gustavoguanabara",
+                  "html-css",
+                  "portfolio",
+                  "site",
+                  "website"
+                ]
+              },
+              {
+                "name": "projeto-coffee-shop",
+                "description": "Projeto para fins educacionais",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-12-03T15:50:41Z",
+                "fork": false,
+                "topics": [
+                  "cafeteria",
+                  "coffee",
+                  "html-css",
+                  "learning",
+                  "project",
+                  "projeto",
+                  "site",
+                  "website"
+                ]
+              },
+              {
+                "name": "projeto-login",
+                "description": "Projeto Login - Site desenvolvido com a ajuda do Gustavo Guanabara - Curso Em V\u00eddeo",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-11-30T20:37:16Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "curso",
+                  "free",
+                  "gustavo-guanabara",
+                  "gustavoguanabara",
+                  "html",
+                  "html-css"
+                ]
+              },
+              {
+                "name": "blockman-go",
+                "description": "A project developed to recreate the BlockMan GO community. BlockMan GO is a game developed by SANDBOX NETWORK TECHNOLOGY COMPANY, similar to Minecraft and Roblox, free and available for Android and iOS. Explore the numerous minigames available, form communities, and customize your character to your liking. #BlockManGOEternal",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-11-28T00:27:43Z",
+                "fork": false,
+                "topics": [
+                  "blockman-go",
+                  "blockmango",
+                  "css3",
+                  "game",
+                  "games",
+                  "html5",
+                  "site",
+                  "website"
+                ]
+              },
+              {
+                "name": "projeto-social",
+                "description": "Projeto social desenvolvido com Gustavo Guanabara - Curso em v\u00eddeo",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-11-27T20:22:44Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "free",
+                  "gustavo-guanabara",
+                  "gustavoguanabara",
+                  "html",
+                  "html-css",
+                  "projeto",
+                  "website"
+                ]
+              },
+              {
+                "name": "scrap-youtube-comments",
+                "description": "A Python project that partially collects comments from a YouTube video.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-11-26T22:41:51Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "bot",
+                  "playwright",
+                  "python",
+                  "video",
+                  "youtube"
+                ]
+              },
+              {
+                "name": "coin-catcher",
+                "description": "Coin Catcher is a game created using Pygame. Your goal is control the character and earn the coins falling from the sky.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-11-26T20:55:58Z",
+                "fork": false,
+                "topics": [
+                  "coin-catcher",
+                  "f2p",
+                  "free",
+                  "freetoplay",
+                  "game",
+                  "games",
+                  "pygame",
+                  "python"
+                ]
+              },
+              {
+                "name": "projeto-android",
+                "description": "Projeto desenvolvido para fins educacionais juntamente com o professor Gustavo Guanabara.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-11-23T00:57:38Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "curso",
+                  "cursoemvideo",
+                  "gustavoguanabara",
+                  "html",
+                  "projeto"
+                ]
+              },
+              {
+                "name": "projeto-cordel",
+                "description": "Cordel Moderno - feito por Milton Duarte",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-11-24T23:59:56Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "curso",
+                  "cursoemvideo",
+                  "gustavoguanabara",
+                  "html",
+                  "projeto"
+                ]
+              },
+              {
+                "name": "neutrum-social",
+                "description": "Neutrum Social \u00e9 uma rede social feita com python e streamlit. \u00c9 completamente gratuito e nenhum dado seu \u00e9 salvo. Pronto para explorar e criar seus posts e adicionar seus amigos?",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-11-05T19:26:36Z",
+                "fork": false,
+                "topics": [
+                  "app",
+                  "free",
+                  "friendly",
+                  "python",
+                  "social-media",
+                  "streamlit",
+                  "webpage"
+                ]
+              },
+              {
+                "name": "blog",
+                "description": "Reposit\u00f3rio criado com python e streamlit. Blog foi criado para o usu\u00e1rio criar blogs ilimitados e de gra\u00e7a. Aproveite!",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-09-22T22:49:41Z",
+                "fork": false,
+                "topics": [
+                  "app",
+                  "framework",
+                  "free",
+                  "python",
+                  "streamlit",
+                  "webapp",
+                  "website"
+                ]
+              },
+              {
+                "name": "exs-js",
+                "description": "Reposit\u00f3rio onde realizo exerc\u00edcios de JavaScript",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-18T19:56:05Z",
+                "fork": false,
+                "topics": [
+                  "exercises",
+                  "javascript",
+                  "javascript-exercises",
+                  "logic",
+                  "programming"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:22.934593+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-a0acc93497b1",
+  "target": "Jhoel777ar",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:53.999912+00:00",
+  "completedAt": "2026-06-20T16:49:56.377523+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-074ca82d",
+      "lookupType": "github_context",
+      "target": "Jhoel777ar",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Jhoel777ar",
+            "name": "Joel Andres C.",
+            "type": "User",
+            "company": "ARK DEV",
+            "blog": "www.ark-dev.org/cv",
+            "location": "Chile - Bolivia",
+            "bio": "I\u2019m Joel Andr\u00e9s, CEO & Founder of ARK DEV. Full-Stack Developer and Cloud Architect specialized in AI, DevOps and innovative software solutions.",
+            "public_repos": 407,
+            "followers": 678,
+            "following": 1740,
+            "created_at": "2024-02-22T00:16:22Z",
+            "updated_at": "2026-06-17T16:49:13Z",
+            "html_url": "https://github.com/Jhoel777ar",
+            "avatar_url": "https://avatars.githubusercontent.com/u/160800103?v=4",
+            "repos": [
+              {
+                "name": "markitdown",
+                "description": "Python tool for converting files and office documents to Markdown.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-26T22:41:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "marketplace",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2025-12-11T01:48:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "geo-seo-claude",
+                "description": "GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website \u2014 citability scoring, AI crawler analysis, brand authority, schema markup, platform-specific optimization, and PDF reports.  If you want learn how to sell this to real businesses, check out the skool community",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-27T01:40:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "headroom",
+                "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-18T16:57:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ethical_hacking_con_Python",
+                "description": "[GRATIS] Aprende hacking \u00e9tico con Python paso a paso: desde fundamentos y redes hasta explotaci\u00f3n, criptograf\u00eda y pentesting avanzado. Gu\u00eda pr\u00e1ctica con ejemplos reales en laboratorio.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-08-22T15:44:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blossom-carousel",
+                "description": "Native-first carousel enhanced with drag support for pointer devices.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-12T13:44:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Understand-Anything",
+                "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-16T07:51:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ponytail",
+                "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-15T13:34:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ppt-master",
+                "description": "AI generates a real, editable PowerPoint from any document \u2014 native shapes & animations, speaker notes voiced as audio narration, and the option to follow your own .pptx template, not slide images \u00b7 by Hugo He",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-10T14:00:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "all-agentic-architectures",
+                "description": "35 production-grade agentic AI architectures (Reflexion, LATS, GraphRAG, MemGPT, Voyager, BrowserAgent, ...) \u2014 a Python library and runnable textbook with multi-provider LLM support and a 17-task benchmark leaderboard.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-08T06:18:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "web-check",
+                "description": "\ud83d\udd75\ufe0f\u200d\u2642\ufe0f All-in-one OSINT tool for analysing any website",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-06T16:06:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpenTSLM",
+                "description": "OpenTSLM: Time-Series Language Models for Reasoning over Multivariate Medical Text- and Time-Series Data",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-10-01T16:47:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aprendiendo-react",
+                "description": "Curso para aprender React desde cero",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-10T17:46:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SkillSpector",
+                "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-04T18:11:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "open-notebook",
+                "description": "An Open Source implementation of Notebook LM with more flexibility and features",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-04T17:07:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WindowsDeveloperConfig",
+                "description": "Automate the setup and configuration of your Windows development environment.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-06T01:23:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpenSandbox",
+                "description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-08T20:16:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "terax-ai",
+                "description": "Lightweight (7MB) Terminal-first AI-native dev workspace",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-01T02:05:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "odysseus",
+                "description": "Self-hosted AI workspace. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-01T14:12:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "floci-az",
+                "description": "Light, fluffy, and always free - Local Azure Emulator ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-31T06:22:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Webwright",
+                "description": "A simple SWE style browser agent framework that achieves SOTA results on long horizon web tasks. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-12T21:34:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Jhoel777ar",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-20T13:24:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLMs-from-scratch",
+                "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-23T15:02:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "prototipo",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-29T20:22:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ark-Facture",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-03-08T20:06:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "auditoria_preview",
+                "description": "sandbox",
+                "stargazers_count": 0,
+                "language": "Lua",
+                "pushed_at": "2026-05-07T18:34:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Shadowbroker",
+                "description": "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. Hook an AI agent up to have it parse through data and find previously unseen correlations. The knowledge is available to all but rarely aggregated in the open, until now.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-19T07:48:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "codegraph",
+                "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, and OpenCode \u2014 fewer tokens, fewer tool calls, 100% local",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-18T13:29:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "How-To-Secure-A-Linux-Server",
+                "description": "An evolving how-to guide for securing a Linux server.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-05T13:25:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "floci",
+                "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-14T12:45:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mapcn",
+                "description": "Beautiful map components. 100% Free, Zero config, one command setup.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-21T18:09:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Havoc",
+                "description": "The Havoc Framework",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-18T15:10:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nyxstrike",
+                "description": "AI Powered penetration testing Platform for offensive security research",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-01T17:23:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Cairn",
+                "description": "A AI general-purpose state-space search engine, validated first on autonomous penetration testing.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-03T07:38:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flexphish",
+                "description": "The ultimate Red Team toolkit for phishing operations.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-29T15:40:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fluffy-barnacle",
+                "description": "Disposable, ephemeral network infrastructure powered by GitHub Codespaces.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-30T07:21:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Awesome-Embedded-Systems-Vulnerability-Research",
+                "description": "Resources to getting started vulnerability research on IoT/embedded devices.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-25T20:52:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lightweight-charts",
+                "description": "Performant financial charts built with HTML5 canvas",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-30T14:05:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "skillsnew",
+                "description": "Skills for Real Engineers. Straight from my .claude directory.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-29T09:56:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "warp",
+                "description": "Warp is an agentic development environment, born out of the terminal.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-28T19:17:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "voicebox",
+                "description": "The open-source voice synthesis studio",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-19T10:43:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "domain-digger",
+                "description": "Full Toolkit for Next-Level Domain Analysis",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-13T02:43:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Pentestify",
+                "description": "Generador interactivo de reportes de seguridad que permite registrar vulnerabilidades (con plantillas predefinidas o manualmente), visualizar estad\u00edsticas de riesgo en tiempo real y exportar un informe corporativo estructurado en formato PDF. Adem\u00e1s, cuenta con un sistema biling\u00fce (Espa\u00f1ol/Ingl\u00e9s) integrado.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-18T11:12:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-design-md",
+                "description": "A collection of DESIGN.md files inspired by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-17T10:35:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "autoskills",
+                "description": "One command. Your entire AI skill stack. Installed.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-12T19:53:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "caveman",
+                "description": "\ud83e\udea8 why use many token when few token do trick \u2014 Claude Code skill that cuts 65% of tokens by talking like caveman",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-12T17:59:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hoppscotch",
+                "description": "Open-Source API Development Ecosystem \u2022 https://hoppscotch.io \u2022 Offline, On-Prem & Cloud \u2022 Web, Desktop & CLI \u2022 Open-Source Alternative to Postman, Insomnia",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-01T06:39:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "snoop",
+                "description": "Snoop \u2014 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442 \u0440\u0430\u0437\u0432\u0435\u0434\u043a\u0438 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u043e\u0442\u043a\u0440\u044b\u0442\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445 (OSINT world)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-30T15:02:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "caido",
+                "description": "\ud83d\ude80 Caido releases, wiki and roadmap",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-04T20:05:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "claude-code",
+                "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-02T23:45:35Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:56.375998+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

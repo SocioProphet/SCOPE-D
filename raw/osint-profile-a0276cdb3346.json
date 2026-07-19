@@ -1,0 +1,227 @@
+{
+  "profileId": "osint-profile-a0276cdb3346",
+  "target": "minouou",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:50.342821+00:00",
+  "completedAt": "2026-06-21T15:29:50.844535+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8bfe0a4e",
+      "lookupType": "github_context",
+      "target": "minouou",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "minouou",
+            "name": "Minoo",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 15,
+            "followers": 2308,
+            "following": 8194,
+            "created_at": "2025-08-21T18:44:45Z",
+            "updated_at": "2026-04-19T05:05:54Z",
+            "html_url": "https://github.com/minouou",
+            "avatar_url": "https://avatars.githubusercontent.com/u/227881855?v=4",
+            "repos": [
+              {
+                "name": "JSBooks",
+                "description": "A Curated List of Best Javascript Books",
+                "stargazers_count": 157,
+                "language": null,
+                "pushed_at": "2026-04-19T05:22:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-js",
+                "description": "A curated collection of awesome JavaScript libraries, tools, runtimes, resources, and shiny things \u2014 across browser, Node.js, Deno, Bun, edge/serverless, desktop, and mobile.",
+                "stargazers_count": 172,
+                "language": null,
+                "pushed_at": "2025-12-29T11:07:17Z",
+                "fork": false,
+                "topics": [
+                  "awesome",
+                  "awesome-javascript",
+                  "awesome-js",
+                  "awesome-list",
+                  "awesome-typescript",
+                  "javascript",
+                  "javascript-applications",
+                  "javascript-framework",
+                  "javascript-library",
+                  "js",
+                  "js-api",
+                  "js-lib",
+                  "js-library",
+                  "js-project",
+                  "js-testing",
+                  "js-tools",
+                  "node",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "awesome-ai-tools",
+                "description": "A curated list of Artificial Intelligence Top Tools",
+                "stargazers_count": 49,
+                "language": null,
+                "pushed_at": "2025-08-24T17:19:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-directories",
+                "description": "An awesome list of best top AI directories to submit your ai tools",
+                "stargazers_count": 43,
+                "language": null,
+                "pushed_at": "2025-08-20T11:05:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "best-of-ai",
+                "description": "A curated list of best ai tools",
+                "stargazers_count": 40,
+                "language": null,
+                "pushed_at": "2025-08-20T06:54:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-ai-coding-tools",
+                "description": "A curated list of AI-powered coding tools",
+                "stargazers_count": 40,
+                "language": null,
+                "pushed_at": "2025-08-14T07:09:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-vibe-coding",
+                "description": "A hand-picked collection of tools and resources for Vibe Coding",
+                "stargazers_count": 41,
+                "language": null,
+                "pushed_at": "2025-08-03T10:59:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-saas-directories",
+                "description": "A curated list of top best SaaS directories and platforms to launch and promote your SaaS product ",
+                "stargazers_count": 37,
+                "language": null,
+                "pushed_at": "2025-07-22T10:14:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-devtools",
+                "description": "A curated list of awesome developer tools and services \u2014 from cloud platforms and IDEs to AI-powered coding assistants and productivity utilities.",
+                "stargazers_count": 36,
+                "language": null,
+                "pushed_at": "2025-08-06T12:32:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "minouou",
+                "description": null,
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2026-02-26T22:47:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-javascript-guide",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-04-19T05:01:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DevBooks",
+                "description": "A curated, opinionated list of best-in-class books for modern software development, popular programming languages, and AI/ML.",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-04-15T09:07:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "python-by-example",
+                "description": "A practical, example-driven guide to learning Python with clear explanations and real coding tasks.",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-02-10T17:29:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PythonBooks",
+                "description": "A Curated List of Best Python Books",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-02-10T18:11:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "git-by-example",
+                "description": "A practical guide to Git \u2014 learn by doing, not by reading manuals.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-04-15T06:22:09Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:50.843812+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

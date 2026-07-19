@@ -1,0 +1,244 @@
+{
+  "profileId": "osint-profile-75fe9998d7cd",
+  "target": "ip681",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:50.233787+00:00",
+  "completedAt": "2026-06-21T15:27:50.718902+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a636ae04",
+      "lookupType": "github_context",
+      "target": "ip681",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ip681",
+            "name": "Ivo Petkov",
+            "type": "User",
+            "company": null,
+            "blog": "https://ipetkov.com/",
+            "location": "Sofia, Bulgaria",
+            "bio": "\ud83d\udd35 Data Analyst \ud83d\udcca",
+            "public_repos": 19,
+            "followers": 7474,
+            "following": 14060,
+            "created_at": "2019-03-22T17:45:33Z",
+            "updated_at": "2026-05-06T17:23:30Z",
+            "html_url": "https://github.com/ip681",
+            "avatar_url": "https://avatars.githubusercontent.com/u/48838737?v=4",
+            "repos": [
+              {
+                "name": "python-advanced",
+                "description": "Python Advanced",
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2023-11-30T07:04:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gym-check-ins-analytics-app",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-01-28T10:48:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "math-concepts-for-developers",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-06-04T05:59:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "analysis-of-istanbul-shopping-malls",
+                "description": "Analysis of Istanbul Shopping Malls",
+                "stargazers_count": 12,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-04-23T09:31:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PostgreSQL",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "PLpgSQL",
+                "pushed_at": "2025-07-13T06:18:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jupyter-notebook-mastery",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-03-03T10:43:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-oop",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2024-07-27T07:24:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "data-science",
+                "description": "data science",
+                "stargazers_count": 18,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-09-08T12:13:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "face-recognition-with-correlation-coefficients-and-euclidean-distance",
+                "description": null,
+                "stargazers_count": 32,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-05-25T12:20:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-portfolio-one-page",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "HTML",
+                "pushed_at": "2023-05-22T21:53:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "merge-csv-files",
+                "description": null,
+                "stargazers_count": 22,
+                "language": "Python",
+                "pushed_at": "2023-05-18T21:19:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-fundamentals",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2024-08-03T19:32:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Guess-the-word-tkinter",
+                "description": null,
+                "stargazers_count": 33,
+                "language": "Python",
+                "pushed_at": "2023-04-10T20:35:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "csv-plotter",
+                "description": null,
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2023-03-29T19:58:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ip681",
+                "description": null,
+                "stargazers_count": 21,
+                "language": null,
+                "pushed_at": "2024-02-03T09:09:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "math-quiz",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2023-03-18T15:55:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Guess-the-word-bg-tkinter",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2023-03-06T18:02:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "guess-the-word",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2023-03-18T15:55:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gym-check-ins-analytics-notebook",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-08-05T17:55:33Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:50.718264+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "profileId": "osint-profile-0aebfc7a2ea7",
+  "target": "aylar-ghezelbash",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:12.382977+00:00",
+  "completedAt": "2026-06-21T15:31:12.787600+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-47f9b773",
+      "lookupType": "github_context",
+      "target": "aylar-ghezelbash",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "aylar-ghezelbash",
+            "name": "Aylar Ghezelbash",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 4,
+            "followers": 1715,
+            "following": 3324,
+            "created_at": "2025-01-12T15:26:22Z",
+            "updated_at": "2026-04-21T00:07:11Z",
+            "html_url": "https://github.com/aylar-ghezelbash",
+            "avatar_url": "https://avatars.githubusercontent.com/u/194702740?v=4",
+            "repos": [
+              {
+                "name": "aylar-ghezelbash",
+                "description": "my bio",
+                "stargazers_count": 21,
+                "language": null,
+                "pushed_at": "2025-02-04T10:31:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-ai-newsletters",
+                "description": "A curated list of AI Related Newsletters",
+                "stargazers_count": 24,
+                "language": null,
+                "pushed_at": "2024-12-13T15:38:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "top-ai-directories",
+                "description": "A comprehensive list of AI directories",
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2025-01-07T08:17:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "trackawesomelist",
+                "description": "Track 500+ Awesome List Updates, Track it - not just star it!",
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2025-02-04T12:50:58Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:12.786842+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

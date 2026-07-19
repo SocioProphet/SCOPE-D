@@ -1,0 +1,607 @@
+{
+  "profileId": "osint-profile-8280c0f9057a",
+  "target": "ruiyangzhou01",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:04.394042+00:00",
+  "completedAt": "2026-06-21T15:32:05.301271+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3708e312",
+      "lookupType": "github_context",
+      "target": "ruiyangzhou01",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ruiyangzhou01",
+            "name": "Ruiyang Zhou",
+            "type": "User",
+            "company": "University of Electronic Science and Technology of China",
+            "blog": "ruiyangzhou01.github.io",
+            "location": null,
+            "bio": "MSCS Candidate. Researcher. Husband to Q. Z.",
+            "public_repos": 33,
+            "followers": 1463,
+            "following": 5386,
+            "created_at": "2020-03-27T12:55:18Z",
+            "updated_at": "2026-04-05T07:32:26Z",
+            "html_url": "https://github.com/ruiyangzhou01",
+            "avatar_url": "https://avatars.githubusercontent.com/u/62752455?v=4",
+            "repos": [
+              {
+                "name": "Lightweight-LaTeX",
+                "description": "Modern LaTeX theme suite for theses, posters, and slides.",
+                "stargazers_count": 11,
+                "language": "BibTeX Style",
+                "pushed_at": "2026-03-17T07:36:08Z",
+                "fork": false,
+                "topics": [
+                  "academic-writing",
+                  "automation",
+                  "beamer",
+                  "coursework",
+                  "github-actions",
+                  "latex",
+                  "perl",
+                  "postscript",
+                  "template"
+                ]
+              },
+              {
+                "name": "ruiyangzhou01.github.io",
+                "description": "Personal academic website and knowledge hub hosted with GitHub Pages.",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2025-09-02T07:14:09Z",
+                "fork": false,
+                "topics": [
+                  "blog",
+                  "css",
+                  "github-pages",
+                  "html",
+                  "javascript",
+                  "knowledge-base",
+                  "personal-website",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "typora-theme-gallery",
+                "description": "Website for Typora themes",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2026-04-29T09:21:13Z",
+                "fork": true,
+                "topics": [
+                  "css",
+                  "gallery",
+                  "html",
+                  "ruby",
+                  "themes",
+                  "typora",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "Latest-Release",
+                "description": "GitHub release helper for tracking and deploying the latest release.",
+                "stargazers_count": 43,
+                "language": "Python",
+                "pushed_at": "2026-02-10T05:44:24Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "batchfile",
+                  "github-api",
+                  "python",
+                  "releases",
+                  "template"
+                ]
+              },
+              {
+                "name": "CppTrace",
+                "description": "Lightweight C++ logging library for tracing variables.",
+                "stargazers_count": 16,
+                "language": "C++",
+                "pushed_at": "2026-02-10T05:18:03Z",
+                "fork": false,
+                "topics": [
+                  "cmake",
+                  "cpp",
+                  "debugging",
+                  "logging"
+                ]
+              },
+              {
+                "name": "Liquid",
+                "description": "Modern Typora theme for Windows 11 with polished typography and UI styling.",
+                "stargazers_count": 123,
+                "language": "CSS",
+                "pushed_at": "2026-02-14T08:34:09Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "theme",
+                  "typora",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "qml-classification-protocol",
+                "description": "Implementation of a hybrid quantum-classical image classification protocol with reproducible experiments.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-08-30T07:17:44Z",
+                "fork": false,
+                "topics": [
+                  "academic-writing",
+                  "ai",
+                  "computer-vision",
+                  "latex",
+                  "machine-learning",
+                  "python",
+                  "qml",
+                  "quantum-computing",
+                  "quantum-machine-learning"
+                ]
+              },
+              {
+                "name": "ustcbeamer",
+                "description": "USTC Beamer template and assets for academic presentations and thesis defenses.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2020-11-09T07:13:12Z",
+                "fork": true,
+                "topics": [
+                  "academic-writing",
+                  "latex",
+                  "makefile"
+                ]
+              },
+              {
+                "name": "TwentySecondsCurriculumVitae-LaTex",
+                "description": "LaTeX template for creating a clean one-page curriculum vitae quickly.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2021-03-10T22:07:15Z",
+                "fork": true,
+                "topics": [
+                  "academic-writing",
+                  "algorithms",
+                  "curriculum-vitae",
+                  "cv",
+                  "latex",
+                  "makefile",
+                  "resume",
+                  "template"
+                ]
+              },
+              {
+                "name": "standard-readme",
+                "description": "Style specification and examples for writing clear, standardized README files.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2022-01-06T22:07:45Z",
+                "fork": true,
+                "topics": [
+                  "documentation",
+                  "readme",
+                  "shell",
+                  "template",
+                  "templates",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "rich",
+                "description": "Python library for rich text, beautiful formatting, and advanced terminal rendering.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2022-01-18T12:00:40Z",
+                "fork": true,
+                "topics": [
+                  "batchfile",
+                  "github-pages",
+                  "jupyter-notebook",
+                  "makefile",
+                  "personal-website",
+                  "python",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "PowerToys",
+                "description": "Windows system utilities focused on productivity, customization, and power-user workflows.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-03-19T17:10:54Z",
+                "fork": true,
+                "topics": [
+                  "batchfile",
+                  "c",
+                  "cpp",
+                  "github-pages",
+                  "hlsl",
+                  "html",
+                  "personal-website",
+                  "powershell",
+                  "template"
+                ]
+              },
+              {
+                "name": "NNDL-PyTorch",
+                "description": "PyTorch implementations and exercises based on the Neural Networks and Deep Learning book.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-04-19T05:41:20Z",
+                "fork": true,
+                "topics": [
+                  "deep-learning",
+                  "machine-learning",
+                  "neural-networks",
+                  "python",
+                  "pytorch"
+                ]
+              },
+              {
+                "name": "nexmoe",
+                "description": "Mirror repository for a profile README and badge showcase content.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2021-09-07T11:45:54Z",
+                "fork": true,
+                "topics": [
+                  "project"
+                ]
+              },
+              {
+                "name": "MATLAB-Utilities",
+                "description": "MATLAB utility collection for development, automation, and version-control workflows.",
+                "stargazers_count": 20,
+                "language": "MATLAB",
+                "pushed_at": "2026-02-10T05:56:21Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "git",
+                  "github-actions",
+                  "matlab",
+                  "utilities"
+                ]
+              },
+              {
+                "name": "issues-action",
+                "description": "GitHub Action for automated issue triage, labeling, and workflow management.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-30T05:03:42Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "github-actions",
+                  "github-pages",
+                  "issues",
+                  "javascript",
+                  "less",
+                  "personal-website",
+                  "shell",
+                  "template",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "github-profile-readme-generator",
+                "description": "Web tool for generating customized GitHub profile README content.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2022-01-02T11:42:16Z",
+                "fork": true,
+                "topics": [
+                  "automation",
+                  "css",
+                  "generator",
+                  "github-actions",
+                  "github-pages",
+                  "github-profile",
+                  "javascript",
+                  "personal-website",
+                  "readme",
+                  "shell"
+                ]
+              },
+              {
+                "name": "action-github-workflow-sync",
+                "description": "GitHub Action for synchronizing workflow files and shared CI settings across repositories.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2021-12-07T10:44:30Z",
+                "fork": true,
+                "topics": [
+                  "automation",
+                  "github-actions",
+                  "github-pages",
+                  "javascript",
+                  "personal-website",
+                  "template",
+                  "web-development",
+                  "workflow-sync"
+                ]
+              },
+              {
+                "name": "PNGAN",
+                "description": "This is the project page of \u300aLearning to Generate Realistic Noisy Images via Pixel-level Noise-aware Adversarial Training\u300b, which is accepted by NeurIPS 2021.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-01-14T11:44:15Z",
+                "fork": true,
+                "topics": [
+                  "computer-vision",
+                  "deep-learning",
+                  "gan"
+                ]
+              },
+              {
+                "name": "MST",
+                "description": "This is the project page of \u300aMask-guided Spectral-wise Transformer for Efficient Hyperspectral Image Reconstruction\u300b, which is accepted by CVPR 2022.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-03-04T14:07:14Z",
+                "fork": true,
+                "topics": [
+                  "experiments",
+                  "misc",
+                  "scripts"
+                ]
+              },
+              {
+                "name": "UDP-plus-plus",
+                "description": "This is the pytorch implementation for [UDP++](http://presentations.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-01-14T02:35:58Z",
+                "fork": true,
+                "topics": [
+                  "cpp",
+                  "cuda",
+                  "cython",
+                  "dockerfile",
+                  "makefile",
+                  "networking",
+                  "python",
+                  "shell",
+                  "udp"
+                ]
+              },
+              {
+                "name": "txtxj",
+                "description": "This account is shared by Txtxj and LyeaChan.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-03-13T08:59:12Z",
+                "fork": true,
+                "topics": [
+                  "cpp",
+                  "experiments",
+                  "github-pages",
+                  "misc",
+                  "personal-website",
+                  "python",
+                  "utilities"
+                ]
+              },
+              {
+                "name": "spdlog",
+                "description": "Very fast, header-only/compiled, C++ logging library.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2021-10-18T17:30:38Z",
+                "fork": true,
+                "topics": [
+                  "c",
+                  "cmake",
+                  "cpp",
+                  "python",
+                  "shell",
+                  "template"
+                ]
+              },
+              {
+                "name": "simple-icons",
+                "description": "SVG icons for popular brands",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-02-22T22:30:22Z",
+                "fork": true,
+                "topics": [
+                  "automation",
+                  "dockerfile",
+                  "github-actions",
+                  "github-pages",
+                  "javascript",
+                  "personal-website",
+                  "python",
+                  "shell",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "RSN",
+                "description": "Our paper has been accepted as Spotlight by ECCV2020 This is a pytorch realization of [Residual Steps Network][11] **which won 2019 COCO Keypoint Challenge and.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-01-12T01:28:49Z",
+                "fork": true,
+                "topics": [
+                  "github-pages",
+                  "personal-website",
+                  "python"
+                ]
+              },
+              {
+                "name": "MBeautifier",
+                "description": "MBeautifier is a lightweight M-Script based MATLAB source code formatter usable directly in the MATLAB Editor.",
+                "stargazers_count": 5,
+                "language": "MATLAB",
+                "pushed_at": "2022-01-19T03:43:47Z",
+                "fork": true,
+                "topics": [
+                  "coursework",
+                  "formatter",
+                  "matlab",
+                  "style"
+                ]
+              },
+              {
+                "name": "image-host",
+                "description": "Static image hosting repository for markdown notes, documentation, and website assets.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-08-30T04:41:47Z",
+                "fork": false,
+                "topics": [
+                  "assets",
+                  "github-pages",
+                  "image-hosting",
+                  "markdown",
+                  "personal-website"
+                ]
+              },
+              {
+                "name": "gitignore",
+                "description": "Reusable .gitignore template collection for multi-language development workflows.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-02-06T13:25:41Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "cpp",
+                  "git",
+                  "github-actions",
+                  "github-pages",
+                  "gitignore",
+                  "personal-website",
+                  "python",
+                  "template",
+                  "templates"
+                ]
+              },
+              {
+                "name": "epyestim",
+                "description": "epyestim estimates the effective reproduction number from time series of reported case numbers of epidemics.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2020-12-12T19:44:55Z",
+                "fork": true,
+                "topics": [
+                  "algorithms",
+                  "biomathematics",
+                  "epidemiology",
+                  "jupyter-notebook",
+                  "mathematical-modeling",
+                  "python",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "arxiv-email",
+                "description": "Email helper for arXiv updates and alerts.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-02-10T05:09:37Z",
+                "fork": true,
+                "topics": [
+                  "arxiv",
+                  "automation",
+                  "email",
+                  "github-actions",
+                  "html",
+                  "machine-learning",
+                  "python",
+                  "template",
+                  "web-development"
+                ]
+              },
+              {
+                "name": ".github",
+                "description": "Account profile and account-wide workflow/configuration repository for GitHub defaults and automation.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-02-16T17:29:25Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "config",
+                  "github-actions",
+                  "profile"
+                ]
+              },
+              {
+                "name": "ScientificCalculationBot",
+                "description": "A scientific calculation and plotting QQ Bot based on Python and CQ-HTTP.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-02-10T05:45:01Z",
+                "fork": false,
+                "topics": [
+                  "chatbot",
+                  "cqhttq",
+                  "math",
+                  "plot",
+                  "python",
+                  "qqbot",
+                  "scientific-computing"
+                ]
+              },
+              {
+                "name": "onedrive-vercel-index",
+                "description": "OneDrive public directory listing, powered by Vercel and Next.js",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2022-03-06T10:24:06Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:05.300349+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

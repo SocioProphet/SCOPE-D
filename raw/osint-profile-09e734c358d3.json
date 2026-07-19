@@ -1,0 +1,496 @@
+{
+  "profileId": "osint-profile-09e734c358d3",
+  "target": "jkdevcode",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:34.792078+00:00",
+  "completedAt": "2026-06-21T15:29:35.514456+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5ada296c",
+      "lookupType": "github_context",
+      "target": "jkdevcode",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jkdevcode",
+            "name": "Dario Zamora",
+            "type": "User",
+            "company": null,
+            "blog": "josedvargas.vercel.app",
+            "location": "Colombia",
+            "bio": "Backend Developer | Node.js, NestJS, TypeScript | AI-Assisted Development \ud83e\uddd1\ud83c\udffb\u200d\ud83d\udcbb\r\n",
+            "public_repos": 37,
+            "followers": 2623,
+            "following": 10585,
+            "created_at": "2024-07-01T22:18:00Z",
+            "updated_at": "2026-06-17T22:58:55Z",
+            "html_url": "https://github.com/jkdevcode",
+            "avatar_url": "https://avatars.githubusercontent.com/u/174388386?v=4",
+            "repos": [
+              {
+                "name": "animated_portfolio",
+                "description": "Jose's portfolio made with React Tailwind & Motion \ud83d\udc7e",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-28T22:35:30Z",
+                "fork": false,
+                "topics": [
+                  "icons",
+                  "motion",
+                  "nextui",
+                  "portfolio",
+                  "react",
+                  "tailwind",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "github-pacman",
+                "description": "Transform your GitHub contribution graph into a Pac-Man maze animation.",
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2026-06-20T13:47:00Z",
+                "fork": false,
+                "topics": [
+                  "animation",
+                  "github-actions",
+                  "github-profile",
+                  "pacman",
+                  "svg"
+                ]
+              },
+              {
+                "name": "jkdevcode",
+                "description": "\ud83d\udd25 Developer Profile \u2014 Skills, Tools & Work",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-06-17T20:44:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LyricWave",
+                "description": " letters that flow like sound waves. \ud83c\udf0a\ud83c\udfb6",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-17T21:50:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "trackmyexpenses",
+                "description": "Fullstack expense management app (React + NestJS + MySQL) with Docker, CI/CD, and production-ready architecture.",
+                "stargazers_count": 17,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-19T02:53:06Z",
+                "fork": false,
+                "topics": [
+                  "expense-tracker",
+                  "monorepo",
+                  "ocr",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "smart-job-cli",
+                "description": "CLI tool to search, filter and manage job opportunities using customizable rules and local persistence.",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-22T00:52:12Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "career",
+                  "cli",
+                  "job-search",
+                  "nodejs",
+                  "playwright",
+                  "productivity",
+                  "sqlite",
+                  "terminal"
+                ]
+              },
+              {
+                "name": "wakatime-activity",
+                "description": "GitHub-style WakaTime activity heatmap generator with automated SVG updates via GitHub Actions.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-05-30T06:52:06Z",
+                "fork": false,
+                "topics": [
+                  "animation",
+                  "github-actions",
+                  "github-profile",
+                  "svg",
+                  "wakatime-api"
+                ]
+              },
+              {
+                "name": "snake_animation",
+                "description": "\ud83d\udc0d GitHub contribution snake animation generated automatically with GitHub Actions.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-06-21T13:49:09Z",
+                "fork": false,
+                "topics": [
+                  "github-actions",
+                  "github-contributions",
+                  "snake-animation",
+                  "svg"
+                ]
+              },
+              {
+                "name": "nestjs-tasks-crud",
+                "description": "\ud83d\udd16 NestJs which exposes an API for managing tasks. It uses Prisma ORM to persist data and OpenAPI to document the interface.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-05T01:50:36Z",
+                "fork": false,
+                "topics": [
+                  "nestjs",
+                  "prisma",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "purrfectmatch_full_app",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-09T17:29:39Z",
+                "fork": false,
+                "topics": [
+                  "express",
+                  "javascript",
+                  "mysql",
+                  "nodejs",
+                  "react",
+                  "react-native",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "BubbleView",
+                "description": "\ud83e\udee7 A smooth scroll-based animation where images expand from small bubbles to fullscreen reveals, built with React & Vite.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-17T21:40:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gh-follow-sync",
+                "description": "CLI tool to clean GitHub following lists by removing users who don't follow back, with whitelist protection and dry-run support.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-18T14:14:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crudLaravel",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Blade",
+                "pushed_at": "2024-11-17T15:10:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mascotas-railway",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-01T03:00:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-profile-assets",
+                "description": "Media assets (GIFs, banners & images) used across my GitHub profile and READMEs.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-02-07T02:20:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "repo-inspector",
+                "description": "A CLI that automatically analyzes a project using AI and generates a technical code report.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-18T10:45:33Z",
+                "fork": false,
+                "topics": [
+                  "ia",
+                  "javascript",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "code_exercises",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-21T01:22:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "night-fox",
+                "description": "\ud83e\udd8a A minimalist, code-drawn night landscape built with React, Tailwind and Framer Motion \u2014 no images, just components and motion.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-30T20:21:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "services-landing",
+                "description": "\ud83c\udf10 A clean, responsive landing page for showcasing services\u2014fast, modern, and fully multilingual.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-28T02:35:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FrontendMascotas",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-16T19:35:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Issues",
+                "description": "Learning how to open, label, and close Issues \u2014 one bug at a time \ud83d\udc1b\u2728",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-08-26T02:49:39Z",
+                "fork": false,
+                "topics": [
+                  "issues"
+                ]
+              },
+              {
+                "name": "spark-react-ts-tailwind",
+                "description": "\ud83e\uddec  Fully configured starter for modern frontend apps using React, TS, Tailwind, and motion effects.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-05T01:45:08Z",
+                "fork": false,
+                "topics": [
+                  "heroui",
+                  "react",
+                  "tailwindcss",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "portfolio_react",
+                "description": "\ud83d\ude0e Jose's portfolio made with React Tailwind & Motion",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-25T01:19:12Z",
+                "fork": false,
+                "topics": [
+                  "motion",
+                  "portfolio",
+                  "react",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "vuetify-blog",
+                "description": "\ud83d\udca5 Demonstrates the use of Vuetify in a personal blog",
+                "stargazers_count": 0,
+                "language": "Vue",
+                "pushed_at": "2025-03-13T19:22:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nestjs-mysql-api",
+                "description": "\ud83d\udc7e A REST API crud for users for OneToOne and OneToMany relationships in NestJS with TypeORM and MySQL",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-27T22:37:10Z",
+                "fork": false,
+                "topics": [
+                  "mysql",
+                  "nestjs",
+                  "typeorm",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "vue-vuetify-prog",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Vue",
+                "pushed_at": "2025-03-07T22:22:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vuejs_documentation_examples",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Vue",
+                "pushed_at": "2025-03-05T20:57:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pending_tasks_react_ts",
+                "description": "https://jkdevcode.github.io/pending_tasks_react_ts/ \ud83d\ude80",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-15T21:08:57Z",
+                "fork": false,
+                "topics": [
+                  "react",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "bootstrap-sitio-web",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-02-15T17:09:39Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "css",
+                  "html"
+                ]
+              },
+              {
+                "name": "my-sitio-web",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-02-15T17:08:59Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "js"
+                ]
+              },
+              {
+                "name": "programming_journey",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-01T01:22:30Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "nestjs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "MovilMascotas",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-11T02:04:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "food-menu-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-10T23:33:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-shop",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-16T01:25:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "list_courses_angular",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-09T20:05:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "questionsEnglish",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2024-08-09T01:17:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crud-libros",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-06T22:24:06Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:35.513650+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

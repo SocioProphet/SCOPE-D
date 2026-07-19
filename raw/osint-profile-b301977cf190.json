@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-b301977cf190",
+  "target": "peterruler",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:29.815468+00:00",
+  "completedAt": "2026-06-21T15:30:31.033859+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-51489e15",
+      "lookupType": "github_context",
+      "target": "peterruler",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "peterruler",
+            "name": "Peter Str\u00f6ssler",
+            "type": "User",
+            "company": null,
+            "blog": "https://peterruler.github.io",
+            "location": null,
+            "bio": "Software Developer",
+            "public_repos": 81,
+            "followers": 1956,
+            "following": 4333,
+            "created_at": "2011-01-12T13:15:30Z",
+            "updated_at": "2026-05-18T18:55:16Z",
+            "html_url": "https://github.com/peterruler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/559492?v=4",
+            "repos": [
+              {
+                "name": "agents",
+                "description": "Repo for the Complete Agentic AI Engineering Course",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-20T11:41:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "spec-aware-coding-assistant",
+                "description": "VLLM+QwenCoder+FastAPI+SSE+Reactjs-Client",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-19T16:00:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "A-Medical-AI-Chat",
+                "description": "alternative gpt solution using ollama, chainlit, huggingface and pytorch",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-06-07T09:17:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "claude-code-for-beginners",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-06-07T12:39:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "llm_engineering",
+                "description": "Repo to accompany my mastering LLM engineering course",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-01T18:22:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "python-audio-translator",
+                "description": "A python app to translate recognized spoken language to a chosen target language",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2025-09-28T13:37:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "speech-to-structure",
+                "description": "local text to structure using gpt-oss-20 and whisper",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-08-11T16:48:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "peterruler.github.io",
+                "description": "2025 Version of my web profile",
+                "stargazers_count": 16,
+                "language": "HTML",
+                "pushed_at": "2026-06-02T19:36:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "linreg-pytorch",
+                "description": "Linear Regression with pytorch with numerical scalar target value",
+                "stargazers_count": 25,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-04-11T17:42:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-app",
+                "description": null,
+                "stargazers_count": 24,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-20T12:08:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gpt-oss-20b",
+                "description": "streamlit python chat interface using ollama and gpt-oss-20b",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-08-08T15:51:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reactjs-hapifhir",
+                "description": "FHIR Questionnaire Reactapp",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-18T17:03:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "med-gemma",
+                "description": "E-Health medical chat alternative gpt solution using ollama, chainlit and pytorch",
+                "stargazers_count": 30,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-05T17:27:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tools-chat",
+                "description": "llama 3.1 chat with langchain tools websearch & repl",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-08-07T16:07:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "breast-cancer-cnn",
+                "description": "Breast Cancer Recognition with Pytorch CNN",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-06-07T09:29:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "openehr",
+                "description": "OpenEHR - Opensource  E-Health Record - Exercise",
+                "stargazers_count": 3,
+                "language": "Batchfile",
+                "pushed_at": "2025-05-01T13:52:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "currency-reactnative",
+                "description": "react native app currency calculator rest api - list / edit view with routing",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-11T17:18:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "malaria-cnn",
+                "description": "E-Health, Pytorch  CNN, malaria detection computer vision ",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-04-20T17:55:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "peterruler",
+                "description": "my profile markdown file",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2026-05-24T14:39:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-follow-script",
+                "description": "Automation tool that follows GitHub users based on smart algorithms to analyze behavior and increase chances of getting follow-backs.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-02-07T08:17:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "follow-fellow",
+                "description": "an unfollow script to search for followed people that don't follow back.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-04-10T15:26:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-form-mailer",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2026-05-15T13:29:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-frontend",
+                "description": "Frontend user interface to suit to flask-backend - runs natively on mobile device",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-27T16:34:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web4",
+                "description": "php json server deployed to lamp environment",
+                "stargazers_count": 10,
+                "language": "PHP",
+                "pushed_at": "2025-10-22T11:39:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLMs-from-scratch",
+                "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-19T14:30:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "regression-xgboost",
+                "description": "Car Price Prediction using XGBoost ",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-01-25T16:29:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vllm-gradio-chat",
+                "description": "Spec-aware Gradio + VLLM Coding Assistant",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-04-27T18:24:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reactjs-todoapp",
+                "description": "a react todoapp frontend",
+                "stargazers_count": 42,
+                "language": "HTML",
+                "pushed_at": "2025-10-22T13:28:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nestjs-prisma-postgresql",
+                "description": "nestjs-prismaorm-postgres udemy course realtor-app",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-15T17:58:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "apertus",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-09-09T19:28:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "xampp-local-macosx",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2025-12-28T18:52:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodejs-server",
+                "description": "fullstack todoapp using typescript nodejs / nestjs / react with authentication",
+                "stargazers_count": 18,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-06T17:31:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mongo-arm",
+                "description": "My REST Backend to several of my react native / expo, vercel, render, etc. frontends",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-07T15:44:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "https-github.com-miguellgt-books",
+                "description": "books",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2017-08-15T17:55:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "weather-app-react-native",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-30T10:08:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quiz",
+                "description": "a vanilla javascript web-development quiz",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-15T14:52:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pytorch-neuronale-netze-in-python",
+                "description": " udemy course pytorch-neuronale-netze-in-python",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-02-26T14:51:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodejs-speech2structure",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-06T18:17:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-webapp-frontend",
+                "description": "Frontend user interface to suit to flask-backend - runs in browser",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-07T15:46:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flask-backend",
+                "description": "Backend for cats-and-dogs server replacement - faster version",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-03-07T15:56:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hotel-app",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-07T15:41:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "llama-server",
+                "description": "llm llama 3 mlx pipeline run as flask server",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-02-19T09:20:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chatgpt-finetune",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-13T14:14:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "openai-imagemod",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-13T14:37:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deepseek-summary",
+                "description": " first app with deepseek api",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-01-31T19:51:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-spy-thriller",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-13T14:21:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "speech2structure",
+                "description": "speech2structure in deutsch mit openai api",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-01-22T17:29:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-diagnosis",
+                "description": "speech2structure with openai",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-01-20T19:28:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "graphql-apollo-associate",
+                "description": "official diploma of apollo certified graphql associate",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-05T16:32:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "linreg02-jupyter-nb",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-20T12:32:55Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:31.033066+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

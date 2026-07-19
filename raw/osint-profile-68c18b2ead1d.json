@@ -1,0 +1,526 @@
+{
+  "profileId": "osint-profile-68c18b2ead1d",
+  "target": "thepiratehub",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:53.625438+00:00",
+  "completedAt": "2026-06-21T15:31:55.191117+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-aea58ab4",
+      "lookupType": "github_context",
+      "target": "thepiratehub",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "thepiratehub",
+            "name": "home of source code",
+            "type": "User",
+            "company": "@codewithedison",
+            "blog": "https://codewithedison.com/",
+            "location": "kigali rwanda",
+            "bio": "WE FORK USEFUL RESOURCES OVER INTERNET \r\nopen source coding projects by @codeWithEdison ",
+            "public_repos": 54,
+            "followers": 1519,
+            "following": 1866,
+            "created_at": "2024-04-11T14:39:21Z",
+            "updated_at": "2026-06-06T11:16:14Z",
+            "html_url": "https://github.com/thepiratehub",
+            "avatar_url": "https://avatars.githubusercontent.com/u/166730728?v=4",
+            "repos": [
+              {
+                "name": "rtb-gis-schools-monitoring-system",
+                "description": "RTB Schools GIS Monitoring & Intelligence System",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-06T07:51:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pyrix-blog-",
+                "description": "\u2728 Feature-Rich Personal Blog made with SvelteKit & Sanity CMS \u2728",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-04-11T05:25:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "soracertpro",
+                "description": "offrir l'acc\u00e8s \u00e0 la technologie \u00e0 ceux qui en ont le plus besoin",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-01-16T16:48:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "system-prompts-and-models-of-ai-tools",
+                "description": "FULL v0, Cursor, Manus, Same.dev, Lovable, Devin, Replit Agent, Windsurf Agent & VSCode Agent (And other Open Sourced) System Prompts, Tools & AI Models.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-25T16:50:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "online-bus-ticket",
+                "description": "php  , mysql online bus reservation and management system ",
+                "stargazers_count": 24,
+                "language": "PHP",
+                "pushed_at": "2024-04-12T07:29:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Stock-Managemnt-system",
+                "description": "This is a stock managemnt system wriiten in asp.net",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2016-09-17T18:33:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BlockChainVoting",
+                "description": "A blockchain based E-voting system",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-16T02:00:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-landing-page-template-2021",
+                "description": "A sleek plug n play react landing page template. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-22T02:55:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "React-Landing-Page-Template",
+                "description": "A simple react one page landing page templates for startups/companies",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-14T12:20:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "next-e-commerce",
+                "description": "An e-commerce website example with NextJS that I made in 1 week as a self challenge. Using Firebase as backend.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-22T14:45:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VSCode_Template",
+                "description": "Portfolio Website Template Based On VSCode Theme",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-19T12:02:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vscode-portfolio",
+                "description": "A VSCode themed developer portfolio built using Next.js",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-19T06:26:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "racxstudio",
+                "description": "A software house profile website built with ReactJS and TailwindCSS :computer:",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-06T02:34:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "design-resources-for-developers",
+                "description": "Curated list of design and UI resources from stock photos, web templates, CSS frameworks, UI libraries, tools and much more",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-13T15:11:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "commerce",
+                "description": "Next.js Commerce",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-07T13:31:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "thepiratehub",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-05-04T19:50:12Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "e-learning",
+                "description": "Simple UI examples from my social media",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-04-19T07:12:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kigali-pizza",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-18T19:20:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "UI-Components",
+                "description": "Some Awesome UI Components made with HTML, CSS and JavaScript.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-04-15T10:23:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Dynamic-Blogger-website",
+                "description": "A dynamic website where you can share your  experiences so create a unique and beautiful blog for free,,,",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-03-17T09:30:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "blog_website_template",
+                "description": "This is the repositry which is used for hosting template which is designed to host a responsive multi-page blogging website that you can easily customize and extend to fit your needs. Built with modern HTML, CSS, and JavaScript, this template provides a seamless user experience for bloggers and readers alike.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-03-27T12:57:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PHP-MySQL-Blog-Website-with-Admin-Panel",
+                "description": "The PHP & MySQL Blog App with Admin Panel project is a web application that allows users to create and manage blog posts, categories, and users. The app is built using PHP and MySQL, two popular technologies for web development, and features a robust CRUD functionality that enables users to Create, Read, Update, and Delete posts, categories,etc",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-03-30T15:02:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cool-responsive-portfolio",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-12-16T17:00:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Gaming-website",
+                "description": "GameHive is a fully responsive esports gaming website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-09-16T00:47:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "personal-blog-website",
+                "description": "SimpleBlog is a completely responsive personal blog website that is compatible with all mobile devices, has Dark and light themes, and is built using HTML, CSS, and JavaScript.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-01-02T13:14:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "personal-blog-site",
+                "description": "Wren is a fully responsive personal blog website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-02-24T01:38:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ChatGPT_DAN",
+                "description": "ChatGPT DAN, Jailbreaks prompt",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-17T04:06:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Worm-GPT",
+                "description": "WormGPT is a malicious AI tool promoted on the dark web as the adversary of ChatGPT. It automates the creation of convincing personalized fake emails, aiding in criminal activities like phishing and malware installation.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-13T23:36:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bitchat",
+                "description": "bluetooth mesh chat, IRC vibes",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-09T11:45:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "codeWithEdison",
+                "description": "best readme ever",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-07T19:16:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "EventoEMS",
+                "description": "Event Management System, a solution developed as part of our final year group project, designed to streamline campus event planning, registration, and ticket booking.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-17T09:24:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "top-github-users",
+                "description": "Check your ranking in GitHub! Don't forget to star \u2b50 this repository.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-02T01:21:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ASCII-Art-Prompt-Injection",
+                "description": "ASCII Art Prompt Injection is a novel approach to hacking AI assistants using ASCII art. This project leverages the distracting nature of ASCII art to bypass security measures and inject prompts into large language models, such as GPT-4, leading them to provide unintended or harmful responses.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-03-19T03:15:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HKG",
+                "description": "HKG's Official Website",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-29T02:00:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpenSchool",
+                "description": "Single-Page Application For An Educational Website",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-29T04:09:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "matlab-production-server-on-aws",
+                "description": "Stand up a MATLAB Production Server using CloudFormation",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-15T20:38:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gpt-engineer",
+                "description": "CLI platform to experiment with codegen. Precursor to: https://lovable.dev",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-17T22:47:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-chatbot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-26T15:19:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "invoify",
+                "description": "An invoice generator app built using Next.js, Typescript, and Shadcn",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-30T14:37:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "APAER-TRAINING-MOBILE-App",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-28T10:36:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "UniSmart-Class-Attendance-System",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-20T08:44:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AcademicRecordManagement",
+                "description": "This is a system which is about recording student marks  will be used by the Dean, Head of department, Lecturers, and students.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-21T20:34:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UniSmart-Class-Attendance-System-Backend",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-19T19:01:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MorgueManagementSystem",
+                "description": "A web Appliction for managing core funeral homes activities",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-08-25T17:28:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "admin-site",
+                "description": "This is responsive admin dashboard adminsite build with html, css, and javascript.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-11-28T00:03:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cla-rw",
+                "description": "Christian Life Assembly Website",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-26T12:46:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ecommerce-dashboard",
+                "description": "React Admin Dashboard Template",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-18T16:43:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fortezhuo.my.id",
+                "description": "My Personal Landing Page",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-04-28T10:02:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "admin-one-react-tailwind",
+                "description": "Free React Next Tailwind 3.x admin dashboard template with typescript and dark mode.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-29T13:06:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "v-dashboard",
+                "description": "Dashboard starter template built with Vue 3 and Tailwind CSS.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-05T19:48:53Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:55.190302+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

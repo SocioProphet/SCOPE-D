@@ -1,0 +1,958 @@
+{
+  "profileId": "osint-profile-f42695d915f2",
+  "target": "CodeByPinar",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:44.802332+00:00",
+  "completedAt": "2026-06-20T13:53:47.104256+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-9271317a",
+      "lookupType": "github_context",
+      "target": "CodeByPinar",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "CodeByPinar",
+            "name": "P\u0131nar",
+            "type": "User",
+            "company": null,
+            "blog": "https://pinardev.vercel.app/",
+            "location": "Turkey/ Samsun",
+            "bio": "\ud83d\udd10 SOC Analyst & Backend Developer\r\nBlue Team \u2022 SIEM \u2022 Incident Response \u2022 Network Security",
+            "public_repos": 121,
+            "followers": 1436,
+            "following": 2704,
+            "created_at": "2022-06-13T15:51:41Z",
+            "updated_at": "2026-05-22T08:17:11Z",
+            "html_url": "https://github.com/CodeByPinar",
+            "avatar_url": "https://avatars.githubusercontent.com/u/107423523?v=4",
+            "repos": [
+              {
+                "name": "network-security-journey",
+                "description": "My hands-on Network Security learning journey: labs, notes, packet analysis, firewall rules, SOC basics, and security projects.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-26T18:16:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Customer-Segmentation-CLV-Analysis",
+                "description": "Optimize marketing strategies and enhance decision-making. Explore customer data, segment behavior, calculate CLV, analyze demographics, and visualize insights. \ud83d\ude80",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-09-19T09:16:32Z",
+                "fork": false,
+                "topics": [
+                  "clv-analysis",
+                  "customer-segmentation",
+                  "data-analysis",
+                  "data-science",
+                  "data-visualization",
+                  "jupyter-notebook",
+                  "machine-learning",
+                  "marketing-strategy",
+                  "python"
+                ]
+              },
+              {
+                "name": "accura-finance",
+                "description": "\ud83c\udfe2 Modern ve kullan\u0131c\u0131 dostu muhasebe yaz\u0131l\u0131m\u0131 - K\u00fc\u00e7\u00fck ve orta \u00f6l\u00e7ekli i\u015fletmeler i\u00e7in profesyonel finansal y\u00f6netim \u00e7\u00f6z\u00fcm\u00fc",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-08-04T08:59:09Z",
+                "fork": false,
+                "topics": [
+                  "accounting-software",
+                  "customtkinter",
+                  "desktop-application",
+                  "erp",
+                  "finance",
+                  "financial-management",
+                  "invoice-management",
+                  "modern-gui",
+                  "muhasebe",
+                  "python",
+                  "sql-server",
+                  "sqllite",
+                  "tkinter"
+                ]
+              },
+              {
+                "name": "YouTube-Data-Analysis-Insights",
+                "description": "\ud83d\ude80 Welcome to the YouTube Data Analysis and Insights project! \ud83d\udcca",
+                "stargazers_count": 17,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-09-21T16:19:53Z",
+                "fork": false,
+                "topics": [
+                  "clv-analysis",
+                  "customer-segmentation",
+                  "data-analysis",
+                  "data-cleaning",
+                  "data-insights",
+                  "data-science",
+                  "data-visualization",
+                  "machine-learning",
+                  "marketing-analytics",
+                  "matplotlib",
+                  "python",
+                  "seaborn",
+                  "youtube-analytics"
+                ]
+              },
+              {
+                "name": "GearGo",
+                "description": "\ud83d\ude97 Modern ve geli\u015fmi\u015f ara\u00e7 kiralama platformu - React TypeScript, Material-UI, Framer Motion ile geli\u015ftirildi. Canl\u0131 kart \u00f6deme sistemi, 5 ad\u0131ml\u0131 rezervasyon, responsive tasar\u0131m ve g\u00fc\u00e7l\u00fc animasyonlar i\u00e7erir.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-02T17:50:01Z",
+                "fork": false,
+                "topics": [
+                  "booking-system",
+                  "car-rental",
+                  "framer-motion",
+                  "frontend",
+                  "material-ui",
+                  "payment-system",
+                  "react",
+                  "rental-platform",
+                  "responsive-design",
+                  "styled-components",
+                  "turkish",
+                  "typescript",
+                  "vite",
+                  "web-application"
+                ]
+              },
+              {
+                "name": "Credit-Card-Fraud-Detection-Project",
+                "description": "This project focuses on the detection of credit card fraud using various data science and machine learning techniques. The dataset includes a record of credit card transactions over a specific period, with the goal of accurately identifying fraudulent activities. \ud83d\ude80\u2728",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-03-30T19:02:17Z",
+                "fork": false,
+                "topics": [
+                  "anamoly-detection",
+                  "classification-algorithms",
+                  "credit-card-transactions",
+                  "data-analysis",
+                  "data-preprocessing",
+                  "data-science",
+                  "data-visualization",
+                  "fraud-detection",
+                  "machine-learning",
+                  "python"
+                ]
+              },
+              {
+                "name": "bakiyedefter-pos",
+                "description": "K\u00fc\u00e7\u00fck i\u015fletmeler i\u00e7in tasarlanm\u0131\u015f modern offline-first finansal operasyon platformu. Veresiye, cari hesap, tahsilat ve POS s\u00fcre\u00e7lerini tek merkezde y\u00f6netir.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-30T14:14:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Earthquake_Prediction_Analysis_Project",
+                "description": "\ud83c\udf0d Welcome to the Earthquake Prediction Analysis Project! \ud83d\ude80 This project aims to predict earthquake magnitudes using LSTM neural networks and analyze seismic data. Explore, analyze, and forecast earthquakes with ease! \ud83d\udcc8\ud83d\udd2e",
+                "stargazers_count": 33,
+                "language": "MATLAB",
+                "pushed_at": "2024-03-28T16:32:29Z",
+                "fork": false,
+                "topics": [
+                  "analysis",
+                  "data-analysis",
+                  "data-science",
+                  "earthquake-prediction",
+                  "geocoding",
+                  "geology",
+                  "lstm",
+                  "lstm-neural-networks",
+                  "machine-learning",
+                  "matlab",
+                  "matlab-deep-learning",
+                  "open-source",
+                  "time-series",
+                  "visualization"
+                ]
+              },
+              {
+                "name": "ozturk-yapi-web",
+                "description": "Modern, h\u0131zl\u0131 ve SEO odakl\u0131 kurumsal web platformu. \u00d6zt\u00fcrk Yap\u0131 \u0130n\u015faat i\u00e7in geli\u015ftirilen; in\u015faat, tadilat, dekorasyon, proje y\u00f6netimi ve teklif s\u00fcre\u00e7lerini dijitalde profesyonel \u015fekilde sunan premium Next.js tabanl\u0131 web \u00e7\u00f6z\u00fcm\u00fc.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-18T10:22:44Z",
+                "fork": false,
+                "topics": [
+                  "corporate-website",
+                  "nextjs",
+                  "supabase",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "character-management-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-16T12:57:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CodeByPinar",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-16T09:58:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OnamDesk",
+                "description": "Klinikler i\u00e7in geli\u015ftirilmi\u015f WPF tabanl\u0131 dijital onam, imza alma, PDF ar\u015fivleme ve audit log y\u00f6netim sistemi.",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2026-05-04T17:48:05Z",
+                "fork": false,
+                "topics": [
+                  "audit-log",
+                  "clinical-software",
+                  "consent-management",
+                  "desktop-app",
+                  "digital-signature",
+                  "dotnet",
+                  "healthcare",
+                  "mvvm",
+                  "pdf-generation",
+                  "sqlite",
+                  "wpf"
+                ]
+              },
+              {
+                "name": "CargoFlow",
+                "description": "\ud83d\udce6 ASP.NET Core 8 API for Cargo Shipment Management with JWT Auth, Dashboard Metrics, File Upload, Filtering, Logs and Swagger Integration",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-06-13T16:02:21Z",
+                "fork": false,
+                "topics": [
+                  "asp-net-core",
+                  "cargo-management-software",
+                  "dotnet-8",
+                  "jwt-auth",
+                  "swagger"
+                ]
+              },
+              {
+                "name": "atlascrm",
+                "description": "AtlasCRM is a Next.js + Prisma CRM with an admin panel (Leads CRUD, Customers, Tasks, Billing) and built-in authentication.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-25T11:30:10Z",
+                "fork": false,
+                "topics": [
+                  "admin-panel",
+                  "authentication",
+                  "crm",
+                  "full-stack",
+                  "monorepo",
+                  "nextjs",
+                  "postgresql",
+                  "prisma",
+                  "rbac",
+                  "react",
+                  "saas",
+                  "server-actions",
+                  "tailwindcss",
+                  "typescript",
+                  "web-application"
+                ]
+              },
+              {
+                "name": "tokentrace",
+                "description": "Passive client-side exposure analysis platform for detecting leaked secrets, risky frontend configs, and security-relevant JavaScript patterns.",
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2026-04-15T16:13:03Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "fastapi",
+                  "frontend-security",
+                  "javascript-analysis",
+                  "secret-detection"
+                ]
+              },
+              {
+                "name": "cafe-network-vlan-design",
+                "description": "Secure cafe network design using Cisco Packet Tracer with VLAN segmentation, ACL-based isolation, DHCP, NAT, and Wi-Fi security (2026).",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-04-16T14:14:43Z",
+                "fork": false,
+                "topics": [
+                  "cisco",
+                  "cisco-packet-tracer",
+                  "computer-network",
+                  "ian",
+                  "network",
+                  "network-simulation",
+                  "network-topology",
+                  "networking",
+                  "router",
+                  "routing",
+                  "switch",
+                  "vlan-creation"
+                ]
+              },
+              {
+                "name": "go-eventra",
+                "description": "Eventra is a production-oriented auth platform built with Go, PostgreSQL, and React. It includes JWT access tokens, refresh token rotation, blacklist-based logout security, rate limiting, account lock controls, and a premium auth console UI.",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2026-03-22T09:34:00Z",
+                "fork": false,
+                "topics": [
+                  "authentication-service",
+                  "cybersecurity",
+                  "go-auth",
+                  "jwt-authentication",
+                  "postgresql",
+                  "react-typescript",
+                  "refresh-token",
+                  "rest-api",
+                  "vercel-deployment",
+                  "vite"
+                ]
+              },
+              {
+                "name": "Plant-Health-Monitoring",
+                "description": "\ud83c\udf31 This project aims to automate plant health monitoring using computer vision and deep learning. It focuses on accurate disease detection and classification in plants through rigorous data preprocessing and robust model selection.",
+                "stargazers_count": 46,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-04-28T09:03:43Z",
+                "fork": false,
+                "topics": [
+                  "agriculture",
+                  "artificial-intelligence",
+                  "cnn",
+                  "cnn-model",
+                  "computer-vision",
+                  "deep-learning",
+                  "github",
+                  "keras",
+                  "machine-learning",
+                  "open-source",
+                  "opencv",
+                  "plant-health",
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "profitlens",
+                "description": "ProfitLens is an event-driven Go microservices SaaS backend for tracking real project profitability, client risk, invoices, expenses, and operational metrics for freelancers and agencies.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2026-04-29T18:15:27Z",
+                "fork": false,
+                "topics": [
+                  "backend",
+                  "docker",
+                  "golang",
+                  "kafka",
+                  "microservices",
+                  "postgresql",
+                  "redis",
+                  "saas",
+                  "system-design"
+                ]
+              },
+              {
+                "name": "DestekTalepSistemi",
+                "description": "Modern full-stack destek talep ve mesajla\u015fma sistemi. .NET 8 Web API ve React ile geli\u015ftirildi. JWT kimlik do\u011frulama, rol bazl\u0131 yetkilendirme, dashboard analiti\u011fi, filtreleme ve SaaS mimariye haz\u0131r monorepo yap\u0131s\u0131.",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2026-02-16T12:08:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vulnapi-lab",
+                "description": "Docker tabanl\u0131, kas\u0131tl\u0131 zafiyetli REST/GraphQL API lab ortam\u0131; exploit scriptleri, write-up dosyalar\u0131, scoring servisi ve Streamlit dashboard i\u00e7erir.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-20T10:20:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pinardevstudio",
+                "description": "Personal developer portfolio showcasing my full-stack projects, technical skills, work experience, and case studies.   Built with a modern, clean UI and optimized for performance, SEO, and responsive design.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-03T17:27:36Z",
+                "fork": false,
+                "topics": [
+                  "backend",
+                  "clean-architecture",
+                  "frontend",
+                  "fullstack-developer",
+                  "nextjs",
+                  "personal-website",
+                  "portfolio",
+                  "react",
+                  "sofware-engineering",
+                  "ui-design",
+                  "webdeveloper"
+                ]
+              },
+              {
+                "name": "Spotify_Trends_2023_Analysis",
+                "description": "Exploring Spotify's latest trends, top songs, genres, and artists using Python, Pandas, NumPy, Matplotlib, CNNs for image-based analysis, and advanced algorithms for music recommendation. Dive into the world of music data and discover what's trending on Spotify! \ud83c\udfb5\ud83d\udcca",
+                "stargazers_count": 11,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-12-13T12:30:31Z",
+                "fork": false,
+                "topics": [
+                  "cnn",
+                  "cnn-keras",
+                  "data-analysis",
+                  "data-science",
+                  "data-visualization",
+                  "machine-learning",
+                  "matplotlib",
+                  "music-trend",
+                  "numpy",
+                  "pandas",
+                  "python",
+                  "spotify"
+                ]
+              },
+              {
+                "name": "excel-bulk-import-service",
+                "description": "High-throughput CSV/XLSX import service with async processing, Redis queueing, PostgreSQL persistence, and a modern dashboard.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-05T11:29:50Z",
+                "fork": false,
+                "topics": [
+                  "bullmq",
+                  "csv-import",
+                  "excel-import",
+                  "fastify",
+                  "postgresql"
+                ]
+              },
+              {
+                "name": "fraudsense",
+                "description": "Real-time fraud detection microservice with secure transaction APIs, rule-based risk scoring, JWT/HMAC authentication, and an interactive mission-control dashboard.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-01T20:17:37Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "fastify",
+                  "fraud-detection",
+                  "hmac",
+                  "jwt",
+                  "microservice",
+                  "nodejs",
+                  "postgresql",
+                  "redis",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "devlaunch-app",
+                "description": "Developer-focused SaaS launch platform to ship, validate, and monetize products before GA.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-13T09:58:59Z",
+                "fork": false,
+                "topics": [
+                  "analytics",
+                  "better-auth",
+                  "bun",
+                  "creator-tools",
+                  "devlaunch",
+                  "early-access",
+                  "elysia",
+                  "monorepo",
+                  "nextjs",
+                  "postgresql",
+                  "prisma",
+                  "product-launch",
+                  "react",
+                  "resend",
+                  "saas",
+                  "turborepo",
+                  "typescript",
+                  "uploadthing",
+                  "waitlist",
+                  "zod"
+                ]
+              },
+              {
+                "name": "telecommunication-customer-churn-analysis-and-prediction",
+                "description": "\ud83d\udcca This project focuses on customer churn analysis and prediction in the telecommunications sector. Using data analysis, modeling, and predictive techniques, it aims to understand and mitigate customer loss by developing strategies.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2024-05-14T15:23:12Z",
+                "fork": false,
+                "topics": [
+                  "churn",
+                  "churn-prediction",
+                  "classification",
+                  "customer",
+                  "data-analysis",
+                  "data-science",
+                  "deep-learning",
+                  "machine-learning",
+                  "neural-network",
+                  "telecom"
+                ]
+              },
+              {
+                "name": "go-learning-lab-tr",
+                "description": "S\u0131f\u0131rdan ba\u015flay\u0131p uygulamal\u0131 \u00f6rneklerle Go \u00f6\u011frenmek i\u00e7in haz\u0131rlanm\u0131\u015f kapsaml\u0131 bir laboratuvar: temel kavramlar, veri yap\u0131lar\u0131, fonksiyonlar, e\u015fzamanl\u0131l\u0131k, HTTP API geli\u015ftirme ve ger\u00e7ek bir To-Do REST API projesi i\u00e7erir.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2026-03-17T18:06:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "x-algorithm",
+                "description": "Algorithm powering the For You feed on X",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-20T02:31:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VisaSlotAI",
+                "description": "Next-generation autonomous visa appointment scraper and intelligence dashboard. A self-hosted, distributed system built with FastAPI, React, Playwright, and Celery to track slots in real-time.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-11T17:52:38Z",
+                "fork": false,
+                "topics": [
+                  "anti-bot-bypass",
+                  "appointment-tracker",
+                  "automation",
+                  "celery",
+                  "fastapi",
+                  "python",
+                  "stealth-scraping",
+                  "vfs-appointment-bot",
+                  "vfs-germany",
+                  "vfs-global",
+                  "visa-appointment",
+                  "visa-bot"
+                ]
+              },
+              {
+                "name": "shodan",
+                "description": "Shodan Dorks",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-03-31T11:18:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WiDS-2026-CV-Bagged-Survival-Ensemble",
+                "description": "Survival modeling based wildfire time to threat prediction using CV bagged Gradient Boosting Survival Analysis and IPCW weighted LightGBM. Hybrid metric optimization combining C index and weighted Brier scores with monotonic multi horizon probability enforcement. Public LB score 0.96841.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-03-01T18:24:37Z",
+                "fork": false,
+                "topics": [
+                  "ensemble-learning",
+                  "kaggle",
+                  "kaggle-competition",
+                  "lightgbm",
+                  "survival-analysis",
+                  "wildfire-prediction"
+                ]
+              },
+              {
+                "name": "nanoDNA-nanoROBOT-simulation",
+                "description": " nanoDNA-nanoROBOT-simulation: Open-source Python project for modeling and simulating DNA-based nanorobot behavior. \ud83e\uddec\ud83e\udd16",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2024-03-17T20:14:15Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "artificial-intelligence",
+                  "bioengineering",
+                  "bioinformatics",
+                  "biomedical-engineering",
+                  "computational-biology",
+                  "computational-modeling",
+                  "data-analysis",
+                  "dna",
+                  "machine-learning",
+                  "molecular-biology",
+                  "nanotechnology",
+                  "neural-networks",
+                  "open-source",
+                  "python",
+                  "science",
+                  "simulation"
+                ]
+              },
+              {
+                "name": "DotnetDevopsPipeline",
+                "description": "Production-ready .NET 8 Web API DevOps pipeline with CI/CD, Docker, GitHub Actions, Swagger, Health Checks, Serilog logging and live cloud deployment on Render.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-12-09T14:21:00Z",
+                "fork": false,
+                "topics": [
+                  "cicd",
+                  "cloud-deployment",
+                  "devops",
+                  "docker",
+                  "dotnet",
+                  "github-actions",
+                  "healtcheck",
+                  "render",
+                  "serilog",
+                  "swagger",
+                  "webapi"
+                ]
+              },
+              {
+                "name": "Fiberscope",
+                "description": "Next-generation React debugging tool that lets you inspect the Fiber tree, edit props/state in real time, and rewrite UI with AI-powered modifications.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-02T09:56:45Z",
+                "fork": false,
+                "topics": [
+                  "ai-tools",
+                  "debugging",
+                  "developer-tools",
+                  "inspector",
+                  "react-fiber",
+                  "react-react-devtools",
+                  "typescript",
+                  "webdev"
+                ]
+              },
+              {
+                "name": "House-Price-Prediction-Project",
+                "description": "\ud83c\udfe0 This project focuses on predicting house prices using advanced regression techniques. It involves comprehensive data preprocessing, feature engineering, and model selection. The aim is to develop an accurate predictive model for real estate prices.",
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-10-31T16:19:41Z",
+                "fork": false,
+                "topics": [
+                  "data-analysis",
+                  "data-preprocessing",
+                  "data-visualization",
+                  "deep-learning",
+                  "jupyter-notebook",
+                  "machine-learning",
+                  "neural-networks",
+                  "python",
+                  "regression",
+                  "regression-models"
+                ]
+              },
+              {
+                "name": "advanced-pdf-creator",
+                "description": "\ud83d\udcc4 **Advanced PDF Creator Application** built with Streamlit \ud83c\udf10. Generate high-quality, customizable PDFs with rich text, tables, images, and more! \ud83d\udd8b\ufe0f Real-time preview, \ud83d\udd12 secure data handling, and a user-friendly interface \ud83c\udfa8. Perfect for business \ud83c\udfe2, education \ud83d\udcda, and personal use \ud83e\uddd1\u200d\ud83d\udcbb.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2024-10-01T07:43:03Z",
+                "fork": false,
+                "topics": [
+                  "data-visualization",
+                  "document-management",
+                  "image-processing",
+                  "interactive-interface",
+                  "open-source",
+                  "pdf-creator",
+                  "pdf-editing",
+                  "pdf-generation",
+                  "python",
+                  "real-time-preview",
+                  "streamlit"
+                ]
+              },
+              {
+                "name": "Stellar-Sleuth",
+                "description": "This repository contains the code and data for the Astronomical Object Classification Project. The project focuses on classifying celestial objects (stars, galaxies, and quasars) based on their spectral characteristics using data from the Sloan Digital Sky Survey (SDSS).",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-09-10T16:33:31Z",
+                "fork": false,
+                "topics": [
+                  "astronomy",
+                  "classification",
+                  "data-science",
+                  "data-visualization",
+                  "galaxy-classification",
+                  "github",
+                  "machine-learning",
+                  "open-source",
+                  "sdss",
+                  "sky-survey",
+                  "space-exploration",
+                  "spectral-analysis"
+                ]
+              },
+              {
+                "name": "interstellar-ml-3I-ATLAS",
+                "description": "Physics-aware ML analysis of 3I/ATLAS (photometry + spectroscopy).",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-12-22T11:45:28Z",
+                "fork": false,
+                "topics": [
+                  "3i-atlas",
+                  "astronomy",
+                  "astrophysics",
+                  "interstellar-object",
+                  "lomb-scargle",
+                  "machine-learning",
+                  "photometry",
+                  "physics-informed",
+                  "plotly",
+                  "python",
+                  "reflectance-spectra",
+                  "reproducible-science",
+                  "research",
+                  "spectroscopy",
+                  "streamlit",
+                  "time-series"
+                ]
+              },
+              {
+                "name": "gen-expression",
+                "description": "Gene expression analysis is a fundamental component of genomics research, providing valuable insights into how genes are regulated and their impact on various biological processes. This project delves into the realm of gene expression data, aiming to uncover hidden patterns and relationships within complex datasets. \ud83d\ude80",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-09-15T15:38:16Z",
+                "fork": false,
+                "topics": [
+                  "bioinformatics",
+                  "biotechnology",
+                  "data-analysis",
+                  "data-science",
+                  "data-visualization",
+                  "genomics",
+                  "kaggle",
+                  "machine-learning",
+                  "pca",
+                  "python"
+                ]
+              },
+              {
+                "name": "Diabetes_Health_Prediction_and_Analysis",
+                "description": "A comprehensive project to predict and analyze diabetes health data using advanced machine learning models, including Logistic Regression, Random Forest, and XGBoost. \ud83d\udcca\ud83d\udd0d",
+                "stargazers_count": 11,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-06-12T20:16:32Z",
+                "fork": false,
+                "topics": [
+                  "analytics",
+                  "artificial-intelligence",
+                  "classification",
+                  "data-science",
+                  "data-visualization",
+                  "deep-learning",
+                  "diabetes-prediction",
+                  "health",
+                  "healthcare",
+                  "logistic-regression",
+                  "machine-learning",
+                  "medical-analysis",
+                  "mlops",
+                  "prediction",
+                  "python",
+                  "random-forest",
+                  "xgboost"
+                ]
+              },
+              {
+                "name": "Samsung_Stock_Analysis_Forecasting_and_Volatility_Analysis",
+                "description": "A comprehensive analysis and forecasting project for Samsung stock data, utilizing historical data to build predictive models and analyze volatility.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2024-06-22T19:32:08Z",
+                "fork": false,
+                "topics": [
+                  "data-analysis",
+                  "deep-learning",
+                  "financial-analysis",
+                  "forecasting",
+                  "machine-learning",
+                  "python",
+                  "stock-analysis",
+                  "volatility-forecasting"
+                ]
+              },
+              {
+                "name": "Asteroid-Trajectory-ML-Analysis",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-06-24T19:28:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "big-tech-financial-insights",
+                "description": "\ud83d\ude80 A comprehensive project analyzing Big Tech stock prices using time series analysis, volatility modeling, and macroeconomic indicators. Featuring interactive dashboards and automated reporting! \ud83d\udcc8\ud83d\udcbc",
+                "stargazers_count": 11,
+                "language": "HTML",
+                "pushed_at": "2024-06-29T08:36:07Z",
+                "fork": false,
+                "topics": [
+                  "data-analysis",
+                  "data-science",
+                  "finance",
+                  "machine-learning",
+                  "macroeconomics",
+                  "stock-analysis",
+                  "time-series-analysis",
+                  "volatility-modeling"
+                ]
+              },
+              {
+                "name": "Vivid",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-07-14T13:29:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WorldPopulationAnalysis2024",
+                "description": "World Population Analysis 2024: An In-Depth Exploration of Urban and Rural Populations and Infrastructure Accessibility",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-07T15:04:28Z",
+                "fork": false,
+                "topics": [
+                  "data-analysis",
+                  "data-science",
+                  "economic-indicators",
+                  "machine-learning",
+                  "population-growth",
+                  "prophet-forecasting"
+                ]
+              },
+              {
+                "name": "Gastronome",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-07-16T16:14:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NASA-Python-Tutorial",
+                "description": "\ud83c\udf0c A repository for the NASA Python programming tutorial using Visual Studio Code. Learn core programming concepts and solve real-life NASA problems with Python. \ud83d\udef0\ufe0f",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-08-05T18:34:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Otomatik-Video-Stabilizasyon",
+                "description": "\ud83d\udc69\u200d\ud83d\udcbb Bu projeyi, titre\u015fimli ve dengesiz videolar\u0131 profesyonel kalitede, p\u00fcr\u00fczs\u00fcz i\u00e7eriklere d\u00f6n\u00fc\u015ft\u00fcrmek i\u00e7in geli\u015ftirdim. \ud83c\udfa5\u2728",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-08-08T21:25:58Z",
+                "fork": false,
+                "topics": [
+                  "computer-vision",
+                  "machine-learning",
+                  "media-processing",
+                  "opencv",
+                  "python",
+                  "streamlit",
+                  "video-processing",
+                  "video-stabilization"
+                ]
+              },
+              {
+                "name": "GeoSpatial_Env_ETL_Analysis",
+                "description": " \ud83c\udf0d\ud83d\udd0d Comprehensive GeoSpatial environmental data analysis, focusing on dissolved carbon & greenhouse gases. Includes advanced data processing, analysis, and budget optimization. ",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-14T19:04:07Z",
+                "fork": false,
+                "topics": [
+                  "big-data",
+                  "budget-optimization",
+                  "data-science",
+                  "environment-and-sustainability",
+                  "etl",
+                  "etl-pipeline",
+                  "geospatial",
+                  "green-house-gases",
+                  "machine-learning",
+                  "nasa",
+                  "nasa-data",
+                  "python"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:47.102803+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

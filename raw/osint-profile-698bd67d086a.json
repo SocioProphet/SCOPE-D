@@ -1,0 +1,490 @@
+{
+  "profileId": "osint-profile-698bd67d086a",
+  "target": "po1206",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:35.315942+00:00",
+  "completedAt": "2026-06-21T15:32:36.135176+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-0e77537e",
+      "lookupType": "github_context",
+      "target": "po1206",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "po1206",
+            "name": "DevPO",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Senior Full Stack Developer",
+            "public_repos": 46,
+            "followers": 1367,
+            "following": 3614,
+            "created_at": "2024-05-02T15:42:54Z",
+            "updated_at": "2026-06-18T13:46:45Z",
+            "html_url": "https://github.com/po1206",
+            "avatar_url": "https://avatars.githubusercontent.com/u/168759402?v=4",
+            "repos": [
+              {
+                "name": "web-chat-react",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-08T21:48:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "po1206",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-06-16T21:54:32Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "resource-manager",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2025-05-08T00:01:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "App",
+                "description": "Welcome to New Expensify: a complete re-imagination of financial collaboration, centered around chat. Help us build the next generation of Expensify by sharing feedback and contributing to the code.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-21T12:43:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "trait-ranker-api",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-24T05:34:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "package-sorter",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-27T14:43:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "js-samples",
+                "description": "Samples for the Google Maps JavaScript v3 API",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-18T15:11:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tthotel_flask",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-30T19:20:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ckeditor5",
+                "description": "Powerful rich text editor framework with a modular architecture, modern integrations, and features like collaborative editing.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-30T12:48:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Finnhub-API-Connector",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-05-21T23:52:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Financial-Dashboard",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-05-21T23:48:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "code-challenges",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-17T23:29:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rust-drive-ai",
+                "description": "Self driving car AI in road fighter world",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-12T21:00:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "trait-ranker-ui",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Svelte",
+                "pushed_at": "2025-07-24T10:11:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "trackify",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2024-06-04T03:04:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wordpress",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-10T14:24:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "boilerplate-project-filemetadata",
+                "description": "A boilerplate for a freeCodeCamp project.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-03-23T14:49:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "boilerplate-project-exercisetracker",
+                "description": "A boilerplate for a freeCodeCamp project.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-23T14:39:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "boilerplate-project-urlshortener",
+                "description": "A boilerplate for a freeCodeCamp project.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T01:46:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "boilerplate-project-timestamp",
+                "description": "A boilerplate for a freeCodeCamp project.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-21T00:49:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nextjs-dashboard",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-19T13:23:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodejs-google-adwords",
+                "description": "Google Ads API Client Library for Node.js (SOAP + WSDL)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-06-01T05:55:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "visage-backend",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-04T02:15:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "astra-python",
+                "description": "Test Astra Vector Databse",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-06-24T01:29:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "artist-site",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-06-21T16:59:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "qrcode-pdf-ts",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-16T05:53:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "twillio-api-sms",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-01T07:03:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "splidejs",
+                "description": "Thumbnail Test",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2024-07-10T07:07:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fastapi-tutorial",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-20T12:11:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "htmleditor",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-26T00:03:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nike_landing_page",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-04T01:50:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "xems",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-06-04T01:57:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "visage-bo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-04T02:19:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "visage-client",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-04T02:23:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "visage-ng-common",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-04T02:28:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "airthistory",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-06-04T12:02:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "linkedin-api-js-client",
+                "description": "API Client",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-11T22:05:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flask-vue-crud",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2024-06-19T15:33:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QuestionTime",
+                "description": ":books: Quora-like Single Page Application built with Django, Django REST Framework and Vue JS (w/ Vite)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-02-27T12:40:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "linkedin-api-python-client",
+                "description": "Official Python client library for LinkedIn APIs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-21T06:48:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "website",
+                "description": "Grid.js website",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-27T23:42:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "django-lead",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-05-22T05:52:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "custom-comfyUI",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-05-22T02:46:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "diceautoapply",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-05-21T23:29:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bulletproof-react-master",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-02T18:26:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Shopping-Time",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-02T17:06:35Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:36.134289+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,763 @@
+{
+  "profileId": "osint-profile-93bb6dd6a1e9",
+  "target": "toxy4ny",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:27.263483+00:00",
+  "completedAt": "2026-06-20T13:53:28.068512+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ed43791c",
+      "lookupType": "github_context",
+      "target": "toxy4ny",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "toxy4ny",
+            "name": "KL3FT3Z",
+            "type": "User",
+            "company": "Hackteam.Red",
+            "blog": "https://hackteam.red",
+            "location": null,
+            "bio": "\u2714 Complex Red Team / Adversarial Simulation operations.\r\n\u2714 Penetration testing (web, infra, social engineering).\r\n\u2714 Imitation of APT.  Lead of @Hackteam-Red",
+            "public_repos": 45,
+            "followers": 1825,
+            "following": 7402,
+            "created_at": "2025-02-13T12:05:06Z",
+            "updated_at": "2026-06-18T16:37:28Z",
+            "html_url": "https://github.com/toxy4ny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/199085504?v=4",
+            "repos": [
+              {
+                "name": "copy-fail-exploit-on-c-redteam",
+                "description": "Copy Fail -- CVE-2026-31431 - Hardened AF_ALG/splice page-cache mutation primitive for RedTeam Ops.",
+                "stargazers_count": 11,
+                "language": "C",
+                "pushed_at": "2026-05-01T16:19:38Z",
+                "fork": false,
+                "topics": [
+                  "bypass-edr",
+                  "cve-2026-31431",
+                  "education",
+                  "exploit",
+                  "exploitation",
+                  "hardening",
+                  "linux",
+                  "redteam",
+                  "redteaming",
+                  "remake"
+                ]
+              },
+              {
+                "name": "redteam-ai-benchmark",
+                "description": "Red Team AI Benchmark: Evaluating Uncensored LLMs for Offensive Security",
+                "stargazers_count": 48,
+                "language": "Python",
+                "pushed_at": "2026-06-15T09:42:37Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-agents",
+                  "cybersecurity",
+                  "cybersecurity-tools",
+                  "hacking",
+                  "hacktools",
+                  "mlsecops",
+                  "prompt-engineering",
+                  "prompt-tuning",
+                  "rag",
+                  "rag-chatbot",
+                  "redteam",
+                  "redteaming"
+                ]
+              },
+              {
+                "name": "toxy4ny",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 54,
+                "language": null,
+                "pushed_at": "2026-06-16T11:41:03Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "flibustier",
+                "description": "\u2693 FLIBUSTIER \u2014 Container Runtime Security Audit Toolkit for Red Team",
+                "stargazers_count": 3,
+                "language": "Shell",
+                "pushed_at": "2026-06-18T14:23:53Z",
+                "fork": false,
+                "topics": [
+                  "auditing",
+                  "ci-cd",
+                  "cicd",
+                  "container",
+                  "cybersecurity",
+                  "cybersecurity-tools",
+                  "docker",
+                  "docker-container",
+                  "education",
+                  "educational-software",
+                  "kubernetes",
+                  "kubernetes-deployment",
+                  "redteam",
+                  "redteam-infrastructure",
+                  "redteam-tools",
+                  "redteaming-tools",
+                  "runtime",
+                  "security",
+                  "security-tools"
+                ]
+              },
+              {
+                "name": "nikki-ai-cli-assistent",
+                "description": "\ud83e\udee1 Nikki \u2014 AI Assistant for Red Team & DevOps in the Terminal (fish-shell)",
+                "stargazers_count": 33,
+                "language": "Shell",
+                "pushed_at": "2025-12-13T09:15:27Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-agents",
+                  "ai-assistant",
+                  "cli",
+                  "education",
+                  "hacking",
+                  "hacking-tool",
+                  "hacking-tools",
+                  "redteam",
+                  "redteam-tools",
+                  "redteaming",
+                  "redteaming-tools"
+                ]
+              },
+              {
+                "name": "piedpiper",
+                "description": "\ud83d\ude08 OSINT AI - CHAT << Leak Finder >>",
+                "stargazers_count": 35,
+                "language": "Python",
+                "pushed_at": "2025-11-06T16:45:38Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-agents",
+                  "cybersecurity",
+                  "cybersecurity-education",
+                  "cybersecurity-tools",
+                  "osint",
+                  "osint-tool",
+                  "python3",
+                  "redteam",
+                  "redteam-tools",
+                  "vulnerability",
+                  "vulnerability-scanners"
+                ]
+              },
+              {
+                "name": "fleamarket",
+                "description": "The Secret's Hunter for GitHub. In Focus: Fresh repos, real top leaks. ",
+                "stargazers_count": 32,
+                "language": "Python",
+                "pushed_at": "2025-11-19T18:11:02Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "cybersecurity",
+                  "cybersecurity-education",
+                  "cybersecurity-tools",
+                  "github",
+                  "github-api",
+                  "hacking",
+                  "redteam",
+                  "redteaming",
+                  "security",
+                  "tools"
+                ]
+              },
+              {
+                "name": "kaplan",
+                "description": "KAPLAN - a Tor Document Downloader v1.0 (Multithreaded) - Stealthy Bulk Fetching Over Tor for Red Team Ops",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2025-11-05T13:00:54Z",
+                "fork": false,
+                "topics": [
+                  "education",
+                  "hack-tools",
+                  "hacking",
+                  "kurs",
+                  "redteam",
+                  "redteam-tools",
+                  "tor",
+                  "tor-hidden-services"
+                ]
+              },
+              {
+                "name": "Tales_from_the_Tomb",
+                "description": "What was found and completed during the pentest process",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-03-20T11:03:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Knockin-on-Heaven-s-Door",
+                "description": "CloudFlare Ultimate WAF Bypass Tamper Script Comprehensive evasion techniques collection Research and educational purposes only by KL3FT3Z",
+                "stargazers_count": 70,
+                "language": "Python",
+                "pushed_at": "2025-11-06T16:48:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "artaxerxes",
+                "description": "Artaxerxes - Adaptive High-Performance Stress Tester v.1.0. Rebuild old version Xerxes DDoS. Supports GPU+io_uring, DPDK, eBPF/XDP with intelligent fallbacks. Educational tool for advanced cybersecurity labs",
+                "stargazers_count": 51,
+                "language": "C",
+                "pushed_at": "2025-07-01T10:34:42Z",
+                "fork": false,
+                "topics": [
+                  "cuda",
+                  "cuda-programming",
+                  "cybersecurity",
+                  "cybersecurity-education",
+                  "cybersecurity-tools",
+                  "dpdk",
+                  "ebpf",
+                  "educational",
+                  "high-performance",
+                  "network-security",
+                  "network-security-tool",
+                  "penetration-testing",
+                  "penetration-testing-framework",
+                  "penetration-testing-tools",
+                  "security-tools",
+                  "stress-testing"
+                ]
+              },
+              {
+                "name": "creepytrix",
+                "description": "CREEPYTRIX - Bitrix Pentest Tool v1.1 - Comprehensive framework for testing the security of Bitrix CMS",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-02-10T12:54:49Z",
+                "fork": true,
+                "topics": [
+                  "bitrix",
+                  "bitrix-cms",
+                  "bitrix24",
+                  "education",
+                  "exploit",
+                  "exploitation",
+                  "exploitation-framework",
+                  "hacking-tool",
+                  "hacking-tools",
+                  "pentest",
+                  "pentest-tool",
+                  "pentesting",
+                  "redteam",
+                  "redteam-tools",
+                  "redteaming",
+                  "scanner",
+                  "vulnerability-scanners"
+                ]
+              },
+              {
+                "name": "semetsky---VP",
+                "description": "How Yuri Semetsky Became a Vice President of Kingdom-Bank. Or why the most dangerous weapon isn't an exploit, but the conviction that \"we have everything under control\"",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-03-17T17:45:40Z",
+                "fork": false,
+                "topics": [
+                  "active-directory",
+                  "banking",
+                  "education",
+                  "exploit",
+                  "fintech",
+                  "infosec",
+                  "linux",
+                  "pentest",
+                  "pentesting",
+                  "purpleteam",
+                  "redtea",
+                  "redteam",
+                  "redteamer",
+                  "redteaming",
+                  "research",
+                  "security",
+                  "soc"
+                ]
+              },
+              {
+                "name": "EVA",
+                "description": "EVA is an AI-assisted penetration testing agent that enhances offensive security workflows by providing structured attack guidance, contextual analysis, and multi-backend AI integration. OPTIMIZED FOR: WhiteRabbitNeo-V3-7B and FEATURES: Robust JSON Parsing, Few-Shot Prompting, Stable Ollama Integration.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-02-17T15:42:41Z",
+                "fork": true,
+                "topics": [
+                  "ai-agents",
+                  "ctf",
+                  "ctf-tools",
+                  "cybersecurity",
+                  "ethical-hacking",
+                  "llm",
+                  "llm-agent",
+                  "offensive-security",
+                  "ollama",
+                  "pentesting",
+                  "python3",
+                  "redteam-tools",
+                  "redteaming",
+                  "vulnerability-assessment",
+                  "vulnerability-assessment-and-penetration-testing"
+                ]
+              },
+              {
+                "name": "nikki-memory",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-07T13:33:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "perforator",
+                "description": "S3 Bucket Enumeration Script for Pentesting",
+                "stargazers_count": 17,
+                "language": "Python",
+                "pushed_at": "2025-08-27T11:00:23Z",
+                "fork": false,
+                "topics": [
+                  "education",
+                  "hackertools",
+                  "pentest",
+                  "pentest-tool",
+                  "redteam",
+                  "redteaming-tools",
+                  "s3-bucket",
+                  "s3-storage"
+                ]
+              },
+              {
+                "name": "bl00dym4ry",
+                "description": "Trojan (Ransomware) Phishing Simulator for Cybersecurity Training.",
+                "stargazers_count": 43,
+                "language": "C",
+                "pushed_at": "2025-11-06T16:47:17Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "educational-tools",
+                  "ethical-hacking",
+                  "ethical-hacking-tool",
+                  "ethical-hacking-tools",
+                  "penetration-testing",
+                  "penetration-testing-tools",
+                  "phishing-simulator",
+                  "red-team",
+                  "red-team-tools",
+                  "red-teaming",
+                  "security-research",
+                  "security-researchers",
+                  "security-training",
+                  "social-engineering",
+                  "social-engineering-and-phishing-attacks",
+                  "social-engineering-attacks",
+                  "social-engineering-toolkit"
+                ]
+              },
+              {
+                "name": "blackhole-cryptotunnel",
+                "description": "Enhanced Stealth Tunnel for Linux (Red Team Ops on compromised machine with root)",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2025-06-10T12:34:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "enigmatic",
+                "description": "ENIGMATIC - a WAF IP Encoder - Tool for bypassing WAF IP validation.",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2025-06-16T15:17:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Decoy-Hunter",
+                "description": "Advanced Decoy Detection Toolkit versus cool man s0i37 (https://github.com/s0i37/defence)",
+                "stargazers_count": 22,
+                "language": "Python",
+                "pushed_at": "2025-09-26T14:12:41Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "cybersecurity-tools",
+                  "pentest",
+                  "pentest-tool",
+                  "portscan",
+                  "portscaning",
+                  "redteam",
+                  "redteam-tools"
+                ]
+              },
+              {
+                "name": "indulgentia",
+                "description": "OSINT Subdomain Finder in Certificate Transparency",
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2025-07-22T16:55:25Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "domain",
+                  "hackertools",
+                  "osint",
+                  "osint-tool",
+                  "redteam",
+                  "redteam-tools",
+                  "redteaming",
+                  "subdomain-enumeration"
+                ]
+              },
+              {
+                "name": "kevlar-benchmark",
+                "description": "Kevlar Benchmark: OWASP Top 10 for Agentic Apps (AI-Agents) 2026 a Red Team Benchmark",
+                "stargazers_count": 35,
+                "language": "Python",
+                "pushed_at": "2026-01-20T13:27:58Z",
+                "fork": false,
+                "topics": [
+                  "2025",
+                  "2026",
+                  "ai",
+                  "ai-agent",
+                  "ai-agents",
+                  "cybersecurity",
+                  "education",
+                  "hacking",
+                  "hacking-tool",
+                  "hacking-tools",
+                  "owasp-top-10",
+                  "redteam",
+                  "redteaming",
+                  "redteaming-tools"
+                ]
+              },
+              {
+                "name": "thc-scalpel",
+                "description": "Stealth Reconnaissance Toolkit for Red Team Operations",
+                "stargazers_count": 22,
+                "language": "PowerShell",
+                "pushed_at": "2025-12-06T14:22:01Z",
+                "fork": false,
+                "topics": [
+                  "bug-bounty",
+                  "bugbounty",
+                  "bugbounty-tool",
+                  "cybersecurity",
+                  "education",
+                  "educational-software",
+                  "hacker-tools",
+                  "hacking",
+                  "reconnaissance",
+                  "redteam",
+                  "redteam-tools",
+                  "redteaming",
+                  "redteaming-tools",
+                  "thc",
+                  "thc-products"
+                ]
+              },
+              {
+                "name": "lazarus-code",
+                "description": "Building a VS Code Phishing Simulation for Security Awareness Training (RedTeam)",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-15T14:15:31Z",
+                "fork": false,
+                "topics": [
+                  "apt",
+                  "cybersecurity",
+                  "education",
+                  "educational",
+                  "hacking",
+                  "hacking-tools",
+                  "lazarus",
+                  "phishing",
+                  "phishing-attacks",
+                  "redteam",
+                  "redteam-tools",
+                  "redteaming"
+                ]
+              },
+              {
+                "name": "cortisol",
+                "description": "WAF Bypass & Normalization Stress Tester (for Red Teams)",
+                "stargazers_count": 18,
+                "language": "Zig",
+                "pushed_at": "2026-01-18T09:39:23Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "cybersecurity-tools",
+                  "education",
+                  "redteam",
+                  "redteam-tools",
+                  "redteaming",
+                  "tools",
+                  "waf",
+                  "waf-bypass"
+                ]
+              },
+              {
+                "name": "kidnapp-ai-benchmark",
+                "description": "Kidnapp-AI-Benchmark is a modular, extensible framework designed to systematically test and evaluate privacy leakage, data extraction, and adversarial vulnerabilities in large language models (LLMs) and other generative AI systems. Built for red teamers, penetration testers, and AI security researchers.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2026-01-24T14:15:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nuclearbomb",
+                "description": "Nuclei AI Prompts Scanning Framework for Nuclei v.3.3.9",
+                "stargazers_count": 17,
+                "language": "Shell",
+                "pushed_at": "2025-02-20T10:07:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bountyfruits",
+                "description": "Automating the installation of programs for bug bounty v.1.0 (Blackarch&Kali)",
+                "stargazers_count": 7,
+                "language": "Shell",
+                "pushed_at": "2025-02-25T11:22:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "buccaneer",
+                "description": "This prog parsing JS-file on Server for finds Secrets.",
+                "stargazers_count": 17,
+                "language": "Python",
+                "pushed_at": "2025-03-21T12:20:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vacuum_and_masquerade-",
+                "description": "DNS - Server Amplification Scanner and Masker - Advanced Penetration Testing Framework",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2025-07-21T16:24:22Z",
+                "fork": false,
+                "topics": [
+                  "amplification",
+                  "amplification-attacks",
+                  "cybersecurity",
+                  "cybersecurity-education",
+                  "cybersecurity-tools",
+                  "dirsearch",
+                  "dns",
+                  "dns-server",
+                  "fuzzer",
+                  "hydra",
+                  "nmap",
+                  "pentest",
+                  "pentesting",
+                  "redteam",
+                  "redteam-tools",
+                  "scanner",
+                  "vulnerability",
+                  "vulnerability-scanners",
+                  "waf-bypass"
+                ]
+              },
+              {
+                "name": "edge-maradeur",
+                "description": "Exploiting a vulnerability in Windows Disk Cleanup to elevate privileges and provide access to protected data in Edge by bypassing the security feature. CVE-2025-21420 and CVE-2025-21401.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-02-20T15:20:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rediska",
+                "description": "Redis in Kubernetes Ecosystems: From Configuration Leaks to Lateral Movement in Red Team.",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2025-09-11T13:11:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aides",
+                "description": "A S Y N C   I D   B R U T E F I L E   S C A N N E R",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-06-27T12:21:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Rusty-Bucket",
+                "description": "Operation \u00abRusty Bucket\u00bb: Finding and Exploiting Input Validation Vulnerabilities in Custom S3-Compatible Storage APIs",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-06-19T09:37:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Win10-Deity",
+                "description": "Script for removing user or admin password on Win10 using BadKB for Momentum FlipperZero",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2025-06-03T13:07:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lol-speed",
+                "description": "Universal LiteSpeed WAF Bypass Tamper",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-02T15:26:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zorge",
+                "description": "-={ SSH2TOR Tunnel Automation v.1.0 }=-",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2025-05-15T13:10:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kalipso",
+                "description": "Bash script for installing Docker, downloading Kali Linux (ARM) and automatically launching the Container",
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2025-04-17T13:39:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "corsicanez",
+                "description": "Bash-script detecting CORS Misconfiguration",
+                "stargazers_count": 13,
+                "language": "Shell",
+                "pushed_at": "2025-04-09T11:45:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vamapire",
+                "description": "This prog checking REST API-endpoints on Server for finds Secrets. ",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-03-21T15:19:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "glagol",
+                "description": "Checker Method's in Https - Server",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2025-03-14T08:16:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "metamorh",
+                "description": "Bash-script a Python Requirements.txt to install in Archlinux.",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2025-03-11T12:16:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gitlabruter",
+                "description": "Checker for Gitlab public projects and verify active users",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2025-03-06T14:21:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "venator-11-blackarch",
+                "description": "My compilation of Venator OSINT Browser for Blackarch distro using .appimage LibreWolf Browser and settings of Venator 11th version.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-02-20T10:02:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "linWinPwn-blackarch",
+                "description": "LinWinPwn-Blackarch  - Redesigned installation from Kali linux to Blackarch the original, with my respect and gratitude to the creator, is stored here https://github.com/lefayjey/linWinPwn",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-02-20T09:59:39Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:28.067564+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

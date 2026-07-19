@@ -1,0 +1,224 @@
+{
+  "profileId": "osint-profile-c6909e17af6b",
+  "target": "a-partovii",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:25.237645+00:00",
+  "completedAt": "2026-06-20T13:53:25.606722+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-585e3dd7",
+      "lookupType": "github_context",
+      "target": "a-partovii",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "a-partovii",
+            "name": "Ashkan Partovi",
+            "type": "User",
+            "company": "127.0.0.1",
+            "blog": "",
+            "location": "Earth",
+            "bio": "\"Coffee to code, dreams to reality\"",
+            "public_repos": 13,
+            "followers": 1903,
+            "following": 3419,
+            "created_at": "2023-10-19T19:24:35Z",
+            "updated_at": "2026-05-29T08:27:39Z",
+            "html_url": "https://github.com/a-partovii",
+            "avatar_url": "https://avatars.githubusercontent.com/u/148492583?v=4",
+            "repos": [
+              {
+                "name": "My-Data-Science-pptx",
+                "description": "My college Data Science presentation files, including a PowerPoint file in Persian (Fa), along with several code examples and dataset tables.",
+                "stargazers_count": 19,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-08T17:49:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gini-Impurity",
+                "description": "This repository contains Python scripts for calculating the Gini Impurity measure for each feature in a relational dataset, great for feature selection, data preprocessing, decision tree construction, binary classification tasks.",
+                "stargazers_count": 80,
+                "language": "Python",
+                "pushed_at": "2025-11-02T13:49:01Z",
+                "fork": false,
+                "topics": [
+                  "classification",
+                  "data-science",
+                  "decision-tree",
+                  "gini",
+                  "gini-impurity",
+                  "gini-index",
+                  "machine-learning"
+                ]
+              },
+              {
+                "name": "MovieDude",
+                "description": "An advanced \"content-based filtering\" movie recommendation system built with Python, scikit-learn, and SQLite. It provides personalized movie suggestions based on user preferences through data analysis, and also allows users to search by a specific movie title to find similar recommendations.",
+                "stargazers_count": 107,
+                "language": "Python",
+                "pushed_at": "2026-01-03T22:33:49Z",
+                "fork": false,
+                "topics": [
+                  "content-based-recommendation",
+                  "movie-recomendation-system",
+                  "movie-recommendation-bot",
+                  "movie-recommender",
+                  "recommendation-system",
+                  "recommender-system"
+                ]
+              },
+              {
+                "name": "Web-Calculator",
+                "description": "A simple web-based calculator, built with Vanilla JS",
+                "stargazers_count": 57,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-28T21:48:21Z",
+                "fork": false,
+                "topics": [
+                  "calculator",
+                  "calculator-javascript",
+                  "calculator-website",
+                  "js-calculator",
+                  "web-calculator"
+                ]
+              },
+              {
+                "name": "Squid_Bingo",
+                "description": "A simple implementation of Bingo game in Java.",
+                "stargazers_count": 38,
+                "language": "Java",
+                "pushed_at": "2025-12-27T06:48:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SHARE_localhost",
+                "description": "A tool that helps you easily share your localhost web project with other devices (\u26a0WIP) PRs Welcome\ud83e\udd0d",
+                "stargazers_count": 22,
+                "language": "Python",
+                "pushed_at": "2025-12-27T19:06:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Twitter-Clone_MERN",
+                "description": "A full-stack social media platform built with React, Node.js/Express, styled with modular CSS.",
+                "stargazers_count": 27,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-07T15:49:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Excel-to-CSV",
+                "description": "A simple and user-frindly Python tool that lets you select an Excel file and convert it to CSV file.",
+                "stargazers_count": 20,
+                "language": "Python",
+                "pushed_at": "2026-02-11T19:44:44Z",
+                "fork": false,
+                "topics": [
+                  "csv",
+                  "excel",
+                  "excel-to-csv"
+                ]
+              },
+              {
+                "name": "RUN-DEV-Script",
+                "description": "Simple cross-platform bash scripts which run your development server on click.",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2026-04-22T19:48:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GitHub.Gadgets",
+                "description": "A Python TUI app, packed with GitHub automation gadgets. All in your terminal.     \u26a0WIP\u26a0",
+                "stargazers_count": 20,
+                "language": "Python",
+                "pushed_at": "2026-04-29T13:25:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gotham-Nights.tgx-theme",
+                "description": "Gotham Nights is a custom-made dark theme for Telegram X-Android App. More information and preview in README.md",
+                "stargazers_count": 60,
+                "language": null,
+                "pushed_at": "2025-11-23T13:17:35Z",
+                "fork": false,
+                "topics": [
+                  "telegram",
+                  "telegram-x",
+                  "theme",
+                  "theme-development"
+                ]
+              },
+              {
+                "name": "relive-VSC-Material-Theme",
+                "description": "A guide that provides the easiest safe solution to bring back your favorite VS Code theme from the 'VS Code Material Theme' extension, after it was removed and discontinued due to security issues. Includes the necessary files.  Has been tested and works on Windows and Linux.",
+                "stargazers_count": 60,
+                "language": null,
+                "pushed_at": "2025-08-23T18:12:51Z",
+                "fork": false,
+                "topics": [
+                  "material-theme",
+                  "vscode",
+                  "vscode-extension"
+                ]
+              },
+              {
+                "name": "BigIntegers_Java",
+                "description": "An implementation of BigIntegers in Java, Addition and Subtract",
+                "stargazers_count": 29,
+                "language": "Java",
+                "pushed_at": "2024-01-17T10:46:22Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:25.605985+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

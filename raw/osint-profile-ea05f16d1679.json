@@ -1,0 +1,217 @@
+{
+  "profileId": "osint-profile-ea05f16d1679",
+  "target": "Nima-Mollaei",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:09.121132+00:00",
+  "completedAt": "2026-06-20T13:53:09.646078+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-121e8dd3",
+      "lookupType": "github_context",
+      "target": "Nima-Mollaei",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Nima-Mollaei",
+            "name": "UPVEX",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Iran",
+            "bio": "coding just for fun :)",
+            "public_repos": 16,
+            "followers": 2277,
+            "following": 2811,
+            "created_at": "2022-03-06T18:06:13Z",
+            "updated_at": "2026-04-18T19:49:26Z",
+            "html_url": "https://github.com/Nima-Mollaei",
+            "avatar_url": "https://avatars.githubusercontent.com/u/101062448?v=4",
+            "repos": [
+              {
+                "name": "UnfollowTracker",
+                "description": "A simple GitHub Unfollow Tracker with a beautiful GUI built in Python using Tkinter. View followers/following stats and unfollow multiple users with one click. Supports dark/light mode.",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2025-08-12T13:53:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Chess_Game",
+                "description": "A full-featured chess game built with Python and Tkinter. Supports all chess rules, including castling, promotion, en passant, and more \u2014 no external libraries required.",
+                "stargazers_count": 28,
+                "language": "Python",
+                "pushed_at": "2025-08-10T12:58:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vulnerable_Weblog",
+                "description": "This is a deliberately vulnerable PHP weblog project designed for learning and practicing web security concepts",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2026-01-01T22:22:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RoboFinder",
+                "description": "RoboFinder is an advanced tool that allows you to search for old 'robots.txt' files of a given URL on archive.org. ",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-01-29T19:03:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Google-Bing-Dorker",
+                "description": "A modern, Dorking tool built with pure HTML, CSS, and JavaScript.",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2026-01-07T20:12:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nice_Passive",
+                "description": "NicePassive is a passive reconnaissance tool designed for Bug Bounty hunters and security researchers.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-06T09:48:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nima-Mollaei",
+                "description": null,
+                "stargazers_count": 21,
+                "language": null,
+                "pushed_at": "2025-08-18T08:18:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Every_day_python",
+                "description": "I plan to do a series of Python exercises some days and post them here",
+                "stargazers_count": 23,
+                "language": "Python",
+                "pushed_at": "2025-08-31T07:05:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple_social_network",
+                "description": "its simple social network with django ",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-08-05T06:49:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Color-Spectrum-Analyzer",
+                "description": "A simple Python project that analyzes and visualizes the color spectrum of an image using OpenCV and matplotlib.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-09-01T05:33:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Currency-Converter",
+                "description": "A simple and elegant Tkinter-based desktop app that converts currencies in real-time using ExchangeRate-API. Supports major world currencies with full names and live exchange rates.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-07-26T18:25:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BMI-Calculator",
+                "description": "A  user-friendly BMI (Body Mass Index) calculator built with Python and Tkinter.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-07-25T07:05:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jwt-register-and-login",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-05-03T05:51:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PayloadsAllTheThings",
+                "description": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-08-14T09:11:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Age-Calculator",
+                "description": "A modern and interactive desktop application built with Python's Tkinter that calculates your age based on your selected birthdate.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-08-03T22:13:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-and-css-Practice",
+                "description": "doing some mini project for practicing html and css",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2024-01-30T21:00:31Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:09.645387+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

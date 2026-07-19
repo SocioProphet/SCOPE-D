@@ -1,0 +1,542 @@
+{
+  "profileId": "osint-profile-3f987ac5573f",
+  "target": "lucaboca82",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:52.718986+00:00",
+  "completedAt": "2026-06-21T15:30:55.203880+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4de57d14",
+      "lookupType": "github_context",
+      "target": "lucaboca82",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "lucaboca82",
+            "name": "Luca ;)",
+            "type": "User",
+            "company": "@ItalyHomeDev ",
+            "blog": "",
+            "location": "Italy",
+            "bio": "I from Italy, good code.",
+            "public_repos": 155,
+            "followers": 1796,
+            "following": 3771,
+            "created_at": "2025-06-10T19:39:32Z",
+            "updated_at": "2026-05-23T19:41:29Z",
+            "html_url": "https://github.com/lucaboca82",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215742493?v=4",
+            "repos": [
+              {
+                "name": "Sleekquest",
+                "description": "The main website for the customization brand application",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-12-08T08:14:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Portfolio",
+                "description": "This is a fully advanced, professional single-page portfolio template designed to help you showcase your skills, projects, and experience. It combines modern web technologies and best practices to deliver an impeccable user experience.",
+                "stargazers_count": 14,
+                "language": "HTML",
+                "pushed_at": "2025-06-17T19:10:48Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "css3",
+                  "front-end",
+                  "html5",
+                  "javascript",
+                  "portfolio",
+                  "template",
+                  "web-template",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "personal-test",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-06T08:51:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backup-files",
+                "description": "backup-files Author: Bocaletto Luca Professional backup & sync tool with both a Windows GUI and a Linux CLI interface.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-06-24T20:13:27Z",
+                "fork": false,
+                "topics": [
+                  "backup"
+                ]
+              },
+              {
+                "name": "lucaboca82",
+                "description": "my special repository home github page",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-06-23T18:30:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Super-Info",
+                "description": "Super Info is a comprehensive, text-based utility for system administrators on  Ubuntu and other Debian-based distributions. It provides essential security, monitoring and system checks via a custom ASCII interface with colors (when supported). By Bocaletto Luca Tanks",
+                "stargazers_count": 23,
+                "language": "Shell",
+                "pushed_at": "2025-06-17T00:20:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Pong",
+                "description": "Pong Web Game Single Player is a modern browser-based remake of the classic Pong arcade game. Built with HTML5, CSS3, and JavaScript, it features smooth animations, responsive gameplay, and an AI opponent with adjustable difficulty. Developed by Bocaletto Luca. No installation required.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-06-08T13:58:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "QRCode-Generator",
+                "description": "QRCode-Generator-JS is a responsive web application by Bocaletto Luca that lets users generate QR codes from text or URLs. Featuring real-time QR rendering, a sleek UI, and an option to download the generated image, this app is perfect for personal and professional use. By Bocaletto Luca",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-05-15T08:50:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bash-Collection",
+                "description": "Bash-Collection is a comprehensive repository featuring an immense collection of professional Bash scripts curated to streamline automation, system management, and everyday utility tasks. This repository is the result of countless hours of refining and expanding your Bash arsenal, and it covers an extensive range of functionalities designed...",
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2025-06-10T14:46:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Rover4WD",
+                "description": "Rover4WD Arduino - Author: Bocaletto Luca A versatile 4-wheel drive rover with Bluetooth manual control, line-following, obstacle avoidance and tilt safety. Packed with multiple sensors to navigate complex environments.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-06-13T00:16:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CodeStudio",
+                "description": "A browser-based, multi-language code editor with live preview, syntax highlighting, file load/save/reset, and theme toggling. Built on CodeMirror 5, it supports over 20 languages\u2014including Markdown, HTML/CSS, JavaScript, Python, C/C++, C#, SQL, and more\u2014with live rendering where available (Markdown, HTML, JS console, JSON, Python via Skulpt, SQL ..",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-19T18:48:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Chess",
+                "description": "Chess WebApp Single Player is a feature-rich chess application featuring real-time clocks, selectable ELO-based AI difficulty (using Stockfish via WebWorker), move history, capture display, undo functionality, and customizable colors. Developed by Bocaletto Luca.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-12T13:19:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Arkanoid",
+                "description": "Arkanoid Game is a modern browser remake of the classic brick-breaker that blends retro charm with contemporary challenges. Developed by Bocaletto Luca, it features multi-input support (keyboard, mouse, touch, gamepad), dynamic levels, power\u2011ups, and record tracking for endless arcade fun!",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-07-04T14:13:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dio-lab-open-source",
+                "description": "Reposit\u00f3rio do lab \"Contribuindo em um Projeto Open Source no GitHub\" da Digital Innovation One.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-04-30T21:54:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SplitBrowser",
+                "description": "SplitBrowser A Python-based desktop web browser featuring dynamic split-screen layouts, multi-tab support, and per-pane fullscreen capabilities. Multi-tab browsing with easy \u201cNew Tab\u201d and \u201cClose Tab\u201d commands Split each tab into 1\u20134 panes, horizontally or vertically... By Bocaletto Luca",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-19T15:57:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CryptoLinkShare",
+                "description": "CryptoLinkShare is a static, client-side web app that encrypts URLs via AES-256, generates opaque shareable links and QR codes, and persists mappings in localStorage. Easily export or import your mapping as JSON. No server required\u2014pure HTML, CSS, and JavaScript. By Bocaletto Luca",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-19T19:46:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TextQRcode",
+                "description": "TextQRcode is a lightweight, browser-based application that instantly converts any text or URL you enter into a high-resolution QR code. Designed with usability and performance in mind, it requires no server, frameworks, or installations\u2014just paste your content and click. The app supports dynamic resizing, high error correction level, and seamless ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-19T21:14:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "EditorMarkdownWeb",
+                "description": "EditorMarkdownWeb Bocaletto Luca A lightweight, single-page Markdown editor featuring split-view live preview, theme toggle, auto-save, and export capabilities. Fully static\u2014no server required\u2014and optimized for SEO and sharing.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-18T09:05:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Evolution",
+                "description": "Cellular Evolution Game An interactive, one-page web game simulating cellular automata evolution through 10 progressively challenging levels. Built with HTML5, CSS3 (Tailwind), and vanilla JavaScript, this responsive game invites you to explore emergent patterns and tweak cell behavior in real time.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-16T17:10:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Directory-Monitor",
+                "description": "Directory Monitor GUI is a self-contained Python application with a Tkinter interface for configuring and monitoring multiple directories via polling. Add or remove folders, set polling intervals, toggle recursive scans and hidden entries, apply include/exclude glob filters, and view real-time logs in-app or export to a file. Use Start/Stop buttons",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-06T00:14:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "YoutubeToGif",
+                "description": "Youtube To Gif - is a lightweight Python script that leverages system-installed yt-dlp and FFmpeg to download YouTube videos (or specific segments) and convert them into high-quality animated GIFs. It supports full-length or custom slices with configurable FPS and width, generates optimized palettes for vibrant colors ... By @bocaletto-luca",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-04T00:33:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Tama-Pets",
+                "description": "Tama-Pets-JS is a modern tamagotchi web app built using HTML5, CSS3, JavaScript, and PHP. It features interactive pet management with real-time status, save/load functionality, a virtual clock, record management, and gamepad support for responsive gameplay. @bocaletto-luca",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-04T11:37:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AI-VOICE-TRANSLATOR",
+                "description": "AI Voice Translator is a Python app that transcribes spoken English, translates it into six languages, and generates voice translations using AssemblyAI and ElevenLabs. It features an interactive Gradio UI for real-time translation.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2025-06-20T16:23:19Z",
+                "fork": true,
+                "topics": [
+                  "ai",
+                  "translate",
+                  "voice",
+                  "voice-ai",
+                  "voice-translate",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "Files-Compressor-Encryption",
+                "description": "Files-Compressor-Encryption is a Python-based tool for compressing and encrypting files, ensuring efficient storage and secure data protection. Ideal for privacy-focused applications.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-06-25T21:48:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Larissakich",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-11-04T14:12:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "multilanguage-test-example",
+                "description": "Multilanguage Test Examples Welcome to the Multilanguage Test Examples repository! This project contains simple, self-contained examples of programming fundamentals implemented in various programming languages. Each example demonstrates basic constructs\u2014including output, variable declarations, conditionals, loops, and functions/methods with clear..",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-06-16T22:40:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Drawings-Cards-Web",
+                "description": "Web Cards with p5.js Author: Bocaletto Luca This project is a collection of examples designed to demonstrate how to draw on the web using HTML5, CSS3, JavaScript, and the p5.js library. It also shows how to create cards that combine artistic visuals with preset game stats\u2014such as Attack (Atk), Defense (Dif), Health (HP), and Magic (MP)\u2014making ... ",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-16T21:05:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "automated-url-visit",
+                "description": "Real Visits Simulator (PHP Proxy + iFrame) Author: Bocaletto Luca This project is a PHP-based web application developed by Bocaletto Luca (GitHub: bocaletto-luca) that simulates real page visits. It uses a reverse proxy to load a target URL inside an <iframe>, generating simulated traffic that appears as a full page load.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-16T18:18:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "movie-website",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-08-27T07:58:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Rock-Paper-Scissors",
+                "description": "Rock, Paper, Scissors \u2013 Single Player is a modern, responsive, web game where you play against a computer opponent that offers three difficulty levels. The match ends when either you or the computer reaches 5 wins. Featuring a sleek dark theme, dynamic score updates, and a built\u2011in Help modal, this game delivers a polished and engaging user ...",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-14T14:13:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Symon-Says",
+                "description": "Simon Says - Classic Memory Game is a modern, responsive single\u2011page web game that challenges your memory by requiring you to repeat an increasingly long sequence of colored cues. Built using HTML, CSS, and JavaScript, it features dynamic difficulty adjustments, smooth animations, and a sleek dark theme. By Bocaletto Luca",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-14T14:14:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Slot-Machine",
+                "description": "Slot Machine Web Game is a modern, responsive, single\u2011page slot machine game with fixed bet buttons and dynamic betting. Spin the reels to win (if all three symbols match) your bet multiplied by 10, with engaging audio and an intuitive dark\u2011theme design. Developed by Bocaletto Luca.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-14T14:15:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bingo",
+                "description": "Bingo Web Game is a responsive multiplayer 90-ball tombola game in a sleek dark theme. Enjoy real-time number draws and dynamic prize tracking for Ambo (100\u20ac), Terno (500\u20ac), Quaterna (2000\u20ac), Cinquina (10000\u20ac), and Tombola (50000\u20ac). Developed by Bocaletto Luca.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-14T14:16:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Il-Pranzo-e-Servito",
+                "description": "Il Pranzo \u00e8 Servito \u2013 Digital Edition is an interactive web-based quiz game developed by Bocaletto Luca. In this game, you answer general knowledge questions within 30 seconds to collect five courses First, Second, Cheese, Dessert, and Fruit and complete your menu. The game ends either when you successfully complete the menu or when you accumulate ",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-06-14T14:16:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Monopoly-Multiplayer",
+                "description": "Welcome to the Monopoly Web Game, an online adaptation of the legendary board game! Buy, trade, and build your empire while managing your fortune. Will you dominate the market or go bankrupt? By Bocaletto Luca",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-06-14T14:17:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Cluedo-Multiplayer",
+                "description": "Play Cluedo online! Investigate, make suggestions, and solve the mystery of who, where, and what. Use strategy and deduction to uncover the truth before others. Developed by Bocaletto Luca.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-06-14T14:17:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "test-python",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-06-13T18:18:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Start-Home-Security-System",
+                "description": "SmartHomeSecurity, Concept A 24/7 home security solution that detects:  Intrusion via PIR motion sensor Door/window open via magnetic reed switch Gas leak via MQ-2 combustible gas sensor When any alarm triggers, the system sounds a buzzer, flashes an LED, and sends a push notification to your smartphone via Blynk.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-06-12T23:17:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RF-Sniffer-Replayer",
+                "description": "RF Remote Sniffer & Replayer Arduino - Author: Bocaletto Luca A turnkey Arduino-based solution to capture (sniff) ASK/OOK 315 MHz or 433 MHz remote\u2010control codes and replay them on demand. Perfect for testing, reverse\u2010engineering or automating RF remotes (garage doors, wireless switches, sockets).",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-06-13T00:41:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Covid-19-Explorer",
+                "description": "COVID-19 Tracker is a responsive web application that delivers up-to-date statistics on COVID-19 cases at both a global and regional level. Leveraging the disease.sh API, the app shows key metrics such as total cases, deaths, recoveries, active cases, and critical cases. It enhances data presentation with an interactive bar chart powered by Chart.j",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-09T21:50:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Weather-Exploer",
+                "description": "Weather Dashboard is a fully dynamic, free\u2011API\u2013driven web application that provides current weather data, forecasts, and real\u2011time aggregated \"Top Extreme Temperature\" lists. Users can:  Search for Weather: Enter any location (city, country) to view current conditions and forecast information via wttr.in. Global Top Extremes: Select a year to ...",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-09T21:59:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bug-github-farms-points",
+                "description": "Auto Farms Points BUG in Github Author: Bocaletto Luca Hi there! I\u2019m Luca (@bocaletto-luca), and I\u2019ve put together this repo to demonstrate a surprising \u201cfeature\u201d (or vulnerability?) in GitHub\u2019s contribution model. With a single workflow file, you can automatically farm commits, issues, PRs, wiki edits, releases and comments every hour\u2014artificially",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-02T13:21:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PyEditor",
+                "description": "PyEditor is a modern terminal-based text editor implemented in Python, designed to marry the familiar simplicity of Nano with powerful, IDE-style features\u2014all within a console. It uses the curses library for efficient screen management and Pygments for real-time syntax highlighting across any language supported by its lexers. Users benefit from...",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-01T18:25:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Mine-Sweeper",
+                "description": "Minesweeper 2.0 is a modern, fully responsive, single-page web version of the classic Minesweeper game. This version not only captures the nostalgic charm of the original game but also adds modern functionalities and polish ... By Bocaletto Luca Games",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-14T14:13:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Typing-Tutor",
+                "description": "Typing-Tutor Web Game is a fast-paced typing game that helps improve keyboard skills and reaction speed. Players must correctly press the keys matching falling letters before they reach the bottom of the screen. The game features progressive difficulty levels, score tracking, and record-saving for continuous improvement! By Bocaletto Luca",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-06-14T10:50:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "portfolio-cyberpunk",
+                "description": "portfolio-cyberpunk",
+                "stargazers_count": 11,
+                "language": "HTML",
+                "pushed_at": "2025-06-17T10:49:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LiteraryTexts",
+                "description": "Literary Texts By Bocaletto Luca: A curated anthology of poems, song lyrics, and books in various text formats:*.txt, *.md, *.html, *.pdf, *.epub and oteres files in this repository. This collection celebrates the power of words and preserves each work\u2019s unique voice, always crediting its creator. @bocaletto-luca",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-02T12:59:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "IT-Adventures",
+                "description": "A comedic, tech-heavy text adventure in pure open-source style  In IT Adventures, you slip into the well-worn hoodie of Luca, a quick-witted sysadmin armed with nothing but a trusty laptop and a healthy dose of sarcasm. Your playground is Nerdstown, a neon-soaked metropolis where Ethernet cables snake through alleyways,caf\u00e9s pour... @bocaletto-luca",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-03T11:41:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Terminal-Quiz",
+                "description": "Terminal Quiz Multiplayer Author: Bocaletto Luca A lightweight, multiplayer quiz game running entirely in a Linux terminal. Players connect to a TCP server, register or log in, and answer multiple-choice questions loaded from an external JSON file. Scores persist across sessions and a global leaderboard can be viewed in-game... @bocaletto-luca",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-03T16:41:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Mapping-Midi-NameNote-Dictionary",
+                "description": "This is the mapping for the conversion of the Midi signal received in the name of the note, it contains the dictionaries in English, Italian and English+Italian @bocaletto-luca",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-03T19:18:18Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:55.203029+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

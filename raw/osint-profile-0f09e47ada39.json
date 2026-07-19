@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-0f09e47ada39",
+  "target": "destroy-boys",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:58.907770+00:00",
+  "completedAt": "2026-06-21T15:27:59.249639+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3591b7b1",
+      "lookupType": "github_context",
+      "target": "destroy-boys",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "destroy-boys",
+            "name": "\u2800",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "\u2800\u2800\u2800\u2800\u2800I'm made of music\u2800\u2800\u2800\r\n\u2800\u2800\u2800\u2800\u2800maiin\u2800\u2800 @5uguru",
+            "public_repos": 1,
+            "followers": 5711,
+            "following": 24049,
+            "created_at": "2024-11-08T18:31:02Z",
+            "updated_at": "2026-05-26T18:34:16Z",
+            "html_url": "https://github.com/destroy-boys",
+            "avatar_url": "https://avatars.githubusercontent.com/u/187797187?v=4",
+            "repos": [
+              {
+                "name": "DESTROY-BOYS",
+                "description": null,
+                "stargazers_count": 23,
+                "language": null,
+                "pushed_at": "2026-06-01T17:10:39Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:59.248822+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

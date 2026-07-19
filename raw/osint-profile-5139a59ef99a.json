@@ -1,0 +1,263 @@
+{
+  "profileId": "osint-profile-5139a59ef99a",
+  "target": "Samuel-de-Oliveira",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:21.652048+00:00",
+  "completedAt": "2026-06-21T15:33:22.299051+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-7e823097",
+      "lookupType": "github_context",
+      "target": "Samuel-de-Oliveira",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Samuel-de-Oliveira",
+            "name": "Samuel de Oliveira",
+            "type": "User",
+            "company": null,
+            "blog": "https://samuel-de-oliveira.github.io",
+            "location": "Arapiraca, Alagoas, Brazil",
+            "bio": "I'm a math teacher \ud83e\uddee that loves computing \ud83d\udcbb :octocat: ",
+            "public_repos": 16,
+            "followers": 1210,
+            "following": 3522,
+            "created_at": "2021-03-27T23:04:23Z",
+            "updated_at": "2026-04-22T06:08:31Z",
+            "html_url": "https://github.com/Samuel-de-Oliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/81493939?v=4",
+            "repos": [
+              {
+                "name": "samuel-de-oliveira.github.io",
+                "description": "This is my main site,",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2026-06-19T03:50:03Z",
+                "fork": false,
+                "topics": [
+                  "curriculum",
+                  "portfolio-site"
+                ]
+              },
+              {
+                "name": "AraGeo",
+                "description": "MNR 2026",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-05T20:25:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Samuel-de-Oliveira",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-05-02T23:44:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mathematical_animations",
+                "description": "Animations for my v\u00eddeos on my youtube channel",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-22T06:09:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PyRubik",
+                "description": "A Python module to make speedcubing projects a piece of cake.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-04-22T06:09:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CanUseTimer",
+                "description": "This is a speedcubing timer created to work in a terminal or prompt window. Totally made in Python.",
+                "stargazers_count": 21,
+                "language": "Python",
+                "pushed_at": "2025-05-05T00:58:37Z",
+                "fork": false,
+                "topics": [
+                  "canusetimer",
+                  "cli",
+                  "lightweight",
+                  "no-gui",
+                  "python",
+                  "rubiks-cube",
+                  "speedcubing",
+                  "terminal",
+                  "timer"
+                ]
+              },
+              {
+                "name": "Web-Examples",
+                "description": "My portifolio for Web development",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-02-01T19:34:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IOT-Examples",
+                "description": "IOT projects I made for learning pruporses.",
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2026-01-19T06:06:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TCC-UNEAL",
+                "description": "Software to learn Matrix",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-11T05:09:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easyFileCreator",
+                "description": "EFC is a CLI application that helps create a template file of any programing language.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2025-04-10T14:42:54Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "file-creation",
+                  "project-management",
+                  "template"
+                ]
+              },
+              {
+                "name": "Love2D-Examples",
+                "description": "My games created using L\u00d6VE2D",
+                "stargazers_count": 8,
+                "language": "Lua",
+                "pushed_at": "2025-10-26T04:40:12Z",
+                "fork": false,
+                "topics": [
+                  "examples",
+                  "examples-lua",
+                  "games",
+                  "love2d",
+                  "lua"
+                ]
+              },
+              {
+                "name": "CanUseTimer-Website",
+                "description": "This is the CanUseTimer's website, nothing more about...",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-25T14:51:39Z",
+                "fork": false,
+                "topics": [
+                  "canusetimer",
+                  "site",
+                  "speedcubing"
+                ]
+              },
+              {
+                "name": "Helen",
+                "description": "A repository for creation of a device that help people that can't see.",
+                "stargazers_count": 7,
+                "language": "C++",
+                "pushed_at": "2024-05-19T20:37:11Z",
+                "fork": false,
+                "topics": [
+                  "accessibility",
+                  "arduino",
+                  "blind",
+                  "disability",
+                  "diy-electronics",
+                  "ultrasonic-sensor"
+                ]
+              },
+              {
+                "name": "Easarea",
+                "description": "CLI software that calculates area of various geometrical shapes",
+                "stargazers_count": 9,
+                "language": "C++",
+                "pushed_at": "2023-11-26T15:56:24Z",
+                "fork": false,
+                "topics": [
+                  "area",
+                  "cli",
+                  "command-line",
+                  "math",
+                  "no-gui"
+                ]
+              },
+              {
+                "name": "Data_Analysis-Examples",
+                "description": "Exmple codes with Numpy",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-04T12:13:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TKinter-Examples",
+                "description": "my portifolio about cration of graphical interface with Python using the TKinter library",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2023-04-14T22:26:51Z",
+                "fork": false,
+                "topics": [
+                  "gui",
+                  "python",
+                  "tkinter",
+                  "tkinter-python"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:22.298297+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

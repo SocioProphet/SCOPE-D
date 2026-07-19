@@ -1,0 +1,181 @@
+{
+  "profileId": "osint-profile-f4b1e693d494",
+  "target": "rayku-dev",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:43.102301+00:00",
+  "completedAt": "2026-06-21T15:29:43.605228+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-67cb68f8",
+      "lookupType": "github_context",
+      "target": "rayku-dev",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "rayku-dev",
+            "name": "Ray Hernandez",
+            "type": "User",
+            "company": null,
+            "blog": "rayhernandez.vercel.app",
+            "location": "404: Location Not Found",
+            "bio": "Software Engineer",
+            "public_repos": 12,
+            "followers": 2358,
+            "following": 5666,
+            "created_at": "2022-06-07T17:49:06Z",
+            "updated_at": "2026-06-19T15:50:22Z",
+            "html_url": "https://github.com/rayku-dev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/107069990?v=4",
+            "repos": [
+              {
+                "name": "IRMS",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-18T08:35:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "React-Biometrics",
+                "description": "A modern biometric authentication system built with WebAuthn, React + Vite, Tailwind CSS, and Shadcn.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-29T16:24:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pomodoro-AI",
+                "description": "Pomodoro AI is a productivity tool designed to help users effectively manage their time using the Pomodoro Technique, enhanced with AI capabilities. This application allows users to break their work into intervals, traditionally 25 minutes in length, separated by short breaks.",
+                "stargazers_count": 18,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-30T10:32:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SDO-HRMS",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-01T03:03:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rayku-dev",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-06-21T13:49:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nextauth-starter",
+                "description": "VeriSafe is a comprehensive authentication project built with NextAuth, Next.js, ShaDCN UI, Resend, React Email, Otpauth(2FA), & WebAuthn. ",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-08T12:32:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nextjs_basic",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-09T08:49:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Teaserz",
+                "description": "Teaserz, the ultimate platform for showcasing and promoting movie trailers! Our app is designed to connect movie studios with audiences, providing an engaging and seamless experience for watching and discovering the latest movies.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-22T10:41:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kickstop",
+                "description": "Kickstop is designed to make your shopping experience as enjoyable and efficient as possible. Dive into the code to see how we've integrated the MERN stack with modern CSS frameworks to create a powerful and user-friendly platform.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-08T14:00:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Google-AI-Chatbot",
+                "description": "A Flask-based AI chatbot using Google AI for intelligent, real-time conversations and assistance on various topics.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-18T05:09:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Idea-Sprout",
+                "description": "IdeaSprout cultivates startup ideas and innovation. Submit, share, and explore concepts with our platform. Built with React 19, Next.js15, TailwindCSS, ShadCN, and TypeScript, IdeaSprout ensures a seamless and robust experience. ",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-06T23:33:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Master",
+                "description": "AI Master is a sleek and modern website for AI development content. Built with React and TypeScript and styled using Tailwind CSS, this project demonstrates how to create a visually stunning and highly functional UI.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-13T17:44:13Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:43.604203+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

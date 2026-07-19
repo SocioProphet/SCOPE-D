@@ -1,0 +1,226 @@
+{
+  "profileId": "osint-profile-d431e0c9de14",
+  "target": "rodrigogalura",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:51.878632+00:00",
+  "completedAt": "2026-06-21T15:28:52.582508+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-9b7079a1",
+      "lookupType": "github_context",
+      "target": "rodrigogalura",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "rodrigogalura",
+            "name": "Rodrigo Galura",
+            "type": "User",
+            "company": "@qstrike ",
+            "blog": "https://rodrigogalura.github.io",
+            "location": "Philippines",
+            "bio": "Code is Life",
+            "public_repos": 16,
+            "followers": 3134,
+            "following": 124632,
+            "created_at": "2016-07-26T10:44:22Z",
+            "updated_at": "2026-06-17T14:25:57Z",
+            "html_url": "https://github.com/rodrigogalura",
+            "avatar_url": "https://avatars.githubusercontent.com/u/20660963?v=4",
+            "repos": [
+              {
+                "name": "tuner",
+                "description": "A Laravel package to fine-tune your APIs \u2014 let clients shape the data with powerful query modifiers.",
+                "stargazers_count": 31,
+                "language": "PHP",
+                "pushed_at": "2026-02-24T07:33:01Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "laravel-package",
+                  "php",
+                  "tuner"
+                ]
+              },
+              {
+                "name": "laravel-package-tools",
+                "description": "Tools for creating Laravel packages",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2025-12-29T08:31:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rodrigogalura",
+                "description": "Hello World",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-10-18T00:58:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kaplay",
+                "description": "\ud83e\udd96 A JavaScript Game Library for making games simple, fast and fun",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-07-31T12:53:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sublime-plugins",
+                "description": "Useful plugins for sublime text editor",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-09-16T02:59:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "truthtable",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2025-09-12T12:00:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sublime-laravel",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-09-04T15:38:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-snippets",
+                "description": "Boost your PHP workflow in Sublime Text with ready-to-use snippets from 7.0 to 8.x",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-09-22T01:03:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bak-rstr",
+                "description": "Simple Backup & Restore: Compress, upload, and secure your files to Dropbox with a single command!",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2025-04-27T02:23:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-docker",
+                "description": "Run php application locally using docker",
+                "stargazers_count": 1,
+                "language": "Dockerfile",
+                "pushed_at": "2025-08-30T16:30:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api-igniter",
+                "description": "Build flexible APIs with minimal effort. A Laravel package that empowers clients to control data with filtering, sorting, projecting, expanding, and more \u2014 all with minimal backend setup",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2025-09-16T17:12:28Z",
+                "fork": false,
+                "topics": [
+                  "laravel",
+                  "php",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "laravel12",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Vue",
+                "pushed_at": "2025-03-16T14:49:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rodrigogalura.github.io",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-10-15T00:56:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tanim-mobile",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Vue",
+                "pushed_at": "2025-03-17T07:01:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel10",
+                "description": "Playground for laravel 10",
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2024-09-09T10:43:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nomnoml",
+                "description": "The sassy UML diagram renderer",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-27T19:40:24Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:52.581640+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

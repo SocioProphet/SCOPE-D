@@ -1,0 +1,551 @@
+{
+  "profileId": "osint-profile-b7be2c87a01b",
+  "target": "maxamin",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:25.609319+00:00",
+  "completedAt": "2026-06-20T13:53:27.260750+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c6df2ed5",
+      "lookupType": "github_context",
+      "target": "maxamin",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "maxamin",
+            "name": "Mohamed Amine",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Earth",
+            "bio": "\r\nDiscord:amine.tn",
+            "public_repos": 127,
+            "followers": 1871,
+            "following": 33874,
+            "created_at": "2013-12-20T02:13:13Z",
+            "updated_at": "2026-03-04T23:50:10Z",
+            "html_url": "https://github.com/maxamin",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6227311?v=4",
+            "repos": [
+              {
+                "name": "CraxsRat-v6.7-Source-Code",
+                "description": "CraxsRat is a sophisticated Android remote access trojan (RAT) that grants cybercriminals extensive control over infected devices. It is developed by the malware-as-a-service operator known as \"EVLF DEV\" and has been actively used in various cyber-attacks. ",
+                "stargazers_count": 220,
+                "language": "C#",
+                "pushed_at": "2025-05-06T22:49:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CraxsRat-v6.8-Source-LEAK",
+                "description": "CraxsRat is a sophisticated Android remote access trojan (RAT) that grants cybercriminals extensive control over infected devices. It is developed by the malware-as-a-service operator known as \"EVLF DEV\" and has been actively used in various cyber-attacks.",
+                "stargazers_count": 115,
+                "language": "C#",
+                "pushed_at": "2024-07-09T00:02:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "The-Awesome-And-Dangerous-collection",
+                "description": "A high-risk archive of historical malware, exploit kits, crypters, and webshells for educational and cybersecurity research purposes. None of this code is authored by the repository owner, and no responsibility is taken for misuse,\ud83d\udd12 Intended Audience: Cybersecurity researchers, malware analysts...",
+                "stargazers_count": 80,
+                "language": "Visual Basic 6.0",
+                "pushed_at": "2025-01-25T09:18:23Z",
+                "fork": false,
+                "topics": [
+                  "cyber-security",
+                  "cybersecurity",
+                  "malware",
+                  "malware-analysis",
+                  "malware-detection",
+                  "malware-research",
+                  "malware-samples",
+                  "malwareanalysis",
+                  "shell-script",
+                  "shellcode"
+                ]
+              },
+              {
+                "name": "maxamin",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-09-01T16:20:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "conti_locker",
+                "description": "conti locker ransomware source code leak",
+                "stargazers_count": 32,
+                "language": "C++",
+                "pushed_at": "2022-03-05T10:48:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Legacy-Botnets-Source-Code-Collection",
+                "description": "legacy Botnets source code Forked from github.com/malwares",
+                "stargazers_count": 28,
+                "language": "C++",
+                "pushed_at": "2022-01-30T12:49:40Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity"
+                ]
+              },
+              {
+                "name": "Pure_Crypter",
+                "description": "An obfuscation tool for .Net + Native files.",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2025-01-27T23:39:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EXEProt",
+                "description": "EXE Protect using blowfish algorithm",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2024-10-21T14:45:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Darkgpt",
+                "description": "This is an enhanced Darkgpt",
+                "stargazers_count": 35,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-10T10:38:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CarpaAlko",
+                "description": "Notorious Smartphones Malware for Remote administrator, including Advanced Spyware functions. EXECUTE iOS and Android, their Sandbox and SSL Integration.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-09-28T07:31:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "o-wicked-Exploits-out-there",
+                "description": "A collection of high importance exploits that are wide shared between threat actors",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2024-07-09T05:24:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solidity",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Solidity",
+                "pushed_at": "2025-12-17T12:55:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JSFAFO",
+                "description": "Javascript Framework for Automated Footprinting & Observation",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-03-05T02:39:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jsluice-SR72",
+                "description": "Extract URLs, paths, secrets, and other interesting bits from JavaScript",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-22T02:26:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bringemall",
+                "description": "Nothing serious just a script to keep",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2026-03-06T04:17:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Botnets",
+                "description": "This repository is a treasure trove of botnet implementations, ranging from infamous Mirai variants to unique configurations and enhancements. Below is a brief description of the main directories:",
+                "stargazers_count": 13,
+                "language": "C",
+                "pushed_at": "2024-11-15T23:18:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "exploitpack-from-an-APT-infrastructure",
+                "description": "exploitpack extracted from a honeynet which is being prepared by intruduers to be used as an exploitation infrastructure",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2022-02-17T17:50:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Baby_Research",
+                "description": "Attempt to reverse 0xcheats.net MTA cheat ",
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2023-12-23T19:51:39Z",
+                "fork": false,
+                "topics": [
+                  "anticheat",
+                  "cheat",
+                  "rockstar",
+                  "rockstargames"
+                ]
+              },
+              {
+                "name": "Babyk-RWSC",
+                "description": "This repository contains the source code for Babyk Ransomware, a sophisticated piece of malware designed for educational and research purposes. This project aims to provide security researchers and analysts with a comprehensive understanding of ransomware behavior, encryption techniques, and attack vectors.",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2024-06-28T20:15:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bruteforce-lists",
+                "description": "Some files for bruteforcing certain things.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-15T09:16:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bend",
+                "description": "A massively parallel, high-level programming language",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-11T13:34:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "exploits-exploits",
+                "description": "a comprehensive collection of exploits, scripts, and tools designed for testing and exploiting vulnerabilities in various software and hardware systems. This project supports multiple programming languages and provides resources for both experienced and novice security professionals.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-01T18:39:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dexie.js",
+                "description": "A Minimalistic Wrapper for IndexedDB",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-01-29T04:55:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Course_Materials",
+                "description": "This is a course materials repo , ENJOY !",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-07-05T20:48:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Binders-sources",
+                "description": "Binders sources",
+                "stargazers_count": 6,
+                "language": "VBA",
+                "pushed_at": "2022-02-23T18:29:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solidity2",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-12-17T12:53:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solidity3",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-17T12:51:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Keylogger-sources",
+                "description": "keyloggers sources",
+                "stargazers_count": 6,
+                "language": "VBA",
+                "pushed_at": "2022-02-23T19:18:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeFiHackLabs",
+                "description": "Reproduce DeFi hacked incidents using Foundry.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-01-30T08:00:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-onliner-bugbounty",
+                "description": "Awsome Bug bounty oneliners",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-09-12T03:54:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ethereum-developer-tools-list",
+                "description": "A guide to available tools and platforms for developing on Ethereum.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-12T23:57:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cve-2024-6387-poc",
+                "description": "32-bit PoC for CVE-2024-6387 \u2014 mirror of the original 7etsuo/cve-2024-6387-poc",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-01T12:25:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mm-shop",
+                "description": "MM-Shop is a comprehensive and versatile e-commerce platform designed to provide businesses with a powerful solution for online retail. Using BTC",
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2024-06-30T15:27:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartScan-Dataset",
+                "description": "This repository contains 50,000 smart contracts extracted from the Ethereum network.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-03-01T21:59:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Adrena-crypter",
+                "description": "Adrena Crypter source",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-02-23T19:14:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Botnets-sources",
+                "description": "Botnets sources",
+                "stargazers_count": 9,
+                "language": "C++",
+                "pushed_at": "2022-02-23T19:17:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Zombie-Content-management-systems-exploitation-Bot-Source",
+                "description": "Zombie Content management systems exploitation Bot Source",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2022-02-23T19:18:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "-0day-Mari-Source",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2022-03-25T18:01:42Z",
+                "fork": false,
+                "topics": [
+                  "0day",
+                  "cms-exploiter",
+                  "cms-exploits",
+                  "security",
+                  "security-audit",
+                  "security-automation",
+                  "security-scanner",
+                  "security-tools",
+                  "security-vulnerability"
+                ]
+              },
+              {
+                "name": "Exploitkits",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "PHP",
+                "pushed_at": "2022-03-20T02:01:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RATS-sources",
+                "description": "Rats sources",
+                "stargazers_count": 10,
+                "language": "Pascal",
+                "pushed_at": "2022-02-23T19:18:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Blacknet",
+                "description": "Blacknet source",
+                "stargazers_count": 6,
+                "language": "Visual Basic .NET",
+                "pushed_at": "2022-02-23T19:12:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Crypters-sources",
+                "description": "Crypters-sources",
+                "stargazers_count": 8,
+                "language": "VBA",
+                "pushed_at": "2022-02-23T19:18:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Randomx",
+                "description": "Randomxminer",
+                "stargazers_count": 3,
+                "language": "VBScript",
+                "pushed_at": "2021-12-02T21:48:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vicnum14",
+                "description": "A flexible web app showing vulnerabilities such as cross site scripting, sql injections, and session management issues. Helpful to IT auditors honing web security skills and setting up 'capture the flag'.",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2024-10-22T20:01:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AD-Mastertools-collection",
+                "description": "This is an AD pentest tools collection",
+                "stargazers_count": 59,
+                "language": "C#",
+                "pushed_at": "2024-07-06T09:25:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Resume",
+                "description": "This is my resume im passionate motivated and explorer ,  new opportunity,People,Countries,culturesis are always appreciated , life is short",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-08-19T00:53:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GCR-Google-Calendar-RAT",
+                "description": "Google Calendar RAT (GRC) is a Proof of Concept (PoC) Command & Control (C2) framework that leverages Google Calendar events to create a covert channel. This method is useful in situations where it is challenging to set up a complete red teaming infrastructure. The only requirement for using GRC is a Gmail account.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-10-20T21:33:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sol-function-profiler",
+                "description": "Solidity Contract Function Profiler",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-10-14T22:05:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GNS3",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2019-09-16T10:48:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "istic-pfe1",
+                "description": "a network supervision system EON with simulated environment for istic graduation project",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2021-10-19T17:15:10Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:27.259992+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

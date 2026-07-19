@@ -1,0 +1,446 @@
+{
+  "profileId": "osint-profile-db822253de10",
+  "target": "IndrajeetPatil",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:56.937520+00:00",
+  "completedAt": "2026-06-21T15:30:57.618601+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8b05b70e",
+      "lookupType": "github_context",
+      "target": "IndrajeetPatil",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "IndrajeetPatil",
+            "name": "Indrajeet Patil",
+            "type": "User",
+            "company": "Carl Zeiss AG",
+            "blog": "https://www.indrapatil.com/",
+            "location": "Munich",
+            "bio": "Senior Software Engineer || Social Neuroscience Ph.D.",
+            "public_repos": 26,
+            "followers": 1790,
+            "following": 1711,
+            "created_at": "2015-03-05T10:30:01Z",
+            "updated_at": "2026-06-02T07:18:01Z",
+            "html_url": "https://github.com/IndrajeetPatil",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11330453?v=4",
+            "repos": [
+              {
+                "name": "ai-poisoned-foss-well",
+                "description": "Poisoning the FOSS Movement \"Well\"",
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2026-06-21T14:15:19Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "foss"
+                ]
+              },
+              {
+                "name": "effective-claude-code-usage",
+                "description": "Practicel tips on using Claude Code effectively",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-20T19:43:37Z",
+                "fork": false,
+                "topics": [
+                  "claude-code"
+                ]
+              },
+              {
+                "name": "to-comment-or-not",
+                "description": "Best Practices in Code Comments",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T15:27:23Z",
+                "fork": false,
+                "topics": [
+                  "best-practices",
+                  "software-engineering"
+                ]
+              },
+              {
+                "name": "foss-for-enterprise",
+                "description": "Overview of FOSS for enterprise use, focusing on inbound FOSS consumption",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T13:26:52Z",
+                "fork": false,
+                "topics": [
+                  "enterprise",
+                  "foss"
+                ]
+              },
+              {
+                "name": "academia-to-industry",
+                "description": "Advice on how to move from academia to industry",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T12:24:46Z",
+                "fork": false,
+                "topics": [
+                  "academia-to-industry",
+                  "career-advice"
+                ]
+              },
+              {
+                "name": "second-hardest-cs-thing",
+                "description": "Best Practices in Naming for Software Development",
+                "stargazers_count": 32,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T12:15:18Z",
+                "fork": false,
+                "topics": [
+                  "computer-science",
+                  "naming-conventions",
+                  "quartopub",
+                  "reveal-js",
+                  "software-development",
+                  "software-engineering"
+                ]
+              },
+              {
+                "name": "parse-dont-pray",
+                "description": "Using data validation effectively",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T13:15:36Z",
+                "fork": false,
+                "topics": [
+                  "data-validation",
+                  "full-stack-development",
+                  "pydantic",
+                  "zod"
+                ]
+              },
+              {
+                "name": "workflows",
+                "description": "Reusable GitHub Actions workflows for IndrajeetPatil repositories",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-20T10:35:39Z",
+                "fork": false,
+                "topics": [
+                  "gha",
+                  "workflows-reusable"
+                ]
+              },
+              {
+                "name": "chatbot-template",
+                "description": "Full-stack Template for a LLM Chatbot Application",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T09:50:30Z",
+                "fork": false,
+                "topics": [
+                  "full-stack-web-development",
+                  "genai-chatbot"
+                ]
+              },
+              {
+                "name": "ggstatsplot",
+                "description": "Enhancing {ggplot2} plots with statistical analysis \ud83d\udcca\ud83d\udce3",
+                "stargazers_count": 2189,
+                "language": "R",
+                "pushed_at": "2026-05-03T09:46:52Z",
+                "fork": false,
+                "topics": [
+                  "bayes-factors",
+                  "datascience",
+                  "dataviz",
+                  "effect-size",
+                  "ggplot-extension",
+                  "hypothesis-testing",
+                  "non-parametric-statistics",
+                  "r",
+                  "regression-models",
+                  "statistical-analysis"
+                ]
+              },
+              {
+                "name": "kittyR",
+                "description": "Bring those kitties and their meows to R console \ud83d\udc08\ud83d\udc08\ud83d\udc08 ",
+                "stargazers_count": 45,
+                "language": "R",
+                "pushed_at": "2026-03-29T06:05:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "preventive-r-package-care",
+                "description": "Building automation infrastructure to improve R package development workflow",
+                "stargazers_count": 32,
+                "language": "HTML",
+                "pushed_at": "2026-06-18T13:02:04Z",
+                "fork": false,
+                "topics": [
+                  "github-actions",
+                  "r",
+                  "r-package",
+                  "r-package-automation",
+                  "software-development",
+                  "software-engineering",
+                  "software-infrastructure"
+                ]
+              },
+              {
+                "name": "intro-to-snapshot-testing",
+                "description": "Introduction to snapshot (aka golden) testing (in R)",
+                "stargazers_count": 22,
+                "language": "HTML",
+                "pushed_at": "2026-06-18T13:02:11Z",
+                "fork": false,
+                "topics": [
+                  "golden-tests",
+                  "quarto",
+                  "revealjs",
+                  "rstats",
+                  "snapshot-testing",
+                  "testthat",
+                  "unit-testing"
+                ]
+              },
+              {
+                "name": "intro-to-ggstatsplot",
+                "description": "Statistical Visualizations with {ggstatsplot}: A Biography",
+                "stargazers_count": 28,
+                "language": "HTML",
+                "pushed_at": "2026-06-18T13:02:07Z",
+                "fork": false,
+                "topics": [
+                  "ggplot-extension",
+                  "ggstatsplot",
+                  "presentation",
+                  "quarto",
+                  "r"
+                ]
+              },
+              {
+                "name": "dry-r-package-development",
+                "description": "Tips on not repeating yourself during R package development",
+                "stargazers_count": 34,
+                "language": "HTML",
+                "pushed_at": "2026-06-18T13:02:01Z",
+                "fork": false,
+                "topics": [
+                  "best-practices",
+                  "dry",
+                  "package-development",
+                  "r-packages",
+                  "r-programming",
+                  "software-design",
+                  "software-development",
+                  "software-engineering"
+                ]
+              },
+              {
+                "name": "md2linkedin",
+                "description": "Convert Markdown to LinkedIn-friendly Unicode text",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-06-18T10:48:17Z",
+                "fork": false,
+                "topics": [
+                  "linkedin",
+                  "markdown",
+                  "pypi",
+                  "python-package"
+                ]
+              },
+              {
+                "name": "statsExpressions",
+                "description": "Tidy data frames and expressions with statistical summaries \ud83d\udcdc",
+                "stargazers_count": 313,
+                "language": "R",
+                "pushed_at": "2026-05-03T09:42:26Z",
+                "fork": false,
+                "topics": [
+                  "bayesian-inference",
+                  "bayesian-statistics",
+                  "contingency-table",
+                  "correlation",
+                  "effectsize",
+                  "meta-analysis",
+                  "parametric",
+                  "robust",
+                  "robust-statistics",
+                  "statistical-details",
+                  "statistical-tests",
+                  "tidy"
+                ]
+              },
+              {
+                "name": "crosszip",
+                "description": "Iterating over all combinations from multiple iterables",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-06-10T18:49:36Z",
+                "fork": false,
+                "topics": [
+                  "pypi",
+                  "pypi-package",
+                  "python",
+                  "python-package",
+                  "utility"
+                ]
+              },
+              {
+                "name": "collectify",
+                "description": "Collect your favourite things in one place!",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-30T18:26:22Z",
+                "fork": false,
+                "topics": [
+                  "ironhack",
+                  "javascript-applications",
+                  "react",
+                  "react-bootstrap",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "IndrajeetPatil",
+                "description": "My GitHub profile README",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-04-04T18:06:22Z",
+                "fork": false,
+                "topics": [
+                  "profile"
+                ]
+              },
+              {
+                "name": "R-Function-A-Day-book",
+                "description": "Collection of tweets from \"R Function A Day\" account",
+                "stargazers_count": 21,
+                "language": "CSS",
+                "pushed_at": "2026-01-13T06:41:37Z",
+                "fork": false,
+                "topics": [
+                  "book",
+                  "bookdown",
+                  "rpackages",
+                  "rprogramming",
+                  "rstats"
+                ]
+              },
+              {
+                "name": "save-indy",
+                "description": "Save Indiana Jones using JavaScript!",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-31T19:11:27Z",
+                "fork": false,
+                "topics": [
+                  "beginner-friendly",
+                  "ironhack",
+                  "javascript",
+                  "javascript-game",
+                  "learning-resources",
+                  "webdevelopment"
+                ]
+              },
+              {
+                "name": "awesome-r-pkgtools",
+                "description": "A curated list of awesome tools for R package development",
+                "stargazers_count": 216,
+                "language": "HTML",
+                "pushed_at": "2026-02-14T09:40:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dotInternals",
+                "description": "Prepend Internal Package Function Names With a Dot",
+                "stargazers_count": 7,
+                "language": "R",
+                "pushed_at": "2022-09-03T09:34:52Z",
+                "fork": false,
+                "topics": [
+                  "coding-practices",
+                  "r",
+                  "rpackage",
+                  "rprogramming"
+                ]
+              },
+              {
+                "name": "Practical-SQL-exercises",
+                "description": "Exercises from \"Practical SQL\" (1st Ed.)",
+                "stargazers_count": 19,
+                "language": "PLpgSQL",
+                "pushed_at": "2022-01-06T18:22:33Z",
+                "fork": false,
+                "topics": [
+                  "database-management",
+                  "learning-exercise",
+                  "postgresql",
+                  "programming-exercises",
+                  "sql"
+                ]
+              },
+              {
+                "name": "broomExtra",
+                "description": "Helpers for regression analyses using `{broom}` & `{easystats}` packages  \ud83d\udcc8 \ud83d\udd0d",
+                "stargazers_count": 48,
+                "language": "R",
+                "pushed_at": "2022-10-10T06:37:44Z",
+                "fork": false,
+                "topics": [
+                  "broom",
+                  "easystats",
+                  "performance-measures",
+                  "regression",
+                  "regression-analyses",
+                  "regression-models",
+                  "tidy",
+                  "tidy-tibbles"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:57.617805+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-1f29af6d0894",
+  "target": "frankfanslc",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:22.533171+00:00",
+  "completedAt": "2026-06-20T13:53:25.234913+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f89836f5",
+      "lookupType": "github_context",
+      "target": "frankfanslc",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "frankfanslc",
+            "name": "frankfanslc",
+            "type": "User",
+            "company": "Fatpipe Networks",
+            "blog": "https://www.linkedin.com/in/xiaoxiong-frank-fan-4577a214/",
+            "location": "Salt Lake City, UT",
+            "bio": null,
+            "public_repos": 3549,
+            "followers": 1969,
+            "following": 38133,
+            "created_at": "2019-09-19T21:16:32Z",
+            "updated_at": "2025-08-18T17:30:44Z",
+            "html_url": "https://github.com/frankfanslc",
+            "avatar_url": "https://avatars.githubusercontent.com/u/55561087?v=4",
+            "repos": [
+              {
+                "name": "great_expectations",
+                "description": "Always know what to expect from your data.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-14T09:14:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "openebsctl",
+                "description": "`openebsctl` is a kubectl plugin to manage OpenEBS storage components.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-01-28T10:08:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "windows-driver-docs",
+                "description": "The official Windows Driver Kit documentation sources",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-02-05T01:33:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "django-fsm",
+                "description": "Django friendly finite state machine support",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-09T15:57:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sqlx",
+                "description": "\ud83e\uddf0 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, SQLite, and MSSQL.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-14T13:08:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "retrofit-spring-boot-starter",
+                "description": "A springboot starter for retrofit, and supports many functional feature enhancements, greatly simplifying development.\uff08\u5b9e\u73b0\u4e86Retrofit\u4e0espring-boot\u6846\u67b6\u5feb\u901f\u6574\u5408\uff0c\u5e76\u652f\u6301\u4e86\u8bf8\u591a\u529f\u80fd\u589e\u5f3a\uff0c\u6781\u5927\u7b80\u5316\u5f00\u53d1\uff09",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-11-19T03:56:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "async-timeout",
+                "description": "asyncio-compatible timeout class",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-11T02:26:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "create-react-app",
+                "description": "Set up a modern web app by running one command.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-01-24T15:12:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rbac.dev",
+                "description": "A collection of good practices and tools for Kubernetes RBAC",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-01-19T19:34:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cppcheck",
+                "description": "static analysis of C/C++ code",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-11T10:53:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "docker-openwisp",
+                "description": "OpenWISP in docker (in-alpha). For production checkout ansible-openwisp2.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2022-01-21T18:29:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "airbyte",
+                "description": "Airbyte is an open-source EL(T) platform that helps you replicate your data in your warehouses, lakes and databases.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2022-01-22T00:20:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "velero",
+                "description": "Backup and migrate Kubernetes applications and their persistent volumes",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-10T07:42:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "The-Complete-FAANG-Preparation",
+                "description": "This repository contains all the DSA (Data-Structures, Algorithms, 450 DSA by Love Babbar Bhaiya, FAANG Questions), Technical Subjects (OS + DBMS + SQL + CN + OOPs) Theory+Questions, FAANG Interview questions, and Miscellaneous Stuff (Programming MCQs, Puzzles, Aptitude, Reasoning). The Programming languages used for demonstration are C++, Python, and Java.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-09-07T11:37:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LightGBM",
+                "description": "A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-13T00:46:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "graphillion",
+                "description": "Fast, lightweight graphset operation library",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-07-09T15:32:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PyAthena",
+                "description": "PyAthena is a Python DB API 2.0 (PEP 249) client for Amazon Athena.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-01-24T16:32:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aranya",
+                "description": "Control all kinds of devices with Kubernetes",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-10-29T09:15:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "titanium_mobile",
+                "description": "\ud83d\ude80 Native iOS-, Android- and Windows Apps with JavaScript",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2017-08-22T19:18:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aws_logs_to_parquet_converter",
+                "description": "Spark batch converter to convert AWS S3 server side logs to Parquet file format",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2019-04-26T17:22:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "angular-unit-testing-examples",
+                "description": "Showroom for different Angular unit testing concepts ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-12T03:51:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Leetcode-C",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2023-05-30T20:06:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "plugin-sdk",
+                "description": "An SDK for developing ASI/CLEO plugins for GTA San Andreas, GTA Vice City and GTA III",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-05-30T08:24:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Convert-Website-to-App",
+                "description": "Convert your mobile-friendly website into an app",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2022-06-01T21:30:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "twitter-clone-frontend",
+                "description": "Twitter Clone Frontend ",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-06-01T21:58:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "immudb",
+                "description": "immudb - immutable database based on zero trust, SQL and Key-Value, tamperproof, data change history",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2022-06-04T16:34:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vscode-btree",
+                "description": "VS Code extension for behavior tree modeling and visualization.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2022-05-02T13:48:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "micmac",
+                "description": "Free open-source photogrammetry software tools",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2022-04-15T17:03:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "minimal-mistakes",
+                "description": ":triangular_ruler: Jekyll theme for building a personal site, blog, project documentation, or portfolio.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-04-14T01:15:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "new-ospgl",
+                "description": "A space exploration game in OpenGL. Devblog: https://tatjam.github.io/index.html",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-04-14T13:11:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tracy",
+                "description": "C++ frame profiler",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-04-13T21:35:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "torcharrow",
+                "description": "A torch.Tensor-like DataFrame library supporting multiple execution runtimes and Arrow as a common memory format",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-04-14T16:26:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "text",
+                "description": "Data loaders and abstractions for text and NLP",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-04-14T11:35:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "grid_map",
+                "description": "Universal grid map library for mobile robotic mapping",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-04-13T20:23:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cc217-examples",
+                "description": "Example configurations for CC217 Cloud Orchestration with Terraform",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-09-28T14:02:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "64json.github.io",
+                "description": ":star: Jinseo Park's Website",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-01-15T20:20:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "2019-fontys-business-and-IT-agility-through-microservice-architecture",
+                "description": "Business and IT agility through microservice architecture powered by containers and cloud  Evolving architectures, emerging technology and new cloud services enable new ways to address business challenges with IT solutions. Microservices architecture promises flexibility, scalability, and optimal use of compute resources. This lecture introduces the objectives that microservices are expected to realize and explains how microservices will do that. The lecture describes the key concepts \u2013 domain driven design, bounded context, events, statelessness and APIs. It discusses and demonstrates a real implementation of microservices using containers and Kubernetes.   Students will do a hands-on with the Kubernetes platform \u2013 learning about the container orchestration features that allow microservices to be deployed, scaled, configured, failed over, and upgraded to new versions while maintaining proper routing and load balancing. Students will learn how to make use of Kubernetes for running multiple interacting containers executing applications written in the technology of their choice.  The lectures discusses the service mesh and challenges with tracing and end to end monitoring. The relevance of events for decoupled collaboration is discussed and demonstrated. Concepts discussed include workflow choreography, the CQRS data(base) pattern for cross domain data sharing and serverless architecture. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2019-03-31T15:32:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "2022-Research-DPDK-c",
+                "description": ".",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-02-07T08:20:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "9DOF_Razor_IMU",
+                "description": "9DOF Razor IMU available from SparkFun Electronics",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-03-09T18:13:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "A-LOAM",
+                "description": "Advanced implementation of LOAM",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-04-07T09:53:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "action-destinations",
+                "description": "Action Destinations are a way to build streaming destinations on Segment.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-11T19:31:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "acme",
+                "description": "A protocol for automating certificate issuance",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2019-03-04T21:29:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "abseil-cpp",
+                "description": "Abseil Common Libraries (C++)",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-02-17T22:37:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "action-setup-postgres",
+                "description": "Setup a PostgreSQL for Linux, macOS and Windows runner machines.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-08T00:31:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aclstore",
+                "description": "A simple persistent store for ACLs, with HTTP API",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-10T01:17:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "action-golangci-lint",
+                "description": "Run golangci-lint with reviewdog",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-01-28T22:25:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "abnlookup-1",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-06-23T06:38:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "99c",
+                "description": "github.com/cznic/99c has moved to modernc.org/99c",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2018-11-22T10:19:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "realsense-ros",
+                "description": "Intel(R) RealSense(TM) ROS Wrapper for D400 series, SR300 Camera and T265 Tracking Module",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-08T07:41:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "coveragepy",
+                "description": "Code coverage measurement for Python",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-12T11:28:25Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:25.234129+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

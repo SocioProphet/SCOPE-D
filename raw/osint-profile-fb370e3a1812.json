@@ -1,0 +1,262 @@
+{
+  "profileId": "osint-profile-fb370e3a1812",
+  "target": "jwe0",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:50:17.167531+00:00",
+  "completedAt": "2026-06-20T16:50:17.991990+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-db8228de",
+      "lookupType": "github_context",
+      "target": "jwe0",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jwe0",
+            "name": "Joshua Webb",
+            "type": "User",
+            "company": null,
+            "blog": "https://jwe0.xyz",
+            "location": "127.0.0.1",
+            "bio": "Professional breaker of things.",
+            "public_repos": 21,
+            "followers": 628,
+            "following": 931,
+            "created_at": "2024-03-07T22:07:32Z",
+            "updated_at": "2026-05-15T20:24:23Z",
+            "html_url": "https://github.com/jwe0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/162640629?v=4",
+            "repos": [
+              {
+                "name": "SimpleShell",
+                "description": "Reverse shell generator, listener and hoster.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-12-19T23:25:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jwe0.github.io",
+                "description": "My blog page",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2024-12-26T19:47:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Osint.Kit",
+                "description": "Toolbox and collection of necessary Osint tools.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-09-28T20:49:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoSint",
+                "description": "Automated open source intelligence.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-08-07T15:49:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Osint",
+                "description": "Collection of osint related tools I have developed.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-09-08T00:24:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Bruteforcing",
+                "description": "Collection of bruteforcing related programs I have developed.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-08-04T10:34:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoPen",
+                "description": "Tool for automating essential tasks when pentesting including enumeration and exploitation.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-08-05T19:48:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EDEDAM",
+                "description": "A collection of mainly cryptography related scripts.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-08-20T10:33:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Portfolio-Website",
+                "description": "First ever sveltekit project.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-26T19:49:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pymanage",
+                "description": "Simple and secure Python password manager.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-04-28T16:50:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "warlock",
+                "description": "Python based social media osint tool",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-10-02T21:18:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jwe0",
+                "description": "Files for my profile",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-02T19:24:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Minimeta",
+                "description": "Mini exploitation framework written in py",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-09-05T21:53:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Portfolio-next",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-17T20:17:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pasteit",
+                "description": "PasteIT is an anoymous pastebin type website that allows users to share text.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-07T18:05:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "collegeapp",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-18T19:36:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoSintV2",
+                "description": "An improved version of my automated open source intelligence tool.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-04-23T14:06:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "enchat",
+                "description": "E2EE chat app",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-03-13T21:02:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "register",
+                "description": "Grab your own sweet-looking '.is-a.dev' subdomain.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-04T19:46:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "verceltracker",
+                "description": "Tracking pixel written in NextJS using custom middleware.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-17T20:19:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ImageHost",
+                "description": "Image upload service written in NextJS.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-13T16:33:17Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:50:17.989537+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

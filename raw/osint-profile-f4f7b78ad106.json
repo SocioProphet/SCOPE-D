@@ -1,0 +1,190 @@
+{
+  "profileId": "osint-profile-f4f7b78ad106",
+  "target": "moopdee",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:31.037620+00:00",
+  "completedAt": "2026-06-21T15:30:31.592253+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-df740c1d",
+      "lookupType": "github_context",
+      "target": "moopdee",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "moopdee",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "https://sites.google.com/view/oophsomthing/home",
+            "location": "oshkosh Wisconsin ",
+            "bio": "i had a pear tree that was misshapen and like the tree its fruit came out looking bad but good on the inside . im like this tree and fruit good on the inside",
+            "public_repos": 13,
+            "followers": 1949,
+            "following": 5968,
+            "created_at": "2018-12-03T06:53:36Z",
+            "updated_at": "2025-12-09T11:32:38Z",
+            "html_url": "https://github.com/moopdee",
+            "avatar_url": "https://avatars.githubusercontent.com/u/45553244?v=4",
+            "repos": [
+              {
+                "name": "pockethost",
+                "description": "this is a apk that host your files on the web so you can play them from home ",
+                "stargazers_count": 15,
+                "language": "Kotlin",
+                "pushed_at": "2025-08-05T11:50:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ocr-pdf-to-tts-reader-",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2026-01-13T07:33:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "topdowngame",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-25T06:21:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pockethost2",
+                "description": "its a android video web host app  ",
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2026-03-23T13:13:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gba-emulator-",
+                "description": "gba ",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2025-09-24T05:15:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ocr-pdf-reader",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-16T00:33:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "-pdf-audio-player",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-05T01:50:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dui-owi-prevention-",
+                "description": "should help you know if you can drive or not ",
+                "stargazers_count": 3,
+                "language": "Kotlin",
+                "pushed_at": "2025-11-12T08:20:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pdf2mp3-web-app.",
+                "description": "this turns mostly word pdfs into mp3 files for download . its a web application  ",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-08-27T22:00:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cbr-cbz-viewer",
+                "description": "this one works well ",
+                "stargazers_count": 8,
+                "language": "Kotlin",
+                "pushed_at": "2025-08-05T10:02:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "safety-cage-blocker.",
+                "description": "it allows the popup but puts it in a safety cage that you choose to close or open this is a chrome extension ",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-28T19:04:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "inside-music",
+                "description": "Inside Music lets you step inside of a song, seeing its individual pieces to give you a closer look at how music is made.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2018-02-13T20:41:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pdf-to-tts",
+                "description": "it only works on books with mostly txt or all txt ",
+                "stargazers_count": 5,
+                "language": "Kotlin",
+                "pushed_at": "2025-08-05T10:06:39Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:31.591360+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

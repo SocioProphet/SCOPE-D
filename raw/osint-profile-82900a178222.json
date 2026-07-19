@@ -1,0 +1,360 @@
+{
+  "profileId": "osint-profile-82900a178222",
+  "target": "bytenol",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:52.764641+00:00",
+  "completedAt": "2026-06-20T16:49:53.486256+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3f2c86d0",
+      "lookupType": "github_context",
+      "target": "bytenol",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "bytenol",
+            "name": "The Coding Verdict",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "All commits are legally binding unless rebased by order of Git court.",
+            "public_repos": 26,
+            "followers": 697,
+            "following": 576,
+            "created_at": "2021-06-17T08:15:47Z",
+            "updated_at": "2026-06-09T12:29:11Z",
+            "html_url": "https://github.com/bytenol",
+            "avatar_url": "https://avatars.githubusercontent.com/u/86046484?v=4",
+            "repos": [
+              {
+                "name": "Periodic-Table-JSON",
+                "description": "An updated and extension of bowserinator periodic project",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-03-07T00:11:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Caldro",
+                "description": "Caldro is a HTML.5 Canvas Javascript game library",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-05T20:02:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mayhemCpp",
+                "description": "Collection of cool opengl based stuffs",
+                "stargazers_count": 10,
+                "language": "C++",
+                "pushed_at": "2024-08-15T23:45:59Z",
+                "fork": false,
+                "topics": [
+                  "3d",
+                  "cpp",
+                  "game",
+                  "game-engine",
+                  "gamedev",
+                  "gamedevelopment",
+                  "mathematics",
+                  "opengl",
+                  "physics-simulation"
+                ]
+              },
+              {
+                "name": "Antoinette",
+                "description": "A collection of chemistry api and tools for learners",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-13T23:29:28Z",
+                "fork": false,
+                "topics": [
+                  "atom",
+                  "chemistry",
+                  "chemistry-development-kit",
+                  "chemistry-education",
+                  "chemistry-formulas",
+                  "chemistry-game",
+                  "chemistry-lab",
+                  "chemistry-molecule",
+                  "chemistry-solver",
+                  "science",
+                  "scientific-visualization"
+                ]
+              },
+              {
+                "name": "MetalBall-Crush-3D",
+                "description": "An native game clone of the popular stack ball 3d game on playstore written in c++ and compiled to wasm with emscripten",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2024-09-15T17:20:33Z",
+                "fork": false,
+                "topics": [
+                  "emscripten-game",
+                  "emscripten-port",
+                  "game-development",
+                  "gamedev",
+                  "opengl",
+                  "opengl-es",
+                  "opengl-game"
+                ]
+              },
+              {
+                "name": "Weblanius",
+                "description": "My web based misc projects",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-08T22:10:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Physics-for-Cpp-Games-with-OpenGL",
+                "description": "Physics Implementation for games and animations using Opengl3.3",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2024-10-11T19:55:07Z",
+                "fork": false,
+                "topics": [
+                  "physics",
+                  "physics-2d",
+                  "physics-3d",
+                  "physics-analysis",
+                  "physics-based",
+                  "physics-based-animation",
+                  "physics-simulation"
+                ]
+              },
+              {
+                "name": "Dl2Hub",
+                "description": "A collection of some cool SDL2 games and animations",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-28T16:33:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Running-Santa-3D",
+                "description": "A running santa game",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-22T01:42:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Running-Santa",
+                "description": "A 3d game featuring an endless running santa - made in opengl",
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2024-12-29T15:50:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FlappyBird",
+                "description": "A simple yet addictive clone of the classic Flappy Bird game built using Godot C#. Navigate the bird through a series of pipes by tapping or pressing a key to keep it afloat. The game gets progressively more challenging as you try to beat your highest score.",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-01-04T22:29:53Z",
+                "fork": false,
+                "topics": [
+                  "flappy-bird",
+                  "flappy-bird-clone",
+                  "game-development",
+                  "godot-engine",
+                  "godot4"
+                ]
+              },
+              {
+                "name": "Lavoisian",
+                "description": "Chemistry API",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2025-02-28T17:54:38Z",
+                "fork": false,
+                "topics": [
+                  "chemistry",
+                  "chemistry-development-kit",
+                  "chemistry-education",
+                  "chemistry-formulas",
+                  "chemistry-game",
+                  "chemistry-solver",
+                  "emscripten",
+                  "webassembly"
+                ]
+              },
+              {
+                "name": "Lavoisian-Qt",
+                "description": "This is an attempt to build the world's largest open source free science tools for schools. The primary platform for now is desktop (crossplatform). web version failed multiple times so lol",
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2025-04-04T17:12:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Reponimation",
+                "description": "idk ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-04-04T20:02:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Qt6-Quick",
+                "description": "idk",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-04-04T22:02:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hackerank-Solution",
+                "description": "A solution of my hackerank problems",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2025-05-20T17:18:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Classic-Chess",
+                "description": "The chess game",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2025-05-24T20:40:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tetris",
+                "description": "A tetris clone made with Godot",
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2025-06-28T15:30:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Linkly",
+                "description": "A simple Url Shortener app that runs on django",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-08-09T01:14:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Physeks",
+                "description": "A lightweight physics engine",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-01-28T18:39:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Painter2",
+                "description": "An opengl 4 based rendering engine",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-02-28T05:13:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SDL3-Hub",
+                "description": "Just some of my worthy sharing sdl3 games and animations",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2026-03-31T05:20:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bytenol.github.io",
+                "description": "My website",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-05-02T23:56:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Lavoisian-Web",
+                "description": "Lavoisian web",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-09T22:46:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PidginLingo",
+                "description": "A dictionary app for the pidgin language",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-05-04T04:00:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bytenol",
+                "description": "my website",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-06-01T13:43:49Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:53.484703+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

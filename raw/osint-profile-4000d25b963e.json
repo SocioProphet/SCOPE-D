@@ -1,0 +1,343 @@
+{
+  "profileId": "osint-profile-4000d25b963e",
+  "target": "ArefMq",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:50.329552+00:00",
+  "completedAt": "2026-06-21T15:28:51.167454+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ca7a1183",
+      "lookupType": "github_context",
+      "target": "ArefMq",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ArefMq",
+            "name": "Aref Mehr",
+            "type": "User",
+            "company": "@aeguana",
+            "blog": "https://arefmq.github.io/",
+            "location": "London, UK",
+            "bio": "Preferred Pronunciation: /'\u00e6r\u025bf/",
+            "public_repos": 30,
+            "followers": 3145,
+            "following": 21844,
+            "created_at": "2015-02-07T15:38:54Z",
+            "updated_at": "2026-04-30T17:35:51Z",
+            "html_url": "https://github.com/ArefMq",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10897992?v=4",
+            "repos": [
+              {
+                "name": "ArefMq.github.io",
+                "description": "My personal Github page",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2026-04-30T17:35:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "camshell",
+                "description": "CamShell, A simple way to stream a camera as ASCII art directly in a terminal.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-03-13T10:01:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "home_setup",
+                "description": "My home computer setup.",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-01-20T10:00:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tiny-prob",
+                "description": "TinyProb is a tool, letting user add visualized debug prob to their python code.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-08-26T10:52:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "to3d_desktop",
+                "description": "Desktop Application for To3D Project",
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2020-03-07T10:35:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cap_solver",
+                "description": "Solving CAPTCHA using Convolutional Neural Network",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2019-12-06T10:34:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple-nn",
+                "description": "Simple Neural Network Implementation",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2020-01-21T21:03:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "action-recognition-via-snn",
+                "description": "Human Action (Hand Gestures) Recognition with Spiking Neural Network",
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2026-05-28T14:42:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML-Project",
+                "description": "Statistical Learning Course Final Project",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2019-09-10T10:40:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BMS-Core",
+                "description": "BMS Core for adib/sorosh project",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2022-04-22T21:21:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "autonomous-vehicle",
+                "description": "A test iteration for autonomous vehicle",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2020-04-29T17:08:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "autoencoder-test",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2019-02-13T17:28:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spp",
+                "description": "S, and S++ Language Compiler",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2019-01-22T16:54:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SoccerBallDataSet",
+                "description": "Data set of soccer ball",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2019-03-26T12:40:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SoccerBallDetection",
+                "description": "This project is aimed to detect the soccer ball via camera. This project orginally is to solve the ball detection problem for the humanoid robots (Humanoid league and SPL) in RoboCup competitions.",
+                "stargazers_count": 30,
+                "language": "C++",
+                "pushed_at": "2019-04-06T08:24:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RandomWalker",
+                "description": "JS Implementation of the Random Walker Algorithm",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2017-12-11T09:23:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cafe-data-contest",
+                "description": "House Price prediction - A project for Divar-Data contest in CafeBazaar",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2018-01-08T08:53:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sentiment-Detection",
+                "description": "Implementation of Sentiment Detection on reviews from imdb using Keras",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2020-01-13T11:06:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "uNEAT",
+                "description": "Micro Neuro-Evolution of Augmenting Topologies (NEAT) Framework in Python",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2018-07-08T07:01:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SPLBallPreceptor",
+                "description": "White ball (RoboCup 2016 official ball) preceptor patch for B-Human code release 2013.",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2016-06-08T13:08:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Face-and-Emotion-Recognition",
+                "description": "Realtime person's face recognize and can classify emotion using webcam, video or images.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2018-10-29T14:11:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SPLCommunicationTester",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2016-04-01T19:41:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LinuxDaemon",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2015-08-05T12:46:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "goalPerceptor",
+                "description": "Goal post perceptor module. This module is developed in/for B-Human framework.",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2015-07-21T10:54:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PaintBallApp",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2017-08-17T10:34:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PSO-sample",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Matlab",
+                "pushed_at": "2015-12-22T17:28:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MRLVR17",
+                "description": "MRL Virtual Robot Rescue Simulation 2017 RoboCup",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2017-08-24T12:07:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "potree",
+                "description": "WebGL point cloud viewer for large datasets",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2016-01-28T12:19:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VoronoiGridEditor",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2015-03-11T15:48:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django-phonebook",
+                "description": "Phonebook is a simple Django app to manage contacts (lastname, firstname, mail, phone, mobile phone) and integred click2call.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2015-06-27T08:12:12Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:51.166730+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

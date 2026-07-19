@@ -1,0 +1,327 @@
+{
+  "profileId": "osint-profile-c9e010bfbbec",
+  "target": "joaocarpim",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:14.263559+00:00",
+  "completedAt": "2026-06-21T15:29:15.024913+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-01e2b5ec",
+      "lookupType": "github_context",
+      "target": "joaocarpim",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "joaocarpim",
+            "name": "joao souza",
+            "type": "User",
+            "company": "T4EGroup",
+            "blog": "https://t4egroup.com.br/",
+            "location": "Sorocaba SP- Brazil",
+            "bio": "Desenvolvedor de sistemas full-stack constru\u00eddos com forte base de 5 anos em python, java, React, API REST, AWS e agentes de AI. Portal para projetos pessoais",
+            "public_repos": 22,
+            "followers": 2827,
+            "following": 2564,
+            "created_at": "2022-07-13T14:08:21Z",
+            "updated_at": "2026-06-06T15:27:35Z",
+            "html_url": "https://github.com/joaocarpim",
+            "avatar_url": "https://avatars.githubusercontent.com/u/109227675?v=4",
+            "repos": [
+              {
+                "name": "botBuscaNum",
+                "description": "LeadHunter Maps PRO \u00e9 um scraper desktop em Python (PySide6 + Selenium) que automatiza o Google Maps, coleta telefones e links, usa modo headless, anti-bot e valida\u00e7\u00e3o deduplicada.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-02-13T07:17:50Z",
+                "fork": false,
+                "topics": [
+                  "dotenv",
+                  "pyside6",
+                  "python",
+                  "selenium-webdriver"
+                ]
+              },
+              {
+                "name": "joaocarpim",
+                "description": null,
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2026-05-20T01:52:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ASAC",
+                "description": "App educacional Braille, desenvolvido para a ASAC (Associa\u00e7\u00e3o Sorocabana de Atividades para Deficientes Visuais). ",
+                "stargazers_count": 33,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-07T18:44:40Z",
+                "fork": true,
+                "topics": [
+                  "aws",
+                  "aws-amplify",
+                  "aws-dynamodb",
+                  "aws-lambda",
+                  "javascript",
+                  "react-native",
+                  "tailwind",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "analyzeGitHub",
+                "description": "Projeto que analisa perfis do GitHub com IA, gera insights, score de empregabilidade.",
+                "stargazers_count": 32,
+                "language": "CSS",
+                "pushed_at": "2026-03-10T15:19:12Z",
+                "fork": false,
+                "topics": [
+                  "groq-api",
+                  "llm",
+                  "mvp-architecture",
+                  "reactjs",
+                  "typescript",
+                  "vercel-deployment"
+                ]
+              },
+              {
+                "name": "remakeCPS",
+                "description": "Este projeto \u00e9 uma recria\u00e7\u00e3o do front-end do site da FATEC, inspirado na disciplina da minha faculdade em Intera\u00e7\u00e3o Humano-Computador (IHC). O objetivo \u00e9 melhorar a interface e a usabilidade do site.",
+                "stargazers_count": 11,
+                "language": "CSS",
+                "pushed_at": "2026-03-03T17:17:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pokemonUnite_js",
+                "description": "Este projeto foi desenvolvido para fornecer uma interface onde voc\u00ea pode explorar informa\u00e7\u00f5es detalhadas sobre os Pok\u00e9mon dispon\u00edveis no jogo.",
+                "stargazers_count": 9,
+                "language": "CSS",
+                "pushed_at": "2024-07-04T02:55:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pokemonUnite_Eduzz",
+                "description": "Este projeto \u00e9 uma Pok\u00e9dex interativa para o jogo Pok\u00e9mon Unite, onde os jogadores podem explorar informa\u00e7\u00f5es detalhadas sobre os Pok\u00e9mon dispon\u00edveis no jogo, incluindo habilidades, evolu\u00e7\u00f5es e muito mais.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2024-07-04T02:58:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "robocode_CPS",
+                "description": "Robo Wrecker na vers\u00e3o final, ficou em terceiro lugar representando a Etec Fernando Prestes nas competi\u00e7\u00f5es de Robocode do Centro Paula Souza.",
+                "stargazers_count": 10,
+                "language": "Java",
+                "pushed_at": "2024-07-04T03:11:08Z",
+                "fork": false,
+                "topics": [
+                  "estrutura-de-dados",
+                  "java-8",
+                  "robocode-advancedrobot",
+                  "robocode-competition"
+                ]
+              },
+              {
+                "name": "blog_saude-Projeto-acad",
+                "description": "O projeto de Trabalho de Conclus\u00e3o de Curso (TCC) foi iniciado por um grupo composto por membros da mesma turma da faculdade. Fui convidado a implementar melhorias tanto em termos de est\u00e9tica quanto de funcionalidade e acessibilidade.",
+                "stargazers_count": 10,
+                "language": "PHP",
+                "pushed_at": "2024-07-04T03:13:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mernReact",
+                "description": "Curso Fullstack semana da tecnologia fatec",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-09T19:51:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "qihome",
+                "description": "Meu projeto de Trabalho de Conclus\u00e3o de Curso (TCC) foi iniciado por um grupo composto por membros da mesma turma da faculdade. Consiste num projeto IOT que representaria um sistema de comunica\u00e7\u00f5es de seguran\u00e7a para casas de bairros menos favorecidos de Sorocaba podendo ser monitorado em um site, mostrando o estado on/off dos sensores.",
+                "stargazers_count": 10,
+                "language": "PHP",
+                "pushed_at": "2024-07-04T03:18:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TAPWM",
+                "description": "Onde ter\u00e1 todas as atividades acad\u00eamicas do TAPWM",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-30T21:13:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ihcCliente",
+                "description": "O sistema foi desenvolvido como um CRUD completo utilizando ASP.NET MVC e Entity Framework. A aplica\u00e7\u00e3o oferece uma interface pr\u00e1tica e funcional para facilitar a administra\u00e7\u00e3o de dados essenciais de uma empresa, proporcionando um gerenciamento fluido e simplificado de informa\u00e7\u00f5es importantes.",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2024-12-09T18:55:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "phishing-RastreadorFast",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-09T04:18:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ViajaForumTAP",
+                "description": "ViajaForum \u00e9 um projeto de estudo proposto pelo professor Andr\u00e9. Consiste em um f\u00f3rum desenvolvido com Laravel.",
+                "stargazers_count": 10,
+                "language": "PHP",
+                "pushed_at": "2024-12-10T03:31:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pentestWeb",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "PHP",
+                "pushed_at": "2025-08-27T19:05:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "phishing-facebook",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-09T05:10:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "exercicioaws",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-09-01T20:51:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AMS_HoldCrypto",
+                "description": "Plataforma completa de simula\u00e7\u00e3o de troca de criptomoedas",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-16T20:22:19Z",
+                "fork": false,
+                "topics": [
+                  "csharp",
+                  "dotnet9",
+                  "entity-framework-core",
+                  "fastapi",
+                  "microservicos",
+                  "nextjs",
+                  "openapi",
+                  "python",
+                  "react-native",
+                  "recharts",
+                  "regex",
+                  "sqlite",
+                  "swagger",
+                  "tailwindcss",
+                  "typescript",
+                  "zustand"
+                ]
+              },
+              {
+                "name": "WhatsAppBotPro",
+                "description": "Automa\u00e7\u00e3o desktop de alta performance para envio massivo de mensagens. Desenvolvido em Python, Selenium e PySide6 (Interface Dark), simula navega\u00e7\u00e3o humana segura. Conecte via QR Code, insira a lista de alvos e execute. Inclui logs em tempo real, delay anti-bloqueio e sess\u00e3o persistente.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-02-15T04:43:35Z",
+                "fork": false,
+                "topics": [
+                  "pyside6",
+                  "python",
+                  "qss-design",
+                  "qthread",
+                  "selenium-webdriver"
+                ]
+              },
+              {
+                "name": "agentAIWhatsApp",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-02-28T18:06:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quizwoman",
+                "description": "Por ser dia das mulheres, desenvolvi uma plataforma de quiz que identifica qual mulher hist\u00f3rica o usu\u00e1rio representa analisando a personalidade.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-09T04:32:48Z",
+                "fork": false,
+                "topics": [
+                  "apirest",
+                  "express",
+                  "nodejs",
+                  "postgresql",
+                  "prisma",
+                  "reactjs"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:15.024109+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

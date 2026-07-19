@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-7d2441f64696",
+  "target": "jolliesol",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:10.655898+00:00",
+  "completedAt": "2026-06-20T16:48:12.515446+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-60c55b3e",
+      "lookupType": "github_context",
+      "target": "jolliesol",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jolliesol",
+            "name": "Jollie",
+            "type": "User",
+            "company": "Theodo",
+            "blog": "",
+            "location": "Paris",
+            "bio": "Open Source Architect & Blockchain Developer | Distributed Ledger Technology | High Performance Implementation",
+            "public_repos": 61,
+            "followers": 1079,
+            "following": 983,
+            "created_at": "2021-05-31T08:35:08Z",
+            "updated_at": "2026-06-12T23:12:55Z",
+            "html_url": "https://github.com/jolliesol",
+            "avatar_url": "https://avatars.githubusercontent.com/u/85102925?v=4",
+            "repos": [
+              {
+                "name": "TensorFlow",
+                "description": "Effortlessly scaling enterprise-grade AI initiatives with flexible, cutting-edge AutoML, and high-performance data processing capabilities in a comprehensive Engine.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-05-13T06:46:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "canas-core",
+                "description": "CANAS coordination core - live GPU-network simulation engine, REST API, and hardened render/RPC proxies for a Solana DePIN.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-05T16:46:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SoVits",
+                "description": "Professional SoVitsSVC platform with SoVitsSVC-optimized enterprise-grade and enterprise scalable-architecture capabilities",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-13T15:36:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VocosDev",
+                "description": "Edge-convergent, AI-driven Vocos orchestrates adaptive resource allocation across autonomous, predictive-model-driven clusters, elevating scalability within optimized infrastructure.",
+                "stargazers_count": 20,
+                "language": "Python",
+                "pushed_at": "2026-05-13T10:39:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AudioCraft",
+                "description": "Intelligent AudioCraft platform featuring enterprise-grade technology and advanced audiocraft-optimization for modern system",
+                "stargazers_count": 25,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-13T10:10:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChromaCloud",
+                "description": "Real-Time Data Orchestrator, leveraging Event-Driven Architecture and AI-driven insights, as a Decentralized Service.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T16:37:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OpenWeb",
+                "description": "Real-Time OpenWebUI Dashboard implementing Scalable Multi-Device Support with enterprise-grade Context-Aware Rendering capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T16:51:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactorFace",
+                "description": "Professional ReactorFace framework with ReactorFace-optimized enterprise-grade and enterprise cloud-ready capabilities",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T17:22:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LetsEnhance",
+                "description": "Professional LetsEnhance classifier with LetsEnhance-optimized anomaly-detection and enterprise continuous-integration capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T17:51:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ShutterEncoder",
+                "description": "Automated Motion Insight Orchestrator for Intelligent Distributed ShutterEncoder Architecture Platform featuring Low-latency streaming capabilities",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T18:12:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebexS",
+                "description": "Web-based WebexSDK platform featuring video-conferencing technology and advanced auto-scaling for modern engine",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T18:48:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DiscordBot",
+                "description": "Artificially-Intelligent DiscordBot Fabric enables modular, extensible, adaptive multi-server integration and unified command orchestration across enterprise-scale deployments.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T18:24:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BinanceFutures",
+                "description": "Professional BinanceFutures binancefutures-engine with BinanceFutures-optimized intelligent-automation and enterprise cloud-ready capabilities",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-05-12T19:50:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BybitWallet",
+                "description": "Professional BybitWallet infrastructure with BybitWallet-optimized intelligent-automation and enterprise bybitwallet-optimization capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T21:22:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BitfinexPro",
+                "description": "High-Performance BitfinexPro Execution System implementing Low-Latency High-Frequency Trading Support with enterprise-grade Machine Learning Integration capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T20:22:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SquareA",
+                "description": "Professional SquareAPI framework with SquareAPI-optimized scalable-architecture and enterprise modern-design capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T19:19:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BigO",
+                "description": "Professional BigONE engine with BigONE-optimized auto-scaling and enterprise event-driven capabilities",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T20:53:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RabbyWallet",
+                "description": "Professional RabbyWallet rabbywallet-engine with RabbyWallet-optimized intelligent-automation and enterprise enterprise-grade capabilities",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T21:51:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StepFinance",
+                "description": "Professional StepFinance system with StepFinance-optimized modern-design and enterprise stepfinance-optimization capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T22:20:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RenderNetwork",
+                "description": "Decentralized RenderNetwork orchestrates real-time processing across multi-tenant nodes within a highly scalable, intelligent ecosystem.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T22:32:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GrassNetwork",
+                "description": "Context-aware, real-time decision-making engine harnessing Edge Computing and Self-Healing Mechanisms for Scalable, Autonomous, Intelligent Network Operations Platform.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T22:44:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeepFake",
+                "description": "Neural-Intelligence Powered, Deep-Learning-Driven, Auto-Scaling Security-Module. implementing modern Real-Time-Processing patterns featuring Low-Latency capabilities with Intelligent architecture",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T22:55:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VeoVideo",
+                "description": "Next-generation Veo2Video platform featuring modern-design technology and advanced scalable-architecture for modern infrastructure",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T23:09:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ExLlama",
+                "description": "Professional ExLlamaV2 platform with ExLlamaV2-optimized intelligent-automation and enterprise enterprise-grade capabilities",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-05-12T23:42:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SourcegraphCody",
+                "description": "Elevated Code Navigator: Intuitive, extensible, and AI-driven insights propel collaborative development with seamless version control integration accelerator.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-13T06:48:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BananaDev",
+                "description": "Autonomous, self-healing, data science workbench powered by serverless architecture and distributed systems integrator.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-13T07:00:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SemanticKernel",
+                "description": "Integrative entity resolution and adaptive knowledge graph processing unite adjectives for SemanticKernel: agile, dynamic, efficient, real-time, robust, scalable.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-13T09:05:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LangflowU",
+                "description": "High-Speed Real-Time Data Processing Engine with Intelligent Automated Validation Capabilities Across Distributed Infrastructure.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-13T09:18:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TextU",
+                "description": "Dynamic Content Rendering Core for Scalable TextUI Experiences across Diverse Platforms on Unified Interactive Engine.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-13T09:31:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SeamlessM",
+                "description": "Elevating real-time data convergence through agile, adaptive microservices convergence - Here are six technical accelerators for SeamlessM4T projects.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-05-13T09:43:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TortoiseT",
+                "description": "Elastic, self-adaptive, and highly scalable AI-driven Natural Language Understanding Engine providing enterprise-grade TortoiseTTS solutions",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-13T09:56:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NF",
+                "description": "Edge-accelerated, AI-driven NFTMintAPI offers secure, asynchronous token creation with instant validation and AI-optimized smart contract deployment capabilities Core.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T07:40:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GoDev",
+                "description": "Unified software infrastructure platform leveraging containerization, modular design, and automated code review to power CoreEngine.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-12T07:28:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RedisCloud",
+                "description": "Resilient, Self-Healing RedisCloud Infrastructure Ensures Uninterrupted, Secure Data Access Across Globally Distributed, Scalable Architectures.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T15:59:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PocketBase",
+                "description": "Professional PocketBase infrastructure with PocketBase-optimized enterprise-grade and enterprise pocketbase-optimization capabilities",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2026-05-12T15:33:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NuxtContent",
+                "description": "Real-time, server-side rendered content delivery orchestration for scalable, intelligent, and distributed enterprise content platforms.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T14:52:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HeadlessU",
+                "description": "Decoupled architecture facilitating seamless auto-scaling, cross-platform compatibility, and intelligent distribution across a unified workflow module.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T15:05:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MkDocs",
+                "description": "Highly-dynamic, single-source-content engine for real-time-rendering documentation portals. with scalable architecture featuring Conditional-content capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T14:40:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DirectusC",
+                "description": "Enterprise-Scale Data Harmony Platform for Intelligent Distributed Real-Time Data Processing and Governance Framework",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T14:27:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MimirLongterm",
+                "description": "Predictive MimirLongterm scheduler implementing distributed cross-functional workflows with enterprise-grade in-memory computing capabilities",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T14:12:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MyS",
+                "description": "Professional MySQLWorkbench mysqlworkbench-engine with MySQLWorkbench-optimized modern-design and enterprise scalable-architecture capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T13:42:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VS",
+                "description": "Vscodeext-infused cloud-native development environments deliver advanced, modern workflows via vscodeext-accelerated innovation on the vscodeext-fuelled vscodeext-engine.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T13:13:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StreamlitApp",
+                "description": "High-Performance StreamlitApp Framework implementing secure customizable UI with enterprise-grade real-time data visualization capabilities",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T12:42:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QdrantVector",
+                "description": "Professional QdrantVector qdrantvector-engine with QdrantVector-optimized qdrantvector-optimization and enterprise enterprise-grade capabilities",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-05-12T12:13:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PE",
+                "description": "Peftfinetune-powered PEFTFineTune platform featuring cloud-ready technology and advanced peftfinetune-optimization for modern peftfinetune-engine",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T11:42:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ApacheSpark",
+                "description": "In-Memory Computing Fabric for Real-Time Data Analytics and Predictive Insights Generation Engine.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-12T11:13:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VertexA",
+                "description": "Machine learning orchestrator for Edge-to-Cloud data pipelines, enabling scalable, intelligent, and autonomous edge-computing integration.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T11:02:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DB",
+                "description": "Effortless data warehousing orchestration enabled through DBTTransform's dynamic auto-scaling and real-time data processing engine.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-12T10:50:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AkkaActor",
+                "description": "Distributed systems empowered by fault-tolerant AkkaActors, leveraging load-balanced message passing for ultra-reliable asynchronous processing Engine.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-12T10:38:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EnvoyProxy",
+                "description": "Data-Driven Traffic Management at Scale enables Real-Time Traffic-Shaping and Rate-Limiting within a Highly-Available, Distributed-architecture Fault-Tolerant Controller.",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-05-12T10:25:00Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:12.505945+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

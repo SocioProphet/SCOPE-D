@@ -1,0 +1,651 @@
+{
+  "profileId": "osint-profile-e0b9be79523a",
+  "target": "lucasrmagalhaes",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:07.543931+00:00",
+  "completedAt": "2026-06-21T15:28:09.130013+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-43fc2c11",
+      "lookupType": "github_context",
+      "target": "lucasrmagalhaes",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "lucasrmagalhaes",
+            "name": "Lucas Magalh\u00e3es",
+            "type": "User",
+            "company": "@Fiergs",
+            "blog": "https://magalhaes.dev/",
+            "location": "Canoas, RS - Brazil",
+            "bio": "Full Stack Developer | AI Engineer",
+            "public_repos": 199,
+            "followers": 4646,
+            "following": 16829,
+            "created_at": "2018-09-15T13:44:42Z",
+            "updated_at": "2026-06-10T12:51:54Z",
+            "html_url": "https://github.com/lucasrmagalhaes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/43296467?v=4",
+            "repos": [
+              {
+                "name": "git-gitHub",
+                "description": "Git e GitHub - Comandos e conceitos.",
+                "stargazers_count": 89,
+                "language": null,
+                "pushed_at": "2023-03-13T19:41:16Z",
+                "fork": false,
+                "topics": [
+                  "alura",
+                  "dio",
+                  "git",
+                  "github"
+                ]
+              },
+              {
+                "name": "desafios-DIO",
+                "description": "Resolu\u00e7\u00e3o dos desafios de C Sharp, Java, JavaScript, Kotlin e Ruby da Digital Innovation One.",
+                "stargazers_count": 345,
+                "language": "C#",
+                "pushed_at": "2022-03-23T00:39:52Z",
+                "fork": false,
+                "topics": [
+                  "bootcamp",
+                  "challenges",
+                  "challenges-solved",
+                  "csharp",
+                  "desafios",
+                  "desafios-resolvidos",
+                  "digital-innovation-one",
+                  "dio",
+                  "java",
+                  "js",
+                  "kotlin",
+                  "ruby"
+                ]
+              },
+              {
+                "name": "05-nest-clean",
+                "description": "M\u00f3dulo de NestJS da trilha de Node.js do Ignite.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-01-19T19:14:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "snake-js",
+                "description": "Nost\u00e1lgico jogo da cobrinha em JavaScript.",
+                "stargazers_count": 36,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-27T10:24:26Z",
+                "fork": false,
+                "topics": [
+                  "dio",
+                  "js",
+                  "snake-game"
+                ]
+              },
+              {
+                "name": "threads_windowsForms-csharp",
+                "description": "C# - Trabalhando com Threads",
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2022-06-08T00:06:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lucasrmagalhaes",
+                "description": "My presentation. :computer: \ud83c\udfc6",
+                "stargazers_count": 23,
+                "language": null,
+                "pushed_at": "2026-02-16T15:10:17Z",
+                "fork": false,
+                "topics": [
+                  "lucasrmagalhaes",
+                  "overview",
+                  "welcome"
+                ]
+              },
+              {
+                "name": "notebooklm-ia",
+                "description": "NotebookLM: Seu Assistente de Pesquisa Personalizado",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-12T16:13:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "learning-COBOL",
+                "description": "Meus primeiros passos no COBOL. :hourglass_flowing_sand:",
+                "stargazers_count": 9,
+                "language": "COBOL",
+                "pushed_at": "2021-01-12T15:56:24Z",
+                "fork": false,
+                "topics": [
+                  "alura",
+                  "cbl",
+                  "cob",
+                  "cobol",
+                  "xcode",
+                  "youtube"
+                ]
+              },
+              {
+                "name": "trilha-python-dio",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-18T21:58:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "daily_diet-py",
+                "description": "API para controle de dieta di\u00e1ria utilizando Python.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-10-29T15:05:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Multipurpose-Laravel9-and-Vue3-Application",
+                "description": "Multipurpose Laravel9 and Vue3 Application. This is a part of tutorial series on Youtube.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-03-10T15:55:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FC3-admin-catalogo-de-videos-php",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-25T13:03:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tasks-flask-crud",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-26T17:43:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ignite-java-gestao-vagas",
+                "description": "Projeto desenvolvido na Forma\u00e7\u00e3o Java",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-03-18T19:47:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lab-natty-or-not",
+                "description": "Lab \"Natural ou Fake Natty? Como Vencer na Era das IAs Generativas!\"",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-06-04T05:31:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dio-modelagem-iphone-uml",
+                "description": "Lab Project - Modelando o iPhone com UML: Fun\u00e7\u00f5es de M\u00fasicas, Chamadas e Internet",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-17T04:37:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "introduction-webAR_development",
+                "description": "Introduction to Web AR development",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-05T03:40:34Z",
+                "fork": false,
+                "topics": [
+                  "udemy",
+                  "webar"
+                ]
+              },
+              {
+                "name": "ignite-challenge-solution-reactjs-todo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-10-20T20:18:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ignite-challenge-solution-reactjs-coffee-delivery",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-17T18:45:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "imc-flutter",
+                "description": "IMC - Flutter",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2023-11-13T22:59:20Z",
+                "fork": false,
+                "topics": [
+                  "flutter",
+                  "imc",
+                  "ulbra"
+                ]
+              },
+              {
+                "name": "interface_nubank-flutter",
+                "description": "Interface do Nubank com Flutter",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2023-11-10T02:16:40Z",
+                "fork": false,
+                "topics": [
+                  "flutter",
+                  "nubank-interface"
+                ]
+              },
+              {
+                "name": "alvaras_farmaceuticos-html_css",
+                "description": "Plataforma de Alvar\u00e1s Farmac\u00eauticos",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-11-21T00:00:34Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap5",
+                  "css3",
+                  "html5",
+                  "ulbra"
+                ]
+              },
+              {
+                "name": "rounded_gradient_borders-css",
+                "description": "Rounded Gradient Borders using CSS",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2023-10-17T01:13:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "locadora_carros-php_vue",
+                "description": "Sistema de Loca\u00e7\u00e3o de Carros com PHP, Laravel e Vue.js.",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2024-03-29T07:10:12Z",
+                "fork": false,
+                "topics": [
+                  "laravel",
+                  "php",
+                  "vuejs"
+                ]
+              },
+              {
+                "name": "learning-node",
+                "description": "Learning Node.js",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2023-07-18T19:55:26Z",
+                "fork": false,
+                "topics": [
+                  "express",
+                  "jasmine",
+                  "linkedin-learning",
+                  "mongoose",
+                  "socket-io"
+                ]
+              },
+              {
+                "name": "introducaoPraticaAoTypeScript-ts",
+                "description": " Introdu\u00e7\u00e3o Pr\u00e1tica ao TypeScript",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-03-15T20:37:01Z",
+                "fork": false,
+                "topics": [
+                  "dio",
+                  "js",
+                  "ts"
+                ]
+              },
+              {
+                "name": "crud_alunos-php",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2024-11-06T20:50:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "excel_spreadsheet-php",
+                "description": "PHP Spreadsheet",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2024-11-18T20:12:35Z",
+                "fork": false,
+                "topics": [
+                  "phpspreadsheet"
+                ]
+              },
+              {
+                "name": "crud_series-php_laravel",
+                "description": "Laravel: crie aplica\u00e7\u00f5es web em PHP",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-14T02:20:11Z",
+                "fork": false,
+                "topics": [
+                  "alura",
+                  "crud",
+                  "laravel",
+                  "mvc",
+                  "php",
+                  "series"
+                ]
+              },
+              {
+                "name": "primeiro_mergulho-nextjs",
+                "description": "Next.js: Primeiro mergulho no framework",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-24T22:49:28Z",
+                "fork": false,
+                "topics": [
+                  "alura",
+                  "nextjs",
+                  "react"
+                ]
+              },
+              {
+                "name": "aluracord_hobbit-react_next",
+                "description": "Projeto criado na Imers\u00e3o React com a @alura, @omariosouto e @peas.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-24T22:42:18Z",
+                "fork": false,
+                "topics": [
+                  "alura",
+                  "aluracord",
+                  "aluracord-hobbit",
+                  "hobbit",
+                  "imersao-alura",
+                  "imersao-react",
+                  "nextjs",
+                  "react"
+                ]
+              },
+              {
+                "name": "cursoCompletoDePHP7-php",
+                "description": "Curso Completo de PHP 7",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2024-04-25T22:24:59Z",
+                "fork": false,
+                "topics": [
+                  "dao",
+                  "git",
+                  "github",
+                  "hcode",
+                  "pdo",
+                  "php",
+                  "udemy"
+                ]
+              },
+              {
+                "name": "desafio_reestruturacao-react",
+                "description": "Desafio: Refactoring de classes e TypeScript",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-11-12T03:20:59Z",
+                "fork": false,
+                "topics": [
+                  "ignite",
+                  "rocketseat",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "desafio_carrinho-react",
+                "description": "Desafio: Criando um hook de carrinho de compras.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-11-12T03:17:21Z",
+                "fork": false,
+                "topics": [
+                  "challenge",
+                  "ignite",
+                  "rocketseat"
+                ]
+              },
+              {
+                "name": "testesUnitarios-java",
+                "description": "Desenvolvimento de testes unit\u00e1rios para validar uma API REST de gerenciamento de estoques de cerveja.",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2024-08-26T16:41:54Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "beer",
+                  "dio",
+                  "test"
+                ]
+              },
+              {
+                "name": "langchain_agentes-python",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-07T14:38:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "api_criptomoedas-js",
+                "description": "Buscando dados da API: Coin Market Cap.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2020-10-24T20:09:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chatBotTelegram-js",
+                "description": "Construindo um ChatbotFit no Telegram com JavaScript e NodeJS.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-12T02:22:12Z",
+                "fork": false,
+                "topics": [
+                  "chatbot",
+                  "dialogflow",
+                  "dio",
+                  "js",
+                  "nodejs",
+                  "npmjs"
+                ]
+              },
+              {
+                "name": "desafios-URI_beecrowd",
+                "description": "Resolu\u00e7\u00e3o dos desafios de PHP e JS do URI Online Judge - beecrowd.",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2022-08-22T00:40:41Z",
+                "fork": false,
+                "topics": [
+                  "beecrowd",
+                  "js",
+                  "php",
+                  "uri-online-judge"
+                ]
+              },
+              {
+                "name": "langchain-ia",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-17T18:07:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "i18n-flutter",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-29T04:38:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dio-flutter",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-02-23T14:08:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "navegacao-flutter",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-12T13:32:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lista_compras-flutter",
+                "description": "Para o curso de Flutter: persist\u00eancia de dados com Drift e Hive",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-02-20T18:39:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "couchbase-flutter",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-15T13:46:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nvm-node",
+                "description": "Principais comandos do Node Version Manager.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-09-11T12:39:51Z",
+                "fork": false,
+                "topics": [
+                  "nodejs",
+                  "nvm"
+                ]
+              },
+              {
+                "name": "apple_deploy-flutter",
+                "description": "Deploy do Flutter na Apple.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-09-05T18:04:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fundamentos-react",
+                "description": "React JS Curso R\u00e1pido \u269b\ufe0f Masterclass e Gerador de QR Code.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T22:30:26Z",
+                "fork": false,
+                "topics": [
+                  "cod3r",
+                  "herokuapp",
+                  "qrcode",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "form_de_cadastro-react",
+                "description": "React: Function Components, uma abordagem moderna.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T22:26:22Z",
+                "fork": false,
+                "topics": [
+                  "alura",
+                  "react"
+                ]
+              },
+              {
+                "name": "react-native-dropdown-select-list",
+                "description": "\u261d\ufe0f React Native Select List Equivalent to Html's  Select with options\"",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-10T14:12:29Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:09.129539+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

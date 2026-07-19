@@ -1,0 +1,222 @@
+{
+  "profileId": "osint-profile-99cccaf6a2de",
+  "target": "amirallami-code",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:52.846888+00:00",
+  "completedAt": "2026-06-21T15:32:53.304018+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e5a57d3e",
+      "lookupType": "github_context",
+      "target": "amirallami-code",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "amirallami-code",
+            "name": "Amirhossein Allami",
+            "type": "User",
+            "company": "127.0.0.1",
+            "blog": "amirallami.com",
+            "location": "Shiraz, Iran",
+            "bio": "Front-end enthusiast by day, algorithm adventurer by night.",
+            "public_repos": 10,
+            "followers": 1278,
+            "following": 1093,
+            "created_at": "2023-01-21T18:49:04Z",
+            "updated_at": "2026-06-17T00:50:41Z",
+            "html_url": "https://github.com/amirallami-code",
+            "avatar_url": "https://avatars.githubusercontent.com/u/123266762?v=4",
+            "repos": [
+              {
+                "name": "amirallami-code",
+                "description": null,
+                "stargazers_count": 27,
+                "language": null,
+                "pushed_at": "2025-11-26T16:26:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "selection-sorting-algorithm",
+                "description": "This project provides a visual and interactive implementation of the Selection Sort algorithm, designed to help users understand how this sorting method works in practice.",
+                "stargazers_count": 34,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-19T16:54:18Z",
+                "fork": false,
+                "topics": [
+                  "algorithm",
+                  "algorithms",
+                  "selection-algorithm",
+                  "selection-sort-in-javascript",
+                  "sorting-algorithms"
+                ]
+              },
+              {
+                "name": "binary-search-algorithm",
+                "description": "This repository houses a robust implementation of the binary search algorithm. Binary search is a highly efficient method for locating an item in a sorted list by systematically dividing the search interval in half.",
+                "stargazers_count": 49,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-23T15:32:16Z",
+                "fork": false,
+                "topics": [
+                  "algorthims",
+                  "binary-search-algorithm",
+                  "binary-search-tree",
+                  "javascript",
+                  "js"
+                ]
+              },
+              {
+                "name": "amirallami.com",
+                "description": "A modern, responsive portfolio website showcasing my skills as a Frontend Developer and Graphic Designer.",
+                "stargazers_count": 37,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-05T00:12:25Z",
+                "fork": false,
+                "topics": [
+                  "aceternity-ui",
+                  "lucide-react",
+                  "nextjs",
+                  "reactjs",
+                  "sentry",
+                  "shadcn-ui",
+                  "tailwindcss",
+                  "typescript",
+                  "vercel"
+                ]
+              },
+              {
+                "name": "rock-paper-scissors-game",
+                "description": "Rock, Paper, Scissors is a classic hand game that has been played for generations. It's a simple yet entertaining way to make quick decisions or settle disputes.",
+                "stargazers_count": 28,
+                "language": "CSS",
+                "pushed_at": "2025-06-23T15:33:45Z",
+                "fork": false,
+                "topics": [
+                  "game",
+                  "javascript",
+                  "js",
+                  "rock-paper-scissors"
+                ]
+              },
+              {
+                "name": "framer-landing-page",
+                "description": "A modern, responsive SaaS landing page built with Next.js 15, TypeScript, and Tailwind CSS.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-15T14:59:12Z",
+                "fork": false,
+                "topics": [
+                  "framer-motion",
+                  "lucide-react",
+                  "nextjs",
+                  "npm",
+                  "npmjs",
+                  "shadcn-ui",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "ai-resume-analyzer",
+                "description": "AI-powered Resume Analyzer built with React & Puter.js. Includes seamless auth, upload and store resumes, and match candidates to jobs using smart AI evaluations. All wrapped in a clean, reusable UI.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-14T11:29:28Z",
+                "fork": false,
+                "topics": [
+                  "puter",
+                  "puterjs",
+                  "react",
+                  "react19",
+                  "reactjs",
+                  "typescript",
+                  "zustand"
+                ]
+              },
+              {
+                "name": "license-guide",
+                "description": "A comprehensive guide to understanding, choosing, and applying software licenses",
+                "stargazers_count": 50,
+                "language": null,
+                "pushed_at": "2024-10-06T19:20:54Z",
+                "fork": false,
+                "topics": [
+                  "guide",
+                  "license",
+                  "license-checking",
+                  "license-guide",
+                  "licenses",
+                  "mit-license",
+                  "open-source"
+                ]
+              },
+              {
+                "name": "language-translator",
+                "description": "This project provides a user-friendly interface for translating text between multiple languages. It leverages the Google Translate API to deliver accurate translations while maintaining a clean, intuitive user experience.",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-23T15:35:38Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "javascript",
+                  "language-translator",
+                  "translator",
+                  "translator-app"
+                ]
+              },
+              {
+                "name": "daisyui",
+                "description": "\ud83c\udf3c \ud83c\udf3c \ud83c\udf3c \ud83c\udf3c \ud83c\udf3c \u2003The most popular, free and open-source Tailwind CSS component library",
+                "stargazers_count": 3,
+                "language": "Svelte",
+                "pushed_at": "2025-11-17T00:58:15Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:53.303490+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

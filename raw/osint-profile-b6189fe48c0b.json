@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-b6189fe48c0b",
+  "target": "jinsouI",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:57.582598+00:00",
+  "completedAt": "2026-06-21T15:32:57.898772+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e3262221",
+      "lookupType": "github_context",
+      "target": "jinsouI",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jinsouI",
+            "name": null,
+            "type": "User",
+            "company": "talk 2 me PLS i ont bite i swwear\ud83d\ude4f\ud83d\ude4f i want friends... poor ugly thing \ud83e\udd79\ud83e\udd79",
+            "blog": "230thanos.straw.page",
+            "location": "mostly afk!!!!1 c+h always plspls unless im w my friends hheh.",
+            "bio": "I Looove whc And sfh \ud83e\udef0",
+            "public_repos": 1,
+            "followers": 1259,
+            "following": 3310,
+            "created_at": "2022-10-05T00:28:26Z",
+            "updated_at": "2025-09-05T23:29:32Z",
+            "html_url": "https://github.com/jinsouI",
+            "avatar_url": "https://avatars.githubusercontent.com/u/115050764?v=4",
+            "repos": [
+              {
+                "name": "jinsouI",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-01-22T05:47:50Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:57.898061+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

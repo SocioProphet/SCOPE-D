@@ -1,0 +1,262 @@
+{
+  "profileId": "osint-profile-a02f8cd55a6a",
+  "target": "D-Gaspa",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:08.015355+00:00",
+  "completedAt": "2026-06-20T16:49:08.626244+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-9223122b",
+      "lookupType": "github_context",
+      "target": "D-Gaspa",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "D-Gaspa",
+            "name": "Diego Gasparis Escobedo",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Computer Engineering Grad",
+            "public_repos": 21,
+            "followers": 811,
+            "following": 763,
+            "created_at": "2021-09-16T22:19:00Z",
+            "updated_at": "2026-05-27T15:06:04Z",
+            "html_url": "https://github.com/D-Gaspa",
+            "avatar_url": "https://avatars.githubusercontent.com/u/90874078?v=4",
+            "repos": [
+              {
+                "name": "court-shuffle",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-20T22:15:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "2DAnimationSystem",
+                "description": "C# Windows Forms application for creating, manipulating and animating custom 2D graphics with keyframe-based animation tools.",
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2024-05-10T01:12:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BattleShip_Game",
+                "description": "Battleship Game in C using the concepts learned in the Operating System's class (processes, signals, alarms, threads, etc.)",
+                "stargazers_count": 6,
+                "language": "C",
+                "pushed_at": "2024-05-09T05:28:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "structlog_config",
+                "description": "A flexible configuration system for structured logging in Python using `structlog` and the standard library logging. This package provides a clean, type-safe interface for setting up logging with both file and console outputs.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-02-21T07:51:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "doc_wallet",
+                "description": "Secure document wallet with smart expiration alerts",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-13T00:33:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GingaGame",
+                "description": "Ginga Game: A cosmic, strategic adventure game where players merge planets, implemented in MonoGame.",
+                "stargazers_count": 12,
+                "language": "C#",
+                "pushed_at": "2024-05-10T01:28:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "enhanced_SDES",
+                "description": "Enhanced S-DES: A Python implementation of the Simplified Data Encryption Standard (S-DES) with additional security layers. Features columnar transposition and shift row operations for improved encryption strength. Includes a user-friendly CLI for easy encryption and decryption of messages.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-10-17T16:35:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LeetCodeSolutionsWebsite",
+                "description": "A web application for displaying and managing LeetCode problem solutions.",
+                "stargazers_count": 5,
+                "language": "Vue",
+                "pushed_at": "2024-10-14T05:35:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "InteractiveTreeVisualizer",
+                "description": "Interactive Tree Visualizer built with HTML, CSS, and JavaScript: A web-based tool for creating, visualizing, and manipulating hierarchical data structures. Features include dynamic node creation and editing, advanced collision detection, customizable appearance with highlight options, state persistence, and high-quality PNG export options.",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-09T03:05:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-readme-stats",
+                "description": ":zap: Dynamically generated stats for your github readmes",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-18T00:22:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "InteractiveArrayVisualizer",
+                "description": "Interactive Array Visualizer built with HTML, CSS, and JavaScript: A web-based tool for visualizing and manipulating array data structures. Features include dynamic multi-array support, custom color schemes, selective operations, and PNG export. Perfect for developers and students learning about array manipulations and transformations.",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2024-07-20T08:22:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LeetCodeExercises",
+                "description": "Comprehensive documentation of LeetCode solutions, including weekly premium and daily exercises. Features multiple approaches, detailed explanations, complexity analyses, and code walkthroughs for each problem. Visit the page below for the full documentation website.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2024-07-28T05:10:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Uni-Park",
+                "description": "UniPark is a React Native mobile app improving parking management at UDLAP campus. It offers real-time parking availability, reporting tools, ticket management, and a personalized user experience. The app is cross-platform, user-friendly, and leverages Firebase for secure data handling.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-11T04:45:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "D-Gaspa",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-07-24T00:24:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Analizador-Lex",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2024-05-11T22:36:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ClassificationContest",
+                "description": "Comparative evaluation of Detectron2-based object detection models for real-time animal classification in video footage, showcasing precision, recall, and F1 score analyses.",
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-11-21T16:53:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "root-finder",
+                "description": "A Python-based tool for swiftly pinpointing the roots of mathematical equations. Supports Bisection, Newton, Secant, and more. Input, select, and see your function's roots visualized in real-time. ",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-05-10T00:59:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Animal-BoVW-Classifier",
+                "description": "Animal image classification using the BoVW technique. Features multi-stage preprocessing, including enhancement and filtering. Incorporates an ablation study and BRISQUE assessment on 50 images.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-05-10T00:39:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Datapath-for-simple-CPU",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-05-11T22:59:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "maybe",
+                "description": "The OS for your personal finances",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-23T13:46:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kickstart.nvim",
+                "description": "A launch point for your personal nvim configuration",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-20T22:16:35Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:08.625606+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

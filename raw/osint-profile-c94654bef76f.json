@@ -1,0 +1,576 @@
+{
+  "profileId": "osint-profile-c94654bef76f",
+  "target": "Oussama1403",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:35.750639+00:00",
+  "completedAt": "2026-06-20T16:48:36.753837+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6dbdc2ce",
+      "lookupType": "github_context",
+      "target": "Oussama1403",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Oussama1403",
+            "name": "Oussama Ben Sassi",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Gafsa-Tunisia",
+            "bio": "Research Master\u2019s Student in Intelligent Systems | Aspiring AI Researcher \ud83d\udda4",
+            "public_repos": 37,
+            "followers": 970,
+            "following": 1963,
+            "created_at": "2020-05-07T22:42:22Z",
+            "updated_at": "2026-06-19T10:22:20Z",
+            "html_url": "https://github.com/Oussama1403",
+            "avatar_url": "https://avatars.githubusercontent.com/u/64992449?v=4",
+            "repos": [
+              {
+                "name": "Image-Classification-with-CIFAR-10",
+                "description": "A project to study and test deep learning architectures on the CIFAR\u201110 dataset to deepen my understanding of deep learning.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-11T23:27:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HRMS",
+                "description": "Human resources management system (HRMS) using Flask and SQLite 3",
+                "stargazers_count": 18,
+                "language": "CSS",
+                "pushed_at": "2024-11-11T15:54:58Z",
+                "fork": false,
+                "topics": [
+                  "employee-management",
+                  "flask",
+                  "flask-login",
+                  "flask-sqlalchemy",
+                  "full-stack-web-development",
+                  "human-resources-management-system",
+                  "python",
+                  "sqlite3"
+                ]
+              },
+              {
+                "name": "Hybrid-AE-MSCNN-IDS-NSLKDD",
+                "description": "Hybrid AE-MSCNN for binary zero-day network intrusion detection on the NSL-KDD benchmark.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-07T20:57:25Z",
+                "fork": false,
+                "topics": [
+                  "autoencoder",
+                  "cnn",
+                  "intrusion-detection-system",
+                  "nsl-kdd"
+                ]
+              },
+              {
+                "name": "CareerPath",
+                "description": "An internship management platform that uses AI to provide recommendations and candidate previews through a web\u2011based system.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-05T00:42:18Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "internship-management"
+                ]
+              },
+              {
+                "name": "MULTI-OBJECTIVE-OPTIMIZATION-USING-IBEA-ON-ZDT-BENCHMARK",
+                "description": "Implementation of the Indicator\u2011Based Evolutionary Algorithm (IBEA) on the ZDT benchmark suite with JMetal 5.11.",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2026-06-06T18:52:23Z",
+                "fork": false,
+                "topics": [
+                  "multi-objective-optimization",
+                  "optimization",
+                  "optimization-algorithms"
+                ]
+              },
+              {
+                "name": "NeuroRisk-AI",
+                "description": "NeuroRisk AI is a FastAPI-based machine learning system that predicts stroke risk using logistic regression, data preprocessing, and local AI-generated medical explanations.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-16T10:53:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CogniPlay",
+                "description": "An offline Flutter app that uses AI to support cognitive screening through game\u2011based local assessments.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-05-16T11:19:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Navigation-Assistance-System-Project",
+                "description": "The Indoor and outdoor Navigation Assistance System aims to provide blind or visually impaired individuals with comprehensive navigation support in indoor and outdoor environments",
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2025-06-16T11:19:10Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "iot"
+                ]
+              },
+              {
+                "name": "PacketSniffer",
+                "description": "Arp spoofing tool for linux",
+                "stargazers_count": 21,
+                "language": "Python",
+                "pushed_at": "2021-08-28T12:07:03Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "dns",
+                  "hacking",
+                  "hacking-tool",
+                  "http",
+                  "network",
+                  "pyqt5",
+                  "python",
+                  "sniff"
+                ]
+              },
+              {
+                "name": "CodewarsChallenges",
+                "description": "My solutions for codewars coding challenges.",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2022-09-18T14:05:30Z",
+                "fork": false,
+                "topics": [
+                  "challenges",
+                  "challenges-solved",
+                  "codewars",
+                  "coding",
+                  "competitive-programming",
+                  "javascript",
+                  "python"
+                ]
+              },
+              {
+                "name": "FiscAssistant",
+                "description": "FiscAssistant is a multilingual intelligent chatbot developed with FastAPI and powered by the Nous-Hermes-2 model, running locally. It provides comprehensive assistance with fiscal declarations, simulations, legal obligations, and personalized tax guidance in French, English, Arabic, and Tunisian dialect.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-04T20:07:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Encipherr",
+                "description": "Open Source online AES encryption and decryption tool",
+                "stargazers_count": 48,
+                "language": "HTML",
+                "pushed_at": "2023-12-24T19:47:23Z",
+                "fork": false,
+                "topics": [
+                  "aes-encryption",
+                  "bootstrap",
+                  "decrypt",
+                  "encipherr",
+                  "encrypt",
+                  "flask",
+                  "fullstack",
+                  "python",
+                  "security",
+                  "web",
+                  "webapplication",
+                  "website"
+                ]
+              },
+              {
+                "name": "NLP-for-Team-Sentiment-Analysis",
+                "description": "NLP analysis of messages and emails to measure team sentiment.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-04T20:51:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SololearnChallenges",
+                "description": "My solutions for sololearn coding challenges.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2021-08-05T22:25:21Z",
+                "fork": false,
+                "topics": [
+                  "challenges",
+                  "competitive-programming",
+                  "programming",
+                  "python",
+                  "sololearn"
+                ]
+              },
+              {
+                "name": "Heart-Disease-Detection",
+                "description": "A Flask web application that uses a machine learning model to predict the likelihood of heart disease based on various medical features.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-04-23T01:29:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JavaWork",
+                "description": "practice java programming language.",
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2021-02-12T16:55:04Z",
+                "fork": false,
+                "topics": [
+                  "challenges",
+                  "java",
+                  "learn-to-code",
+                  "practice-programming",
+                  "sololearn"
+                ]
+              },
+              {
+                "name": "PacketSender",
+                "description": "flood a network with so much traffic that it cannot operate or communicate as it normally.",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2021-08-27T09:54:24Z",
+                "fork": false,
+                "topics": [
+                  "ddos",
+                  "linux",
+                  "network",
+                  "pyqt",
+                  "python",
+                  "wifi",
+                  "windows"
+                ]
+              },
+              {
+                "name": "NetworkUtilities",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2022-03-19T11:16:10Z",
+                "fork": false,
+                "topics": [
+                  "arp-spoofing",
+                  "ddos",
+                  "newtork",
+                  "nmap",
+                  "python",
+                  "python-nmap",
+                  "scan"
+                ]
+              },
+              {
+                "name": "Machine-Learning-with-Python",
+                "description": "This repository contains Jupyter Notebook labs for the \"Machine Learning with Python\" course by IBM on Coursera",
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2024-07-19T21:51:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Introduction-to-Neural-Networks-and-PyTorch",
+                "description": "This repository contains Jupyter Notebook labs for the \"Introduction to Neural Networks and PyTorch\" course by IBM on Coursera",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-11-03T10:14:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Online-Fitness-Tracking-App",
+                "description": "Beautiful and Simple Online Fitness Tracking App using Flask, Vue.js, Bootstrap and MongoDB.",
+                "stargazers_count": 9,
+                "language": "Vue",
+                "pushed_at": "2024-10-04T20:43:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Flask-Vuejs-Auth",
+                "description": "A minimal Flask-Vue app with JWT authentication and MongoDB integration.",
+                "stargazers_count": 7,
+                "language": "Vue",
+                "pushed_at": "2024-08-26T10:30:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Deep-Learning-with-Tensorflow",
+                "description": "This repository contains Jupyter Notebook labs for the \"Deep Learning with Tensorflow\" course by IBM on Edx.",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-09-14T11:50:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fitness-Tracking-Android-App",
+                "description": "A simple native Android app for basic fitness tracking with authentication, data entry, and dashboard views, built as a university project",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2024-12-16T19:11:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChatBot",
+                "description": "Chatbot with Flask, Vue.js, MongoDB, Gemini API, featuring user authentication and a clean, responsive UI",
+                "stargazers_count": 7,
+                "language": "Vue",
+                "pushed_at": "2025-01-02T17:42:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KivyCalculator",
+                "description": "Simple kivy project to help new kivy users build android apps with python.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2021-07-22T13:55:49Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "desktop",
+                  "framework",
+                  "gui",
+                  "kivy",
+                  "linux",
+                  "python",
+                  "windows"
+                ]
+              },
+              {
+                "name": "pyscript-projects",
+                "description": "this repo will contain some of my projects using the new framework PyScript.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-08-20T10:37:46Z",
+                "fork": false,
+                "topics": [
+                  "html",
+                  "javascript",
+                  "pyscript",
+                  "python",
+                  "web-application"
+                ]
+              },
+              {
+                "name": "SystemMonitor",
+                "description": "Python script and a PyQt5 program to monitor ram and cpu usage along with disk usage.",
+                "stargazers_count": 26,
+                "language": "Python",
+                "pushed_at": "2022-09-09T14:04:27Z",
+                "fork": false,
+                "topics": [
+                  "cpu",
+                  "disk",
+                  "gui",
+                  "monitor-ram",
+                  "pyqt",
+                  "python",
+                  "systemmonitor"
+                ]
+              },
+              {
+                "name": "Pyscript-Offline",
+                "description": "Installable PyScript application that runs offline.",
+                "stargazers_count": 19,
+                "language": "HTML",
+                "pushed_at": "2022-08-05T21:53:27Z",
+                "fork": false,
+                "topics": [
+                  "html",
+                  "js",
+                  "pyodide",
+                  "pyscript",
+                  "python",
+                  "web"
+                ]
+              },
+              {
+                "name": "QtDarkTheme",
+                "description": "Modern Dark theme for Qt Apps",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2021-07-29T09:22:09Z",
+                "fork": false,
+                "topics": [
+                  "cpp",
+                  "dark",
+                  "darktheme",
+                  "pyqt",
+                  "pyqt5",
+                  "qt",
+                  "stylesheet"
+                ]
+              },
+              {
+                "name": "custom-offline-page",
+                "description": "Show a really simple offline html page when there is no internet connection.",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2022-03-21T13:50:41Z",
+                "fork": false,
+                "topics": [
+                  "custom-offline-page",
+                  "html",
+                  "javascript",
+                  "offline",
+                  "server",
+                  "service-worker",
+                  "web"
+                ]
+              },
+              {
+                "name": "CodewarsKataExporter",
+                "description": "Export solved codewars kata challenges to a text file.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2021-08-01T19:55:27Z",
+                "fork": false,
+                "topics": [
+                  "beautifulsoup4",
+                  "challenges",
+                  "codewars",
+                  "competitive-programming",
+                  "kata",
+                  "python",
+                  "webscraping"
+                ]
+              },
+              {
+                "name": "BS-OCR",
+                "description": "PyQt5 program that helps you extract text from images using Optical Character Recognition.",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2021-07-28T09:43:18Z",
+                "fork": false,
+                "topics": [
+                  "ocr",
+                  "pyqt",
+                  "pytesseract",
+                  "python3",
+                  "qt",
+                  "text"
+                ]
+              },
+              {
+                "name": "FlaskWithSocketIo",
+                "description": "mini flask project to show how to use socketio with flask framework to exchange data between server and client.",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2021-07-12T19:05:33Z",
+                "fork": false,
+                "topics": [
+                  "client",
+                  "flask",
+                  "fullstack",
+                  "javascript",
+                  "python",
+                  "server",
+                  "socket-io",
+                  "web",
+                  "webdevelopment"
+                ]
+              },
+              {
+                "name": "PyQt5-SortNumbers",
+                "description": "small PyQt5 program to sort numbers in ascending/descending order to help new devs learn PyQt5 framework.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2021-07-30T23:12:19Z",
+                "fork": false,
+                "topics": [
+                  "pyqt5",
+                  "python",
+                  "sorting"
+                ]
+              },
+              {
+                "name": "Flask-PWA",
+                "description": "a progressive web app with flask framework to be used as a template for new flask projects.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2021-09-06T18:24:57Z",
+                "fork": false,
+                "topics": [
+                  "flask",
+                  "javascript",
+                  "progressive-web-app",
+                  "pwa",
+                  "python",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "Encipherr-CLI",
+                "description": "a CLI version of Encipherr web app.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2022-01-01T17:49:50Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "command-line-interface",
+                  "encipherr",
+                  "python"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:36.752876+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

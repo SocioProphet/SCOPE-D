@@ -1,0 +1,136 @@
+{
+  "profileId": "osint-profile-d6691b7ccf32",
+  "target": "iousuz",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:07.083154+00:00",
+  "completedAt": "2026-06-21T15:30:07.543883+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-57115e77",
+      "lookupType": "github_context",
+      "target": "iousuz",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "iousuz",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "@DUETDUCK \u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0  \u00a0\u00a0\u00a0  \u00a0\u00a0\u00a0  \u00a0\u00a0 \u00a0\u00a0\u00a0 \u00a0 \u00a0  \u00a0 \u00a0 \u00a0                 \u00a0\u00a0\u00a0  \u00a0 \u00a0 \u00a0\u00a0  ",
+            "public_repos": 7,
+            "followers": 2180,
+            "following": 29334,
+            "created_at": "2024-05-16T06:53:29Z",
+            "updated_at": "2026-06-19T04:52:00Z",
+            "html_url": "https://github.com/iousuz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/169976903?v=4",
+            "repos": [
+              {
+                "name": "iousuz",
+                "description": "https://files.catbox.moe/h1zmtt.gif",
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2026-06-16T20:32:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DUETDUCK-1",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-06-16T20:02:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sultonbektoxirboyev",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-03-20T08:42:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "starfollower",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-09-19T14:38:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nyko",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-01-23T16:33:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "5wagmaster",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-02-24T13:08:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "duetduck",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-02-25T03:19:49Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:07.542844+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

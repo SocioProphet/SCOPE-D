@@ -1,0 +1,109 @@
+{
+  "profileId": "osint-profile-647d9c411e5d",
+  "target": "jelspace",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:02.124723+00:00",
+  "completedAt": "2026-06-21T15:28:02.509336+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-73aa48a2",
+      "lookupType": "github_context",
+      "target": "jelspace",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jelspace",
+            "name": "21world",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Who not work will not Eat ][Basic  Income(free money and all time free) monetization][ vs ][Employment(exchange your time for money) monetization][",
+            "public_repos": 4,
+            "followers": 5632,
+            "following": 123316,
+            "created_at": "2017-04-10T11:42:29Z",
+            "updated_at": "2026-06-19T12:32:14Z",
+            "html_url": "https://github.com/jelspace",
+            "avatar_url": "https://avatars.githubusercontent.com/u/27209430?v=4",
+            "repos": [
+              {
+                "name": "world_ai_flasher",
+                "description": null,
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2025-06-07T19:35:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRECOMPUTED-AI-WEIGHTS",
+                "description": "PRECOMPUTED AI WEIGHTS,INSTANT RESULT ",
+                "stargazers_count": 30,
+                "language": null,
+                "pushed_at": "2025-06-07T19:30:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "for-sponsors-only-hidden-repos-list",
+                "description": null,
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2024-10-20T19:53:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "browser.c",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "C",
+                "pushed_at": "2025-06-07T19:13:25Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:02.508562+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

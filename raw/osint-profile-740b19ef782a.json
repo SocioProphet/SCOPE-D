@@ -1,0 +1,647 @@
+{
+  "profileId": "osint-profile-740b19ef782a",
+  "target": "abdulrdeveloper",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:50.904012+00:00",
+  "completedAt": "2026-06-21T15:30:51.692433+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3d90aa2b",
+      "lookupType": "github_context",
+      "target": "abdulrdeveloper",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "abdulrdeveloper",
+            "name": "Abdul Rahman",
+            "type": "User",
+            "company": "abdulrdeveloper",
+            "blog": "http://abdulrdeveloper.me/",
+            "location": "Sheikhupura Punjab Pakistan",
+            "bio": "Full-stack developer focused on building clean web apps. I enjoy collaborating with other devs and shipping things that solve real problems.",
+            "public_repos": 34,
+            "followers": 1801,
+            "following": 2003,
+            "created_at": "2025-08-23T16:13:41Z",
+            "updated_at": "2026-06-12T17:06:50Z",
+            "html_url": "https://github.com/abdulrdeveloper",
+            "avatar_url": "https://avatars.githubusercontent.com/u/228225682?v=4",
+            "repos": [
+              {
+                "name": "abdulrdeveloper",
+                "description": "A clean and modern GitHub portfolio card template \u2013 fully customizable, easy to use, and perfect for showcasing your professional profile. Fork or adapt for your own GitHub readme or personal branding.",
+                "stargazers_count": 26,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-21T04:54:52Z",
+                "fork": false,
+                "topics": [
+                  "github-profile",
+                  "javascript",
+                  "modern-ui",
+                  "personal-branding",
+                  "portfolio",
+                  "portfolio-site",
+                  "profile-card",
+                  "react",
+                  "readme-template",
+                  "responsive-design",
+                  "template"
+                ]
+              },
+              {
+                "name": "klar",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T18:57:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "personal-chatbot-AI",
+                "description": "Personal-Chatbot-AI",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-15T18:52:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Learn-SQL",
+                "description": "Comprehensive resources and practical PLpgSQL examples to learn and practice SQL database fundamentals from scratch.",
+                "stargazers_count": 14,
+                "language": "PLpgSQL",
+                "pushed_at": "2026-06-13T19:13:45Z",
+                "fork": false,
+                "topics": [
+                  "backend",
+                  "database",
+                  "education",
+                  "learning",
+                  "plpgsql",
+                  "postgresql",
+                  "sql"
+                ]
+              },
+              {
+                "name": "predefined-chatbot",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-13T18:51:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Chai-aur-React",
+                "description": "Hands-on React learning project focused on understanding core React concepts through practical examples and component-based development.",
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-24T08:12:22Z",
+                "fork": false,
+                "topics": [
+                  "chai",
+                  "components",
+                  "education",
+                  "frontend",
+                  "javascript",
+                  "learning",
+                  "practice-project",
+                  "react",
+                  "tutorial",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "chailearn",
+                "description": "An interactive resource for learning front-end development concepts step by step, with practical examples and modern web technologies.",
+                "stargazers_count": 18,
+                "language": "CSS",
+                "pushed_at": "2026-05-24T08:15:26Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "education",
+                  "frontend",
+                  "html",
+                  "interactive",
+                  "javascript",
+                  "learning",
+                  "practice",
+                  "react",
+                  "tutorial",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "DevScope",
+                "description": "DevScope is a minimal developer dashboard built with Next.js 15 and TypeScript. Search any GitHub user's stats, track real-time weather worldwide, explore curated dev tools \u2014 all behind a secure token-based auth system with Zod validation.",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-04T01:33:46Z",
+                "fork": false,
+                "topics": [
+                  "authentication",
+                  "dashboard",
+                  "developer-tools",
+                  "form-validation",
+                  "github-api",
+                  "middleware",
+                  "nextjs",
+                  "react",
+                  "tailwindcss",
+                  "typescript",
+                  "weather-app",
+                  "zod"
+                ]
+              },
+              {
+                "name": "React-Foundations",
+                "description": "Collection of foundational React examples, components, and learning resources for mastering the basics.",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T17:04:56Z",
+                "fork": false,
+                "topics": [
+                  "components",
+                  "examples",
+                  "foundation",
+                  "frontend",
+                  "learn-to-code",
+                  "library",
+                  "react",
+                  "reactjs",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "Meals-Listing-Interface-API",
+                "description": "Web app and API for browsing, listing, and managing meals with user-friendly features and clean UI.",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T16:57:25Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "food",
+                  "javascript",
+                  "listing",
+                  "meals",
+                  "ui",
+                  "web-app",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "user-card-freeapi",
+                "description": "A mini-project to fetch and display user card information from a public API, showcasing dynamic frontend integration.",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T17:03:24Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "freeapi",
+                  "frontend",
+                  "javascript",
+                  "react",
+                  "user-card",
+                  "vite",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "Color-Palette-Generator",
+                "description": "Easy-to-use tool to generate and customize appealing color palettes for designers and developers.",
+                "stargazers_count": 8,
+                "language": "CSS",
+                "pushed_at": "2026-05-24T08:14:58Z",
+                "fork": false,
+                "topics": [
+                  "color",
+                  "css",
+                  "generator",
+                  "javascript",
+                  "palette",
+                  "web-tool"
+                ]
+              },
+              {
+                "name": "Dynamic-List-Creator",
+                "description": "A handy web tool for creating, managing, and customizing dynamic lists with a modern and interactive interface.",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T17:16:46Z",
+                "fork": false,
+                "topics": [
+                  "dynamic",
+                  "interactive",
+                  "javascript",
+                  "list",
+                  "tools",
+                  "ui",
+                  "web-app"
+                ]
+              },
+              {
+                "name": "TicTacToe",
+                "description": "A modern Tic-Tac-Toe game built with React, featuring interactive UI and game logic in JavaScript and CSS.",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-24T08:15:59Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "game",
+                  "javascript",
+                  "react",
+                  "tic-tac-toe",
+                  "web"
+                ]
+              },
+              {
+                "name": "first-contributions",
+                "description": "\ud83d\ude80\u2728 Help beginners to contribute to open source projects",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-05-15T11:27:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cohort-2-Git-GitHub",
+                "description": "Beginner-friendly resources and exercises for mastering Git and GitHub version control, suitable for students and new developers.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-16T20:00:47Z",
+                "fork": false,
+                "topics": [
+                  "beginner",
+                  "git",
+                  "github",
+                  "learning",
+                  "resources",
+                  "tutorial",
+                  "version-control"
+                ]
+              },
+              {
+                "name": "Mintlify-Clone-Cohort-2026",
+                "description": "Frontend project replicating features and design of Mintlify, focused on modern UI and responsive web development.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2026-02-06T12:07:05Z",
+                "fork": false,
+                "topics": [
+                  "clone",
+                  "css",
+                  "frontentd",
+                  "mintlify",
+                  "responsive",
+                  "ui",
+                  "web"
+                ]
+              },
+              {
+                "name": "portfolio-assignment-using-html",
+                "description": "A basic yet effective portfolio website built with pure HTML to showcase skills and projects.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2026-02-10T12:29:59Z",
+                "fork": false,
+                "topics": [
+                  "basics",
+                  "core",
+                  "foundation",
+                  "html",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "Dynamic-Toggle-Button",
+                "description": "A customizable and reusable toggle button component for modern web applications, built for seamless UI interactions.",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T17:45:37Z",
+                "fork": false,
+                "topics": [
+                  "button",
+                  "component",
+                  "frontend",
+                  "interactive",
+                  "javascript",
+                  "toggle",
+                  "ui"
+                ]
+              },
+              {
+                "name": "Tailwind-Complete-Guide",
+                "description": "Comprehensive resource and code samples for mastering Tailwind CSS, from basics to advanced techniques.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-16T17:13:18Z",
+                "fork": false,
+                "topics": [
+                  "cdn",
+                  "css",
+                  "frontend",
+                  "guide",
+                  "modern-frontend-stack",
+                  "tailwindcss",
+                  "vite",
+                  "web",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "react-refresher-M",
+                "description": "Quick React refresher featuring hands-on examples, components, and key React concepts for everyday use.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-16T17:06:08Z",
+                "fork": false,
+                "topics": [
+                  "component",
+                  "foundation",
+                  "javascript",
+                  "practice",
+                  "react",
+                  "refresher"
+                ]
+              },
+              {
+                "name": "Cat-Viewer-API",
+                "description": "RESTful API for browsing and retrieving cat images and data, designed for quick integration and demo usage.",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2026-05-24T08:10:21Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "cats-api",
+                  "images",
+                  "javascript",
+                  "react",
+                  "rest-api",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "Quotes-Listing-Application",
+                "description": "Browse and organize favorite quotes with this simple and intuitive web app featuring add and search capabilities.",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T16:58:17Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "javascript",
+                  "quotes",
+                  "quotes-api",
+                  "quotes-application",
+                  "react",
+                  "ui",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "Jokes-Viewer-Application",
+                "description": "Fun web app to view, fetch, and share random jokes using modern JavaScript and responsive design.",
+                "stargazers_count": 4,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T16:59:11Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "fun",
+                  "javascript",
+                  "jokes",
+                  "jokes-api",
+                  "react",
+                  "web-app"
+                ]
+              },
+              {
+                "name": "Product-explorer-api",
+                "description": "REST API backend for exploring and managing product data with efficient endpoints and flexible search.",
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T16:56:43Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "backend",
+                  "express",
+                  "nodejs",
+                  "products",
+                  "react",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "Cusror-Clone-Cohort-2026",
+                "description": "A frontend project inspired by Cursor, built for learning and practicing modern web development techniques.",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-05-16T17:13:59Z",
+                "fork": false,
+                "topics": [
+                  "clone",
+                  "css",
+                  "frontend",
+                  "javascript",
+                  "learning",
+                  "practice",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "currency-converter",
+                "description": "Built real-time currency converter supporting 150+ global currencies with REST API integration - Designed responsive glassmorphic UI using Tailwind CSS, optimized performance with Vite",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-24T08:11:32Z",
+                "fork": false,
+                "topics": [
+                  "currency",
+                  "currency-converter",
+                  "currency-exchange-rates",
+                  "currency-rates",
+                  "javascript",
+                  "reactjs",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "TimeIt",
+                "description": "Precision Timer & Stopwatch app built with React. Features live clock, stopwatch, and countdown timer with React Router and responsive dark UI.",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2026-05-27T01:03:06Z",
+                "fork": false,
+                "topics": [
+                  "clock",
+                  "clock-app",
+                  "frontend",
+                  "javascript",
+                  "react-router-dom",
+                  "reactjs",
+                  "stopwatch",
+                  "timer",
+                  "timer-application",
+                  "vite",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "SEO-with-AI",
+                "description": "This project contains simple, clear notes designed for students, beginners, and developers. It bridges traditional SEO with modern AI-driven search engine algorithms.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-05-25T18:28:54Z",
+                "fork": false,
+                "topics": [
+                  "ai-seo",
+                  "ai-seo-strategies",
+                  "learn-seo",
+                  "seo",
+                  "seo-optimization",
+                  "seo-with-ai"
+                ]
+              },
+              {
+                "name": "Total-TypeScript",
+                "description": "Practical resources and code samples to advance TypeScript skills from beginner to expert.",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-24T08:14:38Z",
+                "fork": false,
+                "topics": [
+                  "advanced",
+                  "bun",
+                  "code-samples",
+                  "deno",
+                  "example",
+                  "learning",
+                  "local",
+                  "typescript",
+                  "vite",
+                  "web"
+                ]
+              },
+              {
+                "name": "Authentication-Service",
+                "description": "Secure authentication service built in TypeScript using JWT and best practices for user management.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-24T16:56:52Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "authentication",
+                  "backend",
+                  "docker",
+                  "drizzle",
+                  "drizzle-orm",
+                  "express",
+                  "javascript",
+                  "jwt",
+                  "nodejs",
+                  "security",
+                  "server",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "kanban-Board",
+                "description": "A Kanban board app for managing tasks visually with drag-and-drop functionality and a responsive UI.",
+                "stargazers_count": 12,
+                "language": "CSS",
+                "pushed_at": "2026-05-24T08:13:05Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "kanban",
+                  "kanban-board",
+                  "productivity",
+                  "tasks",
+                  "web-app"
+                ]
+              },
+              {
+                "name": "Todo-List-App-Project",
+                "description": "Simple and effective ToDo list app for organizing tasks and tracking productivity.",
+                "stargazers_count": 11,
+                "language": "CSS",
+                "pushed_at": "2026-05-16T17:09:38Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "productivity",
+                  "tasks",
+                  "todo",
+                  "todoapp",
+                  "todolist",
+                  "web"
+                ]
+              },
+              {
+                "name": "express-typeScript-server-build",
+                "description": "Boilerplate for building scalable servers using Express.js and TypeScript, ready for rapid API development.",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-16T17:06:40Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "backend",
+                  "boilerplate",
+                  "express",
+                  "server",
+                  "typescript"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:51.691596+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

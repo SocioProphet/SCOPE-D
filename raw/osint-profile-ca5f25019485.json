@@ -1,0 +1,469 @@
+{
+  "profileId": "osint-profile-ca5f25019485",
+  "target": "zkcryptweb",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:45.206368+00:00",
+  "completedAt": "2026-06-20T16:47:46.361201+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ec1735b4",
+      "lookupType": "github_context",
+      "target": "zkcryptweb",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "zkcryptweb",
+            "name": "zkcryptweb",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Lisbon",
+            "bio": "Forging Digital Worlds With Ease",
+            "public_repos": 44,
+            "followers": 1206,
+            "following": 1007,
+            "created_at": "2021-11-23T14:36:13Z",
+            "updated_at": "2026-02-15T09:55:44Z",
+            "html_url": "https://github.com/zkcryptweb",
+            "avatar_url": "https://avatars.githubusercontent.com/u/94915518?v=4",
+            "repos": [
+              {
+                "name": "HevmCraft",
+                "description": "Integrated HevmCraft HevmCraft API Platform implementing Efficient intelligent-automation with enterprise-grade high-performance capabilities",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T11:39:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EthersCraft",
+                "description": "EthersCraft software leverages cutting-edge innovations in dynamic gas optimization and high-performance node clustering, yielding advanced scalability and reliability.",
+                "stargazers_count": 26,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T17:22:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MythCraft",
+                "description": "Nexus-grade MythCraft unleashes real-time data processing with adaptive caching, forging a scalable, secure, and dynamic solution.",
+                "stargazers_count": 24,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T17:40:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FilecoinBridge",
+                "description": "Seamless Cross-Chain Data Synchronization enables Scalable, Intelligent, Distributed File Replication across the FilecoinBridge Platform.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T16:18:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VyperForge",
+                "description": "Hyper-Converged, Microservices-Based VyperForge Delivers Real-Time Security Audit Trails on a Scalable, Intelligent, Event-Driven Infrastructure.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-02-02T16:02:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AlchemyBlock",
+                "description": "Adaptive, edge-computing enabled AlchemyBlock architecture optimizes Real-Time Processing across self-healing, dynamically scalable networks to high-performance Platform.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T16:10:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RpcCraft",
+                "description": "Multi-faceted, highly concurrent, and dynamically scalable RpcCraft DataFabric ensures real-time data processing and auto-scaling.",
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T16:37:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KitHardhat",
+                "description": "Modular architecture for secure smart-contract-execution enables enterprise-grade web3-interoperability orchestrator. featuring web3-interoperability capabilities implementing modern transaction-tracking patterns",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T16:27:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KeccakCraft",
+                "description": "Cryptographically-secure KeccakCraft leverages high-speed computing for collision-resistant, highly-scalable distributed computing optimized foundations Core.",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T16:45:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GraphCraft",
+                "description": "Meta Framework for Cyber-Physical Systems Support and Predictive Maintenance Enables Scalable, Intelligent Distributed Optimizer.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T17:02:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RemixCraft",
+                "description": "Here are six technical descriptors for RemixCraft: Real-time Nexus adaptive, omnichannel, dynamic, scalable, predictive, and frictionless digital canvas.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-02-02T16:54:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CeramicCraft",
+                "description": "Real-time, Elastic, and Scalable CeramicCraft platform leveraging Stream-Processing and Multi-Threading on dedicated GPU accelerator processor.",
+                "stargazers_count": 18,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-06T00:10:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletSwarm",
+                "description": "Federated transactional sovereignty enabled through hyper-converged, autonomous wallet orchestration, facilitating scalable, secure Blockchain-based Wallet Architecture.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-02-02T10:10:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NeoEthers",
+                "description": "Powering seamless Ethereum transactions, EthersTx optimizes secure, efficient, modular workflows as a reliability catalyst.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T10:45:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UltraSlither",
+                "description": "Automated SlitherTruffle orchestrates real-time anomaly detection and adaptive clustering across scalable, intelligent distributed infrastructure.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T10:52:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HyperScribble",
+                "description": "Converged intelligence through autonomous edge meshing, harnessing predictive analytics in a scalable, distributed infrastructure platform.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T10:59:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UltraGun",
+                "description": "Dynamic Resource Orchestrator for GunSwarm, a Scalable, AI-Driven, and Distributed Real-Time Data Pipeline.",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T11:07:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QuantumForge",
+                "description": "Cloud-Synchronized, AI-Augmented Real-Time Visibility for Enterprise Applications across Multi-Cloud Environments through Intelligent Orchestration.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T11:15:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DropForge",
+                "description": "Hyperlocal Data Fabric Orchestrator enables real-time Auto-Scaling Clusters, Cloud-agnostic, containerized operations at the data Core.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-02-02T11:22:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftportDapp",
+                "description": "Decentralized NftportDapp revolutionizes cross-chain compatibility with dynamic pricing and customizable metadata templates within a scalable Ecosystem.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T11:30:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EliteThe",
+                "description": "Real-time Data Orchestration via Autonomous, Event-Driven TheGraphTrait for Decentralized Data Management on Adaptive Blockchain Platform.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T11:46:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ManifoldTx",
+                "description": "Symmetrical Processing Architecture enables flexible, modular, and concurrent data stream manipulation within the ManifoldTx NexusFramework.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T11:38:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CeramicOpensea",
+                "description": "Decentralized, event-driven, serverless architecture empowers CeramicOpensea as a robust, secure platform Kit.",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2026-02-02T11:54:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MeshEraser",
+                "description": "Data-Driven, AI-Augmented MeshEraser: A Scalable, Intelligent Distributed Platform for Spatial Analytics Suite.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T12:02:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NodeI",
+                "description": "Content-addressed data blocks persistently stored in a decentralized, scalable Distributed File System Repository.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-02-02T12:09:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletGun",
+                "description": "Enterprise-grade, cryptographically-secure, multi-currency-enabled, high-availability-designed WalletGun provides intelligent, secure, and scalable transaction management across the entire ecosystem.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T12:17:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NexSwarm",
+                "description": "Decentralized mesh network aggregator with integrated predictive analytics and network traffic harmonization engine, delivering optimized high-performance connectivity Portal",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T08:07:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CorSlang",
+                "description": "Highly scalable CorSlangCeramicDB offers real-time data analysis and reporting across distributed event-driven infrastructure.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T07:55:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZenForge",
+                "description": "Advanced enterprise-grade ZenForgeVaultHubSmart unleashes intelligent, highly available, scalable backup and recovery solutions for resilient infrastructure.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-02-02T08:20:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NovLink",
+                "description": "Optimized NovLinkAbiAbiSolidity Engine delivers autonomous, highly available, and scalable optimization through AI-driven risk management and automated execution capabilities.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2026-02-02T08:27:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DappForge",
+                "description": "Edge-Powered Decentralized Blockchain Fabric Enables High-Performance AI-Driven Security Auditing and Auto-Scaling Node Clusters as Catalyst.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2026-02-02T08:34:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TxForge",
+                "description": "Hyper-Scalable, Adaptive Transaction Fabric Enabling Real-time, Intelligent Data Processing Across a Distributed Transaction Engine.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T08:42:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TruffleChain",
+                "description": "Self-healing blockchain architecture synchronizes predictive analytics with decentralized, quantum-resistant data synchronization Studio.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T08:48:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MoralisSmart",
+                "description": "AI-Powered, Autonomous MoralisSmart Orchestrator Enables Multi-Tenancy, Self-Healing Event-Driven Processing Across Distributed Enterprise Ecosystems.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-02-02T08:55:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwarmBlock",
+                "description": "Edge-Optimized Auto-Scaling Architecture enables Distributed Ledger-based decision-making across Scalable, Nodes to Efficiently Manage Complex Workloads via Unified Controller.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2026-02-02T09:03:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ViemBridge",
+                "description": "Cloud-Agnostic ViemBridge, a high-availability, data-driven hub for intelligent, distributed enterprise applications, empowering scalable insights Gateway.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2026-02-02T09:10:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CastHardhat",
+                "description": "Containerized, Auto-Scaling, and Load Balancing enabled, Cloud-Based CastHardhat Platform for Intelligent Distributed Workloads.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-02-02T09:16:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CertoraQuick",
+                "description": "AI-Augmented Code Integrity Orchestrator for Enterprise-Scale Verification Engine implementing modern Advanced Threat Detection patterns with Compliant architecture",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-02-02T09:23:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CeramicArweave",
+                "description": "CeramicArweave: A blockchain-agnostic, event-driven platform for decentralized content-addressable storage and scalable, distributed data intelligence networks.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2026-02-02T09:31:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MeshWagmi",
+                "description": "Cloud-agnostic MeshWagmi orchestrates auto-scaling, load balancing, and event-driven architecture across a decentralized, intelligent, and highly available application platform.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-02T09:37:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RelayAnvil",
+                "description": "Effortless scalability via distributed intelligent nodes, orchestrating seamless load balancing across vast networks for a centralized Governance Manager.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-02-02T09:44:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VyperRelay",
+                "description": "Asynchronous, Distributed Edge Computing Fabric with Adaptive Load Balancing and Ultra-Low Latency Communication Orchestrator",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-02T10:17:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AlchemySync",
+                "description": "Decentralized, event-driven orchestration engine for autonomous service management, ensuring self-healing, high-availability, and adaptive resilience.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-02T10:24:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartCeramic",
+                "description": "Hyper-connected, blockchain-agnostic, collaborative platforms enabled through CeramicDapp's seamless, Web3-optimized, CeramicDapp projects: resilient, transparent, encrypted, decentralized, modular, and fault-tolerant.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-02-02T10:37:24Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:46.360270+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

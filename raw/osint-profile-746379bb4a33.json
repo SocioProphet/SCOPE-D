@@ -1,0 +1,109 @@
+{
+  "profileId": "osint-profile-746379bb4a33",
+  "target": "Chitus",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:09.131666+00:00",
+  "completedAt": "2026-06-21T15:28:09.494701+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-023cbbca",
+      "lookupType": "github_context",
+      "target": "Chitus",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Chitus",
+            "name": "Ivan Volkov",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 4,
+            "followers": 4614,
+            "following": 10203,
+            "created_at": "2017-06-21T14:11:51Z",
+            "updated_at": "2025-01-15T06:13:23Z",
+            "html_url": "https://github.com/Chitus",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29604662?v=4",
+            "repos": [
+              {
+                "name": "Chitus",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2023-01-31T06:01:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aboutme",
+                "description": "about me",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2023-01-30T02:47:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "1",
+                "description": "1",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-01-22T04:45:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chitus.github.io",
+                "description": "Chitus",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2025-01-16T04:40:05Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:09.494030+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

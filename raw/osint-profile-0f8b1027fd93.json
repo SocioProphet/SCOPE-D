@@ -1,0 +1,621 @@
+{
+  "profileId": "osint-profile-0f8b1027fd93",
+  "target": "umutphp",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:55.445561+00:00",
+  "completedAt": "2026-06-20T16:48:56.386098+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-bdcaf229",
+      "lookupType": "github_context",
+      "target": "umutphp",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "umutphp",
+            "name": "Umut I\u015f\u0131k",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Istanbul",
+            "bio": "Software Manager @SmartupTeams , Senior Software Engineer, Open Source Volunteer, A Timid Entrepreneur, Mentor at Tech Istanbul",
+            "public_repos": 47,
+            "followers": 919,
+            "following": 1387,
+            "created_at": "2013-01-11T14:46:59Z",
+            "updated_at": "2026-04-07T23:55:59Z",
+            "html_url": "https://github.com/umutphp",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3245166?v=4",
+            "repos": [
+              {
+                "name": "awesome-cli",
+                "description": "A simple command line tool to give you a fancy command line interface to dive into Awesome lists.",
+                "stargazers_count": 768,
+                "language": "Go",
+                "pushed_at": "2025-10-08T18:05:22Z",
+                "fork": false,
+                "topics": [
+                  "awesome",
+                  "awesome-go",
+                  "awesome-list",
+                  "hacktoberfest"
+                ]
+              },
+              {
+                "name": "hacker-laws-tr",
+                "description": "\ud83d\udcbb\ud83d\udcd6 Programc\u0131lar\u0131n faydal\u0131 bulaca\u011f\u0131 yasalar, teoriler, prensipler ve desenler. #hackerlaws",
+                "stargazers_count": 843,
+                "language": null,
+                "pushed_at": "2025-10-08T18:06:17Z",
+                "fork": true,
+                "topics": [
+                  "coding",
+                  "computer",
+                  "hackerlaws",
+                  "laws",
+                  "principles",
+                  "science",
+                  "turkce",
+                  "turkce-kaynak"
+                ]
+              },
+              {
+                "name": "famous-bugs",
+                "description": "Famous bugs fixed, problems solved and failures experienced  in software history :bug: :bee: :ant: :beetle:",
+                "stargazers_count": 302,
+                "language": null,
+                "pushed_at": "2025-10-24T10:14:32Z",
+                "fork": false,
+                "topics": [
+                  "bug",
+                  "famous-bugs",
+                  "hacktoberfest",
+                  "problem",
+                  "y2k"
+                ]
+              },
+              {
+                "name": "github-action-dynamic-profile-page",
+                "description": "GitHub Action to push updates to your special profile repository.",
+                "stargazers_count": 58,
+                "language": "Shell",
+                "pushed_at": "2024-09-23T15:16:52Z",
+                "fork": false,
+                "topics": [
+                  "github-action",
+                  "hacktoberfest",
+                  "profile"
+                ]
+              },
+              {
+                "name": "clean-code-javascript-tr",
+                "description": ":bathtub: JavaScript i\u00e7in uyarlanm\u0131\u015f Temiz Kod kavramlar\u0131",
+                "stargazers_count": 120,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-04T16:20:11Z",
+                "fork": true,
+                "topics": [
+                  "clean-code",
+                  "javascript",
+                  "turkce-kaynak",
+                  "turkish"
+                ]
+              },
+              {
+                "name": "umutphp",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-04-27T21:41:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backend-best-practices",
+                "description": "Backend uygulamalar\u0131 geli\u015ftirirken dikkate al\u0131nabilecek \u00f6rnek y\u00f6ntemlerin derlendi\u011fi g\u00fcncellenen bir kaynak.",
+                "stargazers_count": 95,
+                "language": null,
+                "pushed_at": "2023-02-12T20:01:13Z",
+                "fork": true,
+                "topics": [
+                  "backend",
+                  "best-practices",
+                  "turkce",
+                  "turkce-kaynak",
+                  "turkish"
+                ]
+              },
+              {
+                "name": "laravel-model-recommendation",
+                "description": "This package generates recommendation list for elequent models. It provides a simple API to work with to generate and list recommendations for a model.",
+                "stargazers_count": 66,
+                "language": "PHP",
+                "pushed_at": "2025-06-05T08:43:26Z",
+                "fork": false,
+                "topics": [
+                  "composer-package",
+                  "eloquent",
+                  "hacktoberfest",
+                  "laravel",
+                  "laravel-package",
+                  "machinelearning",
+                  "recommendation"
+                ]
+              },
+              {
+                "name": "laravel-usage-limiter",
+                "description": "A concurrency-safe, prepaid-ready usage metering and limit enforcement engine for Laravel. Built for hard limits, atomic billing, and zero-leakage financial flows.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-16T01:23:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "php-docker-images-for-ci",
+                "description": "A repository with a set of Docker files created from official PHP images with some CI tools.",
+                "stargazers_count": 31,
+                "language": "Dockerfile",
+                "pushed_at": "2026-01-08T13:15:36Z",
+                "fork": false,
+                "topics": [
+                  "ci",
+                  "continuous-integration",
+                  "docker",
+                  "dockerfile",
+                  "hacktoberfest",
+                  "php",
+                  "php-images",
+                  "php-qa"
+                ]
+              },
+              {
+                "name": "story-generate-app",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-07-15T13:15:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hacker-laws-action",
+                "description": "An action to an add random hacker law as a comment to the pull request.",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2020-07-26T23:29:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-var-dump-check-action",
+                "description": "PHP VarDump Check Action",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2021-11-23T13:26:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pure-bash-bible",
+                "description": "\ud83d\udcd6 A collection of pure bash alternatives to external processes.",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2019-10-06T20:20:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pa11y-ci",
+                "description": "Pa11y CI is a CI-centric accessibility test runner, built using Pa11y",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2019-08-22T17:33:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gitlabci-npm-audit-script",
+                "description": "The script for adding \"npm audit\" as a step to GitlabCI pipeline.",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2019-06-18T06:30:17Z",
+                "fork": false,
+                "topics": [
+                  "audit-script",
+                  "gitlab-ci",
+                  "gitlabci-pipeline",
+                  "npm",
+                  "npm-audit",
+                  "shell",
+                  "shell-script"
+                ]
+              },
+              {
+                "name": "the-little-go-book",
+                "description": "The Little Go Book, Go'yu tan\u0131tan \u00fccretsiz bir kitapt\u0131r.",
+                "stargazers_count": 39,
+                "language": "TeX",
+                "pushed_at": "2023-09-19T14:23:21Z",
+                "fork": true,
+                "topics": [
+                  "golang",
+                  "turkce",
+                  "turkce-kaynak"
+                ]
+              },
+              {
+                "name": "wp-vulnerability-check",
+                "description": "A command line took to check the WPScan Vulnerability Database via API to identify the security issues of WordPress plugins installed.",
+                "stargazers_count": 41,
+                "language": "PHP",
+                "pushed_at": "2023-10-22T17:39:36Z",
+                "fork": false,
+                "topics": [
+                  "continuous-integration",
+                  "hacktoberfest",
+                  "security",
+                  "vulnerability-checker",
+                  "wordpress",
+                  "wordpress-plugin",
+                  "wordpress-security",
+                  "wordpress-security-scanner"
+                ]
+              },
+              {
+                "name": "php-magic-number-check-action",
+                "description": "A GitHub action for performing magic number check on the repo.",
+                "stargazers_count": 6,
+                "language": "Dockerfile",
+                "pushed_at": "2020-03-11T08:19:15Z",
+                "fork": false,
+                "topics": [
+                  "code-quality",
+                  "github-action",
+                  "php"
+                ]
+              },
+              {
+                "name": "PHPCS_Coercive_Standards",
+                "description": "Coercive standards for PHP Code Sniffer.",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2019-01-27T20:13:42Z",
+                "fork": false,
+                "topics": [
+                  "code-quality",
+                  "php",
+                  "phpcs",
+                  "phpcs-standard"
+                ]
+              },
+              {
+                "name": "translation-checker",
+                "description": "You can scan the files and keys inside by reading all the language folders in the lang folder.",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2024-09-10T00:36:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kids-story-backend",
+                "description": "Yapay zeka ile masal d\u00fcnyas\u0131na k\u0131sa bir yolculuk",
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2024-06-14T12:02:59Z",
+                "fork": false,
+                "topics": [
+                  "yapay-zeka"
+                ]
+              },
+              {
+                "name": "translation-poc",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-04-10T08:16:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "adyen-php-api-library",
+                "description": "Adyen API Library for PHP",
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2023-03-09T16:26:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yazilima-nasil-nereden-baslarim",
+                "description": "Bu d\u00f6k\u00fcman\u0131n amac\u0131 yaz\u0131l\u0131ma ba\u015flamak isteyenlere tavsiye toplamakt\u0131r.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-01-25T12:04:43Z",
+                "fork": false,
+                "topics": [
+                  "turkce-kaynak",
+                  "turkish"
+                ]
+              },
+              {
+                "name": "Currency",
+                "description": "ISO standard PHP currency array with currency code, symbol and country name.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2017-07-05T18:44:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "laravel-belongs-to-user",
+                "description": "The smallest Laravel package for lazies.",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2023-11-20T17:12:06Z",
+                "fork": false,
+                "topics": [
+                  "eloquent-models",
+                  "hacktoberfest",
+                  "laravel",
+                  "laravel-package"
+                ]
+              },
+              {
+                "name": "package-skeleton-laravel",
+                "description": "A skeleton repository for Spatie's Laravel Packages",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-05-19T06:56:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PHP-Var-Dump-Check",
+                "description": "Find forgotten variables dump in PHP source code.",
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2020-08-14T16:33:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-stats",
+                "description": "Command-line tool to get the total traffic statistics of your GitHub repositories.",
+                "stargazers_count": 9,
+                "language": "Go",
+                "pushed_at": "2024-08-28T21:01:14Z",
+                "fork": false,
+                "topics": [
+                  "github",
+                  "go",
+                  "hacktoberfest"
+                ]
+              },
+              {
+                "name": "github-profile",
+                "description": "Code that'll help you kickstart a personal website that showcases your work as a software developer.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-04-06T01:21:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "phpmetrics-action",
+                "description": "Static analysis tool for PHP",
+                "stargazers_count": 3,
+                "language": "Dockerfile",
+                "pushed_at": "2020-03-12T07:54:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-psecio-parse-action",
+                "description": "Parse: A PHP Security Scanner",
+                "stargazers_count": 0,
+                "language": "Dockerfile",
+                "pushed_at": "2020-03-11T13:55:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sensiolabs-security-checker-action",
+                "description": "SensioLabs Security Checker Action.",
+                "stargazers_count": 0,
+                "language": "Dockerfile",
+                "pushed_at": "2020-03-11T08:41:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wp-vulnerability-check-github-action",
+                "description": "wp-vulnerability-check Github Action",
+                "stargazers_count": 16,
+                "language": "Dockerfile",
+                "pushed_at": "2021-06-13T16:51:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hacker-laws-cli",
+                "description": "A CLI tool for Hacker-Laws Repo",
+                "stargazers_count": 18,
+                "language": "Go",
+                "pushed_at": "2020-07-27T05:41:32Z",
+                "fork": false,
+                "topics": [
+                  "hackerlaws",
+                  "hacktoberfest",
+                  "principles",
+                  "theory"
+                ]
+              },
+              {
+                "name": "docker-slim-for-ci",
+                "description": "Dockerfile for Docker-Slim to be used in CI tools.",
+                "stargazers_count": 3,
+                "language": "Dockerfile",
+                "pushed_at": "2019-12-13T11:13:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "startup-sozlugu",
+                "description": "Startup d\u00fcnyas\u0131nda s\u0131k kullan kelimeler ve terimler",
+                "stargazers_count": 22,
+                "language": null,
+                "pushed_at": "2020-09-03T20:31:02Z",
+                "fork": false,
+                "topics": [
+                  "startup",
+                  "turkce-kaynak",
+                  "turkish"
+                ]
+              },
+              {
+                "name": "html-best-practices",
+                "description": "Bak\u0131m yap\u0131labilir ve \u00f6l\u00e7eklenebilir HTML belgeleri yazmak i\u00e7in takip edilebilecek \u00f6rnek y\u00f6ntemler",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2019-10-04T06:54:56Z",
+                "fork": true,
+                "topics": [
+                  "best-practices",
+                  "html",
+                  "turkce-kaynak",
+                  "turkish"
+                ]
+              },
+              {
+                "name": "API-Security-Checklist",
+                "description": "Checklist of the most important security countermeasures when designing, testing, and releasing your API",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2022-11-08T00:15:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "opensource.guide",
+                "description": "\ud83d\udcda A\u00e7\u0131k kaynak yarat\u0131c\u0131lar\u0131 i\u00e7in topluluk rehberleri",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2022-10-17T15:06:03Z",
+                "fork": true,
+                "topics": [
+                  "acikkaynak",
+                  "contribute",
+                  "opensource",
+                  "turkce-kaynak",
+                  "turkish"
+                ]
+              },
+              {
+                "name": "code-optimization-methods",
+                "description": "A summary of code optimization methods",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2019-08-18T12:02:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "php-the-right-way",
+                "description": "An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative tutorials around the Web",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2019-03-01T11:13:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "visualize-gitlabci",
+                "description": "A command-line tool to visualize Gitlab pipeline by using .gitlabci.yml file of your repo. Managed on Gitlab.org and mirrored to this repo.",
+                "stargazers_count": 17,
+                "language": "PHP",
+                "pushed_at": "2020-05-09T22:02:24Z",
+                "fork": false,
+                "topics": [
+                  "gitlab",
+                  "gitlab-ci"
+                ]
+              },
+              {
+                "name": "umutphp.github.io",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-04-08T06:27:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "phpthewrongway",
+                "description": "A pragmatic view on PHP programming.",
+                "stargazers_count": 6,
+                "language": "Makefile",
+                "pushed_at": "2020-07-06T14:52:29Z",
+                "fork": true,
+                "topics": [
+                  "php",
+                  "php-programming",
+                  "pragmatic-programming",
+                  "turkce",
+                  "turkce-kaynak"
+                ]
+              },
+              {
+                "name": "logo",
+                "description": "Logo files of umutphp",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-05-05T13:49:12Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:56.384748+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

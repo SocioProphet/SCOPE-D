@@ -1,0 +1,485 @@
+{
+  "profileId": "osint-profile-55ac03044f02",
+  "target": "StevenKamwaza",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:30.960624+00:00",
+  "completedAt": "2026-06-21T15:32:32.083756+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c45426ee",
+      "lookupType": "github_context",
+      "target": "StevenKamwaza",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "StevenKamwaza",
+            "name": "Steven Kamwaza",
+            "type": "User",
+            "company": null,
+            "blog": "https://live-six-chi.vercel.app/",
+            "location": " Malawi",
+            "bio": "\ud83d\udcbbOne line of code at a time\ud83c\udf1f!",
+            "public_repos": 45,
+            "followers": 1378,
+            "following": 2013,
+            "created_at": "2019-02-28T08:22:52Z",
+            "updated_at": "2026-05-26T12:17:10Z",
+            "html_url": "https://github.com/StevenKamwaza",
+            "avatar_url": "https://avatars.githubusercontent.com/u/48084787?v=4",
+            "repos": [
+              {
+                "name": "ResultKit",
+                "description": "ResultKit is a lightweight .NET library that provides a clean and consistent way to handle operation results, errors, and success states without relying on exceptions for control flow. It helps improve code readability, maintainability, and standardizes how results are returned across services and applications.",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2026-06-15T09:45:46Z",
+                "fork": false,
+                "topics": [
+                  "asp-net",
+                  "asp-net-core",
+                  "libray",
+                  "nuget",
+                  "nuget-package",
+                  "result-pattern"
+                ]
+              },
+              {
+                "name": "che-jokes",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-09T13:16:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "face_emotional_detector",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2022-05-21T19:24:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "che-media",
+                "description": "this is a simple blog like facebook...... nextjs, facebook auth and firebase used to develop this simple social media",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2022-09-08T12:14:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "food-app-nextjs-prisma",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2022-09-20T18:27:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mysoccer_ticket_admin",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2022-06-28T07:03:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "grandpen_africa_002",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2023-05-09T20:17:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ClassProject",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2021-09-06T08:25:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mw_covid_tracker",
+                "description": "This is a Covid Cases Tracker Web app , with Malawi cases as priority .......coontact stevenkamwaza@gmail.. for more info",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-31T05:12:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web_001",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "CSS",
+                "pushed_at": "2023-05-18T07:13:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web_002",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2023-05-25T16:26:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "world_countries_react_app_demo",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-24T15:54:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quotes_app",
+                "description": "learning flutter",
+                "stargazers_count": 9,
+                "language": "Dart",
+                "pushed_at": "2023-04-18T15:19:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "currency_convertor",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "C++",
+                "pushed_at": "2023-12-03T15:37:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "email_sender_python",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2022-09-11T05:51:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mliminet_blog",
+                "description": "bwalo laalimi",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2023-05-05T15:44:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EmployeeDemo",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "Java",
+                "pushed_at": "2020-07-28T21:43:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "academia",
+                "description": "landing page",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-27T19:53:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-staion-iot",
+                "description": null,
+                "stargazers_count": 21,
+                "language": "C++",
+                "pushed_at": "2023-05-26T09:36:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "next.js",
+                "description": "The React Framework",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-12-11T09:33:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pj-vr-react-demo",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-28T20:41:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tensorflowjs_nextjs_14__demo",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-30T19:16:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RoleBaseAuthAPI_Demo",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "C#",
+                "pushed_at": "2024-10-07T08:46:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "social-media-scraping-apis",
+                "description": "A curated collection of social media scraping APIs and tools for Instagram, LinkedIn, Twitter/X, TikTok, YouTube, Facebook, and more. Extract posts, profiles, videos, comments, and engagement metrics.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-20T17:57:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "StevenKamwaza",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2026-05-27T06:43:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "first-contributions",
+                "description": "\ud83d\ude80\u2728 Help beginners to contribute to open source projects",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-05-26T11:59:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "grandpen_africa_001",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2023-05-09T06:44:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "top-github-users",
+                "description": "Check your ranking in GitHub! Don't forget to star \u2b50 this repository.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-01-16T05:50:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "face_detector_withpy",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2020-07-10T12:02:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "face_detector_from_webcam",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2020-07-10T12:00:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "course-material",
+                "description": "Find materials from course here",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2019-03-05T09:56:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LibraryRoom-Booking-Management-System",
+                "description": "A Web application developed using PHP and MySQL that enables users to view study rooms online and book a study room in the library. In addition, the user can send an e-mail containing the agenda to all the participants.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2016-09-28T16:39:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cmcweb_php",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2020-07-18T23:12:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Maps",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-08-16T12:23:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather_station_matlab_analyist_code",
+                "description": "MATLAB code to analyze and visualize data from an IoT local station",
+                "stargazers_count": 6,
+                "language": "MATLAB",
+                "pushed_at": "2022-03-02T09:04:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "thingspeak_rainsensor_dht11_ldr_buzzer",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2022-03-24T13:17:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "leaf_diseases_detector_ai",
+                "description": "This app will be able to detect if a leaf has disease or not",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-05-25T09:22:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ticket_buying_system",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2022-06-17T15:22:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reading",
+                "description": "A list of computer-science readings I recommend",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-08-30T18:41:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "blog-nextjs",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2022-09-02T03:05:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidity_1",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Solidity",
+                "pushed_at": "2022-09-13T05:39:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "paypal-payment_api",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-10-03T06:16:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "addup",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-02T09:47:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backend_book",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-05T07:36:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "new_app",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2023-03-22T14:45:00Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:32.082928+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

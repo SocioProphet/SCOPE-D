@@ -1,0 +1,593 @@
+{
+  "profileId": "osint-profile-f55e2aa7b5cc",
+  "target": "hu8813",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:51.301039+00:00",
+  "completedAt": "2026-06-20T13:52:52.648287+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ea177f82",
+      "lookupType": "github_context",
+      "target": "hu8813",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "hu8813",
+            "name": "h\u00fcseyin kaya aydin",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Vienna, Austria",
+            "bio": null,
+            "public_repos": 54,
+            "followers": 3308,
+            "following": 55961,
+            "created_at": "2018-05-04T19:21:42Z",
+            "updated_at": "2026-06-04T07:23:57Z",
+            "html_url": "https://github.com/hu8813",
+            "avatar_url": "https://avatars.githubusercontent.com/u/38990435?v=4",
+            "repos": [
+              {
+                "name": "hu8813",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-06-20T13:49:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai_interview",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-20T08:54:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "42_darkly",
+                "description": "42 web security project darkly, owasp cybersecurity",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-06-28T17:50:14Z",
+                "fork": false,
+                "topics": [
+                  "42",
+                  "borntosec",
+                  "darkly",
+                  "owasp",
+                  "security"
+                ]
+              },
+              {
+                "name": "personal-portfolio",
+                "description": "Personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Free to use, modify, and distribute without any specific license requirements. Feel free to customize it for your own portfolio.",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-25T18:32:24Z",
+                "fork": false,
+                "topics": [
+                  "personal",
+                  "portfolio",
+                  "portfolio-page",
+                  "portfolio-site",
+                  "portfolio-template",
+                  "portfolio-website"
+                ]
+              },
+              {
+                "name": "push_swap",
+                "description": "42 school project pushswap using radix sort",
+                "stargazers_count": 30,
+                "language": "C",
+                "pushed_at": "2024-10-09T19:30:24Z",
+                "fork": false,
+                "topics": [
+                  "42",
+                  "42-push-swap",
+                  "push-swap",
+                  "push-swap-42",
+                  "push-swap42",
+                  "pushswap",
+                  "pushswap42",
+                  "radix",
+                  "radix-sort",
+                  "sorting",
+                  "sorting-algorithms"
+                ]
+              },
+              {
+                "name": "forecasting",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-09-27T13:32:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "document-qa",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-07-28T06:17:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "piscine_python_for_datascience",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-06-20T15:49:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tester_push_swap",
+                "description": "A simple Push_swap tester for testing memory leaks/errors and error handling for the 42 school project pushswap",
+                "stargazers_count": 47,
+                "language": "Python",
+                "pushed_at": "2024-06-19T22:02:50Z",
+                "fork": false,
+                "topics": [
+                  "push-swap",
+                  "push-swap-42",
+                  "push-swap-tester",
+                  "push-swap42",
+                  "pushswap",
+                  "pushswap-42",
+                  "pushswap-tester",
+                  "pushswap42",
+                  "pushswaptester",
+                  "tester-push-swap"
+                ]
+              },
+              {
+                "name": "piscine_mobile",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2024-05-12T18:18:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mdb",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-04-22T17:36:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "piscine_cybersecurity",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-04-30T21:42:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gnl",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2024-01-23T10:06:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "inception-42",
+                "description": "42 inception docker project",
+                "stargazers_count": 4,
+                "language": "Shell",
+                "pushed_at": "2023-11-12T19:48:14Z",
+                "fork": false,
+                "topics": [
+                  "42",
+                  "42-inception",
+                  "docker",
+                  "inception",
+                  "inception-42"
+                ]
+              },
+              {
+                "name": "cpp_modules",
+                "description": "C++ modules Cpp 42 module",
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2023-10-31T18:43:00Z",
+                "fork": false,
+                "topics": [
+                  "42",
+                  "cpp",
+                  "cpp-modules",
+                  "cpp-modules-42"
+                ]
+              },
+              {
+                "name": "cub3d",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2023-10-07T18:01:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "so_long",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2023-01-29T17:49:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "minishell",
+                "description": "42 project minishell , a basic implementation of bash",
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2023-08-23T18:13:39Z",
+                "fork": false,
+                "topics": [
+                  "minishell",
+                  "minishell-42",
+                  "minishell42"
+                ]
+              },
+              {
+                "name": "hu8813.github.io",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Ruby",
+                "pushed_at": "2022-12-16T21:44:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ft_printf",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2023-01-07T15:01:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "libft",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2022-12-09T13:53:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Jupyter-ALL-IN-ONE-",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-04-22T20:39:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tiktok-live-games",
+                "description": "An open-source platform that creates interactive game for TikTok Live streams. Viewers can play games by typing commands in chat!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-28T05:34:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Chatfinity",
+                "description": "A Community Open-Source Saas for Crafting/Building/Creating Chatbots with OpenAI's Assistant API that you can add to your website.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-10-24T13:07:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "INGenious",
+                "description": "INGenious Playwright Studio",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-12-30T17:52:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DataScienceCourse",
+                "description": "Notes from Data Science Programming Course at the UniSi, Fall 2021",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2022-10-09T17:43:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "voice-chat-pdf",
+                "description": "Use OpenAI's realtime API for a chatting with your documents",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-10-06T03:05:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PythonDataScienceHandbook",
+                "description": "Python Data Science Handbook: full text in Jupyter Notebooks",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-06-26T19:17:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "juice-shop",
+                "description": "OWASP Juice Shop: Probably the most modern and sophisticated insecure web application",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-11-04T00:16:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "quivr",
+                "description": "Open-source RAG Framework for building GenAI Second Brains \ud83e\udde0  Build productivity assistant (RAG) \u26a1\ufe0f\ud83e\udd16 Chat with your docs (PDF, CSV, ...)  & apps using Langchain, GPT 3.5 / 4 turbo, Private, Anthropic, VertexAI, Ollama, LLMs, Groq  that you can share with users !  Efficient retrieval augmented generation framework",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-10-06T19:41:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NURD",
+                "description": "NURD is an alternative instrument cluster UI for the unu Scooter Pro, built in Flutter",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-05-04T09:47:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "anti-scam",
+                "description": "SG Anti-Scam AI is a pioneering platform designed to empower your online safety by leveraging the power of artificial intelligence.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-05-10T06:46:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "codelab-ai-genkit-rag",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-07-29T22:32:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chatwithfile",
+                "description": "OpenAI Assistant API Template: Customize your Assistant and chat with your files.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-06-06T18:17:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "playing-with-fastapi",
+                "description": "Api Interface to test",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-12-05T15:52:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "unustasis",
+                "description": "An open-source app for the Unu Scooter Pro",
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2024-11-05T10:05:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "generative-ai-dart",
+                "description": "The official Dart library for the Google Gemini API",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-06-28T16:09:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "42_ft_transcendence",
+                "description": " \ud83c\udfd3 42 transcendence \ud83c\udfd3 ft_transcendence school project with django backend and pure javascript frontend (vanilla js) pong42",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-02T19:32:35Z",
+                "fork": false,
+                "topics": [
+                  "42",
+                  "django",
+                  "ft-transcendence",
+                  "javascript",
+                  "js",
+                  "ping-pong",
+                  "pong",
+                  "pong-game",
+                  "pong42",
+                  "transcendence",
+                  "vanilla",
+                  "vanilla-javascript",
+                  "vanilla-js"
+                ]
+              },
+              {
+                "name": "zero-to-mastery-ml",
+                "description": "All course materials for the Zero to Mastery Machine Learning and Data Science course.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-01-26T01:37:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "42CSSTober",
+                "description": "42CSSTober, a CSS illustration for each day in October, because creating only web pages is insufficient.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-10-05T12:23:38Z",
+                "fork": true,
+                "topics": [
+                  "42css",
+                  "42csstober",
+                  "css",
+                  "csstober"
+                ]
+              },
+              {
+                "name": "Python-1",
+                "description": "All Algorithms implemented in Python",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2025-03-16T12:57:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "learn-python3-1",
+                "description": "Jupyter notebooks for teaching/learning Python 3",
+                "stargazers_count": 8,
+                "language": "HTML",
+                "pushed_at": "2024-02-18T18:25:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Complete-Python-3-Bootcamp",
+                "description": "Course Files for Complete Python 3 Bootcamp Course on Udemy",
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-08T06:59:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lucy",
+                "description": "local llm Exploration",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-07T20:48:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-sdk-computer-usage",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-04-30T16:35:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "42Tools",
+                "description": "Tools for 42 School students (stats, ranking, calculator, RNCP progression...)",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-08T15:54:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "46-simple-python-exercises",
+                "description": "The solutions to the 46 Simple Python exercises of Torbj\u00f6rn Lager",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2017-11-05T19:00:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "deep-learning-with-python-notebooks",
+                "description": "Jupyter notebooks for the code samples of the book \"Deep Learning with Python\"",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-02-13T00:50:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "learn-python3",
+                "description": "Learn Python 3 Sample Code",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-03-19T22:05:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Stanford_AI_Program",
+                "description": "Artificial Intelligence Professional Program by Stanford School of Engineering",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-05-09T20:25:34Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:52.647377+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

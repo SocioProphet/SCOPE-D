@@ -1,0 +1,242 @@
+{
+  "profileId": "osint-profile-70980783fddb",
+  "target": "albonidrizi",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:50:05.458681+00:00",
+  "completedAt": "2026-06-20T16:50:05.873057+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-55b2c71b",
+      "lookupType": "github_context",
+      "target": "albonidrizi",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "albonidrizi",
+            "name": "Albon Idrizi",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Java Backend Developer | Spring Boot \u2022 PostgreSQL \u2022 Docker \u2022 RabbitMQ | Event-Driven Systems | React/TypeScript",
+            "public_repos": 7,
+            "followers": 660,
+            "following": 212,
+            "created_at": "2020-05-15T10:43:31Z",
+            "updated_at": "2026-06-17T12:30:34Z",
+            "html_url": "https://github.com/albonidrizi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65398478?v=4",
+            "repos": [
+              {
+                "name": "quiz-microservices-platform",
+                "description": "Production-grade Quiz Platform built with Spring Boot Microservices, featuring service discovery, circuit breakers, distributed tracing, and React frontend. Demonstrates cloud-native architecture with Docker & CI/CD.",
+                "stargazers_count": 9,
+                "language": "Java",
+                "pushed_at": "2026-06-16T09:18:01Z",
+                "fork": false,
+                "topics": [
+                  "api-gateway",
+                  "ci-cd",
+                  "circuit-breaker",
+                  "cloud-native",
+                  "distributed-tracing",
+                  "docker",
+                  "docker-composer",
+                  "eureka",
+                  "java",
+                  "microservices",
+                  "openfeign",
+                  "postgresql-database",
+                  "react",
+                  "resilience4j",
+                  "service-discovery",
+                  "spring-boot",
+                  "spring-cloud",
+                  "testcontainers",
+                  "typescript",
+                  "zipkin"
+                ]
+              },
+              {
+                "name": "code-sage",
+                "description": "AI-powered code review assistant for GitHub Pull Requests using OpenAI GPT-4 and Claude with automated feedback and analytics dashboard.",
+                "stargazers_count": 22,
+                "language": "Java",
+                "pushed_at": "2026-06-20T08:03:10Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "automation",
+                  "ci-cd",
+                  "claude",
+                  "code-quality",
+                  "code-review",
+                  "devops",
+                  "docker",
+                  "github-app",
+                  "java",
+                  "javascript",
+                  "microservices",
+                  "openai",
+                  "portfolio",
+                  "postgresql",
+                  "rabbitmq",
+                  "react",
+                  "rest-api",
+                  "spring-boot",
+                  "webhook"
+                ]
+              },
+              {
+                "name": "asteral-nasa-near-earth-objects-explorer",
+                "description": "Java 21/Spring Boot NASA asteroid explorer demonstrating secure configuration, resilience, deterministic integration tests, observability, and container CI.",
+                "stargazers_count": 15,
+                "language": "Java",
+                "pushed_at": "2026-06-15T20:07:34Z",
+                "fork": false,
+                "topics": [
+                  "caching",
+                  "docker",
+                  "flyway",
+                  "github-actions",
+                  "java",
+                  "java-21",
+                  "kubernetes",
+                  "nasa-api",
+                  "observability",
+                  "postgresql",
+                  "resilience4j",
+                  "spring-boot",
+                  "spring-security",
+                  "testcontainers",
+                  "wiremock"
+                ]
+              },
+              {
+                "name": "nexus-flow-enterprise-order-processor",
+                "description": "Enterprise-grade Order Processing System built with Spring Boot and React. Features high-concurrency handling via Optimistic Locking, event-driven architecture with RabbitMQ, and secure JWT authentication.",
+                "stargazers_count": 12,
+                "language": "Java",
+                "pushed_at": "2026-06-15T19:38:07Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "enterprise-applications",
+                  "event-driven-architectures",
+                  "full-stack",
+                  "java17",
+                  "microservices",
+                  "optimistic-locking",
+                  "rabbitmq",
+                  "react",
+                  "spring-boot",
+                  "typerscript",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "event-management",
+                "description": "Production-ready Java event management backend with REST API, MySQL, Docker, CI/CD, and MCP integration for ChatGPT, Gemini, Claude, and Copilot.",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-06-20T10:22:17Z",
+                "fork": false,
+                "topics": [
+                  "backend",
+                  "chatgpt",
+                  "claude",
+                  "docker",
+                  "gemini",
+                  "github-actions",
+                  "github-copilot",
+                  "java",
+                  "jersey",
+                  "junit",
+                  "maven",
+                  "mcp",
+                  "model-context-protocol",
+                  "mysql",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "osint-web-application",
+                "description": "A high-performance OSINT Orchestration Platform built with Kotlin (Spring Boot) and React. Features asynchronous Docker-in-Docker tool execution (theHarvester/Amass), real-time status tracking, automated CI/CD pipelines, and a premium Glassmorphism UI. Designed with a focus on scalability, clean architecture, and 90%+ test coverage",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-22T12:36:52Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "cicd",
+                  "clean-architecture",
+                  "cyber-security",
+                  "cybersecurity",
+                  "docker",
+                  "docker-compose",
+                  "full-stack",
+                  "github-actions",
+                  "infosec",
+                  "kotlin",
+                  "open-source",
+                  "orchestration",
+                  "osint",
+                  "react",
+                  "spring-boot",
+                  "typescript",
+                  "web-security"
+                ]
+              },
+              {
+                "name": "albonidrizi",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-13T14:30:46Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:50:05.872298+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

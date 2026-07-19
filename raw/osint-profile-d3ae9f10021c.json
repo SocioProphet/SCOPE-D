@@ -1,0 +1,148 @@
+{
+  "profileId": "osint-profile-d3ae9f10021c",
+  "target": "webxos",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:51.160212+00:00",
+  "completedAt": "2026-06-20T13:53:51.480461+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a698d3f1",
+      "lookupType": "github_context",
+      "target": "webxos",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "webxos",
+            "name": "webXOS",
+            "type": "User",
+            "company": "webxos",
+            "blog": "http://webxos.netlify.app",
+            "location": "united states",
+            "bio": null,
+            "public_repos": 6,
+            "followers": 1390,
+            "following": 10307,
+            "created_at": "2025-02-17T20:33:46Z",
+            "updated_at": "2026-05-31T14:42:05Z",
+            "html_url": "https://github.com/webxos",
+            "avatar_url": "https://avatars.githubusercontent.com/u/199669333?v=4",
+            "repos": [
+              {
+                "name": "webXOS",
+                "description": "web based operating system",
+                "stargazers_count": 73,
+                "language": "HTML",
+                "pushed_at": "2026-06-18T08:41:36Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "decentralized",
+                  "frontend",
+                  "games",
+                  "gui",
+                  "html",
+                  "javascript",
+                  "js",
+                  "localdb",
+                  "modular",
+                  "pwa",
+                  "python",
+                  "standalone",
+                  "threejs",
+                  "tools",
+                  "ux",
+                  "wasm",
+                  "webdesign",
+                  "webgl",
+                  "website"
+                ]
+              },
+              {
+                "name": "phalanx",
+                "description": "Kali Linux Polyglot Harness for Autonomous Pentesting/Cyber Security",
+                "stargazers_count": 121,
+                "language": "Python",
+                "pushed_at": "2026-05-14T06:08:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shadowclaw",
+                "description": "Agent Harness running in C",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2026-06-17T07:40:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "microcuda",
+                "description": "MicroCUDA is a lightweight framework that brings GPU\u2011like compute abstractions and a local AI agent to your CPU",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2026-06-04T04:09:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dungeoncrawl",
+                "description": "DND based agent harness for Ollama",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-06-16T04:12:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lack",
+                "description": "SLACK for Agents, running on Ollama models",
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2026-06-09T07:29:43Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:51.479486+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,680 @@
+{
+  "profileId": "osint-profile-c57c32bb129f",
+  "target": "arjuncvinod",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:12.572392+00:00",
+  "completedAt": "2026-06-21T15:29:14.260486+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-77c338e9",
+      "lookupType": "github_context",
+      "target": "arjuncvinod",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "arjuncvinod",
+            "name": "Arjun C Vinod",
+            "type": "User",
+            "company": "Mulearn Intern",
+            "blog": "https://arjuncvinod.vercel.app",
+            "location": "India",
+            "bio": "Passionate Web Developer | MERN Stack",
+            "public_repos": 86,
+            "followers": 2834,
+            "following": 2254,
+            "created_at": "2020-07-18T13:19:13Z",
+            "updated_at": "2026-06-10T18:15:05Z",
+            "html_url": "https://github.com/arjuncvinod",
+            "avatar_url": "https://avatars.githubusercontent.com/u/68469520?v=4",
+            "repos": [
+              {
+                "name": "Blogging-Website",
+                "description": "A complete blogging platform bulit using Node.js",
+                "stargazers_count": 59,
+                "language": "EJS",
+                "pushed_at": "2024-08-28T03:33:28Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "ejs",
+                  "expressjs",
+                  "hacktoberfest",
+                  "html5",
+                  "javascript",
+                  "mongodb",
+                  "mongoose",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "Lost-And-Found",
+                "description": "A website for people in our community to post lost and found items",
+                "stargazers_count": 38,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-25T17:33:32Z",
+                "fork": false,
+                "topics": [
+                  "api-rest",
+                  "css",
+                  "expressjs",
+                  "mongodb",
+                  "nodejs",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "Hello-World-in-Different-Languages",
+                "description": "\u2b50 You can contribute to this Repository by creating programs to print \"hello world\" in different programming languages.\u2b50",
+                "stargazers_count": 116,
+                "language": "C++",
+                "pushed_at": "2024-12-05T18:36:28Z",
+                "fork": false,
+                "topics": [
+                  "beginner-friendly",
+                  "hacktoberfest",
+                  "hacktoberfest-accepted",
+                  "hacktoberfest10",
+                  "hacktoberfest2023",
+                  "hello-world",
+                  "hello-world-in-all-languages"
+                ]
+              },
+              {
+                "name": "Portfolio-React",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2024-06-04T18:15:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "React-hooks",
+                "description": "React Hooks implementation with example",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-23T17:36:19Z",
+                "fork": false,
+                "topics": [
+                  "usecallback",
+                  "usecontext",
+                  "useeffect",
+                  "useimperativehandle",
+                  "uselayouteffect",
+                  "usememo",
+                  "usereducer",
+                  "useref",
+                  "usestate"
+                ]
+              },
+              {
+                "name": "News-Service-AI",
+                "description": "The AI-Driven News Service uses AI and web scraping to deliver real-time news, summarization, translation, and daily newspaper creation.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-12T09:07:52Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "firebase",
+                  "gemini-api",
+                  "groq-ai",
+                  "newsapi",
+                  "nodejs",
+                  "reactjs",
+                  "webscraping"
+                ]
+              },
+              {
+                "name": "Simple-DApp",
+                "description": "A Simple-DApp built using Blockchain",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-15T04:54:37Z",
+                "fork": false,
+                "topics": [
+                  "hardhat",
+                  "nodejs",
+                  "react",
+                  "solidity"
+                ]
+              },
+              {
+                "name": "Github-Enablment-Task",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-11T05:35:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "top100coders-frontend",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-10-02T05:05:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "foundation",
+                "description": "The Foundation Program is a 30-Day Hybrid Bootcamp aimed at addressing the skill gap by helping students up-skill with a foundation program in programming and web development. The program aims to help students build a foundational skill level to find opportunities in the Industry.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-11T09:17:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "register",
+                "description": "Grab your own sweet-looking '.is-a.dev' subdomain.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-09T13:04:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mulearn",
+                "description": "\u00b5Learn is a synergic philosophy of education, with a culture of mutual learning through micro groups of peers. \u00b5Learn is here to assist you in breaking through the echo chambers and free you from the shackles that have you grounded.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-29T11:35:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "public-clipboard",
+                "description": "Public Clipboard is a simple React application that allows users to manage clipboard notes.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-04T19:16:18Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "firebase",
+                  "reactjs",
+                  "toastify"
+                ]
+              },
+              {
+                "name": "Top-100-Coders",
+                "description": "Kerala Top 100 Coders - Huddle Global 2023. Join our coding challenge and showcase your skills. Connect with startups and industries in Kerala's vibrant tech ecosystem",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-08-05T16:30:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MCA-Lab-Experiments",
+                "description": "MCA Lab Experiments",
+                "stargazers_count": 15,
+                "language": "C",
+                "pushed_at": "2024-07-07T08:20:15Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "css3",
+                  "html5",
+                  "javascript",
+                  "mysql",
+                  "php",
+                  "python"
+                ]
+              },
+              {
+                "name": "arjuncvinod",
+                "description": "Github public profile repository ",
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2026-06-21T13:01:00Z",
+                "fork": false,
+                "topics": [
+                  "readme-profile"
+                ]
+              },
+              {
+                "name": "arjuncvinod.github.io",
+                "description": "Personal Portfolio website",
+                "stargazers_count": 28,
+                "language": "CSS",
+                "pushed_at": "2025-06-08T17:28:31Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "hacktoberfest",
+                  "html",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "Book-Store",
+                "description": "A Book store app Built with MERN",
+                "stargazers_count": 24,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-19T14:54:02Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "mogodb",
+                  "node-js",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "ios-calculator-clone",
+                "description": "IOS Calculator clone built using React.js ",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-05T17:58:00Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "hacktoberfest",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "wa-chat-without-save",
+                "description": " WhatsApp Chat with anyone without saving their number ",
+                "stargazers_count": 12,
+                "language": "CSS",
+                "pushed_at": "2023-12-06T08:19:16Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "hacktoberfest",
+                  "react"
+                ]
+              },
+              {
+                "name": "Crypto-Token",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-15T19:09:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QR-Code-Generator",
+                "description": "QR code generator built using Node js",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-04T14:06:25Z",
+                "fork": false,
+                "topics": [
+                  "inquirer-plugin",
+                  "nodejs",
+                  "qr-image"
+                ]
+              },
+              {
+                "name": "Weather-App",
+                "description": "weather app built using React.js and openweathermap API",
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-04T14:08:37Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "openweathermap-api",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "Login-Page-UI-2",
+                "description": "Multiple user Login Page UI ",
+                "stargazers_count": 10,
+                "language": "CSS",
+                "pushed_at": "2023-08-05T17:52:59Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html"
+                ]
+              },
+              {
+                "name": "DBank-Motoko",
+                "description": "Built while learning Internet Computer and Motoko language",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-04T18:47:50Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "internet-computer",
+                  "motoko"
+                ]
+              },
+              {
+                "name": "First-Internet-Computer-App",
+                "description": "First internet computer app built while learning Blockchain",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-06T17:40:31Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "motoko"
+                ]
+              },
+              {
+                "name": "Admin-Dashboard-UI",
+                "description": "Admin Dashboard UI for a Blogging website",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2023-08-26T16:47:10Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "html5"
+                ]
+              },
+              {
+                "name": "Profile-Section-UI-2",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2023-08-06T17:45:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Error-404-Page-UI",
+                "description": "Error 404 : Page not found page UI built using HTML and CSS",
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2023-08-30T16:44:11Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "error404",
+                  "html5"
+                ]
+              },
+              {
+                "name": "Multiple-User-Login-UI",
+                "description": "Login Page UI built using Html CSS",
+                "stargazers_count": 11,
+                "language": "HTML",
+                "pushed_at": "2023-08-06T17:42:52Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "html5"
+                ]
+              },
+              {
+                "name": "Profile-Section-UI",
+                "description": "Profile section UI for a shop renting website",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2023-08-29T17:47:04Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html"
+                ]
+              },
+              {
+                "name": "Login-Page-UI",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2023-08-06T17:43:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Login-Form",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "CSS",
+                "pushed_at": "2023-08-06T18:35:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Digital-Clock",
+                "description": "A react app built while learning react usestate",
+                "stargazers_count": 10,
+                "language": "CSS",
+                "pushed_at": "2023-08-26T16:45:28Z",
+                "fork": false,
+                "topics": [
+                  "reactjs",
+                  "usestate"
+                ]
+              },
+              {
+                "name": "counter-app-react",
+                "description": "Counter app created while learning react hooks",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-26T16:48:35Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "Emojipedia-UI-React",
+                "description": "A  UI for Emoji dictionary built using react",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-09-01T16:34:53Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "react"
+                ]
+              },
+              {
+                "name": "keeper-app",
+                "description": "Keeper app built while learning react",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-05T17:51:59Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "React-Practices",
+                "description": "Repository created for react practices",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-24T17:38:55Z",
+                "fork": false,
+                "topics": [
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "webdevbootcamp",
+                "description": "A website Built while attending a web dev bootcamp by Inovus Labs IEDC",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2023-08-08T18:26:03Z",
+                "fork": true,
+                "topics": [
+                  "bootstrap5",
+                  "css3",
+                  "html5"
+                ]
+              },
+              {
+                "name": "wiki-API",
+                "description": "API created while learning REST API",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-05T17:44:18Z",
+                "fork": false,
+                "topics": [
+                  "mongodb",
+                  "nodejs",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "Result-management-system",
+                "description": "A result management platform built using PHP",
+                "stargazers_count": 18,
+                "language": "PHP",
+                "pushed_at": "2023-12-21T16:51:04Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "html5",
+                  "javascript",
+                  "mysql",
+                  "php"
+                ]
+              },
+              {
+                "name": "web",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2023-09-12T18:28:47Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Book_Mgmt_System",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-08T18:04:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Hotel-Booking-App-Frontend",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "SCSS",
+                "pushed_at": "2025-11-26T04:39:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hotel-Booking-App-Backend",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2025-11-18T15:11:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Simon-Game",
+                "description": "Simon Game created while learning JavaScript ",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-05T17:49:46Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "html5",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "Meme-Generator",
+                "description": "A meme generator created as part of the MuLearn Web Dev Bootcamp ",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-27T17:57:12Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "meme-api",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "DesignJoy-Frontend",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-29T19:31:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Chat-Room-App",
+                "description": "Chat Room App built using React and firebase",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-25T17:31:28Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "firebase",
+                  "firebase-auth",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "awesome-github-profile-readme-templates",
+                "description": "This repository contains best profile readme's for your reference. ",
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2024-01-18T18:09:13Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:14.259713+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

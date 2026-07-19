@@ -1,0 +1,362 @@
+{
+  "profileId": "osint-profile-d075d2e479ed",
+  "target": "yumiaura",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:04.615854+00:00",
+  "completedAt": "2026-06-21T15:29:05.200834+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8312ec14",
+      "lookupType": "github_context",
+      "target": "yumiaura",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "yumiaura",
+            "name": "Olya Pimenova",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "192.168.0.1",
+            "bio": "Astrologist, Psychologist, Developer.",
+            "public_repos": 25,
+            "followers": 3034,
+            "following": 21340,
+            "created_at": "2025-09-29T09:13:31Z",
+            "updated_at": "2026-05-23T23:56:51Z",
+            "html_url": "https://github.com/yumiaura",
+            "avatar_url": "https://avatars.githubusercontent.com/u/235065808?v=4",
+            "repos": [
+              {
+                "name": "myCat",
+                "description": "Desktop Cat: QT Overlay",
+                "stargazers_count": 119,
+                "language": "Python",
+                "pushed_at": "2026-06-18T00:59:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AICommit",
+                "description": "AI commit messages from your local LLM \u2014 Ollama / llama-cpp backed, offline, Conventional Commits, with review + changelog modes.",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2026-05-22T20:16:48Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "changelog",
+                  "cli",
+                  "code-review",
+                  "conventional-commits",
+                  "developer-tools",
+                  "git",
+                  "git-commit",
+                  "llama-cpp",
+                  "llm",
+                  "local-llm",
+                  "ollama",
+                  "python"
+                ]
+              },
+              {
+                "name": "Qwen3ASRDemo",
+                "description": "Live microphone ASR using Qwen3-ASR (NVIDIA GPU required)",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-05-22T11:32:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "followme",
+                "description": "Discover, grade, follow and star GitHub repos with a local Ollama model.",
+                "stargazers_count": 37,
+                "language": "Python",
+                "pushed_at": "2026-05-29T14:05:37Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "github-api",
+                  "llm",
+                  "ollama",
+                  "python",
+                  "sqlite"
+                ]
+              },
+              {
+                "name": "audio8bit",
+                "description": "CLI to convert any audio file into 8-bit / chiptune-style sound (bitcrusher)",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-06-15T14:09:27Z",
+                "fork": false,
+                "topics": [
+                  "8bit",
+                  "audio",
+                  "bitcrusher",
+                  "chiptune",
+                  "cli",
+                  "dsp",
+                  "ffmpeg",
+                  "python"
+                ]
+              },
+              {
+                "name": "topica",
+                "description": "Fast, all-purpose topic modeling for Python: 20+ models (LDA, STM, CTM, DMR, keyATM, BERTopic, ETM, ...) behind one NumPy-native interface on a parallel Rust core, with shared diagnostics and reproducible fits.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-16T03:07:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yumiaura",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-06-11T02:30:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "yandexfreetranslate",
+                "description": "Yandex Translate free unlim python",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2021-04-25T14:28:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "3270NerdFont",
+                "description": "Quick install for 3270NerdFont",
+                "stargazers_count": 6,
+                "language": "Shell",
+                "pushed_at": "2025-10-13T15:27:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "papirus-icon-theme",
+                "description": "Pixel perfect icon theme for Linux",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-09T04:41:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LoveBites",
+                "description": "Just an Xfce Rice \ud83c\udf59",
+                "stargazers_count": 4,
+                "language": "Lua",
+                "pushed_at": "2025-10-16T20:04:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Orchis-theme",
+                "description": "Orchis is a [Material Design](https://material.io) theme for GNOME/GTK based desktop environments.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-14T19:26:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MediaToTextBot",
+                "description": "A powerful Telegram bot that converts audio and video files to text using advanced speech recognition technology",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-10-19T01:58:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RedditSync",
+                "description": "Script fot fetching news from Reddit",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-10-23T01:28:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Turing-An_AI_Integrated_Real-time_Assistant",
+                "description": "A sophisticated, JARVIS-inspired voice assistant with passive listening, natural language processing, and a British accent.",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2025-10-25T21:42:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "myEmojiboard",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-10-30T23:15:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "myAssistant",
+                "description": "Multi-platform AI assistant",
+                "stargazers_count": 16,
+                "language": "Python",
+                "pushed_at": "2025-10-31T17:56:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "codecat",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-04-23T20:52:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mailer",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-26T02:14:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "voicerecorder",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-04-26T02:11:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "post-fiat-signals",
+                "description": "Python SDK for Post Fiat Signal Intelligence API \u2014 regime-aware semi-crypto divergence signals",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-04-26T02:16:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "myViewCount",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-04-27T17:20:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "code-orbit",
+                "description": "An open source local AI coding agent built in Python. ",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-04-30T16:11:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SubForge",
+                "description": "Media \u2192 Subtitles \u2192 Translation, all-in-one. One engine, three frontends: PyQt6 GUI, Textual TUI, plain CLI.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-05-22T19:04:15Z",
+                "fork": false,
+                "topics": [
+                  "asr",
+                  "audio",
+                  "cli",
+                  "deep-translator",
+                  "faster-whisper",
+                  "ffmpeg",
+                  "gui",
+                  "pyqt6",
+                  "python",
+                  "srt",
+                  "subtitles",
+                  "textual",
+                  "transcription",
+                  "translation",
+                  "tui",
+                  "video",
+                  "whisper"
+                ]
+              },
+              {
+                "name": "myRoomie",
+                "description": "A cozy 2D life-sim: share an apartment with a procedurally-generated roomie who keeps living, spends, sulks, and grows attached while you're away. Godot 4 client + FastAPI server.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-06-10T15:51:21Z",
+                "fork": false,
+                "topics": [
+                  "2d-game",
+                  "companion",
+                  "cozy-game",
+                  "fastapi",
+                  "game-development",
+                  "gdscript",
+                  "godot",
+                  "godot4",
+                  "life-simulation",
+                  "pydantic",
+                  "python",
+                  "rest-api",
+                  "simulation-game",
+                  "sqlite",
+                  "virtual-pet"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:05.200124+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

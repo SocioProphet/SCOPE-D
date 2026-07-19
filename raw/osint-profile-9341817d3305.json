@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-9341817d3305",
+  "target": "OHANA-WEB",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:55.612741+00:00",
+  "completedAt": "2026-06-21T15:30:56.936199+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ed1a6b2e",
+      "lookupType": "github_context",
+      "target": "OHANA-WEB",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "OHANA-WEB",
+            "name": "M@RISAKI",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Full Stack Web& Mobile | UI/UX, AI Engineer | Blockchain",
+            "public_repos": 51,
+            "followers": 1795,
+            "following": 3897,
+            "created_at": "2021-09-25T03:49:31Z",
+            "updated_at": "2026-02-28T17:22:34Z",
+            "html_url": "https://github.com/OHANA-WEB",
+            "avatar_url": "https://avatars.githubusercontent.com/u/91359065?v=4",
+            "repos": [
+              {
+                "name": "HC",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-29T23:33:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OHANA-WEB",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-29T07:22:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-program-library",
+                "description": "A collection of Solana programs maintained by Solana Labs",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-06-19T09:08:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Workana_bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-03-10T23:49:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mkvdts2ac3",
+                "description": "Bash script to convert DTS audio to AC3 within a matroska file.",
+                "stargazers_count": 26,
+                "language": "Shell",
+                "pushed_at": "2025-12-13T14:26:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "App-Grocery",
+                "description": "\ud83d\uded2 Streamline your grocery shopping with this Flutter app, designed for easy navigation and enhanced user experience.",
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2026-01-21T03:49:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Travel-Agent",
+                "description": "AI-Travel-Agent is a Python chatbot that uses LLMs to plan trips, search flights and hotels, manage multi-step conversations, and generate travel summaries or emails through a streamlined agent workflow.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-21T03:17:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-camera-face-detector",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Kotlin",
+                "pushed_at": "2026-01-11T22:52:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-facial-recognition",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-11T23:00:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Productive-and-Economic-Simulators-for-Livestock-Farming",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T01:50:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crush",
+                "description": "The glamourous AI coding agent for your favourite terminal \ud83d\udc98",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2026-04-27T10:37:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "langgraph",
+                "description": "Build resilient language agents as graphs.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-21T02:52:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Unreal_Engine_Game-main",
+                "description": "This is client feedback",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-22T19:52:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Stripe-Integration",
+                "description": "A streamlined integration of Stripe payment processing within a full-stack application\u2014includes checkout session creation, webhooks, subscription management, and secure backend logic.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-21T02:30:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "diorwave",
+                "description": "LedgerWave: blockchain-powered trade finance & letters-of-credit platform integrating smart contracts, business workflows, verification, and decentralized collaboration.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-15T16:47:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "solana-blockchain-development",
+                "description": "Solana blockchain development toolkit & example projects \u2014 includes Solana programs, client integration, wallet interaction, token operations, and full-stack demos for building on Solana.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-01-21T04:33:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust-laytracer",
+                "description": "An implementation of the ICFP 2000 raytracer challenge in rust",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-01-21T04:58:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SUGU-TABE-LP",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-12-28T09:35:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HP-coding",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-12-28T09:44:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vots-smart-contracts",
+                "description": "A Solidity-based proof-of-concept voting system built on Ethereum. Supports election creation, NFT minting, voter registration/accreditation, voting, instant results, and optional off-chain verification via Chainlink Functions.",
+                "stargazers_count": 0,
+                "language": "Solidity",
+                "pushed_at": "2026-01-21T04:32:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Chat-ui",
+                "description": "\ud83d\udcac Build an engaging chat interface for LLMs using SvelteKit, enabling easy integration with OpenAI-compatible APIs.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-21T04:29:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Plutus-prototye",
+                "description": "Experimental prototype of Plutus smart contract framework: includes reference interpreter, sample contracts, test scaffolding, and tools for development, simulation, and verification of Plutus scripts.",
+                "stargazers_count": 0,
+                "language": "Haskell",
+                "pushed_at": "2026-01-21T04:32:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pyledger",
+                "description": "A simple ledger for smart contracts written in python",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-21T04:31:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bcc-ledger-space",
+                "description": "Formal specifications and executable models of the Bcc Ledger across multiple eras. Includes Haskell code, LaTeX specs, and formal proofs for validation, testing, and reference implementation.",
+                "stargazers_count": 0,
+                "language": "Haskell",
+                "pushed_at": "2026-01-21T04:30:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solana-Arbitrage-Bot",
+                "description": "Solana arbitrage bot that scans multiple DEXs for profitable opportunities. Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-01-21T04:27:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "move-registry",
+                "description": "A collection of smart account implementations using our Move framework",
+                "stargazers_count": 0,
+                "language": "Move",
+                "pushed_at": "2026-01-21T04:23:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "firecrawl",
+                "description": "\ud83d\udd25 The Web Data API for AI - Turn entire websites into LLM-ready markdown or structured data",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-21T04:29:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solana-Trading-Bot",
+                "description": "A real-time Python bot for Solana that monitors wallets and copies transactions using WebSockets. Includes a FastAPI REST API for management, async processing, and robust error handling for automated crypto trading.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-21T03:57:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bleach-ui",
+                "description": "Bleach-UI is an in-development TypeScript-based UI component library/design system. It includes a demo app and a packages/ui module - a foundation for building user interfaces.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-21T03:51:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "discord-bot",
+                "description": "A versatile Discord bot built for community servers: supports slash commands, event handling, moderation tools, and extensible modules, ready for customization and integration into your Discord ecosystem.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-21T03:50:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kafka-clickhouse-sink",
+                "description": "Kafka to ClickHouse sink connector for streaming event data into ClickHouse from Kafka topics.",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-01-21T03:39:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Enterprise-ETL-Engine",
+                "description": "Enterprise-grade ETL engine for scalable data pipelines with modular processing, validation, and orchestration.",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-01-21T03:39:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "brev",
+                "description": "Lightweight utility project focused on simplicity and speed, providing concise tools for common developer workflows.",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-01-21T03:27:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Patentpath",
+                "description": "Agentic RAG demo for public patent text (Streamlit + hybrid retrieval + verification)",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-21T03:18:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cyber-Security-LLM-Agents",
+                "description": "A collection of agents that use Large Language Models (LLMs) to perform tasks common on our day to day jobs in cyber security.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-01-21T03:13:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VSCode-Agent-Bridge",
+                "description": "Run VSCode-based coding agents and extensions seamlessly within other IDE platforms - bridging the gap between VSCode ecosystem and other development environment.",
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2026-01-21T03:12:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ecommerce-website",
+                "description": "A modern e-commerce web app built with Next.js, MongoDB, and NextAuth. Features include product management, cart, checkout, admin dashboard, and Cloudinary image uploads with responsive design.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-21T03:02:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HR-management",
+                "description": "HR-Management: A modular human resources system with functionality for employee records, leave & attendance tracking, payroll, roles & permissions, reporting, and admin dashboards.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-21T02:52:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "The-Averion-Labs-Front-End",
+                "description": "Frontend module for Averion Labs\u2019 medical-AI SaaS: a React 18 + TypeScript web app built with Vite and Tailwind, supporting image-based diagnostics, billing, user roles and LLM-powered insights.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-21T02:44:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tulos_updated",
+                "description": "A modern ecommerce template built with Next.js and Sanity CMS, integrating Clerk for authentication, Stripe for payments and Sendbird chat. Ready for rapid deployment and customizable content management.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-21T02:30:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Stockagent",
+                "description": "[Preprint] Large Language Model-based Stock Trading in Simulated Real-world Environments",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-21T02:25:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ogmios",
+                "description": "\u2747\ufe0f A WebSocket JSON/RPC bridge for Cardano",
+                "stargazers_count": 0,
+                "language": "Haskell",
+                "pushed_at": "2026-01-21T02:03:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EduGPT",
+                "description": "Implementation of an AI Instructor using LLMs and Langchain",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-01-21T01:01:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "plutus-pioneer-program",
+                "description": "This repository hosts the lectures of the Plutus Pioneers Program. This program is a training course that the IOG Education Team provides to recruit and train software developers in Plutus, the native smart contract language for the Cardano ecosystem.",
+                "stargazers_count": 0,
+                "language": "Haskell",
+                "pushed_at": "2026-01-21T00:52:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cmd-chat",
+                "description": "My ISP tried to block this repo. \ud83e\udd10 A truly peer-to-peer, end-to-end encrypted CLI chat that leaves NO logs. Perfect for... sensitive discussions. \ud83d\udd25 Get it before it gets taken down",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-21T00:36:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shinytouch",
+                "description": "Open source optical touchscreen retrofit system using only a webcam, turns any flat reflective surface into a touch interface.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-21T00:31:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ASKSpeak",
+                "description": "ASKSpeak converts ASL gestures into spoken words using Leap Motion, enabling real-time communication for the hearing-impaired.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-21T00:29:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cg2015",
+                "description": "CG2015: A project exploring computer graphics principles and demo implementations in C++/OpenGL \u2014 includes shaders, rendering techniques, and interactive visualizations.",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-01-21T00:28:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Investment-Portfolio-AI-Agent",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-21T00:01:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Odoo-CRM-System",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2026-01-20T04:55:45Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:56.935789+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-2277c778595e",
+  "target": "phntmzn",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:55.626352+00:00",
+  "completedAt": "2026-06-20T13:52:57.547911+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-573bcd3f",
+      "lookupType": "github_context",
+      "target": "phntmzn",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "phntmzn",
+            "name": "zoned out",
+            "type": "User",
+            "company": null,
+            "blog": "https://iswearimnotbrainwashed.netlify.app",
+            "location": null,
+            "bio": "I <3 macOS \ud83c\udf4e\u2665\ufe0f",
+            "public_repos": 285,
+            "followers": 3056,
+            "following": 10127,
+            "created_at": "2023-03-04T21:46:29Z",
+            "updated_at": "2026-06-01T16:27:09Z",
+            "html_url": "https://github.com/phntmzn",
+            "avatar_url": "https://avatars.githubusercontent.com/u/126989297?v=4",
+            "repos": [
+              {
+                "name": "SpectreRoot",
+                "description": "Modular macOS rootkit framework (C++/ObjC++) for research on DKOM, privilege escalation, KEXT loading, and stealth tactics on pre-SIP systems.",
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2025-08-19T05:12:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MacRootKit2",
+                "description": "macOS RootKit that can fuzz drivers, perform kernel r/w, hook kernel and userspace functions, set custom breakpoints, GDB stub (in progress), match KDK kernels with DWARF debug symbols to release kernels, MachOs of all kinds, dyld shared caches, Objective C/Swift metadata,  dump libraries, library injection (e.g. cycript), and crawl iOS apps",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-08-23T04:00:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MacRootKit",
+                "description": "A RootKit for macOS that can perform kernel read/write, hook kernel and userspace functions, set custom conditional breakpoints, etc",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-08-14T19:16:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "songs",
+                "description": "c++ program for midi",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-06-08T20:09:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "infinite-songs",
+                "description": "c++ program for infinte amount of songs",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-06-05T20:21:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "goyplugg",
+                "description": "A lightweight Swift framework for plugg-style sound tools and reusable music utilities.",
+                "stargazers_count": 0,
+                "language": "Objective-C",
+                "pushed_at": "2026-05-28T17:14:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "goydeathframwork",
+                "description": "A lightweight Swift framework for darker sound design tools, effects, and experimental music utilities.",
+                "stargazers_count": 0,
+                "language": "Objective-C",
+                "pushed_at": "2026-05-28T17:13:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tonica",
+                "description": "A Swift framework for music theory, chords, scales, rhythm patterns, progressions, and simple MIDI file generation.",
+                "stargazers_count": 0,
+                "language": "Swift",
+                "pushed_at": "2026-05-28T17:01:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "obj-se",
+                "description": "social engineering toolkit written in objective c",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-05-27T18:18:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "obj-c2",
+                "description": "Objective-C macOS server prototype with TCP/HTTP handling, config-driven startup, local logging, and file-backed client state.",
+                "stargazers_count": 0,
+                "language": "Objective-C",
+                "pushed_at": "2026-05-27T15:34:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-lisp-project",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Common Lisp",
+                "pushed_at": "2026-05-26T15:40:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sysadmin-tools",
+                "description": "collection of perl scripts, sysadmin tools",
+                "stargazers_count": 0,
+                "language": "Perl",
+                "pushed_at": "2026-05-26T15:26:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "disassembly",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-26T14:44:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "twisted",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-22T18:41:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chainKitframework",
+                "description": "Block structure validation and block ledger management for chain-based applications",
+                "stargazers_count": 2,
+                "language": "Objective-C",
+                "pushed_at": "2026-05-19T15:15:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "apple-script-malware-collection",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "AppleScript",
+                "pushed_at": "2026-05-21T19:06:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cgi-serve",
+                "description": "perl scripts",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-19T15:11:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "autosign",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-25T02:39:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "websploit",
+                "description": "Websploit is a high level MITM framework",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-05-14T06:07:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "injectorKit",
+                "description": "dynamic library",
+                "stargazers_count": 1,
+                "language": "Objective-C",
+                "pushed_at": "2025-07-31T05:52:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PyPhisher",
+                "description": "Python tool for phishing",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-13T21:18:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "embedded-systems",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-22T18:38:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stripe-php",
+                "description": "PHP library for the Stripe API.    ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-18T19:12:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Xcode-research",
+                "description": "using frameworks in new projects. building dynamic libraries",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-22T16:46:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spotify-play-generator-bot",
+                "description": "Spotify Play Generator Bot. Generate plays on your Spotify tracks",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-24T04:17:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "free-proxy-list",
+                "description": "\ud83d\ude80 Free HTTP, SOCKS4, & SOCKS5 Proxy List * Updated every 5 minutes *",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-30T14:30:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "boostcollective",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-07T20:09:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "phntm128a",
+                "description": "c++ program for midi ",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-05-07T19:52:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Black-Hat-Bash",
+                "description": "The Black Hat Bash book repository",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-21T03:58:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Artemis",
+                "description": "Phishing webapp generator",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-08-17T12:49:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PhishX",
+                "description": "PhishX - The Complete Spear Phishing Tool",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-09-13T15:01:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PoT",
+                "description": "Phishing on Twitter",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-06-21T22:19:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "king-phisher",
+                "description": "Phishing Campaign Toolkit",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-11T10:09:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sound-scan",
+                "description": "\ud83c\udfa7 Passive recon & fingerprinting tool for SoundCloud's infrastructure \u2014 ports, banners, HTTP headers, CVEs (Shellshock, MS17-010, FTP anon).",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-07-10T12:48:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SpoDoss",
+                "description": "Spotify Artificial Streams Bot. You can earn money with streams.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-12-25T17:46:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "opengen-bot",
+                "description": "Generate Netflix, Spotify, NordVPN & Disney plus accounts.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-10-14T23:43:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MoneyPrinter",
+                "description": "Automate Creation of YouTube Shorts using MoviePy.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-26T22:17:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "YoutubeBot",
+                "description": "YouTube Bot is a basic python script that tries to increase the number of views on your YouTube video. Sometimes, we struggle to get views even though our contents are great. View counts also contribute to the YouTube algorithm. Hence, this tool might help you in such situation. Remember! Do not overuse as it is completely unethical.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-09T10:40:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WannaCry2.0",
+                "description": "\ud80c\uddb0\ud80c\uddaa WannaCry \ud835\udde5\ud835\uddee\ud835\uddfb\ud835\ude00\ud835\uddfc\ud835\uddfa\ud835\ude04\ud835\uddee\ud835\uddff\ud835\uddf2. This malware spread by using a vulnerability Exploit Called \"EternalBlue\".",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-15T08:40:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "musical-typing",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Swift",
+                "pushed_at": "2026-04-22T16:38:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "goydeath",
+                "description": "swift framework for goydeath music",
+                "stargazers_count": 0,
+                "language": "Swift",
+                "pushed_at": "2026-04-22T16:30:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "frameworkreleaseproject",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-22T16:19:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MusicTheoryKit",
+                "description": "Music theory framework for Swift and Xcode with notes, accidentals, pitch classes, chords, scales, rhythm grids, patterns, progressions, transposition, and test coverage. Built as a reusable .framework for music apps, MIDI tools, and composition workflows.",
+                "stargazers_count": 0,
+                "language": "Swift",
+                "pushed_at": "2026-04-22T16:06:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "filewriterKit",
+                "description": "swift frame work for bulk writing midi files to .dmg",
+                "stargazers_count": 0,
+                "language": "Swift",
+                "pushed_at": "2026-04-22T15:43:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "0-dns-cache-poisoning",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-18T17:57:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dns-cache-poisoning",
+                "description": "DNS cache poisoning implementation using scapy",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-10-01T12:09:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dnscachepoisoning",
+                "description": "DNS Cache Poisoning",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-30T15:56:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "musikai",
+                "description": "Automation suite to generate and publish music using AI",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-29T20:10:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "subbrute",
+                "description": "A DNS meta-query spider that enumerates DNS records, and subdomains.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-01-13T09:25:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DNS-Zone-Transfer-Checker",
+                "description": "Script to check DNS zone transfer",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-06-01T06:21:59Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:57.547048+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "profileId": "osint-profile-7e41f40b3bf0",
+  "target": "juliofleitas",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:38.861853+00:00",
+  "completedAt": "2026-06-21T15:29:39.594921+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1413c63e",
+      "lookupType": "github_context",
+      "target": "juliofleitas",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "juliofleitas",
+            "name": "Julio Fleitas",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 22,
+            "followers": 2438,
+            "following": 25788,
+            "created_at": "2023-01-14T14:59:51Z",
+            "updated_at": "2026-06-14T05:54:13Z",
+            "html_url": "https://github.com/juliofleitas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/122684703?v=4",
+            "repos": [
+              {
+                "name": "tareas",
+                "description": "Este proyecto es una aplicaci\u00f3n de lista de tareas pendientes desarrollada en Python con la biblioteca de interfaz gr\u00e1fica de usuario Tkinter.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2023-03-16T21:08:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "introduccion-a-js-master",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-30T02:17:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docs",
+                "description": "Documentation site",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-02-08T07:43:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Landing-Page",
+                "description": "Landing Page hecha con HTML CSS y JS",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2023-01-28T16:37:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tecnia",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-09-14T03:19:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "comandos-utiles",
+                "description": "comandos \u00fatiles",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-09-04T04:32:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "barbera-reserva",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-12T22:26:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "barberiaa",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-04-26T00:28:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "barberia",
+                "description": "Proyecto de Barberia generica",
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2024-05-30T00:40:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "challengeonecodificador6",
+                "description": "Challenge ONE Sprint 01: Construye un encriptador de texto con Javascript  #challengeonecodificador6",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-03-20T19:17:32Z",
+                "fork": false,
+                "topics": [
+                  "challengeonecodificador6"
+                ]
+              },
+              {
+                "name": "juliofleitas",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-12-25T21:15:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "star_wars",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-04-06T02:37:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blog",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-04-04T01:53:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mi_blog",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-04-04T02:37:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArchBspwm",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-03-21T22:05:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "juliofleitas.github.io",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-03-02T04:07:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-simple-html-css-js",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-01-29T01:37:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-css-curso",
+                "description": "html css curso",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-01-28T19:17:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-01-28T15:53:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Galeria-HTML5---CSS3",
+                "description": "Galeria HTML5 - CSS3",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-01-28T18:07:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "freejotta",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-26T21:00:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "piano-svelte",
+                "description": "Aplicaci\u00f3n web hecha con svelte y bootstrap",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-05T05:26:05Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:39.594117+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

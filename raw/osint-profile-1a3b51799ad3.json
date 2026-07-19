@@ -1,0 +1,469 @@
+{
+  "profileId": "osint-profile-1a3b51799ad3",
+  "target": "paaak",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:30.758483+00:00",
+  "completedAt": "2026-06-20T16:48:31.959148+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-48e89985",
+      "lookupType": "github_context",
+      "target": "paaak",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "paaak",
+            "name": "Paak",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "lolz code",
+            "public_repos": 44,
+            "followers": 997,
+            "following": 780,
+            "created_at": "2015-11-16T22:15:33Z",
+            "updated_at": "2025-10-26T17:15:32Z",
+            "html_url": "https://github.com/paaak",
+            "avatar_url": "https://avatars.githubusercontent.com/u/15879228?v=4",
+            "repos": [
+              {
+                "name": "DevConnector",
+                "description": "Cloud-Agile DevConnector offers Containerized, AI-Powered, Distributed Software Development Studio. with Intelligent architecture featuring Auto-Scaling capabilities",
+                "stargazers_count": 18,
+                "language": "Go",
+                "pushed_at": "2025-10-20T05:03:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NodeBridge",
+                "description": "Micro-scale orchestration of high-speed, event-driven transactions across vast networks through a resilient, self-healing transaction gateway.",
+                "stargazers_count": 38,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T05:08:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CryptoBridge",
+                "description": "Advanced Security-Agnostic Cryptographic Architecture powers Scalable Federated Exchange. providing enterprise-grade CryptoBridge solutions with Consensus-Based architecture",
+                "stargazers_count": 16,
+                "language": "Go",
+                "pushed_at": "2025-10-20T04:16:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MintUtility",
+                "description": "Cloud-synched, multi-tenant MintUtility enables predictive AI-driven insights across distributed, scalable infrastructures as a cohesive Intelligence Core.",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T05:07:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TradeConnector",
+                "description": "Cloud-native, algorithmic trade execution platform, harnessing data-driven insights for adaptive, centralized market access Portal.",
+                "stargazers_count": 24,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T05:06:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SandUtility",
+                "description": "Cloud-agnostic, data-driven, predictive-analytics enabled workflow automation suite for scalable intelligent distributed enterprise system.",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2025-10-20T05:04:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChainAdapter",
+                "description": "Highly Resilient ChainAdapter Framework enables Real-Time Processing of Multi-Protocol Data Streams on a Scalable Engine.",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-26T16:03:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChainInterface",
+                "description": "Microservices-based, self-healing ChainInterface leverages AI-driven path optimization for ultra-low communications across a highly scalable, intelligent distributed network router.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:33:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockBridge",
+                "description": "Unlocking seamless transactions with BlockBridge: Secure, high-performance, and fault-tolerant found in modern software development and networking tools patterns",
+                "stargazers_count": 7,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:56:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TestUtility",
+                "description": "Effortlessly crafting Automated Test Strategies with Intelligent Dynamic Orchestration and Adaptive Scalability Core.",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2025-10-20T04:55:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CryptoAdapter",
+                "description": "Hyper-convergent CryptoAdapter harnesses real-time data processing, auto-scaling, and distributed intelligence for adaptive high-performance Service.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T04:53:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChainUtility",
+                "description": "Self-healing Network Fabric for Real-Time Processing and Event-Driven Orchestration at Scale. providing enterprise-grade ChainUtility solutions",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T04:52:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ApiBridge",
+                "description": "Dynamic Application Fabrication Framework enabling scalable, configurable API composition at runtime, driven by high-performance orchestration.",
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:51:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MintAdapter",
+                "description": "Automated, self-healing MintAdapter orchestrates elastic, API-gateway mesh dynamics with adaptive, high-performance system core.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T04:49:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TradeUtility",
+                "description": "Edge-integrated TradeUtility platform leverages autonomous AI decision-making, deploying ML models dynamically across a self-healing, scalable cloud hub.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T04:48:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SandBridge",
+                "description": "Distributed-compute clusters enabled by real-time event processing facilitate high-performance across scalable fault-tolerant nodes within a unified orchestration module.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T04:46:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DevInterface",
+                "description": "Containerized microservices orchestrator for cloud-agnostic deployments, integrating real-time analytics, scalable and intelligent at the application hub.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:45:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MockConnector",
+                "description": "Dynamic Integrator Network Orchestrator, a scalable, intelligent, and distributed efficient message-passing and real-time system-integration as a sophisticated mediator.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:44:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenConnector",
+                "description": "Dynamically orchestrated, fault-tolerant clusters synchronize events across resilient networks, weaving a robust, high-performance fabric.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-10-20T04:57:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwapUtility",
+                "description": "Automated Real-Time Data Processing Orchestration Platform for Scalable Intelligent Distributed Applications on Demand Catalyst",
+                "stargazers_count": 21,
+                "language": "Go",
+                "pushed_at": "2025-10-20T04:59:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletConnector",
+                "description": "Advanced WalletConnector platform enables seamless, high-performance multi-currency transactions across blockchain networks Hub.",
+                "stargazers_count": 8,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T05:00:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DataUtility",
+                "description": "Decentralized Real-Time Processing Cloud Framework enables Scalable Intelligent Data Exchange as a unified Enterprise Data Gateway.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-10-20T05:01:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MockBridge",
+                "description": "Real-time, asynchronous data replication enables resilient, fault-tolerant, and highly scalable enterprise System.",
+                "stargazers_count": 9,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T05:02:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NodeConnector",
+                "description": "Hybrid Multi-Cloud NodeConnector enables Scalable Event-Driven APIs, seamlessly routing requests through a Distributed, Intelligent Gateway.",
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:50:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CryptoUtility",
+                "description": "Real-time processing enabled, auto-scaling adaptive, highly intelligent, distributed systems platform suite. implementing modern real-time-processing patterns",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-10-20T04:35:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockConnector",
+                "description": "Adaptive, high-performance BlockConnector solutions enable seamless, API-based integration across seamlessly connecting data streams to a secure Intelligent Bridge.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-10-20T04:37:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DataBridge",
+                "description": "Data-Driven enterprise fabric that securely weaves scalable intelligence across distributed systems via adaptive auditing and auto-scaling.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:43:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwapAdapter",
+                "description": "Intelligent Throughput Manager Suite: Efficiently orchestrating Adaptive throughput optimization, Low-latency processing, Scalable fault tolerance, and Granular security controls.",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2025-10-20T04:40:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletInterface",
+                "description": "Transaction-oriented, secure value exchange orchestrator leveraging multi-signature authorization and robust secure key management across a resilient controller.",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2025-10-20T04:42:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenUtility",
+                "description": "Intelligent adaptive TokenUtility fabric empowers scalable distributed computing, automating load balancing through adaptive cluster Broker.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:39:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TestBridge",
+                "description": "Forensic Analytics Engine utilizing Real-time Processing and Machine Learning-driven assessments Here are six technical descriptors for TestBridge projects:",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:36:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ApiConnector",
+                "description": "Secure, high-performance ApiConnector unifies advanced analytics and multi-protocol support as a strategic data Nexus Hub.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T04:32:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NodeAdapter",
+                "description": "Decentralized API Bridge Platform for Intelligent Data Synchronization and Real-Time Integration across Heterogeneous Systems Platform",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-10-20T04:31:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MintBridge",
+                "description": "Enterprise-grade MintBridge unlocks scalable, intelligent, distributed infrastructure as adaptive, self-healing network Nexus Gateway.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T04:30:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TradeInterface",
+                "description": "Dynamically load-balanced, in-memory data grid enables real-time trade analytics, stream processing, and adaptive market optimizer.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:28:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SandConnector",
+                "description": "Artificially-intelligent, event-driven SandConnector is a distributed, scalable decision-making aggregator. featuring horizontal scaling capabilities providing enterprise-grade SandConnector solutions",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2025-10-20T04:27:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DevBridge",
+                "description": "Data-centric DevBridge platform delivers secure-authenticated data-integration via scalable, intelligent, distributed nodes, serving as a unified application orchestrator.",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-10-20T04:26:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MockInterface",
+                "description": "Service-oriented, real-time processing engine for seamless API gateway integration and distributed controller orchestration.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:25:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DataConnector",
+                "description": "Silicon-Optimized DataConnector unleashes transformative data orchestration with adaptive, AI-driven ingestion. Here are 6 technical descriptors for DataConnector projects:",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:24:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletAdapter",
+                "description": "Real-time Secure Key Orchestration enables Multi-Chain Interoperability on a Scalable, Distributed Digital Asset Hub.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:22:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SwapInterface",
+                "description": "High-Performance Real-Time Data Processing Infrastructure for Highly Available, Scalable, and Adaptive Enterprise Swap Solutions Framework",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2025-10-20T04:21:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenBridge",
+                "description": "Seamless Inter-Chain Interoperability via Optimized Routing and Real-Time Settlement Ensures Fault-Tolerant, Scalable Connectivity Across a Decentralized Network",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-10-20T04:20:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockInterface",
+                "description": "Edge-enabled BlockInterface delivers real-time, async processing and fault-tolerant, extensible capabilities within a unified CoreKit framework.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:19:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TestConnector",
+                "description": "Cloud-agnostic TestConnector harnesses real-time processing and intelligent routing for intelligent, distributed test orchestration platforms.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2025-10-20T04:17:37Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:31.958076+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

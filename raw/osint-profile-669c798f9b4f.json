@@ -1,0 +1,839 @@
+{
+  "profileId": "osint-profile-669c798f9b4f",
+  "target": "sondosaabed",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:16.417137+00:00",
+  "completedAt": "2026-06-20T16:49:18.943360+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-703720bb",
+      "lookupType": "github_context",
+      "target": "sondosaabed",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "sondosaabed",
+            "name": "Sondos Ahmad Aabed",
+            "type": "User",
+            "company": null,
+            "blog": "sondos@duck.com",
+            "location": "Code for Palestine, Al-Bireh",
+            "bio": "FREE PALESTINE \ud83c\uddf5\ud83c\uddf8 \r\nData Scientist | \r\nDeep Learning |  \r\nCybersecurity Focused |\r\nData Quality | Procurement Specialist",
+            "public_repos": 125,
+            "followers": 800,
+            "following": 1521,
+            "created_at": "2020-05-11T05:55:57Z",
+            "updated_at": "2026-05-24T11:45:45Z",
+            "html_url": "https://github.com/sondosaabed",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65151701?v=4",
+            "repos": [
+              {
+                "name": "A-Project-Generated-By-Prompting-Copilot",
+                "description": "This code is generated using Copilot for code on visual Studio Code plugin. This is part of a voluntary work done for BZU Master student research.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-04T00:52:55Z",
+                "fork": false,
+                "topics": [
+                  "database",
+                  "json",
+                  "login",
+                  "search",
+                  "website"
+                ]
+              },
+              {
+                "name": "Tasks-list-Managment-System",
+                "description": "  A Tasks Managment System using Laravel. E Micro Learn Summer Internship",
+                "stargazers_count": 7,
+                "language": "PHP",
+                "pushed_at": "2026-06-06T14:15:39Z",
+                "fork": false,
+                "topics": [
+                  "blade-template",
+                  "database-seeding",
+                  "html",
+                  "javascript",
+                  "laravel-framework",
+                  "migrations",
+                  "mvc-architecture",
+                  "php",
+                  "routing"
+                ]
+              },
+              {
+                "name": "Introduction-to-Git",
+                "description": "In this course, I learned the importance of version control using Git. I explored tracking, modifying, saving files, undoing changes, and using branches for collaboration. I also learned about repository structure, creating and cloning repositories, and handling conflicting files.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-08-15T13:32:17Z",
+                "fork": false,
+                "topics": [
+                  "datacamp-course",
+                  "git",
+                  "version-control"
+                ]
+              },
+              {
+                "name": "Data-Analyst-Nanodegree",
+                "description": "I aquired a full scholarship from Google Launchpad. Advanced data wrangling skills to work with messy, complex real-world datasets. Highly customized visualizations using the Matplotlib Python library",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-17T16:38:25Z",
+                "fork": false,
+                "topics": [
+                  "data-science",
+                  "dataanalysis",
+                  "datawrangling",
+                  "nanodegree",
+                  "python",
+                  "udacity-nanodegree"
+                ]
+              },
+              {
+                "name": "MENA-TechSkill-Boost-Initiative",
+                "description": "Accepted to enroll in the MENA Tech Skills Boost initiative, Google cloud scholarship.",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-15T21:36:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data-Analyst-nd-shared-notebooks",
+                "description": "This repository contains DEMOs, Case studies as part of the second Palestine Launchpad with Google, Data Analyst Nanodegree. Session Lead by Alaa'",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-17T16:41:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SQL-Injection-Attack-Detection",
+                "description": "Introduction to generative adversial network",
+                "stargazers_count": 7,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-18T13:41:00Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "conditional-gan",
+                  "security"
+                ]
+              },
+              {
+                "name": "Assets-Threats-and-Vulnerabilities",
+                "description": "In this course, I build an understanding of the wide range of assets organizations must protect. Explored many of the most common security controls used to protect valuable assets from risk. Also discovered the variety of ways assets are vulnerable to threats by adopting an attacker mindset.",
+                "stargazers_count": 11,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-18T14:49:23Z",
+                "fork": false,
+                "topics": [
+                  "assets-management",
+                  "cybersecurity",
+                  "threats",
+                  "vunerability"
+                ]
+              },
+              {
+                "name": "Detection-and-Response",
+                "description": "In this course, I understand the incident response lifecycle and practice using tools to detect and respond to cybersecurity incidents.",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-23T10:33:15Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "detection",
+                  "response"
+                ]
+              },
+              {
+                "name": "Automate-Cybersecurity-Tasks-with-Python",
+                "description": "Developed Python programming skills for automating security tasks, covering foundational concepts, string and list manipulation, and file parsing algorithms.",
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-31T10:17:10Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "python"
+                ]
+              },
+              {
+                "name": "Prepare-for-Cybersecurity-Jobs",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-09-05T20:14:56Z",
+                "fork": false,
+                "topics": [
+                  "analysis",
+                  "cybersecurity",
+                  "jobsearch",
+                  "security",
+                  "storytelling"
+                ]
+              },
+              {
+                "name": "Aqlama-spring-boot-3-spring-6-hibernate-Internship",
+                "description": "My internship with Aqlama course and tasks.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-09-11T22:30:51Z",
+                "fork": false,
+                "topics": [
+                  "backend",
+                  "course",
+                  "internship",
+                  "java",
+                  "spring-mvc",
+                  "springboot",
+                  "udemy-course"
+                ]
+              },
+              {
+                "name": "SIEM",
+                "description": "SIEM Tactics, Techiques, and Procedures",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-09-11T14:52:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Cybersecurity-Professional-Google-Knoweldge4all-Scholarship",
+                "description": "I have been selected as a recipient of the full scholarship from the FutureSkills4All initiative, a project by the United Nations Development Programme (UNDP) and the Mohammed bin Rashid Al Maktoum Knowledge Foundation. Through this program, I am enhancing my skills and knowledge in cybersecurity via an extensive learning journey on Coursera.",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-11-03T20:25:08Z",
+                "fork": false,
+                "topics": [
+                  "cloud-computing",
+                  "communication",
+                  "cybersecurity",
+                  "ids",
+                  "linux",
+                  "network-security",
+                  "planning",
+                  "problem-solving",
+                  "python"
+                ]
+              },
+              {
+                "name": "Alice-Project-Scene-From-Movie",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-12-02T11:39:56Z",
+                "fork": false,
+                "topics": [
+                  "alice",
+                  "alice-movie",
+                  "alice-scene",
+                  "atp3",
+                  "scene-graph",
+                  "wonderland"
+                ]
+              },
+              {
+                "name": "Finding-Charity-Donors",
+                "description": "In this project I apply supervised learning techniques and using analytical mind on data collected for the U.S. The Census to help CharityML (a fictitious charity organization) and identify people most likely to donate to their cause.",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-11-08T22:39:11Z",
+                "fork": false,
+                "topics": [
+                  "data-science",
+                  "donors",
+                  "intro-to-machine-learning-udacity",
+                  "machine-learning",
+                  "machine-learning-algorithms",
+                  "nanodegree",
+                  "python",
+                  "supervised-learning",
+                  "supervised-machine-learning",
+                  "udacity-nanodegree"
+                ]
+              },
+              {
+                "name": "Introduction-to-Digital-Forensics",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-01-21T10:37:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Blue-Team-Junior-Analyst-Pathway",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-01-21T10:44:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Identify-Customer-Segments",
+                "description": "Third Project for unsupervised machine learning with tensorflow.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-03-10T21:47:11Z",
+                "fork": false,
+                "topics": [
+                  "customer",
+                  "intro-to-machine-learning-udacity",
+                  "pandas",
+                  "python",
+                  "sklearn",
+                  "udacity-nanodegree",
+                  "unsupervised-learning"
+                ]
+              },
+              {
+                "name": "Intro-to-Machine-Learning-with-TensorFlow-Nanodegree",
+                "description": "Acquired a full scholarship from Google Palestine Launchpad. It is about the mastery of machine learning techniques such as data transformation and algorithms that can find patterns in data and apply machine learning algorithms to tasks of their own design.",
+                "stargazers_count": 8,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-03-10T21:49:49Z",
+                "fork": false,
+                "topics": [
+                  "machine-learning",
+                  "palestine",
+                  "python",
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "KhattTech-High-Fidelity-Midterm",
+                "description": "This repository is Part of UI/UX nanodegree udacity program. Specifically working on high fedality design for midterm.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-02T15:09:42Z",
+                "fork": false,
+                "topics": [
+                  "midterm",
+                  "nanodegree",
+                  "udacity-nanodegree",
+                  "ui-design",
+                  "ux-design"
+                ]
+              },
+              {
+                "name": "Arabic-Handwritten-Recognition-UX-Design-Research-Data-Analysis",
+                "description": "Arabic Handwritten Recognition data analysis collected by google forms to the purpose of UX reserach as part of UX-Nanodegree",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-06-28T11:08:33Z",
+                "fork": false,
+                "topics": [
+                  "ux-design",
+                  "ux-ui"
+                ]
+              },
+              {
+                "name": "KhattTech-High-Fidelity-Final",
+                "description": "This my final submission as part of the User experince Nanao degree, where I perfrom testing and enhancemnet on accessability.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-27T08:33:52Z",
+                "fork": false,
+                "topics": [
+                  "acessibility",
+                  "design",
+                  "figma",
+                  "high-fidelity-prototype",
+                  "lookback",
+                  "nanodegree",
+                  "prototype",
+                  "testing",
+                  "udacity-nanodegree",
+                  "usability",
+                  "user-experience",
+                  "zeplin"
+                ]
+              },
+              {
+                "name": "Capstone-UX-Portfolio-Case-Study",
+                "description": "Capstone as part of UX/UI Nanodegree program requirements. I show case all the work that I did throughout this program.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-27T16:12:03Z",
+                "fork": false,
+                "topics": [
+                  "design",
+                  "figma",
+                  "lookback",
+                  "nanodegree",
+                  "portfolio",
+                  "udacity-nanodegree",
+                  "ux-design",
+                  "ux-ui",
+                  "zeplin"
+                ]
+              },
+              {
+                "name": "User-Experience-Nanodegree",
+                "description": "\ud83c\udf93 I acquired this UX Nanodegree through a full scholarship from Google Palestine Launchpad. The program focused on human-centered design, user research, prototyping, and UI/UX best practices using tools like Figma. Includes hands-on projects in design thinking, usability testing, and accessible product design.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-27T17:45:26Z",
+                "fork": false,
+                "topics": [
+                  "design-thinking",
+                  "figma",
+                  "high-fidelity-prototype",
+                  "low-fidelity-prototype",
+                  "nanodegree",
+                  "prototyping",
+                  "qualitative-data-analysis",
+                  "usability-testing",
+                  "ux-design",
+                  "ux-research",
+                  "ux-ui"
+                ]
+              },
+              {
+                "name": "Data-Visualization-Nanodegree",
+                "description": " I aquired a full scholarship from Google Launchpad fifth cohort.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-08-04T14:58:13Z",
+                "fork": false,
+                "topics": [
+                  "data-visualization",
+                  "flourish",
+                  "nanodegree",
+                  "tableau",
+                  "udacity-nanodegree"
+                ]
+              },
+              {
+                "name": "Data-Visualization-in-Tableau",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-08-10T15:33:35Z",
+                "fork": false,
+                "topics": [
+                  "data-analysis",
+                  "data-visualization",
+                  "nanodegree",
+                  "plot",
+                  "tableau",
+                  "udacity"
+                ]
+              },
+              {
+                "name": "Build-Data-Visualizations-US-Census-Demographic-Data",
+                "description": "This report details the process and outcomes of the Data Visualization with Tableau, Using a dataset of US Census demographics, exploring key demographic trends across the country. ",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-12-27T18:54:35Z",
+                "fork": false,
+                "topics": [
+                  "barchart",
+                  "dashboard",
+                  "data-visualization",
+                  "project",
+                  "scatter-plot",
+                  "tableau",
+                  "udacity-nanodegree"
+                ]
+              },
+              {
+                "name": "Flowers-Image-Classifier-with-Deep-Learning-TF",
+                "description": "Implementing an image classifier model using deep learning with Tensorflow. This is the second project of Intro to machine learning nanodegree",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-02T09:55:10Z",
+                "fork": false,
+                "topics": [
+                  "deep-learning",
+                  "image-classification",
+                  "image-classifier",
+                  "intro-to-machine-learning-udacity",
+                  "machine-learning",
+                  "neural-network",
+                  "python",
+                  "tensorflow",
+                  "udacity-nanodegree"
+                ]
+              },
+              {
+                "name": "Superstore-Dashboard-design-Tableau",
+                "description": "Initial design for an interactive Tableau dashboard analyzing the \"Sample-Superstore\" dataset. This project tracks profitability and sales trends across 20 dimensions, including geography, product categories, and time to identify key business growth drivers and seasonal variances.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-02-08T10:20:02Z",
+                "fork": false,
+                "topics": [
+                  "dashboard",
+                  "design",
+                  "tableau",
+                  "udacity-nanodegree"
+                ]
+              },
+              {
+                "name": "Superstore-2018-Performance-Dashboard",
+                "description": "A dynamic, executive-level analytics tool built with Tableau to monitor Global Superstore performance. Features advanced parameter-driven metric switching, automated YoY growth calculations, and a high-contrast text hierarchy optimized for rapid decision-making.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-02-16T18:50:13Z",
+                "fork": false,
+                "topics": [
+                  "dashboard",
+                  "design",
+                  "sales-analysis",
+                  "tableau"
+                ]
+              },
+              {
+                "name": "Introduction-to-Project-Management",
+                "description": "In this course, I have learned what project management is, its benefits, and challenges encountered by project managers. Also learned how recent trends, such as remote work, Agile, and artificial intelligence, have re-shaped modern project management. ",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-07-29T20:51:31Z",
+                "fork": false,
+                "topics": [
+                  "bmi",
+                  "coursera",
+                  "product-management"
+                ]
+              },
+              {
+                "name": "Digital-Forensics-investigation",
+                "description": "This report was written for the Digital Forensics Analysis coursework, specifically the first assignment. In which, steps and screenshots for each investigation process are recorded.",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2023-07-17T21:25:11Z",
+                "fork": false,
+                "topics": [
+                  "active-disk-editor",
+                  "digital-forensics",
+                  "file-recovery",
+                  "ftk-imager",
+                  "incident-response",
+                  "partitioning",
+                  "virtual-hardisk"
+                ]
+              },
+              {
+                "name": "NICS-firearm-background-checks-investigation",
+                "description": "\ud83d\udd2b The data comes from the FBI's National Instant Criminal Background Check System. The NICS is used by to determine whether a prospective buyer is eligible to buy firearms or explosives. \ud83d\udd2b",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2024-06-21T20:09:49Z",
+                "fork": false,
+                "topics": [
+                  "census-data",
+                  "criminal-background",
+                  "data-analyst-nanodegree",
+                  "data-science",
+                  "data-wrangling",
+                  "data-wrangling-data-vis",
+                  "data-wrangling-data-visualisation",
+                  "fbi",
+                  "matplotlib",
+                  "nanodegree",
+                  "numpy",
+                  "pandas",
+                  "python",
+                  "storytelling-with-data",
+                  "usa"
+                ]
+              },
+              {
+                "name": "PalTaqdeer",
+                "description": " \ud83c\uddf5\ud83c\uddf8 PalTaqdeer is an AI-Driven Student Success Forecaster. Was developed for Hackathon Google Launchpad, data analysis techniques, Linear regression model, and Flask for the web \ud83c\uddf5\ud83c\uddf8",
+                "stargazers_count": 26,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-12-21T23:00:15Z",
+                "fork": false,
+                "topics": [
+                  "data-analysis",
+                  "hackathon",
+                  "hackathon-project",
+                  "linear-regression",
+                  "matplotlib",
+                  "outliers-detection",
+                  "pandas",
+                  "python",
+                  "student-grades"
+                ]
+              },
+              {
+                "name": "Deep-Learning-for-Text",
+                "description": "Advanced Deep Learning for Text with Pytorch on Datacamp Platform",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-05-13T00:02:44Z",
+                "fork": false,
+                "topics": [
+                  "cnn-text-classification",
+                  "deep-learning",
+                  "deep-learning-for-text",
+                  "gan-text-generation",
+                  "rnn-text-classification",
+                  "text-classification",
+                  "text-generation",
+                  "transfer"
+                ]
+              },
+              {
+                "name": "Optimal-coins-game-strategy",
+                "description": "a java project that uses dynamic programming to implemnt the Optimal coins collecting game strategy",
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2023-05-05T15:40:07Z",
+                "fork": false,
+                "topics": [
+                  "dynamic-programming",
+                  "java",
+                  "javafx",
+                  "optimal-game-strategy"
+                ]
+              },
+              {
+                "name": "Predicting-Diabetes-with-Decision-Trees",
+                "description": "\ud83d\udc89\ud83e\udd12 The project was built using maven project utilized WEKA in building the decision tree model and JavaFX in building GUI \ud83d\udc89\ud83e\udd12 ",
+                "stargazers_count": 18,
+                "language": "Java",
+                "pushed_at": "2023-12-21T22:29:09Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence-courses",
+                  "decision-trees",
+                  "diabetes-prediction",
+                  "java",
+                  "javafx",
+                  "maven",
+                  "maven-pom",
+                  "weka-library"
+                ]
+              },
+              {
+                "name": "Iris-of-eyes-recognition",
+                "description": "\ud83d\udc41\ufe0f A Biometric Authentication system using Iris. Enrollment and Authentication Modules. End to End, Iris Segmentation Free using DCNNs, Accuracy of 93.15% \ud83d\udc41\ufe0f",
+                "stargazers_count": 13,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-01T22:07:08Z",
+                "fork": false,
+                "topics": [
+                  "deep-learning",
+                  "identification",
+                  "iris-recognition",
+                  "security"
+                ]
+              },
+              {
+                "name": "Round-Table-Seating-Arrangement-Metaheuristic",
+                "description": " Round table arrangemnet solution using Genetic Algorithm, Simulated Annealing, and Hill Climbing (Metaheuristic)",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-19T00:14:06Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "genetic-algorithm",
+                  "hill-climbing-algorithm",
+                  "metaheuristics",
+                  "python",
+                  "simulated-annealing-algorithm"
+                ]
+              },
+              {
+                "name": "File-Carving-Tool",
+                "description": "This project was done as part of the Digital Forensics Analysis coursework, specifically the file carving tool.",
+                "stargazers_count": 9,
+                "language": "Java",
+                "pushed_at": "2023-07-19T16:45:42Z",
+                "fork": false,
+                "topics": [
+                  "digital-forensics",
+                  "file-carving",
+                  "file-fragmentation",
+                  "file-recovery",
+                  "file-signatures",
+                  "fragmentation",
+                  "hash-based-search",
+                  "java",
+                  "sha-256"
+                ]
+              },
+              {
+                "name": "TensorFlow-Keras-Bootcamp",
+                "description": "Learned how Neural Networks, Multi-Layer Perceptron and Convolutional Neural Networks are used for Image Classification and Segmentation, and trained CNN model on a custom dataset.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-04T01:47:34Z",
+                "fork": false,
+                "topics": [
+                  "bootcamp",
+                  "keras",
+                  "opencv",
+                  "python",
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "Discovering-Quantum-Computing",
+                "description": "Quantum Computing Awareness course learned the superposition, entanglement, and interference concepts ",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-22T20:50:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tools-of-the-Trade-Linux-and-SQL",
+                "description": " In this course, I have explored computing skills that I will use on-the-job as a cybersecurity analyst. First, I practiced using Linux OS commonly used by cybersecurity professionals. Used the Linux command line through the Bash shell to navigate, manage the file system, authenticate users. Then, I have used SQL to communicate with a database. ",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-24T23:38:36Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "linux",
+                  "operating-system",
+                  "python",
+                  "sql"
+                ]
+              },
+              {
+                "name": "Digital-Guardian-Sondos",
+                "description": "My cybersecurity portfolio!",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-21T19:50:01Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "portfolio"
+                ]
+              },
+              {
+                "name": "Networks-and-Network-Security",
+                "description": "By the end of this course, I developed a greater understanding of network architecture, operations, intrusion tactics, common types of network vulnerabilities and attacks, and how to secure networks. I also was introduced to common network protocols, firewalls, virtual private networks (VPNs), and system hardening practices. ",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-18T23:47:34Z",
+                "fork": false,
+                "topics": [
+                  "network",
+                  "networksecurity"
+                ]
+              },
+              {
+                "name": "Foundations-of-Cybersecurity",
+                "description": "In this course, the primary job responsibilities and core skills of professionals in the field of cybersecurity were covered. The (CISSP) security domains, various security frameworks and controls, and a foundational security model (CIA) triad were explored. some common tools used by security analysts to protect organizations and individuals.",
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-15T20:51:18Z",
+                "fork": false,
+                "topics": [
+                  "coursera",
+                  "cybersecurity",
+                  "foundation",
+                  "google"
+                ]
+              },
+              {
+                "name": "Manage-Security-Risks",
+                "description": "In this course, I developed a greater understanding of the eight Certified Information Systems Security Professional (CISSP) security domains, as well as specific security frameworks and controls. I have also been introduced to how to use security tools and audits to help protect assets and data. ",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-17T01:00:19Z",
+                "fork": false,
+                "topics": [
+                  "cissp",
+                  "cybersecurity",
+                  "risk-management",
+                  "security-frameworks"
+                ]
+              },
+              {
+                "name": "DataCamp-Data-Scientist-Track",
+                "description": "26+ Hourse of learning Data Science with Python and SQL career track. To prepare for the Data Scientist with Python Certification",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-07-12T00:36:50Z",
+                "fork": false,
+                "topics": [
+                  "data-science",
+                  "datacamp",
+                  "intermediate-sql",
+                  "joining",
+                  "machine-learning",
+                  "python",
+                  "python-packages",
+                  "sql"
+                ]
+              },
+              {
+                "name": "Developing-Python-Packages",
+                "description": "In this course, I learned about package structure, essential files for packaging, import structure, documentation, and maintaining code style with flake8. I used templates and cookiecutter to create package skeletons. Lastly, I learned to use setuptools and twine to build and publish packages to PyPI.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-07-11T17:28:20Z",
+                "fork": false,
+                "topics": [
+                  "cookiecutter",
+                  "datacamp",
+                  "flake8",
+                  "pyment",
+                  "pypi",
+                  "python",
+                  "python-package",
+                  "setuptools",
+                  "tox-testing",
+                  "twine",
+                  "unit-testing",
+                  "zen"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:18.942070+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

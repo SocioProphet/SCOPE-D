@@ -1,0 +1,541 @@
+{
+  "profileId": "osint-profile-82c36edb9c55",
+  "target": "johndpope",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:28.325572+00:00",
+  "completedAt": "2026-06-20T16:47:30.086039+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f6f5ca0c",
+      "lookupType": "github_context",
+      "target": "johndpope",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "johndpope",
+            "name": "John D. Pope",
+            "type": "User",
+            "company": null,
+            "blog": "https://goo.gl/zxnLwG",
+            "location": "Castle Hill, Sydney",
+            "bio": "Former software engineer turned AI Loop Engineer",
+            "public_repos": 9462,
+            "followers": 1310,
+            "following": 8340,
+            "created_at": "2010-05-28T16:01:05Z",
+            "updated_at": "2026-06-19T05:57:21Z",
+            "html_url": "https://github.com/johndpope",
+            "avatar_url": "https://avatars.githubusercontent.com/u/289994?v=4",
+            "repos": [
+              {
+                "name": "gorest-2d-animation-spritesheet-generator",
+                "description": "Codex-assisted local 2D animation spritesheet generator and scene compositing workspace.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-17T18:13:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AFHARchiver",
+                "description": "An AFNetworking extension to automatically generate HTTP Archive files of all of your network requests!",
+                "stargazers_count": 0,
+                "language": "Objective-C",
+                "pushed_at": "2014-06-26T21:04:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llama-cpp-turboquant",
+                "description": "LLM inference in C/C++",
+                "stargazers_count": 63,
+                "language": null,
+                "pushed_at": "2026-05-07T23:45:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SadTalker_TensorRT",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-11T02:05:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "descope-render-mqen9t3r",
+                "description": "Created from render-examples/descope-render template",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-15T03:19:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Sales-agent",
+                "description": "Sales AI agent that talks with your customers, recommend products, book consultations, and process Stripe payments",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-09T17:28:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NVC-1B-hack",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-10-03T04:19:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "multigres",
+                "description": "Vitess for Postgres",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2026-06-15T04:54:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VASA-1-hack",
+                "description": "wip - running some training with overfitting - https://wandb.ai/snoozie/vasa-overfitting",
+                "stargazers_count": 317,
+                "language": "Python",
+                "pushed_at": "2026-01-24T19:06:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "knowledge-graph-extractor",
+                "description": "Turn any document or a whole zip into an interactive knowledge graph, using a self-hosted Qwen3.6-35B-A3B-MTP on a single NVIDIA L4",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-12T18:42:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "opencode-historian",
+                "description": "Historian \u2014 Manage memory for OpenCode via Recall, Remember & Forget \u2022 Powered by qmd ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-24T10:46:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue-realworld-example-app",
+                "description": "An exemplary real-world application built with Vue.js, Vuex, axios and different other technologies. This is a good example to discover Vue for beginners.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2019-10-02T18:26:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Hero",
+                "description": "Elegant transition library for iOS & tvOS",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-02-02T04:59:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "live2d_models_collect",
+                "description": "\u4e2a\u4eba\u6536\u96c6\u7684Live2D\u6a21\u578b",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2019-08-28T10:17:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Do-Transformers-Need-3-Projections",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-05T02:20:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MusaveraKit",
+                "description": "One-line Swift APIs for Apple's MusicUnderstanding framework.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-08T19:23:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ltx2-castlehill",
+                "description": "CastleHill: Separable Causal Diffusion / Varitaion Flow Maps for LTX-2 long-form video generation",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2026-05-19T22:37:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dLLM-Serve",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-13T19:32:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "KVarN",
+                "description": "KVarN is a native vLLM KV-cache quantization backend for your agents: 3-5x more context, throughput above FP16, and FP16-level accuracy. Calibration-free, one flag.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-03T13:46:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SpeechRecognition-1",
+                "description": "iOS 10 Speech Recognition Demo App",
+                "stargazers_count": 0,
+                "language": "Swift",
+                "pushed_at": "2016-06-29T15:35:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bernini",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-01T09:48:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "triple-entry-bsv-sql",
+                "description": "Tokenised commercial system on BSV: forked-PostgreSQL triple-entry ledger + tokenisation + EDI/logistics, regtest e2e. Research.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-01T12:22:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Layer-wise-Learning-Rate",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-27T12:05:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BES",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-28T02:34:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "grok-imagine-cinematic-studio",
+                "description": "The most advanced multi-agent cinematic production system for Grok 4.3 Beta (v3.3)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-28T21:45:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OdinLink-Five",
+                "description": "OdinLink-Five: Thunderbolt 5 RDMA for Linux \u2014 kernel driver, libibverbs provider (ibv_* API), NCCL/RCCL plugins. 80 Gbps DMA interconnect between machines.",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2026-05-28T12:46:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SimSWAP-docker",
+                "description": "Docker image for Sim Swap",
+                "stargazers_count": 3,
+                "language": "Dockerfile",
+                "pushed_at": "2021-07-24T23:44:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DiffSDA",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-14T08:57:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DEMON",
+                "description": "DEMON: Diffusion Engine for Musical Orchestrated Noise",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-27T21:10:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-toolkit-perceptual",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-28T01:06:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Extreme-Human-Video-Compression-with-MTTF",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-13T06:16:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mira",
+                "description": "Self-hosted AI code reviewer with indexed PR reviews, walkthroughs, vulnerability scanning, dependency graphs, custom rules, and a learning loop.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-22T02:58:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Soap2Soap",
+                "description": "The official code implementation of the paper \u201cSoap2Soap: Long Cinematic Video Remaking via Multi-Agent Collaboration\u201c.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-24T05:56:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OmniTransfer-hack",
+                "description": "OmniTransfer implementation for LTX-2 (work in progress)",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2026-05-26T12:34:56Z",
+                "fork": false,
+                "topics": [
+                  "computer-vision",
+                  "deep-learning",
+                  "diffusion-models",
+                  "identity-preservation",
+                  "lora",
+                  "ltx2",
+                  "metaquery",
+                  "motion-transfer",
+                  "omnihuman",
+                  "omnitransfer",
+                  "pytorch",
+                  "seeddance",
+                  "style-transfer",
+                  "terraform",
+                  "video-generation",
+                  "video-to-video",
+                  "wandb"
+                ]
+              },
+              {
+                "name": "GRN",
+                "description": "Generative Refinement Networks for Visual Synthesis (Support C2I & T2I & T2V)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-23T03:18:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Analogy_in_Transformer",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-01T03:51:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "StreamGVE",
+                "description": "StreamGVE: Training-Free Video Editing via Few-Step Streaming Video Generation",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-21T01:48:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Pi-Post-Saver",
+                "description": "Download any facebook post image videos and reels..",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-19T19:07:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dlmserve2",
+                "description": "OpenAI-compatible HTTP serving for diffusion language models. Continuous batching + LocalLeap acceleration.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-26T00:09:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dag-mcp-server",
+                "description": "Documentation Augmented Generation (DAG) MCP Server - First multi-ecosystem, version-aware MCP server to reduce AI code hallucinations",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-05T03:40:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "live-music-diffusion-models",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-22T17:48:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "openclaude",
+                "description": "runs anywhere. uses anything",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-16T06:28:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "IMTalker",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-06-12T04:58:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Megatron-Bridge",
+                "description": "Training library for Megatron-based models with bidirectional Hugging Face conversion capability",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-21T07:57:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PianoRoller",
+                "description": "This is a piano roll VST that will allow musicians to use a piano roll sequencer inside their DAW to control midi instruments. It supports multiple presets and can be controlled through DAW automation. It was built in the Juce framework.",
+                "stargazers_count": 12,
+                "language": "C++",
+                "pushed_at": "2019-03-29T18:56:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sparta",
+                "description": "NeurIPS 2025",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-20T03:01:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "moco_distill",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-20T22:21:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hexllama",
+                "description": "A beautifully crafted desktop client for running and managing local LLMs via llama.cpp.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-20T00:46:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RTM_latent_refinement",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-18T19:28:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "turboquant-compressor",
+                "description": "The world's first release for Ardeno. Our own custom Mesa Fork. TurboQuant KV Cache Compression - FWHT Rotation + Lloyd-Max Beta Codebook + Residual QJL. MCP Server with 14 instruments.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-18T20:18:09Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:30.085221+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-b0c64b08a73e",
+  "target": "nholuongut",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:39.636841+00:00",
+  "completedAt": "2026-06-20T13:52:41.787043+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4bfb75f9",
+      "lookupType": "github_context",
+      "target": "nholuongut",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "nholuongut",
+            "name": "Nho Luong",
+            "type": "User",
+            "company": "DevOps and Platform Services Lead",
+            "blog": "https://www.linkedin.com/in/nholuong/",
+            "location": "From Ho Chi Minh City, Viet Nam",
+            "bio": "\ud83d\udc81 \ud83c\uddfb\ud83c\uddf3\ud83c\uddfb\ud83c\uddf3-\ud83c\uddfb\ud83c\uddf3\ud83c\uddfb\ud83c\uddf3-\ud83c\uddfb\ud83c\uddf3\ud83c\uddfb\ud83c\uddf3-\ud83c\uddfb\ud83c\uddf3\ud83c\uddfb\ud83c\uddf3-\ud83c\uddfb\ud83c\uddf3\ud83c\uddfb\ud83c\uddf3-\ud83c\uddfb\ud83c\uddf3\ud83c\uddfb\ud83c\uddf3\r\n\r\n- Vietnam DevOps Engineer \r\nLead\r\n- Vietnam Timeless Charm \r\n- Enjoy Every Moment",
+            "public_repos": 1802,
+            "followers": 7501,
+            "following": 255550,
+            "created_at": "2019-12-07T12:12:32Z",
+            "updated_at": "2026-06-05T09:12:05Z",
+            "html_url": "https://github.com/nholuongut",
+            "avatar_url": "https://avatars.githubusercontent.com/u/58627821?v=4",
+            "repos": [
+              {
+                "name": "NativeScript",
+                "description": "\u26a1 Empowering JavaScript with native platform APIs. \u2728 Best of all worlds (TypeScript, Swift, Objective C, Kotlin, Java, Dart). Use what you love \u2764\ufe0f Angular, React, Solid, Svelte, Vue with: iOS (UIKit, SwiftUI), Android (View, Jetpack Compose), Dart (Flutter) and you name it compatible.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T04:23:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "eui",
+                "description": "Elastic UI Framework \ud83d\ude4c",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T04:19:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "infisical",
+                "description": "\u267e Infisical is the open-source secret management platform: Sync secrets across your team/infrastructure, prevent secret leaks, and manage internal PKI",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T04:18:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hint",
+                "description": "\ud83d\udca1 A hinting engine for the web",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T04:15:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "makefile-modules",
+                "description": "Reusable Makefile modules that can be kloned into your project",
+                "stargazers_count": 8,
+                "language": "Makefile",
+                "pushed_at": "2026-06-20T04:12:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-use",
+                "description": "React Hooks \u2014 \ud83d\udc4d",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T04:02:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "extension",
+                "description": ":speech_balloon: Never browse alone again",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T03:57:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "amplify-cli",
+                "description": "The AWS Amplify CLI is a toolchain for simplifying serverless web and mobile development.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T03:42:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "metrics",
+                "description": "\ud83d\udcca An infographics generator with 30+ plugins and 300+ options to display stats about your GitHub account and render them as SVG, Markdown, PDF or JSON!",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T03:42:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "x",
+                "description": "Commerce Search & Discovery frontend web components",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T03:40:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "prometheus-operator",
+                "description": "Prometheus Operator creates/configures/manages Prometheus clusters atop Kubernetes",
+                "stargazers_count": 10,
+                "language": "Go",
+                "pushed_at": "2026-06-20T03:39:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nholuong",
+                "description": "Public Profile",
+                "stargazers_count": 2,
+                "language": "Groovy",
+                "pushed_at": "2026-06-20T03:37:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-admin",
+                "description": "A frontend Framework for single-page applications on top of REST/GraphQL APIs, using TypeScript, React and Material Design",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T03:33:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pnpm",
+                "description": "Fast, disk space efficient package manager",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T02:55:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "refine",
+                "description": "A React Framework for building  internal tools, admin panels, dashboards & B2B apps with unmatched flexibility.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T02:55:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Vim",
+                "description": ":star: Vim for Visual Studio Code",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T02:12:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-styleguidist",
+                "description": "Isolated React component development environment with a living style guide",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T02:08:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "good-first-issue",
+                "description": "Make your first open-source contribution.",
+                "stargazers_count": 0,
+                "language": "Vue",
+                "pushed_at": "2026-06-15T08:44:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "solution-architecture",
+                "description": "Architecture diagrams",
+                "stargazers_count": 30,
+                "language": null,
+                "pushed_at": "2025-07-28T04:19:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "devops-basics",
+                "description": "Practical and document place for DevOps toolchain",
+                "stargazers_count": 102,
+                "language": "HCL",
+                "pushed_at": "2026-06-15T11:33:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "devops-roadmap",
+                "description": "DevOps Roadmap for 2024 with learning resources",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-03-04T11:55:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aws-cicd-source-demo",
+                "description": "aws cicd source demo",
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2025-07-28T04:18:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "devsecops-demos",
+                "description": "DevSecOps: Integrating Security into the DevOps Process",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2025-12-02T09:59:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "devops-notes",
+                "description": "It contains Devops related Notes",
+                "stargazers_count": 14,
+                "language": "Java",
+                "pushed_at": "2025-07-28T04:08:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "azure-DevOps-CI-pipeline",
+                "description": "azure-DevOps-CI-pipeline",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2025-07-28T04:19:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "elasticsearch",
+                "description": "Free and Open, Distributed, RESTful Search Engine",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-23T15:40:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "apache-example",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-11-28T16:52:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "skills",
+                "description": "Agent Skills for Google products and technologies",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-23T19:32:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "all-roadmaps",
+                "description": "Community driven roadmaps, articles and resources for developers",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-28T04:16:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aws-mainframe-modernization-card-demo",
+                "description": "CardDemo -- Mainframe CardDemo Application",
+                "stargazers_count": 2,
+                "language": "COBOL",
+                "pushed_at": "2024-10-30T08:50:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "socialbox-termux",
+                "description": "About SocialBox is a Bruteforce Attack Framework [ Facebook , Gmail , Instagram ,Twitter ] , Coded By Belahsan Ouerghi Edit By samsesh for termux on android",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2024-10-04T04:50:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "helmchart-deployment",
+                "description": "Learn Kubernetes Docker DevOps and helm charts from scratch (kubeadm)",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-10T06:44:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "helmchart",
+                "description": "Repository to host all Helm Charts",
+                "stargazers_count": 0,
+                "language": "Go Template",
+                "pushed_at": "2026-04-10T06:41:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "setup-dvc-with-github-action",
+                "description": "Setup DVC with GitHub Action",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-06T03:04:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cml-setup-with-github-action",
+                "description": "GitHub Action for CML setup",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-06T03:03:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "argo-helm",
+                "description": "ArgoProj Helm Charts",
+                "stargazers_count": 2,
+                "language": "Mustache",
+                "pushed_at": "2026-04-06T03:02:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "databricks-sqlcli",
+                "description": "CLI for querying Databricks SQL",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-02T07:28:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "protobuf-uml-diagram",
+                "description": "Create UML diagrams from Protobuf compiled .proto files using Python",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-02T07:38:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kafka",
+                "description": "Apache Kafka - A distributed event streaming platform",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-02T04:06:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cli",
+                "description": "Databricks CLI",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-02T07:44:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "docker-elk-stack",
+                "description": "Elastic stack (ELK) on Docker",
+                "stargazers_count": 0,
+                "language": "Dockerfile",
+                "pushed_at": "2026-04-02T07:23:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-security",
+                "description": "Curated resources, research, and tools for securing AI systems",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-10-20T10:55:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backend-",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-31T09:59:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zsh-plugins",
+                "description": "A collection of ZSH frameworks, plugins, themes and tutorials.",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2024-11-02T11:06:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Azure-Bicep-template",
+                "description": "Create and deploy Azure resources by using Bicep template",
+                "stargazers_count": 0,
+                "language": "Bicep",
+                "pushed_at": "2026-03-17T08:12:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Azure_Developer_CLI",
+                "description": "The Azure Developer CLI (azd) is a developer-centric command-line interface (CLI) tool for creating Azure applications.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2026-03-17T08:12:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Azure-Learning-Sandbox",
+                "description": "Introduction to Cloud Computing and Azure Azure Services Overview Creating and Managing Virtual Machines",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-03-17T08:11:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ansible-role-for-azp-tools",
+                "description": "Tools for working with Ansible projects using Azure Pipelines.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-17T08:09:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "azure-container-apps-scale",
+                "description": "Azure Container Apps scale configuration examples",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-17T08:09:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "azure-search-openai-demo",
+                "description": "A sample app for the Retrieval-Augmented Generation pattern running in Azure, using Azure Cognitive Search for retrieval and Azure OpenAI large language models to power ChatGPT-style and Q&A experiences.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-17T08:08:51Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:41.786129+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

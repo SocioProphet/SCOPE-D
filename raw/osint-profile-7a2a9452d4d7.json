@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-7a2a9452d4d7",
+  "target": "shahriar0999",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:44.512515+00:00",
+  "completedAt": "2026-06-21T15:30:45.871836+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-06a5e66f",
+      "lookupType": "github_context",
+      "target": "shahriar0999",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "shahriar0999",
+            "name": "Shahriar Kabir",
+            "type": "User",
+            "company": null,
+            "blog": "shahriar-kabir0@proton.me",
+            "location": "Bangladesh",
+            "bio": "Aspiring Data Scientist",
+            "public_repos": 65,
+            "followers": 1834,
+            "following": 3529,
+            "created_at": "2022-07-31T16:55:50Z",
+            "updated_at": "2026-06-01T14:09:14Z",
+            "html_url": "https://github.com/shahriar0999",
+            "avatar_url": "https://avatars.githubusercontent.com/u/110348315?v=4",
+            "repos": [
+              {
+                "name": "Laptop-Price-Prediction-using-Machine-Learning",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-06-15T10:18:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dhaka-RealEstate-Prediction-End-to-End",
+                "description": "This project focuses on building an end-to-end machine learning pipeline to predict house prices and rent prices in Dhaka, the capital of Bangladesh.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-02-13T05:17:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-classification",
+                "description": "Weather classification pipeline built with XGBoost, Ray, and MLflow. Automatically retrains and deploys to Anyscale on every push to main via GitHub Actions. Serves predictions through a REST API built with Ray Serve and FastAPI.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-25T04:54:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "real-time-laptop-feature-store",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-16T03:17:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fastapi-2026",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-08T15:44:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "marvel-characters",
+                "description": "A complete end-to-end MLOps pipeline for Marvel character data.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-26T08:57:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "streaming-laptop-price-mlops",
+                "description": "Real-Time Laptop Price Prediction MLOps Pipeline on Databricks",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-29T11:51:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bigData-with-PySpark",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-04-24T20:51:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fastapi_project",
+                "description": "This repository contains a lightweight social API built with FastAPI, including user authentication and basic post interactions. It is designed to be simple, clean, and easy to extend.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-12-31T09:33:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-cpp-learning",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "C++",
+                "pushed_at": "2026-03-03T09:26:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "leetcode_sql_50",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-02-08T08:23:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python_data_structures_algorithms",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-08T04:49:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "effective-python-testing-with-pytest",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-12-15T00:38:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deploy_gen_ai_At_scale",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-11-26T02:54:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hotel-reservation-mlops-aws",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-10T06:58:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Machine-Learning-Engineer",
+                "description": "DataCamp Track",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-11-14T17:54:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HuggingFaceFundamentals-DataCamp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-11-14T17:58:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "anime-recommender-llmops",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-11-08T17:46:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deeplearning",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-20T05:22:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-go-learning",
+                "description": "Effective Go",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-10-09T13:13:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mlops-coding-course",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-09-19T06:16:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shahriar0999",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-09-12T15:32:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "procurement-analytics",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-09-11T05:33:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "langchain",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-08-22T03:12:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "youtube-sentiment-analyzer",
+                "description": "A Chrome extension powered by machine learning to analyze and visualize YouTube comment sentiment in real-time.",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-15T15:43:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ansible",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-08-10T17:53:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "filesure-adt1-assignment",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-06-25T09:35:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CIwithGithubAction",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-06-22T13:47:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-app",
+                "description": "weather-app is a full-stack application that provides real-time and forecasted weather information. It includes a user-friendly frontend and a robust backend API, built with clean software engineering principles for scalability, maintainability, and performance.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-28T04:10:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mlops-small-project",
+                "description": "A small project using mlops.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-07-25T13:54:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather_forecasting_end2end",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-09-26T03:02:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shell_scripting",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2025-05-27T23:24:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "experiments_with_mlflow",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-06-11T03:09:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ml-pipeline-with-kubeflow",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-05-17T17:34:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DVCexperimentsTracking",
+                "description": "Experiments Tracking using DVC",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-05-16T05:23:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dvcMLpipeline",
+                "description": "End to End Machine learning pipeline using dvc",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-05-16T16:45:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mlops01",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-05-08T17:59:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "APIdevFastAPI",
+                "description": "This repo for exercise API devlopement with  FastAPI..",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-11-30T03:55:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML-end-to-end-project-I",
+                "description": "This is end-to-end machine learning project (sentiment analysis, disaster classification, pose classification)",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-01-11T02:41:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Speed-detection-of-vehicles",
+                "description": "Speed estimation of Cars using YOLOv8 and speed calculation formula",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-02-20T07:56:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Vehicle-Speed-Estimation-YOLOv6-3D",
+                "description": "Vehicle speed estimation pipeline using modified YOLOv6 for 3D car detection.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-05-15T12:49:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kubernetes-project",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-26T20:05:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nyc",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-04-19T13:11:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "inventory_tracking_api",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-04-06T20:25:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nyc-taxi-trip-duration-prediction",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Makefile",
+                "pushed_at": "2025-02-23T17:05:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "e2e-marketing-team-project",
+                "description": "End-to-end marketing data science project with campaign analysis, customer segmentation, and conversion prediction, deployed using Docker, GitHub Actions, and EC2.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-02-20T16:42:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoCalc",
+                "description": "A simple calculator application with integrated CI/CD pipelines for automated testing, building, and deployment.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-01-16T16:08:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mlops-course-exercise",
+                "description": "This repo for exercise of topics of MLOPS course",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-01-08T09:57:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data-Science-in-Julia",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-01-17T16:51:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BrnoCompSpeed",
+                "description": "Code for BrnoCompSpeed dataset",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-01-03T09:38:08Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:45.871046+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

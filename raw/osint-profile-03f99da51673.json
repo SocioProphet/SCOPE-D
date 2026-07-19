@@ -1,0 +1,530 @@
+{
+  "profileId": "osint-profile-03f99da51673",
+  "target": "HadzhieV777",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:51.356442+00:00",
+  "completedAt": "2026-06-21T15:32:52.844994+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f0f422b7",
+      "lookupType": "github_context",
+      "target": "HadzhieV777",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "HadzhieV777",
+            "name": "Radoslav Hadzhiev",
+            "type": "User",
+            "company": "Proforge",
+            "blog": "https://drum.io/hadzhiev",
+            "location": "127.0.0.1:4200",
+            "bio": "Success Is Never Owned, It\u2019s Rented, and The Rent is Due Every Day",
+            "public_repos": 55,
+            "followers": 1283,
+            "following": 6235,
+            "created_at": "2021-08-10T17:20:44Z",
+            "updated_at": "2025-07-08T09:04:44Z",
+            "html_url": "https://github.com/HadzhieV777",
+            "avatar_url": "https://avatars.githubusercontent.com/u/88735655?v=4",
+            "repos": [
+              {
+                "name": "LandWare",
+                "description": "A property management solution that allows you to automate your rental management process.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-01-09T10:38:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Microservices-with-Node-JS-and-React",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-15T09:11:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HadzhieV777",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-02-07T13:25:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blog",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-03T20:31:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blog-cms",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-21T22:35:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my_notes",
+                "description": "My notes is an app where a user can register and upload different notes,",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2022-04-29T06:04:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "e-commerce-store",
+                "description": "E-com store where the user can register, collect bonus points, browse different products or add comments for each product, add to cart, place orders and make payments. The project also includes a user panel, where information is available, about previous orders. Various access roles are available too.  ",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-20T19:26:17Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "django",
+                  "html",
+                  "javascript",
+                  "posgtresql",
+                  "python"
+                ]
+              },
+              {
+                "name": "Reconnaissance-Fundamentals-04-2024",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-21T18:04:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kids-JS-demos",
+                "description": "This is a demo repository, where you can do whatever you want.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-11T00:48:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Introduction-to-Cyber-Security",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-17T16:00:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Angular-November-2022",
+                "description": "The Angular course provides Basic understanding of TypeScript and Angular Covers component-based architecture Working with remote data using RxJS ",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2022-12-07T08:52:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Computer-Networking-Advanced-2024",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-31T07:37:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-03-04T20:21:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "proforge-landing",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2023-12-24T20:44:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easonchang.com-next",
+                "description": "Eason Chang's brand new personal blog",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-06T02:01:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Computer-Networking-Fundamentals--2023",
+                "description": "3 1. Course Objectives 2. Course Program 3. Trainers Team 4. Course Schedule 5. Exams and Evaluation 6. Learning Resources Table of Contents",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-11T19:57:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solidity-Demos",
+                "description": "Solidity Demos from the course \"Blockchain, Solidity, and Full Stack Web3 Development with JavaScript\" by Patrick Collins ",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-09-18T05:50:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Algorithms-with-Python-Jul-2023",
+                "description": "This is a SoftUni Algorithms Course ",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-08-09T04:44:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JS-Back-End-Jan-2023",
+                "description": "Learning to use the most common techniques in web development like Request routing, HTML templates, Database storage and the fundamentals of application architecture and code convention through the MVC pattern",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-02-25T09:13:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "full-blockchain-solidity-course-js",
+                "description": "Learn Blockchain, Solidity, and Full Stack Web3 Development with Javascript",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-05-09T14:50:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ReactJS-02-2023",
+                "description": "The React.js Fundamentals course provides Fundamental understanding of JSX and React Covers component-based architecture Establishes Immutable UI concepts",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-04T05:44:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-demo",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-01-09T12:14:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dof-exam-2021",
+                "description": "Exam repo for DevOps Fundamentals course 2021.07 @ SoftUni",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-09-25T05:51:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bgapp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2023-01-08T13:43:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DevVictor19",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-01-07T06:21:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "angular",
+                "description": "The modern web developer\u2019s platform",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-12-09T08:26:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "first-contributions",
+                "description": "\ud83d\ude80\u2728 Help beginners to contribute to open source projects",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-12-05T18:06:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "property_managment",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2023-01-10T15:30:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "-HTML-and-CSS-september-2022",
+                "description": "Course Topics 1.Introduction to HTML and CSS  2.HTML Structure 3. CSS & Typography 4. CSS Box Model 5. Position & Grid 6. Flexbox 8. Media Queries 9. Design to Code \u2013 Demo Project 10. Exam Preparation",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2022-10-31T12:28:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node-and-express-projects",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2022-09-11T13:28:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node-and-express-course",
+                "description": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine and executes JavaScript code outside a web browser, which was designed to build scalable network applications. Express.js, or simply Express, is a back end web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2022-09-05T18:43:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "-React-0-100",
+                "description": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2022-08-27T07:14:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "js-apps-workshop",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-03-03T19:29:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "-JS-Applications-06-2022",
+                "description": "Improve DOM skills with new techniques, Use remote services to read and store data, Work with external libraries and documentation, Apply best practices and project architecture, Create fully-featured front-end applications",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2022-08-13T06:05:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio-site-demo-next.js",
+                "description": "A a full Personal Development Portfolio. Using React and Next.js. ",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2022-06-27T08:44:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Awesome-Profile-README-templates",
+                "description": "A collection of awesome readme templates to display on your profile",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-10-25T10:15:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "-JS-Advanced-05-2022",
+                "description": "Syntax, Functions and Statements, Arrays & Matrices, Objects & Composition, DOM Introduction, DOM Events and Manipulation, Advanced Functions, Unit Testing, Classes, Prototypes and Inheritance",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-07-03T10:11:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "djangoEstates",
+                "description": "DjangoEstates is a real estate application. A user can register and check all the uploaded estates for sale or rent. Also if the user becomes a broker he can upload estates for sale or for rent. Otherwise, he can follow the djangoEstates blog and comment on different posts there",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2022-06-16T10:20:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-css-mini-course-softuni",
+                "description": "The whole course \"HTML & CSS\" is an initial introduction and introduction to HTML5 and CSS3 technologies. Gain basic knowledge of web development, web browsers, HTML and CSS development tools, and practical skills in using HTML content description language and CSS web content styling language.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2022-05-17T05:48:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Python-Web-Basics",
+                "description": "Python Web Basics Objectives: Working with HTTP Requests, Get familiar with the MVC architecture, Get familiar with the basic Web concepts, Working with SQL ,Build the foundations of Django web development",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2022-03-10T06:45:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cpp-zero-to-hero",
+                "description": "C++ zero to hero",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2022-02-19T06:56:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-advanced-sep-21",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-12-06T18:34:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Homepage-with-HTML-and-CSS",
+                "description": "Creating a responsive homepage using a HTML and CSS Sass",
+                "stargazers_count": 0,
+                "language": "SCSS",
+                "pushed_at": "2022-01-09T08:36:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HTML-Canvas-Game",
+                "description": "Creating a Flappy bird like game using plain vanilla JavaScript. Using this tutorial https://www.youtube.com/watch?v=WUPIvrUPDdQ",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2022-01-08T07:14:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Atari-game-JS",
+                "description": "Trying to make an old Atary game using Vanilla JavaScript",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2022-05-31T10:22:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sudoku-GUI-Solver",
+                "description": "This is a sudoku solver using the backtracking algorithm. It includes a graphical GUI as well as a text based version.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-06-07T09:36:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "python-web-framework-demos",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2022-04-09T07:25:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Python-Web-Framework",
+                "description": "Python Web Framework Objectives: CBV (class-based views),  Authentication and authorization,  User registration, login and logout,  Cookies and sessions,  Django REST framework,  Exception handling,  Deployment",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2022-04-11T05:42:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spa-demo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-07-08T18:40:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "REST-React-blog",
+                "description": "A blog application using REST framework, React and MUI",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-04-21T06:52:32Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:52.844386+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

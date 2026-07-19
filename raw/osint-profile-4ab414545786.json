@@ -1,0 +1,532 @@
+{
+  "profileId": "osint-profile-4ab414545786",
+  "target": "CharlesCreativeContent",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:42.631632+00:00",
+  "completedAt": "2026-06-20T13:52:43.868006+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3addd628",
+      "lookupType": "github_context",
+      "target": "CharlesCreativeContent",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "CharlesCreativeContent",
+            "name": "Shawn Charles",
+            "type": "User",
+            "company": "ex-Amazon",
+            "blog": "https://ShawnCharles.Com/",
+            "location": "San Francisco, CA",
+            "bio": "Software Engineer building Tech Communities",
+            "public_repos": 108,
+            "followers": 6472,
+            "following": 6065,
+            "created_at": "2020-03-11T20:10:11Z",
+            "updated_at": "2026-05-27T19:55:15Z",
+            "html_url": "https://github.com/CharlesCreativeContent",
+            "avatar_url": "https://avatars.githubusercontent.com/u/62077627?v=4",
+            "repos": [
+              {
+                "name": "FurBaby",
+                "description": "Mobile Storage for pet photos",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-19T06:44:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "todo-list-2019-week05",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2020-08-20T15:48:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "slot-machine-2019-week05",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2020-08-20T16:08:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Harry-Potter-Horoscope",
+                "description": "A Harry Potter Themed Horoscope Application",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2020-08-20T16:24:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pokemon-Type-Battle",
+                "description": "Pokemon simulator where you choose the right type of pokemon to win. Are you the next Pokemon Master?",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2020-08-20T16:47:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VictorLira-DEV",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2022-05-30T16:17:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ibrahimgurhandev",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-05-30T16:19:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "portfolio-template",
+                "description": "A template to get started with your next portfolio README",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2022-05-30T16:27:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cafloyd",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2022-05-30T16:28:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "the-dojo-way",
+                "description": "The Dojo way - the principles you will need to follow to join the Dojo movement.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-09-02T14:01:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TheHunt",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-09-14T23:33:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aws-selenium-ide",
+                "description": "Scripts to automate the deployment of cloud infrastructure using the browser automation tool selenium-ide",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-05-08T16:41:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stytch-node-magic-links",
+                "description": "Node Email Authentication using Stytch and Vercel",
+                "stargazers_count": 2,
+                "language": "EJS",
+                "pushed_at": "2024-05-10T15:48:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "argo-agents",
+                "description": "Blog post on how to deploy argo agents on aws eks",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-07-23T14:32:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "All-Recorded-Spaces",
+                "description": "Access to all spaces that feature Shawn Charles",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-01-23T22:21:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "matching-card-bootcamp",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-04-28T04:03:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wu-tang-generator-bootcamp",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-04-28T04:04:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "simple-nasa-api-bootcamp",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-04-28T04:04:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "simple-api2-bootcamp",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-04-28T04:04:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "simple-api-bootcamp",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-04-28T04:05:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "complex-api2-bootcamp",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-04-28T04:05:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "complex-api-bootcamp",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-04-28T04:05:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "weather-api-bootcamp",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-04-28T04:05:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CharlesCreativeContent",
+                "description": "Thank You For Supporting me and the community I Support!",
+                "stargazers_count": 85,
+                "language": null,
+                "pushed_at": "2025-11-06T20:23:13Z",
+                "fork": false,
+                "topics": [
+                  "css3",
+                  "javascript",
+                  "portfolio",
+                  "readme"
+                ]
+              },
+              {
+                "name": "AIBlogHashnode",
+                "description": "Hashnode Blog Integrated Repository",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-02-01T19:42:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-stock-mcp-server",
+                "description": "Python mcp server that server yesterdays stock data",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-03-08T00:13:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "music-videis",
+                "description": "my-music",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-04-20T04:03:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KDrama",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2022-05-30T16:03:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WhoAmI",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2022-05-30T16:16:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "neetcode-1",
+                "description": "Neetcode solutions",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-06-23T21:35:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Faith-Site",
+                "description": "A website design for a church, reverend, or pastor",
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2024-12-25T15:44:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "advice-server",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "CSS",
+                "pushed_at": "2022-05-30T16:30:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BootcampBlog",
+                "description": "Tech Blog ",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2022-07-04T07:27:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "magic-matching-card",
+                "description": "With over 100 different cards, test your memory in these three popular trading card themes, Pokemon, Yugioh, & Magic: The Gathering!",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2022-09-02T00:27:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Demo-Day",
+                "description": "Lucid is a travel app that makes dream vacations a reality",
+                "stargazers_count": 13,
+                "language": "CSS",
+                "pushed_at": "2023-03-28T16:06:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Portfolio-2020",
+                "description": "Portfolio Site including links to my projects and ways to get in contact with me.",
+                "stargazers_count": 38,
+                "language": "CSS",
+                "pushed_at": "2024-10-20T08:55:29Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html5",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "runware-pokemon-generator",
+                "description": "Generates using RunwareSDK, a monster image (bytedance) and idle animation video (google veo3) for a pokedex entry",
+                "stargazers_count": 21,
+                "language": "CSS",
+                "pushed_at": "2025-10-16T01:15:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "charlescreativecontent.github.io",
+                "description": "Get More about what\u2019s new Today in AI!",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2026-01-27T03:30:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RC-Projects",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2020-08-04T03:47:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "yugioh-matching-cards",
+                "description": "With over 100 different cards, test your memory in these three popular trading card themes, Pokemon, Yugioh, & Magic: The Gathering!",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T13:59:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shoppies",
+                "description": "Development challenge for Shopify",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T14:03:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "phaser-server",
+                "description": "phaser login and signup server",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T15:57:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TwitterMonitoringJavaScript",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T16:02:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DemoDay",
+                "description": "Backup",
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T16:04:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "anime",
+                "description": "Anime list database for all of the anime and manga lovers",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T16:05:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "demoday-1",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T16:15:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "twitterBot",
+                "description": "Selenium Scripts that allow various botting functionality specifically for twitter",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T16:16:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "herokuStarter",
+                "description": "Template Server for Heroku",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T16:17:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fund-the-change",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T16:21:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "casino",
+                "description": "A gaming center",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-30T16:21:58Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:43.867240+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

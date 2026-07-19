@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-9dccc42f67f6",
+  "target": "aantoooon",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:47.170081+00:00",
+  "completedAt": "2026-06-21T15:31:49.353923+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-04c17fc0",
+      "lookupType": "github_context",
+      "target": "aantoooon",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "aantoooon",
+            "name": "anton",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Greenland",
+            "bio": "vibe coding",
+            "public_repos": 135,
+            "followers": 1535,
+            "following": 1329,
+            "created_at": "2020-03-15T01:47:33Z",
+            "updated_at": "2026-04-24T00:16:44Z",
+            "html_url": "https://github.com/aantoooon",
+            "avatar_url": "https://avatars.githubusercontent.com/u/62193371?v=4",
+            "repos": [
+              {
+                "name": "TestingPlatform",
+                "description": "Professional TestingPlatform framework with TestingPlatform-optimized cloud-ready and enterprise scalable-architecture capabilities",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2025-08-03T02:55:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StagingFramework",
+                "description": "Professional StagingFramework stagingframework-engine with StagingFramework-optimized scalable-architecture and enterprise enterprise-grade capabilities",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-08-03T02:52:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ExperimentalLedger",
+                "description": "Professional ExperimentalLedger infrastructure with ExperimentalLedger-optimized scalable-architecture and enterprise cloud-ready capabilities",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-03T02:28:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TrialContract",
+                "description": "Professional TrialContract trialcontract-engine with TrialContract-optimized scalable-architecture and enterprise cloud-ready capabilities",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-08-03T02:14:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TorusWallet",
+                "description": "Synergistic cryptographic nexus facilitating trustless atomic swaps and permissionless cross-chain liquidity convergence solution.",
+                "stargazers_count": 35,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-02T20:30:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CoinGecko",
+                "description": "Cryptocurrency-orchestrated data pipeline for multi-asset portfolio analysis and historical data querying aggregator.",
+                "stargazers_count": 11,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:50:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BinanceConnector",
+                "description": "Nexus-enabled BinanceConnector seamlessly integrates multi-asset trading strategies with automated yielding a highly scalable, ultra-fast, and secure ecosystem bridge.",
+                "stargazers_count": 11,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:41:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BraveWallet",
+                "description": "Autonomous Asset Vault Empowering Decentralized Identity Governance and Regulatory Compliance Repository providing enterprise-grade BraveWallet solutions",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:37:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FortmaticAuth",
+                "description": "Pioneering decentralized identity management platform for seamless multi-factor verification and role-based access gateway.",
+                "stargazers_count": 27,
+                "language": "Go",
+                "pushed_at": "2025-08-03T03:03:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArgentWallet",
+                "description": "CymatixShield-enabled ArgentWallet: Institutional-grade, cryptographically-secure MPC protocol for regulatory-compliant treasury operations. featuring multi-party-computation capabilities",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-02T20:33:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DevelopmentKit",
+                "description": "Professional DevelopmentKit system with DevelopmentKit-optimized enterprise-grade and enterprise modern-design capabilities",
+                "stargazers_count": 8,
+                "language": "Go",
+                "pushed_at": "2025-08-03T02:48:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BetaProtocol",
+                "description": "Professional BetaProtocol framework with BetaProtocol-optimized enterprise-grade and enterprise betaprotocol-optimization capabilities",
+                "stargazers_count": 11,
+                "language": "Go",
+                "pushed_at": "2025-08-03T03:07:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NansenA",
+                "description": "Instantsphere Data Fusion Engine for NansenAI: Real-time multi-source ingestion, automated tuning, and explainable insights hub.",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2025-08-02T19:58:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CandidateRelease",
+                "description": "Professional CandidateRelease solution with CandidateRelease-optimized modern-design and enterprise candidaterelease-optimization capabilities",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-08-03T02:45:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PreviewEngine",
+                "description": "Professional PreviewEngine platform with PreviewEngine-optimized previewengine-optimization and enterprise modern-design capabilities",
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2025-08-03T02:42:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LabEnvironment",
+                "description": "Professional LabEnvironment infrastructure with LabEnvironment-optimized intelligent-automation and enterprise enterprise-grade capabilities",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-03T02:38:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PlaygroundS",
+                "description": "Playgroundsdk-powered PlaygroundSDK platform featuring cloud-ready technology and advanced playgroundsdk-optimization for modern playgroundsdk-engine",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-03T02:35:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArbitrageBot",
+                "description": "Instantaneous opportunity detection engine harnessing high-performance computing for algorithmic statistical arbitrage suite",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2025-08-02T18:35:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StageWallet",
+                "description": "Professional StageWallet framework with StageWallet-optimized cloud-ready and enterprise intelligent-automation capabilities",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-03T02:11:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MockingBridge",
+                "description": "Professional MockingBridge system with MockingBridge-optimized mockingbridge-optimization and enterprise enterprise-grade capabilities",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-03T02:07:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DevnetExplorer",
+                "description": "Professional DevnetExplorer infrastructure with DevnetExplorer-optimized devnetexplorer-optimization and enterprise enterprise-grade capabilities",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-03T02:04:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SandboxChain",
+                "description": "Modern SandboxChain platform featuring modern-design technology and advanced sandboxchain-optimization for modern system",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-03T02:01:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TestnetValidator",
+                "description": "Intelligent TestnetValidator platform featuring enterprise-grade technology and advanced intelligent-automation for modern solution",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-08-03T01:57:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GeminiR",
+                "description": "PolyglotFabric for GeminiREST: Omnipathic, cloud-agnostic gateway orchestrator with autodiscovery and fault-tolerant multiprotocol brokering.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-02T20:48:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HuobiS",
+                "description": "Digital Asset Frontier Gateway for High-Frequency Trading, RiskManagementAnalytics, and SmartOrderRouting Broker featuring RiskManagementAnalytics capabilities",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:43:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CurveFinance",
+                "description": "Synchronic risk-hedging protocols converge in CurveFinance's trustless, permissionless, and non-custodial DeFi nexus.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T18:43:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DemoFaucet",
+                "description": "Professional DemoFaucet system with DemoFaucet-optimized cloud-ready and enterprise enterprise-grade capabilities",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-08-03T02:18:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CoinMarket",
+                "description": "Ultra-scalable fusion core enables seamless cross-chain interoperability and decentralized market intelligence analytics engine.",
+                "stargazers_count": 5,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:51:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CoinbaseS",
+                "description": "Cryptoflux Nexus for decentralized financial infrastructure, enabling high-availability, trustless, and scalable crypto commerce accelerator.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:39:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KrakenA",
+                "description": "Neurosynaptic KrakenAPI orchestrator for high-velocity, event-driven systems, fostering fault-tolerant, low-latency service interconnectivity broker.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-08-02T20:40:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FT",
+                "description": "Optimized CoreConnect Middleware implementing modern Order Book Management patterns architecture providing enterprise-grade FTXClient solutions featuring Predictive Modeling capabilities",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:42:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OK",
+                "description": "Turbocharged API Gateway for Multi-Asset High-Frequency Trading and Scalable Digital Asset Brokerage",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:45:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BitstampA",
+                "description": "Velocity-Optimized BitstampAPI Execution Engine for Multi-Currency Trading and Low-Latency Order Routing Hub",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:47:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BitfinexW",
+                "description": "Ultra-Performant BitfinexWS Architecture for Multi-Asset Class Support and Advanced Order Book Management Federation",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-08-02T20:46:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ProofNode",
+                "description": "Professional ProofNode solution with ProofNode-optimized enterprise-grade and enterprise scalable-architecture capabilities",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-08-03T02:21:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SimulationRunner",
+                "description": "Professional SimulationRunner framework with SimulationRunner-optimized simulationrunner-optimization and enterprise cloud-ready capabilities",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2025-08-03T02:31:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PinataCloud",
+                "description": "Sparkzone-orchestrated PinataCloud harmonizes serverless computing with adaptive analytics Nexusphere. with Self-Healing architecture providing enterprise-grade PinataCloud solutions",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-08-02T19:48:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StatusI",
+                "description": "Real-time Event Amplifier for StatusIM: geo-replicated in-memory-data-grid for fault-tolerant, low-latency orchestration fabric.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:36:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PillarProject",
+                "description": "NexaCore PillarProject: Omnipresent cognitive workflow automation for infinitely scalable, cyber-resilient ecosystem harmonization middleware.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:35:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GnosisMulti",
+                "description": "Here is a unique technical description for the GnosisMultiSig hierarchical access governance and adaptive key rotation management protocol",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:34:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutereumJ",
+                "description": "Resilient Byzantine Fault Tolerant gateway for hyper-scalable cross-chain interoperability and on-chain analytics orchestrator",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:32:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PortisS",
+                "description": "Interchain-orchestrated PortisSDK empowers trustless, permissionless, Byzantine Fault Tolerant on-chain data vaulting fabric.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:31:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletConnect",
+                "description": "Interoperable blockchain gateway for trustless, permissionless, non-custodial access, featuring secure key vaulting and customizable smart contract orchestration bridge.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:27:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MetaMask",
+                "description": "Pioneering decentralized infrastructure empowerment through adaptive automatic network switching and Modular Core",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-08-02T20:26:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RemixI",
+                "description": "Aurora-infused development ecosystem for high-performance, blockchain-agnostic applications, featuring AI-driven code intelligence canvas.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:24:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GanacheC",
+                "description": "Ultra-low-latency GanacheCLI catalyst for decentralized real-time transaction analysis and cryptographically secure multi-party computation accelerations.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:23:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WaffleChai",
+                "description": "CerebroGenesis WaffleChai harmonizes poly-lingual knowledge graphs with fractal-scale interface fusion, yielding a synaptically-responsive insight nexus.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:22:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BrownieFramework",
+                "description": "Cerebrocyclic BrownieFramework harmonizes autonomous edge-native deployments, self-healing infrastructure, and polyglot workloads into a resilient symbiote.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T20:20:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FoundryKit",
+                "description": "Spectral FoundryKit harmonizes heterogeneous infrastructures into a self-healing, event-driven fabric for predictive multi-cloud orchestration cadence.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-08-02T20:19:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HardhatDev",
+                "description": "Polyledger-enabled Smart Contract Canvas for Decentralized Application Deployment and Intelligent Contract Auditing Environment",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-02T20:18:33Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:49.353336+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

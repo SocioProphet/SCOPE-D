@@ -1,0 +1,121 @@
+{
+  "profileId": "osint-profile-3c398e233740",
+  "target": "aibers",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:54.493888+00:00",
+  "completedAt": "2026-06-21T15:29:54.905051+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1d6412a9",
+      "lookupType": "github_context",
+      "target": "aibers",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "aibers",
+            "name": "Aline Angela Ibers",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Database Administrator",
+            "public_repos": 5,
+            "followers": 2282,
+            "following": 4775,
+            "created_at": "2025-04-23T22:40:14Z",
+            "updated_at": "2025-09-02T18:26:00Z",
+            "html_url": "https://github.com/aibers",
+            "avatar_url": "https://avatars.githubusercontent.com/u/208883129?v=4",
+            "repos": [
+              {
+                "name": "aibers",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 29,
+                "language": null,
+                "pushed_at": "2025-04-23T23:12:46Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "mysql-server",
+                "description": "MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.",
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2025-04-16T07:02:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "server",
+                "description": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-04-23T22:45:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "database",
+                "description": "Aplus Framework Database Library",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2025-04-21T20:34:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "app",
+                "description": "Aplus Framework App Project",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-04-21T20:45:56Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:54.904418+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "profileId": "osint-profile-209feac1128f",
+  "target": "djvelimir",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:39.800814+00:00",
+  "completedAt": "2026-06-21T15:27:40.513238+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4128a1b1",
+      "lookupType": "github_context",
+      "target": "djvelimir",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "djvelimir",
+            "name": "Velimir \u0110urkovi\u0107",
+            "type": "User",
+            "company": null,
+            "blog": "https://djvelimir.com",
+            "location": "Novi Sad, Vojvodina, Serbia",
+            "bio": "Senior Software Engineer",
+            "public_repos": 33,
+            "followers": 10277,
+            "following": 90293,
+            "created_at": "2016-08-03T19:52:29Z",
+            "updated_at": "2026-06-14T19:35:45Z",
+            "html_url": "https://github.com/djvelimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/20823832?v=4",
+            "repos": [
+              {
+                "name": "leetcode",
+                "description": "\ud83d\udd25LeetCode solutions in any programming language | \u591a\u79cd\u7f16\u7a0b\u8bed\u8a00\u5b9e\u73b0 LeetCode\u3001\u300a\u5251\u6307 Offer\uff08\u7b2c 2 \u7248\uff09\u300b\u3001\u300a\u7a0b\u5e8f\u5458\u9762\u8bd5\u91d1\u5178\uff08\u7b2c 6 \u7248\uff09\u300b\u9898\u89e3",
+                "stargazers_count": 20,
+                "language": "Java",
+                "pushed_at": "2026-06-17T23:18:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "demo-java-cli",
+                "description": "Welcome to the Password Generator Application! This tool is designed to help users effortlessly create secure passwords.",
+                "stargazers_count": 35,
+                "language": "Java",
+                "pushed_at": "2026-04-05T17:20:05Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "djvelimir",
+                "description": "Welcome to my GitHub profile! Feel free to explore, contribute, and connect. Let\u2019s collaborate and innovate together!",
+                "stargazers_count": 38,
+                "language": null,
+                "pushed_at": "2026-06-13T00:50:05Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "radio",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-06-03T15:38:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "legacy-systems",
+                "description": "A curated collection of production-style examples for vintage DOS compilers.",
+                "stargazers_count": 0,
+                "language": "Assembly",
+                "pushed_at": "2026-05-17T15:17:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "djvelimir.github.io",
+                "description": null,
+                "stargazers_count": 49,
+                "language": null,
+                "pushed_at": "2026-06-10T21:46:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "demo-php",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2024-11-09T23:41:08Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-assembly",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "Assembly",
+                "pushed_at": "2024-10-29T18:32:27Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-c",
+                "description": "A simple C project to determine whether a given year is a leap year. This project separates business logic from user interaction, follows good modular practices, and includes unit tests.",
+                "stargazers_count": 16,
+                "language": "C",
+                "pushed_at": "2026-03-22T13:00:38Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-spa-blazor",
+                "description": "A Blazor demo application showcasing routing allows developers to create single-page applications with seamless navigation.",
+                "stargazers_count": 10,
+                "language": "CSS",
+                "pushed_at": "2025-11-09T02:13:18Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-ruby-quine",
+                "description": "This repository contains a Ruby implementation of a quine, a fascinating self-replicating program that outputs its own source code without any external input. ",
+                "stargazers_count": 11,
+                "language": "Ruby",
+                "pushed_at": "2024-12-16T16:28:37Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-dotnet-benchmark",
+                "description": "This repository provides a comprehensive .NET benchmark example focused on algorithm optimization. ",
+                "stargazers_count": 15,
+                "language": "C#",
+                "pushed_at": "2026-02-17T16:23:06Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-go",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Go",
+                "pushed_at": "2024-10-29T18:47:27Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-kotlin-cli",
+                "description": "Welcome to the Password Generator Application! This tool is designed to help users effortlessly create secure passwords.",
+                "stargazers_count": 13,
+                "language": "Kotlin",
+                "pushed_at": "2026-04-05T16:29:53Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-spa-react-vite",
+                "description": "Get started with a powerful React app using TypeScript, Vite, and React Router. This example showcases a fully-fledged React application built with TypeScript for robust type checking and Vite for fast development and zero-config setup. With React Router, navigate through a seamless user interface.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-24T02:28:13Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-rust",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Rust",
+                "pushed_at": "2024-10-29T18:50:43Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-node",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-29T18:48:52Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "blog",
+                "description": "Welcome to Hugo's World! This website showcases the versatility and power of Hugo, a modern open-source static site generator.",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2026-04-23T18:53:07Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-python-cli",
+                "description": "Welcome to the Password Generator Application! This tool is designed to help users effortlessly create secure passwords.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-04-05T15:54:42Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-mobile-ios",
+                "description": "This is a demo iOS app showcasing core features and best practices in Swift development.",
+                "stargazers_count": 9,
+                "language": "Swift",
+                "pushed_at": "2024-10-29T18:48:42Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-spa-angular",
+                "description": "Welcome to our Angular App! This demo showcases the power of Angular's Routing module. With just a few lines of code, we've created a robust and scalable application that navigates between multiple pages. ",
+                "stargazers_count": 16,
+                "language": "HTML",
+                "pushed_at": "2026-04-14T12:53:39Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-spa-vue",
+                "description": "Welcome to our example Vue app with Router! In this demo, we've created a simple application that showcases the power of Vue Router. With just a few lines of code, we've built a fully functional app that allows users to navigate between different routes and views.",
+                "stargazers_count": 16,
+                "language": "Vue",
+                "pushed_at": "2025-02-24T02:11:19Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-mobile-android",
+                "description": "This repository contains a demo Android app showcasing essential features and best practices for mobile development. ",
+                "stargazers_count": 12,
+                "language": "Kotlin",
+                "pushed_at": "2024-10-29T18:48:28Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-software-architecture",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2024-10-29T18:51:14Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-dotnet-web-api",
+                "description": "This repository showcases a .NET Web API demo featuring illustrated REST endpoints and a minimal API approach.",
+                "stargazers_count": 22,
+                "language": "C#",
+                "pushed_at": "2026-02-21T01:30:43Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-dotnet-cli",
+                "description": "Welcome to the Password Generator Application! This tool is designed to help users effortlessly create secure passwords.",
+                "stargazers_count": 10,
+                "language": "C#",
+                "pushed_at": "2026-04-06T10:28:13Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-cpp-cli",
+                "description": "Welcome to the Password Generator Application! This tool is designed to help users effortlessly create secure passwords.",
+                "stargazers_count": 13,
+                "language": "C++",
+                "pushed_at": "2026-04-05T16:22:24Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-spa-react",
+                "description": "Get started with React and routing in our comprehensive example app. Explore a simple but fully functional React app that utilizes the popular React Router library to manage client-side routing. This example app demonstrates how to set up routes and navigate between pages.",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-13T02:03:31Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-java-spring-boot",
+                "description": "This GitHub repository contains a demo Spring Boot application that showcases the fundamental concepts of Spring Boot development.",
+                "stargazers_count": 9,
+                "language": "Java",
+                "pushed_at": "2024-10-29T18:48:06Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-java-fx",
+                "description": "Welcome to the Password Generator Application! This tool is designed to help users effortlessly create secure passwords.",
+                "stargazers_count": 12,
+                "language": "Java",
+                "pushed_at": "2025-01-31T16:34:11Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "demo-java-swing",
+                "description": "Welcome to the Password Generator Application! This tool is designed to help users effortlessly create secure passwords.",
+                "stargazers_count": 25,
+                "language": "Java",
+                "pushed_at": "2026-04-05T18:11:45Z",
+                "fork": false,
+                "topics": [
+                  "demo"
+                ]
+              },
+              {
+                "name": "pomidor",
+                "description": "\ud83c\udf45 Pomidor Programming Language",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-10-30T13:49:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "noto-emoji",
+                "description": "Noto Emoji fonts",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-09-15T22:36:48Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:40.512391+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

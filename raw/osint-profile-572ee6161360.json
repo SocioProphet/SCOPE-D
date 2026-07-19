@@ -1,0 +1,528 @@
+{
+  "profileId": "osint-profile-572ee6161360",
+  "target": "tomast1337",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:03.546005+00:00",
+  "completedAt": "2026-06-20T13:53:06.138081+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1e623f7e",
+      "lookupType": "github_context",
+      "target": "tomast1337",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "tomast1337",
+            "name": "Nicolas Vy\u010das Nery ",
+            "type": "User",
+            "company": "Scissero",
+            "blog": "https://nicolasvycas.github.io/",
+            "location": "Rio de Janeiro ",
+            "bio": "Software Engineer @scissero ",
+            "public_repos": 131,
+            "followers": 2335,
+            "following": 1869,
+            "created_at": "2015-10-14T14:06:11Z",
+            "updated_at": "2026-06-15T19:55:51Z",
+            "html_url": "https://github.com/tomast1337",
+            "avatar_url": "https://avatars.githubusercontent.com/u/15125899?v=4",
+            "repos": [
+              {
+                "name": "betasharp",
+                "description": "Minecraft Beta 1.7.3 ported to C#",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2026-05-30T01:47:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "open-rct3",
+                "description": "An open source re-implementation of RollerCoaster Tycoon 3",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-31T18:03:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pseudo-3d-racing-game",
+                "description": "Small OutRun like game made with rust",
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2026-05-16T15:37:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nbsvis",
+                "description": "Web player and visualizer for Note Block Studio songs",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-30T15:33:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "1StGodotAbiTest",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2026-04-25T22:34:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Betadot",
+                "description": "A crude Beta 1.7.3-compatible client written in GDScript/Godot",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-20T12:46:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "beta-wiki",
+                "description": "A wiki documenting Minecraft Beta 1.7.3's network protocol and other technical specifications.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-02-25T16:22:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tomast1337",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-24T13:23:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "md5-java-csharp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-02-23T12:09:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "java-and-cs-rand",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2026-02-19T14:44:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "trabalhos-da-disciplina-internet-das-coisa",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2022-03-09T12:18:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Calculo-Numerico",
+                "description": "C\u00e1lculo Num\u00e9rico",
+                "stargazers_count": 1,
+                "language": "MATLAB",
+                "pushed_at": "2022-02-23T21:34:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Image-Processing",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-12-05T20:14:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TRABALHO-DE-EXCLUSAO-MUTUA-EM-SISTEMAS-DISTRIBUIDOS",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-12-07T02:58:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "express_plus_mongo_test",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-11T04:29:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-rmi",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2023-10-05T23:42:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "controle-de-loja-em-java",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2020-07-23T05:54:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sway-waybar-wofi-configs",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-11-29T21:51:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sway-setup",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-22T13:32:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "basalto",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2026-01-19T16:45:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NewNoteBlockStudio",
+                "description": "A modern, cross-platform version of Minecraft Note Block Studio",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-12-14T18:05:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "advent-of-code-2025",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Zig",
+                "pushed_at": "2025-12-13T19:41:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nbs-rs",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-12-10T16:28:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "the-census",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "GDScript",
+                "pushed_at": "2025-11-25T01:29:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Agenda-telefonica",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2022-11-06T18:06:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "leetcode",
+                "description": "\ud83d\udc0d\ud83e\udde0\ud83d\udca1 LeetCode solutions in Python to sharpen problem-solving skills",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-05T13:05:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "waveformapp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-04T22:32:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Puppeter-PptxGenJS",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-30T13:42:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "yt-dlp",
+                "description": "A youtube-dl fork with additional features and fixes",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-10-27T17:42:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GlyphEngine",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-20T13:57:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "image-ruler-page",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-14T17:55:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rich-to-pptx",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-14T17:49:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "More-Sponges-Mod",
+                "description": "Add more sponges to Minecraft",
+                "stargazers_count": 18,
+                "language": "Java",
+                "pushed_at": "2020-05-13T01:28:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nbs-player-rs",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-04-11T18:02:33Z",
+                "fork": false,
+                "topics": [
+                  "noteblockstudio",
+                  "raylib",
+                  "rust",
+                  "wasm"
+                ]
+              },
+              {
+                "name": "computer-craft",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Lua",
+                "pushed_at": "2025-08-12T18:16:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "black-metal-logo-generator",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2021-12-23T05:28:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PptxGenJS",
+                "description": "Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-29T21:06:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "trabalho-block-chain",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-05T13:28:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Wallpapers",
+                "description": "These are all the wallpapers I have collected.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-01-08T18:07:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Numerical-analysis",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-15T22:24:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cellular-Automata",
+                "description": "Automatos celulares em java",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2025-06-15T00:44:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Space-Scrapers",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2025-06-12T20:49:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VoxShadePy",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-05-30T18:09:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "opensource-br",
+                "description": "Espa\u00e7o para divulga\u00e7\u00e3o de projetos open-source brasileiros.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-10T20:14:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mapas-brasil",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-03-27T21:00:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "emscripten-file-handling",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-03-25T14:18:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kira-emscripten",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-03-23T17:37:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "v0-system-prompts",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-15T14:12:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zig-nbs",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Zig",
+                "pushed_at": "2025-03-06T19:33:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nest-socket-test",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-24T20:21:52Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:06.137332+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

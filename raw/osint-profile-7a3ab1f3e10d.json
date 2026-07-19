@@ -1,0 +1,94 @@
+{
+  "profileId": "osint-profile-7a3ab1f3e10d",
+  "target": "chmpX",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:41.647985+00:00",
+  "completedAt": "2026-06-21T15:32:41.988147+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-be585fc8",
+      "lookupType": "github_context",
+      "target": "chmpX",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "chmpX",
+            "name": "codeX",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "india",
+            "bio": "DSA \u25cf Python \u25cf C++ \u25cf HTML \u25cf CSS \u25cf JS \u25cf React \u25cf SQL \u25cf Figma",
+            "public_repos": 2,
+            "followers": 1338,
+            "following": 1850,
+            "created_at": "2025-05-27T13:36:53Z",
+            "updated_at": "2025-12-21T14:55:47Z",
+            "html_url": "https://github.com/chmpX",
+            "avatar_url": "https://avatars.githubusercontent.com/u/213638141?v=4",
+            "repos": [
+              {
+                "name": "chmpX",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-07-16T18:27:35Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Learn-python-language",
+                "description": "This repository provides a structured breakdown of key Python topics from beginner to advanced",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2025-06-08T17:47:27Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:41.987452+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,559 @@
+{
+  "profileId": "osint-profile-48ca780d2b4f",
+  "target": "CarlosZoft",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:56.380457+00:00",
+  "completedAt": "2026-06-20T16:49:58.052517+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b1025231",
+      "lookupType": "github_context",
+      "target": "CarlosZoft",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "CarlosZoft",
+            "name": "Carlos Rafael ",
+            "type": "User",
+            "company": "@layers-digital @Hemocione @Clean-Software",
+            "blog": "",
+            "location": "Brasil",
+            "bio": null,
+            "public_repos": 96,
+            "followers": 674,
+            "following": 642,
+            "created_at": "2020-03-15T00:17:50Z",
+            "updated_at": "2026-06-11T17:39:01Z",
+            "html_url": "https://github.com/CarlosZoft",
+            "avatar_url": "https://avatars.githubusercontent.com/u/62192072?v=4",
+            "repos": [
+              {
+                "name": "sync-github-followers",
+                "description": "Sync \"following\" with \"followers\"",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-28T23:21:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "balle-challenge-community",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2023-10-20T13:48:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "practice-mongo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-21T02:33:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "data_structures",
+                "description": "Destinado para compartilhar alguns conhecimentos, enquanto estou aprendendo. Estrutura de dados/complexidade.",
+                "stargazers_count": 20,
+                "language": "C",
+                "pushed_at": "2022-09-14T23:41:44Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "cd-moj",
+                  "codeforces",
+                  "complexity",
+                  "eda1",
+                  "estrutura-de-dados",
+                  "fundamentals",
+                  "javascript",
+                  "ponteiros",
+                  "python3"
+                ]
+              },
+              {
+                "name": "irrigacao",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2025-11-03T13:00:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FSE",
+                "description": "Reposit\u00f3rio para conte\u00fados e projetos de FSE",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-02T11:54:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sendgrid_css",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2024-03-13T17:14:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FSO",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2023-12-11T10:28:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kovacs",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-04-23T22:19:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "joe733",
+                "description": "GitHub has easter eggs too!",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-08-25T18:57:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "waka-readme",
+                "description": "Wakatime Weekly Metrics on your Profile Readme. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-08-15T02:48:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lofi-player",
+                "description": "\ud83c\udfa7 A Lofi Player built with HTML, CSS and JavaScript using Parcel as Module Bundler.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-07-25T07:34:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "introduction-nest-js",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2022-07-24T19:02:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JCDMeira",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-04-24T19:05:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "superMarioBrosOnline",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-06-03T17:34:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "upgrade-response-time-nodejs",
+                "description": "techniques passed by erick wendel for improving response of nodejs",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-11T01:41:03Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "node"
+                ]
+              },
+              {
+                "name": "portfolio-game",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-04-22T17:03:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ReactJS-IgniteLab",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2022-04-12T22:30:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "website",
+                "description": "The Algorithms website providing GitHub's largest open-source algorithm library.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-02-20T14:22:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jabref",
+                "description": "Graphical Java application for managing BibTeX and biblatex (.bib) databases",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2022-05-11T01:44:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "online_judge",
+                "description": "Repository to resolved exercises in https://www.hackerrank.com/",
+                "stargazers_count": 8,
+                "language": "C++",
+                "pushed_at": "2026-01-18T16:56:48Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "c",
+                  "competitive-programming",
+                  "estrutura-de-dados",
+                  "javascript",
+                  "treinamento"
+                ]
+              },
+              {
+                "name": "system-design-101",
+                "description": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-21T12:23:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Test-driven-development",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2022-04-27T00:30:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "backend-of-deliveries",
+                "description": "challenge from rocketseat",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2022-06-14T02:08:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Awesome-Profile-README-templates",
+                "description": "A collection of awesome readme templates to display on your profile",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2021-01-13T17:31:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "apiRestStudies",
+                "description": "Repository for apiRest studies !",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-13T01:46:15Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "apirest",
+                  "apirestfull",
+                  "axios",
+                  "consuming-api",
+                  "express",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "afrodev-team1",
+                "description": "Reposit\u00f3rio para o AfroDev - Time 1",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2021-09-21T13:01:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AFFiNE",
+                "description": "There can be more than Notion and Miro. Affine is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2022-11-18T02:36:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AD_API_Agendamentos",
+                "description": "API de agendamentos feita durante a trilha de Node ShareRH/Venturus",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2021-04-17T01:06:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ad-api-initial",
+                "description": "Cria\u00e7\u00e3o de API, utilizando Nodejs",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2021-04-02T01:27:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "2021.1-Linguas-Indigenas-Docs",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-09-04T13:47:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "2021.1-Caixa_Tem",
+                "description": "Reposit\u00f3rio destinado \u00e0 disciplina de Requisitos de Software sobre o aplicativo Caixa Tem com o professor Andre Barros de Sales. Ser\u00e3o documentados os m\u00e9todos e t\u00e9cnicas para levantamento e especifica\u00e7\u00e3o de requisitos da aplica\u00e7\u00e3o selecionada.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-10-22T11:54:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "2020.2-Ingresso.eear",
+                "description": "Projeto de an\u00e1lise do site Ingresso.eear para a disciplina Intera\u00e7\u00e3o Humano-Computador da Universidade de Bras\u00edlia",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-05-13T04:40:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Money_Nexus",
+                "description": "Aplicativo desktop para controle de entrada e saida de caixa - feito durante a disciplina de Orienta\u00e7\u00e3o a Objetos",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2021-04-23T21:51:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TP01-OO-2020.2",
+                "description": "Projeto feito para fazer consultas simples, a partir de dados que o usuario digitar(m\u00eas, ano e m\u00e9dias di\u00e1rias de temperatura). como; temperatura Media, Minima e Maxima.",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2021-02-15T02:42:10Z",
+                "fork": false,
+                "topics": [
+                  "cmd",
+                  "java",
+                  "orientacao-a-objetos",
+                  "terminal"
+                ]
+              },
+              {
+                "name": "introtodeeplearning",
+                "description": "Lab Materials for MIT 6.S191: Introduction to Deep Learning",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-01-22T00:09:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "URI-Online-Judge-Solutions",
+                "description": "Reposit\u00f3rio de solu\u00e7\u00f5es de exerc\u00edcios do URI Online Judge.",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2021-02-02T03:12:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "grupo11-Universo-Marvel",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2022-02-19T04:37:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DoginUwU",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-03-01T02:57:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "template-node-express-ts",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2022-03-11T01:58:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Beecrowd-Answers",
+                "description": "Esse reposit\u00f3rio cont\u00e9m algumas solu\u00e7\u00f5es das quest\u00f5es do Beecrowd (Antigo URI Judge Online)",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2022-03-20T23:58:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "discord-movidesk",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2022-04-14T15:24:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "discord-1-1",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2022-07-17T23:16:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C-Plus-Plus",
+                "description": "Collection of various algorithms in mathematics, machine learning, computer science and physics implemented in C++ for educational purposes.",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2023-04-08T20:16:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Javascript",
+                "description": "A repository for All algorithms implemented in Javascript (for educational purposes only)",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-10-01T23:24:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "comandos-irrigacao",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-01-05T04:09:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "campo_minado",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2021-09-06T02:55:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "expo-urlShortener",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2021-08-28T19:21:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FAC-codes",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Assembly",
+                "pushed_at": "2021-11-13T02:32:54Z",
+                "fork": false,
+                "topics": [
+                  "hacktoberfest"
+                ]
+              },
+              {
+                "name": "EDA-2",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2021-11-13T02:37:59Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:58.051765+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

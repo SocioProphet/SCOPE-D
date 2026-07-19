@@ -1,0 +1,699 @@
+{
+  "profileId": "osint-profile-913e6fd3f084",
+  "target": "raufurislam",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:28.071451+00:00",
+  "completedAt": "2026-06-20T13:53:29.183971+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4d87364c",
+      "lookupType": "github_context",
+      "target": "raufurislam",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "raufurislam",
+            "name": "Raufur Islam",
+            "type": "User",
+            "company": null,
+            "blog": "https://raufurislam-portfolio.web.app",
+            "location": "Jamalpur Sadar Upazila, Bangladesh",
+            "bio": "Junior Full Stack Developer & UI/UX Designer\r\n",
+            "public_repos": 76,
+            "followers": 1816,
+            "following": 1964,
+            "created_at": "2024-06-30T06:37:02Z",
+            "updated_at": "2026-03-27T15:25:23Z",
+            "html_url": "https://github.com/raufurislam",
+            "avatar_url": "https://avatars.githubusercontent.com/u/174232996?v=4",
+            "repos": [
+              {
+                "name": "ph-tour-management-system-backend",
+                "description": "A complete Tour Management Application (Backend) with mvc moduler architecture.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-15T14:39:03Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "cloudinary",
+                  "cors",
+                  "ejs",
+                  "expressjs",
+                  "http-status-codes",
+                  "jwt",
+                  "multer",
+                  "node",
+                  "nodemailer",
+                  "passportjs",
+                  "redis",
+                  "ssl-commerz",
+                  "typescript",
+                  "typescript-eslint",
+                  "zod"
+                ]
+              },
+              {
+                "name": "reactjs-shadcn-template",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-18T10:00:15Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "react",
+                  "shadcn"
+                ]
+              },
+              {
+                "name": "RideXpress-backend",
+                "description": "A modular, scalable, and production-ready backend for a ride-hailing platform.",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-08T06:36:45Z",
+                "fork": false,
+                "topics": [
+                  "expres",
+                  "https-status-codes",
+                  "jwt",
+                  "mongodb",
+                  "mongoose",
+                  "nodejs",
+                  "passportjs",
+                  "typescript",
+                  "typescript-eslint",
+                  "zod"
+                ]
+              },
+              {
+                "name": "ph-tour-management-system-frontend",
+                "description": "Working on a robust Tour Management System frontend built with monolith architecture and a polyrepo workflow.",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-22T12:24:33Z",
+                "fork": false,
+                "topics": [
+                  "bun",
+                  "hyper-ui",
+                  "origin-ui",
+                  "react",
+                  "react-router",
+                  "shadcn",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "RideXpress-frontend",
+                "description": "RideExpress \u2013 An enterprise-ready ride-sharing platform built with a robust architecture and modern, responsive UI/UX, ensuring security, scalability, and a seamless role-based user experience.",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-11T15:24:49Z",
+                "fork": false,
+                "topics": [
+                  "axios",
+                  "originui",
+                  "reactjs",
+                  "redux",
+                  "shadcn",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "BookNest-frontend",
+                "description": "A Small Task Project",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-22T08:59:31Z",
+                "fork": false,
+                "topics": [
+                  "reactjs",
+                  "redux-toolkit",
+                  "shadcn",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "BookNest-server",
+                "description": "A robust, TypeScript-powered RESTful API for managing books and borrowing records in a library system. Built with Express.js, MongoDB, and Mongoose.",
+                "stargazers_count": 19,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-21T11:03:34Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "mongodb",
+                  "mongoose",
+                  "nodejs",
+                  "rest-api",
+                  "typescript",
+                  "zod"
+                ]
+              },
+              {
+                "name": "blog-chain-server",
+                "description": "A small project to explore Prisma ORM",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-22T11:29:04Z",
+                "fork": false,
+                "topics": [
+                  "cors",
+                  "expressjs",
+                  "node-js",
+                  "nodejs",
+                  "postgresql",
+                  "prisma",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "benzine_prokashon",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-09-22T13:53:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Backend-startup-mvc-moduler",
+                "description": "A ready-to-use backend starter with MVC architecture and modular design to accelerate project startups.",
+                "stargazers_count": 14,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-23T08:56:15Z",
+                "fork": false,
+                "topics": [
+                  "cors",
+                  "dotenv",
+                  "expressjs",
+                  "jsonwebtoken",
+                  "jwt",
+                  "mongodb",
+                  "nodejs",
+                  "ts-node-dev",
+                  "typescript",
+                  "typescript-eslint",
+                  "zod"
+                ]
+              },
+              {
+                "name": "hello-prisma",
+                "description": "Exploring Prisma. This repository is for learning purposes only.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-23T19:04:04Z",
+                "fork": false,
+                "topics": [
+                  "cors",
+                  "expressjs",
+                  "nodejs",
+                  "postgresql",
+                  "prisma",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "blog-chain-frontend",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-26T17:18:17Z",
+                "fork": false,
+                "topics": [
+                  "nextauth",
+                  "nextjs",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "hello-nextjs",
+                "description": "A comprehensive learning project documenting my journey through Next.js fundamentals, from basic concepts to advanced optimization techniques.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-25T15:04:25Z",
+                "fork": false,
+                "topics": [
+                  "nextjs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "nextauth-library",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-27T17:04:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-portfolio-v2-backend",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T13:29:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "raufurislam",
+                "description": null,
+                "stargazers_count": 25,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-13T06:18:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-portfolio-v2",
+                "description": "Working on it..",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-19T16:59:22Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "mongodb",
+                  "nextjs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "B5A8-backend",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-25T17:45:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "neptune-healthcare-backend",
+                "description": "Scalable healthcare backend API using Express & TypeScript with Prisma ORM, JWT authentication, Stripe payments, Cloudinary uploads, and production-ready architecture.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-23T16:29:51Z",
+                "fork": false,
+                "topics": [
+                  "backend-api",
+                  "cloudinary",
+                  "expressjs",
+                  "healthcare",
+                  "jwt",
+                  "nodejs",
+                  "postgresql",
+                  "prisma",
+                  "rest-api",
+                  "scalable-api",
+                  "stripe",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "neptune-healthcare-frontend",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-11T17:34:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "first-docker-container",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-27T17:32:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "foundify",
+                "description": "A comprehensive platform designed to assist users in reporting and recovering lost items, as well as finding and returning found items. The application offers user authentication, a robust database for item records, and a responsive, intuitive interface to facilitate ease of use.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-12T17:27:25Z",
+                "fork": false,
+                "topics": [
+                  "expres",
+                  "firebase",
+                  "javascript",
+                  "mongodb",
+                  "nodejs",
+                  "reactjs",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "project-warmth",
+                "description": "Project Warmth, a responsive web application that provides support, resources, and warmth to underserved communities through collaborative campaigns and innovative solutions.",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-05T06:56:47Z",
+                "fork": false,
+                "topics": [
+                  "firebase",
+                  "javascript",
+                  "nodejs",
+                  "react",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "crowdcube",
+                "description": "Crowdcube, a modern crowdfunding platform that empowers individuals and organizations to bring their ideas to life. Whether you\u2019re looking to fundraise or support meaningful causes, our platform makes it seamless and transparent.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-05T15:40:37Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "firebase",
+                  "javascript",
+                  "mongodb",
+                  "nodejs",
+                  "reactjs",
+                  "tailwindcss",
+                  "vercel"
+                ]
+              },
+              {
+                "name": "soulmate",
+                "description": "Soulmate is a modern and intuitive platform designed to meet your needs efficiently. Whether you are looking for feature-rich functionality or a clean user experience, this site has it all.",
+                "stargazers_count": 22,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-15T12:59:53Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "firebase",
+                  "mongodb",
+                  "nodejs",
+                  "reactjs",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "webdevoloper-portfolio",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2024-07-07T11:23:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "explore-react-core-concepts-2",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-21T06:06:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BeeQuize",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-07T06:22:14Z",
+                "fork": false,
+                "topics": [
+                  "nodejs",
+                  "react",
+                  "redux-toolkit",
+                  "shadcn",
+                  "tailwindcss",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "L2M4-BeAReduxReaper",
+                "description": "Loading...",
+                "stargazers_count": 12,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-03T07:57:15Z",
+                "fork": false,
+                "topics": [
+                  "clsx",
+                  "react-router-v7",
+                  "redux",
+                  "redux-toolkit",
+                  "shadcn",
+                  "tailwind-merge",
+                  "tailwindcss",
+                  "typescript",
+                  "vite"
+                ]
+              },
+              {
+                "name": "L2M3-BeAExpressMongooseMaster",
+                "description": "A complete journey through modern backend development using Node.js, Express.js, MongoDB, and Mongoose with TypeScript. Learn by building real applications, mastering core concepts, advanced queries, aggregation, and schema design to confidently build powerful and scalable server-side applications.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-20T08:24:12Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "javascript",
+                  "mongodb",
+                  "mongoose",
+                  "nodejs",
+                  "rest-api",
+                  "typescript",
+                  "zod"
+                ]
+              },
+              {
+                "name": "scss-basic-project",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-05-29T09:05:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L2B5-Assignment_2-raufurislam",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-05-26T08:52:52Z",
+                "fork": false,
+                "topics": [
+                  "postgresql"
+                ]
+              },
+              {
+                "name": "sass-basic",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "SCSS",
+                "pushed_at": "2025-05-28T15:03:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L2M2-rdbms-rockstar",
+                "description": "A clean and complete guide for developers managing PostgreSQL via terminal. Ideal for full-stack devs working with databases, roles, table structures, and permissions in local dev environments.",
+                "stargazers_count": 8,
+                "language": "PLpgSQL",
+                "pushed_at": "2025-05-26T13:53:25Z",
+                "fork": false,
+                "topics": [
+                  "postgresql"
+                ]
+              },
+              {
+                "name": "Gsap-fundamental",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-05-15T07:55:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L2_M1-C2-OOP-TS",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-12T09:37:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L2-Assignment-1-raufurislam",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-08T17:18:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L2M1-typescript-technocrat",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-13T12:53:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "problem-solving",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-02T13:07:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "assignmnet-7",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-02T10:44:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "assignment-11",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-03-02T10:33:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "plantNet",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-02T20:14:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "basic-problem-solving",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-06T04:36:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "practise-client",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-24T06:39:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "practise-server",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-24T06:36:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crowdcube-server",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-23T12:12:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "foundify-server",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-23T12:06:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "soulmate-backend-server",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-19T13:48:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "taskly-client",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-25T12:17:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple-landing-design",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-02-01T06:40:06Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:29.183152+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

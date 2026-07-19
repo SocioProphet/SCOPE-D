@@ -1,0 +1,163 @@
+{
+  "profileId": "osint-profile-9494c98e8f6e",
+  "target": "Soheilja28",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:01.120965+00:00",
+  "completedAt": "2026-06-21T15:30:01.630345+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5645b239",
+      "lookupType": "github_context",
+      "target": "Soheilja28",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Soheilja28",
+            "name": "Soheil",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "A member of Turing Research Team & C#, JS,, TypeScript, C++, C, Node.js",
+            "public_repos": 10,
+            "followers": 2192,
+            "following": 4635,
+            "created_at": "2024-02-22T15:49:45Z",
+            "updated_at": "2026-06-19T12:39:16Z",
+            "html_url": "https://github.com/Soheilja28",
+            "avatar_url": "https://avatars.githubusercontent.com/u/160886992?v=4",
+            "repos": [
+              {
+                "name": "Soheilja28",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-10-31T19:23:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather_temp_humidity",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-07T07:50:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wnox",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-31T04:50:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "myrepo",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-10-09T19:53:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HIS_web_node",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-15T10:34:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubooksshop",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-09T19:55:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubooks",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-07T07:41:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "start",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-19T18:26:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-06T14:41:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-06T14:46:54Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:01.630022+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

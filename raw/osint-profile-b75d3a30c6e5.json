@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-b75d3a30c6e5",
+  "target": "uhsr",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:59.677484+00:00",
+  "completedAt": "2026-06-21T15:29:01.554332+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5bc3c45f",
+      "lookupType": "github_context",
+      "target": "uhsr",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "uhsr",
+            "name": "UHSR",
+            "type": "User",
+            "company": "UHSR",
+            "blog": "",
+            "location": "RUSSIAN",
+            "bio": "URAAAAAAAAAA 2000 ><",
+            "public_repos": 237,
+            "followers": 3014,
+            "following": 30757,
+            "created_at": "2025-07-10T17:55:17Z",
+            "updated_at": "2025-10-20T13:11:04Z",
+            "html_url": "https://github.com/uhsr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/220242888?v=4",
+            "repos": [
+              {
+                "name": "AssetMarket",
+                "description": "FusionCore AssetMarket converges real-time market data aggregation with cross-asset analytics for high-performance trading hub.",
+                "stargazers_count": 85,
+                "language": "Python",
+                "pushed_at": "2025-10-20T12:32:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DigitalWallet",
+                "description": "Intuitively adaptive DigitalWallet orchestrates real-time settlements, tokenizing assets within a tamper-proof, omnichannel nexus.",
+                "stargazers_count": 50,
+                "language": "Go",
+                "pushed_at": "2025-08-02T16:29:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenLab",
+                "description": "Revolutionary TokenLab architecture orchestrates limitless scalability and advanced enterprise-grade infrastructure. featuring high-performance capabilities",
+                "stargazers_count": 19,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T16:19:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftForge",
+                "description": "Pioneering blockchain infrastructure for NftForge, featuring modular modern design and highly scalable architecture frameworks.",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-02T16:17:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "digitalcollectibleFramework",
+                "description": "Forward-thinking digitalcollectible platform harnessing cloud-native architecture for scalable, enterprise-grade asset management frameworks.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-08-02T16:12:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nftmarketplaceAI",
+                "description": "Revolutionary blockchain-powered NFT marketplace built on scalable architecture, featuring modern design and advanced infrastructure.",
+                "stargazers_count": 11,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T16:11:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cryptotradingDev",
+                "description": "Pioneering crypto trading platform harnessing scalable cloud-native architecture for advanced, real-time market insights solution.",
+                "stargazers_count": 10,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T16:07:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SuperNexus",
+                "description": "Cloud-native digital asset management platform harnessing AI-driven insights and microservices architecture for scalable enterprise deployments.",
+                "stargazers_count": 11,
+                "language": "Go",
+                "pushed_at": "2025-08-02T15:05:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "buildyourownxTools",
+                "description": "Professional buildyourownx solution with buildyourownx-optimized modern-design and enterprise scalable-architecture capabilities",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-20T05:19:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "systemdesignprimerCloud",
+                "description": "Professional systemdesignprimer solution with systemdesignprimer-optimized scalable-architecture and enterprise modern-design capabilities",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-20T05:18:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartContract",
+                "description": "Self-sovereign blockchain architecture orchestrating on-chain governance, fault-tolerant execution, and tamper-proof ledgersphere engine",
+                "stargazers_count": 50,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-02T16:27:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockchainKit",
+                "description": "Cryptographically fortified Fabric-based BlockchainKit empowers decentralized asset tokenization, identity verification, and transparent governance frameworks.",
+                "stargazers_count": 36,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-02T16:26:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ethereumnetworkLab",
+                "description": "Optimized for velocity, NexusCore unleashes high-performance capabilities within a modular, modern-design architecture system",
+                "stargazers_count": 16,
+                "language": "Go",
+                "pushed_at": "2025-08-02T16:10:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChainCryptoAutomationTechX",
+                "description": "A framework for building zero-knowledge proof circuits using a custom DSL optimized for elliptic curve arithmetic, enabling verifiable computation with minimal on-chain footprint via Groth16 proofs.",
+                "stargazers_count": 53,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T15:32:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HyperChain",
+                "description": "Next-generation, distributed smart contract platform for autonomous, scalable, and secure enterprise applications.",
+                "stargazers_count": 10,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T13:57:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CryptoVault",
+                "description": "Pioneering cloud-agnostic CryptoVault solution redefines secure data storage in a unified, future-proof ecosystem",
+                "stargazers_count": 12,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T16:14:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockchainNFTRegistryCoreX",
+                "description": "Here is a unique technical description for a GitHub repository about Crypto, NFT, Blockchain:\"A decentralized marketplace for programmable NFTs built on a zk-SNARKs-enabled blockchain, utilizing homomorphic encryption for secure, trustless, and censorship-resistant digital asset ownership and transfer.\"",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-11T12:08:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bitcoinminingPro",
+                "description": "Pioneering bitcoinmining solution boasting modular design, adaptive scalability, and resilient infrastructure ecosystem",
+                "stargazers_count": 24,
+                "language": "Rust",
+                "pushed_at": "2025-08-02T16:09:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "developerroadmapLab",
+                "description": "Professional developerroadmap platform with developerroadmap-optimized developerroadmap-optimization and enterprise enterprise-grade capabilities",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-20T05:17:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "codinginterviewuniversityTools",
+                "description": "Professional codinginterviewuniversity codinginterviewuniversity-engine with codinginterviewuniversity-optimized intelligent-automation and enterprise codinginterviewuniversity-optimization capabilities",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-20T05:16:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "publicapisAI",
+                "description": "Professional publicapis framework with publicapis-optimized intelligent-automation and enterprise modern-design capabilities",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-20T05:15:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "freeprogrammingbooksHub",
+                "description": "Sophisticated freeprogrammingbooks platform featuring scalable-architecture technology and advanced intelligent-automation for modern platform",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-20T05:14:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesomepythonTech",
+                "description": "Modern awesomepython platform featuring modern-design technology and advanced intelligent-automation for modern platform",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-20T05:04:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenizedArtifactsFabricator",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing zk-SNARKs for private and verifiable ownership proofs, and a novel gas-efficient auction mechanism based on commitment schemes.\"Let me know if you'd like me to adjust anything!",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-11T11:35:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MintNftInterfaceAIX",
+                "description": "A Solidity-based NFT marketplace contract leveraging Merkle tree-based whitelisting for gas-efficient presales and on-chain royalty enforcement through EIP-2981 with dynamic royalty updates via governance.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-07-11T09:32:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DigitalArtifactsRegistry",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of a custom-built zk-SNARKs-based protocol, enabling private and trustless ownership transfer with optimized gas efficiency through batch processing and recursive zk-proofs.\"Let me know if you'd like me to adjust anything!",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-11T11:26:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenizedArtifactsManager",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing a novel tokenization approach with lazy minting and on-chain provenance verification, allowing for gas-efficient and trustless digital ownership transfer.\"",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-11T11:27:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftTokenMetadataParser",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing zk-SNARKs for anonymous ownership verification and ERC-721 extensions for composable, modular token architecture.\"",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-11T11:39:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DigitalArtRegistryVerifier",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace protocol leveraging IPFS for immutable metadata storage, utilizing zk-SNARKs for privacy-preserving ownership verification and ERC-721 compatible smart contracts for seamless interoperability.\"",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-07-11T11:41:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenizedArtifactsManagerFrameworkX",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Polygon, utilizing zk-SNARKs for anonymous ownership verification and ERC-721 extensions for dynamic metadata updating.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T11:42:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenizedAssetRegistry",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Polygon, utilizing a novel ERC-721 extension with lazy minting and zk-SNARKs-based provenance verification to ensure scalable and private digital ownership.\"",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2025-07-11T11:43:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NonFungibleTokenizer",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing zk-SNARKs for verifiable provenance and ownership, with a novel application of homomorphic encryption for secure metadata storage and querying.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T11:43:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DigitalArtRegistryContract",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of the Polygon network, utilizing IPFS for decentralized storage and ERC-721A for gas-efficient token minting, with integrated support for zk-SNARKs-based verifiable ownership proofs.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T11:44:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenizedArtifactsManagerSolutionsNext",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing a novel combination of zk-SNARKs for verifiable ownership and ERC-721 extensions for dynamic metadata updates, ensuring secure, trustless, and censorship-resistant digital asset management.\"",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-07-11T11:45:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftTokenizerFramework",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing a novel Merkle Tree-based metadata storage approach for efficient provenance tracking and scalable asset verification.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T11:45:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftSmartContractAuditor",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Polygon, utilizing zk-SNARKs for anonymous ownership verification and ERC-721A for optimized token batching.\"Let me know if you want me to adjust anything!",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-11T11:46:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftMetadataEncoderSDKNext",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, leveraging zk-SNARKs for private and verifiable ownership, and a novel Merkle tree-based indexing system for efficient metadata querying and scalability.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T11:46:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftTokenMinterSdk",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, leveraging zk-SNARKs for privacy-preserving provenance and ownership verification, with a novel use of Merkle trees for efficient metadata storage and querying.\"",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-11T11:47:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenizedArtifactsRepository",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing zk-SNARKs for anonymous ownership verification and a custom ERC-721 extension for fractional ownership and dynamic royalties.\"",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2025-07-11T11:48:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftTokenMinterStudio",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing a novel Proof-of-Rarity consensus mechanism and zk-SNARKs for privacy-preserving ownership verification and transfer.\"",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-11T11:48:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftMetadataMinter",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing ERC-721 tokens, lazy minting, and a novel proof-of-ownership protocol to ensure scarcity and authenticity, while leveraging OpenZeppelin's SDK for secure and upgradable smart contracts.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T11:49:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenizedDigitalAssetManager",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Polygon, utilizing zk-SNARKs for anonymous ownership verification and ERC-721 extensions for composable token metadata.\"",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-07-11T11:49:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftMetadataEncoderProtocolUltra",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of a modular, sharded, and permissionless ledger, utilizing zk-SNARKs for privacy-preserving ownership verification and IPFS for decentralized storage and metadata management.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T11:49:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftDigitalFingerprinterTechUltra",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing zk-SNARKs for privacy-preserving ownership verification and a custom-built Merkle tree for efficient metadata storage and querying.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T11:50:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NftSmartContractGenerator",
+                "description": "Here is a unique technical description for a GitHub repository about NFT:\"A decentralized NFT marketplace built on top of IPFS and Ethereum, utilizing zk-SNARKs for private and censorship-resistant ownership verification, and incorporating a novel tokenomics model for community-driven rarity assessment.\"",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-07-11T11:50:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockchainNftRegistry",
+                "description": "Here is a unique technical description for a GitHub repository about Crypto, NFT, Blockchain:\"A decentralized NFT marketplace built on a sharded, EVM-compatible blockchain utilizing zk-SNARKs for scalable, privacy-preserving token transactions and a novel, reputation-based consensus algorithm for community-driven curation.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T12:04:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockchainNFTRegistryChainNext",
+                "description": "Here is a unique technical description for a GitHub repository about Crypto, NFT, Blockchain:\"A decentralized NFT marketplace built on a scalable, proof-of-stake blockchain, utilizing zero-knowledge proof-based metadata encryption and atomic swap protocols for trustless, high-throughput transactions.\"",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-07-11T12:05:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockchainNFTVaultManager",
+                "description": "Here is a unique technical description for a GitHub repository about Crypto, NFT, Blockchain:\"A decentralized NFT marketplace built on a substrate-based blockchain, utilizing zero-knowledge proof-based authentication and a novel token-curated registry for secure, community-driven digital asset management.\"",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-07-11T12:05:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockchainNftCertifier",
+                "description": "Here is a unique technical description for a GitHub repository about Crypto, NFT, Blockchain:\"A decentralized NFT marketplace built on a substrate-based blockchain, utilizing zk-SNARKs for zero-knowledge proof-based ownership verification and IPFS for decentralized storage of digital assets.\"Let me know if you need any adjustments!",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-07-11T12:06:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BlockchainNFTTokenizer",
+                "description": "Here is a unique technical description for a GitHub repository about Crypto, NFT, Blockchain:\"A decentralized NFT marketplace built on a substrate-based blockchain, utilizing zero-knowledge proof cryptography to enable private and permissionless token ownership transfers, while leveraging IPFS for decentralized metadata storage and retrieval.\"",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-11T12:06:37Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:01.553497+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

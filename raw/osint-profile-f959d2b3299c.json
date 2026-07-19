@@ -1,0 +1,388 @@
+{
+  "profileId": "osint-profile-f959d2b3299c",
+  "target": "vijayshikhare",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:50:08.842097+00:00",
+  "completedAt": "2026-06-20T16:50:09.610098+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-06aac23b",
+      "lookupType": "github_context",
+      "target": "vijayshikhare",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "vijayshikhare",
+            "name": "vijay shikhre",
+            "type": "User",
+            "company": "vijayshikhare",
+            "blog": "github.com/vijayshikhare",
+            "location": "aurangabad",
+            "bio": "Software Engineer | Full Stack Developer | React.js \u2022 Node.js \u2022 MongoDB | Building scalable web applications & APIs | Ex-Intern Infosys Springboard, AppDost",
+            "public_repos": 28,
+            "followers": 655,
+            "following": 1461,
+            "created_at": "2023-07-25T09:58:27Z",
+            "updated_at": "2026-06-16T09:31:55Z",
+            "html_url": "https://github.com/vijayshikhare",
+            "avatar_url": "https://avatars.githubusercontent.com/u/140502237?v=4",
+            "repos": [
+              {
+                "name": "vijayshikhare-portfolio",
+                "description": "Modern React portfolio showcasing full-stack development skills, animated projects, and business services. Built with Tailwind CSS & Framer Motion. Live demo: vijayshikhare.vercel.app",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-12-28T04:21:53Z",
+                "fork": false,
+                "topics": [
+                  "business-services",
+                  "computer-engineering",
+                  "development",
+                  "framer-motion",
+                  "fullstack",
+                  "gcoej",
+                  "portfolio",
+                  "portfolio-website",
+                  "reactjs",
+                  "tailwindcss",
+                  "vercel",
+                  "webdevelopment"
+                ]
+              },
+              {
+                "name": "WasteZero-Smart-Waste-Pickup-Recycling-Platform",
+                "description": "Full-stack web application for smart waste collection and recycling with user authentication, real-time requests, and efficient resource tracking.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-31T13:53:07Z",
+                "fork": false,
+                "topics": [
+                  "community-platform",
+                  "eco-friendly",
+                  "environmental-tech",
+                  "express",
+                  "full-stack",
+                  "javascript",
+                  "mern-stack",
+                  "mongodb",
+                  "nodejs",
+                  "recycling",
+                  "smart-city",
+                  "sustainability",
+                  "waste-management",
+                  "waste-tracking",
+                  "web-app"
+                ]
+              },
+              {
+                "name": "accredian-enterprise-clone",
+                "description": "Accredian Enterprise Website Clone built with Next.js, featuring a responsive UI, modular components, lead capture API, and modern animations.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-27T17:10:17Z",
+                "fork": false,
+                "topics": [
+                  "animations",
+                  "frontend",
+                  "netlify",
+                  "nextjs",
+                  "nextjs-app-router",
+                  "react",
+                  "responsive-design",
+                  "tailwindcss",
+                  "ui-ux",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "vijayshikhare",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-05-28T10:45:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "community-resource-board",
+                "description": "Production-ready MERN community platform with JWT auth, role-based access, resource workflows, and free-tier deployment (Netlify + Render + MongoDB Atlas).",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-01T18:43:13Z",
+                "fork": false,
+                "topics": [
+                  "community-resource-board",
+                  "express",
+                  "fullstack",
+                  "jwt",
+                  "mern",
+                  "mongodb",
+                  "netlify",
+                  "nodejs",
+                  "open-source",
+                  "rbac",
+                  "react",
+                  "render"
+                ]
+              },
+              {
+                "name": "appdost-website",
+                "description": "AppDost Pvt. Ltd. is a next-generation IT services company specializing in software, web, and mobile app development. This website serves as our digital storefront, helping startups and enterprises discover our solutions through intuitive design and compelling content.",
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2025-12-26T10:15:16Z",
+                "fork": false,
+                "topics": [
+                  "css-flexbox",
+                  "css-grid",
+                  "css3",
+                  "developer-portal",
+                  "front-end-development",
+                  "html",
+                  "javascript",
+                  "nodejs",
+                  "website-development"
+                ]
+              },
+              {
+                "name": "mindease-ai-mental-health-app",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-22T09:13:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JamunaFoundationWebDev",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2025-10-03T02:53:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CyberSecurityClub",
+                "description": "Official website of the Cyber Security Club. Explore our blogs, events, and resources to stay informed and secure online.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-06-08T17:47:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shikhare-travels",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-11T19:14:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vijayshikhare-portfolio-site",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2025-10-31T08:41:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "techforge",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-26T09:23:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "task-manager-app-html-css-js",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-07-28T14:13:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smart-dashboard-weather-news-crypto",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-07-04T08:42:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-news-crypto-dashboard",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-07-04T08:27:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "countdown-timer-progress-bar",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-02T03:02:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shikharecoder-portfolio-site",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-06-29T13:55:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shikhare-vlogger-html-portfolio",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-06-12T07:00:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-resume-portfolio-vijay-shikhare",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-06-09T13:21:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-registration-job-application-forms",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-06-09T13:00:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodejs-express-mongodb-registration",
+                "description": "Develop a registration form to sign up and store user information using HTML, CSS, Node.js in MongoDB",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-06-08T17:56:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cognifyz-web-dev-internship-tasks",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-06-08T17:28:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-image-steganography",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-06-08T15:03:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_CS_01",
+                "description": "Create a Python program that can encrypt and decrypt text using the Caesar Cipher algorithm. Allow users to input a message and a shift value to perform encryption and decryption.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-06-26T05:05:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_CS_05",
+                "description": "Develop a packet sniffer tool that captures and analyzes network packets. Display relevant information such as source and destination IP addresses, protocols, and payload data. Ensure the ethical use of the tool for educational purposes.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-06-30T08:13:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_CS_04",
+                "description": "Create a basic keylogger program that records and logs keystrokes. Focus on logging the keys pressed and saving them to a file. Note: Ethical considerations and permissions are crucial for projects involving keyloggers.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-06-28T06:40:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_CS_03",
+                "description": "Build a tool that assesses the strength of a password based on criteria such as length, presence of uppercase and lowercase letters, numbers, and special characters. Provide feedback to users on the password's strength.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-06-27T05:03:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PRODIGY_CS_02",
+                "description": "Develop a simple image encryption tool using pixel manipulation. You can perform operations like swapping pixel values or applying a basic mathematical operation to each pixel. Allow users to encrypt and decrypt images.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-06-26T05:07:06Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:50:09.609426+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

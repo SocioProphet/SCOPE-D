@@ -1,0 +1,208 @@
+{
+  "profileId": "osint-profile-51cf6cb61d1e",
+  "target": "Fadhaa",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:02.074658+00:00",
+  "completedAt": "2026-06-21T15:31:02.695865+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-05e16ca3",
+      "lookupType": "github_context",
+      "target": "Fadhaa",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Fadhaa",
+            "name": "Fadhaa Ali",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "London-United Kingdom",
+            "bio": "I am interested in developing high quality statistical methods, algorithms and frameworks that can be applied to both real and simulation data that reflect....",
+            "public_repos": 15,
+            "followers": 1771,
+            "following": 1541,
+            "created_at": "2016-04-03T05:57:19Z",
+            "updated_at": "2026-06-14T17:19:55Z",
+            "html_url": "https://github.com/Fadhaa",
+            "avatar_url": "https://avatars.githubusercontent.com/u/18240431?v=4",
+            "repos": [
+              {
+                "name": "DAG-analysis",
+                "description": "Developed DAG-analysis for studying Directed Acyclic Graphs, enabling insights into dependencies, causal inference, and data flow structures",
+                "stargazers_count": 17,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-08-19T13:25:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM_with_STAT",
+                "description": "Developed Deep_STAT, a deep learning-based framework for advanced statistical analysis and predictive modeling on complex datasets.",
+                "stargazers_count": 5,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-27T08:46:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Setting-AWS-EC2-Load_balancer_with-Flask",
+                "description": "Set up an AWS EC2 instance with Flask behind a Load Balancer to ensure high availability and scalable web application hosting. The load balancer distributes traffic across instances, improving reliability and performance.",
+                "stargazers_count": 9,
+                "language": "Shell",
+                "pushed_at": "2025-12-06T18:45:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aws-s3-with-cloudfront-distribution-setup",
+                "description": "Configured AWS S3 with CloudFront distribution to deliver secure, scalable, and low-latency content globally. Enhances performance through caching at edge locations.",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-12-06T18:55:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fadhaa.github.io",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-02-15T21:19:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Currencies-Price-prediction",
+                "description": "Built a Currencies-Price-Prediction model using machine learning to forecast currency exchange rates. Helps in analyzing market trends and decision-making.",
+                "stargazers_count": 34,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-31T09:01:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Distance-Learning-exams",
+                "description": "Different R codes for generating large number of exams with solutions. This can be an alternative way for examine international students.",
+                "stargazers_count": 24,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-18T20:00:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Image_OpenCV",
+                "description": "Developed Image_OpenCV, a project utilizing OpenCV in Python for image processing, computer vision, and object detection tasks.",
+                "stargazers_count": 16,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-01T14:04:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LLM_With_Math",
+                "description": "Built LLM_With_Math, a project integrating large language models with mathematical reasoning to solve and explain complex math problems.",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-14T13:59:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Large-Language-Model-LLM-in-Statistical-Genetics",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-06-19T13:59:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Inference--Mixture-of-Rayleigh-distribution-by-EM",
+                "description": "Implemented inference for a Mixture of Rayleigh distributions using the EM algorithm, enabling accurate parameter estimation for complex probabilistic models.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-02T10:59:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fadhaa",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-08-09T08:50:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ClinicalStatAI-platform",
+                "description": "Developed ClinicalStatAI, a platform that leverages AI for clinical data analysis and decision support. It enables faster, data-driven insights to improve healthcare outcomes.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-07-19T20:07:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoMixRegR",
+                "description": "AutoMixRegR is a machine learning framework for automated mixed-effects regression, enabling efficient modeling of complex hierarchical and grouped data in R.",
+                "stargazers_count": 7,
+                "language": "R",
+                "pushed_at": "2025-07-24T19:16:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoMixRegPY",
+                "description": "AutoMixRegPY is a Python-based framework for automated mixed-effects regression, designed to model complex hierarchical and grouped data efficiently.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-07-12T19:33:21Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:02.694693+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

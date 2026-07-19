@@ -1,0 +1,136 @@
+{
+  "profileId": "osint-profile-c2b78854d215",
+  "target": "amirebadi21",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:07.546734+00:00",
+  "completedAt": "2026-06-21T15:30:08.006592+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6b8c964e",
+      "lookupType": "github_context",
+      "target": "amirebadi21",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "amirebadi21",
+            "name": "Amirhossein Ebadi",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Shiraz",
+            "bio": "Hi, I am Amirhossein\r\nI'm a senior full-stack developer and proud member of the Turing research group, specializing in Next.js, JavaScript, Node.js, Python, C#,",
+            "public_repos": 7,
+            "followers": 2154,
+            "following": 2977,
+            "created_at": "2022-01-13T23:08:52Z",
+            "updated_at": "2025-05-14T18:07:50Z",
+            "html_url": "https://github.com/amirebadi21",
+            "avatar_url": "https://avatars.githubusercontent.com/u/97709069?v=4",
+            "repos": [
+              {
+                "name": "amirebadi21",
+                "description": null,
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2024-10-25T18:30:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubookshop",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-10T02:13:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-10T02:06:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nodejs",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-11T12:35:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-10T02:00:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "New-folder-2-",
+                "description": "Turing research group.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-07T11:20:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sass",
+                "description": "Turing research group.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-07T11:41:05Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:08.005903+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

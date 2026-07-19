@@ -1,0 +1,526 @@
+{
+  "profileId": "osint-profile-0d387d484fe2",
+  "target": "otaviossousa",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:42.054772+00:00",
+  "completedAt": "2026-06-21T15:27:42.988715+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-38a60e4d",
+      "lookupType": "github_context",
+      "target": "otaviossousa",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "otaviossousa",
+            "name": "Otavio Sousa",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Brazil",
+            "bio": "Systems Analysis and Development Student at IFPI | Embedded Systems Resident",
+            "public_repos": 52,
+            "followers": 9292,
+            "following": 15823,
+            "created_at": "2023-04-14T18:14:31Z",
+            "updated_at": "2026-05-30T01:09:36Z",
+            "html_url": "https://github.com/otaviossousa",
+            "avatar_url": "https://avatars.githubusercontent.com/u/130789571?v=4",
+            "repos": [
+              {
+                "name": "Scanner-de-Cores",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-03-23T16:18:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "otaviossousa",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 62,
+                "language": null,
+                "pushed_at": "2026-06-21T14:01:33Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Monitoramento-de-Energia",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-03-05T23:34:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Painel-de-Temperatura-Umidade-e-Pressao",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-22T23:20:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Painel-de-Temperatura-e-Umidade",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-21T22:56:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "app_ng_store",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Dart",
+                "pushed_at": "2024-11-21T03:00:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PPW_II",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2024-11-16T01:28:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TOPICOS_ESPECIAIS_EM_PROGRAMACAO_ADS",
+                "description": "Atividades e avalia\u00e7\u00f5es da mat\u00e9ria t\u00f3picos especiais em programa\u00e7\u00e3o do curso de TADS",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-01-16T16:54:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "app_recipes",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2024-11-19T23:49:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "djangotutorial",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-11-14T14:56:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LHPet",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "C#",
+                "pushed_at": "2024-10-01T23:27:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Web-Project-LH-PETS",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C#",
+                "pushed_at": "2024-09-26T14:01:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Client-Control",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C#",
+                "pushed_at": "2024-09-23T23:45:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "B-Plus-Tree",
+                "description": "C\u00f3digo adaptado para a \u00faltima avalia\u00e7\u00e3o de estrutura de dados II",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2024-09-14T01:10:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "B-Tree",
+                "description": "C\u00f3digo adaptado para a \u00faltima avalia\u00e7\u00e3o de estrutura de dados II",
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2024-09-13T23:51:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Social-Network",
+                "description": "Segunda avalia\u00e7\u00e3o de Estrutura de Dados II - Redes Sociais",
+                "stargazers_count": 5,
+                "language": "C",
+                "pushed_at": "2024-08-27T12:10:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Programacao-Para-Internet-ADS",
+                "description": null,
+                "stargazers_count": 32,
+                "language": "HTML",
+                "pushed_at": "2024-09-18T18:23:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django_projeto_agenda",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-01-11T23:10:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crime-intelligence-panel",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-10T02:47:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "data_processing",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-10T02:41:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NG-Store",
+                "description": null,
+                "stargazers_count": 21,
+                "language": "HTML",
+                "pushed_at": "2024-08-02T15:15:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Man-in-The-Box-EDD",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "C",
+                "pushed_at": "2024-04-02T22:59:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mabiska",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "GDScript",
+                "pushed_at": "2025-07-31T12:51:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "folder_organizer",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2025-07-08T18:27:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flask",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-20T18:23:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "joystick_control_webserver",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2025-05-12T18:38:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "button_sensor_control_webserver",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2025-05-12T18:51:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SimpleMonitor-RTOS",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2025-03-27T16:57:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "biblioteca",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Dart",
+                "pushed_at": "2025-07-21T17:15:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FreeRTOS-Examples",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2025-03-26T00:08:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dio-lab-open-source",
+                "description": "Reposit\u00f3rio do lab \"Contribuindo em um Projeto Open Source no GitHub\" da Digital Innovation One.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-02-27T15:46:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "EmbarcaTech_Final_Project_Countroller",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "C",
+                "pushed_at": "2025-05-14T00:08:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "projeto_agenda_django",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-02-20T12:32:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django_cronograma",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-01-17T19:17:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "calculadora_imc",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-01-16T16:39:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Exo.WebApi",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2024-08-16T20:22:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "IA-ADS",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-03-21T14:37:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "System-Endurance",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2024-02-26T19:26:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NG-Store-Angular",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2024-08-02T15:20:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Logica-de-Programacao-ADS",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2024-03-04T23:27:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Automacao_Envio_Receptores",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-10-14T18:02:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EatEasy-POO",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2024-01-12T15:16:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NG-Store-Angular-Mod",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-08T19:00:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GIT",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-02-15T19:53:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sorting-Algorithms-ED",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2024-02-16T13:40:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Man-In-The-Box-ED",
+                "description": "Avalia\u00e7\u00e3o - Estrutura de dados",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2024-02-16T18:50:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Senai-Versoes-Colaboracoes",
+                "description": "Solu\u00e7\u00e3o de conflitos",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-02-16T18:52:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "The-Sleeping-Barber",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2024-02-20T18:52:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hangman",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-12T12:48:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AppleWatch-JS",
+                "description": "Projeto realizado para praticar JS",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2024-03-12T12:49:29Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:42.987953+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

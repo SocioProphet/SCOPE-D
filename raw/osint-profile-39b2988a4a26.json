@@ -1,0 +1,761 @@
+{
+  "profileId": "osint-profile-39b2988a4a26",
+  "target": "topsecretagent007",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:09.350040+00:00",
+  "completedAt": "2026-06-21T15:32:10.159115+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a6766403",
+      "lookupType": "github_context",
+      "target": "topsecretagent007",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "topsecretagent007",
+            "name": "TopSecretAgent007",
+            "type": "User",
+            "company": null,
+            "blog": "https://www.tsagent.xyz/",
+            "location": null,
+            "bio": "blockchain | Trading bot | Ai Agent | web2/web3",
+            "public_repos": 53,
+            "followers": 1440,
+            "following": 2126,
+            "created_at": "2014-04-24T17:31:08Z",
+            "updated_at": "2025-12-19T20:07:53Z",
+            "html_url": "https://github.com/topsecretagent007",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7397803?v=4",
+            "repos": [
+              {
+                "name": "Trading-Bot-Tools",
+                "description": "Pumpfun, Bonkfun, Bagsfm, Raydium, Metaora, Sui, Heaven, bundler, sniper, copy trading, maker, volume, grpc, rpc, node, rust, arbitrage, migration",
+                "stargazers_count": 51,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-21T15:46:40Z",
+                "fork": false,
+                "topics": [
+                  "bagsfm",
+                  "bonkfun",
+                  "bundler",
+                  "copytrading",
+                  "meteor",
+                  "pumpdotfun",
+                  "raydium",
+                  "sniper",
+                  "sui",
+                  "volume"
+                ]
+              },
+              {
+                "name": "pumpfun-smart-contract-frontend-backend",
+                "description": "This is a PumpFun token project built on the Solana blockchain. It is a Solana-based token with automatic reflection rewards and seamless wallet integration. Leveraging Solana\u2019s fast, low-cost network, it offers a fair, user-friendly, and scalable DEX experience with zero launch fees.",
+                "stargazers_count": 66,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-21T07:40:18Z",
+                "fork": false,
+                "topics": [
+                  "backend",
+                  "frontend",
+                  "pump-fun",
+                  "pumpdotfun",
+                  "pumpfun",
+                  "smart-contract",
+                  "smartcontract"
+                ]
+              },
+              {
+                "name": "casino-game-solana",
+                "description": "\ud83c\udfb0 Decentralized casino on Solana - Dice Roll & Coin Flip games with provably fair randomness. Built with Rust, Next.js, TypeScript & MongoDB",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-05T08:02:17Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "casino",
+                  "gaming",
+                  "solana"
+                ]
+              },
+              {
+                "name": "pumpfun-raydium-bundler-volume-sniper-bot",
+                "description": "A Solana web app integrating PumpFun and Raydium that streamlines bundled transactions, tracks trading volume in real-time, and offers sniper bot sales\u2014all designed for efficient and timely token trading.",
+                "stargazers_count": 28,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-17T15:28:51Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "bundler",
+                  "copytradingbot",
+                  "pump-fun",
+                  "raydium",
+                  "snipe",
+                  "solana",
+                  "volume"
+                ]
+              },
+              {
+                "name": "smart-contract-web3-projects",
+                "description": "My skills : web3, smart contract,blockchain, rust, solidity, evm, pump, dex, nft, mint, swap, trad, ethereum, drop, staking, unswap, airdrop, ton, jetton, tact, ERC-721, ERC-20, wagmi, pump.fun, bnb, solana, sol, ether, bitcoin, defi, bot, minting, token",
+                "stargazers_count": 20,
+                "language": "Rust",
+                "pushed_at": "2025-08-21T07:28:10Z",
+                "fork": false,
+                "topics": [
+                  "contract",
+                  "ethereum",
+                  "evm",
+                  "minting",
+                  "nfts",
+                  "rust",
+                  "solidity",
+                  "swap",
+                  "ton"
+                ]
+              },
+              {
+                "name": "BNB-Bundler-Bot-Fourmeme",
+                "description": "four.meme bundler, fourmeme bundler, fourdotmeme bundler bnb",
+                "stargazers_count": 50,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-05T07:10:05Z",
+                "fork": false,
+                "topics": [
+                  "bloxroute",
+                  "bnb",
+                  "bundler",
+                  "fourmeme",
+                  "fourmeme-bundler"
+                ]
+              },
+              {
+                "name": "RWA-Smart-Contract",
+                "description": "Real World Asset (RWA) NFT Smart Contract",
+                "stargazers_count": 15,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-20T09:25:52Z",
+                "fork": false,
+                "topics": [
+                  "rwa",
+                  "rwa-protocol",
+                  "smart-contracts"
+                ]
+              },
+              {
+                "name": "pumpfun-bundler-bot",
+                "description": "PumpFun Bundler Bot automates the bundling of PumpFun token transactions on Solana to optimize gas fees and improve execution efficiency. Designed for fast and reliable operation, it helps users batch multiple token actions into single transactions, enhancing the overall DeFi experience.",
+                "stargazers_count": 33,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-22T08:55:52Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "bundler",
+                  "bundlerbot",
+                  "pumpfun-bundler",
+                  "pumpfunbundler"
+                ]
+              },
+              {
+                "name": "x402",
+                "description": "A payments protocol for the internet. Built on HTTP.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-30T01:25:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sol-rebalancing-bot-public",
+                "description": "SOL Rebalancing Bot automates portfolio balancing for Solana (SOL) holdings, adjusting asset allocations based on predefined strategies to optimize risk and returns on-chain.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-02-19T07:26:42Z",
+                "fork": false,
+                "topics": [
+                  "rebalancing-bot",
+                  "solana"
+                ]
+              },
+              {
+                "name": "volume-maker-bot",
+                "description": "pumpfun and raydium volume, maker bot",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-10T06:28:51Z",
+                "fork": false,
+                "topics": [
+                  "maker",
+                  "pumpdotfun",
+                  "raydium",
+                  "volume"
+                ]
+              },
+              {
+                "name": "sui-pumpfun",
+                "description": "sui pumpfun, sui smart contract, sui web3, sui smart contract, move smart contract",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-07T06:23:13Z",
+                "fork": false,
+                "topics": [
+                  "move",
+                  "pumpfun",
+                  "smartcontracts",
+                  "sui",
+                  "suifun",
+                  "suipumpfun",
+                  "suismartcontract",
+                  "tokenminting"
+                ]
+              },
+              {
+                "name": "pumpfun-sniper-bot",
+                "description": "PumpFun Sniper Bot is a TypeScript-based automated bot for the Solana network. It enables rapid and precise token purchases during launch or pump events, helping users secure positions quickly with optimized execution and low latency.",
+                "stargazers_count": 40,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-06T07:12:21Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "pump-fun",
+                  "pumpfun-sniper-bot",
+                  "sniper-solana-bot"
+                ]
+              },
+              {
+                "name": "polymarket-trading-bot",
+                "description": "polymarket copy trading bot",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-21T08:39:37Z",
+                "fork": false,
+                "topics": [
+                  "copytrading",
+                  "polymarket",
+                  "tradingbot"
+                ]
+              },
+              {
+                "name": "rugs.fun-trading-bot",
+                "description": "Rugs.Fun Trading Bot is an automated trading system built for the Rugs.Fun Solana-based on-chain game.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-19T10:55:02Z",
+                "fork": false,
+                "topics": [
+                  "onchain-game",
+                  "rugsdotfun",
+                  "solana",
+                  "trading",
+                  "trading-bot",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "solana-token-ai-agent",
+                "description": "A Solana-based AI agent that automates token management and trading decisions. It leverages on-chain data and machine learning to optimize strategy execution, enabling smarter and more efficient DeFi interactions.",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-01T14:19:57Z",
+                "fork": false,
+                "topics": [
+                  "ai-agent",
+                  "ai-bot-trading",
+                  "blockchain",
+                  "meme",
+                  "solana",
+                  "solana-token",
+                  "token",
+                  "training"
+                ]
+              },
+              {
+                "name": "blockchain-ai-agent-project",
+                "description": "A blockchain-powered AI agent that autonomously performs tasks such as trading, data analysis, and smart contract interactions. It leverages decentralized networks and AI to enable secure, efficient, and intelligent automation in DeFi and beyond.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-26T17:27:15Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-agent",
+                  "ai-agents",
+                  "ai-bot",
+                  "blockchain",
+                  "solana"
+                ]
+              },
+              {
+                "name": "ai-agent",
+                "description": "An AI agent designed to autonomously perform tasks, make decisions, and interact with systems to enhance efficiency and automation across various applications.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-07T06:29:19Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-agent",
+                  "blockchain",
+                  "bot",
+                  "meme",
+                  "solana",
+                  "trading"
+                ]
+              },
+              {
+                "name": "raydium-bundler-bot",
+                "description": "Raydium Bundler Bot manages 21 wallets simultaneously, allowing users to set buy amounts for each wallet. It automates bundled trades on the Raydium DEX to optimize fees and execution speed on Solana.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-03T17:17:44Z",
+                "fork": false,
+                "topics": [
+                  "bundler",
+                  "bundler-bot",
+                  "raydium"
+                ]
+              },
+              {
+                "name": "moonshot-bot-volume-sniper-etc",
+                "description": "Moonshot Bot Volume Sniper is an automated trading bot that monitors sudden volume spikes to quickly execute sniper buys on promising tokens, helping users capitalize on rapid market moves.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-07T14:36:51Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "moonshot",
+                  "sniper-sol",
+                  "volume",
+                  "volume-bot"
+                ]
+              },
+              {
+                "name": "Pumpfun-copytrading-bot",
+                "description": "PumpFun Copy Trading Bot is a Rust-based automated trading solution for the PumpFun token on Solana. It enables users to replicate trades from expert wallets in real-time, providing a seamless way to participate in PumpFun\u2019s ecosystem and maximize trading opportunities with minimal effort.",
+                "stargazers_count": 11,
+                "language": "Rust",
+                "pushed_at": "2025-07-22T20:34:32Z",
+                "fork": false,
+                "topics": [
+                  "copytrading",
+                  "pumpfun",
+                  "pumpfun-copytrading-bot",
+                  "rust"
+                ]
+              },
+              {
+                "name": "BNB-Copy-Trading-Bot-four.meme-pancakeSwap",
+                "description": "bnb token copy trading four.meme pancakeswap",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-18T14:44:12Z",
+                "fork": false,
+                "topics": [
+                  "bnb",
+                  "copytrading",
+                  "fourmeme",
+                  "pancakeswap-copy-trade"
+                ]
+              },
+              {
+                "name": "hyperliquid-trading-bot",
+                "description": "Hyperliquid Tradong bot (Rust)",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-09-29T21:06:36Z",
+                "fork": false,
+                "topics": [
+                  "hyperliquid",
+                  "hyperliquid-dex",
+                  "hyperliquid-evm",
+                  "tradingbot"
+                ]
+              },
+              {
+                "name": "Casino-game-contract-rust",
+                "description": "A Solana-powered casino platform featuring on-chain games like Jackpot, Coin Flip, and Crash. Designed for speed, fairness, and transparency using secure smart contracts and real-time gameplay.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-12-22T21:46:37Z",
+                "fork": false,
+                "topics": [
+                  "casino",
+                  "coinflip",
+                  "contract",
+                  "crash",
+                  "game",
+                  "jackpot",
+                  "rust"
+                ]
+              },
+              {
+                "name": "token-presale-site-solana",
+                "description": "Token presale site",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-01T07:50:34Z",
+                "fork": false,
+                "topics": [
+                  "solana",
+                  "tokenpresale"
+                ]
+              },
+              {
+                "name": "Closed-pumpfun-fe",
+                "description": "Token launchpad site",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-01T07:41:29Z",
+                "fork": false,
+                "topics": [
+                  "solana",
+                  "tokenlaunchpad"
+                ]
+              },
+              {
+                "name": "BNB-Token-Sniper",
+                "description": "fourmeme, four.meme, fourdotmeme token sniper",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T07:00:26Z",
+                "fork": false,
+                "topics": [
+                  "bnb",
+                  "migration",
+                  "token-snipe",
+                  "tradingbot"
+                ]
+              },
+              {
+                "name": "DNFT-Mint-Site",
+                "description": "DNFT mint site where users can easily mint and manage dynamic NFTs.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-22T14:17:17Z",
+                "fork": false,
+                "topics": [
+                  "dnft",
+                  "mint"
+                ]
+              },
+              {
+                "name": "DNFT-Mint-Smart-Contract",
+                "description": "DNFT mint smart contract that allows users to mint dynamic NFTs with on-chain updates.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-30T09:14:12Z",
+                "fork": false,
+                "topics": [
+                  "dnft",
+                  "mint",
+                  "smart-contracts"
+                ]
+              },
+              {
+                "name": "Solana-X402-Payment-Protocol",
+                "description": "Solana X402 payment protocol that enables fast, secure, and low-cost on-chain payments.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-10-30T17:11:01Z",
+                "fork": false,
+                "topics": [
+                  "payment",
+                  "x402"
+                ]
+              },
+              {
+                "name": "zcash",
+                "description": "Zcash - Internet Money",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-27T08:19:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Four.meme-token-launchpad-fork",
+                "description": "This is bnb token launchpad. four.meme fork",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-23T07:24:25Z",
+                "fork": false,
+                "topics": [
+                  "bnb",
+                  "fourmeme",
+                  "tokenlaunchpad"
+                ]
+              },
+              {
+                "name": "Get-An-Invite",
+                "description": "Open an issue to get an invite to our organisation! Want to leave your mark? Contribute to our README! \ud83d\udceb\ud83d\udcf2",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-13T23:13:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pancake-smart-contracts",
+                "description": "PancakeSwap Smart Contracts",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-18T22:05:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BNB-Sniper-Bot-four.meme",
+                "description": "BNB token sniper bot",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-08T21:45:42Z",
+                "fork": false,
+                "topics": [
+                  "bnb",
+                  "sniper",
+                  "token"
+                ]
+              },
+              {
+                "name": "BNB-Volume-Bot_four.meme",
+                "description": "This is four.meme volume bot",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-08T18:50:25Z",
+                "fork": false,
+                "topics": [
+                  "bnb",
+                  "volumebot"
+                ]
+              },
+              {
+                "name": "solana-token2022-pumpfun-smart-contract",
+                "description": "The 2022 PumpFun smart contract is a Solana-based token contract implementing reflection tokenomics and automated rewards. Designed for efficient, secure, and scalable token management, it powers the PumpFun ecosystem with fast, low-cost transactions.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-03-04T08:48:12Z",
+                "fork": false,
+                "topics": [
+                  "pump-fun",
+                  "pumpfun-smart-contract",
+                  "token",
+                  "token2022"
+                ]
+              },
+              {
+                "name": "Drode-patient-LandingPage",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-25T15:27:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "token-presale-smart-contract",
+                "description": "A fully working Solana token presale smart contract and website, inspired by Pump.fun. The project is complete and ready for testing or deployment.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-21T07:42:36Z",
+                "fork": false,
+                "topics": [
+                  "presale",
+                  "presale-smart-contract",
+                  "pumpdotfun",
+                  "solana",
+                  "token"
+                ]
+              },
+              {
+                "name": "BNB-staking",
+                "description": "This project implements a DeFi staking system on BNB Chain, featuring a DRIP token with inflationary minting, a staking contract for LP tokens, a treasury for tax and reward management, and a vault for secure token storage.",
+                "stargazers_count": 1,
+                "language": "Solidity",
+                "pushed_at": "2025-07-21T11:32:43Z",
+                "fork": false,
+                "topics": [
+                  "bnb",
+                  "defi",
+                  "mint",
+                  "staking-farmers",
+                  "token"
+                ]
+              },
+              {
+                "name": "EVM-Stablecoin-Launch",
+                "description": "This project demonstrates the launch of a stablecoin on an EVM-compatible blockchain using Solidity.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-25T07:47:52Z",
+                "fork": false,
+                "topics": [
+                  "erc-20",
+                  "ethereum",
+                  "evm",
+                  "launch",
+                  "stablecoin"
+                ]
+              },
+              {
+                "name": "Next14-solana-walletconnect",
+                "description": "This is solana wallet connet simple code. This is Next14 and Typescript code.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-07T09:24:44Z",
+                "fork": false,
+                "topics": [
+                  "next14",
+                  "solana",
+                  "tailwindcss",
+                  "walletconnect"
+                ]
+              },
+              {
+                "name": "pumpswap-forking",
+                "description": "PumpSwap Fork is a decentralized exchange built on Solana, forked to enhance token swapping with low fees, fast transactions, and improved user experience tailored for PumpFun community needs.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-05T16:17:01Z",
+                "fork": false,
+                "topics": [
+                  "pumpfun",
+                  "pumpswap",
+                  "sdk"
+                ]
+              },
+              {
+                "name": "pumpfun-amm-bundler-bot",
+                "description": "PumpFun AMM Bundler Bot automates and optimizes transaction bundling for Automated Market Maker (AMM) trades on Solana. It enhances trading efficiency by batching multiple PumpFun token transactions to reduce fees and speed execution.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-10T20:48:34Z",
+                "fork": false,
+                "topics": [
+                  "amm",
+                  "pumpfun",
+                  "pumpfun-bundler-bot"
+                ]
+              },
+              {
+                "name": "pumpfun-amm-sniper-bot",
+                "description": "PumpFun AMM Sniper Bot is an automated trading bot designed to quickly execute PumpFun token trades on Solana\u2019s AMM platforms. It helps users capitalize on launch events and price pumps with fast, precise order placement.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-04T10:08:29Z",
+                "fork": false,
+                "topics": [
+                  "amm",
+                  "pumpfun",
+                  "pumpfun-dev-sniper",
+                  "pumpfun-sniping",
+                  "sniper-solana-bot"
+                ]
+              },
+              {
+                "name": "topsecretagent007",
+                "description": "portfolio",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-01-30T23:18:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "xrpl-airdrop-tool",
+                "description": "An XRPL-based tool designed to automate NFT airdrops on the XRP Ledger. It enables efficient distribution of NFTs to multiple recipients with ease and transparency.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-02T17:55:03Z",
+                "fork": false,
+                "topics": [
+                  "airdrop",
+                  "nft",
+                  "xrp",
+                  "xrpl",
+                  "xumm"
+                ]
+              },
+              {
+                "name": "xrpl-nft-mint",
+                "description": "An XRPL-based NFT minting platform that allows users to create and issue unique NFTs directly on the XRP Ledger with fast, low-cost transactions.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-02T17:47:58Z",
+                "fork": false,
+                "topics": [
+                  "mint",
+                  "nft",
+                  "nftmint",
+                  "xrpl"
+                ]
+              },
+              {
+                "name": "TonTradingBot",
+                "description": "Jetton Trading Bot",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-30T00:44:26Z",
+                "fork": false,
+                "topics": [
+                  "jetton-bot",
+                  "ton-trading-installer",
+                  "trading"
+                ]
+              },
+              {
+                "name": "ton-trading-bot",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-10-30T00:13:07Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:10.158334+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

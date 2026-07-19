@@ -1,0 +1,341 @@
+{
+  "profileId": "osint-profile-0dd229f11525",
+  "target": "vivekweb2013",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:43.870840+00:00",
+  "completedAt": "2026-06-20T13:52:44.397907+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-9d622e09",
+      "lookupType": "github_context",
+      "target": "vivekweb2013",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "vivekweb2013",
+            "name": "vivekweb2013",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Pune, India",
+            "bio": " Technology enthusiast with love for building products",
+            "public_repos": 25,
+            "followers": 6113,
+            "following": 42725,
+            "created_at": "2014-03-23T07:47:18Z",
+            "updated_at": "2026-06-09T08:23:46Z",
+            "html_url": "https://github.com/vivekweb2013",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7036736?v=4",
+            "repos": [
+              {
+                "name": "audio-recorder",
+                "description": "Free, Simple Audio Recorder App for Android!",
+                "stargazers_count": 44,
+                "language": "Java",
+                "pushed_at": "2021-10-08T06:55:31Z",
+                "fork": false,
+                "topics": [
+                  "ad-free",
+                  "android",
+                  "app",
+                  "audio",
+                  "audio-recorder",
+                  "lightweight",
+                  "open-source",
+                  "visualizations",
+                  "voice-recorder"
+                ]
+              },
+              {
+                "name": "pdf-utils",
+                "description": "An android app to perform different operations on pdf files",
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2021-06-16T04:47:11Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "android-app",
+                  "app",
+                  "free",
+                  "no-ads",
+                  "pdf",
+                  "pdf-document-processor",
+                  "pdf-utilities"
+                ]
+              },
+              {
+                "name": "go-test",
+                "description": "delete after use",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-03T19:46:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test-workflows",
+                "description": "delete after testing",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-04-01T19:54:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nuxt.js",
+                "description": "The Intuitive Vue(2) Framework",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-06-09T17:37:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gitnoter-sample-notes",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-06-16T15:04:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "personal-security-checklist",
+                "description": "\ud83d\udd12 A curated checklist of 300+ tips for protecting digital security and privacy in 2022",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2022-06-02T21:45:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DanieleBelfiore",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-05-04T09:09:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "all-contributors",
+                "description": "\u2728 Recognize all contributors, not just the ones who push code \u2728",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2022-05-02T22:30:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "deck-api",
+                "description": "A deck api server built with go",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2022-05-10T11:33:45Z",
+                "fork": false,
+                "topics": [
+                  "cards",
+                  "deck",
+                  "go",
+                  "golang"
+                ]
+              },
+              {
+                "name": "config-db",
+                "description": "Developer first, JSON based configuration management database (CMDB)",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-05-06T11:23:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "travel-planner",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Go",
+                "pushed_at": "2022-05-06T05:51:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vivekweb2013",
+                "description": "Vivek's Portfolio",
+                "stargazers_count": 21,
+                "language": null,
+                "pushed_at": "2022-06-18T05:46:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test-android-project",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2021-05-23T07:15:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "toastmaker",
+                "description": "ToastMaker is a light javascript library for showing toast notifications on web page.",
+                "stargazers_count": 51,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-06T09:30:51Z",
+                "fork": false,
+                "topics": [
+                  "html",
+                  "javascript",
+                  "javascript-library",
+                  "notification",
+                  "notifications",
+                  "npm-module",
+                  "react",
+                  "reactjs",
+                  "toast",
+                  "toast-notifications",
+                  "vanilla-javascript"
+                ]
+              },
+              {
+                "name": "docker-jdk-mvn",
+                "description": "The docker image(19.03.14-dind) extended with jdk-8 and maven-3.6.3",
+                "stargazers_count": 6,
+                "language": "Dockerfile",
+                "pushed_at": "2020-12-12T11:45:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vishal-Isharani",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2020-07-14T07:56:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CoronaTracker",
+                "description": "A full stack framework to trace possible close-contact candidates within last specified days for an already detected covid-19 positive patient",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2020-04-23T23:35:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ronicley",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2020-10-19T18:51:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "commandhunt",
+                "description": "Find, Build, Store, Copy & Share Commands!",
+                "stargazers_count": 13,
+                "language": "Java",
+                "pushed_at": "2021-05-16T19:04:28Z",
+                "fork": false,
+                "topics": [
+                  "command-builder",
+                  "command-generator",
+                  "command-line",
+                  "developer-tools",
+                  "productivity",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "markdown-cheatsheet",
+                "description": "Markdown Cheatsheet for Github Readme.md",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2021-03-22T15:17:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "firebase-oauth-lite",
+                "description": "firebase-oauth-lite",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2020-04-02T17:39:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gitlab-android-ci-cd-yml",
+                "description": "The yaml file with all the required configuration needed for GitLab CI/CD pipeline android.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2018-11-11T17:37:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StyLua",
+                "description": "A Lua code formatter",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-02-10T20:18:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lua-language-server",
+                "description": "A language server that offers Lua language support - programmed in Lua",
+                "stargazers_count": 1,
+                "language": "Lua",
+                "pushed_at": "2025-02-10T13:41:42Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:44.397163+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

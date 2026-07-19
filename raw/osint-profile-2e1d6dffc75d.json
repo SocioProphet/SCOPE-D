@@ -1,0 +1,226 @@
+{
+  "profileId": "osint-profile-2e1d6dffc75d",
+  "target": "befoulers",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:15.737984+00:00",
+  "completedAt": "2026-06-21T15:28:16.432093+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-beb6524c",
+      "lookupType": "github_context",
+      "target": "befoulers",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "befoulers",
+            "name": null,
+            "type": "User",
+            "company": "High Class",
+            "blog": "",
+            "location": "Jerusal\u00e9m",
+            "bio": null,
+            "public_repos": 17,
+            "followers": 3989,
+            "following": 3927,
+            "created_at": "2023-11-02T20:59:17Z",
+            "updated_at": "2026-04-29T21:40:06Z",
+            "html_url": "https://github.com/befoulers",
+            "avatar_url": "https://avatars.githubusercontent.com/u/149725576?v=4",
+            "repos": [
+              {
+                "name": "befoulers",
+                "description": null,
+                "stargazers_count": 29,
+                "language": null,
+                "pushed_at": "2025-03-14T21:47:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RemoveWindowsAI",
+                "description": "Force Remove Copilot, Recall and More in Windows 11",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-12-14T21:00:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Win11Debloat",
+                "description": "A simple powershell script to remove bloatware apps from windows, disable telemetry, bing in windows search aswell as perform various other changes to declutter and improve your windows experience. This script works for both windows 10 and windows 11.",
+                "stargazers_count": 13,
+                "language": "PowerShell",
+                "pushed_at": "2026-04-29T21:41:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "optimizer",
+                "description": "The finest Windows Optimizer",
+                "stargazers_count": 15,
+                "language": "C#",
+                "pushed_at": "2024-10-13T22:30:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Clean-All-DM-Discord",
+                "description": null,
+                "stargazers_count": 28,
+                "language": "Python",
+                "pushed_at": "2023-11-03T22:09:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "secure_delete",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-02-23T15:12:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nvidiaProfileInspector",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-04-22T08:05:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Python",
+                "description": "All Algorithms implemented in Python",
+                "stargazers_count": 22,
+                "language": "Python",
+                "pushed_at": "2024-02-28T06:51:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "change-mac",
+                "description": "Windows MAC Address Spoofer",
+                "stargazers_count": 12,
+                "language": "Batchfile",
+                "pushed_at": "2023-11-06T19:44:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-follow-bot",
+                "description": "\ud83e\udd16 Automated follow/unfollow bot for GitHub. Follow from multiple sources. Choose which users to unfollow. Custom options to control bot speed and maximum actions.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2023-10-18T16:36:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dm-opener",
+                "description": "Small script to extract private message channels from a discord data package & open them on a certain account.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-09-07T14:03:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lanyard-profile-readme",
+                "description": "\ud83c\udff7\ufe0f Utilize Lanyard to display your Discord Presence in your GitHub Profile",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-07-26T18:47:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Clean-Temp",
+                "description": null,
+                "stargazers_count": 18,
+                "language": "Batchfile",
+                "pushed_at": "2023-11-03T22:34:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Lofy-Clean_4.0v",
+                "description": "Clean Messages Discord",
+                "stargazers_count": 16,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-13T23:44:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "befoulers.github.io",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "CSS",
+                "pushed_at": "2024-10-13T22:26:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kalash",
+                "description": "website kalash - lanyard",
+                "stargazers_count": 15,
+                "language": "HTML",
+                "pushed_at": "2024-05-13T15:50:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bip39",
+                "description": "A web tool for converting BIP39 mnemonic codes",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-28T01:42:14Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:16.431315+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

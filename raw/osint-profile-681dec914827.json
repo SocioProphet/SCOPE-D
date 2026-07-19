@@ -1,0 +1,235 @@
+{
+  "profileId": "osint-profile-681dec914827",
+  "target": "steph3nm",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:05.654138+00:00",
+  "completedAt": "2026-06-21T15:32:06.239529+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1e0aaadb",
+      "lookupType": "github_context",
+      "target": "steph3nm",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "steph3nm",
+            "name": "Stephen",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Canada",
+            "bio": "Just for fun (It's my life)",
+            "public_repos": 18,
+            "followers": 1459,
+            "following": 1200,
+            "created_at": "2021-04-30T08:56:51Z",
+            "updated_at": "2025-12-19T19:30:35Z",
+            "html_url": "https://github.com/steph3nm",
+            "avatar_url": "https://avatars.githubusercontent.com/u/83447619?v=4",
+            "repos": [
+              {
+                "name": "gameclickandcube",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "C#",
+                "pushed_at": "2021-09-21T09:57:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "labyowlgame",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "ShaderLab",
+                "pushed_at": "2021-12-20T11:23:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ControlP",
+                "description": null,
+                "stargazers_count": 20,
+                "language": "C#",
+                "pushed_at": "2025-10-27T23:54:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "game",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-10-29T23:40:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AssetOptimizer",
+                "description": "Automated resource streamlining via intelligent data compression and decentralized analytics manager. with intelligent architecture",
+                "stargazers_count": 7,
+                "language": "Rust",
+                "pushed_at": "2025-10-30T11:06:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "turnip",
+                "description": "an agent for generating and tokenizing unique art on-chain",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-19T23:15:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CD",
+                "description": "Edge-Optimized Adaptive Caching with Origin Shielding for Intelligent Distributed Content Delivery across Enterprise Platforms.",
+                "stargazers_count": 9,
+                "language": "Rust",
+                "pushed_at": "2025-10-30T11:12:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "exo_git_RM",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Rich Text Format",
+                "pushed_at": "2021-05-12T14:27:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "projetuni",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "C#",
+                "pushed_at": "2021-06-25T14:45:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "if3_2D_plateforme",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Mathematica",
+                "pushed_at": "2021-07-02T14:42:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "if3fps",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2021-06-29T14:48:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "if3kartgame",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "C#",
+                "pushed_at": "2021-06-28T14:41:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MiniProjetYMBIE",
+                "description": "projetinterface",
+                "stargazers_count": 22,
+                "language": "Python",
+                "pushed_at": "2021-07-05T11:44:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "javasscript_phaser",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2021-07-09T14:37:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "projetunity",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "ShaderLab",
+                "pushed_at": "2021-09-07T14:42:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "projetunitychasesim",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2021-08-23T07:51:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testeinput",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "C#",
+                "pushed_at": "2021-09-14T14:27:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Projet2DUnity2021",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "C#",
+                "pushed_at": "2021-09-13T14:40:42Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:06.238767+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

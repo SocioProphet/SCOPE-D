@@ -1,0 +1,148 @@
+{
+  "profileId": "osint-profile-df55c2f27144",
+  "target": "tonic-6101",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:26.655955+00:00",
+  "completedAt": "2026-06-21T15:29:27.087574+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b2f14244",
+      "lookupType": "github_context",
+      "target": "tonic-6101",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "tonic-6101",
+            "name": "tonic-6101",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Remote",
+            "bio": "Frappe developer | Open-source believer | Building solutions where users own their data \u2014 not big tech | Working with Frappe & Vue | Always happy to connect.",
+            "public_repos": 8,
+            "followers": 2640,
+            "following": 8145,
+            "created_at": "2018-09-13T09:09:02Z",
+            "updated_at": "2026-06-04T07:27:26Z",
+            "html_url": "https://github.com/tonic-6101",
+            "avatar_url": "https://avatars.githubusercontent.com/u/43235418?v=4",
+            "repos": [
+              {
+                "name": "dock",
+                "description": "Coordination layer for the Tonic ecosystem \u2014 app switcher, unified calendar, notes, search, notifications, people hub, and shared settings for Frappe v16 apps.",
+                "stargazers_count": 2,
+                "language": "Vue",
+                "pushed_at": "2026-04-15T07:15:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "repo",
+                "description": "Metadata-driven document management for Frappe \u2014 file explorer, dossiers, mobile capture, AI processing, and Drive integration for Frappe v16.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-04-15T07:20:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "orga",
+                "description": "Project management for Frappe \u2014 Kanban boards, Gantt charts, task tracking, resource management, budgets, client portal, and automation for teams on Frappe v16.",
+                "stargazers_count": 2,
+                "language": "Vue",
+                "pushed_at": "2026-05-19T00:02:24Z",
+                "fork": false,
+                "topics": [
+                  "frappe",
+                  "project-management"
+                ]
+              },
+              {
+                "name": "home",
+                "description": "Household management for Frappe \u2014 properties, maintenance scheduling, warranty tracking, insurance, budgets, utility bills, inventory, and multi-user households.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-15T07:19:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jana",
+                "description": "AI assistant for the Frappe ecosystem",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-15T07:23:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "watch",
+                "description": "Standalone time tracking for the Frappe ecosystem \u2014 one-click timer, daily/weekly views, tags, and optional ERPNext sync.",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2026-04-15T07:17:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "micro",
+                "description": "Business organizer for micro businesses \u2014 customers, articles, offer drafts, invoice drafts, receipt collection, and tax advisor export for Frappe v16.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-15T07:20:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "frappe_launcher",
+                "description": "App switcher for Frappe Desk \u2014 adds a grid button to the navbar showing all installed apps with logos and one-click navigation. No DocTypes, no build step, one JS file.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-26T20:21:40Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:27.086506+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

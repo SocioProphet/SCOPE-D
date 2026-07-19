@@ -1,0 +1,438 @@
+{
+  "profileId": "osint-profile-8f16573fc9b8",
+  "target": "gooddavvy",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:33.750612+00:00",
+  "completedAt": "2026-06-21T15:29:34.789192+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4ff9b8a3",
+      "lookupType": "github_context",
+      "target": "gooddavvy",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "gooddavvy",
+            "name": "David Ireoluwa Akins (aka AwesomDev)",
+            "type": "User",
+            "company": null,
+            "blog": "https://gooddavvy.github.io",
+            "location": "At My House Full of Tech Enthusiasts | [Redacted Address]",
+            "bio": "Hi, I would appreciate followers. I am an aspiring innovator who loves to code, and I've been coding for over 5 years now.",
+            "public_repos": 35,
+            "followers": 2544,
+            "following": 15405,
+            "created_at": "2022-08-01T21:08:53Z",
+            "updated_at": "2026-06-07T01:16:56Z",
+            "html_url": "https://github.com/gooddavvy",
+            "avatar_url": "https://avatars.githubusercontent.com/u/110428134?v=4",
+            "repos": [
+              {
+                "name": "gooddavvy",
+                "description": "Looks like another awesome developer has arrived.",
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2026-03-20T23:34:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DreamPower",
+                "description": "The perfectest coding lang",
+                "stargazers_count": 28,
+                "language": null,
+                "pushed_at": "2023-12-24T14:36:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gamification-js",
+                "description": "GamificationJS is a 3D Node.js library for creative coding. It makes your web apps get gamified, interactive, & fun, looking like animation.",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-21T12:44:54Z",
+                "fork": false,
+                "topics": [
+                  "3d",
+                  "creative-coding",
+                  "gamification",
+                  "gamification-framework"
+                ]
+              },
+              {
+                "name": "EliaPlus",
+                "description": "Elia+ \ud83d\udc49 An experimental, snappy, and keyboard-centric UI for interacting with AI agents and augmenting humans using AI! Chat about any thing with any agent. \u26a1",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-06-12T11:38:29Z",
+                "fork": true,
+                "topics": [
+                  "agentic-ai",
+                  "agentic-ai-cli",
+                  "ai",
+                  "ai-agents",
+                  "ai-agents-cli",
+                  "ai-agents-framework",
+                  "ai-cli",
+                  "chatgpt",
+                  "claude",
+                  "gemma",
+                  "gpt",
+                  "llama",
+                  "mistral",
+                  "ollama-client",
+                  "python"
+                ]
+              },
+              {
+                "name": "Py_markdown-directory-snapshot-special",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-02-28T02:47:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "barbola-js",
+                "description": "The modern NPM package for the web framework better than Solid.js the is used for user interfaces, Barbola.js",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2023-02-02T14:56:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ghfollow",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-18T19:45:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "test-backstage-repo",
+                "description": "Testing backstage.io with this repo.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-02-06T01:45:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Go_markdown-directory-snapshot-special",
+                "description": "Snapshot a directory & save non-excluded results of snapshot in an output.md file | Create a directory from the snapshot in an input.md file",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2024-12-26T20:15:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "just-notes",
+                "description": "Created with StackBlitz \u26a1\ufe0f",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-06T20:53:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nice-notes",
+                "description": "Created with StackBlitz \u26a1\ufe0f",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-06T01:51:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kfu-labs",
+                "description": "KFU Labs is the latest codebase for KFU Health. Frontend: NextJS + TS + TailwindCSS, Backend: TS",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-25T19:58:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "moretodo",
+                "description": "There's always something more to do. \u26a1 Moretodo: The Ultimate Todo App",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-11T14:51:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gooddavvy.github.io",
+                "description": "My new website. Sorry I kept providing the down \"goodnessdavid.repl.co\" link before.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2024-06-21T16:53:30Z",
+                "fork": false,
+                "topics": [
+                  "awesome",
+                  "awesome-portfolio",
+                  "portfolio",
+                  "portfolio-website"
+                ]
+              },
+              {
+                "name": "anon-kode",
+                "description": "koding with any LLMs",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-10T15:30:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cmd-ai-cli",
+                "description": "An experimental CLI that has a command which lets you start a chat with CMD AI--`cmd-ai`.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-25T21:46:01Z",
+                "fork": false,
+                "topics": [
+                  "ai-cli",
+                  "cmd-ai",
+                  "cmd-ai-cli"
+                ]
+              },
+              {
+                "name": "chatgpt-get-chats-extension",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-02-19T15:13:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chaingpt",
+                "description": "Useful abstraction golang library for building AI-powered reasoning apps",
+                "stargazers_count": 9,
+                "language": "Go",
+                "pushed_at": "2023-05-31T20:56:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "carbon-solid",
+                "description": "Working on porting most or all carbon components to solidJS in partnership with my son. This will be a good attempt as one of his software engineering training projects.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2023-03-30T18:47:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bestJournal-fiber",
+                "description": "BestJournal is an amazing journal app built with GoFiber and fast app with neat structure",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2023-06-11T20:25:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "beautiful-notes",
+                "description": "Created with StackBlitz \u26a1\ufe0f",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-10-06T01:28:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-to-markdown-converter",
+                "description": "HTML to Markdown Converter",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2023-02-28T14:33:43Z",
+                "fork": false,
+                "topics": [
+                  "html",
+                  "html-to-markdown",
+                  "javascript",
+                  "library",
+                  "markdown"
+                ]
+              },
+              {
+                "name": "kfu-health",
+                "description": "KFU Health (commonly known as KFU, which stands for Keep Fit Up!) is a comprehensive fitness tracker designed to help you reach your health and fitness goals. It not only monitors your progress towards these goals but also provides estimates of your overall health and fitness through visual aids like pie charts or graphs.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-09-05T22:39:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "markdown-repository-snapshot-app",
+                "description": "An app that you input a GitHub repository's URL into, alongside ignore files&folders, and it outputs a downloadable `output.md` file",
+                "stargazers_count": 9,
+                "language": "Go",
+                "pushed_at": "2024-06-06T14:05:33Z",
+                "fork": false,
+                "topics": [
+                  "github",
+                  "github-repositories",
+                  "github-repository",
+                  "markdown",
+                  "snapshot",
+                  "snapshots"
+                ]
+              },
+              {
+                "name": "Postop-TodoList",
+                "description": "Postop is a GoLang-Fiber backend and TypeScript-Next.js frontend todo list app coding challenge. You can learn more about it in the README section.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2023-10-02T13:04:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "styled-solidjs-components",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2023-02-01T18:42:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidjs-with-carbon",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2023-02-01T21:35:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "new-barbola-app",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2023-02-02T22:43:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HTML-to-Markdown-Download-File",
+                "description": "You input HTML into the app, it outputs the HTML as Markdown!",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2023-03-01T00:54:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "repl-db-package",
+                "description": "Access ReplDB databases with this modern NPM Github package",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-01T20:10:16Z",
+                "fork": false,
+                "topics": [
+                  "database",
+                  "database-connector",
+                  "npm-github-package",
+                  "npm-package"
+                ]
+              },
+              {
+                "name": "Ruthielove-Cusiune",
+                "description": "Enjoy the cusiune of her! Order Ruthie Akins's food online directly given the data of the food, get it delivered to your house, and enjoy!",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2023-03-26T23:32:26Z",
+                "fork": false,
+                "topics": [
+                  "resturant"
+                ]
+              },
+              {
+                "name": "todo-web-app-golang",
+                "description": "A todo web app made in GoLang",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2023-05-30T14:56:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "todo-web-app-golang-2",
+                "description": "A todo web app wonderfully styled with Bootstrap and made in GoLang",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2023-05-30T22:13:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "golang-git-follower",
+                "description": "An algorithm in GoLang that can follow many people as possible depending on who you follow.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-07-06T20:02:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Go_markdown-directory-snapshot",
+                "description": "Snapshot a directory & save non-excluded results of snapshot in an output.md file",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2024-05-16T20:38:31Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:34.788447+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

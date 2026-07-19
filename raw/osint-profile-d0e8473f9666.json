@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-d0e8473f9666",
+  "target": "riseansmal",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:30.872591+00:00",
+  "completedAt": "2026-06-21T15:29:33.096460+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a510362d",
+      "lookupType": "github_context",
+      "target": "riseansmal",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "riseansmal",
+            "name": "Ri Sean Smal",
+            "type": "User",
+            "company": "@reverseable ",
+            "blog": "https://www.riseansmal.com",
+            "location": "Tbilisi, Georgia",
+            "bio": "Competitive/Vibe Coder building at the Edge. Passionate about AI, Open Source, and DX. Lifelong learner driven by curiosity. Always pushing boundaries.",
+            "public_repos": 355,
+            "followers": 2560,
+            "following": 9849,
+            "created_at": "2014-03-06T22:23:57Z",
+            "updated_at": "2026-06-11T15:03:26Z",
+            "html_url": "https://github.com/riseansmal",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6877737?v=4",
+            "repos": [
+              {
+                "name": "riseansmal",
+                "description": "@riseansmal",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-04-20T21:33:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ggwave",
+                "description": "Tiny data-over-sound library",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-20T17:27:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "podman",
+                "description": "Podman: A tool for managing OCI containers and pods.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-20T17:05:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "weather-lite",
+                "description": "Minimalist weather app with Next.js 15 and TypeScript. Uses free Open-Meteo API (no key required), browser geolocation with fallbacks, 5-day forecast, and auto-refresh. Zero external dependencies, <100KB bundle, <2s load time. MIT licensed.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-19T17:17:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hermes-agent",
+                "description": "The agent that grows with you",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-24T14:47:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NordVPN-Wireguard",
+                "description": "A bash scripts that generates Wireguard configuration file for a NordVPN connection.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-05T22:36:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wg-nord",
+                "description": "Command-line tool for generating WireGuard configuration files for NordVPN",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-30T20:57:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "miio-tokenextrator-all-plattforms",
+                "description": "Desktop GUI for listing Xiaomi Cloud device tokens without touching the command line.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-20T08:29:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "xiaomi-cloud-tokens-extractor",
+                "description": "This tool retrieves tokens for all devices connected to Xiaomi cloud and encryption keys for BLE devices.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-08T01:57:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "openclaw",
+                "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-02T20:45:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "whatsapp-web.js",
+                "description": "A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-01-21T14:14:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "coze-studio",
+                "description": "An AI agent development platform with all-in-one visual tools, simplifying agent creation, debugging, and deployment like never before. Coze your way to AI Agent creation.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-27T17:29:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gosearch",
+                "description": "\ud83d\udd0d Search anyone's digital footprint across 300+ websites",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-09T15:35:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fastify",
+                "description": "Fast and low overhead web framework, for Node.js",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-24T21:12:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ui",
+                "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-16T15:27:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zustand",
+                "description": "\ud83d\udc3b Bear necessities for state management in React",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-16T14:18:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "openalgo",
+                "description": "Open Source Algo Trading Platform for Everyone",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-09T12:28:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fineract",
+                "description": "Apache Fineract",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-09T12:39:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "adyen-web",
+                "description": "Adyen Web Drop-in and Components",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-09T12:34:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ghostfolio",
+                "description": "Open Source Wealth Management Software. Angular + NestJS + Prisma + Nx + TypeScript \ud83e\udd0d",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-09T18:42:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "actual",
+                "description": "A local-first personal finance app",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-09T14:11:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "maybe",
+                "description": "The personal finance app for everyone",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-09T17:29:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Lean",
+                "description": "Lean Algorithmic Trading Engine by QuantConnect (Python, C#)",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-09T15:46:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "StockSharp",
+                "description": "Algorithmic trading and quantitative trading open source platform to develop trading robots (stock markets, forex, crypto, bitcoins, and options).",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-09T21:01:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hyperswitch",
+                "description": "An open source payments switch written in Rust to make payments fast, reliable and affordable",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-09T20:44:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nautilus_trader",
+                "description": "A high-performance algorithmic trading platform and event-driven backtester",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-09T18:13:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kvm",
+                "description": "JetKVM - Control any computer remotely",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-01T21:33:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TalkGPT",
+                "description": "Allows you to easily talk with ChatGPT",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2023-06-28T21:00:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Powerwall-Dashboard",
+                "description": "Grafana Dashboard for Tesla Powerwall",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-08-28T03:56:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "uptime-kuma",
+                "description": "A fancy self-hosted monitoring tool",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-08-01T07:41:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "drivers-atlas-testing",
+                "description": "Drivers Atlas Testing",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-08-31T14:42:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ha.integration.load_shedding",
+                "description": "A Home Assistant integration to track your load schedding schedule.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-09T21:14:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "swarm",
+                "description": "Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-10-15T04:20:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LazyAdmin",
+                "description": "SysAdmin scripts for you to use.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-19T22:52:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "openai-realtime-agents",
+                "description": "This is a simple demonstration of more advanced, agentic patterns built on top of the Realtime API.",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-01-16T02:22:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DeepSeek-R1",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-01-23T08:19:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "blocklist-abuseipdb",
+                "description": "Aggregated AbuseIPDB blocklists with worst IPv4 & IPv6 offenders (~100% confidence)",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-02-14T02:40:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "EdgeGPT",
+                "description": "Reverse engineered API of Microsoft's Bing Chat AI",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2023-06-28T20:59:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ChatGPT",
+                "description": "Lightweight package for interacting with ChatGPT's API by OpenAI. Uses reverse engineered official API.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2023-06-28T21:00:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AutoGPT-Next-Web",
+                "description": "\ud83e\udd16 Assemble, configure, and deploy autonomous AI Agents in your browser.\u4e00\u952e\u514d\u8d39\u90e8\u7f72\u4f60\u7684\u79c1\u4ebaAutoGPT \u7f51\u9875\u5e94\u7528",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2023-06-28T21:00:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "h2ogpt",
+                "description": "Join us at H2O.ai to make the world's best open-source GPT with document and image Q&A, 100% private chat, no data leaks, Apache 2.0",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2023-06-28T21:00:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Qwen3-Coder",
+                "description": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team, Alibaba Cloud.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-31T15:40:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ripple",
+                "description": "the elegant UI framework for the web",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-08-30T13:27:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cmdk",
+                "description": "Fast, unstyled command menu React component.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-02-24T14:51:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "debezium-server",
+                "description": "Debezium Server runtime for standalone execution of Debezium connectors",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-09T04:19:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "brew-explorer",
+                "description": "A beautiful terminal UI for exploring and managing your Homebrew packages with ease.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-09T10:15:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ratatui",
+                "description": "A Rust crate for cooking up terminal user interfaces (TUIs) \ud83d\udc68\u200d\ud83c\udf73\ud83d\udc00 https://ratatui.rs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-07T07:52:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "opentui",
+                "description": "OpenTUI is a library for building terminal user interfaces (TUIs)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-08T21:11:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "serena",
+                "description": "A powerful coding agent toolkit providing semantic retrieval and editing capabilities (MCP server & other integrations)",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-01T20:25:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "commander.js",
+                "description": "node.js command-line interfaces made easy",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-09-26T20:39:57Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:33.095609+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

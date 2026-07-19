@@ -1,0 +1,191 @@
+{
+  "profileId": "osint-profile-2ea3ee247100",
+  "target": "lollocenne",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:23.633926+00:00",
+  "completedAt": "2026-06-21T15:32:24.141974+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-243d4c6a",
+      "lookupType": "github_context",
+      "target": "lollocenne",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "lollocenne",
+            "name": "LolloCenne",
+            "type": "User",
+            "company": "Student",
+            "blog": "https://leetcode.com/u/LolloCenne/",
+            "location": "Rome",
+            "bio": "\ud83d\udc68\u200d\ud83d\udcbb Aspiring Software Engineer | \ud83c\udf93 Student | \ud83d\ude80 Passionate about coding, especially in Python! | \ud83e\udde0 Always learning and building new things to grow my skill",
+            "public_repos": 11,
+            "followers": 1422,
+            "following": 2617,
+            "created_at": "2022-10-24T17:45:28Z",
+            "updated_at": "2026-02-28T18:12:45Z",
+            "html_url": "https://github.com/lollocenne",
+            "avatar_url": "https://avatars.githubusercontent.com/u/116589286?v=4",
+            "repos": [
+              {
+                "name": "Neural-Network-C",
+                "description": "A simple neural network in C",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2026-04-18T22:04:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Jump-The-Obstacles",
+                "description": "Just a copy of my game on microStudio: https://microstudio.dev/i/lollocenne/jumptheobstacles/",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2024-03-06T19:51:20Z",
+                "fork": false,
+                "topics": [
+                  "2d-game",
+                  "game"
+                ]
+              },
+              {
+                "name": "Neural-Network",
+                "description": "A simple neural network in python",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-01-08T23:19:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data-Structure",
+                "description": "Data structure in c++",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2025-01-29T22:05:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Text-Editor",
+                "description": "Just a text editor. I would appreciate it if you would like to contribute the code :)",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-04-16T17:56:32Z",
+                "fork": false,
+                "topics": [
+                  "text-editor"
+                ]
+              },
+              {
+                "name": "lollocenne",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-08-30T21:01:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Automa-Riconoscitore",
+                "description": "Crea un automa riconoscitore che riconosce 1 o pi\u00f9 sequenze",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-11-14T18:42:52Z",
+                "fork": false,
+                "topics": [
+                  "acceptors",
+                  "finite-state-automata",
+                  "finite-state-machine",
+                  "recognizers-text"
+                ]
+              },
+              {
+                "name": "PathFinder-A-Star-Extend",
+                "description": "Exmple of the A star algorithm",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-05-05T19:48:50Z",
+                "fork": false,
+                "topics": [
+                  "astar-algorithm",
+                  "astar-pathfinding",
+                  "astar-search-algorithm",
+                  "pathfinder"
+                ]
+              },
+              {
+                "name": "PathFinder-A-Star",
+                "description": "Example of pathfinder A star algorithm",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-05-05T19:58:08Z",
+                "fork": false,
+                "topics": [
+                  "astar-algorithm",
+                  "astar-pathfinding",
+                  "pathfinder"
+                ]
+              },
+              {
+                "name": "Build-a-Celestial-Bodies-Database-freeCodeCamp",
+                "description": "My project for the course Build a Celestial Bodies Database of freeCodeCamp",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-09-24T17:37:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sandbox",
+                "description": "Sendbox game",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-12-21T13:48:06Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:24.141098+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

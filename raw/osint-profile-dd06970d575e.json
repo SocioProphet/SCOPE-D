@@ -1,0 +1,561 @@
+{
+  "profileId": "osint-profile-dd06970d575e",
+  "target": "iVGeek",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:33.212197+00:00",
+  "completedAt": "2026-06-20T13:53:35.165735+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-93a57cad",
+      "lookupType": "github_context",
+      "target": "iVGeek",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "iVGeek",
+            "name": "iVGeek",
+            "type": "User",
+            "company": "W\u2206K\u2206ND\u2206",
+            "blog": "https://hashnode.com/@iVGeek",
+            "location": "Kenya",
+            "bio": "A kaffeinating nerd on a journey to vulnerability research.",
+            "public_repos": 104,
+            "followers": 1678,
+            "following": 4011,
+            "created_at": "2019-03-04T19:55:11Z",
+            "updated_at": "2026-06-15T22:20:35Z",
+            "html_url": "https://github.com/iVGeek",
+            "avatar_url": "https://avatars.githubusercontent.com/u/48223278?v=4",
+            "repos": [
+              {
+                "name": "rare-hks",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-06-19T11:32:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "omie-portfolio",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2026-06-16T01:11:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "iVGeek",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-03-21T19:44:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ItemDetection",
+                "description": "The Item Detection Android App is a mobile application designed to utilize the device's camera to detect and identify various items in real-time. The app integrates object detection and voice recognition functionalities to provide a seamless user experience.",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2024-12-25T15:15:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "devlx",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-09-21T12:48:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smart-energy-optimizer",
+                "description": "Smart Energy Optimizer predicts energy consumption based on real-time data (temperature, humidity, time of day) and suggests actions to optimize energy usage. It can be used for residential or industrial setups with IoT integration.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-09-15T11:57:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "neurovision",
+                "description": "Built with \u2764\ufe0f for the AI community",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-03-21T10:50:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-profile-trophy",
+                "description": "\ud83c\udfc6 Add dynamically generated GitHub Stat Trophies  on your readme",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-09-08T00:06:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "alx-react",
+                "description": "Frontend Short Specialization",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-14T17:20:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-repo-gallery",
+                "description": "The GitHub Repo Gallery project retrieves information from GitHub API requests to display details such as username, bio, location, the count of public repositories, and specific repository information. Users can interact with this data by clicking on individual repositories or utilizing dynamic search functionality for easy access.",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-02-11T16:07:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "school-website",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-23T10:10:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CRM",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-19T12:44:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Veritas-AI",
+                "description": "a multi-modal deception detection system. This will include physiological signal analysis, voice stress analysis, and behavioral analysis.        NB: EDUCATIONAL PURPOSE ONLY!!!!!!",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-29T09:53:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": ".github",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-09-24T10:12:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LambdaChain",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Haskell",
+                "pushed_at": "2025-09-23T10:07:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EcomVista",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-07T17:30:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-unwrapped",
+                "description": "Your coding year in review",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-08T22:58:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "iamazra03",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-10-08T15:54:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "malbolge-toolkit",
+                "description": "Malbolge development environment with tools to make working with this esoteric language more manageable.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-10-22T04:17:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Diana-nyamai",
+                "description": "This is a github profile. The first page you see when you visit my profile",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-05T14:39:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bhza",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-13T18:58:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BrainFuck-Computational-Suite",
+                "description": "Fibonacci ",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-09-30T18:11:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "xiaoluoboding",
+                "description": "My GitHub Profile. Before Fork it, Star it, Please. \ud83d\ude02",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-04-06T09:03:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TaskFlow",
+                "description": "Advanced Task Management System",
+                "stargazers_count": 3,
+                "language": "CoffeeScript",
+                "pushed_at": "2026-01-08T23:27:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "youtube-shorts-limiter",
+                "description": "a browser extension that limits the number of YouTube Shorts a user can watch in a day.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-28T14:20:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Free-Curated-AI-Resourses-Tools",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-08-22T07:38:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rdx-ventures",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-05-26T13:45:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Virtual-Assistant-Portfolio-Website---Free-Use",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-05-28T14:17:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EJFII",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-08T23:26:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wakanda-archives",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-09-13T13:43:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hostingImages",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-10T05:55:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "digitalnexify",
+                "description": "A webhosting website for a client on Upwork.",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2026-02-04T18:31:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "feedback",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-01-27T23:39:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "top-github-users",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-11-16T09:41:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Platane",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-10-30T00:39:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gig-plus",
+                "description": "A powerful gig-search platform. Get you next Git with Gig+",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-10-16T17:00:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio-project",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-09-24T22:32:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HarmoniX",
+                "description": "Represents harmony between music, lyrics, and design.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-21T16:45:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "N-hanced-voting-system",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-11T13:44:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flight-search",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-27T10:22:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "login_page",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-04-27T06:43:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "A.I-Object-Detector",
+                "description": "A web AI object detection",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-19T15:31:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wanderlust",
+                "description": "Looking for a vacation? This travel platform showcases the weather and attractions of any city you input by retrieving data from Foursquare and OpenWeather APIs.",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-02-23T11:38:44Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "async",
+                  "await",
+                  "fetch",
+                  "fetch-api",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "mood-ring",
+                "description": "This Mood Ring Themes exercise uses a change event to toggle on and off different background colors based on if the user is feeling happy, sad, or passionate.",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-02-24T09:57:19Z",
+                "fork": false,
+                "topics": [
+                  "callback-functions",
+                  "change-events",
+                  "classlist",
+                  "conditional-statements",
+                  "dom",
+                  "dom-manipulation",
+                  "query-selector"
+                ]
+              },
+              {
+                "name": "chore-door-game",
+                "description": "In the Chore Door JavaScript Game, you'll be clicking on randomly placed doors, all while dodging the mischievous ChoreBot. Caution: it's incredibly addictive!",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-22T10:22:24Z",
+                "fork": false,
+                "topics": [
+                  "dom",
+                  "javascript",
+                  "javascript-game"
+                ]
+              },
+              {
+                "name": "vacation-budget-calculator",
+                "description": "A simple vacation budget calculator to allow the user to calculate their daily budget for food and fun.",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-02-19T08:12:20Z",
+                "fork": false,
+                "topics": [
+                  "calculator",
+                  "calculator-application",
+                  "calculator-javascript",
+                  "dom-manipulation",
+                  "javascript",
+                  "methods",
+                  "prompts"
+                ]
+              },
+              {
+                "name": "weekend-repair",
+                "description": "Used factory functions to create vehicle objects, and an event to display which vehicles need repairing when a button is clicked.",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-02-20T05:48:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "subscription-calculator",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-02-21T09:26:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "image-generator",
+                "description": "In this project, images are pulled from the Lorem Picsum API and the photographer's name is displayed when a button is clicked.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-16T07:59:03Z",
+                "fork": false,
+                "topics": [
+                  "api-rest",
+                  "await-async",
+                  "endpoints",
+                  "fetch-api",
+                  "json-api"
+                ]
+              },
+              {
+                "name": "pet-rescue",
+                "description": "This project was created for a fictitious pet rescue, so visitors on their site could view which pets were available to meet and play with.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-02-16T10:16:05Z",
+                "fork": false,
+                "topics": [
+                  "arrays",
+                  "event-listeners",
+                  "factory-functions",
+                  "loops"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:35.164796+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

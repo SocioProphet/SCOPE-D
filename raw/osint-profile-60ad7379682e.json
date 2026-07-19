@@ -1,0 +1,529 @@
+{
+  "profileId": "osint-profile-60ad7379682e",
+  "target": "doguedogue",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:55.490503+00:00",
+  "completedAt": "2026-06-21T15:32:57.579762+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a8172f7f",
+      "lookupType": "github_context",
+      "target": "doguedogue",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "doguedogue",
+            "name": "Rafael Vilches",
+            "type": "User",
+            "company": null,
+            "blog": "https://doguedogue.github.io",
+            "location": "Mexico City",
+            "bio": "Software developer, Systems Analyst and Project Manager \ud83d\udcbe ",
+            "public_repos": 88,
+            "followers": 1260,
+            "following": 9218,
+            "created_at": "2016-11-11T21:53:58Z",
+            "updated_at": "2026-06-05T17:03:21Z",
+            "html_url": "https://github.com/doguedogue",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23409026?v=4",
+            "repos": [
+              {
+                "name": "doguedogue",
+                "description": "Public profile",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-03T20:12:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cryptex",
+                "description": "Challenge ONE Sprint 01 - Construye un encriptador de texto con Javascript | ONE \u2013 Oracle Next Education | Alura Latam",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2022-08-17T22:13:49Z",
+                "fork": false,
+                "topics": [
+                  "challengeonecodificador3"
+                ]
+              },
+              {
+                "name": "skills-introduction-to-github",
+                "description": "My clone repository",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-12-01T01:05:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BMAD-METHOD-v5",
+                "description": "Breakthrough Method for Agile Ai Driven Development",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-08-17T16:08:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Yearbook",
+                "description": "Create a collage from a GitHub group",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-07-05T16:29:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-code-with-codespaces",
+                "description": "My clone repository",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2025-12-01T08:53:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "skills-copilot-codespaces-vscode",
+                "description": "My clone repository",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-01T17:44:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SquaresDogue",
+                "description": "Rotating concentric squares",
+                "stargazers_count": 15,
+                "language": "Java",
+                "pushed_at": "2025-03-01T17:26:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node-test",
+                "description": "Pruebas Node & Jenkins",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T04:53:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JdbcDbConnectionDemo",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2017-05-17T03:42:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BookStoreWebApp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2017-06-02T15:26:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "doguedogue.github.io",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "SCSS",
+                "pushed_at": "2023-05-08T19:27:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hyperblog",
+                "description": "Prueba comandos git",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-03-25T05:10:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spotify",
+                "description": "Spotify - music player",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-11T06:48:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Rompecabezas8PuzzleBranchAndBound",
+                "description": "8 puzzle Problem using Branch And Bound / Problema de Rompecabezas 8 usando Ramificaci\u00f3n y Acotamiento",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2025-03-01T17:28:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Rompecabezas-4x4",
+                "description": "Resolviendo (Solving) 8 Puzzle, 15 puzzle, Gem Puzzle, Boss Puzzle, Game of Fifteen, Mystic Square, etc.",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2022-07-08T13:48:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api_rest_java_customer",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2023-01-26T00:59:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RutaMasCortaBB",
+                "description": "Shortest path in a Maze using Branch and Bound Search",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2022-07-08T13:51:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spring-stomp-chat",
+                "description": "spring java stomp chat",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2023-03-23T23:47:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spring-batch",
+                "description": "spring-batch-maven-mysql",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2023-06-15T05:18:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dukeshop",
+                "description": "Netbeans | Lab3 | Java11 Explorer",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2022-10-30T23:49:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "junit5_app",
+                "description": "JUnit5",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2023-06-08T06:28:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TestEnvironmentVar",
+                "description": "JSP para revisar variables de ambiente y de sistema",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2022-02-28T17:14:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fundamentos",
+                "description": "Fundamentos Spring Boot JDK 11",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2023-06-04T06:53:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TestDatabase",
+                "description": "JSP para revisar conexiones JDBC a bases de datos mysql u oracle",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2023-08-31T01:31:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HelloWorldCSharp",
+                "description": "Hello World C#",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2022-11-13T15:19:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "job-search",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-05-13T05:15:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nest-backend",
+                "description": "NestJS Back End",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-05T16:22:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "savetheocean",
+                "description": "Proyecto del Hackathon LaunchX",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-05T13:09:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-pokemon-game",
+                "description": "Dominic's Pok\u00e9mon Quiz",
+                "stargazers_count": 2,
+                "language": "Vue",
+                "pushed_at": "2024-11-03T16:24:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vscode-remote-try-python",
+                "description": "Python sample project for trying out Dev Containers",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-30T08:15:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "log-viewer",
+                "description": "Web UI for viewing logs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-09-28T10:29:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "angular-auth0",
+                "description": "Actualizaci\u00f3n de la secci\u00f3n de Auth0 del curso de Angular de cero a experto.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-01-07T09:10:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "spotify-get-token",
+                "description": "Ejercicio para obtener el token de spotify",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-12-08T03:25:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vite",
+                "description": "vite js",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2023-06-05T21:52:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ONE",
+                "description": "Canvas \ud83c\udf92 | ONE \u2013 Oracle Next Education | Alura Latam",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-05-18T16:15:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "angular-chat-app",
+                "description": "angular chat app",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2023-03-23T23:48:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "clientes-app",
+                "description": "Angular",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2023-05-17T22:55:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-react-heroes",
+                "description": "docker react ",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-12T06:41:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-graphql",
+                "description": "docker hub nest",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2023-03-12T01:11:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-teslo-testing",
+                "description": "docker teslo testing",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-03-07T02:32:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-teslo-shop",
+                "description": "Docker Nest Postgres",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2023-03-04T05:26:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-cron-ticket",
+                "description": "Node + Cron (Docker Hub rvilches38/cron-ticker)",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-03T21:09:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-pokemon-app",
+                "description": "Docker Pokemon-App",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-02-25T07:17:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-postgres-pgadmin",
+                "description": "Docker Postgres pgAdmin",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-02-25T06:04:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crud-cliente-json",
+                "description": "CRUD Clientes JSON-SERVER | ONE \u2013 Oracle Next Education | Alura Latam",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2022-11-25T02:17:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "doguito",
+                "description": "Validaciones Formulario HTML | ONE \u2013 Oracle Next Education | Alura Latam",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2022-11-21T21:09:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "frutoyfruta",
+                "description": "Proyecto Fruto y Fruta | ONE \u2013 Oracle Next Education | Alura Latam",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2022-11-18T08:24:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "groups",
+                "description": "Groups your followers / following contacts from GitHub :tm:",
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2023-01-29T21:49:10Z",
+                "fork": false,
+                "topics": [
+                  "collaborate",
+                  "github",
+                  "namecom"
+                ]
+              },
+              {
+                "name": "CIS",
+                "description": "Code Innovation Series \ud83c\udf89 for GitHub Campus Program LATAM",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-11-30T17:11:14Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:57.578903+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

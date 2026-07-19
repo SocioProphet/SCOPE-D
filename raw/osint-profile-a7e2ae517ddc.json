@@ -1,0 +1,127 @@
+{
+  "profileId": "osint-profile-a7e2ae517ddc",
+  "target": "AnitaSobhanian",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:23.650373+00:00",
+  "completedAt": "2026-06-21T15:29:24.031823+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-bdd979a6",
+      "lookupType": "github_context",
+      "target": "AnitaSobhanian",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "AnitaSobhanian",
+            "name": "Anita",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 6,
+            "followers": 2662,
+            "following": 2804,
+            "created_at": "2024-02-22T07:29:45Z",
+            "updated_at": "2026-06-16T18:39:51Z",
+            "html_url": "https://github.com/AnitaSobhanian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/160831354?v=4",
+            "repos": [
+              {
+                "name": "AnitaSobhanian",
+                "description": null,
+                "stargazers_count": 29,
+                "language": null,
+                "pushed_at": "2025-02-22T19:56:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "utether",
+                "description": null,
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-23T13:52:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uweather2",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-18T18:32:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubooks",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-18T18:18:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ubookshops",
+                "description": null,
+                "stargazers_count": 21,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-18T18:25:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "website",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-06-07T21:17:40Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:24.030783+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

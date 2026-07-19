@@ -1,0 +1,505 @@
+{
+  "profileId": "osint-profile-1696508be0d0",
+  "target": "topdigitalplus",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:41.535654+00:00",
+  "completedAt": "2026-06-21T15:31:42.873586+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-95774576",
+      "lookupType": "github_context",
+      "target": "topdigitalplus",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "topdigitalplus",
+            "name": "TopDigital",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Game Developer and Software Engineer",
+            "public_repos": 48,
+            "followers": 1556,
+            "following": 4572,
+            "created_at": "2023-04-26T19:22:50Z",
+            "updated_at": "2026-06-10T10:57:05Z",
+            "html_url": "https://github.com/topdigitalplus",
+            "avatar_url": "https://avatars.githubusercontent.com/u/131912486?v=4",
+            "repos": [
+              {
+                "name": "Unity-Firework-Samples",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "C#",
+                "pushed_at": "2024-09-20T12:43:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-ui-datepicker",
+                "description": "Customizable React Native \ud83d\udcc5 DatePicker component for Android, iOS, and Web. It includes single, range and multiple modes and supports different locales.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-09-15T21:19:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ant-design",
+                "description": "An enterprise-class UI design language and React UI library",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-04-15T16:24:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-engineer-roadmap",
+                "description": "A Roadmap to Becoming an AI Engineer  \ud83d\udc68\ud83c\udffb\u200d\ud83d\ude80\ud83d\ude80",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-04-23T07:33:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Centene",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-05-18T23:54:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PNM",
+                "description": "This is healthcare project frontend",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2023-06-05T05:47:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-machine-learning-engineer",
+                "description": "\ud83e\udd13 A curated awesome list of Machine Learning Engineering resources. Feel free to contribute!",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-08-29T09:17:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Web-Effect-liquid-glass-effect-macos",
+                "description": "Demo here",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-10T03:24:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Web-Effect-liquid-glass-react",
+                "description": "Apple's Liquid Glass effect for React",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-12T11:02:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Windows-Maintenance-Tool",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-06-10T16:55:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AI-Self-Forcing",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-06-10T03:08:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-UIEffect",
+                "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code. Combine various filters, such as grayscale, blur, and dissolve, to decorate your UI with a unique visual style!",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-04-18T08:15:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DressingTools",
+                "description": "Dressing your own avatar is really that easy.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-01-02T10:34:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "intelligent_mesh_combiner",
+                "description": "Intelligent Mesh Combiner is a powerful Unity Editor tool designed to optimize your scenes by intelligently grouping and combining meshes based on their proximity and materials.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-01-20T20:14:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-UI-Rounded-Corners",
+                "description": "These components and shaders allow you to add rounded corners to UI elements!",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-11-19T13:23:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-Ten-Minute-Physics",
+                "description": "Implementations in Unity of the Ten Minute Physics YouTube channel. Instead of using Unity's built-in physics engine, you will learn how to make your own. This is useful if you want to simulate ropes, cloth, tires, etc. You will also learn how to make fluid simulations and soft body physics.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-04T14:34:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Vuejs-interview-questions",
+                "description": "List of 300 VueJS Interview Questions And Answers",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-09-18T11:54:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-URPUnderwaterEffects",
+                "description": "An implementation of underwater effects that show under the water line.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-06-20T05:33:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Angular-interview-questions",
+                "description": "List of 300 Angular Interview Questions and answers",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-09-18T11:54:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Reactjs-interview-questions",
+                "description": "List of top 500 ReactJS Interview Questions & Answers....Coding exercise questions are coming soon!!",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-09-18T11:15:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Javascript-interview-questions",
+                "description": "List of 1000 JavaScript Interview Questions",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-09-18T14:54:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-Infinite-Scroller",
+                "description": "Unity infinite scroller (UIS) is an extension allows you to use the ScrollRect control as an infinite scroller/spinner",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-09-26T11:54:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DeepFaceLive",
+                "description": "Real-time face swap for PC streaming or video calls",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-11-08T03:07:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Web-Game-retrobowl",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-11-14T07:06:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-pose3D",
+                "description": "Unity\u4e2d\u8fd8\u539f\u6296\u97f3\u89c6\u9891\u7684\u52a8\u4f5c",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2020-03-26T13:21:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "maven-parent",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-11T11:12:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native-firebase",
+                "description": "\ud83d\udd25 A well-tested feature-rich modular Firebase implementation for React Native. Supports both iOS & Android platforms for all Firebase services.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-13T23:15:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "firebase-ios-sample",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Swift",
+                "pushed_at": "2024-03-18T03:16:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quickstart-ios",
+                "description": "Firebase Quickstart Samples for iOS",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-18T01:45:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "functions-samples",
+                "description": "Collection of sample apps showcasing popular use cases using Cloud Functions for Firebase",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-18T08:44:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MixedRealityToolkit-Unity",
+                "description": "This repository is for the legacy Mixed Reality Toolkit (MRTK) v2.  For the latest version of the MRTK please visit https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-03-26T19:25:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "firestore-ios-sdk-frameworks",
+                "description": " \u26a1 Precompiled Firestore iOS SDKs extracted from the Firebase iOS SDK repository release downloads for faster build times.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-03-21T15:40:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "material-kit-react",
+                "description": "Material Kit React free and open source by Creative Tim",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-04-12T23:15:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-Outline-Effect",
+                "description": "Outline Image Effect for Unity",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-04-16T16:34:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-WebCam",
+                "description": "\u652f\u6301Unity\u4e2d\u7684WebCameraTexture\u8bbf\u95eeAndroid\u539f\u751f\u5c42Camera2\u7684\u80fd\u529b\uff0c \u6bd4\u5982\u8bf4\u53d8\u7126\u3001\u66dd\u5149\u5ea6\u3001ISO\u7b49\u53c2\u6570",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-12-26T15:56:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-UIOutline",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-09-15T06:38:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-3d-model-ui-preview",
+                "description": "Learn how to show animated 3D Models on your UI using a Canvas, Render Texture, and any 3d model",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-11-28T01:25:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-Light-Scroll",
+                "description": "Lightweight Scroll Snap for Unity",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-01T14:07:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity3DPortals",
+                "description": "A seamless portal implementation",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-14T03:01:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sprite-glow",
+                "description": "Sprite glow effect with HDR outline",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-19T17:07:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MinMaxSlider",
+                "description": "Min Max Slider UI Component for Unity",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-19T20:37:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Unity-UIGradient",
+                "description": "A UI gradient effect script for Unity",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-08-04T13:55:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "the-complete-react-interview-guide",
+                "description": "Repository for The Complete React Interview Guide book",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-08-10T03:39:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "python",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-05-19T00:23:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ChicagoSraping",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-10-06T18:23:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ELS-Addin-",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-10-12T15:50:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ELS",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Visual Basic .NET",
+                "pushed_at": "2023-10-18T20:28:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "proshop_mern",
+                "description": "Shopping cart built with MERN & Redux",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-01-15T16:26:04Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:42.872806+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

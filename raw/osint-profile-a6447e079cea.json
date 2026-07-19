@@ -1,0 +1,136 @@
+{
+  "profileId": "osint-profile-a6447e079cea",
+  "target": "nykoco",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:06.670057+00:00",
+  "completedAt": "2026-06-21T15:30:07.080378+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f2e01759",
+      "lookupType": "github_context",
+      "target": "nykoco",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "nykoco",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": " @DUETDUCK              \r\n@yakeIore\r\n\r\n",
+            "public_repos": 7,
+            "followers": 2170,
+            "following": 30473,
+            "created_at": "2025-09-19T06:59:29Z",
+            "updated_at": "2026-06-17T17:19:46Z",
+            "html_url": "https://github.com/nykoco",
+            "avatar_url": "https://avatars.githubusercontent.com/u/233224364?v=4",
+            "repos": [
+              {
+                "name": "nykoco",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2026-02-27T12:57:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hash-Table",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-05-16T23:17:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kotz",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-12-31T21:32:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nyko",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-01-23T16:22:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "followers-test",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-02-20T02:05:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BULLET-MATH",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-03-01T06:23:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DUETDUCK",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-03-26T16:53:45Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:07.079651+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

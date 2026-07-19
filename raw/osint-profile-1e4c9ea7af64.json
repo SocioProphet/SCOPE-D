@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-1e4c9ea7af64",
+  "target": "DavoudMolaei",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:45.529042+00:00",
+  "completedAt": "2026-06-21T15:32:46.923704+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f38825a0",
+      "lookupType": "github_context",
+      "target": "DavoudMolaei",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "DavoudMolaei",
+            "name": "davoud",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "trader",
+            "public_repos": 205,
+            "followers": 1305,
+            "following": 3766,
+            "created_at": "2022-12-21T17:19:59Z",
+            "updated_at": "2025-03-03T19:44:10Z",
+            "html_url": "https://github.com/DavoudMolaei",
+            "avatar_url": "https://avatars.githubusercontent.com/u/121189075?v=4",
+            "repos": [
+              {
+                "name": "DQN-LSTM-Task-Offloading",
+                "description": "A QoE-Oriented Computation Offloading Algorithm based on Deep Reinforcement Learning (DRL) for Mobile Edge Computing (MEC) | This algorithm captures the dynamics of the MEC environment by integrating the Dueling Double Deep Q-Network (D3QN) model with Long Short-Term Memory (LSTM) networks. ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-02-13T16:40:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DesignFrnd",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-10-23T17:22:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Employee-Management",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-03-05T06:34:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "better-counter",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-03-06T18:26:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Docs",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-04T00:37:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jahidnation",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-04T23:08:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "test_panos",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-23T22:28:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fullstackweek-donalds",
+                "description": "FSW Donald's Website",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-02-27T02:30:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-launch-platforms",
+                "description": "Curated list of platforms where you can launch, promote, and showcase your startup, product, or side project.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-06-01T10:40:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Personal-Library-Manager",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-24T14:13:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Journey-Planner",
+                "description": "Back-end de um gerenciador de viagens desenvolvido em JAVA durante o NLW Journey da Rocketseat.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-22T16:04:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Awesome-Black-Friday-Cyber-Monday",
+                "description": "Awesome deals on Black Friday: Apps, SaaS, Books, Courses, etc.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-16T11:20:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BC-PREDICT",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-06-28T13:34:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "The_Chat_Haven",
+                "description": "The Chat Haven is a chat application that allows users to create & join room and send & receive messages in real-time.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-03T19:54:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "abhivyakti_cinema",
+                "description": "This is a Reactjs Based Project where u can search and sort movies based on genres, popularity and tv shows and watch trailors",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-24T18:20:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Super-Info",
+                "description": "Super Info is a comprehensive, text-based utility for system administrators on  Ubuntu and other Debian-based distributions. It provides essential security, monitoring and system checks via a custom ASCII interface with colors (when supported). By Bocaletto Luca Tanks",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-10T19:54:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "instagram-autolike",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-24T06:29:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "crowdcube-server",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-01T17:15:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FontesLinux",
+                "description": " Curiosidades interessantes relacionadas a arte ASCII, formata\u00e7\u00e3o de texto e outras caracter\u00edsticas criativas. Aprender de forma interativa e divertida!\ud83d\ude80",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-08T14:35:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "grikod2",
+                "description": "grikod2",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-12T10:12:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BioCrypt",
+                "description": "BioCrypt-Personal is a biometric-based encryption system that secures sensitive files using fingerprint authentication and  encryption, with support for local and blockchain-secured IPFS storage. You can fill this form to help us make the program better! : https://forms.gle/6A5hedEnrnZy14NHA",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-21T18:09:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DSBMixer",
+                "description": "A tabbed Qt mixer for FreeBSD",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-01-20T17:50:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Netflix-Website-Clone",
+                "description": "A responsive Netflix-inspired movie streaming UI built with React, Tailwind CSS, and JavaScript. Browse movies, view banners, and enjoy a sleek Netflix-like experience.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-08T20:34:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Data-statistics",
+                "description": "Data statistics",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-13T12:49:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Table_Chart",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-28T15:18:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "phpFaculdade",
+                "description": "trabalho faculdade",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2019-11-28T13:02:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "forum",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-22T21:44:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CodeLibrary",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-03T16:13:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Profile-Badges",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-16T09:41:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "token-launchpad",
+                "description": "Mirage Launchpad Beta Version. Creating an SPL Token on the Solana blockchain. This application allows you to easily create a custom token on Solana",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-03T09:02:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tinfoil-shops",
+                "description": "Repository with list of links to active and working tinfoil shops for Nintendo Switch.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-28T21:52:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Nayeem0011",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-05-31T18:28:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GopherSocial",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-05-15T17:11:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jogo_adivinhacao.py",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-05-09T01:13:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pedropanzo",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-25T19:59:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "prodigy-json-server",
+                "description": "Prodigy JSON Server is a fake REST API built with json-server for simulating product data management. It's designed to work with the Prodigy Manager app, allowing local testing of CRUD operations without a real database.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-01-02T03:03:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hum0rouz",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-09T19:34:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Seraphka",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-19T14:01:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "online-shopping-system",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-08-18T14:23:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Problem-With-JS",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-26T12:13:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "e-commerce-web",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-18T16:46:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "calculator",
+                "description": "calculator abbosch1k c++",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-01T13:15:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hello-sum-merc",
+                "description": "Mercury is a statically typed, declarative, logic programming language similar to Prolog, but much more efficient and with strong type checking.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-21T07:29:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "news-collector-server",
+                "description": "A daily list of interesting things happening in the world, A smart collector of the web\u2019s most relevant stories, One place for the internet\u2019s most interesting stories.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-10T16:15:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ayesha-AI-Idea-Generator",
+                "description": "A tool to generate innovative AI ideas for various domains",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-10T21:08:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-vite",
+                "description": "\u26a1\ufe0f A curated list of awesome things related to Vite.js",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-28T20:41:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nvbinh",
+                "description": "Steve's profile",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-20T02:11:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Sub4Sub-Web-Application",
+                "description": "This is a fully open-source advanced Sub4Sub Web Application made with PHP and MySQL database by Hiranmay Roy and Sameer Pathak.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-26T00:01:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ckdrkt2",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-06-25T22:09:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Complete-Responsive-Hospital-Website",
+                "description": "FutureCare Hospital website",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-12T20:41:51Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:46.922860+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

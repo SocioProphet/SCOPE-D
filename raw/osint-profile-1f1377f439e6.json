@@ -1,0 +1,193 @@
+{
+  "profileId": "osint-profile-1f1377f439e6",
+  "target": "jarvis-acv",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:18.119724+00:00",
+  "completedAt": "2026-06-21T15:28:18.681843+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e90a5758",
+      "lookupType": "github_context",
+      "target": "jarvis-acv",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "jarvis-acv",
+            "name": "Jarvis",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Full stack developer ",
+            "public_repos": 13,
+            "followers": 3951,
+            "following": 7644,
+            "created_at": "2021-03-23T08:49:04Z",
+            "updated_at": "2024-02-03T15:41:34Z",
+            "html_url": "https://github.com/jarvis-acv",
+            "avatar_url": "https://avatars.githubusercontent.com/u/81223741?v=4",
+            "repos": [
+              {
+                "name": "Blogging-Website",
+                "description": "A complete blogging platform bulit using Node.js",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-09-06T18:46:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Hacktoberfest2023",
+                "description": "\ud83c\udf31 Contribute your favorite \ud83d\udcda Data Structure implementation, \ud83d\udd78 Algorithms, and \ud83c\udfb2 Projects. \ud83d\ude0a | Very Active Repository, Star and Share with your friends |",
+                "stargazers_count": 2,
+                "language": "C++",
+                "pushed_at": "2023-10-07T16:30:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Hello-World-hactoberfest2023",
+                "description": "You can contribute to this Repository by creating programs to print \"hello world\" in different programming languages.",
+                "stargazers_count": 2,
+                "language": "Scheme",
+                "pushed_at": "2023-09-30T13:48:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jarvis-acv",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-09-16T18:03:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2023-09-04T06:48:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Result-management-system",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2023-07-05T08:30:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "intro-html",
+                "description": "A robot powered training repository :robot:",
+                "stargazers_count": 8,
+                "language": "CSS",
+                "pushed_at": "2021-07-27T05:15:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "markdown-portfolio",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-07-27T04:23:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-slideshow",
+                "description": "A robot powered training repository :robot:",
+                "stargazers_count": 20,
+                "language": "HTML",
+                "pushed_at": "2021-07-26T11:59:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Login-Form",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2023-09-02T15:06:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "arjuncvinod07",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-03-26T05:58:31Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "arjuncvinod",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2021-03-25T07:20:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webdevbootcamp",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-08-08T18:26:02Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:18.681054+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,822 @@
+{
+  "profileId": "osint-profile-999bccd26cd5",
+  "target": "unhappychoice",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:28.383615+00:00",
+  "completedAt": "2026-06-21T15:28:29.178091+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-cb7017d3",
+      "lookupType": "github_context",
+      "target": "unhappychoice",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "unhappychoice",
+            "name": "Yuji Ueki",
+            "type": "User",
+            "company": null,
+            "blog": "https://unhappychoice.com",
+            "location": "Tokyo, Japan",
+            "bio": "\r\n    \uff3c Software Engineer \uff0f\r\n\r\n",
+            "public_repos": 54,
+            "followers": 3641,
+            "following": 10854,
+            "created_at": "2013-10-04T05:40:46Z",
+            "updated_at": "2026-05-17T07:28:48Z",
+            "html_url": "https://github.com/unhappychoice",
+            "avatar_url": "https://avatars.githubusercontent.com/u/5608948?v=4",
+            "repos": [
+              {
+                "name": "unhappychoice.com",
+                "description": "Personal site of @unhappychoice: profile and OSS showcase, hourly-refreshed from the GitHub API.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-21T14:45:44Z",
+                "fork": false,
+                "topics": [
+                  "github-pages",
+                  "html",
+                  "oss-showcase",
+                  "personal-website",
+                  "portfolio",
+                  "static-site",
+                  "vanilla-js"
+                ]
+              },
+              {
+                "name": "mdts",
+                "description": "A local markdown preview server. npx mdts \u2014 and you're done.",
+                "stargazers_count": 209,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T08:10:45Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "filesystem",
+                  "frontmatter",
+                  "live-reload",
+                  "markdown",
+                  "markdown-renderer",
+                  "mermaid",
+                  "preview",
+                  "server",
+                  "webui",
+                  "zero-setup",
+                  "zero-setup-tools"
+                ]
+              },
+              {
+                "name": "gitlogue",
+                "description": "A cinematic Git commit replay tool for the terminal, turning your Git history into a living, animated story.",
+                "stargazers_count": 4804,
+                "language": "Rust",
+                "pushed_at": "2026-06-08T03:26:13Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "cli-tool",
+                  "code-animation",
+                  "commit-history",
+                  "developer-tools",
+                  "git",
+                  "git-history",
+                  "git-visualization",
+                  "productivity",
+                  "ratatui",
+                  "rust",
+                  "screensaver",
+                  "syntax-highlighting",
+                  "terminal",
+                  "terminal-app",
+                  "terminal-based",
+                  "terminal-screensaver",
+                  "tree-sitter",
+                  "tui",
+                  "visualization"
+                ]
+              },
+              {
+                "name": "gittype",
+                "description": "A CLI code-typing game that turns your source code into typing challenges",
+                "stargazers_count": 1440,
+                "language": "Rust",
+                "pushed_at": "2026-06-20T03:55:11Z",
+                "fork": false,
+                "topics": [
+                  "cli-game",
+                  "cli-tool",
+                  "code-practice",
+                  "coding-skills",
+                  "gamification",
+                  "learning-tool",
+                  "productivity",
+                  "programming",
+                  "ratatui",
+                  "rust",
+                  "terminal-game",
+                  "touch-typing",
+                  "tree-sitter",
+                  "typing-game",
+                  "typing-practice",
+                  "typing-test",
+                  "typing-trainer",
+                  "typingtest"
+                ]
+              },
+              {
+                "name": "steam.unhappychoice.com",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-06-21T00:27:57Z",
+                "fork": false,
+                "topics": [
+                  "gaming",
+                  "html",
+                  "portfolio",
+                  "steam",
+                  "steam-game",
+                  "steam-profile",
+                  "steam-stats",
+                  "website"
+                ]
+              },
+              {
+                "name": "unhappychoice",
+                "description": null,
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-20T20:36:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weekly-report",
+                "description": "Weekly GitHub activity reports",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-20T15:37:33Z",
+                "fork": false,
+                "topics": [
+                  "github-activity",
+                  "github-pages",
+                  "github-weekly-reporter",
+                  "weekly-report"
+                ]
+              },
+              {
+                "name": "blog.unhappychoice.com",
+                "description": ":book: Generated Blog sources",
+                "stargazers_count": 14,
+                "language": "HTML",
+                "pushed_at": "2026-06-20T03:57:33Z",
+                "fork": false,
+                "topics": [
+                  "article",
+                  "blog",
+                  "blogs",
+                  "generated",
+                  "github-pages",
+                  "middleman"
+                ]
+              },
+              {
+                "name": "kobito",
+                "description": "Autonomous coding agent orchestrator \u2014 works while you sleep, like the elves in the shoemaker's tale",
+                "stargazers_count": 11,
+                "language": "Rust",
+                "pushed_at": "2026-06-20T03:55:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RxSnackbar",
+                "description": ":thought_balloon: Rx adapter for Android Snackbar",
+                "stargazers_count": 11,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-20T03:55:11Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "android-snackbar",
+                  "kotlin",
+                  "rx",
+                  "rxjava",
+                  "rxkotlin",
+                  "snackbar"
+                ]
+              },
+              {
+                "name": "color-hash.kt",
+                "description": ":traffic_light: https://github.com/zenozeng/color-hash implementation by Kotlin/Android",
+                "stargazers_count": 15,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-20T03:55:11Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "color",
+                  "color-hash",
+                  "kotlin",
+                  "pure-kotlin",
+                  "random"
+                ]
+              },
+              {
+                "name": "slack_channel_stats",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Ruby",
+                "pushed_at": "2026-06-20T03:55:12Z",
+                "fork": false,
+                "topics": [
+                  "analytics",
+                  "ruby",
+                  "slack",
+                  "slack-api",
+                  "statistics"
+                ]
+              },
+              {
+                "name": "blog",
+                "description": ":closed_book: my blog",
+                "stargazers_count": 18,
+                "language": "Ruby",
+                "pushed_at": "2026-06-20T03:55:11Z",
+                "fork": false,
+                "topics": [
+                  "article",
+                  "blog",
+                  "blogs",
+                  "github-pages",
+                  "middleman"
+                ]
+              },
+              {
+                "name": "splashboard",
+                "description": "A customizable terminal splash screen with plugin-based data sources.",
+                "stargazers_count": 192,
+                "language": "Rust",
+                "pushed_at": "2026-06-21T14:03:33Z",
+                "fork": false,
+                "topics": [
+                  "bash",
+                  "cli",
+                  "customizable",
+                  "dashboard",
+                  "developer-tools",
+                  "dotfiles",
+                  "fastfetch",
+                  "fish",
+                  "homebrew",
+                  "motd",
+                  "neofetch",
+                  "nix",
+                  "ratatui",
+                  "rust",
+                  "shell",
+                  "splash-screen",
+                  "starship",
+                  "terminal",
+                  "tui",
+                  "zsh"
+                ]
+              },
+              {
+                "name": "terminal_image",
+                "description": ":desktop_computer: Show high resolution images on your terminal !",
+                "stargazers_count": 43,
+                "language": "Ruby",
+                "pushed_at": "2026-06-17T12:55:31Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "command-line",
+                  "command-line-tool",
+                  "high-resolution",
+                  "image",
+                  "iterm2",
+                  "library",
+                  "libsixel",
+                  "ruby",
+                  "terminal"
+                ]
+              },
+              {
+                "name": "steamfetch",
+                "description": "neofetch for Steam - Display your Steam stats in terminal",
+                "stargazers_count": 187,
+                "language": "Rust",
+                "pushed_at": "2026-06-08T03:26:10Z",
+                "fork": false,
+                "topics": [
+                  "achievements",
+                  "ascii-art",
+                  "cli",
+                  "command-line-tool",
+                  "developer-tools",
+                  "fetch",
+                  "gaming",
+                  "iterm2",
+                  "kitty",
+                  "neofetch",
+                  "rust",
+                  "sixel",
+                  "steam",
+                  "steam-api",
+                  "steam-stats",
+                  "terminal",
+                  "terminal-app"
+                ]
+              },
+              {
+                "name": "zenn-docs",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Shell",
+                "pushed_at": "2026-06-15T10:53:45Z",
+                "fork": false,
+                "topics": [
+                  "articles",
+                  "blog",
+                  "documentation",
+                  "japanese",
+                  "technical-writing",
+                  "zenn"
+                ]
+              },
+              {
+                "name": "homebrew-tap",
+                "description": "Homebrew formulae for unhappychoice's tools",
+                "stargazers_count": 7,
+                "language": "Ruby",
+                "pushed_at": "2026-06-14T14:45:08Z",
+                "fork": false,
+                "topics": [
+                  "formula",
+                  "homebrew",
+                  "homebrew-tap",
+                  "macos",
+                  "package-manager"
+                ]
+              },
+              {
+                "name": "lintric",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2026-06-12T12:13:57Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "code-quality",
+                  "developer-tools",
+                  "linter",
+                  "rust",
+                  "static-analysis"
+                ]
+              },
+              {
+                "name": "cycle-pusher",
+                "description": ":recycle: Cycle.js driver for Pusher",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-12T12:13:55Z",
+                "fork": false,
+                "topics": [
+                  "cyclejs",
+                  "library",
+                  "pusher",
+                  "typescript",
+                  "websocket",
+                  "wrapper"
+                ]
+              },
+              {
+                "name": "oss-issue-opener",
+                "description": "Weekly automated issue opener for OSS maintenance tasks",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-11T11:37:46Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "cli",
+                  "developer-tools",
+                  "github",
+                  "github-issues",
+                  "open-source",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "winget-pkgs",
+                "description": "The Microsoft community Windows Package Manager manifest repository",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-01T11:18:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-rust",
+                "description": "A curated list of Rust code and resources.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-05-14T22:54:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-cli-apps",
+                "description": "\ud83d\udda5 \ud83d\udcca \ud83d\udd79 \ud83d\udee0 A curated list of command line apps",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-05-15T09:11:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-rust-tools",
+                "description": "Harness the power of Rust. Those fast productivity tools based on Rust.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-14T22:57:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-shell",
+                "description": "A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-14T22:57:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-ratatui",
+                "description": "A curated list of TUI apps and libraries built with Ratatui",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-15T11:51:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Brewfile",
+                "description": "My brewfile!",
+                "stargazers_count": 4,
+                "language": "Ruby",
+                "pushed_at": "2026-05-10T14:14:52Z",
+                "fork": false,
+                "topics": [
+                  "brewfile",
+                  "configuration",
+                  "homebrew",
+                  "homebrew-bundle",
+                  "macos",
+                  "setup"
+                ]
+              },
+              {
+                "name": "dotfiles",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2026-05-10T12:34:49Z",
+                "fork": false,
+                "topics": [
+                  "configuration",
+                  "development-environment",
+                  "dotfiles",
+                  "linux",
+                  "macos",
+                  "setup",
+                  "shell",
+                  "zsh"
+                ]
+              },
+              {
+                "name": "qiita-docs",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-04-29T05:42:36Z",
+                "fork": false,
+                "topics": [
+                  "articles",
+                  "blog",
+                  "documentation",
+                  "japanese",
+                  "qiita",
+                  "technical-writing"
+                ]
+              },
+              {
+                "name": "cycle-cropper",
+                "description": ":recycle: Cycle.js component for https://github.com/fengyuanchen/cropperjs",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-25T01:23:11Z",
+                "fork": false,
+                "topics": [
+                  "cropper",
+                  "cropperjs",
+                  "cycle-cropper",
+                  "cyclejs",
+                  "frontend",
+                  "image",
+                  "image-cropping",
+                  "javascript",
+                  "library",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "ReplayMod",
+                "description": "Minecraft ReplayMod",
+                "stargazers_count": 37,
+                "language": "Java",
+                "pushed_at": "2024-01-14T00:30:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mdts.unhappychoice.com",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-07-27T11:05:42Z",
+                "fork": false,
+                "topics": [
+                  "html",
+                  "landing-page",
+                  "markdown",
+                  "mdts",
+                  "preview",
+                  "server",
+                  "website"
+                ]
+              },
+              {
+                "name": "bitmex-cli",
+                "description": ":construction: WIP :construction:",
+                "stargazers_count": 5,
+                "language": "Haskell",
+                "pushed_at": "2019-07-22T15:34:59Z",
+                "fork": false,
+                "topics": [
+                  "bitcoin",
+                  "bitmex",
+                  "cli",
+                  "command-line-tool",
+                  "cryptocurrency",
+                  "haskell",
+                  "terminal",
+                  "tool",
+                  "trading"
+                ]
+              },
+              {
+                "name": "bitmex-servant",
+                "description": "Generated API definition by https://www.bitmex.com/api/explorer/swagger.json",
+                "stargazers_count": 5,
+                "language": "Haskell",
+                "pushed_at": "2019-07-22T12:17:44Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "bitcoin",
+                  "bitmex",
+                  "cryptocurrency",
+                  "haskell",
+                  "openapi",
+                  "rest-api",
+                  "servant",
+                  "swagger",
+                  "trading"
+                ]
+              },
+              {
+                "name": "deep_wiki_instance",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-05T05:27:16Z",
+                "fork": false,
+                "topics": [
+                  "deepwiki",
+                  "documentation",
+                  "self-hosted",
+                  "wiki"
+                ]
+              },
+              {
+                "name": "lifegame",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Ruby",
+                "pushed_at": "2025-06-19T22:57:08Z",
+                "fork": false,
+                "topics": [
+                  "cellular-automaton",
+                  "conway",
+                  "game-of-life",
+                  "ruby",
+                  "simulation"
+                ]
+              },
+              {
+                "name": "awesome-git",
+                "description": "A curated list of amazingly awesome Git tools, resources and shiny things",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-02-12T19:07:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "committers.top",
+                "description": "CLI tool which uses the GitHub GraphQL API to rank users according to number of contributions, and corresponding static website.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-08T18:34:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "snabbdom-looks-like",
+                "description": "Makes it easy to assert if two virtual DOM trees look similar",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-03T11:30:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lita-aws-cloudfront",
+                "description": ":woman: Lita plugin for AWS CloudFront",
+                "stargazers_count": 9,
+                "language": "Ruby",
+                "pushed_at": "2025-06-21T16:42:44Z",
+                "fork": false,
+                "topics": [
+                  "aws",
+                  "aws-cloudfront",
+                  "bot",
+                  "chatbot",
+                  "cloudfront",
+                  "lita",
+                  "lita-aws-cloudfront",
+                  "lita-handler",
+                  "slack"
+                ]
+              },
+              {
+                "name": "intercom_summary",
+                "description": "Displays intercom summary information",
+                "stargazers_count": 7,
+                "language": "Ruby",
+                "pushed_at": "2023-08-27T10:59:40Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "intercom",
+                  "ruby"
+                ]
+              },
+              {
+                "name": "awesome-ttygames",
+                "description": " Unix ASCII games",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-09-09T11:46:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kotlin-github-example",
+                "description": "An Example for Kotlin-Android App",
+                "stargazers_count": 5,
+                "language": "Kotlin",
+                "pushed_at": "2016-04-29T16:52:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NoiseView",
+                "description": ":tv: Make some noise",
+                "stargazers_count": 8,
+                "language": "Swift",
+                "pushed_at": "2019-07-16T15:38:57Z",
+                "fork": false,
+                "topics": [
+                  "animation",
+                  "metal",
+                  "noise",
+                  "random",
+                  "shader",
+                  "swift",
+                  "video",
+                  "view"
+                ]
+              },
+              {
+                "name": "Harvest-Festival",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2020-08-30T09:52:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "social-build-deprecated",
+                "description": "a plugin for minecraft bukkit server (deprecated)",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2019-01-26T14:55:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "social-build",
+                "description": "a plugin for minecraft bukkit/spigot server",
+                "stargazers_count": 3,
+                "language": "Kotlin",
+                "pushed_at": "2015-06-02T13:55:03Z",
+                "fork": false,
+                "topics": [
+                  "bukkit",
+                  "minecraft",
+                  "spigot"
+                ]
+              },
+              {
+                "name": "oneteam-rte-kt",
+                "description": "Kotlin / Android wrapper for https://github.com/oneteam-dev/oneteam-rte",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2019-05-28T01:39:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fluentd-docker",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Dockerfile",
+                "pushed_at": "2019-07-07T14:34:34Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "dockerfile",
+                  "fluentd"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:29.177262+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,530 @@
+{
+  "profileId": "osint-profile-ba58e7f8655b",
+  "target": "pgsohail",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:36.765887+00:00",
+  "completedAt": "2026-06-21T15:32:37.687224+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-8e413c0d",
+      "lookupType": "github_context",
+      "target": "pgsohail",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "pgsohail",
+            "name": "SOHAIL SADIQ",
+            "type": "User",
+            "company": "fsociety",
+            "blog": "",
+            "location": "London",
+            "bio": "kill-pr0cess.inc",
+            "public_repos": 50,
+            "followers": 1354,
+            "following": 887,
+            "created_at": "2020-07-08T13:23:30Z",
+            "updated_at": "2026-06-10T14:03:24Z",
+            "html_url": "https://github.com/pgsohail",
+            "avatar_url": "https://avatars.githubusercontent.com/u/68015534?v=4",
+            "repos": [
+              {
+                "name": "gameio",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-16T21:48:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "takehometask",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-05T14:54:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dissertation",
+                "description": "final year maters dissertation",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2026-05-13T19:46:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shoetryon-web-js",
+                "description": "Shoe try-on example app with DeepAR Web SDK",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-06-22T18:19:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aima-java",
+                "description": "Java implementation of algorithms from Russell And Norvig's \"Artificial Intelligence - A Modern Approach\"",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-11-30T09:11:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "buglab",
+                "description": "personal project ",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2025-12-12T19:53:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio",
+                "description": "this is my portfolio",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-20T03:53:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mx-assets",
+                "description": "This repository holds a list of branded assets in the MultiversX web tools. Branded assets (can be a token, an account or a staking identity) can have website and socials URLS, a logo or a description, that will be displayed on MultiversX products, such as the MultiversX Explorer, Web Wallet and xPortal App.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-11-19T07:07:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pgsohail",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-07-05T12:13:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SC-Factory",
+                "description": "A repository to host our Smart Contract development work",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-05-07T14:51:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "smart-contract",
+                "description": "factory contract ",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-05-07T14:08:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "crypto-system",
+                "description": "object oriented software engineering",
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2024-04-20T18:16:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "android-dev",
+                "description": "my android development bootcamp repo",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2022-03-21T21:15:00Z",
+                "fork": false,
+                "topics": [
+                  "java",
+                  "kotlin"
+                ]
+              },
+              {
+                "name": "SP20_BSE_073_ASSIGN-1",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2022-04-21T12:03:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SP20_BSE_073_Assi_2",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2022-04-24T16:16:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZoomVideoLooper",
+                "description": "A simple python tool that loops your prerecorded video in live zoom meetings by abusing the zoom virtual background capability.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-11-04T10:25:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sneakerSpot-frontend",
+                "description": "The Shoe Store Application is a mobile app built with React Native Expo, Node.js, MongoDB, and Stripe for payment processing. It allows users to browse and purchase Nike and Adidas shoes with a seamless user interface and secure payment processing.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-26T09:41:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "python-basics-exercises",
+                "description": "Python Basics: A Practical Introduction to Python 3",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-02-19T08:10:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-web-styling",
+                "description": "Awesome Web Styling with CSS Animation Effects \u2b50\ufe0f",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-01-24T02:17:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai_buddy",
+                "description": "Your personal free-to-use AI assistant, built with gemini & flutter.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-02-26T08:02:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flutter-movieAPP",
+                "description": "this is a movies app integrrated with tmdb api",
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2024-08-21T05:21:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sad-dev",
+                "description": "sad-dev",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-05-07T05:41:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pypowerwall",
+                "description": "Python API for Tesla Powerwall and Solar Power Data",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-21T23:23:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sadd-dev",
+                "description": "saddev",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-02-05T08:05:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Linux-Auto-Customizer",
+                "description": "bash scripts to automatize the installation and uninstallation of a batch of precoded features in a Linux environment.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-04-17T07:28:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cuiprojectfull",
+                "description": "neew peoject ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-14T11:12:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "user-management",
+                "description": "user management simple form",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-28T10:21:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cuiprojectt",
+                "description": "new project",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2023-12-14T11:17:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Might_Calculate",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-13T08:24:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "guacamole-server",
+                "description": "Mirror of Apache Guacamole Server",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-04-24T16:13:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "test-git",
+                "description": "my random repo",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2023-05-07T18:01:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Auto-GPT",
+                "description": "An experimental open-source attempt to make GPT-4 fully autonomous.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-04-14T20:44:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "human-computer-interaction",
+                "description": "assignments and lab work for the course ",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2023-04-10T11:23:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lab-final-game",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-04-27T12:12:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aizaz-assign",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-01-02T18:54:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pintos-Project-2",
+                "description": "My solution of Pintos project 2 i.e. User Programs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-10-01T20:29:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "game-dev-assignments",
+                "description": "university game dev course work",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-02-04T19:36:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "generate-poetry",
+                "description": "an automatic poetry generator that mimics the human type of poems and generate random poetry",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2022-10-24T15:37:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "game-dev-videos-",
+                "description": "videos of game dev course university assignments ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-10-24T18:36:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RoomDb-Sample",
+                "description": "A simple notes app to demo Room + LiveData implementation in Android",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2019-07-08T13:24:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "computer-science",
+                "description": ":mortar_board: Path to a free self-taught education in Computer Science!",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-02-19T09:30:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pgsohail.github.io",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-02-28T18:07:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Water-Monitoring-System",
+                "description": "Water Monitoring System is an IOT based Liquid Level Monitoring system that has mechanisms to keep the user alerted in case of liquid overflow or when tank depletes.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-10-05T13:13:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "random-projects",
+                "description": "the random code i do to keep my hands dirty ",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2022-03-01T04:25:18Z",
+                "fork": false,
+                "topics": [
+                  "java",
+                  "pyhton",
+                  "web"
+                ]
+              },
+              {
+                "name": "ethereum-nft-marketplace-boilerplate",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-02-16T20:12:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "docs",
+                "description": "The open-source repo for docs.github.com",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-01T09:12:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "basic-computer-games",
+                "description": "An updated version of the classic \"Basic Computer Games\" book, with well-written examples in a variety of common programming languages",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-02-22T02:15:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "public-apis",
+                "description": "A collective list of free APIs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-21T12:57:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bitcoin",
+                "description": "Bitcoin Core integration/staging tree",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-21T19:03:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CNN-for-car-classification",
+                "description": "Simply example for apply CNN to car classification problem; deployed using SPARK on google Colab.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-05-18T18:09:16Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:37.686911+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

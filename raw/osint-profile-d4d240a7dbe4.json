@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-d4d240a7dbe4",
+  "target": "DrParthaMajumder",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:48.028599+00:00",
+  "completedAt": "2026-06-21T15:28:49.802849+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-60841fef",
+      "lookupType": "github_context",
+      "target": "DrParthaMajumder",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "DrParthaMajumder",
+            "name": "Dr. Partha Majumder",
+            "type": "User",
+            "company": "Paravision Lab",
+            "blog": "https://paravisionlab.co.in/",
+            "location": null,
+            "bio": "I am a highly motivated researcher in the field of  gen ai, agentic ai and computer vision.",
+            "public_repos": 80,
+            "followers": 3192,
+            "following": 8816,
+            "created_at": "2023-05-11T05:47:18Z",
+            "updated_at": "2026-06-17T01:42:08Z",
+            "html_url": "https://github.com/DrParthaMajumder",
+            "avatar_url": "https://avatars.githubusercontent.com/u/133194289?v=4",
+            "repos": [
+              {
+                "name": "ClaudeBasicPractice",
+                "description": "An AI-powered blog generation API built with FastAPI, LangGraph, and Groq. Given a topic, it creates an SEO-optimized blog post with structured JSON output ready for rendering on a website or CMS",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-08T11:42:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AnalyticElementMethod",
+                "description": "Analytic Element Method (AEM) is a numerical technique for modeling groundwater flow. It uses analytic functions to represent aquifer features, allowing efficient modeling of complex geometries. AEM simplifies computations by using analytical solutions and is widely used in hydrogeology for its flexibility and accuracy.",
+                "stargazers_count": 6,
+                "language": "MATLAB",
+                "pushed_at": "2023-05-24T03:09:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L2-Content-Langchain",
+                "description": "Learn how to ingest, normalize, and structure raw text, HTML, and PDFs so they can be reliably used in LangChain-based LLM pipelines.",
+                "stargazers_count": 21,
+                "language": "HTML",
+                "pushed_at": "2025-10-09T06:43:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NextjsMasterClass",
+                "description": "A comprehensive full-stack learning project featuring Next.js frontend with FastAPI backend, demonstrating modern web development patterns, AI integration, and advanced React concepts.",
+                "stargazers_count": 6,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-27T11:53:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "2_PerplexityClone",
+                "description": "A sophisticated AI-powered search application that replicates the Perplexity.ai experience with intelligent query routing, real-time streaming responses, and a modern web interface.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-03-11T10:44:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "8_AI_Short_VDO_Generator",
+                "description": "A system that converts topics into narrated short videos by generating scripts, creating TTS audio, AI images, and captions, then assembling everything asynchronously into a final video.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-03-11T11:06:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "10_AI_VDO_Ads_Generator",
+                "description": "A full\u2011stack app that creates AI\u2011generated ad scripts and avatar videos.Frontend (Next.js + Clerk) lets users configure topics and avatars; backend (FastAPI + Inngest) orchestrates LLM script generation and HeyGen video creation via durable async workflows.",
+                "stargazers_count": 0,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-03-11T10:59:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C1-NameEntityRecognition",
+                "description": "A compact, example-driven repo demonstrating how to use spaCy for Named Entity Recognition (NER), entity highlighting, dependency parsing, and simple result tabulation.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-07T19:06:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LearnInngest",
+                "description": "This project is a small, practical example of using **Inngest** to run an AI chat request in the background.  Instead of running the LLM call directly inside the HTTP request (slow + can time out), the backend uses an event-driven flow:",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-01-12T16:50:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LearnPydantic",
+                "description": "A concise, hands-on set of Jupyter notebooks to learn and practice core features of Pydantic. This repository walks you from the motivation behind Pydantic through validators, computed fields, nested models, and serialization.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-28T06:43:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Network_Security_End_To_End",
+                "description": "An end\u2011to\u2011end machine learning pipeline for detecting phishing URLs, built with Python. The project covers data ingestion, validation, transformation, model training, artifact/version management, and optional experiment tracking.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-16T12:14:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Datascience_NLP_Project2",
+                "description": "This repository implements an end\u2011to\u2011end abstractive text summarization system using the SAMSum dataset and a Hugging Face seq2seq model (FLAN\u2011T5 Small).",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-10-14T10:25:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L7-Structured-Output-Langchain",
+                "description": "Techniques to get JSON/typed outputs from LLMs",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2025-10-09T07:37:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ML_Project_End_To_End",
+                "description": "A production\u2011style, end\u2011to\u2011end machine learning project that predicts a student's Math score from demographic, preparation, and language score inputs. It includes a full training pipeline, model selection with hyper\u2011parameter tuning, model packaging, and a FastAPI service for real\u2011time inference.",
+                "stargazers_count": 3,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-14T09:04:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CPlusPlus_2013",
+                "description": "A structured collection of small C/C++ console programs grouped by topic. Great for quick reference, teaching fundamentals, and showcasing hands-on learning from 2013.",
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2025-10-09T14:42:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C16_RAG_Using_Langchain",
+                "description": "Streamlit RAG app using Langchain, Groq API, and HF embeddings over local PDFs.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T14:18:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C14-GAN-CIFAR10",
+                "description": "GAN for CIFAR-10 image generation with Keras models, training loop, and result visualization.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T14:13:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C13-GAN-FashionDataset",
+                "description": "GAN to generate Fashion MNIST-like images with TensorFlow/Keras and custom training loop.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T14:03:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C4-MultipleLinearRegression",
+                "description": "Predict startup profits using multiple linear regression with preprocessing and evaluation.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T13:37:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C6-SimpleLinearRegressionInR",
+                "description": "Run simple linear regression in R from Colab via rpy2 with visualization and metrics.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-10-09T13:38:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C3-PolynomialRegression",
+                "description": "Compare linear vs polynomial regression for salary prediction by position level.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T13:32:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C5-MultipleLinearRegressionInR",
+                "description": "Multiple linear regression in R from Colab via rpy2, with preprocessing and evaluation.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T13:36:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph4-Langchain-vs-Langgraph",
+                "description": "This lesson compares LangChain\u2019s chain-based orchestration with LangGraph\u2019s graph/state-machine approach for building reliable AI agents. Learn when to use each, how they manage state and scale, and how to migrate patterns\u2014with hands-on notebooks and concise guidance.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T11:30:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph9-Iterative-Workflow",
+                "description": "This lesson explores iterative workflow patterns in LangGraph, where processes can loop back on themselves, refine results through multiple iterations, and implement feedback loops for continuous improvement.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T11:39:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph10-Basic-Chatbot",
+                "description": "This lesson demonstrates a complete chatbot implementation using LangGraph, integrating all previously learned concepts into a production-ready conversational AI system with tool usage, memory, and web interface.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T11:42:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph8-Conditional-Workflow",
+                "description": "This lesson covers conditional workflow patterns in LangGraph, where the execution path is determined dynamically based on state conditions, user input, or processing results.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T11:37:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph7-Parallel-Workflow",
+                "description": "This lesson explores parallel workflow patterns in LangGraph, where multiple tasks can be executed simultaneously to improve efficiency and handle complex processing scenarios.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T11:36:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C2-LinearRegression",
+                "description": "Predict salary from years of experience using scikit-learn linear regression.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T13:25:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph2-GenAI-vs-AgenticAI",
+                "description": "This lesson explores the fundamental differences between Generative AI and Agentic AI, providing a clear understanding of how these two paradigms differ in approach, capabilities, and applications.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:57:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L15-RAG-Langchain",
+                "description": "This module shows an end-to-end RAG pipeline for querying YouTube transcripts. It downloads captions via yt-dlp, chunks text, builds embeddings, and stores vectors in Chroma. A retriever and LLM form a QA chain, providing grounded answers with reproducible steps for learning and experimentation.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:50:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph6-Sequential-Workflow",
+                "description": "This lesson demonstrates how to implement sequential workflows using LangGraph, where tasks are executed in a specific order with state flowing from one step to the next. You\u2019ll practice building linear pipelines, chaining prompts, and transforming state across steps.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T11:34:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph3-AgenticAI-Intro",
+                "description": "This lesson provides a comprehensive introduction to Agentic AI, covering fundamental concepts, architecture patterns, and the theoretical foundations that enable AI systems to act autonomously.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:59:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L11-DocumentLoader",
+                "description": "This lesson explores LangChain document loading: ingesting files, web pages, and API data into Documents for downstream retrieval. Notebooks demonstrate loaders, metadata handling, chunk boundaries, and basic preprocessing to prepare heterogeneous sources for embeddings, indexing, and RAG pipelines, and evaluation.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:30:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L13-VectorStore-Langchain",
+                "description": "This module demonstrates how to build a reusable vector store with LangChain and Chroma. You will create embeddings for documents, index them into a Chroma database, run similarity search/top-k retrieval, and persist the store to `store/` so it can be reloaded without re-indexing in later sessions.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:36:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L12-TextSplitter-Langchain",
+                "description": "This lesson covers text chunking for retrieval. You\u2019ll compare recursive, fixed, and semantic splitters, tune chunk size and overlap, preserve metadata boundaries, and evaluate downstream effects on embeddings, recall, and latency to build reliable, efficient RAG pipelines from heterogeneous documents.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:32:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph1-Curriculam",
+                "description": "This lesson introduces the complete LangGraph curriculum, providing a comprehensive roadmap for learning agentic AI development with LangGraph.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:54:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L14-Retriever-Langchain",
+                "description": "Learn and compare LangChain retrieval methods\u2014MMR, multi-query, contextual compression, hybrid, and re-ranking. Use notebooks ex1\u2013ex5 with sample data and persisted stores to build strong, efficient retrieval for production-grade RAG and evaluation.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:42:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L8-Output-Parser-LangchainX",
+                "description": "Practical guide to LangChain output parsers. Convert raw LLM text into structured, validated data (JSON, lists, tables) with schemas, robust error handling, and retries. Build reliable pipelines that downstream tools can trust and automate.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:09:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L9-Chain-Langchain",
+                "description": "Hands-on notebooks for composing LangChain pipelines (\"chains\") that connect prompts, LLMs, tools, and output parsers. Learn when to use linear (sequential) flows versus map-reduce strategies for multi-document or batched inputs, and how to evaluate trade-offs in latency, cost, and output quality.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:23:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "L10-Runnable-Langchain",
+                "description": "This lesson shows how to build flexible, reusable LangChain pipelines using `Runnable` building blocks. Learn to compose steps, pass state, fan\u2011out/fan\u2011in, and instrument/debug flows for production\u2011ready chains.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T10:26:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EvolutionaryMarinePredatorAlgorithm",
+                "description": "The Marine Predator Algorithm is a nature-inspired optimization approach based on the hunting behavior of marine predators. It mimics their cooperative and competitive strategies to efficiently solve optimization problems across different domains.",
+                "stargazers_count": 18,
+                "language": "MATLAB",
+                "pushed_at": "2023-05-24T11:03:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C12_GAN_MNIST",
+                "description": "GAN to generate MNIST-like digits with TensorFlow/Keras; saves samples and loss plots.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T14:02:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C11-ResNet50TransferLearning",
+                "description": "Transfer learning and fine-tuning with ResNet50 for CIFAR-10 classification.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T14:01:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C10_LeNet5",
+                "description": "Classic LeNet-5 CNN on MNIST with preprocessing, training, and evaluation.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T13:59:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C9-AlexNet",
+                "description": "AlexNet-style CNN for cats-vs-dogs binary classification with augmentation and GPU training.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T13:57:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C8_CNN",
+                "description": "TensorFlow CNN to classify CIFAR-10 with augmentation, training, and evaluation.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T13:56:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C7-FFNN",
+                "description": "FFNN classifier for Fashion MNIST using TensorFlow/Keras with training and evaluation.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T13:54:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Langgraph5-Langgraph-Core-Concepts",
+                "description": "This lesson covers the fundamental concepts and building blocks of LangGraph, providing a solid foundation for creating stateful, graph-based AI applications.",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-09T11:32:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cuda_2023",
+                "description": "A collection of small CUDA C/C++ exercises and build artifacts. This folder contains individual `.cu` sources (Problems 2\u20139) and their compiled Windows binaries, along with VS Code workspace settings.",
+                "stargazers_count": 1,
+                "language": "Cuda",
+                "pushed_at": "2025-10-09T14:54:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Datascience_Project1",
+                "description": "This repository implements a modular, production-style machine learning workflow. The project separates configuration, components, and pipelines to ensure clarity, reproducibility, and ease of extension.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-10-11T07:08:29Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:49.802365+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "profileId": "osint-profile-a1219a1a7494",
+  "target": "1minds3t",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:18.881991+00:00",
+  "completedAt": "2026-06-20T13:53:19.541515+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e5035544",
+      "lookupType": "github_context",
+      "target": "1minds3t",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "1minds3t",
+            "name": "1minds3t",
+            "type": "User",
+            "company": "omnipkg",
+            "blog": "https://omnipkg.pages.dev/",
+            "location": "dependency heaven",
+            "bio": "Founder of omnipkg \u2014 Run multiple conflicting Python package & interpreter versions concurrently in one environment in milliseconds. On @conda-forge & @docker",
+            "public_repos": 26,
+            "followers": 2011,
+            "following": 3809,
+            "created_at": "2025-08-04T18:35:36Z",
+            "updated_at": "2026-06-12T20:41:04Z",
+            "html_url": "https://github.com/1minds3t",
+            "avatar_url": "https://avatars.githubusercontent.com/u/224646541?v=4",
+            "repos": [
+              {
+                "name": "omnipkg-metadata",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-06-20T07:49:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github_stats",
+                "description": null,
+                "stargazers_count": 20,
+                "language": "Python",
+                "pushed_at": "2026-06-20T04:37:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "conda-forge-contributions",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2026-06-20T03:59:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "omnipkg",
+                "description": "Run infinite Python package & interpreter versions concurrently in one environment in milliseconds. On @conda-forge and Docker.",
+                "stargazers_count": 52,
+                "language": "Python",
+                "pushed_at": "2026-06-11T04:31:02Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "conda",
+                  "conda-forge",
+                  "data-science",
+                  "devops-tool",
+                  "docker",
+                  "docker-swarm",
+                  "environment-manager",
+                  "hypervisor",
+                  "kubernetes-cluster",
+                  "machine-learning",
+                  "mlops",
+                  "package-management",
+                  "package-manager",
+                  "poetry-python",
+                  "polyglot",
+                  "python",
+                  "python-package",
+                  "runtime",
+                  "uv"
+                ]
+              },
+              {
+                "name": "omnipkg-feedstock",
+                "description": "A conda-smithy repository for omnipkg.",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-06-09T11:53:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "uv-ffi",
+                "description": "PyO3 FFI layer for uv's pip_install internals \u2014 call uv directly from Python without CLI overhead. Fork of astral-sh/uv v0.10.8.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2026-06-05T21:31:52Z",
+                "fork": true,
+                "topics": [
+                  "ffi",
+                  "ffi-bindings",
+                  "ffi-wrapper",
+                  "pip",
+                  "py03",
+                  "python-bindings",
+                  "python-extension",
+                  "python-library",
+                  "python-rust",
+                  "python-rust-binding",
+                  "rust-api",
+                  "rust-crate",
+                  "rust-library",
+                  "rust-pyo3",
+                  "rust-python",
+                  "uv",
+                  "uv-package-manager",
+                  "uv-plugins",
+                  "uv-python"
+                ]
+              },
+              {
+                "name": "exotic-wheels",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-05-10T08:37:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "filelock-lts",
+                "description": "Filelock LTS: Security patches for CVEs and long-term support for unsupported Python versions (3.7-3.9).",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-04-30T13:33:24Z",
+                "fork": true,
+                "topics": [
+                  "atomic-design",
+                  "audit",
+                  "cve",
+                  "cve-2025-68146",
+                  "cve-scanning",
+                  "cybersecurity-tools",
+                  "filelock",
+                  "legacy-code",
+                  "legacy-scanning",
+                  "lock-free",
+                  "long-term-support",
+                  "mutex-lock",
+                  "pentesting",
+                  "python",
+                  "redteam",
+                  "ring-buffer",
+                  "security",
+                  "semaphore"
+                ]
+              },
+              {
+                "name": "staged-recipes",
+                "description": "A place to submit conda recipes before they become fully fledged conda-forge feedstocks",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-04-28T02:21:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "1minds3t.github.io",
+                "description": "Founder of omnipkg \u2014 Run multiple conflicting Python package & interpreter versions concurrently in one environment in milliseconds. On @conda-forge & @docker",
+                "stargazers_count": 20,
+                "language": "HTML",
+                "pushed_at": "2026-04-27T01:08:21Z",
+                "fork": false,
+                "topics": [
+                  "cli-tools",
+                  "developer-tools",
+                  "devops",
+                  "docker",
+                  "environment-provisioning",
+                  "ffi-bindings",
+                  "ffi-wrapper",
+                  "package-management",
+                  "package-manager",
+                  "poetry-python",
+                  "python-library",
+                  "python-wrapper",
+                  "rust-library",
+                  "uv-python",
+                  "wrapper-api"
+                ]
+              },
+              {
+                "name": "1minds3t",
+                "description": "Founder of omnipkg \u2014 Run multiple conflicting Python package & interpreter versions concurrently in one environment in milliseconds. On @conda-forge & @docker",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-04-27T01:08:14Z",
+                "fork": false,
+                "topics": [
+                  "dependency-graph",
+                  "dependency-manager",
+                  "devops",
+                  "docker-container",
+                  "environment-provisioning",
+                  "ffi",
+                  "ffi-bindings",
+                  "ffi-wrapper",
+                  "mlops",
+                  "orchestration-framework",
+                  "package-manager",
+                  "python-library",
+                  "python-wrapper",
+                  "uv-python"
+                ]
+              },
+              {
+                "name": "gitship",
+                "description": "Git, evolved. An intelligent layer that transforms version control into a guided, atomic, and AI\u2011ready workflow. Features smart semantic commits, identity\u2011verified publishing, automated release recovery, and atomic staging to handle background AI processes. It\u2019s not just a wrapper; it\u2019s the future of how humans (and agents) write code.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-04-19T03:58:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "omnipkg-rs",
+                "description": "Omnipkg is a next-generation Rust compilation cache inspired by sccache. It precompiles crates, allows per-project feature masking, supports multiple crate versions, and reduces build times across all projects.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-03-30T18:44:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yt-mixer",
+                "description": "YT Mixer - Server-side YouTube playlist mixer with real shuffle",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-03-28T04:44:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "urllib3-lts",
+                "description": "Long-Term Support (LTS) security fork of urllib3 with backported CVE fixes for Python 3.7 and 3.8.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-02-23T05:47:47Z",
+                "fork": true,
+                "topics": [
+                  "backport",
+                  "cve",
+                  "cybersecurity",
+                  "dependency-security",
+                  "dos",
+                  "eol",
+                  "http-client",
+                  "long-term-support",
+                  "lts",
+                  "python",
+                  "python37",
+                  "python38",
+                  "python39",
+                  "security",
+                  "security-audit",
+                  "security-tools",
+                  "ssrf",
+                  "urllib3"
+                ]
+              },
+              {
+                "name": "urllib3-lts-archive",
+                "description": "urllib3-lts \u2013 Secure, stable long-term support fork of urllib3 for legacy Python (3.7, 3.8). Backports all CVE fixes, fully compatible, and a drop-in replacement. Ideal for production, research, and enterprise use. Works seamlessly with filelock-lts to keep your Python stack safe and reliable.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-01-02T17:27:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "omnilang",
+                "description": "Omnilang: The Smart Localization Tool for Developers \ud83c\udf0d. Automate your project's translation and manage your entire localization workflow from the command line. Get instant, high-quality translations and a powerful CLI to review and correct. Make your open-source project truly global!",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-01-18T18:21:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "omnipkg-runtime",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-17T21:45:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "omnipkg-vscode",
+                "description": "One environment for all your packages.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-17T21:55:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "homebrew-omnipkg",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "Ruby",
+                "pushed_at": "2026-01-08T18:00:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flask",
+                "description": "The Python micro framework for building web applications.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-10-14T20:26:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "emergent-values",
+                "description": "Code for \"Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs\"",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2025-02-27T02:40:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ik_llama.cpp",
+                "description": "llama.cpp fork with additional SOTA quants and improved performance",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-09-17T01:05:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llama.cpp",
+                "description": "LLM inference in C/C++",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-09-17T23:12:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lollama",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-09-29T16:16:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "safety",
+                "description": "Safety checks Python dependencies for known security vulnerabilities and suggests the proper remediations for vulnerabilities detected.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-09-19T22:41:39Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:19.540798+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

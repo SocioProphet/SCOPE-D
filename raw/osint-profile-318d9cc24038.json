@@ -1,0 +1,244 @@
+{
+  "profileId": "osint-profile-318d9cc24038",
+  "target": "guevaraStian",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:21.592313+00:00",
+  "completedAt": "2026-06-21T15:29:22.296956+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-fe2a0062",
+      "lookupType": "github_context",
+      "target": "guevaraStian",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "guevaraStian",
+            "name": "GuevaraStian",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Colombia",
+            "bio": "Ingeniero de sistemas, Desarrollador de software fullstack, Ciberseguridad, Blockchain, Inteligencia artificial, APPs, \r\nAPIs y Redes de computadores. Colombia",
+            "public_repos": 19,
+            "followers": 2681,
+            "following": 2659,
+            "created_at": "2016-09-21T14:14:46Z",
+            "updated_at": "2026-06-19T02:55:03Z",
+            "html_url": "https://github.com/guevaraStian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/22348210?v=4",
+            "repos": [
+              {
+                "name": "N8N",
+                "description": "Este repositorio tiene varios codigos de integracion de apis con N8N",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-20T02:07:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Analitica_De_Datos_Dashboards_Iterativos",
+                "description": "Analitica de datos con dashboard iterativos con datos de crimenes, Futbol y Loteria. Radares de wifi, bluetooth y sonido. Radar and Artificial Intelligence Forecasts, Radar e Previs\u00f5es de Intelig\u00eancia Artificial, \u96f7\u8fbe\u4e0e\u4eba\u5de5\u667a\u80fd\u9884\u6d4b, \u0420\u0430\u0434\u0430\u0440 \u0438 \u043f\u0440\u043e\u0433\u043d\u043e\u0437\u044b \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442\u0430, \u0627\u0644\u0631\u0627\u062f\u0627\u0631 \u0648\u062a\u0648\u0642\u0639\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a, \u0930\u0921\u093e\u0930 \u0914\u0930 \u0915\u0943\u0924\u094d\u0930\u093f\u092e \u092c\u0941\u0926\u094d\u0927\u093f\u092e\u0924\u094d\u0924\u093e \u0915\u0947 \u092a\u0942\u0930\u094d\u0935\u093e\u0928\u0941\u092e\u093e\u0928",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-06-19T02:26:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GuevaraStian",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2026-06-16T01:48:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proyectos_Python",
+                "description": "Python ejemplos de software, codigos basicos, uso de librerias y codigos relacionados a la Ciberseguridad.  Codigo python, Python codes, code python, Python\u7a0b\u5f0f\u78bc,  \u0631\u0645\u0648\u0632 \u0628\u0627\u064a\u062b\u0648\u0646 , \u041a\u043e\u0434\u044b Python, \u092a\u093e\u092f\u0925\u0928 \u0915\u094b\u0921    ",
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2026-05-07T05:06:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Votaciones_Blockchain",
+                "description": "Este software busca integrar todo lo relacionado a un programa de votaciones pero con tecnolog\u00eda blockchain y usando lenguaje de programacion Python.  voto blockchain, elecciones blockchain,  vote blockchain,  \u5340\u584a\u93c8\u6295\u7968, \u0627\u0644\u062a\u0635\u0648\u064a\u062a \u0639\u0644\u0649 blockchain,   \u0433\u043e\u043b\u043e\u0441\u043e\u0432\u0430\u043d\u0438\u0435 \u0432 \u0431\u043b\u043e\u043a\u0447\u0435\u0439\u043d\u0435, \u092c\u094d\u0932\u0949\u0915\u091a\u0947\u0928 \u0935\u094b\u091f\u093f\u0902\u0917.",
+                "stargazers_count": 14,
+                "language": "HTML",
+                "pushed_at": "2026-04-20T23:53:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proyectos_Solidity",
+                "description": "Varios proyectos en el lenguaje de programador solidity y su IDE remix",
+                "stargazers_count": 5,
+                "language": "Solidity",
+                "pushed_at": "2026-06-12T05:12:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "APPs_Aplicaciones_Moviles",
+                "description": "Varios software creados para celular, app detector de imsi catcher, escaner imsicatcher, radar antenas, radar torres celular.",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-09T05:08:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Factura_Electronica_Blockchain",
+                "description": "Almacenamiento de factura electr\u00f3nica con tecnolog\u00eda Blockchain.  electronic invoice with blockchain ,  facture \u00e9lectronique avec blockchain, \u5340\u584a\u93c8\u96fb\u5b50\u767c\u7968, \u0627\u0644\u0641\u0627\u062a\u0648\u0631\u0629 \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629 \u0645\u0639 blockchain,  \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0439 \u0441\u0447\u0435\u0442-\u0444\u0430\u043a\u0442\u0443\u0440\u0430 \u0441 \u0431\u043b\u043e\u043a\u0447\u0435\u0439\u043d\u043e\u043c, \u092c\u094d\u0932\u0949\u0915\u091a\u0947\u0928 \u0915\u0947 \u0938\u093e\u0925 \u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928\u093f\u0915 \u091a\u093e\u0932\u093e\u0928                                                                           ",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-05-19T16:21:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Terminal_De_Comandos_CMD_SHELL_CLI",
+                "description": "Aqui hay comandos de terminal relacionado a Sistemas operativos, Redes, framework y tambien a temas de Hacking y Ciberseguridad.  Comando de terminal, terminal commands, commandes de terminal,  \u7d42\u7aef\u547d\u4ee4, \u0623\u0648\u0627\u0645\u0631 \u0627\u0644\u0645\u062d\u0637\u0629 \u0627\u0644\u0637\u0631\u0641\u064a\u0629 , \u043a\u043e\u043c\u0430\u043d\u0434\u044b \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b\u0430, \u091f\u0930\u094d\u092e\u093f\u0928\u0932 \u0906\u0926\u0947\u0936     ",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2026-05-04T19:52:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Aprender_Programacion_Basica",
+                "description": "Documentos con clases para aprender de programacion basica desde cero 0. Aprendiendo programacion facil. Ense\u00f1ar ense\u00f1ando programacion basica.Basic Programming Classes, Aulas b\u00e1sicas de programa\u00e7\u00e3o,  \u57fa\u7840\u7f16\u7a0b\u8bfe\u7a0b, \u0411\u0430\u0437\u043e\u0432\u044b\u0435 \u043a\u0443\u0440\u0441\u044b \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f,\u062f\u0631\u0648\u0633 \u0627\u0644\u0628\u0631\u0645\u062c\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629, \u092c\u0941\u0928\u093f\u092f\u093e\u0926\u0940 \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e\u093f\u0902\u0917 \u0915\u0915\u094d\u0937\u093e\u090f\u0902",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-05-20T05:12:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proyectos_Batch",
+                "description": "Algunos software en batchs. ejemplo codigo batch.  batch code example,  exemple de code lot,  \u6279\u6b21\u7a0b\u5f0f\u78bc\u7bc4\u4f8b batch, \u0645\u062b\u0627\u0644 \u0639\u0644\u0649 \u0631\u0645\u0632 \u0627\u0644\u062f\u0641\u0639\u0629 batch , \u043f\u0440\u0438\u043c\u0435\u0440 \u043f\u0430\u043a\u0435\u0442\u043d\u043e\u0433\u043e \u043a\u043e\u0434\u0430 batch , \u092c\u0948\u091a \u0915\u094b\u0921 \u0909\u0926\u093e\u0939\u0930\u0923 batch                                                                                         ",
+                "stargazers_count": 4,
+                "language": "Shell",
+                "pushed_at": "2026-05-04T01:44:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proyectos_Java",
+                "description": "Varios proyectos con el lenguaje de programacion JAVA",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2026-05-01T14:05:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "APIs",
+                "description": "Software APIs (application programming interface) en diferentes lenguajes de programacion.   API , interface de programmation d'applications, \u61c9\u7528\u7a0b\u5f0f\u4ecb\u9762  , \u0648\u0627\u062c\u0647\u0629 \u0628\u0631\u0645\u062c\u0629 \u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a ,  \u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u043f\u0440\u0438\u043a\u043b\u0430\u0434\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f, \u0905\u092a\u094d\u0932\u093f\u0915\u0947\u0936\u0928 \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e\u093f\u0902\u0917 \u0905\u0902\u0924\u0930\u092b\u0932\u0915             ",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-04-28T05:23:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proyectos_PHP",
+                "description": "Varios proyectos con el lenguaje de programacion php",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-27T01:28:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Inteligencia_Artificial_IA",
+                "description": "Ejemplos de c\u00f3digos con inteligencias art\u00edficiales en diferentes lenguajes de programacion. Inteligencia artificial , Artificial intelligence , Intelligence artificielle , \u4eba\u5de5\u667a\u6167 , \u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a , \u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442 , \u0915\u0943\u0924\u094d\u0930\u093f\u092e \u0939\u094b\u0936\u093f\u092f\u093e\u0930\u0940",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-04-25T05:04:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proyectos_R",
+                "description": "Software basicos en el lenguaje de programacion R, ejemplos de codigo en R, programming language R, langage de programmation R, \u7a0b\u5f0f\u8a2d\u8a08\u8a9e\u8a00 R, \u0644\u063a\u0629 \u0627\u0644\u0628\u0631\u0645\u062c\u0629  R, \u044f\u0437\u044b\u043a \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f R, \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e\u093f\u0902\u0917 \u092d\u093e\u0937\u093e R",
+                "stargazers_count": 2,
+                "language": "R",
+                "pushed_at": "2026-04-24T19:46:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proyectos_GO",
+                "description": "Algunas aplicaciones en lenguaje de programacion GO, ejemplos de codigo en GO, programming language GO, langage de programmation GO, \u7a0b\u5f0f\u8a2d\u8a08\u8a9e\u8a00 GO, \u0644\u063a\u0629 \u0627\u0644\u0628\u0631\u0645\u062c\u0629  GO, \u044f\u0437\u044b\u043a \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f GO, \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e\u093f\u0902\u0917 \u092d\u093e\u0937\u093e FO",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2026-04-24T03:42:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proyectos_Ruby",
+                "description": "C\u00f3digos b\u00e1sicos relacionados a el lenguaje de programaci\u00f3n Ruby. lenguaje ruby, ruby langua, langue rubis,  \u7d05\u5bf6\u77f3\u8a9e\u8a00,  \u0644\u063a\u0629 \u0631\u0648\u0628\u064a , \u0440\u0443\u0431\u0438\u043d\u043e\u0432\u044b\u0439 \u044f\u0437\u044b\u043a, \u0930\u0942\u092c\u0940 \u092d\u093e\u0937\u093e",
+                "stargazers_count": 7,
+                "language": "Ruby",
+                "pushed_at": "2026-04-21T22:29:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CRUD_Js_MongoDb",
+                "description": "FullStack Rest ",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-20T19:04:54Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:22.294842+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

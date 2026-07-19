@@ -1,0 +1,406 @@
+{
+  "profileId": "osint-profile-c694d3da0390",
+  "target": "sumeet-srknec",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:29.915350+00:00",
+  "completedAt": "2026-06-20T16:49:30.919753+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-714bce5b",
+      "lookupType": "github_context",
+      "target": "sumeet-srknec",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "sumeet-srknec",
+            "name": "Sumeet Sharma",
+            "type": "User",
+            "company": "Salesforce | Ex-Informatica",
+            "blog": "",
+            "location": "Bengaluru",
+            "bio": "Engineering Manager | React | AI/ML | Java | SpringBoot | Application Security | Performance Engineering",
+            "public_repos": 37,
+            "followers": 765,
+            "following": 2277,
+            "created_at": "2017-09-13T15:54:17Z",
+            "updated_at": "2026-02-12T06:25:34Z",
+            "html_url": "https://github.com/sumeet-srknec",
+            "avatar_url": "https://avatars.githubusercontent.com/u/31931206?v=4",
+            "repos": [
+              {
+                "name": "cool-tasks",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-04T12:23:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Azure-PyRIT",
+                "description": "The Python Risk Identification Tool for generative AI (PyRIT) is an open access automation framework to empower security professionals and machine learning engineers to proactively find risks in their generative AI systems.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-12-29T17:31:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "worldmonitor",
+                "description": "Real-time global intelligence dashboard \u2014 AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-12T05:05:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tvscreener",
+                "description": "TradingView Screener API - Stock, Crypto, Forex, Bond, Futures, Coin",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-15T09:01:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Claude-knowledge-work-plugins",
+                "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-04T00:40:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "spotify-alt",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-11T17:28:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-firebase-google-auth",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-07T13:51:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sumeet-srknec",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-11-28T05:14:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-falsehood-compilations",
+                "description": "\ud83d\ude31 Falsehoods Programmers Believe in",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-20T19:31:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "eol-web-scraper",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-11-30T15:17:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pyselenium",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-01-09T04:37:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dagster",
+                "description": "An orchestration platform for the development, production, and observation of data assets.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-01-10T04:33:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AI-Crash-Course",
+                "description": "AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-01-09T05:31:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ProdGradeYAS",
+                "description": "YAS: Yet Another Shop, a sample microservices project in Java",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2024-12-23T14:15:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gpt-pilot",
+                "description": "The first real AI developer",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-10-03T14:56:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cdn-paas-tau",
+                "description": "Open source distributed Platform as a Service (PaaS). A self-hosted Vercel / Netlify / Cloudflare alternative.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2024-12-04T11:51:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "helicone",
+                "description": "\ud83e\uddca Open source LLM-Observability Platform for Developers. One-line integration for monitoring, metrics, evals, agent tracing, prompt management, playground, etc. Supports OpenAI SDK, Vercel AI SDK, Anthropic SDK, LiteLLM, LLamaIndex, LangChain, and more. \ud83c\udf53 YC W23",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-27T01:29:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Code-Quality-Guidance",
+                "description": "Learn how to uncover the hints and hidden details in a question, discover how to break down a problem into manageable chunks, develop techniques to unstick yourself when stuck, learn (or re-learn) core computer science concepts, and practice on 189 interview questions and solutions.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-06-09T17:48:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "distributed-system-design",
+                "description": "A curated collection of approaches to designing large scale distributed systems.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-09-04T00:10:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "the-algorithms.com",
+                "description": "All Algorithms implemented in Python",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-12-04T11:51:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "msft-markitdown",
+                "description": "Python tool for converting files and office documents to Markdown.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-15T03:17:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MLEngineering",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-12-10T15:34:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidtime-dashboard-",
+                "description": "Modern open-source time-tracking app",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2024-12-04T11:52:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chartdb",
+                "description": "Free and open-source database diagrams editor, visualize and design your DB with a single query.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-04T11:52:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Freeapihub",
+                "description": "Your own API Hub to learn and master API interaction. Ideal for frontend, mobile dev and backend developers. ",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-04T11:51:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "javascript-handbook",
+                "description": "A handbook \ud83d\udcda that summaries concepts of JavaScript.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-12-04T11:51:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Prompt-Engineering-Guide",
+                "description": "\ud83d\udc19 Guides, papers, lecture, notebooks and resources for prompt engineering",
+                "stargazers_count": 1,
+                "language": "MDX",
+                "pushed_at": "2024-12-04T11:50:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "system-design-primer",
+                "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-12-04T11:49:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Scrape-ML",
+                "description": "For new data generation Semi-supervised-sequence-learning-Project we have writtern a python script to fetch\ud83d\udcca, data from the \ud83d\udcbb, imdb website \ud83c\udf10 and converted into txt files.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-11-06T22:36:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "screenshot-to-code",
+                "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-07T19:46:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "spring-elastic-redis",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-09-12T10:30:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fastapi",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-10-28T15:49:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "learning-from-human-preferences",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-09-23T10:13:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "whisper-web",
+                "description": "ML-powered speech recognition directly in your browser",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-10-01T11:32:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DSA-Coding-Patterns",
+                "description": "Several Coding Patterns for Solving Data Structures and Algorithms Problems during Interviews",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-20T03:17:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VulnByDesign-code",
+                "description": "A deliberately insecure Java web applicationcodr",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-10-03T17:59:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "byte-byte-go-system-design-101",
+                "description": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-16T06:44:51Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:30.918866+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

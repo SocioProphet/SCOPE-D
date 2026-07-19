@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-881a5cac0502",
+  "target": "rescenic",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:25.663223+00:00",
+  "completedAt": "2026-06-20T16:47:28.319812+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-0c55b7eb",
+      "lookupType": "github_context",
+      "target": "rescenic",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "rescenic",
+            "name": "Muhammad Ridwan Hakim, S.T., CPITA, ITPMCP",
+            "type": "User",
+            "company": "Rescenic, Ltd. @rescenic-ltd",
+            "blog": "https://sundadigi.com",
+            "location": "Cyberspace",
+            "bio": "Industrial AI & DevOps Engineer, Network & System Administrator, Cyber Security Analyst, Full Stack Developer, Software Translator, IT Auditor & Project Manager",
+            "public_repos": 1637,
+            "followers": 1333,
+            "following": 1292,
+            "created_at": "2014-11-08T23:41:01Z",
+            "updated_at": "2026-06-07T13:41:08Z",
+            "html_url": "https://github.com/rescenic",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9632756?v=4",
+            "repos": [
+              {
+                "name": "rescenic",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-20T16:28:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nanazip",
+                "description": "The 7-Zip derivative intended for the modern Windows experience",
+                "stargazers_count": 57,
+                "language": "C++",
+                "pushed_at": "2026-02-09T03:03:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "9drive",
+                "description": "9Drive is a storage gateway web app for connecting multiple Google Drive accounts into one virtual storage dashboard. Users can connect Google Drive accounts, track quota, upload files, organize files with virtual folders, preview files, and let the backend route uploads to the Drive account with enough free space.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-12T06:36:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "agency-agents",
+                "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2026-06-16T14:10:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "deer-flow",
+                "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-16T11:55:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "uptime.pustakajaya.com",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-15T05:57:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "9router",
+                "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-15T01:26:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "appsecnotes",
+                "description": "AppSec notes, cheatsheets, and secure coding reflections from a Frontend Engineer.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-11T12:04:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "superagent",
+                "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-11T09:34:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kas-masjid-app",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-05T14:05:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dnsproxy",
+                "description": "Simple DNS proxy with DoH, DoT, DoQ and DNSCrypt support",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-10T09:23:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "osint-kit",
+                "description": "Osint-kit is a curated collection of tools for OSINT investigations, from auditing and screen recording to aggregation. Build your ultimate OSINT toolkit.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-10-12T16:18:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "odysseus",
+                "description": "Self-hosted AI workspace. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-02T04:15:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "romgogetter",
+                "description": "ROM download manager and curator - fetch, filter, verify and organize your ROM collection from archive.org, lolroms or Minerva Archive. Multi source, 1G1R, compatibility and much more.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-23T10:14:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mariolpg",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-10T12:40:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "beszel",
+                "description": "Lightweight server monitoring hub with historical data, docker stats, and alerts.",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2026-05-29T00:58:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "headscale",
+                "description": "An open source, self-hosted implementation of the Tailscale control server",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2026-05-29T00:26:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llama.cpp",
+                "description": "Port of Facebook's LLaMA model in C/C++",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-05-29T00:24:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "satusehat-catalog",
+                "description": "Satu Sehat Katalog",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-26T06:45:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zerotrustnetworkaccess.info",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-05T16:40:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wireguard-install-3",
+                "description": "WireGuard VPN server installer for Ubuntu, Debian, AlmaLinux, Rocky Linux, CentOS, Fedora, openSUSE and Raspberry Pi OS. Includes interactive setup and client management.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-22T03:17:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wireguard-install-2",
+                "description": "WireGuard VPN installer for Linux servers",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-02T15:59:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wireguard-install",
+                "description": "WireGuard road warrior installer for Ubuntu, Debian, AlmaLinux, Rocky Linux, CentOS and Fedora",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2026-05-22T07:56:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wireguard-server",
+                "description": "Wg Server for Windows (WS4W) is a desktop application that allows running and managing a WireGuard server endpoint on Windows",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2026-05-22T07:55:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wireadmin",
+                "description": "\ud83d\udc09 WireGuard VPN Server with an web-based admin UI + TOR",
+                "stargazers_count": 2,
+                "language": "Svelte",
+                "pushed_at": "2026-05-22T07:55:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wireguard-helper",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-05-22T07:54:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "telegram-osint",
+                "description": "A curated collection of tools, bots, and resources for Open Source Intelligence (OSINT) investigations on Telegram. Includes chat analysis methods, browser extensions, search engines, and secure practices for efficient and privacy-focused research.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-12-16T06:26:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-readme-stats",
+                "description": ":zap: Dynamically generated stats for your github readmes",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-20T02:57:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tic-web-dev",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-20T02:41:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "agentmemory",
+                "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-19T10:49:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "threads-scraper",
+                "description": "Tampermonkey userscript to scrape all posts from any public Threads profile",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-17T14:13:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Claude-Code-Game-Studios",
+                "description": "Turn Claude Code into a full game dev studio \u2014 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-13T10:15:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hackerrank",
+                "description": "317 efficient solutions to HackerRank problems",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2026-05-12T05:36:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-indonesia-nlp",
+                "description": "Resource NLP & Bahasa ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2019-11-13T11:08:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-engineering-from-scratch",
+                "description": "Learn it. Build it. Ship it for others.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-09T23:07:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "unicodia",
+                "description": "Encyclopedia of Unicode characters",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-11T09:20:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "webcam.js",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2017-11-29T03:29:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "webcamjs",
+                "description": "HTML5 Webcam Image Capture Library with Flash Fallback",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-04-22T07:50:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "freecodecamp-solutions",
+                "description": "All my FreeCodeCamp solved questions",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-10T11:56:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gh-dashboard",
+                "description": "Open-source Github dashboard built on REST and GraphQL APIs: repositories, issues, pull requests, traffic, Actions, contributors, dependents, and a kanban board view.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-09T08:08:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hashtab",
+                "description": "\ud83d\udcdd File hashing and checking shell extension",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-07-30T09:51:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hack-skills",
+                "description": "Helping AI Agent become an awesome practical hacker!",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-01T13:47:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hackerone-reports",
+                "description": "Top disclosed reports from HackerOne",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-25T13:37:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cms-pentester",
+                "description": "Web-pentest is a simple information gathering tool designed to help pentesters gather information about a target website.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-21T08:31:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bug-hunter",
+                "description": "A collection of one-liners for bug bounty hunting.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-01-21T11:10:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "githubtree",
+                "description": "Visualize folder structure of any public GitHub repository.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-03-28T08:31:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cal.diy",
+                "description": "Scheduling infrastructure for absolutely everyone.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-28T12:13:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "koharu-ai",
+                "description": "ML-powered manga translator, written in Rust.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-04-29T02:21:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "carbon",
+                "description": "Carbon is an open source ERP, MES and QMS for manufacturing. Perfect for complex assembly, contract manufacturing, and configure to order manufacturing.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-29T02:19:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "coolify",
+                "description": "An open-source & self-hostable Heroku / Netlify alternative.",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-04-28T02:08:18Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:28.317440+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

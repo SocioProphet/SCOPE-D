@@ -1,0 +1,154 @@
+{
+  "profileId": "osint-profile-b5a5f6d30ef8",
+  "target": "cryptoAur4x",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:13.960966+00:00",
+  "completedAt": "2026-06-20T16:48:14.472890+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-69fa1cc3",
+      "lookupType": "github_context",
+      "target": "cryptoAur4x",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "cryptoAur4x",
+            "name": "Aur4x",
+            "type": "User",
+            "company": "Oracle",
+            "blog": "",
+            "location": "United States",
+            "bio": "\u2726 SWE | Intern @Oracle '26 | UPENN '27\r\n\r\nDeveloping @MetaxisResearch ",
+            "public_repos": 9,
+            "followers": 1074,
+            "following": 822,
+            "created_at": "2019-12-07T16:37:27Z",
+            "updated_at": "2026-04-17T17:20:38Z",
+            "html_url": "https://github.com/cryptoAur4x",
+            "avatar_url": "https://avatars.githubusercontent.com/u/58634785?v=4",
+            "repos": [
+              {
+                "name": "BlockMint",
+                "description": "Real-Time Consensus-Driven Ledger Aggregator for Scalable, Distributed, Smart-Contract-Driven Enterprise Applications. with Flexible architecture",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2026-02-07T01:31:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PixelChain",
+                "description": "Self-adaptive, blockchain-secured clusters autonomously synchronize and self-heal, ensuring seamless data integrity across a scalable transaction fabric.",
+                "stargazers_count": 23,
+                "language": "PHP",
+                "pushed_at": "2026-02-07T17:44:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wenteris",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-04T07:24:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CryptoNode",
+                "description": "Reliably orchestrating high-availability smart-contract-execution across scalable, secure, and deterministic node clusters via robust framework.",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-07T01:53:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartToken",
+                "description": "Decentralized, self-healing, and scalable data vault enabling real-time processing and secure, intelligent data storage as a resilient Service.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-07T01:38:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidityCoreTech",
+                "description": "Resilient, Decentralized, and Elastic Architecture for Multi-Node Smart Contract Execution on a Unified Ecosystem Platform",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-06T11:29:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webProxyPro",
+                "description": "Decentralized Content Accelerator via Intelligent SSL-TLS Encryption and Adaptive Content Compression, Real-Time Streaming Node.",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2026-02-06T11:59:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smartHorizonCloud",
+                "description": "Micro-architected, multi-cloud orchestrated deployments scale dynamically with real-time intelligence within the OmniCoreEngine.",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2026-02-06T16:35:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "apiHorizonKit",
+                "description": "Event-driven API gateway orchestrating scalable, load-balanced services across distributed infrastructure networks, fault-tolerant data relay broker.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-06T17:20:46Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:14.471708+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

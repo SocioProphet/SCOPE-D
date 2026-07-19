@@ -1,0 +1,520 @@
+{
+  "profileId": "osint-profile-e7008b49ec51",
+  "target": "kaotickj",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:13.019057+00:00",
+  "completedAt": "2026-06-20T16:49:14.246853+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f2b2d17d",
+      "lookupType": "github_context",
+      "target": "kaotickj",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "kaotickj",
+            "name": "Johnny Watts (aka., \"Kaotick Jay\") ",
+            "type": "User",
+            "company": "ZeroVector Cyber Defense",
+            "blog": "https://zerovectorcyberdefense.com",
+            "location": "Athens TN",
+            "bio": "\ud83d\udd75\ud83d\udd0e The Real Kaotick Jay \ud83d\udc7d | MSCSIA, CeH | Cybersecurity Consultant | Red Team Expert | Author | Try Hack Me top 1% | Linux Enthusiast | LPIC-3 303",
+            "public_repos": 34,
+            "followers": 802,
+            "following": 2788,
+            "created_at": "2019-12-15T05:42:06Z",
+            "updated_at": "2026-03-21T05:27:53Z",
+            "html_url": "https://github.com/kaotickj",
+            "avatar_url": "https://avatars.githubusercontent.com/u/58899228?v=4",
+            "repos": [
+              {
+                "name": "Python-Music-Player",
+                "description": "Kaos Tunes is a simple, privacy-respecting music player written in Python. It offers a clean, minimalist graphical user interface (GUI) built with Tkinter, and supports a variety of audio formats. The player focuses on delivering a distraction-free, telemetry-free, and DRM-free music playback experience.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-06-19T13:26:09Z",
+                "fork": false,
+                "topics": [
+                  "audio-player",
+                  "cross-platform",
+                  "drm-free",
+                  "flac-player",
+                  "lightweight-media-player",
+                  "media-player",
+                  "mp3-player",
+                  "music-player",
+                  "ogg-player",
+                  "telemtry-free",
+                  "wav-player"
+                ]
+              },
+              {
+                "name": "WiFi-Security-Testing-Guide---Practical-Red-Team-Pentest-Manual",
+                "description": "This guide provides a practical, command level methodology for red team operators and penetration testers performing lawful, authorized assessments of wireless networks. It covers reconnaissance, targeted active tests (handshake capture, rogue AP simulation, MITM), detection validation, evidence collection, and remediation guidance.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-10-28T22:49:27Z",
+                "fork": false,
+                "topics": [
+                  "network-security",
+                  "red-team-tools",
+                  "wifi-hacking",
+                  "wifi-pentesting",
+                  "wifi-security"
+                ]
+              },
+              {
+                "name": "LinFo",
+                "description": "LinFo is a lightweight Linux system information and security enumeration tool designed for quick, comprehensive insights into a target system\u2019s hardware, software, and security posture.",
+                "stargazers_count": 7,
+                "language": "Shell",
+                "pushed_at": "2025-07-11T19:01:25Z",
+                "fork": false,
+                "topics": [
+                  "enumeration-tool",
+                  "information-gathering-tool",
+                  "kernel-hardening-audit",
+                  "linux",
+                  "linux-audit-script",
+                  "linux-enumeration",
+                  "linux-security-audit",
+                  "linux-system-info",
+                  "linux-system-information",
+                  "loot-gathering",
+                  "pentesting-tool",
+                  "red-team-tools",
+                  "system-information"
+                ]
+              },
+              {
+                "name": "kaotickj",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-06-06T00:06:56Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Red-Team-Manual",
+                "description": "This comprehensive guide aims to provide a standardized approach to ethical hacking and promote best practices within our red team. By following this guide, we can ensure a uniform and consistent methodology across the entire team.",
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2025-07-09T06:23:08Z",
+                "fork": false,
+                "topics": [
+                  "linux-pentesting",
+                  "pentesting",
+                  "pentesting-guides",
+                  "red-team-manual",
+                  "red-teaming"
+                ]
+              },
+              {
+                "name": "Apache-Service-XAMPP-WindowsPrivEsc-Disclosure",
+                "description": "A critical vulnerability in XAMPP's default Apache service settings on Windows systems jeopardizes integrity, confidentiality, and availability. Discovered by Security Researcher Kaotick Jay, this flaw poses severe security risks. The report offers in-depth analysis, PoC, video demo, and mitigation steps.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-10-27T14:23:47Z",
+                "fork": false,
+                "topics": [
+                  "apache2-xampp",
+                  "critical-vulnerabilities",
+                  "local-system",
+                  "nt-authority",
+                  "privilege-escalation",
+                  "vulnerability-assessment",
+                  "xampp-control-panel",
+                  "xampp-windows"
+                ]
+              },
+              {
+                "name": "The-Not-So-Simple-PHP-Command-Shell",
+                "description": "This tool is intended to be used for on target enumeration to gather and exfiltrate information and then to upload tools such as netcat or msvenom payload for further access to the target.",
+                "stargazers_count": 23,
+                "language": "PHP",
+                "pushed_at": "2026-01-06T03:58:07Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "ethical-hacking",
+                  "penetration-testing",
+                  "php",
+                  "phpshells",
+                  "redteam-tools",
+                  "reverse-shell",
+                  "windows-enumeration"
+                ]
+              },
+              {
+                "name": "K-Sploit",
+                "description": "Optimized for use in Kali Linux, KSploit is a user friendly menu driven control panel in which to drive many metasploit tasks.  KSploit simplifies repetitive metasploit functions such as generating payloads, deploying listeners, and injecting msf payloads into Windows exectuables.",
+                "stargazers_count": 17,
+                "language": "Shell",
+                "pushed_at": "2025-07-02T03:37:50Z",
+                "fork": false,
+                "topics": [
+                  "android-meterpreter-apk",
+                  "cybersecurity",
+                  "metasploit-framework",
+                  "payload-generator",
+                  "payload-injection",
+                  "red-teaming",
+                  "windows-executable-injection"
+                ]
+              },
+              {
+                "name": "Kaos-CAPTCHA",
+                "description": "A resilient CAPTCHA generator that resists automated OCR and AI-based solving attempts. Produces randomized alpha-numeric captchas with multiple obfuscation layers. Suitable for web applications where strong anti-bot protection is required while remaining readable to human users.",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-01-06T03:47:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "enigma",
+                "description": "Message encryption application based an Enigma Machine, a cipher device used by Nazi Germany during World War II. It encrypts and decrypts messages based on user-specified rotor positions and modes. Additionally, the program includes encryption through XOR encoding for extra obfuscation.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-06-24T17:39:37Z",
+                "fork": false,
+                "topics": [
+                  "encryption-decryption",
+                  "enigma-cipher",
+                  "enigma-machine",
+                  "enigma-simulator"
+                ]
+              },
+              {
+                "name": "meme-genie",
+                "description": "A Python and Tkinter-based Meme Generator allowing effortless meme creation. Features: choose background image, add customizable text (alignment, fonts, colors, shadows), fetch quotes online, dynamic text wrapping, and meme preview. Includes font/color picker and a user-friendly interface. Perfect for creative projects.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2024-11-24T14:15:19Z",
+                "fork": false,
+                "topics": [
+                  "meme-generator",
+                  "meme-maker",
+                  "memes"
+                ]
+              },
+              {
+                "name": "persistenceDetector",
+                "description": "A Python program to detect malicious registry persistence entries in the WIndows Registry.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-07-01T01:47:22Z",
+                "fork": false,
+                "topics": [
+                  "persistence-detection",
+                  "registry-persistence",
+                  "windows-registry"
+                ]
+              },
+              {
+                "name": "typosquatterBuster",
+                "description": "This script detects typosquatting domains by generating typo variations of a given domain name, checking if they return a valid HTTP response, and running a WHOIS lookup to determine if the domain is registered, then generates an HTML report with the findings.",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2024-04-10T02:32:42Z",
+                "fork": false,
+                "topics": [
+                  "blueteam-tools",
+                  "redteam-tools",
+                  "typosquatting",
+                  "typosquatting-domains"
+                ]
+              },
+              {
+                "name": "Detecting-Persistence-on-Windows-Computers-for-Non-Technical-Users",
+                "description": "This guide empowers non-tech Windows users to detect persistence threats, highlighting signs like cmd windows at startup, registry checks, and spotting malicious commands in PowerShell, cmd, rundll32, and wmic.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-07-06T20:09:10Z",
+                "fork": false,
+                "topics": [
+                  "malwaredetection",
+                  "windows-persistence"
+                ]
+              },
+              {
+                "name": "PayloadForge",
+                "description": "Payload Forge is an advanced payload generation tool developed for cybersecurity professionals, red teamers, and ethical hackers. It allows users to craft and customize payloads for security testing and penetration testing purposes.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2024-08-24T19:35:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "password-genie",
+                "description": "Password Genie is a secure and user-friendly password management application built with Python. It allows users to generate strong passwords, hash and save passwords for various platforms, and retrieve them securely.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-08-29T05:11:43Z",
+                "fork": false,
+                "topics": [
+                  "master-password",
+                  "password-generator",
+                  "password-manager",
+                  "secure-passwords"
+                ]
+              },
+              {
+                "name": "RPG-Name-Genie",
+                "description": "Generate captivating and immersive names for your RPG characters effortlessly. Unleash your imagination and enhance your storytelling with unique and fitting names.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2023-10-27T15:35:01Z",
+                "fork": false,
+                "topics": [
+                  "name-generator",
+                  "role-playing-game-tool",
+                  "rpg",
+                  "rpg-tool"
+                ]
+              },
+              {
+                "name": "Labyrinth",
+                "description": "Labyrinth is a turn based strategy RPG. ",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-08T23:41:11Z",
+                "fork": false,
+                "topics": [
+                  "rpg-game",
+                  "turn-based-strategy"
+                ]
+              },
+              {
+                "name": "Protecting-Yourself-from-Remote-Access-Scams",
+                "description": "Explore the world of refund and remote access scams in this comprehensive bulletin authored by 30-year cybersecurity veteran, Kaotickj. Learn about their history, tactics, prevention, and reporting strategies. Gain insights to protect yourself and others in the digital realm.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-12-16T19:41:38Z",
+                "fork": false,
+                "topics": [
+                  "anti-phishing",
+                  "cybersecurity-awareness",
+                  "online-safety"
+                ]
+              },
+              {
+                "name": "Python-Port-Scanner",
+                "description": "This Python script is a simple yet effective port scanner that allows you to scan a target host for open ports. It supports multi-threading to improve the scanning speed and provides colorful and informative output.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2023-10-27T14:25:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Check-for-CVE-2023-32629-GameOver-lay",
+                "description": "Check for CVE-2023-32629 \"GameOver(lay)\" vulnerability ",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2023-10-27T14:23:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LocalAI",
+                "description": ":robot: Self-hosted, community-driven, local OpenAI-compatible API. Drop-in replacement for OpenAI running LLMs on consumer-grade hardware. No GPU required. LocalAI is a RESTful API to run ggml compatible models: llama.cpp, alpaca.cpp, gpt4all.cpp, rwkv.cpp, whisper.cpp, vicuna, koala, gpt4all-j, cerebras and many others!",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-06-06T17:17:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hacktricks",
+                "description": "Welcome to the page where you will find each trick/technique/whatever I have learnt in CTFs, real life apps, and reading researches and news.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-05-31T16:06:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Resistance-Calculator-for-4-and-5-Band-Color-Codes",
+                "description": "This Python resistor calculator GUI supports 4, 5 and 6 band color codes. Users select colors for resistor bands, triggering the calculate_resistance() function to determine resistance using color_codes. Tolerance is calculated based on the chosen notation.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-07-06T22:49:20Z",
+                "fork": false,
+                "topics": [
+                  "electronics-development",
+                  "hobbyist-tool",
+                  "resistance-calculator"
+                ]
+              },
+              {
+                "name": "KMap",
+                "description": "KMap is a user friendly tool for running various types of nmap scans allowing user to set scan parameters by making simple choices. The python version provides a graphical user interface solution for running nmap scans in Linux.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-10-27T14:24:05Z",
+                "fork": false,
+                "topics": [
+                  "enumeration",
+                  "network-scanning",
+                  "nmap-commands",
+                  "nmap-gui",
+                  "port-scanning"
+                ]
+              },
+              {
+                "name": "threatCheck.py",
+                "description": "This is a simple implementation of a threat detection system that uses geolocation and abuse information to determine whether an IP address poses a potential threat. If a threat is detected, an audible alert is played and the information is logged.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2023-10-27T15:32:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "K-Pots",
+                "description": "KPots is a simple honeypots system to capture and log traffic to specified ports. Requires Netcat for monitoring and IPTables for banning. Requires dig for filtering out your own ip address. (Note: I will be adding alternatives in a later realease, but for now, just install dig.)",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2024-09-02T22:28:21Z",
+                "fork": false,
+                "topics": [
+                  "blue-team-tool",
+                  "honeypot",
+                  "ip-blocking",
+                  "port-monitoring",
+                  "security-tools"
+                ]
+              },
+              {
+                "name": "DigEm",
+                "description": "This tool helps to simplify the dig utility.  One quick command automates DNS enumeration.  For remote enumeration. ",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2022-07-28T08:41:22Z",
+                "fork": false,
+                "topics": [
+                  "dig",
+                  "dns-enumeration",
+                  "enumeration",
+                  "pentesting",
+                  "red-team",
+                  "red-team-tools"
+                ]
+              },
+              {
+                "name": "Johnny5",
+                "description": "Full ESX ROleplay Server Template for FiveM server.  Up to date with the latest GTA Online patch level.  ",
+                "stargazers_count": 5,
+                "language": "Lua",
+                "pushed_at": "2021-08-01T22:12:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "metasploit-framework",
+                "description": "Metasploit Framework",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-01-07T23:39:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "JoomHeist",
+                "description": "This PoC script provides a complete automated exploit path for the Joomla Content History SQL Injection vulnerability \u2014 from prefix detection to admin session hijacking \u2014 helping pentesters and security researchers verify and demonstrate the severity of the issue.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-07-01T02:56:12Z",
+                "fork": false,
+                "topics": [
+                  "joomla-authentication-bypass",
+                  "joomla-exploiters",
+                  "joomla-session-hijack",
+                  "joomla-sql-injection",
+                  "red-team",
+                  "red-team-tools"
+                ]
+              },
+              {
+                "name": "K-Crypt",
+                "description": "K-Crypt is a Python-based desktop application with a graphical user interface (GUI) that allows users to securely encrypt and decrypt files or entire folders using XOR cipher encryption.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-06-27T08:26:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Lorem-Ipsum-Genie",
+                "description": "Lorem Ipsum Genie is a Lorem Ipsum generator designed for developers, designers, and marketers. It allows you to generate high-quality placeholder text with customizable sentence and paragraph structures. Supports exporting to various formats including Markdown, HTML, DOCX, and PDF.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-06-20T11:30:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wayBackLister",
+                "description": "Enhanced Directory Listing Detection Using Wayback Machine. Modified from the FR13ND0x7F original by Kaotick Jay. This improved version overccomes flaws and limitations in the original by adding retry logic, and error handling. Added exponential backoff with jitter between retries to reduce request bursts.  Improved error reporting.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-06-17T16:47:55Z",
+                "fork": true,
+                "topics": [
+                  "domain-research",
+                  "redteam-tools",
+                  "subdomain-discovery",
+                  "subdomain-enumeration",
+                  "website-reconnaissance"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:14.245419+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

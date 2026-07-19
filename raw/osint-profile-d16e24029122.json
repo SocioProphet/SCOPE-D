@@ -1,0 +1,653 @@
+{
+  "profileId": "osint-profile-d16e24029122",
+  "target": "miracle709",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:31.963303+00:00",
+  "completedAt": "2026-06-20T16:48:32.999474+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e18375d8",
+      "lookupType": "github_context",
+      "target": "miracle709",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "miracle709",
+            "name": "miracle",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "AI Full stack & Blockchain Engineer",
+            "public_repos": 45,
+            "followers": 987,
+            "following": 1707,
+            "created_at": "2025-09-11T20:17:12Z",
+            "updated_at": "2026-06-18T19:15:02Z",
+            "html_url": "https://github.com/miracle709",
+            "avatar_url": "https://avatars.githubusercontent.com/u/231771327?v=4",
+            "repos": [
+              {
+                "name": "Web3-Solana-Bitcoin-NFT-Dex-Defi-P2EGame-SmartContract-Projects",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-12-27T09:40:48Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "mint",
+                  "nft",
+                  "smartcontract",
+                  "solana",
+                  "tokenlaunch",
+                  "web3",
+                  "web3js"
+                ]
+              },
+              {
+                "name": "polymarket-market-maker-bot",
+                "description": "Python market maker for Polymarket BTC binary markets: multi-exchange BTC reference, log-normal fair value, two-sided CLOB quotes, PostgreSQL, Flask dashboard, systemd units.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-02T17:34:39Z",
+                "fork": false,
+                "topics": [
+                  "asyncio",
+                  "clob",
+                  "flask",
+                  "market-making",
+                  "open-source",
+                  "polymarket",
+                  "postgresql",
+                  "python",
+                  "systemd",
+                  "trading-bot"
+                ]
+              },
+              {
+                "name": "solana-market-maker-volume-bot",
+                "description": "This project is solana marker maker & solana volume bot with a simple, non\u2011technical setup, it can generate wallets, distribute funds, auto buy/sell, manage Solana WSOL, and push Telegram alerts -a practical token volume simulator for multi\u2011wallet trading campaigns.",
+                "stargazers_count": 8,
+                "language": "Rust",
+                "pushed_at": "2026-04-25T06:47:46Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "crypto",
+                  "cryptotrading",
+                  "marketplace",
+                  "multi-wallet",
+                  "multi-wallet-automation",
+                  "rust",
+                  "solana",
+                  "volume-bot"
+                ]
+              },
+              {
+                "name": "Solana-Arbitrage-Bot",
+                "description": "Solana Arbitrage Bot on pump.fun, Meteora, Raydium and Orca using Jito bundling, RPC and gRPC. Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Solana Arbitrage Bot Arbit Open to contribute",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-25T05:32:14Z",
+                "fork": false,
+                "topics": [
+                  "arbitrage",
+                  "bot",
+                  "bundle",
+                  "bundler",
+                  "grpc",
+                  "jito",
+                  "offchain",
+                  "onchain",
+                  "profitability",
+                  "profitable",
+                  "rust",
+                  "solana",
+                  "solana-arbitrage-bot",
+                  "solscan",
+                  "trading"
+                ]
+              },
+              {
+                "name": "miracle709",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-04-09T11:50:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "polymarket-arbitrage-bot--version1.0",
+                "description": "Python bot that trades short-duration Polymarket BTC/ETH Up/Down markets using Binance WebSocket price moves, with paper trading, Kelly-based risk controls, and a local HTTP dashboard.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-04-25T06:36:05Z",
+                "fork": false,
+                "topics": [
+                  "aiohttp",
+                  "arbitrage",
+                  "asyncio",
+                  "binance",
+                  "polygon",
+                  "polymarket",
+                  "python",
+                  "trading-bot",
+                  "websocket"
+                ]
+              },
+              {
+                "name": "Household-Service-Marketplace",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-17T20:55:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TaonuAI",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-26T17:22:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nft-Launchpad-Covalent-Api",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-27T09:35:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "d4l-contracts",
+                "description": "Meme coin launchpad smart contracts with bonding-curve trading, Uniswap migration, and a USDC-powered tournament fighting arena.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-25T07:09:37Z",
+                "fork": false,
+                "topics": [
+                  "memecoin",
+                  "memecoin-factory",
+                  "pricefeed",
+                  "smartcontract-development",
+                  "smartcontracts",
+                  "usdc",
+                  "usdc-gas",
+                  "wpoly"
+                ]
+              },
+              {
+                "name": "d4l-frontend",
+                "description": "D4L is a Web3 meme-token battleground on Polygon where users create tokens, launch fights, and bet on market-cap winners.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-25T07:52:20Z",
+                "fork": false,
+                "topics": [
+                  "battleground",
+                  "bet",
+                  "blockchain",
+                  "create-tokens",
+                  "ethereum",
+                  "launch-fights",
+                  "meme-token",
+                  "web3"
+                ]
+              },
+              {
+                "name": "d4l-backend",
+                "description": "NestJS + Prisma backend for D4L: wallet-authenticated meme token creation, battle arena betting, and on-chain powered user analytics.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-25T07:09:50Z",
+                "fork": false,
+                "topics": [
+                  "backend",
+                  "backend-developer",
+                  "backend-development",
+                  "betting",
+                  "nestjs",
+                  "onchain-game",
+                  "prisma",
+                  "wallet",
+                  "wallet-authentication"
+                ]
+              },
+              {
+                "name": "EstateVows",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-07T18:31:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "food-ordering-apps",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-22T22:08:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cv360-tech",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-21T10:58:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "keyv-arango",
+                "description": "ArangoDB store for Keyv: simple key-value storage with support for multiple backends.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-16T18:33:00Z",
+                "fork": false,
+                "topics": [
+                  "arango",
+                  "arangodb",
+                  "cahce",
+                  "key-value",
+                  "key-value-store",
+                  "keyvaluestore",
+                  "storage"
+                ]
+              },
+              {
+                "name": "Hcaptcha-exploit",
+                "description": "Hcapcha exploit found by dort and qoft.",
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2025-12-22T08:29:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gotchgame_build",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Rich Text Format",
+                "pushed_at": "2025-12-26T17:11:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-real-estate-assistant",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-12-22T09:03:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node-api-backend-arango",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-16T18:04:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fastapi-arango-backend",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-12-16T18:35:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Solana-Token-Creation-Platform",
+                "description": "Token 2022 Creation Platform. Demo: https://saio-platform.vercel.app This platform enables users create token on Solana with UI no requiring technical knowledges.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-18T07:38:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solanamonitoring",
+                "description": "Telegraf can collect metrics from a wide array of inputs and write them to a wide array of outputs. It is plugin-driven for both collection and output of data so it is easily extendable. ",
+                "stargazers_count": 4,
+                "language": "Shell",
+                "pushed_at": "2025-12-12T08:58:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Less",
+                "pushed_at": "2025-12-13T03:20:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FIFA-2018-World-cup-predictions",
+                "description": "I used Machine Learning to make a Logistic Regression model using scikit-learn, pandas, numpy, seaborn and matplotlib to predict the results of FIFA 2018 World Cup.",
+                "stargazers_count": 9,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-12-13T04:14:12Z",
+                "fork": false,
+                "topics": [
+                  "jupiter-notebook",
+                  "matplotlib",
+                  "numpy",
+                  "pandas",
+                  "scikit-learn",
+                  "seaborn"
+                ]
+              },
+              {
+                "name": "wallet-tracker",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-16T08:30:35Z",
+                "fork": false,
+                "topics": [
+                  "bscscan-api",
+                  "crypto",
+                  "erc20",
+                  "evm-blockchain"
+                ]
+              },
+              {
+                "name": "basketball_analytics_opencv_training_model",
+                "description": "A comprehensive basketball video analysis system that automatically detects balls, players, rims, and counts goals for each team using YOLOv8 deep learning models.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-12-12T20:13:25Z",
+                "fork": false,
+                "topics": [
+                  "python",
+                  "yolov8"
+                ]
+              },
+              {
+                "name": "Pumpfun_Volulme_Bot_Telegram",
+                "description": "Solana PumpFun volume bot for Pump.fun tokens that uses the correct PumpSwapSDK and JITO bundles for accurate and efficient transaction processing.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-25T06:33:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tokenkhana-dapp",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-12T08:22:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-mev-bot",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-12-13T03:07:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-mev-bot-rust",
+                "description": "A high-frequency trading bot designed to identify and exploit arbitrage opportunities across various decentralized exchanges (DEXs) on the Solana blockchain \ud83d\udcde . zeroslot + offline sign + advancenonce + jito tip + solana program enable sandwich",
+                "stargazers_count": 5,
+                "language": "Rust",
+                "pushed_at": "2026-04-25T06:32:01Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "mev-bot-solana",
+                  "mevbots",
+                  "rust",
+                  "solana",
+                  "strategy",
+                  "token",
+                  "tracking"
+                ]
+              },
+              {
+                "name": "laravel-auditing",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2025-12-13T03:08:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "takup",
+                "description": "TaskUp is a full-stack productivity platform built with Next.js, React Native (Expo), FastAPI, and Supabase",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-18T09:22:35Z",
+                "fork": false,
+                "topics": [
+                  "fastapi",
+                  "fullstack-development",
+                  "nextjs",
+                  "react-native",
+                  "supabase"
+                ]
+              },
+              {
+                "name": "solana_sniper_bot",
+                "description": "solana raydium sniper bot",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-26T21:49:27Z",
+                "fork": false,
+                "topics": [
+                  "bot",
+                  "pumpfun-sniper-go",
+                  "pumpfunswap",
+                  "raydium",
+                  "solana",
+                  "trading",
+                  "typescript",
+                  "web3"
+                ]
+              },
+              {
+                "name": "wallet-tracking",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-11-24T06:04:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vortex",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-12T08:25:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sui-mev",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-11-24T04:24:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solana-copytrading-telegram-bot",
+                "description": "solana copy trading bot",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-11-24T06:03:53Z",
+                "fork": false,
+                "topics": [
+                  "apiintegration",
+                  "helius-rpc",
+                  "python",
+                  "telegrambot",
+                  "web3js"
+                ]
+              },
+              {
+                "name": "AssistMind_Client",
+                "description": "AssistMind AI frontend for building and managing voice agents, call analytics, campaigns, integrations, and customer conversations in one dashboard.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T15:38:21Z",
+                "fork": false,
+                "topics": [
+                  "heroui",
+                  "nextjs",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "Assistmind_backend",
+                "description": "AI voice-agent backend for Assistmind: FastAPI APIs for auth, onboarding, realtime Twilio calls, business-aware agent prompts, and Stripe-based trials/subscriptions.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-10-06T11:29:32Z",
+                "fork": false,
+                "topics": [
+                  "ai-voice-agent",
+                  "alembic",
+                  "fastapi",
+                  "openrouter",
+                  "postgresql",
+                  "python",
+                  "redis",
+                  "saas",
+                  "sqlalchemy",
+                  "stripe",
+                  "twilio",
+                  "websocket"
+                ]
+              },
+              {
+                "name": "polymarket_bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-17T05:10:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "poly-weather",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-09T01:39:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "openstock",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Vue",
+                "pushed_at": "2026-02-10T14:23:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mygarage-server",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-10T14:21:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Robo-Apply",
+                "description": "RoboApply is  an AI-powered job application platform that helps people tailor resumes, write cover letters, practice interviews, and manage applications.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-04T21:57:38Z",
+                "fork": false,
+                "topics": [
+                  "anthropic",
+                  "aws-s3",
+                  "brevo",
+                  "deepgram",
+                  "docx",
+                  "express",
+                  "jwt",
+                  "mongodb",
+                  "mui",
+                  "node-cron",
+                  "nodejs",
+                  "onesignal",
+                  "openai",
+                  "reactjs",
+                  "reactrouter",
+                  "recharts",
+                  "socket-io",
+                  "stripe",
+                  "tailwindscss",
+                  "zustand"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:32.998281+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

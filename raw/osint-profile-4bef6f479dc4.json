@@ -1,0 +1,678 @@
+{
+  "profileId": "osint-profile-4bef6f479dc4",
+  "target": "JawherKl",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:02.869053+00:00",
+  "completedAt": "2026-06-21T15:29:04.612896+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-efa7d017",
+      "lookupType": "github_context",
+      "target": "JawherKl",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "JawherKl",
+            "name": "Jawher Kl",
+            "type": "User",
+            "company": "@Github",
+            "blog": "jawherkl-github-io.vercel.app",
+            "location": "Tunis",
+            "bio": "Full-Stack Software Engineer | Open Source Contributor | AI Integration",
+            "public_repos": 93,
+            "followers": 2960,
+            "following": 7486,
+            "created_at": "2024-07-03T08:03:15Z",
+            "updated_at": "2026-01-20T19:55:24Z",
+            "html_url": "https://github.com/JawherKl",
+            "avatar_url": "https://avatars.githubusercontent.com/u/174592810?v=4",
+            "repos": [
+              {
+                "name": "JawherKl",
+                "description": "\u2728 Hello! | Bonjour! | Hallo! | Ciao! | \u0645\u0631\u062d\u0628\u064b\u0627! | \u00a1Hola! | \u041f\u0440\u0438\u0432\u0435\u0442! | \u4f60\u597d!\u2728              This is my README repository will appear on my public profile.",
+                "stargazers_count": 58,
+                "language": null,
+                "pushed_at": "2026-06-20T19:10:53Z",
+                "fork": false,
+                "topics": [
+                  "daily-dev",
+                  "readme",
+                  "stats",
+                  "vercel"
+                ]
+              },
+              {
+                "name": "node-api-postgres",
+                "description": "This is a modern RESTful API built with Node.js and Express, designed to interact with a PostgreSQL database.",
+                "stargazers_count": 102,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-12T00:19:07Z",
+                "fork": false,
+                "topics": [
+                  "express",
+                  "nodejs",
+                  "npm",
+                  "postgresql"
+                ]
+              },
+              {
+                "name": "nodejs-microservices",
+                "description": "Scalable and modular microservices system ready for production built with Node.js, PostgreSQL, MongoDB, RabbitMQ and Docker.",
+                "stargazers_count": 52,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-17T21:17:19Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "mongodb",
+                  "nestjs",
+                  "nodejs",
+                  "postgresql",
+                  "rabbitmq",
+                  "swagger-ui"
+                ]
+              },
+              {
+                "name": "design-patterns-in-multiple-languages",
+                "description": "In this project, I will provide examples of all major design patterns and demonstrate how they are implemented in PHP, Go, Js and Java.",
+                "stargazers_count": 73,
+                "language": "PHP",
+                "pushed_at": "2026-03-05T21:27:07Z",
+                "fork": false,
+                "topics": [
+                  "design-patterns",
+                  "go",
+                  "java",
+                  "javascript",
+                  "php"
+                ]
+              },
+              {
+                "name": "go-crud-graphql",
+                "description": "This project is a CRUD (Create, Read, Update, Delete) API built with Go, GraphQL, and PostgreSQL.",
+                "stargazers_count": 20,
+                "language": "Go",
+                "pushed_at": "2025-02-06T10:02:11Z",
+                "fork": false,
+                "topics": [
+                  "go",
+                  "golang",
+                  "graphql"
+                ]
+              },
+              {
+                "name": "n8n",
+                "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-28T09:48:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "devops-guide",
+                "description": "This project serves as a comprehensive resource for anyone interested in learning and implementing DevOps tools, and workflows.",
+                "stargazers_count": 66,
+                "language": "Shell",
+                "pushed_at": "2026-03-02T23:50:12Z",
+                "fork": false,
+                "topics": [
+                  "aws",
+                  "azure",
+                  "devops",
+                  "docker",
+                  "elk-stack",
+                  "git",
+                  "google-cloud",
+                  "grafana",
+                  "jenkins",
+                  "kubernetes",
+                  "prometheus",
+                  "snyk",
+                  "zipkin"
+                ]
+              },
+              {
+                "name": "system-design-101",
+                "description": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-05-20T18:11:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "developer-roadmap",
+                "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+                "stargazers_count": 30,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-20T18:09:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gitignore",
+                "description": "A collection of useful .gitignore templates",
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2026-05-20T18:07:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "javascript-algorithms",
+                "description": "\ud83d\udcdd Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-20T18:09:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "portfolio-ideas",
+                "description": "A curation of awesome portfolio website ideas for developers and designers to draw inspiration from. Raise a pull request to add more. \ud83d\udc9c ",
+                "stargazers_count": 13,
+                "language": "Markdown",
+                "pushed_at": "2026-05-20T18:08:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-nestjs",
+                "description": "A curated list of awesome things related to NestJS \ud83d\ude0e",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-05-20T18:08:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "system-design-1",
+                "description": "Newsletter to help busy software engineers become good at system design \ud83d\udc47",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-05-20T18:07:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "system-design",
+                "description": "Learn how to design systems at scale and prepare for system design interviews",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-05-20T18:07:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-models-integration",
+                "description": "Node.js backend that unifies multiple AI models into one API featuring rate limiting, caching, input validation, streaming, and monitoring.",
+                "stargazers_count": 42,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-17T08:42:01Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "chatgpt",
+                  "claude",
+                  "deepseek",
+                  "express",
+                  "gemini",
+                  "llm",
+                  "meta-llama",
+                  "mistralai",
+                  "nodejs",
+                  "openai",
+                  "openrouter",
+                  "redis"
+                ]
+              },
+              {
+                "name": "go-crud-movie-api",
+                "description": "This is a simple and modern example of a CRUD API for managing movies, built using Go.",
+                "stargazers_count": 29,
+                "language": "Go",
+                "pushed_at": "2026-03-03T21:31:48Z",
+                "fork": false,
+                "topics": [
+                  "go",
+                  "golang",
+                  "postgresql",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "ai-faq-bot",
+                "description": "AI-powered FAQ Bot is a backend solution built with NodeJS (Express) that integrates with OpenAI to provide AI-generated answers to user queries.",
+                "stargazers_count": 16,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-19T13:06:11Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "chatbot",
+                  "llm",
+                  "openai",
+                  "openrouter"
+                ]
+              },
+              {
+                "name": "must",
+                "description": "The must library simplifies assertions and panics on failure. Assert conditions directly, avoiding long checks",
+                "stargazers_count": 16,
+                "language": "Go",
+                "pushed_at": "2026-03-04T22:35:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DesignPatternsPHP",
+                "description": "Sample code for several design patterns in PHP 8.x",
+                "stargazers_count": 17,
+                "language": "PHP",
+                "pushed_at": "2025-09-09T07:27:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "build-your-own-x",
+                "description": "Master programming by recreating your favorite technologies from scratch.",
+                "stargazers_count": 17,
+                "language": "Markdown",
+                "pushed_at": "2026-03-04T22:35:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "grpc-order-process",
+                "description": "A gRPC system for managing order processing with services for inventory, notifications, and payments.",
+                "stargazers_count": 17,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-17T15:44:25Z",
+                "fork": false,
+                "topics": [
+                  "express",
+                  "grpc",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "tern",
+                "description": "tern is a lightweight Go package for simple, concise ternary expressions, enabling clear conditional logic.",
+                "stargazers_count": 17,
+                "language": "Go",
+                "pushed_at": "2026-03-04T22:35:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mail-server-checker",
+                "description": "The Mail Server Checker is a PHP new tool designed to analyze and verify the different protocols (SPF, DMARC, DKIM) releated to the domain mail server.",
+                "stargazers_count": 18,
+                "language": "PHP",
+                "pushed_at": "2025-02-08T13:27:27Z",
+                "fork": false,
+                "topics": [
+                  "dkim",
+                  "dmarc",
+                  "php",
+                  "spf",
+                  "symfony"
+                ]
+              },
+              {
+                "name": "k8s-demo",
+                "description": "This repository contains a demonstration of deploying and managing applications using Kubernetes (k8s). It is designed to help users understand the basics of Kubernetes, including deployments, services, scaling, and other core concepts.",
+                "stargazers_count": 18,
+                "language": "Go Template",
+                "pushed_at": "2026-02-06T22:56:51Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "k8s-cluster",
+                  "mongodb"
+                ]
+              },
+              {
+                "name": "graphql-nodejs-ecom",
+                "description": "A GraphQL-based e-commerce API built with Node.js for efficient product, order, and user management.",
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-17T15:55:26Z",
+                "fork": false,
+                "topics": [
+                  "express",
+                  "graphql",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "nestjs-stack",
+                "description": "This project is a NestJS backend API designed for managing developer projects, resources, secrets, and API keys, with robust authentication and authorization using Keycloak.",
+                "stargazers_count": 19,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-16T09:36:53Z",
+                "fork": false,
+                "topics": [
+                  "keycloak",
+                  "nestjs",
+                  "nodejs",
+                  "postgresql",
+                  "swagger"
+                ]
+              },
+              {
+                "name": "llm-foundations",
+                "description": "A structured learning path for software engineers to master Large Language Models through theory, practical exercises, and project implementation.",
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2025-09-12T09:55:01Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "foundations",
+                  "llm",
+                  "models"
+                ]
+              },
+              {
+                "name": "jawherkl.github.io",
+                "description": "Welcome to the repository for my personal portfolio website! This project showcases my technical skills, projects, and expertise in software engineering.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-17T14:28:14Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "css",
+                  "html",
+                  "javascript",
+                  "portfolio",
+                  "portfolio-website",
+                  "react",
+                  "reactjs",
+                  "vercel-deployment",
+                  "vitejs"
+                ]
+              },
+              {
+                "name": "llm-api-gateway",
+                "description": "Scalable API gateway that aggregates calls to multiple LLMs (OpenAI, Hugging Face, Groq, Anthropic, Gemini, etc.), includes caching, rate limiting, logging, monitoring and production-ready deployment.",
+                "stargazers_count": 23,
+                "language": "Go",
+                "pushed_at": "2025-09-13T14:07:55Z",
+                "fork": false,
+                "topics": [
+                  "anthropic",
+                  "caching",
+                  "docker",
+                  "gemini",
+                  "golang",
+                  "groq",
+                  "huggingface",
+                  "k8s",
+                  "llm",
+                  "openai",
+                  "redis"
+                ]
+              },
+              {
+                "name": "api-design",
+                "description": "Welcome to the API Design Study Repository! This project is a hands-on exploration of API-design, covering REST API, GraphQL, and gRPC.",
+                "stargazers_count": 57,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-13T09:51:34Z",
+                "fork": false,
+                "topics": [
+                  "api-design",
+                  "graphql",
+                  "grpc",
+                  "javascript",
+                  "rest-api",
+                  "soap",
+                  "webhook",
+                  "websocket"
+                ]
+              },
+              {
+                "name": "async_await_js",
+                "description": "This project demonstrates fetching and displaying data using async/await and ES modules in JavaScript.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-17T10:51:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "go-user-caching",
+                "description": "This project is a Go-based API that demonstrates user profile management with caching using Redis and PostgreSQL for persistent data storage. ",
+                "stargazers_count": 10,
+                "language": "Go",
+                "pushed_at": "2024-10-06T08:10:36Z",
+                "fork": false,
+                "topics": [
+                  "go",
+                  "postgresql",
+                  "redis"
+                ]
+              },
+              {
+                "name": "user-caching-app",
+                "description": "This project demonstrates the use of caching to optimize read-heavy operations by using Redis as a cache layer and PostgreSQL as the primary database. ",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-07T10:04:30Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "nodejs",
+                  "postgresql",
+                  "redis"
+                ]
+              },
+              {
+                "name": "todo-list-api",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-23T11:14:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weather-app",
+                "description": "A simple weather application that fetches weather data based on the user's location using the OpenWeatherMap API and the Geolocation API.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-01T14:42:24Z",
+                "fork": false,
+                "topics": [
+                  "expressjs",
+                  "geolocation-api",
+                  "nodejs",
+                  "openweathermap-api"
+                ]
+              },
+              {
+                "name": "graphql-client",
+                "description": "Ce projet est un client React pour interagir avec une API GraphQL. Il permet de cr\u00e9er, lire, mettre \u00e0 jour et supprimer des films. Il utilise Apollo Client pour la gestion des requ\u00eates GraphQL et React Router pour la navigation.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-29T16:09:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kubernetes-sample-apps",
+                "description": "Example DigitalOcean Kubernetes workload with service exposed through a DO load-balancer.",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2023-10-25T22:05:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "high-write-traffic",
+                "description": "This project simulates handling high-write traffic using RocksDB in Node.js.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-07T13:03:16Z",
+                "fork": false,
+                "topics": [
+                  "nodejs",
+                  "rocksdb"
+                ]
+              },
+              {
+                "name": "Books",
+                "description": null,
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2018-08-18T20:00:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "devops-basics",
+                "description": "Practical and document place for DevOps toolchain",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-12-16T12:06:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rag-explained",
+                "description": "Retrieval-Augmented Generation (RAG) Explained, covering its working principles, components, benefits, applications, challenges, and future prospects.",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-04-04T20:12:05Z",
+                "fork": false,
+                "topics": [
+                  "llm",
+                  "llm-rag",
+                  "rag",
+                  "rag-chatbot"
+                ]
+              },
+              {
+                "name": "deep-dive-into-llm",
+                "description": "Deep Dive into Large Language Models (LLMs) \u2013 A comprehensive study of Large Language Models, from their inner workings and architecture to their applications, challenges, and future.",
+                "stargazers_count": 11,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-04-20T09:55:39Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "deep-learning",
+                  "llm",
+                  "llmops"
+                ]
+              },
+              {
+                "name": "system-design-interview",
+                "description": "System design interview for IT companies",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-04-03T04:22:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gorm",
+                "description": "GORM V1,  V2 moved to https://github.com/go-gorm/gorm",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-09-11T08:16:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "leetcode",
+                "description": "LeetCode Problems' Solutions ",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-01-17T16:23:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-devsecops",
+                "description": "An authoritative list of awesome devsecops tools with the help from community experiments and contributions.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-05-11T17:48:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "angular-piechart-customize",
+                "description": "Created with StackBlitz \u26a1\ufe0f",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2024-07-03T15:30:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "angular-init-skeleton",
+                "description": "Created with StackBlitz \u26a1\ufe0f",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2024-07-03T15:50:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "angular-ng-select-customize",
+                "description": "Created with StackBlitz \u26a1\ufe0f",
+                "stargazers_count": 10,
+                "language": "TypeScript",
+                "pushed_at": "2024-07-04T15:22:18Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:04.611983+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

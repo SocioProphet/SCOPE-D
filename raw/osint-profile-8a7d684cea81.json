@@ -1,0 +1,573 @@
+{
+  "profileId": "osint-profile-8a7d684cea81",
+  "target": "mathiscode",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:50:09.612152+00:00",
+  "completedAt": "2026-06-20T16:50:11.774068+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-51af45a4",
+      "lookupType": "github_context",
+      "target": "mathiscode",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mathiscode",
+            "name": "Jay Mathis",
+            "type": "User",
+            "company": null,
+            "blog": "https://jaymath.is",
+            "location": "United States",
+            "bio": "\ud83d\udc68\u200d\ud83d\udcbb A monkey that makes lights blink\r\n\r\n@ecmaos \r\n@intellibrix \r\n@aige-games ",
+            "public_repos": 84,
+            "followers": 646,
+            "following": 1440,
+            "created_at": "2014-05-05T03:24:51Z",
+            "updated_at": "2026-06-03T17:02:42Z",
+            "html_url": "https://github.com/mathiscode",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7484457?v=4",
+            "repos": [
+              {
+                "name": "mathiscode",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-06-20T16:33:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "codebase-scanner",
+                "description": "Scan a codebase for malware signatures",
+                "stargazers_count": 44,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-11T21:24:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gemini-dock",
+                "description": "An extensible Gemini server written in TypeScript",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-06T21:15:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vscode-containers",
+                "description": "Container Tools Extension for Visual Studio Code",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-29T02:27:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "password-leak",
+                "description": "A library to check for compromised passwords",
+                "stargazers_count": 98,
+                "language": "CSS",
+                "pushed_at": "2026-06-14T01:04:56Z",
+                "fork": false,
+                "topics": [
+                  "haveibeenpwned",
+                  "javascript-library",
+                  "password-safety",
+                  "security-tools"
+                ]
+              },
+              {
+                "name": "awesome-gemini",
+                "description": "A collection of awesome things regarding the gemini protocol ecosystem.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2026-05-22T22:10:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fortunes-mechanicus",
+                "description": "Adeptus Mechanicus quotes for fortune-mod",
+                "stargazers_count": 39,
+                "language": null,
+                "pushed_at": "2023-05-15T16:07:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gasm",
+                "description": "gASM (Graph Assembly) is a virtual architecture and Instruction Set Architecture (ISA) designed to treat the graph as the primary native memory unit. By shifting away from linear, numeric memory addressing to associative, topological navigation, gASM bridges the semantic gap between high-level data models and low-level execution.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-03-15T22:06:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-kernel-explorer",
+                "description": "Explore the Linux kernel source code with AI-generated summaries",
+                "stargazers_count": 32,
+                "language": "Python",
+                "pushed_at": "2024-12-20T22:41:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stop-spam-followers",
+                "description": "An open plea to GitHub to address the rising tide of spam bot followers and engagement farming",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-02-05T20:49:25Z",
+                "fork": false,
+                "topics": [
+                  "followers",
+                  "github",
+                  "spam",
+                  "stars"
+                ]
+              },
+              {
+                "name": "aige",
+                "description": "AI Game Engine",
+                "stargazers_count": 13,
+                "language": "TypeScript",
+                "pushed_at": "2024-03-16T17:08:22Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "artificial-intelligence",
+                  "chatgpt",
+                  "game-development",
+                  "game-engine",
+                  "large-language-models",
+                  "openai",
+                  "openai-api"
+                ]
+              },
+              {
+                "name": "zenfs-playground",
+                "description": "A playground for exploring ZenFS",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-02T03:08:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pucc",
+                "description": "Power User Console Component - A browser console command system library",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-21T22:01:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ecmaos",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-01-31T19:44:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vim.wasm",
+                "description": "Vim editor ported to WebAssembly",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-28T15:09:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ecmaos-git-test",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-27T04:39:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "reactify-boilerplate",
+                "description": "A quickstart boilerplate using React & Restify",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-16T16:12:29Z",
+                "fork": false,
+                "topics": [
+                  "animatecss",
+                  "boilerplate",
+                  "bootstrap",
+                  "bootswatch",
+                  "font-awesome",
+                  "i18n",
+                  "mongodb",
+                  "nodejs",
+                  "react",
+                  "react-router",
+                  "redux",
+                  "restify"
+                ]
+              },
+              {
+                "name": "zenfs-dom",
+                "description": "DOM backends for ZenFS",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-17T17:00:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zenfs-core",
+                "description": "A filesystem, anywhere.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-20T01:21:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "run-ancient-unix",
+                "description": "Easily run old versions of UNIX for PDP-11 on modern hardware",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2025-11-20T00:11:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gutenberg",
+                "description": "The Block Editor project for WordPress and beyond. Plugin is available from the official repository.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-13T02:34:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "whogoverns.me",
+                "description": "Get to know your representatives on all levels",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-15T16:03:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-starcharts",
+                "description": "A simple app that displays a GitHub user, organization, or repository's star count in a visually appealing way.",
+                "stargazers_count": 1,
+                "language": "Svelte",
+                "pushed_at": "2025-07-01T22:31:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "run-script-os",
+                "description": "run-script-os will let you use OS specific operations in npm scripts without specifying which OS you are on. It's not magic though... you still have to write OS specific scripts.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-21T11:01:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vscode-remember-desktops",
+                "description": "Restore your editor windows to their last workspace/virtual desktop on Linux",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-21T17:57:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "typescript-sdk",
+                "description": "The official Typescript SDK for Model Context Protocol servers and clients",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-19T13:40:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "exfiltration-detection",
+                "description": "Detect when a lot of data is being sent from your Linux system",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-06T20:44:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "owltrakr-wgu-c971",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2022-06-02T20:19:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "helio-app-quickbooks-api",
+                "description": "Intuit Quickbooks API App for Helio API Boilerplate",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-22T16:54:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web3os",
+                "description": "The OS for Web3",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-03-29T03:07:45Z",
+                "fork": false,
+                "topics": [
+                  "blockchain",
+                  "browser",
+                  "cryptocurrency",
+                  "dapp",
+                  "ethereum",
+                  "javascript",
+                  "operating-system",
+                  "web3",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "moment-holiday",
+                "description": "A Moment.js plugin for handling holidays.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2018-09-04T18:37:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "crewAI",
+                "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-03T18:10:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wgu-capstone-c868",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2022-07-24T20:09:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "helio-app-authentication",
+                "description": "Authentication App for Helio API Boilerplate",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-22T16:48:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "particles.js",
+                "description": "A lightweight JavaScript library for creating particles",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2018-11-23T04:49:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "http-securifier",
+                "description": "A simple proxy to request any HTTP resource through an HTTPS connection",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-09T20:23:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "helio-mod-jokes",
+                "description": "Simple Jokes mod for Helio API Boilerplate",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-03T22:11:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ShenzhenMod",
+                "description": "Mod for SHENZHEN I/O",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2019-07-06T01:06:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-likert-scale",
+                "description": "A React component that renders a Likert scale. It is responsive and accessible.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-10T15:52:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Horoscope-API",
+                "description": "API to get horoscope and other related information.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2020-07-12T04:49:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "electrum",
+                "description": "Electrum; Bitcoin thin client",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2020-11-15T12:50:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vintlo-ftw-daily",
+                "description": "Sharetribe Flex Template for Web",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2020-12-12T17:27:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "atproto",
+                "description": "Social networking technology created by Bluesky",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-28T08:35:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "xterm.js",
+                "description": "A terminal for the web",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-13T03:40:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "em",
+                "description": "A beautiful, minimalistic note-taking app for personal sensemaking.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-23T08:14:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "atproto-website",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-04-29T01:46:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "helio-api-boilerplate",
+                "description": "Extensible backend boilerplate utilizing Express.js, Mongoose, JWT, and User registration/authentication",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-15T14:20:40Z",
+                "fork": false,
+                "topics": [
+                  "api-server",
+                  "boilerplate",
+                  "express",
+                  "jwt",
+                  "mongodb",
+                  "mongoose",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "usb-see",
+                "description": "A simple tool written in C to detect changes in USB devices, and optionally execute a command when a change is detected",
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2024-07-15T16:09:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "google-news-api",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-10-13T12:06:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "good-censor",
+                "description": "A simple text censoring module.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2022-04-28T15:43:28Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:50:11.773147+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

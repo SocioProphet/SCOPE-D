@@ -1,0 +1,91 @@
+{
+  "profileId": "osint-profile-cfcdc129e13d",
+  "target": "FrMahon",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:50.546857+00:00",
+  "completedAt": "2026-06-21T15:30:50.901442+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-264b3d39",
+      "lookupType": "github_context",
+      "target": "FrMahon",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "FrMahon",
+            "name": "Fran Mahon",
+            "type": "User",
+            "company": "@cooperativaObrera",
+            "blog": "",
+            "location": "Argentina",
+            "bio": "\u2716\ufe0f\u200bFull-stack Developer\u3164\u3164\u3164\u3164\u3164\u3164\u3164\r\n\u2716\ufe0f\u200b\u200bData Scientist",
+            "public_repos": 2,
+            "followers": 1804,
+            "following": 3050,
+            "created_at": "2024-05-12T22:16:18Z",
+            "updated_at": "2026-06-19T18:40:05Z",
+            "html_url": "https://github.com/FrMahon",
+            "avatar_url": "https://avatars.githubusercontent.com/u/169620028?v=4",
+            "repos": [
+              {
+                "name": "FrMahon",
+                "description": null,
+                "stargazers_count": 24,
+                "language": null,
+                "pushed_at": "2026-04-19T21:14:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Leetcode-30-Days-of-JavaScript",
+                "description": "This repository contains Leetcode 30 Days of JavaScript Solution using Javascript ",
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-22T23:36:49Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:50.900524+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

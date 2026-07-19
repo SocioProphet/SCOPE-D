@@ -1,0 +1,199 @@
+{
+  "profileId": "osint-profile-304a9eedd051",
+  "target": "nathalylorena",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:04.778582+00:00",
+  "completedAt": "2026-06-21T15:28:05.373411+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-46ae3e13",
+      "lookupType": "github_context",
+      "target": "nathalylorena",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "nathalylorena",
+            "name": "nathaly",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 14,
+            "followers": 4896,
+            "following": 6448,
+            "created_at": "2023-05-20T19:49:48Z",
+            "updated_at": "2025-02-09T23:25:22Z",
+            "html_url": "https://github.com/nathalylorena",
+            "avatar_url": "https://avatars.githubusercontent.com/u/134168418?v=4",
+            "repos": [
+              {
+                "name": "Data-mining",
+                "description": "Lesson-Data-mining",
+                "stargazers_count": 68,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-02T00:27:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data-structure",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2024-06-12T04:36:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "exemplo",
+                "description": null,
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2024-06-12T04:24:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NathalyLorena",
+                "description": null,
+                "stargazers_count": 22,
+                "language": null,
+                "pushed_at": "2025-03-14T01:19:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "data-base",
+                "description": null,
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2024-06-05T23:25:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "programming-logic",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2024-06-04T22:25:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Programming-logic-exercises",
+                "description": null,
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2024-06-02T10:23:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "list-css",
+                "description": null,
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2024-06-02T01:11:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "list-python",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-06-01T02:02:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "list-java",
+                "description": null,
+                "stargazers_count": 23,
+                "language": null,
+                "pushed_at": "2024-06-14T15:23:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "list-c",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2024-05-30T01:52:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "parallel-programming",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "C",
+                "pushed_at": "2024-05-30T02:48:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lesson-javascript",
+                "description": null,
+                "stargazers_count": 20,
+                "language": null,
+                "pushed_at": "2024-06-14T15:29:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HTML-list",
+                "description": "segundo",
+                "stargazers_count": 14,
+                "language": "HTML",
+                "pushed_at": "2024-05-28T01:51:09Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:05.372921+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

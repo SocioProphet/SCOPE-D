@@ -1,0 +1,127 @@
+{
+  "profileId": "osint-profile-44229074cd21",
+  "target": "sarahdanesh",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:10.053261+00:00",
+  "completedAt": "2026-06-21T15:30:10.545960+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b0e72dfa",
+      "lookupType": "github_context",
+      "target": "sarahdanesh",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "sarahdanesh",
+            "name": "Sarah Danesh",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 6,
+            "followers": 2068,
+            "following": 3987,
+            "created_at": "2024-10-23T08:06:25Z",
+            "updated_at": "2026-01-31T07:54:51Z",
+            "html_url": "https://github.com/sarahdanesh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/186021399?v=4",
+            "repos": [
+              {
+                "name": "ai-directories",
+                "description": "An awesome list of best top AI directories to submit your ai tools",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-11T06:26:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-saas-directories",
+                "description": "A curated list of directories and platforms to launch and promote your SaaS product ",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-11-26T21:31:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-marketing",
+                "description": "A curated list of awesome marketing tools and resources",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-01-02T17:09:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-launch-platforms",
+                "description": "Curated list of platforms where you can launch, promote, and showcase your startup, product, or side project.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-06-02T21:55:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sarahdanesh",
+                "description": "My bio",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-06T16:03:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-ai-coding-tools",
+                "description": "A curated list of AI-powered coding tools",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-06T06:25:52Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:10.545058+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

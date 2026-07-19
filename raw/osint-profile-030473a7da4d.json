@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-030473a7da4d",
+  "target": "HEALTH-LEDGER",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:04.163357+00:00",
+  "completedAt": "2026-06-21T15:31:04.482823+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a94014b4",
+      "lookupType": "github_context",
+      "target": "HEALTH-LEDGER",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "HEALTH-LEDGER",
+            "name": "  `     \u3003\u3164\ud835\udc3b\ud835\udc52\ud835\udcb6\ud835\udcc1\ud835\udcc9\ud835\udcbd \ud835\udc3f\ud835\udc52\ud835\udcb9\ud835\udc54\ud835\udc52\ud835\udcc7 ``\u3164\u3164\u3164\u3164`\u3164\u3164\u3164   \u2022 \ud835\udc43\ud835\udc5c\ud835\udc60\ud835\udc61\ud835\udc52\ud835\udc5f \ud835\udc35\ud835\udcb6\ud835\udcc3\ud835\udcb9. \ud835\udc49\ud835\udc3a\ud835\udc45\ud835\udc42\ud835\udc34!!  \u3164.\u3164\u3164\u3164\u02cf\u02cb\u00b0 \u2500\u2500\u2500 \uff65 .* :  . \u2500\u2500\u2500",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "\ud835\udc37\ud835\udc52\ud835\udc59\ud835\udc61\ud835\udc4e\ud835\udc5f\ud835\udc62\ud835\udc5b\ud835\udc52 \ud835\udc46\ud835\udc4e\ud835\udc53\ud835\udc52 \ud835\udcc8\ud835\udccb\ud835\udc52\ud835\udcc7. \ud835\udcb1\ud835\udcbe\ud835\udc52\ud835\udcc9\ud835\udcc3\ud835\udcb6\ud835\udcc2\ud835\udc52\ud835\udcc8\ud835\udc52 \ud835\udcc8\ud835\udc52\ud835\udccb\ud835\udc52\ud835\udcc7 \ud835\udc39\ud835\udcaa\ud835\udc45\ud835\udcae\ud835\udc9c\ud835\udca6\ud835\udc38\ud835\udca9 \ud835\udcb6\ud835\udcc7\ud835\udc52",
+            "bio": "\u02cf\u2e09\u02cb  ` \u2508     \u2508     \u2508     \u22de \u2329 @J0HNUTT   main \u232a \u22df   \u3164\u3164\u3164\u3164 \u00b8\u00b8\u266c\u00b7\u00af\u00b8 \u3164\u3164\u3164\u3164\u00b8\u00b8\u00af\u00b7\u2669\u00b8\r\n\r\n\u3164\u3164\u3164\u3164.\u2022   \ud835\udcb7\ud835\udcb6\ud835\udcb9 \ud835\udc54\ud835\udcbe\ud835\udcc7\ud835\udcc1, \ud835\udcb7\ud835\udcb6\ud835\udcb9 \ud835\udc54\ud835\udcbe\ud835\udcc7\ud835\udcc1 \u3164\u3164\u3164\u3164  \ud835\udc64\u210e\ud835\udc4e\ud835\udc61 \ud835\udc66\ud835\udc5c\ud835\udc62 \ud835\udc54\ud835\udc5c\ud835\udcc3\ud835\udcc3\ud835\udcb6 \ud835\udcb9\ud835\udc5c \ud835\udcc3\ud835\udc5c\ud835\udccc",
+            "public_repos": 1,
+            "followers": 1762,
+            "following": 3997,
+            "created_at": "2026-03-23T12:25:13Z",
+            "updated_at": "2026-06-15T10:08:42Z",
+            "html_url": "https://github.com/HEALTH-LEDGER",
+            "avatar_url": "https://avatars.githubusercontent.com/u/270351252?v=4",
+            "repos": [
+              {
+                "name": "HEALTH-LEDGER",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2026-05-01T02:51:22Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:04.482182+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,505 @@
+{
+  "profileId": "osint-profile-1c9c46eb647f",
+  "target": "abolfazl-shadrouh",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:32.087524+00:00",
+  "completedAt": "2026-06-21T15:32:32.690206+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e747dd31",
+      "lookupType": "github_context",
+      "target": "abolfazl-shadrouh",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "abolfazl-shadrouh",
+            "name": "Abolfazl Shadrouh",
+            "type": "User",
+            "company": "Bachelor of Computer Engineering",
+            "blog": "https://www.shadrouh.ir",
+            "location": "Guilan, Iran",
+            "bio": "All for the betterment of our second world.",
+            "public_repos": 21,
+            "followers": 1383,
+            "following": 2389,
+            "created_at": "2025-05-23T08:07:52Z",
+            "updated_at": "2026-06-19T10:57:28Z",
+            "html_url": "https://github.com/abolfazl-shadrouh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/213025414?v=4",
+            "repos": [
+              {
+                "name": "cafe-menu",
+                "description": "\u2615\ud83c\udf7d\ufe0f Welcome to Cafe/Restaurant online! Explore our menu, make reservations, order online, and discover our cozy ambiance\u2014all in one sleek and user-friendly website. Perfectly designed for food lovers who crave convenience and style.",
+                "stargazers_count": 22,
+                "language": "HTML",
+                "pushed_at": "2026-01-03T12:00:03Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "cafe-website",
+                  "css",
+                  "food-ordering",
+                  "frontend",
+                  "html",
+                  "javascript",
+                  "online-menu",
+                  "responsive-design",
+                  "restaurant-website",
+                  "web-design"
+                ]
+              },
+              {
+                "name": "abolfazl-shadrouh",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2026-05-12T20:48:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Parking-Management-System",
+                "description": "\ud83d\ude97 A simple console-based Parking Management System written in Java. This project is designed for learning Object-Oriented Programming (OOP) concepts and basic Java development.",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2026-05-12T19:36:03Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "cli-application",
+                  "java",
+                  "java-console",
+                  "learning-java",
+                  "oop",
+                  "parking-management-system",
+                  "scanner"
+                ]
+              },
+              {
+                "name": "Student-Management-System",
+                "description": "\ud83c\udf93\u2728 This project is a console-based Student Management System written in Java.  It is designed as a learning-focused project to practice core Java concepts while building a clean and useful application.",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2026-05-12T14:04:29Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "arraylist",
+                  "beginner-project",
+                  "cli-application",
+                  "java",
+                  "java-console",
+                  "learning-java",
+                  "oop",
+                  "scanner",
+                  "student-management-system"
+                ]
+              },
+              {
+                "name": "Zarrineh-Gallery",
+                "description": "\ud83d\udc8e\ud83d\udc8d A modern and responsive jewelry gallery and e-commerce website built to showcase luxury gold jewelry products, services, and brand identity with a clean and elegant user interface.",
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2026-05-12T14:00:03Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "css",
+                  "ecommerce",
+                  "frontend",
+                  "gallery",
+                  "html",
+                  "javascript",
+                  "jewelry",
+                  "netlify",
+                  "portfolio",
+                  "responsive-design",
+                  "shop",
+                  "ui-ux",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "BeautyHub",
+                "description": "\ud83d\udc84 BeautyHub \u2013 Your online destination for cosmetics, skincare, and personal care products!   Explore top-quality products, latest beauty trends, and exclusive offers directly in your browser. \ud83c\udf38\ud83d\udecd\ufe0f   Shop easily with fast, secure, and convenient online ordering. \ud83d\ude80\ud83d\udcb3 ",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-20T00:04:44Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "beauty",
+                  "cosmetics",
+                  "css3",
+                  "e-commerce",
+                  "haircare",
+                  "html5",
+                  "javascript",
+                  "makeup",
+                  "online-shop",
+                  "personal-care",
+                  "shop",
+                  "skincare",
+                  "web-development",
+                  "wellness"
+                ]
+              },
+              {
+                "name": "Snake-Challenge",
+                "description": "\ud83d\udc0d Classic Snake Game \u2013 Navigate your snake, collect food \ud83c\udf4e, and avoid crashing!   Built with HTML, CSS, and JavaScript \ud83c\udfae. Enjoy retro arcade fun directly in your browser! \ud83d\udd79\ufe0f",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-22T09:53:42Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "arcade",
+                  "css3",
+                  "fun",
+                  "game",
+                  "html5",
+                  "javascript",
+                  "retro-game",
+                  "snake-game",
+                  "web-game"
+                ]
+              },
+              {
+                "name": "Modern-Responsive-Website",
+                "description": "Modern Responsive Website \ud83c\udf10 A sleek, fully responsive website built using HTML, CSS, and JavaScript. Optimized for performance, clean design & smooth user experience with interactive navigation, animations, and mobile-first approach.",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2025-09-14T15:26:04Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "css",
+                  "frontend",
+                  "html",
+                  "interactive-design",
+                  "javascript",
+                  "modern-ui",
+                  "responsive-website",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "Green-Leaf",
+                "description": "\ud83c\udf3f Green Leaf \u2013 Your Online Plant Store! \ud83c\udf31 Welcome to Green Leaf, where you can find a wide variety of indoor plants, decorative flowers, and plant care accessories. Bring nature into your home and enjoy a fresh, green, and calming space. \ud83d\udc9a",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2025-12-20T11:47:33Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "backend",
+                  "css3",
+                  "frontend",
+                  "green-leaf",
+                  "html5",
+                  "javascript",
+                  "online-shop",
+                  "online-website",
+                  "plants-store",
+                  "responsive-design",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "registration-system",
+                "description": "\ud83e\uddfe A modern Persian registration management system with admin panel, built using HTML, CSS, and JavaScript.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-12-24T22:44:30Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "admin-dashboard",
+                  "css3",
+                  "form-validation",
+                  "frontend",
+                  "html5",
+                  "javascript",
+                  "localstorage",
+                  "registration-form",
+                  "responsive-ui",
+                  "user-management",
+                  "web-application"
+                ]
+              },
+              {
+                "name": "modern-ecommerce-template",
+                "description": "\ud83d\uded2Modern Ecommerce Template A clean, fully responsive storefront built with HTML5, CSS3, and Vanilla JavaScript. It features a product grid, filters, shopping cart animations & product detail modal \u2014 ideal as a solid starting point for online shop projects or front-end showcases.",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-08T10:56:30Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "css-animations",
+                  "demo",
+                  "ecommerce",
+                  "frontend-template",
+                  "github-pages",
+                  "html5-css3",
+                  "modern-ui",
+                  "product-grid",
+                  "responsive-design",
+                  "shopping-cart",
+                  "storefront",
+                  "vanilla-javascript"
+                ]
+              },
+              {
+                "name": "Chase-Game",
+                "description": "\ud83c\udfae\u2728 Dive into an exciting Scratch game! Chase, collect, and challenge yourself in a fun and interactive 2D world. Designed for players of all ages, with smooth gameplay, increasing difficulty, and endless entertainment.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2025-12-15T02:48:00Z",
+                "fork": false,
+                "topics": [
+                  "2d-game",
+                  "coding-for-kids",
+                  "educational",
+                  "frontend",
+                  "fun",
+                  "game-development",
+                  "interactive",
+                  "play-online",
+                  "scratch-game"
+                ]
+              },
+              {
+                "name": "Space-Shooter",
+                "description": "\ud83d\ude80 Take control of your spaceship and battle relentless waves of enemies in this fast-paced, action-packed space shooter! Dodge, shoot, and survive to achieve the highest score in the galaxy. Built with HTML, CSS, and JavaScript.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-14T15:24:53Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "arcade",
+                  "canvas",
+                  "css",
+                  "frontend",
+                  "game",
+                  "html",
+                  "html5-game",
+                  "interactive",
+                  "javascript",
+                  "space-shooter"
+                ]
+              },
+              {
+                "name": "Minimal-Welcome-Page",
+                "description": "Minimal Welcome Page \u2728 A modern, minimalistic welcome page with user login integration. Displays a personalized greeting for logged-in users with smooth animations and a clean design.",
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2025-09-14T15:45:24Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "css",
+                  "frontend",
+                  "html",
+                  "javascript",
+                  "login-page",
+                  "minimal",
+                  "modern",
+                  "user-auth",
+                  "welcome-page"
+                ]
+              },
+              {
+                "name": "Homepage",
+                "description": "\ud83d\udcbb A sleek and modern developer portfolio with a custom cursor, smooth scroll, and interactive UI.",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2025-10-22T09:47:06Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "bootstrap",
+                  "css3",
+                  "front-end",
+                  "html5",
+                  "javascript",
+                  "portfolio-website",
+                  "responsive-design"
+                ]
+              },
+              {
+                "name": "programming-quiz",
+                "description": "\ud83d\udd25 Challenge yourself and see how well you know Front-End! \ud83d\udcaa\ud83e\udde0 Front-End Quiz Website \u2013 A fun and interactive quiz to test your knowledge of HTML, CSS, and JavaScript!",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2025-10-23T20:13:59Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "coding-challenge",
+                  "css3",
+                  "educational",
+                  "frontend",
+                  "html5",
+                  "interactive-quiz",
+                  "javascript",
+                  "learning-project",
+                  "netlify",
+                  "quiz-app",
+                  "responsive-design",
+                  "ui-design",
+                  "vanilla-js",
+                  "web-application",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "CarMarket",
+                "description": "CarMarket \ud83d\ude97\ud83d\udcbc A modern, user-friendly web application designed to facilitate the buying and selling of cars. With advanced search filters, detailed listings, and a responsive design, CarMarket provides a seamless experience for both buyers and sellers.",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2025-09-25T19:22:28Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "car-marketplace",
+                  "css",
+                  "express",
+                  "fullstack",
+                  "html",
+                  "html-css-javascript",
+                  "javascript",
+                  "mongodb",
+                  "nodejs",
+                  "portfolio-project",
+                  "responsive-design",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "Portfolio",
+                "description": "A modern, responsive personal website featuring smooth animations and a creative Persian typography theme. Built using HTML5, CSS3, FontAwesome, highlighting your skills and projects elegantly.",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2025-09-14T15:29:38Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "animations",
+                  "css",
+                  "frontend",
+                  "html",
+                  "persian-fonts-shabnam",
+                  "personal-website",
+                  "portfolio",
+                  "responsive-design",
+                  "web-development",
+                  "website"
+                ]
+              },
+              {
+                "name": "auth-system",
+                "description": "Auth System \ud83d\udd10 A secure and scalable authentication system built with TypeScript, Node.js, and Express. Features include user registration, login with JWT, password hashing, and role-based access control for admin user management.",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-09-14T15:47:19Z",
+                "fork": false,
+                "topics": [
+                  "abolfazl-shadrouh",
+                  "authentication",
+                  "backend",
+                  "bcrypt",
+                  "express",
+                  "fullstack",
+                  "jwt",
+                  "nodejs",
+                  "security",
+                  "typescript",
+                  "user-management"
+                ]
+              },
+              {
+                "name": "Meteor-Escape",
+                "description": "\ud83d\ude80 Meteor Escape is a fast-paced 2D arcade game where the player must dodge falling meteors and survive as long as possible. The game challenges your reflexes with increasing difficulty, faster meteors, and unexpected obstacles. Can you escape the storm and set a new high score?",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-09-14T15:49:27Z",
+                "fork": false,
+                "topics": [
+                  "2d-game",
+                  "abolfazl-shadrouh",
+                  "arcade",
+                  "browser-game",
+                  "challenge",
+                  "fun",
+                  "game",
+                  "meteor-escape",
+                  "retro",
+                  "scratch"
+                ]
+              },
+              {
+                "name": "Calculator",
+                "description": "\ud83e\uddee Smart, fast, and easy-to-use calculator \u2013 perform basic and advanced calculations directly in your browser. Clean design, instant results, and perfect for students, developers, and anyone who loves efficiency in math!",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-09-14T15:56:05Z",
+                "fork": false,
+                "topics": [
+                  "calculator",
+                  "css",
+                  "frontend",
+                  "html",
+                  "interactive",
+                  "javascript",
+                  "math-tool",
+                  "productivity",
+                  "responsive",
+                  "web-calculator"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:32.689415+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

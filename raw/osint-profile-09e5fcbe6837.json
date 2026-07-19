@@ -1,0 +1,72 @@
+{
+  "profileId": "osint-profile-09e5fcbe6837",
+  "target": "piupauspide",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:35.028140+00:00",
+  "completedAt": "2026-06-21T15:32:35.313652+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-57cc741a",
+      "lookupType": "github_context",
+      "target": "piupauspide",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "piupauspide",
+            "name": "\ud801\ude81\u2506\ud835\udc0f\ud835\udc08\ud835\udc03\ud835\udc04 \u00b7 \ufffd ",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "\u0e5bUnder the trees ",
+            "bio": "\u2605 follow back ",
+            "public_repos": 0,
+            "followers": 1369,
+            "following": 3812,
+            "created_at": "2024-12-27T13:13:57Z",
+            "updated_at": "2025-07-26T03:58:23Z",
+            "html_url": "https://github.com/piupauspide",
+            "avatar_url": "https://avatars.githubusercontent.com/u/192977895?v=4",
+            "repos": [],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:35.312813+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

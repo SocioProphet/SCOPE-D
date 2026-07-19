@@ -1,0 +1,239 @@
+{
+  "profileId": "osint-profile-8a997963470b",
+  "target": "Chamepp",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:41.031168+00:00",
+  "completedAt": "2026-06-21T15:32:41.645480+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c17fcc0d",
+      "lookupType": "github_context",
+      "target": "Chamepp",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Chamepp",
+            "name": "Ashkan Ebtekari",
+            "type": "User",
+            "company": null,
+            "blog": "ashkan-ebtekari.com",
+            "location": "Netherlands",
+            "bio": "Helping companies to get a leg up in the software market | OSS Contributor @Apple | Community Leader @Micorsoft | Author @freeCodeCamp",
+            "public_repos": 15,
+            "followers": 1335,
+            "following": 989,
+            "created_at": "2019-10-11T12:29:24Z",
+            "updated_at": "2026-04-19T12:29:55Z",
+            "html_url": "https://github.com/Chamepp",
+            "avatar_url": "https://avatars.githubusercontent.com/u/56440241?v=4",
+            "repos": [
+              {
+                "name": "Daily.py",
+                "description": ":telescope: Daily Useful Scripts",
+                "stargazers_count": 111,
+                "language": "Python",
+                "pushed_at": "2023-08-05T11:34:55Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "python",
+                  "script"
+                ]
+              },
+              {
+                "name": "Uber-Clone",
+                "description": "The uber application clone",
+                "stargazers_count": 4,
+                "language": "Swift",
+                "pushed_at": "2024-09-14T08:37:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Chamepp",
+                "description": "My journey",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-07-21T09:12:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BookTalk",
+                "description": ":rocket: BookTalk is an ebook management platform.",
+                "stargazers_count": 16,
+                "language": "Ruby",
+                "pushed_at": "2023-06-06T06:29:30Z",
+                "fork": false,
+                "topics": [
+                  "bundler",
+                  "gems",
+                  "ruby",
+                  "ruby-on-rails",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "swift-argument-parser",
+                "description": "Straightforward, type-safe argument parsing for Swift",
+                "stargazers_count": 0,
+                "language": "Swift",
+                "pushed_at": "2025-10-04T17:52:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SwiftTestGen",
+                "description": "A swift package plugin that generates unit tests with the help of AI",
+                "stargazers_count": 2,
+                "language": "Swift",
+                "pushed_at": "2025-07-22T09:59:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SearchMind",
+                "description": "Context-aware search solution designed to elevate your iOS applications to new heights.",
+                "stargazers_count": 0,
+                "language": "Swift",
+                "pushed_at": "2025-07-20T07:51:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Spotify-Clone",
+                "description": "An iOS app that visually clones Spotify's app and consumes the official Spotify's Web API to show(and play) songs, podcasts, artists and more.",
+                "stargazers_count": 0,
+                "language": "Swift",
+                "pushed_at": "2025-02-20T15:26:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Lollipop",
+                "description": "Lollipop is a blog posting and managing platform built in ruby on rails.",
+                "stargazers_count": 6,
+                "language": "Ruby",
+                "pushed_at": "2023-06-06T06:02:24Z",
+                "fork": false,
+                "topics": [
+                  "blogging",
+                  "css",
+                  "rails",
+                  "ruby",
+                  "ruby-application",
+                  "ruby-on-rails",
+                  "scss"
+                ]
+              },
+              {
+                "name": "Twitter-Clone",
+                "description": "The twitter application clone",
+                "stargazers_count": 2,
+                "language": "Swift",
+                "pushed_at": "2024-09-12T09:30:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fify-Theme",
+                "description": ":rainbow: A visual studio code dark theme",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-06T06:34:55Z",
+                "fork": false,
+                "topics": [
+                  "theme",
+                  "vscode",
+                  "vscode-theme"
+                ]
+              },
+              {
+                "name": "Portfolio",
+                "description": ":sailboat: Portfolio Website",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2023-11-05T10:39:05Z",
+                "fork": false,
+                "topics": [
+                  "portfolio",
+                  "portfolio-website"
+                ]
+              },
+              {
+                "name": "3D-Web-Roadmap",
+                "description": ":star2: 3D web roadmap and resources",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-31T07:00:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HelloWorld",
+                "description": "My first application ever ...",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2023-06-06T06:21:14Z",
+                "fork": false,
+                "topics": [
+                  "first",
+                  "helloworld",
+                  "java",
+                  "java-8",
+                  "javase"
+                ]
+              },
+              {
+                "name": "Colober",
+                "description": ":fire: A service manager platform.",
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2023-06-06T06:13:40Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:41.644715+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

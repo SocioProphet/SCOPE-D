@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-5dceaf0be575",
+  "target": "levonk",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:27.427500+00:00",
+  "completedAt": "2026-06-21T15:32:29.200908+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-9ddeeb39",
+      "lookupType": "github_context",
+      "target": "levonk",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "levonk",
+            "name": "levonk",
+            "type": "User",
+            "company": null,
+            "blog": "https://patreon.com/levonk",
+            "location": null,
+            "bio": null,
+            "public_repos": 97,
+            "followers": 1400,
+            "following": 3616,
+            "created_at": "2010-05-15T17:53:56Z",
+            "updated_at": "2026-06-18T10:47:46Z",
+            "html_url": "https://github.com/levonk",
+            "avatar_url": "https://avatars.githubusercontent.com/u/277861?v=4",
+            "repos": [
+              {
+                "name": "proximityd",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-06-21T08:44:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "levonk-packages",
+                "description": "Packages for OS Level package managers primarily around AI Agent harnass tooling. If you got frustrated with another use of `npm` or `pip` instead of your prefered package manager, this is for you.",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-06-21T08:44:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smartfo",
+                "description": "Smart File Operations - git aware remapping of mv and rm, with optional trash behavior and hooks to finally end AI agent ignoring your rules files",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-06-14T00:41:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "levonk-base-boilerplate",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Jinja",
+                "pushed_at": "2026-06-11T16:06:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "devbox",
+                "description": "Instant, easy, and predictable development environments",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-11T19:44:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "levonk-skills",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-09T16:06:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "infrahub",
+                "description": "Infrastructure Hub ",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-08T08:35:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fallow",
+                "description": "Codebase intelligence for TypeScript and JavaScript. Free static layer: unused code, duplication, circular deps, complexity hotspots, architecture boundaries. Optional paid runtime layer: hot-path review and cold-path deletion evidence from real production traffic. Rust-native, sub-second, zero-config framework support.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-06-03T21:28:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rtk",
+                "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-31T17:01:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "levonk-ai-playground",
+                "description": "model startup scripts and such",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-05-30T23:56:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "openlit",
+                "description": "Open source platform for AI Engineering: OpenTelemetry-native LLM Observability, GPU Monitoring, Guardrails, Evaluations, Prompt Management, Vault, Playground. \ud83d\ude80\ud83d\udcbb Integrates with 50+ LLM Providers, VectorDBs, Agent Frameworks and GPUs.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-31T14:49:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "agentmemory",
+                "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-02T23:57:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pi",
+                "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-28T02:14:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OmniRoute",
+                "description": "Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-29T15:57:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nx",
+                "description": "The Monorepo Platform that amplifies both developers and AI agents. Nx optimizes your builds, scales your CI, and fixes failed PRs automatically. Ship in half the time.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-27T05:49:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Archon",
+                "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-27T16:18:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "levonk-nix-config",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Nix",
+                "pushed_at": "2026-05-26T02:21:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "space-agent",
+                "description": "The agent that re-shapes the Space",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-25T18:24:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "9router",
+                "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-24T20:09:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "handterm",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-22T15:44:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mermaid-rs-renderer",
+                "description": "A fast native Rust Mermaid diagram renderer. No browser required. 500-1000x faster than mermaid-cli.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-22T16:15:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "agentgrep",
+                "description": "CLI-first code search and retrieval for agents",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-05-22T02:23:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jcode",
+                "description": "Coding Agent Harness",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-21T09:34:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "herdr",
+                "description": "agent multiplexer that lives in your terminal.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-05-21T13:06:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "codegraph",
+                "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, and OpenCode \u2014 fewer tokens, fewer tool calls, 100% local",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-21T06:27:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "semble_rs",
+                "description": "Fast, AI-agent-native code search in Rust \u2014 hybrid BM25 + semantic, Tree-sitter AST chunking, dependency & impact analysis. Drop-in replacement for grep/cat/read/ls in Claude Code, Codex, Cursor, Aider, OpenHands.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-15T23:29:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "free-programming-books",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-10-20T23:47:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpSec-Guide",
+                "description": "The Life Operational Security (OpSec) Guide provides invaluable insights and actionable recommendations for individuals seeking to enhance their privacy, anonymity, and security in their personal and professional lives. By implementing robust measures to mitigate the risk of tracking and mass surveillance, individuals can safeguard their sensitive.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-17T19:46:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "refugiOS",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-05-29T16:06:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fortune",
+                "description": "Fortune Data Files",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-01-30T01:19:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tkr",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2026-04-23T02:49:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Maven-with-Proxy",
+                "description": "Docker Image that support Maven's proxy configuration over environment variables.",
+                "stargazers_count": 2,
+                "language": "Makefile",
+                "pushed_at": "2017-04-08T18:26:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-java",
+                "description": "A curated list of awesome frameworks, libraries and software for the Java programming language.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2018-07-12T20:44:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-static-analysis",
+                "description": "A curated list of static analysis tools, linters and code quality checkers for various programming languages",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2016-11-15T20:24:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "levonk-ansible-galaxy",
+                "description": "Ansible galaxy Repo",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2025-12-09T09:34:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "project-lint",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2026-04-07T15:09:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "addon-boilerplate",
+                "description": "Addon Boilerplate is a starter template for creating browser extensions that simplifies development by providing a ready-made structure and tools. It is designed for building extensions that support the following browsers: Chrome, Firefox, Edge, Opera, Safari, and Brave.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-11T16:47:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "add-skill",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-05T16:39:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "remote-agentic-coding-system",
+                "description": "Remote Coding Agent for the Dynamous Agentic Coding Course and special Black Friday livestream. Connect Claude Code or Codex to Slack, Telegram, GitHub, etc.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-29T12:35:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "apmw",
+                "description": "All Node Package Manager wrapper. Automatically detects current package manager and wraps the other tools with `pnpm` commands.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-27T08:50:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ohmyzsh",
+                "description": "\ud83d\ude43   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-09-27T23:30:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "claude-code-templates",
+                "description": "CLI tool for configuring and monitoring Claude Code",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-09-27T23:32:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "agents",
+                "description": "A collection of production-ready subagents for Claude Code",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-09-27T23:35:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "FleetCode",
+                "description": "Light-weight control pane to run CLI coding agents(Claude Code, Codex) in parallel",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-11T00:41:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bytebot",
+                "description": "Bytebot is a self-hosted AI desktop agent that automates computer tasks through natural language commands, operating within a containerized Linux desktop environment.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-08T19:03:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SurfSense",
+                "description": "Open Source Alternative to NotebookLM / Perplexity, connected to external sources such as Search Engines, Slack, Linear, Jira, ClickUp, Confluence, Notion, YouTube, GitHub, Discord and more. Join our discord: https://discord.gg/ejRNvftDp9",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-08T21:18:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rules_bun",
+                "description": "Bazel rules for working with bun.sh",
+                "stargazers_count": 0,
+                "language": "Starlark",
+                "pushed_at": "2025-10-09T03:21:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BMAD-METHOD",
+                "description": "Breakthrough Method for Agile Ai Driven Development",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-08T02:05:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GitGrow",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-09-09T06:55:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "powerlevel10k",
+                "description": "A Zsh theme",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-08-26T18:39:47Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:29.200345+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

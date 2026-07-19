@@ -1,0 +1,526 @@
+{
+  "profileId": "osint-profile-b058291530cc",
+  "target": "ortonb110",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:32.951668+00:00",
+  "completedAt": "2026-06-21T15:31:35.574433+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6143540b",
+      "lookupType": "github_context",
+      "target": "ortonb110",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ortonb110",
+            "name": "Bright Kobe Orton",
+            "type": "User",
+            "company": null,
+            "blog": "www.kobedev.com",
+            "location": "Accra Ghana",
+            "bio": "Software Engineer",
+            "public_repos": 128,
+            "followers": 1590,
+            "following": 2312,
+            "created_at": "2017-10-21T14:29:11Z",
+            "updated_at": "2026-06-20T12:43:32Z",
+            "html_url": "https://github.com/ortonb110",
+            "avatar_url": "https://avatars.githubusercontent.com/u/32983314?v=4",
+            "repos": [
+              {
+                "name": "react",
+                "description": "The library for web and native user interfaces.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-17T22:51:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Understand-Anything",
+                "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-23T08:10:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hermes",
+                "description": "A JavaScript engine optimized for running React Native.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-29T12:13:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ortonb110",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-05-24T18:19:37Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "cs229-2018-autumn",
+                "description": "All notes and materials for the CS229: Machine Learning course by Stanford University",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-02-14T11:35:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "clients",
+                "description": "Bitwarden client apps (web, browser extension, desktop, and cli).",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-22T23:12:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llama",
+                "description": "Inference code for Llama models",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-01-26T21:42:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tailwindcss",
+                "description": "A utility-first CSS framework for rapid UI development.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-20T16:10:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "open-multi-agent",
+                "description": "Production-grade multi-agent orchestration framework. Model-agnostic, supports team collaboration, task scheduling, and inter-agent communication.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-01T08:25:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "open-ghana-id",
+                "description": "An API Gateway for performing preliminary KYC Identification checks before proceeding to use 3rd party ID verification services like Smile Identity.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-21T08:17:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Microsoft-Activation-Scripts",
+                "description": "Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with advanced troubleshooting.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-17T19:03:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "librepods",
+                "description": "AirPods liberated from Apple's ecosystem.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-30T20:41:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "horilla-hrm",
+                "description": "Horilla is a free and open source HR software.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-30T20:30:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GhostTrack",
+                "description": "Useful tool to track location or mobile number",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-11T15:36:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "terminal-profile",
+                "description": "This is my profile for UNIX (MacOS/Linux) terminals.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-14T03:50:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MacTahoe-gtk-theme",
+                "description": "MacOS Tahoe theme for gtk desktops",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-20T12:57:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MacTahoe-icon-theme",
+                "description": "MacOS Tahoe icon theme for linux",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-20T12:36:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "impeccable",
+                "description": "The design language that makes your AI harness better at design.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-13T03:24:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "test-keys-bright-orton",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-23T23:20:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dub",
+                "description": "Open-source link management infrastructure.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-19T16:09:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "my-test-runner",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-25T19:29:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "resume-lm",
+                "description": "Open-source AI resume builder \u2022 Next.js 15, React 19, Tailwind CSS \u2022 Tailor job-ready resumes in minutes.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-03T03:08:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "josephineasaa",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-20T15:23:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "00-starting-setup",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "EJS",
+                "pushed_at": "2023-04-02T18:34:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tech-test-scannable-repo",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-29T08:25:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "next-tiptap",
+                "description": "Tiptap Editor built with Next.js",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-05T12:20:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "expressjs.com",
+                "description": "The Express.js Website",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-06T10:19:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "node-and-express-app-2024",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-12T15:09:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "magic-8-ball",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Dart",
+                "pushed_at": "2024-06-19T23:07:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple-dice-app-with-dart",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2024-06-18T15:52:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "column-row-challenge",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2024-06-17T14:19:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "css",
+                "description": "Assorted CSS and UI experiments.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-02-18T12:56:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WebGoat",
+                "description": "WebGoat is a deliberately insecure application",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-09-15T10:15:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NES.css",
+                "description": "NES-style CSS Framework | \u30d5\u30a1\u30df\u30b3\u30f3\u98a8CSS\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-17T20:53:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "personal-finance-app",
+                "description": "The app provides an intuitive platform for users to manage their budgets by categorizing expenses as negative and incomes as positive values, ensuring a clear and efficient financial overview.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-09-10T17:50:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "parity-deals-clone",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-24T12:19:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "documenso",
+                "description": "The Open Source DocuSign Alternative.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-08-07T13:10:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Blob",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2023-09-09T14:31:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Interactive-Rating-Component",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-05T21:20:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Markup---14",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2022-03-10T02:02:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Store-API",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-05-01T21:40:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "audiophile-ecommerce-V2",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-11T21:20:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "resume-fullstack-developer",
+                "description": "Your go-to for top-notch tech resumes tailored for full stack developers. Elevate your career! \ud83d\ude80",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-11T18:45:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-profile-readme-generator",
+                "description": "\ud83d\ude80 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-06-08T08:27:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Telescope",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2021-04-27T22:50:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "treemap",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-10T21:26:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "andurar-hotel",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-04T19:17:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "frontend-masters-css",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "SCSS",
+                "pushed_at": "2024-06-17T11:15:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ifma-test",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-03T05:15:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pexels-clone",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-16T22:49:38Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:35.573736+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

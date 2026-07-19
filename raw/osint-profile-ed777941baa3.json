@@ -1,0 +1,508 @@
+{
+  "profileId": "osint-profile-ed777941baa3",
+  "target": "BEPb",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:37.186829+00:00",
+  "completedAt": "2026-06-20T13:52:37.800327+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-79790827",
+      "lookupType": "github_context",
+      "target": "BEPb",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "BEPb",
+            "name": "Andrej Marinchenko",
+            "type": "User",
+            "company": "prohibited by employment contract",
+            "blog": "https://www.linkedin.com/in/andrej-marinchenko-0445b7214/",
+            "location": "Belarus",
+            "bio": "I make simple things with neural networks.",
+            "public_repos": 43,
+            "followers": 25509,
+            "following": 30126,
+            "created_at": "2019-11-03T07:41:52Z",
+            "updated_at": "2026-04-27T07:51:56Z",
+            "html_url": "https://github.com/BEPb",
+            "avatar_url": "https://avatars.githubusercontent.com/u/57312267?v=4",
+            "repos": [
+              {
+                "name": "BEPb",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 3154,
+                "language": "Shell",
+                "pushed_at": "2026-06-20T12:48:18Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Python-100-days",
+                "description": "\u0418\u0437\u0443\u0447\u0438 \u043f\u0438\u0442\u043e\u043d / python \u0437\u0430 100 \u0434\u043d\u0435\u0439",
+                "stargazers_count": 325,
+                "language": "Python",
+                "pushed_at": "2023-05-13T20:55:20Z",
+                "fork": false,
+                "topics": [
+                  "prog",
+                  "programming",
+                  "programming-language",
+                  "python",
+                  "study",
+                  "study-project"
+                ]
+              },
+              {
+                "name": "tryhackme",
+                "description": null,
+                "stargazers_count": 124,
+                "language": "Python",
+                "pushed_at": "2025-04-08T04:16:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "System_monitor",
+                "description": null,
+                "stargazers_count": 64,
+                "language": "Python",
+                "pushed_at": "2024-05-04T13:40:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "image_to_ascii",
+                "description": "Everything is very simple: you either download a picture file or specify its link when running a python script, and output you get a text file, and you can immediately view on the command line how it will look the result of your conversion.",
+                "stargazers_count": 150,
+                "language": "Python",
+                "pushed_at": "2023-04-13T18:09:23Z",
+                "fork": false,
+                "topics": [
+                  "cmd",
+                  "cmdline",
+                  "conversion",
+                  "convert",
+                  "converter",
+                  "gif-to-ascii",
+                  "image-to",
+                  "image-to-text",
+                  "py",
+                  "python",
+                  "python3",
+                  "script",
+                  "video-to-text"
+                ]
+              },
+              {
+                "name": "first-contributions",
+                "description": "\ud83d\ude80\u2728 Help beginners to contribute to open source projects",
+                "stargazers_count": 136,
+                "language": null,
+                "pushed_at": "2023-12-18T10:58:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "README",
+                "description": "All about README.md file markup",
+                "stargazers_count": 111,
+                "language": null,
+                "pushed_at": "2022-06-04T03:31:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-contributions",
+                "description": "If you want to beautify your GitHub activity history",
+                "stargazers_count": 224,
+                "language": "HTML",
+                "pushed_at": "2022-03-06T21:52:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stepik_sql",
+                "description": null,
+                "stargazers_count": 41,
+                "language": null,
+                "pushed_at": "2023-01-01T17:19:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "capcha",
+                "description": "train the neural network for captcha recognition",
+                "stargazers_count": 28,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2021-11-01T18:32:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Profession-WhiteHacker",
+                "description": null,
+                "stargazers_count": 45,
+                "language": null,
+                "pushed_at": "2023-11-21T16:40:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web_crawler",
+                "description": "fast and symple web crawler",
+                "stargazers_count": 57,
+                "language": "HTML",
+                "pushed_at": "2022-03-06T19:58:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "knock",
+                "description": "init",
+                "stargazers_count": 21,
+                "language": "C",
+                "pushed_at": "2023-10-16T13:53:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django-phonebook",
+                "description": "phonebook site on django python",
+                "stargazers_count": 33,
+                "language": "JavaScript",
+                "pushed_at": "2021-11-04T16:15:39Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "phonebook",
+                  "phonebooks",
+                  "python"
+                ]
+              },
+              {
+                "name": "hackerrank_sql",
+                "description": "cracking-the-coding-interview algorithm-challenges coding-challenges hackerrank-sql",
+                "stargazers_count": 54,
+                "language": null,
+                "pushed_at": "2023-02-10T22:24:00Z",
+                "fork": false,
+                "topics": [
+                  "algorithm-challenges",
+                  "algorithms-and-data-structures-30-days-of-code",
+                  "coding-challenges",
+                  "cracking-the-coding-interview",
+                  "data-structures-and-algorithms",
+                  "hackerrank-algorithms-solutions",
+                  "hackerrank-all-solutions",
+                  "hackerrank-challenges",
+                  "hackerrank-practice",
+                  "hackerrank-problem-solutions",
+                  "hackerrank-problem-solving",
+                  "hackerrank-solutions",
+                  "hackerrank-solutions-for-sql",
+                  "hackerrank-solutions-github",
+                  "hackerrank-sql"
+                ]
+              },
+              {
+                "name": "Cyber-Python-MITRE-ATTaCK",
+                "description": null,
+                "stargazers_count": 33,
+                "language": "JavaScript",
+                "pushed_at": "2024-01-24T19:39:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Image_Colorization",
+                "description": null,
+                "stargazers_count": 45,
+                "language": "Python",
+                "pushed_at": "2023-03-21T15:19:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kaggle_titanic",
+                "description": null,
+                "stargazers_count": 49,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-05-17T06:10:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HackingKubernetes",
+                "description": "Hacking Kubernetes",
+                "stargazers_count": 69,
+                "language": null,
+                "pushed_at": "2024-09-16T06:46:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NotePad",
+                "description": null,
+                "stargazers_count": 57,
+                "language": "Python",
+                "pushed_at": "2023-11-24T17:22:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vulnerabilities",
+                "description": null,
+                "stargazers_count": 42,
+                "language": "Python",
+                "pushed_at": "2024-02-12T07:01:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-to-pdf",
+                "description": null,
+                "stargazers_count": 63,
+                "language": "Python",
+                "pushed_at": "2023-03-17T21:20:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kaggle_step_by_step_ConnectX",
+                "description": null,
+                "stargazers_count": 20,
+                "language": "Python",
+                "pushed_at": "2022-02-18T15:45:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pytorch_tutorial",
+                "description": null,
+                "stargazers_count": 38,
+                "language": "Python",
+                "pushed_at": "2022-05-04T16:46:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pornhub_dl_gui",
+                "description": null,
+                "stargazers_count": 78,
+                "language": "Python",
+                "pushed_at": "2022-08-10T04:24:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Morse_code",
+                "description": null,
+                "stargazers_count": 27,
+                "language": "Python",
+                "pushed_at": "2022-04-15T21:44:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kaggle_Stable_Diffusion_Image_to_Prompts",
+                "description": null,
+                "stargazers_count": 36,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-02-25T18:02:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "image_to_prompt",
+                "description": null,
+                "stargazers_count": 45,
+                "language": "Python",
+                "pushed_at": "2023-02-26T07:46:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cpp_stepik",
+                "description": null,
+                "stargazers_count": 28,
+                "language": "C++",
+                "pushed_at": "2023-05-24T16:21:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Programmer_Competency_Matrix",
+                "description": null,
+                "stargazers_count": 44,
+                "language": null,
+                "pushed_at": "2023-03-19T18:52:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Multithreaded_cpp",
+                "description": null,
+                "stargazers_count": 35,
+                "language": "C++",
+                "pushed_at": "2023-11-13T10:35:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bee2evp",
+                "description": null,
+                "stargazers_count": 25,
+                "language": "C",
+                "pushed_at": "2023-10-16T18:10:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kaggle_Housing_Prices",
+                "description": null,
+                "stargazers_count": 30,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-01-29T19:42:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stepik_python",
+                "description": null,
+                "stargazers_count": 26,
+                "language": "Python",
+                "pushed_at": "2022-12-06T19:47:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Phonebook",
+                "description": null,
+                "stargazers_count": 42,
+                "language": "Python",
+                "pushed_at": "2022-07-08T03:49:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Browser",
+                "description": null,
+                "stargazers_count": 36,
+                "language": "Python",
+                "pushed_at": "2022-05-01T14:14:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "training",
+                "description": "Data Scientist cart road ",
+                "stargazers_count": 20,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2021-11-01T18:30:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-bot",
+                "description": "offline bot for game on chrome",
+                "stargazers_count": 50,
+                "language": "Python",
+                "pushed_at": "2022-03-01T05:43:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kaggle_ConnectX",
+                "description": null,
+                "stargazers_count": 22,
+                "language": "Python",
+                "pushed_at": "2022-03-17T21:36:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WMmail",
+                "description": "bot for wmmail.ru on python selenium",
+                "stargazers_count": 21,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2021-11-01T18:29:34Z",
+                "fork": false,
+                "topics": [
+                  "python",
+                  "selenium"
+                ]
+              },
+              {
+                "name": "Kaggle_watson",
+                "description": null,
+                "stargazers_count": 23,
+                "language": "Python",
+                "pushed_at": "2022-01-02T20:21:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kaggle_Sartorius",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2021-12-17T17:36:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Datasets_work",
+                "description": null,
+                "stargazers_count": 20,
+                "language": "Python",
+                "pushed_at": "2022-02-05T18:11:09Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:37.799407+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

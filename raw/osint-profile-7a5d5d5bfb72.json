@@ -1,0 +1,270 @@
+{
+  "profileId": "osint-profile-7a5d5d5bfb72",
+  "target": "HangeZoe",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:45.907786+00:00",
+  "completedAt": "2026-06-21T15:29:46.543659+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-9169d592",
+      "lookupType": "github_context",
+      "target": "HangeZoe",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "HangeZoe",
+            "name": "\u30cf\u30f3\u30b8\u30fb\u30be\u30a8",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Prague, Czech Republic",
+            "bio": "DevOps",
+            "public_repos": 15,
+            "followers": 2346,
+            "following": 2151,
+            "created_at": "2020-01-21T05:32:11Z",
+            "updated_at": "2026-02-02T23:12:42Z",
+            "html_url": "https://github.com/HangeZoe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/60126308?v=4",
+            "repos": [
+              {
+                "name": "js30",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2021-08-15T21:04:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hexlet",
+                "description": "\ud83d\udc9b Here I save the scripts that I wrote during the training on Hexlet.io",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2021-08-20T21:48:30Z",
+                "fork": false,
+                "topics": [
+                  "bash",
+                  "git",
+                  "python",
+                  "study-notes",
+                  "study-task"
+                ]
+              },
+              {
+                "name": "networklessonslabs",
+                "description": "Labs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-18T17:56:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wildlife",
+                "description": "\ud83d\udc9b A simple website created on HTML/CSS based on a Figma template",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2021-08-17T13:53:52Z",
+                "fork": false,
+                "topics": [
+                  "figma",
+                  "html-css",
+                  "lending",
+                  "simple-website"
+                ]
+              },
+              {
+                "name": "human-readable-number",
+                "description": "\ud83d\udc9b Algorithmic task from the RS School",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2021-08-14T20:51:21Z",
+                "fork": false,
+                "topics": [
+                  "challenges-solved",
+                  "javascript",
+                  "study-task"
+                ]
+              },
+              {
+                "name": "python-courses",
+                "description": "\ud83d\udc9b Assignments and notes from courses I have taken",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2021-06-20T17:19:48Z",
+                "fork": false,
+                "topics": [
+                  "challenges-solved",
+                  "python",
+                  "study-task"
+                ]
+              },
+              {
+                "name": "django-blog-template",
+                "description": "\ud83d\udc9b My first Django project :)",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2021-08-13T14:04:14Z",
+                "fork": false,
+                "topics": [
+                  "blog",
+                  "django",
+                  "first-project",
+                  "python"
+                ]
+              },
+              {
+                "name": "learn-to-code-cz-free",
+                "description": "\ud83d\udc9b Jak se nau\u010dit programovat online zdarma?",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2021-04-21T20:25:48Z",
+                "fork": false,
+                "topics": [
+                  "czech-language",
+                  "list-of-links",
+                  "online-education-learning"
+                ]
+              },
+              {
+                "name": "online-zoo",
+                "description": "\ud83d\udc9b This is a zoo website that allows you to see animals in the zoo or in the wild with live cameras",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2021-08-20T21:38:52Z",
+                "fork": false,
+                "topics": [
+                  "html-css-js",
+                  "website"
+                ]
+              },
+              {
+                "name": "HangeZoe",
+                "description": "\ud83d\udc9b Beautiful GitHub profile README.md",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2021-06-09T21:47:41Z",
+                "fork": false,
+                "topics": [
+                  "markdown",
+                  "readme-profile"
+                ]
+              },
+              {
+                "name": "rsschool-cv",
+                "description": "\ud83d\udc9b RS School course assignment: create two CV (Markdown and HTML/CSS)",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2021-07-19T22:23:04Z",
+                "fork": false,
+                "topics": [
+                  "cv",
+                  "html-css",
+                  "markdown",
+                  "study-task"
+                ]
+              },
+              {
+                "name": "django-todo-list",
+                "description": "\ud83d\udc9b Simple Django to-do list app",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2021-06-03T17:02:07Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "django-application",
+                  "django-project",
+                  "python",
+                  "todo",
+                  "todolist",
+                  "todolist-app"
+                ]
+              },
+              {
+                "name": "startupjobs",
+                "description": "\ud83d\udc9b Junior koder for StartupJobs - hiring task",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2021-08-19T21:37:17Z",
+                "fork": false,
+                "topics": [
+                  "entry-test",
+                  "hiring-task",
+                  "html-css-js",
+                  "landing-page",
+                  "tailwindcss",
+                  "test"
+                ]
+              },
+              {
+                "name": "simple-python-projects",
+                "description": "\ud83d\udc9b Simple python projects",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2021-05-19T21:56:35Z",
+                "fork": false,
+                "topics": [
+                  "python",
+                  "simple-apps",
+                  "simple-game-project"
+                ]
+              },
+              {
+                "name": "my-cv",
+                "description": "\ud83d\udc9b My CV made using HTML/CSS",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2021-07-05T08:10:01Z",
+                "fork": false,
+                "topics": [
+                  "cv",
+                  "html-css",
+                  "markdown"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:46.542543+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

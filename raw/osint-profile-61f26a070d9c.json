@@ -1,0 +1,496 @@
+{
+  "profileId": "osint-profile-61f26a070d9c",
+  "target": "Peti6inge",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:17.309965+00:00",
+  "completedAt": "2026-06-21T15:31:18.539829+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-99182d90",
+      "lookupType": "github_context",
+      "target": "Peti6inge",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Peti6inge",
+            "name": "Romain GINHOUX",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "\ud83c\uddeb\ud83c\uddf7 ~ \ud83d\udda5\ufe0f JAVA | C# | JS | PHP and cie \ud83d\udd27",
+            "public_repos": 47,
+            "followers": 1685,
+            "following": 3038,
+            "created_at": "2024-02-03T19:13:49Z",
+            "updated_at": "2026-05-18T19:36:41Z",
+            "html_url": "https://github.com/Peti6inge",
+            "avatar_url": "https://avatars.githubusercontent.com/u/158772591?v=4",
+            "repos": [
+              {
+                "name": "Peti6inge",
+                "description": "My profile README C-:",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2025-04-08T10:17:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cube-Alpha",
+                "description": "Projet Unity 3D / AWS / Azure",
+                "stargazers_count": 11,
+                "language": "C#",
+                "pushed_at": "2025-04-22T06:22:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CubeUnity",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "C#",
+                "pushed_at": "2025-03-22T12:32:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CUBE",
+                "description": "Unity 3D project | Microsoft Azure Playfab",
+                "stargazers_count": 10,
+                "language": "C#",
+                "pushed_at": "2025-03-22T12:23:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "better-fetch",
+                "description": "Advanced fetch wrapper for typescript",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-20T17:08:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ruoyi-ai",
+                "description": "RuoYi AI \u662f\u4e00\u4e2a\u5168\u6808\u5f0f AI \u5f00\u53d1\u5e73\u53f0\uff0c\u65e8\u5728\u5e2e\u52a9\u5f00\u53d1\u8005\u5feb\u901f\u6784\u5efa\u548c\u90e8\u7f72\u4e2a\u6027\u5316\u7684 AI \u5e94\u7528\u3002",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2025-03-30T14:18:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AspNetCoreDiagnosticScenarios",
+                "description": "This repository has examples of broken patterns in ASP.NET Core applications",
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2025-03-22T12:08:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Deep-Live-Cam",
+                "description": "real time face swap and one-click video deepfake with only a single image",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-18T21:30:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dotnet-ai-workshop",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-14T14:22:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "finetrainers",
+                "description": "Memory-optimized training library for diffusion models",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T11:26:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mistral.rs",
+                "description": "Blazingly fast LLM inference.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-03-21T13:58:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-selfhost-docker",
+                "description": "\ud83d\ude80 Curated list of open-source, self-hosted projects deployable with Docker and docker-compose. Your go-to resource for amazing self-hostable software.",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-03-22T12:10:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "calico",
+                "description": "Cloud native networking and network security",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-21T21:43:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dxvk",
+                "description": "Vulkan-based implementation of D3D8, 9, 10 and 11 for Linux / Wine",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-03-21T21:40:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llvm-project",
+                "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-21T21:39:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wpt",
+                "description": "Test suites for Web platform specs \u2014 including WHATWG, W3C, and others",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-21T21:25:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "clash-verge-rev",
+                "description": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-21T21:11:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "codemcp",
+                "description": "Coding assistant MCP for Claude Desktop",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T21:17:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "avante.nvim",
+                "description": "Use your Neovim like using Cursor AI IDE!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T21:11:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AFFiNE",
+                "description": "There can be more than Notion and Miro. AFFiNE(pronounced [\u0259\u2018fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T17:10:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PowerToys",
+                "description": "Windows system utilities to maximize productivity",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-21T20:14:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "star-vector",
+                "description": "StarVector is a foundation model for SVG generation that transforms vectorization into a code generation task. Using a vision-language modeling architecture, StarVector processes both visual and textual inputs to produce high-quality SVG code with remarkable precision.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-20T15:44:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ros-robotics-companies",
+                "description": "A list of robotics companies using the Robot Operating System (ROS and ROS 2). ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-20T16:30:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Harden-Windows-Security",
+                "description": "Harden Windows Safely, Securely using Official Supported Microsoft methods and proper explanation | Always up-to-date and works with the latest build of Windows | Provides tools and Guides for Personal, Enterprise, Government and Military security levels | Read The Rationale https://github.com/HotCakeX/Harden-Windows-Security/blob/main/Rationale.md",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-21T11:48:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LLaMA-Factory",
+                "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-03-21T02:56:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "IronPigeon",
+                "description": "IronPigeon is a decentralized communication protocol that provides high confidentiality and authenticity for the messages.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-08T18:45:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "openwrt",
+                "description": "This repository is a mirror of https://git.openwrt.org/openwrt/openwrt.git It is for reference only and is not active for check-ins.  We will continue to accept Pull Requests here. They will be merged via staging trees then into openwrt.git.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-03-21T11:41:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rakinplaban",
+                "description": "My Github profile. Give a star if u like this \ud83d\ude0a",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T01:50:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cloudstack",
+                "description": "Apache CloudStack is an opensource Infrastructure as a Service (IaaS) cloud computing platform",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-21T15:57:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "angular-cli",
+                "description": "CLI tool for Angular",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-21T16:24:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpenBB",
+                "description": "Investment Research for Everyone, Everywhere.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-21T16:39:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "snakemake",
+                "description": "This is the development home of the workflow management system Snakemake. For general information, see",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-21T13:01:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "source-sdk-2013",
+                "description": "The 2013 edition of the Source SDK",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-08T19:43:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "once_cell",
+                "description": "Rust library for single assignment cells and lazy statics without macros",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-13T18:21:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "compress",
+                "description": "Optimized Go Compression Packages",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-18T10:35:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rnet",
+                "description": "A blazing-fast Python HTTP Client with TLS fingerprint",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T08:01:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "streamlit-pydantic",
+                "description": "\ud83e\ude84 Auto-generate Streamlit UI from Pydantic Models and Dataclasses.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-18T18:31:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flutter_local_notifications",
+                "description": "A Flutter plugin for displaying local notifications on Android, iOS, macOS, Linux and Windows",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-17T21:15:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LLMs-from-scratch",
+                "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T16:29:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cleanrl",
+                "description": "High-quality single file implementation of Deep Reinforcement Learning algorithms with research-friendly features (PPO, DQN, C51, DDPG, TD3, SAC, PPG)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-04T09:24:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ant-design-x-vue",
+                "description": "Ant Design X For Vue. \ud83d\udd25",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T12:15:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "netty-in-action",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-18T03:51:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rocketmq-rust",
+                "description": "\ud83d\ude80Apache RocketMQ build in  Rust\ud83e\udd80. Faster, safer, and with lower memory usage.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T15:22:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zapret-discord-youtube",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-20T15:33:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "markitdown",
+                "description": "Python tool for converting files and office documents to Markdown.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T16:28:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tech-interview-handbook",
+                "description": "\ud83d\udcaf Curated coding interview preparation materials for busy software engineers",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-08T11:04:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fragments",
+                "description": "Open-source Next.js template for building apps that are fully generated by AI. By E2B.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-21T07:28:42Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:18.539013+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

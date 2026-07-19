@@ -1,0 +1,201 @@
+{
+  "profileId": "osint-profile-c55137b20227",
+  "target": "mmertpolat",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:27.090252+00:00",
+  "completedAt": "2026-06-21T15:29:27.600069+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-d0c8bbe7",
+      "lookupType": "github_context",
+      "target": "mmertpolat",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mmertpolat",
+            "name": "Muhammet Mert Polat",
+            "type": "User",
+            "company": "Hayat Finans",
+            "blog": "mertpolat.com.tr",
+            "location": null,
+            "bio": "Software Engineer",
+            "public_repos": 13,
+            "followers": 2627,
+            "following": 56738,
+            "created_at": "2017-01-03T18:59:12Z",
+            "updated_at": "2026-06-13T12:18:03Z",
+            "html_url": "https://github.com/mmertpolat",
+            "avatar_url": "https://avatars.githubusercontent.com/u/24900500?v=4",
+            "repos": [
+              {
+                "name": "ProcessMonitor",
+                "description": "ProcessMonitor",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-29T21:41:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "covid19-turkey-api",
+                "description": "It gives many daily coronavirus data for Turkey as json output.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2022-06-13T16:28:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "doviz365",
+                "description": "Bot software that shares exchange rates on Twitter account every hour",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2021-11-17T17:21:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ezPass",
+                "description": "It is web software that allows you to store your passwords.",
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2021-01-10T00:07:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spotwitter",
+                "description": "Shows your currently playing music on Spotify on your Twitter bio.",
+                "stargazers_count": 70,
+                "language": "PHP",
+                "pushed_at": "2021-02-06T18:08:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spotibuddy",
+                "description": "Spotibuddy allows to show the friend activity of the Spotify application on mobile. You can see your friends' music instantly on mobile.",
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2021-10-27T15:43:31Z",
+                "fork": false,
+                "topics": [
+                  "activity",
+                  "friend",
+                  "friendactivity",
+                  "mobile",
+                  "spotify"
+                ]
+              },
+              {
+                "name": "laravel-jetstream-turkish",
+                "description": "Turkish translation language files for Laravel Jetstream.",
+                "stargazers_count": 2,
+                "language": "Blade",
+                "pushed_at": "2021-05-01T23:56:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ProcessKiller",
+                "description": "A visual studio project that allows you to close the processes you have wrote before with a single click.",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2021-11-19T00:22:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Instagram-API",
+                "description": "Instagram's private API",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2019-07-14T15:29:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mmertpolat",
+                "description": "Github Home Page",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-02-19T23:48:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "koronaguncel-android-app",
+                "description": "koronaguncel.com webview android application",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2020-03-24T15:42:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easync-backup",
+                "description": "Get your full backup with one-click, and upload to Google Drive or remote FTP.",
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2019-05-18T18:58:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "service-tracking-system",
+                "description": "Would you like to provide the service tracking system to your customers? Simple, easy and fast. Just like the cargo tracking system.",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2020-08-28T15:28:23Z",
+                "fork": false,
+                "topics": [
+                  "mysql",
+                  "mysql-database",
+                  "pdo",
+                  "php"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:27.599115+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

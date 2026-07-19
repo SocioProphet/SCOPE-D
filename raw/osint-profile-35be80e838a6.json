@@ -1,0 +1,530 @@
+{
+  "profileId": "osint-profile-35be80e838a6",
+  "target": "robertolima-dev",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:30.815790+00:00",
+  "completedAt": "2026-06-21T15:31:32.948302+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-d8e8780c",
+      "lookupType": "github_context",
+      "target": "robertolima-dev",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "robertolima-dev",
+            "name": "Roberto Lima",
+            "type": "User",
+            "company": "The Coder",
+            "blog": "https://robertolima.vercel.app/",
+            "location": "SP - Brazil",
+            "bio": "Tech Lead & Full Stack Developer\r\nPython & Rust & JavaScript",
+            "public_repos": 125,
+            "followers": 1594,
+            "following": 2330,
+            "created_at": "2018-11-02T11:02:27Z",
+            "updated_at": "2026-06-02T21:12:33Z",
+            "html_url": "https://github.com/robertolima-dev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/44699957?v=4",
+            "repos": [
+              {
+                "name": "rust-py-scheduler",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-06-19T17:14:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust-py-monitor",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-06-19T12:43:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust-py-audit",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-06-19T12:39:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartTestPy",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T21:54:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "text-cleaner-for-py",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T20:51:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scrapy-html",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T20:21:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pdf_to_img_converter",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T20:21:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "excel-toolkit-for-py",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T20:21:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartSecurityPy",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T20:21:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartJsonPy",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T20:20:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "smart-time-py",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T20:20:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TaskFlowPy",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T20:20:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartLogs",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-06-18T20:20:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "robertolima-dev",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-16T14:42:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust_todo",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-06-11T17:11:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "memorust",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2026-06-08T19:38:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "commits-semanticos",
+                "description": "Reposit\u00f3rio com instru\u00e7\u00f5es sobre commit sem\u00e2ntico. Aprenda a escrever commits que sejam claros, concisos e que transmitam o prop\u00f3sito de cada altera\u00e7\u00e3o no c\u00f3digo.",
+                "stargazers_count": 28,
+                "language": null,
+                "pushed_at": "2023-03-06T18:27:10Z",
+                "fork": false,
+                "topics": [
+                  "commit"
+                ]
+              },
+              {
+                "name": "django-usecases",
+                "description": "Advanced Studies with ElasticSearch, Concurrency, Complex Filters, Permissions, WebSocket, Logs, Redis, Kafka, SQS, MongoDB, Throttle, Security Headers, Celery Worker, Celery Beat, Retry Mechanism, and Circuit Breaker",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-08-12T12:32:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rustchain",
+                "description": "RustChain \u2014 Uma Blockchain simples em Rust",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-06-05T18:43:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ecommerce-next",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-19T20:16:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust_bank",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-05-22T17:51:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django_reference",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-12-04T20:05:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testes-container-grid-mui",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2023-08-04T14:39:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "teste-next",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-04-04T16:24:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "funcional-typescript",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2023-03-28T00:03:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-project",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-07-10T23:32:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "contract",
+                "description": "Java application who calculates values \u200b\u200bby contract",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2019-05-05T01:12:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "adonis_api_rest",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-11T13:40:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api-node-express",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T15:48:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webpack-react",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-14T15:12:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "graphql_practice",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-17T12:28:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "knight-front",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Vue",
+                "pushed_at": "2026-02-16T11:41:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "front-listdefaulting",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Vue",
+                "pushed_at": "2026-02-17T11:54:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django_v6_template_auth",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-09-27T16:51:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "account",
+                "description": "Reposit\u00f3rio com projeto Java que simula contas banc\u00e1rias. Conta, Conta Empresarial e Conta Poupan\u00e7a. Aprenda a criar e manipular contas banc\u00e1rias usando Java.",
+                "stargazers_count": 10,
+                "language": "Java",
+                "pushed_at": "2019-05-08T14:02:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust_ecommerce",
+                "description": "A robust e-commerce study application built with Rust, Actix Web, PostgreSQL, MongoDB, and Elasticsearch. Features product management, user authentication, multi-tenancy, and comprehensive error handling.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-08-26T13:25:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust_blockchain",
+                "description": "A lightweight blockchain implementation in Rust with an Actix Web API. Features a UTXO-based transaction model, in-memory mempool, and a development faucet for quickly creating spendable outputs.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-08-13T22:15:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rust-usecases",
+                "description": "A robust and scalable API developed in Rust that showcases best practices for enterprise web applications. The project implements a complete management system for users, courses, and categories with a modular architecture and cutting-edge technologies.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-08-12T12:40:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "actix_web_template",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-06-29T13:09:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api-node-redis-cache",
+                "description": "Este reposit\u00f3rio cont\u00e9m um projeto de aplica\u00e7\u00e3o Node Express usando Redis para cache. O objetivo deste projeto \u00e9 criar uma aplica\u00e7\u00e3o web escal\u00e1vel e de alto desempenho usando Node Express e Redis. O c\u00f3digo inclui exemplos de c\u00f3digo Node Express para configurar o servidor, bem como documenta\u00e7\u00e3o detalhada sobre como usar o Redis para cache.",
+                "stargazers_count": 15,
+                "language": "TypeScript",
+                "pushed_at": "2023-03-09T00:55:31Z",
+                "fork": false,
+                "topics": [
+                  "nodejs",
+                  "redis",
+                  "sequelize",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "rust-practice",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-06-07T18:12:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MachineLearning-TitanicData",
+                "description": "Reposit\u00f3rio com projeto de Machine Learning em Python para an\u00e1lise dos dados do Titanic. Aprenda a usar Python para criar modelos de Machine Learning e analisar os dados do Titanic.",
+                "stargazers_count": 14,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2019-03-08T15:33:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test-python",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-05-15T13:04:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-advanced",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-05-12T20:00:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "teste-cursor-react",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-30T18:53:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scripts-django-setup",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-02-20T20:29:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "next-project",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2021-04-07T01:08:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rented",
+                "description": "Java application with list of rented rooms",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2019-04-29T12:22:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "employee",
+                "description": " Java application who calculates salary based on value per hour, and may have additional for outsourced",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2019-05-08T13:19:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "date",
+                "description": "Java application for handling dates and calendar",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2019-04-30T12:47:53Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:32.947477+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

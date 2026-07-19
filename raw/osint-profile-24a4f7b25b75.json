@@ -1,0 +1,676 @@
+{
+  "profileId": "osint-profile-24a4f7b25b75",
+  "target": "duyu09",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:19.499456+00:00",
+  "completedAt": "2026-06-20T16:49:20.902949+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e4239331",
+      "lookupType": "github_context",
+      "target": "duyu09",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "duyu09",
+            "name": "DU Yu",
+            "type": "User",
+            "company": "Lanzhou Jiaotong University / Qilu University of Technology (\u862d\u5dde\u4ea4\u901a\u5927\u5b78/\u9f4a\u9b6f\u5de5\u696d\u5927\u5b78; \u0110H Giao Th\u00f4ng Lan Ch\u00e2u / \u0110H C\u00f4ng Nghi\u1ec7p T\u1ec1 L\u1ed7)",
+            "blog": "https://faculty.lzjtu.edu.cn/chenmei/en/xsxx/2570/content/1837.htm",
+            "location": "Jinan, Shandong Province, P.R.China / Lanzhou, Gansu Province, P.R.China (\u4e2d\u570b\u5c71\u6771\u7701\u6fdf\u5357\u5e02/\u4e2d\u570b\u7518\u8085\u7701\u862d\u5dde\u5e02; TP.T\u1ebf Nam, T\u1ec9nh S\u01a1n \u0110\u00f4ng, TQ / TP.Lan Ch\u00e2u, T\u1ec9nh Cam T\u00fac, TQ)",
+            "bio": "DU Yu (\u675c\u5b87; \u0110\u1ed6 V\u0169), B.Eng. from Qilu University of Technology; M.Eng. candidate in Computer S.&T. at Lanzhou Jiaotong University. Research focus: TSF / ML / NLP",
+            "public_repos": 49,
+            "followers": 790,
+            "following": 5315,
+            "created_at": "2021-10-20T05:33:22Z",
+            "updated_at": "2026-06-15T16:42:33Z",
+            "html_url": "https://github.com/duyu09",
+            "avatar_url": "https://avatars.githubusercontent.com/u/92843163?v=4",
+            "repos": [
+              {
+                "name": "MKTY-System",
+                "description": "[AI LLM + Medicine and Healthcare] Minh Khoe Tue Y Smart Healthcare System\u3010\u4eba\u5de5\u667a\u80fd\u5927\u6a21\u578b\u4e0e\u533b\u7597\u4fdd\u5065\u6bd5\u4e1a\u8bbe\u8ba1\u9879\u76ee\u3011\u660e\u5eb7\u6167\u533b(MKTY)\u667a\u6167\u533b\u7597\u7cfb\u7edf\uff09",
+                "stargazers_count": 20,
+                "language": "Vue",
+                "pushed_at": "2025-10-26T14:03:52Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-medical",
+                  "bootstrap",
+                  "clip",
+                  "distributed-systems",
+                  "duyu09",
+                  "element-plus",
+                  "emr",
+                  "flask",
+                  "graduation-project",
+                  "llm",
+                  "medical",
+                  "mkty",
+                  "mutimodal",
+                  "mysql",
+                  "python",
+                  "pytorch",
+                  "rabbitmq",
+                  "time-series",
+                  "vue3"
+                ]
+              },
+              {
+                "name": "Duyu09",
+                "description": "GitHub profile of @duyu09",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2026-04-28T23:02:39Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "duyu",
+                  "duyu09",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "Powerload-Classification-and-Prediction-System",
+                "description": "Power Load Classification and Prediction System Based on Deep Learning Algorithms.  \u57fa\u4e8e\u6df1\u5ea6\u5b66\u4e60\u7b97\u6cd5\u7684\u7535\u529b\u8d1f\u8f7d\u5206\u7c7b\u4e0e\u9884\u6d4b\u7cfb\u7edf\uff08\u8be5\u9879\u76ee\u5df2\u53c2\u52a02024\u5e74\u7b2c17\u5c4a\u4e2d\u56fd\u5927\u5b66\u751f\u8ba1\u7b97\u673a\u8bbe\u8ba1\u5927\u8d5b4C2024\uff09",
+                "stargazers_count": 28,
+                "language": "Python",
+                "pushed_at": "2025-10-24T17:56:25Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "cloud-services",
+                  "cplusplus",
+                  "flask",
+                  "powerload",
+                  "python",
+                  "pytorch",
+                  "rabbitmq",
+                  "time-series",
+                  "wechat-mini-program"
+                ]
+              },
+              {
+                "name": "Pinyin2Hanzi_HMM",
+                "description": "\u57fa\u4e8e\u9884\u8bad\u7ec3\u9690\u9a6c\u5c14\u53ef\u592b\u6a21\u578b\u7684\u6c49\u8bed\u62fc\u97f3\u5e8f\u5217\u8f6c\u6c49\u5b57\u8bed\u53e5\u5e8f\u5217\u7a0b\u5e8f  Chinese Pinyin to Chinese Character (Hanzi) Conversion Program Based on Hidden Markov Model (HMM).",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-12-29T15:47:18Z",
+                "fork": false,
+                "topics": [
+                  "chinese",
+                  "chinese-characters",
+                  "hmm",
+                  "hmm-model",
+                  "pinyin",
+                  "pinyin-analysis",
+                  "pinyin2hanzi"
+                ]
+              },
+              {
+                "name": "NPA-Paper-Analyzer-and-Translator",
+                "description": "\u201c\u6838\u52a8\u529b\u201d\u8bba\u6587\u89e3\u6790\u53ca\u7ffb\u8bd1\u5668 [NPA \u201cNuclear Powered\u201d Paper Analyzer and Translator] [NPA \"H\u1ea0T \u0110\u1ed8NG L\u1ef0C\" Tr\u00ecnh Ph\u00e2n T\u00edch v\u00e0 D\u1ecbch Lu\u1eadn V\u0103n]",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-22T15:42:57Z",
+                "fork": false,
+                "topics": [
+                  "gui",
+                  "llm",
+                  "markdown",
+                  "marked-js",
+                  "mathjax",
+                  "mineru",
+                  "paper",
+                  "pdf",
+                  "pywebview",
+                  "translator",
+                  "webview",
+                  "zhipu",
+                  "zhipuai"
+                ]
+              },
+              {
+                "name": "Intelligent-Learning-Platform",
+                "description": "\u6211\u7684\u9752\u6625\u4e0d\u8ff7\u832b-\u57fa\u4e8eLLM\u4e0e\u56de\u5f52\u5206\u6790\u7b97\u6cd5\u7684\u5927\u5b66\u751f\u667a\u80fd\u751f\u6daf\u6307\u5bfc\u4e0e\u5b66\u4e60\u5927\u5e73\u53f0 \u8f6f\u4ef6\u7cfb\u7edf\u9879\u76ee\u6e90\u4ee3\u7801\u3002\u8be5\u9879\u76ee\u5df2\u53c2\u52a02023\u5e74\u7b2c16\u5c4a\u4e2d\u56fd\u5927\u5b66\u751f\u8ba1\u7b97\u673a\u8bbe\u8ba1\u5927\u8d5b4C2023\u3002\uff08\u53ef\u7528\u4e8e\u6bd5\u4e1a\u8bbe\u8ba1\u3001\u8bfe\u7a0b\u8bbe\u8ba1\u7b49\uff09 Source code tree of Intelligent Learning Platform Software System Based on LLM & Regression Analysis (ILP).  This project has participated in the 16th Chinese Collegiate Computing Competition (4C2023) in 2023. ",
+                "stargazers_count": 9,
+                "language": "Java",
+                "pushed_at": "2025-03-25T11:55:09Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "axios",
+                  "chatglm-6b",
+                  "highlight",
+                  "ilp",
+                  "java",
+                  "llm",
+                  "llm-inference",
+                  "mybatis",
+                  "mysql",
+                  "nodejs",
+                  "redis",
+                  "ruoyi",
+                  "springboot",
+                  "springsecurity-jwt",
+                  "study",
+                  "vite",
+                  "vue3"
+                ]
+              },
+              {
+                "name": "s-repo",
+                "description": "Temp Repo",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-15T08:42:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TimeSeries-Forecasting-Dataset",
+                "description": "Time Series Forecasting Benchmark Datasets",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-31T18:34:11Z",
+                "fork": false,
+                "topics": [
+                  "dataset",
+                  "time-series",
+                  "time-series-forecasting"
+                ]
+              },
+              {
+                "name": "Lexipolis-9B-Chat",
+                "description": "\u653f\u6cd5\u667a\u8a00\u5927\u6a21\u578bv1.0\uff08Lexipolis-9B-Chat\uff09",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-11-01T08:00:12Z",
+                "fork": false,
+                "topics": [
+                  "legal",
+                  "llm"
+                ]
+              },
+              {
+                "name": "Electricity-Price-Forecasting",
+                "description": "2025 \"Future Cup\" Big Data Challenge Problem B Open Source Code Weighting and Thesis. 2025\u5e74\u201c\u672a\u6765\u676f\u201d\u5927\u6570\u636e\u6311\u6218\u8d5bB\u9898\u5f00\u6e90\u4ee3\u7801\u6743\u91cd\u53ca\u8bba\u6587\u3002 2025 C\u00fap V\u1ecb Lai Th\u1eed th\u00e1ch D\u1eef li\u1ec7u L\u1edbn B\u00e0i to\u00e1n B: Tr\u1ecdng s\u1ed1 m\u00e3 ngu\u1ed3n m\u1edf v\u00e0 lu\u1eadn v\u0103n.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-01-06T05:12:37Z",
+                "fork": false,
+                "topics": [
+                  "deep-learning",
+                  "duyu09",
+                  "electricity",
+                  "electricity-prices",
+                  "forecasting",
+                  "spectral-clustering",
+                  "time-series-forecasting",
+                  "transformer",
+                  "xgboost"
+                ]
+              },
+              {
+                "name": "Time-Series-Papers-2025-Summary",
+                "description": "\u65f6\u95f4\u5e8f\u5217\u5206\u6790\u65b9\u54112025\u5e74\u5404\u9876\u4f1a\u5f3a\u4f1a\u8bba\u6587\u5206\u6790\u4e0e\u6c47\u603b\u3002Summary & Analysis of Top & Premier Conference Papers in Time Series Analysis in 2025. T\u1ed5ng h\u1ee3p v\u00e0 Ph\u00e2n t\u00edch Lu\u1eadn v\u0103n c\u00e1c H\u1ed9i ngh\u1ecb \u0110\u1ec9nh c\u1ea5p v\u00e0 H\u1ed9i ngh\u1ecb Tr\u1ecdng \u0111i\u1ec3m Ph\u00e2n t\u00edch Chu\u1ed7i Th\u1eddi gian n\u0103m 2025.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-12-15T20:07:30Z",
+                "fork": false,
+                "topics": [
+                  "paper-summaries",
+                  "time-series",
+                  "time-series-analysis",
+                  "time-series-anomaly-detection",
+                  "time-series-classification",
+                  "time-series-clustering",
+                  "time-series-database",
+                  "time-series-forecasting"
+                ]
+              },
+              {
+                "name": "VibCogTriNet",
+                "description": "VibCogTriNet is a model used for bearing fault detection. Result of The 2025 Huawei Cup Graduate Mathematical Contest in Modeling.  \u8ef8\u627f\u6545\u969c\u6aa2\u6e2c\u6a21\u578bVibCogTriNet - 2025\u5e74\u83ef\u70ba\u676f\u7814\u7a76\u751f\u6578\u5b78\u5efa\u6a21\u7af6\u8cfd\u9805\u76ee",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-10-23T20:20:28Z",
+                "fork": false,
+                "topics": [
+                  "bearing-fault-detection",
+                  "deep-learning",
+                  "duyu09",
+                  "huawei-cup",
+                  "mathematical-modelling"
+                ]
+              },
+              {
+                "name": "PCM-Wave-Audio-Embedding-Player",
+                "description": "\u3010\u97f3\u9891\u5d4c\u5165\u64ad\u653e\u5668(PAEP\u8f6f\u4ef6)\u7f16\u8bd1\u751f\u6210\u73af\u5883\u3011\u5c06\u97f3\u9891\u201c\u6253\u5305\u201d\u4e3a\u53ef\u6267\u884c\u6587\u4ef6\uff0c\u4e0d\u4f9d\u8d56\u4efb\u4f55\u5916\u90e8\u64ad\u653e\u5668\u5373\u53ef\u64ad\u653e\u97f3\u9891\u3002",
+                "stargazers_count": 1,
+                "language": "Linker Script",
+                "pushed_at": "2025-10-23T19:54:17Z",
+                "fork": false,
+                "topics": [
+                  "audio",
+                  "executable",
+                  "ffmpeg",
+                  "gcc",
+                  "pyav",
+                  "python"
+                ]
+              },
+              {
+                "name": "Nom-Vietnamese-Corpus",
+                "description": "Kho Ng\u1eef Li\u1ec7u Song Song Ch\u1eef N\u00f4m - Ch\u1eef Qu\u1ed1c Ng\u1eef / \u5583\u5b57-\u570b\u8a9e\u5b57\u5e73\u884c\u8a9e\u6599\u5eab / Corpus of Nom Script - Vietnamese National Script",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-09-18T19:05:18Z",
+                "fork": false,
+                "topics": [
+                  "nom",
+                  "quoc-ngu",
+                  "transcription",
+                  "translation",
+                  "vietnamese"
+                ]
+              },
+              {
+                "name": "QuynhTrang-MV-Lyrics",
+                "description": "\u8d8a\u5357\u6b4c\u624b\u743c\u5e84\uff08Qu\u1ef3nh Trang\uff09MV\u6b4c\u8bcd\u53ca\u6c49\u8bed\u7ffb\u8bd1\uff0c\u6240\u6709\u6b4c\u8bcd\u5747\u4e3aSRT\u683c\u5f0f\u3002L\u1eddi b\u00e0i h\u00e1t MV c\u1ee7a ca s\u0129 Qu\u1ef3nh Trang v\u00e0 b\u1ea3n d\u1ecbch ti\u1ebfng Trung (T\u1ea5t c\u1ea3 l\u1eddi b\u00e0i h\u00e1t \u0111\u1ec1u \u1edf \u0111\u1ecbnh d\u1ea1ng SRT).",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-06-18T21:51:59Z",
+                "fork": false,
+                "topics": [
+                  "chinese",
+                  "lyrics",
+                  "mv",
+                  "srt-subtitles",
+                  "translation",
+                  "vietnamese"
+                ]
+              },
+              {
+                "name": "Pinyin2Hanzi-Transformer",
+                "description": "\u57fa\u4e8eTransformer\u7684\u9884\u8bad\u7ec3\u6c49\u8bed\u62fc\u97f3\u5e8f\u5217\u8f6c\u6c49\u5b57\u5e8f\u5217\u6a21\u578b",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-04-07T19:27:10Z",
+                "fork": false,
+                "topics": [
+                  "chinese",
+                  "chinese-characters",
+                  "pinyin",
+                  "pinyin-analysis",
+                  "pinyin2hanzi",
+                  "transformer"
+                ]
+              },
+              {
+                "name": "DyEncryptor6.0_Plus",
+                "description": "A file-encrypting software",
+                "stargazers_count": 2,
+                "language": "VBA",
+                "pushed_at": "2022-07-03T11:36:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QLU-NLP-Laboratory",
+                "description": "\u9f50\u9c81\u5de5\u4e1a\u5927\u5b66(\u5c71\u4e1c\u7701\u79d1\u5b66\u9662) \u81ea\u7136\u8bed\u8a00\u5904\u7406\u4e0e\u8ba4\u77e5\u8ba1\u7b97\u7814\u7a76\u56e2\u961f\u5b98\u65b9\u7f51\u7ad9 \uff08\u6e90\u4ee3\u7801\u4ed3\u5e93\uff09  Source code tree of official website of Research Group for Natural Language Processing and Cognitive Computing of Qilu University of Technology (Shandong Academy of Sciences)",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2023-09-18T13:10:29Z",
+                "fork": false,
+                "topics": [
+                  "element-ui",
+                  "nlp",
+                  "ruoyi",
+                  "spring-boot",
+                  "vue"
+                ]
+              },
+              {
+                "name": "Audio-Management_Core",
+                "description": "I made some simple python source code for audio management.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2022-07-04T10:32:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Audio-Manager-Devocal-Java",
+                "description": "A software that can cut off the vocal of person written in Java.",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2022-07-11T09:38:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Calendar-swing",
+                "description": "Made a calendar software to practice Java swing.",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2022-07-13T14:17:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "duyu09.github.io",
+                "description": "Website of DuYu.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-01-19T14:21:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LED-Clock",
+                "description": "A kind of front-end LED clock.",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2023-02-09T10:42:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Homework-Collection-Website-of-Web-Course",
+                "description": "Homework Collection Website of Web Course.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-01-30T11:24:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dy-PhotoViewer",
+                "description": "A very simple photo viewer",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2022-01-30T11:50:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DyChat_Software_System",
+                "description": "Simple chating software that is like QQ or WeChat.(version 1.0 Java)",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2022-07-03T11:43:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoCommand",
+                "description": "An automated software that allows people to perform specific operations on their computers easily and quickly (This project has participated in the 2022 National Computer Design Competition for College Students. Without the written authorization of the copyright owner, part or all of the software shall not be modified and published.)",
+                "stargazers_count": 1,
+                "language": "Visual Basic .NET",
+                "pushed_at": "2023-08-22T03:02:04Z",
+                "fork": false,
+                "topics": [
+                  "java",
+                  "pyautogui",
+                  "python3",
+                  "vbnet",
+                  "visual-studio"
+                ]
+              },
+              {
+                "name": "Audio-Processing-Website",
+                "description": "Audio Processing Website based on DAPC.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-05-15T16:23:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CountDown-Software",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Visual Basic .NET",
+                "pushed_at": "2022-07-03T11:41:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Language-Model-Study",
+                "description": "\u521d\u5b66NLP:\u5b66\u4e60\u81ea\u5df1\u642d\u5efa\u7b80\u5355\u7684\u8bed\u8a00\u6a21\u578b",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-01-12T06:43:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DAPC-Download-Website",
+                "description": "Offical download website of DAPC software system. ",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2023-07-06T16:19:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Duyu-Audio-Processor-Core",
+                "description": "Source code tree of Duyu Audio Processor Core. Based on Numpy, Scipy, Sonic Library and FFmpeg. It can process mainstream format audio files, such as: transform sampling format, gain attenuation, channel mixing, reverberation echo effect, adjust speed and tone, cut, blend, add mute, fade in fade out effect, FFT filter, 3D surround sound effect,etc.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2023-12-07T06:36:05Z",
+                "fork": false,
+                "topics": [
+                  "audio-processing",
+                  "ffmpeg",
+                  "numpy",
+                  "python",
+                  "scipy"
+                ]
+              },
+              {
+                "name": "weather_manage_system",
+                "description": "2024\u5e7406\u6708\u5b9e\u8bad\u4f5c\u4e1a\uff1a\u5929\u6c14\u7ba1\u7406\u7cfb\u7edf",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-29T08:00:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Offical-Website-of-PILIT-Project",
+                "description": "Offical Website of PROFESSIONALIZE IN LIGHT INDUSTRY TRANSLATION Project. (\u9f50\u9c81\u5de5\u4e1a\u5927\u5b66(\u5c71\u4e1c\u7701\u79d1\u5b66\u9662) \u201c\u5c71\u4e1c\u8f7b\u8bd1\u7ffb\u8bd1\u201d\u9879\u76ee\u7f51\u7ad9\u524d\u7aef)",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2024-07-05T20:06:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Music",
+                "description": "Some Music.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-06-23T16:28:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NetDisk",
+                "description": "Duyu09\u7684\u7b80\u6613\u7f51\u76d8Python\u9879\u76ee\uff0c\u5b9e\u73b0\u4e86\u6587\u4ef6\u6536\u53d1\u529f\u80fd\u3002Duyu09's simple cloud storage (net disk) Python project implements file sending and receiving functions. D\u1ef1 \u00e1n Python l\u01b0u tr\u1eef \u0111\u00e1m m\u00e2y \u0111\u01a1n gi\u1ea3n c\u1ee7a Duyu09 \u0111\u00e3 th\u1ef1c hi\u1ec7n ch\u1ee9c n\u0103ng g\u1eedi v\u00e0 nh\u1eadn t\u1eadp tin.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-12-17T15:54:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SIMS-system-Java",
+                "description": "Student Information Management System (Java Version)  \u7528Java\u5b9e\u73b0\u7684\u5e26GUI\u7684\u5b66\u751f\u4fe1\u606f\u7ba1\u7406\u7cfb\u7edf\uff0c\u53ef\u4ee5\u5b9e\u73b0\u5bf9\u6570\u636e\u5e93\u57fa\u672c\u7684CRUD\u64cd\u4f5c\u3002",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2023-08-21T03:00:22Z",
+                "fork": false,
+                "topics": [
+                  "java",
+                  "management-system",
+                  "mysql"
+                ]
+              },
+              {
+                "name": "Unified-Assignment-Submission-Platform",
+                "description": "Unified Assignment Submission Platform. (Web application)",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-03-17T18:04:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Monitor6.0",
+                "description": "A software that can monitor the behavior of the computer and it can take timed screenshots.",
+                "stargazers_count": 1,
+                "language": "VBA",
+                "pushed_at": "2022-06-25T14:09:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Some-Algorithms",
+                "description": "Some Algorithms",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2022-06-20T06:21:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DuyuExplorer",
+                "description": "An explorer software that can manage file resource.",
+                "stargazers_count": 1,
+                "language": "VBA",
+                "pushed_at": "2022-04-22T01:20:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SIMS-system",
+                "description": "Student Information Management System (CPP version)",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2022-07-03T11:40:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SoftwarePromote",
+                "description": "A \"software promotion\" popover program",
+                "stargazers_count": 1,
+                "language": "VBA",
+                "pushed_at": "2022-07-03T11:40:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MediaPlayer3.0",
+                "description": "A simple media player that can display lyrics for karaoke.",
+                "stargazers_count": 1,
+                "language": "VBA",
+                "pushed_at": "2022-07-03T11:42:32Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "DyEnc_BatFile",
+                "description": "A batch file which is used to encrypt files or directories.",
+                "stargazers_count": 1,
+                "language": "Batchfile",
+                "pushed_at": "2022-07-03T11:50:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DownloadPage_of_DyAudioProcessor",
+                "description": "A HTML File for download my audio edit software.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2022-07-03T13:24:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DyDevocal",
+                "description": "A software that can cut vocal",
+                "stargazers_count": 1,
+                "language": "VBA",
+                "pushed_at": "2022-07-04T12:04:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "File-Destroy-Module-Core",
+                "description": "File Destroy Module Core, This module is developed using C++ language. It can be used in DyEncryptor Software System or other software.  It can also be used alone.",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2022-08-25T15:52:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NLP-DataSet-of-Emotion-Analysing",
+                "description": "Emotion analyse data sets for natural language processing.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-02-13T14:05:45Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:20.901689+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,820 @@
+{
+  "profileId": "osint-profile-946ce9220a0c",
+  "target": "CursedPrograms",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:23.852632+00:00",
+  "completedAt": "2026-06-21T15:30:26.036515+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-501df72f",
+      "lookupType": "github_context",
+      "target": "CursedPrograms",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "CursedPrograms",
+            "name": "Cursed Entertainment",
+            "type": "User",
+            "company": "@Cursed-Entertainment @SynthWomb ",
+            "blog": "https://cursed-entertainment.itch.io/",
+            "location": null,
+            "bio": "It's Damn Fun\r\n@Cursed-Entertainment \r\nGames . Augmented Reality . AI . Software",
+            "public_repos": 133,
+            "followers": 1978,
+            "following": 4395,
+            "created_at": "2022-07-31T15:11:26Z",
+            "updated_at": "2026-04-07T19:05:27Z",
+            "html_url": "https://github.com/CursedPrograms",
+            "avatar_url": "https://avatars.githubusercontent.com/u/110344485?v=4",
+            "repos": [
+              {
+                "name": "AR-Python-OpenCV",
+                "description": "Augmented Reality with Python. Aruco Markers & OpenCV",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-06-11T17:28:36Z",
+                "fork": false,
+                "topics": [
+                  "aruco",
+                  "aruco-marker-detection",
+                  "aruco-markers",
+                  "aruco-markers-detection",
+                  "augmented-reality",
+                  "augmented-reality-applications",
+                  "matplotlib",
+                  "numpy",
+                  "opencv",
+                  "python"
+                ]
+              },
+              {
+                "name": "ARM-Robot-v01",
+                "description": "6 DOF Arm (270 Degree Servos)",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-06-09T16:43:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MILA",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-06-09T16:34:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Roop-FaceSwap",
+                "description": "Roop FaceSwap ",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2025-05-04T23:48:06Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "deepfake",
+                  "faceswap",
+                  "faceswapai",
+                  "python",
+                  "roop",
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "NORA-Robot-v00",
+                "description": "NORA is an omnidirectional mobile robot platform built around the ESP32, featuring 4-wheel independent drive, ultrasonic obstacle detection in all directions, and UV light capabilities. The robot creates its own WiFi access point for remote control and monitoring.",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-05-15T11:59:45Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "esp32",
+                  "mecanum",
+                  "mecanum-car",
+                  "mecanum-wheels",
+                  "mecanumwheels",
+                  "robot",
+                  "robotics"
+                ]
+              },
+              {
+                "name": "DREAM",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-27T20:10:00Z",
+                "fork": false,
+                "topics": [
+                  "agentic-consciousness",
+                  "chatbot",
+                  "chatbot-application",
+                  "emergent-behavior",
+                  "llm",
+                  "localai",
+                  "ollama",
+                  "piper",
+                  "piper-tts",
+                  "robot-controller",
+                  "whisper",
+                  "whisper-ai"
+                ]
+              },
+              {
+                "name": "syntaxia-structura",
+                "description": "A tag-based, indentation-sensitive, C-operator language for interactive documents.",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-04-23T20:45:15Z",
+                "fork": false,
+                "topics": [
+                  "custom",
+                  "custom-language",
+                  "customlanguage",
+                  "deterministic-lang",
+                  "deterministic-language",
+                  "deterministic-programming",
+                  "document-designer",
+                  "document-language",
+                  "languagedesign",
+                  "markup"
+                ]
+              },
+              {
+                "name": "Gender-Age-ID",
+                "description": "This project utilizes the DeepFace library along with OpenCV to extract gender information from an input. The gender prediction results are printed.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-04-21T19:12:44Z",
+                "fork": false,
+                "topics": [
+                  "age-detector",
+                  "age-determination",
+                  "deep-face",
+                  "deep-face-api",
+                  "gender",
+                  "gender-classification",
+                  "gender-detection",
+                  "opencv",
+                  "python",
+                  "webcam"
+                ]
+              },
+              {
+                "name": "KIDA-Robot-v00",
+                "description": "A Raspberry Pi 3 robot is a small programmable robot powered by a Raspberry Pi 3 Model B, used as its main brain.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-22T16:30:16Z",
+                "fork": false,
+                "topics": [
+                  "pi3",
+                  "python",
+                  "robot",
+                  "robot-control",
+                  "robotics",
+                  "robotics-programming"
+                ]
+              },
+              {
+                "name": "media_player",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-04-21T08:39:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RIFT",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-19T21:43:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Image-Generator",
+                "description": "This project leverages the SDXL-Turbo model for versatile image processing tasks. Offering a simple command-line interface, it facilitates both Text-to-image and Image-to-image operations. Users select an operation, input prompts, and the script dynamically generates and executes code snippets. ",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-04-16T21:52:42Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-art",
+                  "art",
+                  "art-generation",
+                  "artificial-intelligence",
+                  "image-generation",
+                  "image-generation-ai",
+                  "image-generators",
+                  "json",
+                  "prompt-engineering",
+                  "prompt-injection",
+                  "sdxl",
+                  "self-prompting",
+                  "stablediffusion"
+                ]
+              },
+              {
+                "name": "Cursed-GPT",
+                "description": "CursedGPT leverages the Hugging Face Transformers library to interact with a pre-trained GPT-2 model. It employs TensorFlow for model management and AutoTokenizer for efficient tokenization. The script enables users to input prompts interactively, generating text responses from the GPT-2 model. ",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2026-04-16T21:52:16Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-chatbot",
+                  "chat",
+                  "chatbot",
+                  "css",
+                  "flask",
+                  "gpt",
+                  "gpt-2",
+                  "html",
+                  "huggingface",
+                  "pretrained-transformers",
+                  "python",
+                  "speech-to-text",
+                  "talking",
+                  "text",
+                  "text-generation",
+                  "text-to-speech",
+                  "transformer",
+                  "transformers",
+                  "webcam"
+                ]
+              },
+              {
+                "name": "Python-Template",
+                "description": "Template for Python Projects",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-04-16T21:51:56Z",
+                "fork": true,
+                "topics": [
+                  "python-3",
+                  "python3",
+                  "template-project"
+                ]
+              },
+              {
+                "name": "Detect-Face",
+                "description": "This project utilizes the OpenCV and Pillow (PIL) libraries to detect faces in images and webcam feeds, marking them with rectangles. The detected faces are saved in a specified output directory. The detected faces are saved in a specified output directory.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-04-16T21:44:07Z",
+                "fork": false,
+                "topics": [
+                  "face-detection",
+                  "facial-recognition",
+                  "opencv",
+                  "python",
+                  "webcam-capture",
+                  "webcam-face-detection"
+                ]
+              },
+              {
+                "name": "qr-code-creator",
+                "description": "HTML QR Code Creator",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-04-16T21:28:36Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "js",
+                  "qrcode-generator"
+                ]
+              },
+              {
+                "name": "GloriosaAI",
+                "description": "GloriosaAI is a versatile Python codebase that includes a Generative Adversarial Network (GAN) for the training and generation of AI art.",
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2026-04-04T07:14:27Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "art",
+                  "artificial-neural-networks",
+                  "gan",
+                  "generative-adversarial-network",
+                  "matplotlib",
+                  "numpy",
+                  "pillow",
+                  "python",
+                  "tensorflow"
+                ]
+              },
+              {
+                "name": "CursedPrograms",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 12,
+                "language": "Markdown",
+                "pushed_at": "2026-04-16T06:50:47Z",
+                "fork": false,
+                "topics": [
+                  "readme",
+                  "readme-md",
+                  "readme-profile"
+                ]
+              },
+              {
+                "name": "WHIP-Robot-v00",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-04-15T21:32:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OpenGL-OpenCV-AR",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Wavefront Object",
+                "pushed_at": "2026-04-13T11:02:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "KIDA-Robot-v01",
+                "description": "KIDA is an advanced autonomous robot platform built on Raspberry Pi 5, featuring dual-camera vision (night vision + AI camera), a Hailo-8 AI accelerator (13 TOPS), and local LLM capabilities. The robot supports voice interaction, autonomous navigation, and real-time AI inference.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-22T21:19:50Z",
+                "fork": false,
+                "topics": [
+                  "ardiuno-uno",
+                  "cv",
+                  "hailo",
+                  "hailo-ai",
+                  "hailo8l",
+                  "motor-controller",
+                  "ollama",
+                  "python",
+                  "python3",
+                  "rasberrypi",
+                  "robot",
+                  "robotics"
+                ]
+              },
+              {
+                "name": "FileTree",
+                "description": "Recursively prints the directory tree starting from the given root path.",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2026-04-08T09:56:39Z",
+                "fork": false,
+                "topics": [
+                  "file-management",
+                  "python",
+                  "python3"
+                ]
+              },
+              {
+                "name": "deepface",
+                "description": "A Lightweight Face Recognition and Facial Attribute Analysis (Age, Gender, Emotion and Race) Library for Python",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-01T10:18:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Whisper-Ollama-Piper-ChatBot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-06T18:09:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PySysMonitor",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-03T14:53:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": ".Net-Python",
+                "description": ".NET - Python",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-04-02T19:40:46Z",
+                "fork": false,
+                "topics": [
+                  "csharp-app",
+                  "csharp-library",
+                  "pynet",
+                  "pythonnet",
+                  "unity"
+                ]
+              },
+              {
+                "name": "DeepFaceLive",
+                "description": "Real-time face swap for PC streaming or video calls",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-23T03:29:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Acacia-GameEngine",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2025-04-14T20:35:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "comet-and-commander",
+                "description": "A 3d space RTS in HTML.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-10-24T07:16:50Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "game-development",
+                  "html",
+                  "html-game",
+                  "js",
+                  "rts"
+                ]
+              },
+              {
+                "name": "brainf-ck-converter",
+                "description": "brainfuck converter",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-04-14T20:10:17Z",
+                "fork": false,
+                "topics": [
+                  "brainfuck",
+                  "brainfuck-interpreter",
+                  "html",
+                  "html5"
+                ]
+              },
+              {
+                "name": "Monocular-Depth",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-04-14T19:53:14Z",
+                "fork": false,
+                "topics": [
+                  "cpp",
+                  "python"
+                ]
+              },
+              {
+                "name": "ar.js",
+                "description": "ar.js Template",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-14T20:06:12Z",
+                "fork": false,
+                "topics": [
+                  "aframe",
+                  "arjs",
+                  "artoolkit",
+                  "augmented-reality",
+                  "html",
+                  "javascript",
+                  "js",
+                  "three-js",
+                  "threejs",
+                  "webar"
+                ]
+              },
+              {
+                "name": "CPP-Template",
+                "description": "C++ Template",
+                "stargazers_count": 1,
+                "language": "Batchfile",
+                "pushed_at": "2025-04-14T20:26:15Z",
+                "fork": false,
+                "topics": [
+                  "batch",
+                  "batch-script",
+                  "cpp",
+                  "cpp-programming",
+                  "dll",
+                  "exe"
+                ]
+              },
+              {
+                "name": "3d-earth-viewer",
+                "description": "3D Earth viewer for HTML",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-04-14T20:04:27Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "js",
+                  "threejs"
+                ]
+              },
+              {
+                "name": "windows-xp-html",
+                "description": "Windows XP style Website",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2024-10-22T08:58:59Z",
+                "fork": false,
+                "topics": [
+                  "html",
+                  "html-css-javascript",
+                  "html5"
+                ]
+              },
+              {
+                "name": "website-template",
+                "description": "Template for a Static Website",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-04-14T20:30:17Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "template"
+                ]
+              },
+              {
+                "name": "svg-animations",
+                "description": "HTML SVG Animation",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-04-14T20:33:04Z",
+                "fork": false,
+                "topics": [
+                  "html",
+                  "html5",
+                  "svg",
+                  "svg-animations",
+                  "svg-language"
+                ]
+              },
+              {
+                "name": "cursedentertainment",
+                "description": "Host files for Cursed Entertainment",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-04-14T20:03:19Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "css-animations",
+                  "html",
+                  "html-css",
+                  "html-css-javascript",
+                  "js",
+                  "webiste",
+                  "website-design"
+                ]
+              },
+              {
+                "name": "astar-html-css-js",
+                "description": "A* Pathfinding for HTML",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-14T20:52:24Z",
+                "fork": false,
+                "topics": [
+                  "astar-algorithm",
+                  "astar-pathfinding",
+                  "html-css",
+                  "html-css-javascript",
+                  "html5",
+                  "js"
+                ]
+              },
+              {
+                "name": "Augmented-Reality-Resources",
+                "description": "A list of miscellaneous augmented reality source code.",
+                "stargazers_count": 2,
+                "language": "Markdown",
+                "pushed_at": "2025-04-14T20:07:56Z",
+                "fork": false,
+                "topics": [
+                  "ar-android",
+                  "ar-app",
+                  "ar-python",
+                  "augmented-reality",
+                  "augmented-reality-applications",
+                  "augmentedreality",
+                  "cpp",
+                  "opencv"
+                ]
+              },
+              {
+                "name": "doodskrag",
+                "description": "Host files for Doodskrag",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2024-10-20T10:30:23Z",
+                "fork": false,
+                "topics": [
+                  "blackmetal",
+                  "css",
+                  "html",
+                  "js",
+                  "webiste-design",
+                  "website",
+                  "website-development"
+                ]
+              },
+              {
+                "name": "killer-stardust",
+                "description": "In Development HTML/JS Game",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2024-10-20T13:35:52Z",
+                "fork": false,
+                "topics": [
+                  "game",
+                  "html",
+                  "html-css-javascript",
+                  "htmlgame"
+                ]
+              },
+              {
+                "name": "glass-morphism-template",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-04-15T18:15:18Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "glassmorphism",
+                  "html",
+                  "js"
+                ]
+              },
+              {
+                "name": "CeChan-3D",
+                "description": "Open Source 3D Placeholder Character",
+                "stargazers_count": 3,
+                "language": "Batchfile",
+                "pushed_at": "2025-04-15T18:21:47Z",
+                "fork": false,
+                "topics": [
+                  "3dmodel",
+                  "3dmodelling",
+                  "makehuman",
+                  "model"
+                ]
+              },
+              {
+                "name": "qr-code-scanner",
+                "description": "HTML QR Code Scanner",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-04-14T21:09:29Z",
+                "fork": false,
+                "topics": [
+                  "html",
+                  "html-css-javascript",
+                  "html5-canvas",
+                  "qr",
+                  "qr-code",
+                  "qrcode-scanner"
+                ]
+              },
+              {
+                "name": "cursed-snake",
+                "description": "Cursed Snake is a simple Snake game built using HTML, JavaScript, and CSS.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-14T20:58:50Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "game",
+                  "game-2d",
+                  "gamedev",
+                  "html",
+                  "htmlgame",
+                  "js",
+                  "snake-game",
+                  "snakegame",
+                  "webgame"
+                ]
+              },
+              {
+                "name": "ExperimentalShaders",
+                "description": "Experimental-Shaders",
+                "stargazers_count": 6,
+                "language": "ShaderLab",
+                "pushed_at": "2024-10-20T13:59:05Z",
+                "fork": false,
+                "topics": [
+                  "shaderlab",
+                  "shaderlab-language",
+                  "unity",
+                  "unityshader"
+                ]
+              },
+              {
+                "name": "css-3d-surface",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-04-14T21:04:18Z",
+                "fork": false,
+                "topics": [
+                  "3d-css-box-animation",
+                  "css",
+                  "html",
+                  "html-css"
+                ]
+              },
+              {
+                "name": "kida-chatbot_openrouter-elevenlabs",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-05-05T07:54:23Z",
+                "fork": false,
+                "topics": [
+                  "chatbot",
+                  "chatbot-application",
+                  "elevenlabs",
+                  "llm",
+                  "openrouter",
+                  "python",
+                  "speechtotext",
+                  "texttospeech"
+                ]
+              },
+              {
+                "name": "facefusion",
+                "description": "Industry leading face manipulation platform",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-05-04T14:34:12Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:26.035626+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

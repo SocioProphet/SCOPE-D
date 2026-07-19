@@ -1,0 +1,580 @@
+{
+  "profileId": "osint-profile-d43e973ceb1f",
+  "target": "dbunt1tled",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:43.622278+00:00",
+  "completedAt": "2026-06-21T15:27:44.438033+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4586099a",
+      "lookupType": "github_context",
+      "target": "dbunt1tled",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "dbunt1tled",
+            "name": "deni",
+            "type": "User",
+            "company": "BeKey",
+            "blog": "",
+            "location": "Kharkiv, Ukraine",
+            "bio": null,
+            "public_repos": 53,
+            "followers": 9182,
+            "following": 30043,
+            "created_at": "2015-12-18T20:38:35Z",
+            "updated_at": "2026-04-28T18:57:57Z",
+            "html_url": "https://github.com/dbunt1tled",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16355486?v=4",
+            "repos": [
+              {
+                "name": "everything-claude-code",
+                "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-07T07:31:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "local-rag",
+                "description": "Local RAG app chat, search and analyse PDF files",
+                "stargazers_count": 48,
+                "language": "Python",
+                "pushed_at": "2025-06-11T07:17:25Z",
+                "fork": false,
+                "topics": [
+                  "langchain",
+                  "llama3",
+                  "python",
+                  "streamlit"
+                ]
+              },
+              {
+                "name": "python-fast-api",
+                "description": "boilerplate for json api on python FastAPI",
+                "stargazers_count": 63,
+                "language": "Python",
+                "pushed_at": "2025-11-25T06:54:40Z",
+                "fork": false,
+                "topics": [
+                  "async",
+                  "fastapi",
+                  "json-api",
+                  "jwt",
+                  "mysql",
+                  "pydantic-v2",
+                  "python"
+                ]
+              },
+              {
+                "name": "github-unfollow",
+                "description": null,
+                "stargazers_count": 53,
+                "language": "Go",
+                "pushed_at": "2026-04-08T07:02:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CL4R1T4S",
+                "description": "SYSTEM PROMPT TRANSPARENCY FOR ALL - CHATGPT, GEMINI, GROK, CLAUDE, PERPLEXITY, CURSOR, WINDSURF, DEVIN, REPLIT, AND MORE!",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-23T09:32:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "url-shortener",
+                "description": "Small Url Shortener API",
+                "stargazers_count": 23,
+                "language": "Go",
+                "pushed_at": "2025-11-25T07:08:18Z",
+                "fork": false,
+                "topics": [
+                  "go",
+                  "hertz"
+                ]
+              },
+              {
+                "name": "yii2-telegram-notify",
+                "description": "Send Notify Trigger All Conatcts",
+                "stargazers_count": 10,
+                "language": "PHP",
+                "pushed_at": "2025-12-20T17:40:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fiber-go-api",
+                "description": "Small Fiber Go boilerplate for API",
+                "stargazers_count": 11,
+                "language": "Go",
+                "pushed_at": "2026-01-10T22:15:45Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "fiber-framework",
+                  "fiber-go",
+                  "jwt-authentication",
+                  "postgres"
+                ]
+              },
+              {
+                "name": "go-api",
+                "description": "RestAPI boilerplate on golang",
+                "stargazers_count": 35,
+                "language": "Go",
+                "pushed_at": "2026-02-19T07:57:04Z",
+                "fork": false,
+                "topics": [
+                  "centrifugo",
+                  "go",
+                  "jwt-authentication",
+                  "mysql",
+                  "rabbitmq",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "dbunt1tled",
+                "description": null,
+                "stargazers_count": 23,
+                "language": null,
+                "pushed_at": "2026-03-10T09:31:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "esp32-starter-kit",
+                "description": "Demonstration ESP32 kit",
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2026-05-07T10:10:43Z",
+                "fork": false,
+                "topics": [
+                  "buzzer",
+                  "esp32",
+                  "led",
+                  "obstacle-avoidance",
+                  "oled-display-ssd1306",
+                  "temperature-monitoring"
+                ]
+              },
+              {
+                "name": "esp32-cam",
+                "description": "Short App for ESP32-CAM working with images from the camera, saving them to the SD card, and sending them via the Telegram channel. ",
+                "stargazers_count": 13,
+                "language": "C",
+                "pushed_at": "2026-05-12T13:49:12Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "esp32-cam",
+                  "idf",
+                  "telegram"
+                ]
+              },
+              {
+                "name": "parquet2csv",
+                "description": "small converter csv to parquet",
+                "stargazers_count": 16,
+                "language": "Go",
+                "pushed_at": "2025-09-12T19:16:49Z",
+                "fork": false,
+                "topics": [
+                  "converter",
+                  "csv",
+                  "go",
+                  "parquet"
+                ]
+              },
+              {
+                "name": "github-stargazers",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "Go",
+                "pushed_at": "2025-10-06T15:20:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "generate-random-avatar",
+                "description": "Generate random letter avatar",
+                "stargazers_count": 9,
+                "language": "PHP",
+                "pushed_at": "2025-08-07T10:39:39Z",
+                "fork": false,
+                "topics": [
+                  "avatar-generator",
+                  "php"
+                ]
+              },
+              {
+                "name": "symfony-test-twit",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2025-08-07T10:39:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test-angular-ngrx",
+                "description": "Test App for learn Angular - Ngrx",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-07T10:39:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test-themoviedb-search-angular",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-07T10:40:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tets-film-catalog-angular",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-07T10:40:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "symfony-websocket-rabbitmq",
+                "description": "Test project integration php websokets and rabbitmq",
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2025-08-07T10:40:10Z",
+                "fork": false,
+                "topics": [
+                  "php",
+                  "rabbitmq",
+                  "symfony",
+                  "websockets"
+                ]
+              },
+              {
+                "name": "php-value-objects",
+                "description": "PHP library value objects",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2025-08-07T10:40:15Z",
+                "fork": false,
+                "topics": [
+                  "php",
+                  "value-object"
+                ]
+              },
+              {
+                "name": "dotfiles",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "CSS",
+                "pushed_at": "2025-08-07T10:40:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blog_nest_js",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-07T10:40:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "basic-react-10-09",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-08-07T10:40:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "supa_app",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Dart",
+                "pushed_at": "2025-08-07T10:40:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nestjs-graphql",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-07T10:41:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nestjs-api",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-07T10:41:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nestjs-chat",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2025-08-07T10:41:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "symfony-blog-test-2",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "PHP",
+                "pushed_at": "2025-08-22T05:11:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flux",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2025-10-04T15:58:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker_test",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "HCL",
+                "pushed_at": "2025-10-01T18:56:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "swoole-grpc",
+                "description": "OpenSwoole GRPC for PHP [READ ONLY]",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2025-11-04T19:11:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "prompt-eng-interactive-tutorial",
+                "description": "Anthropic's Interactive Prompt Engineering Tutorial",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-07-11T06:41:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "github-user-finder-native-js",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-07T10:39:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "armi-chat",
+                "description": "YII2 long polling chat",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2025-08-07T10:38:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "symfony-test-blog",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2025-08-07T10:39:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test-laravel-project",
+                "description": "Test Project",
+                "stargazers_count": 2,
+                "language": "PHP",
+                "pushed_at": "2025-08-07T10:38:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "todoList-angular-test-project",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-07T10:39:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "todo-native-js",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-07T10:39:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "js-video-player",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-08-07T10:39:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "auth-firebase-js",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-07T10:39:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node-chat",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-07T10:39:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-llm-apps",
+                "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-06-15T16:08:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "anthropic-cookbook",
+                "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-30T06:07:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "python-rag-api",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-28T05:44:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "v0-copilot",
+                "description": "Use GitHub Copilot to interactively generate and visualize components like v0.dev",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-12-17T07:08:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "treeholbi",
+                "description": "test-project",
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2025-08-07T10:38:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quiz",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2025-08-07T10:38:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alfastroy.khakov.ua",
+                "description": "\u0420\u0430\u0441\u0447\u0435\u0442 \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u0438 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438 \u0449\u0435\u0431\u043d\u044f \u043f\u043e \u0425\u0430\u0440\u044c\u043a\u043e\u0432\u0443",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-08-07T10:38:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dbunt1tled.github.io",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-07T14:32:44Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:44.437283+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

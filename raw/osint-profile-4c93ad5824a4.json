@@ -1,0 +1,253 @@
+{
+  "profileId": "osint-profile-4c93ad5824a4",
+  "target": "god-s-only",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:47:32.296039+00:00",
+  "completedAt": "2026-06-20T16:47:33.086803+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-3b60820a",
+      "lookupType": "github_context",
+      "target": "god-s-only",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "god-s-only",
+            "name": "Oneshioze",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "One above.",
+            "bio": null,
+            "public_repos": 20,
+            "followers": 1287,
+            "following": 2436,
+            "created_at": "2024-07-23T11:54:58Z",
+            "updated_at": "2026-05-15T18:53:17Z",
+            "html_url": "https://github.com/god-s-only",
+            "avatar_url": "https://avatars.githubusercontent.com/u/176394191?v=4",
+            "repos": [
+              {
+                "name": "adb_commander_server",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-19T20:00:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NetScope",
+                "description": "Developer tool for Android that lets you inspect, capture and analyze HTTP/HTTPS network traffic from any app on your device \u2014 without root access. Charles Proxy, but for Android.",
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-18T18:36:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Untethered",
+                "description": "LADB Alternative, literally",
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-03T19:42:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ADB-Commander",
+                "description": "A full Android developer toolkit that runs entirely on-device \u2014 inspect apps, stream Logcat, capture screens, run ADB commands and manage packages, all via Shizuku shell access. No laptop required.",
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-19T20:41:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "paperledger",
+                "description": "MT5 Alternative. Still Building lol.",
+                "stargazers_count": 1,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-11T15:10:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chat-app-jetpack-compose",
+                "description": "ChatApp is a modern real-time messaging application built with Kotlin and Jetpack Compose. It integrates Firebase for authentication, user data, and chat storage, while ZegoCloud powers seamless real-time voice and video calls.",
+                "stargazers_count": 10,
+                "language": "Kotlin",
+                "pushed_at": "2025-04-28T20:12:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Campus-Safety",
+                "description": "A mobile campus safety app for Nigerian universities that enables students to report incidents in real time with GPS location detection, and automatically alerts the nearest security personnel.",
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2026-06-03T15:59:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Food-Delivery-Backend-Ktor",
+                "description": "Another stupid backend written with Kotlin Ktor for some crappy android app for some crappy kid who paid me crappy money. PS: I am twizzy rich.",
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2026-05-06T12:20:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pneumonia-detection-system",
+                "description": "A high-performance, HIPAA-compliant clinical support dashboard designed for advanced pneumonia detection and localization in medical imaging. Built with modern web technologies, this system provides medical professionals with real-time AI-assisted diagnostics, secure patient history management, and automated reporting.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-02T14:48:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "brain_tumor",
+                "description": "This project uses a Convolutional Neural Network (CNN) to automatically detect the presence of brain tumors from MRI images. The model is trained on labeled MRI datasets and classifies images as tumor or no tumor. It demonstrates deep learning techniques for medical image analysis using TensorFlow/Keras.",
+                "stargazers_count": 10,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-23T16:17:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vitaflow",
+                "description": "VitaFlow is an Android app that helps you track your workouts, steps, distance, and calories using Health Connect, while keeping you motivated with smart reminders. Built with Clean Architecture and Jetpack Compose, it provides a modern, reactive, and reliable health tracking experience.",
+                "stargazers_count": 8,
+                "language": "Kotlin",
+                "pushed_at": "2026-03-01T20:31:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "veritas-drive-fastapi",
+                "description": "Stupid fastapi backend for some crappy android app for some crappy kid who paid me crappy money.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-03-10T14:11:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TodoApp-YT",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Kotlin",
+                "pushed_at": "2026-03-08T19:32:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Pacman-Deep-q-Convolutional-learning",
+                "description": "Pacman AI Agent",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-08-13T11:29:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CryptoCurrentApp-Retrofit-",
+                "description": "Crypto Currency App built with clean architecture and retrofit. Android Kotlin",
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2025-08-19T11:59:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "investment-app",
+                "description": "Literally, Investment app",
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2025-07-27T13:29:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fakenews",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-08-21T10:42:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "llama3.1-8b-params",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-01-10T14:01:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AgDA-llama3.1-model",
+                "description": "This Llama 3.1 Model was finetuned on custom synthetic dataset on Agrotech related topics in the vicinity of Kaduna",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2025-07-11T11:25:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Todo_List_Room_Database",
+                "description": "Android application utilising Room Database for local database storage, clean architecture.",
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2025-07-17T09:15:24Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:47:33.085934+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

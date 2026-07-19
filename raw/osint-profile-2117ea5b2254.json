@@ -1,0 +1,543 @@
+{
+  "profileId": "osint-profile-2117ea5b2254",
+  "target": "CharlesDerek",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:01.240136+00:00",
+  "completedAt": "2026-06-20T13:53:03.014076+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-109585a4",
+      "lookupType": "github_context",
+      "target": "CharlesDerek",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "CharlesDerek",
+            "name": "CharlesDerek",
+            "type": "User",
+            "company": "@MRGInnovations ",
+            "blog": "https://www.charlesderek.com/",
+            "location": "Miami FL",
+            "bio": "Seasoned Security | Rust | R&D Engineer",
+            "public_repos": 180,
+            "followers": 2407,
+            "following": 7466,
+            "created_at": "2016-09-27T00:50:02Z",
+            "updated_at": "2026-06-17T09:30:26Z",
+            "html_url": "https://github.com/CharlesDerek",
+            "avatar_url": "https://avatars.githubusercontent.com/u/22461547?v=4",
+            "repos": [
+              {
+                "name": "rails-rest-framework",
+                "description": "A framework for DRY RESTful APIs in Ruby on Rails.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-06-30T00:44:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "go-heroku-scaffold",
+                "description": "Tired of typing the same commands over and over to build an application step by step? go-heroku-scaffold solves this issue as an automated solution for initializing a Heroku Applications in the Go Programming Language. Much of the important configurations will be asked once of you and softcoding implementation for the entire build process.",
+                "stargazers_count": 2,
+                "language": "Shell",
+                "pushed_at": "2022-06-12T19:00:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rails-rest-api",
+                "description": "A simple RoR 5 REST API demo with JWT authentication.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-07-06T18:00:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hubs",
+                "description": "Duck-themed multi-user virtual spaces in WebVR. Built with A-Frame.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-09-26T00:53:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "traefik",
+                "description": "The Cloud Native Edge Router",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-03-25T12:39:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "terraform-w-keycloak",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2023-05-25T23:33:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "goGFS",
+                "description": "A Go implementation of the Google File System. ",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-08-30T22:02:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sentryshot",
+                "description": " Video Management System. Mirror of Codeberg.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2024-07-31T21:19:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "httpserverwithfileupload",
+                "description": "HTTP server for fast file sharing locally.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-10-05T18:17:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "poc-fullstack-java-react",
+                "description": "A Proof of Concept showcasing a full-stack application using Java and React. Features Dockerized deployment for easy integration and scalability.",
+                "stargazers_count": 1,
+                "language": "Makefile",
+                "pushed_at": "2025-05-07T11:46:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mongoDashboard",
+                "description": "A MongoDB admin panel written in AngularJS",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2022-10-13T23:35:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MRGI_Amber",
+                "description": "amber is a code search and replace tool written by Rust. This tool is inspired by ack, ag, and other grep-like tools.",
+                "stargazers_count": 8,
+                "language": "Rust",
+                "pushed_at": "2023-04-03T19:48:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "actor-model",
+                "description": "The goal of this repository is to provide a centralized place for developers to easily access a golang representation of the Actor Model.",
+                "stargazers_count": 12,
+                "language": "Go",
+                "pushed_at": "2023-05-28T14:10:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "charlesderek",
+                "description": "Security Engineer with many years of hands-on experience designing, developing, hardening, and implementing secure applications and unique solutions using a range of different technology stacks. Seeking to leverage my large skill sets, including hands-on technical expertise to be years ahead of the curve in a rapid developing industry",
+                "stargazers_count": 17,
+                "language": null,
+                "pushed_at": "2025-12-07T00:24:09Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "cloud-engineering",
+                  "metaverse"
+                ]
+              },
+              {
+                "name": "bmw-ms45-dme-unlock",
+                "description": "Completely flash and unlock your ms45 ECU for the latest e46 and e90 M3 series",
+                "stargazers_count": 28,
+                "language": "Rust",
+                "pushed_at": "2026-06-17T10:53:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "carbon-lang",
+                "description": "Carbon Language's main repository: documents, design, implementation, and related tools. (NOTE: Carbon Language is experimental; see README)",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-06-17T11:06:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lab",
+                "description": "Engineering notebook for building and documenting homelab infrastructure, security automation, AI workflows, and distributed systems research.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-06-17T10:38:05Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-agents",
+                  "automation",
+                  "cybersecurity",
+                  "devops",
+                  "devsecops",
+                  "distributed-systems",
+                  "homelab",
+                  "hybrid-cloud",
+                  "infrastructure",
+                  "networking",
+                  "research",
+                  "rust",
+                  "security-engineering",
+                  "self-hosted"
+                ]
+              },
+              {
+                "name": "crustacian",
+                "description": "\ud83e\udd80 Cross-platform Rust-powered CLI that installs, updates, and manages ClamAV + FreshClam for automated open-source antivirus protection.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-06-12T12:13:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "arfoundation-samples",
+                "description": "Example content for Unity projects based on AR Foundation",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-02-16T06:45:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "free-claude-code",
+                "description": "Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-02T12:20:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "m3u8",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2023-02-13T20:45:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "webrtc",
+                "description": "Pure Go implementation of the WebRTC API",
+                "stargazers_count": 5,
+                "language": "Go",
+                "pushed_at": "2024-10-05T18:23:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "express-rest-boilerplate",
+                "description": "Boilerplate Express Server with JWT Microservice",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-27T01:56:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "expressBookReviews",
+                "description": "nodejsFinalModule",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-27T03:44:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "onlinecourse-app",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-27T04:52:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ibm-pga-fera",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-26T20:09:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gun",
+                "description": "An open source cybersecurity protocol for syncing decentralized graph data.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-04-07T07:16:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "go",
+                "description": "This is a collection of my Go utilities in one easy-to-import place",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-04-09T16:56:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aframe-physics-system",
+                "description": "Physics system for A-Frame VR, built on CANNON.js.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-01-12T13:41:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cleardata-rest",
+                "description": "Create a REST API to validate a string has all letters of the alphabet. ",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2022-12-15T22:54:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "code-server",
+                "description": "VS Code in the browser",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-12-06T21:39:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gilfoyle",
+                "description": "Distributed video encoding, hosting and delivery (WIP)",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-11-10T21:53:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "networked-aframe",
+                "description": "A web framework for building multi-user virtual reality experiences.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-09-08T01:43:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kubo",
+                "description": "An IPFS implementation in Go",
+                "stargazers_count": 3,
+                "language": "Go",
+                "pushed_at": "2023-06-03T17:16:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "docker-elk",
+                "description": "The Elastic stack (ELK) powered by Docker and Compose for local debugging",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-09-01T06:04:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "java-api",
+                "description": "Java API for GitHub",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-07-18T16:21:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-movie-database",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2022-07-13T03:23:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "docker-seafile",
+                "description": "This repository contains a docker-compose file to create a Seafile cluster. The cluster consists of a Seafile server, a MySQL database, and a memcached server.",
+                "stargazers_count": 3,
+                "language": "Shell",
+                "pushed_at": "2022-07-12T04:48:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shopify-template",
+                "description": "Creating a base tree for construction of Shopify platform sites",
+                "stargazers_count": 2,
+                "language": "Liquid",
+                "pushed_at": "2022-06-20T19:45:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chance-of-rain-notifier",
+                "description": "Mocking a rapid development for the Hackathon challenge",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-07-20T18:13:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PySpringPad",
+                "description": "inspired by how Spring Boot works for Java, but tailored to Flask/FastAPI/Django + Docker. the repo becomes your personal incubator where you slowly add scaffolding features so that one day you can spin up a brand-new app \u201cout of thin air\u201d in seconds.",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2025-09-21T05:11:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aframe-extras",
+                "description": "Add-ons and helpers for A-Frame VR.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-15T16:19:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Kubernetes-practical-exercises-Hands-on",
+                "description": "A repo to help you learn Kubernetes from the ground up by doing practical exercises and teach you how to use Kubernetes to deploy, manage, and scale containerized applications.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-31T10:26:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ir-engine",
+                "description": "A Modern 3D Toolkit for the Social Spatial Web",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-06-05T00:37:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nvidia-container-toolkit",
+                "description": "Build and run containers leveraging NVIDIA GPUs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-25T08:19:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TensorflowReactNative",
+                "description": "A React Native application that uses TensorFlow.js for real-time image analysis. The app allows users to capture and analyze images, providing object detection with bounding boxes and instant predictions.",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-12T02:14:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-fast-tflite",
+                "description": "\ud83d\udd25 High-performance TensorFlow Lite library for React Native with GPU acceleration",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-10T19:11:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mltype",
+                "description": "Command line tool for improving typing skills (programmers friendly)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-06-22T14:59:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Armadillo",
+                "description": "Modular private streaming service with secure user accounts and metadata handling. Easy to set up and easy to mod :listOnSite:",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-08-10T10:17:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "argos-translate",
+                "description": "Open source neural machine translation in Python. Designed to be used either as a Python library or desktop application. Uses OpenNMT for translations and PyQt for GUI.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2021-10-21T11:34:35Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:03.013062+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

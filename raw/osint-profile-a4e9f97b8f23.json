@@ -1,0 +1,550 @@
+{
+  "profileId": "osint-profile-a4e9f97b8f23",
+  "target": "rc-chuah",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:31.771301+00:00",
+  "completedAt": "2026-06-20T13:53:32.720096+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-895ea78a",
+      "lookupType": "github_context",
+      "target": "rc-chuah",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "rc-chuah",
+            "name": "RC Chuah",
+            "type": "User",
+            "company": "@RaynerSec @Design-Enginnering @Krypto-Hashers-Community @mmo-org-my @rayner-iot-solutions",
+            "blog": "https://rc-chuah.github.io",
+            "location": "Shah Alam, Selangor, Malaysia",
+            "bio": "Self-Taught Programmer, Penetration Tester, Cyber Security Researcher, Meteorologist, Climatologist, Storm Chaser And Storm Spotter.",
+            "public_repos": 589,
+            "followers": 1716,
+            "following": 10937,
+            "created_at": "2018-11-10T17:14:13Z",
+            "updated_at": "2026-02-03T12:24:16Z",
+            "html_url": "https://github.com/rc-chuah",
+            "avatar_url": "https://avatars.githubusercontent.com/u/44928288?v=4",
+            "repos": [
+              {
+                "name": "rc-chuah",
+                "description": "\u26a1 WELCOME TO MY PROFILE",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-06-20T09:26:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kali-Nethunter-In-Termux",
+                "description": "This is a script by which you can install Kali Nethunter (Kali Linux) in your termux application without rooted phone.",
+                "stargazers_count": 274,
+                "language": "Shell",
+                "pushed_at": "2025-06-02T07:48:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weewx-nuvoler",
+                "description": "WeeWX Extension For Uploading Weather Data To www.nuvoler.com Using Nuvoler API",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-06-06T07:57:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weewx-temperaturnu",
+                "description": "WeeWX Extension For Uploading Weather Data To www.temperatur.nu Using Temperatur.nu API",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-06-05T14:25:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tur",
+                "description": "A place for all types of Termux packages. ",
+                "stargazers_count": 0,
+                "language": "Shell",
+                "pushed_at": "2026-05-26T16:39:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "beaver-iot",
+                "description": "Beaver IoT is an open-source platform that empowers individuals and businesses to easily connect, monitor, and control smart devices.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-11T09:15:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpenHashTab",
+                "description": "\ud83d\udcdd File hashing and checking shell extension",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-20T07:01:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "winget-pkgs",
+                "description": "The Microsoft community Windows Package Manager manifest repository",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-03T04:06:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "weathercloud-js",
+                "description": "unofficial API for app.weathercloud.net",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-01-17T09:29:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wwsr-primitive",
+                "description": "Read data from some Ambient Weather\u00ae USB weather stations. Very simple. Can report in json.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2018-09-23T16:56:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wwsr",
+                "description": "A fork of the fowsr or wwsr program for reading the WS1080 weather station",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-12-02T03:51:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wwsr-original",
+                "description": "Fine Offset WH1080 weather station data reader with MySQL support",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-10-23T20:39:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pywws",
+                "description": "Python software for USB Wireless WeatherStations",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-30T14:52:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "weewx",
+                "description": "WeeWX code repository",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2026-04-14T11:02:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WundergroundStationForwarder",
+                "description": "\ud83c\udf26\ufe0f Google Apps Script code to send your weather station data to Wunderground, Windy, PWSWeather, Weathercloud, OpenWeatherMap, WindGuru, Met (UK) WOW, Temperatur.nu, and/or CWOP",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-24T12:25:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ardubridge-libraries-nodemcu",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-03-18T12:20:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Hyper-V-Toggle",
+                "description": "This Batch Script Enables And Disables Hyper-V Hypervisor So You Can Use Other Virtualisation Tools Such As (VMware, VirtualBox) Simultaneously.",
+                "stargazers_count": 14,
+                "language": "Batchfile",
+                "pushed_at": "2025-06-08T15:59:52Z",
+                "fork": false,
+                "topics": [
+                  "batch-script",
+                  "hyper-v",
+                  "hypervisor",
+                  "virtual-machine",
+                  "virtualbox",
+                  "virtualization",
+                  "vm",
+                  "vmware",
+                  "windows",
+                  "windows-10",
+                  "windows-11",
+                  "wsl",
+                  "wsl2"
+                ]
+              },
+              {
+                "name": "weewx-temperaturnu-v1",
+                "description": "Uploader for WeeWX weather data to temperatur.nu",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-08-09T14:42:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "weewx-windy-v1",
+                "description": "uploader for windy.com",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2020-05-10T17:36:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "weewx-windy",
+                "description": "uploader for windy.com using Windy API V2",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-11T14:31:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "UniGetUI",
+                "description": "UniGetUI: The Graphical Interface for your package managers. Could be terribly described as a package manager manager to manage your package managers",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-22T08:23:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Widgets-for-UniGetUI",
+                "description": "Widgets to interact with UniGetUI from Dev Home and Windows Widgets",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-12T13:40:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wowbe",
+                "description": "Wow server developed by RMIB after stop of official service in 01/2026.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-08T09:58:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "NSISDependencyInstaller",
+                "description": "Nullsoft Scriptable Install System (NSIS) Dependency Installer Can Download And Install Any Dependency Such As .NET, Visual C++ Or SQL Server During Your Application's Installation.",
+                "stargazers_count": 9,
+                "language": "NSIS",
+                "pushed_at": "2026-03-01T15:58:10Z",
+                "fork": false,
+                "topics": [
+                  "3rd-party-installers",
+                  "dependency",
+                  "installer",
+                  "installer-script",
+                  "nsh",
+                  "nsi",
+                  "nsis",
+                  "nsis-installer",
+                  "nullsoft",
+                  "nullsoft-install-system",
+                  "nullsoft-installer",
+                  "nullsoft-scriptable-install-system"
+                ]
+              },
+              {
+                "name": "exe-rs",
+                "description": "The PE Executable Library, but for Rust!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-12-13T12:26:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "windows_exe_info",
+                "description": "A cargo build script library for adding file information to windows executables",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-21T12:52:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "package-family-name",
+                "description": "A Rust library for calculating Package Family Name values",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-11-24T01:16:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "winget-types",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-21T22:59:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rust-msi",
+                "description": "Rust library for reading/writing Windows Installer (MSI) files",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-23T14:41:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "inno",
+                "description": "A rust library for parsing Inno Setup installers",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-01T05:23:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nqp",
+                "description": "NQP",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-24T19:32:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MoarVM",
+                "description": "A VM with adaptive optimization and JIT compilation, built for Rakudo",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-24T17:08:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "llvm-project",
+                "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-02T11:38:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "termux-docker",
+                "description": "Termux environment packaged as Docker image.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-15T12:06:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ndk-toolchain-gcc-15",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-05T16:36:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ndk-toolchain-gcc-14",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-05T15:49:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ndk-toolchain-gcc-13",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-05T14:03:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ndk-toolchain-gcc-12",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-05T11:18:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "chromium-builder",
+                "description": "Building system of chromium for Termux/Android",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-19T15:26:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pypi-wheel-builder",
+                "description": "Building system of Python wheels for Termux/Android",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-08T02:02:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pypi",
+                "description": "PyPI index pages for Termux/Android",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-02T18:48:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "electron-tur-builder",
+                "description": "Building system of electron for Termux/Android",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-05-14T17:38:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dists",
+                "description": "contains dists and related scripts",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-28T08:45:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "termux-packages",
+                "description": "A package build system for Termux.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-28T07:09:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "termux-app",
+                "description": "Termux - a terminal emulator application for Android OS extendible by variety of packages.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-12T15:02:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rpi-imager",
+                "description": "The home of Raspberry Pi Imager, a user-friendly tool for creating bootable media for Raspberry Pi devices.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-27T04:10:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Komac",
+                "description": "The Community Manifest Creator for WinGet",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-05-06T08:46:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "InnoDependencyInstaller",
+                "description": "Download and install any dependency such as .NET, Visual C++ or SQL Server during your application's installation!",
+                "stargazers_count": 1,
+                "language": "Inno Setup",
+                "pushed_at": "2025-03-22T12:14:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Jlaive",
+                "description": "Antivirus evasion tool (crypter) that converts executables into undetectable batch files.",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2022-09-06T12:38:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BatCloak",
+                "description": "Batch file obfuscator with antivirus evasion capabilities.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-09-01T10:59:57Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:32.719737+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

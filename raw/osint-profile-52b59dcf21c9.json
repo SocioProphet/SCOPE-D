@@ -1,0 +1,376 @@
+{
+  "profileId": "osint-profile-52b59dcf21c9",
+  "target": "supercodestart",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:11.591730+00:00",
+  "completedAt": "2026-06-21T15:31:12.380249+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-6c75ee1d",
+      "lookupType": "github_context",
+      "target": "supercodestart",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "supercodestart",
+            "name": "Super Code Star",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "3 Crane Mountain Rd Johnsburg NY 12843",
+            "bio": "As a seasoned Senior Full Stack Developer specializing in SEO and MERN Stack, I offer a proven track record of crafting resilient, intuitive web applications.",
+            "public_repos": 23,
+            "followers": 1721,
+            "following": 1678,
+            "created_at": "2024-01-24T08:49:10Z",
+            "updated_at": "2026-01-07T15:58:01Z",
+            "html_url": "https://github.com/supercodestart",
+            "avatar_url": "https://avatars.githubusercontent.com/u/157581830?v=4",
+            "repos": [
+              {
+                "name": "solidity-examples",
+                "description": "\ud83d\udcb0This collection features a diverse range of real-world smart contract examples and projects written in Solidity, covering decentralized finance, NFTs, DAOs, gaming, supply chain management, tokenization, prediction markets, and identity verification systems.",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-07T15:05:26Z",
+                "fork": false,
+                "topics": [
+                  "examples",
+                  "solidity"
+                ]
+              },
+              {
+                "name": "review-4-story-data",
+                "description": "Review for Story Data based on Next.js and tailwindcss",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-25T17:02:47Z",
+                "fork": false,
+                "topics": [
+                  "commitlint",
+                  "nextjs14",
+                  "pg",
+                  "postgresql",
+                  "prettier",
+                  "reactjs18",
+                  "sequelize",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "just-the-docs-template",
+                "description": "one-click template to use just-the-docs on GitHub Pages",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-09-16T17:21:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ShrinkLDPlayer",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Batchfile",
+                "pushed_at": "2024-09-05T04:46:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "populate-pdf-form",
+                "description": "Populate PDF Form with ReactJS + Electron",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-16T18:05:26Z",
+                "fork": false,
+                "topics": [
+                  "electron",
+                  "pdf-lib",
+                  "pspdfkit",
+                  "reactjs"
+                ]
+              },
+              {
+                "name": "crypto-zombies-lessons",
+                "description": "\ud83e\ude99Crypto Zombies Lessons",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-04-20T02:56:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-badges",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-04-06T09:46:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "full-blockchain-solidity-course-js",
+                "description": "Learn Blockchain, Solidity, and Full Stack Web3 Development with Javascript",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2024-03-29T08:45:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "touchme",
+                "description": "\ud83d\udcacThis chat application is designed to provide a seamless and interactive experience. You can send messages, and even engage in group conversations with your friends, family, or colleagues. Whether you're catching up, planning an event, or simply having a good ol' chat, \"Touch Me\" has got you covered.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2024-04-02T13:31:27Z",
+                "fork": false,
+                "topics": [
+                  "mui",
+                  "nodejs",
+                  "postgresql",
+                  "reactjs",
+                  "sequelize",
+                  "tauri-app",
+                  "websocket"
+                ]
+              },
+              {
+                "name": "chatgpt-abc",
+                "description": "\u26a1\ufe0fChatGPT-ABC is an advanced application that brings together the strengths of ChatGPT and DALL.E. This top-notch app gives you the flexibility to switch between different versions of ChatGPT. One of the standout features of ChatGPT-ABC is its ability to save chat conversations right to your local storage. Pretty cool, right?",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-01T02:31:17Z",
+                "fork": false,
+                "topics": [
+                  "chatgpt",
+                  "chatgpt-api",
+                  "daisyui",
+                  "reactjs",
+                  "tailwindcss",
+                  "vite"
+                ]
+              },
+              {
+                "name": "nextjs-app-template",
+                "description": "Web Application Template based on Next.js, tailwindcss, and TypeScript",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2024-03-21T01:43:31Z",
+                "fork": false,
+                "topics": [
+                  "commitlint",
+                  "eslint",
+                  "nextjs14",
+                  "prettier",
+                  "reactjs18",
+                  "tailwind-css",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "collaborator-garden",
+                "description": "Collaborator Garden",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2024-03-13T19:16:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web3-background-animation",
+                "description": "\ud83e\udd29Get ready to create a stunning web3 background animation with particles floating gracefully and parallax effects that mesmerize.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2024-05-07T18:35:42Z",
+                "fork": false,
+                "topics": [
+                  "animation",
+                  "background",
+                  "nextjs",
+                  "parallax",
+                  "particles",
+                  "web3"
+                ]
+              },
+              {
+                "name": "frontend-assessment",
+                "description": "\ud83c\udfc6This assessment will be tasked with creating a front-end application that interacts with the Hatchways API. Need to set up your React components, configure Redux for state management, and make those API calls to grab the data needed. Once get the data, display it in your components and handle any user interactions like a pro.",
+                "stargazers_count": 15,
+                "language": "TypeScript",
+                "pushed_at": "2024-03-12T17:55:35Z",
+                "fork": false,
+                "topics": [
+                  "api-client",
+                  "axios-react",
+                  "hatchways",
+                  "reactjs",
+                  "redux"
+                ]
+              },
+              {
+                "name": "portfolio",
+                "description": null,
+                "stargazers_count": 36,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-09T14:35:28Z",
+                "fork": false,
+                "topics": [
+                  "bundle-analyzer",
+                  "commitlint",
+                  "github-workflow",
+                  "nextjs14",
+                  "portfolio",
+                  "prettier",
+                  "reactjs18",
+                  "tailwindcss",
+                  "typescript",
+                  "vercel-deployment",
+                  "yarn"
+                ]
+              },
+              {
+                "name": "contextualize-visualize",
+                "description": "\u2b50A contextualized visualization library provides a set of functions, tools, and components that allow you to easily generate charts, graphs, and other visual elements. With this library, you can bring your data to life by choosing the right visualizations that best convey the information you want to share.",
+                "stargazers_count": 15,
+                "language": "TypeScript",
+                "pushed_at": "2024-04-01T01:19:08Z",
+                "fork": false,
+                "topics": [
+                  "nodejs",
+                  "reactjs",
+                  "storybook",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "yelp-assessment",
+                "description": "Assessment for Yelp API & Google Vision API",
+                "stargazers_count": 11,
+                "language": "TypeScript",
+                "pushed_at": "2024-01-28T06:12:33Z",
+                "fork": false,
+                "topics": [
+                  "api-endpoint",
+                  "expressjs",
+                  "google-vision-api",
+                  "nodejs",
+                  "yelp-api"
+                ]
+              },
+              {
+                "name": "js-assessments",
+                "description": "\ud83d\ude80JS coding assessments are a great way to evaluate coding skills and knowledge. They help assess a candidate's ability to write clean and efficient JS code to solve various programming challenges. These assessments provide valuable insights into a candidate's problem-solving skills and their familiarity with JS best practices.",
+                "stargazers_count": 33,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-02T15:18:20Z",
+                "fork": false,
+                "topics": [
+                  "assessments",
+                  "javascript",
+                  "solutions"
+                ]
+              },
+              {
+                "name": "meanArena",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2024-03-12T17:54:46Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence-algorithms",
+                  "python3"
+                ]
+              },
+              {
+                "name": "convert-color",
+                "description": "\ud83c\udf08When it comes to converting colors based on the difference between two sample colors, there are a few approaches you can take. One common method is to calculate the color difference using various color models like RGB, or HSL. Once you have the color difference value, you can then apply it to your target color to achieve the desired result.",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-01T00:52:05Z",
+                "fork": false,
+                "topics": [
+                  "color",
+                  "replace-text",
+                  "style"
+                ]
+              },
+              {
+                "name": "convert4zoom",
+                "description": "convert all props as 80% for VORGRC",
+                "stargazers_count": 16,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-12T17:53:57Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "summarizing-transactions-from-csv-log",
+                "description": "Summarizing transactions from CSV log for crypto investors",
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-12T17:57:57Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "csv",
+                  "javascript",
+                  "nodejs",
+                  "summarization"
+                ]
+              },
+              {
+                "name": "test_wallet_connect",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-01T13:15:53Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:12.379451+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

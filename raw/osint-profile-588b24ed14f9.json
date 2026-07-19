@@ -1,0 +1,526 @@
+{
+  "profileId": "osint-profile-588b24ed14f9",
+  "target": "IamDevDan",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:26.466036+00:00",
+  "completedAt": "2026-06-20T16:48:28.198279+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a701112c",
+      "lookupType": "github_context",
+      "target": "IamDevDan",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "IamDevDan",
+            "name": "Rush Dev",
+            "type": "User",
+            "company": "Link_2_Ink",
+            "blog": "",
+            "location": "Dubai",
+            "bio": "Building cool shit.",
+            "public_repos": 104,
+            "followers": 1014,
+            "following": 774,
+            "created_at": "2023-06-01T11:04:54Z",
+            "updated_at": "2026-06-12T17:35:05Z",
+            "html_url": "https://github.com/IamDevDan",
+            "avatar_url": "https://avatars.githubusercontent.com/u/135226561?v=4",
+            "repos": [
+              {
+                "name": "LiquidityScanner",
+                "description": "Real-time Predictive Liquidity Analytics Engine empowering informed decision-making through Automated Risk Assessment on a Scalable Distributed Dashboard.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:14:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DevEnvironment",
+                "description": "Professional DevEnvironment devenvironment-engine with DevEnvironment-optimized scalable-architecture and enterprise enterprise-grade capabilities",
+                "stargazers_count": 31,
+                "language": "Python",
+                "pushed_at": "2025-10-09T11:21:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WhaleAlert",
+                "description": "Proactive Event Monitoring Suite that leverages blockchain analysis for real-time, secure, and transparent transaction tracking insights.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-10-09T12:17:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Link2Ink",
+                "description": "Link 2 Ink is a visual intelligence platform that transforms GitHub repositories into interactive architectural blueprints and converts web articles into concise, professional infographics.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-25T20:35:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DA",
+                "description": "Advanced-Data Architectures for Real-Time Insights are enabled through our DAOFramework with in-memory caching and Distributed Data Processing Cache-Infrastructure.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:32:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VulnerabilityScanner",
+                "description": "Enterprise-grade VulnerabilityAssessor delivers comprehensive risk-profiling and remediation-strategy recommendations via intelligent distributed analysis scanner.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:33:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KeyManagement",
+                "description": "Harnessing Decentralized Key Policy-Based Access Control with Adaptive Cloud-HSM Integration Core Suite.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:33:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mpermar082",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-10-09T12:34:24Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "TestnetFaucet",
+                "description": "Next-generation TestnetFaucet orchestrates intelligent-automation workflows on a scalable, cloud-native infrastructure. implementing modern modern-design patterns",
+                "stargazers_count": 26,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:26:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AssetTracker",
+                "description": "Automated Enterprise AssetTracker integrates real-time analytics with predictive maintenance scheduling in a scalable, intelligent distributed framework Manager.",
+                "stargazers_count": 13,
+                "language": "Go",
+                "pushed_at": "2025-10-09T11:53:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FeeEstimator",
+                "description": "Enhancing Predictive Financial Accuracy with Real-Time Dynamic Tax and Insights here are six technical descriptors for FeeEstimator projects:",
+                "stargazers_count": 12,
+                "language": "Rust",
+                "pushed_at": "2025-10-09T12:08:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ZeroKnowledge",
+                "description": "Decentralized, self-sovereign data sanctuaries empower private, secure transactions with data storage and search, atop a shielded protocol layer.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-02T12:31:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeflationaryToken",
+                "description": "DeflationaryToken software harnesses Decentralized Autonomic Systems for Time-Weighted Token Burn and Community-driven Treasury Allocation.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T11:47:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "InflationControl",
+                "description": "Data-driven inflation forecasting and sensitivity analysis engine for real-time, scalable, intelligent distributed environments, precision pricer optimizer.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T11:28:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BountyPlatform",
+                "description": "Cloud-native BountyPlatform harnesses AI-driven insights, Advanced security protocols, and the entire business ecosystem, fostering a resilient digital Pulse.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:19:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GenesisBlock",
+                "description": "Professional GenesisBlock infrastructure with GenesisBlock-optimized cloud-ready and enterprise modern-design capabilities",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-08T16:20:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HalvingEvent",
+                "description": "Professional HalvingEvent infrastructure with HalvingEvent-optimized cloud-ready and enterprise modern-design capabilities",
+                "stargazers_count": 8,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:18:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EmissionSchedule",
+                "description": "Professional EmissionSchedule framework with EmissionSchedule-optimized emissionschedule-optimization and enterprise modern-design capabilities",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:22:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PoolIncentive",
+                "description": "Intelligent PoolIncentive platform featuring poolincentive-optimization technology and advanced scalable-architecture for modern system",
+                "stargazers_count": 11,
+                "language": "Rust",
+                "pushed_at": "2025-10-06T10:27:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rushdotfun",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-07T17:51:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FraudPrevention",
+                "description": "AI-powered RiskGuardian delivers intelligent, real-time risk-based authentication and auto-scaling capabilities to FraudPrevention Analytics Engine.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:31:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CollateralVault",
+                "description": "Omniscient Valuation Engine harnessing Real-time Analytics and Adaptive Risk Assessment for CollateralVault CoreEngine.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:31:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HashFunction",
+                "description": "Cryptographically-robust HashFunction engine harnesses parallelizable processing for ultra-low-latency, distributed pipeline. providing enterprise-grade HashFunction solutions",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:30:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "YieldFarm",
+                "description": "Hyperconverged YieldFarm orchestrates predictive modeling, big data analytics, and distributed risk assessment within a resilient optimization-engine.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-10-09T12:29:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VotingMechanism",
+                "description": "Elevating VotingMechanism excellence through secure, transparent, decentralized, and scalable cryptographic protocols for seamless elections System",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-09T12:28:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RingSignature",
+                "description": "Elevated homomorphic encryption enables secure, high-performance RingSignature computations within a scalable, transparent efficiency framework Module.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:28:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SecureMultiparty",
+                "description": "Decentralized Data Exchange Framework for Real-Time Risk Mitigation and Scalable Information Assurance Suite",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:27:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TransactionPool",
+                "description": "Edge Optimized Transaction Processing unleashes high-performance, real-time scalability as a catalyst for enterprise-grade transactions.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-09T12:26:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CrossChain",
+                "description": "Effortlessly integrating decentralized-oracle feeds via auto-scaling, intelligent nodes enables seamless CrossChain asset Exchange.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-09T12:25:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AnalyticsDash",
+                "description": "Data-Informed Intelligence at Scale, Empowering Real-Time Decision-Making Across Hybrid Cloud Environments through Advanced Security Auditing and Distributed Dashboards.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-09T12:24:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DistributedKey",
+                "description": "Amplifying Resilience through Redundant Key Management and Secure, Fault-Tolerant Architectures, CoreX with self-healing architecture",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-09T12:24:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VolumeAnalyzer",
+                "description": "Real-time Streaming Data Ingestion meets Predictive Analytics, delivering Intelligent Volume Insights for Enterprise Optimization Tools.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-09T12:23:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LiquidityProtocol",
+                "description": "Real-time settlement orchestration via event-driven architecture ensures scalable, resilient, self-healing liquidity provisioning across the network gateway.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:22:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MintingProtocol",
+                "description": "Effortless cryptographic validation through self-enforcing, distributed, and scalable Smart-Contract orchestration within the MintingProtocol.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:21:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EventListener",
+                "description": "Real-time event aggregation streams converge into an adaptive, scalable, and intelligent processing Hub.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-09T12:20:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TumblerCore",
+                "description": "Decentralized, real-time processing fabric weaves intelligent, scalable data streams into a high-performance compute accelerator for the Edge Processor.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-09T12:20:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BurnMechanism",
+                "description": "Dynamically orchestrated, real-time processing meets machine-learning-driven intelligence in our scalable, distributed data combustion Engine.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:15:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ForensicKit",
+                "description": "Cyber Threat Disruption Suite leverages AI-driven Anomaly Detection for Advanced, Intelligent Data Analysis in a Distributed enterprise.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:14:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NodeRunner",
+                "description": "Proactive Edge Optimizer leveraging adaptive machine learning to ensure fault-tolerant distributed execution on high-performance executor",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-09T12:13:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MixerService",
+                "description": "Dynamic Real-Time Processing Orchestrator with Auto-Scaling Capabilities across Distributed Multi-User Environments, Seamlessly Integrated as Centralized Service Gateway.",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-10-09T12:12:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SupplySchedule",
+                "description": "Elevated Supply Chain Dynamics through Real-Time Processing, Embedded within a Scalable Distributed Intelligence Framework.",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:12:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ArbitrageEngine",
+                "description": "Here are 6 technical descriptors for ArbitrageEngine's synchronized multi-exchange order book infrastructure Kit.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:11:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GasOptimizer",
+                "description": "Efficiently harnessing predictive analytics and multi-variable optimization, GasOptimizer empowers distributed resource allocation within a scalable, adaptive framework suite.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-09T12:10:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StateChannel",
+                "description": "Adaptive StateChannel enables secure, synchronized data synchronization across distributed nodes within a resilient NetworkFabric.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:09:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SignatureVerify",
+                "description": "Advanced Enterprise SignatureVerify platform integrates Biometric Signature Recognition with Multi-Factor Authentication and distributed Certificate Trust Services Module.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:09:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ElasticSupply",
+                "description": "Microservices-orchestrated, containerized ElasticSupply enables hyper-distributed, event-driven scalability as a real-time service optimizer.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:07:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OracleNetwork",
+                "description": "Elevated Identity and Access Management enables Secure, High-Performance Data Oracle Identity Cloud Service and Encrypted Data Pipelines, Studio.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-09T12:06:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SidechainKit",
+                "description": "Decentralized, blockchain-agnostic SidechainKit enables synchronized, risk-assessed, high-velocity data transactions across a secure distributed ledger network.",
+                "stargazers_count": 0,
+                "language": "Go",
+                "pushed_at": "2025-10-09T12:06:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ExploitDetector",
+                "description": "Intelligent Threat Forensics Engine utilizing Predictive Analytics for Real-time Anomaly Detection and Automated Mitigation Module.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-09T12:05:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SlashingProtector",
+                "description": "Predictive Risk Navigator: Machine Learning-Powered Detection, Scaling Adaptive Defense Orchestrator Module. providing enterprise-grade SlashingProtector solutions",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2025-10-09T12:04:22Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:28.197017+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

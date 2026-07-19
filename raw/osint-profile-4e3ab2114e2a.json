@@ -1,0 +1,572 @@
+{
+  "profileId": "osint-profile-4e3ab2114e2a",
+  "target": "ZigaoWang",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:55.194426+00:00",
+  "completedAt": "2026-06-21T15:31:57.331815+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-27b2f77c",
+      "lookupType": "github_context",
+      "target": "ZigaoWang",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ZigaoWang",
+            "name": "Zigao Wang",
+            "type": "User",
+            "company": "YK Pao School",
+            "blog": "https://zigao.wang",
+            "location": "Shanghai, China",
+            "bio": "A passionate student developer and tech enthusiast from China",
+            "public_repos": 171,
+            "followers": 1505,
+            "following": 15013,
+            "created_at": "2022-03-21T03:01:30Z",
+            "updated_at": "2026-06-16T22:05:22Z",
+            "html_url": "https://github.com/ZigaoWang",
+            "avatar_url": "https://avatars.githubusercontent.com/u/102006756?v=4",
+            "repos": [
+              {
+                "name": "ZigaoWang",
+                "description": "Profile Repo",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2026-06-21T02:24:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tally",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-17T13:10:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "suno-ai-song",
+                "description": "Welcome to the Suno Music Generator! This application allows users to generate music based on text prompts using Suno's chirp-v3-5 model.",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2026-06-07T03:34:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hlm-reader",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-19T14:49:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AvoidXray.com",
+                "description": "A film photography community platform for sharing and discovering analog photography.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-08T12:39:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "z1.chat",
+                "description": "A fast, minimal AI chat app with multi-model support, memory, artifacts, code execution, and a credit system.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-04T03:42:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-auto-follow",
+                "description": "GitHub Auto Follow is a script that automatically follows users who have starred a specified GitHub repository.",
+                "stargazers_count": 17,
+                "language": "Python",
+                "pushed_at": "2025-10-04T09:29:45Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "follow",
+                  "follow-bot",
+                  "github",
+                  "github-follower",
+                  "python"
+                ]
+              },
+              {
+                "name": "zigao.wang",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-05-24T11:14:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blue-slip-system",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-28T05:28:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "MDX",
+                "pushed_at": "2024-04-26T12:13:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "blog.zigao.wang",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "MDX",
+                "pushed_at": "2026-05-14T04:49:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NotionNext",
+                "description": "\u4f7f\u7528 NextJS + Notion API \u5b9e\u73b0\u7684\uff0c\u652f\u6301\u591a\u79cd\u90e8\u7f72\u65b9\u6848\u7684\u9759\u6001\u535a\u5ba2\uff0c\u65e0\u9700\u670d\u52a1\u5668\u3001\u96f6\u95e8\u69db\u642d\u5efa\u7f51\u7ad9\uff0c\u4e3aNotion\u548c\u6240\u6709\u521b\u4f5c\u8005\u8bbe\u8ba1\u3002 (A static blog built with NextJS and Notion API, supporting multiple deployment options. No server required, zero threshold to set up a website. Designed for Notion and all creators.)",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-16T12:28:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zigao.wang_old",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-02-24T13:10:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "h2h",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-04-25T05:58:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "win12",
+                "description": "Windows 12 \u7f51\u9875\u7248\uff0c\u5728\u7ebf\u4f53\u9a8c \u70b9\u51fb\u4e0b\u9762\u7684\u94fe\u63a5\u5728\u7ebf\u4f53\u9a8c",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-08-31T09:32:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zhidao-search-api",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-04T09:50:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zhidao-frontend",
+                "description": "MoonShot 48 Hackathon Runner-up Project | \u77e5\u9053 (ZhiDao) - AI-powered research assistant with personalized subscriptions, and citations. | \u77e5\u9053 - \u5177\u6709\u4e2a\u6027\u5316\u8ba2\u9605\u3001\u5f15\u7528\u7ba1\u7406\u548c\u53cc\u8bed\u652f\u6301\u7684\u4eba\u5de5\u667a\u80fd\u7814\u7a76\u52a9\u624b\u3002",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-03-19T23:09:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-auto-star",
+                "description": "GitHub Auto Star is a Python script that automates the process of starring repositories on a specified GitHub user's repository page.",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2025-10-04T09:31:06Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "github",
+                  "github-stars",
+                  "github-user",
+                  "python",
+                  "repo",
+                  "repository",
+                  "selenium",
+                  "star"
+                ]
+              },
+              {
+                "name": "books.zigao.wang",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-22T00:42:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "notesollama",
+                "description": "Use Ollama to talk to local LLMs in Apple Notes",
+                "stargazers_count": 3,
+                "language": "Swift",
+                "pushed_at": "2025-02-21T15:04:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ZapKit",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Swift",
+                "pushed_at": "2025-10-04T09:48:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "one-page-app",
+                "description": "One Page is a minimalist iPad app designed to simulate real A4 scratch paper.",
+                "stargazers_count": 3,
+                "language": "Swift",
+                "pushed_at": "2025-10-04T09:51:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "out-loud-app",
+                "description": "A voice recording app with real-time transcription and AI analysis",
+                "stargazers_count": 4,
+                "language": "Swift",
+                "pushed_at": "2025-12-20T09:17:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "how-to-find-projects-worth-building",
+                "description": "A practical guide for finding and evaluating project ideas worth building",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2025-10-04T09:52:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-notes",
+                "description": "A note web app using HTML, CSS, JS",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-04T09:19:53Z",
+                "fork": false,
+                "topics": [
+                  "note-taking",
+                  "notes",
+                  "notes-app",
+                  "web-application",
+                  "website"
+                ]
+              },
+              {
+                "name": "ZapNotesApp",
+                "description": "Zap Notes is an AI-powered note-taking application for recording and analyzing thoughts, ideas, and tasks.",
+                "stargazers_count": 47,
+                "language": "Swift",
+                "pushed_at": "2025-07-27T15:53:38Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-assistant",
+                  "app",
+                  "ios",
+                  "ios-app",
+                  "note-taking",
+                  "notes-app",
+                  "productivity",
+                  "todoapp",
+                  "todolist"
+                ]
+              },
+              {
+                "name": "ai4e",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-11-16T05:59:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "elevate-ai",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-04T09:49:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Aryankpoor.github.io",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-22T13:45:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pcb-usb-hub",
+                "description": "PCB USB Hub",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-10-04T09:48:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pcb-nfc-business-card",
+                "description": "PCB NFC Business Card for Zigao Wang",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-10-04T09:48:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dial-thing",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-10-04T09:48:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "adventure-x-.github",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-11-17T06:22:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "oranguatan-project",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-10-04T09:48:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zigao-vtuber-logo",
+                "description": "Zigao VTuber Logo",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-11-14T05:58:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "swift-ai-chat-demo",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Swift",
+                "pushed_at": "2024-10-09T12:30:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zigao-portfolio",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "CSS",
+                "pushed_at": "2025-10-04T09:48:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pdf.js",
+                "description": "PDF Reader in JavaScript",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-28T12:01:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SwiftColearning01-1",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Swift",
+                "pushed_at": "2025-10-04T09:48:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easter-egg-web-search",
+                "description": "Easter Egg Web Search is a playful web application that provides a search bar with a Rick Roll and Whistle memes.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-22T00:57:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "windows-wallpaper",
+                "description": "Discover the most comprehensive collection of official Windows wallpapers and backgrounds, all in one place.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2024-08-20T09:27:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-voice-assistant",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-08-12T06:02:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cramers-rule",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-10-04T09:33:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fibonacci-recursion",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2025-10-04T09:33:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-teacher",
+                "description": "AI Teacher is an interactive web application designed to help middle school students learn English.",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-10-04T09:48:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "internet-history-3d",
+                "description": "Welcome to the History of the Internet Gallery, a virtual reality experience built with A-Frame.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-10-04T09:48:19Z",
+                "fork": false,
+                "topics": [
+                  "3d",
+                  "3d-website",
+                  "history",
+                  "internet",
+                  "internet-history"
+                ]
+              },
+              {
+                "name": "sprig",
+                "description": "\ud83c\udf43 Learn to code by making games in a JavaScript web-based game editor.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-07-26T04:25:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sprig-math-game",
+                "description": "Sprig Math Game",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-04T09:32:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sprig-dino-game",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-04T09:32:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ai-notebook",
+                "description": "Zigao \u7684 AI \u7b14\u8bb0\u672c",
+                "stargazers_count": 2,
+                "language": "MDX",
+                "pushed_at": "2024-07-23T12:07:51Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "aigc",
+                  "chatgpt",
+                  "claude",
+                  "dalle",
+                  "gemini",
+                  "llama",
+                  "stable-diffusion"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:57.330981+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

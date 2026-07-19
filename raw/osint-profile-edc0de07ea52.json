@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-edc0de07ea52",
+  "target": "Thuotracy",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:16.434747+00:00",
+  "completedAt": "2026-06-21T15:28:18.117014+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ca827e81",
+      "lookupType": "github_context",
+      "target": "Thuotracy",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Thuotracy",
+            "name": "Tracy Thuo",
+            "type": "User",
+            "company": "brilliantke",
+            "blog": "",
+            "location": "Nairobi",
+            "bio": "#programminglife\r\n#softwaredeveloper\r\n#technology",
+            "public_repos": 108,
+            "followers": 3975,
+            "following": 12602,
+            "created_at": "2021-03-17T09:36:04Z",
+            "updated_at": "2026-06-19T13:18:23Z",
+            "html_url": "https://github.com/Thuotracy",
+            "avatar_url": "https://avatars.githubusercontent.com/u/80819977?v=4",
+            "repos": [
+              {
+                "name": "Fit-On-Gym-App",
+                "description": "A gym website that a user can be able to search for different exercises and see an example of how to do the exercise.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-07-21T09:23:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "memory-game",
+                "description": "This is a game used to test you memory. Match the emojis on the card to win. Tap on the cards to flip them. Press the reset game button to play again",
+                "stargazers_count": 8,
+                "language": "CSS",
+                "pushed_at": "2024-08-21T04:57:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flutter_todo",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2025-04-22T17:41:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "auraska",
+                "description": "This is a website for a company that offers ERP Solutions that unify your business operations, from finance to customer management.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-05-14T18:47:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php_restuarant_system",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2025-02-18T13:28:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel_blogs",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "PHP",
+                "pushed_at": "2025-01-06T10:33:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hover_animation",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-11-14T11:49:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "authenticator_backend",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2024-11-12T13:07:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "authenticator",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-12T08:03:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "UPILI",
+                "description": "This is a website for a foundation that addresses this pervasive mental health challenge by providing Counselors with Disabilities to support secondary school Students with Disabilities, their families and communities.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-04-18T18:28:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "picha_pal",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2024-12-06T16:01:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mama_ashanti_restuarant",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-04-28T18:59:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "regulus_clone",
+                "description": "This is a website for a company that builds robust and scalable web applications to support any business process, from e-commerce and school applications to encrypted fraud reporting systems and complex data visualisations.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-02-10T12:20:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "line-animation-effect",
+                "description": "This is a running line animation",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2025-05-29T19:14:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "javascript-style-changer",
+                "description": "This is a website that changes CSS styling with JavaScript",
+                "stargazers_count": 14,
+                "language": "HTML",
+                "pushed_at": "2025-06-24T19:48:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "random-quote-generator",
+                "description": "This is a website that generates random quotes when you click the button",
+                "stargazers_count": 35,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-01T16:04:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "thuotracy",
+                "description": null,
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2024-10-17T05:03:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "real-estate-app-design",
+                "description": "A real estate app that allows you to find you dream home by just a click of a button. Click the logo at the top left of the page to navigate to the homepage of the application",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2023-08-02T13:43:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "school-website",
+                "description": "This is school website design.",
+                "stargazers_count": 28,
+                "language": "HTML",
+                "pushed_at": "2024-09-06T13:14:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "photo-album",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-03-26T17:49:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "happy-christmas",
+                "description": "Christmas animation ",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-02-24T15:46:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "countdown-timer",
+                "description": "This is a countdown timer",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2025-03-03T15:41:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "abstract-background",
+                "description": "an abstract background",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2025-03-09T14:35:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "toaster-animation",
+                "description": "toaster animation",
+                "stargazers_count": 8,
+                "language": "CSS",
+                "pushed_at": "2025-05-28T17:50:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "avatar-card-ui",
+                "description": "Avatar movie card design.",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2025-05-17T18:17:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "digital-clock",
+                "description": "This is a clock",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2025-05-22T18:53:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "slot-machine",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-05-21T18:27:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rotating-gallery",
+                "description": "Rotating image gallery pure css",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2025-05-16T15:52:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "starry-night",
+                "description": "NIght time",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2025-04-27T11:30:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "elastic-line",
+                "description": "Elastic line animation",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2025-05-10T17:45:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awward254",
+                "description": "Awwards254 is a web application that a user can be able to post their projects and they can get rated by other people.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2023-02-13T10:54:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "animated-background",
+                "description": "An animated background, when you click on the sun it changes to night mode and vice versa",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2025-04-06T09:39:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "password-manager",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2022-02-22T07:24:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio2",
+                "description": "portfolio",
+                "stargazers_count": 6,
+                "language": "CSS",
+                "pushed_at": "2022-12-08T13:56:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "to-do-list-js",
+                "description": "This is a to do website where by a user can add a task to do and can cancel out or delete the task once accomplished",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-16T14:20:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "number-guessing-game",
+                "description": "This is a number guessing game.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2025-02-05T12:52:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cube-hover-effect",
+                "description": "This is a cube hover animation",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2025-01-11T20:40:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cube-animation",
+                "description": "This is a CSS cube animation.",
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2025-01-03T14:50:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "angularquotes",
+                "description": "An app that displays people's quotes",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2022-02-15T13:12:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Frost",
+                "description": "Frosty Glass",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2022-12-04T12:09:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Le-Bistro-Urbain",
+                "description": "Restaurant website",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-07-08T20:56:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "image-slider",
+                "description": "This is an image slider website",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2023-02-19T13:47:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "social-media-icons",
+                "description": "3D social media icons",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2022-11-30T15:17:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ecommerce-website",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-08-02T11:36:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spin_the_wheel_game",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2024-07-25T15:57:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "new_flutter_apps",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2024-07-22T19:10:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bubbles_animation",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2024-07-18T08:41:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "retirementhome",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2023-11-19T11:41:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "o",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2023-12-06T17:27:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "happy-kids-home",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-11-12T14:34:56Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:18.116224+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

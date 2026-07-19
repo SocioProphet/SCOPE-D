@@ -1,0 +1,343 @@
+{
+  "profileId": "osint-profile-2a1d7907d21d",
+  "target": "instrik",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:22.299221+00:00",
+  "completedAt": "2026-06-21T15:29:23.209072+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-34498970",
+      "lookupType": "github_context",
+      "target": "instrik",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "instrik",
+            "name": "Aakash Agarwal",
+            "type": "User",
+            "company": "State Bank of India",
+            "blog": "https://www.instrik.com/",
+            "location": "Gujarat Circle",
+            "bio": "Beyond HR, I am a passionate flutter developer with deep expertise in Firebase for backend, blending people skills with tech innovation.",
+            "public_repos": 30,
+            "followers": 2680,
+            "following": 6934,
+            "created_at": "2018-11-02T18:47:22Z",
+            "updated_at": "2026-06-19T16:19:23Z",
+            "html_url": "https://github.com/instrik",
+            "avatar_url": "https://avatars.githubusercontent.com/u/44710607?v=4",
+            "repos": [
+              {
+                "name": "Clima_App",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "Dart",
+                "pushed_at": "2026-06-21T06:06:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Destini_App",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Dart",
+                "pushed_at": "2026-06-20T18:35:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Login_App",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Dart",
+                "pushed_at": "2026-06-19T16:21:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BMI_Calculator",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "Dart",
+                "pushed_at": "2026-06-16T18:27:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Calculator",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Dart",
+                "pushed_at": "2026-06-14T12:10:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Personal_AI_App",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "Dart",
+                "pushed_at": "2026-06-12T18:30:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "whatsapp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2024-05-15T19:34:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "xylophone",
+                "description": "this is music instrument on play store",
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2024-06-22T15:09:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Flappy-Bird-game",
+                "description": "flutter game.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-13T14:47:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flappy_bird",
+                "description": "this is my flutter game.",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2024-05-13T21:44:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "instrik",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-11-25T07:03:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "meme_generator",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2024-06-05T22:02:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Random_Memes_App",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-07T19:00:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Quizzler",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2025-10-13T01:19:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WhatsApp_Clone",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2025-12-18T07:55:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bmi-2",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2024-05-03T21:42:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Lottery_App",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2024-04-30T09:58:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "magic8ball",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Dart",
+                "pushed_at": "2024-04-30T10:13:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mi_card_app",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2024-04-30T10:15:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Weather_Practice_App",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2024-04-30T11:00:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "News_App",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2024-04-30T11:42:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Backend_project",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-10T12:17:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ashutosh-PMishra",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-01-08T20:27:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Shopping_App",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2024-04-30T11:06:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Xylophone_App",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2024-04-30T10:04:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Dice_App",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2024-04-30T10:11:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Flutter-Github-Test-Demo",
+                "description": "empty channel for testing",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-01T23:57:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Test-Repo-1.3.4",
+                "description": "this is a demo test project.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-05-01T22:45:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easy_pub.dev_package",
+                "description": "this package is named 'Easy'. It would be made open source on pub.dev",
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2024-05-06T14:50:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mi_card",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2024-05-07T17:53:01Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:23.208352+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

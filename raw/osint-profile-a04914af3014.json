@@ -1,0 +1,415 @@
+{
+  "profileId": "osint-profile-a04914af3014",
+  "target": "GabiDeutner",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:49:08.628688+00:00",
+  "completedAt": "2026-06-20T16:49:09.702002+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-53523ffa",
+      "lookupType": "github_context",
+      "target": "GabiDeutner",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "GabiDeutner",
+            "name": "Gabi Deutner",
+            "type": "User",
+            "company": null,
+            "blog": "https://beacons.ai/gabideutner",
+            "location": null,
+            "bio": "Software Engineer | Python & Go | Cloud, Search AI & Scalable Backends | Postgrad in Software Engineering (PUC)",
+            "public_repos": 38,
+            "followers": 809,
+            "following": 1231,
+            "created_at": "2018-12-12T19:59:26Z",
+            "updated_at": "2025-12-23T19:31:14Z",
+            "html_url": "https://github.com/GabiDeutner",
+            "avatar_url": "https://avatars.githubusercontent.com/u/45831598?v=4",
+            "repos": [
+              {
+                "name": "Java",
+                "description": "Java exercises that I did in college",
+                "stargazers_count": 10,
+                "language": "Java",
+                "pushed_at": "2023-09-26T20:04:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "algorithm-and-logic",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-12-06T22:18:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gabi_JogoDaVelha",
+                "description": "Projeto de Jogo da Velha Desenvolvido em React e JavaScript, utilizando a arquitetura de ITCSS para estrutura\u00e7\u00e3o da estiliza\u00e7\u00e3o do jogo",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-12-29T03:22:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "site-boardgames",
+                "description": "O Guia do Mochileiro dos Games \u00e9 uma plataforma autoral (Gabi Deutner e Denis Hideo) que foi desenvolvida para divulgar os melhores jogos de tabuleiro para apreciadores dessa modalidade de games.",
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2024-03-19T22:03:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Proj-Python-FastAPI",
+                "description": "Projeto utilizando FastAPI para treinar habilidades: Type Hint, Pydantic para valida\u00e7\u00e3o de dados, Fazer requisi\u00e7\u00f5es s\u00edncronas e ass\u00edncronas, par\u00e2metros de consulta e caminho, Autentica\u00e7\u00e3o e autoriza\u00e7\u00e3o, Opera\u00e7\u00f5es de CRUD,  Documenta\u00e7\u00e3o interativa, versionamento de APIs, Deploy (docker e CI/CD), Prote\u00e7\u00e3o de rotas com OAuth 2.0",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-05-24T22:06:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-backend",
+                "description": "Neste reposit\u00f3rio eu estou registrando os meus estudos para desenvolver as minhas habilidades de programa\u00e7\u00e3o backend em Python",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-05-21T20:50:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "GabiDeutner",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-12-23T16:30:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Microsoft-Azure-AI",
+                "description": "Neste reposit\u00f3rio do GitHub est\u00e3o minhas considera\u00e7\u00f5es sobre o bootcamp que realizei na DIO sobre Microsoft Azure AI Fundamentals - Estudos preparat\u00f3rios para certifica\u00e7\u00e3o AI-900. Nele cont\u00e9m os projetos realizados em laborat\u00f3rio de Machine learning, Reconhecimento Facial e transforma\u00e7\u00e3o de imagens em Dados no Azure ML, etc.",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2024-02-20T19:50:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Frontend-JavaScript-React",
+                "description": "Aqui est\u00e3o todos os registros dos meus estudos para desenvolvimento web front-end com HTML, CSS, JavaScript e React, bem como outros frameworks e libs",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-12T00:25:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "coderhouse-web-course-task-report",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2024-03-19T21:59:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CRUD_LAZUL",
+                "description": " java project ",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2021-02-19T00:39:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Frontend",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2021-08-05T03:08:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Estrutura_De_Dados",
+                "description": " codes I learned in the data structure class",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2021-06-02T02:39:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Python",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2021-11-18T04:03:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CSharp",
+                "description": "Notes about what I am learning with CSharp",
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2022-11-15T00:39:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Certificados_Cursos",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-11-25T00:53:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HTML_CSS",
+                "description": "teste",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2023-07-04T00:11:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "meu-primeiro-app-dio",
+                "description": "Esse projeto tem o objetivo de realizar um desafio para os alunos do curso de Android na DIO",
+                "stargazers_count": 4,
+                "language": "Kotlin",
+                "pushed_at": "2023-08-27T02:19:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Desafios_Kotlin_DIO",
+                "description": "Desafios e Solu\u00e7\u00f5es do Bootcamp Santander 2023 da Digital Innovation One",
+                "stargazers_count": 3,
+                "language": "Kotlin",
+                "pushed_at": "2023-09-04T23:10:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JavaScript",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "CSS",
+                "pushed_at": "2023-09-05T19:34:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CRUD_JSP_Loja",
+                "description": "Este \u00e9 um projeto que desenvolvi na faculdade utilizando JSP, Java e PHP para compor a estrutura de um CRUD de um ecommerce",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2023-11-08T15:55:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CRUD_php_loja",
+                "description": "Este \u00e9 um projeto que desenvolvi na faculdade utilizando PHP como principal linguagem back-end para compor a estrutura de um CRUD de um ecommerce",
+                "stargazers_count": 5,
+                "language": "PHP",
+                "pushed_at": "2023-11-08T15:56:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "organo-gabi-alura",
+                "description": "Esse projeto tem o objetivo de realizar o desenvolvimento do projeto Organo para os alunos do curso de React da plataforma Alura. Realizei com zero seguindo o curso para treinar meus conhecimentos de React",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-08T16:56:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "treino-ada-react",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-23T02:07:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Python_Data_Science",
+                "description": "Estudos de Data Science utilizando Python. Boa parte do conte\u00fado estudado foi pela forma\u00e7\u00e3o de Data Science da plataforma Alura.",
+                "stargazers_count": 4,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-12-05T20:59:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "primeiroprojeto",
+                "description": "Reposit\u00f3rio criado para aula de HTML e CSS da Coder House",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2024-01-10T01:01:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Frontend-React-CoderHouse",
+                "description": "Carreira de Desenvolvedor Front-End React JS da Coder House. Aqui est\u00e3o as minhas anota\u00e7\u00f5es das aulas sobre HTML, CSS, JavaScript e ReactJS.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2024-01-30T00:07:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ASP.NET-Core",
+                "description": "Estudos seguindo um Roadmap ASP.NET Core Developer. C# e Orienta\u00e7\u00e3o a Objetos: cole\u00e7\u00f5es, arquivos e bibliotecas.  C# Web: aplica\u00e7\u00f5es usando ASP.NET. ASP.Net Core: aplica\u00e7\u00f5es com C#, .NET, Entity Framework e LINQ.  .NET com Arquitetura de Microsservi\u00e7os e RabbitMQ .",
+                "stargazers_count": 6,
+                "language": "C#",
+                "pushed_at": "2024-03-05T17:07:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "copa-2022-android",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2023-09-04T22:36:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cars-api",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-08-29T16:54:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aprenda-kotlin-com-exemplos-lab",
+                "description": "Desafio de Projeto criado para avalia\u00e7\u00e3o do conte\u00fado t\u00e9cnico explorado no reposit\u00f3rio \"aprenda-kotlin-com-exemplos\".",
+                "stargazers_count": 3,
+                "language": "Kotlin",
+                "pushed_at": "2023-08-22T19:27:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aprenda-kotlin-com-exemplos",
+                "description": "Reposit\u00f3rio de exemplos/exerc\u00edcios explorados por meio da documenta\u00e7\u00e3o oficial do Kotlin (Learn Kotlin by Example).",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-10-16T22:08:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "desafio-github-search",
+                "description": "Criei esse App Android para compartilhar meu portfolio de projeto. Ele foi desenvolvido durante o Bootcamp do Santander (DIO) de 2023 - Mobile Kotlin",
+                "stargazers_count": 3,
+                "language": "Kotlin",
+                "pushed_at": "2023-09-03T18:06:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GitTutorial",
+                "description": "Tutorial de como usar o Git e Github na pr\u00e1tica",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-10-02T03:42:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "javascript_exercism",
+                "description": "Exercism exercises in JavaScript.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2023-11-28T00:14:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "eletric-car-app",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2022-09-05T15:04:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "js-consumindo-dados-api",
+                "description": "Reposit\u00f3rio do treinamento \"JavaScript: Consumindo e tratando dados de uma API\" da Alura Cursos Online.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-06-10T23:17:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dio-lab-open-source",
+                "description": "Reposit\u00f3rio do lab Contribuindo em um Projeto Open Source no GitHub da Digital Innovation One.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-08-20T14:41:37Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:49:09.701349+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

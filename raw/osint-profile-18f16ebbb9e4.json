@@ -1,0 +1,199 @@
+{
+  "profileId": "osint-profile-18f16ebbb9e4",
+  "target": "nstrmx",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:42.244140+00:00",
+  "completedAt": "2026-06-21T15:28:42.853998+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-7d166717",
+      "lookupType": "github_context",
+      "target": "nstrmx",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "nstrmx",
+            "name": "Den",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "\u2709\ufe0f gladunov.denis@gmail.com | telegram: nstrmx ",
+            "public_repos": 14,
+            "followers": 3249,
+            "following": 3781,
+            "created_at": "2018-11-15T02:44:02Z",
+            "updated_at": "2025-11-29T14:07:51Z",
+            "html_url": "https://github.com/nstrmx",
+            "avatar_url": "https://avatars.githubusercontent.com/u/45055549?v=4",
+            "repos": [
+              {
+                "name": "asteroids-game",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2026-06-12T12:55:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ozon_parser",
+                "description": "Simple parser for www.ozon.ru seller products.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2023-10-22T05:34:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "django-media-player",
+                "description": "Play, organize and filter your media using django admin.",
+                "stargazers_count": 50,
+                "language": "Python",
+                "pushed_at": "2026-05-22T21:39:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dowhile-rs",
+                "description": "Do-while macro for rust with labels and pattern matching support.",
+                "stargazers_count": 14,
+                "language": "Rust",
+                "pushed_at": "2025-01-06T11:07:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pypandoc",
+                "description": "Thin wrapper for \"pandoc\" (MIT)",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2024-10-27T13:13:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "snake-game-rs",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "Rust",
+                "pushed_at": "2024-07-30T14:50:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "snake-game",
+                "description": "Snake game",
+                "stargazers_count": 6,
+                "language": "C",
+                "pushed_at": "2024-07-28T18:49:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "parallel-downloader",
+                "description": "Simple command line utility for parallel downloading written in rust for learning purposes.",
+                "stargazers_count": 7,
+                "language": "Rust",
+                "pushed_at": "2025-03-03T19:43:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Nebula",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2023-02-11T21:43:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Miriam",
+                "description": "Telegram bot prototype for issuing qiwi invoices and updating the account balance.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2022-09-16T14:55:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Primes-Pascal-Triangle-Fibonacci-Collatz",
+                "description": "Math Fun",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2021-10-02T01:57:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scrapers",
+                "description": "Repository for various scrapers",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-05-21T07:57:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NewsApp",
+                "description": "TGU Android Course Project",
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2021-12-09T19:15:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vscode-file-watcher",
+                "description": "Extension for Visual Studio Code allows configuring commands that get run whenever a file is saved or folder is changed in vscode.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-03-10T19:53:51Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:42.853159+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

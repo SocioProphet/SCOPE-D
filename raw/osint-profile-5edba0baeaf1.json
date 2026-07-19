@@ -1,0 +1,496 @@
+{
+  "profileId": "osint-profile-5edba0baeaf1",
+  "target": "MightyTechNinja",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:35.517204+00:00",
+  "completedAt": "2026-06-21T15:29:36.751900+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ec528cb0",
+      "lookupType": "github_context",
+      "target": "MightyTechNinja",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "MightyTechNinja",
+            "name": "MightyTechNinja",
+            "type": "User",
+            "company": "Personal Developer",
+            "blog": "",
+            "location": null,
+            "bio": "Creative, Passionate, and Perfective Senior Full Stack & Blockchain & AI developer with 8+ years experience.",
+            "public_repos": 47,
+            "followers": 2522,
+            "following": 2953,
+            "created_at": "2024-05-31T15:19:10Z",
+            "updated_at": "2026-05-01T11:41:42Z",
+            "html_url": "https://github.com/MightyTechNinja",
+            "avatar_url": "https://avatars.githubusercontent.com/u/171361497?v=4",
+            "repos": [
+              {
+                "name": "Python-Scraping-to-Database-Sample",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-07-20T13:50:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rental-search-assistant",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2024-08-05T13:50:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "self-study-plan-nlp",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-25T18:15:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DSL-JSON",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-22T07:11:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "QA-Pilot",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Svelte",
+                "pushed_at": "2024-08-05T13:59:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Gemini-Langchain-Chatbot",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-08-05T13:56:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "llama3_chatbot",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-08-05T13:55:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chatbot_react_dps",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-05T13:54:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Scraping-Business-in-Google",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-07-20T13:54:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stock_data_scraper",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-20T13:53:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Historic_Crypto",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-20T13:40:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "practical-web-scraping-for-data-science",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-20T13:36:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeepHit",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-06T11:01:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Text-Classification-Pytorch",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-06T11:01:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MightyTechNinja",
+                "description": null,
+                "stargazers_count": 25,
+                "language": null,
+                "pushed_at": "2024-07-06T13:01:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hardhat-tutorial",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Solidity",
+                "pushed_at": "2024-06-13T10:04:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel-vue-crud-starter",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2024-06-08T12:49:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Employee-Leave-Management",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-07T14:08:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DeepLearning_Financial",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-06T09:42:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deep-image-retrieval",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-06T09:47:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "deep_metric_learning",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-06T09:52:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BitcoinForecast",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-06T10:00:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "facial-expression-recognition",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-07-05T15:28:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tensorflow2-deep-reinforcement-learning",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2024-07-05T15:32:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WarChess",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2024-06-29T14:01:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-app-starter",
+                "description": "This is react starter project with javascript.",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-04T13:04:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-todo-app",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-15T14:39:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vue-img-inputer",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Vue",
+                "pushed_at": "2024-06-08T12:41:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "electron-python",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-07T14:16:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cw20-token",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2024-06-28T13:29:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "orderbook",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-22T13:02:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uniswap-demo",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-17T08:40:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-dapp",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-16T18:37:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "p2p-lending",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-16T18:33:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "telegram-bot",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-21T16:51:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "material-tailwind-dashboard-react",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-16T17:41:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aws-lambda-typescript",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-16T17:53:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tailwindcss-highlight",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-16T17:18:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tailwindcss-standalone",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-15T15:09:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactSSRCasts",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-15T12:03:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Warchess-Alphazero",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-07-04T07:27:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactJS-Spring-Boot-CRUD-Full-Stack-App",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-15T11:39:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-frontend-dev-portfolio",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "SCSS",
+                "pushed_at": "2024-06-15T04:26:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ReactJS-Realtime-Chat",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-14T21:24:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "laravel-vue-survey",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "PHP",
+                "pushed_at": "2024-06-08T12:52:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tutorial-hardhat-deploy",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2024-06-11T18:49:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "keras-deep-graph-learning",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-07-06T09:46:43Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:36.751138+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

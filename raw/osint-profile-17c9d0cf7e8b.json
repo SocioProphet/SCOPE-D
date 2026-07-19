@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-17c9d0cf7e8b",
+  "target": "thornebaker",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:50.064377+00:00",
+  "completedAt": "2026-06-21T15:32:50.427167+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-101f9c9a",
+      "lookupType": "github_context",
+      "target": "thornebaker",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "thornebaker",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "follow me",
+            "public_repos": 1,
+            "followers": 1291,
+            "following": 2423,
+            "created_at": "2024-07-31T22:33:46Z",
+            "updated_at": "2026-06-03T05:58:05Z",
+            "html_url": "https://github.com/thornebaker",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177169582?v=4",
+            "repos": [
+              {
+                "name": "thornebaker",
+                "description": null,
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-07-24T01:52:23Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:50.426768+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

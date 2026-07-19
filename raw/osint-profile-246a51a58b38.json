@@ -1,0 +1,323 @@
+{
+  "profileId": "osint-profile-246a51a58b38",
+  "target": "omermertkaya",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:24.784651+00:00",
+  "completedAt": "2026-06-21T15:31:25.386742+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-db49c541",
+      "lookupType": "github_context",
+      "target": "omermertkaya",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "omermertkaya",
+            "name": "\u00d6mer Mert KAYA",
+            "type": "User",
+            "company": null,
+            "blog": "https://omermertkaya.github.io",
+            "location": "Ankara, Turkey",
+            "bio": null,
+            "public_repos": 21,
+            "followers": 1617,
+            "following": 15258,
+            "created_at": "2015-01-29T02:37:05Z",
+            "updated_at": "2026-05-28T07:54:46Z",
+            "html_url": "https://github.com/omermertkaya",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10751047?v=4",
+            "repos": [
+              {
+                "name": "omermertkaya.github.io",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-05-28T08:55:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easy-saml",
+                "description": "Simple SSO Application Easy",
+                "stargazers_count": 1,
+                "language": "EJS",
+                "pushed_at": "2026-03-24T20:49:53Z",
+                "fork": false,
+                "topics": [
+                  "authentication",
+                  "iam",
+                  "sso",
+                  "sso-authentication"
+                ]
+              },
+              {
+                "name": "omermertkaya",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-28T09:30:13Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "iam-dashboard",
+                "description": "IAM Insights Reporting Dashboard \u2014 IAM Metrics",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2024-07-06T12:25:10Z",
+                "fork": false,
+                "topics": [
+                  "iam",
+                  "identity-and-access-management",
+                  "idm",
+                  "insights-reports"
+                ]
+              },
+              {
+                "name": "adsec-tr",
+                "description": "An introduction to Active Directory security",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-08-22T15:18:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "iban-validation-desktop-app",
+                "description": "App is iban validation. User choose excel file for iban validation. App will verify for Turkish Bank Name.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-06T14:22:55Z",
+                "fork": false,
+                "topics": [
+                  "electron-app",
+                  "electron-application",
+                  "electron-js",
+                  "iban-dogrulama",
+                  "iban-validation",
+                  "iban-validation-tr",
+                  "iban-validation-turkish-bank"
+                ]
+              },
+              {
+                "name": "anadolu-agency-automatic-data-pull",
+                "description": "The system is pulling automatic news, picture, video and graphics from Anadolu Ajans\u0131 API.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2022-07-12T10:14:46Z",
+                "fork": false,
+                "topics": [
+                  "anadolu-agency",
+                  "anadolu-agency-api",
+                  "anadolu-ajansi"
+                ]
+              },
+              {
+                "name": "youtube-channel-live-stream",
+                "description": "You fetch all live stream in your youtube channel.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-24T11:22:27Z",
+                "fork": false,
+                "topics": [
+                  "get-live-stream",
+                  "youtube",
+                  "youtube-live-stream",
+                  "youtube-live-stream-check"
+                ]
+              },
+              {
+                "name": "vue2vis",
+                "description": "A Vuejs 2 adapter for Visjs",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-05-15T04:48:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "imdb-cast-poster",
+                "description": "Download cast posters from imdb as a list. ",
+                "stargazers_count": 1,
+                "language": "EJS",
+                "pushed_at": "2022-01-23T15:39:24Z",
+                "fork": false,
+                "topics": [
+                  "imdb-cast-download",
+                  "imdb-cast-poster",
+                  "imdb-poster",
+                  "imdb-webscrapping",
+                  "javascript",
+                  "nodejs"
+                ]
+              },
+              {
+                "name": "Esme-Theme-Wordpress",
+                "description": "Esme PD Esme Blog Theme",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2021-01-19T15:44:14Z",
+                "fork": false,
+                "topics": [
+                  "basic-wordpress-theme",
+                  "wordpress-theme"
+                ]
+              },
+              {
+                "name": "Trampoline-Unity",
+                "description": "Trampoline for unity game engine",
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2023-01-15T11:23:04Z",
+                "fork": false,
+                "topics": [
+                  "game-development",
+                  "trampoline",
+                  "unity2d"
+                ]
+              },
+              {
+                "name": "KolayKus",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2019-05-09T22:11:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JavaScript",
+                "description": "JavaScript Baslangic Seviye ",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2018-01-07T21:58:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AngularJS",
+                "description": "AngularJS k\u00fct\u00fcphanesini \u00f6\u011frenelim.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2018-01-11T18:25:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "opencvWithPython",
+                "description": "OpenCv ile Python - Video ve Resim Analizleri",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2017-12-01T16:58:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VeriYapilari",
+                "description": "Veri yapilari hakkinda C programlama dilinde payla\u015f\u0131mlar\u0131m.",
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2017-11-03T21:37:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AndroidStudioileCheckBox",
+                "description": "Android Studio ile CheckBox Basit Uygulamas\u0131",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2017-06-22T18:34:06Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "box",
+                  "check",
+                  "checkbox",
+                  "studio"
+                ]
+              },
+              {
+                "name": "email-harvesting",
+                "description": "Simple python application for email harvesting tool",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2025-03-12T10:40:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "active-directory-auth",
+                "description": "Active Directory Auth Application",
+                "stargazers_count": 0,
+                "language": "EJS",
+                "pushed_at": "2024-11-30T19:01:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "android-basit-toplama-islemi",
+                "description": "Android Studio kullan\u0131larak basit bir y\u00f6ntem ile toplama i\u015flemi yapan uygulama geli\u015ftirilmi\u015ftir. ",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2017-06-22T18:42:29Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "android-application",
+                  "gelistirme",
+                  "ile",
+                  "islemi",
+                  "java",
+                  "studio",
+                  "toplama",
+                  "uygulama",
+                  "yapan"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:25.384403+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

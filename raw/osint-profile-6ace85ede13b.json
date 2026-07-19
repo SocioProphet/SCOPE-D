@@ -1,0 +1,531 @@
+{
+  "profileId": "osint-profile-6ace85ede13b",
+  "target": "OftenUser",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:19.629478+00:00",
+  "completedAt": "2026-06-21T15:31:21.747668+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-19679ef8",
+      "lookupType": "github_context",
+      "target": "OftenUser",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "OftenUser",
+            "name": "OftenGuy",
+            "type": "User",
+            "company": "Nunya",
+            "blog": "oftenguy.github.io",
+            "location": "Biznis",
+            "bio": "Just a boring black and white \"thing\" who's here often.\r\n\r\nhttps://oftenguy.github.io",
+            "public_repos": 79,
+            "followers": 1658,
+            "following": 13964,
+            "created_at": "2021-01-13T19:38:50Z",
+            "updated_at": "2025-05-05T03:51:16Z",
+            "html_url": "https://github.com/OftenUser",
+            "avatar_url": "https://avatars.githubusercontent.com/u/77411288?v=4",
+            "repos": [
+              {
+                "name": "oftenuser.github.io",
+                "description": "Redirect to OftenGuy's website at https://oftenguy.github.io",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-03-11T02:05:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pianotiles2web",
+                "description": "HTML source files for the official web browser version of Piano Tiles 2! (Modified for funsies)",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2026-03-12T02:33:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pianogame",
+                "description": "Legacy code when Synthesia was once open source.",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2025-11-01T20:55:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "freepiano",
+                "description": "Play piano using your computer keyboard.",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2025-11-01T20:46:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "signal",
+                "description": "Online MIDI Editor: signal",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-05T22:18:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "5b",
+                "description": "Flash game Cary developed in early 2013, first announced in this YouTube video: https://www.youtube.com/watch?v=emDpKog8v6w",
+                "stargazers_count": 5,
+                "language": "ActionScript",
+                "pushed_at": "2024-08-18T19:24:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HTML5b",
+                "description": "An HTML5 port of Cary Huang's \"BFDIA 5b\" flash game.",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-18T19:34:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AliceAdventure2019",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-11-10T05:04:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CookieClicker",
+                "description": "Cookie Clicker copy for, errrr, educational purpose.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2024-12-20T03:44:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MyGDBrowserSuggestions",
+                "description": "My suggestions for fixing some GDBrowser pages",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-05-24T22:02:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Phoenix",
+                "description": "Phoenix is a modern open-source IDE for the web, built for the browser. ",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-11-01T20:26:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "electron",
+                "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2026-02-16T16:38:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "onlinesequencer-1",
+                "description": "Online Music Sequencer - onlinesequencer.net",
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2024-04-11T01:01:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "win11React",
+                "description": "Windows 11 in React \ud83d\udcbb\ud83c\udf08\u26a1",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-15T18:46:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "mwb6763.github.io",
+                "description": "My markdown page",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2022-02-12T20:09:07Z",
+                "fork": false,
+                "topics": [
+                  "mwb",
+                  "mwb6763",
+                  "splashystudio"
+                ]
+              },
+              {
+                "name": "erikmcclure.github.io",
+                "description": "Personal Github webpage",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-04-10T15:05:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "releases",
+                "description": "\ud83d\udce6 Complete and up-to-date info about every release of Electron",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-01-19T18:17:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MiniPaint",
+                "description": "Online Image Editor",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-27T15:57:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "W3Schools",
+                "description": "W3Schools Full Offline Version",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2024-06-07T19:54:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "geometrylite.github.io",
+                "description": "Came from GDColon's video \"The Secrets Of Fake Geometry Dash\", for archive in case this gets taken down in case the bootleg game makers realize this has been found out",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-06-17T20:09:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "brackets.io",
+                "description": "brackets.io website",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2022-02-05T18:53:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "brackets",
+                "description": "An open source code editor for the web, written in JavaScript, HTML and CSS.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-12T20:34:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "blueweb",
+                "description": "Personal website for self-presentation.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-19T20:06:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "blueedgetechno.github.io",
+                "description": "My blog",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2022-05-21T19:01:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BlueBoy2D",
+                "description": "Blue Boy Adventure 2D Game",
+                "stargazers_count": 5,
+                "language": "Java",
+                "pushed_at": "2023-11-12T20:19:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BlueBlog",
+                "description": "This is my first web application with flask",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2022-05-19T20:00:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "atom",
+                "description": ":atom: The hackable text editor",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-04-02T22:44:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ambrosiogabe.github.io",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "ASP.NET",
+                "pushed_at": "2022-05-15T01:06:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Ja7ad.github.io",
+                "description": "Javad Rajabzade Portfolio Page",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-06-02T19:04:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "scratchx",
+                "description": "Scratch Extension Site",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-14T02:06:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ScratchToJAR",
+                "description": "ScratchToJar is a program that turns Scratch 1.4 programs into Java files. This is likely broken and SHOULD NOT BE USED. It remains for historical reasons only.",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2024-01-01T19:31:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MinimalLWJGLEngine",
+                "description": "This is a minimal game engine written in LWJGL. It has support for scene management, entities with components, and a 2D renderer.",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2023-12-31T20:22:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ImpossibleGame",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2023-12-31T19:20:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MWB6763",
+                "description": "About MWB page",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-02-12T20:09:37Z",
+                "fork": false,
+                "topics": [
+                  "mwb",
+                  "mwb6763",
+                  "splashystudio"
+                ]
+              },
+              {
+                "name": "ozh.github.com",
+                "description": "Files for ozh.github.com",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-25T19:30:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ScratchAddons",
+                "description": "All-in-one browser extension for Scratch.",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-01T22:22:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "jquery-timeago",
+                "description": ":clock8: The original jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. \"4 minutes ago\").",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2022-05-28T18:50:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cython.github.io",
+                "description": "cython.org",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-01-16T17:39:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gddocs",
+                "description": "\ud83d\udccb Documentation for Geometry Dash.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-01-17T20:46:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "squeak-chrome-app",
+                "description": "Squeak for ChromeOS using SqueakJS",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-01-17T03:31:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "website-v2",
+                "description": "The website for Scratch Addons. (version 2) ",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-02-03T01:37:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "socialblade-js",
+                "description": "Library for Social Blade's Official API in JavaScript (TypeScript)",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2022-02-06T02:49:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "shawnbeatonV4",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-02-06T19:30:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shawnbeatonV3",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-02-06T19:54:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scratch-desktop",
+                "description": "Scratch 3.0 as a self-contained desktop application",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-02-12T20:03:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LivecountsSpace.github.io",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-02-15T20:31:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "scratchaddons.github.io",
+                "description": "The old version of the official website for ScratchAddons. Maintained by @Explosion-Scratch.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2022-03-24T20:07:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "htmlifier",
+                "description": "The HTMLifier \"converts\" Scratch 3.0 projects to an HTML file by putting all the project data and the entire Scratch engine into one enormous file",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2022-04-08T19:44:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "forkphorus",
+                "description": "JavaScript compiler for Scratch 3, 2, and 1 projects.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2022-04-08T19:57:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kotlin-web-site",
+                "description": "The Kotlin programming language website",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2022-04-09T14:16:57Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:21.747034+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

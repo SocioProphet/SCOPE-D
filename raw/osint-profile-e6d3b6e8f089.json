@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-e6d3b6e8f089",
+  "target": "D4Fi",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:54.889692+00:00",
+  "completedAt": "2026-06-21T15:28:56.831311+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-0dedb586",
+      "lookupType": "github_context",
+      "target": "D4Fi",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "D4Fi",
+            "name": "01010010010101010101",
+            "type": "User",
+            "company": "FreeLance",
+            "blog": "https://www.youtube.com",
+            "location": "world",
+            "bio": "0101010101100101001010101010",
+            "public_repos": 81,
+            "followers": 3078,
+            "following": 27779,
+            "created_at": "2023-07-11T22:48:28Z",
+            "updated_at": "2024-03-19T16:21:49Z",
+            "html_url": "https://github.com/D4Fi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/139288494?v=4",
+            "repos": [
+              {
+                "name": "AutoFi",
+                "description": "This is a library for automating tasks or testing for Android devices.This library is based on the Android /bin folder. We use command-line utilities for some Android events.",
+                "stargazers_count": 21,
+                "language": "Python",
+                "pushed_at": "2023-10-10T18:39:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "D4Fi",
+                "description": null,
+                "stargazers_count": 16,
+                "language": null,
+                "pushed_at": "2024-03-27T03:22:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Project-Pacman",
+                "description": "\"Recrie o cl\u00e1ssico Pac-Man em Python. Controle o Pac-Man por um labirinto enquanto come pontos e evita fantasmas. Implemente intelig\u00eancia artificial para os inimigos e desafie suas habilidades de programa\u00e7\u00e3o.\"",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-03-19T21:38:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Check-List-Django",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-02-06T21:02:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Projeto-Curso-de-javascript-exercicio-one",
+                "description": "Este projeto em JavaScript visa criar um sistema que simula a transi\u00e7\u00e3o entre os modos \"dia\" e \"noite\" em uma p\u00e1gina web. Isso ser\u00e1 alcan\u00e7ado alterando dinamicamente o tema da p\u00e1gina, ajustando cores, imagens e outros elementos visuais.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-01-16T14:59:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Projeto-Curso-de-sql-exercicio-one",
+                "description": "Este projeto serve como um ambiente de aprendizado pr\u00e1tico para conceitos fundamentais de SQL, incluindo a cria\u00e7\u00e3o de tabelas, relacionamentos, consultas e manipula\u00e7\u00e3o de dados. Ele pode ser utilizado tanto por iniciantes para praticar SQL quanto por instrutores que desejam fornecer um exemplo pr\u00e1tico para seus alunos.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-01-11T22:41:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Django-recipes-project",
+                "description": " Django models serve as a crucial component of the Django web framework, providing a high-level, Pythonic way to define the structure and behavior of the application's database. Models define the data schema, encapsulate business logic, and facilitate the interaction between the web application and the underlying database.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-01-11T06:15:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Midmap-Django-models.ForeignKey",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-01-08T13:06:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Midmap-Django-models",
+                "description": " Django models serve as a crucial component of the Django web framework, providing a high-level, Pythonic way to define the structure and behavior of the application's database. Models define the data schema, encapsulate business logic, and facilitate the interaction between the web application and the underlying database.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-01-06T21:22:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StaticFilesTraining",
+                "description": "O projeto StaticFilesTraining \u00e9 uma aplica\u00e7\u00e3o web desenvolvida usando o framework Django, com o objetivo principal de proporcionar uma experi\u00eancia pr\u00e1tica no gerenciamento e utiliza\u00e7\u00e3o de arquivos est\u00e1ticos. ",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2024-01-05T19:04:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "D4Fi.github.io",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Sass",
+                "pushed_at": "2024-04-09T16:05:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "curso-git-github-projeto-2",
+                "description": " Este projeto foi criado como um laborat\u00f3rio experimental para explorar os conceitos fundamentais do Git, entender os fluxos de trabalho b\u00e1sicos e aprimorar as habilidades de colabora\u00e7\u00e3o em um ambiente de desenvolvimento.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2024-01-03T06:47:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "curso-git-github-projeto-1",
+                "description": "Este projeto tem como objetivo criar um sistema simples de controle de tarefas utilizando o Git como sistema de controle de vers\u00e3o e o GitHub como plataforma de hospedagem e colabora\u00e7\u00e3o. A aplica\u00e7\u00e3o permitir\u00e1 que os usu\u00e1rios registrem e acompanhem suas tarefas, mantendo um hist\u00f3rico de altera\u00e7\u00f5es e colaborando de maneira eficiente.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-01-02T03:38:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "testando-uma-view-na-urls.py-django",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2023-12-25T11:51:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Calculadora-com-FastAPi",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2023-12-01T12:12:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "template-method",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-27T11:12:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Scratch",
+                "description": "Testing Scratch",
+                "stargazers_count": 6,
+                "language": "Vim Script",
+                "pushed_at": "2023-09-07T23:11:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VimPlugins",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-07-16T18:47:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Youtube",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-07-16T22:56:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Projects",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2023-10-10T18:37:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tela-de-login-dark",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-11-17T04:26:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Treinando-0flex-box2",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-10-24T20:09:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "curso-banco-de-dados",
+                "description": "Aulas, exerc\u00edcios e resumos sobre banco de dados",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-03-31T13:57:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flasdkjflksd",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-10-22T01:49:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Diagrama-de-classes-UML",
+                "description": "Os s\u00edmbolos de diagrama de classe UML pr\u00e9-desenhados representam classe, classe de modelo, objeto, item, pacote, interface, depend\u00eancia, composi\u00e7\u00e3o e associa\u00e7\u00e3o, etc. Esses s\u00edmbolos ajudam a criar diagramas e documenta\u00e7\u00e3o precisos. ",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2023-10-22T23:01:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Projeto-e-commerce-bootstrap-",
+                "description": "Projeto do curso web avan\u00e7ado",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-10-22T23:12:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sistema-solar-em-css-sass",
+                "description": "treinado cass sass",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-10-24T19:48:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Grid-web",
+                "description": "treinando hud",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-10-24T19:43:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "html-css-test-flex-box",
+                "description": "inicio do flex-box",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-10-24T19:56:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Flex-box-treining",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2023-10-24T19:59:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-javascript",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2023-10-27T21:26:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Treinando-css-grid",
+                "description": "css grid",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-10-27T21:29:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Treinando-0flex-box3",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-10-27T21:30:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "eletron-html-css",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2023-10-27T21:32:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Treinando-0flex-box4",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2023-10-27T21:35:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jogo-da-velha-com-a-linguagem-R-ou-RData",
+                "description": "estudos de Rdata",
+                "stargazers_count": 2,
+                "language": "R",
+                "pushed_at": "2023-10-31T01:15:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "exercicios-do-curso-de-SQL-1",
+                "description": "PK",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-11-02T17:43:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SQL-exercicios-PK-FK",
+                "description": "PK, Fk",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-11-02T18:06:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "exercicio-python-threading",
+                "description": "um thread pode executar c\u00f3digo Python por vez (mesmo que certas bibliotecas orientadas ao desempenho possam superar essa limita\u00e7\u00e3o). Se voc\u00ea deseja que sua aplica\u00e7\u00e3o aproveite melhor os recursos computacionais de m\u00e1quinas multi-core, \u00e9 aconselh\u00e1vel usar multiprocessingou concurrent.futures.ProcessPoolExecutor. ",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2023-11-06T03:17:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fasrAPI-uma-simples",
+                "description": "criando uma api simples com fastapi, fazendo requests com o modulo requests",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2023-11-08T17:50:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fun-o-s-de-ativa-o-para-redes-neurais-artificias",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-11-08T13:49:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "treinando-javascritp-html-css",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "CSS",
+                "pushed_at": "2023-11-11T14:12:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "grid-css",
+                "description": "treinando hud",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-11-11T14:14:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "animation-eletron-css",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-11-11T14:18:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "grid-css-3",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "CSS",
+                "pushed_at": "2023-11-11T14:19:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-site-UNES",
+                "description": "criando um site de busca",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-11-11T14:24:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "desafio-do-curso-de-web-3",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-11-11T14:29:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "desafio-do-curso-de-web-blog",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-11-11T14:27:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test-list-interaction",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-11-11T14:31:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "navigation-css",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2023-11-11T14:34:48Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:56.830458+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "profileId": "osint-profile-71099a43effa",
+  "target": "xdisturb-x1",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:30.616478+00:00",
+  "completedAt": "2026-06-21T15:28:30.982142+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-029ba87d",
+      "lookupType": "github_context",
+      "target": "xdisturb-x1",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "xdisturb-x1",
+            "name": "DISTURBB",
+            "type": "User",
+            "company": "follow my gf if u want @alt-xb4  <3 - thanks!",
+            "blog": "",
+            "location": null,
+            "bio": "u can int or c+h with me all are accepted, ask me to know more.\r\npls dont copy/inspo my skin.\r\n if u follow me, i will follow u 2\r\n- many thanks!! ",
+            "public_repos": 1,
+            "followers": 3565,
+            "following": 17263,
+            "created_at": "2023-11-02T14:19:18Z",
+            "updated_at": "2026-06-09T14:06:36Z",
+            "html_url": "https://github.com/xdisturb-x1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/149694525?v=4",
+            "repos": [
+              {
+                "name": "karr-x1",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2023-11-02T14:24:07Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:30.981093+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

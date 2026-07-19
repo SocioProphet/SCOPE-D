@@ -1,0 +1,574 @@
+{
+  "profileId": "osint-profile-380a6fa73810",
+  "target": "AmirPeyravan",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:40.682560+00:00",
+  "completedAt": "2026-06-21T15:29:42.737396+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-951de595",
+      "lookupType": "github_context",
+      "target": "AmirPeyravan",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "AmirPeyravan",
+            "name": "amirpeyravan",
+            "type": "User",
+            "company": "farsdeveloper",
+            "blog": "https://amirpeyravan.github.io",
+            "location": "Iran , Fars",
+            "bio": "Make code, not excuses",
+            "public_repos": 93,
+            "followers": 2431,
+            "following": 7014,
+            "created_at": "2023-08-01T09:23:29Z",
+            "updated_at": "2026-06-14T12:24:23Z",
+            "html_url": "https://github.com/AmirPeyravan",
+            "avatar_url": "https://avatars.githubusercontent.com/u/141130613?v=4",
+            "repos": [
+              {
+                "name": "amirpeyravan.github.io",
+                "description": "Personal website",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2026-06-19T16:34:24Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "javascript",
+                  "php"
+                ]
+              },
+              {
+                "name": "devtwitter-data",
+                "description": "DevTwitter Telegram Channel Data export",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-13T14:57:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RTL-Extension",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-10T18:25:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "todo-py",
+                "description": "Task manager app",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-06-10T08:47:25Z",
+                "fork": false,
+                "topics": [
+                  "python"
+                ]
+              },
+              {
+                "name": "manage-trafic-script",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2026-05-09T10:25:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Vercel-XHTTP",
+                "description": "XHTTP relay for Xray/V2Ray on Vercel Edge \u2014 Complete Persian setup guide. Hide your origin server IP behind *.vercel.app",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-28T11:45:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "goqueue",
+                "description": "A job queue with HTTP API and concurrent workers in Go",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-24T22:33:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sni-spoofing-rust",
+                "description": "SNI spoofing for Windows, Linux and MacOS / works alongside v2ray connections, idea and windows by @patterniha, I just did the linux & rust one",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-14T13:19:47Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flutter",
+                "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-12-09T14:15:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "milvus",
+                "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-12-20T05:45:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ai-chat-bot",
+                "description": "for-exam",
+                "stargazers_count": 7,
+                "language": "PHP",
+                "pushed_at": "2025-06-10T08:32:27Z",
+                "fork": false,
+                "topics": [
+                  "blade",
+                  "javascript",
+                  "laravel",
+                  "php"
+                ]
+              },
+              {
+                "name": "music-player-style",
+                "description": "music-player | just-style",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2025-06-07T07:37:46Z",
+                "fork": false,
+                "topics": [
+                  "blade",
+                  "css",
+                  "javascript",
+                  "laravel",
+                  "php"
+                ]
+              },
+              {
+                "name": "almas-shop",
+                "description": "Diamond Online Store",
+                "stargazers_count": 9,
+                "language": "Blade",
+                "pushed_at": "2025-06-07T16:41:34Z",
+                "fork": false,
+                "topics": [
+                  "0auth2",
+                  "api",
+                  "blade",
+                  "css",
+                  "html",
+                  "javascript",
+                  "php"
+                ]
+              },
+              {
+                "name": "boniboNews",
+                "description": "Bonibo News \ud83d\ude02 My high school project, mostly for joking with the teacher and classmates. Goodbye(C#,.net,html,css,js,MVC,CodeFirst)",
+                "stargazers_count": 7,
+                "language": "CSS",
+                "pushed_at": "2025-03-22T14:04:23Z",
+                "fork": false,
+                "topics": [
+                  "csharp",
+                  "css",
+                  "dotnet",
+                  "html",
+                  "javascript"
+                ]
+              },
+              {
+                "name": "laravel-starter",
+                "description": "A CMS like modular starter application project built with Laravel 12.x.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-04T07:31:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nasirabad",
+                "description": "Official news site of Nasirabad village",
+                "stargazers_count": 7,
+                "language": "PHP",
+                "pushed_at": "2025-07-07T06:40:03Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "docker",
+                  "javascript",
+                  "laravel",
+                  "php",
+                  "tailwind",
+                  "vite",
+                  "workflow"
+                ]
+              },
+              {
+                "name": "servers",
+                "description": "Model Context Protocol Servers",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-27T04:39:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AlamorVPN_Bot",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-08-17T13:13:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PsiphonLinux",
+                "description": "Easy installation of the free censorship circumvention tool Psiphon VPN on Linux based operating systems",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-31T02:44:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pocketpal-ai",
+                "description": "An app that brings language models directly to your phone.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-22T06:32:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MahsaNG",
+                "description": "a V2RayNG with Fragment , DoH , Rotating Configs , & free VPN servers",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-15T09:09:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Marzban",
+                "description": "Unified GUI Censorship Resistant Solution Powered by Xray",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-21T13:44:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "x-ui-pro",
+                "description": "XUI-PRO nginx reverse proxy with ws/grpc/httpupgrade/splithttp,xray protocol support: vless,vmess,trojan,shadowsocks panel cloudflare ssl,xtls,ssr,v2fly,v2ray installer bypass restrictions sing-box,shadowtls,reality,tunnel,gfw tor warp wireguard geoip tuic clash vpn mihomo psiphon hy2 oneclick argo bbr wstunnel anticensorship\u26a1\ud83d\udee1\ufe0f",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-09T11:51:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "php-src",
+                "description": "The PHP Interpreter",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-07-09T09:55:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "auth-system",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2025-07-09T21:31:29Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "auth",
+                  "laravel",
+                  "php"
+                ]
+              },
+              {
+                "name": "digital-cms",
+                "description": "Digital CMS is a Laravel CMS for tech sites, offering SEO-friendly content, tutorials, news, and tool reviews.",
+                "stargazers_count": 7,
+                "language": "Blade",
+                "pushed_at": "2025-07-06T21:07:47Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "laravel",
+                  "php",
+                  "sql"
+                ]
+              },
+              {
+                "name": "post-crawl",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Blade",
+                "pushed_at": "2025-11-03T14:02:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "instagram",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-24T12:12:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "filament",
+                "description": "A powerful open source UI framework for Laravel \u2022 Build and ship admin panels & apps fast with Livewire",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-10-20T13:07:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "donehub-frontend",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Vue",
+                "pushed_at": "2025-10-04T15:32:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "solidity",
+                "description": "Solidity, the Smart Contract Programming Language",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-08-07T18:14:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WSL",
+                "description": "Windows Subsystem for Linux",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-09-07T19:02:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nexavio-published",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-08-27T13:01:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "n8n",
+                "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-06-18T10:10:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "payment",
+                "description": "simple laravel payment package , supports multiple drivers",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-29T09:15:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "build_a_forum_with_laravel_2023",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-12T11:11:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "laravel-filemanager",
+                "description": "Media gallery with CKEditor, TinyMCE and Summernote support. Built on Laravel file system.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-11T17:28:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bagisto",
+                "description": "Free and open source laravel eCommerce platform",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-07-01T13:12:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DevOps-Roadmap",
+                "description": "DevOps Roadmap for 2023. with learning resources",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-10-30T14:02:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sneat-bootstrap-laravel-livewire-starter-kit",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-03-28T11:58:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bitcoin",
+                "description": "Bitcoin Core integration/staging tree",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-30T15:23:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "apiato",
+                "description": "PHP Framework for building scalable API's on top of Laravel.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-04T08:48:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "laravel-boilerplate-11",
+                "description": "laravel boilerplate with inertia",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-01-05T12:58:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "laravel-api-base",
+                "description": "Laravel Package For Easy RESTful API Development",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-05-19T21:39:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kavenegar-php",
+                "description": "Kavenegar API Client Writen In PHP",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-11-08T09:08:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "laravel-generator",
+                "description": "API and Admin Panel CRUD Generator for Laravel.",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-05-07T11:06:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kazerun-online",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2025-07-02T07:42:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "public-apis",
+                "description": "A collective list of free APIs",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-05-20T15:56:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "software-engineering-patterns",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-02-28T14:30:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "seotools",
+                "description": "SEO Tools for Laravel",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2018-06-11T16:02:42Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:42.736621+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

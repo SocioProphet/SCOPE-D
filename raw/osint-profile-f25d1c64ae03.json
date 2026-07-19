@@ -1,0 +1,418 @@
+{
+  "profileId": "osint-profile-f25d1c64ae03",
+  "target": "Emakiflom",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:28.516406+00:00",
+  "completedAt": "2026-06-21T15:29:29.673781+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-c1bc3381",
+      "lookupType": "github_context",
+      "target": "Emakiflom",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Emakiflom",
+            "name": "Aman Kflom",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Addis Ababa",
+            "bio": "passionate software engineering student at ALX Africa \ud83c\udf0d. I hold a degree in Computer Science \ud83c\udf93want to explore the vast world of software development. ",
+            "public_repos": 38,
+            "followers": 2612,
+            "following": 5183,
+            "created_at": "2023-02-15T12:54:01Z",
+            "updated_at": "2026-05-26T15:46:46Z",
+            "html_url": "https://github.com/Emakiflom",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125467587?v=4",
+            "repos": [
+              {
+                "name": "alx-backend-user-data",
+                "description": "this repo is a ALX project repo for alx-backend-user-data",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-08-13T19:12:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-backend",
+                "description": "this repo is a ALX project repo foralx-backend",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-08-29T21:22:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-backend-storage",
+                "description": "this repo is a ALX project repo for alx-backend-storage",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-07-19T07:37:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-backend-python",
+                "description": "This repo is a project repo for alx-backend-python",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-07-29T19:27:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-interview",
+                "description": "This repo is a group project repo for alx-interview",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-09-05T21:23:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-backend-javascript",
+                "description": "this repo is a group project repo foralx-backend-javascript",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-22T21:22:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Abyssinia-Mobile-Shopping_v0.0",
+                "description": "This repo is a group project repo for Aman Hablu and Basliel Tegegn",
+                "stargazers_count": 0,
+                "language": "CSS",
+                "pushed_at": "2024-06-13T17:57:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AAbyssinia-Mobile-Shopping",
+                "description": "This repo is a group project repo for Aman Hablu and Basliel Tegegn",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-06-09T21:37:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AirBnB_clone_v3",
+                "description": "this repo is a group project repo for Basliel and Aman ",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-04-27T14:08:28Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Fix_My_Code_Challenge",
+                "description": "this repo is a ALX project repo for Fix_My_Code_Challenge",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-04-16T23:03:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "what-happens-when",
+                "description": "An attempt to answer the age old interview question \"What happens when you type google.com into your browser and press enter?\"",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-12T19:36:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "AirBnB_clone_v2",
+                "description": "This is ALX group project  for Ado Olatunbosun and  Aman Hablu",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2024-04-21T18:12:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "alx-higher_level_programming",
+                "description": "this is alx group project  for alx-higher_level_programming",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-05-02T19:17:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-low_level_programming",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "C",
+                "pushed_at": "2024-04-11T09:43:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-system_engineering-devops",
+                "description": "system_engineering-devops for the alx ",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2024-05-16T20:56:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple_shell",
+                "description": "this is alx group project  for Aman and Makda",
+                "stargazers_count": 25,
+                "language": "C",
+                "pushed_at": "2024-01-31T14:51:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "printf",
+                "description": "0x11. C - printf project for ALX students",
+                "stargazers_count": 6,
+                "language": "C",
+                "pushed_at": "2023-04-25T00:07:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zero_day",
+                "description": "This is my first repository as a full-stack engineer",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2023-03-10T20:09:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-zero_day",
+                "description": "I'm now a ALX Student, this is my first repository as a full-stack engineer",
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2023-03-07T19:35:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-pre_course",
+                "description": "I'm now a ALX Student, this is my first repository as a full-stack engineer",
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2023-02-27T20:42:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Emakiflom",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-01-31T14:28:33Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "sorting_algorithms",
+                "description": "this is alx group project  for Aman and Makda",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2024-01-23T21:56:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "coding-interview-university",
+                "description": "A complete computer science study plan to become a software engineer.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-31T15:07:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "699966",
+                "description": "this repo is a ALX project repo for AirBnB_clone_v2",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-04-08T18:57:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "binary_trees",
+                "description": "this repo is a group project repo for Makda and Aman ",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2024-02-27T22:50:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AirBnB_clone",
+                "description": "this is alx group project  for Aman and Makda",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-02-19T14:08:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HOA_CommunityAllyWebApp",
+                "description": "The front-end web application for the Community Ally suite of tools",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-01-31T14:39:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bestbags-nodejs-ecommerce",
+                "description": "A responsive ecommerce website using Node js, Express js, and MongoDB",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-04-08T21:38:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "e-commerce-site",
+                "description": "E-Commerce Application using React.JS",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-04-24T09:24:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "8-Week-SQL-Challenge",
+                "description": "Case study solutions for the #8WeekSQLChallenge.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-07-03T11:06:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Mobile_Shopee-E-Commerce-Website",
+                "description": "In this complete E-commerce Website, We will take a look at how to create Mobile Shopee Using PHP and Mysql Database. We gonna start by creating an HTML template then convert it into PHP and then use MySQL database to fetch products and display it in the project.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-09-01T07:37:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "30-Days-Of-HTML",
+                "description": "A step by step guide to learn the concept of HTML, DOM tree, and web development in 30 days.  These videos may help too: https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-09-08T09:42:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "portfolio_project",
+                "description": "this is alx group project for Aman Brhane and Nebiha Dilsebo",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-09-13T21:54:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "E-Commerce-Online-Shop-Design",
+                "description": "E-Commerce Online Shop Design made in HTML5 & SCSS with JS",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-10-05T10:03:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "30-Days-Of-JavaScript",
+                "description": "30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript programming language in 30 days. This challenge may take more than 100 days,  please just follow your own pace. These videos may help too: https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-10-17T19:47:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "30-Days-Of-React",
+                "description": "30 Days of  React challenge is a step by step guide to learn React in 30 days.  These videos may help too: https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-10-17T21:22:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "monty",
+                "description": "this is alx group project 0x19. C - Stacks, Queues - LIFO, FIFO for Aman and Makda",
+                "stargazers_count": 3,
+                "language": "C",
+                "pushed_at": "2023-12-16T19:24:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RSA-Factoring-Challenge",
+                "description": "this is alx group project  for RSA-Factoring-Challenge",
+                "stargazers_count": 3,
+                "language": "Shell",
+                "pushed_at": "2023-12-22T19:06:03Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:29.673034+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

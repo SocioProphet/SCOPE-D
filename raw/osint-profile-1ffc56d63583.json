@@ -1,0 +1,298 @@
+{
+  "profileId": "osint-profile-1ffc56d63583",
+  "target": "Seif-01",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:31.812089+00:00",
+  "completedAt": "2026-06-21T15:28:32.454457+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-19ab5497",
+      "lookupType": "github_context",
+      "target": "Seif-01",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Seif-01",
+            "name": "Seif",
+            "type": "User",
+            "company": "PM Now Technology Inc.",
+            "blog": "",
+            "location": "Canada/New Brunswick",
+            "bio": "Junk profile\r\nCrafting lightweight tools and experimental scripts",
+            "public_repos": 25,
+            "followers": 3454,
+            "following": 18469,
+            "created_at": "2022-11-11T00:07:10Z",
+            "updated_at": "2026-06-07T14:31:31Z",
+            "html_url": "https://github.com/Seif-01",
+            "avatar_url": "https://avatars.githubusercontent.com/u/117954932?v=4",
+            "repos": [
+              {
+                "name": "higher_level_programming01",
+                "description": null,
+                "stargazers_count": 20,
+                "language": "Python",
+                "pushed_at": "2024-06-20T14:30:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "low_level_programming01",
+                "description": "dedicated to learning the C programming language! Whether you're a programming novice or transitioning to C from another language, this repository aims to provide a structured and supportive environment for your learning journey.",
+                "stargazers_count": 32,
+                "language": "C",
+                "pushed_at": "2024-06-20T14:42:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FileConverter",
+                "description": "A simple WPF application for converting files between different formats.",
+                "stargazers_count": 35,
+                "language": "C#",
+                "pushed_at": "2026-02-24T19:33:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Seif-01",
+                "description": null,
+                "stargazers_count": 32,
+                "language": null,
+                "pushed_at": "2026-05-08T23:13:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "YoutubeDownloader",
+                "description": "A lightweight and user friendly Windows desktop application built with C# and WPF. It provides a clean graphical interface (GUI) for yt-dlp, allowing users to download videos effortlessly without using command line instructions.",
+                "stargazers_count": 68,
+                "language": "C#",
+                "pushed_at": "2026-02-21T05:56:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "open-skillcapped",
+                "description": "\u26d3\ufe0f\u200d\ud83d\udca5 Watch and download SkillCapped videos without logging into your account.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-09-04T15:39:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Better-Screenshot",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-06T08:40:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "App-design",
+                "description": null,
+                "stargazers_count": 45,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-26T22:58:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BinaryBOT",
+                "description": "simple Python script that acts like a bot - it repeatedly asks you for text input converts it to 8-bit ASCII binary and prints the binary version.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2026-02-26T22:56:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple_shell",
+                "description": null,
+                "stargazers_count": 43,
+                "language": "C",
+                "pushed_at": "2026-02-10T16:31:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "badge",
+                "description": null,
+                "stargazers_count": 23,
+                "language": null,
+                "pushed_at": "2026-02-10T05:03:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Following-Bot",
+                "description": null,
+                "stargazers_count": 36,
+                "language": "Python",
+                "pushed_at": "2026-02-05T02:51:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "printf",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "C",
+                "pushed_at": "2024-01-31T11:13:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "C-projects",
+                "description": "This repository tracks my journey into C programming. It houses basic projects, showcasing my early grasp of concepts. It's a snapshot of my growth, each commit marking progress in learning and coding skills.",
+                "stargazers_count": 21,
+                "language": "C",
+                "pushed_at": "2024-01-01T17:16:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Notes",
+                "description": "My personal Missy Notes",
+                "stargazers_count": 16,
+                "language": "C",
+                "pushed_at": "2024-01-04T22:53:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Responsive-Web-Design",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "HTML",
+                "pushed_at": "2023-12-18T06:11:04Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "system_engineering-devops1",
+                "description": "My shell learning journey (and tasks answers)",
+                "stargazers_count": 17,
+                "language": "Shell",
+                "pushed_at": "2023-12-18T02:08:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zero_day",
+                "description": "This is my first repository as a full-stack engineer",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2023-12-09T00:00:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "alx-pre_course",
+                "description": "full-stack engineer",
+                "stargazers_count": 14,
+                "language": "Shell",
+                "pushed_at": "2023-11-24T07:50:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Xeon-PairCode-main",
+                "description": "bot",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2023-11-07T12:53:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Xeon-PairCode",
+                "description": "Pair code generator for whatsapp bots",
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2023-09-30T16:10:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "natrixdev",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2023-06-24T08:52:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "TaskbarX",
+                "description": "Center Windows taskbar icons with a variety of animations and options.",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2023-04-18T15:00:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CheemsBot-MD4",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-11T08:49:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CheemsBot-MD5",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "JavaScript",
+                "pushed_at": "2022-11-11T08:11:10Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:32.453740+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

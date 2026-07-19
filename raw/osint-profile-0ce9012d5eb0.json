@@ -1,0 +1,149 @@
+{
+  "profileId": "osint-profile-0ce9012d5eb0",
+  "target": "tot-coder",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:40.238024+00:00",
+  "completedAt": "2026-06-21T15:32:40.652704+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-48cc3eda",
+      "lookupType": "github_context",
+      "target": "tot-coder",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "tot-coder",
+            "name": "ToT",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Winner is a loser who tried one more time.",
+            "public_repos": 7,
+            "followers": 1352,
+            "following": 2650,
+            "created_at": "2025-10-30T01:16:47Z",
+            "updated_at": "2026-05-22T08:51:09Z",
+            "html_url": "https://github.com/tot-coder",
+            "avatar_url": "https://avatars.githubusercontent.com/u/241028416?v=4",
+            "repos": [
+              {
+                "name": "bnb-chain",
+                "description": "A BNB Smart Chain client based on the go-ethereum fork",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-01-30T09:44:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "go-bank-partner",
+                "description": "A production-ready banking API built with Go. Features user authentication, account management, transaction processing, audit logging, Docker support, database migrations, and Postman collections for testing. Ideal for learning, interviews, and prototyping.",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2026-01-31T06:24:00Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "backend",
+                  "banking",
+                  "docker",
+                  "finance",
+                  "golang",
+                  "microservices",
+                  "migrations",
+                  "postgres",
+                  "postman",
+                  "rest-api",
+                  "transactions"
+                ]
+              },
+              {
+                "name": "go-ui-table",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2025-10-31T21:08:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gin-postgre-boilerplate",
+                "description": "Go backend boilerplate using gin, postgresql",
+                "stargazers_count": 9,
+                "language": "Go",
+                "pushed_at": "2025-12-19T23:25:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tot-coder",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-02-01T02:25:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "akash-node",
+                "description": "Source code for Akash node, a secure, transparent, and peer-to-peer cloud computing network",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-10-29T18:59:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "akash-provider",
+                "description": "Source code for Akash Provider Daemon",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-10-29T20:51:01Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:40.651145+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

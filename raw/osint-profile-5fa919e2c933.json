@@ -1,0 +1,429 @@
+{
+  "profileId": "osint-profile-5fa919e2c933",
+  "target": "Rodrigo-Sarmento",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:07.392216+00:00",
+  "completedAt": "2026-06-21T15:33:08.098694+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b8774745",
+      "lookupType": "github_context",
+      "target": "Rodrigo-Sarmento",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Rodrigo-Sarmento",
+            "name": "Rodrigo Sarmento",
+            "type": "User",
+            "company": "Uninassau",
+            "blog": "",
+            "location": "Olinda, Pernambuco, Brasil",
+            "bio": "Back-End Developer | Information Systems bachelor",
+            "public_repos": 38,
+            "followers": 1233,
+            "following": 992,
+            "created_at": "2020-01-13T23:10:30Z",
+            "updated_at": "2026-06-04T01:00:51Z",
+            "html_url": "https://github.com/Rodrigo-Sarmento",
+            "avatar_url": "https://avatars.githubusercontent.com/u/59851576?v=4",
+            "repos": [
+              {
+                "name": "Design-Patterns-com-Kotlin",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Kotlin",
+                "pushed_at": "2024-01-05T00:37:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DesignPatterns-Java",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2024-09-03T04:40:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "devflix",
+                "description": "projeto imers\u00e3o alura",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T22:06:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Anamnese",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2023-04-14T02:01:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CalculadorCombustivel",
+                "description": "Aplicativo para calcular o melhor combust\u00edvel",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2023-04-07T16:46:24Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "combustivel",
+                  "java"
+                ]
+              },
+              {
+                "name": "CalculadorIMC",
+                "description": "Aplicativo para calcular o IMC e o peso ideal de uma pessoa.",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2023-03-23T15:13:37Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "imc-calculator",
+                  "java"
+                ]
+              },
+              {
+                "name": "EmDiabetes",
+                "description": "O EmDiabetes \u00e9 um aplicativo pensado para ajudar pessoas com qualquer tipo de diabetes mellitus a lidar com sua condi\u00e7\u00e3o de maneira eficiente e pr\u00e1tica no dia a dia.",
+                "stargazers_count": 10,
+                "language": "Kotlin",
+                "pushed_at": "2023-01-24T16:38:27Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "diabetes",
+                  "firebase",
+                  "kotlin",
+                  "kotlin-android"
+                ]
+              },
+              {
+                "name": "first-contributions",
+                "description": "\ud83d\ude80\u2728 Help beginners to contribute to open source projects",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2022-08-19T23:33:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "cloud-parking",
+                "description": "API de estacionamento",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2022-08-20T21:35:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Padroes-Projetos-Spring",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2022-08-20T21:52:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "calculadora-mini-boss-pw",
+                "description": "Calculadora para calcular o hor\u00e1rio de nascimento dos mini boss",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2021-01-03T22:49:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bookstore-api",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2022-05-11T23:01:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aprenda-kotlin-com-exemplos-lab",
+                "description": "Desafio de Projeto criado para avalia\u00e7\u00e3o do conte\u00fado t\u00e9cnico explorado no reposit\u00f3rio \"aprenda-kotlin-com-exemplos\".",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2023-01-09T18:11:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "app-venda-produtos",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2023-06-10T14:25:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "api-linguagens",
+                "description": "API de linguagens de programa\u00e7\u00e3o",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2022-08-02T02:35:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Algoritmos-Kotlin",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2023-08-22T13:50:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Academia",
+                "description": "API academia de gin\u00e1stica",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2022-08-20T21:59:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "desafio-poo-java",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2022-07-30T20:15:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sistema-farmaceutico",
+                "description": "sistema de vendas e gerenciamento de farm\u00e1cia",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2020-12-26T00:03:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Sistema-Hospitalar",
+                "description": "Atividade POO",
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2023-11-23T00:24:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dio-lab-open-source",
+                "description": "Reposit\u00f3rio do lab Contribuindo em um Projeto Open Source no GitHub da Digital Innovation One.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-08-23T14:28:06Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "suporte-idiomas",
+                "description": "Desafio DIO - app com suporte a v\u00e1rios idiomas",
+                "stargazers_count": 2,
+                "language": "Kotlin",
+                "pushed_at": "2023-08-28T02:46:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TesteFirebase-Kotlin",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Kotlin",
+                "pushed_at": "2022-08-30T02:22:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Rodrigo-Sarmento",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-01-20T20:20:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "stickers",
+                "description": "Aplicativo para gerar figurinhas de WhatsApp",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2022-07-26T14:14:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flashlight",
+                "description": "APP de lanterna que usa sensor de movimento",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2022-06-29T21:51:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dioRN",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2022-06-29T19:10:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "to-do-list",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2022-06-23T02:41:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dio-projeto-html-css",
+                "description": "site pessoal",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2022-06-19T01:32:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dio-desafio-github",
+                "description": "Desafio de projeto sobre git/github",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2022-06-19T01:21:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Revelador-Destino",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2022-06-11T14:40:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data-Science",
+                "description": "Trabalhos da disciplina de IA",
+                "stargazers_count": 2,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2021-07-22T20:25:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scriptsPython",
+                "description": "script python",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2021-03-15T14:16:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "goals",
+                "description": "app de metas",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2021-01-05T14:19:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "exerciciosJS",
+                "description": "exercicios do curso de javascript do curso em video",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2021-01-02T17:15:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "desafiosHTML-CSS",
+                "description": "desafios do curso de html e css do curso em video",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2021-01-01T23:36:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "projeto-site",
+                "description": "projeto de um site criado durante o curso de git",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2020-07-25T23:41:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sistema-cadastro-cartao-credito",
+                "description": "sistema de cadastro de cart\u00e3o de cr\u00e9dito",
+                "stargazers_count": 2,
+                "language": "Java",
+                "pushed_at": "2020-12-25T23:59:28Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:08.097933+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "profileId": "osint-profile-e2ae1ebc5cf7",
+  "target": "00mjk",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:46.347072+00:00",
+  "completedAt": "2026-06-21T15:30:48.561432+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-ab3d1057",
+      "lookupType": "github_context",
+      "target": "00mjk",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "00mjk",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "https://m.youtube.com/channel/UCuWi5pi1B92l1VgOOYIdGKw",
+            "location": null,
+            "bio": null,
+            "public_repos": 12105,
+            "followers": 1829,
+            "following": 18337,
+            "created_at": "2020-10-27T15:11:31Z",
+            "updated_at": "2023-08-07T21:34:52Z",
+            "html_url": "https://github.com/00mjk",
+            "avatar_url": "https://avatars.githubusercontent.com/u/73543858?v=4",
+            "repos": [
+              {
+                "name": "quantum-php-project",
+                "description": "Quantum PHP Project",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-02-27T16:50:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ways-of-working",
+                "description": "Ways of Working (WoW) a.k.a. ground rules, aspirations, team norms, team values, working agreements, shared expectations, and group understandings",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-06T05:46:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VIPER-SWIFT",
+                "description": "An example Todo list app written in Swift using the VIPER architecture.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2017-12-24T07:07:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MMProgressHUD",
+                "description": "An easy-to-use HUD interface with personality.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2015-10-03T03:43:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MMWormhole",
+                "description": "Message passing between iOS apps and extensions.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-01-14T18:02:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-quantum-software",
+                "description": "Curated list of open-source quantum software projects.",
+                "stargazers_count": 73,
+                "language": null,
+                "pushed_at": "2023-03-31T18:28:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "metro",
+                "description": "\ud83d\ude87 The JavaScript bundler for React Native.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-05-20T13:37:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nss",
+                "description": "Read only mirror of https://hg.mozilla.org/projects/nss",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-05-03T16:32:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bim",
+                "description": "Extensible, lightweight terminal text editor with syntax highlighting and plugin support.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-05-15T10:33:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tart",
+                "description": "macOS VMs on Apple Silicon to use in CI and other automations",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-05-10T21:16:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "HolidayCard",
+                "description": "Build a Holiday Card for Hour of Code in Swift!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2015-12-08T18:02:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rose",
+                "description": "Developed at Lawrence Livermore National Laboratory (LLNL), ROSE is an open source compiler infrastructure to build source-to-source program transformation and analysis tools for large-scale C (C89 and C98), C++ (C++98 and C++11), UPC, Fortran (77/95/2003), OpenMP, Java, Python and PHP applications.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-11-13T20:10:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gluetun",
+                "description": "VPN client in a thin Docker container for multiple VPN providers, written in Go, and using OpenVPN or Wireguard, DNS over TLS, with a few proxy servers built-in.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-06-18T11:00:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tar-rs",
+                "description": "Tar file reading/writing for Rust",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-04-04T14:06:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tonic",
+                "description": "A Low Profile Component Framework \u2013 Stable, minimal, easy to audit, zero-dependencies and build-tool-free.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-02T16:42:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Greenchip",
+                "description": "A tool designed to compare energy and emission costs between computer chips",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-12-06T20:41:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "quads",
+                "description": ":calendar: The infrastructure deployment time machine",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-05-27T14:30:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VCS-SCCS",
+                "description": "An attempt to convert SCCS files to something more modern with perl5",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-09-07T08:01:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "clustershell",
+                "description": "Scalable cluster administration Python framework \u2014 Manage node sets, node groups and execute commands on cluster nodes in parallel.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-09-24T22:37:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tinderbot",
+                "description": "auto likes and auto text",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-03-02T07:54:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-vcs-tools",
+                "description": "A curated list of awesome Version control tools - clients, diffs etc.",
+                "stargazers_count": 18,
+                "language": null,
+                "pushed_at": "2022-04-10T19:29:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-package-manager",
+                "description": "\u2618 Awesome package manager resources",
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2022-01-12T07:27:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-git",
+                "description": "A curated list of amazingly awesome Git tools, resources and shiny things",
+                "stargazers_count": 12,
+                "language": null,
+                "pushed_at": "2022-03-08T20:13:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "programming-languages",
+                "description": "Awesome Programming Languages",
+                "stargazers_count": 26,
+                "language": null,
+                "pushed_at": "2021-11-27T18:11:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "awesome-os",
+                "description": "A list of operating systems and stuff",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2022-05-26T13:47:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pathfinder",
+                "description": "A Starknet full node written in Rust",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-12-21T18:53:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "trango-self-hosted",
+                "description": "Host trango and communicate with those around you without the internet!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-10-06T21:42:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "wasm-pack",
+                "description": "\ud83d\udce6\u2728 your favorite rust -> wasm workflow tool!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-04-15T23:00:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Deobfuscator",
+                "description": "Some deobfuscator for java lol",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-30T17:49:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "android-fhir",
+                "description": "The Android FHIR SDK is a set of Kotlin libraries for building offline-capable, mobile-first healthcare applications using the HL7\u00ae FHIR\u00ae standard on Android.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-20T14:36:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "telefunc",
+                "description": "Remote Functions. Instead of API.",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-03-17T10:12:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "stale-repos",
+                "description": "Find stale repositories in a GitHub organization.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-06-20T20:06:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "onnx-simplifier",
+                "description": "Simplify your onnx model",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-01-14T05:12:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yuzu-mainline",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-02-03T14:06:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "android-webview",
+                "description": "Experiment with Android WebView",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-11-25T19:06:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MouseTo",
+                "description": "Arduino library for moving mouse pointer to absolute screen coordinates",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-04-08T20:20:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "UrlTok",
+                "description": "UrlTok's main feature is to Mass Convert videos to MP4 (HD without watermark)! It's simple and easy to use.",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2022-02-19T11:40:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "winstall",
+                "description": "A web app for browsing and installing Windows Package Manager apps. ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2022-03-30T18:05:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-native-blur",
+                "description": "React Native Blur component",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-09-21T02:08:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "VictoriaMetrics",
+                "description": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database",
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2023-07-18T15:13:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "technical-policies",
+                "description": "Mirror of the repository for technical policies, governed by the OTC (OpenSSL Technical Committee)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-14T10:24:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "google-cloud-cpp",
+                "description": "C++ Client Libraries for Google Cloud Services",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-07-18T16:00:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yaegi",
+                "description": "Yaegi is Another Elegant Go Interpreter",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-07-18T06:41:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "exabgp",
+                "description": "The BGP swiss army knife of networking",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2023-07-18T10:00:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "community-3",
+                "description": "Community documentation for the Tekton project",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-17T21:11:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bosh-agent",
+                "description": "BOSH Agent runs on each BOSH deployed VM",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-17T03:06:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hotscript",
+                "description": "A library of composable functions for the type-level! Transform your TypeScript types in any way you want using functions you already know.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-16T17:40:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "thecodingtrain.com",
+                "description": "All aboard the Coding Train! Choo choo! \ud83d\ude82\ud83c\udf08\u2764\ufe0f",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-15T12:35:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Nominatim",
+                "description": "Open Source search based on OpenStreetMap data",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-14T16:57:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "aqued",
+                "description": "Aqued",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-16T12:49:14Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:48.560566+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

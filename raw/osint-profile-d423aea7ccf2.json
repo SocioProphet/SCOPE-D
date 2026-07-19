@@ -1,0 +1,419 @@
+{
+  "profileId": "osint-profile-d423aea7ccf2",
+  "target": "rasidi3112",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:48.983551+00:00",
+  "completedAt": "2026-06-20T13:52:49.464425+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-306a30b6",
+      "lookupType": "github_context",
+      "target": "rasidi3112",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "rasidi3112",
+            "name": "Ahmad-Rasidi",
+            "type": "User",
+            "company": "NTB",
+            "blog": "",
+            "location": "Lombok, Indonesia",
+            "bio": "AI & Quantum Computing | | Exploring  Next-Generation Quantum Classical AI\r\n",
+            "public_repos": 20,
+            "followers": 3415,
+            "following": 2776,
+            "created_at": "2023-04-03T09:14:23Z",
+            "updated_at": "2026-06-13T08:23:59Z",
+            "html_url": "https://github.com/rasidi3112",
+            "avatar_url": "https://avatars.githubusercontent.com/u/129738392?v=4",
+            "repos": [
+              {
+                "name": "quantum-simulation",
+                "description": "1D Quantum Wave Packet simulation in Python using Split-Step Fourier. Features real-time animation & 3D space-time plots.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-06-14T05:15:26Z",
+                "fork": false,
+                "topics": [
+                  "physics",
+                  "python",
+                  "quantummechanics",
+                  "quantumphysics",
+                  "scientific-computing"
+                ]
+              },
+              {
+                "name": "Quantum-Machine-Learning",
+                "description": "Reproducible QML benchmark: VQC vs QSVM on binary tasks. Modular, cross-platform pipeline w/ artifact logging.",
+                "stargazers_count": 59,
+                "language": "Python",
+                "pushed_at": "2026-02-12T01:17:10Z",
+                "fork": false,
+                "topics": [
+                  "hybridquantumclassical",
+                  "machinelearning",
+                  "pennylane",
+                  "pytorch",
+                  "qiskit",
+                  "qml",
+                  "quantumcomputing",
+                  "quantumkernelsvm",
+                  "quantummachinelearning",
+                  "vqc"
+                ]
+              },
+              {
+                "name": "Quantum-Computing-E-learning",
+                "description": "A full-stack mobile e-learning platform for Quantum Computing education. Built with Flutter, PHP REST API, and MySQL. Features user authentication, course management, lesson tracking, progress monitoring, and reviews. Final project for Programming III course.",
+                "stargazers_count": 8,
+                "language": "Dart",
+                "pushed_at": "2026-02-24T14:09:50Z",
+                "fork": false,
+                "topics": [
+                  "bumigora",
+                  "dart",
+                  "education",
+                  "elearning",
+                  "flutter",
+                  "mobile-app",
+                  "mysql",
+                  "pemrograman2",
+                  "php",
+                  "quantum-computing",
+                  "rest-api",
+                  "universitas",
+                  "universitasbumigora",
+                  "xampp"
+                ]
+              },
+              {
+                "name": "quantum-chaos-framework",
+                "description": "Python framework for quantum chaos diagnostics in SYK and Hubbard models. Features Jordan-Wigner transformation, level spacing ratio analysis, OTOC computation, and disorder averaging with statistical methods.",
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2026-02-22T02:24:22Z",
+                "fork": false,
+                "topics": [
+                  "many-body-physics",
+                  "otoc",
+                  "python",
+                  "quantum-chaos",
+                  "quantum-computing",
+                  "quantum-physics",
+                  "scientific-computing",
+                  "syk-model"
+                ]
+              },
+              {
+                "name": "Quantum-crypto",
+                "description": "Educational project exploring quantum computing threats to RSA encryption, Shor's Algorithm, and post-quantum cryptography solutions (NIST FIPS 203/204/205). Built with Python and Qiskit.",
+                "stargazers_count": 26,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-13T21:47:03Z",
+                "fork": false,
+                "topics": [
+                  "cryptography",
+                  "cybersecurity",
+                  "education",
+                  "nist",
+                  "post-quantum-cryptography",
+                  "python",
+                  "qiskit",
+                  "quantum-computing",
+                  "rsa",
+                  "shors-algorithm"
+                ]
+              },
+              {
+                "name": "quantum-computing-simulation",
+                "description": "A Python-based mini-quantum-lab built with Streamlit for interactive learning. This streamlit-quantum-simulator visualizes quantum states and gates in real time, acting as a quantum-gate-visualizer to help users understand superposition and entanglement easily.",
+                "stargazers_count": 28,
+                "language": "Python",
+                "pushed_at": "2026-02-15T22:51:02Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "coding",
+                  "machinelearning",
+                  "opensource",
+                  "python3",
+                  "quantumcomputing",
+                  "quantumgatevisualizer",
+                  "quantumphysics",
+                  "quantumsimulator",
+                  "streamlit",
+                  "techinnovation"
+                ]
+              },
+              {
+                "name": "hybrid_quantum_deep_learning",
+                "description": "Hybrid Quantum-Classical Deep Learning framework combining Variational Quantum Circuits (PennyLane) with Classical Neural Networks (PyTorch) for binary classification. Features 8-qubit VQC, data re-uploading, dual-rate optimizer, and comprehensive visualization engine.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2026-03-25T10:37:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Q-Edge",
+                "description": "Experimental platform exploring the integration of Federated Learning, Quantum Machine Learning (VQC, QKA), and Post-Quantum Cryptography. Built with PennyLane, FastAPI, and Flutter. Features quantum-enhanced aggregation, zero-noise extrapolation, and Kyber/Dilithium security. Research/educational project - not production ready.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-12-23T11:58:41Z",
+                "fork": false,
+                "topics": [
+                  "federated-learning",
+                  "flutter",
+                  "pennylane",
+                  "post-quantum-cryptography",
+                  "python",
+                  "quantum-computing",
+                  "quantum-machine-learning"
+                ]
+              },
+              {
+                "name": "Quantum-error-correction-threshold-simulator",
+                "description": "Fault-tolerant QEC simulator simulating Rotated Surface Code (d=3-11). Implements MWPM decoding, depolarizing/biased noise, and verified threshold analysis with visualizations.",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2026-01-11T01:32:01Z",
+                "fork": false,
+                "topics": [
+                  "open-source",
+                  "python",
+                  "quantumcomputing",
+                  "quantumerrorcorrection",
+                  "simulation",
+                  "softwareengineering",
+                  "surfacecode"
+                ]
+              },
+              {
+                "name": "event-horizon-js",
+                "description": "Interactive visualization framework for relativistic astrophysics & quantum chaos. Features real-time NASA API integration, Kerr metric simulations & OTOC diagnostics. Built with Vanilla JS",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2026-01-26T22:57:26Z",
+                "fork": false,
+                "topics": [
+                  "astrophysics",
+                  "blackhole",
+                  "datavisualization",
+                  "javascript",
+                  "nasa",
+                  "opensource",
+                  "quantumchaos"
+                ]
+              },
+              {
+                "name": "Quantum-GAN",
+                "description": "Quantum Generative Adversarial Network (QGAN) using PennyLane + PyTorch, featuring visualization and optional Qiskit Aer simulations.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-02-10T22:08:29Z",
+                "fork": false,
+                "topics": [
+                  "machine-learning",
+                  "pennylane",
+                  "pytorch",
+                  "qgan",
+                  "qiskit",
+                  "quantum-computing",
+                  "quantum-machine-learning"
+                ]
+              },
+              {
+                "name": "learn-artificial-intelligence",
+                "description": "Basic AI Learning Platform - an interactive educational project to understand Artificial Intelligence from scratch. Equipped with analytics, gamification, forum,certificates, and dark mode. Learn AI the fun, modern, and free way",
+                "stargazers_count": 12,
+                "language": "CSS",
+                "pushed_at": "2026-02-23T05:04:53Z",
+                "fork": false,
+                "topics": [
+                  "ai-learning",
+                  "artificial-intelligence",
+                  "beginner-friendly",
+                  "dark-mode",
+                  "education",
+                  "edutech",
+                  "frontend",
+                  "gamification",
+                  "html5",
+                  "indonesia",
+                  "javascript",
+                  "localstorage",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "IMAGINE-CUP-MICROSOFT-2026",
+                "description": "\ud83c\udf3e AI-powered plant disease detection app for farmers in West Nusa Tenggara, Indonesia. Built with Flutter, Azure Custom Vision & Azure OpenAI.",
+                "stargazers_count": 9,
+                "language": "Dart",
+                "pushed_at": "2026-01-07T10:27:30Z",
+                "fork": false,
+                "topics": [
+                  "agriculture",
+                  "ai",
+                  "azure",
+                  "azure-ai",
+                  "custom-vision",
+                  "dart",
+                  "farmers",
+                  "flutter",
+                  "imagine-cup",
+                  "indonesia",
+                  "machine-learning",
+                  "mobile-app",
+                  "ntb",
+                  "openai",
+                  "plant-disease-detection"
+                ]
+              },
+              {
+                "name": "quantum-lab-circuit",
+                "description": "A web-based quantum computing laboratory for circuit simulation, state visualization, and algorithm exploration. Runs entirely in the browser.\"",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2026-03-01T06:18:35Z",
+                "fork": false,
+                "topics": [
+                  "bloch-sphere",
+                  "education",
+                  "javascript",
+                  "physics",
+                  "qiskit",
+                  "quantum-algorithms",
+                  "quantum-circuit",
+                  "quantum-computing",
+                  "quantum-simulator",
+                  "state-vector"
+                ]
+              },
+              {
+                "name": "rasidi3112",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2026-02-10T22:14:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Advanced-Quantum-App",
+                "description": "Advanced Quantum Computing Application with multiple algorithms using Qiskit",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-10-30T03:28:12Z",
+                "fork": false,
+                "topics": [
+                  "algoritma-python",
+                  "grover-algorithm",
+                  "python",
+                  "python3",
+                  "qiskit",
+                  "quantum-algorithms",
+                  "quantum-computing",
+                  "quantum-error-correction",
+                  "quantum-fourier-transform",
+                  "quantum-phase-estimation",
+                  "quantum-simulator",
+                  "quantum-teleportation"
+                ]
+              },
+              {
+                "name": "my-learning-app",
+                "description": "My Learning App adalah aplikasi mobile e-learning berbasis Flutter & Dart, dibuat sebagai tugas akhir Pemrograman II. Menampilkan fitur CRUD kategori kursus, navigasi bottom bar, search, dan halaman 'See All'. Dirancang untuk latihan pengembangan aplikasi mobile interaktif mahasiswa Ilmu Komputer.",
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2025-10-20T12:26:10Z",
+                "fork": false,
+                "topics": [
+                  "crud",
+                  "dart",
+                  "e-learning",
+                  "flutter-apps",
+                  "pemrograman-2",
+                  "student-project",
+                  "ubg",
+                  "ui",
+                  "ui-design"
+                ]
+              },
+              {
+                "name": "student-grade-application",
+                "description": "Aplikasi nilai mahasiswa ",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2025-10-18T11:23:47Z",
+                "fork": false,
+                "topics": [
+                  "app-student",
+                  "bumigora",
+                  "mahasiswa",
+                  "universitas",
+                  "universitas-bumigora"
+                ]
+              },
+              {
+                "name": "py-email-sender",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2025-10-14T00:24:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "website-kelas",
+                "description": "alumni website kelas XII RPL SMKN 1 PRAYA TENGAH ",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2025-01-25T00:03:50Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:49.463614+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

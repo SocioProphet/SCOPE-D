@@ -1,0 +1,514 @@
+{
+  "profileId": "osint-profile-82d225d919ac",
+  "target": "khvci",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:46.083770+00:00",
+  "completedAt": "2026-06-20T13:52:46.735166+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4b026f29",
+      "lookupType": "github_context",
+      "target": "khvci",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "khvci",
+            "name": "Kahveci",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Siemens",
+            "public_repos": 49,
+            "followers": 5177,
+            "following": 4269,
+            "created_at": "2021-08-05T12:48:28Z",
+            "updated_at": "2026-06-14T16:09:50Z",
+            "html_url": "https://github.com/khvci",
+            "avatar_url": "https://avatars.githubusercontent.com/u/88493840?v=4",
+            "repos": [
+              {
+                "name": "Linux-Terminal-Automation",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "Java",
+                "pushed_at": "2024-11-10T15:13:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "neetcode-blind-75-algo",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "Java",
+                "pushed_at": "2024-10-18T12:37:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "diabetes-prediction-ml",
+                "description": "desc",
+                "stargazers_count": 19,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-12-25T17:36:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mnist-deep-learning",
+                "description": null,
+                "stargazers_count": 16,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-12-24T17:26:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "website",
+                "description": null,
+                "stargazers_count": 19,
+                "language": "HTML",
+                "pushed_at": "2024-10-18T20:12:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "easyeffects",
+                "description": "Limiter, compressor, convolver, equalizer and auto volume and many other plugins for PipeWire applications",
+                "stargazers_count": 14,
+                "language": null,
+                "pushed_at": "2023-08-03T21:00:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "yzmu-grades-tracker",
+                "description": "desc",
+                "stargazers_count": 16,
+                "language": "C#",
+                "pushed_at": "2023-06-19T22:12:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "darkwave",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2023-03-29T01:25:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Kaggle-Intro-to-ML",
+                "description": null,
+                "stargazers_count": 15,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2023-03-30T23:55:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Github-Checker-Selenium-Python",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2023-03-26T20:23:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FlightTicketApi-FinalProject",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "C#",
+                "pushed_at": "2023-03-20T22:42:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WebAutomationLabs",
+                "description": null,
+                "stargazers_count": 13,
+                "language": "C#",
+                "pushed_at": "2023-02-27T13:16:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mathproject",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "C#",
+                "pushed_at": "2023-02-17T12:46:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AdoNetWinForm",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "C#",
+                "pushed_at": "2023-02-02T14:29:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CRUD-WPF-Desktop",
+                "description": "Windows Desktop Application for User Management (CRUD Operations on MSSql DB.)",
+                "stargazers_count": 34,
+                "language": "C#",
+                "pushed_at": "2024-10-29T19:46:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OOPExampleSales",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "C#",
+                "pushed_at": "2023-01-19T12:57:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WinFormSubcategories",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "C#",
+                "pushed_at": "2023-01-18T11:54:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WinFormsAppLoginExample",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "C#",
+                "pushed_at": "2023-01-11T07:47:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "XmlExample",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "C#",
+                "pushed_at": "2023-01-06T12:29:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PartialClassExample",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "C#",
+                "pushed_at": "2023-01-05T13:19:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SinifEtkinligi",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "C#",
+                "pushed_at": "2023-01-03T13:07:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ExamManager",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2023-01-07T23:34:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rentACar",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Java",
+                "pushed_at": "2022-11-09T14:53:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bCryptPasswordEncoderDemo",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2022-10-26T06:09:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ebebek-practicum-firstCase",
+                "description": null,
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2022-10-25T18:01:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kodlama.io-java-camp-homeworks",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2022-10-10T22:56:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "h2Database",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2022-08-22T20:29:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Harvard_CS50",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2022-08-08T20:50:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dosyaAkislari",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2022-07-09T20:12:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fileVePathSiniflari",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2022-07-09T20:13:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "duplicate-spammer-domains-finder",
+                "description": null,
+                "stargazers_count": 14,
+                "language": "Java",
+                "pushed_at": "2025-09-10T03:39:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Custom-User-Store",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Java",
+                "pushed_at": "2022-07-22T22:30:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "h2-database-demo",
+                "description": "First experience with H2 database",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2022-06-29T15:27:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Anti-Fraud-System",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "Java",
+                "pushed_at": "2022-06-22T16:32:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "itsANumbersGame",
+                "description": "Simple yet addictive numbers game",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2022-05-10T17:29:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cinemaRoomRestService",
+                "description": null,
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2022-07-25T03:02:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kodlama.io",
+                "description": "Java, Spring Boot & React Application",
+                "stargazers_count": 7,
+                "language": "Java",
+                "pushed_at": "2022-04-05T01:18:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Github-Checker",
+                "description": null,
+                "stargazers_count": 23,
+                "language": "Java",
+                "pushed_at": "2024-11-13T15:23:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "NMEA2000",
+                "description": "NMEA2000 library for Arduino",
+                "stargazers_count": 6,
+                "language": "C++",
+                "pushed_at": "2022-02-22T20:12:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "maiana",
+                "description": "MAIANA\u2122 is the first Open Source AIS transponder. It proudly raises an extra long middle finger to the marine electronics industry, government overregulation and everything else that gets in the way of innovation in this space.",
+                "stargazers_count": 7,
+                "language": "C",
+                "pushed_at": "2022-02-22T20:13:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "OpenCPN",
+                "description": "A concise ChartPlotter/Navigator. A cross-platform ship-borne GUI application supporting * GPS/GPDS Postition Input * BSB Raster Chart Display * S57 Vector ENChart Display * AIS Input Decoding * Waypoint Autopilot Navigation",
+                "stargazers_count": 6,
+                "language": "C",
+                "pushed_at": "2022-02-22T20:13:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Message-Encryptor",
+                "description": "Simple program to encrypt/decrypt messages.",
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2022-02-05T21:06:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Student-Management-System",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Java",
+                "pushed_at": "2021-12-30T00:50:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "javaNotes",
+                "description": "Java Syntax Notes",
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2022-02-01T20:36:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "htmlAndCss",
+                "description": null,
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2021-12-27T23:26:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kodluyoruzilkrepo",
+                "description": "Kodluyoruz Front-End E\u011fitimi kapsam\u0131nda a\u00e7t\u0131\u011f\u0131m ilk repo.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2021-10-31T11:51:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "khvci",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2023-05-16T18:15:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "algorithm_practice",
+                "description": "Basic stuff not to rust.",
+                "stargazers_count": 12,
+                "language": "Swift",
+                "pushed_at": "2022-08-12T20:59:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "patika.dev",
+                "description": null,
+                "stargazers_count": 12,
+                "language": "Java",
+                "pushed_at": "2022-02-22T20:23:03Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:46.734398+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

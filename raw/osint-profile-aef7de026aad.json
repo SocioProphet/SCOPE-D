@@ -1,0 +1,127 @@
+{
+  "profileId": "osint-profile-aef7de026aad",
+  "target": "smartMinion221",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:08.155630+00:00",
+  "completedAt": "2026-06-20T16:48:08.588457+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-fcf8bf33",
+      "lookupType": "github_context",
+      "target": "smartMinion221",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "smartMinion221",
+            "name": "Silver Code",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": " I'm excited to contribute to open-source projects and collaborate with like-minded individuals to create impactful solutions.",
+            "public_repos": 6,
+            "followers": 1099,
+            "following": 1987,
+            "created_at": "2025-02-14T08:23:12Z",
+            "updated_at": "2026-06-08T19:04:13Z",
+            "html_url": "https://github.com/smartMinion221",
+            "avatar_url": "https://avatars.githubusercontent.com/u/199213869?v=4",
+            "repos": [
+              {
+                "name": "rust-backend-axum",
+                "description": "Master Rust backend development with Axum in this comprehensive tutorial. Learn user authentication, PostgreSQL integration, email verification, and secure APIs. Build scalable, production-ready apps using Rust. Source code and Postman collection available for easy testing.",
+                "stargazers_count": 0,
+                "language": "Rust",
+                "pushed_at": "2026-04-14T12:50:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "forest-rails",
+                "description": "\ud83d\udc8e Ruby on Rails agent for Forest Admin to integrate directly to your existing Ruby on Rails backend application.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-12-02T14:34:51Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ror_ecommerce",
+                "description": "Ruby on Rails Ecommerce platform, perfect for your small business solution.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-06-13T14:53:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rails-dev-box",
+                "description": "A virtual machine for Ruby on Rails core development",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-01-12T06:24:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rust-plus-golang",
+                "description": "Rust + Go \u2014 Call Rust code from Go using FFI",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-10-24T02:34:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "flutter-rust-ffi",
+                "description": "Starter project for Flutter plugins willing to access native and synchronous rust code using FFI",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2021-10-31T22:13:18Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:08.587696+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

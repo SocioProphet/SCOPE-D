@@ -1,0 +1,492 @@
+{
+  "profileId": "osint-profile-7f6ed3d03a21",
+  "target": "kulikov-dev",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:04.038193+00:00",
+  "completedAt": "2026-06-21T15:28:04.776006+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-5ebdf2a1",
+      "lookupType": "github_context",
+      "target": "kulikov-dev",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "kulikov-dev",
+            "name": null,
+            "type": "User",
+            "company": "@vataga-trading",
+            "blog": "https://kulikov.dev/",
+            "location": "Setubal",
+            "bio": ".NET developer",
+            "public_repos": 29,
+            "followers": 5062,
+            "following": 15266,
+            "created_at": "2018-06-21T17:32:58Z",
+            "updated_at": "2026-06-11T09:02:17Z",
+            "html_url": "https://github.com/kulikov-dev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/40471760?v=4",
+            "repos": [
+              {
+                "name": "prm-config",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-06-20T14:26:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kulikov-dev",
+                "description": null,
+                "stargazers_count": 48,
+                "language": "HTML",
+                "pushed_at": "2025-09-09T04:12:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Avalonia.Localizer",
+                "description": "Easy-to-use localization provider for the AvaloniaUI",
+                "stargazers_count": 15,
+                "language": "C#",
+                "pushed_at": "2023-03-05T19:32:30Z",
+                "fork": false,
+                "topics": [
+                  "avalonia",
+                  "avaloniaui",
+                  "example-project",
+                  "l10n",
+                  "localization",
+                  "localization-tool",
+                  "xunit"
+                ]
+              },
+              {
+                "name": "LeetCodeNet",
+                "description": "LeetCode problems with detailed explanation and different solutions.",
+                "stargazers_count": 52,
+                "language": "C#",
+                "pushed_at": "2023-06-18T04:48:48Z",
+                "fork": false,
+                "topics": [
+                  "algorithm",
+                  "clean-code",
+                  "coding-interviews",
+                  "easy-to-understand",
+                  "hackerrank",
+                  "hacktoberfest",
+                  "interview",
+                  "interview-questions",
+                  "interviews",
+                  "leetcode",
+                  "leetcode-solutions",
+                  "tech-interviews",
+                  "xunit"
+                ]
+              },
+              {
+                "name": "wallet_test",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-02-20T10:58:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WeatherSensorsService",
+                "description": "A sample project to experience with GRPC",
+                "stargazers_count": 6,
+                "language": "C#",
+                "pushed_at": "2022-10-25T05:12:49Z",
+                "fork": false,
+                "topics": [
+                  "education",
+                  "grpc",
+                  "netcore",
+                  "protobuf",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "LRUCache",
+                "description": "A lightweight thread-safe LRU cache for .NET",
+                "stargazers_count": 5,
+                "language": "C#",
+                "pushed_at": "2022-07-31T19:39:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BlankLineAssignmentsAnalyzer",
+                "description": "The custom Roslyn analyzer provides warning messages for blocks of code with variable assignments, which doesn't have blank lines before and after itself.",
+                "stargazers_count": 16,
+                "language": "C#",
+                "pushed_at": "2022-08-25T12:48:01Z",
+                "fork": false,
+                "topics": [
+                  "code-analysis-tool",
+                  "code-fix",
+                  "diagnostic-analyzer",
+                  "plugin",
+                  "roslyn",
+                  "roslyn-analyzer",
+                  "vs-2022"
+                ]
+              },
+              {
+                "name": "UnitsConverterFlutter",
+                "description": "A simple mobile tool for conversion between different units of measurement.",
+                "stargazers_count": 10,
+                "language": "Dart",
+                "pushed_at": "2022-07-20T09:00:51Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "dart",
+                  "education",
+                  "flutter",
+                  "flutter-apps",
+                  "measure",
+                  "unit",
+                  "unit-converter",
+                  "units-of-measure"
+                ]
+              },
+              {
+                "name": "GeoPlanarNet",
+                "description": "A simple and small .NET library for computational planar geometry. ",
+                "stargazers_count": 17,
+                "language": "C#",
+                "pushed_at": "2023-01-09T12:23:34Z",
+                "fork": false,
+                "topics": [
+                  "computer-graphics",
+                  "geometry-algorithms",
+                  "geometry-processing",
+                  "net",
+                  "planar",
+                  "planar-geometry",
+                  "planar-graph",
+                  "planar-graphs"
+                ]
+              },
+              {
+                "name": "firebase-push",
+                "description": "Small scripts for working with Firebase Cloud Messaging (FCM) web push notifications",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2022-10-17T18:05:24Z",
+                "fork": false,
+                "topics": [
+                  "fcm-push-notification",
+                  "firebase",
+                  "github-pages",
+                  "javascript",
+                  "php",
+                  "web-notifications"
+                ]
+              },
+              {
+                "name": "DevExpress-WinForms-Extension",
+                "description": "A piece of small improvements for DevExpress WinForms components.",
+                "stargazers_count": 24,
+                "language": "C#",
+                "pushed_at": "2022-11-25T18:43:52Z",
+                "fork": false,
+                "topics": [
+                  "bogus",
+                  "devexpress",
+                  "devexpress-components",
+                  "extensions",
+                  "winforms",
+                  "winforms-controls"
+                ]
+              },
+              {
+                "name": "Bybit.Net",
+                "description": "Some improvements on a Bybit.net main repo for specific tasks. Merged to the main brunch",
+                "stargazers_count": 14,
+                "language": "C#",
+                "pushed_at": "2022-12-29T11:00:14Z",
+                "fork": true,
+                "topics": [
+                  "bybit",
+                  "bybit-api",
+                  "forked-repo",
+                  "improvement"
+                ]
+              },
+              {
+                "name": "Epicor-Prophet-21",
+                "description": "Connector to Prophet 21 for PHP 5.5>=",
+                "stargazers_count": 10,
+                "language": "PHP",
+                "pushed_at": "2022-11-04T16:21:11Z",
+                "fork": false,
+                "topics": [
+                  "cms",
+                  "connector",
+                  "e-commerce",
+                  "epicor",
+                  "erp",
+                  "php",
+                  "php55",
+                  "prophet",
+                  "prophet21",
+                  "rest",
+                  "rest-api"
+                ]
+              },
+              {
+                "name": "Documentation",
+                "description": "AvaloniaUI documentation page source code",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-05-30T12:31:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CryptoExchange.Net",
+                "description": "Some improvements on the main repo for specific tasks. Merged to the main brunch",
+                "stargazers_count": 16,
+                "language": "C#",
+                "pushed_at": "2023-03-06T09:25:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Bitfinex.Net",
+                "description": "Some improvements on the main repo for specific tasks. Merged to the main brunch",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2022-09-25T18:26:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Binance.Net",
+                "description": "Some improvements on a Binance.net main repo for specific tasks. Merged to the main brunch",
+                "stargazers_count": 12,
+                "language": "C#",
+                "pushed_at": "2024-09-11T06:57:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": ".net-telegram-bot",
+                "description": "Telegram bot with questions to prepare for C# interviews",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2024-01-11T19:04:40Z",
+                "fork": false,
+                "topics": [
+                  "educational-project",
+                  "grammy",
+                  "telegram-bot",
+                  "telegram-bot-api"
+                ]
+              },
+              {
+                "name": "ImportSubstitutionRegistrySamples",
+                "description": "\u041f\u0440\u0438\u043c\u0435\u0440\u044b \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u0438 \u0434\u043b\u044f \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f \u0432 \u0440\u0435\u0435\u0441\u0442\u0440 \u041f\u041e",
+                "stargazers_count": 5,
+                "language": "CSS",
+                "pushed_at": "2022-09-06T20:07:10Z",
+                "fork": false,
+                "topics": [
+                  "documents",
+                  "registry",
+                  "samples",
+                  "substitution"
+                ]
+              },
+              {
+                "name": "shipstation",
+                "description": "Connector/WebHook to the ShipStation for PHP 5.5>=",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2022-10-01T18:40:13Z",
+                "fork": false,
+                "topics": [
+                  "cms",
+                  "connector",
+                  "e-commerce",
+                  "php",
+                  "php55",
+                  "rest",
+                  "rest-api",
+                  "shipstation",
+                  "shipstation-api"
+                ]
+              },
+              {
+                "name": "filemaker",
+                "description": "Connector to FileMaker for PHP 5.5>=",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2022-11-04T16:44:04Z",
+                "fork": false,
+                "topics": [
+                  "connector",
+                  "e-commerce",
+                  "filemaker",
+                  "filemaker-api",
+                  "filemaker-data-api",
+                  "php",
+                  "php55",
+                  "rest"
+                ]
+              },
+              {
+                "name": "LeetCodeContest",
+                "description": "Template for LeetCode contests",
+                "stargazers_count": 1,
+                "language": "C#",
+                "pushed_at": "2023-06-04T06:03:34Z",
+                "fork": false,
+                "topics": [
+                  "contest-programming",
+                  "leetcode",
+                  "leetcode-contests",
+                  "template-repository",
+                  "templates"
+                ]
+              },
+              {
+                "name": "OzonTechContest",
+                "description": "OzonTech contest tasks solutions for .Net Route256",
+                "stargazers_count": 10,
+                "language": "C#",
+                "pushed_at": "2022-12-04T08:07:09Z",
+                "fork": false,
+                "topics": [
+                  "contest",
+                  "contest-programming",
+                  "ozon",
+                  "ozon-tech"
+                ]
+              },
+              {
+                "name": "UPS-autocomplete",
+                "description": "Address validation and auto-complete for PHP>=5.5",
+                "stargazers_count": 7,
+                "language": "PHP",
+                "pushed_at": "2022-12-04T21:44:04Z",
+                "fork": false,
+                "topics": [
+                  "address-validation",
+                  "api",
+                  "auto-complete",
+                  "autocomplete-address",
+                  "php",
+                  "php55",
+                  "soap",
+                  "ups",
+                  "validation"
+                ]
+              },
+              {
+                "name": "TimeSheet",
+                "description": "A small console util to create time sheet reports for a department.",
+                "stargazers_count": 10,
+                "language": "C#",
+                "pushed_at": "2022-08-19T08:18:02Z",
+                "fork": false,
+                "topics": [
+                  "anglesharp",
+                  "consultant",
+                  "eppplus",
+                  "excel-export",
+                  "moq",
+                  "net",
+                  "nlog",
+                  "report",
+                  "timereport",
+                  "xunit-tests"
+                ]
+              },
+              {
+                "name": "FTX.Net",
+                "description": "Some improvements on the main repo for specific tasks. Merged to the main brunch",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2022-10-15T06:31:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SmallNetUtils",
+                "description": "A bunch of small utils and extensions for .NET",
+                "stargazers_count": 10,
+                "language": "C#",
+                "pushed_at": "2023-06-04T20:02:55Z",
+                "fork": false,
+                "topics": [
+                  "extensions",
+                  "helper",
+                  "helpers-library",
+                  "net-utils",
+                  "utility-library",
+                  "utils"
+                ]
+              },
+              {
+                "name": "UncommonPetsGame",
+                "description": "Small game on UE4 for one-day-gamejam",
+                "stargazers_count": 7,
+                "language": "C#",
+                "pushed_at": "2023-01-31T18:10:49Z",
+                "fork": false,
+                "topics": [
+                  "gamejam",
+                  "gamejam-2017",
+                  "ue4"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:04.775205+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,693 @@
+{
+  "profileId": "osint-profile-2008b104368b",
+  "target": "trinhminhtriet",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:50.721241+00:00",
+  "completedAt": "2026-06-21T15:27:52.010067+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-0b7c41ee",
+      "lookupType": "github_context",
+      "target": "trinhminhtriet",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "trinhminhtriet",
+            "name": "Triet Trinh",
+            "type": "User",
+            "company": "\ud83e\udd16",
+            "blog": "https://trinhminhtriet.com",
+            "location": "Vietnam",
+            "bio": "\u2705 Platform Engineer | AWS Certified | Scrum Master PSMI | Java |  Golang | Rust | Android | Remote",
+            "public_repos": 97,
+            "followers": 7387,
+            "following": 53777,
+            "created_at": "2012-04-17T08:04:20Z",
+            "updated_at": "2026-06-19T08:33:56Z",
+            "html_url": "https://github.com/trinhminhtriet",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1650997?v=4",
+            "repos": [
+              {
+                "name": "trinhminhtriet",
+                "description": "\ud83d\udc68\u200d\ud83d\udcbb Personal portfolio and contact information for Trinh Minh Triet, including social media profiles and professional details.",
+                "stargazers_count": 43,
+                "language": null,
+                "pushed_at": "2026-06-21T13:34:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-job-boards",
+                "description": "\ud83d\ude80 A curated list of awesome job boards for developers, designers, and tech enthusiasts. Find remote work, freelance gigs, or full-time positions. Contributions welcome! ",
+                "stargazers_count": 71,
+                "language": null,
+                "pushed_at": "2026-06-03T14:07:43Z",
+                "fork": false,
+                "topics": [
+                  "awsome-list",
+                  "freelance",
+                  "jobboard",
+                  "jobs",
+                  "remote",
+                  "work"
+                ]
+              },
+              {
+                "name": "gloc",
+                "description": "\ud83d\ude80 gloc \u2013 A blazing-fast LOC (Lines of Code) counter in Go, inspired by tokei. Simple & efficient!",
+                "stargazers_count": 10,
+                "language": "Go",
+                "pushed_at": "2026-06-19T11:04:05Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "cloc",
+                  "code-analysis",
+                  "code-lines",
+                  "go",
+                  "golang"
+                ]
+              },
+              {
+                "name": "git-author",
+                "description": "\ud83d\udd0d git-author \u2013 Identify codebase authorship at a component level, beyond git blame, for better ownership insights.",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2026-06-18T23:03:42Z",
+                "fork": false,
+                "topics": [
+                  "code-analysis",
+                  "code-ownership",
+                  "git-blame",
+                  "git-history",
+                  "git-statistics",
+                  "git-tools",
+                  "repository-analysis",
+                  "repository-insights"
+                ]
+              },
+              {
+                "name": "binpull",
+                "description": "\ud83d\udd27 Installs pre-built binaries from GitHub releases easily\u2014fetch, verify, and extract tools with one command.",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2026-06-19T03:52:43Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "cli",
+                  "cross-platform",
+                  "installer",
+                  "package-manager",
+                  "prebuild"
+                ]
+              },
+              {
+                "name": "dwipe",
+                "description": "\ud83e\uddf9 Fast, cross-platform disk cleanup tool with interactive UI for easy directory size visualization.",
+                "stargazers_count": 16,
+                "language": "Rust",
+                "pushed_at": "2026-06-02T00:01:34Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "cross-platform",
+                  "disk-analyzer",
+                  "disk-cleanup",
+                  "file-management",
+                  "filesystem",
+                  "rust",
+                  "system-utilities",
+                  "terminal-ui",
+                  "tui"
+                ]
+              },
+              {
+                "name": "pingy",
+                "description": "\u26a1 Pingy: A fast, concurrent Rust-based ping tool with real-time updates & visual charts! \ud83d\udcca\ud83d\ude80",
+                "stargazers_count": 23,
+                "language": "Rust",
+                "pushed_at": "2026-06-18T23:42:46Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "monitoring",
+                  "network-diagnostics",
+                  "networking",
+                  "performance-monitoring",
+                  "ping",
+                  "rust",
+                  "system-tools"
+                ]
+              },
+              {
+                "name": "rmrfrs",
+                "description": "\ud83e\uddf9 rmrfrs is a powerful filesystem cleaning tool designed to optimize storage by identifying and removing unnecessary files within known project structures.",
+                "stargazers_count": 133,
+                "language": "Rust",
+                "pushed_at": "2026-02-01T19:34:19Z",
+                "fork": false,
+                "topics": [
+                  "cleanup",
+                  "cli",
+                  "rust",
+                  "storage"
+                ]
+              },
+              {
+                "name": "spiko",
+                "description": "\ud83d\ude80 Spiko is a fast, Rust-based load testing tool with a beautiful TUI for real-time insights.",
+                "stargazers_count": 78,
+                "language": "Rust",
+                "pushed_at": "2025-12-01T18:31:12Z",
+                "fork": false,
+                "topics": [
+                  "benchmark",
+                  "cli",
+                  "http",
+                  "http2",
+                  "load-testing",
+                  "performance-testing",
+                  "rust",
+                  "tui"
+                ]
+              },
+              {
+                "name": "repoctl",
+                "description": "\ud83d\ude80 repoctl \u2013 A powerful CLI tool to manage multiple Git repositories effortlessly. Sync, pull, and run commands! \ud83c\udfaf",
+                "stargazers_count": 14,
+                "language": "Go",
+                "pushed_at": "2025-11-24T18:44:49Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "devops",
+                  "git-automation",
+                  "tui"
+                ]
+              },
+              {
+                "name": "a-star-search",
+                "description": "A* (A-star) algorithm is a widely used graph traversal and pathfinding algorithm known for its completeness, optimality, and efficiency.",
+                "stargazers_count": 23,
+                "language": "TypeScript",
+                "pushed_at": "2025-04-11T18:00:40Z",
+                "fork": false,
+                "topics": [
+                  "algorithm"
+                ]
+              },
+              {
+                "name": "path-finding",
+                "description": "\ud83d\ude80 Interactive pathfinding app using React, Deck.gl, and MapLibre for visualizing routes and geospatial data.",
+                "stargazers_count": 20,
+                "language": "JavaScript",
+                "pushed_at": "2025-04-12T08:41:49Z",
+                "fork": false,
+                "topics": [
+                  "a-star",
+                  "algorithm-visualizer",
+                  "dijkstra",
+                  "geospatial",
+                  "interactive-map",
+                  "pathfinding",
+                  "visualization"
+                ]
+              },
+              {
+                "name": "blast",
+                "description": "\ud83d\ude80 Blast: A powerful, lightweight HTTP load generator for stress testing and benchmarking web applications with ease.",
+                "stargazers_count": 41,
+                "language": "Go",
+                "pushed_at": "2026-02-16T10:23:37Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "benchmarking",
+                  "cli",
+                  "golang",
+                  "load-testing",
+                  "networking",
+                  "performance-testing",
+                  "stress-testing",
+                  "tool"
+                ]
+              },
+              {
+                "name": "leetcode",
+                "description": "\ud83d\udd25 LeetCode solutions in any programming language.",
+                "stargazers_count": 73,
+                "language": "Java",
+                "pushed_at": "2025-11-11T12:23:49Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "data-structures",
+                  "dsa",
+                  "dsa-practice",
+                  "dynamic-programming",
+                  "interview-questions",
+                  "leetcode"
+                ]
+              },
+              {
+                "name": "volscan",
+                "description": "\ud83d\ude80 VolScan: High-speed, multi-threaded disk scanner providing detailed directory summaries with JSON/CSV output support.",
+                "stargazers_count": 10,
+                "language": "Rust",
+                "pushed_at": "2026-02-01T18:45:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fogo",
+                "description": "\ud83d\udcc2 Fogo: A fast terminal file explorer replacing cd and ls for quick folder navigation.",
+                "stargazers_count": 11,
+                "language": "Rust",
+                "pushed_at": "2026-02-01T09:54:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gitcoco",
+                "description": "\u26a1 GitCoco: A Rust-based CLI for Conventional Commits, making commit standardization effortless and consistent for seamless project versioning and collaboration.",
+                "stargazers_count": 24,
+                "language": "Rust",
+                "pushed_at": "2026-02-01T13:05:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dotfiles",
+                "description": "\ud83d\udee0\ufe0f A collection of configuration files and scripts to customize and streamline your development environment.",
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2025-08-10T15:37:01Z",
+                "fork": false,
+                "topics": [
+                  "developer-tools",
+                  "dotfiles",
+                  "productivity",
+                  "terminal",
+                  "zsh"
+                ]
+              },
+              {
+                "name": "the-book-of-secret-knowledge",
+                "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-11-19T14:00:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "card",
+                "description": "A personal card",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2022-08-03T05:39:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "markgen",
+                "description": "\ud83d\udcdc Generate personalized markdown files with templates, GitHub, RSS, and API integrations using Go.",
+                "stargazers_count": 9,
+                "language": "Go",
+                "pushed_at": "2025-12-15T08:18:12Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "cli",
+                  "github-integration",
+                  "go",
+                  "markdown",
+                  "markdown-generator",
+                  "personalized-content",
+                  "template-engine"
+                ]
+              },
+              {
+                "name": "curli",
+                "description": "\ud83c\udf00 Curli: A user-friendly curl interface combining HTTPie\u2019s simplicity with curl\u2019s full functionality and power.",
+                "stargazers_count": 26,
+                "language": "Go",
+                "pushed_at": "2026-01-12T00:57:33Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "curl",
+                  "developer-tools",
+                  "http-client",
+                  "httpie"
+                ]
+              },
+              {
+                "name": "visualvm",
+                "description": "VisualVM is an All-in-One Java Troubleshooting Tool",
+                "stargazers_count": 3,
+                "language": "Java",
+                "pushed_at": "2025-08-06T14:05:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "visyo",
+                "description": "Visyo \u2014 \u2728 A fast, minimal, and themeable CLI tool that displays visual system output across platforms.",
+                "stargazers_count": 10,
+                "language": "Rust",
+                "pushed_at": "2026-01-01T19:13:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "readme-markgen-action",
+                "description": "GitHub Action - Automatically generate and update markdown content like a README.md",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-04-17T12:54:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gotunnel",
+                "description": "\ud83d\ude80 Minimal Go-based tunneling tool for seamless localhost public access.",
+                "stargazers_count": 6,
+                "language": "Dockerfile",
+                "pushed_at": "2025-11-21T13:17:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "postcage",
+                "description": "\ud83d\udce7 PostCage: An email testing tool with SMTP server, web UI, POP3 support, and API integration.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-04-23T16:19:15Z",
+                "fork": false,
+                "topics": [
+                  "developer-tools",
+                  "mail",
+                  "mock",
+                  "pop3",
+                  "smtp"
+                ]
+              },
+              {
+                "name": "vault",
+                "description": "\ud83d\udd10 Decrypt and manage encrypted data with a CLI tool built using Go and Cobra framework.",
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2025-04-25T16:01:06Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "cryptography",
+                  "decryption",
+                  "encryption",
+                  "go",
+                  "rsa",
+                  "security"
+                ]
+              },
+              {
+                "name": "ftree",
+                "description": "Terminal-based file tree manipulation tool for navigating, viewing, and managing directories and files efficiently.",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2025-11-21T08:15:23Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "file-explorer",
+                  "file-manager",
+                  "go",
+                  "productivity",
+                  "terminal",
+                  "tree"
+                ]
+              },
+              {
+                "name": "jview",
+                "description": "jview: A CLI app to print HTTP responses as JSON.",
+                "stargazers_count": 7,
+                "language": "Shell",
+                "pushed_at": "2026-02-01T18:38:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gping",
+                "description": "Ping, but with a graph",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2024-12-23T10:27:29Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "telog",
+                "description": "\ud83d\udcca\ud83d\udcf2 Aggregate logs from various sources and send real-time notifications to Telegram for easy monitoring.",
+                "stargazers_count": 5,
+                "language": "Rust",
+                "pushed_at": "2026-02-01T03:45:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "govalidate",
+                "description": "A tool to validate Go installation, dependencies, PATH configuration, CGO dependencies, and editor plugin support.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-11-21T04:17:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cronik",
+                "description": "\u23f0 cronik: A Golang-based scheduler for periodic, delayed, and retryable jobs with robust error handling.",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2024-12-11T17:58:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shlog",
+                "description": "A lightweight shell logging tool for tracking and managing command history with easy integration and analysis.",
+                "stargazers_count": 8,
+                "language": "Rust",
+                "pushed_at": "2025-11-21T16:33:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cargo-kit",
+                "description": "Cargo subcommand to apply performance, compile-time, or size-optimized profiles and configs to your Rust project for enhanced build efficiency.",
+                "stargazers_count": 9,
+                "language": "Rust",
+                "pushed_at": "2025-12-01T10:15:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gitmgr",
+                "description": "gitmgr: A command-line tool to organize, monitor, and sync multiple Git repositories with ease.",
+                "stargazers_count": 9,
+                "language": "Rust",
+                "pushed_at": "2026-01-01T23:08:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sizr",
+                "description": "\ud83d\udcc8 A fast, Rust-based tool to analyze file system usage with colorful output, file aggregation, exclusions, and directory comparisons.",
+                "stargazers_count": 8,
+                "language": "Rust",
+                "pushed_at": "2025-11-21T02:11:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "netcatr",
+                "description": "\ud83d\udce1 netcat: A cross-platform port listener and reverse shell application designed for ease of use, providing seamless network connectivity.",
+                "stargazers_count": 19,
+                "language": "Rust",
+                "pushed_at": "2026-02-01T14:55:19Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "cross-platform",
+                  "netcat",
+                  "networking",
+                  "port-listener",
+                  "reverse-shell",
+                  "rust",
+                  "security",
+                  "shell"
+                ]
+              },
+              {
+                "name": "safeshell",
+                "description": "\ud83d\udee1\ufe0f SafeShell: A security tool for shell history management, developed to detect, stash, and clear sensitive commands, ensuring safer terminal sessions.",
+                "stargazers_count": 10,
+                "language": "Rust",
+                "pushed_at": "2025-11-21T03:12:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "scanr",
+                "description": "ScanR: A lightweight, fast, and configurable port scanner built in Rust for reliable multi-platform network scanning.",
+                "stargazers_count": 23,
+                "language": "Rust",
+                "pushed_at": "2026-02-01T18:05:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "procx",
+                "description": "ProcX is an interactive command-line tool for quickly searching and terminating processes, offering a streamlined alternative to traditional kill.",
+                "stargazers_count": 11,
+                "language": "Rust",
+                "pushed_at": "2026-02-01T01:24:44Z",
+                "fork": false,
+                "topics": [
+                  "cli",
+                  "developer-tools",
+                  "kill-process",
+                  "productivity",
+                  "rust"
+                ]
+              },
+              {
+                "name": "filerefine",
+                "description": "\ud83e\uddf9 FileRefine is a Rust-based CLI tool that renames files in a directory to remove unwanted or problematic characters from filenames.",
+                "stargazers_count": 22,
+                "language": "Rust",
+                "pushed_at": "2026-02-01T11:03:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "eza",
+                "description": "A modern alternative to ls",
+                "stargazers_count": 6,
+                "language": "Rust",
+                "pushed_at": "2024-12-12T10:03:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "atuin",
+                "description": "\u2728 Magical shell history",
+                "stargazers_count": 9,
+                "language": "Rust",
+                "pushed_at": "2025-04-15T16:04:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "zoxide",
+                "description": "A smarter cd command. Supports all major shells.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-01-09T06:44:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "lsd",
+                "description": "The next gen ls command",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2024-12-11T11:31:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DevPilot",
+                "description": "\ud83d\ude80 All-in-one CLI toolkit for developers: scaffold, manage, automate, and boost productivity across languages!",
+                "stargazers_count": 11,
+                "language": "Java",
+                "pushed_at": "2025-11-07T15:14:24Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "cli",
+                  "codegen",
+                  "devtools",
+                  "freemaker",
+                  "java",
+                  "picocli",
+                  "productivity",
+                  "project-generator",
+                  "scaffolding",
+                  "templates"
+                ]
+              },
+              {
+                "name": "mailcli",
+                "description": "\ud83d\udce7 MailCLI: A tool for sending fast, templated bulk emails via any SMTP server with CSV support.",
+                "stargazers_count": 8,
+                "language": "Go",
+                "pushed_at": "2025-11-21T14:14:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-toolkit",
+                "description": "github-toolkit: Scrapes GitHub developers, followers, repositories into MySQL database.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-08-21T18:04:32Z",
+                "fork": false,
+                "topics": [
+                  "github-user"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:52.007460+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

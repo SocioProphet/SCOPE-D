@@ -1,0 +1,1008 @@
+{
+  "profileId": "osint-profile-1e75cbc94ba9",
+  "target": "bocaletto-luca",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:53:06.141291+00:00",
+  "completedAt": "2026-06-20T13:53:07.387922+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-e8d22f11",
+      "lookupType": "github_context",
+      "target": "bocaletto-luca",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "bocaletto-luca",
+            "name": "Bocaletto Luca",
+            "type": "User",
+            "company": null,
+            "blog": "https://bocaletto-luca.github.io",
+            "location": "Italy",
+            "bio": "Luca Bocaletto is an Italian Full-Stack developer born in 1982, specializing in Web Development Full-Stack, Python, \r\nJavascript, Databases, C, C++, C#, Bash.",
+            "public_repos": 291,
+            "followers": 2325,
+            "following": 4924,
+            "created_at": "2019-11-21T16:26:43Z",
+            "updated_at": "2025-12-08T11:30:46Z",
+            "html_url": "https://github.com/bocaletto-luca",
+            "avatar_url": "https://avatars.githubusercontent.com/u/58043613?v=4",
+            "repos": [
+              {
+                "name": "Files-Compressor-Encryption",
+                "description": "Files-Compressor-Encryption is a Python-based tool for compressing and encrypting files, ensuring efficient storage and secure data protection. Ideal for privacy-focused applications.",
+                "stargazers_count": 19,
+                "language": "Python",
+                "pushed_at": "2025-07-06T00:33:22Z",
+                "fork": false,
+                "topics": [
+                  "compression",
+                  "cryptography",
+                  "decryption",
+                  "encryption",
+                  "encryption-decryption",
+                  "file-management",
+                  "open-source",
+                  "privacy",
+                  "python",
+                  "security-tools",
+                  "storage-optimization"
+                ]
+              },
+              {
+                "name": "YoutubeToGif",
+                "description": "Youtube To Gif - is a lightweight Python script that leverages system-installed yt-dlp and FFmpeg to download YouTube videos (or specific segments) and convert them into high-quality animated GIFs. It supports full-length or custom slices with configurable FPS and width, generates optimized palettes for vibrant colors ... By @bocaletto-luca",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2025-07-04T00:33:49Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "generate-gif",
+                  "gif",
+                  "gif-youtube",
+                  "linux",
+                  "opensource",
+                  "python",
+                  "youtube-gif",
+                  "youtube-to-gif",
+                  "youtube-url",
+                  "youtube2gif"
+                ]
+              },
+              {
+                "name": "BootableUSB",
+                "description": "Bootable USB Creator is a Python script that provides a simple graphical user interface for creating bootable USB drives from ISO files. This tool is authored by Luca Bocaletto.",
+                "stargazers_count": 24,
+                "language": "Python",
+                "pushed_at": "2025-07-06T00:32:37Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "bocaletto-luca",
+                  "bootable",
+                  "bootable-usb",
+                  "desktop-application",
+                  "gui",
+                  "iso-to-usb",
+                  "linux",
+                  "open-source",
+                  "operating-system",
+                  "operating-system-installation",
+                  "python",
+                  "system-utilities",
+                  "usb-formatting",
+                  "windows"
+                ]
+              },
+              {
+                "name": "IPTV-Web-Player",
+                "description": "IPTV WEB Player is a web-based IPTV streaming application by Bocaletto Luca. Upload your .m3u or .m3u8 playlist file to load your IPTV channels and enjoy streaming via an integrated HLS.js player. Fully responsive with universal input support: Mouse, Touch, Keyboard, Joypad, TV Remote Control. This open-source app is licensed under GPLv3.",
+                "stargazers_count": 22,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-22T18:26:40Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "css3",
+                  "gplv3",
+                  "hls",
+                  "html5",
+                  "iptv",
+                  "iptv-player",
+                  "javascript",
+                  "m3u-player",
+                  "m3u8-player",
+                  "open-source",
+                  "streaming",
+                  "webplayer"
+                ]
+              },
+              {
+                "name": "Notepad",
+                "description": "Notepad-JS is a professional, responsive, and feature-rich web-based note editor built with HTML5, CSS3, and JavaScript. It allows users to create, edit, load, and save notes locally without requiring external APIs. This app includes full file management (New, Open, Save, Save As) and a style customization toolbar for adjusting font, size, color ..",
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2025-06-22T17:37:35Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "bootstrap",
+                  "css3",
+                  "file-manager",
+                  "html5",
+                  "javascript",
+                  "local-storage",
+                  "notepad",
+                  "productivity",
+                  "text-editor",
+                  "web-app"
+                ]
+              },
+              {
+                "name": "Who-Wants-To-Be-A-Millionaire",
+                "description": "Who Wants To Be A Millionaire is an interactive web quiz game inspired by the famous TV show. Built with HTML5, CSS3, JavaScript, PHP, and JSON, it features animated lifelines, real-time scoring, and a responsive, multi-device interface (keyboard, touchscreen, mouse, and gamepad).",
+                "stargazers_count": 13,
+                "language": "JavaScript",
+                "pushed_at": "2025-07-11T23:06:52Z",
+                "fork": false,
+                "topics": [
+                  "bootstrap",
+                  "chi-vuole-essere-milionario",
+                  "css3",
+                  "game",
+                  "html5",
+                  "interactive",
+                  "javascript",
+                  "json",
+                  "millionaire",
+                  "multidevice",
+                  "php",
+                  "quiz",
+                  "quiz-tv",
+                  "responsive",
+                  "save",
+                  "webgame",
+                  "who-wants-to-be-a-millionaire"
+                ]
+              },
+              {
+                "name": "arduino-usb-charge-battery",
+                "description": "Arduino USB Charge Battery A universal USB-powered battery charger adjustable from 1.5 V to 12 V, built around an Arduino Uno. Monitor real-time voltage and current via I\u00b2C, set your charge voltage with a knob, and enjoy automatic safety cutoffs for over-voltage and over-current protection.",
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2025-08-23T00:05:50Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "bocaletto-luca",
+                  "electronics",
+                  "open-hardware",
+                  "open-source",
+                  "schemes"
+                ]
+              },
+              {
+                "name": "Lyrics-Finder",
+                "description": "Lyrics-Finder is a free and open-source web application that lets you retrieve song lyrics in two powerful ways:  Direct Search: Quickly fetch lyrics by entering both an artist's name and a song title.  Alphabetical Artist Explorer: Browse through an A\u2013Z menu to dynamically query and list artists ... Opensource, Open-Data, Free Api By Bocaletto L.",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2025-06-12T05:38:56Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "bocaletto-luca",
+                  "css3",
+                  "database",
+                  "free-api",
+                  "html5",
+                  "javascript",
+                  "lyrics",
+                  "lyrics-api",
+                  "lyrics-finder",
+                  "open-data",
+                  "opensource",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "RF-Sniffer-Replayer",
+                "description": "RF Remote Sniffer & Replayer Arduino - Author: Bocaletto Luca A turnkey Arduino-based solution to capture (sniff) ASK/OOK 315 MHz or 433 MHz remote\u2010control codes and replay them on demand. Perfect for testing, reverse\u2010engineering or automating RF remotes (garage doors, wireless switches, sockets).",
+                "stargazers_count": 11,
+                "language": "C++",
+                "pushed_at": "2025-06-13T00:41:09Z",
+                "fork": false,
+                "topics": [
+                  "arduino",
+                  "bocaletto-luca",
+                  "cpp",
+                  "hacking",
+                  "openhardware",
+                  "opensource",
+                  "radio-frequency",
+                  "replayer",
+                  "rf-sniffer",
+                  "sniffer",
+                  "sniffer-radio",
+                  "sniffer-replayer"
+                ]
+              },
+              {
+                "name": "bocaletto-luca.github.io",
+                "description": "Official Page GitHub: Bocaletto Luca. Welcome to my personal website repository! This project represents my journey through technology, programming, system administration, and creativity, and open-source contributions.",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2025-06-19T16:37:41Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto",
+                  "bocaletto-luca",
+                  "contacts",
+                  "css3",
+                  "html5",
+                  "javascript",
+                  "multidevice",
+                  "official",
+                  "official-website",
+                  "opensoruce",
+                  "project",
+                  "repository",
+                  "responsive",
+                  "website"
+                ]
+              },
+              {
+                "name": "QuantumComputing",
+                "description": "QuantumComputing",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-07-09T19:32:16Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca"
+                ]
+              },
+              {
+                "name": "ColorPalette",
+                "description": "ColorPalette is a modern, responsive one-page webapp that lets you:  Generate complementary, triad and analog color palettes Instantly copy colors, check WCAG contrast, and save named palettes Import/Export your palette collection in JSON Load, Edit or Delete saved palettes in a clean table All in a single HTML/CSS/JS file\u2014no backend, no build step",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-07-20T12:31:08Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "color",
+                  "color-palette",
+                  "html-css-javascript",
+                  "import-export",
+                  "javascript",
+                  "online",
+                  "opensource",
+                  "palette",
+                  "save-palette",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "TimetableUniversity",
+                "description": "Timetable University is a modern, responsive one-page webapp for students to schedule courses by drag-and-drop. No installation or registration needed\u2014just HTML5, CSS3, and vanilla JavaScript. Import/export your timetable in JSON, add/edit/delete courses, detect conflicts, and print your schedule with one click. @bocaletto-luca",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-07-20T11:52:39Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "html-css-javascript",
+                  "javascript",
+                  "online",
+                  "opensource",
+                  "timetable",
+                  "timetable-university",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "MultiEventCountdownTimer",
+                "description": "MultiEventCountdownTimer is a modern, responsive one-page webapp that lets you manage multiple countdowns and stopwatches with real-time audio and visual alerts. All data is stored locally and can be imported/exported as JSON\u2014no backend, no dependencies, no build step.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-07-20T13:14:12Z",
+                "fork": false,
+                "topics": [
+                  "allarm",
+                  "bocaletto-luca",
+                  "countdown",
+                  "date",
+                  "datetime",
+                  "html-css-javascript",
+                  "import-export",
+                  "javascript",
+                  "multi-event",
+                  "multievent",
+                  "online",
+                  "opensource",
+                  "responsive",
+                  "timer"
+                ]
+              },
+              {
+                "name": "FoodRecipeOrganizer",
+                "description": "Food Recipe Organizer A modern, responsive single-page web app to store, organize, and filter your recipes. Create, edit, or delete recipes with photos, ingredients, and instructions. Fully customizable categories and import/export via JSON. No build tools or external dependencies.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-07-20T14:46:52Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca"
+                ]
+              },
+              {
+                "name": "FilterablePhotoGallery",
+                "description": "Filterable Photo Gallery A professional, responsive one-page photo gallery showcasing a variety of real-time CSS filter presets and an in-page lightbox. No build tools or external dependencies\u2014just a single HTML/CSS/JavaScript file.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-07-20T14:15:31Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "filterable",
+                  "filterable-gallery",
+                  "filterable-photo",
+                  "gallery",
+                  "gallery-images",
+                  "html-css-javascript",
+                  "online",
+                  "opensource",
+                  "photo-gallery"
+                ]
+              },
+              {
+                "name": "PasswordVault",
+                "description": "Password Generator & Vault A modern, responsive, single-page password manager and generator. Generate strong passwords in-browser, encrypt and store them locally with username/email, filter, import/export JSON, copy to clipboard\u2014no server or external libraries required.",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-07-20T18:32:24Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "css3",
+                  "html-css-javascript",
+                  "html5",
+                  "import-export",
+                  "javascript",
+                  "opensource",
+                  "password-generator",
+                  "password-manager",
+                  "password-vault",
+                  "responsive",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "QuizCreatorPlayer",
+                "description": "Quiz Creator & Player  A modern, responsive single-page web app for building, managing, and taking quizzes entirely in the browser. Create, edit, and delete questions and options, mark correct answers, import/export your quizzes as JSON, save locally, and print quizzes for offline use no external dependencies or build steps required @bocaletto-luca",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-07-20T17:19:48Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "html-css-javascript",
+                  "import-export",
+                  "opensource",
+                  "quiz",
+                  "quiz-creator",
+                  "quiz-player",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "AudioFilterCalculator",
+                "description": "RC Filter Explorer An interactive, client-side static site showcasing first-order RC low-pass and high-pass filters. Calculate cutoff frequencies, solve for resistors or capacitors, visualize Bode magnitude/phase plots, and hear real-time audio demos\u2014all without any backend or external dependencies.",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-08-11T19:27:36Z",
+                "fork": false,
+                "topics": [
+                  "audio-filter-calculator",
+                  "bocaletto-luca",
+                  "high-filter",
+                  "low-filter",
+                  "open-hardware",
+                  "opensource"
+                ]
+              },
+              {
+                "name": "OpenStereoMatrix",
+                "description": "OpenStereoMatrix is a web-based, interactive speaker wiring designer supporting everything from basic stereo (2.0) to full 5.1 surround setups. Easily calculate impedance, power dissipation, and generate wiring schematics and BOMs. Perfect for both hobbyists and professionals, as well as complete neophytes. BY @bocaletto-luca",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-08-11T14:08:18Z",
+                "fork": false,
+                "topics": [
+                  "audio",
+                  "audio-amplifier",
+                  "bocaletto-luca",
+                  "open-hardware",
+                  "open-source",
+                  "openstereomatrix"
+                ]
+              },
+              {
+                "name": "PyStudioBand",
+                "description": "PyStudioMusic is a GTK3-based desktop application that lets you easily install, remove, launch and manage your favorite audio and music-production tools. It targets Debian/Ubuntu users who want a polished, intuitive interface for handling DAWs, editors, servers, synthesizers and more.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2025-08-10T00:53:29Z",
+                "fork": false,
+                "topics": [
+                  "audio",
+                  "bocaletto-luca",
+                  "daw",
+                  "desktop-application",
+                  "gui",
+                  "instruments",
+                  "linux",
+                  "music",
+                  "music-production",
+                  "opensource",
+                  "pystudioband",
+                  "python",
+                  "studio-music",
+                  "tool",
+                  "tool-installer",
+                  "vst3"
+                ]
+              },
+              {
+                "name": "StudioBand",
+                "description": "StudioBand is a professional, terminal-based application manager for audio and music production on Debian/Ubuntu. With a clean ASCII UI powered by whiptail, you can install, remove (with \u201ckeep config\u201d or full purge), inspect, and launch your favorite DAWs, synths, players and CLI utilities\u2014all from one script.",
+                "stargazers_count": 5,
+                "language": "Shell",
+                "pushed_at": "2025-08-02T15:49:56Z",
+                "fork": false,
+                "topics": [
+                  "all-in-one",
+                  "app-music",
+                  "audio",
+                  "bash",
+                  "debian",
+                  "installer",
+                  "linux",
+                  "manager-app",
+                  "music",
+                  "music-band",
+                  "musician",
+                  "opensource",
+                  "script",
+                  "shell",
+                  "studio-music",
+                  "ubuntu"
+                ]
+              },
+              {
+                "name": "Picker",
+                "description": "Picker",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-07-20T22:11:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Open-Public-Domain-Resources",
+                "description": "Open-Public-Domain-Resources",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-08-17T21:09:09Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "open-public",
+                  "open-source",
+                  "opensource",
+                  "resources",
+                  "resources-open"
+                ]
+              },
+              {
+                "name": "public-domain-book-library",
+                "description": "A one-page responsive web application to search, browse, and download public-domain books from Project Gutenberg, Open Library, and Internet Archive. Built with vanilla JavaScript, HTML5, and CSS3, this tool empowers readers, researchers, and developers to discover classic works in multiple languages\u2014no backend required.",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2025-08-17T20:16:55Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "library",
+                  "library-database",
+                  "open-library",
+                  "open-library-api",
+                  "opensource"
+                ]
+              },
+              {
+                "name": "TradingDesk",
+                "description": "TradingDesk",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2025-08-13T00:22:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "usb-charge-battery",
+                "description": "USB Charge Battery Library A lightweight, data-driven web catalog of USB-chargeable battery cells and modules. Built by Bocaletto Luca, this project separates content (JSON) from presentation (HTML/CSS/JS) for easy maintenance and extensibility.",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-08-22T23:47:06Z",
+                "fork": false,
+                "topics": [
+                  "battery-charger",
+                  "bocaletto-luca",
+                  "electronics",
+                  "openhardware",
+                  "opensource",
+                  "scheme",
+                  "usb-charger"
+                ]
+              },
+              {
+                "name": "anon-chat",
+                "description": "Chat Application Introduction This repository contains two versions of a browser-based chat application:  index.html: full-featured, production-ready web chat with security, PWA, internationalization, theming, and offline support local.html: simplified local version for development or LAN use, no encryption, HTTP-only, minimal dependencies",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-08-20T17:22:01Z",
+                "fork": false,
+                "topics": [
+                  "opensource",
+                  "web-chat"
+                ]
+              },
+              {
+                "name": "web-assistent",
+                "description": "Web Assistant A self-contained, bilingual web assistant that runs entirely from a single index.html file, loading its phrase library from JSON. Includes an admin.html tool to manage (create, edit, delete, save) the JSON phrase files. SEO metadata is in English only.",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-08-20T16:33:10Z",
+                "fork": false,
+                "topics": [
+                  "application",
+                  "assistent",
+                  "bocaletto-luca",
+                  "css3",
+                  "html-css-javascript",
+                  "html5",
+                  "javascript",
+                  "json",
+                  "multilanguage",
+                  "opensource",
+                  "utilities",
+                  "utility",
+                  "web-application",
+                  "web-assistant",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "Markdown-Live-Editor",
+                "description": "Markdown Editor Live",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-08-23T20:13:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Virtual-Doorbell",
+                "description": "virtual doorbell",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-08-23T20:00:34Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "open-source"
+                ]
+              },
+              {
+                "name": "personal-file-images",
+                "description": "personal-file-images",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-08-23T01:42:40Z",
+                "fork": false,
+                "topics": [
+                  "arts",
+                  "bocaletto-luca"
+                ]
+              },
+              {
+                "name": "modulari-webapp",
+                "description": "Modulari WebApp A curated collection of stand\u2011alone, single\u2011file web applications built with HTML, CSS, and vanilla JavaScript \u2014 no external dependencies, no build steps, 100\u202f% offline\u2011ready.  Each app is self\u2011contained, lightweight, and easy to run locally by simply opening the .html file in any modern browser. The project demonstrates modular ...",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-08-28T15:14:38Z",
+                "fork": false,
+                "topics": [
+                  "app-module",
+                  "bocaletto-luca",
+                  "html-css-javascript",
+                  "opensource",
+                  "webapp"
+                ]
+              },
+              {
+                "name": "ModulariJson",
+                "description": "ModulariJson",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-08-29T00:27:38Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "database",
+                  "json",
+                  "opensource"
+                ]
+              },
+              {
+                "name": "Theme-Studio",
+                "description": "Theme-Studio",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-08-30T21:57:50Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "opensource",
+                  "webdesign"
+                ]
+              },
+              {
+                "name": "Models-AI",
+                "description": "Collection Models AI",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-08-31T18:25:49Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "ai-collection",
+                  "bocaletto-luca",
+                  "collection",
+                  "models-ai",
+                  "models-ai-collections",
+                  "opensource"
+                ]
+              },
+              {
+                "name": "WebTuner-Guitar-Bass",
+                "description": "WebTuner \u2013 Guitar & Bass A modern, single\u2011page web app to tune guitar and bass directly in the browser. I built it with the Web Audio API for real\u2011time pitch detection, a smooth cents meter, reference tones for standard strings, and PWA/SEO best practices. @bocaletto-luca",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-30T22:17:08Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "opensource"
+                ]
+              },
+              {
+                "name": "Guitar-Zero-To-Hero",
+                "description": "Guitar Zero To Hero is a complete, professional, self-taught acoustic guitar course built entirely in HTML, CSS, and JavaScript. It is designed for absolute beginners who want to progress step-by-step to an advanced level, mastering both technique and musicality.  The course is fully responsive, modern in design, and SEO-friendly, making it ...",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-09-02T23:54:14Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "course",
+                  "guitar",
+                  "opensource"
+                ]
+              },
+              {
+                "name": "WinDiskImage",
+                "description": "WinDiskImage WinDiskImage is a lightweight, user-friendly disk imaging tool for Windows, built with Python and PySide6. It allows you to create and restore raw disk images from physical drives, with real-time progress, speed, and ETA display. By @bocaletto-luca",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-09-03T18:02:29Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "bootable-drives",
+                  "disk-images",
+                  "english",
+                  "gui",
+                  "opensource",
+                  "python",
+                  "win-disk-image",
+                  "windiskimage"
+                ]
+              },
+              {
+                "name": "SDFormatter",
+                "description": "SDFormatter A complete, cross-interface SD card formatting utility for Windows, designed for safety, flexibility, and ease of use. This repository contains three versions of the formatter for terminal and GUi by @bocaletto-luca",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2025-09-03T17:51:14Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "formatter",
+                  "formatter-card",
+                  "mini-sd-card",
+                  "open-source",
+                  "sd-card"
+                ]
+              },
+              {
+                "name": "DownloadManager",
+                "description": "DownloadManager DownloadManager is a professional, feature-rich download manager for Windows with a modern PySide6 (Qt) graphical interface. It supports HTTP/HTTPS downloads with pause, resume, stop, and persistent state saving \u2014 allowing you to continue downloads even after closing the application. @bocaletto-luca",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-09-03T20:01:00Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "download-manager",
+                  "downloadmanager",
+                  "opensource",
+                  "python"
+                ]
+              },
+              {
+                "name": "PackagesTools",
+                "description": "Psychopomp Packages Tools is a desktop application I built to simplify the process of collecting and managing Debian package files (.deb) and their source code for Debian 13 (Trixie) and derivatives. By @bocaletto-luca",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-09-05T13:44:21Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "deb",
+                  "debian",
+                  "debian-packages",
+                  "linux",
+                  "opensource",
+                  "packages-deb",
+                  "packages-manager",
+                  "packages-tools"
+                ]
+              },
+              {
+                "name": "PsychopompOS",
+                "description": "PsychopompOS is a Debian 13 (Trixie) derivative, purpose\u2011built for server environments and cybersecurity operations. It delivers a preconfigured, security\u2011hardened platform with a curated package set, enabling rapid deployment for hosting, network services, and secure remote administration. By @bocaletto-luca",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-09-22T00:03:13Z",
+                "fork": false,
+                "topics": [
+                  "admin-tools",
+                  "all-in-one",
+                  "apache2",
+                  "bocaletto-luca",
+                  "debian",
+                  "developer",
+                  "gnu-linux",
+                  "lamp",
+                  "linux",
+                  "mail-server",
+                  "mariadb",
+                  "opensource",
+                  "operation-system",
+                  "os",
+                  "php",
+                  "phpmyadmin",
+                  "python",
+                  "security",
+                  "server",
+                  "webmin"
+                ]
+              },
+              {
+                "name": "LPM",
+                "description": "Linux Packages Manager Static Website This repository hosts the Linux Packages Manager Static Website (LPM), a comprehensive collection of Debian 13\u2013compatible packages. The project provides a centralized, static reference for downloading packages, retrieving installation commands, and exploring detailed information for each package across multiple",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-10-06T06:16:42Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "database",
+                  "deb",
+                  "debian",
+                  "html-css-javascript",
+                  "linux",
+                  "lpm",
+                  "opensource",
+                  "packages",
+                  "website"
+                ]
+              },
+              {
+                "name": "Texas-Holdem",
+                "description": "Texas Hold'em Web Game is an engaging, browser-based poker experience built with HTML5, CSS3, and JavaScript. Enjoy authentic Texas Hold'em gameplay with customizable settings, smart AI opponents, and a responsive interface that brings the card table to your browser. Developed by Bocaletto Luca.",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2025-07-11T23:12:30Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "card-game",
+                  "cardgame",
+                  "css3",
+                  "game",
+                  "html5",
+                  "javascript",
+                  "opensource",
+                  "poker",
+                  "responsive",
+                  "singleplayer",
+                  "texas-holdem",
+                  "texas-holdem-poker",
+                  "texasholdem",
+                  "videogame",
+                  "webgame"
+                ]
+              },
+              {
+                "name": "Mind-Maps",
+                "description": "Mind Maps Example Basic is a software application for creating, managing and organizing mind maps. This tool allows users to create customized mind maps, organize ideas and concepts in a hierarchical manner, and navigate through information intuitively.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-07-06T00:27:06Z",
+                "fork": false,
+                "topics": [
+                  "brainstorming",
+                  "customizable",
+                  "desktop-application",
+                  "gui",
+                  "hierarchical-structure",
+                  "idea-organization",
+                  "mind-maps",
+                  "open-source",
+                  "productivity",
+                  "python"
+                ]
+              },
+              {
+                "name": "Solitaire",
+                "description": "Klondike Solitaire \u2013 Final Release is a modern, fully responsive web adaptation of the classic Klondike Solitaire game. This project faithfully implements the official solitaire rules\u2014including proper deck shuffling, dealing into tableau piles (with only the last card face-up), Stock, Waste, and four Foundation piles\u2014with the added benefit of ...",
+                "stargazers_count": 13,
+                "language": "HTML",
+                "pushed_at": "2025-06-25T22:28:01Z",
+                "fork": false,
+                "topics": [
+                  "bocaletto-luca",
+                  "card-game",
+                  "classic-game",
+                  "css3",
+                  "html5",
+                  "javascript",
+                  "multidevice",
+                  "open-source",
+                  "responsive",
+                  "singleplayer",
+                  "solitaire",
+                  "solitaire-card-game",
+                  "solitaire-game",
+                  "vieogames",
+                  "web-game",
+                  "webgame"
+                ]
+              },
+              {
+                "name": "GuiLinuxInstaller",
+                "description": "GUI Installer for Debian & Derivatives Author: Bocaletto Luca A simple Bash script that lets you choose and install one of dozens of popular desktop environments or window managers on Debian, Ubuntu and related distributions.",
+                "stargazers_count": 12,
+                "language": "Shell",
+                "pushed_at": "2025-06-13T01:47:06Z",
+                "fork": false,
+                "topics": [
+                  "bash",
+                  "bash-script",
+                  "bocaletto-luca",
+                  "gplv3",
+                  "gui",
+                  "gui-installer",
+                  "gui-linux",
+                  "gui-linux-installer",
+                  "openhardware",
+                  "opensource",
+                  "script",
+                  "sh",
+                  "shell"
+                ]
+              },
+              {
+                "name": "Ludo",
+                "description": "Ludo Webgame is a complete web-based version of the classic board game Ludo. This project faithfully replicates the original game rules and board layout using a 15\u00d715 grid (each cell 40\u00d740 pixels). By Bocaletto Luca",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-06-22T11:36:25Z",
+                "fork": false,
+                "topics": [
+                  "board-game",
+                  "boardgame",
+                  "bocaletto-luca",
+                  "classic-game",
+                  "css3",
+                  "game",
+                  "gplv3",
+                  "html5",
+                  "javascript",
+                  "ludo",
+                  "ludo-game",
+                  "multidevice",
+                  "opensource",
+                  "responsive",
+                  "videogame",
+                  "web-game",
+                  "webgame"
+                ]
+              },
+              {
+                "name": "Windows-Autorun-Process-Manager",
+                "description": "The \"Windows Startup Applications Manager\" is a handy utility that allows users to manage the applications that launch automatically when their Windows computer starts up.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-07-06T00:17:46Z",
+                "fork": false,
+                "topics": [
+                  "application-control",
+                  "automation",
+                  "desktop-application",
+                  "performance-optimization",
+                  "python",
+                  "startup-management",
+                  "system-utilities",
+                  "task-manager",
+                  "windows",
+                  "windows-tools"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:53:07.386189+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

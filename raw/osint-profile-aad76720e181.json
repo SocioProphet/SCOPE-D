@@ -1,0 +1,379 @@
+{
+  "profileId": "osint-profile-aad76720e181",
+  "target": "ngdevc",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:50:17.995638+00:00",
+  "completedAt": "2026-06-20T16:50:18.883963+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b9f12447",
+      "lookupType": "github_context",
+      "target": "ngdevc",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "ngdevc",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": null,
+            "bio": "Senior Angular - Full Stack Engineer | Web & Mobile\r\n",
+            "public_repos": 29,
+            "followers": 626,
+            "following": 612,
+            "created_at": "2020-05-19T02:20:17Z",
+            "updated_at": "2026-06-02T15:59:27Z",
+            "html_url": "https://github.com/ngdevc",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65579678?v=4",
+            "repos": [
+              {
+                "name": "real-time-stocks",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-06T06:57:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "a2ui-debugger",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-03T02:43:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "angular-realworld-example-app",
+                "description": "Exemplary real world application built with Angular",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-12-09T08:26:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RealtimeVoiceChat",
+                "description": "Have a natural, spoken conversation with AI!",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-11T08:43:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "angular-canvas-demo",
+                "description": "Angular Canvas Demo",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-16T09:32:41Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "canvas",
+                  "drawing"
+                ]
+              },
+              {
+                "name": "ionic-capacitor-starter-kit",
+                "description": "Ionic Angular Capacitor Starter Kit",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-02T13:37:50Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "capacitor",
+                  "ionic",
+                  "starter-kit"
+                ]
+              },
+              {
+                "name": "angular-springboot-crud",
+                "description": "\ud83d\udda5 CRUD Angular + Spring demonstrating Has-Many relationship, including tests for the back-end and front-end",
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2025-11-24T14:52:20Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "angular-springboot",
+                  "spring-boot",
+                  "springboot"
+                ]
+              },
+              {
+                "name": "angular-tailwind-starter-kit",
+                "description": "Angular Tailwind Starter Kit",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-08-16T09:30:42Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "tailwindcss"
+                ]
+              },
+              {
+                "name": "angular-zoneless-starter-kit",
+                "description": "Angular Zoneless Starter Kit",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2025-08-16T09:26:26Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "starter-kit",
+                  "zoneless"
+                ]
+              },
+              {
+                "name": "ionic-cordova-starter-kit",
+                "description": "Ionic Cordova Tabs App Starter Kit",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-16T09:23:31Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "cordova",
+                  "ionic",
+                  "starter-kit"
+                ]
+              },
+              {
+                "name": "angular-library-starter-kit",
+                "description": "Angular custom library with demo app which can be published as NPM",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-16T09:20:10Z",
+                "fork": false,
+                "topics": [
+                  "angular",
+                  "ng-library",
+                  "npm",
+                  "starter-kit"
+                ]
+              },
+              {
+                "name": "Nodejs-Express-Prisma-Typescript-Startkit",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-16T08:59:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "go-rest-api-example",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Go",
+                "pushed_at": "2025-08-16T08:56:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "spring-boot-3-rest-api-example",
+                "description": "Spring Boot 3 Rest API example that implements CRUD operations - GET / POST / PUT / DELETE and filter requests",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2025-08-16T08:54:05Z",
+                "fork": false,
+                "topics": [
+                  "spring",
+                  "spring-boot",
+                  "springboot"
+                ]
+              },
+              {
+                "name": "spring-boot-3-jwt-authentication",
+                "description": "Spring Boot + Security: Token Based Authentication example with JWT, Authorization, Spring Data & MySQL",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2025-08-16T08:51:43Z",
+                "fork": false,
+                "topics": [
+                  "spring",
+                  "spring-boot",
+                  "springboot"
+                ]
+              },
+              {
+                "name": "dotnet-blazor-crud",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2025-08-16T08:49:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "employee-offboarding-system",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-16T08:46:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "whaticket-community",
+                "description": "A very simple Ticket System based on WhatsApp messages, that allow multi-users in same WhatsApp account.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-07-31T21:37:18Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "public-apis",
+                "description": "A collective list of free APIs",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-20T15:56:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Mesekai",
+                "description": "personal webcam motion tracking avatar",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-01-14T08:54:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "angular-tailwind-e-commerce-template",
+                "description": "This is a modern, responsive e-commerce template built with Angular and TailwindCSS. It's designed to be a starting point for building full-featured e-commerce applications. The template includes a clean and customizable design, ideal for minimalist online stores.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-03-13T06:02:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-trello",
+                "description": "Pluggable components to add a kanban board to your application",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-08-06T22:00:08Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "r3f-virtual-girlfriend-backend",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-08-13T23:55:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "r3f-virtual-girlfriend-frontend",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-11-14T08:44:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vertex-ai-firebase-angular-example",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-17T01:00:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "python-scrapying-to-excel",
+                "description": "python scrapying to excel",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-08-17T01:13:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "php-canvas-image-editor",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "PHP",
+                "pushed_at": "2025-08-17T01:14:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "flutter-zizu",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Dart",
+                "pushed_at": "2025-10-21T17:54:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lara-vuexy-admin",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "Blade",
+                "pushed_at": "2021-05-26T13:43:50Z",
+                "fork": false,
+                "topics": [
+                  "laravel",
+                  "php",
+                  "vue",
+                  "vuex",
+                  "vuexy-template"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:50:18.882602+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

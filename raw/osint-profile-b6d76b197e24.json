@@ -1,0 +1,148 @@
+{
+  "profileId": "osint-profile-b6d76b197e24",
+  "target": "N1TEB0I",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:29:36.755269+00:00",
+  "completedAt": "2026-06-21T15:29:37.198150+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-47e141d1",
+      "lookupType": "github_context",
+      "target": "N1TEB0I",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "N1TEB0I",
+            "name": "\u22b9\u02d8\ufe36\u3000rodri \u2b52 carre\u3000\ufe36\u02d8\u22b9",
+            "type": "User",
+            "company": "@ritokac @horrorfanatic @sacrificialgrl \u2661 @kiracorner @qu1nnzibun @Deliciouscheesecake @wqdette @weinthesea @forgedshadows @sohodolls @reversecowgirl @castIevania @HarveyTapeworm @jellykatss @ILoveFleetway @shinsstuff @weed4week @IIuw3u @twilightcourtyard",
+            "blog": "https://rentry.co/n1teb0i",
+            "location": "+more\u3000\ufe36\u02d8\u22b9\u02d8\ufe36\u02d8\u2b52\u02d8\ufe36\u02d8\u22b9\u02d8\ufe36",
+            "bio": "\u2765  \u0741 \u02d6 @R0K1RA @yuriclown @heathvcliff @jia-baoyu\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\"If I ordered so.\" \u2605\u2003alts: @1stRacer \u0a6d @martinvously",
+            "public_repos": 8,
+            "followers": 2528,
+            "following": 5992,
+            "created_at": "2023-07-02T20:48:14Z",
+            "updated_at": "2026-06-20T22:47:55Z",
+            "html_url": "https://github.com/N1TEB0I",
+            "avatar_url": "https://avatars.githubusercontent.com/u/138403094?v=4",
+            "repos": [
+              {
+                "name": "something",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-06-20T23:34:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "N1TEB0I",
+                "description": null,
+                "stargazers_count": 23,
+                "language": null,
+                "pushed_at": "2026-06-16T08:24:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "m3xaluv",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-12-12T18:15:09Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "testing",
+                "description": null,
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2025-08-08T22:20:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mea-stuff",
+                "description": "freaky , funky , HELP , im gonna die",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-12-20T11:28:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "hii",
+                "description": "sugamydicke",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2025-08-08T22:23:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "m3xxa",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2025-08-16T22:13:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rants",
+                "description": "it really depends",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-01-12T08:58:05Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:29:37.197130+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

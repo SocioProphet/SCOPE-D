@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-cffcd57075ea",
+  "target": "bodyfeeling",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:30.640986+00:00",
+  "completedAt": "2026-06-21T15:32:30.958195+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-1bf0c5ca",
+      "lookupType": "github_context",
+      "target": "bodyfeeling",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "bodyfeeling",
+            "name": null,
+            "type": "User",
+            "company": "\u2003\u2003\u2003@arcahnum \u2003 @sabryngill",
+            "blog": "",
+            "location": "\u3000\u3000\u3000 spam following since '23. forever offtabmaxxing @ docks or with regis",
+            "bio": "\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800   \u2800   \u2800\u2800\u2800\u2800\u2800\u2800\u2800 \u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\r\n",
+            "public_repos": 1,
+            "followers": 1400,
+            "following": 5641,
+            "created_at": "2023-06-23T11:27:09Z",
+            "updated_at": "2026-05-12T14:27:08Z",
+            "html_url": "https://github.com/bodyfeeling",
+            "avatar_url": "https://avatars.githubusercontent.com/u/137505505?v=4",
+            "repos": [
+              {
+                "name": "bodyfeeling",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-05-09T09:50:03Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:30.957543+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

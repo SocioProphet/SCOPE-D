@@ -1,0 +1,459 @@
+{
+  "profileId": "osint-profile-aaaf9f9432ec",
+  "target": "Daynlight",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:54.860347+00:00",
+  "completedAt": "2026-06-20T13:52:55.623797+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-dc4c4a47",
+      "lookupType": "github_context",
+      "target": "Daynlight",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Daynlight",
+            "name": "DAYNLIGHT",
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Poland",
+            "bio": "I wanna die \ud83c\udfb2",
+            "public_repos": 31,
+            "followers": 3156,
+            "following": 5790,
+            "created_at": "2020-03-13T20:30:45Z",
+            "updated_at": "2026-06-19T22:01:44Z",
+            "html_url": "https://github.com/Daynlight",
+            "avatar_url": "https://avatars.githubusercontent.com/u/62157770?v=4",
+            "repos": [
+              {
+                "name": "help-me-i-am-under-the-water",
+                "description": "Project for GRK under water scene. Build on top of CWindow library. Uses ImGui build in CWindow for parameters adjustment and visualization.",
+                "stargazers_count": 0,
+                "language": "C++",
+                "pushed_at": "2026-06-20T12:07:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CWindow",
+                "description": "CWindow is cross-platform multi renderer lib for creating simple meshes, shaders, and computing on GPU. It unify multiple renderers to simple most often used operations like, binding shaders, rendering mashes, swapping window etc.",
+                "stargazers_count": 4,
+                "language": "C++",
+                "pushed_at": "2026-06-19T21:15:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SVGParser",
+                "description": "SVG Parser is simple python app for parsing custom file format and showing it via arcade. Inspired svg and c++ languages.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-06-14T23:10:04Z",
+                "fork": false,
+                "topics": [
+                  "parser",
+                  "python",
+                  "python3",
+                  "svg"
+                ]
+              },
+              {
+                "name": "Sztuczna_Inteligencjia",
+                "description": "Zadaniem automatycznego kelnera jest przyjmowanie zam\u00f3wie\u0144 i dostarczanie posi\u0142k\u00f3w klientom. Agent rozpoznaje przygotowany w kuchni posi\u0142ek, a nast\u0119pnie na postawie historii zam\u00f3wie\u0144 wybiera stolik, do kt\u00f3rego nale\u017cy go dostarczy\u0107.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-06-10T14:46:11Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "astar",
+                  "bfs",
+                  "decision-tree",
+                  "genetic-algorithm",
+                  "neural-network",
+                  "python"
+                ]
+              },
+              {
+                "name": "RAION",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-29T19:32:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CAD",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-05-14T18:24:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Graphite",
+                "description": "Graphite is simple 2D/3D math visual app like geogebra, desoms, matplotlib in python. It works on c++ scripting language. It is based how scripts works via using interfaces and dll loading. Allows how swap dll on runtime for easy and nice experience. It uses my own rendering library CWindow.",
+                "stargazers_count": 3,
+                "language": "C++",
+                "pushed_at": "2026-05-09T23:56:56Z",
+                "fork": false,
+                "topics": [
+                  "cpp",
+                  "desktop-app",
+                  "desktop-application",
+                  "hotloading",
+                  "low-level-programming",
+                  "math",
+                  "mathematics",
+                  "opengl",
+                  "tool",
+                  "visualization"
+                ]
+              },
+              {
+                "name": "NeuralNetwork",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-05-20T16:02:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Storycraft_The_age_of_stone",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-05-06T20:41:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Portfolio",
+                "description": "My portfolio",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-05-06T20:16:55Z",
+                "fork": false,
+                "topics": [
+                  "about-me",
+                  "cv",
+                  "portfiolio"
+                ]
+              },
+              {
+                "name": "Daynlight",
+                "description": "\ud83d\udc96My Github Readme.md \ud83d\udc96",
+                "stargazers_count": 35,
+                "language": null,
+                "pushed_at": "2026-06-20T00:28:04Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "readme",
+                  "readme-profile"
+                ]
+              },
+              {
+                "name": "ShadersExplained",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-27T12:38:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DataBase",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2026-03-08T20:06:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Filters",
+                "description": "Simple image filters renderer with my CWindow Lib",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2025-11-28T18:58:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Fractals",
+                "description": "Simple malgenbrota and julia sets renderer with my CWindow Lib",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2025-11-28T18:56:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CPU",
+                "description": "A Cpu Diagram creted in logisim with simple asembler. Created for learning purposes and low level understanding.",
+                "stargazers_count": 37,
+                "language": "Python",
+                "pushed_at": "2025-10-27T15:25:43Z",
+                "fork": false,
+                "topics": [
+                  "cpu",
+                  "cpudiagram",
+                  "diagram",
+                  "logisim"
+                ]
+              },
+              {
+                "name": "Weather_app_PS",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Java",
+                "pushed_at": "2026-03-24T16:40:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Big-data-server",
+                "description": "Server for big data with chunked upload, caching, integration via hashes with keycloak user verification and typeorm for database. Created for learning puposes.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-25T18:11:04Z",
+                "fork": false,
+                "topics": [
+                  "big-data",
+                  "database",
+                  "keycloak",
+                  "nestjs",
+                  "vue"
+                ]
+              },
+              {
+                "name": "CMS",
+                "description": "Headles CMS + express frontend. Created for learning purposes. Have some user policies, webhook, articles and authors.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-26T04:02:00Z",
+                "fork": false,
+                "topics": [
+                  "cms",
+                  "express",
+                  "expressjs",
+                  "headless-cms"
+                ]
+              },
+              {
+                "name": "CI-CD",
+                "description": "CI-CD is a GitHub-based continuous integration and deployment workflow that allows you to automatically deploy your applications on server.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-19T02:31:41Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "automation",
+                  "ci-cd",
+                  "cicd",
+                  "nestjs"
+                ]
+              },
+              {
+                "name": "Web-Crawler",
+                "description": "A simple python web crawler for searching through web and fetching data. Useful for finding content in web and fetching links.",
+                "stargazers_count": 1,
+                "language": "Jupyter Notebook",
+                "pushed_at": "2026-02-16T00:15:21Z",
+                "fork": false,
+                "topics": [
+                  "bfs",
+                  "bfs-dfs",
+                  "crawler",
+                  "dfs",
+                  "python3",
+                  "search",
+                  "web",
+                  "webcrawler"
+                ]
+              },
+              {
+                "name": "Microshell",
+                "description": "This is small shell build on threads optimized for parallel operations and data batching. Main focus is to make it work for multiple operations at the same time. Contains only own implementations of structures no libs. Uses a lot of dynamic arrays.",
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2026-02-01T21:04:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "JS-Cookies",
+                "description": "Simple Js file to control cookies in Java Script",
+                "stargazers_count": 12,
+                "language": "JavaScript",
+                "pushed_at": "2025-10-27T15:27:31Z",
+                "fork": false,
+                "topics": [
+                  "cookies",
+                  "javascript",
+                  "javascript-library",
+                  "js",
+                  "library"
+                ]
+              },
+              {
+                "name": "Brawdle",
+                "description": "Brawdle is an engaging guess game based on Brawl Stars \ud83c\udfae, where players use data about champions to make educated guesses. Dive into the world of Brawl Stars characters and challenge your knowledge by guessing champions from provided data. \ud83c\udf1f\ud83d\udd0d Test your skills and see how well you know your favorite Brawl Stars heroes! \ud83c\udf1f",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-07-11T13:14:31Z",
+                "fork": false,
+                "topics": [
+                  "brwalstars",
+                  "game",
+                  "guess",
+                  "guessing-game"
+                ]
+              },
+              {
+                "name": "Data",
+                "description": "Simple Data lib for c++. With folder control and file control. Simple hashing methodes.",
+                "stargazers_count": 13,
+                "language": "C++",
+                "pushed_at": "2025-10-28T21:09:02Z",
+                "fork": false,
+                "topics": [
+                  "cpp",
+                  "data",
+                  "file",
+                  "lib",
+                  "save"
+                ]
+              },
+              {
+                "name": "UwUsiometr",
+                "description": "Welcome to UwUsiometer \ud83c\udf38, the ultimate destination to measure your cuteness! \ud83d\udc96 Ever wondered how adorable you really are? Now you can find out with just a snap of a photo \ud83d\udcf8.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2024-10-25T10:13:15Z",
+                "fork": false,
+                "topics": [
+                  "fun",
+                  "game",
+                  "meter",
+                  "metr",
+                  "uwu",
+                  "uwusometr"
+                ]
+              },
+              {
+                "name": "PixForge",
+                "description": "PixForge is simple Pixel art game engine \u2606*: .\uff61. o(\u2267\u25bd\u2266)o .\uff61.:*\u2606",
+                "stargazers_count": 7,
+                "language": "C++",
+                "pushed_at": "2025-12-15T10:05:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Network",
+                "description": "It is simple internet interface for easier working with networking in c/c++. The library is written in c. Useful and lightweight. Core idea was assignment at university with networking. All functions operate in non-blocking mode.",
+                "stargazers_count": 1,
+                "language": "C",
+                "pushed_at": "2025-12-15T10:02:30Z",
+                "fork": false,
+                "topics": [
+                  "c",
+                  "cpp",
+                  "linux",
+                  "network",
+                  "networking",
+                  "sockets",
+                  "windows"
+                ]
+              },
+              {
+                "name": "Shader_Editor",
+                "description": "Simple shader editor that uses my other lib CWindow created for exepriments with shaders.",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2025-11-29T17:19:35Z",
+                "fork": false,
+                "topics": [
+                  "cpp",
+                  "experiments",
+                  "opengl",
+                  "shaders",
+                  "simple-project"
+                ]
+              },
+              {
+                "name": "ASD",
+                "description": "Simple Encryption and Compresion Lib",
+                "stargazers_count": 2,
+                "language": "C",
+                "pushed_at": "2025-11-16T13:37:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Tetris",
+                "description": "Simple Tetris clone in SDL",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2025-10-28T22:19:48Z",
+                "fork": false,
+                "topics": [
+                  "cpp",
+                  "game",
+                  "sdl2",
+                  "tetris",
+                  "tetris-game"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:55.622856+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

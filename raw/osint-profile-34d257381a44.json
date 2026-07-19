@@ -1,0 +1,155 @@
+{
+  "profileId": "osint-profile-34d257381a44",
+  "target": "PHPTCloud",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:34.156541+00:00",
+  "completedAt": "2026-06-21T15:32:34.571082+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-085b75b9",
+      "lookupType": "github_context",
+      "target": "PHPTCloud",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "PHPTCloud",
+            "name": "Yudov Alexei",
+            "type": "User",
+            "company": null,
+            "blog": "https://t.me/softwaretower",
+            "location": "Moscow",
+            "bio": "PHP & Golang software backend develeper",
+            "public_repos": 7,
+            "followers": 1381,
+            "following": 1182,
+            "created_at": "2020-04-20T06:17:21Z",
+            "updated_at": "2026-02-19T12:33:56Z",
+            "html_url": "https://github.com/PHPTCloud",
+            "avatar_url": "https://avatars.githubusercontent.com/u/63997331?v=4",
+            "repos": [
+              {
+                "name": "password-entropy-validator",
+                "description": "\u041d\u0435\u0431\u043e\u043b\u044c\u0448\u043e\u0439 \u0431\u0430\u043d\u0434\u043b \u0434\u043b\u044f \u0440\u0430\u0441\u0447\u0435\u0442\u0430 \u044d\u043d\u0442\u0440\u043e\u043f\u0438\u0438 \u043f\u0430\u0440\u043e\u043b\u044f \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u0434\u0432\u0443\u0445 \u043c\u0435\u0442\u043e\u0434\u043e\u0432. ",
+                "stargazers_count": 12,
+                "language": "PHP",
+                "pushed_at": "2024-03-08T23:02:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "is-day-off",
+                "description": "PHP SDK for isdayoff.ru",
+                "stargazers_count": 26,
+                "language": "PHP",
+                "pushed_at": "2024-03-17T23:28:03Z",
+                "fork": false,
+                "topics": [
+                  "isdayoff",
+                  "php",
+                  "sdk"
+                ]
+              },
+              {
+                "name": "telegram-api",
+                "description": "\u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 \u0434\u043b\u044f \u0440\u0430\u0431\u043e\u0442\u044b \u0441 Telegram API",
+                "stargazers_count": 29,
+                "language": "PHP",
+                "pushed_at": "2024-11-11T00:18:54Z",
+                "fork": false,
+                "topics": [
+                  "bot-api",
+                  "hacktobefest",
+                  "php",
+                  "php-telegram-bot",
+                  "php8",
+                  "sdk",
+                  "sdk-php",
+                  "telegram",
+                  "telegram-api",
+                  "telegram-bot"
+                ]
+              },
+              {
+                "name": "PHPTCloud",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2024-04-01T23:19:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-booster",
+                "description": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0434\u043b\u044f \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439 \u043d\u0430 github \u0438 \u0441\u0431\u043e\u0440\u0430 \u043c\u0435\u0442\u0440\u0438\u043a.",
+                "stargazers_count": 11,
+                "language": "PHP",
+                "pushed_at": "2024-03-31T09:02:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "jsend-symfony-bundle",
+                "description": "Implementation of jsend specification for http responses.",
+                "stargazers_count": 14,
+                "language": "PHP",
+                "pushed_at": "2024-04-06T17:14:02Z",
+                "fork": false,
+                "topics": [
+                  "jsend",
+                  "php",
+                  "symfony-bundle"
+                ]
+              },
+              {
+                "name": "microservices-template",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "PHP",
+                "pushed_at": "2022-05-08T12:41:24Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:34.570343+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

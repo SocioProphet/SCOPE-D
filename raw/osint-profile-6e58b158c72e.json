@@ -1,0 +1,340 @@
+{
+  "profileId": "osint-profile-6e58b158c72e",
+  "target": "Charles-Chrismann",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:27:36.132678+00:00",
+  "completedAt": "2026-06-21T15:27:36.928310+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-7be844d2",
+      "lookupType": "github_context",
+      "target": "Charles-Chrismann",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Charles-Chrismann",
+            "name": "Charles Chrismann",
+            "type": "User",
+            "company": "@Smylen",
+            "blog": "charles-chrismann.fr",
+            "location": "Paris, France",
+            "bio": "24, CS, I code, I run.",
+            "public_repos": 28,
+            "followers": 15594,
+            "following": 25,
+            "created_at": "2021-01-28T14:18:01Z",
+            "updated_at": "2026-06-14T21:29:54Z",
+            "html_url": "https://github.com/Charles-Chrismann",
+            "avatar_url": "https://avatars.githubusercontent.com/u/78157563?v=4",
+            "repos": [
+              {
+                "name": "Charles-Chrismann",
+                "description": null,
+                "stargazers_count": 85,
+                "language": null,
+                "pushed_at": "2026-06-21T15:03:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "simple-html",
+                "description": "This repo is just an example used for experiments and testing do not pay attention",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-06-10T14:01:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gbats",
+                "description": "A TypeScript port of a Game Boy Advance emulator library, allowing emulation and interaction with GBA ROMs in Node.js and the browser.",
+                "stargazers_count": 19,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-27T08:51:50Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pie-mint",
+                "description": null,
+                "stargazers_count": 17,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-24T07:21:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dynamic-readme",
+                "description": "A NestJs app to make dynamic README on github",
+                "stargazers_count": 69,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-24T13:03:41Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "nestjs",
+                  "nodejs",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "running",
+                "description": "A repository to store my race results, tools, recipes... anything related to running & races",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-04-30T11:14:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "back-mint-node",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-17T09:03:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "countries-states-cities-database",
+                "description": "\ud83c\udf0d Discover our global repository of countries, states, and cities!  \ud83c\udfd9\ufe0f Get comprehensive data in JSON, SQL, PSQL, SQLSERVER, MONGODB, SQLITE, XML, YAML, and CSV formats. Access ISO2, ISO3 codes, country code, capital, native language, timezones (for countries), and more. #countries #states #cities",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-02-08T11:11:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pedantix-meta",
+                "description": "An automated solver for the Wikipedia word-guessing game, aiming to predict daily page words and identify the page itself.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-27T08:43:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "gbajs2",
+                "description": "gbajs2 is a Game Boy Advance emulator written in Javascript from scratch using HTML5 technologies like Canvas and Web Audio. It is freely licensed and works in any modern browser without plugins.",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2024-06-18T17:17:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ds-bot-random-inputs",
+                "description": "This project is a bot that automatically plays Pok\u00e9mon with random inputs and sends a screenshot of the screen to Discord every minute.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-27T09:21:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "discord-status",
+                "description": "A script that automatically updates your Discord status with punchlines from French rappers.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-27T09:03:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "threexel-war",
+                "description": "A 3D pixel war game inspired by r/place, built to explore real-time interactions between a server and multiple clients using Three.js and Socket.io.",
+                "stargazers_count": 9,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-27T09:12:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "discord-self-commands",
+                "description": "A Discord bot that lets you execute terminal commands on your machine and receive the output directly through Discord messages.",
+                "stargazers_count": 7,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-27T08:48:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "iim-signature",
+                "description": "The code for this project is used to replace the signature on my attendance sheet for my school with an image.",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2025-08-27T09:08:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "my-web-development-journey",
+                "description": "A personal repository documenting my journey learning web development, sharing solutions, insights, and resources for beginners and fellow developers.",
+                "stargazers_count": 12,
+                "language": "HTML",
+                "pushed_at": "2025-09-27T19:28:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "setup-my-linux",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-12-25T22:13:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "drizzle-nest-next",
+                "description": "\u26a1\ufe0f The ultimate fullstack monorepo template with Turborepo, NestJS, Next.js, Drizzle ORM, and PostgreSQL, modern, scalable, and production-ready. Perfect for SaaS, APIs, and web apps.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-21T10:50:09Z",
+                "fork": false,
+                "topics": [
+                  "drizzle",
+                  "drizzle-orm",
+                  "nest",
+                  "nestjs",
+                  "next",
+                  "nextjs",
+                  "postgres",
+                  "postgresql",
+                  "turborepo"
+                ]
+              },
+              {
+                "name": "welcome-world",
+                "description": "A project that logs unsolicited server requests to reveal where in the world they originate.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-27T08:29:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sw-tools",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-12-07T23:12:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "iim-azure",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2025-09-22T19:25:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "javascript-benchmarks",
+                "description": "A collection of JavaScript benchmarks comparing different methods to explore runtime performance for algorithm optimization.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-27T07:34:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "discord-ia-response-bot",
+                "description": "A Discord selfbot built with Node.js that captures messages, sends them to Ollama, and automatically generates responses.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-27T08:37:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "just-borning",
+                "description": "Nothing to see here, just to have a contribution the days i was born.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-03-11T21:48:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-seven-handshakes",
+                "description": "Discover follower chains between two GitHub users \u2014 an experiment applying the Six (or Seven) Degrees of Separation theory to GitHub connections.",
+                "stargazers_count": 6,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-27T08:10:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-repo-looker",
+                "description": "A tool to easily visualize any web front-end project without setup or installation.",
+                "stargazers_count": 22,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-27T08:23:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "node-local-https-dev-server",
+                "description": "A lightweight local HTTPS server for testing front-end features that require HTTPS.",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2025-08-27T08:18:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "github-graphql-ts-types",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-07-31T16:10:17Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:27:36.927265+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

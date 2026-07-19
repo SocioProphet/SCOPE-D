@@ -1,0 +1,424 @@
+{
+  "profileId": "osint-profile-2028a7feaba2",
+  "target": "Mindlyss",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:44.759395+00:00",
+  "completedAt": "2026-06-20T16:48:45.981127+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-f559f500",
+      "lookupType": "github_context",
+      "target": "Mindlyss",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Mindlyss",
+            "name": "Mindlyss",
+            "type": "User",
+            "company": null,
+            "blog": "zvanish.com",
+            "location": null,
+            "bio": "Developer of zVanish,\r\nCA: 2rwJLNhze925MwEDgmMqLhHzEwRQAkMtNQ1rZFwbpump\r\n\r\nMajored in Web Scraping, Web Development, Software Engineer.",
+            "public_repos": 39,
+            "followers": 959,
+            "following": 309,
+            "created_at": "2019-10-23T17:21:49Z",
+            "updated_at": "2025-11-20T00:02:46Z",
+            "html_url": "https://github.com/Mindlyss",
+            "avatar_url": "https://avatars.githubusercontent.com/u/56933144?v=4",
+            "repos": [
+              {
+                "name": "CliffPeriod",
+                "description": "Autonomous Data Orchestrator Machine Leverages Scalable, Distributed Architecture for Intelligent Insights on the Adaptive Decision Engine Platform",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T19:04:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "VestingSchedule",
+                "description": "Dynamic, adaptive vesting schedules enabled by real-time risk analysis on a horizontally scalable, distributed architecture foundation.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T19:03:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "KeyManager",
+                "description": "Cloud-centric KeyManager orchestrates encryption and access-control, empowering scalable enterprise security architectures. featuring access-control capabilities",
+                "stargazers_count": 6,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:27:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MnemonicTool",
+                "description": "Efficient cognitive augmentation through adaptive auto-scaling, context-aware recommendations, and intelligent distributed architecture Framework.",
+                "stargazers_count": 7,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:29:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AIPAC-tracker",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-30T10:53:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AIPAC",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-01-30T10:52:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "zVanish",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-11-20T00:01:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ModernD",
+                "description": "Evolving, self-optimizing DAOProposal engine with dynamic fee calculation and auto-scaling, ensuring transparent and auditable governance at its core.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2025-10-28T19:08:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SnapshotGovernance",
+                "description": "Integrative real-time data validation orchestrates decentralized governance, safeguarding resilience at the system nexus.",
+                "stargazers_count": 5,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T19:06:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AirdropManager",
+                "description": "Cloud-native AirdropManager leverages adaptive auto-scaling and load balancing, safeguarding encryption and intelligent routing within a resilient orchestration engine.",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T19:05:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SafePal",
+                "description": "AI-driven SafePalLink enables real-time risk evaluation and adaptive multi-factor authentication, ensuring scalable, intelligent, and robust controller.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-10-29T23:24:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ExodusSync",
+                "description": "Autonomous data governance orchestrator for real-time, scalable, and intelligent distributed synchronization. providing enterprise-grade ExodusSync solutions",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-10-28T18:43:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WalletGenerator",
+                "description": "Cryptographically-secured, autonomously-managed WalletGenerator optimizes advanced-security-features through intelligent, distributed architecture and auto-scaling-capabilities. implementing modern real-time-transaction-processing patterns",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2025-10-28T18:29:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CoinGecko",
+                "description": "High-Performance Real-Time Cryptocurrency Data Aggregation and Analytics Engine Platform featuring Exchange-Rate-Feeds capabilities implementing modern Market-Data-Visualization patterns",
+                "stargazers_count": 19,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T18:24:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SeedPhrase",
+                "description": "Self-Authenticating Identity Orchestration Engine for Real-Time Private Key Management Service implementing modern Automated Identity Provisioning patterns",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T18:28:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PrivateKey",
+                "description": "Distributed, Real-Time Key Management Service ensures Scalable, Secure, Resilient Operations across a fault-tolerant Load-Balancing Platform.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T18:30:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TokenomicsModel",
+                "description": "Optimizing TokenomicsModel with Adaptive and Predictive Strategies, Engineered for Dynamic Reward Scheduling and Adaptive Token Burn Mechanisms Studio",
+                "stargazers_count": 4,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T19:01:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MintFactory",
+                "description": "Sophisticated enterprise fabric woven from machine-learning threads, event-driven tapestry, and scalable distributed architecture.",
+                "stargazers_count": 3,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T19:00:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BurnMechanism",
+                "description": "Autonomous Real-Time BurnMechanism orchestrator leveraging Adaptive Resource Scheduling and Distributed Processing Simulator.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:59:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RebaseToken",
+                "description": "Intelligent Token Origination System Ensuring Secure, Decentralized, Scalable Token Issuance and Real-time Authentication Module",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:57:42Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AmpleForth",
+                "description": "Cloud-Native Real-Time Scheduling Engine for Low-Latency Systems on AmpleForth Infrastructure Framework. with Secure architecture",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-10-28T18:56:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FraxFinance",
+                "description": "Enterprise-grade FraxFinance: Advanced Machine-Learning-Integrated Risk-Management-System for Scalable, Adaptive Compliance. with Automated architecture implementing modern Machine-learning-integrated patterns",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-10-28T18:55:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BU",
+                "description": "Cloud-agnostic, Load-Balanced, and Message-Driven Architecture Orchestrator for Scalable, Intelligent, Distributed Systems Integration Platform Hub",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:54:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DA",
+                "description": "Cloud-Agnostic Data Protection Orchestration Platform for Enterprise-Grade Compliance and Secure Data Governance.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:52:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ModernU",
+                "description": "Decentralized, blockchain-enabled USDCPayment platform ensuring secure tokenization and instant settlement with real-time liquidity provisioning capabilities.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2025-10-28T18:51:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "US",
+                "description": "Distributed ledger architecture orchestrates intelligent auto-scaling for seamless, low-latency USDT transactions across a decentralized network gateway.",
+                "stargazers_count": 2,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T18:50:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "StablecoinMint",
+                "description": "Digital stablecoin platform for decentralized, multi-asset-supporting, resilient, intelligent, and scalable cryptocurrency creation service.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:49:18Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PeggedAsset",
+                "description": "Hyper-Converged Ledger Orchestrator for Scalable PeggedAsset Management and Autonomous Distributed Ledger Optimizer.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T18:48:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "WrappedToken",
+                "description": "Data-driven secure tokenization for distributed ledgers via decentralized, autonomously encrypted, and scalable vault architecture.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:46:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AtomicSwap",
+                "description": "Cryptographic Interchange Facilitated through Decentralized, Immutable Smart Contracts, enabling and Risk Management across Multiple Assets, a Secure Gateway.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T18:44:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "CrossChain",
+                "description": "Interoperable cross-chain transactions facilitated by automated liquidity management and protocols, ensuring scalable, efficient, fault-tolerant, and secure routing hub.",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T18:45:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TrezorConnect",
+                "description": "TrezorConnect orchestrates decentralized, zero-knowledge-proofs-enabled smart-contract-execution across scalable, distributed, and intelligent nodes. with distributed architecture",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T18:39:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TrustConnect",
+                "description": "Here are 6 technical descriptors for TrustConnect: robust, adaptive, reliability. Here are six technical suffixes for TrustConnect projects.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:42:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LedgerIntegration",
+                "description": "Blockchain-enabled LedgerIntegration orchestrates intelligent smart contract execution on a scalable, decentralized DataMesh Platform.",
+                "stargazers_count": 2,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:37:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HardwareSecure",
+                "description": "High-assurance, real-time data processing is enabled by intelligent, scalable clusters that adapt through adaptive autonomic interfaces.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-10-28T18:36:54Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "HotWallet",
+                "description": "Decentralized transaction orchestration platform utilizing biometric authentication and adaptive batching for enterprise-grade robustness and scalability optimizer.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T18:35:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ColdStorage",
+                "description": "Harnessing robust, high-performance, low-latency encryption at rest and in ColdStorage optimizes enterprise data storage, protection, and access Hub.",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:34:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MultiSig",
+                "description": "HyperResilient Decentralized Trust Architecture for MultiSigWallets, safeguarded by Auto-Scaled featuring Modular, Scalable, Transparent, Secure, Decentralized, and Fault-Tolerant Engine.",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2025-10-28T18:33:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "PublicAddress",
+                "description": "Real-time context-aware notifications weave into a location-based fabric, underpinned by scalable intelligent routing.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2025-10-28T18:31:38Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:45.980101+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,868 @@
+{
+  "profileId": "osint-profile-e70e3bb74b89",
+  "target": "Kourva",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:13.609301+00:00",
+  "completedAt": "2026-06-21T15:31:14.863856+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-0f76945c",
+      "lookupType": "github_context",
+      "target": "Kourva",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Kourva",
+            "name": "Kourva",
+            "type": "User",
+            "company": "ARA ( ara-softco )",
+            "blog": "https://gitlab.com/Kourva",
+            "location": "IRAN",
+            "bio": "I start things I\u2019m curious about. Some end up polished, some\u2026 well, I call them \u201cskill issues.\u201d",
+            "public_repos": 69,
+            "followers": 1688,
+            "following": 4861,
+            "created_at": "2022-11-19T01:00:25Z",
+            "updated_at": "2026-06-02T22:22:28Z",
+            "html_url": "https://github.com/Kourva",
+            "avatar_url": "https://avatars.githubusercontent.com/u/118578799?v=4",
+            "repos": [
+              {
+                "name": "pars-calendar",
+                "description": "A beautiful, theme-ready Jalali calendar component built with Vue 3.",
+                "stargazers_count": 3,
+                "language": "Vue",
+                "pushed_at": "2026-06-20T20:01:23Z",
+                "fork": false,
+                "topics": [
+                  "calendar",
+                  "jalali",
+                  "jalali-calendar",
+                  "nuxt",
+                  "vue"
+                ]
+              },
+              {
+                "name": "vibes",
+                "description": "a sleek, Telegram-inspired chat app built entirely through vibe coding in Google AI Studio.",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2026-06-18T01:24:11Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OnlineSimBot",
+                "description": "Virtual Number bot for Telegram which uses OnlineSim's free virtual numbers",
+                "stargazers_count": 69,
+                "language": "Python",
+                "pushed_at": "2026-01-08T03:07:11Z",
+                "fork": false,
+                "topics": [
+                  "onlinesim",
+                  "onlinesim-api",
+                  "pytelegrambotapi",
+                  "python3",
+                  "telegram-bot",
+                  "telegram-bot-api",
+                  "virtual-number",
+                  "virtual-number-bot"
+                ]
+              },
+              {
+                "name": "TempMailBot",
+                "description": "TempMailBot is a Telegram bot that makes you temporary emails with access to mailbox!",
+                "stargazers_count": 30,
+                "language": "Python",
+                "pushed_at": "2024-08-28T15:32:56Z",
+                "fork": false,
+                "topics": [
+                  "pytelegrambotapi",
+                  "python",
+                  "python3",
+                  "telebot-telegrambotapi",
+                  "telegarm-bot",
+                  "tempmail",
+                  "temporary-email"
+                ]
+              },
+              {
+                "name": "AwesomeChatGPTBot",
+                "description": "ChatGPT Telegram bot: Free & Rich-Feature bot for enhanced conversations.",
+                "stargazers_count": 119,
+                "language": "Python",
+                "pushed_at": "2026-01-08T03:07:08Z",
+                "fork": false,
+                "topics": [
+                  "chatgpt",
+                  "chatgpt-api",
+                  "chatgpt3",
+                  "chatgpt4",
+                  "freechatgpt",
+                  "pytelegrambotapi",
+                  "python",
+                  "telegrambot"
+                ]
+              },
+              {
+                "name": "CornHub",
+                "description": "Pornhub UI in Flet with Dynamic Data Using Pornhub API. It's just CORN!!",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2024-08-31T09:12:42Z",
+                "fork": false,
+                "topics": [
+                  "corn",
+                  "flet",
+                  "flet-app",
+                  "linux-app",
+                  "python3"
+                ]
+              },
+              {
+                "name": "AnonProxies",
+                "description": "Proxy scraper bot to Scrape and send proxies to Telegram topics automatically",
+                "stargazers_count": 27,
+                "language": "Python",
+                "pushed_at": "2025-11-21T12:09:52Z",
+                "fork": false,
+                "topics": [
+                  "proxy",
+                  "proxy-scraper",
+                  "py-telegram-bot-api",
+                  "pytelegrambotapi",
+                  "python",
+                  "python3",
+                  "telegram-bot",
+                  "telegram-bots"
+                ]
+              },
+              {
+                "name": "SigNull",
+                "description": "Simple \"Social media Template\" app for android made in Python (Kivy)",
+                "stargazers_count": 11,
+                "language": "kvlang",
+                "pushed_at": "2024-08-25T15:09:54Z",
+                "fork": false,
+                "topics": [
+                  "andoid",
+                  "android-application",
+                  "kivy",
+                  "kivy-framework",
+                  "python3",
+                  "social-media",
+                  "template"
+                ]
+              },
+              {
+                "name": "V2rayDoprax",
+                "description": "V2ray is a tool to create thousands of Vless/Vmess proxies at ones! includes more tools... ",
+                "stargazers_count": 47,
+                "language": "Python",
+                "pushed_at": "2024-08-28T15:35:23Z",
+                "fork": false,
+                "topics": [
+                  "cloudflare",
+                  "cloudflare-workers",
+                  "doprax",
+                  "proxy-server",
+                  "uuid",
+                  "v2ray",
+                  "v2ray-ws-tls",
+                  "v2rayn",
+                  "vless",
+                  "vless-ws-tls",
+                  "vmess",
+                  "vmess-ws-tls"
+                ]
+              },
+              {
+                "name": "MTProtoBot",
+                "description": "This bot sends you MTProto proxies for Telegram up to 20 at once! Proxies are being updated frequently.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2024-08-28T15:29:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "uagent",
+                "description": "Uagent allows you to retrieve a random user-agent string each time it is executed. It can be used for various web scraping and testing purposes.",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2024-08-28T15:39:07Z",
+                "fork": false,
+                "topics": [
+                  "python3",
+                  "sqlmap",
+                  "user-agent",
+                  "useragent",
+                  "useragents",
+                  "webscraping"
+                ]
+              },
+              {
+                "name": "Barare",
+                "description": "Kivy android app with login page | You can use it and add your functions ",
+                "stargazers_count": 10,
+                "language": "kvlang",
+                "pushed_at": "2024-08-28T15:41:01Z",
+                "fork": false,
+                "topics": [
+                  "android-application",
+                  "kivy",
+                  "kivy-application",
+                  "kivy-framework",
+                  "login",
+                  "login-page",
+                  "python",
+                  "python-3"
+                ]
+              },
+              {
+                "name": "ReelsBot",
+                "description": "Instagram Reels Downloader | Just send the URL to bot and it will send the video",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2024-08-28T15:42:07Z",
+                "fork": false,
+                "topics": [
+                  "docker",
+                  "environment-variables",
+                  "instagram-bot",
+                  "instagram-downloader",
+                  "pytelegrambotapi",
+                  "python3",
+                  "telegram-bot"
+                ]
+              },
+              {
+                "name": "PicklePasswd",
+                "description": "Simple script to access password information in /etc/passwd",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-08-28T15:43:44Z",
+                "fork": false,
+                "topics": [
+                  "base64",
+                  "etc",
+                  "etc-passwd",
+                  "passwd",
+                  "pickle",
+                  "pickling",
+                  "python",
+                  "python3",
+                  "self-modifying-code"
+                ]
+              },
+              {
+                "name": "KivyOTPLogin",
+                "description": "A dynamic OTP login application built with Kivy with beautiful animation when validating code",
+                "stargazers_count": 7,
+                "language": "kvlang",
+                "pushed_at": "2024-08-28T15:51:39Z",
+                "fork": false,
+                "topics": [
+                  "kivy",
+                  "kivy-framework",
+                  "login",
+                  "login-screen",
+                  "multi-screen-apps",
+                  "otp-verification",
+                  "python",
+                  "python3"
+                ]
+              },
+              {
+                "name": "ChNumber",
+                "description": "Python module that formats Persian number to Latin",
+                "stargazers_count": 12,
+                "language": "Python",
+                "pushed_at": "2024-08-28T15:54:26Z",
+                "fork": false,
+                "topics": [
+                  "number-format",
+                  "python",
+                  "python-module",
+                  "python3"
+                ]
+              },
+              {
+                "name": "CtrlBot",
+                "description": "Rich feature group guard bot for Telegram groups & supergroups",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2024-08-28T15:59:16Z",
+                "fork": false,
+                "topics": [
+                  "group-assignment",
+                  "group-management-bot",
+                  "py-telegram-bot-api",
+                  "python3",
+                  "telegram-bot",
+                  "telegrambot"
+                ]
+              },
+              {
+                "name": "PerformancePad",
+                "description": "PerformancePad GUI app Made in Python Kivy",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2024-08-28T16:22:31Z",
+                "fork": false,
+                "topics": [
+                  "kivy",
+                  "kivymd",
+                  "loops",
+                  "music",
+                  "performancepad",
+                  "python3"
+                ]
+              },
+              {
+                "name": "CallCenter",
+                "description": "I honestly have no idea for this section, just enjoy this TTS made in Flet",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2024-08-28T16:34:26Z",
+                "fork": false,
+                "topics": [
+                  "flet-app",
+                  "gui",
+                  "python-gui",
+                  "python3",
+                  "tts",
+                  "tts-api"
+                ]
+              },
+              {
+                "name": "Aaugh",
+                "description": "Aaaaaaugh Sound Granulizer | Funny Meme App",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2024-08-28T16:28:31Z",
+                "fork": false,
+                "topics": [
+                  "aaugh",
+                  "funny",
+                  "kivy",
+                  "kivymd",
+                  "meme",
+                  "memes",
+                  "pygame",
+                  "python3",
+                  "sound-granulizer"
+                ]
+              },
+              {
+                "name": "ClickerBot",
+                "description": "Web3 Clicker bot for Telegarm's mini app hosted in github pages!",
+                "stargazers_count": 9,
+                "language": "CSS",
+                "pushed_at": "2024-08-28T16:35:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "MiA",
+                "description": "Intelligent assistant for Linux which uses Flet as framework and free ChatGPT API to handle propmpt",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-01-23T02:21:14Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "assistant",
+                  "chatgpt",
+                  "felt",
+                  "flet-app",
+                  "python3"
+                ]
+              },
+              {
+                "name": "website",
+                "description": "flet.dev project website",
+                "stargazers_count": 5,
+                "language": "JavaScript",
+                "pushed_at": "2025-05-30T00:52:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "examples",
+                "description": "Flet sample applications",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-05-30T00:57:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "netmirror",
+                "description": "ArtixLinux Mirror Optimizer | selects fastest mirror in mirrors based on ping ms",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2025-10-28T19:44:06Z",
+                "fork": false,
+                "topics": [
+                  "artix-linux",
+                  "bash",
+                  "mirror",
+                  "mirrors",
+                  "ping",
+                  "python",
+                  "repos"
+                ]
+              },
+              {
+                "name": "AwesomeBadges",
+                "description": "Collection of awesome badges for programmers",
+                "stargazers_count": 9,
+                "language": null,
+                "pushed_at": "2025-11-25T09:22:05Z",
+                "fork": false,
+                "topics": [
+                  "badge",
+                  "badges",
+                  "icon",
+                  "icons",
+                  "logos",
+                  "loso",
+                  "png",
+                  "programm",
+                  "social-icons"
+                ]
+              },
+              {
+                "name": "Kourva",
+                "description": "Profile Config",
+                "stargazers_count": 22,
+                "language": "Brainfuck",
+                "pushed_at": "2025-11-25T09:28:47Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github",
+                  "github-config",
+                  "readme"
+                ]
+              },
+              {
+                "name": "InlinePost",
+                "description": "Simple Telegram bot to add inline keyboard to message, and send it to channel!!",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-01-08T03:07:09Z",
+                "fork": false,
+                "topics": [
+                  "bash",
+                  "pytelegrambotapi",
+                  "python3",
+                  "telegram-bot",
+                  "virtualenv"
+                ]
+              },
+              {
+                "name": "nipy",
+                "description": "An engine to make Tor network your default gateway (coded in Python)",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-01-08T03:07:11Z",
+                "fork": false,
+                "topics": [
+                  "nipe",
+                  "nipy",
+                  "tor",
+                  "tor-gateway",
+                  "tor-network",
+                  "tor-proxy",
+                  "torrc"
+                ]
+              },
+              {
+                "name": "ViolationBit",
+                "description": "Violation bit simulator using Manchester II (BiPhase-L)",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2026-02-11T14:24:42Z",
+                "fork": false,
+                "topics": [
+                  "biphase-l",
+                  "datalinklayer",
+                  "manchester",
+                  "manchester-encoding",
+                  "matplotlib-pyplot",
+                  "python",
+                  "violation-bit"
+                ]
+              },
+              {
+                "name": "TgLook",
+                "description": "Simple Telegram self to scrape info about groups and users using Telethon",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2026-03-17T17:56:57Z",
+                "fork": false,
+                "topics": [
+                  "telegram-api",
+                  "telegram-selfbot",
+                  "telethon",
+                  "telethon-userbot"
+                ]
+              },
+              {
+                "name": "Tscraper",
+                "description": "Automated Telegram Scraper that scrapes data when you join the groups...",
+                "stargazers_count": 14,
+                "language": "Python",
+                "pushed_at": "2026-03-17T18:03:23Z",
+                "fork": false,
+                "topics": [
+                  "python3",
+                  "scraper-python",
+                  "scraper-tools",
+                  "telegram-api",
+                  "telegram-scraper",
+                  "telegram-selfbot"
+                ]
+              },
+              {
+                "name": "LocalOllama",
+                "description": " Lightweight Vue chat interface for interacting with Ollama models.",
+                "stargazers_count": 4,
+                "language": "Vue",
+                "pushed_at": "2026-05-07T09:14:48Z",
+                "fork": false,
+                "topics": [
+                  "chat-application",
+                  "ollama",
+                  "ollama-gui",
+                  "ollama-interface",
+                  "ollama-ui",
+                  "vue3",
+                  "vuejs"
+                ]
+              },
+              {
+                "name": "DedSecApp",
+                "description": "DedSec Android App Using kivy",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2024-08-25T14:33:32Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "android-application",
+                  "apk",
+                  "dedsec",
+                  "kivy",
+                  "kivy-application",
+                  "python",
+                  "python3"
+                ]
+              },
+              {
+                "name": "LoveYouApp",
+                "description": "This app generates random love you text each time 'get love' button pressed. good for birthday gift",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2024-08-25T14:56:01Z",
+                "fork": false,
+                "topics": [
+                  "android-app",
+                  "android-application",
+                  "birthday-gift",
+                  "kivy",
+                  "kivy-framework",
+                  "kivy-language",
+                  "python",
+                  "python3"
+                ]
+              },
+              {
+                "name": "Kourva.github.io",
+                "description": "Github.io Website config",
+                "stargazers_count": 16,
+                "language": "CSS",
+                "pushed_at": "2024-08-21T23:27:24Z",
+                "fork": false,
+                "topics": [
+                  "config",
+                  "github-config"
+                ]
+              },
+              {
+                "name": "FletGrm",
+                "description": "A Telegram UI clone built with Flet, featuring dynamic data and chat functionalities.",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-08-21T23:11:26Z",
+                "fork": false,
+                "topics": [
+                  "flet",
+                  "flet-app",
+                  "python3",
+                  "telegram",
+                  "telegram-ui"
+                ]
+              },
+              {
+                "name": "EyeZ",
+                "description": "Social Engineering Toolkit app | URL shortener && Temporary E-mail service",
+                "stargazers_count": 26,
+                "language": "kvlang",
+                "pushed_at": "2024-08-25T15:12:42Z",
+                "fork": false,
+                "topics": [
+                  "android-app",
+                  "kivy-framework",
+                  "myipaddress",
+                  "python3",
+                  "social-engeneering-toolkit",
+                  "temporary-email",
+                  "temporary-emails",
+                  "url-shortener"
+                ]
+              },
+              {
+                "name": "TextToSpeechBot",
+                "description": "Text To Speech Telegram Bot with Brian voice.",
+                "stargazers_count": 17,
+                "language": "Python",
+                "pushed_at": "2024-08-25T15:03:51Z",
+                "fork": false,
+                "topics": [
+                  "brian",
+                  "python",
+                  "telegram-bot",
+                  "telegram-bot-api",
+                  "text-to-speech",
+                  "tts",
+                  "tts-api"
+                ]
+              },
+              {
+                "name": "Crocsy",
+                "description": "Simple proxy app made with HTML, Css, Javascript. Get random free Http/Https proxies.",
+                "stargazers_count": 12,
+                "language": "CSS",
+                "pushed_at": "2024-08-25T15:25:23Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "api",
+                  "css",
+                  "html",
+                  "javascript",
+                  "proxy"
+                ]
+              },
+              {
+                "name": "FBI-Wanted",
+                "description": "Telegram bot to check the wanted people in FBI wanted list using FBI's official API",
+                "stargazers_count": 15,
+                "language": "Python",
+                "pushed_at": "2024-08-25T14:49:44Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "bot",
+                  "fbi-crime-api",
+                  "pytelegrambotapi",
+                  "python",
+                  "python3",
+                  "telegram-bot"
+                ]
+              },
+              {
+                "name": "CraiyonBot",
+                "description": "CraiyonBot is a Telegram bot which generates images useing Craiyon",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2024-08-25T15:06:41Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "craiyon",
+                  "image-generator",
+                  "py-telegram-bot-api",
+                  "python",
+                  "python3",
+                  "telegram-bot"
+                ]
+              },
+              {
+                "name": "Hulz",
+                "description": "Network toolkit to check DNS Lookup, TLS / SSL Certificate, WHOIS lookup and DNS WHOIS for given URL.",
+                "stargazers_count": 9,
+                "language": "CSS",
+                "pushed_at": "2024-08-28T15:24:55Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "css",
+                  "dns-lookup",
+                  "dns-whois",
+                  "html",
+                  "js",
+                  "networking",
+                  "ssl-certificates",
+                  "tls-certificate",
+                  "whois-lookup"
+                ]
+              },
+              {
+                "name": "V2Paste",
+                "description": " Multi-Tool V2ray proxy app for android. Proxy cloner and decoder. Based on CloudFlare worker",
+                "stargazers_count": 21,
+                "language": "kvlang",
+                "pushed_at": "2024-08-25T15:15:09Z",
+                "fork": false,
+                "topics": [
+                  "android-app",
+                  "kivy",
+                  "proxy",
+                  "python",
+                  "v2ray",
+                  "vless",
+                  "vless-ws-tls",
+                  "vmess",
+                  "vmess-ws-tls"
+                ]
+              },
+              {
+                "name": "wificurse",
+                "description": "WiFi Jamming tool",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2013-10-30T21:31:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Chatty",
+                "description": "Chatbot using Zephyr model from hugging face + API",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2024-08-21T23:16:48Z",
+                "fork": false,
+                "topics": [
+                  "ai",
+                  "chat-bot",
+                  "chatbot",
+                  "gradio",
+                  "huggingface",
+                  "zephyr"
+                ]
+              },
+              {
+                "name": "PyLomba",
+                "description": "Python Evaluater App for Android made in kivy",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-08-25T14:31:31Z",
+                "fork": false,
+                "topics": [
+                  "android-application",
+                  "evaluator",
+                  "kivy",
+                  "kivy-application",
+                  "python",
+                  "python-apk",
+                  "python-eval"
+                ]
+              },
+              {
+                "name": "DoSBoX",
+                "description": "Simple username & password Generator app in Kivy",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-08-25T14:32:14Z",
+                "fork": false,
+                "topics": [
+                  "android-application",
+                  "kivy",
+                  "kivy-application",
+                  "kv",
+                  "python3",
+                  "userpass"
+                ]
+              },
+              {
+                "name": "UmApp",
+                "description": "It's just an Kivy app for Andoid with logo and lable",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2024-08-25T14:35:59Z",
+                "fork": false,
+                "topics": [
+                  "android-application",
+                  "kivy",
+                  "kivy-application",
+                  "kivy-framework",
+                  "python",
+                  "python3",
+                  "simple-app"
+                ]
+              },
+              {
+                "name": "ThePass",
+                "description": "Password Generator Android app using Kivy",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2024-08-25T14:35:05Z",
+                "fork": false,
+                "topics": [
+                  "android-app",
+                  "android-application",
+                  "kivy",
+                  "kivy-application",
+                  "password",
+                  "password-generator",
+                  "python3"
+                ]
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:14.862967+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

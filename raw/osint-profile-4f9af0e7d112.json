@@ -1,0 +1,82 @@
+{
+  "profileId": "osint-profile-4f9af0e7d112",
+  "target": "lxRbckl",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:59.348392+00:00",
+  "completedAt": "2026-06-21T15:28:59.675492+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-65b533d1",
+      "lookupType": "github_context",
+      "target": "lxRbckl",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "lxRbckl",
+            "name": "alex",
+            "type": "User",
+            "company": "railroad",
+            "blog": "",
+            "location": null,
+            "bio": null,
+            "public_repos": 1,
+            "followers": 3031,
+            "following": 2454,
+            "created_at": "2021-05-28T20:49:41Z",
+            "updated_at": "2026-06-14T03:57:11Z",
+            "html_url": "https://github.com/lxRbckl",
+            "avatar_url": "https://avatars.githubusercontent.com/u/84994842?v=4",
+            "repos": [
+              {
+                "name": "lxRbckl",
+                "description": null,
+                "stargazers_count": 15,
+                "language": null,
+                "pushed_at": "2026-01-11T10:32:18Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:59.674519+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

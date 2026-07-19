@@ -1,0 +1,343 @@
+{
+  "profileId": "osint-profile-61a63289d3fb",
+  "target": "AhmedDabish",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:14.267763+00:00",
+  "completedAt": "2026-06-21T15:28:14.912972+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-98cf7b4d",
+      "lookupType": "github_context",
+      "target": "AhmedDabish",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "AhmedDabish",
+            "name": "Ahmed Dabish",
+            "type": "User",
+            "company": null,
+            "blog": "https://ahmeddabish99@gmail.com",
+            "location": "EGYPT-Kafr El Sheikh",
+            "bio": " Full Stack .NET & Angular Developer | Expert in ASP.NET Core, EF Core, and REST APIs | Experienced in AI & automation | Building intelligent APIs ",
+            "public_repos": 30,
+            "followers": 4153,
+            "following": 116643,
+            "created_at": "2022-08-13T14:54:44Z",
+            "updated_at": "2026-05-02T12:15:49Z",
+            "html_url": "https://github.com/AhmedDabish",
+            "avatar_url": "https://avatars.githubusercontent.com/u/111189633?v=4",
+            "repos": [
+              {
+                "name": "AhmedDabish",
+                "description": null,
+                "stargazers_count": 38,
+                "language": null,
+                "pushed_at": "2026-06-21T14:09:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AI-Chat-Hub-MVC",
+                "description": "AI Chat Hub is a modern ASP.NET Core web app that lets users interact with multiple AI providers like OpenAI, Groq, and Hugging Face through a clean, responsive interface using MVC. It supports multi-chat management, persistent history, and real-time responses, delivering a ChatGPT-like experience.",
+                "stargazers_count": 20,
+                "language": "HTML",
+                "pushed_at": "2026-06-04T18:17:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "FAQ-Genius-AI-Agent-n8n-ASP.NET-MVC",
+                "description": "SmartFAQ AI Pro is a modern AI-powered FAQ system built using ASP.NET MVC + n8n + OpenAI + Google Sheets. It allows users to ask questions and get instant answers either from a structured FAQ database or from an AI model when no match is found.",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-05-12T16:40:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Data-Structure",
+                "description": "C# Data Structures \u2014 Linked lists, Stack, Queue, Binary Tree with traversal methods.",
+                "stargazers_count": 19,
+                "language": "C#",
+                "pushed_at": "2026-05-15T19:34:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SchoolApi",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "C#",
+                "pushed_at": "2026-06-03T19:40:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ecommerce",
+                "description": "A full-stack e-commerce web application built as an ITI  project. Features a modern Angular frontend, ASP.NET Core 8 Web API backend, and SQL Server database.",
+                "stargazers_count": 9,
+                "language": "C#",
+                "pushed_at": "2026-06-11T19:29:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Attendance-System",
+                "description": "Facial Recognition Attendance System streamlines tracking with advanced technology. Effortlessly mark attendance using facial recognition, enhancing accuracy and efficiency. Ideal for educational and organizational settings",
+                "stargazers_count": 9,
+                "language": "Python",
+                "pushed_at": "2024-03-28T15:14:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Hotel_Management_System",
+                "description": "This project about  Hotel Management System a streamlined desktop application (Windows form Application) Created with C# designed for easy management of rooms, reservations,\u00a0and\u00a0clients",
+                "stargazers_count": 15,
+                "language": "C#",
+                "pushed_at": "2024-03-14T13:29:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "RagMvcApp",
+                "description": "A simple AI-powered system built with ASP.NET Core, OpenAI, and Qdrant Vector Database.",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2026-05-05T14:08:30Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SmartMail-AI-Agent-n8n-ASP.NET-MVC-",
+                "description": "AI-powered n8n workflow that summarizes emails into clean bullet points using OpenAI.",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-05-11T22:24:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quickdraw-test",
+                "description": "quickdraw-test",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-05-08T14:40:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Library-Management-System",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2023-05-22T17:01:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LogiinFaceGit",
+                "description": null,
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-12-14T10:17:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "App-Notes",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2024-03-16T00:55:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Medical-Union-cards",
+                "description": " This project aim to check if card Image is medical or not ,I use (OCR) Library to extract Arabic text from images and checks for keywords related to medical and Medical Union cards. If these keywords are detected in the extracted text, it indicates the image likely contains information about a Medical Union card. ",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2024-06-19T14:53:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LinkedInAutoPoster",
+                "description": "This project is C# console application that uses Selenium WebDriver to automate the LinkedIn login process and make a post. The script launches a Chrome browser, logs into LinkedIn with predefined credentials, creates a new post, and submits it automatically.",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-04-10T12:56:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AmazonDataScraper",
+                "description": "This project is a web scraper built with Selenium WebDriver in C# that extracts mobile product details from Amazon Egypt (amazon.eg). The script automatically navigates through search result pages, capturing information such as product names, prices, and image URLs. The collected data is then saved to a text file",
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-04-10T13:22:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ApiMethodsGuide",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-10-10T16:29:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "AutoMapper",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2025-10-20T16:33:07Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ECommerceAPI_With_Repository_pattern",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2025-10-21T21:10:01Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Users_API_with_Services_Pattern",
+                "description": "simple ASP.NET Core Web API demonstrating the Services Pattern",
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2025-12-01T23:02:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TradeHub-E-commerce-API",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2025-12-27T22:38:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ITI-CST-e-commerce",
+                "description": "This project is a front-end implementation of an e-commerce application, developed as part of my ITI training.  \ud83d\udee0\ufe0f Technologies & Tools Used: - HTML5 - CSS3 - JavaScript - Bootstrap - Git & GitHub  I am working on improving UI/UX, enhancing responsiveness, and applying modern front-end development practices.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2026-03-10T17:14:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Hotel",
+                "description": null,
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-03-15T22:48:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Courses-Management-System",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "C#",
+                "pushed_at": "2026-03-13T13:22:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "LINQ",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "C#",
+                "pushed_at": "2026-03-28T22:47:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ITI_Entity_Framework",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "C#",
+                "pushed_at": "2026-04-08T22:52:56Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Api",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "C#",
+                "pushed_at": "2026-04-26T18:32:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Ability-Link-master",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "Dart",
+                "pushed_at": "2026-04-29T08:37:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "portfolio",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2026-05-02T13:23:35Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:14.912144+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

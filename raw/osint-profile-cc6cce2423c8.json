@@ -1,0 +1,200 @@
+{
+  "profileId": "osint-profile-cc6cce2423c8",
+  "target": "saadozone",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:33:10.486341+00:00",
+  "completedAt": "2026-06-21T15:33:11.087706+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-54c3347f",
+      "lookupType": "github_context",
+      "target": "saadozone",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "saadozone",
+            "name": "Saad Bin Noman",
+            "type": "User",
+            "company": "Vananam Ventures",
+            "blog": "",
+            "location": "Bangalore",
+            "bio": "I'm a passionate Full Stack Developer with expertise in Golang, MongoDB, React, and TypeScript. I enjoy building scalable web applications.",
+            "public_repos": 11,
+            "followers": 1221,
+            "following": 2170,
+            "created_at": "2023-02-20T09:51:28Z",
+            "updated_at": "2025-10-04T06:54:43Z",
+            "html_url": "https://github.com/saadozone",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125872373?v=4",
+            "repos": [
+              {
+                "name": "Secure-Go-Wallet",
+                "description": "Creating a Golang-based e-wallet app with PostgreSQL for secure user fund and transaction management. Features include strong transaction handling, user authentication, and smooth API integration for seamless financial operations.",
+                "stargazers_count": 18,
+                "language": "Go",
+                "pushed_at": "2025-01-27T10:57:01Z",
+                "fork": false,
+                "topics": [
+                  "clean-architecture",
+                  "clean-code",
+                  "datadumper",
+                  "docker",
+                  "dockercontainers",
+                  "golang",
+                  "mocks-generator",
+                  "postgresql-database",
+                  "rest-api",
+                  "transaction",
+                  "transfer"
+                ]
+              },
+              {
+                "name": "semantic-search",
+                "description": "This is the phase 1 of a semantic search engine using FAISS ",
+                "stargazers_count": 1,
+                "language": "Go",
+                "pushed_at": "2025-11-11T11:51:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Cypress_testing",
+                "description": "Cypress testing suite which includes end-to-end tests for core functionalities and user scenarios and component tests.",
+                "stargazers_count": 16,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-14T09:31:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "EMPLOYEES_CRUD",
+                "description": "A Go (Golang) Backend Clean Architecture project with Gin, MongoDB, JWT Authentication Middleware, Test, and Docker.",
+                "stargazers_count": 11,
+                "language": "Go",
+                "pushed_at": "2024-11-09T05:58:20Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "architecture",
+                  "clean-architecture",
+                  "clean-code",
+                  "crud",
+                  "crud-api",
+                  "documentation",
+                  "gin-framework",
+                  "golang",
+                  "gorm",
+                  "jwt-authentication",
+                  "middleware",
+                  "restful-api",
+                  "swagger",
+                  "unittesting"
+                ]
+              },
+              {
+                "name": "HelloUI",
+                "description": "\ud83c\udf81 The Hello World app for UI development. React, Vue, Svelte, Redux, XState, Recoil and co.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-21T07:11:49Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "saadozone",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-01-27T10:58:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "saado",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-07-19T00:04:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "e-wallet",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-06-29T07:00:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ozone-go-hello-world",
+                "description": "ozone-go-hello-world",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-03-05T10:12:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "docker-loginapp",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2020-05-03T07:45:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "accountill",
+                "description": "Fullstack open source Invoicing application made with MongoDB, Express, React & Nodejs (MERN)",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-01-29T06:32:37Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:33:11.086969+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

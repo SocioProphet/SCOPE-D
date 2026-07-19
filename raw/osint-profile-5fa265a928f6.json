@@ -1,0 +1,533 @@
+{
+  "profileId": "osint-profile-5fa265a928f6",
+  "target": "silvesterwali",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:30:20.817057+00:00",
+  "completedAt": "2026-06-21T15:30:23.431017+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-44317985",
+      "lookupType": "github_context",
+      "target": "silvesterwali",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "silvesterwali",
+            "name": "Silvester Wali",
+            "type": "User",
+            "company": "K Club Group",
+            "blog": "https://silvesterwali.my.id",
+            "location": "Indonesia",
+            "bio": "hi, I'm silvester wali . I'm a  web developer, javascript and php enthusiast",
+            "public_repos": 161,
+            "followers": 1998,
+            "following": 9861,
+            "created_at": "2018-06-22T08:02:11Z",
+            "updated_at": "2026-01-24T02:54:13Z",
+            "html_url": "https://github.com/silvesterwali",
+            "avatar_url": "https://avatars.githubusercontent.com/u/40487188?v=4",
+            "repos": [
+              {
+                "name": "silvesterwali",
+                "description": "FullStack Developer working with laravel, nuxtjs, vuejs, expressjs, nodejs,mongodb,SQL",
+                "stargazers_count": 9,
+                "language": "Vue",
+                "pushed_at": "2026-05-22T08:17:39Z",
+                "fork": false,
+                "topics": [
+                  "developer",
+                  "front-end",
+                  "github",
+                  "laravel",
+                  "nodejs",
+                  "nuxtjs",
+                  "profile",
+                  "readme",
+                  "web"
+                ]
+              },
+              {
+                "name": "learn-nest",
+                "description": "for learning  nestjs purpose for example testing and intergrate with database ",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2024-12-03T14:42:45Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "the-big-dream",
+                "description": "learn rust with axum",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-04-29T12:29:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nuxt-bare",
+                "description": "minimun starter kit for nuxt support multi language project fullstack ",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-23T08:36:25Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nitro",
+                "description": "Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever you prefer.",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-24T06:59:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "rolldown",
+                "description": "Fast Rust bundler for JavaScript/TypeScript with Rollup-compatible API.",
+                "stargazers_count": 1,
+                "language": "Rust",
+                "pushed_at": "2026-03-24T07:00:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "elk",
+                "description": "A nimble Mastodon web client",
+                "stargazers_count": 2,
+                "language": "Vue",
+                "pushed_at": "2026-03-24T06:59:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "movies",
+                "description": "\ud83c\udf7f A TMDB client built with Nuxt 3",
+                "stargazers_count": 3,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-24T07:00:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "fastapi-postgres",
+                "description": "Template for building FastAPI Asynchronous applications with PostgreSQL",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-03-24T07:00:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "learn-python",
+                "description": "\ud83d\udcda Playground and cheatsheet for learning Python. Collection of Python scripts that are split by topics and contain code examples with explanations.",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-03-24T07:01:19Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "douyin",
+                "description": " Vue3 + Pinia + Vite5 \u4eff\u6296\u97f3\uff0cVue \u5728\u79fb\u52a8\u7aef\u7684\u6700\u4f73\u5b9e\u8df5 .  Imitate TikTok \uff0cVue Best practices on Mobile",
+                "stargazers_count": 3,
+                "language": "Vue",
+                "pushed_at": "2026-03-24T07:02:31Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vuejs-interview-questions",
+                "description": "List of 300 VueJS Interview Questions And Answers",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-03-24T07:04:13Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue3-signature-pad",
+                "description": "A Vue 3 based smooth signature drawing component \u2728",
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-24T07:04:03Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "build-your-own-x",
+                "description": "\ud83e\udd13 Build your own (insert technology here)",
+                "stargazers_count": 5,
+                "language": "Markdown",
+                "pushed_at": "2026-03-24T07:03:53Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "canvas",
+                "description": "Portfolio template made with Nuxt 3, Nuxt Content and TailwindCSS",
+                "stargazers_count": 2,
+                "language": "Vue",
+                "pushed_at": "2026-03-24T07:04:25Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "RustTraining",
+                "description": "Beginner, advanced, expert level Rust training material",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-23T18:50:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "coolify",
+                "description": "An open-source & self-hostable Heroku / Netlify / Vercel alternative.",
+                "stargazers_count": 1,
+                "language": "PHP",
+                "pushed_at": "2026-03-24T06:59:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "h3",
+                "description": "\u26a1\ufe0f Minimal H(TTP) framework built for high performance and portability ",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-24T06:59:00Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nuxt",
+                "description": "The Intuitive Vue Framework.",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-03-24T06:56:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "dashboard",
+                "description": "Nuxt Dashboard Template made with Nuxt UI.",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2026-03-20T00:56:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "countries-states-cities-database",
+                "description": "\ud83c\udf0d Discover our global repository of countries, states, and cities!  \ud83c\udfd9\ufe0f Get comprehensive data in JSON, SQL, XML, YAML, and CSV formats. Access ISO2, ISO3 codes, country code, capital, native language, timezones (for countries), and more. #countries #states #cities",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-03-18T14:17:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "test-utils",
+                "description": "\ud83e\uddea Test utilities for Nuxt",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-14T02:05:27Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "neohtop",
+                "description": "\ud83d\udcaa\ud83c\udffb htop on steroids",
+                "stargazers_count": 1,
+                "language": "Svelte",
+                "pushed_at": "2026-03-09T02:00:10Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "knowledge-agent-template",
+                "description": "Open source file-system and knowledge based agent template. Build AI agents that stay up to date with your knowledge base",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-03-02T16:29:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "axum-backend-best-practice",
+                "description": "Axum Backend Best Practices",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-02-20T20:23:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nuxt-auth-utils",
+                "description": "Add Authentication to Nuxt applications with secured & sealed cookies sessions.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-17T16:17:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "full-stack-school",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-09-21T12:15:07Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nuxt-shadcn-dashboard",
+                "description": "Template Dashboard with Nuxt 3 + Shadcn + UnoCSS ",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-08-19T16:30:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nuxt3-starter-guide-example",
+                "description": "This project is a nuxt 3  starter project. It implements Vitest, ESLint (flat config, stylistic), VeeValidate, Pinia, Puppeteer, SonarQube, TypeScript. This project compatible with nuxt 3.12 ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-11-04T08:41:22Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "shadcn-vue-landing-page",
+                "description": "New design \ud83c\udf89  Vue + Shadcn-vue + TypeScript + Tailwind. Landing page template ease-to-use, RELEASED...",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-10-25T16:45:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SQL-tips-and-tricks",
+                "description": "SQL tips and tricks",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-10-02T13:25:32Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "git-basics",
+                "description": "This repository is a step-by-step guide to setting up a new Git repository, creating and modifying files, committing changes, creating and merging branches, and pushing the changes to a remote repository on GitHub.",
+                "stargazers_count": 0,
+                "language": "Rich Text Format",
+                "pushed_at": "2025-10-14T16:17:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gp-vue-boilerplate",
+                "description": "Grabarz & Partner Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites with vuejs.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-19T16:46:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "LibreHardwareMonitor",
+                "description": "Libre Hardware Monitor, home of the fork of Open Hardware Monitor",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-09T09:34:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "driver",
+                "description": "\ud83d\udda8\ufe0f ESC/POS Printer driver for Node.js.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-10T15:10:50Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "content-wind",
+                "description": "A lightweight Nuxt theme to build your portfolio in minutes.",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2024-06-14T03:52:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "test-keyboard-nuxt",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-06-10T09:59:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tauri-nuxt-template",
+                "description": "Nuxt integratioon with Tauri template",
+                "stargazers_count": 1,
+                "language": "Shell",
+                "pushed_at": "2024-11-26T09:43:30Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "namviek",
+                "description": "A free task management with ai support for small startup",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-23T07:57:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "kanri",
+                "description": "\ud83e\ude90 Modern offline Kanban board app for Windows, MacOS and Linux. Built with simplicity and user experience in mind.",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2025-01-23T07:57:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nuxt-todos-edge",
+                "description": "A todos application with user authentication, SSR and SQLite, working on the edge.",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2025-10-14T16:16:38Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "javascript-algorithms",
+                "description": "\ud83d\udcdd Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+                "stargazers_count": 4,
+                "language": "JavaScript",
+                "pushed_at": "2025-01-23T07:56:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "nuxt-chat",
+                "description": "A simple chat app made with Nuxt, Nitro Tasks, Databases and Websockets!",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-02-29T18:04:26Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "apollo-server-prisma-ts",
+                "description": "learn typescript and apollo server and prisma with mysql ",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2021-12-02T02:17:24Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nusapay",
+                "description": "nusapay website",
+                "stargazers_count": 0,
+                "language": "Vue",
+                "pushed_at": "2025-09-30T06:56:21Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Laravel-Roadmap-Learning-Path",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-01-23T07:59:46Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vue-snippets-for-zed",
+                "description": "Simple vue snippets for zed IDE to speed the development process",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-04-23T16:55:35Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "universal-social-auth",
+                "description": "SPA universal social auth",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-23T07:52:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "website-unjs",
+                "description": "UnJS website Content and Design!",
+                "stargazers_count": 1,
+                "language": "Vue",
+                "pushed_at": "2025-01-23T07:52:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "beginners-typescript-tutorial",
+                "description": "An interactive TypeScript tutorial for beginners",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-23T07:49:47Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:30:23.430160+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

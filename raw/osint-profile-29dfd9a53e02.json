@@ -1,0 +1,380 @@
+{
+  "profileId": "osint-profile-29dfd9a53e02",
+  "target": "Elbagoury",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:31:45.527979+00:00",
+  "completedAt": "2026-06-21T15:31:46.577931+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-4a02f77b",
+      "lookupType": "github_context",
+      "target": "Elbagoury",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Elbagoury",
+            "name": "Elbagoury",
+            "type": "User",
+            "company": "@Odooi",
+            "blog": "https://bagoury.com",
+            "location": "Riyadh, Saudi Arabia ",
+            "bio": "1st @odoo Expert in MENA (info@bagoury.com)",
+            "public_repos": 32,
+            "followers": 1535,
+            "following": 1415,
+            "created_at": "2014-11-09T13:54:36Z",
+            "updated_at": "2026-06-07T09:03:32Z",
+            "html_url": "https://github.com/Elbagoury",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9639673?v=4",
+            "repos": [
+              {
+                "name": "src",
+                "description": "My custom src from suckless tools: dwm, st, dmenu and slstatus",
+                "stargazers_count": 0,
+                "language": "C",
+                "pushed_at": "2026-06-15T14:19:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "db1-ss23",
+                "description": "Vorlesung \"DB1\" im SS 2023 (U T\u00fcbingen)",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2023-07-18T13:22:20Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "bag",
+                "description": "Bag:  Open Source E-Commerce To Grow Your Business.",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2025-02-07T18:47:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "conf",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-19T14:27:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "inbox",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-04-14T12:22:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "l10n_eg",
+                "description": "Odoo Egypt Localization Modules",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2022-08-28T05:54:58Z",
+                "fork": false,
+                "topics": [
+                  "accounting",
+                  "odoo",
+                  "python"
+                ]
+              },
+              {
+                "name": "odooy",
+                "description": "Unleashing Odoo\u2019s Automation with YAML",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2024-09-17T14:09:57Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gws",
+                "description": "My Python scripts to automate GWS using GAM",
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-09-18T13:08:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "elbagoury",
+                "description": null,
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2025-04-16T07:21:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cpython",
+                "description": "An updated CPython fork - The Python programming language",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2024-09-14T18:29:55Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "odoo",
+                "description": "An updated Odoo Fork - Open Source Apps To Grow Your Business.",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2024-09-01T13:36:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "PomodoroMD",
+                "description": "PomodoroMD for Obsidian retrieves tasks from your project MD files and seamlessly archives your work sessions in your diary",
+                "stargazers_count": 7,
+                "language": "Python",
+                "pushed_at": "2024-01-03T14:57:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "OdooTerminal",
+                "description": "Webextension tool for Odoo",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-11-24T01:39:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ASQL-Tuebingen",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "PLpgSQL",
+                "pushed_at": "2023-04-18T10:24:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "DB2-Tuebingen",
+                "description": null,
+                "stargazers_count": 3,
+                "language": "PLpgSQL",
+                "pushed_at": "2023-04-18T10:30:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "elbagoury.github.io",
+                "description": "Bagoury.com : Website Source Code",
+                "stargazers_count": 5,
+                "language": "Ruby",
+                "pushed_at": "2024-08-26T14:59:58Z",
+                "fork": false,
+                "topics": [
+                  "devops",
+                  "erp",
+                  "git",
+                  "javascript",
+                  "linux",
+                  "odoo",
+                  "python"
+                ]
+              },
+              {
+                "name": "modeem",
+                "description": "Modeem web framework for nonprofit organization",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-16T15:06:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "documentation",
+                "description": "Odoo documentation sources",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-12-24T21:43:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "GAM",
+                "description": "command line management for Google Workspace",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2023-02-06T22:31:04Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ERP",
+                "description": "Open Source ERP System (Mohamed Elbagoury master's degree project)",
+                "stargazers_count": 19,
+                "language": "JavaScript",
+                "pushed_at": "2024-09-15T17:51:21Z",
+                "fork": false,
+                "topics": [
+                  "accounting",
+                  "erp",
+                  "inventory",
+                  "invoice",
+                  "purchase",
+                  "sales"
+                ]
+              },
+              {
+                "name": "actpy-2014",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "Python",
+                "pushed_at": "2024-09-15T15:55:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "magicecommerce",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2018-06-22T13:11:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "vcloud9_prod_11",
+                "description": null,
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2018-04-03T21:53:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ace",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2018-05-10T10:20:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "custom_addons",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2018-09-24T21:06:43Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "website_addons",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2018-09-26T23:17:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "odoo11_my",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2018-10-02T15:53:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "erpnext",
+                "description": "Free and Open Source Enterprise Resource Planning (ERP)",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-02-06T16:27:56Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Odoo_Addons-1",
+                "description": "Odoo Modules Purchased / Free Modules.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-03-16T19:04:15Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "BDBC_2020",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-04-24T12:44:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Odoo_Addons-5",
+                "description": "Odoo Modules Purchased / Free Modules.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2020-04-14T21:14:01Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "odoo_10",
+                "description": "Modulos Localizacion Bolivia",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2018-09-25T02:36:27Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:31:46.577041+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,846 @@
+{
+  "profileId": "osint-profile-ff6f8a49dcc4",
+  "target": "Sunil56224972",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:00.657081+00:00",
+  "completedAt": "2026-06-20T16:48:02.034651+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-a3bf0f45",
+      "lookupType": "github_context",
+      "target": "Sunil56224972",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Sunil56224972",
+            "name": "Sunil",
+            "type": "User",
+            "company": "rm -rf society",
+            "blog": "",
+            "location": "127.0.0.1",
+            "bio": "\ud835\uddea\ud835\uddff\ud835\uddf2\ud835\ude01\ud835\uddf0\ud835\uddf5\ud835\uddf2\ud835\uddf1 \ud835\uddd6\ud835\uddfc\ud835\uddf1\ud835\uddf2\ud835\uddff \ud83c\udfc3 \u2022 \ud835\ude1b\ud835\ude29\ud835\ude26 \ud835\ude32\ud835\ude36\ud835\ude2a\ud835\ude26\ud835\ude35\ud835\ude26\ud835\ude33 \ud835\ude3a\ud835\ude30\ud835\ude36 \ud835\ude23\ud835\ude26\ud835\ude24\ud835\ude30\ud835\ude2e\ud835\ude26, \ud835\ude35\ud835\ude29\ud835\ude26 \ud835\ude2e\ud835\ude30\ud835\ude33\ud835\ude26 \ud835\ude3a\ud835\ude30\ud835\ude36 \ud835\ude24\ud835\ude22\ud835\ude2f \ud835\ude29\ud835\ude26\ud835\ude22\ud835\ude33.",
+            "public_repos": 53,
+            "followers": 1129,
+            "following": 2195,
+            "created_at": "2024-09-03T10:47:44Z",
+            "updated_at": "2026-06-19T19:29:22Z",
+            "html_url": "https://github.com/Sunil56224972",
+            "avatar_url": "https://avatars.githubusercontent.com/u/180283757?v=4",
+            "repos": [
+              {
+                "name": "Sunil56224972",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2026-06-20T16:13:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "car-stuff",
+                "description": null,
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-06-19T19:30:36Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "voyage",
+                "description": "Voyage is a highly immersive, 3D interactive developer portfolio built with React and Three.js. It features a unique gamified experience with a floating digital raft, cinematic camera animations, and a customized showcase of my best web development projects.",
+                "stargazers_count": 10,
+                "language": "HTML",
+                "pushed_at": "2026-05-02T20:40:57Z",
+                "fork": false,
+                "topics": [
+                  "3d-portfolio",
+                  "frontend",
+                  "interactive-design",
+                  "portfolio",
+                  "react",
+                  "react-three-fiber",
+                  "tailwind-css",
+                  "threejs",
+                  "vite",
+                  "webgl"
+                ]
+              },
+              {
+                "name": "DITHER-CORE",
+                "description": "DITHER-CORE is an immersive, high-performance web experiment showcasing advanced 3D rendering techniques in the browser. It is a cloned and analyzed version of the original \"AstroDither\" experiment by Sunil . The project focuses on the intersection of audio-reactivity, fluid physics, and digital aesthetics",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2026-04-17T11:09:19Z",
+                "fork": false,
+                "topics": [
+                  "audio-reactive",
+                  "creative-coding",
+                  "dithering",
+                  "fluid-simulation",
+                  "post-processing",
+                  "threejs",
+                  "tsl",
+                  "webgpu"
+                ]
+              },
+              {
+                "name": "The-Drawn-Dimenstion",
+                "description": "The Drawn Dimension is an immersive, 3D spatial portfolio that re-imagines the concept of a personal website by breaking away from traditional flat scrolling. Built using React Three Fiber and GSAP, the platform functions as an interactive, hand-drawn sketchbook world that visitors can physically explore. Instead of reading 2D sections, users \"walk",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2026-05-04T13:18:38Z",
+                "fork": false,
+                "topics": [
+                  "gsap",
+                  "r3f",
+                  "react",
+                  "threejs",
+                  "vite",
+                  "web3forms",
+                  "webgl"
+                ]
+              },
+              {
+                "name": "Trojan.Cockroach",
+                "description": "C++ trojan spyware that logs keystrokes, spreads via USB drives & exfiltrates data via email. Built for learning malware internals. For educational use only.",
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2026-05-09T18:58:19Z",
+                "fork": false,
+                "topics": [
+                  "backdoor",
+                  "cybersecurity-research",
+                  "data-exfiltration",
+                  "keylogger",
+                  "malware-analysis",
+                  "security-research",
+                  "spyware",
+                  "stealth-techniques",
+                  "trojan-malware",
+                  "windows-malware"
+                ]
+              },
+              {
+                "name": "DDOS-By-Sunil",
+                "description": "A Python-based UDP traffic simulator built for educational network testing, demonstrating socket programming, packet generation, and exponential rate control via a CLI interface.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-06-13T12:55:18Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "educational",
+                  "networking",
+                  "packet-generator",
+                  "python",
+                  "socket-programming",
+                  "terminal-tool",
+                  "udp"
+                ]
+              },
+              {
+                "name": "call-me",
+                "description": "Minimal plugin that lets Claude Code call you on the phone.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-04-07T01:30:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Email-Spoofer",
+                "description": "Send emails from any email address. PHP-based spoofer with web form + command line support via curl. Deploy free on 000webhost.",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2026-05-09T19:40:27Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity-tool",
+                  "email-authentication",
+                  "email-security",
+                  "email-spoofing",
+                  "mail-security",
+                  "network-security",
+                  "penetration-testing",
+                  "phishing-simulation",
+                  "smtp-client",
+                  "social-engineering"
+                ]
+              },
+              {
+                "name": "BatCloak",
+                "description": "\ud83d\udee1\ufe0f BatchGuard Pro \u2014 Advanced .bat file obfuscator using BOM injection, variable scrambling & stealth techniques to protect scripts from reverse engineering.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-09T14:33:39Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "code-obfuscation",
+                  "developer-tools",
+                  "gui",
+                  "open-source",
+                  "react",
+                  "script-protection",
+                  "ui-design",
+                  "variable-scrambling",
+                  "vite"
+                ]
+              },
+              {
+                "name": "PLANETONO---Space-Food-Station-",
+                "description": "This project is a modern high-performance web experience built using a component-based architecture powered by Nuxt.js and Vue.js. The application focuses on delivering a visually immersive and interactive user experience while maintaining optimized rendering and smooth client-side performance across devices. The website combines advanced frontend ",
+                "stargazers_count": 5,
+                "language": "HTML",
+                "pushed_at": "2026-05-07T06:00:39Z",
+                "fork": false,
+                "topics": [
+                  "3d-website",
+                  "interactive-design",
+                  "landing-page",
+                  "scroll-driven",
+                  "ui-ux",
+                  "webgl"
+                ]
+              },
+              {
+                "name": ".batFile-To-.exe-Converter",
+                "description": "Drag & Drop Batch to EXE Converter \u2014 Instantly convert .bat scripts into standalone executables with zero dependencies.",
+                "stargazers_count": 2,
+                "language": "Batchfile",
+                "pushed_at": "2026-04-08T12:40:25Z",
+                "fork": false,
+                "topics": [
+                  "automation",
+                  "bat-to-exe",
+                  "bat2exe-converter",
+                  "batch",
+                  "cli-tools",
+                  "cmd",
+                  "exe-converter",
+                  "lightweight",
+                  "productivity",
+                  "scripting",
+                  "sunil-tools",
+                  "windows-tools"
+                ]
+              },
+              {
+                "name": "Audit-X",
+                "description": "Audit-X is a gamified, interactive developer tool that analyzes package.json files to evaluate codebase health and technical debt. Built with a nostalgic 8-bit retro aesthetic, it features drag-and-drop file parsing, custom SVG micro-animations, and an integrated Gemini-powered AI Copilot that provides witty, real-time technical feedback on project",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-05-24T18:44:46Z",
+                "fork": false,
+                "topics": [
+                  "ai-copilot",
+                  "frontend",
+                  "gamification",
+                  "gsap-animations",
+                  "javascript",
+                  "retro-ui",
+                  "technical-debt"
+                ]
+              },
+              {
+                "name": "Sunils-Playlist",
+                "description": "A curated music playlist repository featuring Sunil\u2019s favorite tracks, likely organized for mood,  daily listening. A personal collection designed to share music taste and vibes through GitHub.",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2026-04-26T19:25:35Z",
+                "fork": false,
+                "topics": [
+                  "curated-list",
+                  "entertainment",
+                  "music",
+                  "music-playlist",
+                  "personal-playlists",
+                  "vibes",
+                  "website"
+                ]
+              },
+              {
+                "name": "Medpulse-Hospital-Mangement-System",
+                "description": "AI-powered hospital management system with role-based portals for Admin, Doctor & Patient. Built with Supabase, Vite & Victor AI Copilot (LLaMA 3.3) for natural language DB operations.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-06-02T18:10:28Z",
+                "fork": false,
+                "topics": [
+                  "agentic-workflow",
+                  "fullstack",
+                  "glassmorphism",
+                  "healthcare",
+                  "hospital-management-system",
+                  "role-based-access-control",
+                  "supabase"
+                ]
+              },
+              {
+                "name": "WifiPassword-Stealer.1",
+                "description": "Extracts all saved WiFi passwords from Windows & emails them in seconds. Randomized signature per build + self-delete on discovery. \u26a0\ufe0f Research only.",
+                "stargazers_count": 8,
+                "language": "Python",
+                "pushed_at": "2026-05-07T05:50:06Z",
+                "fork": false,
+                "topics": [
+                  "automation-script",
+                  "credential-extraction",
+                  "cybersecurity-tool",
+                  "python-tool",
+                  "smtp-exfiltration",
+                  "wifi-credentials",
+                  "windows-security"
+                ]
+              },
+              {
+                "name": "The-Spark-By-Sunil",
+                "description": "The Spark by Sunil is  immersive scroll-based web experience that tells the story of a creativity-starved city being transformed by a single idea. Built as a cinematic portfolio showpiece, it uses WebGL, spatial audio, and scroll-driven animation to prove one thing \u2014 a browser can be a movie theater.",
+                "stargazers_count": 1,
+                "language": "CSS",
+                "pushed_at": "2026-05-29T20:27:19Z",
+                "fork": false,
+                "topics": [
+                  "canvas-animation",
+                  "css-animation",
+                  "frontend-web",
+                  "generative-art",
+                  "immersive-experience",
+                  "motion-design",
+                  "scroll-experience",
+                  "scrolltrigger",
+                  "three-js",
+                  "ui-animation",
+                  "webflow",
+                  "webgl"
+                ]
+              },
+              {
+                "name": "Animated-Moving-Cane-",
+                "description": "This project is a high-performance WebGL experiment that brings a 3D can model to life. It features a stunning, seamless vertical texture transition governed by a procedural radial noise effect at the seam. In the background, an expanding ring of pulsing noise creates an immersive atmospheric field that extends dynamically beyond the screen edges.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-29T19:59:17Z",
+                "fork": false,
+                "topics": [
+                  "3d-models",
+                  "animation",
+                  "moving",
+                  "pointer-analysis"
+                ]
+              },
+              {
+                "name": "404-Home",
+                "description": " An interactive WebGPU experience \u2014 a planet that looks like Earth but feels wrong. Infinite grass, cosmic beams & blooming flowers, all shader-computed. No textures. Pure GPU.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-05-24T17:48:45Z",
+                "fork": false,
+                "topics": [
+                  "3d-web",
+                  "creative-coding",
+                  "creative-technologist",
+                  "generative-art",
+                  "grass-rendering",
+                  "immersive-experience",
+                  "react-three-fiber",
+                  "threejs",
+                  "tsl",
+                  "webgpu"
+                ]
+              },
+              {
+                "name": "Cridential-Stealer",
+                "description": "Python spyware that captures keystrokes, mouse inputs, screenshots & microphone audio \u2014 exfiltrates via email every 10 seconds with self-delete on discovery.",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2026-05-09T19:22:01Z",
+                "fork": false,
+                "topics": [
+                  "cookie-theft",
+                  "credential-harvesting",
+                  "information-stealer",
+                  "keylogger",
+                  "malware-development",
+                  "process-injection",
+                  "session-hijacking"
+                ]
+              },
+              {
+                "name": "Github-Void-Explorer-",
+                "description": "Github Void Explorer** is more than just a website; it\u2019s a digital odyssey. This immersive 3D WebGL experience reimagines the global developer community as an expansive, explorable cosmos.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-09T08:14:47Z",
+                "fork": false,
+                "topics": [
+                  "3d",
+                  "animations",
+                  "frontend",
+                  "gsap",
+                  "immersive",
+                  "interactive-visualizations",
+                  "r3f",
+                  "space",
+                  "threejs",
+                  "ui-ux",
+                  "void",
+                  "webgl"
+                ]
+              },
+              {
+                "name": "Wifi-Spamming",
+                "description": "Spam thousands of fake WiFi networks in seconds. Shell script powered by MDK3 + macchanger \u2014 custom SSID list or auto-generate up to 5000+.",
+                "stargazers_count": 8,
+                "language": "Shell",
+                "pushed_at": "2026-05-09T19:42:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "SkyPulse",
+                "description": "A stunning 3D WebGL globe visualizing real-time global flight data, powered by Three.js and the AviationStack API.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-09T22:12:04Z",
+                "fork": false,
+                "topics": [
+                  "3d-visualization",
+                  "api-integration",
+                  "flight-tracker",
+                  "globe",
+                  "javascript",
+                  "real-time",
+                  "threejs",
+                  "vite",
+                  "webgl"
+                ]
+              },
+              {
+                "name": "GreenBow---The-Intro",
+                "description": "Immersive 3D Experiences: Integrated WebGL and Three.js elements for a captivating user journey. Dynamic Animations: Custom animations, including interactive word clouds and smooth scroll effects. Responsive Design: Fully optimized for desktops, tablets, and mobile devices. ",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2026-04-26T18:25:35Z",
+                "fork": false,
+                "topics": [
+                  "3d-portfolio",
+                  "creative-developer",
+                  "frontend-developer",
+                  "interactive-design",
+                  "javascript",
+                  "responsive-design",
+                  "scroll-animations",
+                  "threejs",
+                  "web-developer",
+                  "webgl"
+                ]
+              },
+              {
+                "name": "PwrDeauthor00",
+                "description": "Python CLI WiFi deauthentication tool \u2014 scans all connected devices on a network using Scapy & kicks them off for a set duration or indefinitely.",
+                "stargazers_count": 3,
+                "language": "Shell",
+                "pushed_at": "2026-05-11T11:04:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Retro-Green-Ascii-Bio",
+                "description": "A retro-style ASCII bio website inspired by classic terminal interfaces  \u2014 featuring glowing green text, matrix-like aesthetics, and interactive UI to showcase personal identity, links, and digital presence in a unique hacker-themed experience.",
+                "stargazers_count": 4,
+                "language": "TypeScript",
+                "pushed_at": "2026-04-11T12:56:21Z",
+                "fork": false,
+                "topics": [
+                  "developer-portfolio",
+                  "interactive-ui",
+                  "javascript",
+                  "minimal-ui",
+                  "portfolio",
+                  "retro-design",
+                  "web-design"
+                ]
+              },
+              {
+                "name": "wifi-blaster",
+                "description": "WiFi network destroyer \u2014 auto-detects all connected devices & kicks them all off using Scapy deauth attack. Runs until you stop it.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-09T19:38:37Z",
+                "fork": false,
+                "topics": [
+                  "deauthentication",
+                  "network-exploitation",
+                  "network-testing",
+                  "packet-flooding",
+                  "packet-injection",
+                  "wifi-jamming"
+                ]
+              },
+              {
+                "name": "pico-rubber-ducky",
+                "description": "Cheap but deadly \u2014 Raspberry Pi Pico as a USB Rubber Ducky. DuckyScript payloads, stealth USB mode, web UI on Pico W. No Hak5 needed.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-05-09T19:26:37Z",
+                "fork": false,
+                "topics": [
+                  "ducky-script",
+                  "embedded-security",
+                  "hid-attack",
+                  "iot-security",
+                  "microcontroller",
+                  "payload-injection",
+                  "usb-attack",
+                  "usb-exploitation"
+                ]
+              },
+              {
+                "name": "-Face-Recognition-based-Smart-Attendance-System-using-IoT.Sunil",
+                "description": "Real-time face recognition attendance system using ESP32-CAM + OpenCV. Detects faces over WiFi, logs attendance to CSV automatically. No manual marking needed.",
+                "stargazers_count": 4,
+                "language": "C",
+                "pushed_at": "2026-05-09T19:09:28Z",
+                "fork": false,
+                "topics": [
+                  "attendance-management",
+                  "computer-vision",
+                  "embedded-systems",
+                  "face-recognition",
+                  "facial-recognition",
+                  "iot-project",
+                  "machine-learning",
+                  "opencv",
+                  "real-time-detection",
+                  "smart-attendance-system"
+                ]
+              },
+              {
+                "name": "RemoteROMAssessment",
+                "description": "[MIPR2024] Official repository for \"Device-Agnostic Remote Range-of-motion Assessment using Data Abstraction\"",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-05-04T11:06:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "SD-OS-MOBILE-RESPONSIVE",
+                "description": "SD-OS is a unique, highly interactive web-based portfolio that simulates a classic command-line/desktop operating system environment right in your browser. Built with a responsive, mobile-first approach, it seamlessly merges nostalgic aesthetics with modern web technologies to showcase projects, skills, and professional experience.",
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2026-05-04T21:16:49Z",
+                "fork": false,
+                "topics": [
+                  "ccs3",
+                  "css",
+                  "frontend",
+                  "html",
+                  "javascript",
+                  "mobilr",
+                  "responsive-design",
+                  "ui-design"
+                ]
+              },
+              {
+                "name": "appwrite",
+                "description": "Appwrite\u00ae - complete cloud infrastructure for your web, mobile and AI apps. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime and more",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2026-05-03T20:02:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Signal-Smith",
+                "description": "Signal-Smith  is a portable, handheld sub-GHz RF (Radio Frequency) Multi-Tool designed for wireless security research and penetration testing.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-05-01T19:31:36Z",
+                "fork": false,
+                "topics": [
+                  "cybersecurity",
+                  "iot-security",
+                  "rf",
+                  "sdr",
+                  "security-tools",
+                  "signal-analysis",
+                  "sub-ghz"
+                ]
+              },
+              {
+                "name": "Bilaspur_CollegeReviewer--Ai-Integrated_website",
+                "description": "A sleek and modern loading interface for an AI-powered college review platforme \u2014 designed with smooth animations, responsive layout, and clean UI to enhance user experience while data and AI insights are being processed in real time.",
+                "stargazers_count": 3,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-17T10:07:43Z",
+                "fork": false,
+                "topics": [
+                  "animated-ui",
+                  "dark-theme",
+                  "frontend",
+                  "html",
+                  "progress-animation",
+                  "ui-animation",
+                  "ui-ux",
+                  "user-experience"
+                ]
+              },
+              {
+                "name": "Career-Guidance-website",
+                "description": "A modern web-based Career Guidance Platform designed to help students explore career paths, understand different fields, and make informed decisions based on their interests and goals. The website provides structured guidance, useful resources, and an interactive interface to simplify career planning for students and beginners.",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2026-04-16T12:27:23Z",
+                "fork": false,
+                "topics": [
+                  "career-advice",
+                  "career-guidance",
+                  "education-website",
+                  "frontend-project",
+                  "html-css-javascript",
+                  "student-platform",
+                  "web-development"
+                ]
+              },
+              {
+                "name": "fav-panda-portfolio",
+                "description": "A modern, responsive portfolio website with a creative panda-themed design \ud83d\udc3c \u2014 built to showcase projects, skills, and personal branding with smooth UI, animations, and clean code structure.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-09T19:35:39Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "frontend",
+                  "html",
+                  "ui-ux",
+                  "web-portfolio",
+                  "website-design"
+                ]
+              },
+              {
+                "name": "Voco_App",
+                "description": "PS: RK774. Smart India Hackathon 2022 Winning Project by Team Vision. Vocational Training Application for persons with visual impairment.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2024-08-02T08:05:05Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "WebGPU-clair-obscur-gommage-codrops",
+                "description": "Codrops articles demo repository",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-01-28T14:41:48Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "Smart-India-Hackathon-24-ppt",
+                "description": "(SIH) is a premier nationwide initiative designed to engage students in solving some of the most pressing challenges faced in everyday life. Launched to foster a culture of innovation and practical problem-solving",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-09-05T11:02:09Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "DuckyScript-Auto-Documenter",
+                "description": "DuckyScript Auto-Documenter is a high-fidelity, professional web application designed to bridge the gap between technical script execution and corporate compliance reporting.this tool allows a security professional to instantly transform raw code into an \"audit-ready\" document that non-technical stakeholders can understand.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-04-14T18:04:13Z",
+                "fork": false,
+                "topics": [
+                  "automated-reporting",
+                  "cybersecurity-compliance",
+                  "duckyscript-automation",
+                  "security-auditing"
+                ]
+              },
+              {
+                "name": "Skin-Tone-Detector",
+                "description": "Skin Tone Detector \u2014 AI-powered computer vision project that analyzes images to detect and classify human skin tones using image processing and machine learning.",
+                "stargazers_count": 4,
+                "language": "Java",
+                "pushed_at": "2026-04-06T13:58:14Z",
+                "fork": false,
+                "topics": [
+                  "artificial-intelligence",
+                  "cnn",
+                  "color-detection",
+                  "computer-vision",
+                  "face-analysis",
+                  "python",
+                  "skin-tone-detection",
+                  "vision-ai"
+                ]
+              },
+              {
+                "name": "zeroclaw",
+                "description": "Fast, small, and fully autonomous AI assistant infrastructure \u2014 deploy anywhere, swap anything \ud83e\udd80",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2026-03-14T14:44:33Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "ESP32-BlueJammer",
+                "description": "The ESP32-BlueJammer (Bluetooth jammer, BLE jammer, WiFi jammer, RC jammer) disrupts 2.4GHz communications. Using an ESP32 and nRF24 modules, it generates noise and unnecessary packets, causing interference between the devices communicating, making them unable to work as intended. Ideal for controlled disruption and security testing. ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-03-29T00:34:40Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "hacking-lab-portfolio",
+                "description": "Cybersecurity portfolio showcasing hands-on offensive tools \u2014 ESP8266, Raspberry Pi Pico W, Python & Kali Linux.",
+                "stargazers_count": 4,
+                "language": "HTML",
+                "pushed_at": "2026-03-11T10:38:25Z",
+                "fork": false,
+                "topics": [
+                  "embedded-security",
+                  "exploit-development",
+                  "hardware-hacking",
+                  "iot-security",
+                  "network-security",
+                  "offensive-security",
+                  "security-lab",
+                  "wireless-attacks"
+                ]
+              },
+              {
+                "name": "SD-OS-Portfolio",
+                "description": "sd-os related themes Portfolio",
+                "stargazers_count": 11,
+                "language": "HTML",
+                "pushed_at": "2026-04-02T09:38:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "Mem-flow",
+                "description": "MemoryBlade is a C++ Windows API-based memory manipulation toolkit designed for learning reverse engineering, pointer chains, and real-time process hacking.",
+                "stargazers_count": 1,
+                "language": "C++",
+                "pushed_at": "2026-04-06T15:11:53Z",
+                "fork": false,
+                "topics": [
+                  "cheat-engine",
+                  "debugging",
+                  "pointer-scanning",
+                  "process-hacking",
+                  "reverse-engineering",
+                  "security-research",
+                  "virtual-memory",
+                  "winapi"
+                ]
+              },
+              {
+                "name": "Cortex_Ai",
+                "description": "CORTEX v5.0 Neuron Edition is a powerful terminal-based AI assistant powered by Gemini 2.0 Flash that brings intelligent conversations directly to your command line with a stunning neon cyberpunk interface. It features voice input and output, six customizable personas, persistent chat memory, real-time web search, and multimodal support for images ",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2026-03-20T16:08:58Z",
+                "fork": false,
+                "topics": [
+                  "ai-agent",
+                  "cli",
+                  "command-line-interface",
+                  "duckduckgo-search",
+                  "generative-ai",
+                  "llm",
+                  "multimodal-ai",
+                  "python",
+                  "terminal",
+                  "text-to-speech"
+                ]
+              },
+              {
+                "name": "handscape--wavr",
+                "description": "\ud83d\udd90\ufe0f Control cinematic particle animations with your hand gestures using MediaPipe + Three.js",
+                "stargazers_count": 3,
+                "language": "HTML",
+                "pushed_at": "2026-03-11T16:29:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "ESP8266_WiFi_Captive_Portal_2.1",
+                "description": "Got it! It's an ESP8266 fake WiFi captive portal with DNS spoofing that captures credentials. Here are the best descriptions \ud83d\udc47  Clean & Technical  ESP8266 WiFi captive portal with DNS spoofing \u2014 creates a fake login page to capture credentials over a rogue access point. Educational use only.",
+                "stargazers_count": 5,
+                "language": "C++",
+                "pushed_at": "2026-05-09T19:02:48Z",
+                "fork": false,
+                "topics": [
+                  "dns-spoofing",
+                  "embedded-systems",
+                  "esp8266",
+                  "iot-security",
+                  "network-security",
+                  "nodemcu",
+                  "penetration-testing",
+                  "phishing-simulation",
+                  "wifi-captive-portal",
+                  "wifi-security"
+                ]
+              },
+              {
+                "name": "worldmonitor-app",
+                "description": "Real-time global intelligence dashboard \u2014 AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-03-13T12:24:34Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:02.033556+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

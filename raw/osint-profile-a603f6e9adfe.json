@@ -1,0 +1,568 @@
+{
+  "profileId": "osint-profile-a603f6e9adfe",
+  "target": "armancodv",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:28:43.936241+00:00",
+  "completedAt": "2026-06-21T15:28:45.071783+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-bc3b1432",
+      "lookupType": "github_context",
+      "target": "armancodv",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "armancodv",
+            "name": "Arman Kolahan",
+            "type": "User",
+            "company": "Unite",
+            "blog": "https://armanko.com",
+            "location": "Berlin, Germany",
+            "bio": "Lead Frontend Engineer proficient in TypeScript/React, PhD graduate, writer, with expertise in various programming languages.",
+            "public_repos": 51,
+            "followers": 3217,
+            "following": 5520,
+            "created_at": "2014-10-23T07:22:44Z",
+            "updated_at": "2026-06-02T09:35:09Z",
+            "html_url": "https://github.com/armancodv",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9363099?v=4",
+            "repos": [
+              {
+                "name": "building-energy-model-matlab",
+                "description": "It is a small software which is developed by MATLAB for modeling the energy system of a building or HVAC system.",
+                "stargazers_count": 60,
+                "language": "MATLAB",
+                "pushed_at": "2022-03-18T17:07:39Z",
+                "fork": false,
+                "topics": [
+                  "airheatexchanger",
+                  "boiler",
+                  "building",
+                  "chiller",
+                  "energy",
+                  "fancoil",
+                  "heatexchanger",
+                  "hvac",
+                  "matlab",
+                  "mixer",
+                  "pipe",
+                  "radiator",
+                  "solver",
+                  "zone"
+                ]
+              },
+              {
+                "name": "superhydrophobic",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-05-07T01:18:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "frontend-interview",
+                "description": "This repository aims to provide a comprehensive list of frontend interview questions to help you prepare for your next interview.",
+                "stargazers_count": 15,
+                "language": "TypeScript",
+                "pushed_at": "2024-07-02T13:58:45Z",
+                "fork": false,
+                "topics": [
+                  "javascript",
+                  "react",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "integral",
+                "description": "This app is the calculator and the list of integrals.",
+                "stargazers_count": 28,
+                "language": "Java",
+                "pushed_at": "2022-10-06T21:09:27Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "calculator",
+                  "integral",
+                  "kotlin",
+                  "mvvm",
+                  "trigonometry"
+                ]
+              },
+              {
+                "name": "photovoltaic-thermal-unit",
+                "description": "a code for transient semi-3D modeling of a PVT (photovoltaic/thermal) unit",
+                "stargazers_count": 10,
+                "language": "Fortran",
+                "pushed_at": "2020-05-10T14:16:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "quitnow-email-suggester",
+                "description": "Correct typos in email addresses like hello@gmail.con",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2021-04-11T07:03:12Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sunrise-noon-sunset-midnight",
+                "description": "It shows sunrise, noon, sunset, and midnight hours of your location based on your location and date, useful for day/night modes.",
+                "stargazers_count": 11,
+                "language": "JavaScript",
+                "pushed_at": "2019-10-09T09:15:29Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "state-button-android",
+                "description": "The state button is an android ui library based on Material UI. There are 4 states: enabled, disabled, loading, error",
+                "stargazers_count": 16,
+                "language": "Kotlin",
+                "pushed_at": "2021-01-05T18:50:35Z",
+                "fork": false,
+                "topics": [
+                  "android",
+                  "button",
+                  "material",
+                  "state"
+                ]
+              },
+              {
+                "name": "formula",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Java",
+                "pushed_at": "2020-03-02T21:06:59Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-book",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Kotlin",
+                "pushed_at": "2021-05-15T08:07:39Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chakra-ui",
+                "description": "\u26a1\ufe0f Simple, Modular & Accessible UI Components for your React Applications",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2021-12-20T04:53:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "trigonometry_persian",
+                "description": null,
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-11T09:32:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "cardslider-android",
+                "description": ":octocat: \ud83c\udccf Cardslider is a material design UI controller that allows you to swipe through cards with pictures and accompanying descriptions.",
+                "stargazers_count": 6,
+                "language": "Kotlin",
+                "pushed_at": "2020-12-27T15:22:24Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "sample-kotlin-android-app",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Kotlin",
+                "pushed_at": "2020-01-18T08:53:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "single-spa-react",
+                "description": "Single-spa lifecycles helper for React applications",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2023-10-04T22:58:21Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "slipline-matlab",
+                "description": "SLIP LINE ANGLE FINDER - this code calculates back pressure of reflect of two oblique shocks/expansion fan",
+                "stargazers_count": 7,
+                "language": "MATLAB",
+                "pushed_at": "2019-09-19T15:09:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "arman-co-com",
+                "description": "My personal website (legacy)",
+                "stargazers_count": 18,
+                "language": "TypeScript",
+                "pushed_at": "2023-03-06T20:45:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "single-spa",
+                "description": "The router for easy microfrontends",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2023-08-09T09:13:58Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "supersonic-flow",
+                "description": "This package calculates properties of the supersonic flow.",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2019-10-09T09:16:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sms",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2017-05-05T09:19:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "trigonometry",
+                "description": "This app has two section, first one is a complete trigonometric calculator and another is a complete list of trigonometric identities and formulas.",
+                "stargazers_count": 14,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-11T09:30:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "armancodv",
+                "description": null,
+                "stargazers_count": 11,
+                "language": null,
+                "pushed_at": "2023-01-27T18:12:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "url-path-generator",
+                "description": null,
+                "stargazers_count": 7,
+                "language": null,
+                "pushed_at": "2020-11-28T15:12:23Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "photovoltaic-thermal-thermoelectric-unit",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "Fortran",
+                "pushed_at": "2020-05-10T14:42:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tarazoo",
+                "description": "it's a simple persian unit converter.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2015-09-25T07:21:03Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "overscroll-decor",
+                "description": "Android: iOS-like over-scrolling effect applicable over almost all scrollable Android views.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2021-01-04T17:47:42Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "arman-co-com-old",
+                "description": "My personal website",
+                "stargazers_count": 8,
+                "language": "TypeScript",
+                "pushed_at": "2020-11-09T19:45:08Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "integral_persian",
+                "description": "\u0627\u06cc\u0646 \u0628\u0631\u0646\u0627\u0645\u0647 \u0634\u0627\u0645\u0644 \u062c\u062f\u0648\u0644 \u06a9\u0627\u0645\u0644 \u0627\u0646\u062a\u06af\u0631\u0627\u0644 \u0647\u0627 \u0645\u06cc \u0628\u0627\u0634\u062f.",
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2021-05-17T19:04:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "differential",
+                "description": "This app is the rules for computing the derivative of a function in calculus.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2022-12-11T09:12:26Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "chidman",
+                "description": null,
+                "stargazers_count": 9,
+                "language": "HTML",
+                "pushed_at": "2023-04-16T18:21:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "supersonic_calculator",
+                "description": "It is an android app developed using Cordova. This app calculates properties of the supersonic flow.",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2023-04-17T02:32:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-tinder-card",
+                "description": "A npm react module for making react elements swipeable like in the dating app tinder.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2023-11-01T17:40:02Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "tdma",
+                "description": "In numerical linear algebra, the tridiagonal matrix algorithm, also known as the Thomas algorithm (named after Llewellyn Thomas), is a simplified form of Gaussian elimination that can be used to solve tridiagonal systems of equations.",
+                "stargazers_count": 9,
+                "language": "JavaScript",
+                "pushed_at": "2019-10-09T09:14:11Z",
+                "fork": false,
+                "topics": [
+                  "equations",
+                  "matrix",
+                  "solver",
+                  "system",
+                  "tdma",
+                  "thomas",
+                  "tridiagonal"
+                ]
+              },
+              {
+                "name": "unit-converter-pro",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2019-10-16T15:49:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "android-cardslide-vertical",
+                "description": null,
+                "stargazers_count": 8,
+                "language": null,
+                "pushed_at": "2020-02-13T15:29:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sample-react",
+                "description": null,
+                "stargazers_count": 8,
+                "language": "JavaScript",
+                "pushed_at": "2026-02-13T19:49:34Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "BootstrapRenderer",
+                "description": "PHP Bootstrap 4 Renderer",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2019-10-05T22:39:12Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "offgard",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2017-08-05T18:26:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "residential-building-occupancy-pattern-matlab",
+                "description": "A class in MATLAB for occupancy patterns of a residential buildings.",
+                "stargazers_count": 6,
+                "language": "MATLAB",
+                "pushed_at": "2019-09-19T15:05:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "lokabina",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2016-12-30T12:28:02Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "bazyad_dictionary",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2017-02-10T09:11:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "offgard-app",
+                "description": "Offgard was an app for showing discounts of local shops, which was active between 2017 and 2018 in Iran. Right now, the code is published publicly to be used for other users.",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2019-09-19T15:02:05Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "offgard-api",
+                "description": "Offgard was an app for showing discounts of local shops, which was active between 2017 and 2018 in Iran. Right now, the code is published publicly to be used for other users.",
+                "stargazers_count": 6,
+                "language": "PHP",
+                "pushed_at": "2019-09-19T15:01:41Z",
+                "fork": false,
+                "topics": [
+                  "api",
+                  "app",
+                  "discount",
+                  "localshop",
+                  "off"
+                ]
+              },
+              {
+                "name": "hendeseh",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2015-10-09T09:43:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "whattowear",
+                "description": null,
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2015-08-16T11:44:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "iOS-SwitchView",
+                "description": "A lightweight iOS switch view style for Android",
+                "stargazers_count": 5,
+                "language": null,
+                "pushed_at": "2021-04-10T07:45:14Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "CircleProgressBar",
+                "description": "A circular android ProgressBar library which extends View,  and the usage same as ProgressBar,  It has solid,line and solid_line three styles. Besides, progress value can be freely customized.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2021-04-11T10:01:39Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "MPAndroidChart",
+                "description": "A powerful \ud83d\ude80 Android chart view / graph view library, supporting line- bar- pie- radar- bubble- and candlestick charts as well as scaling, panning and animations.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2021-04-10T13:46:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "android-kotlin-mvp-architecture",
+                "description": "This repository contains a detailed sample app that implements MVP architecture in Kotlin using Dagger2, Room, RxJava2, FastAndroidNetworking and PlaceholderView",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2019-11-11T11:04:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "KotlinCleanCode4Android",
+                "description": "Writing clean code in Kotlin for Android",
+                "stargazers_count": 4,
+                "language": null,
+                "pushed_at": "2018-10-22T11:11:59Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:28:45.070978+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

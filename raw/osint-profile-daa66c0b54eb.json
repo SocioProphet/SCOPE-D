@@ -1,0 +1,253 @@
+{
+  "profileId": "osint-profile-daa66c0b54eb",
+  "target": "mig1023",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:15.954178+00:00",
+  "completedAt": "2026-06-21T15:32:16.562557+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-66a895c2",
+      "lookupType": "github_context",
+      "target": "mig1023",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mig1023",
+            "name": null,
+            "type": "User",
+            "company": null,
+            "blog": "",
+            "location": "Moscow",
+            "bio": null,
+            "public_repos": 20,
+            "followers": 1434,
+            "following": 927,
+            "created_at": "2018-12-01T11:48:09Z",
+            "updated_at": "2025-07-04T18:10:21Z",
+            "html_url": "https://github.com/mig1023",
+            "avatar_url": "https://avatars.githubusercontent.com/u/45512128?v=4",
+            "repos": [
+              {
+                "name": "seeker-xml-maui",
+                "description": "Mobile/PC platform for gamebooks, based on the MAUI framework",
+                "stargazers_count": 17,
+                "language": "C#",
+                "pushed_at": "2026-06-21T08:02:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "autotest",
+                "description": "Self testing system for VMS CRM",
+                "stargazers_count": 20,
+                "language": "Perl",
+                "pushed_at": "2018-12-01T12:21:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "twitnews",
+                "description": "Twitter-style news collaborative blog, based on the Mojolicious framework",
+                "stargazers_count": 20,
+                "language": "Perl",
+                "pushed_at": "2018-12-01T12:19:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "fileshub",
+                "description": "Lightweight file hosting service, based on the Dancer2 framework",
+                "stargazers_count": 20,
+                "language": "Perl",
+                "pushed_at": "2018-12-01T12:16:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "graphmath",
+                "description": "Simple graphic program for python-style algorithm",
+                "stargazers_count": 22,
+                "language": "C#",
+                "pushed_at": "2018-12-01T12:23:40Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "autoform2",
+                "description": "Autoform based on the Mojolicious and Vue.js",
+                "stargazers_count": 19,
+                "language": "Perl",
+                "pushed_at": "2020-05-03T15:53:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vms-export",
+                "description": "Firefox plugin",
+                "stargazers_count": 21,
+                "language": "JavaScript",
+                "pushed_at": "2018-12-01T12:25:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "injection-eater",
+                "description": " Experimental anti-injection library",
+                "stargazers_count": 38,
+                "language": "C#",
+                "pushed_at": "2021-07-18T11:47:17Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "autoform.net",
+                "description": "Autoform based on ASP.NET and React.js",
+                "stargazers_count": 20,
+                "language": "C#",
+                "pushed_at": "2020-11-19T14:35:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "autoform",
+                "description": "Flexible and stable appointment system",
+                "stargazers_count": 19,
+                "language": "Perl",
+                "pushed_at": "2021-10-19T16:48:49Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "shilka",
+                "description": "A game about a small anti-aircraft vehicle in a school notebook",
+                "stargazers_count": 38,
+                "language": "C#",
+                "pushed_at": "2021-10-14T15:21:00Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "interceptor",
+                "description": "Cash register ( Shtrih-M / ATOL ) <--> \u0421RM integration system",
+                "stargazers_count": 44,
+                "language": "C#",
+                "pushed_at": "2023-04-21T13:14:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "rear-gunner",
+                "description": "Little 3D-game, based on Unity3D",
+                "stargazers_count": 27,
+                "language": "C#",
+                "pushed_at": "2023-08-31T11:23:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "velociraptor",
+                "description": "Wiki-engine, based on ASP.NET Core",
+                "stargazers_count": 40,
+                "language": "C#",
+                "pushed_at": "2023-10-28T11:53:19Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "vms-helper",
+                "description": "Edge plugin",
+                "stargazers_count": 10,
+                "language": "JavaScript",
+                "pushed_at": "2024-05-13T11:37:51Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "warhammer-army-assembler",
+                "description": "Editor for Warhammer Fantasy Battle army lists",
+                "stargazers_count": 74,
+                "language": "C#",
+                "pushed_at": "2025-04-19T11:52:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "seeker-xml",
+                "description": "Mobile platform for gamebooks, based on the Xamarin framework ",
+                "stargazers_count": 101,
+                "language": "C#",
+                "pushed_at": "2024-10-21T11:57:53Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "interceraptor",
+                "description": "Cash register ( Shtrih-M ) <--> \u0421RM integration system (second generation)",
+                "stargazers_count": 10,
+                "language": "C#",
+                "pushed_at": "2025-05-17T07:23:23Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "csharp-through-game-examples",
+                "description": null,
+                "stargazers_count": 31,
+                "language": null,
+                "pushed_at": "2025-04-23T08:47:13Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "pseudoneural",
+                "description": null,
+                "stargazers_count": 18,
+                "language": "C++",
+                "pushed_at": "2018-12-01T12:10:38Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:16.561750+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

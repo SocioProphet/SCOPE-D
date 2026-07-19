@@ -1,0 +1,142 @@
+{
+  "profileId": "osint-profile-40cd1b9358b6",
+  "target": "mrhx01",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-21T15:32:55.109328+00:00",
+  "completedAt": "2026-06-21T15:32:55.488642+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-eac36335",
+      "lookupType": "github_context",
+      "target": "mrhx01",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "mrhx01",
+            "name": "Mr.Hoseini",
+            "type": "User",
+            "company": "GeoCore",
+            "blog": "http://localhost:8080",
+            "location": "/root/",
+            "bio": "Always learning\ud83d\udcbb, always building\ud83d\udee0\ufe0f. Focused on Python/JS and open-source projects.\u2728",
+            "public_repos": 6,
+            "followers": 1365,
+            "following": 3946,
+            "created_at": "2025-06-05T12:26:00Z",
+            "updated_at": "2026-06-18T15:27:43Z",
+            "html_url": "https://github.com/mrhx01",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215000810?v=4",
+            "repos": [
+              {
+                "name": "typeshed",
+                "description": "Collection of library stubs for Python, with static types",
+                "stargazers_count": 13,
+                "language": "Python",
+                "pushed_at": "2026-06-09T09:13:17Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "gix01",
+                "description": "Gix01 (beta) \u2013 Advanced GitHub Search & Analytics A single-file web app that lets you search GitHub repositories, users, issues, and code with powerful filters",
+                "stargazers_count": 18,
+                "language": "JavaScript",
+                "pushed_at": "2026-05-19T13:58:21Z",
+                "fork": false,
+                "topics": [
+                  "advanced-search",
+                  "chartjs",
+                  "contributions-tracker",
+                  "dark-mode",
+                  "developer-tools",
+                  "github-api",
+                  "github-pages",
+                  "github-search",
+                  "light-mode",
+                  "open-source",
+                  "repository-search",
+                  "trending-repos",
+                  "user-analytics",
+                  "vanilla-javascript"
+                ]
+              },
+              {
+                "name": "mrhx01",
+                "description": "About me",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-06-21T13:29:52Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "TextGlow",
+                "description": "Make Beautiful Text Banner for README.md",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2026-06-11T15:45:28Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mhr-cfw",
+                "description": "A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI.",
+                "stargazers_count": 10,
+                "language": "Python",
+                "pushed_at": "2026-05-11T11:55:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "apod-api",
+                "description": "Astronomy Picture of the Day API service",
+                "stargazers_count": 10,
+                "language": null,
+                "pushed_at": "2026-05-14T06:38:03Z",
+                "fork": true,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-21T15:32:55.487990+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

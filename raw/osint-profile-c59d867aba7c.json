@@ -1,0 +1,316 @@
+{
+  "profileId": "osint-profile-c59d867aba7c",
+  "target": "Carrington-dev",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T13:52:48.501684+00:00",
+  "completedAt": "2026-06-20T13:52:48.981262+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b125cee1",
+      "lookupType": "github_context",
+      "target": "Carrington-dev",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "Carrington-dev",
+            "name": "Carrington Muleya",
+            "type": "User",
+            "company": "Khano",
+            "blog": "https://dj-payfast.readthedocs.io/",
+            "location": "South Africa",
+            "bio": "Backend Software Developer | Full-Stack Developer | Senior DevOps Engineer | AI Engineer | (Angular, React, NextJS, Python {Django, Flask, FastAPI}, Java) ",
+            "public_repos": 20,
+            "followers": 3492,
+            "following": 19859,
+            "created_at": "2021-02-24T11:42:37Z",
+            "updated_at": "2026-06-20T07:51:39Z",
+            "html_url": "https://github.com/Carrington-dev",
+            "avatar_url": "https://avatars.githubusercontent.com/u/79579279?v=4",
+            "repos": [
+              {
+                "name": "awesome-python",
+                "description": "A curated collection of exceptional Python frameworks, libraries, software, and resources. This comprehensive guide helps developers discover the best tools for their Python projects.",
+                "stargazers_count": 19,
+                "language": null,
+                "pushed_at": "2026-01-06T14:22:39Z",
+                "fork": false,
+                "topics": [
+                  "auth0",
+                  "authentication",
+                  "awesome",
+                  "awesome-list",
+                  "awesome-lists",
+                  "python"
+                ]
+              },
+              {
+                "name": "dj-paynow",
+                "description": "Django Integration With PayNow",
+                "stargazers_count": 11,
+                "language": "Python",
+                "pushed_at": "2025-12-17T07:40:22Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "ecocash",
+                  "onemoney",
+                  "payment-gateway",
+                  "payments",
+                  "paynow",
+                  "paynow-zimbabwe",
+                  "zimbabwe"
+                ]
+              },
+              {
+                "name": "Carrington-dev",
+                "description": "Carrington Muleya is a Software Developer ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-04-09T08:54:43Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dj-payfast",
+                "description": "Easy PayFast integration for Django with full transaction tracking and real-time ITN (payment notification) logging for every payment.",
+                "stargazers_count": 36,
+                "language": "Python",
+                "pushed_at": "2026-02-23T19:21:35Z",
+                "fork": false,
+                "topics": [
+                  "billing",
+                  "django",
+                  "finance",
+                  "finance-application",
+                  "fintech",
+                  "payfast",
+                  "payments",
+                  "python",
+                  "subscriptions"
+                ]
+              },
+              {
+                "name": "assignment-2",
+                "description": "CSC2001F Assignment 1",
+                "stargazers_count": 0,
+                "language": "Java",
+                "pushed_at": "2026-03-19T10:31:37Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dotzen",
+                "description": "Peaceful, type-safe Python configuration that just works. No stress, no complexity\u2014just clean separation of config from code.",
+                "stargazers_count": 18,
+                "language": "Python",
+                "pushed_at": "2026-02-09T20:05:27Z",
+                "fork": false,
+                "topics": [
+                  "configuration-files",
+                  "environment-variables",
+                  "secret-management",
+                  "secrets-management"
+                ]
+              },
+              {
+                "name": "awesome-python-tdd",
+                "description": "Notes for TDD with python",
+                "stargazers_count": 24,
+                "language": null,
+                "pushed_at": "2026-02-06T09:38:50Z",
+                "fork": false,
+                "topics": [
+                  "awesome",
+                  "python-tdd",
+                  "tdd",
+                  "tdd-python",
+                  "test-driven-development",
+                  "test-driven-development-with-python"
+                ]
+              },
+              {
+                "name": "wits-cs-notes",
+                "description": "Comparison",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2026-02-03T19:09:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-for-beginners",
+                "description": "A list of awesome beginners-friendly projects.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2025-12-03T16:32:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "stemgon-1",
+                "description": "Config files for my GitHub profile.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-05-25T18:29:35Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "django-smart-mail",
+                "description": "Send emails using Django\u2019s template system with support for reusable, dynamic, and extensible templates.",
+                "stargazers_count": 1,
+                "language": "Python",
+                "pushed_at": "2026-01-23T07:56:19Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "django-rest-framework",
+                  "email",
+                  "email-template",
+                  "scalable"
+                ]
+              },
+              {
+                "name": "django-paypal-checkout",
+                "description": "A modern Django package for PayPal integration using Orders API v2.     Secure payment processing with OAuth2, transaction tracking, and Django admin support.",
+                "stargazers_count": 2,
+                "language": "Python",
+                "pushed_at": "2026-01-13T06:54:59Z",
+                "fork": false,
+                "topics": [
+                  "django",
+                  "django-package",
+                  "django-rest-framework",
+                  "ecommerce",
+                  "online-payments",
+                  "payment-gateway",
+                  "payment-gateway-integration",
+                  "payment-processing",
+                  "paypal",
+                  "paypal-api",
+                  "paypal-checkout"
+                ]
+              },
+              {
+                "name": "beneficial-ownership",
+                "description": "BOs",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-01-12T08:17:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dj-adyen",
+                "description": "A pluggable Django application for integrating Adyen Payments Standard ",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2026-01-08T09:46:54Z",
+                "fork": false,
+                "topics": [
+                  "adyen",
+                  "adyen-api",
+                  "dj-adyen"
+                ]
+              },
+              {
+                "name": "fastapi-payfast",
+                "description": "A pluggable fastapi package for integrating Payfast Payments Standard",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2026-01-08T18:36:59Z",
+                "fork": false,
+                "topics": [
+                  "payfast",
+                  "payment-integration"
+                ]
+              },
+              {
+                "name": "dj-skrill",
+                "description": "A pluggable Django application for integrating Skrill Payments Standard ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-08T09:42:57Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dj-paystack",
+                "description": "A pluggable Django application for integrating Paystack Payments Standard ",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-01-08T09:38:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "payfast-node",
+                "description": "Payfast integration with NodeJS for scalable and easy payments",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2026-01-07T19:57:46Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "christ-in-song",
+                "description": "Christ In Song Hymnal for windows, mac and ubuntu",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2026-01-07T09:37:15Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "awesome-logging-python",
+                "description": "Production-ready structured logging solution that's simple, powerful, and fast in python",
+                "stargazers_count": 3,
+                "language": null,
+                "pushed_at": "2026-01-05T05:37:51Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T13:52:48.980338+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}

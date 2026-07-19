@@ -1,0 +1,585 @@
+{
+  "profileId": "osint-profile-99e9d8bcad6e",
+  "target": "LukeberryPi",
+  "targetTypes": [
+    "github_handle"
+  ],
+  "lanesRun": [
+    "github"
+  ],
+  "engagementPolicyRef": "engagement-policy-sg-research",
+  "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+  "targetScope": "public_research_no_pii",
+  "operatorIdentityRef": "michael@socioprophet.ai",
+  "fixtureMode": false,
+  "startedAt": "2026-06-20T16:48:57.847939+00:00",
+  "completedAt": "2026-06-20T16:48:59.379593+00:00",
+  "summary": {
+    "total": 1,
+    "success": 1,
+    "denied": 0,
+    "errors": 0,
+    "laneStatuses": {
+      "github": "success"
+    }
+  },
+  "results": {
+    "github": {
+      "schemaVersion": "0.1.0",
+      "lookupId": "osint-passive-github-b8fb20c1",
+      "lookupType": "github_context",
+      "target": "LukeberryPi",
+      "targetScope": "public_research_no_pii",
+      "engagementPolicyRef": "engagement-policy-sg-research",
+      "authorizationRef": "SG threat network mapping: public profiles only, operator authorized 2026-06-20",
+      "executionMode": "passive_public_source",
+      "nonDestructiveOnly": true,
+      "networkBoundary": "public_source_api_only",
+      "sourceEvidenceRef": "GitHub public REST API v3 (public profile/org/repo metadata only)",
+      "operatorIdentityRef": "michael@socioprophet.ai",
+      "receiptRequired": true,
+      "fixtureMode": false,
+      "result": {
+        "status": "success",
+        "records": [
+          {
+            "login": "LukeberryPi",
+            "name": "Luke Berry",
+            "type": "User",
+            "company": null,
+            "blog": "https://lukeberrypi.com",
+            "location": "London, United Kingdom",
+            "bio": null,
+            "public_repos": 69,
+            "followers": 888,
+            "following": 1154,
+            "created_at": "2022-01-20T01:56:26Z",
+            "updated_at": "2026-06-19T00:19:21Z",
+            "html_url": "https://github.com/LukeberryPi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/98068247?v=4",
+            "repos": [
+              {
+                "name": "skills",
+                "description": "My agent skills.",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2026-06-20T13:44:22Z",
+                "fork": false,
+                "topics": [
+                  "agent-skill",
+                  "claude-code-skill"
+                ]
+              },
+              {
+                "name": "phived",
+                "description": "An anti-procrastination to-do list. ",
+                "stargazers_count": 217,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-20T12:41:59Z",
+                "fork": false,
+                "topics": [
+                  "productivity",
+                  "react",
+                  "todo",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "css2wind",
+                "description": "A minigame for learning TailwindCSS.",
+                "stargazers_count": 126,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-17T15:57:58Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "sonner-lite",
+                "description": "Lighter version of Sonner.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-11T22:19:37Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "blog",
+                "description": "My personal blog",
+                "stargazers_count": 107,
+                "language": "TypeScript",
+                "pushed_at": "2026-06-19T00:32:46Z",
+                "fork": true,
+                "topics": [
+                  "blog",
+                  "remark",
+                  "tailwindcss",
+                  "typescript"
+                ]
+              },
+              {
+                "name": "lakshb.dev",
+                "description": "Personal website built with Astro, React & TailwindCSS",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-10-13T14:59:16Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "simple-scrum-poker",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-26T09:57:14Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "aoc",
+                "description": "solutions to multiple advent of code challenges in python and javascript",
+                "stargazers_count": 4,
+                "language": "Python",
+                "pushed_at": "2025-12-24T16:26:32Z",
+                "fork": false,
+                "topics": [
+                  "advent-of-code",
+                  "algorithms",
+                  "challenges",
+                  "data-structures",
+                  "logic"
+                ]
+              },
+              {
+                "name": "boogie-hunter",
+                "description": "A website to browse all songs shared in the \"boogie request line \u260e\ufe0f\ud83e\udea9\" WhatsApp group ahead of Kirollus' show at The Cause on Saturday 25/04/2026.",
+                "stargazers_count": 0,
+                "language": "Astro",
+                "pushed_at": "2026-04-28T12:33:16Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "trampar-de-casa",
+                "description": "Apoiamos o trabalho remoto e divulgamos vagas semanais para inscritos.",
+                "stargazers_count": 1,
+                "language": "JavaScript",
+                "pushed_at": "2023-06-23T17:15:34Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "timestamp-tracklist",
+                "description": "timestamp your tracklists",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2026-02-03T19:09:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "posso-perguntar",
+                "description": "Esse site \u00e9 o primo brasileiro do Don't Ask to Ask. \u00c9 sobre como conseguir a resposta mais esclarecedora, o mais r\u00e1pido poss\u00edvel.",
+                "stargazers_count": 25,
+                "language": "HTML",
+                "pushed_at": "2023-06-18T01:15:11Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "html",
+                  "learning",
+                  "questions"
+                ]
+              },
+              {
+                "name": "blog-1",
+                "description": "My personal blog",
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2024-07-08T08:39:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "macos-config",
+                "description": "My macOS configuration.",
+                "stargazers_count": 6,
+                "language": null,
+                "pushed_at": "2024-08-03T14:57:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "trabalho_italia",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "HTML",
+                "pushed_at": "2024-10-27T21:46:44Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "saas-kit",
+                "description": null,
+                "stargazers_count": 1,
+                "language": null,
+                "pushed_at": "2025-10-06T18:18:54Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "como-debugar-frontend",
+                "description": "como debugar frontend",
+                "stargazers_count": 7,
+                "language": "HTML",
+                "pushed_at": "2025-05-19T13:31:55Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "nstr",
+                "description": "number \u2192 string, but looks good",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-22T15:22:59Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "create-better-t-stack",
+                "description": "A modern CLI tool for scaffolding end-to-end type-safe TypeScript projects with best practices and customizable configurations",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2025-08-19T22:38:36Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "raycast-extensions",
+                "description": "Everything you need to extend Raycast.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-11T09:56:41Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "delinkify-sandboxed",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-08-11T00:13:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "dob4",
+                "description": "dob4-tanstack-start",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-21T11:51:10Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kings-cross-cinema-website",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "Astro",
+                "pushed_at": "2025-07-14T11:09:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "kings-cross-cinema-api",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-07-12T01:54:22Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "data-science-publicidade",
+                "description": "\ud83c\udde7\ud83c\uddf7 Esse \u00e9 um projeto de Data Science que constru\u00ed na Aula 4 do Intensiv\u00e3o de Python em 2021. \u00c9 um estudo para que uma empresa decida onde investir seu dinheiro para publicidade: TV, R\u00e1dio e Jornal, baseando-se nas convers\u00f5es passadas em vendas de cada uma dessas categorias.",
+                "stargazers_count": 3,
+                "language": "Python",
+                "pushed_at": "2022-02-01T15:34:33Z",
+                "fork": false,
+                "topics": [
+                  "br",
+                  "pandas",
+                  "python",
+                  "sklearn",
+                  "statistics"
+                ]
+              },
+              {
+                "name": "basicao-mysql",
+                "description": "\ud83c\udde7\ud83c\uddf7 Esses s\u00e3o os scripts que trabalhei durante o Intensiv\u00e3o de SQL de 2022. Eles cont\u00e9m coment\u00e1rios explicativos sobre os desafios enfrentados assim como orienta\u00e7\u00f5es gerais sobre as fun\u00e7\u00f5es b\u00e1sicas de MySQL.",
+                "stargazers_count": 2,
+                "language": null,
+                "pushed_at": "2022-02-07T18:17:37Z",
+                "fork": false,
+                "topics": [
+                  "database",
+                  "mysql",
+                  "schema",
+                  "sql"
+                ]
+              },
+              {
+                "name": "highminded",
+                "description": "Undectable AI that helps you with meetings",
+                "stargazers_count": 0,
+                "language": "C#",
+                "pushed_at": "2025-07-07T10:34:11Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "react-tailwind-template",
+                "description": null,
+                "stargazers_count": 2,
+                "language": "TypeScript",
+                "pushed_at": "2025-06-19T12:56:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "frontend-debugging-101",
+                "description": "website to help people debug frontend issues, inspired by https://lukeberrypi.vercel.app/articles/frontend-debugging-101",
+                "stargazers_count": 6,
+                "language": "HTML",
+                "pushed_at": "2025-05-27T14:18:29Z",
+                "fork": false,
+                "topics": [
+                  "corinthians",
+                  "css",
+                  "debug",
+                  "frontend",
+                  "html"
+                ]
+              },
+              {
+                "name": "multiline-clipboard",
+                "description": "Copy each line of a paragraph as individual entries for clipboard history.",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-05-25T18:15:31Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "tibia-bot-guilda",
+                "description": "bot pra trazer info da guilda e escrever pro google sheets",
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-03-13T12:51:27Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "raycast-cv-website",
+                "description": null,
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-16T12:14:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "x-verified-follower-count-api",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2025-01-03T14:57:32Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "x-verified-follower-count",
+                "description": "Chrome extension to see how many verified followers you have on X.",
+                "stargazers_count": 0,
+                "language": "HTML",
+                "pushed_at": "2024-12-31T14:11:09Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "react-native-phived",
+                "description": null,
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-12-26T21:02:48Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "wagtail-sandbox",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-12-18T09:25:44Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "web-automation",
+                "description": "\ud83c\udde7\ud83c\uddf7 Esse \u00e9 um projeto de Automa\u00e7\u00e3o Web que constru\u00ed na Aula 1 do Intensiv\u00e3o de Python de 2021. \u00c9 uma automa\u00e7\u00e3o de uma tarefa que consiste em: baixar uma planilha do Google Drive, extrair m\u00e9tricas dela e enviar por email para um gerente em formato de relat\u00f3rio.",
+                "stargazers_count": 5,
+                "language": "Python",
+                "pushed_at": "2022-02-01T12:20:14Z",
+                "fork": false,
+                "topics": [
+                  "automacao",
+                  "brasil",
+                  "pyautogui",
+                  "python"
+                ]
+              },
+              {
+                "name": "nearest-tailwind-color",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "TypeScript",
+                "pushed_at": "2024-11-22T10:07:33Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "desafio-frontend-hg",
+                "description": "This is my resolution of Hostgator's 2022 Frontend Starter Challenge. It is a Single-Page Application built with React.js, which displays products offered by us. It is styled through styled-components and it's API calls were made using fetch.",
+                "stargazers_count": 2,
+                "language": "JavaScript",
+                "pushed_at": "2022-03-14T22:50:12Z",
+                "fork": false,
+                "topics": [
+                  "hostgator",
+                  "react"
+                ]
+              },
+              {
+                "name": "algorithms",
+                "description": "algorithm problems i have solved, from leetcode, hacker rank and codewars. some of them are explained in ptbr here",
+                "stargazers_count": 6,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-17T07:46:07Z",
+                "fork": false,
+                "topics": [
+                  "algorithms",
+                  "codewars",
+                  "hackerrank",
+                  "leetcode"
+                ]
+              },
+              {
+                "name": "job-log",
+                "description": "personal writings of my daily triumphs and challenges as a junior software engineer",
+                "stargazers_count": 13,
+                "language": null,
+                "pushed_at": "2023-03-31T21:39:47Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "restarurante-universitario-apetitoso-e-nutritivo",
+                "description": "restarurante-universitarioapetitoso-e-nutritivo",
+                "stargazers_count": 0,
+                "language": "Python",
+                "pushed_at": "2024-09-07T12:51:41Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "coding-assignment",
+                "description": "My coding-assigment of Movieland",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-08-11T14:47:52Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "pyfunctools",
+                "description": "Pyfunctools is a module that provides functions, methods and classes that help in the creation of projects in python, bringing functional and object-oriented programming methods.",
+                "stargazers_count": 0,
+                "language": null,
+                "pushed_at": "2024-07-22T21:31:45Z",
+                "fork": true,
+                "topics": []
+              },
+              {
+                "name": "country-game-react",
+                "description": "A country-capital guessing game made in React. Code challenge i discovered here: https://youtu.be/XTgB4esy1is?si=-xcHLsdNf-BtoQwf",
+                "stargazers_count": 1,
+                "language": "TypeScript",
+                "pushed_at": "2023-10-18T03:54:38Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "naked-react",
+                "description": "naked react template for dirty prototyping",
+                "stargazers_count": 7,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-05T14:22:44Z",
+                "fork": false,
+                "topics": [
+                  "react",
+                  "vite"
+                ]
+              },
+              {
+                "name": "undo-exercise",
+                "description": null,
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-03-05T13:58:20Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "technical-documentation-template",
+                "description": "\ud83c\uddfa\ud83c\uddf8 This is s Technical Documentation Page, the fourth project of five which complete the Responsive Web Design course on freeCodeCamp. I chose to write about Python, which was my first love. It is heavilty inspired by w3schools, especially the green!",
+                "stargazers_count": 2,
+                "language": "HTML",
+                "pushed_at": "2022-02-01T02:00:54Z",
+                "fork": false,
+                "topics": [
+                  "css",
+                  "freecodecamp",
+                  "html",
+                  "technical-documentation"
+                ]
+              },
+              {
+                "name": "phivued",
+                "description": "phived.com clone in vue",
+                "stargazers_count": 7,
+                "language": "Vue",
+                "pushed_at": "2024-02-14T20:41:06Z",
+                "fork": false,
+                "topics": []
+              },
+              {
+                "name": "mongodb-starter",
+                "description": "following mongodb's documentation for node.js driver https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/",
+                "stargazers_count": 0,
+                "language": "JavaScript",
+                "pushed_at": "2024-01-31T14:57:44Z",
+                "fork": false,
+                "topics": []
+              }
+            ],
+            "source": "github_public_api"
+          }
+        ],
+        "confidenceCaveat": "Public GitHub API only. No private repos, no secrets, no email harvesting. Profile data reflects GitHub public disclosure."
+      },
+      "receiptEmitted": true,
+      "queriedAt": "2026-06-20T16:48:59.378348+00:00",
+      "actionAuthorizedReceipt": "gate_passed",
+      "warnings": []
+    }
+  }
+}
