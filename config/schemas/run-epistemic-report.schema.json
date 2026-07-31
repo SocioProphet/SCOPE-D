@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.ai/scope-d/schemas/run-epistemic-report.schema.json",
+  "title": "SCOPE-D Run Epistemic Report",
+  "description": "The composed epistemic standing of a run's proof artifacts: the meet of every claim's epistemicLevel.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "reportId",
+    "runId",
+    "generatedAt",
+    "proofCount",
+    "levelsConsidered",
+    "composedEpistemicStanding",
+    "rationale"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "0.1.0" },
+    "reportId": {
+      "type": "string",
+      "pattern": "^run-epistemic-report:[a-z0-9][a-z0-9._:-]*$"
+    },
+    "runId": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "proofCount": { "type": "integer", "minimum": 0 },
+    "levelsConsidered": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["proved", "bounded", "empirical", "synthetic", "speculative", "rejected"]
+      }
+    },
+    "composedEpistemicStanding": {
+      "type": "string",
+      "enum": ["proved", "bounded", "empirical", "synthetic", "speculative", "rejected"]
+    },
+    "rationale": { "type": "string", "minLength": 1 }
+  }
+}
