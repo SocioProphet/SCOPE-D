@@ -96,6 +96,26 @@
         "policyFabricReady": { "type": "boolean" },
         "notes": { "type": "array", "items": { "type": "string" } }
       }
+    },
+    "epistemicStanding": {
+      "type": "object",
+      "description": "The composed epistemic standing of this run's proof artifacts: the meet of every claim's epistemicLevel. Optional; present when the run has proof artifacts.",
+      "additionalProperties": false,
+      "required": ["standing", "proofCount", "levelsConsidered"],
+      "properties": {
+        "standing": {
+          "type": "string",
+          "enum": ["proved", "bounded", "empirical", "synthetic", "speculative", "rejected"]
+        },
+        "proofCount": { "type": "integer", "minimum": 0 },
+        "levelsConsidered": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["proved", "bounded", "empirical", "synthetic", "speculative", "rejected"]
+          }
+        }
+      }
     }
   }
 }
