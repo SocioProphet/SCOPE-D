@@ -39,14 +39,26 @@ function composeProofEpistemic(proofs) {
   };
 }
 
-/** Load proof artifacts from a run directory or a proof-artifact.json file. */
+/** Load proof artifacts from a run directory or a proof-artifact.json file.
+ *
+ * Reads directly, without a `stat`-then-read step, to avoid a time-of-check /
+ * time-of-use race: try the run directory's `proof-artifact.json` first, then
+ * fall back to treating the argument as the file itself. */
 function loadProofArtifacts(runOrFile) {
-  const stat = fs.statSync(runOrFile);
-  const file = stat.isDirectory()
-    ? path.join(runOrFile, 'proof-artifact.json')
-    : runOrFile;
-  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-  return Array.isArray(data) ? data : [data];
+  const candidates = [path.join(runOrFile, 'proof-artifact.json'), runOrFile];
+  let lastError;
+  for (const file of candidates) {
+    let text;
+    try {
+      text = fs.readFileSync(file, 'utf8');
+    } catch (err) {
+      lastError = err;
+      continue;
+    }
+    const data = JSON.parse(text);
+    return Array.isArray(data) ? data : [data];
+  }
+  throw lastError;
 }
 
 function main() {
