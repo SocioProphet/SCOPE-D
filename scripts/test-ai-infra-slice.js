@@ -75,6 +75,9 @@ function main() {
   if ((summary.counts.aiInfraAssessments || 0) !== 1) fail('Expected one AI-infra assessment in run summary.');
   if ((summary.counts.mcpToolRisks || 0) !== 1) fail('Expected one MCP tool risk in run summary.');
   if ((summary.counts.countermeasureRules || 0) !== 1) fail('Expected one countermeasure rule in run summary.');
+  if (!summary.epistemicStanding || summary.epistemicStanding.standing !== 'synthetic') {
+    fail('Expected run summary to carry a synthetic epistemic standing composed from its proof artifacts.');
+  }
 
   const rdf = runNodeScript('export-ontogenesis-rdf.js', [RUN_REL]);
   expectSuccess('AI-infra Ontogenesis export', rdf);

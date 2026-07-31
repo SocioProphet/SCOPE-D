@@ -46,9 +46,37 @@
     "approvalState": { "type": "string", "enum": ["none_required", "awaiting_approval", "approved", "blocked"] },
     "reassessmentStatus": { "type": "string", "enum": ["not_reassessed", "improved", "unchanged", "regressed", "mixed"] },
     "executionAllowed": { "type": "boolean", "const": false },
-    "executionPerformed": { "type": "boolean", "const": false }
+    "executionPerformed": { "type": "boolean", "const": false },
+    "epistemicStanding": { "$ref": "#/$defs/epistemicStanding" }
   },
   "$defs": {
+    "epistemicLevel": {
+      "type": "string",
+      "enum": ["proved", "bounded", "empirical", "synthetic", "speculative", "rejected"]
+    },
+    "epistemicStanding": {
+      "type": "object",
+      "description": "The composed epistemic standing across the assured runs: the meet of each run's standing. Optional; present when runs are supplied via --run.",
+      "additionalProperties": false,
+      "required": ["standing", "runsConsidered", "perRun"],
+      "properties": {
+        "standing": { "$ref": "#/$defs/epistemicLevel" },
+        "runsConsidered": { "type": "integer", "minimum": 0 },
+        "perRun": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["runRef", "standing", "proofCount"],
+            "properties": {
+              "runRef": { "type": "string", "minLength": 1 },
+              "standing": { "$ref": "#/$defs/epistemicLevel" },
+              "proofCount": { "type": "integer", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
     "surfaceCoverage": {
       "type": "object",
       "additionalProperties": false,

@@ -5,6 +5,8 @@ const fs = require('fs');
 const path = require('path');
 const Ajv = require('ajv/dist/2020');
 const addFormats = require('ajv-formats');
+const { compose } = require('./epistemic-lattice');
+const { composeProofEpistemic, loadProofArtifacts } = require('./compose-run-epistemic');
 
 const ROOT = path.resolve(__dirname, '..');
 const DASHBOARD_SCHEMA = 'config/schemas/operator-dashboard-index.schema.json';
@@ -13,11 +15,11 @@ const REASSESSMENT_SCHEMA = 'config/schemas/operator-reassessment-report.schema.
 const REPORT_SCHEMA = 'config/schemas/client-assurance-report.schema.json';
 
 function usage() {
-  console.log('Usage: node scripts/export-client-assurance-report.js --dashboard <operator-dashboard.json> --client <clientRef> [--case <case-index.json> ...] [--reassessment <report.json> ...] [--out-dir <dir>]');
+  console.log('Usage: node scripts/export-client-assurance-report.js --dashboard <operator-dashboard.json> --client <clientRef> [--case <case-index.json> ...] [--reassessment <report.json> ...] [--run <run-dir> ...] [--out-dir <dir>]');
 }
 
 function parseArgs(argv) {
-  const args = { dashboard: null, client: null, cases: [], reassessments: [], outDir: null };
+  const args = { dashboard: null, client: null, cases: [], reassessments: [], runs: [], outDir: null };
   for (let i = 2; i < argv.length; i += 1) {
     const item = argv[i];
     if (item === '--help' || item === '-h') { usage(); process.exit(0); }
@@ -25,6 +27,7 @@ function parseArgs(argv) {
     if (item === '--client') { args.client = argv[++i]; continue; }
     if (item === '--case') { args.cases.push(argv[++i]); continue; }
     if (item === '--reassessment') { args.reassessments.push(argv[++i]); continue; }
+    if (item === '--run') { args.runs.push(argv[++i]); continue; }
     if (item === '--out-dir') { args.outDir = argv[++i]; continue; }
     throw new Error(`Unknown argument: ${item}`);
   }
@@ -117,6 +120,41 @@ function evidenceRefs(dashboardPath, cases, reassessments) {
   return refs;
 }
 
+/** The composed epistemic standing of a single assured run: prefer the run's
+ * run-summary.epistemicStanding, else compose from its proof artifacts. */
+function runEpistemic(runPath) {
+  const runAbs = abs(runPath);
+  const summaryPath = path.join(runAbs, 'run-summary.json');
+  if (fs.existsSync(summaryPath)) {
+    const summary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+    if (summary.epistemicStanding) {
+      return {
+        runRef: rel(runAbs),
+        standing: summary.epistemicStanding.standing,
+        proofCount: summary.epistemicStanding.proofCount,
+      };
+    }
+  }
+  const proofPath = path.join(runAbs, 'proof-artifact.json');
+  if (fs.existsSync(proofPath)) {
+    const composed = composeProofEpistemic(loadProofArtifacts(proofPath));
+    return { runRef: rel(runAbs), standing: composed.composedEpistemicStanding, proofCount: composed.proofCount };
+  }
+  return null;
+}
+
+/** Fold the assured runs into one client-facing epistemic standing: the meet
+ * across runs (no stronger than the weakest run; rejected absorbing). */
+function composeRuns(runPaths) {
+  const perRun = runPaths.map(runEpistemic).filter(Boolean);
+  if (perRun.length === 0) return null;
+  return {
+    standing: compose(perRun.map((r) => r.standing)),
+    runsConsidered: perRun.length,
+    perRun,
+  };
+}
+
 function summaryText(dashboard) {
   return `SCOPE-D assessed ${dashboard.caseCount} operator case(s) across ${dashboard.riskBySurface.length} surface kind(s), with ${dashboard.criticalCaseCount} critical case(s) and ${dashboard.awaitingApprovalCount} case(s) awaiting approval.`;
 }
@@ -131,6 +169,20 @@ function markdown(report) {
   lines.push('## Executive Summary');
   lines.push(report.executiveSummary.summaryText);
   lines.push('');
+  if (report.epistemicStanding) {
+    lines.push('## Epistemic Standing');
+    lines.push(
+      `Composed epistemic standing across ${report.epistemicStanding.runsConsidered} assured run(s): **${report.epistemicStanding.standing}**.`,
+    );
+    lines.push('');
+    lines.push(
+      'The standing is the meet of the assured runs — no stronger than the weakest run, and a rejected run is absorbing.',
+    );
+    for (const run of report.epistemicStanding.perRun) {
+      lines.push(`- ${run.runRef}: ${run.standing} (${run.proofCount} proof(s))`);
+    }
+    lines.push('');
+  }
   lines.push('## Surface Coverage');
   for (const surface of report.surfaceCoverage) {
     lines.push(`- ${surface.surfaceKind}: ${surface.caseCount} case(s); critical=${surface.critical}, high=${surface.high}, medium=${surface.medium}, low=${surface.low}`);
@@ -205,6 +257,12 @@ function main() {
     executionPerformed: false,
   };
 
+  // Surface the composed epistemic standing of the assured runs, if provided.
+  const runStanding = composeRuns(args.runs);
+  if (runStanding) {
+    report.epistemicStanding = runStanding;
+  }
+
   validate(REPORT_SCHEMA, report, 'client assurance report');
   const outDir = abs(args.outDir || 'reports/client-assurance');
   const jsonPath = path.join(outDir, 'client-assurance-report.json');
@@ -214,9 +272,13 @@ function main() {
   process.stdout.write(`${JSON.stringify(report, null, 2)}\n`);
 }
 
-try {
-  main();
-} catch (err) {
-  console.error(`export-client-assurance-report failed: ${err.message}`);
-  process.exit(1);
+module.exports = { runEpistemic, composeRuns };
+
+if (require.main === module) {
+  try {
+    main();
+  } catch (err) {
+    console.error(`export-client-assurance-report failed: ${err.message}`);
+    process.exit(1);
+  }
 }

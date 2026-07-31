@@ -6,6 +6,7 @@ const path = require('path');
 const childProcess = require('child_process');
 const Ajv = require('ajv/dist/2020');
 const addFormats = require('ajv-formats');
+const { composeProofEpistemic, loadProofArtifacts } = require('./compose-run-epistemic');
 
 const ROOT = path.resolve(__dirname, '..');
 const SCHEMA_DIR = 'config/schemas';
@@ -152,6 +153,20 @@ function main() {
   const countermeasureRules = countJsonFile(path.join(runAbs, 'countermeasure-rule.json'));
   const graphRobustnessAssessments = countJsonFile(path.join(runAbs, 'graph-robustness-assessment.json'));
 
+  // Compose the run's epistemic standing from its proof artifacts: the meet of
+  // every claim's epistemicLevel (no stronger than the weakest; rejected
+  // absorbing). Optional — omitted for runs that carry no proof artifacts.
+  const proofArtifactPath = path.join(runAbs, 'proof-artifact.json');
+  let epistemicStanding = null;
+  if (fs.existsSync(proofArtifactPath)) {
+    const composed = composeProofEpistemic(loadProofArtifacts(proofArtifactPath));
+    epistemicStanding = {
+      standing: composed.composedEpistemicStanding,
+      proofCount: composed.proofCount,
+      levelsConsidered: composed.levelsConsidered,
+    };
+  }
+
   const summary = {
     schemaVersion: '0.1.0',
     summaryId: `summary-${controlLoop.runId.replace(/^scope-d-/, '')}`,
@@ -203,6 +218,10 @@ function main() {
       ],
     },
   };
+
+  if (epistemicStanding) {
+    summary.epistemicStanding = epistemicStanding;
+  }
 
   validateSummary(summary);
   writeJson(path.join(runAbs, 'run-summary.json'), summary);
