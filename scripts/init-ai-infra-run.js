@@ -6,6 +6,7 @@ const path = require('path');
 const crypto = require('crypto');
 const Ajv = require('ajv/dist/2020');
 const addFormats = require('ajv-formats');
+const { registerCanonicalProofArtifact } = require('./lib/canonical-schemas');
 
 const ROOT = path.resolve(__dirname, '..');
 const SCHEMA_DIR = 'config/schemas';
@@ -114,6 +115,7 @@ function claimSlug(value) {
 function createAjv() {
   const ajv = new Ajv({ allErrors: true, strict: false });
   addFormats(ajv);
+  registerCanonicalProofArtifact(ajv);
   return ajv;
 }
 

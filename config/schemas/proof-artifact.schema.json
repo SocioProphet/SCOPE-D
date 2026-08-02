@@ -2,6 +2,10 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://socioprophet.org/schemas/scope-d-proof-artifact.schema.json",
   "title": "SCOPE-D Proof Artifact",
+  "$comment": "Converged onto the estate-canonical ProofArtifact v1 (standards-storage#97, remediation R2). This schema now binds to https://schemas.socioprophet.ai/proof-artifact/v1.json via allOf, and the epistemicLevel enum is $ref'd from that canonical's $defs instead of being copy-pasted here. The canonical is sovereign-vendored at vendor/schemas/proof-artifact/proof-artifact.schema.v1.json so offline AJV validators resolve it. The SCOPE-D-specific fields below are the allOf extension.",
+  "allOf": [
+    { "$ref": "https://schemas.socioprophet.ai/proof-artifact/v1.json" }
+  ],
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -26,7 +30,7 @@
         "claimId": { "type": "string", "pattern": "^claim\\.[a-z0-9_.:-]+$" },
         "claimType": { "type": "string", "enum": ["non_escape", "budget_bound", "scope_bound", "configuration_volume", "dynamic_metric", "detection_validation", "policy_gate", "synthetic_observation"] },
         "statement": { "type": "string", "minLength": 1 },
-        "epistemicLevel": { "type": "string", "enum": ["proved", "bounded", "empirical", "synthetic", "speculative", "rejected"] }
+        "epistemicLevel": { "$ref": "https://schemas.socioprophet.ai/proof-artifact/v1.json#/$defs/epistemicLevel" }
       }
     },
     "status": { "type": "string", "enum": ["PROVED", "BOUNDED", "FAILED", "BLOCKED", "INCONCLUSIVE", "SYNTHETIC_ONLY"] },

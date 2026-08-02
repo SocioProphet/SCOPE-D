@@ -6,6 +6,7 @@ const path = require('path');
 const crypto = require('crypto');
 const Ajv = require('ajv/dist/2020');
 const addFormats = require('ajv-formats');
+const { registerCanonicalProofArtifact } = require('./lib/canonical-schemas');
 
 const ROOT = path.resolve(__dirname, '..');
 const EXAMPLE_DIR = 'examples/scope-d';
@@ -140,6 +141,7 @@ function ensureSafeAtomic(atomic) {
 function createAjv() {
   const ajv = new Ajv({ allErrors: true, strict: false });
   addFormats(ajv);
+  registerCanonicalProofArtifact(ajv);
   return ajv;
 }
 
