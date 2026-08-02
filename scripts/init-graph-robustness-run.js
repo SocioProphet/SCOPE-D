@@ -6,6 +6,7 @@ const path = require('path');
 const crypto = require('crypto');
 const Ajv = require('ajv/dist/2020');
 const addFormats = require('ajv-formats');
+const { registerCanonicalProofArtifact } = require('./lib/canonical-schemas');
 
 const ROOT = path.resolve(__dirname, '..');
 const SCHEMA_DIR = 'config/schemas';
@@ -66,7 +67,7 @@ function timestampSlug() { return new Date().toISOString().replace(/[-:]/g, '').
 function localSlug(value) { return String(value).toLowerCase().replace(/^scope-d-/, '').replace(/[^a-z0-9._:-]+/g, '-').replace(/^-+/, '').replace(/-+$/, '') || 'synthetic'; }
 function claimSlug(value) { return String(value).toLowerCase().replace(/^scope-d-/, '').replace(/[^a-z0-9_.:-]+/g, '_').replace(/^_+/, '').replace(/_+$/, '') || 'synthetic'; }
 
-function createAjv() { const ajv = new Ajv({ allErrors: true, strict: false }); addFormats(ajv); return ajv; }
+function createAjv() { const ajv = new Ajv({ allErrors: true, strict: false }); addFormats(ajv); registerCanonicalProofArtifact(ajv); return ajv; }
 function validateContract(schemaRel, value, label) {
   const ajv = createAjv();
   const schema = readJsonRel(path.join(SCHEMA_DIR, schemaRel));

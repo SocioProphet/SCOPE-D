@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const Ajv = require('ajv/dist/2020');
 const addFormats = require('ajv-formats');
+const { registerCanonicalProofArtifact } = require('./lib/canonical-schemas');
 
 const ROOT = path.resolve(__dirname, '..');
 
@@ -130,6 +131,7 @@ for (const file of [...walkJsonFiles('config/schemas'), ...walkJsonFiles('exampl
 
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
+registerCanonicalProofArtifact(ajv);
 const validatorsBySchemaPath = new Map();
 
 function compileValidator(schemaPath, schema) {

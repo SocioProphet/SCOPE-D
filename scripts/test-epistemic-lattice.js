@@ -40,15 +40,19 @@ function rankOf(level) {
 }
 
 function main() {
-  // --- schema conformance: the module's enum matches SCOPE-D's schema ---------
-  const schema = JSON.parse(
+  // --- schema conformance: the module's enum matches the CANONICAL schema -----
+  // Post-R2 (standards-storage#97) the epistemicLevel enum is no longer
+  // copy-pasted into config/schemas/proof-artifact.schema.json; that schema now
+  // $refs the estate-canonical ProofArtifact v1. Assert the module against the
+  // single source of truth (the sovereign-vendored canonical) directly.
+  const canonical = JSON.parse(
     fs.readFileSync(
-      path.join(ROOT, 'config/schemas/proof-artifact.schema.json'),
+      path.join(ROOT, 'vendor/schemas/proof-artifact/proof-artifact.schema.v1.json'),
       'utf8',
     ),
   );
   const schemaEnum =
-    schema.properties.claim.properties.epistemicLevel.enum.slice().sort();
+    canonical.$defs.epistemicLevel.enum.slice().sort();
   const moduleEnum = ORDER.slice().sort();
   assert(
     JSON.stringify(schemaEnum) === JSON.stringify(moduleEnum),
