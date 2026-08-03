@@ -173,8 +173,6 @@ SCOPE-D
 5. Add issue/project tracking once GitHub Issues or a replacement board is enabled.
 6. Add PolicyFabric admission integration only after collector/readiness doctrine is complete.
 
-## Upstream attribution
+## Attribution
 
-SCOPE-D is derived from the public SCOPE project created by Tayvion Payton. See the inherited license and upstream project history for original authorship and licensing context.
-
-Original upstream: https://github.com/tayontech/SCOPE
+SCOPE-D builds on the original SCOPE project by Tayvion Payton, used under the MIT License. Substantial subsequent development © SocioProphet.
