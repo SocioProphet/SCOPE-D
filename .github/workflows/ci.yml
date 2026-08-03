@@ -45,7 +45,7 @@ jobs:
         run: |
           python graph-robustness/codebase/build_codebase_graph.py . \
             --out /tmp/scope-d-graph \
-            --source-ref "https://github.com/tayontech/SCOPE"
+            --source-ref "https://github.com/SocioProphet/SCOPE-D"
 
       - name: Export to HellGraph + MeshRush
         run: |

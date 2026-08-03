@@ -15,7 +15,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "name", "url", "category", "adoptionMode", "safetyClass", "capabilityTargets", "doNotImport", "nextActions"],
+        "required": ["id", "name", "category", "adoptionMode", "safetyClass", "capabilityTargets", "doNotImport", "nextActions"],
         "properties": {
           "id": { "type": "string", "pattern": "^ref-[a-z0-9][a-z0-9._:-]*$" },
           "name": { "type": "string", "minLength": 1 },

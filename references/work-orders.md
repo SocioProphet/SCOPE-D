@@ -9,10 +9,9 @@ Generated deterministically from `references/scope-d-reference-catalog.json`. Do
 - No payloads, C2 code, credential theft behavior, destructive automation, or evasion logic may be imported.
 - Every implementation task must preserve SCOPE-D safety boundaries, synthetic-first validation, and receipt verification.
 
-## WO-001: tayontech/SCOPE
+## WO-001: Agentic cloud purple-team control loop (external pattern reference)
 
-- Reference ID: `ref-upstream-scope`
-- URL: https://github.com/tayontech/SCOPE
+- Reference ID: `ref-agentic-purple-team`
 - Category: `agentic_cloud_purple_team`
 - Adoption mode: `pattern_extract`
 - Safety class: `safe_defensive`

@@ -4,9 +4,8 @@
   "generatedFor": "SCOPE-D",
   "references": [
     {
-      "id": "ref-upstream-scope",
-      "name": "tayontech/SCOPE",
-      "url": "https://github.com/tayontech/SCOPE",
+      "id": "ref-agentic-purple-team",
+      "name": "Agentic cloud purple-team control loop (external pattern reference)",
       "category": "agentic_cloud_purple_team",
       "adoptionMode": "pattern_extract",
       "safetyClass": "safe_defensive",
@@ -17,11 +16,11 @@
         "Read-only default posture and artifact validation should be mandatory."
       ],
       "doNotImport": [
-        "Do not preserve upstream-only branding as the SCOPE-D product surface.",
+        "Do not preserve external-source branding as the SCOPE-D product surface.",
         "Do not rely on prompt-only control boundaries."
       ],
       "nextActions": [
-        "Map upstream audit/defend/hunt outputs into SCOPE-D ControlLoopRun and EvidenceEnvelope contracts.",
+        "Map audit/defend/hunt outputs into SCOPE-D ControlLoopRun and EvidenceEnvelope contracts.",
         "Replace AWS-specific assumptions with provider-neutral target surfaces."
       ]
     },
